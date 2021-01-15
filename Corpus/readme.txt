@@ -1,7 +1,7 @@
 # NheengaTagger
 NheengaTagger é um etiquetador morfossintático para a língua Nheengatu.
 
-Neste arquivo estão listadas as decisões metodológicas adotadas na compilação do corpus.
+Este arquivo contém as decisões metodológicas adotadas na compilação do corpus.
 
 --------------------------------------------------------------------------------------------------------
 
