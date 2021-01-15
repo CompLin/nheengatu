@@ -29,7 +29,7 @@ a) adjetivo
 Ixé se katu.
 Eu sou bom (de saúde).
 
-b)advérbio
+b) advérbio
 Asasá katu.
 Passo bem.
 
