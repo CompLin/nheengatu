@@ -1,0 +1,49 @@
+# Este arquivo contém a descrição dos passos de implementação do programa 'yrl-sn-tagger-01.py', uma lista com os problemas encontrados e suas respectivas soluções.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PASSO A PASSO
+
+1o Passo - descrever o que o programa deve executar
+a) Receber um arquivo de entrada ('corpus-test.txt') e reconhecer a tabela 'dic-test.txt', convertida para dictionary de Python.
+b) Ler todas as linhas do arquivo e localizar em cada linha as palavras que estão contidas no dicionário.
+b) Para cada uma dessas palavras, inserir f'\{etiqueta}' logo após a referida palavra. Se a palavra não estiver contida no dicionário, retornar a palavra sem etiqueta. 
+c) Salvar e imprimir as sentenças etiquetadas.
+
+2o Passo - implementação
+a) Implementar uma primeira versão do programa.
+b) Identificar e listar os problemas encontrados.
+c) Solucionar problemas.
+d) Enviar para o professor Leonel.
+
+Próximos Passos
+a) Permitir ao usuário escolher o arquivo de entrada e criar o nome do arquivo de saída (CONCLUÍDO)
+b) Substituir, se possível, o método replace() por concatenações na atribuição de etiquetas aos itens do corpus (EM ANDAMENTO)
+c) No arquivo de saída, retornar sempre maiúscula a primeira letra da primeira palavra de todas as linhas (PENDENTE)
+d) Permitir que o programa seja executável na linha de comando e que o arquivo de saída seja gerado automaticamente, a partir do título do arquivo de entrada (PENDENTE)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PROBLEMAS E SOLUÇÕES
+
+Problema 1
+>>> Após a utilização do método lower() para reconhecimento das palavras pelo algoritmo, já que estas se encontram com inicial minúscula no dicionário, o algoritmo imprime nomes próprios com iniciais minúsculas.
+>>> Solução - Usar o método replace() para substituir as palavras etiquetadas com \N-PRO pela mesma palavra capitalizada.
+>>> Código:
+        if 'N-PRO' in tag:
+            tagged_word = tagged_word.replace(word.lower(), word.capitalize())
+
+
+Problema 2
+>>> O algoritmo não etiqueta palavras no plural, embora o item conste no dicionário. Ao chegar no morfema nuclear da palavra, o programa atribui a etiqueta \N, desconsiderando o sufixo "-itá". e.g.:
+Input: anama-itá
+Output: "anama/N-itá"
+>>> Solução - excluir a etiqueta da forma plena, possibilitando a etiquetagem da forma flexionada.
+>>> Código:
+
+        if '\\N-itá' in tagged_word:
+		tagged_word = tagged_word.replace('\\N-itá', '-itá')
+		tagged_word = tagged_word.replace(word.lower(), word.lower() + '\\' + tag)
+	
+Novo output: anama-itá\N-PL
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
