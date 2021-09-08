@@ -28,7 +28,7 @@ h) Guardar cópias do glossário de cada passo da Etapa 2 e criar cópia 'glossa
 a) Extrair do 'glossario-preprocessed.txt' os verbetes que pertencem às classes que ocorrem no SN, gerando arquivos como n.txt; adj1.txt; adj2.txt; etc. (ver documento 'abreviaturas-das-classes.txt' para conferir os padrões de busca)
 b) Revisar todos os arquivos gerados, para conferir se a extração foi feita corretamente (comparando o total de linhas do OUTFILE e o total de ocorrências no 'glossario-preprocessed.txt', ex.: total de 381 ocorrências para "(s.)" e "(s. / adj.)" e 381 linhas no 'n.txt')
 c) Retirar a definição dos verbetes, utilizando o programa 'del-definition.py', de forma que cada arquivo de saída seja uma lista apenas com os verbetes.
-d) Para verbetes com uma etiqueta, gerar tabelas com duas colunas, no modelo 'akaiú N' utilizando o programa 'tag-noun.py'.
+d) Para verbetes com uma etiqueta, gerar tabelas com duas colunas, no modelo 'akaiú N' utilizando o programa 'tag-noun.py' (ver documento 'linux-command-list.txt').
 e) Juntar todas as tabelas em um só arquivo.
 f) Extrair verbetes repetidos, para gerar tabela de palavras de duas ou mais classes à parte.
 g) Para verbetes com duas ou mais etiquetas, manualmente gerar tabelas com duas colunas, no modelo 'pirasua [N, ADJ1]'.
