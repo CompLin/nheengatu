@@ -1,4 +1,4 @@
-# Este documento descreve as etapas da compilação do 'sn-dict.txt', um dicionário de palavras que ocorrem no SN do nheengatu e suas respectivas etiquetas morfossintáticas
+# Este documento descreve as etapas da compilação do 'sn-yrl-dict.txt', um dicionário de palavras que ocorrem no SN do nheengatu e suas respectivas etiquetas morfossintáticas
 # Autora: Juliana Lopes Gurgel
 # <julianalgurgel@alu.ufc.br>
 # Última atualização: 06/09/2021
@@ -32,4 +32,4 @@ d) Para verbetes com uma etiqueta, gerar tabelas com duas colunas, no modelo 'ak
 e) Juntar todas as tabelas em um só arquivo.
 f) Extrair verbetes repetidos, para gerar tabela de palavras de duas ou mais classes à parte.
 g) Para verbetes com duas ou mais etiquetas, manualmente gerar tabelas com duas colunas, no modelo 'pirasua [N, ADJ1]'.
-h) Juntar todas as tabelas em um só arquivo e organizar os itens por ordem alfabética, gerando 'sn-dict.txt'.
+h) Juntar todas as tabelas em um só arquivo e organizar os itens por ordem alfabética, gerando 'sn-yrl-dict.txt'.
