@@ -31,5 +31,5 @@ c) Retirar a definição dos verbetes, utilizando o programa 'del-definition.py'
 d) Para verbetes com uma etiqueta, gerar tabelas com duas colunas, no modelo 'akaiú N' utilizando o programa 'one-tag.py'.
 e) Juntar todas as tabelas em um só arquivo.
 f) Extrair verbetes repetidos, para gerar tabela de palavras de duas ou mais classes à parte.
-g) Para verbetes com duas ou mais etiquetas, gerar tabelas com duas colunas, no modelo 'pirasua [N, ADJ1]' utilizando o programa 'two-plus-tags.py'.
-h) Juntar todas as tabelas em um só arquivo e organizar os itens por ordem alfabética, gerando 'dicionario-yrl.txt'.
+g) Para verbetes com duas ou mais etiquetas, manualmente gerar tabelas com duas colunas, no modelo 'pirasua [N, ADJ1]'.
+h) Juntar todas as tabelas em um só arquivo e organizar os itens por ordem alfabética, gerando 'sn-dict.txt'.
