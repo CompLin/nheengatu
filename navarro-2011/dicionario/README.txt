@@ -1,6 +1,6 @@
 # Este documento descreve as etapas da compilação do 'sn-dict.txt', um dicionário de palavras que ocorrem no SN do nheengatu e suas respectivas etiquetas morfossintáticas
 # Autora: Juliana Lopes Gurgel
-# julianalgurgel@alu.ufc.br
+# <julianalgurgel@alu.ufc.br>
 # Última atualização: 06/09/2021
 
 >>> Parte 1: revisão
