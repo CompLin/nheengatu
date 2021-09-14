@@ -1,5 +1,5 @@
-# Programa idealizado para extrair verbetes do vocabulário de Navarro (2011).
-# Não foi utilizado por conta dos diferentes padrões das entradas lexicais.
+# Programa idealizado para extrair os verbetes e suas respectivas classes do vocabulário de Navarro (2011).
+# Não foi utilizado por conta dos diferentes padrões das entradas lexicais presentes no vocabulário.
 # A extração dos verbetes foi feita no terminal do Unix por meio de expressões regulares.
 
 # Reading from file
