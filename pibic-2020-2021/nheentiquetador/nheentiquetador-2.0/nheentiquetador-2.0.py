@@ -32,5 +32,5 @@ for line in infile:
 
     outlines.append(new_line.strip() + '\n')
 
-with open('tag_test.txt', 'w', encoding='utf-8') as f:
+with open('TEST-SET-tagged.txt', 'w', encoding='utf-8') as f:
     f.writelines(outlines)
