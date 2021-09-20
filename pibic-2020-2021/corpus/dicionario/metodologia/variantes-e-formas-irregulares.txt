@@ -1,0 +1,134 @@
+VARIANTES E FORMAS IRREGULARES
+-----------------------------------------------------------------------------
+1. Cclassificar as entradas lexicais listadas abaixo em variante (VAR.) ou forma irregular (IRR.) (para uso exclusivo neste documento).
+	Critérios de classificação:
+	a) Quando a entrada lexical faz remissão a outro verbete sem fazer parte de seu paradigma flexional, classificar como VAR.
+	b) Quando a entrada lexical pertence ao paradigma flexional de outro verbete, classificar como IRR.
+
+2. Verificar quais variantes já estão presentes no glossário (OK) e quais precisam ser adicionadas (ADD)
+
+3. No arquivo 'glossario-corrigido.txt', padronizar as entradas do tipo variante para "var. de" e do tipo irregular para "ver".
+	Padrões para busca:
+	a) " v. "
+	b) " o mesmo que "
+	c) "(o mesmo que "
+	d) " (ou "
+	e) " (v.)"
+
+4. No arquivo 'glossario-corrigido.txt', adicionar classes das variantes e das formas irregulares de acordo com a classe do verbete de origem, por ex.:
+	Entrada no 'glossário.txt':
+	ã - v. ana
+
+	Entrada no 'glossario-corrigido.txt':
+	ã - var. de ana - (part.) - 1. já; 2. expressa tempo passado
+
+-----------------------------------------------------------------------------
+VAR. | OK > ã - v. ana
+VAR. | OK > arã - v. arama
+VAR. | OK > iukuaku - o mesmo que iukuakusaua - v.
+VAR. | OK > iururiu - o mesmo que iururéu (v.)
+VAR. | OK > kumã - o mesmo que kumaíua (v.)
+VAR. | ADD "maãnungara" > manungara (ou maãnungara) (pron. indef.) - 1. algo; alguma coisa; 2. (na negativa) nada
+VAR. | OK > mbira - v. mimbira
+VAR. | ADD "pu pu" > mukũipu (ou pu pu) (num.) - dez
+VAR. | ADD "mpuranga" > mupuranga (ou mpuranga) (v.) - embelezar
+VAR. | OK > muraki (s.) - 1. trabalho; 2. dificuldade (o mesmo que purakisaua - v.)
+IRR. | ADD "sapé" > pé (rapé, sapé) (s.) - 1. caminho; estrada; 2. rua
+IRR. | ADD "saanga" (added) > raanga - v. saanga
+IRR. | OK > raiera - v. taiera
+IRR. | OK > rainha - v. tainha
+IRR. | OK > raira - v. taíra
+IRR. | ADD "sakakuera" > rakakuera (sakakuera) (posp.) - atrás de
+IRR. | OK > rakanga - v. sakanga
+IRR. | OK > raku, saku (adj. 2a cl.) - quente
+IRR. | OK > ramunha - v. tamunha
+IRR. | OK > rangaua - v. sangaua
+IRR. | OK > ranha - v. sanha
+IRR. | OK > rapé - v. pé
+IRR. | OK > rapu - v. sapu
+IRR. | OK > raua - v. saua
+IRR. | OK > rekuiara - v. sekuiara
+IRR. | OK > rembiua - v. tembiua
+IRR. | OK > rendaua - v. tendaua
+IRR. | OK > rendira - v. tendira
+IRR. | ADD "senundé" > renundé (senundé) (posp. ) - 1. adiante de, à frente de; 2. antes de; 3. diante de
+IRR. | OK > rera - v. sera
+IRR. | OK > resá - v. sesá
+IRR. | OK > resaiukisé - v. sesaiukisé
+IRR. | ADD "sesarai" > resarai (sesarai) (v. 2a cl.) - esquecer-se
+IRR. | OK > resé (sesé) (posp.) - 1. em (referindo-se ao que não tem um sentido precisamente geográfico); 2. a respeito de
+IRR. | ADD "seseuara" > reseuara2 (seseuara) (posp.) - por, por causa de
+IRR. | OK > retama - v. tetama
+IRR. | OK > retimã - v. setimã
+IRR. | OK > rikué (sikué) (se) (adj. 2a cl.) - vivo
+IRR. | OK > rikusaua - v. sikusaua
+IRR. | OK > rimiriku - v. simiriku
+IRR. | OK > rimiriku-putaua - v. simiriku-putaua
+IRR. | OK > riputi - v. tiputi
+IRR. | OK > ruá - v. suá
+IRR. | OK > ruaia - v. suaia
+IRR. | OK > ruaki (suaki) (posp.) - perto de, próximo de
+IRR. | ADD "suakiuara" > ruakiuara (suakiuara) (adj.) - próximo, vizinho
+IRR. | OK > ruí - v. tuí
+IRR. | OK > ruka - v. uka
+IRR. | OK > rukena - v. ukena
+IRR. | OK > rukuera - v. sukuera
+IRR. | OK > rumuara - v. sumuara
+IRR. | OK > rupiá - v. supiá
+IRR. | OK > rupitá - v. supitá
+IRR. | OK > ruri (suri) (se) (adj. 2a cl.) - alegre, feliz
+IRR. | OK > sakanga (rakanga, sakanga) (s.) - galho
+IRR. | OK > saku - v. raku
+IRR. | OK > sakurana - v. raku e rana
+IRR. | ADD "rakusaua" > sakusaua (rakusaua, sakusaua) (s.) - calor
+IRR. | OK > sangaua (rangaua, sangaua) (s.) - 1. medida; 2. exemplo; modelo; 3. retrato, fotografia
+IRR. | OK > sanha (ranha, sanha) (s.) - dente
+IRR. | OK > sapu (rapu, sapu) (s.) - raiz
+IRR. | OK > saua (raua, saua) (s.) - 1. pelo; 2. pena
+IRR. | OK > sekuiara (rekuiara, sekuiara) (s.) - 1. pagamento; 2. dinheiro
+IRR. | ADD "rekuiaramirĩ" > sekuiaramirĩ (r, s) (s.) - troco
+IRR. | OK > sendaua - v. tendaua
+IRR. | OK > sera (rera, sera) (s.) - nome
+IRR. | OK > sesá (resá, sesá) (s.) - olho
+IRR. | OK > sesaiukisé (resaiukisé, sesaiukisé) (s.) - lágrima
+IRR. | OK > sesé - v. resé
+IRR. | OK > setimã (retimã, setimã) (s.) - perna
+IRR. | OK > sikué (rikué, sikué) (s.) - vida
+IRR. | OK > sikusaua (rikusaua, sikusaua) (s.) - 1. modo de ser; 2. vida
+IRR. | OK > simiriku (rimiriku, simiriku) (s.) - esposa
+IRR. | OK > simiriku-putaua (r, s) (s.) - noiva
+IRR. | OK > suá (ruá, suá) (s.) - cara, rosto
+IRR. | OK > suaia (ruaia, suaia) (s.) - rabo, cauda
+IRR. | OK > suaki - v. ruaki
+IRR. | ADD "ruaxara" > suaxara (ruaxara, suaxara) (s.) - lado; parte
+IRR. | OK > suka - v. uka
+IRR. | OK > sukuera (rukuera, sukuera) (s.) - carne
+IRR. | ADD "rumitera" > sumitera (rumitera, sumitera) (s.) - cerne; tronco
+IRR. | OK > sumuara (rumuara, sumuara) (s.) - companheiro, amigo
+IRR. | ADD "rumuara-kunhã" > sumuara-kunhã - amiga
+IRR. | OK > supiá (rupiá, supiá) (s.) - ovo
+IRR. | OK > supitá1 (rupitá) (s.) - tronco
+IRR. | OK > suri - v. ruri
+IRR. | ADD "rurisaua" > surisaua (r, s) (s.) - alegria
+IRR. | OK > taiera (raiera, taiera) (s.) - filha (de h.)
+IRR. | ADD "sainha" > tainha (rainha, sainha) (s.) - caroço, semente
+IRR. | OK > taíra (raíra, taíra) (s.) - filho (de h.)
+IRR. | ADD "raiti" e "saiti" > taiti (raiti, saiti) (s.) - ninho
+IRR. | ADD "rakua" e "sakua" > takua (rakua, sakua) (s.) - febre
+IRR. | ADD "samunha" > tamunha (ramunha, samunha) (s.) - avô
+IRR. | ADD "rapixaua" e "sapixaua" > tapixaua (rapixaua, sapixaua) (s.) - vassoura
+IRR. | ADD "ratá" e "satá" > tatá (ratá, satá) (s.) - fogo
+IRR. | ADD "sembiua" > tembiua (rembiua, sembiua) (s.) - margem, borda
+IRR. | OK > tendaua (rendaua, sendaua) (s.) - 1. comunidade; 2. sítio, fazenda; 3. lugar
+IRR. | ADD "sendira" > tendira (rendira, sendira) (s.) - irmã (de h.)
+IRR. | ADD "setama" > tetama (retama, setama) (s.) - terra, região; pátria
+IRR. | ADD "siputi" > tiputi (riputi, siputi) (s.) - fezes
+IRR. | OK > tuí (ruí, tuí)1 (s.) - sangue
+VAR. | OK > uã - v. ana
+VAR. | OK > uana - v. ana
+IRR. | OK > uka (ruka, suka) (s.) - casa
+IRR. | ADD "sukena" > ukena (rukena, sukena) (s.) - porta
+VAR. | OK > upanhẽ - o mesmo que panhẽ (v.)
+IRR. | OK > úri - forma irregular de 3a pess. de iúri - v.
+VAR. | OK > ximiriku - var. de simiriku (3a p. do sing.): esposa dele
+VAR. | OK > xupé - forma variante de supé após i

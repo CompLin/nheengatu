@@ -1,0 +1,94 @@
+# Este documento descreve os comandos utilizados no terminal do Linux na compilação do 'sn-dictionary.txt', utilizado na pesquisa do PIBIC 2020-2021.
+Última atualização: 07/09/2021
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> Etapa 2: pré-processamento para extração
+
+f) Usando o Grep para encontrar no 'glossario_corrigido.txt' as interrogações de entradas lexicais como: maã?1 (pron. interr.) - 1. que? o que? 2. qual?
+	grep -E "^([[:alpha:]]+\?[[:space:]]|[[:alpha:]]+\?1[[:space:]]|[[:alpha:]]+\?2[[:space:]])" glossario-corrigido.txt
+	
+	Usando o Sed para apagar "?", "?1" e "?2":
+	sed 's/\? \|\?1 \|\?2 / /g' glossario-corrigido.txt > glossario-corrigido-1.txt
+
+
+g) Usando o Grep para encontrar no 'glossario_corrigido.txt' as sequências: verbete+1?, verbete+2?, verbete+1, verbete+2, verbete+3, verbete+4.
+	grep -E "^([[:alpha:]]+1+[[:space:]]|[[:alpha:]]+2+[[:space:]]|[[:alpha:]]+3+[[:space:]]|[[:alpha:]]+4+[[:space:]])" glossario-corrigido-1.txt
+
+	Usando o Sed para apagar as sequências acima:
+	sed 's/1 \|2 \|3 \|4 / /g' glossario-corrigido-1.txt > glossario-corrigido-2.txt
+	
+	Padronizando os nomes das classes:
+	ADJ2
+	sed 's/(se) (adj\.)/ADJ2/g' glossario-preprocessed.txt > glossario-preprocessed1.txt
+
+	Pronomes "aintá" e "ta"
+	sed 's/aintá (pron\.)/aintá PRON1-2/g' glossario-preprocessed1.txt > glossario-preprocessed2.txt
+	sed 's/ta (pron\.)/ta PRON1-2/g' glossario-preprocessed2.txt > glossario-preprocessed3.txt
+	
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+>>> Etapa 3: extração e finalização
+
+a) Extrair do 'glossario-preprocessed.txt' os verbetes que pertencem às classes que ocorrem no SN, gerando arquivos como n.txt; adj1.txt; adj2.txt; etc.  (ver documento 'abreviaturas-das-classes.txt' para conferir os padrões de busca)
+
+	Comando para extração dos substantivos (ver arquivo 'n.txt'): 
+		grep -E "(\(s\.\)|\(s\. /)" glossario-preprocessed.txt > n1.txt
+	
+	Comando para a extração dos adjetivos (ver arquivos 'a1.txt' e 'a2.txt')
+		Para extração de todos os adjetivos: grep -E "adj\." glossario-preprocessed.txt > adj.txt
+		Para a extração apenas dos adjetivos de 1a classe: grep -E -v "(\(se\)+[[:space:]]|2a)" adj.txt > a1.txt
+		Para a extração apenas dos adjetivos de 2a classe: grep -E "(\(se\)+[[:space:]]|2a)" adj.txt > a2.txt
+
+	Comando para a extração dos pronomes pessoais (ver arquivos 'pron1.txt' e 'pron2.txt')
+		Para extração dos pronomes de 1a classe: grep -E "^[[:alpha:]]+[[:space:]]+\(pron\.\)" glossario-preprocessed.txt > pron1.txt
+		Para extração dos pronomes de 2a classe: grep -E "(aintá|ta \(pron|\(pron\. 2a)" glossario-preprocessed.txt > pron2.txt
+		sed 's/\(se\) \(adj\.\)/ADJ2/g' glossario-preprocessed.txt > glossario-preprocessed1.txt	
+		sed 's/aintá \(pron\.\) / PRONum\, PRONdois /g' glossario-preprocessed.txt > pron1.txt
+	
+	Comando para a extração dos indefinidos (ver arquivo 'indf.txt')
+		grep -E "indef\." glossario-preprocessed.txt > indf.txt
+		
+	Comando para a extração dos interrogativos (ver arquivo 'interr.txt')
+		grep -E "interr\." glossario-preprocessed.txt > interr.txt
+		
+	Comando para a extração dos quantificadores (ver arquivo 'quantif.txt')
+		grep -E "quantif\." glossario-preprocessed.txt > quantif.txt
+
+	Comando para a extração dos intensificadores (ver arquivo 'intensif.txt')
+		grep -E "intensif\." glossario-preprocessed.txt > intensif.txt
+		
+	Comando para a extração dos relativo (ver arquivo 'rel.txt')
+		grep -E "pron\.+[[:space:]]+relativo" glossario-preprocessed.txt > rel.txt
+		
+	Comando para a extração dos pronome objeto (ver arquivo 'obj.txt')
+		grep -E "obj\." glossario-preprocessed.txt > obj.txt
+
+	Comando para a extração dos numerais (ver arquivo 'num.txt')
+		grep -E "num\." glossario-preprocessed.txt > num.txt
+		
+	Comando para juntar todas as tabelas geradas a partir dos arquivos da Etapa 3, organizando o conteúdo em ordem alfabética:
+		cat a1-tagged.txt a2-tagged.txt intrr-tagged.txt noun-tagged.txt pron1-tagged.txt pron2-tagged.txt indf-tagged.txt num-tagged.txt quant-tagged.txt | sort > sn-dictionaryAZ.txt
+		
+	Comando para localizar linhas repetidas:
+		uniq -D sn-yrl-dict.txt
+		
+	Comando para excluir linhas repetidas:
+		uniq sn-yrl-dict.txt > sn-yrl-dict-uniq.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

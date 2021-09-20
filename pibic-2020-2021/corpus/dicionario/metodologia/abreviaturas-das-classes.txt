@@ -1,0 +1,44 @@
+# Este documento contém o inventário dos padrões das classes que ocorrem no SN exatamente como aparecem no 'glossario-corrigido.txt'
+# Esses padrões serão utilizados na extração desses verbetes, que será feita por meio de expressões regulares.
+# A estrutura do arquivo é a seguinte: ">>> N", referente à etiqueta, e "(s.), (s./ adj.)", referente às abreviaturas das classes como aparecem no 'glossario-corrigido.txt'
+# Atualização: 15/06/2021
+
+>>> N (OK)
+(s.)
+(s. / adj.)
+
+>>> A1 (OK)
+(adj.)
+(adj.)
+(adj./ adv.)
+(s. / adj.)
+
+>>> A2 (OK)
+(se) (adj.)
+(se) (adj. 2a cl.)
+(adj. 2a cl.)
+
+>>> DEM
+(dem.)
+(pron. dem.)
+
+>>> INDF (OK)
+(art. indef.)
+(pron. indef.)
+
+>>> PRON1 (OK)
+(pron.)
+
+>>> PRON2 (OK)
+(pron. 2a classe)
+(pron. 2a cl.)
+
+>>> Pronome (OK)
+(pron. obj.)
+(pron. interr.)
+(pron. quantif.)
+(pron. intensif.)
+(pron. relativo)
+
+>>> Numeral (OK)
+(num.)
