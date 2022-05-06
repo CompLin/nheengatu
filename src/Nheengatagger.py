@@ -55,20 +55,16 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
             wordList=mwe.get(thisToken)
             if wordList:
                 nextToken=tokenList[i+1]
-                lastchar=""
-                if nextToken[-1] in string.punctuation:
-                    lastchar=nextToken[-1]
-                for word in wordList:
-                    if nextToken == word:
-                        newList.append(f"{thisToken}{mwe_sep}{nextToken}")
-                        break
-                    elif nextToken[:-1] == word and lastchar:
+                if nextToken in wordList:
+                    newList.append(f"{thisToken}{mwe_sep}{nextToken}")
+                    tokenList.pop(i+1)
+                else:
+                    if nextToken[-1] in string.punctuation and nextToken[:-1] in wordList:
                         newList.append(f"{thisToken}{mwe_sep}{nextToken[:-1]}")
-                        newList.append(lastchar)
+                        newList.append(nextToken[-1])
                         tokenList.pop(i+1)
                         if i == len(tokenList)-1:
                             includeLast=False
-                        break
                     else:
                         newList.append(thisToken)
             else:
