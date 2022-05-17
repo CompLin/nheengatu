@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Date May 4, 2022
+# Date May 16, 2022
 
 import re, sys
 from Nheengatagger import extractLines
@@ -52,7 +52,7 @@ def getpron2(s):
 	return s.strip()[1:-1]
 
 def getrel(s):
-    s=s[1:-1]
+    s=s.strip()[1:-1]
     return [f.strip() for f in s.split(",")]
 
 def getpos(s):
@@ -74,7 +74,8 @@ def build(entries):
         elif entry[2] and getpron2(entry[2]) == "se":
             dic["pron2"] = getpron2(entry[2])
         elif entry[2] and not getpron2(entry[2]) == "se":
-            dic["rel"] = getrel(entry[2])
+            rel=getrel(entry[2])
+            dic["rel"] = rel
         dictlist.append(dic)
     return dictlist
 
