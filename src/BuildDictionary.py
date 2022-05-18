@@ -3,8 +3,10 @@
 # Author: Leonel Figueiredo de Alencar
 # Date May 16, 2022
 
-import re, sys
+import re, sys, os
 from Nheengatagger import extractLines
+
+DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu")
 
 MAPPING={}
 for l in """
@@ -31,75 +33,78 @@ suf.\tSUFF
 v.\tV
 v. 2ª cl.\tV2
 """.strip().split("\n"):
-	k,v=l.split("\t")
-	MAPPING[k]=v
+    k,v=l.split("\t")
+    MAPPING[k]=v
 
-REGEX=re.compile(r"""(\S+)\s+(\d\s+)? # groups 0 and 1: the lemma possibly followed by a numerical index
-    (\([^)]+\)\s+)? # groups 2 and 3: forms with a relational prefix and/or
+REGEX=re.compile(
+    r"""(\S+(\s+[^\d\W]+)?) # groups 0 and 1: lemma and optional 2nd token of lemma
+    \s+(\d\s+)? # group 2: optional numerical index
+    (\([^)]+\)\s+)? # groups 3 and 4: forms with a relational prefix and/or
     (\(se\)\s+)? # 3rd person singular inactive prefix
-    \((\w+\.[^)]*)\) # group 4: part of speech information
-    \s+\-(.+$) # group 5: gloss""",re.VERBOSE)
+    \((\w+\.[^)]*)\) # group 5: part of speech information
+    \s+\-(.+$) # group 6: gloss""",re.VERBOSE)
 
 def extractEntries(lines):
-	entries=[]
-	for line in lines:
-		m=REGEX.match(line)
-		if m:
-			entries.append(m.groups())
-	return entries
+    entries=[]
+    for line in lines:
+        m=REGEX.match(line)
+        if m:
+            entries.append(m.groups())
+    return entries
 
 def getpron2(s):
-	return s.strip()[1:-1]
+    return s.strip()[1:-1]
 
 def getrel(s):
     s=s.strip()[1:-1]
     return [f.strip() for f in s.split(",")]
 
 def getpos(s):
-	return " ".join(s.split())
+    return " ".join(s.split())
 
 def build(entries):
     dictlist=[]
     for entry in entries:
         dic={}
         dic["lemma"] = entry[0]
-        dic["pos"] = getpos(entry[4])
-        dic["gloss"] = entry[5]
-        if entry[1]:
-            dic["var"] = int(entry[1])
-        if entry[2] and entry[3]:
-            rel=getrel(entry[2])
-            pron2=getpron2(entry[3])
+        dic["pos"] = getpos(entry[5])
+        dic["gloss"] = entry[6]
+        if entry[2]:
+            var=entry[2].strip()
+            dic["var"] = int(var)
+        if entry[3] and entry[4]:
+            rel=getrel(entry[3])
+            pron2=getpron2(entry[4])
             dic["rel"], dic["pron2"] = rel, pron2
-        elif entry[2] and getpron2(entry[2]) == "se":
-            dic["pron2"] = getpron2(entry[2])
-        elif entry[2] and not getpron2(entry[2]) == "se":
-            rel=getrel(entry[2])
+        elif entry[3] and getpron2(entry[3]) == "se":
+            dic["pron2"] = getpron2(entry[3])
+        elif entry[3] and not getpron2(entry[3]) == "se":
+            rel=getrel(entry[3])
             dic["rel"] = rel
         dictlist.append(dic)
     return dictlist
 
 def getwords(key,value,dictlist):
-	return list(filter(lambda x: x.get(key) == value, dictlist))
+    return list(filter(lambda x: x.get(key) == value, dictlist))
 
 def printWordTags(dic,outfile=sys.stdout):
-		for entry in dic:
-			" ".join(entry['pos'].split())
-			print(f"{entry['lemma']}\t{entry['pos']}",file=outfile)
+        for entry in dic:
+            " ".join(entry['pos'].split())
+            print(f"{entry['lemma']}\t{entry['pos']}",file=outfile)
 
 def makeNumber(forms):
-	entries=[]
-	for form,parse in forms:
-		entries.append(f"{form}\t{parse}+SG")
-		entries.append(f"{form}-itá\t{parse}+PL")
-	return entries
+    entries=[]
+    for form,parse in forms:
+        entries.append(f"{form}\t{parse}+SG")
+        entries.append(f"{form}-itá\t{parse}+PL")
+    return entries
 
 def isImpersonal(gloss):
     return "(impess.)" in gloss # TODO: change 'gloss' to 'usage'
 
 def conjugateVerb(lemma,pos):
-	forms=[]
-	dic={
+    forms=[]
+    dic={
     'a': '1+SG',
     're': '2+SG',
     'u': '3',
@@ -108,15 +113,15 @@ def conjugateVerb(lemma,pos):
     'ta': '3+PL',
     'tau': '3+PL'
     }
-	if lemma == "yuri":
-		for pref,tag in dic.items():
-			if not '3' in tag:
-				forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
-		forms.append(f"uri\t{lemma}+{pos}+3")
-		return forms
-	for pref,tag in dic.items():
-		forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
-	return forms
+    if lemma == "yuri":
+        for pref,tag in dic.items():
+            if not '3' in tag:
+                forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
+        forms.append(f"uri\t{lemma}+{pos}+3")
+        return forms
+    for pref,tag in dic.items():
+        forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
+    return forms
 
 def WordParsePairs(dic):
     pairs=[]
@@ -131,7 +136,9 @@ def WordParsePairs(dic):
             l=len(rel)
             if l == 2:
                 forms.append((rel[0],f"{lemma}+{tag}+CONT"))
-                forms.append((rel[1],f"{lemma}+{tag}+NCONT"))
+                ncont=rel[1].split("/")
+                for form in ncont:
+                    forms.append((form,f"{lemma}+{tag}+NCONT"))
                 if tag == "N":
                     forms.append((lemma,f"{lemma}+{tag}+ABS"))
                     pairs.extend(makeNumber(forms))
@@ -151,13 +158,29 @@ def WordParsePairs(dic):
 
     return pairs
 
-def main(infile,outfile):
+def extractHomonyms(dictlist):
+	newdict=dict()
+	for dic in dictlist:
+		lemma=dic.pop('lemma')
+		if newdict.get(lemma):
+			newdict[lemma].append(dic)
+		else:
+			newdict[lemma]=[dic]
+	return newdict
+
+def main(infile="glossary.txt",outfile="lexicon.txt",path=None):
+    if path:
+        infile=os.path.join(path,infile)
+        outfile=os.path.join(path,outfile)
     entries=extractEntries(extractLines(infile))
     dictlist=build(entries)
-    pairs=WordParsePairs(getwords("pos","s.",dictlist))
+    pairs=WordParsePairs(dictlist)
     with open(outfile, 'w') as f:
-        print(*pairs,file=f)
+        print(*pairs,sep="\n",file=f)
 
 
 if __name__ == "__main__":
-        main(sys.argv[1])
+    if len(sys.argv) > 0:
+        main(*sys.argv[1:])
+    else:
+        main()
