@@ -52,12 +52,15 @@ apigawa	apigawa+N+SG
 apigawa-itá	apigawa+N+PL
 apigawa	apigawa+A
 apwã	apwã+A2
+arã	arã+PART
+arã	arã+ADP
 ara	ara+N+SG
 ara-itá	ara+N+PL
 ara	ara+N+SG
 ara-itá	ara+N+PL
 ara	ara+N+SG
 ara-itá	ara+N+PL
+arama	arama+PART
 arama	arama+ADP
 aramé	aramé+ADV
 aramenhuntu	aramenhuntu+ADV
@@ -478,6 +481,8 @@ yambeú	mbeú+V+1+PL
 pembeú	mbeú+V+2+PL
 tambeú	mbeú+V+3+PL
 taumbeú	mbeú+V+3+PL
+mbira	mbira+N+SG
+mbira-itá	mbira+N+PL
 ambirari	mbirari+V+1+SG
 rembirari	mbirari+V+2+SG
 umbirari	mbirari+V+3
@@ -503,7 +508,7 @@ yamburi	mburi+V+1+PL
 pemburi	mburi+V+2+PL
 tamburi	mburi+V+3+PL
 taumburi	mburi+V+3+PL
--me	-me+ADP
+-me	-me+None
 ameẽ	meẽ+V+1+SG
 remeẽ	meẽ+V+2+SG
 umeẽ	meẽ+V+3
@@ -992,6 +997,7 @@ taparawaka	parawaka+V+3+PL
 tauparawaka	parawaka+V+3+PL
 pausawa	pausawa+N+SG
 pausawa-itá	pausawa+N+PL
+-pawa	-pawa+SUFF
 pawa	pawa+INDF
 apawa	pawa+V+1+SG
 repawa	pawa+V+2+SG
@@ -1373,6 +1379,7 @@ sakanga	sakanga+N+NCONT+SG
 sakanga-itá	sakanga+N+NCONT+PL
 sakanga	sakanga+N+ABS+SG
 sakanga-itá	sakanga+N+ABS+PL
+sakurana	sakurana+A
 rakusawa	sakusawa+N+CONT+SG
 rakusawa-itá	sakusawa+N+CONT+PL
 sakusawa	sakusawa+N+NCONT+SG
@@ -1433,6 +1440,7 @@ sasisawa	sasisawa+N+SG
 sasisawa-itá	sasisawa+N+PL
 saurú	saurú+N+SG
 saurú-itá	saurú+N+PL
+-sawa	-sawa+SUFF
 rawa	sawa+N+CONT+SG
 rawa-itá	sawa+N+CONT+PL
 sawa	sawa+N+NCONT+SG
@@ -1557,12 +1565,14 @@ rimirikú	simirikú+N+CONT+SG
 rimirikú-itá	simirikú+N+CONT+PL
 simirikú	simirikú+N+NCONT+SG
 simirikú-itá	simirikú+N+NCONT+PL
+ximirikú	simirikú+N+NCONT+SG
+ximirikú-itá	simirikú+N+NCONT+PL
 simirikú	simirikú+N+ABS+SG
 simirikú-itá	simirikú+N+ABS+PL
-r	simirikú-putawa+N+CONT+SG
-r-itá	simirikú-putawa+N+CONT+PL
-s	simirikú-putawa+N+NCONT+SG
-s-itá	simirikú-putawa+N+NCONT+PL
+rimirikú-putawa	simirikú-putawa+N+CONT+SG
+rimirikú-putawa-itá	simirikú-putawa+N+CONT+PL
+simirikú-putawa	simirikú-putawa+N+NCONT+SG
+simirikú-putawa-itá	simirikú-putawa+N+NCONT+PL
 simirikú-putawa	simirikú-putawa+N+ABS+SG
 simirikú-putawa-itá	simirikú-putawa+N+ABS+PL
 asu	su+V+1+SG
@@ -1659,10 +1669,10 @@ supitá	supitá+N+ABS+SG
 supitá-itá	supitá+N+ABS+PL
 surara	surara+N+SG
 surara-itá	surara+N+PL
-r	surisawa+N+CONT+SG
-r-itá	surisawa+N+CONT+PL
-s	surisawa+N+NCONT+SG
-s-itá	surisawa+N+NCONT+PL
+rurisawa	surisawa+N+CONT+SG
+rurisawa-itá	surisawa+N+CONT+PL
+surisawa	surisawa+N+NCONT+SG
+surisawa-itá	surisawa+N+NCONT+PL
 surisawa	surisawa+N+ABS+SG
 surisawa-itá	surisawa+N+ABS+PL
 suriwara	suriwara+N+SG
@@ -1751,6 +1761,7 @@ tatá	tatá+N+ABS+SG
 tatá-itá	tatá+N+ABS+PL
 tatú	tatú+N+SG
 tatú-itá	tatú+N+PL
+-tawa	-tawa+SUFF
 tawa	tawa+N+SG
 tawa-itá	tawa+N+PL
 rayera	tayera+N+CONT+SG
@@ -1910,6 +1921,7 @@ xipú-itá	xipú+N+PL
 xirura	xirura+N+SG
 xirura-itá	xirura+N+PL
 xukúi	xukúi+V
+xupé	xupé+ADP
 u	u+CONJ
 aú	ú+V+1+SG
 reú	ú+V+2+SG
@@ -1918,6 +1930,7 @@ yaú	ú+V+1+PL
 peú	ú+V+2+PL
 taú	ú+V+3+PL
 tauú	ú+V+3+PL
+uã	uã+PART
 uí	uí+N+SG
 uí-itá	uí+N+PL
 uií	uií+ADV
@@ -1951,6 +1964,7 @@ sukena-itá	ukena+N+NCONT+PL
 ukena	ukena+N+ABS+SG
 ukena-itá	ukena+N+ABS+PL
 umbaá	umbaá+ADV
+upanhẽ	upanhẽ+QUANT
 upé	upé+ADP
 urubú	urubú+N+SG
 urubú-itá	urubú+N+PL
@@ -1961,6 +1975,7 @@ waá	waá+REL
 waimĩ	waimĩ+N+SG
 waimĩ-itá	waimĩ+N+PL
 waimĩ	waimĩ+A
+wana	wana+PART
 awapika	wapika+V+1+SG
 rewapika	wapika+V+2+SG
 uwapika	wapika+V+3
@@ -2184,6 +2199,8 @@ yukira	yukira+N+SG
 yukira-itá	yukira+N+PL
 yukisé	yukisé+N+SG
 yukisé-itá	yukisé+N+PL
+yukwakú	yukwakú+N+SG
+yukwakú-itá	yukwakú+N+PL
 yukwakusawa	yukwakusawa+N+SG
 yukwakusawa-itá	yukwakusawa+N+PL
 ayukwáu	yukwáu+V+1+SG
