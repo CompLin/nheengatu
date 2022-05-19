@@ -4,7 +4,6 @@
 # Date May 16, 2022
 
 import re, sys, os
-from Nheengatagger import extractLines
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu")
 
@@ -44,6 +43,9 @@ REGEX=re.compile(
     \((\w+\.[^)]*)\) # group 5: part of speech information
     \s+\-(.+$) # group 6: gloss""",re.VERBOSE)
 
+def extractLines(infile):
+    return [line.strip() for line in open(infile,"r").readlines() if line.strip() != ""]
+
 def extractEntries(lines):
     entries=[]
     for line in lines:
@@ -68,7 +70,7 @@ def build(entries):
         dic={}
         dic["lemma"] = entry[0]
         dic["pos"] = getpos(entry[5])
-        dic["gloss"] = entry[6]
+        dic["gloss"] = entry[6].strip()
         if entry[2]:
             var=entry[2].strip()
             dic["var"] = int(var)

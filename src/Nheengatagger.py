@@ -1,29 +1,45 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Date May 4, 2022
+# Last update: May 19, 2022
 
 import os, sys, string
 
 USER=os.path.expanduser("~")
-PATH=os.path.join(USER,"complin/nheengatu/pibic-2020-2021/nheentiquetador/nheentiquetador-2.0")
-INFILE=os.path.join(PATH,"sn-yrl-dict.txt")
+PATH=os.path.join(USER,"complin/nheengatu/data")
+INFILE=os.path.join(PATH,"lexicon.txt")
+PUNCTUATION=".,;:?!—"
 
+def includePunctuation(punctuation=PUNCTUATION):
+    punctdict={}
+    tagSet=set()
+    tagSet.add("PUNCT")
+    punctlist=list(punctuation)
+    for punct in punctlist:
+        punctdict[(punct,)]=tagSet
+    return punctdict
+
+def extractWordTag(entry):
+    word, parse = entry.split("\t")
+    pos = parse.split("+")[1]
+    return f"{word} {pos}"
 
 def extractLines(infile):
-    return [line.strip() for line in open(infile,"r").readlines() if line.strip() != ""]
+    return [extractWordTag(line.strip()) for line in open(infile,"r").readlines() if line.strip() != ""]
 
 def makeDictionary(lines):
-	dictionary=dict()
-	for line in lines:
-		stringlist=line.split()
-		token=tuple(stringlist[:-1])
-		tag=stringlist[-1]
-		if dictionary.get(token):
-			dictionary[token].append(tag)
-		else:
-			dictionary[token]=[tag]
-	return dictionary
+    dictionary=dict()
+    for line in lines:
+        stringlist=line.split()
+        token=tuple(stringlist[:-1])
+        tag=stringlist[-1]
+        tags=set()
+        if dictionary.get(token):
+            dictionary[token].add(tag)
+        else:
+            tags.add(tag)
+            dictionary[token]=tags
+    return dictionary
 
 def extractMWEs(dictionary):
     mwe = dict()
@@ -38,6 +54,7 @@ def extractMWEs(dictionary):
     return mwe
 
 DICTIONARY=makeDictionary(extractLines(INFILE))
+DICTIONARY.update(includePunctuation())
 MWE=extractMWEs(DICTIONARY)
 
 def tokenize(sentence,mwe=MWE,mwe_sep=" "):
@@ -81,23 +98,26 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
     return newList
 
 def tagWord(token,tagger=DICTIONARY):
-	return tagger.get(tuple(token.split()))
+    return tagger.get(tuple(token.split()))
 
 def tagSentence(sentence,tagger=DICTIONARY, tagsep="/", tokensep=" "):
     for token in tokenize(sentence):
-        tagList=tagWord(token)
-        tagString="???"
-        if tagList:
-            tagString="+".join(tagList)
+        tagSet=tagWord(token.lower())
+        tagString="PROPN"
+        if tagSet:
+            tagString="+".join(tagSet)
         print(f"{token}{tagsep}{tagString}",end=tokensep)
 
 def main(infile):
-    for line in extractLines(infile):
-        if line.startswith("#"):
-            print(line,"\n")
-        else:
-            tagSentence(line.lower())
-            print()
+    with open(infile) as f:
+        for line in f:
+            line=line.strip()
+            if line != "":
+                if line.startswith("#"):
+                    print(line,"\n")
+                else:
+                    tagSentence(line)
+                    print()
 
 if __name__ == "__main__":
         main(sys.argv[1])
