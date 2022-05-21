@@ -5,7 +5,7 @@
 
 import re, sys, os
 
-DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu")
+DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
 
 MAPPING={}
 for l in """
@@ -14,6 +14,7 @@ adj. 2ª cl.\tA2
 adv.\tADV
 adv. intensif.\tADVS
 adv. interr.\tADVR
+adv. rel.\tADVL
 art. indef.\tART
 conj.\tCONJ
 dem.\tDEM
