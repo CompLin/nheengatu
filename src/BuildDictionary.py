@@ -30,6 +30,7 @@ pron. interr.\tINT
 pron. quant.\tQUANT
 pron. relativo\tREL
 suf.\tSUFF
+pref.\tPREF
 v.\tV
 v. 2ª cl.\tV2
 """.strip().split("\n"):
