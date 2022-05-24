@@ -9,6 +9,9 @@ USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
 INFILE=os.path.join(PATH,"lexicon.txt")
 PUNCTUATION=".,;:?!—"
+MESSAGE="""'''Automatically POS-tagged by Nheengatagger.
+Metadata of the original corpus file reproduced below.'''
+"""
 
 def includePunctuation(punctuation=PUNCTUATION):
     punctdict={}
@@ -108,16 +111,36 @@ def tagSentence(sentence,tagger=DICTIONARY, tagsep="/", tokensep=" "):
             tagString="+".join(tagSet)
         print(f"{token}{tagsep}{tagString}",end=tokensep)
 
+def tagText(lines):
+	include=True
+	for line in lines:
+		line=line.strip()
+		if line.startswith("'''"):
+			include=False
+			print(line)
+		elif line.endswith("'''"):
+			include=True
+			print(line)
+		else:
+			if include:
+				if line.startswith("#"):
+					print(line)
+				else:
+					if line:
+						tagSentence(line)
+						print()
+					else:
+						print()
+			else:
+				print(line)
+
+
 def main(infile):
+    print(MESSAGE)
+    lines=[]
     with open(infile) as f:
-        for line in f:
-            line=line.strip()
-            if line != "":
-                if line.startswith("#"):
-                    print(line,"\n")
-                else:
-                    tagSentence(line)
-                    print()
+        lines=f.readlines()
+    tagText(lines)
 
 if __name__ == "__main__":
         main(sys.argv[1])
