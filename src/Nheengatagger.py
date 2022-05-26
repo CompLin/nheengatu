@@ -103,36 +103,46 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
 def tagWord(token,tagger=DICTIONARY):
     return tagger.get(tuple(token.split()))
 
-def tagSentence(sentence,tagger=DICTIONARY, tagsep="/", tokensep=" "):
-    for token in tokenize(sentence):
+def pprint(tagged, tagsep="/", tokensep=" "):
+    for token,tag in tagged:
+        print(f"{token}{tagsep}{tag}",end=tokensep)
+    print()
+
+def tagSentence(sentence,tagger=DICTIONARY, unknown="???"):
+    tagged=[]
+    tokens=tokenize(sentence)
+    for token in tokens:
+        tagString=unknown
         tagSet=tagWord(token.lower())
-        tagString="PROPN"
         if tagSet:
             tagString="+".join(tagSet)
-        print(f"{token}{tagsep}{tagString}",end=tokensep)
+        else:
+            if tokens.index(token) > 0 and token.istitle():
+                tagString="PROPN"
+        tagged.append((token,tagString))
+    return tagged
 
 def tagText(lines):
-	include=True
-	for line in lines:
-		line=line.strip()
-		if line.startswith("'''"):
-			include=False
-			print(line)
-		elif line.endswith("'''"):
-			include=True
-			print(line)
-		else:
-			if include:
-				if line.startswith("#"):
-					print(line)
-				else:
-					if line:
-						tagSentence(line)
-						print()
-					else:
-						print()
-			else:
-				print(line)
+    include=True
+    for line in lines:
+        line=line.strip()
+        if line.startswith("'''"):
+            include=False
+            print(line)
+        elif line.endswith("'''"):
+            include=True
+            print(line)
+        else:
+            if include:
+                if line.startswith("#"):
+                    print(line)
+                else:
+                    if line:
+                        pprint(tagSentence(line))
+                    else:
+                        print()
+            else:
+                print(line)
 
 
 def main(infile):
