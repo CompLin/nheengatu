@@ -66,7 +66,7 @@ def getrel(s):
 def getpos(s):
     return " ".join(s.split())
 
-def build(entries):
+def build(entries): #TODO: rename function
     dictlist=[]
     for entry in entries:
         dic={}
@@ -97,17 +97,17 @@ def printWordTags(dic,outfile=sys.stdout):
             print(f"{entry['lemma']}\t{entry['pos']}",file=outfile)
 
 def makeNumber(forms):
-    entries=[]
+    entries=set()
     for form,parse in forms:
-        entries.append(f"{form}\t{parse}+SG")
-        entries.append(f"{form}-itá\t{parse}+PL")
+        entries.add(f"{form}\t{parse}+SG")
+        entries.add(f"{form}-itá\t{parse}+PL")
     return entries
 
 def isImpersonal(gloss):
     return "(impess.)" in gloss # TODO: change 'gloss' to 'usage'
 
 def conjugateVerb(lemma,pos):
-    forms=[]
+    forms=set()
     dic={
     'a': '1+SG',
     're': '2+SG',
@@ -120,45 +120,45 @@ def conjugateVerb(lemma,pos):
     if lemma == "yuri":
         for pref,tag in dic.items():
             if not '3' in tag:
-                forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
-        forms.append(f"uri\t{lemma}+{pos}+3")
+                forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
+        forms.add(f"uri\t{lemma}+{pos}+3")
         return forms
     for pref,tag in dic.items():
-        forms.append(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
+        forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     return forms
 
 def WordParsePairs(dic):
-    pairs=[]
+    pairs=set()
     for n in dic:
         lemma=n.get('lemma')
         pos=n.get('pos') # TODO: change 'pos' to 'cat(egory) throughout the module'
         tags=[MAPPING.get(tag.strip()) for tag in pos.split("/")]
         rel=n.get('rel')
-        forms=[]
+        forms=set()
         if rel:
             tag=tags[0]
             l=len(rel)
             if l == 2:
-                forms.append((rel[0],f"{lemma}+{tag}+CONT"))
+                forms.add((rel[0],f"{lemma}+{tag}+CONT"))
                 ncont=rel[1].split("/")
                 for form in ncont:
-                    forms.append((form,f"{lemma}+{tag}+NCONT"))
+                    forms.add((form,f"{lemma}+{tag}+NCONT"))
                 if tag == "N":
-                    forms.append((lemma,f"{lemma}+{tag}+ABS"))
-                    pairs.extend(makeNumber(forms))
+                    forms.add((lemma,f"{lemma}+{tag}+ABS"))
+                    pairs.update(makeNumber(forms))
                 else:
-                    pairs.extend(forms)
+                    pairs.update(forms)
             elif l == 1:
-                pairs.append(f"{lemma}\t{lemma}+{tag}+CONT")
-                pairs.append(f"{rel[0]}\t{lemma}+{tag}+NCONT")
+                pairs.add(f"{lemma}\t{lemma}+{tag}+CONT")
+                pairs.add(f"{rel[0]}\t{lemma}+{tag}+NCONT")
         else:
             for tag in tags:
                 if tag == "N":
-                    pairs.extend(makeNumber([(lemma,f"{lemma}+N")]))
+                    pairs.update(makeNumber([(lemma,f"{lemma}+N")]))
                 elif tag == "V" and not isImpersonal(n.get('gloss')):
-                    pairs.extend(conjugateVerb(lemma,tag))
+                    pairs.update(conjugateVerb(lemma,tag))
                 else:
-                    pairs.append(f"{lemma}\t{lemma}+{tag}")
+                    pairs.add(f"{lemma}\t{lemma}+{tag}")
 
     return pairs
 
@@ -171,6 +171,19 @@ def extractHomonyms(dictlist):
 		else:
 			newdict[lemma]=[dic]
 	return newdict
+
+def WordParseDict(pairs):
+	dic={}
+	for pair in pairs:
+		word,parse = pair.split("\t")
+		lemma,features = parse.split("+",1)
+		tags=set()
+		if dic.get(word):
+			dic[word].add(features)
+		else:
+			tags.add(features)
+			dic[word]=tags
+	return dic
 
 def main(infile="glossary.txt",outfile="lexicon.txt",path=None):
     if path:
