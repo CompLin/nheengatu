@@ -185,13 +185,18 @@ def WordParseDict(pairs):
 			dic[word]=tags
 	return dic
 
+def sort(s):
+	i=s.index("\t")
+	return s[i+1:]
+
 def main(infile="glossary.txt",outfile="lexicon.txt",path=None):
     if path:
         infile=os.path.join(path,infile)
         outfile=os.path.join(path,outfile)
     entries=extractEntries(extractLines(infile))
     dictlist=build(entries)
-    pairs=WordParsePairs(dictlist)
+    pairs=list(WordParsePairs(dictlist))
+    pairs.sort(key= sort)
     with open(outfile, 'w') as f:
         print(*pairs,sep="\n",file=f)
 
