@@ -3,13 +3,16 @@
 # Author: Leonel Figueiredo de Alencar
 # Last update: May 30, 2022
 
-import os, sys, string, json
+import os, sys, string, json, datetime
 
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
 LEXICON=os.path.join(PATH,"lexicon.json")
-PUNCTUATION=".,;:?!—"
-MESSAGE="""'''Automatically POS-tagged by Nheengatagger.
+PUNCTUATION='.,;:?!—“”"…'
+OPERATOR="Leonel Figueiredo de Alencar"
+MESSAGE=f"""'''Automatically POS-tagged by Nheengatagger.
+Operator: {OPERATOR}.
+Date: {datetime.datetime.now().strftime("%c")}.
 Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
