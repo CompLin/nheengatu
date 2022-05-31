@@ -143,7 +143,7 @@ def tagSentence(sentence,tagger=DICTIONARY, unknown="???"):
         tagString=unknown
         tagSet=tagWord(token.lower())
         if tagSet:
-            tagString="+".join(tagSet)
+            tagString="+".join(sorted(tagSet))
         else:
             if tokens.index(token) > 0 and token.istitle():
                 tagString="PROPN"
