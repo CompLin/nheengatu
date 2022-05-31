@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 19, 2022
+# Last update: May 30, 2022
 
-import os, sys, string
+import os, sys, string, json
 
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
-INFILE=os.path.join(PATH,"lexicon.txt")
+LEXICON=os.path.join(PATH,"lexicon.json")
 PUNCTUATION=".,;:?!—"
 MESSAGE="""'''Automatically POS-tagged by Nheengatagger.
 Metadata of the original corpus file reproduced below.'''
 """
+NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
+'paulo', 'pedro', 'rute', 'são', 'tefé']
+
+def propernames(namelist=NAMES):
+	dic={}
+	for name in namelist:
+		dic[(name,)]={'PROPN'}
+	return dic
 
 def includePunctuation(punctuation=PUNCTUATION):
     punctdict={}
@@ -27,7 +35,7 @@ def extractWordTag(entry):
     pos = parse.split("+")[1]
     return f"{word} {pos}"
 
-def extractLines(infile):
+def extractLines(infile="lexicon.txt"):
     return [extractWordTag(line.strip()) for line in open(infile,"r").readlines() if line.strip() != ""]
 
 def makeDictionary(lines):
@@ -56,8 +64,28 @@ def extractMWEs(dictionary):
                 mwe[first]=[second]
     return mwe
 
-DICTIONARY=makeDictionary(extractLines(INFILE))
-DICTIONARY.update(includePunctuation())
+def convertDictionary(dic):
+    tagger={}
+    for word,parses in dic.items():
+        tags=set()
+        for parse in parses:
+            pos=parse[1].split('+',1)[0]
+            tags.add(pos)
+        tagger[tuple(word.split())]=tags
+    return tagger
+
+def buildDictionary(infile="lexicon.json"):
+    tagger={}
+    if infile.endswith("json"):
+        with open(infile) as f:
+            tagger = convertDictionary(json.load(f))
+    else:
+        tagger=makeDictionary(extractLines(infile))
+    tagger.update(includePunctuation())
+    tagger.update(propernames())
+    return tagger
+
+DICTIONARY=buildDictionary(LEXICON)
 MWE=extractMWEs(DICTIONARY)
 
 def tokenize(sentence,mwe=MWE,mwe_sep=" "):

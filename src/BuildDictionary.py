@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Date May 16, 2022
+# Date May 30, 2022
 
-import re, sys, os
+import re, sys, os, json
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
 
@@ -66,8 +66,8 @@ def getrel(s):
 def getpos(s):
     return " ".join(s.split())
 
-def build(entries): #TODO: rename function
-    dictlist=[]
+def buildGlossary(entries): #TODO: rename function
+    glossary=[]
     for entry in entries:
         dic={}
         dic["lemma"] = entry[0]
@@ -85,11 +85,11 @@ def build(entries): #TODO: rename function
         elif entry[3] and not getpron2(entry[3]) == "se":
             rel=getrel(entry[3])
             dic["rel"] = rel
-        dictlist.append(dic)
-    return dictlist
+        glossary.append(dic)
+    return glossary
 
-def getwords(key,value,dictlist):
-    return list(filter(lambda x: x.get(key) == value, dictlist))
+def getwords(key,value,glossary):
+    return list(filter(lambda x: x.get(key) == value, glossary))
 
 def printWordTags(dic,outfile=sys.stdout):
         for entry in dic:
@@ -127,9 +127,9 @@ def conjugateVerb(lemma,pos):
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     return forms
 
-def WordParsePairs(dic):
+def WordParsePairs(glossary):
     pairs=set()
-    for n in dic:
+    for n in glossary:
         lemma=n.get('lemma')
         pos=n.get('pos') # TODO: change 'pos' to 'cat(egory) throughout the module'
         tags=[MAPPING.get(tag.strip()) for tag in pos.split("/")]
@@ -162,9 +162,9 @@ def WordParsePairs(dic):
 
     return pairs
 
-def extractHomonyms(dictlist):
+def extractHomonyms(glossary):
 	newdict=dict()
-	for dic in dictlist:
+	for dic in glossary:
 		lemma=dic.pop('lemma')
 		if newdict.get(lemma):
 			newdict[lemma].append(dic)
@@ -177,29 +177,44 @@ def WordParseDict(pairs):
 	for pair in pairs:
 		word,parse = pair.split("\t")
 		lemma,features = parse.split("+",1)
-		tags=set()
 		if dic.get(word):
-			dic[word].add(features)
+			dic[word].append((lemma,features))
 		else:
-			tags.add(features)
-			dic[word]=tags
+			dic[word]=[(lemma,features)]
 	return dic
 
 def sort(s):
 	i=s.index("\t")
 	return s[i+1:]
 
-def main(infile="glossary.txt",outfile="lexicon.txt",path=None):
+def inGloss(string,glossary):
+	return set(filter(lambda x: string in x.get('gloss'),glossary))
+
+def saveJSON(glossary, outfile="glossary.json"):
+    with open(outfile, "w") as write_file:
+        json.dump(glossary, write_file, indent=4, ensure_ascii=False)
+
+def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
+    entries=extractEntries(extractLines(infile))
+    glossary=buildGlossary(entries)
+    saveJSON(glossary, outfile)
+
+def main(infile="glossary.txt",outfile="lexicon.json",path=None):
     if path:
         infile=os.path.join(path,infile)
         outfile=os.path.join(path,outfile)
     entries=extractEntries(extractLines(infile))
-    dictlist=build(entries)
-    pairs=list(WordParsePairs(dictlist))
+    glossary=buildGlossary(entries)
+    pairs=list(WordParsePairs(glossary))
     pairs.sort(key= sort)
     with open(outfile, 'w') as f:
-        print(*pairs,sep="\n",file=f)
-
+        if outfile.endswith(".json"):
+            json.dump(WordParseDict(pairs),
+            f,
+            indent=4,
+            ensure_ascii=False)
+        else:
+            print(*pairs,sep="\n",file=f)
 
 if __name__ == "__main__":
     if len(sys.argv) > 0:
