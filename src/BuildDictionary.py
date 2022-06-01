@@ -153,8 +153,8 @@ def WordParsePairs(glossary):
                 pairs.add(f"{rel[0]}\t{lemma}+{tag}+NCONT")
         else:
             for tag in tags:
-                if tag == "N":
-                    pairs.update(makeNumber([(lemma,f"{lemma}+N")]))
+                if tag in ('N','DEM','REL') or lemma in ('amú',):
+                    pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
                 elif tag == "V" and not isImpersonal(n.get('gloss')):
                     pairs.update(conjugateVerb(lemma,tag))
                 else:
