@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Tue May 31 11:16:42 2022.
+Date: Thu Jun  2 19:29:36 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -54,11 +54,11 @@ Reruri/V aé/PRON ixé/PRON arama/ADP+PART ./PUNCT
 Apurakí/V Maria/PROPN supé/ADP ./PUNCT 
 # Trabalho para Maria.
 
-Anheẽ/V “puranga/??? ara”/??? aintá/PRON supé/ADP ./PUNCT 
+Anheẽ/V “/PUNCT puranga/A+ADV ara/N ”/PUNCT aintá/PRON supé/ADP ./PUNCT 
 # Digo “bom dia” para eles.
 
-Unheẽ/V paá/PART yepé/ART+CONJ+NUM+PART ara/N i/PRON2 apigawa-itá/N supé../??? ./PUNCT 
-# Contam que disse um dia aos seus homens...
+Unheẽ/V paá/PART yepé/ART+CONJ+NUM+PART ara/N i/PRON2 apigawa-itá/N supé/ADP …/PUNCT 
+# Contam que disse um dia aos seus homens…
 
 Ixé/PRON apiripana/V xirura/N i/PRON2 xupé/ADP ./PUNCT 
 # Eu compro calça para ele.
@@ -75,7 +75,7 @@ Renheẽ/V kariwa/N nheenga/N rupí/ADP ./PUNCT
 Muíri/INDF+INT rupí/ADP taá/PART kwá/ADV+DEM kamixá/N ?/PUNCT 
 # Por quanto é esta camisa?
 
-Ayúri/??? se/PRON2 rupí/ADP ./PUNCT 
+Ayuri/V se/PRON2 rupí/ADP ./PUNCT 
 # Vim por mim.
 
 Remunhã/V sangawa/N rupí/ADP ./PUNCT 
@@ -87,14 +87,14 @@ Kwá/ADV+DEM rupí/ADP aikwé/V siía/QUANT mirá/N ./PUNCT
 Amú/INDF pituna/N piterarupí/ADP ,/PUNCT asendú/V yepé/ART+CONJ+NUM+PART nheenga/N ./PUNCT 
 # Pelo meio da outra noite, ouvi uma voz.
 
-Aintá/PRON usu/??? nhaã/DEM tatatingawasú/??? piterarupí../??? ./PUNCT 
-# Elas foram pelo meio daquela fumaça...
+Aintá/PRON usu/??? nhaã/DEM tatatingawasú/??? piterarupí/ADP …/PUNCT 
+# Elas foram pelo meio daquela fumaça…
 
 Aintá/PRON umuyeréu/V mirá-itawasú/??? aintá/PRON ararupí/ADP ./PUNCT 
 # Eles rolaram grandes paus por cima deles.
 
-Iwí/N wirarupí/ADP paá/PART aikwé/V pé../??? ./PUNCT 
-# Contam que, por baixo da terra, havia caminho...
+Iwí/N wirarupí/ADP paá/PART aikwé/V pé/N …/PUNCT 
+# Contam que, por baixo da terra, havia caminho…
 
 Se/PRON2 riré/ADP usika/V ana/PART amú/INDF apigawa/A+N ./PUNCT 
 # Depois de mim chegou outro homem.
@@ -108,7 +108,7 @@ Apurandú/V ne/PRON2 suí/ADP maã/INDF+INT+N aputari/V akwáu/V ./PUNCT
 Indé/PRON resemu/V se/PRON2 suí/ADP ./PUNCT 
 # Você nasceu (ou saiu) de mim.
 
-Ixé/PRON ayúri/??? paranã/N suí/ADP ./PUNCT 
+Ixé/PRON ayuri/V paranã/N suí/ADP ./PUNCT 
 # Eu venho do rio.
 
 Aé/PRON uyupirú/V ana/PART uwatá/V garapá/N suí/ADP ./PUNCT 
@@ -168,10 +168,10 @@ Kwá/ADV+DEM garapá/N mirĩ/A+ADV ,/PUNCT nhaã/DEM umbaá/ADV ./PUNCT
 Kwá/ADV+DEM tawa/N puranga/A+ADV ,/PUNCT nhaã/DEM tawa/N puxiwera/A+ADV ./PUNCT 
 # Esta cidade é bonita, aquela cidade é feia.
 
-Kwá-itá/??? mirá/N santá/A ,/PUNCT nhaã-itá/??? membeka/A+N ./PUNCT 
+Kwá-itá/DEM mirá/N santá/A ,/PUNCT nhaã-itá/DEM membeka/A+N ./PUNCT 
 # Estas madeiras são duras, aquelas são moles.
 
-Amaã-putari/??? kwá/ADV+DEM uri/V waá-itá/??? ./PUNCT 
+Amaã-putari/??? kwá/ADV+DEM uri/V waá-itá/REL ./PUNCT 
 # Quero ver estes que vêm.
 
 Asú/V kurí/PART São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 

@@ -8,7 +8,7 @@ import os, sys, string, json, datetime
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
 LEXICON=os.path.join(PATH,"lexicon.json")
-PUNCTUATION='.,;:?!—“”"…'
+PUNCTUATION='''.,;':?!—“”"…()][}{'''
 OPERATOR="Leonel Figueiredo de Alencar"
 MESSAGE=f"""'''Automatically POS-tagged by Nheengatagger.
 Operator: {OPERATOR}.
@@ -16,13 +16,13 @@ Date: {datetime.datetime.now().strftime("%c")}.
 Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
-'paulo', 'pedro', 'rute', 'são', 'tefé']
+'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana']
 
 def propernames(namelist=NAMES):
-	dic={}
-	for name in namelist:
-		dic[(name,)]={'PROPN'}
-	return dic
+    dic={}
+    for name in namelist:
+        dic[(name,)]={'PROPN'}
+    return dic
 
 def includePunctuation(punctuation=PUNCTUATION):
     punctdict={}
@@ -91,6 +91,21 @@ def buildDictionary(infile="lexicon.json"):
 DICTIONARY=buildDictionary(LEXICON)
 MWE=extractMWEs(DICTIONARY)
 
+def splitPunctuation(token,punctuation=PUNCTUATION):
+    tokenlist=[]
+    tokenlist.append(token[-1])
+    i=-2
+    while(i > -len(token)):
+        char=token[i]
+        if char in punctuation:
+            tokenlist.append(char)
+        else:
+            tokenlist.append(token[:i+1])
+            break
+        i=i-1
+    tokenlist.reverse()
+    return tokenlist
+
 def tokenize(sentence,mwe=MWE,mwe_sep=" "):
     tokenList=sentence.split()
     includeLast=True
@@ -99,9 +114,12 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
     while(i < len(tokenList)-1):
         thisToken=tokenList[i]
         lastchar=thisToken[-1]
-        if lastchar in string.punctuation:
-            newList.append(thisToken[:-1])
-            newList.append(lastchar)
+        firstchar=thisToken[0]
+        if firstchar in PUNCTUATION:
+            newList.append(firstchar)
+            thisToken=thisToken[1:]
+        if lastchar in PUNCTUATION:
+            newList.extend(splitPunctuation(thisToken))
         else:
             wordList=mwe.get(thisToken)
             if wordList:
@@ -110,7 +128,7 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
                     newList.append(f"{thisToken}{mwe_sep}{nextToken}")
                     tokenList.pop(i+1)
                 else:
-                    if nextToken[-1] in string.punctuation and nextToken[:-1] in wordList:
+                    if nextToken[-1] in PUNCTUATION and nextToken[:-1] in wordList:
                         newList.append(f"{thisToken}{mwe_sep}{nextToken[:-1]}")
                         newList.append(nextToken[-1])
                         tokenList.pop(i+1)
@@ -124,9 +142,8 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
     if includeLast:
         lastToken=tokenList[-1]
         lastchar=lastToken[-1]
-        if lastchar in string.punctuation:
-            newList.append(lastToken[:-1])
-            newList.append(lastchar)
+        if lastchar in PUNCTUATION:
+            newList.extend(splitPunctuation(lastToken))
         else:
             newList.append(lastToken)
     return newList
