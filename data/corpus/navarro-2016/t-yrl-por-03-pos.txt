@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:29:37 2022.
+Date: Thu Jun  2 19:38:23 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -39,7 +39,7 @@ Aé/PRON unheẽ/V yepé/ART+CONJ+NUM+PART meẽsara/N supé/ADP :/PUNCT
 Ixé/PRON aputari/V yepé/ART+CONJ+NUM+PART kamixá/N se/PRON2 mimbira/N supé/ADP ./PUNCT 
 # Eu quero uma camisa para meu filho.
 
-Aé/PRON urikú/V mukũi/NUM akayú/N ./PUNCT 
+Aé/PRON urikú/V mukũi/NUM+QUANT akayú/N ./PUNCT 
 # Ele tem dois anos.
 
 Kwá/ADV+DEM kamixá/N puranga/A+ADV retana/ADVS ./PUNCT 
@@ -69,13 +69,13 @@ Kwá/ADV+DEM puranga/A+ADV ./PUNCT
 Muíri/INDF+INT rupí/ADP taá/PART kwá/ADV+DEM xirura/N ?/PUNCT 
 # Por quanto é esta calça?
 
-Mukũi/NUM real/??? ./PUNCT 
+Mukũi/NUM+QUANT real/??? ./PUNCT 
 # Dois reais.
 
 Muíri/INDF+INT rupí/ADP nhaã/DEM ?/PUNCT 
 # Por quanto é aquela?
 
-Nhaã/DEM xirura/N mukũi/NUM real/??? yuíri/ADV+CONJ ./PUNCT 
+Nhaã/DEM xirura/N mukũi/NUM+QUANT real/??? yuíri/ADV+CONJ ./PUNCT 
 # Aquela calça é dois reais também.
 
 Aputari/V nhaã/DEM ./PUNCT 
