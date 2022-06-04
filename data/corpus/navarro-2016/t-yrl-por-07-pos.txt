@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:24 2022.
+Date: Sat Jun  4 13:10:01 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -15,16 +15,16 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 Maria/PROPN umunhã/V timbiú/N ./PUNCT 
 # Maria faz comida.
 
-Maria/PROPN umemũi/V kuri/??? timbiú/N i/PRON2 anama-itá/N supé/ADP ./PUNCT 
+Maria/PROPN umemũi/V kurí/PART timbiú/N i/PRON2 anama-itá/N supé/ADP ./PUNCT 
 # Maria vai cozinhar comida para seus parentes.
 
-Aé/PRON umunhã/V kurí/PART kwaíra/A uí/N yuíri/ADV+CONJ ./PUNCT 
+Aé/PRON umunhã/V kurí/PART kwaíra/A uí/N yuíri/ADV+CONJ+V ./PUNCT 
 # Ela fará um pouco de farinha também.
 
 Aé/PRON upisika/V maniaka/N ,/PUNCT upiruka/V aé/PRON ,/PUNCT ukitika/V aé/PRON i/PRON2 iwisé/N irũmu/ADP ./PUNCT 
 # Ela pega a mandioca, descasca-a, rala-a com seu ralador.
 
-Ariré/ADV ,/PUNCT aé/PRON upurakari/V tipití/N maniaka/N kitika/A irũmu/ADP ./PUNCT 
+Ariré/ADV ,/PUNCT aé/PRON upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP ./PUNCT 
 # Depois, ela enche o tipití com a mandioca ralada.
 
 Utipika/V aé/PRON ,/PUNCT umusemu/V manikwera/N ,/PUNCT umburi/V pá/INDF urupema/N upé/ADP ,/PUNCT umuáu/V uí/N ,/PUNCT umutiní/V aé/PRON yapuna/N upé/ADP ./PUNCT 
@@ -42,7 +42,7 @@ Aé/PRON unheẽ/V :/PUNCT
 Se/PRON2 mimbira/N ,/PUNCT reyuri/V repitimũ/V ixé/PRON se/PRON2 purakisawa/N upé/ADP ./PUNCT 
 # Meu filho, venha ajudar-me no meu trabalho.
 
-Maã/INDF+INT+N taá/PART reputari/V ixé/PRON amunhã/V ?/PUNCT 
+Maã/INDF+INT+N+V taá/PART reputari/V ixé/PRON amunhã/V ?/PUNCT 
 # Que você quer que eu faça?
 
 Remundeka/V tatá/N ixé/PRON arama/ADP+PART ./PUNCT 
@@ -84,7 +84,7 @@ Yepeawa/N upawa/V ana/PART ./PUNCT
 Antônio/PROPN ururi/V ana/PART piri/ADP+ADV yepeawa/N memũitawa/N kití/ADP ./PUNCT 
 # Antônio já trouxe mais lenha para o fogão.
 
-Tik/??? !/PUNCT 
+Tik/INTJ !/PUNCT 
 # Nossa!
 
 Manha/N ,/PUNCT repuíri/V timbiú/N !/PUNCT 
@@ -93,7 +93,7 @@ Manha/N ,/PUNCT repuíri/V timbiú/N !/PUNCT
 Aé/PRON ukái/V uikú/V !/PUNCT 
 # Ela está-se queimando!
 
-Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+CONJ ?/PUNCT 
+Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+CONJ+V ?/PUNCT 
 # Antônio, você quer que eu faça biju também?
 
 Eẽ/PART ,/PUNCT meyú/N sé/A+ADV ./PUNCT 

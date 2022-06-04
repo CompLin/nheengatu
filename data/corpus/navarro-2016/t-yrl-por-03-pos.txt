@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:23 2022.
+Date: Sat Jun  4 13:10:01 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -27,7 +27,7 @@ São/PROPN Gabriel/PROPN tawa/N puranga/A+ADV ,/PUNCT apekatú/A+ADV Barra/PROPN
 Siía/QUANT mira/N umurari/V ape/ADV+CONJ ./PUNCT 
 # Muitas pessoas moram ali.
 
-Aé/PRON upiripana/V kurí/PART maã-itá/N i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+CONJ ./PUNCT 
+Aé/PRON upiripana/V kurí/PART maã-itá/N i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+CONJ+V ./PUNCT 
 # Ela vai comprar coisas para seu filho, para seu marido também.
 
 Aé/PRON usika/V ape/ADV+CONJ ,/PUNCT usú/V yepé/ART+CONJ+NUM+PART piripanasawa/N ruka/N kití/ADP ./PUNCT 
@@ -48,10 +48,10 @@ Kwá/ADV+DEM kamixá/N puranga/A+ADV retana/ADVS ./PUNCT
 Aé/PRON sepiasuíma/A ./PUNCT 
 # Ela é barata.
 
-Maã/INDF+INT+N taá/PART aikwé/V se/PRON2 mena/N supé/ADP ?/PUNCT 
+Maã/INDF+INT+N+V taá/PART aikwé/V se/PRON2 mena/N supé/ADP ?/PUNCT 
 # Que há para o meu marido?
 
-Maã/INDF+INT+N taá/PART indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT 
+Maã/INDF+INT+N+V taá/PART indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT 
 # Que você quer para seu marido?
 
 Se/PRON2 mena/N upurakí/V kurí/PART garapá/N upé/ADP ./PUNCT 
@@ -75,7 +75,7 @@ Mukũi/NUM+QUANT real/??? ./PUNCT
 Muíri/INDF+INT rupí/ADP nhaã/DEM ?/PUNCT 
 # Por quanto é aquela?
 
-Nhaã/DEM xirura/N mukũi/NUM+QUANT real/??? yuíri/ADV+CONJ ./PUNCT 
+Nhaã/DEM xirura/N mukũi/NUM+QUANT real/??? yuíri/ADV+CONJ+V ./PUNCT 
 # Aquela calça é dois reais também.
 
 Aputari/V nhaã/DEM ./PUNCT 
@@ -90,7 +90,7 @@ Nti/ADV reputari/V ne maã/INDF indé/PRON arama/ADP+PART ?/PUNCT
 Umbaá/ADV ./PUNCT 
 # Não.
 
-Ariré/ADV kuri/??? apiripana/V maã-itá/N ixé/PRON arama/ADP+PART ./PUNCT 
+Ariré/ADV kurí/PART apiripana/V maã-itá/N ixé/PRON arama/ADP+PART ./PUNCT 
 # Depois comprarei coisas para mim.
 
 Xukúi/V sekuyara/N ./PUNCT 

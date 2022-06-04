@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:23 2022.
+Date: Sat Jun  4 13:10:00 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -57,7 +57,7 @@ Maria/PROPN uikú/V será/PART igara/N upé/ADP ?/PUNCT
 Reputari/V será/PART pirá/N ?/PUNCT 
 # Queres o peixe?
 
-Remunhã/V será/PART maã/INDF+INT+N amunhã/V ?/PUNCT 
+Remunhã/V será/PART maã/INDF+INT+N+V amunhã/V ?/PUNCT 
 # Você faz o que eu faço?
 
 Nti/ADV será/PART indé/PRON ?/PUNCT 
@@ -66,13 +66,13 @@ Nti/ADV será/PART indé/PRON ?/PUNCT
 Mira/N será/PART indé/PRON ?/PUNCT 
 # Você é gente?
 
-Maã/INDF+INT+N taá/PART indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
+Maã/INDF+INT+N+V taá/PART indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
 # Que você quer para Maria?
 
 Kuíri/ADV taá/PART ?/PUNCT 
 # E agora?
 
-Asuí/ADV+CONJ taá/PART ?/PUNCT Maã/INDF+INT+N taá/PART kuri/??? yamunhã/V ?/PUNCT 
+Asuí/ADV+CONJ taá/PART ?/PUNCT Maã/INDF+INT+N+V taá/PART kurí/PART yamunhã/V ?/PUNCT 
 # E daí? Que faremos?
 
 Mamé/ADVR taá/PART té/ADV remaã/V se/PRON2 manha/N ?/PUNCT 
@@ -90,10 +90,10 @@ Awá/INDF+INT taá/PART usika/V ana/PART ?/PUNCT
 Awá/INDF+INT taá/PART uyuká/V awá/INDF+INT ?/PUNCT 
 # Quem matou quem?
 
-Maã/INDF+INT+N miapé/N taá/PART rerikú/V ?/PUNCT 
+Maã/INDF+INT+N+V miapé/N taá/PART rerikú/V ?/PUNCT 
 # Qual pão você tem?
 
-Ukwáu/V maã/INDF+INT+N i/PRON2 murakí/N ./PUNCT 
+Ukwáu/V maã/INDF+INT+N+V i/PRON2 murakí/N ./PUNCT 
 # Sabe qual é seu trabalho.
 
 Mayé/ADV+ADVR+CONJ waá/REL kunhã/A+N taá/PART usika/V ana/PART ?/PUNCT 

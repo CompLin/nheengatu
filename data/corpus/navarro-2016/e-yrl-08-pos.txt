@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:23 2022.
+Date: Sat Jun  4 13:10:01 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,7 +18,7 @@ Kunhã/A+N uyumaã/V waruá/N resé/ADP ./PUNCT
 Kunhã/A+N ,/PUNCT apigawa/A+N uyumaã/V ./PUNCT 
 # A mulher e o homem se veem.
 
-Maã/INDF+INT+N taá/PART ne/PRON2 rera/N ?/PUNCT 
+Maã/INDF+INT+N+V taá/PART ne/PRON2 rera/N ?/PUNCT 
 # Qual é seu nome?
 
 Ixé/PRON ayuseruka/??? Pedro/PROPN ./PUNCT 
@@ -27,7 +27,7 @@ Ixé/PRON ayuseruka/??? Pedro/PROPN ./PUNCT
 Apigawa/A+N uyuyuká/??? ana/PART ./PUNCT 
 # O homem se matou.
 
-Ayuyeréu/??? xinga/QUANT ./PUNCT 
+Ayuyeréu/??? xinga/ADVS+QUANT ./PUNCT 
 # Virei-me um pouco.
 
 Mukũi/NUM+QUANT apigawa/A+N uyuyuká/??? ./PUNCT 
@@ -42,10 +42,10 @@ Mamé/ADVR taá/PART puranga/A+ADV uyumunhã/V arã/ADP+PART yané/PRON2 ruka/N 
 Mamé/ADVR taá/PART puranga/A+ADV uyumunhã/V arã/ADP+PART yané/PRON2 ruka/N ?/PUNCT 
 # Onde é bom de ser feita nossa casa?
 
-Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/??? ne/PRON2 iwí/N ./PUNCT 
+Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/PART ne/PRON2 iwí/N ./PUNCT 
 # Dizem que chegou e viu que já se roçara tua terra.
 
-Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/??? ne/PRON2 iwí/N ./PUNCT 
+Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/PART ne/PRON2 iwí/N ./PUNCT 
 # Dizem que chegou e viu que fora roçada tua terra.
 
 Mira/N puxí/A+ADV uyumundú/??? apekatú/A+ADV kití/ADP ./PUNCT 
@@ -60,7 +60,7 @@ Kamixá/N uyatikú/V uikú/V mirá/N resé/ADP ./PUNCT
 Maria/PROPN ukitika/V maniaka/N ./PUNCT 
 # Maria rala a mandioca.
 
-Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A irũmu/ADP ./PUNCT 
+Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP ./PUNCT 
 # Maria enche o tipití com a mandioca ralada.
 
 Pedro/PROPN ,/PUNCT paá/PART ,/PUNCT sera/N ./PUNCT 

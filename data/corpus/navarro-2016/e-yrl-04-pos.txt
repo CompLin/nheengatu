@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:23 2022.
+Date: Sat Jun  4 13:10:01 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -42,7 +42,7 @@ Uií/ADV ara/N umanũ/V waá-itá/REL ara/N ./PUNCT
 Akwáu/V amunhã/V waá/REL ./PUNCT 
 # Sei o que faço.
 
-Akwáu/V maã/INDF+INT+N amunhã/V waá/REL ./PUNCT 
+Akwáu/V maã/INDF+INT+N+V amunhã/V waá/REL ./PUNCT 
 # Sei o que faço.
 
 Aé/PRON upitá-putari/??? mamé/ADVR puranga/A+ADV waá/REL ./PUNCT 
@@ -139,7 +139,7 @@ itá/N mirĩ/A+ADV
 Kwaíra/A ramé/ADP+CONJ rẽ/ADV ,/PUNCT paá/PART ,/PUNCT ixé/PRON ,/PUNCT purangamirĩ/??? aikú/V ./PUNCT 
 # Dizem que, quando eu ainda era pequeno, bonitinho estava.
 
-Aé/PRON kwera/A ,/PUNCT taité/??? !/PUNCT 
+Aé/PRON kwera/A ,/PUNCT taité/INTJ !/PUNCT 
 # Ele já era, coitado!
 
 Pedro/PROPN uyuká/V ana/PART yawareté/N ./PUNCT Aé/PRON kwera/A ./PUNCT 

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Thu Jun  2 19:38:24 2022.
+Date: Sat Jun  4 13:10:01 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -9,17 +9,17 @@ NAVARRO, Eduardo de Almeida. Curso de Língua Geral (nheengatu ou tupi moderno):
 
 Therefore, this data may be subject to copyrights of the author of this book.'''
 
-# Producer: Juliana Lopes Gurgel
-# Last update: May 15, 2022
+# Producer: Juliana Lopes Gurgel - Reviewer: Leonel Figueiredo de Alencar
+# Last update: June 3, 2022
 
-Murasí/N iwaka/N upé/ADP ./PUNCT 
-# Baile no céu.
+Murasí/N iwaka/N upé/ADP 
+# Baile no céu
 
 Amú/INDF pituna/N ramé/ADP+CONJ ,/PUNCT Maria/PROPN umbeú/V ana/PART amú/INDF marandua/N i/PRON2 mimbira/N supé/ADP :/PUNCT 
 # Na outra noite, Maria contou outra história a seu filho:
 
-Yepé/ART+CONJ+NUM+PART ara/N ,/PUNCT paá/PART ,/PUNCT São/PROPN Pedro/PROPN umunhã/V yepé/ART+CONJ+NUM+PART murasí/N iwaka/N kití/ADP ./PUNCT 
-# Dizem que, um dia, São Pedro fez um baile lá para os lados do céu.
+“/PUNCT Yepé/ART+CONJ+NUM+PART ara/N ,/PUNCT paá/PART ,/PUNCT São/PROPN Pedro/PROPN umunhã/V yepé/ART+CONJ+NUM+PART murasí/N iwaka/N kití/ADP ./PUNCT 
+# “Dizem que, um dia, São Pedro fez um baile lá para os lados do céu.
 
 Ape/ADV+CONJ ,/PUNCT usenũi/V panhẽsuú/??? usú/V arã/ADP+PART umaã/V murasí/N ./PUNCT 
 # Então chamou todos os animais para irem ver o baile.
@@ -27,8 +27,8 @@ Ape/ADV+CONJ ,/PUNCT usenũi/V panhẽsuú/??? usú/V arã/ADP+PART umaã/V mura
 Ape/ADV+CONJ yautí/N ,/PUNCT paá/PART ,/PUNCT unheẽ/V :/PUNCT 
 # Contam que, então, o jabuti disse:
 
-Ti/??? mayé/ADV+ADVR+CONJ asú/V akití/ADV ./PUNCT 
-# Não há como eu ir para lá.
+—/PUNCT Ti/ADV mayé/ADV+ADVR+CONJ asú/V akití/ADV ./PUNCT 
+# — Não há como eu ir para lá.
 
 Ixé/PRON amaã/V arama/ADP+PART yepé/ART+CONJ+NUM+PART nhaã/DEM murasí/N ,/PUNCT ma/CONJ nti/ADV arikú/V se/PRON2 pepú/N awewé/V arã/ADP+PART ./PUNCT 
 # Era para eu ver aquele baile, mas não tenho (minhas) asas para voar.
@@ -36,19 +36,22 @@ Ixé/PRON amaã/V arama/ADP+PART yepé/ART+CONJ+NUM+PART nhaã/DEM murasí/N ,/P
 Ape/ADV+CONJ té/ADV ,/PUNCT paá/PART ,/PUNCT usasá/V sumuara/N urubú/N ./PUNCT 
 # Contam que, nesse momento mesmo, passou o seu amigo urubu.
 
-Eh/??? compadre/??? !/PUNCT unheẽ/V ,/PUNCT paá/PART ,/PUNCT indé/PRON nti/ADV será/PART rerasú/V ixé/PRON iwaka/N kití/ADP amaã/V arã/ADP+PART murasí/N ?/PUNCT 
-# Contam que disse: Eh compadre, você não me leva para o céu para ver o baile?
+—/PUNCT Eh/PROPN compadre/??? !/PUNCT unheẽ/V ,/PUNCT paá/PART ,/PUNCT indé/PRON nti/ADV será/PART rerasú/V ixé/PRON iwaka/N kití/ADP amaã/V arã/ADP+PART murasí/N ?/PUNCT 
+# Contam que disse: — Eh compadre, você não me leva para o céu para ver o baile?
 
-Ah/??? !/PUNCT ,/PUNCT paá/PART ,/PUNCT unheẽ/V ,/PUNCT anhũresú/??? kwá/ADV+DEM ararapewa/N kwara/N upé/ADP ./PUNCT 
-#Contam que disse: Ah! só vai (se for) dentro deste violão.
+—/PUNCT Ah/PROPN !/PUNCT ,/PUNCT paá/PART ,/PUNCT unheẽ/V ,/PUNCT anhũresú/??? kwá/ADV+DEM ararapewa/N kwara/N upé/ADP ./PUNCT 
+# Contam que disse: — Ah! só vai (se for) dentro deste violão.
 
-Eré/ADV !/PUNCT 
-# Certo!
+—/PUNCT Eré/ADV !/PUNCT 
+# — Certo!
 
-Ape/ADV+CONJ yautí/N uyuruari/V ararapewa/N kwara/N upé/ADP ./PUNCT Usú/V ana/PART ./PUNCT 
-# Então o jabuti embarcou dentro do violão. Foram.
+Ape/ADV+CONJ yautí/N uyuruari/V ararapewa/N kwara/N upé/ADP ./PUNCT 
+# Então o jabuti embarcou dentro do violão.
 
-Ape/ADV+CONJ ,/PUNCT paá,urubú/??? uwewé/V i/PRON2 irũmu/ADP ./PUNCT 
+Usú/V ana/PART ./PUNCT 
+# Foram.
+
+Ape/ADV+CONJ ,/PUNCT paá/PART ,/PUNCT urubú/N uwewé/V i/PRON2 irũmu/ADP ./PUNCT 
 # Contam que, então, o urubu voou com ele.
 
 Usú/V té/ADV iwaka/N kití/ADP ./PUNCT 
@@ -90,5 +93,5 @@ Iwí/N kití/ADP uwari/V ,/PUNCT poh/??? !/PUNCT Iwí/N kití/ADP ,/PUNCT kwá/A
 Ape/ADV+CONJ yautí/N kwera/A upupuka/V pá/INDF ./PUNCT 
 # Então o jabuti (que “já era”) rebentou todo.
 
-Yawerã/CONJ ,/PUNCT paá/PART ,/PUNCT perewa/N rangawa/N nhuntu/ADV nhaã/DEM i/PRON2 pirera/N ./PUNCT 
-# Dizem que é por isso que são somente cicatrizes (sinais de feridas) aquele seu casco.
+Yawerã/CONJ ,/PUNCT paá/PART ,/PUNCT perewa/N rangawa/N nhuntu/ADV nhaã/DEM i/PRON2 pirera/N ./PUNCT ”/PUNCT 
+# Dizem que é por isso que são somente cicatrizes (sinais de feridas) aquele seu casco.”
