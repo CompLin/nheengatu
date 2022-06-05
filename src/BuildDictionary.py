@@ -7,6 +7,7 @@ import re, sys, os, json
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
 
+NFIN="NFIN"
 MAPPING={}
 for l in """
 adj.\tA
@@ -125,6 +126,7 @@ def conjugateVerb(lemma,pos):
         return forms
     for pref,tag in dic.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
+    forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
     return forms
 
 def WordParsePairs(glossary):

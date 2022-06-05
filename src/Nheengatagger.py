@@ -93,17 +93,21 @@ MWE=extractMWEs(DICTIONARY)
 
 def splitPunctuation(token,punctuation=PUNCTUATION):
     tokenlist=[]
-    tokenlist.append(token[-1])
-    i=-2
-    while(i > -len(token)):
-        char=token[i]
-        if char in punctuation:
-            tokenlist.append(char)
-        else:
-            tokenlist.append(token[:i+1])
-            break
-        i=i-1
-    tokenlist.reverse()
+    c= len(token)
+    if c == 1:
+        tokenlist.append(token)
+    elif c > 1:
+        tokenlist.append(token[-1])
+        i=-2
+        while(i > -len(token)):
+            char=token[i]
+            if char in punctuation:
+                tokenlist.append(char)
+            else:
+                tokenlist.append(token[:i+1])
+                break
+            i=i-1
+        tokenlist.reverse()
     return tokenlist
 
 def tokenize(sentence,mwe=MWE,mwe_sep=" "):
