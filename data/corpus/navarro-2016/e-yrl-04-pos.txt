@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun  4 13:10:01 2022.
+Date: Sat Jun 11 12:40:11 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -24,7 +24,7 @@ Kunhã-itá/N indé/PRON remaã/V waá/REL ne/PRON2 mimbira/N ./PUNCT
 Apigawa/A+N i/PRON2 paya/N waá/REL umurari/V iké/ADV ,/PUNCT sera/N José/PROPN ./PUNCT 
 # O homem que o pai dele mora aqui, seu nome é José.
 
-Pirá/N sera/N waá/REL pirarukú/N ,/PUNCT turusú/A retana/ADVS ./PUNCT 
+Pirá/N sera/N waá/REL pirarukú/N ,/PUNCT turusú/A+ADVS retana/ADVS ./PUNCT 
 # O peixe cujo nome é pirarucu, é muito grande.
 
 Amaã/V ana/PART yepé/ART+CONJ+NUM+PART kurumĩ/N ,/PUNCT kunhã/A+N puranga/A+ADV waá/REL mimbira/N ./PUNCT 
@@ -33,10 +33,10 @@ Amaã/V ana/PART yepé/ART+CONJ+NUM+PART kurumĩ/N ,/PUNCT kunhã/A+N puranga/A+
 Kunhã/A+N i/PRON2 mimbira/N waá/REL indé/PRON remaã/V ,/PUNCT usú/V paranã/N kití/ADP ./PUNCT 
 # A mulher cuja filha você vê, vai ao rio.
 
-Aikwé/V yepé/ART+CONJ+NUM+PART uka/N turusú/A waá/REL ./PUNCT 
+Aikwé/V yepé/ART+CONJ+NUM+PART uka/N turusú/A+ADVS waá/REL ./PUNCT 
 # Há uma casa que é grande.
 
-Uií/ADV ara/N umanũ/V waá-itá/REL ara/N ./PUNCT 
+Uií/ADV ara/N umanũ/??? waá-itá/REL ara/N ./PUNCT 
 # O dia de hoje é o dia dos que morreram.
 
 Akwáu/V amunhã/V waá/REL ./PUNCT 
@@ -121,13 +121,13 @@ Aikú/V nhaã/DEM tawa/N ruakí/ADP ./PUNCT
 Aikú/V suakí/ADP ./PUNCT 
 # Estou perto dela.
 
-Kwá/ADV+DEM mirá/N turusú/A ./PUNCT 
+Kwá/ADV+DEM mirá/N turusú/A+ADVS ./PUNCT 
 # Esta árvore é grande.
 
-Arikú/V yepé/ART+CONJ+NUM+PART uka/N turusú/A ./PUNCT 
+Arikú/V yepé/ART+CONJ+NUM+PART uka/N turusú/A+ADVS ./PUNCT 
 # Tenho uma casa grande.
 
-Awá/INDF+INT urikú/V turusú/A iwí/N umeẽ-kwáu/??? awá/INDF+INT nti/ADV urikú/V supé/ADP ./PUNCT 
+Awá/INDF+INT urikú/V turusú/A+ADVS iwí/N umeẽ-kwáu/??? awá/INDF+INT nti/ADV urikú/V supé/ADP ./PUNCT 
 # Quem tem muita terra pode dar para quem não tem.
 
 igara/N mirĩ/A+ADV 
@@ -148,5 +148,5 @@ Pedro/PROPN uyuká/V ana/PART yawareté/N ./PUNCT Aé/PRON kwera/A ./PUNCT
 Awá/INDF+INT kwera/A ?/PUNCT 
 # Quem era?
 
-Asuiwara/??? kwera/A ,/PUNCT mukũi/NUM+QUANT apigawa/A+N nhũ/??? upitá/V umanhana/??? uikú/V yané/PRON2 itá/N uka/N ./PUNCT 
+Asuiwara/??? kwera/A ,/PUNCT mukũi/NUM+QUANT apigawa/A+N nhũ/??? upitá/V umanhana/V uikú/V yané/PRON2 itá/N uka/N ./PUNCT 
 # Desde então, somente dois homens ficaram vigiando nossa casa de pedra.
