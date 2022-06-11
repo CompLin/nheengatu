@@ -89,9 +89,6 @@ def buildGlossary(entries): #TODO: rename function
         glossary.append(dic)
     return glossary
 
-def getwords(key,value,glossary):
-    return list(filter(lambda x: x.get(key) == value, glossary))
-
 def printWordTags(dic,outfile=sys.stdout):
         for entry in dic:
             " ".join(entry['pos'].split())
@@ -189,8 +186,21 @@ def sort(s):
 	i=s.index("\t")
 	return s[i+1:]
 
-def inGloss(string,glossary):
-	return set(filter(lambda x: string in x.get('gloss'),glossary))
+def loadGlossary(glossary=None, infile="glossary.json"):
+    if glossary:
+        glossary=glossary
+    else:
+        with open(infile) as f:
+            glossary = json.load(f)
+    return glossary
+
+def getwords(key,value,glossary=None, infile="glossary.json"):
+    glossary=loadGlossary(glossary,infile)
+    return list(filter(lambda x: x.get(key) == value, glossary))
+
+def inGloss(string,glossary=None, infile="glossary.json"):
+    glossary=loadGlossary(glossary,infile)
+    return list(filter(lambda x: string in x.get('gloss'),glossary))
 
 def saveJSON(glossary, outfile="glossary.json"):
     with open(outfile, "w") as write_file:
