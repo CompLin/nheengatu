@@ -162,29 +162,29 @@ def WordParsePairs(glossary):
     return pairs
 
 def extractHomonyms(glossary):
-	newdict=dict()
-	for dic in glossary:
-		lemma=dic.pop('lemma')
-		if newdict.get(lemma):
-			newdict[lemma].append(dic)
-		else:
-			newdict[lemma]=[dic]
-	return newdict
+    newdict=dict()
+    for dic in glossary:
+        lemma=dic.pop('lemma')
+        if newdict.get(lemma):
+            newdict[lemma].append(dic)
+        else:
+            newdict[lemma]=[dic]
+    return newdict
 
 def WordParseDict(pairs):
-	dic={}
-	for pair in pairs:
-		word,parse = pair.split("\t")
-		lemma,features = parse.split("+",1)
-		if dic.get(word):
-			dic[word].append((lemma,features))
-		else:
-			dic[word]=[(lemma,features)]
-	return dic
+    dic={}
+    for pair in pairs:
+        word,parse = pair.split("\t")
+        lemma,features = parse.split("+",1)
+        if dic.get(word):
+            dic[word].append((lemma,features))
+        else:
+            dic[word]=[(lemma,features)]
+    return dic
 
 def sort(s):
-	i=s.index("\t")
-	return s[i+1:]
+    i=s.index("\t")
+    return s[i+1:]
 
 def loadGlossary(glossary=None, infile="glossary.json"):
     if glossary:
@@ -193,6 +193,11 @@ def loadGlossary(glossary=None, infile="glossary.json"):
         with open(infile) as f:
             glossary = json.load(f)
     return glossary
+
+def loadLexicon(infile="lexicon.json"):
+    with open(infile) as f:
+        lexicon = json.load(f)
+    return lexicon
 
 def getwords(key,value,glossary=None, infile="glossary.json"):
     glossary=loadGlossary(glossary,infile)
@@ -210,6 +215,16 @@ def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
     entries=extractEntries(extractLines(infile))
     glossary=buildGlossary(entries)
     saveJSON(glossary, outfile)
+
+def parse(word,lexicon=None,infile="lexicon.json"):
+    if lexicon:
+        lexicon=lexicon
+    else:
+        lexicon=loadLexicon(infile)
+    parselist=lexicon.get(word)
+    if parselist:
+        for lemma,tags in parselist:
+            print(f"{word}\t{lemma}+{tags}")
 
 def main(infile="glossary.txt",outfile="lexicon.json",path=None):
     if path:
