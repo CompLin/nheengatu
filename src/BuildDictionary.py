@@ -216,6 +216,66 @@ def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
     glossary=buildGlossary(entries)
     saveJSON(glossary, outfile)
 
+def endswith(token,suff):
+    pat=rf"(^.+)({suff})$"
+    match=re.match(pat,token)
+    if match:
+        return match.groups()
+
+def insertA(word):
+    if not endswith(word,'[aeiou]'):
+        return f"{word}a"
+    return accent(word)
+
+def accent(word):
+    mapping={'a': 'á', 'e': 'é', 'o': 'ó', 'u': 'ú', 'i': 'í'}
+    for k,v in mapping.items():
+        if word.endswith(k):
+            return f"{word[:-1]}{v}"
+    return word
+
+def extract_pos(parses):
+    poslist=[]
+    for parse in parses:
+        poslist.append(parse[1].split('+')[0])
+    return poslist
+
+def guesser(token,lexicon):
+    mapping={"-itá": {"pos": "N", "number": "PL"},
+    "-kunhã|-apigawa": {"pos": "N", "number": "SG"},
+    "wasú": {"pos": "N", "number": "SG", "degree": "AUG", "function": accent},
+    "mirĩ": {"pos": "N", "number": "SG", "degree": "DIM", "function": accent},
+    "í|ĩ": {"pos": "N", "number": "SG", "degree": "DIM", "function": insertA},
+    }
+    entries=[]
+    for suff,entry in mapping.items():
+         groups=endswith(token,suff)
+         if groups:
+             base=groups[0]
+             function=entry.get('function')
+             parses=lexicon.get(base)
+             if parses:
+                 entry['lemma']=base
+                 poslist=extract_pos(parses)
+                 entry["pos"]='|'.join(poslist)
+                 entries.append(entry)
+                 break
+             else:
+                if function:
+                    lemma=function(base)
+                    entry['lemma']=lemma
+                    parses=lexicon.get(lemma)
+                    if parses:
+                        poslist=extract_pos(parses)
+                        entry["pos"]='|'.join(poslist)
+                    entries.append(entry)
+                    break
+                else:
+                    entry['lemma']=base
+                    entries.append(entry)
+                    break
+    return entries
+
 def parse(word,lexicon=None,infile="lexicon.json"):
     if lexicon:
         lexicon=lexicon
