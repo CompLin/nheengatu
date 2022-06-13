@@ -240,6 +240,12 @@ def extract_pos(parses):
         poslist.append(parse[1].split('+')[0])
     return poslist
 
+def copy_feats(entry1,entry2):
+    for feat in ['number','degree']:
+        value=entry1.get(feat)
+        if value:
+            entry2[feat]=value
+
 def guesser(token,lexicon):
     mapping={"-itá": {"pos": "N", "number": "PL"},
     "-kunhã|-apigawa": {"pos": "N", "number": "SG"},
@@ -251,29 +257,28 @@ def guesser(token,lexicon):
     for suff,entry in mapping.items():
          groups=endswith(token,suff)
          if groups:
+             lemmas=[]
              base=groups[0]
+             lemmas.append(base)
              function=entry.get('function')
-             parses=lexicon.get(base)
-             if parses:
-                 entry['lemma']=base
-                 poslist=extract_pos(parses)
-                 entry["pos"]='|'.join(poslist)
-                 entries.append(entry)
-                 break
-             else:
-                if function:
-                    lemma=function(base)
-                    entry['lemma']=lemma
-                    parses=lexicon.get(lemma)
-                    if parses:
-                        poslist=extract_pos(parses)
-                        entry["pos"]='|'.join(poslist)
-                    entries.append(entry)
-                    break
-                else:
-                    entry['lemma']=base
-                    entries.append(entry)
-                    break
+             if function:
+                 lemmas.append(function(base))
+             print(lemmas)
+             for lemma in lemmas:
+                new={}
+                parses=lexicon.get(lemma)
+                if parses:
+                    new['pos']='|'.join(extract_pos(parses))
+                    new['lemma']=lemma
+                    copy_feats(entry,new)
+                    entries.append(new)
+             if not entries:
+                new={}
+                new['pos']=entry['pos']
+                new['lemma']=lemmas[-1]
+                copy_feats(entry,new)
+                entries.append(new)
+             break
     return entries
 
 def parse(word,lexicon=None,infile="lexicon.json"):
@@ -285,6 +290,13 @@ def parse(word,lexicon=None,infile="lexicon.json"):
     if parselist:
         for lemma,tags in parselist:
             print(f"{word}\t{lemma}+{tags}")
+
+def test():
+	words="mirawasú yawaretewasú yuraraí tatuí itaí takwarĩ wiramirĩ miramirĩ purangamirĩ".split()
+	for word in words:
+		for d in guesser(word,lexicon):
+			print(d["lemma"],d.get('pos'),d.get('number'),d.get('degree'), end=" ")
+		print()
 
 def main(infile="glossary.txt",outfile="lexicon.json",path=None):
     if path:
