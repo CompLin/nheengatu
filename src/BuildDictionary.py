@@ -217,7 +217,7 @@ def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
     saveJSON(glossary, outfile)
 
 def endswith(token,suff):
-    pat=rf"(^.+)({suff})$"
+    pat=rf"(^.+)({suff})(-itá)?$"
     match=re.match(pat,token)
     if match:
         return match.groups()
@@ -240,46 +240,114 @@ def extract_pos(parses):
         poslist.append(parse[1].split('+')[0])
     return poslist
 
-def copy_feats(entry1,entry2):
-    for feat in ['number','degree']:
+featsdic={}
+def extract_feats(parses):
+    global featsdic
+    featsdic={'[123]': 'person','SG|PL': 'number','ABS|NCONT|CONT' : 'rel'}
+    entries=[]
+    for lemma,feats in parses:
+        new={}
+        new['lemma']=lemma
+        featslist=feats.split('+')
+        new['pos']=featslist[0]
+        for f in featslist[1:]:
+            for k,v in featsdic.items():
+                if f in k:
+                    new[v]=f
+        entries.append(new)
+    return entries
+
+def insertSingularNumber(entry):
+    pos=entry.get('pos')
+    if pos and pos == 'N':
+        if not entry.get('number'):
+            entry['number']='SG'
+
+def removeNumber(entry,number,feats):
+    if entry.get(number) == 'PL':
+        #print('number removed')
+        if number in feats:
+            feats.remove(number)
+    pos=entry.get('pos')
+    if pos and pos != 'N':
+        #print('number removed')
+        if number in feats:
+            feats.remove(number)
+
+def isNoun(entry):
+    return entry.get('pos') == 'N'
+
+def copy_feats(entry1,entry2,number='number'):
+    feats=['pos','suff']
+    feats.extend(list(featsdic.values()))
+    if entry1.get('default'):
+        entry2['pos']=entry1['default']
+    if entry2.get('pos'):
+        feats.remove('pos')
+    #print(f"entry 2 in copy_feats: {entry2}")
+    removeNumber(entry2,number,feats)
+    # or entry2.get('pos') != 'N'
+    #print(feats)
+    #print(feats)
+    for feat in feats:
         value=entry1.get(feat)
         if value:
             entry2[feat]=value
 
 def guesser(token,lexicon):
-    mapping={"-itá": {"pos": "N", "number": "PL"},
-    "-kunhã|-apigawa": {"pos": "N", "number": "SG"},
-    "wasú": {"pos": "N", "number": "SG", "degree": "AUG", "function": accent},
-    "mirĩ": {"pos": "N", "number": "SG", "degree": "DIM", "function": accent},
-    "í|ĩ": {"pos": "N", "number": "SG", "degree": "DIM", "function": insertA},
+    plural={"pos": "N", "number": "PL"}
+    mapping={
+    "wasú": {"default": "N", "suff": "AUG", "function": accent},
+    "mirĩ": {"default": "N", "suff": "DIM", "function": accent},
+    "í|ĩ": {"default": "N", "suff": "DIM", "function": insertA},
+    "wera": {"default": "V", "suff": "HAB", "function": accent},
+    "rana": {"default": "N", "suff": "APPR","function": accent},
+    "-kunhã": {"pos": "N",'suff' : 'F'},
+    "-apigawa": {"pos": "N", 'suff' : 'M'},
+    "sawa|tawa|pawa": {"pos": "N", "suff": "NMZ", "function": accent},
+    "sara": {"pos": "N", "suff": "AGN", "function": accent},
+    "tiwa": {"pos": "N", "suff": "COL", "function": accent},
+    "íma": {"pos": "A", "suff": "PRIV", "function": accent},
+    "wara|pura": {"pos": "A|N", "suff": "ORIG", "function": accent}
     }
-    entries=[]
+    newentries=[]
     for suff,entry in mapping.items():
          groups=endswith(token,suff)
          if groups:
-             lemmas=[]
+             lemmas=set()
              base=groups[0]
-             lemmas.append(base)
+             lemmas.add(base)
              function=entry.get('function')
              if function:
-                 lemmas.append(function(base))
-             print(lemmas)
+                 base=function(base)
+                 lemmas.add(base)
+             #print(lemmas)
              for lemma in lemmas:
-                new={}
                 parses=lexicon.get(lemma)
                 if parses:
-                    new['pos']='|'.join(extract_pos(parses))
-                    new['lemma']=lemma
-                    copy_feats(entry,new)
-                    entries.append(new)
-             if not entries:
+                    entries=extract_feats(parses)
+                    for ent in entries:
+                        new={}
+                        new['lemma']=lemma
+                        if entry.get('pos'):
+                            new['pos']=entry['pos']
+                        if groups[2] == '-itá':
+                            new.update(plural)
+                            #print(f"new: {new}")
+                        copy_feats(ent,new)
+                        new['suff']=entry['suff']
+                        insertSingularNumber(new)
+                        newentries.append(new)
+             if not newentries:
                 new={}
-                new['pos']=entry['pos']
-                new['lemma']=lemmas[-1]
+                if groups[2] == '-itá':
+                    new.update(plural)
+                new['lemma']=base
                 copy_feats(entry,new)
-                entries.append(new)
+                insertSingularNumber(new)
+                newentries.append(new)
              break
-    return entries
+    return newentries
 
 def parse(word,lexicon=None,infile="lexicon.json"):
     if lexicon:
@@ -291,12 +359,35 @@ def parse(word,lexicon=None,infile="lexicon.json"):
         for lemma,tags in parselist:
             print(f"{word}\t{lemma}+{tags}")
 
-def test():
-	words="mirawasú yawaretewasú yuraraí tatuí itaí takwarĩ wiramirĩ miramirĩ purangamirĩ".split()
-	for word in words:
-		for d in guesser(word,lexicon):
-			print(d["lemma"],d.get('pos'),d.get('number'),d.get('degree'), end=" ")
-		print()
+def words():
+    return [ 'purangamirĩ', 'mirawasú', 'miraíma', 'miratiwa',
+    'yurarawasú-itá', 'tatuí-itá', 'yuraraí-itá','miramirĩ-itá',
+    'yuraraí', 'yawaretewasú', 'yurarawasú', 'tatuí', 'itaí',
+    'takwarĩ', 'wiramirĩ', 'miramirĩ','yawareté-kunhã',
+    'yurará-apigawa', 'yurará-kunhã', 'yurará-apigawa-itá',
+    'yurará-kunhã-itá','yawareté-apigawa', 'yawareté-apigawa-itá',
+    'sakurana', 'kawĩrana', 'umundawera',
+    'kaapura', 'iwakapura', 'kaawara', 'iwakawara', 'pakuatiwa',
+    'mbauíma', 'seẽíma', 'watasara', 'mbuesara', 'kamundusara',
+    'kitikasara', 'surisawa', 'katusawa', 'yuraraíma']
+
+def test(outfile='outfile.txt', words=words()):
+    lexicon=loadLexicon()
+    output={}
+    for word in words:
+        output[word]=guesser(word,lexicon)
+    with open(outfile, 'w') as f:
+        if outfile.endswith(".json"):
+            json.dump(output,
+            f,
+            indent=4,
+            ensure_ascii=False)
+        else:
+            for word,entries in output.items():
+                print(word, end='\t', file=f)
+                for entry in entries:
+                    print(entry, end=" ",file=f)
+            print(file=f)
 
 def main(infile="glossary.txt",outfile="lexicon.json",path=None):
     if path:
