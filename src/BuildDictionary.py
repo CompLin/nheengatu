@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Date May 30, 2022
+# Last update June 23, 2022
 
 import re, sys, os, json
 
@@ -104,24 +104,56 @@ def makeNumber(forms):
 def isImpersonal(gloss):
     return "(impess.)" in gloss # TODO: change 'gloss' to 'usage'
 
-def conjugateVerb(lemma,pos):
-    forms=set()
-    dic={
-    'a': '1+SG',
-    're': '2+SG',
-    'u': '3',
-    'ya': '1+PL',
-    'pe': '2+PL',
-    'ta': '3+PL',
-    'tau': '3+PL'
+def parseprefs1(stem):
+    prefs={ 'yu' : 'REFL',
+       'mu' : 'CAUS'}
+    i=0
+    l=[]
+    for k,v in prefs.items():
+        if stem[i:].startswith(k):
+            l.append(v)
+            i=len(k)
+    return l
+
+def parseprefs(word):
+    prefs={ 'yu' : 'REFL',
+       'mu' : 'CAUS'}
+    i=0
+    l=[]
+    new={}
+    persnum=getpersnum()
+    for k,v in persnum.items():
+	    if word[i:].startswith(k):
+		    parts=v.split('+')
+		    new['person']=parts[0]
+		    if len(parts) == 2:
+			    new['number']=parts[1]
+		    i=len(k)
+		    break
+    for k,v in prefs.items():
+        if word[i:].startswith(k):
+            l.append(v)
+            i+=len(k)
+    new['lemma']=word[i:]
+    new['pos']='V'
+    new['pref']='+'.join(l)
+    return new
+
+def getpersnum():
+    return {'a': '1+SG','re': '2+SG','u': '3','ya':
+    '1+PL','pe': '2+PL','ta': '3+PL','tau': '3+PL'
     }
+
+def conjugateVerb(lemma,pos='V'):
+    persnum=getpersnum()
+    forms=set()
     if lemma == "yuri":
-        for pref,tag in dic.items():
+        for pref,tag in persnum.items():
             if not '3' in tag:
                 forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
         forms.add(f"uri\t{lemma}+{pos}+3")
         return forms
-    for pref,tag in dic.items():
+    for pref,tag in persnum.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
     return forms
@@ -345,8 +377,13 @@ def guesser(token,lexicon):
                 new['lemma']=base
                 copy_feats(entry,new)
                 insertSingularNumber(new)
+                prefs=parseprefs(base)
+                if prefs.get('pref'):
+                    new.update(prefs)
                 newentries.append(new)
              break
+    if not newentries:
+        newentries.append(parseprefs(token))
     return newentries
 
 def parse(word,lexicon=None,infile="lexicon.json"):
