@@ -46,6 +46,36 @@ REGEX=re.compile(
     \((\w+\.[^)]*)\) # group 5: part of speech information
     \s+\-(.+$) # group 6: gloss""",re.VERBOSE)
 
+def loadGlossary(glossary=None, infile="glossary.json"):
+    if glossary:
+        glossary=glossary
+    else:
+        with open(infile) as f:
+            glossary = json.load(f)
+    return glossary
+
+def loadLexicon(infile="lexicon.json"):
+    with open(infile) as f:
+        lexicon = json.load(f)
+    return lexicon
+
+def saveJSON(glossary, outfile="glossary.json"):
+    with open(outfile, "w") as write_file:
+        json.dump(glossary, write_file, indent=4, ensure_ascii=False)
+
+def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
+    entries=extractEntries(extractLines(infile))
+    glossary=buildGlossary(entries)
+    saveJSON(glossary, outfile)
+
+def inGloss(string,glossary=None, infile="glossary.json"):
+    glossary=loadGlossary(glossary,infile)
+    return list(filter(lambda x: string in x.get('gloss'),glossary))
+
+def getwords(key,value,glossary=None, infile="glossary.json"):
+    glossary=loadGlossary(glossary,infile)
+    return list(filter(lambda x: x.get(key) == value, glossary))
+
 def extractLines(infile):
     return [line.strip() for line in open(infile,"r").readlines() if line.strip() != ""]
 
@@ -115,12 +145,13 @@ def parseprefs1(stem):
             i=len(k)
     return l
 
-def parseprefs(word):
+def parseprefs(word,lexicon=loadLexicon()):
     prefs={ 'yu' : 'REFL',
        'mu' : 'CAUS'}
     i=0
     l=[]
     new={}
+    new['pos']='V'
     persnum=getpersnum()
     for k,v in persnum.items():
 	    if word[i:].startswith(k):
@@ -132,10 +163,16 @@ def parseprefs(word):
 		    break
     for k,v in prefs.items():
         if word[i:].startswith(k):
+            parses=lexicon.get(word[i:])
+            if parses:
+                entries=extract_feats(parses)
+                new['lemma']=entries[0].get('lemma')
+                if v != 'CAUS':
+                    new['pref']=v
+                return new
             l.append(v)
             i+=len(k)
     new['lemma']=word[i:]
-    new['pos']='V'
     new['pref']='+'.join(l)
     return new
 
@@ -217,36 +254,6 @@ def WordParseDict(pairs):
 def sort(s):
     i=s.index("\t")
     return s[i+1:]
-
-def loadGlossary(glossary=None, infile="glossary.json"):
-    if glossary:
-        glossary=glossary
-    else:
-        with open(infile) as f:
-            glossary = json.load(f)
-    return glossary
-
-def loadLexicon(infile="lexicon.json"):
-    with open(infile) as f:
-        lexicon = json.load(f)
-    return lexicon
-
-def getwords(key,value,glossary=None, infile="glossary.json"):
-    glossary=loadGlossary(glossary,infile)
-    return list(filter(lambda x: x.get(key) == value, glossary))
-
-def inGloss(string,glossary=None, infile="glossary.json"):
-    glossary=loadGlossary(glossary,infile)
-    return list(filter(lambda x: string in x.get('gloss'),glossary))
-
-def saveJSON(glossary, outfile="glossary.json"):
-    with open(outfile, "w") as write_file:
-        json.dump(glossary, write_file, indent=4, ensure_ascii=False)
-
-def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
-    entries=extractEntries(extractLines(infile))
-    glossary=buildGlossary(entries)
-    saveJSON(glossary, outfile)
 
 def endswith(token,suff):
     pat=rf"(^.+)({suff})(-itá)?$"
