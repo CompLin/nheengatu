@@ -1,10 +1,19 @@
-This folder contains Nheengatu santences in the CoNLL-U format (https://universaldependencies.org/format.html), annotated according to the Universal Dependencies framework.
-The file grammyep.conllu contains sentences from the following treebank:
+This folder contains Nheengatu santences in the CoNLL-U format, annotated according to the Universal Dependencies framework:
+
+https://universaldependencies.org/format.html
+
+The file `grammyep.conllu` contains sentences from the following treebank:
 
 https://github.com/leoalenc/nheengatu/tree/main/treebank
 
-This treebank is part of GrammYEP, a multilingual computational grammar comprising equivalent Nheengatu, English and Portuguese modules. GrammYEP enables automatic translation between these three langauges:
+This treebank is part of GrammYEP, a multilingual computational grammar comprising equivalent Nheengatu, English, and Portuguese modules. GrammYEP enables automatic translation between these three languages. It presently restricts itself to a limited range of sentence types in a small vocabulary. For more details, consult the repository and respective paper:
 
 https://github.com/leoalenc/nheengatu
 
-The spelling of the sentences was updated to the orthography guidelines of Navarro (2016).
+de Alencar, Leonel Figueiredo (2021). Uma gramática computacional de um fragmento do nheengatu / A computational grammar for a fragment of Nheengatu. REVISTA DE ESTUDOS DA LINGUAGEM, 29(3), 1717-1777. doi:http://dx.doi.org/10.17851/2237-2083.29.3.1717-1777
+
+The file moore.conllu contains sentences from the following paper:
+
+Moore, D., Facundes, S., & Pires, N. (1994). Nheengatu (Língua Geral Amazônica), its History, and the Effects of Language Contact. UC Berkeley: Department of Linguistics. Retrieved from https://escholarship.org/uc/item/7tb981s1
+
+The spelling of all sentences was updated to the orthography guidelines of Navarro (2016).

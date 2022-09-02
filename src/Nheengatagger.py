@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 30, 2022
+# Last update: August 31, 2022
 
 import os, sys, string, json, datetime
+from BuildDictionary import extract_feats, loadLexicon
 
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
@@ -196,6 +197,27 @@ def tagText(lines):
             else:
                 print(line)
 
+def parseWord(word,lexicon=None,infile=LEXICON):
+    parselist=getparselist(word,lexicon,infile)
+    if parselist:
+        for lemma,tags in parselist:
+            print(f"{word}\t{lemma}+{tags}")
+
+def extendLexicon(lexicon):
+    dictionary={}
+    dictionary.update(includePunctuation())
+    dictionary.update(propernames())
+    for key,value in dictionary.items():
+        new=key[0]
+        lexicon[new]=[[new,list(value)[0]]]
+
+def getparselist(word,lexicon=None,infile=LEXICON):
+    if lexicon:
+        lexicon=lexicon
+    else:
+        lexicon=loadLexicon(infile)
+    extendLexicon(lexicon)
+    return lexicon.get(word.lower())
 
 def main(infile):
     print(MESSAGE)

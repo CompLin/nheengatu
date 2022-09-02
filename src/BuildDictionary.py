@@ -145,7 +145,7 @@ def parseprefs1(stem):
             i=len(k)
     return l
 
-def parseprefs(word,lexicon=loadLexicon()):
+def parseprefs0(word,lexicon):
     prefs={ 'yu' : 'REFL',
        'mu' : 'CAUS'}
     i=0
@@ -154,26 +154,81 @@ def parseprefs(word,lexicon=loadLexicon()):
     new['pos']='V'
     persnum=getpersnum()
     for k,v in persnum.items():
-	    if word[i:].startswith(k):
-		    parts=v.split('+')
-		    new['person']=parts[0]
-		    if len(parts) == 2:
-			    new['number']=parts[1]
-		    i=len(k)
-		    break
-    for k,v in prefs.items():
         if word[i:].startswith(k):
+            i=len(k)
+            parts=v.split('+')
+            new['person']=parts[0]
+            if len(parts) == 2:
+                new['number']=parts[1]
+            break
+    for k,v in prefs.items():
+        print(f"k {k}, v {v}, i {i}, {word[i:]}")
+        if word[i:].startswith(k):
+            i+=len(k)
             parses=lexicon.get(word[i:])
             if parses:
                 entries=extract_feats(parses)
                 new['lemma']=entries[0].get('lemma')
-                if v != 'CAUS':
+                print(f"v {v}")
+                if v == 'REFL':
                     new['pref']=v
                 return new
             l.append(v)
             i+=len(k)
     new['lemma']=word[i:]
     new['pref']='+'.join(l)
+    return new
+
+def parsepersnum(word,entry):
+    i=0
+    persnum=getpersnum()
+    for k,v in persnum.items():
+        if word[i:].startswith(k):
+            i=len(k)
+            entry['lemma']=word[i:]
+            parts=v.split('+')
+            entry['person']=parts[0]
+            if len(parts) == 2:
+                entry['number']=parts[1]
+            break
+    return i
+
+def parseprefs(word,lexicon):
+    prefs={ 'yu' : 'REFL',
+       'mu' : 'CAUS'}
+    i=0
+    l=[]
+    new={}
+    persnum=getpersnum()
+    for k,v in persnum.items():
+        if word[i:].startswith(k):
+            i=len(k)
+            parts=v.split('+')
+            new['person']=parts[0]
+            if len(parts) == 2:
+                new['number']=parts[1]
+            break
+    for k,v in prefs.items():
+        #print(f"k {k}, v {v}, i {i}, {word[i:]}")
+        if word[i:].startswith(k):
+            i+=len(k)
+            #print(f"k {k}, v {v}, i {i}, {word[i:]}")
+            parses=lexicon.get(word[i:])
+            if parses:
+                new['lexicon']=True
+                #entries=extract_feats(parses)
+                #new['lemma']=entries[0].get('lemma')
+                #print(f"v {v}")
+                if v == 'REFL':
+                    #new['pref']=v
+                    l.append(v)
+                    break
+                #return new
+            l.append(v)
+    if l:
+        new['lemma']=word[i:]
+        new['pos']='V'
+        new['pref']='+'.join(l)
     return new
 
 def getpersnum():
@@ -350,6 +405,9 @@ def guesser(token,lexicon):
     "wara|pura": {"pos": "A|N", "suff": "ORIG", "function": accent}
     }
     newentries=[]
+    #newentries.append(parseprefs(token))
+    #if newentries:
+    #    return newentries
     for suff,entry in mapping.items():
          groups=endswith(token,suff)
          if groups:
@@ -367,7 +425,8 @@ def guesser(token,lexicon):
                     entries=extract_feats(parses)
                     for ent in entries:
                         new={}
-                        new['lemma']=lemma
+                        #new['lemma']=lemma
+                        new['lemma']=ent.get('lemma')
                         if entry.get('pos'):
                             new['pos']=entry['pos']
                         if groups[2] == '-itá':
@@ -376,6 +435,7 @@ def guesser(token,lexicon):
                         copy_feats(ent,new)
                         new['suff']=entry['suff']
                         insertSingularNumber(new)
+                        new['lexicon']=True
                         newentries.append(new)
              if not newentries:
                 new={}
@@ -384,24 +444,23 @@ def guesser(token,lexicon):
                 new['lemma']=base
                 copy_feats(entry,new)
                 insertSingularNumber(new)
-                prefs=parseprefs(base)
-                if prefs.get('pref'):
-                    new.update(prefs)
+                if new.get('pos') == 'V':
+                    prefs=parseprefs(base)
+                    if prefs.get('pref'):
+                        new.update(prefs)
+                new['lexicon']=False
                 newentries.append(new)
              break
+    new=parseprefs(token,lexicon)
     if not newentries:
-        newentries.append(parseprefs(token))
-    return newentries
-
-def parse(word,lexicon=None,infile="lexicon.json"):
-    if lexicon:
-        lexicon=lexicon
+        newentries.append(new)
     else:
-        lexicon=loadLexicon(infile)
-    parselist=lexicon.get(word)
-    if parselist:
-        for lemma,tags in parselist:
-            print(f"{word}\t{lemma}+{tags}")
+        if new.get('lexicon') == True:
+            newentries.append(new)
+            for e in newentries:
+                if e.get('lexicon') == False:
+                    newentries.remove(e)
+    return newentries
 
 def words():
     return [ 'purangamirĩ', 'mirawasú', 'miraíma', 'miratiwa',
@@ -432,6 +491,58 @@ def test(outfile='outfile.txt', words=words()):
                 for entry in entries:
                     print(entry, end=" ",file=f)
             print(file=f)
+
+def compare0(outfile,goldfile):
+    out=loadLexicon(outfile)
+    gold=loadLexicon(goldfile)
+    #print(f"key\t\tout\t\tgold")
+    diff=set()
+    for k,v in gold.items():
+        i=0
+        for dic in v:
+            for x,y in dic.items():
+                g=dic.get(x)
+                o=out.get(k)[i].get(x)
+                if o != g:
+                    diff.add(x)
+                    print(f"{k}\t{x}\t{o}\t{g}")
+            i+=1
+    for k,v in out.items():
+        #i=0
+        for dic in v:
+            for x,y in dic.items():
+                o=dic.get(x)
+                #g=gold.get(k)[i].get(x)
+                for d in gold.get(k):
+                    g=d.get(x)
+                    if x not in diff and o != g:
+                        print(f"{k}\t{x}\t{o}\t{g}")
+
+def compare(outfile,goldfile):
+    out=loadLexicon(outfile)
+    gold=loadLexicon(goldfile)
+    #print(f"key\t\tout\t\tgold")
+    diff=set()
+    for k,v in gold.items():
+        i=0
+        for dic in v:
+            for x,y in dic.items():
+                g=dic.get(x)
+                o=out.get(k)[i].get(x)
+                if o != g:
+                    diff.add(x)
+                    print(f"{k}\t{x}\t{o}\t{g}")
+            i+=1
+    for k,v in out.items():
+        #i=0
+        for dic in v:
+            for x,y in dic.items():
+                o=dic.get(x)
+                #g=gold.get(k)[i].get(x)
+                for d in gold.get(k):
+                    g=d.get(x)
+                    if x not in diff and o != g:
+                        print(f"{k}\t{x}\t{o}\t{g}")
 
 def main(infile="glossary.txt",outfile="lexicon.json",path=None):
     if path:
