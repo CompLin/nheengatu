@@ -4,12 +4,14 @@
 # Last update: August 31, 2022
 
 from Nheengatagger import getparselist
+from BuildDictionary import extract_feats
 from conllu.models import Token,TokenList
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
-'ADVL': 'ADV', 'A2': 'VERB', 'PUNCT' : 'PUNCT'}
+'ADVL': 'ADV', 'A2': 'VERB', 'PUNCT' : 'PUNCT',
+'ADP' : 'ADP', 'CONJ' : 'C|SCONJ'}
 
 def tokenrange(sentence):
     m=0
@@ -24,6 +26,13 @@ def tokenrange(sentence):
             print(token,m,n)
             print(".",n,n+1)
 
+def getudtag(tag):
+    udtag=UDTAGS.get(tag)
+    if udtag:
+        return udtag
+    else:
+        return tag.upper()
+
 def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None):
     end=start + len(word)
     feats={}
@@ -33,7 +42,7 @@ def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None
     token['lemma']=entry['lemma']
     pos=entry.get('pos')
     if pos:
-        token['upos']=UDTAGS[pos]
+        token['upos']=getudtag(pos)
         token['xpos']=pos
     person=entry.get('person')
     number=entry.get('number')
@@ -41,12 +50,21 @@ def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None
     if person:
         feats['Person']=person
     if number:
-        feats['Number']=UDTAGS[number]
+        feats['Number']=getudtag(number)
     if rel:
         feats['Rel']=rel.title()
-    token['feats']=feats
+    if feats:
+        token['feats']=feats
+    else:
+        token['feats']=None
     token['head']=head
-    token['deprel']=deprel
+    upos=token['upos']
+    if upos == 'VERB':
+        token['deprel']='root'
+    elif upos == 'PUNCT':
+        token['deprel']='punct'
+    else:
+        token['deprel']=deprel
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
     return token
@@ -72,7 +90,7 @@ def mkConlluSentence(tokens):
                 start=start-1
             t=mkConlluToken(token,entry,start=start, ident=ident)
             tokenlist.append(t)
-            start=start+len(token)+1
-            ident+=1
+        start=start+len(token)+1
+        ident+=1
     handleSpaceAfter(tokenlist)
     return tokenlist
