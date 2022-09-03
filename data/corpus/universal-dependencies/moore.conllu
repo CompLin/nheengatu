@@ -4,3 +4,21 @@
 1	Yamunhã	munhã	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:7
 2	timbiú	timbiú	NOUN	N	Number=Sing	1	obj	_	TokenRange=8:14|SpaceAfter=No
 3	.	.	PUNCT	PUNCT	_	1	punct	_	TokenRange=14:15|SpaceAfter=No
+
+# text = Yapinaitika.
+# text_eng = We fish.
+# text_por = Pescamos.
+1	Yapinaitika	pinaitika	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:11|SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12|SpaceAfter=No
+
+# text = Yamburi maniaka paranã upé i membeka arama.
+# text_eng = We put the manioc in the river to become soft.
+# text_por = Pomos a mandioca no rio para amolecer.
+1	Yamburi	mburi	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:7
+2	maniaka	maniaka	NOUN	N	Number=Sing	1	obj	_	TokenRange=8:15
+3	paranã	paranã	NOUN	N	Number=Sing	1	obl	_	TokenRange=16:22
+4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=23:26
+5	i	i	PRON	PRON2	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=27:28
+6	membeka	membeka	VERB	V2	_	1	advcl	_	TokenRange=29:36
+7	arama	arama	SCONJ	CONJ	_	6	mark	_	TokenRange=37:42
+8	.	.	PUNCT	PUNCT	_	0	punct	_	TokenRange=42:43|SpaceAfter=No
