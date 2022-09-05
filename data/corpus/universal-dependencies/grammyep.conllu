@@ -1,17 +1,17 @@
 # text = Kambí sakú uikú.
 # text_eng = The milk is hot.
 # text_por = O leite está quente.
-1	Kambí	kambi	NOUN	_	Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=0:5
-2	sakú	rakú	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=6:10
-3	uikú	ikú	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
-4	.	.	PUNCT	_	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+1	Kambí	kambi	NOUN	N	Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=0:5
+2	sakú	rakú	VERB	A2	Number=Sing|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
+3	uikú	ikú	AUX	V	Number=Sing|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # text = Kurumĩ rendawa pe tawa ruakí.
 # text_eng = The community of the boy is near your city.
 # text_por = A comunidade do menino é perto da cidade de vocês.
-1	Kurumĩ	kurumĩ 	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	TokenRange=0:6
-2	rendawa	tendawa	NOUN	_	Number=Sing	4	nsubj	_	TokenRange=7:14
-3	pe	ne	PRON	_	Number=Plur|Person=2|PronType=Prs	4	nmod	_	TokenRange=15:17
-4	tawa	tawa	NOUN	_	Number=Sing	0	root	_	TokenRange=18:22
-5	ruakí	ruakí	ADP	_	_	4	case	_	SpaceAfter=No|TokenRange=23:28
-6	.	.	PUNCT	_	_	4	punct	_	SpaceAfter=No|TokenRange=28:29
+1	Kurumĩ	kurumĩ 	NOUN	N	Number=Sing	2	nmod	_	TokenRange=0:6
+2	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=7:14
+3	pe	ne	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=15:17
+4	tawa	tawa	NOUN	N	Number=Sing	0	root	_	TokenRange=18:22
+5	ruakí	ruakí	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=23:28
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=28:29

@@ -1,24 +1,35 @@
 # text = Yamunhã timbiú.
 # text_eng = We make food.
 # text_por = Fazemos comida.
-1	Yamunhã	munhã	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:7
-2	timbiú	timbiú	NOUN	N	Number=Sing	1	obj	_	TokenRange=8:14|SpaceAfter=No
-3	.	.	PUNCT	PUNCT	_	1	punct	_	TokenRange=14:15|SpaceAfter=No
+1	Yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	timbiú	timbiú	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=8:14
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange
 
 # text = Yapinaitika.
 # text_eng = We fish.
 # text_por = Pescamos.
-1	Yapinaitika	pinaitika	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:11|SpaceAfter=No
-2	.	.	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12|SpaceAfter=No
+1	Yapinaitika	pinaitika	VERB	V	Person=1|Number=Plur|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=No
 
 # text = Yamburi maniaka paranã upé i membeka arama.
 # text_eng = We put the manioc in the river to become soft.
 # text_por = Pomos a mandioca no rio para amolecer.
-1	Yamburi	mburi	VERB	V	Person=1|Number=Plur	0	root	_	TokenRange=0:7
+1	Yamburi	mburi	VERB	V	Person=1|Number=Plur|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	maniaka	maniaka	NOUN	N	Number=Sing	1	obj	_	TokenRange=8:15
 3	paranã	paranã	NOUN	N	Number=Sing	1	obl	_	TokenRange=16:22
 4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=23:26
-5	i	i	PRON	PRON2	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=27:28
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=27:28
 6	membeka	membeka	VERB	V2	_	1	advcl	_	TokenRange=29:36
-7	arama	arama	SCONJ	CONJ	_	6	mark	_	TokenRange=37:42
-8	.	.	PUNCT	PUNCT	_	0	punct	_	TokenRange=42:43|SpaceAfter=No
+7	arama	arama	SCONJ	CONJ	_	6	mark	_	SpaceAfter=No|TokenRange=No
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=No
+
+# text = Ayuíri-putari se retama kití.
+# text_eng = I want o return to my land.
+# text_por = Quero voltar para a minha terra.
+1-2	Ayuíri-putari	_	_	_	_	_	_	_	TokenRange=0:13
+1	Ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	V	VerbForm=Inf	1	aux	_	_
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=14:16
+4	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=17:23
+5	kití	kití	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
