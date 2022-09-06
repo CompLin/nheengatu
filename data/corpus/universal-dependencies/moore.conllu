@@ -52,3 +52,13 @@
 4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=12:15
 5	aikú	ikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:20
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# text = Rembeú aetá supé puranga ixé.
+# text_eng = Tell them that I'm fine.
+# text_por = Diga a eles que estou bem.
+1	Rembeú	mbeú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	1	obl	_	TokenRange=7:12
+3	supé	supé	ADP	ADP	_	2	case	_	TokenRange=13:17
+4	puranga	puranga	VERB	A	_	1	ccomp	_	TokenRange=18:25
+5	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	SpaceAfter=No|TokenRange=26:29
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
