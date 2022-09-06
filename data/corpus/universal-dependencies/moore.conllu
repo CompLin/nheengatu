@@ -33,3 +33,22 @@
 4	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=17:23
 5	kití	kití	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=No
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# text = Yandé yapurungitá yaikú nheengatú.
+# text_eng = We are speaking Nheengatu.
+# text_por = Nós estamos falando nheengatu.
+1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	yapurungitá	purungitá	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:17
+3	yaikú	ikú	AUX	V	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=18:23
+4	nheengatú	nheengatú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=24:33
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# text = Ixé se ruka upé aikú.
+# text_eng = I'm in my house.
+# text_por = Eu estou na minha casa.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	0	nsubj	_	TokenRange=0:3
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod	_	TokenRange=4:6
+3	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=7:11
+4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=12:15
+5	aikú	ikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:20
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=20:21
