@@ -18,6 +18,8 @@ adv. interr.\tADVR
 adv. rel.\tADVL
 art. indef.\tART
 conj.\tCONJ
+sconj.\tSCONJ
+cconj.\tCCONJ
 dem.\tDEM
 num.\tNUM
 interj.\tINTJ
@@ -232,9 +234,32 @@ def parseprefs(word,lexicon):
     return new
 
 def getpersnum():
+    """Active person-number prefixes.
+    """
     return {'a': '1+SG','re': '2+SG','u': '3','ya':
     '1+PL','pe': '2+PL','ta': '3+PL','tau': '3+PL'
     }
+
+def secondclasspron():
+    """2nd class pronouns (Avila, 2021; Navarro, 2020),
+    stative person-number prefixes (Cruz, 2011).
+    """
+    return {'se': '1+SG', 'xe': '1+SG','ne': '2+SG','i': '3+SG','yané':
+    '1+PL','pe': '2+PL','tá': '3+PL', 'ta': '3+PL','aintá': '3+PL'
+    }
+
+def firstclasspron():
+    """First class pronouns (Avila, 2021; Navarro, 2020),
+    personal and anaphoric pronouns (Cruz, 2011).
+    """
+    return {'ixé': '1+SG','indé': '2+SG','aé': '3+SG','yandé':
+    '1+PL','penhẽ': '2+PL','tá': '3+PL', 'ta': '3+PL','aintá': '3+PL'
+    }
+
+def expandpronoun(lemma, pos):
+    prons=firstclasspron()
+    prons.update(secondclasspron())
+    return f"{lemma}\t{lemma}+{pos}+{prons[lemma]}"
 
 def conjugateVerb(lemma,pos='V'):
     persnum=getpersnum()
@@ -280,6 +305,8 @@ def WordParsePairs(glossary):
                     pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
                 elif tag == "V" and not isImpersonal(n.get('gloss')):
                     pairs.update(conjugateVerb(lemma,tag))
+                elif tag in ('PRON','PRON2'):
+                    pairs.add(expandpronoun(lemma,tag))
                 else:
                     pairs.add(f"{lemma}\t{lemma}+{tag}")
 
@@ -337,17 +364,22 @@ def extract_pos(parses):
 featsdic={}
 def extract_feats(parses):
     global featsdic
-    featsdic={'[123]': 'person','SG|PL': 'number','ABS|NCONT|CONT' : 'rel'}
+    featsdic={'[123]': 'person','SG|PL': 'number',
+    'ABS|NCONT|CONT' : 'rel',
+    'NFIN' : 'vform'}
     entries=[]
     for lemma,feats in parses:
         new={}
         new['lemma']=lemma
-        featslist=feats.split('+')
-        new['pos']=featslist[0]
-        for f in featslist[1:]:
-            for k,v in featsdic.items():
-                if f in k:
-                    new[v]=f
+        if feats:
+            featslist=feats.split('+')
+            new['pos']=featslist[0]
+            for f in featslist[1:]:
+                for k,v in featsdic.items():
+                    if f in k:
+                        new[v]=f
+        else:
+            new['pos']=None
         entries.append(new)
     return entries
 

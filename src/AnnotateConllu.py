@@ -7,11 +7,15 @@ from Nheengatagger import getparselist
 from BuildDictionary import extract_feats
 from conllu.models import Token,TokenList
 
+# Case of second class pronouns
+CASE="Gen"
+
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
 'ADVL': 'ADV', 'A2': 'VERB', 'PUNCT' : 'PUNCT',
-'ADP' : 'ADP', 'CONJ' : 'C|SCONJ'}
+'ADP' : 'ADP', 'CONJ' : 'C|SCONJ', 'PRON2' : 'PRON',
+'REL' : 'PRON', 'NFIN' : 'Inf'}
 
 def tokenrange(sentence):
     m=0
@@ -46,11 +50,16 @@ def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None
         token['xpos']=pos
     person=entry.get('person')
     number=entry.get('number')
+    vform=entry.get('vform')
     rel=entry.get('rel')
     if person:
         feats['Person']=person
+        if token['upos']=='VERB':
+            feats['VerbForm']='Fin'
     if number:
         feats['Number']=getudtag(number)
+    if vform:
+        feats['VerbForm']=getudtag(vform)
     if rel:
         feats['Rel']=rel.title()
     if feats:
@@ -70,13 +79,92 @@ def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None
     return token
 
 def handleSpaceAfter(tokenlist):
-	s={'SpaceAfter' : 'No'}
-	tokens=tokenlist.filter(upos='PUNCT')
-	if tokens:
-		for token in tokens:
-			token['misc'].update(s)
-			precedent=tokenlist.filter(id=token['id']-1)[0]
-			precedent['misc'].update(s)
+    s={'SpaceAfter' : 'No'}
+    tokens=tokenlist.filter(upos='PUNCT')
+    if tokens:
+        for token in tokens:
+            token['misc'].update(s)
+            precedent=tokenlist.filter(id=token['id']-1)[0]
+            precedent['misc'].update(s)
+
+def sortDict(d):
+    l=list(d.items())
+    l.sort()
+    return dict(l)
+
+def sortTokens(tokenlist):
+    for token in tokenlist:
+        for k,v in token.items():
+            if isinstance(v, dict) and len(v) > 1:
+                token[k]=sortDict(v)
+
+def VerbIdsList(tokenlist):
+    return tokenlist.filter(upos="VERB")
+
+def FirstVerbId(tokenlist):
+    verbs=VerbIdsList(tokenlist)
+    if verbs:
+        return verbs[0]['id']
+    return 0
+
+def possPron(tokenlist):
+    i=0
+    c=len(tokenlist) -1
+    while(i < c) :
+        token=tokenlist[i]
+        nextToken=tokenlist[i+1]
+        upos=token['upos']
+        if upos == 'PRON':
+            if token['xpos'] == 'REL':
+                token['feats'].update({'PronType': 'Rel'})
+            else:
+                token['feats'].update({'PronType': 'Prs'})
+            if token['xpos'] == 'PRON2':
+                token['feats'].update({'Case': CASE})
+                if nextToken['upos'] == 'NOUN':
+                    token['feats'].update({'Poss': 'Yes'})
+                    token['deprel'] ='nmod'
+                    token['head'] =nextToken['id']
+        if upos in ('NOUN','PRON'):
+            if nextToken['upos'] == 'ADP':
+                token['deprel'] = 'obl'
+                token['head'] = FirstVerbId(tokenlist)
+                nextToken['deprel']='case'
+                nextToken['head'] =token['id']
+            elif nextToken['upos'] == 'VERB':
+                token['deprel'] = 'nsubj'
+                token['head'] =nextToken['id']
+            else:
+                if not token['xpos'] == 'PRON2':
+                    verbid=FirstVerbId(tokenlist)
+                    tokenid=token['id']
+                    if verbid < tokenid:
+                        token['deprel'] = 'obj'
+                        token['head'] = verbid
+        elif upos == "VERB":
+            if nextToken['upos'] == 'VERB':
+                nextToken['upos']= 'AUX'
+                nextToken['deprel']='aux'
+                nextToken['head']=token['id']
+            else:
+                verbs=VerbIdsList(tokenlist)
+                if len(verbs) > 1:
+                    if verbs[-1]['id'] == token['id']:
+                        token['head'] = verbs[0]['id']
+                        token['deprel'] = 'advcl'
+        elif upos == "SCONJ":
+            token['deprel'] = 'mark'
+            j=-1
+            verbs=VerbIdsList(tokenlist)
+            while(j >= -len(verbs)) :
+                verbid=verbs[j]['id']
+                if verbid < token['id']:
+                    token['head']= verbid
+                    break
+                j=j-1
+        if nextToken['upos'] == 'PUNCT':
+            nextToken['head']=FirstVerbId(tokenlist)
+        i+=1
 
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
@@ -93,4 +181,6 @@ def mkConlluSentence(tokens):
         start=start+len(token)+1
         ident+=1
     handleSpaceAfter(tokenlist)
+    possPron(tokenlist)
+    sortTokens(tokenlist)
     return tokenlist

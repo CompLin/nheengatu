@@ -212,12 +212,16 @@ def extendLexicon(lexicon):
         lexicon[new]=[[new,list(value)[0]]]
 
 def getparselist(word,lexicon=None,infile=LEXICON):
+    word=word.lower()
     if lexicon:
         lexicon=lexicon
     else:
         lexicon=loadLexicon(infile)
     extendLexicon(lexicon)
-    return lexicon.get(word.lower())
+    parselist=lexicon.get(word)
+    if parselist:
+        return parselist
+    return [[word,None]]
 
 def main(infile):
     print(MESSAGE)
