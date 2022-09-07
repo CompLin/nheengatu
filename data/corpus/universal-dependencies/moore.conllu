@@ -113,3 +113,16 @@
 7	timbiú	timbiú	NOUN	N	Number=Sing	5	obj	_	TokenRange=33:39
 8	irusanga	irusanga	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=40:48
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# text = Yaú timbiú sakú ti arama kurupira-itá urasú yandé.
+# text_eng = We would eat hot food for the curupiras not to take us away.
+# text_por = Comíamos comida quente para os curupiras não nos levarem embora.
+1	Yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	timbiú	timbiú	NOUN	N	Number=Sing	1	obj	_	TokenRange=4:10
+3	sakú	sakú	ADJ	A	_	2	amod	_	TokenRange=11:15
+4	ti	ti	PART	PART	_	7	advmod	_	TokenRange=16:18
+5	arama	arama	SCONJ	SCONJ	_	7	mark	_	TokenRange=19:24
+6	kurupira-itá	kurupira	NOUN	N	Number=Plur	7	nsubj	_	TokenRange=25:37
+7	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	1	advcl	_	TokenRange=38:43
+8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=44:49
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=49:50

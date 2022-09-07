@@ -37,7 +37,7 @@ def getudtag(tag):
     else:
         return tag.upper()
 
-def mkConlluToken(word,entry,head=0, deprel='nsubj', start=0, ident=1, deps=None):
+def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     end=start + len(word)
     feats={}
     token=Token()
@@ -107,7 +107,7 @@ def FirstVerbId(tokenlist):
         return verbs[0]['id']
     return 0
 
-def possPron(tokenlist):
+def addFeatures(tokenlist):
     i=0
     c=len(tokenlist) -1
     while(i < c) :
@@ -131,11 +131,14 @@ def possPron(tokenlist):
                 token['head'] = FirstVerbId(tokenlist)
                 nextToken['deprel']='case'
                 nextToken['head'] =token['id']
-            elif nextToken['upos'] == 'VERB':
+            elif nextToken['upos'] == 'ADJ' and upos == 'NOUN':
+                nextToken['deprel']='amod'
+                nextToken['head'] =token['id']
+            elif nextToken['upos'] == 'VERB' and not token['deprel']:
                 token['deprel'] = 'nsubj'
                 token['head'] =nextToken['id']
             else:
-                if not token['xpos'] == 'PRON2':
+                if not token['xpos'] == 'PRON2' and not token['deprel']:
                     verbid=FirstVerbId(tokenlist)
                     tokenid=token['id']
                     if verbid < tokenid:
@@ -146,6 +149,9 @@ def possPron(tokenlist):
                 nextToken['upos']= 'AUX'
                 nextToken['deprel']='aux'
                 nextToken['head']=token['id']
+            elif nextToken['upos'] == 'NOUN':
+                nextToken['deprel']='obj'
+                nextToken['head']=token['id']
             else:
                 verbs=VerbIdsList(tokenlist)
                 if len(verbs) > 1:
@@ -154,14 +160,23 @@ def possPron(tokenlist):
                         token['deprel'] = 'advcl'
         elif upos == "SCONJ":
             token['deprel'] = 'mark'
-            j=-1
+            tokid=token['id']
             verbs=VerbIdsList(tokenlist)
-            while(j >= -len(verbs)) :
-                verbid=verbs[j]['id']
-                if verbid < token['id']:
-                    token['head']= verbid
-                    break
-                j=j-1
+            if tokid > 0:
+                if tokenlist[tokid-1]['lemma'] == 'ti':
+                    for verb in verbs:
+                        verbid=verb['id']
+                        if verbid > tokid:
+                            token['head']=verbid
+                            break
+                else:
+                    j=-1
+                    while(j >= -len(verbs)) :
+                        verbid=verbs[j]['id']
+                        if verbid < token['id']:
+                            token['head']= verbid
+                            break
+                        j=j-1
         if nextToken['upos'] == 'PUNCT':
             nextToken['head']=FirstVerbId(tokenlist)
         i+=1
@@ -181,6 +196,6 @@ def mkConlluSentence(tokens):
         start=start+len(token)+1
         ident+=1
     handleSpaceAfter(tokenlist)
-    possPron(tokenlist)
+    addFeatures(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
