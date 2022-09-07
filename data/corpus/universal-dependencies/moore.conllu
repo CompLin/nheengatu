@@ -85,3 +85,18 @@
 # text = Ayururéu se manha upitá arama yané rendawa upé se ratiwa uxari waá yandé arã.
 # text_eng = I asked my mother to stay in our farm that my father-in-law left for us.
 # text_por = Pedi para minha mãe ficar na nossa fazenda que meu sogro deixou para nós.
+1	Ayururé	yururé	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod	_	TokenRange=9:11
+3	manha	manha	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:17
+4	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=18:23
+5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod	_	TokenRange=30:34
+7	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=35:42
+8	upé	upé	ADP	ADP	_	7	case	_	TokenRange=43:46
+9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod	_	TokenRange=47:49
+10	ratiwa	tatiwa	NOUN	N	Number=Sing|Rel=Cont	11	nsubj	_	TokenRange=50:56
+11	uxari	xari	VERB	V	Person=3|VerbForm=Fin	7	acl:relcl	_	TokenRange=57:62
+12	waá	waá	REL	REL	Number=Sing|PronType=Rel	11	obj	_	TokenRange=63:66
+13	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	11	iobj	_	TokenRange=67:72
+14	arã	arã	ADP	ADP	_	13	case	_	SpaceAfter=No|TokenRange=73:76
+15	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=76:77
