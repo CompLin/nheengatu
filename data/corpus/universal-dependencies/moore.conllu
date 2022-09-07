@@ -100,3 +100,16 @@
 13	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	11	iobj	_	TokenRange=67:72
 14	arã	arã	ADP	ADP	_	13	case	_	SpaceAfter=No|TokenRange=73:76
 15	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=76:77
+
+# text = Aintá upisika paá yandé yaú ramé timbiú irusanga.
+# text_eng = They would catch us when we ate cold food.
+# text_por = Eles nos pegavam quando comíamos comida fria.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:13
+3	paá	paá	PART	PART	_	2	advmod	_	TokenRange=14:17
+4	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	obj	_	TokenRange=18:23
+5	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	2	advcl	_	TokenRange=24:27
+6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=28:32
+7	timbiú	timbiú	NOUN	N	Number=Sing	5	obj	_	TokenRange=33:39
+8	irusanga	irusanga	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=40:48
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
