@@ -107,76 +107,106 @@ def FirstVerbId(tokenlist):
         return verbs[0]['id']
     return 0
 
+def handlePron(token,nextToken):
+    if token['xpos'] == 'REL':
+        token['feats'].update({'PronType': 'Rel'})
+    else:
+        token['feats'].update({'PronType': 'Prs'})
+    if token['xpos'] == 'PRON2':
+        token['feats'].update({'Case': CASE})
+        if nextToken['upos'] == 'NOUN':
+            token['feats'].update({'Poss': 'Yes'})
+            token['deprel'] ='nmod'
+            token['head'] =nextToken['id']
+
+def handleNounPron(token,nextToken, verbid):
+    if nextToken['upos'] == 'ADP':
+        token['deprel'] = 'obl'
+        token['head'] = verbid
+        nextToken['deprel']='case'
+        nextToken['head'] =token['id']
+    elif nextToken['upos'] == 'ADJ' and token['upos'] == 'NOUN':
+        nextToken['deprel']='amod'
+        nextToken['head'] =token['id']
+    elif nextToken['upos'] == 'VERB' and not token['deprel']:
+        token['deprel'] = 'nsubj'
+        token['head'] =nextToken['id']
+    else:
+        if not token['xpos'] == 'PRON2' and not token['deprel']:
+            tokenid=token['id']
+            if verbid < tokenid:
+                token['deprel'] = 'obj'
+                token['head'] = verbid
+
+def handlePart(token,verbs):
+    token['feats']={}
+    token['deprel'] = 'advmod'
+    lemma=token['lemma']
+    tokid=token['id']
+    if lemma == 'ti':
+        token['feats'].update({'Polarity': 'Neg'})
+        for verb in verbs:
+            verbid=verb['id']
+            if verbid > tokid:
+                token['head']=verbid
+                break
+    elif lemma == 'paá':
+        token['feats'].update({'Evident': 'Nfh'})
+        if verbs:
+            token['head']=verbs[0]['id']
+
+def handleVerb(token,nextToken,verbs):
+    if nextToken['upos'] == 'VERB':
+        nextToken['upos']= 'AUX'
+        nextToken['deprel']='aux'
+        nextToken['head']=token['id']
+    elif nextToken['upos'] == 'NOUN':
+        nextToken['deprel']='obj'
+        nextToken['head']=token['id']
+    else:
+        if len(verbs) > 1:
+            if verbs[-1]['id'] == token['id']:
+                token['head'] = verbs[0]['id']
+                token['deprel'] = 'advcl'
+
+def handleSconj(token,tokenlist,verbs):
+    token['deprel'] = 'mark'
+    tokid=token['id']
+    if tokid > 0:
+        if tokenlist[tokid-1]['lemma'] == 'ti':
+            for verb in verbs:
+                verbid=verb['id']
+                if verbid > tokid:
+                    token['head']=verbid
+                    break
+        else:
+            j=-1
+            while(j >= -len(verbs)) :
+                verbid=verbs[j]['id']
+                if verbid < token['id']:
+                    token['head']= verbid
+                    break
+                j=j-1
+
 def addFeatures(tokenlist):
     i=0
     c=len(tokenlist) -1
+    verbid=FirstVerbId(tokenlist)
+    verbs=VerbIdsList(tokenlist)
     while(i < c) :
         token=tokenlist[i]
-        nextToken=tokenlist[i+1]
         upos=token['upos']
-        if upos == 'PRON':
-            if token['xpos'] == 'REL':
-                token['feats'].update({'PronType': 'Rel'})
-            else:
-                token['feats'].update({'PronType': 'Prs'})
-            if token['xpos'] == 'PRON2':
-                token['feats'].update({'Case': CASE})
-                if nextToken['upos'] == 'NOUN':
-                    token['feats'].update({'Poss': 'Yes'})
-                    token['deprel'] ='nmod'
-                    token['head'] =nextToken['id']
+        nextToken=tokenlist[i+1]
         if upos in ('NOUN','PRON'):
-            if nextToken['upos'] == 'ADP':
-                token['deprel'] = 'obl'
-                token['head'] = FirstVerbId(tokenlist)
-                nextToken['deprel']='case'
-                nextToken['head'] =token['id']
-            elif nextToken['upos'] == 'ADJ' and upos == 'NOUN':
-                nextToken['deprel']='amod'
-                nextToken['head'] =token['id']
-            elif nextToken['upos'] == 'VERB' and not token['deprel']:
-                token['deprel'] = 'nsubj'
-                token['head'] =nextToken['id']
-            else:
-                if not token['xpos'] == 'PRON2' and not token['deprel']:
-                    verbid=FirstVerbId(tokenlist)
-                    tokenid=token['id']
-                    if verbid < tokenid:
-                        token['deprel'] = 'obj'
-                        token['head'] = verbid
+            handleNounPron(token,nextToken, verbid)
+            if upos == 'PRON':
+                handlePron(token,nextToken)
+        elif upos == "PART":
+            handlePart(token,verbs)
         elif upos == "VERB":
-            if nextToken['upos'] == 'VERB':
-                nextToken['upos']= 'AUX'
-                nextToken['deprel']='aux'
-                nextToken['head']=token['id']
-            elif nextToken['upos'] == 'NOUN':
-                nextToken['deprel']='obj'
-                nextToken['head']=token['id']
-            else:
-                verbs=VerbIdsList(tokenlist)
-                if len(verbs) > 1:
-                    if verbs[-1]['id'] == token['id']:
-                        token['head'] = verbs[0]['id']
-                        token['deprel'] = 'advcl'
+            handleVerb(token,nextToken,verbs)
         elif upos == "SCONJ":
-            token['deprel'] = 'mark'
-            tokid=token['id']
-            verbs=VerbIdsList(tokenlist)
-            if tokid > 0:
-                if tokenlist[tokid-1]['lemma'] == 'ti':
-                    for verb in verbs:
-                        verbid=verb['id']
-                        if verbid > tokid:
-                            token['head']=verbid
-                            break
-                else:
-                    j=-1
-                    while(j >= -len(verbs)) :
-                        verbid=verbs[j]['id']
-                        if verbid < token['id']:
-                            token['head']= verbid
-                            break
-                        j=j-1
+            handleSconj(token,tokenlist,verbs)
         if nextToken['upos'] == 'PUNCT':
             nextToken['head']=FirstVerbId(tokenlist)
         i+=1
