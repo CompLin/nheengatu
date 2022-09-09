@@ -1,7 +1,7 @@
 # text = Kambí sakú uikú.
 # text_eng = The milk is hot.
 # text_por = O leite está quente.
-1	Kambí	kambi	NOUN	N	Gender=Masc|Number=Sing	2	nsubj	_	TokenRange=0:5
+1	Kambí	kambi	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	sakú	rakú	VERB	A2	Number=Sing|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
 3	uikú	ikú	AUX	V	Number=Sing|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16

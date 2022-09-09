@@ -126,3 +126,14 @@
 7	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	1	advcl	_	TokenRange=38:43
 8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=44:49
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# text = Akwá katú ixé ti ayupukwá akití.
+# text_eng = I think I cannot accustom myself to that place anymore.
+# text_por = Sei bem que não me acostumo lá.
+1	Akwá	kwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	katú	katú	ADV	ADV	_	1	advmod	_	TokenRange=5:9
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=10:13
+4	ti	ti	PART	PART	Polarity=Neg	5	advmod	_	TokenRange=14:16
+5	ayupukwá	yupukwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=17:25
+6	akití	akití	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=26:31
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=31:32
