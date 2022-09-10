@@ -4,7 +4,7 @@
 # Last update: August 31, 2022
 
 from Nheengatagger import getparselist
-from BuildDictionary import extract_feats
+from BuildDictionary import MAPPING,extract_feats
 from conllu.models import Token,TokenList
 
 # Case of second class pronouns
@@ -13,9 +13,25 @@ CASE="Gen"
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
-'ADVL': 'ADV', 'A2': 'VERB', 'PUNCT' : 'PUNCT',
-'ADP' : 'ADP', 'CONJ' : 'C|SCONJ', 'PRON2' : 'PRON',
-'REL' : 'PRON', 'NFIN' : 'Inf'}
+'ADVL': 'ADV', 'A2': 'VERB',
+'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET'}
+
+def extractParticles(mapping):
+	dic={}
+	for k,v in mapping.items():
+		if 'part.' in k:
+			dic[v]='PART'
+	return dic
+
+def extractPronouns(mapping):
+	dic={}
+	for k,v in mapping.items():
+		if 'pron.' in k:
+			dic[v]='PRON'
+	return dic
+
+UDTAGS.update(extractParticles(MAPPING))
+UDTAGS.update(extractPronouns(MAPPING))
 
 def tokenrange(sentence):
     m=0
@@ -107,12 +123,19 @@ def FirstVerbId(tokenlist):
         return verbs[0]['id']
     return 0
 
+def getprontype(xpos):
+    prontype='Prs'
+    if xpos not in ('PRON', 'PRON2'):
+        prontype=xpos.title()
+    return prontype
+
 def handlePron(token,nextToken):
-    if token['xpos'] == 'REL':
-        token['feats'].update({'PronType': 'Rel'})
-    else:
-        token['feats'].update({'PronType': 'Prs'})
-    if token['xpos'] == 'PRON2':
+    xpos=token['xpos']
+    prontype=getprontype(xpos)
+    if not token.get('feats'):
+        token['feats']={}
+    token['feats'].update({'PronType': prontype})
+    if xpos == 'PRON2':
         token['feats'].update({'Case': CASE})
         if nextToken['upos'] == 'NOUN':
             token['feats'].update({'Poss': 'Yes'})
@@ -131,26 +154,27 @@ def handleNounPron(token,nextToken, verbid):
     elif nextToken['upos'] == 'VERB' and not token['deprel']:
         token['deprel'] = 'nsubj'
         token['head'] =nextToken['id']
-    else:
-        if not token['xpos'] == 'PRON2' and not token['deprel']:
-            tokenid=token['id']
-            if verbid < tokenid:
-                token['deprel'] = 'obj'
-                token['head'] = verbid
+    if not token['xpos'] == 'PRON2' and not token['deprel']:
+        tokenid=token['id']
+        token['head'] = verbid
+        if verbid < tokenid:
+            token['deprel'] = 'obj'
+        else:
+            token['deprel'] = 'subj'
 
 def handlePart(token,verbs):
     token['feats']={}
     token['deprel'] = 'advmod'
-    lemma=token['lemma']
+    xpos=token['xpos']
     tokid=token['id']
-    if lemma == 'ti':
+    if xpos == 'NEG':
         token['feats'].update({'Polarity': 'Neg'})
         for verb in verbs:
             verbid=verb['id']
             if verbid > tokid:
                 token['head']=verbid
                 break
-    elif lemma == 'paá':
+    elif xpos == 'RPRT':
         token['feats'].update({'Evident': 'Nfh'})
         if verbs:
             token['head']=verbs[0]['id']
@@ -163,7 +187,7 @@ def handleVerb(token,nextToken,verbs):
     elif nextToken['upos'] == 'NOUN':
         nextToken['deprel']='obj'
         nextToken['head']=token['id']
-    else:
+    else: # TODO:
         if len(verbs) > 1:
             if verbs[-1]['id'] == token['id']:
                 token['head'] = verbs[0]['id']
@@ -188,6 +212,18 @@ def handleSconj(token,tokenlist,verbs):
                     break
                 j=j-1
 
+def handleAdv(token,verbs):
+    token['deprel']='advmod'
+    tokenid=token['id']
+    i=-1
+    c=-len(verbs)
+    while(i >= c):
+        verbid=verbs[i]['id']
+        if verbid < tokenid:
+            token['head']=verbid
+            break
+        i=i-1
+
 def addFeatures(tokenlist):
     i=0
     c=len(tokenlist) -1
@@ -207,6 +243,8 @@ def addFeatures(tokenlist):
             handleVerb(token,nextToken,verbs)
         elif upos == "SCONJ":
             handleSconj(token,tokenlist,verbs)
+        elif upos == "ADV":
+            handleAdv(token,verbs)
         if nextToken['upos'] == 'PUNCT':
             nextToken['head']=FirstVerbId(tokenlist)
         i+=1

@@ -137,3 +137,29 @@
 5	ayupukwá	yupukwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=17:25
 6	akití	akití	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=26:31
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# text = Ti aintá ukwá maã kurupira-itá umunhã yané irũmu.
+# text_eng = They didn't know what the curupiras do to us.
+# text_por = Eles não sabiam o que os curupiras fazem com a gente.
+1	Ti	ti	PART	NEG	Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=3:8
+3	ukwá	kwá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:13
+4	maã	maã	PRON	INT	PronType=Int	6	obj	_	TokenRange=14:17
+5	kurupira-itá	kurupira	NOUN	N	Number=Plur	6	nsubj	_	TokenRange=18:30
+6	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	3	ccomp	_	TokenRange=31:37
+7	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	6	obl	_	TokenRange=38:42
+8	irũmu	irũmu	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=43:48
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# text = Ixé ti asasá i puxí mayé aintá umbeú.
+# text_eng = I'm not having a bad time like they say.
+# text_por = Eu não passo mal como eles dizem.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
+2	ti	ti	PART	NEG	Polarity=Neg	3	advmod	_	TokenRange=4:6
+3	asasá	sasá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:12
+4	i	i	PRON	PRON2	Case=Gen|PronType=Prs	5	expl	_	TokenRange=13:14
+5	puxí	puxí	ADV	ADV	_	3	advmod	_	TokenRange=15:19
+6	mayé	mayé	SCONJ	CONJ	_	8	mark	_	TokenRange=20:24
+7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=25:30
+8	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	3	advcl	_	SpaceAfter=No|TokenRange=31:36
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37

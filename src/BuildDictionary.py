@@ -25,10 +25,18 @@ num.\tNUM
 interj.\tINTJ
 s.\tN
 part.\tPART
+part. perf.\tPFV
+part. report.\tRPRT
+part. neg.\tNEG
+part. afirm.\tAFF
+part. fut.\tFUT
+part. frust.\tFRUST
+part. interr. cont.\tCQ
+part. interr. pol.\tPQ
 posp.\tADP
 pron.\tPRON
 pron. 2ª cl.\tPRON2
-pron. indef.\tINDF
+pron. indef.\tIND
 pron. interr.\tINT
 pron. quant.\tQUANT
 pron. relativo\tREL
