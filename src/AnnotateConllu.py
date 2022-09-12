@@ -13,7 +13,7 @@ CASE="Gen"
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
-'ADVL': 'ADV', 'A2': 'VERB',
+'ADVD': 'ADV', 'ADVL': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET'}
 
 def extractParticles(mapping):
@@ -114,8 +114,11 @@ def sortTokens(tokenlist):
             if isinstance(v, dict) and len(v) > 1:
                 token[k]=sortDict(v)
 
-def VerbIdsList(tokenlist):
+def VerbIdsList(tokenlist): # TODO: VerbsList
     return tokenlist.filter(upos="VERB")
+
+def TokensofCatList(tokenlist,cat):
+    return tokenlist.filter(upos=cat)
 
 def FirstVerbId(tokenlist):
     verbs=VerbIdsList(tokenlist)
@@ -214,6 +217,9 @@ def handleSconj(token,tokenlist,verbs):
 
 def handleAdv(token,verbs):
     token['deprel']='advmod'
+    if token['xpos']=='ADVD':
+        token['feats']={}
+        token['feats'].update({'PronType': 'Dem'})
     tokenid=token['id']
     i=-1
     c=-len(verbs)
@@ -223,6 +229,38 @@ def handleAdv(token,verbs):
             token['head']=verbid
             break
         i=i-1
+
+def previousVerb(token,verbs):
+    tokenid=token['id']
+    i=-1
+    c=-len(verbs)
+    while(i >= c):
+        verbid=verbs[i]['id']
+        if verbid < tokenid:
+            return verbid
+        i=i-1
+
+def nextVerb(token,verbs):
+    tokenid=token['id']
+    for verb in verbs:
+        verbid=verb['id']
+        if verbid > tokenid:
+            return verbid
+
+def nextCat(token,cats):
+    tokenid=token['id']
+    for cat in cats:
+        catid=cat['id']
+        if catid > tokenid:
+            return catid
+
+def handleDem(token,tokenlist):
+    token['feats'].update({'PronType': 'Dem'})
+    token['deprel']='det'
+    nouns=TokensofCatList(tokenlist,'NOUN')
+    nounid=nextCat(token,nouns)
+    token['head']=nounid
+
 
 def addFeatures(tokenlist):
     i=0
@@ -245,8 +283,13 @@ def addFeatures(tokenlist):
             handleSconj(token,tokenlist,verbs)
         elif upos == "ADV":
             handleAdv(token,verbs)
+        elif upos == "DEM":
+            handleDem(token,tokenlist)
         if nextToken['upos'] == 'PUNCT':
-            nextToken['head']=FirstVerbId(tokenlist)
+            if nextToken['lemma'] == ",":
+                nextToken['head'] = nextVerb(token,verbs)
+            else:
+                nextToken['head']=FirstVerbId(tokenlist)
         i+=1
 
 def mkConlluSentence(tokens):

@@ -13,6 +13,7 @@ for l in """
 adj.\tA
 adj. 2ª cl.\tA2
 adv.\tADV
+adv. dem.\tADVD
 adv. intensif.\tADVS
 adv. interr.\tADVR
 adv. rel.\tADVL
