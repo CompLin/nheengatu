@@ -216,3 +216,30 @@
 6	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	4	obl	_	TokenRange=30:36
 7	suí	suí	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=37:40
 8	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# text = Maã taá rewasemu puxuwera?
+# text_eng = What do you find ugly?
+# text_por = O que você acha feio?
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	_	3	advmod	_	TokenRange=4:7
+3	rewasemu	wasemu	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:16
+4	puxuwera	puxuwera	VERB	A	_	3	xcomp	_	SpaceAfter=No|TokenRange=17:25
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# text = Taína umaã maá?
+# text_eng = The child saw what?
+# text_por = A criança viu o quê?
+1	Taína	taína	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
+3	maã	maã	PRON	INT	PronType=Int	2	obj	_	TokenRange=11:14
+4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# text = Aintá umaã uka mamé amurari.
+# text_eng = They saw the house where I live.
+# text_por = Eles viram a casa onde moro.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	subj	_	TokenRange=0:5
+2	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
+3	uka	uka	NOUN	N	Number=Sing|Rel=Abs	2	obj	_	TokenRange=11:14
+4	mamé	mamé	ADV	ADVR	PronType=Rel	5	advmod	_	TokenRange=15:19
+5	amurari	murari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No|TokenRange=20:27
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
