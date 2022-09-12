@@ -234,12 +234,26 @@
 3	maã	maã	PRON	INT	PronType=Int	2	obj	_	TokenRange=11:14
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
-# text = Aintá umaã uka mamé amurari.
-# text_eng = They saw the house where I live.
-# text_por = Eles viram a casa onde moro.
-1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	subj	_	TokenRange=0:5
-2	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
-3	uka	uka	NOUN	N	Number=Sing|Rel=Abs	2	obj	_	TokenRange=11:14
-4	mamé	mamé	ADV	ADVR	PronType=Rel	5	advmod	_	TokenRange=15:19
-5	amurari	murari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No|TokenRange=20:27
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+# text = Amunhã panhẽ maã mamé apurakí waá aikú.
+# text_eng = I do everything where I'm working.
+# text_por = Faço todas as coisas onde estou trabalhando.
+1	Amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	panhẽ	panhẽ	PRON	QUANT	PronType=Quant	3	det	_	TokenRange=7:12
+3	maã	maã	NOUN	N	Number=Sing	1	obj	_	TokenRange=13:16
+4	mamé	mamé	ADV	ADVR	PronType=Int	1	advmod	_	TokenRange=17:21
+5	apurakí	purakí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	TokenRange=22:29
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	advmod	_	TokenRange=30:33
+7	aikú	ikú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=34:38
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# text = Amunhã panhẽ maã mamé apurakí waá aikú.
+# text_eng = I do everything where I'm working.
+# text_por = Faço todas as coisas onde estou trabalhando.
+1	Asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=0:5
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=11:13
+4	mbira	mbira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=14:19
+5	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:25
+6	ana	ana	PART	PFV	_	5	advmod	_	TokenRange=26:29
+7	aikú	ikú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=30:34
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
