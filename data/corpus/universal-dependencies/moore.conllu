@@ -246,9 +246,9 @@
 7	aikú	ikú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=34:38
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
 
-# text = Amunhã panhẽ maã mamé apurakí waá aikú.
-# text_eng = I do everything where I'm working.
-# text_por = Faço todas as coisas onde estou trabalhando.
+# text = Asika ramé se mbira ukiri ana aikú.
+# text_eng = When I arrive, my children are already sleeping.
+# text_por = Quando chego, meus filhos já estão dormindo.
 1	Asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=11:13
@@ -257,3 +257,31 @@
 6	ana	ana	PART	PFV	_	5	advmod	_	TokenRange=26:29
 7	aikú	ikú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=30:34
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# text = Indé muíri akayú taá remurari iké kwá cidade upé?
+# text_eng = For how long have you lived here in this city?
+# text_por = Você quantos anos mora aqui nesta cidade?
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	subj	_	TokenRange=0:4
+2	muíri	muíri	DET	INT	PronType=Int	3	det	_	TokenRange=5:10
+3	akayú	akayú	NOUN	N	Number=Sing	5	obl	_	TokenRange=11:16
+4	taá	taá	PART	CQ	_	5	advmod	_	TokenRange=17:20
+5	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=21:29
+6	iké	iké	ADV	ADVD	PronType=Dem	5	advmod	_	TokenRange=30:33
+7	kwá	kwá	DEM	DEM	Number=Sing|PronType=Dem	8	det	_	TokenRange=34:37
+8	cidade	cidade	NOUN	N	Number=Sing	5	obl	_	TokenRange=38:42
+9	upé	upé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=43:46
+10	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=46:47
+
+# text = Ixé akayú puirundí akayú ana ayuíri se retama suí.
+# text_eng = It's been nine years since I came from my land.
+# text_por = Eu já faz nove anos que vim da minha terra.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	6	subj	_	TokenRange=0:3
+2	akayú	akayú	NOUN	N	Number=Sing	4	reparandum	_	TokenRange=4:9
+3	puirundí	puirundí	NUM	NUM	NumType=Card	4	nummod	_	TokenRange=10:18
+4	akayú	akayú	NOUN	N	Number=Sing	6	obl	_	TokenRange=19:24
+5	ana	ana	PART	PFV	_	6	advmod	_	TokenRange=25:28
+6	ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=29:35
+7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod	_	TokenRange=36:38
+8	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	6	obl	_	TokenRange=39:45
+9	suí	suí	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=46:49
+10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
