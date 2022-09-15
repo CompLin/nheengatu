@@ -165,20 +165,27 @@ def handleNounPron(token,nextToken, verbid):
         else:
             token['deprel'] = 'subj'
 
+def updateFeats(token,feature,value):
+    if not token['feats']:
+        token['feats']={}
+    token['feats'].update({feature : value})
+
 def handlePart(token,verbs):
-    token['feats']={}
+    #token['feats']={}
     token['deprel'] = 'advmod'
     xpos=token['xpos']
     tokid=token['id']
     if xpos == 'NEG':
-        token['feats'].update({'Polarity': 'Neg'})
+        updateFeats(token,'Polarity', 'Neg')
+        #token['feats'].update({'Polarity': 'Neg'})
         for verb in verbs:
             verbid=verb['id']
             if verbid > tokid:
                 token['head']=verbid
                 break
     elif xpos == 'RPRT':
-        token['feats'].update({'Evident': 'Nfh'})
+        updateFeats(token,'Evident','Nfh')
+        #token['feats'].update({'Evident': 'Nfh'})
         if verbs:
             token['head']=verbs[0]['id']
 
