@@ -2,7 +2,7 @@
 # text_eng = The milk is hot.
 # text_por = O leite está quente.
 1	Kambí	kambi	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
-2	sakú	rakú	VERB	A2	Number=Sing|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
+2	sakú	rakú	VERB	A2	Number=Sing|Person=3|Rel=Ncont|VerbForm=Fin	0	root	_	TokenRange=6:10
 3	uikú	ikú	AUX	V	Number=Sing|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
@@ -24,3 +24,10 @@
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	0	root	_	TokenRange=12:14
 4	ruakí	ruakí	ADP	ADP	Rel=Cont	3	case	_	SpaceAfter=No|TokenRange=15:20
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# text = Suka sakú.
+# text_eng = Her house is hot.
+# text_por = A casa dela é quente.
+1	Suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=Ncont	2	nsubj	_	TokenRange=0:4
+2	sakú	rakú	VERB	A2	Number=Sing|Person=3|Rel=Ncont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:9
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10

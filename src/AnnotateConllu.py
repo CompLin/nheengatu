@@ -65,6 +65,10 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     if pos:
         token['upos']=getudtag(pos)
         token['xpos']=pos
+    else:
+        token['upos']=None
+        token['xpos']=None
+    upos=token['upos']
     person=entry.get('person')
     number=entry.get('number')
     vform=entry.get('vform')
@@ -79,12 +83,12 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['VerbForm']=getudtag(vform)
     if rel:
         feats['Rel']=rel.title()
+        handleNcont(upos,feats)
     if feats:
         token['feats']=feats
     else:
         token['feats']=None
     token['head']=head
-    upos=token['upos']
     if upos == 'VERB':
         token['deprel']='root'
     elif upos == 'PUNCT':
@@ -191,7 +195,7 @@ def handlePart(token,verbs):
             token['head']=verbs[0]['id']
 
 def handleVerb(token,nextToken,verbs):
-    if nextToken['upos'] == 'VERB':
+    if nextToken['upos'] == 'VERB': # TODO: depecated (see handleAux)
         nextToken['upos']= 'AUX'
         nextToken['deprel']='aux'
         nextToken['head']=token['id']
@@ -229,7 +233,7 @@ def handleAdv(token,verbs):
         token['feats']={}
         token['feats'].update({'PronType': 'Dem'})
     token['head']=getHeadVerb(token,verbs)
-       
+
 def handleAdv0(token,verbs):
     token['deprel']='advmod'
     if token['xpos']=='ADVD':
@@ -320,6 +324,16 @@ def handleAux(tokenlist):
                 verb['upos'] = 'AUX'
                 verb['deprel'] = 'aux'
                 verb['head'] = headid
+
+def handleNcont(upos,feats):
+    if feats['Rel'] == 'Ncont':
+        if upos == 'VERB':
+            feats.update({'Number':'Sing',
+            'Person' : '3',
+            'VerbForm' : 'Fin'})
+        elif upos == 'NOUN':
+            feats.update({'Number[psor]':'Sing',
+            'Person[psor]' : '3'})
 
 def addFeatures(tokenlist):
     i=0
