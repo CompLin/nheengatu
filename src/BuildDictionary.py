@@ -18,9 +18,9 @@ adv. intensif.\tADVS
 adv. interr.\tADVR
 adv. rel.\tADVL
 art. indef.\tART
-aux. flex.\tIAUXF
+aux. flex.\tAUXF
 aux. não-flex.\tAUXN
-cop.\tCOP
+cop.\tV
 conj.\tCONJ
 sconj.\tSCONJ
 cconj.\tCCONJ

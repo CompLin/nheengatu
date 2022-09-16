@@ -14,7 +14,8 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
 'ADVD': 'ADV', 'ADVL': 'ADV', 'A2': 'VERB',
-'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET'}
+'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
+'AUXN' : 'VERB', 'AUXF' : 'AUX'}
 
 def extractParticles(mapping):
 	dic={}
@@ -227,6 +228,13 @@ def handleAdv(token,verbs):
     if token['xpos']=='ADVD':
         token['feats']={}
         token['feats'].update({'PronType': 'Dem'})
+    token['head']=getHeadVerb(token,verbs)
+       
+def handleAdv0(token,verbs):
+    token['deprel']='advmod'
+    if token['xpos']=='ADVD':
+        token['feats']={}
+        token['feats'].update({'PronType': 'Dem'})
     tokenid=token['id']
     i=-1
     c=-len(verbs)
@@ -237,6 +245,12 @@ def handleAdv(token,verbs):
             break
         i=i-1
 
+def getHeadVerb(token,verbs):
+    headid=previousVerb(token,verbs)
+    if headid:
+        return headid
+    return nextVerb(token,verbs)
+
 def previousVerb(token,verbs):
     tokenid=token['id']
     i=-1
@@ -246,6 +260,7 @@ def previousVerb(token,verbs):
         if verbid < tokenid:
             return verbid
         i=i-1
+    return 0
 
 def nextVerb(token,verbs):
     tokenid=token['id']
@@ -253,6 +268,7 @@ def nextVerb(token,verbs):
         verbid=verb['id']
         if verbid > tokenid:
             return verbid
+    return 0
 
 def nextCat(token,cats):
     tokenid=token['id']
@@ -260,6 +276,18 @@ def nextCat(token,cats):
         catid=cat['id']
         if catid > tokenid:
             return catid
+    return 0
+
+def previousCat(token,cats):
+    tokenid=token['id']
+    i=-1
+    c=-len(cats)
+    while(i >= c):
+        catid=cats[i]['id']
+        if catid < tokenid:
+            return catid
+        i=i-1
+    return 0
 
 def handleDem(token,tokenlist):
     token['feats'].update({'PronType': 'Dem'})
@@ -268,16 +296,42 @@ def handleDem(token,tokenlist):
     nounid=nextCat(token,nouns)
     token['head']=nounid
 
+def getNextToken(token, tokenlist):
+    for t in tokenlist:
+        if t['form'] != token['form']:
+            return t
+
+def handleAux(tokenlist):
+    verbs=VerbIdsList(tokenlist)
+    c=len(verbs)
+    if c == 1:
+        if verbs[0]['lemma'] == 'ikú':
+            verbs[0]['deprel'] = 'cop'
+    elif c > 1:
+        for verb in verbs:
+            lemma=verb['lemma']
+            if lemma == 'sú':
+                headid=nextVerb(verb,verbs)
+                verb['upos'] = 'AUX'
+                verb['deprel'] = 'aux'
+                verb['head'] = headid
+            elif lemma == 'ikú':
+                headid=previousVerb(verb,verbs)
+                verb['upos'] = 'AUX'
+                verb['deprel'] = 'aux'
+                verb['head'] = headid
 
 def addFeatures(tokenlist):
     i=0
     c=len(tokenlist) -1
+    handleAux(tokenlist)
     verbid=FirstVerbId(tokenlist)
     verbs=VerbIdsList(tokenlist)
     while(i < c) :
         token=tokenlist[i]
         upos=token['upos']
-        nextToken=tokenlist[i+1]
+        #nextToken=tokenlist[i+1]
+        nextToken=getNextToken(token, tokenlist[i+1:])
         if upos in ('NOUN','PRON'):
             handleNounPron(token,nextToken, verbid)
             if upos == 'PRON':
