@@ -48,7 +48,7 @@
 1-2	Ayuíri-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
 2	putari	putari	AUX	V	VerbForm=Inf	1	aux	_	_
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=14:16
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=14:16
 4	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=17:23
 5	kití	kití	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=24:28
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
@@ -66,7 +66,7 @@
 # text_eng = I'm in my house.
 # text_por = Eu estou na minha casa.
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	0	nsubj	_	TokenRange=0:3
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod	_	TokenRange=4:6
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=4:6
 3	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=7:11
 4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=12:15
 5	aikú	ikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:20
@@ -86,14 +86,14 @@
 # text_eng = I asked my mother to stay in our farm that my father-in-law left for us.
 # text_por = Pedi para minha mãe ficar na nossa fazenda que meu sogro deixou para nós.
 1	Ayururé	yururé	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod	_	TokenRange=9:11
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=9:11
 3	manha	manha	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:17
 4	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=18:23
 5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
-6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod	_	TokenRange=30:34
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:34
 7	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=35:42
 8	upé	upé	ADP	ADP	_	7	case	_	TokenRange=43:46
-9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod	_	TokenRange=47:49
+9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=47:49
 10	ratiwa	tatiwa	NOUN	N	Number=Sing|Rel=Cont	11	nsubj	_	TokenRange=50:56
 11	uxari	xari	VERB	V	Person=3|VerbForm=Fin	7	acl:relcl	_	TokenRange=57:62
 12	waá	waá	REL	REL	Number=Sing|PronType=Rel	11	obj	_	TokenRange=63:66
@@ -126,17 +126,6 @@
 7	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	1	advcl	_	TokenRange=38:43
 8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=44:49
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=49:50
-
-# text = Akwá katú ixé ti ayupukwá akití.
-# text_eng = I think I cannot accustom myself to that place anymore.
-# text_por = Sei bem que não me acostumo lá.
-1	Akwá	kwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	katú	katú	ADV	ADV	_	1	advmod	_	TokenRange=5:9
-3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=10:13
-4	ti	ti	PART	PART	Polarity=Neg	5	advmod	_	TokenRange=14:16
-5	ayupukwá	yupukwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=17:25
-6	akití	akití	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=26:31
-7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # text = Ti aintá ukwá maã kurupira-itá umunhã yané irũmu.
 # text_eng = They didn't know what the curupiras do to us.
@@ -251,7 +240,7 @@
 # text_por = Quando chego, meus filhos já estão dormindo.
 1	Asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=11:13
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
 4	mbira	mbira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=14:19
 5	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:25
 6	ana	ana	PART	PFV	_	5	advmod	_	TokenRange=26:29
@@ -279,11 +268,22 @@
 2	ti	ti	PART	NEG	Polarity=Neg	3	advmod	_	TokenRange=4:6
 3	amandwari	mandwari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:16
 4	ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	ccomp	_	TokenRange=17:23
-5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod	_	TokenRange=24:26
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=24:26
 6	anama-itá	anama	NOUN	N	Number=Plur	7	nmod	_	TokenRange=27:36
 7	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=37:41
 8	kití	kití	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=42:46
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=46:47
+
+# text = Akwá katú ixé ti ayupukwá akití.
+# text_eng = I think I cannot accustom myself to that place anymore.
+# text_por = Sei bem que não me acostumo lá.
+1	Akwá	kwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	katú	katú	ADV	ADV	_	1	advmod	_	TokenRange=5:9
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=10:13
+4	ti	ti	PART	PART	Polarity=Neg	5	advmod	_	TokenRange=14:16
+5	ayupukwá	yupukwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=17:25
+6	akití	akití	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=26:31
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # text = Mayé taá asú anhũ awatá se retama kití amaã arã se anama-itá?
 # text_eng = How can I go back to that city only to see my family?
@@ -293,11 +293,11 @@
 3	asú	sú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	TokenRange=9:12
 4	anhũ	anhũ	ADV	ADV	_	5	advmod	_	TokenRange=13:17
 5	awatá	watá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=18:23
-6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod	_	TokenRange=24:26
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=24:26
 7	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=27:33
 8	kití	kití	ADP	ADP	_	7	case	_	TokenRange=34:38
 9	amaã	maã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=39:43
 10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=44:47
-11	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod	_	TokenRange=48:50
+11	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=48:50
 12	anama-itá	anama	NOUN	N	Number=Plur	9	obj	_	SpaceAfter=No|TokenRange=51:60
 13	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=60:61

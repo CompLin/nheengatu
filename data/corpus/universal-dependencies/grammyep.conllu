@@ -11,7 +11,7 @@
 # text_por = A comunidade do menino é perto da cidade de vocês.
 1	Kurumĩ	kurumĩ 	NOUN	N	Number=Sing	2	nmod	_	TokenRange=0:6
 2	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=7:14
-3	pe	ne	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	4	nmod	_	TokenRange=15:17
+3	pe	ne	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=15:17
 4	tawa	tawa	NOUN	N	Number=Sing	0	root	_	TokenRange=18:22
 5	ruakí	ruakí	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=28:29
@@ -31,3 +31,45 @@
 1	Suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=Ncont	2	nsubj	_	TokenRange=0:4
 2	sakú	rakú	VERB	A2	Number=Sing|Person=3|Rel=Ncont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:9
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# text = Kunhã ruka puranga.
+# text_eng = The house of the woman is beautiful.
+# text_por = A casa da mulher é bonita.
+
+# text = Kunhã puranga.
+# text_eng = The woman is beautiful.
+# text_por = A mulher é bonita.
+1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=6:13
+3	.	.	PUNCT	PUNCT	_	0	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# text = Kunhã puranga uikú.
+# text_eng = The woman is beautiful.
+# text_por = A mulher está bonita.
+1	Kunhã	kunhã	NOUN	N	Number=Sing	2	subj	_	TokenRange=0:5
+2	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=6:13
+3	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=14:18
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# text = Nhaã apigawa igara uikú se raíra ruka ruakí.
+# text_eng = That canoe of the man is near the house of my son.
+# text_por = Aquela canoa do homem está perto da casa do meu filho.
+1	Nhaã	nhaã	DEM	DEM	Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
+2	apigawa	apigawa	NOUN	N	Number=Sing	3	nmod	_	TokenRange=5:12
+3	igara	igara	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=13:18
+4	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	7	cop	_	TokenRange=19:23
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=24:26
+6	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	7	nmod	_	TokenRange=27:32
+7	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=33:37
+8	ruakí	ruakí	ADP	ADP	Rel=Cont	7	case	_	SpaceAfter=No|TokenRange=38:43
+9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# text = Apigawa rendawa kurumĩ tawa ruakí.
+# text_eng = The community of the man is near the city of the boy.
+# text_por = A comunidade do homem é perto da cidade do menino.
+1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nmod	_	TokenRange=0:7
+2	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=8:15
+3	kurumĩ	kurumĩ	NOUN	N	Number=Sing	4	nmod	_	TokenRange=16:22
+4	tawa	tawa	NOUN	N	Number=Sing	0	root	_	TokenRange=23:27
+5	ruakí	ruakí	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=28:33
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
