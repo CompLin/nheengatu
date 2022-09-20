@@ -501,9 +501,14 @@
         "gloss": "copo"
     },
     {
-        "lemma": "irũmu",
+        "lemma": "irumu",
         "pos": "posp.",
         "gloss": "com"
+    },
+    {
+        "lemma": "irũmu",
+        "pos": "posp.",
+        "gloss": "var. irumu"
     },
     {
         "lemma": "irundí",
@@ -641,9 +646,14 @@
         "gloss": "candiru (tipo de peixe)"
     },
     {
-        "lemma": "kanhimu",
-        "pos": "s.",
+        "lemma": "kanhemu",
+        "pos": "v.",
         "gloss": "sumir; desaparecer"
+    },
+    {
+        "lemma": "kanhimu",
+        "pos": "v.",
+        "gloss": "var. kanhemu"
     },
     {
         "lemma": "kará",
@@ -959,11 +969,24 @@
     {
         "lemma": "kwema",
         "pos": "s.",
-        "gloss": "manhã",
+        "gloss": "var. kuẽma",
         "var": 1
     },
     {
         "lemma": "kwema",
+        "pos": "v. 2ª cl.",
+        "gloss": "var. kuẽma",
+        "var": 2,
+        "pron2": "se"
+    },
+    {
+        "lemma": "kuẽma",
+        "pos": "s.",
+        "gloss": "manhã",
+        "var": 1
+    },
+    {
+        "lemma": "kuẽma",
         "pos": "v. 2ª cl.",
         "gloss": "amanhecer (só se conjuga na 3ª pess.: i kwema) (impess.)",
         "var": 2,
@@ -1345,9 +1368,14 @@
         "gloss": "pão (nome de um bolo de mandioca)"
     },
     {
-        "lemma": "mimbira",
+        "lemma": "membira",
         "pos": "s.",
         "gloss": "1. filho ou filha (de mulher); 2. filhote, cria (de animal)"
+    },
+    {
+        "lemma": "mimbira",
+        "pos": "s.",
+        "gloss": "var. membira"
     },
     {
         "lemma": "mimi",
@@ -1910,9 +1938,14 @@
         "gloss": "1. papel; 2. carta"
     },
     {
-        "lemma": "paranã",
+        "lemma": "paraná",
         "pos": "s.",
         "gloss": "rio"
+    },
+    {
+        "lemma": "paranã",
+        "pos": "s.",
+        "gloss": "var. paraná"
     },
     {
         "lemma": "paranãpura",
@@ -3616,7 +3649,16 @@
     {
         "lemma": "tuxawa",
         "pos": "s.",
-        "gloss": "tuxaua, chefe"
+        "gloss": "var. tuixawa"
+    },
+    {
+        "lemma": "tuixawa",
+        "pos": "s.",
+        "gloss": "tuxaua, cacique; chefe, líder; rei",
+        "rel": [
+            "ruixawa",
+            "suixawa"
+        ]
     },
     {
         "lemma": "tuyuka",
