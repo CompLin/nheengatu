@@ -14,7 +14,7 @@ O nheengatu é a língua materna (L1) ou segunda língua (L2) de estimadas 6000 
 
 Felizmente, nos últimos anos, o nheengatu tem passado por um processo de revitalização, impulsionado por traduções literárias e cursos em universidades brasileiras, despertando o interesse também do público não indígena. Tem sido também adotado por diversos grupos indígenas de diferentes regiões do Brasil como meio de afirmação de sua identidade étnica.  
 
-O estudo do nheengatu reveste-se de grande importância histórica, uma vez que foi, durante dois séculos e meio, “a principal língua da Amazônia”, posição que perderia para o português apenas na segunda metade do século XIX. É talvez a única língua indígena brasileira cujo desenvolvimento ao longo de mais de quatro séculos pode ser acompanhado por meio de textos que documentam os seus vários estágios de evolução.
+O estudo do nheengatu reveste-se de grande importância histórica, uma vez que foi, durante dois séculos e meio, nas palavras de José Ribamar Bessa Freire, “a principal língua da Amazônia”, posição que perderia para o português apenas na segunda metade do século XIX. É talvez a única língua indígena brasileira cujo desenvolvimento ao longo de mais de quatro séculos pode ser acompanhado por meio de textos que documentam os seus vários estágios de evolução.
 
 Afirma Aryon Dall’Igna Rodrigues no prefácio do livro *Rio Babel: a história das línguas na Amazônia*, de José Ribamar Bessa Freire:
 
