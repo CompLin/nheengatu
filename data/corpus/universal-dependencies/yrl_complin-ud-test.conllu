@@ -404,6 +404,22 @@
 3	puranga	puranga	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=13:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# sent_id = Navarro2016:0:2
+# text = Panhẽ musapiri, paá, aintá urikú aintá rimirikú.
+# text_source = apud Cruz, 270, modif.
+# text_eng = It is said that all three had their wives.
+# text_por = Dizem que todos os três tinham suas esposas.
+1	Panhẽ	panhẽ	PRON	QUANT	PronType=Tot	2	det	_	TokenRange=0:5
+2	musapiri	musapiri	NUM	NUM	NumType=Card	7	nsubj	_	SpaceAfter=No|TokenRange=6:14
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
+4	paá	paá	PART	RPRT	Evident=Nfh	7	advmod	_	SpaceAfter=No|TokenRange=16:19
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
+6	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	expl	_	TokenRange=21:26
+7	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=27:32
+8	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=33:38
+9	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=39:47
+10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=47:48
+
 # sent_id = Avila2021:0:1
 # text = Kuẽma irumu paá mukũi aintá suiwara tauwiyé garapá kití asuí akití taukanhemu.
 # text_orig = kuẽma irumu paá mukũi aintá suiwara ta uwiyé garapá kití asuí akití ta ukanhemu.
@@ -456,4 +472,3 @@
 7	retana	retana	ADV	ADVS	_	6	advmod	_	TokenRange=21:27
 8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=28:32
 9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=32:33
-
