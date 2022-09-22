@@ -1,5 +1,9 @@
 # Nheengatu
 
+<div style="text-align: right">Leonel Figueiredo de Alencar
+22 de setembro de 2022
+</div>
+
 O nheengatu, também conhecido como tupi moderno e Língua Geral Amazônica, entre outras designações, é uma das dezenas de línguas indígenas brasileiras ainda vivas. O termo *nheengatu* surgiu por volta de meados do século XIX, significando originalmente "língua boa", resultado da composição do substantivo *nheenga* 'língua' e do adjetivo *katú* 'bom'. No padrão ISO 639-3, representa-se pelo código *yrl*, derivado de *yeral* (*geral* em português), um dos termos com que é designado em espanhol.
 
 O nheengatu descendente do tupinambá, língua tupi-guarani que era falada no norte do Brasil até o século XVIII. O tupinambá era uma das variedades do que se designa tupi antigo, "a língua mais falada na costa do Brasil" no século XVI, nas palavras do Pe. Anchieta, que publicou uma gramática da língua em 1595.
