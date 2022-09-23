@@ -486,3 +486,18 @@
 8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=28:32
 9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=32:33
 
+# sent_id = Avila2021:0:4
+# text = Usika yepé mirawasú wírupi, ape ukiri.
+# text_orig = [...], usika yepé miráwasú wírupi, ape ukiri.
+# text_source = Rodrigues, 23, adap.
+# text_eng = He arrived under a big tree, there he slept.
+# text_por = Chegou embaixo de uma árvore grande, aí dormiu.
+1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	yepé	yepé	DET	ART	PronType=Art	3	det	_	TokenRange=6:10
+3	mirawasú	mirá	NOUN	N	Augm=Yes|Number=Sing	1	obl	_	TokenRange=11:19
+4	wírupi	wírupi	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=20:26
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=26:27
+6	ape	ape	ADV	ADVD	PronType=Dem	7	advmod	_	TokenRange=28:31
+7	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=32:37
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
+
