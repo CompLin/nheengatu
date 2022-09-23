@@ -420,6 +420,19 @@
 9	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=39:47
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=47:48
 
+# sent_id = Navarro2016:0:3
+# text = Ixé aputari amemũi musapiri pirá yambaú arama.
+# text_eng = I want to cook three fish for us to eat.
+# text_por = Eu quero cozinhar três peixes para nós comermos.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
+2	aputari	putari	AUX	V	Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=4:11
+3	amemũi	memũi	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=12:18
+4	musapiri	musapiri	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=19:27
+5	pirá	pirá	NOUN	N	Number=Sing	3	obj	_	TokenRange=28:32
+6	yambaú	mbaú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=33:39
+7	arama	arama	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=40:45
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+
 # sent_id = Avila2021:0:1
 # text = Kuẽma irumu paá mukũi aintá suiwara tauwiyé garapá kití asuí akití taukanhemu.
 # text_orig = kuẽma irumu paá mukũi aintá suiwara ta uwiyé garapá kití asuí akití ta ukanhemu.
@@ -472,3 +485,4 @@
 7	retana	retana	ADV	ADVS	_	6	advmod	_	TokenRange=21:27
 8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=28:32
 9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=32:33
+

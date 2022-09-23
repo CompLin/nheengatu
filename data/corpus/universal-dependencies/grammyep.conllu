@@ -35,6 +35,10 @@
 # text = Kunhã ruka puranga.
 # text_eng = The house of the woman is beautiful.
 # text_por = A casa da mulher é bonita.
+1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nmod	_	TokenRange=0:5
+2	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	3	nsubj	_	TokenRange=6:10
+3	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=11:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # text = Kunhã puranga.
 # text_eng = The woman is beautiful.
