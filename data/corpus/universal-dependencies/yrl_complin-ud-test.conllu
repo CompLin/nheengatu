@@ -501,3 +501,20 @@
 7	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=32:37
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
+# sent_id = Avila2021:0:5
+# text = Aité kwá pusanga yaú mairamé uwatari yepé yasí yasupiri rã yané mbira.
+# text_eng = We take this medicine when we have a month to give birth to our son.
+# text_por = Esse remédio nós tomamos quando falta um mês para darmos à luz nosso filho.
+1	Aité	aité	PRON	EMP	PronType=Emp	3	det	_	TokenRange=0:4
+2	kwá	kwá	DET	DEM	Number=Sing|PronType=Dem	3	det	_	TokenRange=5:8
+3	pusanga	pusanga	NOUN	N	Number=Sing	4	obj	_	TokenRange=9:16
+4	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=17:20
+5	mairamé	mairamé	SCONJ	CONJ	_	6	mark	_	TokenRange=21:28
+6	uwatari	watari	VERB	V	Person=3|VerbForm=Fin	4	advcl	_	TokenRange=29:36
+7	yepé	yepé	NUM	CARD	NumType=Card	8	nummod	_	TokenRange=37:41
+8	yasí	yasí	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=42:46
+9	yasupiri	supiri	VERB	V	Number=Plur|Person=1|VerbForm=Fin	6	advcl	_	TokenRange=47:55
+10	rã	rã	SCONJ	SCONJ	_	9	mark	_	TokenRange=56:58
+11	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=59:63
+12	mbira	mbira	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=64:69
+13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
