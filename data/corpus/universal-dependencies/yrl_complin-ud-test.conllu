@@ -519,7 +519,7 @@
 12	mbira	mbira	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=64:69
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
 
-# sent_id = Avila2021:0:1:6
+# sent_id = Avila2021:1:1:6
 # text = Kwá maniaka irumu yamunhã meyú asuí masuka, umeẽ turusú tipiaka.
 # text_orig = Kwá maniáka irumu yamunhã meyú asuí masuka, umeẽ turusú tipiáka.
 # text_source = Payema, 22, adap.
@@ -538,7 +538,7 @@
 11	tipiaka	tipiaka	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=56:63
 12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=63:64
 
-# sent_id = Avila2021:0:2:7
+# sent_id = Avila2021:1:2:7
 # text = Yamusaka aé yepé akayú irumu.
 # text_source = Payema, 22, adap.
 # text_eng = We harvest it after one year.
@@ -549,3 +549,43 @@
 4	akayú	akayú	NOUN	N	Number=Sing	1	obl	_	TokenRange=17:22
 5	irumu	irumu	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Avila2021:0:0:8
+# text = Turusú ugustari yandé, turusú upurará mundu upé, [...].
+# text_eng = He loves us very much, he has suffered a lot in the world, [...].
+# text_por = Gosta muito de nós, sofreu muito no mundo, [...].
+# text_source = Missão Novas Tribos do Brasil, 2016, canto 120, adap.
+1	Turusú	turusú	ADV	ADVS	_	2	advmod	_	TokenRange=0:6
+2	ugustari	gustari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:15
+3	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	obj	_	SpaceAfter=No|TokenRange=16:21
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=21:22
+5	turusú	turusú	ADV	ADVS	_	6	advmod	_	TokenRange=23:29
+6	upurará	purará	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=30:37
+7	mundu	mundu	NOUN	N	Number=Sing	6	obl	_	TokenRange=38:43
+8	upé	upé	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=44:47
+9	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=47:48
+10	[...]	[...]	PUNCT	ELIP	PunctType=Elip	6	punct	_	SpaceAfter=No|TokenRange=49:54
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
+
+# sent_id = Avila2021:0:0:9
+# text = Turusú será aintá kupirisawa?
+# text_eng = Is their plantation big?
+# text_por = É grande a roça deles?
+# text_source = Rodrigues, 181, adap.
+1	Turusú	turusú	ADJ	A	_	0	root	_	TokenRange=0:6
+2	será	será	PART	PQ	_	1	advmod	_	TokenRange=7:11
+3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:17
+4	kupirisawa	kupirisawa	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=18:28
+5	?	?	PUNCT	PUNCT	_	1	punct	_	TokenRange=28:29
+
+# sent_id = Avila2021:2:1:10
+# text = Kurukuí uwitá yepé ruaxara kití.
+# text_eng = Kurukuí swam to one side.
+# text_por = Kurukuí nadou para um lado.
+# text_source = Casasnovas, 99
+1	Kurukuí	kurukuí	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:7
+2	uwitá	witá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=14:18
+4	ruaxara	suaxara	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=19:26
+5	kití	kití	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=27:31
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
