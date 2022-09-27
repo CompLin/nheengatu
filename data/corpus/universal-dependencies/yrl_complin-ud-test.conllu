@@ -629,8 +629,59 @@
 4	turusú	turusú	ADJ	A	_	3	acl:relcl	_	TokenRange=20:26
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	SpaceAfter=No|TokenRange=27:30
 6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=30:31
-7	aité	aité	DET	EMP	PronType=Emp	8	det	_	TokenRange=32:36
-8	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	dislocated	_	TokenRange=37:40
+7	aité	aité	PRON	EMP	PronType=Emp	9	dislocated	_	TokenRange=32:36
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=37:40
 9	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	nsubj	_	TokenRange=41:45
 10	Kurukuí	kurukuí	PROPN	PROPN	_	1	parataxis	_	SpaceAfter=No|TokenRange=46:53
 11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Avila2021:3:1:12
+# text = Aité kwá kana ti waá urikú i pinimasawa, aité kwá kana piranga waá.
+# text_eng = This is the cane that has no spots, this is the red cane.
+# text_por = Esta é a cana que não tem pinta, esta é a cana vermelha.
+# text_source = Payema, 16, adap.
+1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:8
+3	kana	kana	NOUN	N	Number=Sing	0	root	_	TokenRange=9:13
+4	ti	ti	PART	NEG	Polarity=Neg	6	advmod	_	TokenRange=14:16
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	nsubj	_	TokenRange=17:20
+6	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	3	acl:relcl	_	TokenRange=21:26
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=27:28
+8	pinimasawa	pinimasawa	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=29:39
+9	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=39:40
+10	aité	aité	PRON	EMP	PronType=Emp	12	nsubj	_	TokenRange=41:45
+11	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	det	_	TokenRange=46:49
+12	kana	kana	NOUN	N	Number=Sing	3	parataxis	_	TokenRange=50:54
+13	piranga	piranga	ADJ	A	_	12	acl:relcl	_	TokenRange=55:62
+14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nsubj	_	SpaceAfter=No|TokenRange=63:66
+15	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=66:67
+
+# sent_id = Avila2021:3:2:13
+# text = Umeẽ yuíri turusú yukisé.
+# text_eng = It also gives a lot of juice.
+# text_por = Ela também dá muito suco.
+# text_source = Payema, 16, adap.
+1	Umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	yuíri	yuíri	ADV	ADV	_	1	advmod	_	TokenRange=5:10
+3	turusú	turusú	DET	IND	PronType=Ind	4	det	_	TokenRange=11:17
+4	yukisé	yukisé	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=18:24
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Avila2021:0:0:14
+# text = Kwá paka urikú sukwera seé, yawé rã mira-itá usikari aé turusú.
+# text_eng = The paca has tasty meat, so people look for it a lot.
+# text_por = A paca tem a carne saborosa, por isso as pessoas procuram-na muito.
+# text_source = Payema, 57, adap.
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	paka	paka	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
+3	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
+4	sukwera	sukwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=15:22
+5	seé	seé	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=23:26
+6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=26:27
+7	yawé	yawé	ADV	ADV	_	10	advmod	_	TokenRange=28:32
+8	rã	rã	PART	PART	_	7	fixed	_	TokenRange=33:35
+9	mira-itá	mira	NOUN	N	Number=Plur	10	nsubj	_	TokenRange=36:44
+10	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=45:52
+11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	TokenRange=53:55
+12	turusú	turusú	ADV	ADVS	_	10	advmod	_	SpaceAfter=No|TokenRange=56:62
+13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=62:63
