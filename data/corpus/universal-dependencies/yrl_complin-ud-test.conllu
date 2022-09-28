@@ -710,3 +710,32 @@
 17	saimbé	saimbé	ADJ	A	_	16	amod	_	TokenRange=80:86
 18	yuíri	yuíri	ADV	ADV	_	16	advmod	_	SpaceAfter=No|TokenRange=87:92
 19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=92:93
+
+# sent_id = Avila2021:0:0:16
+# text = Jesus upurandú aintá: ― Maã rangawa taá kwá uyari waá dinheru resé, awá rera taá kwá uyari waá dinheru resé?
+# text_eng = Jesus asked them: "What picture is this printed on the coin? Whose name is this printed on the coin?"
+# text_por = Jesus perguntou-lhes: ― Que retrato é este impresso na moeda? De quem é este nome impresso na moeda?
+# text_source = O Novo Testamento em nyengatu, Mateus 22:20
+1	Jesus	jesus	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
+2	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:14
+3	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	obj	_	SpaceAfter=No|TokenRange=15:20
+4	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=20:21
+5	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=21:22
+6	Maã	maã	DET	INT	PronType=Int	7	det	_	TokenRange=23:26
+7	rangawa	sangawa	NOUN	N	Number=Sing|Rel=Cont	2	ccomp	_	TokenRange=27:34
+8	taá	taá	PART	CQ	_	7	advmod	_	TokenRange=35:38
+9	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	nsubj	_	TokenRange=39:42
+10	uyari	yari	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=43:48
+11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=49:52
+12	dinheru	dinheru	NOUN	N	Number=Sing	10	obl	_	TokenRange=53:60
+13	resé	resé	ADP	ADP	Rel=Cont	12	case	_	SpaceAfter=No|TokenRange=61:65
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=65:66
+15	awá	awá	DET	INT	PronType=Int	16	det	_	TokenRange=67:70
+16	rera	sera	NOUN	N	Number=Sing|Rel=Cont	7	parataxis	_	TokenRange=71:75
+17	taá	taá	PART	CQ	_	16	advmod	_	TokenRange=76:79
+18	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	16	nsubj	_	TokenRange=80:83
+19	uyari	yari	VERB	V	Person=3|VerbForm=Fin	18	acl:relcl	_	TokenRange=84:89
+20	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	nsubj	_	TokenRange=90:93
+21	dinheru	dinheru	NOUN	N	Number=Sing	19	obl	_	TokenRange=94:101
+22	resé	resé	ADP	ADP	Rel=Cont	21	case	_	SpaceAfter=No|TokenRange=102:106
+23	?	?	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No|TokenRange=106:107
