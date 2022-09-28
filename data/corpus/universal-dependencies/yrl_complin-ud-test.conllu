@@ -685,3 +685,28 @@
 11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	TokenRange=53:55
 12	turusú	turusú	ADV	ADVS	_	10	advmod	_	SpaceAfter=No|TokenRange=56:62
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Avila2021:0:0:15
+# text = Aité kwá sera waá piranha yakunheseri aé i turususá i apuã waá rupí, asuí sanha saimbé yuíri.
+# text_eng = This one called piranha we know for its oval shape and its sharp teeth.
+# text_por = Este que se chama piranha nós o conhecemos por seu formato oval e por seus dentes afiados.
+# text_source = Payema, 68, adap.
+1	Aité	aité	PRON	EMP	PronType=Emp	6	dislocated	_	TokenRange=0:4
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:8
+3	sera	sera	NOUN	N	Number=Sing|Rel=NCont	5	nsubj	_	TokenRange=9:13
+4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nmod:poss	_	TokenRange=14:17
+5	piranha	piranha	NOUN	N	Number=Sing	1	acl:relcl	_	TokenRange=18:25
+6	yakunheseri	kunheseri	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=26:37
+7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	obj	_	TokenRange=38:40
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=41:42
+9	turususá	turususá	NOUN	N	Number=Sing	6	obl	_	TokenRange=43:51
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	expl	_	TokenRange=52:53
+11	apuã	apuã	VERB	A2	_	9	acl:relcl	_	TokenRange=54:58
+12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	nsubj	_	TokenRange=59:62
+13	rupí	rupí	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=63:67
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=67:68
+15	asuí	asuí	CCONJ	CONJ	_	16	cc	_	TokenRange=69:73
+16	sanha	sanha	NOUN	N	Number=Sing|Rel=NCont	9	conj	_	TokenRange=74:79
+17	saimbé	saimbé	ADJ	A	_	16	amod	_	TokenRange=80:86
+18	yuíri	yuíri	ADV	ADV	_	16	advmod	_	SpaceAfter=No|TokenRange=87:92
+19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=92:93
