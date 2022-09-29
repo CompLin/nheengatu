@@ -805,3 +805,103 @@
 18	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=102:103
 19	[...]	[...]	PUNCT	ELIP	PunctType=Elip	7	punct	_	SpaceAfter=No|TokenRange=104:109
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=109:110
+
+# sent_id = Cruz2011:0:0:1
+# text = Aé umendari yepé werekena irũ.
+# text_eng = Ele casou com uma uerequena.
+# text_por = He married a Werekena.
+# text_source = Example 192a Bn
+# text_orig = ae umendai yepe Werekena irũ
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umendari	mendari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:11
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=12:16
+4	werekena	werekena	NOUN	N	Number=Sing	2	obl	_	TokenRange=17:25
+5	irũ	irũ	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=26:29
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Cruz2011:0:0:2
+# text = Yasemu aé.
+# text_eng = We found him.
+# text_por =  Encontramos ele.
+# text_source = Example 192b Br
+# text_orig = yawasemu ae
+1	Yasemu	semu	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=7:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Cruz2011:0:0:3
+# text = Ape aintá taumaã nhaã mayuwa.
+# text_eng = Then we found that majube.
+# text_por =  Aí encontramos aquela majuba.
+# text_source = Example 193a Wr
+# text_orig = ape ainta taumaã nhaã mayuwa
+1	Ape	ape	ADV	ADVD	PronType=Dem	3	advmod	_	TokenRange=0:3
+2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=4:9
+3	taumaã	maã	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:16
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=17:21
+5	mayuwa	mayuwa	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=22:28
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Cruz2011:0:0:4
+# text = Aité nhaã urikú mukũi tayera-itá.
+# text_eng = That one had two daughters.
+# text_por =  Aquele lá tinha duas filhas.
+# text_source = Example 194a Br
+# text_orig = aitenhaã uriku mukũi tayera ita
+1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:9
+3	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
+4	mukũi	mukũi	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=16:21
+5	tayera-itá	tayera	NOUN	N	Number=Plur|Rel=NCont	3	obj	_	SpaceAfter=No|TokenRange=22:32
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Cruz2011:0:0:5
+# text = Aité kwá se yara.
+# text_eng = This is mine.
+# text_por =  Isto é meu.
+# text_source = Example 195a Br
+# text_orig = aitekua seiara
+1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:8
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	0	root	_	TokenRange=9:11
+4	yara	yara	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=12:16
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Cruz2011:0:0:6
+# text = Se ramunha, mayé taá yaseruka aité kwá?
+# text_eng = My grandfather, what do we call this?
+# text_por =  Meu avô, como chamamos isto?
+# text_source = Example 195b Br
+# text_orig = seramunha maita yaseruka aitekua?
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	6	vocative	_	SpaceAfter=No|TokenRange=3:10
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
+4	mayé	mayé	ADV	ADVR	_	6	advmod	_	TokenRange=12:16
+5	taá	taá	PART	CQ	_	6	advmod	_	TokenRange=17:20
+6	yaseruka	seruka	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=21:29
+7	aité	aité	PRON	EMP	PronType=Emp	6	obj	_	TokenRange=30:34
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	SpaceAfter=No|TokenRange=35:38
+9	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Cruz2011:0:0:7
+# text = Yaú aité nhaã.
+# text_eng = We eat that.
+# text_por =  Comemos aquilo.
+# text_source = Example 194b Wr
+# text_orig = yau aitenhaã
+1	Yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	aité	aité	PRON	EMP	PronType=Emp	1	obj	_	TokenRange=4:8
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	SpaceAfter=No|TokenRange=9:13
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = Cruz2011:0:0:8
+# text = Aité paá uú supiara.
+# text_eng = They say she took the poison herself.
+# text_por =  Contam que ela mesma tomou o veneno.
+# text_source = Example 199 Wr
+# text_orig = aite paa uu supiara
+1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh	3	advmod	_	TokenRange=5:8
+3	uú	ú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:11
+4	supiara	supiara	NOUN	N	Number=Sing|Rel=Abs	3	obj	_	SpaceAfter=No|TokenRange=12:19
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
