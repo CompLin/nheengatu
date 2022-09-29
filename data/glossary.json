@@ -93,6 +93,16 @@
         "gloss": "para lá; por ali"
     },
     {
+        "lemma": "akutí",
+        "pos": "s.",
+        "gloss": "cotia"
+    },
+    {
+        "lemma": "tatatinga",
+        "pos": "s.",
+        "gloss": "fumaça"
+    },
+    {
         "lemma": "akwera",
         "pos": "adv.",
         "gloss": "há muito tempo; antigamente"
@@ -169,6 +179,11 @@
         "pos": "conj.",
         "gloss": "então, aí",
         "var": 2
+    },
+    {
+        "lemma": "nuká",
+        "pos": "conj.",
+        "gloss": "no entanto"
     },
     {
         "lemma": "apekatú",
@@ -1159,6 +1174,16 @@
         "lemma": "manduári",
         "pos": "v.",
         "gloss": "1. lembrar; 2. pensar"
+    },
+    {
+        "lemma": "manduarisawa",
+        "pos": "s.",
+        "gloss": "1. lembrança; 2. pensamento"
+    },
+    {
+        "lemma": "manduarisá",
+        "pos": "s.",
+        "gloss": "var. manduarisawa"
     },
     {
         "lemma": "mandwari",
@@ -2890,9 +2915,23 @@
         ]
     },
     {
+        "lemma": "ayura",
+        "pos": "s.",
+        "gloss": "pescoço"
+    },
+    {
         "lemma": "santá",
         "pos": "adj.",
         "gloss": "duro"
+    },
+    {
+        "lemma": "sapekwera",
+        "pos": "s.",
+        "gloss": "1. rastro; 2. marca; 3. saudade",
+        "rel": [
+            "rapekwera",
+            "sapekwera"
+        ]
     },
     {
         "lemma": "sapí",
@@ -3382,8 +3421,13 @@
     },
     {
         "lemma": "taité",
-        "pos": "interj.",
-        "gloss": "coitado!"
+        "pos": "interj. / adj. / s.",
+        "gloss": "var. teité"
+    },
+    {
+        "lemma": "teité",
+        "pos": "interj. / adj. / s.",
+        "gloss": "coitado"
     },
     {
         "lemma": "taití",

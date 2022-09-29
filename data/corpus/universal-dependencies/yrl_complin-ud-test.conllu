@@ -739,3 +739,69 @@
 21	dinheru	dinheru	NOUN	N	Number=Sing	19	obl	_	TokenRange=94:101
 22	resé	resé	ADP	ADP	Rel=Cont	21	case	_	SpaceAfter=No|TokenRange=102:106
 23	?	?	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No|TokenRange=106:107
+
+# sent_id = Avila2021:0:0:17
+# text = Aité usú umunhã.
+# text_eng = He will do it himself.
+# text_por = Ele mesmo vai fazer.
+# text_source = Stradelli, 316, adap.
+1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
+2	usú	sú	AUX	V	Person=3|VerbForm=Fin	3	aux	_	TokenRange=5:8
+3	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:15
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Avila2021:0:0:18
+# text = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga taunheẽ waá akutí ratá.
+# text_eng = However, they say that the poor agouti only caught smoke, the same smoke that we see after the rain, the smoke that they say is agouti fire.
+# text_por = No entanto, dizem que a pobre cutia pegou só fumaça, aquela mesma que nós vemos depois da chuva, a fumaça que dizem ser fogo de cutia.
+# text_source = Leetra Indígena. n. 17, 73, adap.
+# text_orig = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga ta unheẽ waá akutí ratá.
+1	Nuká	nuká	ADV	CONJ	_	5	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh	5	advmod	_	TokenRange=5:8
+3	taité	taité	ADJ	A	_	4	amod	_	TokenRange=9:14
+4	akutí	akutí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=15:20
+5	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:28
+6-7	tatatingantu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=29:41
+6	tatatinga	tatatinga	NOUN	N	Number=Sing	5	obj	_	_
+7	ntu	ntu	ADV	ADV	_	6	advmod	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=41:42
+9	aité	aité	PRON	EMP	PronType=Emp	6	appos	_	TokenRange=43:47
+10	paá	paá	PART	RPRT	Evident=Nfh	12	advmod	_	TokenRange=48:51
+11	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=52:55
+12	yamaã	maã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	9	acl:relcl	_	TokenRange=56:61
+13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	obj	_	TokenRange=62:65
+14	amana	amana	NOUN	N	Number=Sing	12	obl	_	TokenRange=66:71
+15	riré	riré	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=72:76
+16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=76:77
+17	tatatinga	tatatinga	NOUN	N	Number=Sing	6	appos	_	TokenRange=78:87
+18	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	17	acl:relcl	_	TokenRange=88:95
+19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=96:99
+20	akutí	akutí	NOUN	N	Number=Sing	21	nmod:poss	_	TokenRange=100:105
+21	ratá	tatá	NOUN	N	Number=Sing|Rel=Cont	18	xcomp	_	SpaceAfter=No|TokenRange=106:110
+22	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=110:111
+
+# sent_id = Avila2021:0:0:19
+# text =  Asuí yamukwekatú kwá yané rumuara, urikú waá kwá manduarisá usikari arã ukwá aité kwá nheenga resewara, [...].
+# text_eng = And we are grateful to our companion, who had the idea of finding out about this language.
+# text_por = E nós agradecemos essa nossa companheira, que teve a ideia de buscar saber o que diz respeito a essa língua.
+# text_source = Leetra Indígena. n. 17, 45, adap.
+1	Asuí	asuí	CCONJ	CONJ	_	2	cc	_	TokenRange=0:4
+2	yamukwekatú	mukwekatú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:16
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=17:20
+4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=21:25
+5	rumuara	sumuara	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	SpaceAfter=No|TokenRange=26:33
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=33:34
+7	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=35:40
+8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	nsubj	_	TokenRange=41:44
+9	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	det	_	TokenRange=45:48
+10	manduarisá	manduarisá	NOUN	N	Number=Sing	7	obj	_	TokenRange=49:59
+11	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	10	acl	_	TokenRange=60:67
+12	arã	arã	SCONJ	SCONJ	_	11	mark	_	TokenRange=68:71
+13	ukwá	kwá	VERB	V	Person=3|VerbForm=Fin	11	xcomp	_	TokenRange=72:76
+14	aité	aité	PRON	EMP	PronType=Emp	16	det	_	TokenRange=77:81
+15	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	16	det	_	TokenRange=82:85
+16	nheenga	nheenga	NOUN	N	Number=Sing	13	obl	_	TokenRange=86:93
+17	resewara	resewara	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=94:102
+18	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=102:103
+19	[...]	[...]	PUNCT	ELIP	PunctType=Elip	7	punct	_	SpaceAfter=No|TokenRange=104:109
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=109:110
