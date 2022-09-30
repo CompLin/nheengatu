@@ -806,6 +806,33 @@
 19	[...]	[...]	PUNCT	ELIP	PunctType=Elip	7	punct	_	SpaceAfter=No|TokenRange=104:109
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=109:110
 
+# sent_id = Avila2021:0:0:20
+# text = Aintá puru baniwa kwá tendawa upé.
+# text_eng = They are all Baniwas in this community.
+# text_por = Eles são todos baníuas nessa comunidade.
+# text_source =
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:5
+2	puru	puru	ADV	ADV	_	3	advmod	_	TokenRange=6:10
+3	baniwa	baniwa	NOUN	N	Number=Sing	0	root	_	TokenRange=11:17
+4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=18:21
+5	tendawa	tendawa	NOUN	N	Number=Sing|Rel=Abs	3	obl	_	TokenRange=22:29
+6	upé	upé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=30:33
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Avila2021:0:0:21
+# text = Aintá urikú yepé yawara paka rupiara.
+# text_eng = They have a paca hunting dog.
+# text_por = Eles têm um cachorro caçador de pacas.
+# text_source =
+# text_orig = Aintá urikú yepé yawara paka rupiára.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=12:16
+4	yawara	yawara	NOUN	N	Number=Sing	2	obj	_	TokenRange=17:23
+5	paka	paka	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=24:28
+6	rupiara	supiara	NOUN	N	Number=Sing|Rel=Cont	4	acl:relcl	_	SpaceAfter=No|TokenRange=29:36
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
@@ -905,3 +932,17 @@
 3	uú	ú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:11
 4	supiara	supiara	NOUN	N	Number=Sing|Rel=Abs	3	obj	_	SpaceAfter=No|TokenRange=12:19
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Cruz2011:0:0:9
+# text = Aité kwá-itá se anama-itá puru werekena.
+# text_eng = These, my relatives, are completely Werekena.
+# text_por =  Estes, os meus familiares, são completamente uerequena.
+# text_source = Example 196 Br
+# text_orig = aitekua ita seanama ita puru Werekena
+1	Aité	aité	PRON	EMP	PronType=Emp	6	nsubj	_	TokenRange=0:4
+2	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	1	det	_	TokenRange=5:12
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:15
+4	anama-itá	anama	NOUN	N	Number=Plur	1	appos	_	TokenRange=16:25
+5	puru	puru	ADV	ADV	_	6	advmod	_	TokenRange=26:30
+6	werekena	werekena	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=31:39
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=39:40
