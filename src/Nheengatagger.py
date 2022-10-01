@@ -9,7 +9,11 @@ from BuildDictionary import extract_feats, loadLexicon
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
 LEXICON=os.path.join(PATH,"lexicon.json")
-PUNCTUATION='''.,;':?!—“”"…()][}{'''
+DASHES=['‒', '–', '—']
+PUNCTUATION='''.,;':?!“”"…()][}{'''
+ELLIPSIS='[...]'
+XXXX='xxxx'
+ELIP='ELIP'
 OPERATOR="Leonel Figueiredo de Alencar"
 MESSAGE=f"""'''Automatically POS-tagged by Nheengatagger.
 Operator: {OPERATOR}.
@@ -17,7 +21,8 @@ Date: {datetime.datetime.now().strftime("%c")}.
 Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
-'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana']
+'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana',
+'jesus', 'deus', 'kurukuí']
 
 def propernames(namelist=NAMES):
     dic={}
@@ -25,13 +30,17 @@ def propernames(namelist=NAMES):
         dic[(name,)]={'PROPN'}
     return dic
 
-def includePunctuation(punctuation=PUNCTUATION):
+def includePunctuation(punctuation=PUNCTUATION,ellipis=ELLIPSIS,elip=ELIP,dashes=DASHES):
     punctdict={}
     tagSet=set()
     tagSet.add("PUNCT")
     punctlist=list(punctuation)
     for punct in punctlist:
         punctdict[(punct,)]=tagSet
+    punctlist.extend(dashes)
+    elipSet=set()
+    elipSet.add(elip)
+    punctdict[(ellipis,)]=elipSet
     return punctdict
 
 def extractWordTag(entry):
@@ -97,10 +106,13 @@ def splitPunctuation(token,punctuation=PUNCTUATION):
     c= len(token)
     if c == 1:
         tokenlist.append(token)
-    elif c > 1:
+    elif c == 2:
+        tokenlist.append(token[:-1])
+        tokenlist.append(token[-1])
+    elif c > 2:
         tokenlist.append(token[-1])
         i=-2
-        while(i > -len(token)):
+        while(i >= -len(token)):
             char=token[i]
             if char in punctuation:
                 tokenlist.append(char)
@@ -111,7 +123,8 @@ def splitPunctuation(token,punctuation=PUNCTUATION):
         tokenlist.reverse()
     return tokenlist
 
-def tokenize(sentence,mwe=MWE,mwe_sep=" "):
+def tokenize(sentence,mwe=MWE,mwe_sep=" ", ellipis=ELLIPSIS, xxxx=XXXX):
+    sentence=sentence.replace(ELLIPSIS,XXXX)
     tokenList=sentence.split()
     includeLast=True
     newList=[]
@@ -151,7 +164,15 @@ def tokenize(sentence,mwe=MWE,mwe_sep=" "):
             newList.extend(splitPunctuation(lastToken))
         else:
             newList.append(lastToken)
+    restoreEllipsis(newList,ellipis,xxxx)
     return newList
+
+def restoreEllipsis(newList,ellipis,xxxx):
+    i=0
+    while(i < len(newList)):
+        if newList[i] == xxxx:
+            newList[i] = ellipis
+        i+=1
 
 def tagWord(token,tagger=DICTIONARY):
     return tagger.get(tuple(token.split()))
