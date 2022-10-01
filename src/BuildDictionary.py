@@ -24,8 +24,11 @@ cop.\tV
 conj.\tCONJ
 sconj.\tSCONJ
 cconj.\tCCONJ
-dem.\tDEM
-num.\tNUM
+pron. dem.\tDEM
+pron. dem. prox.\tDEMX
+pron. dem. dist.\tDEMS
+num. card.\tCARD
+num. ord.\tORD
 interj.\tINTJ
 s.\tN
 part.\tPART
@@ -40,9 +43,11 @@ part. interr. pol.\tPQ
 posp.\tADP
 pron.\tPRON
 pron. 2ª cl.\tPRON2
+pron. enf.\tEMP
 pron. indef.\tIND
 pron. interr.\tINT
 pron. quant.\tQUANT
+pron. quant. univ.\tTOT
 pron. relativo\tREL
 suf.\tSUFF
 pref.\tPREF
@@ -287,6 +292,17 @@ def conjugateVerb(lemma,pos='V'):
     forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
     return forms
 
+def isDemPron(tag):
+    if tag.startswith('DEM'):
+        return True
+    return False
+
+def hasNumberInflection(tag,lemma):
+    if tag:
+        if tag in ('N','REL') or isDemPron(tag) or lemma in ('amú',):
+            return True
+    return False
+
 def WordParsePairs(glossary):
     pairs=set()
     for n in glossary:
@@ -313,7 +329,7 @@ def WordParsePairs(glossary):
                 pairs.add(f"{rel[0]}\t{lemma}+{tag}+NCONT")
         else:
             for tag in tags:
-                if tag in ('N','DEM','REL') or lemma in ('amú',):
+                if hasNumberInflection(tag,lemma):
                     pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
                 elif tag == "V" and not isImpersonal(n.get('gloss')):
                     pairs.update(conjugateVerb(lemma,tag))
