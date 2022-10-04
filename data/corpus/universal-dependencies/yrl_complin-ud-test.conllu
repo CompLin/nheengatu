@@ -890,6 +890,86 @@
 10	ã	ã	PART	PFV	_	9	advmod	_	SpaceAfter=No|TokenRange=44:45
 11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 
+# sent_id = Avila2021:0:0:24
+# text =  Asuí paá nhaã kunhã i kweré wana umbaú maã i mena umbaú waá.
+# text_eng = Later, that woman was tired of eating what her husband ate.
+# text_por = Mais tarde, aquela mulher já estava cansada de comer o que seu marido comia.
+# text_source = Casasnovas, 89
+1	Asuí	asuí	ADV	ADV	_	6	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh	6	advmod	_	TokenRange=5:8
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=9:13
+4	kunhã	kunhã	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=14:19
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	expl	_	TokenRange=20:21
+6	kweré	kweré	VERB	A2	_	0	root	_	TokenRange=22:27
+7	wana	wana	PART	PFV	_	6	advmod	_	TokenRange=28:32
+8	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	6	xcomp	_	TokenRange=33:38
+9	maã	maã	PRON	IND	PronType=Ind	8	obj	_	TokenRange=39:42
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=43:44
+11	mena	mena	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=45:49
+12	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=50:55
+13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	obj	_	SpaceAfter=No|TokenRange=56:59
+14	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=59:60
+
+# sent_id = Avila2021:4:1:25
+# text = Maã reputari ramé, ameẽ kurí indé arama.
+# text_eng = Whatever you want I'll give you.
+# text_por = O que você quiser eu te darei.
+# text_source = Muniz, 80, adap.
+1	Maã	maã	PRON	IND	PronType=Ind	2	obj	_	TokenRange=0:3
+2	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	5	advcl	_	TokenRange=4:12
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	SpaceAfter=No|TokenRange=13:17
+4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=17:18
+5	ameẽ	meẽ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=19:23
+6	kurí	kurí	PART	FUT	_	5	advmod	_	TokenRange=24:28
+7	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	iobj	_	TokenRange=29:33
+8	arama	arama	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=34:39
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = Avila2021:4:2:26
+# text = Repuderi repurandú se irumu, axari kurí indé arama.
+# text_eng = You can ask me for it, I'll deliver it to you.
+# text_por = Pode pedir para mim, eu te entregarei.
+# text_source = Muniz, 80, adap.
+1	Repuderi	puderi	AUX	V	Number=Sing|Person=2|VerbForm=Fin	2	aux	_	TokenRange=0:8
+2	repurandú	purandú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=9:18
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obj	_	TokenRange=19:21
+4	irumu	irumu	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=22:27
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=27:28
+6	axari	xari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	parataxis	_	TokenRange=29:34
+7	kurí	kurí	PART	FUT	_	6	advmod	_	TokenRange=35:39
+8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	6	iobj	_	TokenRange=40:44
+9	arama	arama	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=45:50
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Avila2021:0:0:27
+# text = Mairamé pepisika kwá papera resé, pesú pemuturusú pe kwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
+# text_eng = When you pick up this book, you will increase your knowledge, you will find what you still don't know and also what you have heard.
+# text_por = Quando vocês pegarem neste livro, vocês vão aumentar o conhecimento de vocês, vocês vão encontrar o que ainda não sabem e também o que têm ouvido.
+# text_source = Muniz, 74, adap.
+# text_orig = Mairamé pepisika kwá papera resé, pesú pemuturusú pekwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
+1	Mairamé	mairamé	SCONJ	CONJ	_	2	mark	_	TokenRange=0:7
+2	pepisika	pisika	VERB	V	Number=Plur|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=8:16
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=17:20
+4	papera	papera	NOUN	N	Number=Sing	2	obl	_	TokenRange=21:27
+5	resé	resé	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=28:32
+6	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=32:33
+7	pesú	sú	AUX	V	Number=Plur|Person=2|VerbForm=Fin	8	aux	_	TokenRange=34:38
+8	pemuturusú	muturusú	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=39:49
+9	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=50:52
+10	kwasawa	kwasawa	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=53:60
+11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=60:61
+12	pesú	sú	AUX	V	Number=Plur|Person=2|VerbForm=Fin	13	aux	_	TokenRange=62:66
+13	pewasemu	wasemu	VERB	V	Number=Plur|Person=2|VerbForm=Fin	8	conj	_	TokenRange=67:75
+14	maã	maã	PRON	IND	PronType=Ind	13	obj	_	TokenRange=76:79
+15	ti	ti	PART	NEG	Polarity=Neg	18	advmod	_	TokenRange=80:82
+16	rẽ	rẽ	ADV	ADV	_	18	advmod	_	TokenRange=83:85
+17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=86:89
+18	pekwawa	kwawa	VERB	V	Number=Plur|Person=2|VerbForm=Fin	14	acl:relcl	_	TokenRange=90:97
+19	asuí	asuí	CCONJ	CONJ	_	20	cc	_	TokenRange=98:102
+20	pesenduwera	sendú	VERB	V	Aspect=Hab|Number=Plur|Person=2|VerbForm=Fin	18	conj	_	TokenRange=103:114
+21	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	obj	_	SpaceAfter=No|TokenRange=115:118
+22	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=118:119
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
@@ -1003,4 +1083,3 @@
 5	puru	puru	ADV	ADV	_	6	advmod	_	TokenRange=26:30
 6	werekena	werekena	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=31:39
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=39:40
-
