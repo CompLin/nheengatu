@@ -158,6 +158,11 @@
         "gloss": "sombra"
     },
     {
+        "lemma": "makaka",
+        "pos": "s.",
+        "gloss": "macaco"
+    },
+    {
         "lemma": "anhũ",
         "pos": "adv.",
         "gloss": "só, somente"
@@ -178,6 +183,18 @@
         "lemma": "ape",
         "pos": "conj.",
         "gloss": "então, aí",
+        "var": 2
+    },
+    {
+        "lemma": "aape",
+        "pos": "adv. dem.",
+        "gloss": "var. ape",
+        "var": 1
+    },
+    {
+        "lemma": "aape",
+        "pos": "conj.",
+        "gloss": "var. ape",
         "var": 2
     },
     {
@@ -204,6 +221,21 @@
         "lemma": "apigawa",
         "pos": "s.",
         "gloss": "homem"
+    },
+    {
+        "lemma": "kuru",
+        "pos": "s.",
+        "gloss": "menino"
+    },
+    {
+        "lemma": "apigá",
+        "pos": "s. / adj.",
+        "gloss": "var. apigawa"
+    },
+    {
+        "lemma": "maxí",
+        "pos": "s. / adj.",
+        "gloss": "leproso"
     },
     {
         "lemma": "a-",
@@ -1051,7 +1083,14 @@
     {
         "lemma": "kwera",
         "pos": "adj.",
-        "gloss": "que foi, passado, morto, finado, ex-, que “já era”"
+        "gloss": "que foi, passado, morto, finado, ex-, que “já era”",
+        "var": 1
+    },
+    {
+        "lemma": "kwera",
+        "pos": "part. pret.",
+        "gloss": "expressa pretérito",
+        "var": 2
     },
     {
         "lemma": "kweré",
@@ -1166,6 +1205,11 @@
         "gloss": "onde?"
     },
     {
+        "lemma": "maita",
+        "pos": "adv. interr.",
+        "gloss": "como?"
+    },
+    {
         "lemma": "mamentu",
         "pos": "adv.",
         "gloss": "1. só onde, onde apenas, só aonde; 2. em qualquer lugar; em toda parte"
@@ -1194,6 +1238,11 @@
         "lemma": "mandwari",
         "pos": "v.",
         "gloss": "var. manduári"
+    },
+    {
+        "lemma": "kurumiwasú",
+        "pos": "s.",
+        "gloss": "rapaz, moço"
     },
     {
         "lemma": "manhana",
@@ -1238,7 +1287,17 @@
     {
         "lemma": "marã",
         "pos": "adv. interr.",
-        "gloss": "por quê?"
+        "gloss": "var. marama"
+    },
+    {
+        "lemma": "kãwera",
+        "pos": "s.",
+        "gloss": "osso, espinha"
+    },
+    {
+        "lemma": "marama",
+        "pos": "adv. interr.",
+        "gloss": "por quê? para quê?"
     },
     {
         "lemma": "maraari",
@@ -2693,6 +2752,15 @@
         "gloss": "quente",
         "rel": [
             "sakú"
+        ],
+        "pron2": "se"
+    },
+    {
+        "lemma": "resaíma",
+        "pos": "adj. 2ª cl.",
+        "gloss": "cego",
+        "rel": [
+            "sesaíma"
         ],
         "pron2": "se"
     },
@@ -4511,6 +4579,11 @@
     },
     {
         "lemma": "yuka",
+        "pos": "v.",
+        "gloss": "var. yuuka"
+    },
+    {
+        "lemma": "yuuka",
         "pos": "v.",
         "gloss": "arrancar, tirar"
     },
