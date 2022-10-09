@@ -1110,6 +1110,32 @@
 12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	nsubj	_	SpaceAfter=No|TokenRange=69:72
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=72:73
 
+# sent_id = Avila2021:0:0:36
+# text = Muíri ara paá upurandú suixawa suí umeẽ arã i xupé i pepú arã, uyuíri arã i anama-itá piri.
+# text_eng = Every day she asked her chief to give her wings to return to her relatives.
+# text_por = Todos os dia ela pedia a seu cacique que lhe desse asas, para voltar para junto de seus parentes.
+# text_source = Casasnovas, 89
+1	Muíri	muíri	DET	IND	PronType=Ind	2	det	_	TokenRange=0:5
+2	ara	ara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=6:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=10:13
+4	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=14:22
+5	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	iobj	_	TokenRange=23:30
+6	suí	suí	ADP	ADP	_	5	case	_	TokenRange=31:34
+7	umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	4	xcomp	_	TokenRange=35:39
+8	arã	arã	SCONJ	SCONJ	_	7	mark	_	TokenRange=40:43
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=44:45
+10	xupé	xupé	ADP	ADP	_	9	case	_	TokenRange=46:50
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=51:52
+12	pepú	pepú	NOUN	N	Number=Sing	7	obj	_	TokenRange=53:57
+13	arã	arã	PART	FUT	Tense=Fut	12	advmod	_	SpaceAfter=No|TokenRange=58:61
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=61:62
+15	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	7	advcl	_	TokenRange=63:69
+16	arã	arã	SCONJ	SCONJ	_	15	mark	_	TokenRange=70:73
+17	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=74:75
+18	anama-itá	anama	NOUN	N	Number=Plur	15	obl	_	TokenRange=76:85
+19	piri	piri	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=86:90
+20	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=90:91
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
