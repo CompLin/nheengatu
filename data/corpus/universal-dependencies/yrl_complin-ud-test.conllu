@@ -1136,6 +1136,56 @@
 19	piri	piri	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=86:90
 20	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=90:91
 
+# sent_id = Avila2021:0:0:37
+# text = Yepé apigawa usú ukamundú, uwasemu suasú-kunhã i membira irumu.
+# text_eng = A man went hunting and found a deer with her calf.
+# text_por = Um homem foi caçar e encontrou uma veada com seu filhote.
+# text_source = Rodrigues, 135, adap.
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	apigawa	apigawa	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:12
+3	usú	sú	AUX	V	Person=3|VerbForm=Fin	4	aux	_	TokenRange=13:16
+4	ukamundú	kamundú	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:25
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=25:26
+6	uwasemu	wasemu	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=27:34
+7	suasú-kunhã	suasú-kunhã	NOUN	N	Number=Sing	6	obj	_	TokenRange=35:46
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=47:48
+9	membira	membira	NOUN	N	Number=Sing	7	nmod	_	TokenRange=49:56
+10	irumu	irumu	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=57:62
+11	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Avila2021:0:0:38
+# text = I paya usú pukusawa upurungitá payé irumu, i manha yuíri usú uwatá, nhaã pukusawa nhaã apigawa mirĩ upisika suíwa mirapara irumu, usú ukamundú.
+# text_eng = While his father went to talk to the shaman, his mother also went for a walk, meanwhile that little man took his arrow and bow and went hunting.
+# text_por = Enquanto seu pai foi conversar com o pajé, sua mãe também foi passear, enquanto isso aquele homenzinho pegou sua flecha e o arco e foi caçar.
+# text_source = Rodrigues, 122, adap.
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	paya	paya	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=2:6
+3	usú	sú	AUX	V	Person=3|VerbForm=Fin	5	aux	_	TokenRange=7:10
+4	pukusawa	pukusawa	SCONJ	CONJ	_	5	mark	_	TokenRange=11:19
+5	upurungitá	purungitá	VERB	V	Person=3|VerbForm=Fin	13	advcl	_	TokenRange=20:30
+6	payé	payé	NOUN	N	Number=Sing	5	obl	_	TokenRange=31:35
+7	irumu	irumu	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=36:41
+8	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=41:42
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=43:44
+10	manha	manha	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=45:50
+11	yuíri	yuíri	ADV	ADV	_	13	advmod	_	TokenRange=51:56
+12	usú	sú	AUX	V	Person=3|VerbForm=Fin	13	aux	_	TokenRange=57:60
+13	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=61:66
+14	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=66:67
+15	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	20	obl	_	TokenRange=68:72
+16	pukusawa	pukusawa	ADP	ADP	_	15	case	_	TokenRange=73:81
+17	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	18	det	_	TokenRange=82:86
+18	apigawa	apigawa	NOUN	N	Number=Sing	20	nsubj	_	TokenRange=87:94
+19	mirĩ	mirĩ	ADJ	A	_	18	amod	_	TokenRange=95:99
+20	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=100:107
+21	suíwa	uíwa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	20	obj	_	TokenRange=108:113
+22	mirapara	mirapara	NOUN	N	Number=Sing	21	nmod	_	TokenRange=114:122
+23	irumu	irumu	ADP	ADP	_	22	case	_	SpaceAfter=No|TokenRange=123:128
+24	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=128:129
+25	usú	sú	AUX	V	Person=3|VerbForm=Fin	26	aux	_	TokenRange=130:133
+26	ukamundú	kamundú	VERB	V	Person=3|VerbForm=Fin	20	parataxis	_	SpaceAfter=No|TokenRange=134:142
+27	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=142:143
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
