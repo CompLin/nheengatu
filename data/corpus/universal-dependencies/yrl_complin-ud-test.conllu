@@ -1186,6 +1186,33 @@
 26	ukamundú	kamundú	VERB	V	Person=3|VerbForm=Fin	20	parataxis	_	SpaceAfter=No|TokenRange=134:142
 27	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=142:143
 
+# sent_id = Avila2021:0:0:39
+# text = Ape kwá upurungitá waá amú nheenga rupí urikuté upurandú Deus irumu ukwawa arama mayesawa taá kwá umbeú waá aintá supé.
+# text_eng = So the one who speaks in another tongue must pray to God to know the meaning of what he says to them.
+# text_por = Então, o que fala em outra língua deve orar a Deus para saber o significado do que diz a eles.
+# text_source = O Novo Testamento em nyengatu, 1 Coríntios, 14:13
+1	Ape	ape	ADV	ADVD	PronType=Dem	8	advmod	_	TokenRange=0:3
+2	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	nsubj	_	TokenRange=4:7
+3	upurungitá	purungitá	VERB	V	Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=8:18
+4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=19:22
+5	amú	amú	DET	IND	Number=Sing|PronType=Ind	6	det	_	TokenRange=23:26
+6	nheenga	nheenga	NOUN	N	Number=Sing	3	obl	_	TokenRange=27:34
+7	rupí	rupí	ADP	ADP	_	6	case	_	TokenRange=35:39
+8	urikuté	rikuté	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=40:47
+9	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	8	xcomp	_	TokenRange=48:56
+10	Deus	deus	PROPN	PROPN	_	9	iobj	_	TokenRange=57:61
+11	irumu	irumu	ADP	ADP	_	10	case	_	TokenRange=62:67
+12	ukwawa	kwawa	VERB	V	Person=3|VerbForm=Fin	9	ccomp	_	TokenRange=68:74
+13	arama	arama	SCONJ	SCONJ	_	12	mark	_	TokenRange=75:80
+14	mayesawa	mayesawa	ADV	ADVR	_	12	ccomp	_	TokenRange=81:89
+15	taá	taá	PART	CQ	PartType=Int	14	advmod	_	TokenRange=90:93
+16	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	nsubj	_	TokenRange=94:97
+17	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	16	acl:relcl	_	TokenRange=98:103
+18	waá	waá	PRON	REL	Number=Sing|PronType=Rel	17	obj	_	TokenRange=104:107
+19	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	17	iobj	_	TokenRange=108:113
+20	supé	supé	ADP	ADP	_	19	case	_	SpaceAfter=No|TokenRange=114:118
+21	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=118:119
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
