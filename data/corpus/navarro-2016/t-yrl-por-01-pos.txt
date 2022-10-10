@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,7 +18,7 @@ Maria/PROPN anama/N ./PUNCT
 Puranga/A+ADV ara/N !/PUNCT 
 # Bom dia!
 
-Awá/INDF+INT taá/PART indé/PRON ?/PUNCT 
+Awá/IND+INT taá/CQ indé/PRON ?/PUNCT 
 # Quem é você?
 
 Ixé/PRON Maria/PROPN ./PUNCT 
@@ -27,28 +27,28 @@ Ixé/PRON Maria/PROPN ./PUNCT
 Indé/PRON puranga/A+ADV ,/PUNCT Maria/PROPN !/PUNCT 
 # Você é bonita, Maria!
 
-Awá/INDF+INT taá/PART uikú/V iké/ADV ?/PUNCT 
+Awá/IND+INT taá/CQ uikú/V iké/ADVD ?/PUNCT 
 # Quem está aqui?
 
-Pedro/PROPN ,/PUNCT Maria/PROPN mena/N ,/PUNCT uikú/V iké/ADV ./PUNCT 
+Pedro/PROPN ,/PUNCT Maria/PROPN mena/N ,/PUNCT uikú/V iké/ADVD ./PUNCT 
 # Pedro, marido de Maria, está aqui.
 
 Puranga/A+ADV pituna/N ,/PUNCT Pedro/PROPN !/PUNCT 
 # Boa noite, Pedro!
 
-Mayé/ADV+ADVR+CONJ taá/PART indé/PRON resasá/V ?/PUNCT 
+Mayé/ADV+ADVR+SCONJ taá/CQ indé/PRON resasá/V ?/PUNCT 
 # Como você passa?
 
 Puranga/A+ADV tẽ/ADV asasá/V ./PUNCT 
 # Passo bem mesmo.
 
-Awá/INDF+INT taá/PART aé/PRON ?/PUNCT 
+Awá/IND+INT taá/CQ aé/PRON ?/PUNCT 
 # Quem é ele?
 
 Aé/PRON Antônio/PROPN ,/PUNCT Maria/PROPN mimbira/N ./PUNCT 
 # Ele é Antônio, filho de Maria.
 
-Pedro/PROPN ,/PUNCT Antônio/PROPN ,/PUNCT aintá/PRON Maria/PROPN anama-itá/N ./PUNCT 
+Pedro/PROPN ,/PUNCT Antônio/PROPN ,/PUNCT aintá/PRON+PRON2 Maria/PROPN anama-itá/N ./PUNCT 
 # Pedro e Antônio, eles são os familiares de Maria.
 
 Puranga/A+ADV karuka/N ,/PUNCT Antônio/PROPN !/PUNCT 

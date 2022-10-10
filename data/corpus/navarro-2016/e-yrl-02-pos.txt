@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:04 2022.
+Date: Mon Oct 10 18:32:16 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -27,7 +27,7 @@ Pedro/PROPN usú/V igarapé/N kití/ADP ./PUNCT
 Ixé/PRON apitá/V té/ADV wirandé/ADV ./PUNCT 
 # Eu fico até amanhã.
 
-Nti/ADV akwáu/V masuí/ADVL+ADVR Pedro/PROPN usika/V ./PUNCT 
+Nti/NEG akwáu/V masuí/ADVL+ADVR Pedro/PROPN usika/V ./PUNCT 
 # Não sei donde Pedro chegou.
 
 Makití/ADVL+ADVR resú/V ?/PUNCT 
@@ -39,76 +39,76 @@ Asú/V makití/ADVL+ADVR aputari/V ./PUNCT
 Marupí/ADVL+ADVR pirá/N usemu/V ?/PUNCT 
 # Por onde o peixe sai?
 
-Ixé/PRON nti/ADV aputari/V pirá/N ./PUNCT 
+Ixé/PRON nti/NEG aputari/V pirá/N ./PUNCT 
 # Eu não quero peixe.
 
-Maria/PROPN nti/ADV umaã/V João/PROPN ./PUNCT 
+Maria/PROPN nti/NEG umaã/V João/PROPN ./PUNCT 
 # Maria não vê João.
 
-Pinaitikasara/N nti/ADV puranga/A+ADV ./PUNCT 
+Pinaitikasara/N nti/NEG puranga/A+ADV ./PUNCT 
 # O pescador não é bom.
 
-Indé/PRON nti/ADV puranga/A+ADV ./PUNCT 
+Indé/PRON nti/NEG puranga/A+ADV ./PUNCT 
 # Você não é bonita.
 
-Maria/PROPN uikú/V será/PART igara/N upé/ADP ?/PUNCT 
+Maria/PROPN uikú/V será/PQ igara/N upé/ADP ?/PUNCT 
 # Maria está na canoa?
 
-Reputari/V será/PART pirá/N ?/PUNCT 
+Reputari/V será/PQ pirá/N ?/PUNCT 
 # Queres o peixe?
 
-Remunhã/V será/PART maã/INDF+INT+N+V amunhã/V ?/PUNCT 
+Remunhã/V será/PQ maã/IND+INT+N+V amunhã/V ?/PUNCT 
 # Você faz o que eu faço?
 
-Nti/ADV será/PART indé/PRON ?/PUNCT 
+Nti/NEG será/PQ indé/PRON ?/PUNCT 
 # Não é você?
 
-Mira/N será/PART indé/PRON ?/PUNCT 
+Mira/N será/PQ indé/PRON ?/PUNCT 
 # Você é gente?
 
-Maã/INDF+INT+N+V taá/PART indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
+Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
 # Que você quer para Maria?
 
-Kuíri/ADV taá/PART ?/PUNCT 
+Kuíri/ADV taá/CQ ?/PUNCT 
 # E agora?
 
-Asuí/ADV+CONJ taá/PART ?/PUNCT Maã/INDF+INT+N+V taá/PART kurí/PART yamunhã/V ?/PUNCT 
+Asuí/ADV+CONJ taá/CQ ?/PUNCT Maã/IND+INT+N+V taá/CQ kurí/FUT yamunhã/V ?/PUNCT 
 # E daí? Que faremos?
 
-Mamé/ADVR taá/PART té/ADV remaã/V se/PRON2 manha/N ?/PUNCT 
+Mamé/ADVR taá/CQ té/ADV remaã/V se/PRON2 manha/N ?/PUNCT 
 # Onde mesmo você viu minha mãe?
 
-Masuí/ADVL+ADVR taá/PART reyuri/V kuxiíma/ADV ?/PUNCT 
+Masuí/ADVL+ADVR taá/CQ reyuri/V kuxiíma/ADV ?/PUNCT 
 # Donde você veio antigamente?
 
-Muíri/INDF+INT kuya/N taá/PART aé/PRON uú/V ?/PUNCT 
+Muíri/IND+INT kuya/N taá/CQ aé/PRON uú/V ?/PUNCT 
 # Quantas cuias ele bebeu?
 
-Awá/INDF+INT taá/PART usika/V ana/PART ?/PUNCT 
+Awá/IND+INT taá/CQ usika/V ana/PFV ?/PUNCT 
 # Quem chegou?
 
-Awá/INDF+INT taá/PART uyuká/V awá/INDF+INT ?/PUNCT 
+Awá/IND+INT taá/CQ uyuká/V awá/IND+INT ?/PUNCT 
 # Quem matou quem?
 
-Maã/INDF+INT+N+V miapé/N taá/PART rerikú/V ?/PUNCT 
+Maã/IND+INT+N+V miapé/N taá/CQ rerikú/V ?/PUNCT 
 # Qual pão você tem?
 
-Ukwáu/V maã/INDF+INT+N+V i/PRON2 murakí/N ./PUNCT 
+Ukwáu/V maã/IND+INT+N+V i/PRON2 murakí/N ./PUNCT 
 # Sabe qual é seu trabalho.
 
-Mayé/ADV+ADVR+CONJ waá/REL kunhã/A+N taá/PART usika/V ana/PART ?/PUNCT 
+Mayé/ADV+ADVR+SCONJ waá/REL kunhã/A+N taá/CQ usika/V ana/PFV ?/PUNCT 
 # Qual mulher chegou?
 
-Awá/INDF+INT taá/PART penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
+Awá/IND+INT taá/CQ penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
 # Qual de vocês quer ir?
 
-Awá/INDF+INT penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
+Awá/IND+INT penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
 # Qual de vocês quer ir?
 
 Kunhã-itá/N usika/V ./PUNCT 
 # As mulheres chegam.
 
-mukũi/NUM+QUANT apigawa/A+N 
+mukũi/CARD+QUANT apigawa/A+N 
 # dois homens
 
 kunhã-itá/N puranga/A+ADV 
@@ -117,8 +117,8 @@ kunhã-itá/N puranga/A+ADV
 Uka-itá/N mirĩ/A+ADV ./PUNCT 
 # As casas são pequenas.
 
-yepé/ART+CONJ+NUM+PART apigawa/A+N 
+yepé/ART+CARD+CONJ+FRUST apigawa/A+N 
 # um homem
 
-yepé/ART+CONJ+NUM+PART kunhã/A+N 
+yepé/ART+CARD+CONJ+FRUST kunhã/A+N 
 # uma mulher

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,49 +12,49 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Kunhã/A+N uyumaã/V waruá/N resé/ADP ./PUNCT 
+Kunhã/A+N uyumaã/V waruá/N resé/ADP+SCONJ ./PUNCT 
 # A mulher se vê no espelho.
 
 Kunhã/A+N ,/PUNCT apigawa/A+N uyumaã/V ./PUNCT 
 # A mulher e o homem se veem.
 
-Maã/INDF+INT+N+V taá/PART ne/PRON2 rera/N ?/PUNCT 
+Maã/IND+INT+N+V taá/CQ ne/PRON2 rera/N ?/PUNCT 
 # Qual é seu nome?
 
-Ixé/PRON ayuseruka/??? Pedro/PROPN ./PUNCT 
+Ixé/PRON ayuseruka/V Pedro/PROPN ./PUNCT 
 # Eu me chamo Pedro.
 
-Apigawa/A+N uyuyuká/??? ana/PART ./PUNCT 
+Apigawa/A+N uyuyuká/V ana/PFV ./PUNCT 
 # O homem se matou.
 
-Ayuyeréu/??? xinga/ADVS+QUANT ./PUNCT 
+Ayuyeréu/V xinga/ADVS+QUANT ./PUNCT 
 # Virei-me um pouco.
 
-Mukũi/NUM+QUANT apigawa/A+N uyuyuká/??? ./PUNCT 
+Mukũi/CARD+QUANT apigawa/A+N uyuyuká/V ./PUNCT 
 # Os dois homens se mataram.
 
 Kunhã-itá/N uyumuapatuka/V ./PUNCT 
 # As mulheres se atrapalham.
 
-Mamé/ADVR taá/PART puranga/A+ADV uyumunhã/V arã/ADP+PART yané/PRON2 ruka/N ?/PUNCT 
+Mamé/ADVR taá/CQ puranga/A+ADV uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
 # Onde é bom para se fazer nossa casa?
 
-Mamé/ADVR taá/PART puranga/A+ADV uyumunhã/V arã/ADP+PART yané/PRON2 ruka/N ?/PUNCT 
+Mamé/ADVR taá/CQ puranga/A+ADV uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
 # Onde é bom de ser feita nossa casa?
 
-Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/PART ne/PRON2 iwí/N ./PUNCT 
+Usika/V ,/PUNCT paá/RPRT ,/PUNCT umaã/V uyukupiri/V wã/PFV ne/PRON2 iwí/N ./PUNCT 
 # Dizem que chegou e viu que já se roçara tua terra.
 
-Usika/V ,/PUNCT paá/PART ,/PUNCT umaã/V uyukupiri/??? wã/PART ne/PRON2 iwí/N ./PUNCT 
+Usika/V ,/PUNCT paá/RPRT ,/PUNCT umaã/V uyukupiri/V wã/PFV ne/PRON2 iwí/N ./PUNCT 
 # Dizem que chegou e viu que fora roçada tua terra.
 
-Mira/N puxí/A+ADV uyumundú/??? apekatú/A+ADV kití/ADP ./PUNCT 
+Mira/N puxí/A+ADV uyumundú/V apekatú/A+ADV kití/ADP ./PUNCT 
 # Gente ruim é mandada para longe.
 
-Pedro/PROPN uyatikú/V kamixá/N mirá/N resé/ADP ./PUNCT 
+Pedro/PROPN uyatikú/V kamixá/N mirá/N resé/ADP+SCONJ ./PUNCT 
 # Pedro dependura a camisa na árvore.
 
-Kamixá/N uyatikú/V uikú/V mirá/N resé/ADP ./PUNCT 
+Kamixá/N uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT 
 # A camisa está dependurada na árvore.
 
 Maria/PROPN ukitika/V maniaka/N ./PUNCT 
@@ -63,22 +63,22 @@ Maria/PROPN ukitika/V maniaka/N ./PUNCT
 Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP ./PUNCT 
 # Maria enche o tipití com a mandioca ralada.
 
-Pedro/PROPN ,/PUNCT paá/PART ,/PUNCT sera/N ./PUNCT 
+Pedro/PROPN ,/PUNCT paá/RPRT ,/PUNCT sera/N ./PUNCT 
 # Dizem que o nome dele era Pedro.
 
-Upitá/V ,/PUNCT paá/PART ,/PUNCT suka/N upé/ADP ./PUNCT 
+Upitá/V ,/PUNCT paá/RPRT ,/PUNCT suka/N upé/ADP ./PUNCT 
 # Contam que ficou na sua casa.
 
-Ape/ADV+CONJ ,/PUNCT paá/PART ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
+Ape/ADVD+CONJ ,/PUNCT paá/RPRT ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
 # Então, dizem que chegou a ele o gavião.
 
-Aramé/ADV té/ADV ,/PUNCT paá/PART ,/PUNCT usasá/V yepé/ART+CONJ+NUM+PART wiramirĩ/N ./PUNCT 
+Aramé/ADV té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+CONJ+FRUST wiramirĩ/N ./PUNCT 
 # Nesse momento mesmo, dizem que passava um passarinho.
 
 Reyana/V taína-itá/N rakakwera/ADP ./PUNCT 
 # Corres atrás das crianças.
 
-Indé/PRON reyuri/V ana/PART sakakwera/ADP ./PUNCT 
+Indé/PRON reyuri/V ana/PFV sakakwera/ADP ./PUNCT 
 # Tu vieste atrás dele.
 
 Aé/PRON uikú/V se/PRON2 ruka/N kupé/N upé/ADP ./PUNCT 
@@ -87,7 +87,7 @@ Aé/PRON uikú/V se/PRON2 ruka/N kupé/N upé/ADP ./PUNCT
 Yawara/N usika/V yané/PRON2 kupé/N rupí/ADP ./PUNCT 
 # O cão chega por trás de nós.
 
-Uwapika/V riré/ADP ,/PUNCT umaã/V i/PRON2 manha/N resé/ADP ./PUNCT 
+Uwapika/V riré/ADP ,/PUNCT umaã/V i/PRON2 manha/N resé/ADP+SCONJ ./PUNCT 
 # Depois que se sentou, olhou em sua mãe.
 
 Ukiri/V renundé/ADP ,/PUNCT aé/PRON uú/V xibé/N ./PUNCT 

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,34 +12,34 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre — Reviewer: Leonel Figueiredo de Alencar
 # Last update: June 5, 2022
 
-Ape/ADV+CONJ té/ADV usasá/V sumuara/N urubú/N ./PUNCT 
+Ape/ADVD+CONJ té/ADV usasá/V sumuara/N urubú/N ./PUNCT 
 # Nesse momento mesmo passou seu amigo urubu.
 
-Wirandé/ADV tẽ/ADV kurí/PART amunhã/V se/PRON2 ruka/N ./PUNCT 
+Wirandé/ADV tẽ/ADV kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
 # Amanhã mesmo farei minha casa.
 
-Wirandé/ADV tenhẽ/ADV kurí/PART amunhã/V se/PRON2 ruka/N ./PUNCT 
+Wirandé/ADV tenhẽ/ADV kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
 # Amanhã mesmo farei minha casa.
 
-Ixé/PRON té/ADV amunhã/V ana/PART timbiú/N ./PUNCT 
+Ixé/PRON té/ADV amunhã/V ana/PFV timbiú/N ./PUNCT 
 # Eu mesmo fiz a comida.
 
 Yawé/ADP+ADV tẽ/ADV aputari/V ./PUNCT 
 # É assim mesmo que eu quero.
 
-Aintá/PRON umupuranga/V tupauku/N ./PUNCT 
+Aintá/PRON+PRON2 umupuranga/V tupauku/N ./PUNCT 
 # Enfeitaram a igreja.
 
-Tá/PRON uyuká/V yepé/ART+CONJ+NUM+PART tatú/N paranã/N upé/ADP ./PUNCT 
+Tá/PRON+PRON2 uyuká/V yepé/ART+CARD+CONJ+FRUST tatú/N paranã/N upé/ADP ./PUNCT 
 # Mataram um tatu no rio.
 
-Yepé/ART+CONJ+NUM+PART ara/N ,/PUNCT paá/PART ,/PUNCT São/PROPN Pedro/PROPN umunhã/V murasí/N iwaka/N kití/ADP ./PUNCT 
+Yepé/ART+CARD+CONJ+FRUST ara/N ,/PUNCT paá/RPRT ,/PUNCT São/PROPN Pedro/PROPN umunhã/V murasí/N iwaka/N kití/ADP ./PUNCT 
 # Dizem que, um dia, São Pedro fez um baile lá para o céu.
 
-Mayé/ADV+ADVR+CONJ taá/PART asú/V awatá/V se/PRON2 retama/N kití/ADP ?/PUNCT 
+Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP ?/PUNCT 
 # Como vou andar lá para a minha terra?
 
-Mamé/ADVR taá/PART uikú/V ne/PRON2 retama/N ?/PUNCT Pará/PROPN kití/ADP ./PUNCT 
+Mamé/ADVR taá/CQ uikú/V ne/PRON2 retama/N ?/PUNCT Pará/PROPN kití/ADP ./PUNCT 
 # Onde está tua terra? Para os lados do Pará.
 
 yasí/N pitera/N kití/ADP 
@@ -48,10 +48,10 @@ yasí/N pitera/N kití/ADP
 Iwakape/??? murasí/N surí/A2 ./PUNCT 
 # No céu o baile foi alegre.
 
-Yepé/ART+CONJ+NUM+PART uwapika/V igara/N gantĩme/??? ,/PUNCT amú/INDF uwapika/V yakumãme/??? ./PUNCT 
+Yepé/ART+CARD+CONJ+FRUST uwapika/V igara/N gantĩme/??? ,/PUNCT amú/IND uwapika/V yakumãme/??? ./PUNCT 
 # Um sentou na proa da canoa, outro sentou na popa.
 
-Paranãme/??? igara/N upitá/V ana/PART ./PUNCT 
+Paranãme/??? igara/N upitá/V ana/PFV ./PUNCT 
 # No rio a canoa ficou.
 
 Yautí/N usú/V ararapewa/N kwara/N upé/ADP ./PUNCT 
@@ -66,13 +66,13 @@ Upitá/V uka/N pupé/ADP ./PUNCT
 Pedro/PROPN usemu/V tupauku/N kwara/N suí/ADP ./PUNCT 
 # Pedro saiu de dentro da igreja.
 
-Ixé/PRON amaã/V arama/ADP+PART yepé/ART+CONJ+NUM+PART nhaã/DEM murasí/N ,/PUNCT ma/CONJ nti/ADV arikú/V se/PRON2 pepú/N awewé/V arã/ADP+PART ./PUNCT 
+Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+CONJ+FRUST nhaã/DEMS murasí/N ,/PUNCT ma/CONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
 # Era para eu ver aquele baile, mas não tenho minhas asas para voar.
 
-Ixé/PRON apitá/V arama/ADP+PART yepé/ART+CONJ+NUM+PART iké/ADV ./PUNCT 
+Ixé/PRON apitá/V arama/ADP+FUT+SCONJ yepé/ART+CARD+CONJ+FRUST iké/ADVD ./PUNCT 
 # Era para eu ficar aqui.
 
-Watarampuá/??? ,/PUNCT nhaã/DEM kurumiwasú/??? kirimbawa/A+N piri/ADP+ADV waá/REL yandé/PRON retamawara/??? aintá/PRON suí/ADP ,/PUNCT umendari/V arama/ADP+PART waá/REL yepé/ART+CONJ+NUM+PART xe/PRON2 irũmu/ADP ,/PUNCT nti/ADV rẽ/ADV uyana/V kwá/ADV+DEM kaxiwera/N ./PUNCT 
+Watarampuá/??? ,/PUNCT nhaã/DEMS kurumiwasú/N kirimbawa/A+N piri/ADP+ADV waá/REL yandé/PRON retamawara/A|N aintá/PRON+PRON2 suí/ADP ,/PUNCT umendari/V arama/ADP+FUT+SCONJ waá/REL yepé/ART+CARD+CONJ+FRUST xe/PRON2 irũmu/ADP ,/PUNCT nti/NEG rẽ/ADV uyana/V kwá/ADVD+AUXN+DEMX+V kaxiwera/N ./PUNCT 
 # Uatarampuá, aquele moço que é o mais valente dos que são de nossa terra, que era para casar-se comigo, não correu ainda esta cachoeira.
 
 Se/PRON2 kerpi/V2 ./PUNCT 
@@ -90,25 +90,25 @@ Yané/PRON2 kerpi/V2 ./PUNCT
 Pe/PRON2 kerpi/V2 ./PUNCT 
 # Vocês sonham.
 
-Aintá/PRON kerpi/V2 ./PUNCT 
+Aintá/PRON+PRON2 kerpi/V2 ./PUNCT 
 # Eles sonham.
 
-Ixé/PRON se/PRON2 akanhemu/V2 ./PUNCT 
+Ixé/PRON se/PRON2 akanhemu/V+V2 ./PUNCT 
 # Eu me assusto.
 
-Indé/PRON ne/PRON2 akanhemu/V2 ./PUNCT 
+Indé/PRON ne/PRON2 akanhemu/V+V2 ./PUNCT 
 # Você se assusta.
 
-Aé/PRON i/PRON2 akanhemu/V2 ./PUNCT 
+Aé/PRON i/PRON2 akanhemu/V+V2 ./PUNCT 
 # Ele se assusta.
 
-Yandé/PRON yané/PRON2 akanhemu/V2 ./PUNCT 
+Yandé/PRON yané/PRON2 akanhemu/V+V2 ./PUNCT 
 # Nós nos assustamos.
 
-Penhẽ/PRON pe/PRON2 akanhemu/V2 ./PUNCT 
+Penhẽ/PRON pe/PRON2 akanhemu/V+V2 ./PUNCT 
 # Vocês se assustam.
 
-Aintá/PRON tá/PRON akanhemu/V2 ./PUNCT 
+Aintá/PRON+PRON2 tá/PRON+PRON2 akanhemu/V+V2 ./PUNCT 
 # Eles se assustam.
 
 Ixé/PRON se/PRON2 resarái/V2 ./PUNCT 
@@ -126,7 +126,7 @@ Yandé/PRON yané/PRON2 resarái/V2 ./PUNCT
 Penhẽ/PRON pe/PRON2 resarái/V2 ./PUNCT 
 # Vocês se esquecem.
 
-Aintá/PRON tá/PRON resarái/V2 ./PUNCT 
+Aintá/PRON+PRON2 tá/PRON+PRON2 resarái/V2 ./PUNCT 
 # Eles se esquecem.
 
 I/PRON2 kwema/N+V2 ./PUNCT 
@@ -138,5 +138,5 @@ Ee/??? ruí/N+V2 ./PUNCT
 Pedro/PROPN tuí/N+V2 ./PUNCT 
 # Pedro sangra.
 
-Aintá/PRON ruí/N+V2 ./PUNCT 
+Aintá/PRON+PRON2 ruí/N+V2 ./PUNCT 
 # Eles sangram.

@@ -526,7 +526,7 @@ def guesser(token,lexicon):
                 copy_feats(entry,new)
                 insertSingularNumber(new)
                 if new.get('pos') == 'V':
-                    prefs=parseprefs(base)
+                    prefs=parseprefs(base,lexicon)
                     if prefs.get('pref'):
                         new.update(prefs)
                 new['lexicon']=False

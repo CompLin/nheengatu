@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -21,49 +21,49 @@ Ixé/PRON apitá/V aikú/V yumasisawa/N irũmu/ADP ./PUNCT
 Indé/PRON reyenũ/V reikú/V ./PUNCT 
 # Tu estás deitado.
 
-Aé/PRON uwapika/V ana/PART uikú/V mimi/ADV ./PUNCT 
+Aé/PRON uwapika/V ana/PFV uikú/V mimi/ADV ./PUNCT 
 # Ele estava sentado ali.
 
-Uyatikú/V uikú/V mirá/N resé/ADP ./PUNCT 
+Uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT 
 # Está-se dependurando na árvore.
 
-Aé/PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+CONJ+V ./PUNCT 
+Aé/PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
 # Ela está vendo árvores e casas de caboclos.
 
-Nhaã/DEM apigawa/A+N umbaú/V ana/PART pirá/N meyú/N yuíri/ADV+CONJ+V ./PUNCT 
+Nhaã/DEMS apigawa/A+N umbaú/V ana/PFV pirá/N meyú/N yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
 # Aquele homem comeu peixe e biju.
 
-Aé/PRON umbué/V aintá/PRON upurungitá/V asuí/ADV+CONJ umupinima/V ./PUNCT 
+Aé/PRON umbué/V aintá/PRON+PRON2 upurungitá/V asuí/ADV+CONJ umupinima/V ./PUNCT 
 # Ele os ensinou a falar, depois a escrever.
 
 Ixé/PRON apuamu/V asuí/ADV+CONJ apurasí/V ./PUNCT 
 # Eu levanto, depois danço.
 
-Aé/PRON uyupiri/V ana/PART mirá/N resé/ADP ./PUNCT 
+Aé/PRON uyupiri/V ana/PFV mirá/N resé/ADP+SCONJ ./PUNCT 
 # Ele subiu na árvore.
 
 Aé/PRON uyupiri/V sesé/ADP ./PUNCT 
 # Ele subiu nela.
 
-Maria/PROPN mena/N ururi/V maniaka/N i/PRON2 pu-itá/N resé/ADP ./PUNCT 
+Maria/PROPN mena/N ururi/V maniaka/N i/PRON2 pu-itá/N resé/ADP+SCONJ ./PUNCT 
 # O marido de Maria traz mandioca em suas mãos.
 
-Kunhã/A+N ururi/V yepeawa/N kawarú/N resé/ADP ./PUNCT 
+Kunhã/A+N ururi/V yepeawa/N kawarú/N resé/ADP+SCONJ ./PUNCT 
 # A mulher traz lenha no cavalo.
 
 Pedro/PROPN upitá/V paranã/N upé/ADP ./PUNCT 
 # Pedro fica no rio.
 
-Ixé/PRON amandwari/V Maria/PROPN resé/ADP ./PUNCT 
+Ixé/PRON amandwari/V Maria/PROPN resé/ADP+SCONJ ./PUNCT 
 # Eu me lembro de Maria.
 
 Ixé/PRON amandwari/V sesé/ADP ./PUNCT 
 # Eu me lembro dela.
 
-Aintá/PRON upuká/V yané/PRON2 resé/ADP ./PUNCT 
+Aintá/PRON+PRON2 upuká/V yané/PRON2 resé/ADP+SCONJ ./PUNCT 
 # Eles riem de nós.
 
-Aintá/PRON upurungitá/V ne/PRON2 resé/ADP ./PUNCT 
+Aintá/PRON+PRON2 upurungitá/V ne/PRON2 resé/ADP+SCONJ ./PUNCT 
 # Falaram a respeito de você.
 
 Ixé/PRON apurakí/V ne/PRON2 resewara/ADP ./PUNCT 
@@ -90,10 +90,10 @@ Kunhã/A+N usú/V i/PRON2 mena/N renundé/ADP ./PUNCT
 Kunhã/A+N usú/V senundé/ADP ./PUNCT 
 # A mulher foi antes dele.
 
-Asú/V amunhã/V yepé/ART+CONJ+NUM+PART kakurí/N senundé/ADP ./PUNCT 
+Asú/V amunhã/V yepé/ART+CARD+CONJ+FRUST kakurí/N senundé/ADP ./PUNCT 
 # Vou fazer um cacuri antes dele.
 
-Aintá/PRON upitá/V akangaíwa/A+N kurumĩwasú/N purangasawa/N renundé/ADP ./PUNCT 
+Aintá/PRON+PRON2 upitá/V akangaíwa/A+N kurumĩwasú/N purangasawa/N renundé/ADP ./PUNCT 
 # Elas ficaram loucas diante da beleza do moço.
 
 Asú/V aikú/V se/PRON2 renundé/ADP kití/ADP ./PUNCT 

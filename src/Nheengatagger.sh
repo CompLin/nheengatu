@@ -4,7 +4,7 @@
 # of files in the data/corpus/navarro-2016 folder.
 
 # Usage example:
-# Nheengatagger.sh *[0-9][0-9].txt
+# Nheengatagger.sh [et]*[0-9][0-9].txt
 
 # Author: Leonel Figueiredo de Alencar
 # Date May 31, 2022

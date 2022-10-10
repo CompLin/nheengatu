@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 31, 2022
+# Last update: October 10, 2022
 
 import os, sys, string, json, datetime
-from BuildDictionary import extract_feats, loadLexicon
+from BuildDictionary import extract_feats, loadLexicon, guesser
 
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
-LEXICON=os.path.join(PATH,"lexicon.json")
+LEXICONFILE=os.path.join(PATH,"lexicon.json")
+LEXICON=loadLexicon(LEXICONFILE)
 DASHES=['‒', '–', '—','―']
 PUNCTUATION='''.,;':?!“”"…()][}{'''
 ELLIPSIS='[...]'
@@ -98,7 +99,7 @@ def buildDictionary(infile="lexicon.json"):
     tagger.update(propernames())
     return tagger
 
-DICTIONARY=buildDictionary(LEXICON)
+DICTIONARY=buildDictionary(LEXICONFILE)
 MWE=extractMWEs(DICTIONARY)
 
 def splitPunctuation(token,punctuation=PUNCTUATION):
@@ -175,7 +176,15 @@ def restoreEllipsis(newList,ellipis,xxxx):
         i+=1
 
 def tagWord(token,tagger=DICTIONARY):
-    return tagger.get(tuple(token.split()))
+    tags=tagger.get(tuple(token.split()))
+    if not tags:
+        parselist=guesser(token,LEXICON)
+        tags=set()
+        if parselist:
+            for parse in parselist:
+                if parse:
+                    tags.add(parse.get('pos'))
+    return tags
 
 def pprint(tagged, tagsep="/", tokensep=" "):
     for token,tag in tagged:
@@ -188,8 +197,9 @@ def tagSentence(sentence,tagger=DICTIONARY, unknown="???"):
     for token in tokens:
         tagString=unknown
         tagSet=tagWord(token.lower())
-        if tagSet:
-            tagString="+".join(sorted(tagSet))
+        sortedlist=[e for e in sorted(tagSet) if e]
+        if sortedlist:
+            tagString="+".join(sortedlist)
         else:
             if tokens.index(token) > 0 and token.istitle():
                 tagString="PROPN"
@@ -218,7 +228,7 @@ def tagText(lines):
             else:
                 print(line)
 
-def parseWord(word,lexicon=None,infile=LEXICON):
+def parseWord(word,lexicon=None,infile=LEXICONFILE):
     parselist=getparselist(word,lexicon,infile)
     if parselist:
         for lemma,tags in parselist:
@@ -232,7 +242,7 @@ def extendLexicon(lexicon):
         new=key[0]
         lexicon[new]=[[new,list(value)[0]]]
 
-def getparselist(word,lexicon=None,infile=LEXICON):
+def getparselist(word,lexicon=None,infile=LEXICONFILE):
     word=word.lower()
     if lexicon:
         lexicon=lexicon

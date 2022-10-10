@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -15,49 +15,49 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 Xukúi/V se/PRON2 pururé/N ./PUNCT 
 # Aqui está minha enxada.
 
-Nti/ADV akwáu/V mamé/ADVR uikú/V kwá/ADV+DEM kunhã/A+N yara/N+PART ./PUNCT 
+Nti/NEG akwáu/V mamé/ADVR uikú/V kwá/ADVD+AUXN+DEMX+V kunhã/A+N yara/ADP+N ./PUNCT 
 # Não sei onde está a desta mulher.
 
-Se/PRON2 mũ/N pirasua/A+N ,/PUNCT ne/PRON2 yara/N+PART umbaá/ADV ./PUNCT 
+Se/PRON2 mũ/N pirasua/A+N ,/PUNCT ne/PRON2 yara/ADP+N umbaá/ADV ./PUNCT 
 # Meu irmão é pobre, o teu não.
 
-Nhaã/DEM uka/N se/PRON2 yara/N+PART ./PUNCT 
+Nhaã/DEMS uka/N se/PRON2 yara/ADP+N ./PUNCT 
 # Aquela casa é minha.
 
-Pedro/PROPN ruka/N mirĩ/A+ADV ./PUNCT Pe/PRON2 yara/N+PART turusú/A+ADVS ./PUNCT 
+Pedro/PROPN ruka/N mirĩ/A+ADV ./PUNCT Pe/PRON2 yara/ADP+N turusú/A+ADVS+QUANT ./PUNCT 
 # A casa de Pedro é pequena. A de vocês é grande.
 
-Kwá/ADV+DEM ne/PRON2 igara/N ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V ne/PRON2 igara/N ./PUNCT 
 # Esta é tua canoa.
 
-Awá/INDF+INT yara/N+PART taá/PART nhaã/DEM ?/PUNCT 
+Awá/IND+INT yara/ADP+N taá/CQ nhaã/DEMS ?/PUNCT 
 # Aquela é propriedade de quem?
 
-Awá/INDF+INT igara/N taá/PART nhaã/DEM ?/PUNCT 
+Awá/IND+INT igara/N taá/CQ nhaã/DEMS ?/PUNCT 
 # Canoa de quem é aquela?
 
-Se/PRON2 manha/N puranga/A+ADV piri/ADP+ADV ne/PRON2 yara/N+PART suí/ADP ./PUNCT 
+Se/PRON2 manha/N puranga/A+ADV piri/ADP+ADV ne/PRON2 yara/ADP+N suí/ADP ./PUNCT 
 # Minha mãe é mais bonita que a sua.
 
-Kwá/ADV+DEM apigawa/A+N pirasua/A+N piri/ADP+ADV nhaã/DEM suí/ADP ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V apigawa/A+N pirasua/A+N piri/ADP+ADV nhaã/DEMS suí/ADP ./PUNCT 
 # Este homem é mais pobre que aquele.
 
-Kwá/ADV+DEM kunhã/A+N unheengari/V puranga/A+ADV ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V kunhã/A+N unheengari/V puranga/A+ADV ./PUNCT 
 # Esta mulher canta bem.
 
-Kwá/ADV+DEM kunhã/A+N unheengari/V puranga/A+ADV piri/ADP+ADV nhaã/DEM suí/ADP ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V kunhã/A+N unheengari/V puranga/A+ADV piri/ADP+ADV nhaã/DEMS suí/ADP ./PUNCT 
 # Esta mulher canta melhor que aquela.
 
-Se/PRON2 manha/N puranga/A+ADV mayé/ADV+ADVR+CONJ ne/PRON2 yara/N+PART yawé/ADP+ADV ./PUNCT 
+Se/PRON2 manha/N puranga/A+ADV mayé/ADV+ADVR+SCONJ ne/PRON2 yara/ADP+N yawé/ADP+ADV ./PUNCT 
 # Minha mãe é tão bela como a sua.
 
-Se/PRON2 manha/N puranga/A+ADV mayé/ADV+ADVR+CONJ ne/PRON2 yawé/ADP+ADV ./PUNCT 
+Se/PRON2 manha/N puranga/A+ADV mayé/ADV+ADVR+SCONJ ne/PRON2 yawé/ADP+ADV ./PUNCT 
 # Minha mãe é tão bonita como tu.
 
-Kwá/ADV+DEM apigawa/A+N pirasua/A+N mayé/ADV+ADVR+CONJ nhaã/DEM yawé/ADP+ADV ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V apigawa/A+N pirasua/A+N mayé/ADV+ADVR+SCONJ nhaã/DEMS yawé/ADP+ADV ./PUNCT 
 # Este homem é tão pobre como aquele.
 
-Kwá/ADV+DEM kunhã/A+N unheengari/V puranga/A+ADV mayé/ADV+ADVR+CONJ nhaã/DEM yawé/ADP+ADV ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V kunhã/A+N unheengari/V puranga/A+ADV mayé/ADV+ADVR+SCONJ nhaã/DEMS yawé/ADP+ADV ./PUNCT 
 # Esta mulher canta tão bem como aquela.
 
 Aé/PRON urikú/V suaya/N pirá/N yawé/ADP+ADV ./PUNCT 
@@ -72,7 +72,7 @@ Kuximawara-itá/N upurakí/V retana/ADVS ./PUNCT
 Uka/N mirá/N suiwara/ADP ./PUNCT 
 # A casa é de madeira.
 
-Karuka/N rirewara/??? pituna/N ./PUNCT 
+Karuka/N rirewara/A|N pituna/N ./PUNCT 
 # O que é após a tarde é a noite.
 
 Maria/PROPN upurandú/V Pedro/PROPN resewara/ADP ./PUNCT 
@@ -99,13 +99,13 @@ Aé/PRON umunuka/V kwaíra/A mirá/N ./PUNCT
 Aé/PRON umururú/V kwaíra/A iwí/N ./PUNCT 
 # Ele rega pouca terra.
 
-Remeẽ/V ixé/PRON arama/ADP+PART uí/N mirĩ/A+ADV nhuntu/ADV ./PUNCT 
+Remeẽ/V ixé/PRON arama/ADP+FUT+SCONJ uí/N mirĩ/A+ADV nhuntu/ADV ./PUNCT 
 # Dê-me só um pouco de farinha.
 
-Kwaíra/A nhuntu/ADV ,/PUNCT paá/PART ,/PUNCT aé/PRON uú/V kaxirí/N ./PUNCT 
+Kwaíra/A nhuntu/ADV ,/PUNCT paá/RPRT ,/PUNCT aé/PRON uú/V kaxirí/N ./PUNCT 
 # Contam que ele bebeu caxiri um pouco, somente.
 
-Sapukaya-apigawa/??? unheengari/V retana/ADVS ./PUNCT 
+Sapukaya-apigawa/N unheengari/V retana/ADVS ./PUNCT 
 # O galo canta muito.
 
 Aé/PRON upitá/V piaíwa/A reté/ADVS ne/PRON2 irũmu/ADP ./PUNCT 
@@ -120,11 +120,11 @@ Aé/PRON tepusimanha/A+N xinga/ADVS+QUANT ./PUNCT
 Aé/PRON upurungitá/V mirĩ/A+ADV ./PUNCT 
 # Ele fala pouco.
 
-Senundé/ADP kití/ADP xinga/ADVS+QUANT aé/PRON usuantí/V yepé/ART+CONJ+NUM+PART tatú/N ./PUNCT 
+Senundé/ADP kití/ADP xinga/ADVS+QUANT aé/PRON usuantí/V yepé/ART+CARD+CONJ+FRUST tatú/N ./PUNCT 
 # Um pouco à frente dele, ele encontrou um tatu.
 
 Mairamé/ADVR+CONJ usika/V ,/PUNCT apekatú/A+ADV xinga/ADVS+QUANT upitá/V ./PUNCT 
 # Quando chegou, ficou um pouco longe.
 
-Maãyawé/??? nhaá/??? kurumĩwasú/N payé/N xinga/ADVS+QUANT ,/PUNCT aé/PRON umaã/V ,/PUNCT paá/PART ,/PUNCT i/PRON2 anga/N rupí/ADP maã/INDF+INT+N+V kunhãmukú-itá/N umunhã/V i/PRON2 xupé/ADP ./PUNCT 
+Maãyawé/??? nhaá/??? kurumĩwasú/N payé/N xinga/ADVS+QUANT ,/PUNCT aé/PRON umaã/V ,/PUNCT paá/RPRT ,/PUNCT i/PRON2 anga/N rupí/ADP maã/IND+INT+N+V kunhãmukú-itá/N umunhã/V i/PRON2 xupé/ADP ./PUNCT 
 # Como aquele rapaz era um pouco pajé, contam que ele viu, por sua sombra, o que as moças faziam para ele.

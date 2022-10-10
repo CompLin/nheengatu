@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:18 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,43 +18,43 @@ Akayú/N pisasú/A usika/V ./PUNCT
 Akayú/N pisasú/A usika/V uikú/V ./PUNCT 
 # O ano novo está chegando.
 
-São/PROPN Gabriel/PROPN upé/ADP mira-itá/N uyumuatiri/V usarú/V arama/ADP+PART pisayé/N ./PUNCT 
+São/PROPN Gabriel/PROPN upé/ADP mira-itá/N uyumuatiri/V usarú/V arama/ADP+FUT+SCONJ pisayé/N ./PUNCT 
 # Em São Gabriel as pessoas se ajuntam para esperar a meia-noite.
 
-Maria/PROPN usenũi/V ana/PART mira-itá/N upinaitikawera/??? sendawa/N ruakí/ADP uri/V arama/ADP+PART suka/N kití/ADP ./PUNCT 
+Maria/PROPN usenũi/V ana/PFV mira-itá/N upinaitikawera/V sendawa/N ruakí/ADP uri/V arama/ADP+FUT+SCONJ suka/N kití/ADP ./PUNCT 
 # Maria convidou pessoas que costumam pescar perto de sua comunidade para virem a sua casa.
 
-Uri/V apigawa-itá/N unheengariwera/??? umusurí/V arama/ADP+PART murasí/N ./PUNCT 
+Uri/V apigawa-itá/N unheengariwera/V umusurí/V arama/ADP+FUT+SCONJ murasí/N ./PUNCT 
 # Vêm homens cantadores para alegrar a festa.
 
 Pituna/N sakurana/A ./PUNCT 
 # A noite está pouco quente (morna).
 
-Panhẽ/QUANT mira/N usú/V ukara/N kití/ADP ./PUNCT 
+Panhẽ/TOT mira/N usú/V ukara/N kití/ADP ./PUNCT 
 # Todas as pessoas vão para fora.
 
-Kuíri/ADV supí/ADV aintá/PRON uyumusurí-kwáu/??? ./PUNCT 
+Kuíri/ADV supí/ADV aintá/PRON+PRON2 uyumusurí-kwáu/V ./PUNCT 
 # Agora de fato eles podem se divertir.
 
-Maria/PROPN usenũi/V aintá/PRON :/PUNCT 
+Maria/PROPN usenũi/V aintá/PRON+PRON2 :/PUNCT 
 # Maria os chama:
 
 Yasú/V panhẽuka/??? kwara/N kití/ADP !/PUNCT 
 # Vamos todos para dentro de casa!
 
-Aikwé/V bũa/A+QUANT timbiú/N penhẽ/PRON arama/ADP+PART !/PUNCT 
+Aikwé/V bũa/A+QUANT timbiú/N penhẽ/PRON arama/ADP+FUT+SCONJ !/PUNCT 
 # Há muita comida para vocês!
 
-Aikwé/V bũa/A+QUANT meyú-itá/N yurá/N árupi/ADP pembaú/V arama/ADP+PART !/PUNCT 
+Aikwé/V bũa/A+QUANT meyú-itá/N yurá/N árupi/ADP pembaú/V arama/ADP+FUT+SCONJ !/PUNCT 
 # Há grandes bijus sobre o jirau para vocês comerem!
 
 Antônio/PROPN ,/PUNCT Maria/PROPN mimbira/N ,/PUNCT uyupirú/V unheengari/V ./PUNCT 
 # Antônio, filho de Maria, começa a cantar.
 
-Aintá/PRON unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
+Aintá/PRON+PRON2 unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
 # Dizem a ele:
 
-Indé/PRON nheengarisararana/??? ./PUNCT 
+Indé/PRON nheengarisararana/N ./PUNCT 
 # Você é um mau cantor.
 
 Repituú/V renheengari/V !/PUNCT 
@@ -63,13 +63,13 @@ Repituú/V renheengari/V !/PUNCT
 Maria/PROPN unheẽ/V :/PUNCT 
 # Maria diz:
 
-Rute/PROPN ,/PUNCT indé/PRON renheengari/V ramé/ADP+CONJ maã/INDF+INT+N+V ,/PUNCT panhē/??? mira/N upitá/V maã/INDF+INT+N+V surí/A2 ./PUNCT 
+Rute/PROPN ,/PUNCT indé/PRON renheengari/V ramé/ADP+SCONJ maã/IND+INT+N+V ,/PUNCT panhē/??? mira/N upitá/V maã/IND+INT+N+V surí/A2 ./PUNCT 
 # Rute, se você cantasse, toda a gente ficaria feliz.
 
-Panhẽ/QUANT mira/N umbaú/V meyú/N ./PUNCT 
+Panhẽ/TOT mira/N umbaú/V meyú/N ./PUNCT 
 # Todas as pessoas comem beiju.
 
-Yepé/ART+CONJ+NUM+PART apigawa/A+N kawera/N usika/V murasí/N upé/ADP ./PUNCT 
+Yepé/ART+CARD+CONJ+FRUST apigawa/A+N kawera/N usika/V murasí/N upé/ADP ./PUNCT 
 # Um homem bêbado chega à festa.
 
 Maria/PROPN uyakáu/V aé/PRON :/PUNCT 
@@ -78,7 +78,7 @@ Maria/PROPN uyakáu/V aé/PRON :/PUNCT
 Remaã/V mamentu/ADV reikú/V !/PUNCT 
 # Veja só onde você está!
 
-Indé/PRON nti/ADV rerikú/V tĩsawa/N ?/PUNCT 
+Indé/PRON nti/NEG rerikú/V tĩsawa/N ?/PUNCT 
 # Você não tem vergonha?
 
 Reikuntu/V mimi/ADV !/PUNCT 
@@ -87,10 +87,10 @@ Reikuntu/V mimi/ADV !/PUNCT
 Resú/V mimi/ADV kití/ADP !/PUNCT 
 # Vá para lá!
 
-Nhaã/DEM kawera/N uyana/V tenhuntu/ADV usikari/V arama/ADP+PART i/PRON2 igara/N :/PUNCT 
+Nhaã/DEMS kawera/N uyana/V tenhuntu/ADV usikari/V arama/ADP+FUT+SCONJ i/PRON2 igara/N :/PUNCT 
 # Aquele bêbado correu em vão procurando sua canoa:
 
-aé/PRON nti/ADV ana/PART uwasemu/V ./PUNCT 
+aé/PRON nti/NEG ana/PFV uwasemu/V ./PUNCT 
 # ele já não a encontrou.
 
 Maria/PROPN unheẽ/V :/PUNCT 
@@ -99,5 +99,5 @@ Maria/PROPN unheẽ/V :/PUNCT
 Kawera-itá/N yawé/ADP+ADV tẽ/ADV ./PUNCT 
 # Bêbados são assim mesmo.
 
-Ne/PRON2 mairamé/ADVR+CONJ aintá/PRON rurí/A2 ./PUNCT 
+Ne/PRON2 mairamé/ADVR+CONJ aintá/PRON+PRON2 rurí/A2 ./PUNCT 
 # Nunca são felizes.

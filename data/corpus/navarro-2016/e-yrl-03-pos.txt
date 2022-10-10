@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:04 2022.
+Date: Mon Oct 10 18:32:16 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -27,7 +27,7 @@ yané/PRON2 tawa/N
 pe/PRON2 ruka/N 
 # casa de vocês
 
-aintá/PRON xirura-itá/N 
+aintá/PRON+PRON2 xirura-itá/N 
 # calças deles
 
 Aé/PRON usú/V se/PRON2 irũmu/ADP ./PUNCT 
@@ -39,25 +39,25 @@ Maria/PROPN upitá/V ne/PRON2 ruakí/ADP ./PUNCT
 Pedro/PROPN usú/V apekatú/A+ADV pe/PRON2 suí/ADP ./PUNCT 
 # Pedro vai longe de vocês.
 
-Reruri/V timbiú/N ixé/PRON arama/ADP+PART ./PUNCT 
+Reruri/V timbiú/N ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Traga comida para mim.
 
-Amunhã/V pindá-itá/N indé/PRON arama/ADP+PART ./PUNCT 
+Amunhã/V pindá-itá/N indé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Faço anzóis para você.
 
-Apurakí/V indé/PRON arama/ADP+PART ./PUNCT 
+Apurakí/V indé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Trabalho para ti.
 
-Reruri/V aé/PRON ixé/PRON arama/ADP+PART ./PUNCT 
+Reruri/V aé/PRON ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Traga-o para mim.
 
 Apurakí/V Maria/PROPN supé/ADP ./PUNCT 
 # Trabalho para Maria.
 
-Anheẽ/V “/PUNCT puranga/A+ADV ara/N ”/PUNCT aintá/PRON supé/ADP ./PUNCT 
+Anheẽ/V “/PUNCT puranga/A+ADV ara/N ”/PUNCT aintá/PRON+PRON2 supé/ADP ./PUNCT 
 # Digo “bom dia” para eles.
 
-Unheẽ/V paá/PART yepé/ART+CONJ+NUM+PART ara/N i/PRON2 apigawa-itá/N supé/ADP …/PUNCT 
+Unheẽ/V paá/RPRT yepé/ART+CARD+CONJ+FRUST ara/N i/PRON2 apigawa-itá/N supé/ADP …/PUNCT 
 # Contam que disse um dia aos seus homens…
 
 Ixé/PRON apiripana/V xirura/N i/PRON2 xupé/ADP ./PUNCT 
@@ -72,7 +72,7 @@ Kuíri/ADV penhẽ/PRON pemaramunhã/V yané/PRON2 rupí/ADP ./PUNCT
 Renheẽ/V kariwa/N nheenga/N rupí/ADP ./PUNCT 
 # Fale em língua de brancos.
 
-Muíri/INDF+INT rupí/ADP taá/PART kwá/ADV+DEM kamixá/N ?/PUNCT 
+Muíri/IND+INT rupí/ADP taá/CQ kwá/ADVD+AUXN+DEMX+V kamixá/N ?/PUNCT 
 # Por quanto é esta camisa?
 
 Ayuri/V se/PRON2 rupí/ADP ./PUNCT 
@@ -81,28 +81,28 @@ Ayuri/V se/PRON2 rupí/ADP ./PUNCT
 Remunhã/V sangawa/N rupí/ADP ./PUNCT 
 # Faça de acordo com o modelo.
 
-Kwá/ADV+DEM rupí/ADP aikwé/V siía/QUANT mirá/N ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V rupí/ADP aikwé/V siía/QUANT mirá/N ./PUNCT 
 # Por aqui há muitas árvores.
 
-Amú/INDF pituna/N piterarupí/ADP ,/PUNCT asendú/V yepé/ART+CONJ+NUM+PART nheenga/N ./PUNCT 
+Amú/IND pituna/N piterarupí/ADP ,/PUNCT asendú/V yepé/ART+CARD+CONJ+FRUST nheenga/N ./PUNCT 
 # Pelo meio da outra noite, ouvi uma voz.
 
-Aintá/PRON usú/V nhaã/DEM tatatingawasú/??? piterarupí/ADP …/PUNCT 
+Aintá/PRON+PRON2 usú/V nhaã/DEMS tatatingawasú/N piterarupí/ADP …/PUNCT 
 # Elas foram pelo meio daquela fumaça…
 
-Aintá/PRON umuyeréu/V mirá-itawasú/??? aintá/PRON ararupí/ADP ./PUNCT 
+Aintá/PRON+PRON2 umuyeréu/V mirá-itawasú/N aintá/PRON+PRON2 ararupí/ADP ./PUNCT 
 # Eles rolaram grandes paus por cima deles.
 
-Iwí/N wirarupí/ADP paá/PART aikwé/V pé/N …/PUNCT 
+Iwí/N wirarupí/ADP paá/RPRT aikwé/V pé/N …/PUNCT 
 # Contam que, por baixo da terra, havia caminho…
 
-Se/PRON2 riré/ADP usika/V ana/PART amú/INDF apigawa/A+N ./PUNCT 
+Se/PRON2 riré/ADP usika/V ana/PFV amú/IND apigawa/A+N ./PUNCT 
 # Depois de mim chegou outro homem.
 
-Murasí/N riré/ADP ,/PUNCT aé/PRON ukiri/V ana/PART retana/ADVS ./PUNCT 
+Murasí/N riré/ADP ,/PUNCT aé/PRON ukiri/V ana/PFV retana/ADVS ./PUNCT 
 # Após o baile, ele dormiu muito.
 
-Apurandú/V ne/PRON2 suí/ADP maã/INDF+INT+N+V aputari/V akwáu/V ./PUNCT 
+Apurandú/V ne/PRON2 suí/ADP maã/IND+INT+N+V aputari/V akwáu/V ./PUNCT 
 # Pergunto de você o que quero saber.
 
 Indé/PRON resemu/V se/PRON2 suí/ADP ./PUNCT 
@@ -111,13 +111,13 @@ Indé/PRON resemu/V se/PRON2 suí/ADP ./PUNCT
 Ixé/PRON ayuri/V paranã/N suí/ADP ./PUNCT 
 # Eu venho do rio.
 
-Aé/PRON uyupirú/V ana/PART uwatá/V garapá/N suí/ADP ./PUNCT 
+Aé/PRON uyupirú/V ana/PFV uwatá/V garapá/N suí/ADP ./PUNCT 
 # Ele começou a andar desde o porto.
 
-Ixé/PRON asarú/V indé/PRON amukwesé/??? suí/ADP ./PUNCT 
+Ixé/PRON asarú/V indé/PRON amukwesé/V suí/ADP ./PUNCT 
 # Eu te espero desde anteontem.
 
-Ixé/PRON asarú/V indé/PRON amukwesé/??? suiwara/ADP ./PUNCT 
+Ixé/PRON asarú/V indé/PRON amukwesé/V suiwara/ADP ./PUNCT 
 # Eu te espero desde anteontem.
 
 se/PRON2 pu/N 
@@ -138,13 +138,13 @@ se/PRON2 igara/N
 yané/PRON2 putira/N 
 # nossa flor
 
-Aikwé/V kamixá-itá/N puranga/A+ADV nhaã/DEM piripanasawa/N ruka/N upé/ADP ./PUNCT 
+Aikwé/V kamixá-itá/N puranga/A+ADV nhaã/DEMS piripanasawa/N ruka/N upé/ADP ./PUNCT 
 # Há camisas bonitas naquela loja.
 
-Aikwé/V mukũi/NUM+QUANT igara/N paranã/N upé/ADP ./PUNCT 
+Aikwé/V mukũi/CARD+QUANT igara/N paranã/N upé/ADP ./PUNCT 
 # Há duas canoas no rio.
 
-Aikwé/V raẽ/ADV será/PART tuxawa/N tuyuwé/A+N ?/PUNCT 
+Aikwé/V raẽ/ADV será/PQ tuxawa/N tuyuwé/A+N ?/PUNCT 
 # Existe ainda o velho tuxaua?
 
 Aiwã/V amana/N ./PUNCT 
@@ -153,7 +153,7 @@ Aiwã/V amana/N ./PUNCT
 Aiwã/V pituna/N ./PUNCT 
 # Logo vem a noite.
 
-Aiwã/V tẽ/ADV kurí/PART ./PUNCT 
+Aiwã/V tẽ/ADV kurí/FUT ./PUNCT 
 # Logo será (ou daqui a pouco).
 
 Xukúi/V kamixá/N ./PUNCT 
@@ -162,35 +162,35 @@ Xukúi/V kamixá/N ./PUNCT
 Xukúi/V sekuyara/N ./PUNCT 
 # Aqui está o dinheiro.
 
-Kwá/ADV+DEM garapá/N mirĩ/A+ADV ,/PUNCT nhaã/DEM umbaá/ADV ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V garapá/N mirĩ/A+ADV ,/PUNCT nhaã/DEMS umbaá/ADV ./PUNCT 
 # Este porto é pequeno, aquele não.
 
-Kwá/ADV+DEM tawa/N puranga/A+ADV ,/PUNCT nhaã/DEM tawa/N puxiwera/A+ADV ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V tawa/N puranga/A+ADV ,/PUNCT nhaã/DEMS tawa/N puxiwera/A+ADV ./PUNCT 
 # Esta cidade é bonita, aquela cidade é feia.
 
-Kwá-itá/DEM mirá/N santá/A ,/PUNCT nhaã-itá/DEM membeka/A+N ./PUNCT 
+Kwá-itá/DEMX mirá/N santá/A ,/PUNCT nhaã-itá/DEMS membeka/A+N+V2 ./PUNCT 
 # Estas madeiras são duras, aquelas são moles.
 
-Amaã-putari/??? kwá/ADV+DEM uri/V waá-itá/REL ./PUNCT 
+Amaã-putari/??? kwá/ADVD+AUXN+DEMX+V uri/V waá-itá/REL ./PUNCT 
 # Quero ver estes que vêm.
 
-Asú/V kurí/PART São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 
+Asú/V kurí/FUT São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 
 # Irei a São Gabriel.
 
-Wirandé/ADV kurí/PART yamunhã/V yané/PRON2 ruka/N ./PUNCT 
+Wirandé/ADV kurí/FUT yamunhã/V yané/PRON2 ruka/N ./PUNCT 
 # Amanhã faremos nossa casa.
 
-Repitá/V kurí/PART wirandé/ADV iké/ADV ?/PUNCT 
+Repitá/V kurí/FUT wirandé/ADV iké/ADVD ?/PUNCT 
 # Você vai ficar amanhã aqui?
 
-wirandé/ADV kurí/PART tenhẽ/ADV 
+wirandé/ADV kurí/FUT tenhẽ/ADV 
 # amanhã mesmo
 
-Mairamé/ADVR+CONJ taá/PART kurí/PART indé/PRON repurungitá/V nheengatú/N ?/PUNCT 
+Mairamé/ADVR+CONJ taá/CQ kurí/FUT indé/PRON repurungitá/V nheengatú/N ?/PUNCT 
 # Quando você falará nheengatu?
 
-Se/PRON2 mena/N usika/V kurí/PART paranã/N suí/ADP ./PUNCT 
+Se/PRON2 mena/N usika/V kurí/FUT paranã/N suí/ADP ./PUNCT 
 # Meu marido vai chegar do rio.
 
-Mairamé/ADVR+CONJ kurí/PART bũa/A+QUANT ,/PUNCT ixé/PRON asú/V kurí/PART ayuká/V indé/PRON arama/ADP+PART kwá/ADV+DEM tukunaré/N ./PUNCT 
+Mairamé/ADVR+CONJ kurí/FUT bũa/A+QUANT ,/PUNCT ixé/PRON asú/V kurí/FUT ayuká/V indé/PRON arama/ADP+FUT+SCONJ kwá/ADVD+AUXN+DEMX+V tukunaré/N ./PUNCT 
 # Quando eu for grande, eu vou matar para você este tucunaré.

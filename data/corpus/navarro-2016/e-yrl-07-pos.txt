@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:05 2022.
+Date: Mon Oct 10 18:32:17 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -9,7 +9,7 @@ NAVARRO, Eduardo de Almeida. Curso de Língua Geral (nheengatu ou tupi moderno):
 
 Therefore, this data may be subject to copyrights of the author of this book.'''
 
-# Producer: Dominick Maia Alexandre
+# Producer: Dominick Maia Alexandre - Reviewer: Leonel Figueiredo de Alencar
 # Last update: May 15, 2022
 
 Meyú/N sé/A+ADV ./PUNCT 
@@ -30,41 +30,41 @@ Pemunhã/V timbiú/N i/PRON2 xupé/ADP !/PUNCT
 Té/ADV pemunhã/V timbiú/N i/PRON2 xupé/ADP !/PUNCT 
 # Não façam comida para ele!
 
-Yapitá/V iké/ADV !/PUNCT 
+Yapitá/V iké/ADVD !/PUNCT 
 # Fiquemos aqui!
 
-Té/ADV yapitá/V iké/ADV !/PUNCT 
+Té/ADV yapitá/V iké/ADVD !/PUNCT 
 # Não fiquemos aqui!
 
-Apigawa/A+N usemu/V ana/PART i/PRON2 tawa/N suí/ADP ./PUNCT 
+Apigawa/A+N usemu/V ana/PFV i/PRON2 tawa/N suí/ADP ./PUNCT 
 # O homem saiu de sua cidade.
 
-Apigawa/A+N umusemu/V ana/PART kunhã/A+N i/PRON2 tawa/N suí/ADP ./PUNCT 
+Apigawa/A+N umusemu/V ana/PFV kunhã/A+N i/PRON2 tawa/N suí/ADP ./PUNCT 
 # O homem fez a mulher sair de sua cidade.
 
-Panhẽ/QUANT musapiri/NUM ,/PUNCT paá/PART ,/PUNCT aintá/PRON urikú/V aintá/PRON rimirikú/N ./PUNCT 
+Panhẽ/TOT musapiri/CARD ,/PUNCT paá/RPRT ,/PUNCT aintá/PRON+PRON2 urikú/V aintá/PRON+PRON2 rimirikú/N ./PUNCT 
 # Dizem que todos os três tinham suas esposas.
 
-Mukũi-itá/QUANT umanũ/??? ana/PART ./PUNCT 
+Mukũi/CARD+QUANT itá/N umanũ/??? ana/PFV ./PUNCT 
 # Os dois já morreram.
 
-Aé/PRON upitá/V ana/PART mbauíma/??? nhaã/DEM pituna/N ramé/ADP+CONJ ./PUNCT 
+Aé/PRON upitá/V ana/PFV mbauíma/A nhaã/DEMS pituna/N ramé/ADP+SCONJ ./PUNCT 
 # Ele ficou sem comer naquela noite.
 
-Pedro/PROPN upitá/V purakisawaíma/??? ./PUNCT 
+Pedro/PROPN upitá/V purakisawaíma/A ./PUNCT 
 # Pedro fica sem trabalho.
 
-Ixé/PRON aú/V kambí/N seẽíma/??? ./PUNCT 
+Ixé/PRON aú/V kambí/N seẽíma/A ./PUNCT 
 # Eu bebo leite sem açúcar.
 
 kamixá/N sepiasuíma/A 
 # camisa barata
 
-Ape/ADV+CONJ yautí/N kwera/A upupuka/V pá/INDF ./PUNCT 
+Ape/ADVD+CONJ yautí/N kwera/A+PRET upupuka/V pá/IND ./PUNCT 
 # Aí o jabuti rebentou todo.
 
-Kurumĩ/N umbaú/V pawa/INDF+V ./PUNCT 
+Kurumĩ/N umbaú/V pawa/IND+PART+V ./PUNCT 
 # O menino come tudo.
 
-I/PRON2 kiá/A2 pá/INDF upitá/V ./PUNCT 
+I/PRON2 kiá/A2 pá/IND upitá/V ./PUNCT 
 # Ele ficou todo sujo.

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Sat Jun 11 12:59:04 2022.
+Date: Mon Oct 10 18:32:16 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Se/PRON2 paya/N ,/PUNCT paá/PART ,/PUNCT usú/V ana/PART kaá/N kití/ADP ,/PUNCT ma/CONJ aé/PRON nti/ADV usú/V ./PUNCT 
+Se/PRON2 paya/N ,/PUNCT paá/RPRT ,/PUNCT usú/V ana/PFV kaá/N kití/ADP ,/PUNCT ma/CONJ aé/PRON nti/NEG usú/V ./PUNCT 
 # Dizem que meu pai foi para a mata, mas ele não foi.
 
 Apigawa/A+N upurungitá/V waá/REL se/PRON2 paya/N ,/PUNCT ma/CONJ aé/PRON ukiri/V waá/REL se/PRON2 tutira/N ./PUNCT 
@@ -21,19 +21,19 @@ Apigawa/A+N upurungitá/V waá/REL se/PRON2 paya/N ,/PUNCT ma/CONJ aé/PRON ukir
 Kunhã-itá/N indé/PRON remaã/V waá/REL ne/PRON2 mimbira/N ./PUNCT 
 # As mulheres que você vê são suas filhas.
 
-Apigawa/A+N i/PRON2 paya/N waá/REL umurari/V iké/ADV ,/PUNCT sera/N José/PROPN ./PUNCT 
+Apigawa/A+N i/PRON2 paya/N waá/REL umurari/V iké/ADVD ,/PUNCT sera/N José/PROPN ./PUNCT 
 # O homem que o pai dele mora aqui, seu nome é José.
 
-Pirá/N sera/N waá/REL pirarukú/N ,/PUNCT turusú/A+ADVS retana/ADVS ./PUNCT 
+Pirá/N sera/N waá/REL pirarukú/N ,/PUNCT turusú/A+ADVS+QUANT retana/ADVS ./PUNCT 
 # O peixe cujo nome é pirarucu, é muito grande.
 
-Amaã/V ana/PART yepé/ART+CONJ+NUM+PART kurumĩ/N ,/PUNCT kunhã/A+N puranga/A+ADV waá/REL mimbira/N ./PUNCT 
+Amaã/V ana/PFV yepé/ART+CARD+CONJ+FRUST kurumĩ/N ,/PUNCT kunhã/A+N puranga/A+ADV waá/REL mimbira/N ./PUNCT 
 # Vi um menino, filho da mulher que é bonita.
 
 Kunhã/A+N i/PRON2 mimbira/N waá/REL indé/PRON remaã/V ,/PUNCT usú/V paranã/N kití/ADP ./PUNCT 
 # A mulher cuja filha você vê, vai ao rio.
 
-Aikwé/V yepé/ART+CONJ+NUM+PART uka/N turusú/A+ADVS waá/REL ./PUNCT 
+Aikwé/V yepé/ART+CARD+CONJ+FRUST uka/N turusú/A+ADVS+QUANT waá/REL ./PUNCT 
 # Há uma casa que é grande.
 
 Uií/ADV ara/N umanũ/??? waá-itá/REL ara/N ./PUNCT 
@@ -42,7 +42,7 @@ Uií/ADV ara/N umanũ/??? waá-itá/REL ara/N ./PUNCT
 Akwáu/V amunhã/V waá/REL ./PUNCT 
 # Sei o que faço.
 
-Akwáu/V maã/INDF+INT+N+V amunhã/V waá/REL ./PUNCT 
+Akwáu/V maã/IND+INT+N+V amunhã/V waá/REL ./PUNCT 
 # Sei o que faço.
 
 Aé/PRON upitá-putari/??? mamé/ADVR puranga/A+ADV waá/REL ./PUNCT 
@@ -63,7 +63,7 @@ yané/PRON2 rendawa/N
 pe/PRON2 rendawa/N 
 # a comunidade de vocês
 
-aintá/PRON rendawa/N 
+aintá/PRON+PRON2 rendawa/N 
 # a comunidade deles
 
 sendawa/N 
@@ -82,7 +82,7 @@ Se/PRON2 ruka/N puranga/A+ADV ./PUNCT
 Suka/N puranga/A+ADV ./PUNCT 
 # A casa dele é bonita.
 
-Aintá/PRON ruka/N puranga/A+ADV ./PUNCT 
+Aintá/PRON+PRON2 ruka/N puranga/A+ADV ./PUNCT 
 # A casa deles é bonita.
 
 Amaã/V pé/N kaá/N pitérupi/ADP ./PUNCT 
@@ -112,22 +112,22 @@ kisé/N itaité/N suiwara/ADP
 Ixé/PRON São/PROPN Paulo/PROPN suiwara/ADP ./PUNCT 
 # Eu sou de São Paulo.
 
-Ixé/PRON aikú/V iké/ADV kwesé/ADV suiwara/ADP ./PUNCT 
+Ixé/PRON aikú/V iké/ADVD kwesé/ADV suiwara/ADP ./PUNCT 
 # Eu estou aqui desde ontem.
 
-Aikú/V nhaã/DEM tawa/N ruakí/ADP ./PUNCT 
+Aikú/V nhaã/DEMS tawa/N ruakí/ADP ./PUNCT 
 # Estou perto daquela cidade.
 
 Aikú/V suakí/ADP ./PUNCT 
 # Estou perto dela.
 
-Kwá/ADV+DEM mirá/N turusú/A+ADVS ./PUNCT 
+Kwá/ADVD+AUXN+DEMX+V mirá/N turusú/A+ADVS+QUANT ./PUNCT 
 # Esta árvore é grande.
 
-Arikú/V yepé/ART+CONJ+NUM+PART uka/N turusú/A+ADVS ./PUNCT 
+Arikú/V yepé/ART+CARD+CONJ+FRUST uka/N turusú/A+ADVS+QUANT ./PUNCT 
 # Tenho uma casa grande.
 
-Awá/INDF+INT urikú/V turusú/A+ADVS iwí/N umeẽ-kwáu/??? awá/INDF+INT nti/ADV urikú/V supé/ADP ./PUNCT 
+Awá/IND+INT urikú/V turusú/A+ADVS+QUANT iwí/N umeẽ-kwáu/??? awá/IND+INT nti/NEG urikú/V supé/ADP ./PUNCT 
 # Quem tem muita terra pode dar para quem não tem.
 
 igara/N mirĩ/A+ADV 
@@ -136,17 +136,17 @@ igara/N mirĩ/A+ADV
 itá/N mirĩ/A+ADV 
 # pedra pequena
 
-Kwaíra/A ramé/ADP+CONJ rẽ/ADV ,/PUNCT paá/PART ,/PUNCT ixé/PRON ,/PUNCT purangamirĩ/??? aikú/V ./PUNCT 
+Kwaíra/A ramé/ADP+SCONJ rẽ/ADV ,/PUNCT paá/RPRT ,/PUNCT ixé/PRON ,/PUNCT purangamirĩ/A+ADV aikú/V ./PUNCT 
 # Dizem que, quando eu ainda era pequeno, bonitinho estava.
 
-Aé/PRON kwera/A ,/PUNCT taité/INTJ !/PUNCT 
+Aé/PRON kwera/A+PRET ,/PUNCT taité/A+INTJ+N !/PUNCT 
 # Ele já era, coitado!
 
-Pedro/PROPN uyuká/V ana/PART yawareté/N ./PUNCT Aé/PRON kwera/A ./PUNCT 
+Pedro/PROPN uyuká/V ana/PFV yawareté/N ./PUNCT Aé/PRON kwera/A+PRET ./PUNCT 
 # Pedro matou a onça. Ela já era.
 
-Awá/INDF+INT kwera/A ?/PUNCT 
+Awá/IND+INT kwera/A+PRET ?/PUNCT 
 # Quem era?
 
-Asuiwara/??? kwera/A ,/PUNCT mukũi/NUM+QUANT apigawa/A+N nhũ/??? upitá/V umanhana/V uikú/V yané/PRON2 itá/N uka/N ./PUNCT 
+Asuiwara/A|N kwera/A+PRET ,/PUNCT mukũi/CARD+QUANT apigawa/A+N nhũ/??? upitá/V umanhana/V uikú/V yané/PRON2 itá/N uka/N ./PUNCT 
 # Desde então, somente dois homens ficaram vigiando nossa casa de pedra.
