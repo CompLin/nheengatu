@@ -9,7 +9,7 @@ from BuildDictionary import extract_feats, loadLexicon
 USER=os.path.expanduser("~")
 PATH=os.path.join(USER,"complin/nheengatu/data")
 LEXICON=os.path.join(PATH,"lexicon.json")
-DASHES=['‒', '–', '—']
+DASHES=['‒', '–', '—','―']
 PUNCTUATION='''.,;':?!“”"…()][}{'''
 ELLIPSIS='[...]'
 XXXX='xxxx'
@@ -22,7 +22,7 @@ Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
 'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana',
-'jesus', 'deus', 'kurukuí']
+'jesus', 'deus', 'kurukuí', 'augusto']
 
 def propernames(namelist=NAMES):
     dic={}
@@ -35,9 +35,9 @@ def includePunctuation(punctuation=PUNCTUATION,ellipis=ELLIPSIS,elip=ELIP,dashes
     tagSet=set()
     tagSet.add("PUNCT")
     punctlist=list(punctuation)
+    punctlist.extend(dashes)
     for punct in punctlist:
         punctdict[(punct,)]=tagSet
-    punctlist.extend(dashes)
     elipSet=set()
     elipSet.add(elip)
     punctdict[(ellipis,)]=elipSet

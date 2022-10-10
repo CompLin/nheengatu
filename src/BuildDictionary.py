@@ -1,61 +1,82 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update June 23, 2022
+# Last update: October 10, 2022
 
 import re, sys, os, json
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
 
+# non-finite verb
 NFIN="NFIN"
+
+TAGSET="""
+adj.\tA\tadjetivo de 1ª cl.
+adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
+adv.\tADV\tadvérbio
+adv. dem.\tADVD\tadvérbio demonstrativo
+adv. intensif.\tADVS\tadvérbio de intensidade
+adv. interr.\tADVR\tadvérbio interrogativo
+adv. rel.\tADVL\tadvérbio relativo
+art. indef.\tART\tartigo indefinido
+aux. flex.\tAUXF\tauxiliar flexionado
+aux. não-flex.\tAUXN\tauxiliar não flexionado
+cop.\tV\tverbo de ligação
+conj.\tCONJ\tconjunção
+sconj.\tSCONJ\tconjunção subordinativa
+cconj.\tCCONJ\tconjunção coordenativa
+pron. dem.\tDEM\tpronome demostrativo
+pron. dem. prox.\tDEMX\tpronome demostrativo proximal
+pron. dem. dist.\tDEMS\tpronome demostrativo distal
+num. card.\tCARD\tnumeral cardinal
+num. ord.\tORD\tnumeral ordinal
+interj.\tINTJ\tinterjeição
+s.\tN\tsubstantivo
+part.\tPART\tpartícula
+part. perf.\tPFV\tpartícula de perfectivo
+part. report.\tRPRT\tpartícula de reportativo
+part. neg.\tNEG\tpartícula de negação
+part. afirm.\tAFF\tpartícula de afirmação
+part. fut.\tFUT\tpartícula de futuro
+part. frust.\tFRUST\tpartícula de frustativo
+part. pret.\tPRET\tpartícula de pretérito
+part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
+part. interr. pol.\tPQ\tpartícula de pergunta polar
+posp.\tADP\tposposição
+pron.\tPRON\tpronome de 1ª classe
+pron. 2ª cl.\tPRON2\tpronome de 2ª classe
+pron. enf.\tEMP\tpronome de ênfase
+pron. indef.\tIND\tpronome indefinido
+pron. interr.\tINT\tpronome interrogativo
+pron. quant.\tQUANT\tpronome quantitativo
+pron. quant. univ.\tTOT\tpronome quantitativo universal
+pron. relativo\tREL\tpronome relativo
+suf.\tSUFF\tsufixo
+pref.\tPREF\tprefixo
+v.\tV\tverbo de 1ª classe
+v. 2ª cl.\tV2\tverbo de 2ª classe
+"""
+def sortFunc(line):
+	return line[1]
+
+TABLE=[]
 MAPPING={}
-for l in """
-adj.\tA
-adj. 2ª cl.\tA2
-adv.\tADV
-adv. dem.\tADVD
-adv. intensif.\tADVS
-adv. interr.\tADVR
-adv. rel.\tADVL
-art. indef.\tART
-aux. flex.\tAUXF
-aux. não-flex.\tAUXN
-cop.\tV
-conj.\tCONJ
-sconj.\tSCONJ
-cconj.\tCCONJ
-pron. dem.\tDEM
-pron. dem. prox.\tDEMX
-pron. dem. dist.\tDEMS
-num. card.\tCARD
-num. ord.\tORD
-interj.\tINTJ
-s.\tN
-part.\tPART
-part. perf.\tPFV
-part. report.\tRPRT
-part. neg.\tNEG
-part. afirm.\tAFF
-part. fut.\tFUT
-part. frust.\tFRUST
-part. interr. cont.\tCQ
-part. interr. pol.\tPQ
-posp.\tADP
-pron.\tPRON
-pron. 2ª cl.\tPRON2
-pron. enf.\tEMP
-pron. indef.\tIND
-pron. interr.\tINT
-pron. quant.\tQUANT
-pron. quant. univ.\tTOT
-pron. relativo\tREL
-suf.\tSUFF
-pref.\tPREF
-v.\tV
-v. 2ª cl.\tV2
-""".strip().split("\n"):
-    k,v=l.split("\t")
-    MAPPING[k]=v
+
+for l in TAGSET.strip().split("\n"):
+    TABLE.append(l.split("\t"))
+
+for line in TABLE:
+    MAPPING[line[0]]=line[1]
+
+def pprintTable(outfile=None):
+    f=sys.stdout
+    if outfile:
+        f=open(outfile,'w')
+    f.write("|**etiqueta**|**abreviatura no glossário**|**expansão da abreviatura**|\n")
+    f.write("|------------|----------------------------|---------------------------|\n")
+    for line in sorted(TABLE,key=sortFunc):
+        f.write(f"|{line[1]}|{line[0]}|{line[2]}|\n")
+
 
 REGEX=re.compile(
     r"""(\S+(\s+[^\d\W]+)?) # groups 0 and 1: lemma and optional 2nd token of lemma
