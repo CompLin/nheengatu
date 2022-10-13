@@ -181,7 +181,7 @@
     },
     {
         "lemma": "ape",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "então, aí",
         "var": 2
     },
@@ -193,13 +193,13 @@
     },
     {
         "lemma": "aape",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "var. ape",
         "var": 2
     },
     {
         "lemma": "nuká",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "no entanto"
     },
     {
@@ -342,7 +342,7 @@
     },
     {
         "lemma": "aresé",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "por isso, por causa disso"
     },
     {
@@ -368,7 +368,7 @@
     },
     {
         "lemma": "asuí",
-        "pos": "conj.",
+        "pos": "cconj.",
         "gloss": "e (conecta orações)",
         "var": 2
     },
@@ -896,8 +896,13 @@
         "gloss": "agora"
     },
     {
+        "lemma": "nupá",
+        "pos": "v.",
+        "gloss": "surrar, bater (em)"
+    },
+    {
         "lemma": "kuité",
-        "pos": "conj. / adv.",
+        "pos": "adv. conj. / adv.",
         "gloss": "1. entretanto; 2. enfim, então"
     },
     {
@@ -1154,7 +1159,7 @@
     },
     {
         "lemma": "ma",
-        "pos": "conj.",
+        "pos": "cconj.",
         "gloss": "mas, porém"
     },
     {
@@ -1165,7 +1170,7 @@
     },
     {
         "lemma": "mairamé",
-        "pos": "conj.",
+        "pos": "sconj.",
         "gloss": "quando",
         "var": 2
     },
@@ -1350,13 +1355,18 @@
         "gloss": "tipo de farinha de mandioca"
     },
     {
+        "lemma": "maniwara",
+        "pos": "s.",
+        "gloss": "tipo de formiga"
+    },
+    {
         "lemma": "mayana",
         "pos": "v.",
         "gloss": "empurrar"
     },
     {
         "lemma": "mayawé",
-        "pos": "conj.",
+        "pos": "sconj.",
         "gloss": "como; uma vez que"
     },
     {
@@ -1378,7 +1388,7 @@
     },
     {
         "lemma": "mayepé",
-        "pos": "conj.",
+        "pos": "sconj.",
         "gloss": "como, segundo o que, conforme"
     },
     {
@@ -1949,12 +1959,12 @@
     },
     {
         "lemma": "nhaaresé",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "por isso, assim"
     },
     {
         "lemma": "nhaãsé",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "porque"
     },
     {
@@ -2461,7 +2471,7 @@
     },
     {
         "lemma": "pukusawa",
-        "pos": "conj.",
+        "pos": "sconj.",
         "gloss": "enquanto"
     },
     {
@@ -2743,6 +2753,15 @@
         "pos": "posp.",
         "gloss": "atrás de",
         "rel": [
+            "sakakwera"
+        ]
+    },
+    {
+        "lemma": "takakwera",
+        "pos": "s.",
+        "gloss": "parte posterior",
+        "rel": [
+            "rakakwera",
             "sakakwera"
         ]
     },
@@ -3155,6 +3174,11 @@
         "gloss": "preço"
     },
     {
+        "lemma": "itapewa",
+        "pos": "s.",
+        "gloss": "preço"
+    },
+    {
         "lemma": "se",
         "pos": "pron. 2ª cl.",
         "gloss": "1. eu; 2. meu (-s, minha, -s)"
@@ -3174,6 +3198,15 @@
         ]
     },
     {
+        "lemma": "simiara",
+        "pos": "s.",
+        "gloss": "caça, presa, pesca",
+        "rel": [
+            "rimiara",
+            "simiara/ximiara"
+        ]
+    },
+    {
         "lemma": "seréu",
         "pos": "v.",
         "gloss": "lamber"
@@ -3186,6 +3219,11 @@
             "resá",
             "sesá"
         ]
+    },
+    {
+        "lemma": "yapí",
+        "pos": "v.",
+        "gloss": "atirar"
     },
     {
         "lemma": "sesayukisé",
@@ -3606,6 +3644,11 @@
         "gloss": "1. anta; 2. boi ● tapiíra kaapura - anta silvestre"
     },
     {
+        "lemma": "tapiira-kaawara",
+        "pos": "s.",
+        "gloss": "anta"
+    },
+    {
         "lemma": "tapira",
         "pos": "s.",
         "gloss": "var. tapiíra"
@@ -3621,6 +3664,11 @@
     },
     {
         "lemma": "tá",
+        "pos": "pron. / pron. 2ª cl.",
+        "gloss": "var. tá"
+    },
+    {
+        "lemma": "ta",
         "pos": "pron. / pron. 2ª cl.",
         "gloss": "1. eles(as); 2. deles, delas; 3. indica a indeterminação do sujeito"
     },
@@ -3771,7 +3819,25 @@
     {
         "lemma": "tiapú",
         "pos": "s.",
-        "gloss": "barulho"
+        "gloss": "barulho",
+        "var": 1
+    },
+    {
+        "lemma": "tiapú",
+        "pos": "v.",
+        "gloss": "fazer barulho (impess.)",
+        "var": 2
+    },
+    {
+        "lemma": "tiapú",
+        "pos": "adv.",
+        "gloss": "com barulho",
+        "var": 3
+    },
+    {
+        "lemma": "purú",
+        "pos": "v.",
+        "gloss": "tomar emprestado"
     },
     {
         "lemma": "ti awá",
@@ -4498,7 +4564,7 @@
     },
     {
         "lemma": "yawerã",
-        "pos": "conj.",
+        "pos": "adv. conj.",
         "gloss": "por isso"
     },
     {
@@ -4524,7 +4590,7 @@
     },
     {
         "lemma": "yepé",
-        "pos": "conj.",
+        "pos": "sconj.",
         "gloss": "embora, apesar de (desus.)",
         "var": 2
     },
