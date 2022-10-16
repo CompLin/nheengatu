@@ -1374,6 +1374,113 @@
 22	pirera	pirera	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=117:123
 23	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=123:124
 
+# sent_id = Avila2021:7:1:47
+# text = Indé rewewé yepé kutara, ma remaã mamentu resika.
+# text_eng = You were flying fast, but look where you got.
+# text_por = Você voava rápido, mas veja só aonde chegou.
+# text_source = Casasnovas, 93
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
+2	rewewé	wewé	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
+3	yepé	yepé	PART	FRUST	Aspect=Frus	2	advmod	_	TokenRange=12:16
+4	kutara	kutara	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=17:23
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=23:24
+6	ma	ma	CCONJ	CCONJ	_	7	cc	_	TokenRange=25:27
+7	remaã	maã	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=28:33
+8	mamentu	mamentu	ADV	ADV	_	9	advmod	_	TokenRange=34:41
+9	resika	sika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	7	ccomp	_	SpaceAfter=No|TokenRange=42:48
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = Avila2021:7:2:48
+# text = Ixé awewé merupí, ma asika puranga makití asú waá.
+# text_eng =  I flew slowly, but I got right where I was going.
+# text_por = Eu voei devagar, mas cheguei bem ao meu destino.
+# text_source = Casasnovas, 93
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	awewé	wewé	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=4:9
+3	merupí	merupí	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=10:16
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=16:17
+5	ma	ma	CCONJ	CCONJ	_	6	cc	_	TokenRange=18:20
+6	asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	conj	_	TokenRange=21:26
+7	puranga	puranga	ADV	ADV	_	6	advmod	_	TokenRange=27:34
+8	makití	makití	ADV	ADVL	_	6	advmod	_	TokenRange=35:41
+9	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	8	acl:relcl	_	TokenRange=42:45
+10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=46:49
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# sent_id = Avila2021:0:0:49
+# text = Kwá kurumĩ-itá umusaruã ixé, aresé amukuna aintá.
+# text_eng = These boys cast a spell on me, so I swallowed them.
+# text_por = Estes meninos fizeram-me saruá, por isso os engoli.
+# text_source = Amorim, 152, adap.
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	kurumĩ-itá	kurumĩ	NOUN	N	Number=Plur	3	nsubj	_	TokenRange=4:14
+3	umusaruã	musaruã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:23
+4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=24:27
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=27:28
+6	aresé	aresé	ADV	ADVJ	_	7	advmod	_	TokenRange=29:34
+7	amukuna	mukuna	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	parataxis	_	TokenRange=35:42
+8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=43:48
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = Avila2021:0:0:50
+# text = Aramé paá i kiwíra urasú aé iwaka kití, ti resé uputari sendira umendari.
+# text_eng = So, it is said that her brother took her to heaven because he did not want his sister to marry.
+# text_por = Então, dizem que seu irmão levou-a para o céu, porque ele não queria que a irmã se casasse.
+# text_source = Rodrigues, 124, adap.
+# text_orig = Aramé paá i kiwira urasú aé iwaka kití, ti resé uputari sendira umendari.
+1	Aramé	aramé	ADV	ADV	_	5	advmod	_	TokenRange=0:5
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=6:9
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:11
+4	kiwíra	kiwíra	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=12:18
+5	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=19:24
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=25:27
+7	iwaka	iwaka	NOUN	N	Number=Sing	5	obl	_	TokenRange=28:33
+8	kití	kití	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=34:38
+9	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=38:39
+10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	14	advmod	_	TokenRange=40:42
+11	resé	resé	SCONJ	SCONJ	_	14	mark	_	TokenRange=43:47
+12	uputari	putari	AUX	V	Person=3|VerbForm=Fin	14	aux	_	TokenRange=48:55
+13	sendira	tendira	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	14	nsubj	_	TokenRange=56:63
+14	umendari	mendari	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	SpaceAfter=No|TokenRange=64:72
+15	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=72:73
+
+# sent_id = Avila2021:0:0:51
+# text = Amú-itá uweena ukaú resé gapenú suí.
+# text_eng = Some vomited because they were seasick from the waves.
+# text_por = Alguns vomitaram porque ficaram enjoados devido ao banzeiro.
+# text_source = Hartt, 387, adap.
+1	Amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	2	nsubj	_	TokenRange=0:7
+2	uweena	weena	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:14
+3	ukaú	kaú	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=15:19
+4	resé	resé	SCONJ	SCONJ	_	3	mark	_	TokenRange=20:24
+5	gapenú	gapenú	NOUN	N	Number=Sing	3	obl	_	TokenRange=25:31
+6	suí	suí	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=32:35
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Avila2021:0:0:52
+# text = Yawé umunhã amú apigawa-itá.
+# text_eng = So do some men.
+# text_por = Assim fazem alguns homens.
+# text_source = Rodrigues, 206, adap.
+1	Yawé	yawé	ADV	ADV	_	2	advmod	_	TokenRange=0:4
+2	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:11
+3	amú	amú	DET	IND	Number=Sing|PronType=Ind	4	det	_	TokenRange=12:15
+4	apigawa-itá	apigawa	NOUN	N	Number=Plur	2	nsubj	_	SpaceAfter=No|TokenRange=16:27
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Avila2021:0:0:53
+# text = Ne paya umundú será reruri maã?
+# text_eng = Did your father ask you to bring something?
+# text_por = Seu pai mandou você trazer algo?
+# text_source = Magalhães, 88, adap.
+1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	paya	paya	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:7
+3	umundú	mundú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:14
+4	será	será	PART	PQ	PartType=Int	3	advmod	_	TokenRange=15:19
+5	reruri	ruri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	3	xcomp	_	TokenRange=20:26
+6	maã	maã	PRON	IND	PronType=Ind	5	obj	_	SpaceAfter=No|TokenRange=27:30
+7	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
