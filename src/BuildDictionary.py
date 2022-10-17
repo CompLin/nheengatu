@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 10, 2022
+# Last update: October 12, 2022
 
 import re, sys, os, json
 
@@ -18,6 +18,7 @@ adv. dem.\tADVD\tadvérbio demonstrativo
 adv. intensif.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
 adv. rel.\tADVL\tadvérbio relativo
+adv. conj.\tADVJ\tadvérbio conjuncional
 art. indef.\tART\tartigo indefinido
 aux. flex.\tAUXF\tauxiliar flexionado
 aux. não-flex.\tAUXN\tauxiliar não flexionado
@@ -383,6 +384,9 @@ def WordParseDict(pairs):
     return dic
 
 def sort(s):
+    if "\t" not in s:
+        print(f"{s}")
+        return
     i=s.index("\t")
     return s[i+1:]
 

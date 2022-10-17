@@ -1481,6 +1481,40 @@
 6	maã	maã	PRON	IND	PronType=Ind	5	obj	_	SpaceAfter=No|TokenRange=27:30
 7	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
 
+# sent_id = Avila2021:8:1:54
+# text = Marama rerikú yumasí?
+# text_eng = Why are you hungry?
+# text_por = Por que você tem fome?
+# text_source = Costa, 165, adap.
+1	Marama	marama	ADV	ADVR	_	2	advmod	_	TokenRange=0:6
+2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:13
+3	yumasí	yumasí	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:20
+4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Avila2021:8:2:55
+# text = Maã taá remunhã kurasí-ara pukusawa?
+# text_eng =  What did you do during the summer?
+# text_por = O que você fez durante o verão?
+# text_source = Costa, 165, adap.
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	remunhã	munhã	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
+4	kurasí-ara	kurasí-ara	NOUN	N	Number=Sing	3	obl	_	TokenRange=16:26
+5	pukusawa	pukusawa	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=27:35
+6	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Avila2021:0:0:56
+# text = Maã arama reputari ne raíra-itá?
+# text_eng = What do you want your children for?
+# text_por = Para que tu queres teus filhos?
+# text_source = Rodrigues, 41, adap.
+1	Maã	maã	PRON	INT	PronType=Int	3	obl	_	TokenRange=0:3
+2	arama	arama	ADP	ADP	_	1	case	_	TokenRange=4:9
+3	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=10:18
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:21
+5	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	3	obj	_	SpaceAfter=No|TokenRange=22:31
+6	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.

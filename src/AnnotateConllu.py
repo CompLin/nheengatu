@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 31, 2022
+# Last update: October 17, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING,extract_feats, loadGlossary
@@ -16,7 +16,7 @@ CASE="Gen"
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
-'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
+'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV', 'ADVJ': 'ADV',
 'ADVD': 'ADV', 'ADVL': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'AUXN' : 'VERB', 'AUXF' : 'AUX', 'CARD' : 'NUM',
@@ -120,7 +120,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['VerbForm']=getudtag(vform)
     if rel:
         feats['Rel']=RelAbbr(rel)
-        handleNcont(upos,feats)
+        handleNCont(upos,feats)
     if feats:
         token['feats']=feats
     else:
@@ -195,50 +195,105 @@ def handlePron(token,nextToken):
             token['deprel'] ='nmod:poss'
             token['head'] =nextToken['id']
 
-def handleNounPron(token,nextToken, verbs,verbid):
+def setDeprel(token, headid,deprel='nsubj',overwrite=False):
+    if overwrite:
+        token['deprel'] = deprel
+        token['head'] =  headid
+    else:
+        if not token['deprel']:
+            token['deprel'] = deprel
+            token['head'] =  headid
+
+def SubjOrObj(token,verbs):
+    previousverb = previousVerb(token,verbs)
+    nextverb = nextVerb(token,verbs)
+    if previousverb:
+        setDeprel(token,previousverb,'obj')
+    elif nextverb:
+        setDeprel(token,nextverb,'nsubj')
+
+def handleAdpCompl(token,verbs,nextToken):
+    token['deprel'] = 'obl'
+    headid=previousVerb(token,verbs)
+    if not headid:
+        headid=nextVerb(token,verbs)
+    token['head'] = headid
+    nextToken['deprel']='case'
+    nextToken['head'] =token['id']
+
+def handleNounPron(token,nextToken,verbs):
     if nextToken['upos'] == 'ADP':
-        token['deprel'] = 'obl'
-        headid = previousVerb(token,verbs)
-        token['head'] = headid
-        nextToken['deprel']='case'
-        nextToken['head'] =token['id']
-    elif nextToken['upos'] == 'ADJ' and token['upos'] == 'NOUN':
-        nextToken['deprel']='amod'
-        nextToken['head'] =token['id']
-    elif nextToken['upos'] == 'VERB' and not token['deprel']:
+        handleAdpCompl(token,verbs,nextToken)
+    elif nextToken['upos'] == 'ADJ':
+        if token['upos'] == 'NOUN':
+            nextToken['deprel']='amod'
+            nextToken['head'] =token['id']
+    elif nextToken['upos'] == 'VERB':
         token['deprel'] = 'nsubj'
         token['head'] =nextToken['id']
-    if not token['xpos'] == 'PRON2' and not token['deprel']:
-        tokenid=token['id']
-        token['head'] = verbid
-        if verbid < tokenid:
-            token['deprel'] = 'obj'
-        else:
-            token['deprel'] = 'nsubj'
+    else:
+        if  token['xpos'] != 'PRON2':
+            SubjOrObj(token,verbs)
 
 def updateFeats(token,feature,value):
     if not token['feats']:
         token['feats']={}
     token['feats'].update({feature : value})
 
+def headPartNextVerb(token,verbs):
+    tokid=token['id']
+    for verb in verbs:
+        verbid=verb['id']
+        if verbid > tokid:
+            token['head']=verbid
+            break
+
+def headPartPreviousVerb(token,verbs):
+    tokid=token['id']
+    for verb in verbs:
+        verbid=verb['id']
+        if verbid < tokid:
+            token['head']=verbid
+            break
+        else:
+            headPartNextVerb(token,verbs)
+
 def handlePart(token,verbs):
-    #token['feats']={}
+    mapping= {
+    'PQ': {'PartType': 'Int','QuestType':'Polar'},
+    'CQ': {'PartType': 'Int','QuestType':'Content'},
+    'FRUST': {'PartType': 'Tam','Aspect':'Frus'},
+    'NEG': {'PartType': 'Neg','Polarity':'Neg'},
+    'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
+    'PFV': {'PartType': 'Tam','Aspect':'Perf'},
+    'FUT': {'PartType': 'Tam','Tense':'Fut'},
+    'PRET': {'PartType': 'Tam','Tense':'Past'},
+    }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
-    tokid=token['id']
-    if xpos == 'NEG':
+    if xpos == 'NEG': #TODO: use the dictionary instead
         updateFeats(token,'Polarity', 'Neg')
-        #token['feats'].update({'Polarity': 'Neg'})
-        for verb in verbs:
-            verbid=verb['id']
-            if verbid > tokid:
-                token['head']=verbid
-                break
+        updateFeats(token,'PartType', 'Neg')
+        headPartNextVerb(token,verbs)
     elif xpos == 'RPRT':
         updateFeats(token,'Evident','Nfh')
-        #token['feats'].update({'Evident': 'Nfh'})
-        if verbs:
-            token['head']=verbs[0]['id']
+        updateFeats(token,'PartType', 'Mod')
+        headPartPreviousVerb(token,verbs)
+    elif xpos == 'PFV':
+        headPartPreviousVerb(token,verbs)
+        updateFeats(token,'Aspect','Perf')
+    elif xpos == 'FRUST':
+        headPartPreviousVerb(token,verbs)
+        updateFeats(token,'Aspect','Frus')
+    elif xpos == 'FUT':
+        headPartPreviousVerb(token,verbs)
+        updateFeats(token,'Tense','Fut')
+    elif xpos == 'PRET':
+        headPartPreviousVerb(token,verbs)
+        updateFeats(token,'Tense','Past')
+    elif xpos == 'CQ' or xpos == 'PQ':
+        headPartNextVerb(token,verbs)
+        updateFeats(token,'PartType', 'Int')
 
 def handleVerb(token,nextToken,verbs):
     if nextToken['upos'] == 'NOUN': # TODO: possibly deprecated
@@ -254,8 +309,14 @@ def handleVerb(token,nextToken,verbs):
                 token['head'] = verbs[0]['id']
                 token['deprel'] = 'advcl'
                 """
-
 def handleSconj(token,tokenlist,verbs):
+    token['deprel'] = 'mark'
+    tokid=token['id']
+    previous=getPreviousToken(token,tokenlist)
+    if previous['xpos'] == 'NEG':
+        token['head']=nextVerb()
+
+def handleSconj0(token,tokenlist,verbs):
     token['deprel'] = 'mark'
     tokid=token['id']
     if tokid > 0:
@@ -264,6 +325,7 @@ def handleSconj(token,tokenlist,verbs):
                 verbid=verb['id']
                 if verbid > tokid:
                     token['head']=verbid
+                    #verb['deprel'] = 'advcl'
                     break
         else:
             j=-1
@@ -271,6 +333,7 @@ def handleSconj(token,tokenlist,verbs):
                 verbid=verbs[j]['id']
                 if verbid < token['id']:
                     token['head']= verbid
+                    #verbs[j]['deprel'] = 'advcl'
                     break
                 j=j-1
 
@@ -295,6 +358,30 @@ def handleAdv0(token,verbs):
             token['head']=verbid
             break
         i=i-1
+
+def handleCconj(token,verbs):
+    headid=nextVerb(token,verbs)
+    token['deprel']='cc'
+    token['head']=headid
+    if headid:
+        for verb in verbs:
+            if verb['id'] == headid:
+                verb['deprel']='conj'
+                verb['head']=previousVerb(verb,verbs)
+                break
+
+def handleSconj(token,tokenlist,verbs):
+    token['deprel'] = 'mark'
+    previous=getPreviousToken(token,tokenlist)
+    if previous['xpos'] == 'NEG':
+        token['head']=nextVerb(token,verbs)
+    else:
+        token['head']=previousVerb(token,verbs)
+    headid=token['head']
+    head=verbs.filter(id=headid)[0]
+    head['deprel']='advcl'
+    head['head']=previousVerb(head,verbs)
+
 
 def getHeadVerb(token,verbs):
     headid=previousVerb(token,verbs)
@@ -329,6 +416,22 @@ def nextCat(token,cats):
             return catid
     return 0
 
+def getNextToken(token,tokenlist):
+    for t in tokenlist:
+        if t['form'] != token['form']:
+            return t
+
+def getPreviousToken(token,tokenlist):
+    index=tokenlist.index(token)
+    c=len(tokenlist[:index])
+    if c > 1:
+        i=c-1
+        while(i >= 0):
+            previous=tokenlist[i]
+            if previous['form'] != token['form']:
+                return previous
+            i=i-1
+
 def previousCat(token,cats):
     tokenid=token['id']
     i=-1
@@ -340,19 +443,36 @@ def previousCat(token,cats):
         i=i-1
     return 0
 
-def handleDetNum(upos,token,tokenlist):
+def pronOrDet(token,nounid,verbs):
+    verbid=nextVerb(token,verbs)
+    tokenid=token['id']
+    if verbid:
+        if nounid > verbid or not nounid:
+            token['upos']='PRON'
+            setDeprel(token,verbid,'nsubj')
+    elif not nounid:
+        token['upos']='PRON'
+        setDeprel(token,verbid,'obj')
+
+def handleDetNum(upos,token,nextToken,tokenlist,verbs):
     deprel={'DET': 'det', 'NUM': 'nummod'}
+    delta=2
     Pron='Pron'
     if upos == 'NUM':
         Pron='Num'
-    token['deprel']=deprel.get(upos)
     nouns=TokensOfCatList(tokenlist,'NOUN')
     nounid=nextCat(token,nouns)
-    tokenid=token['id']
-    if nounid - tokenid > 2:
-        token['head']=getNextWord(token,tokenlist)['id']
+    pronOrDet(token,nounid,verbs)
+    deprel=deprel.get(token['upos'])
+    if deprel:
+        token['deprel']=deprel
+        tokenid=token['id']
+        if nounid - tokenid > delta:
+            token['head']=getNextWord(token,tokenlist)['id']
+        else:
+            token['head']=nounid
     else:
-        token['head']=nounid
+        handleAdpCompl(token,verbs,nextToken)
     xpos=token['xpos']
     value=xpos.title()
     deixis=DEIXIS.get(xpos)
@@ -363,11 +483,6 @@ def handleDetNum(upos,token,tokenlist):
     if token['feats'].get('PronType') == 'Art':
         updateFeats(token,'Definite','Ind')
 
-def getNextToken(token, tokenlist):
-    for t in tokenlist:
-        if t['form'] != token['form']:
-            return t
-
 def getNextWord(token, tokenlist):
     start=tokenlist.index(token)
     i=start + 1
@@ -377,6 +492,11 @@ def getNextWord(token, tokenlist):
             return t
         i+=1
 
+def headAux(verb,headid):
+    if headid:
+        verb['upos'] = 'AUX'
+        verb['deprel'] = 'aux'
+        verb['head'] = headid
 
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
@@ -390,19 +510,15 @@ def handleAux(tokenlist):
             lemma=verb['lemma']
             if lemma in ('sú','puderi','putari'):
                 headid=nextVerb(verb,verbs)
-                verb['upos'] = 'AUX'
-                verb['deprel'] = 'aux'
-                verb['head'] = headid
+                headAux(verb,headid)
             elif lemma == 'ikú':
                 headid=previousVerb(verb,verbs)
-                verb['upos'] = 'AUX'
-                verb['deprel'] = 'aux'
-                verb['head'] = headid
+                headAux(verb,headid)
             else:
                 pass # TODO: ccomp, xcomp, advcl
 
-def handleNcont(upos,feats):
-    if feats['Rel'] == 'Ncont':
+def handleNCont(upos,feats):
+    if feats['Rel'] == 'NCont':
         if upos == 'VERB':
             feats.update({'Number':'Sing',
             'Person' : '3',
@@ -410,6 +526,9 @@ def handleNcont(upos,feats):
         elif upos == 'NOUN':
             feats.update({'Number[psor]':'Sing',
             'Person[psor]' : '3'})
+        elif upos == 'ADP':
+            feats.update({'Number[grnd]':'Sing',
+            'Person[grnd]' : '3'})
 
 def AdjRoot(tokenlist):
     adjs=TokensOfCatList(tokenlist,'ADJ')
@@ -431,6 +550,25 @@ def handlePunct(token,nextToken, tokenlist,verbs):
     else:
         nextToken['head']=FirstVerbId(tokenlist)
 
+def handleRel(token,tokenlist):
+    token['deprel'] = 'nsubj'
+    j= i - 1
+    if j >= 0:
+        previous=tokenlist[j]
+        token['head'] = previous['id']
+        nouns=TokensOfCatList(tokenlist,'NOUN')
+        nounid=previousCat(token,nouns)
+        if nounid:
+            previous['head'] = nounid
+        previous['deprel'] = 'acl:relcl'
+
+def handleVerbs(verbs):
+    rootlist=verbs.filter(deprel='root')
+    if len(rootlist) > 1:
+        for verb in rootlist[1:]:
+            headid = previousVerb(verb,verbs)
+            setDeprel(verb, headid,deprel='parataxis',overwrite=True)
+
 def addFeatures(tokenlist):
     i=0
     c=len(tokenlist) -1
@@ -442,36 +580,34 @@ def addFeatures(tokenlist):
     while(i < c) :
         token=tokenlist[i]
         upos=token['upos']
-        #nextToken=tokenlist[i+1]
         nextToken=getNextToken(token, tokenlist[i+1:])
         if upos in ('NOUN','PRON','PROPN'):
-            handleNounPron(token,nextToken, verbs,verbid)
-            if upos == 'PRON':
-                handlePron(token,nextToken)
-                if token['xpos'] == 'REL':
-                    token['deprel'] = 'nsubj'
-                    j= i - 1
-                    if j >= 0:
-                        previous=tokenlist[j]
-                        token['head'] = previous['id']
-                        nouns=TokensOfCatList(tokenlist,'NOUN')
-                        nounid=previousCat(token,nouns)
-                        if nounid:
-                            previous['head'] = nounid
-                        previous['deprel'] = 'acl:relcl'
+            if token['xpos'] == 'REL':
+                handleRel(token,tokenlist)
+            else:
+                handleNounPron(token,nextToken,verbs)
+                if upos == 'PRON':
+                    handlePron(token,nextToken)
         elif upos == "PART":
             handlePart(token,verbs)
         elif upos == "VERB":
-            handleVerb(token,nextToken,verbs)
+            pass
+            # handleVerb(token,nextToken,verbs)
         elif upos == "SCONJ":
             handleSconj(token,tokenlist,verbs)
+        elif upos == "CCONJ":
+            handleCconj(token,verbs)
         elif upos == "ADV":
             handleAdv(token,verbs)
         elif upos in ("DET","NUM"):
-            handleDetNum(upos,token,tokenlist)
+            handleDetNum(upos,token,nextToken,tokenlist,verbs)
         if nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
             handlePunct(token,nextToken, tokenlist,verbs)
         i+=1
+    handleVerbs(verbs)
+
+def filterparselist(tag,parselist):
+    return list(filter(lambda x: x[1].split('+')[0] == tag.upper(),parselist))
 
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
@@ -483,7 +619,9 @@ def mkConlluSentence(tokens):
             token,tag=token.split('/')
         parselist=getparselist(token.lower())
         if tag:
-            parselist=list(filter(lambda x: x[1].startswith(tag.upper()),parselist))
+            newparselist=filterparselist(tag,parselist)
+            if newparselist:
+                parselist=newparselist
         entries=extract_feats(parselist)
         for entry in entries:
             if entry.get('pos') == 'PUNCT':
@@ -517,7 +655,9 @@ def extract_sents(line=None,lines=None):
         sents=[sent for sent in re.split(r"\s+-\s+|[)(]",line) if sent]
     return sents
 
-def ppText(*sents):
+def ppText(sents,pref='',textid=0,index=0,sentid=0):
+    if pref:
+        print(f"# sent_id = {pref}:{textid}:{index}:{sentid}")
     yrl,eng,por=sents[0],sents[1],sents[2]
     template=f"# text = {yrl}\n# text_eng = {eng}\n# text_por = {por}"
     dic={}
@@ -534,7 +674,10 @@ def ppText(*sents):
 def mkText(text):
 	ppText(extract_sents(lines=text))
 
-def parseExample(text=None,template=None,sentid=None):
+def extractYrl(sent):
+    return re.sub(r"[/]\w+",'',sent)
+
+def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     if not text:
         text='''Aité kwá sera waá piranha yakunheseri
         aé i turususá i apuã waá rupí, asuí sanha
@@ -545,18 +688,52 @@ def parseExample(text=None,template=None,sentid=None):
         and its sharp teeth.'''.replace('\n','')
         text=re.sub(r"\s+",' ',text)
     sents=extract_sents(text)
-    yrl=re.sub(r"[/]\w+",'',sents[0])
+    yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
-    if template and sentid:
-        print(f"# sent_id = {template}:{sentid}")
     if len(sents) == 5:
-        ppText(yrl,sents[3],sents[2],sents[1],sents[4])
+        ppText([yrl,sents[3],sents[2],sents[1],sents[4]],pref,textid,index,sentid)
     else:
-        ppText(yrl,sents[3],sents[2],sents[1])
+        ppText([yrl,sents[3],sents[2],sents[1]],pref,textid,index,sentid)
     #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
-    tokens=tokenize(sents[0])
+    parseSentence(sents[0])
+
+def parseSentence(sent):
+    tokens=tokenize(sent)
     tk=mkConlluSentence(tokens)
     print(tk.serialize())
+
+def mkDict(text,pref='MooreFP1994',textid=0,sentid=1):
+	groups=text.split('|')
+	dic={}
+	dic['yrl']=[]
+	dic['yrl'].append(groups[0].strip())
+	parts=[re.sub(r"\s-\s",'',part).strip() for part in re.split(r"[)(]",groups[1])]
+	dic['source']=parts[1]
+	dic['yrl'].append(parts[0])
+	dic['por']=[]
+	dic['por'].append(parts[2])
+	por,eng=[s.strip() for s in re.split(r"\s-\s",groups[2])]
+	dic['por'].append(por)
+	dic['eng']=[]
+	dic['eng'].append(eng)
+	dic['eng'].append(groups[3])
+	return dic
+
+def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1):
+    dic=mkDict(text)
+    i=0
+    sentid=sentid
+    index=index
+    source=dic.get('source')
+    yrl,eng,por=dic['yrl'],dic['eng'],dic['por']
+    while(i < len(yrl)):
+        ppText([extractYrl(yrl[i]),eng[i],por[i]],pref,textid,index,sentid)
+        if source:
+            print(f"# text_source = {source}")
+        parseSentence(yrl[i])
+        sentid+=1
+        index+=1
+        i+=1
 
 def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
     i=0
