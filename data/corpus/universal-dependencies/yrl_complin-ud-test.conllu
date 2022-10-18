@@ -1554,6 +1554,43 @@
 11	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	7	cop	_	SpaceAfter=No|TokenRange=43:47
 12	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
+# sent_id = Avila2021:0:0:60
+# text = Penhẽ pesendú será katú maã anheẽ waá se raíra supé?
+# text_eng = Did you hear well what I said to my son?
+# text_por = Vocês ouviram bem o que eu disse a meu filho?
+# text_source = Amorim, 27, adap.
+1	Penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	pesendú	sendú	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:13
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=14:18
+4	katú	katú	ADV	ADV	_	2	advmod	_	TokenRange=19:23
+5	maã	maã	PRON	INT	PronType=Int	2	obj	_	TokenRange=24:27
+6	anheẽ	nheẽ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	acl:relcl	_	TokenRange=28:33
+7	waá	waá	PRON	REL	Number=Sing	6	obj	_	TokenRange=34:37
+8	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=38:40
+9	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	6	iobj	_	TokenRange=41:46
+10	supé	supé	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=47:51
+11	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=51:52
+
+# sent_id = Avila2021:0:0:61
+# text = Ne isí será?
+# text_eng = Are you thirsty?
+# text_por = Tens sede?
+# text_source = Magalhães, 30, adap.
+1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	isí	isí	VERB	V2	_	0	root	_	TokenRange=3:6
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=7:11
+4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = Avila2021:0:0:62
+# text = Pe ranhẽ será?
+# text_eng = Are you in a hurry?
+# text_por = Tendes pressa?
+# text_source = Costa, 186, adap.
+1	Pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	ranhẽ	ranhẽ	VERB	V2	Rel=Cont	0	root	_	TokenRange=3:8
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=9:13
+4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
