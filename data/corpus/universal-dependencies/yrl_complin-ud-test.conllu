@@ -1591,6 +1591,88 @@
 3	será	será	PART	PQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=9:13
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
+# sent_id = Avila2021:0:0:63
+# text = Indé será ti waá repusú ixé?!
+# text_eng = Are you the one who doesn't respect me?!
+# text_por = És tu que não me respeitas?!
+# text_source = Amorim, 277, adap.
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	0	root	_	TokenRange=0:4
+2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=5:9
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=10:12
+4	waá	waá	PRON	REL	Number=Sing	5	nsubj	_	TokenRange=13:16
+5	repusú	pusú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	1	csubj	_	TokenRange=17:23
+6	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=24:27
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
+8	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Avila2021:0:0:64
+# text = Aintá ruixawa kurumiwasú rẽ paá, ti upusú kunhamukú, uyupusí panhẽ aé usuantí waá.
+# text_eng = Their chief was still young, he didn't respect a girl, he slept with every girl he met.
+# text_por = O tuxaua deles era moço ainda, não respeitava moça, deitava-se com todas que encontrava.
+# text_source = Amorim, 299, adap.
+1	Aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:5
+2	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	3	nsubj	_	TokenRange=6:13
+3	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	0	root	_	TokenRange=14:24
+4	rẽ	rẽ	ADV	ADV	_	3	advmod	_	TokenRange=25:27
+5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=28:31
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=33:35
+8	upusú	pusú	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=36:41
+9	kunhamukú	kunhamukú	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=42:51
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=51:52
+11	uyupusí	yupusí	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=53:60
+12	panhẽ	panhẽ	PRON	TOT	PronType=Tot	11	obj	_	TokenRange=61:66
+13	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	14	nsubj	_	TokenRange=67:69
+14	usuantí	suantí	VERB	V	Person=3|VerbForm=Fin	12	acl:relcl	_	TokenRange=70:77
+15	waá	waá	PRON	REL	Number=Sing	14	obj	_	SpaceAfter=No|TokenRange=78:81
+16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=81:82
+
+# sent_id = Avila2021:0:0:65
+# text = Maã taá resé ti repusú se mundusawa-itá?
+# text_eng = Why didn't you respect my orders?
+# text_por = Por que motivo não respeitaste as minhas ordens?
+# text_source = Amorim, 334, adap.
+# text_orig = Maã taá resé ti repusú se munudusawa-itá?
+1	Maã	maã	PRON	INT	PronType=Int	5	obl	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=4:7
+3	resé	resé	ADP	ADP	Rel=Cont	1	case	_	TokenRange=8:12
+4	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=13:15
+5	repusú	pusú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=16:22
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=23:25
+7	mundusawa-itá	mundusawa	NOUN	N	Number=Plur	5	obj	_	SpaceAfter=No|TokenRange=26:39
+8	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = Avila2021:0:0:66
+# text = Repusú kurí ne paya, ne manha.
+# text_eng = Honor your father and your mother.
+# text_por = Honrarás teu pai e tua mãe.
+# text_source = Aguiar, 41
+1	Repusú	pusú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	paya	paya	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=15:19
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
+6	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=21:23
+7	manha	manha	NOUN	N	Number=Sing	4	conj	_	SpaceAfter=No|TokenRange=24:29
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Avila2021:0:0:67
+# text = Kwá akanga akayú-itá umumurutinga waá panhẽ mira upusú tẽ aé.
+# text_eng = This head that the years have whitened, everyone has always respected.
+# text_por = Esta cabeça que os anos embranqueceram[,] toda a gente a respeitou sempre.
+# text_source = Amorim, 335, adap.
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	akanga	akanga	NOUN	N	Number=Sing	8	dislocated	_	TokenRange=4:10
+3	akayú-itá	akayú	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=11:20
+4	umumurutinga	mumurutinga	VERB	V	Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=21:33
+5	waá	waá	PRON	REL	Number=Sing	4	obj	_	TokenRange=34:37
+6	panhẽ	panhẽ	DET	TOT	PronType=Tot	7	det	_	TokenRange=38:43
+7	mira	mira	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=44:48
+8	upusú	pusú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=49:54
+9	tẽ	tẽ	ADV	ADV	_	8	advmod	_	TokenRange=55:57
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=58:60
+11	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
