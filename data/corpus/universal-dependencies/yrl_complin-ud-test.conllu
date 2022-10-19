@@ -1673,6 +1673,108 @@
 10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=58:60
 11	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
 
+# sent_id = Avila2021:0:0:68
+# text = Ape kwá kurumĩ mirĩ upisika nhaã apigawa, ape uyapí aé iwí ruaxara.
+# text_eng = So that little boy took the man, then threw him to the ground.
+# text_por = Então aquele menininho pegou o homem, aí jogou-o contra o chão.
+# text_source = Comunidade de Terra Preta, 8, adap.
+1	Ape	ape	ADV	ADVJ	_	5	advmod	_	TokenRange=0:3
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=4:7
+3	kurumĩ	kurumĩ	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=8:14
+4	mirĩ	mirĩ	ADJ	A	_	3	amod	_	TokenRange=15:19
+5	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:27
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=28:32
+7	apigawa	apigawa	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=33:40
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=40:41
+9	ape	ape	ADV	ADVJ	_	10	advmod	_	TokenRange=42:45
+10	uyapí	yapí	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=46:51
+11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	TokenRange=52:54
+12	iwí	iwí	NOUN	N	Number=Sing	10	obl	_	TokenRange=55:58
+13	ruaxara	ruaxara	ADP	ADP	Rel=Cont	12	case	_	SpaceAfter=No|TokenRange=59:66
+14	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=66:67
+
+# sent_id = Avila2021:0:0:69
+# text = Waimĩ uyapí pisá sesé, upupeka reté aé, urasú suka kití.
+# text_eng = The old woman threw the net over him, enveloped him completely, took him to her house.
+# text_por = A velha jogou a tarrafa sobre ele, envolveu-o completamente, levou-o para sua casa.
+# text_source = Magalhães, 165, adap.
+1	Waimĩ	waimĩ	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	uyapí	yapí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	pisá	pisá	NOUN	N	Number=Sing	2	obj	_	TokenRange=12:16
+4	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	3	obl	_	SpaceAfter=No|TokenRange=17:21
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=21:22
+6	upupeka	pupeka	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=23:30
+7	reté	reté	ADV	ADVS	_	6	advmod	_	TokenRange=31:35
+8	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=36:38
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=38:39
+10	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=40:45
+11	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	obl	_	TokenRange=46:50
+12	kití	kití	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=51:55
+13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
+
+# sent_id = Avila2021:0:0:70
+# text = [...] aintá unupá yepé, aintá uyuká yepé, asuí aintá uyapí itá irumu yepé.
+# text_eng = [...] they beat one, killed one, and threw stones at another.
+# text_por = [...] eles surraram um, mataram um, e atiraram pedras em outro.
+# text_source = O Novo Testamento em nyengatu, Mateus 21:35
+1	[...]	[...]	PUNCT	ELIP	_	3	punct	_	TokenRange=0:5
+2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=6:11
+3	unupá	nupá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	3	obj	_	SpaceAfter=No|TokenRange=18:22
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
+6	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	nsubj	_	TokenRange=24:29
+7	uyuká	yuká	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=30:35
+8	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	7	obj	_	SpaceAfter=No|TokenRange=36:40
+9	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=40:41
+10	asuí	asuí	ADV	ADV	_	12	advmod	_	TokenRange=42:46
+11	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=47:52
+12	uyapí	yapí	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=53:58
+13	itá	itá	NOUN	N	Number=Sing	12	obl	_	TokenRange=59:62
+14	irumu	irumu	ADP	ADP	_	13	case	_	TokenRange=63:68
+15	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	12	obj	_	SpaceAfter=No|TokenRange=69:73
+16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=73:74
+
+# sent_id = Avila2021:0:0:71
+# text = Ixé musapiri í ayapí suasú.
+# text_eng = I shot at the deer three times.
+# text_por = Eu atirei três vezes no veado.
+# text_source = Hartt, 342, adap.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:3
+2	musapiri	musapiri	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=4:12
+3	í	í	NOUN	N	Number=Sing	4	obl	_	TokenRange=13:14
+4	ayapí	yapí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=15:20
+5	suasú	suasú	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=21:26
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Avila2021:0:0:72
+# text = Kurumiwasú uyapí uikú wiramirĩ-itá kaá rupí.
+# text_eng = The boy is shooting birds in the bush.
+# text_por = O rapaz está atirando em passarinhos no mato.
+# text_source = Hartt, 341, adap.
+# text_orig = Kurumiwasú uyapí uikú wirá-mirĩ-itá kaá rupí.
+1	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:10
+2	uyapí	yapí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:16
+3	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	2	aux	_	TokenRange=17:21
+4	wiramirĩ-itá	wiramirĩ	NOUN	N	Number=Plur	2	obj	_	TokenRange=22:34
+5	kaá	kaá	NOUN	N	Number=Sing	2	obl	_	TokenRange=35:38
+6	rupí	rupí	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=39:43
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Avila2021:0:0:73
+# text =  Ixé ti arikú mukawa, nẽ akwáu ayapí.
+# text_eng = I don't have a gun, I don't even know how to shoot.
+# text_por = Eu não tenho arma, nem sei atirar.
+# text_source =
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=4:6
+3	arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:12
+4	mukawa	mukawa	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=13:19
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
+6	nẽ	nẽ	CCONJ	CCONJ	_	7	cc	_	TokenRange=21:23
+7	akwáu	kwáu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	conj	_	TokenRange=24:29
+8	ayapí	yapí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	7	xcomp	_	SpaceAfter=No|TokenRange=30:35
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=35:36
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
