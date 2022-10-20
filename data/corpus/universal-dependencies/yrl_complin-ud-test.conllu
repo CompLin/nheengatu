@@ -1856,6 +1856,33 @@
 18	waá	waá	PRON	REL	Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=105:108
 19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=108:109
 
+# sent_id = Avila2021:0:0:78
+# text = Aiwana upisika kisé.
+# text_eng = Then he took the knife.
+# text_por = Então ele pegou a faca.
+# text_source = Rodrigues, 26, adap.
+1	Aiwana	aiwana	ADV	ADV	_	2	advmod	_	TokenRange=0:6
+2	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:14
+3	kisé	kisé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Avila2021:0:0:79
+# text = Se membira mena, kuíri asú asikari ne purangasawa arama.
+# text_eng = My son-in-law, now I go in search of your beauty.
+# text_por = Meu genro, agora eu vou em busca da tua beleza.
+# text_source = Rodrigues, 195, adap.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	membira	membira	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=3:10
+3	mena	mena	NOUN	N	Number=Sing	7	vocative	_	SpaceAfter=No|TokenRange=11:15
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
+5	kuíri	kuíri	ADV	ADV	_	7	advmod	_	TokenRange=17:22
+6	asú	sú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	7	aux	_	TokenRange=23:26
+7	asikari	sikari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=27:34
+8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=35:37
+9	purangasawa	purangasawa	NOUN	N	Number=Sing	7	obj	_	TokenRange=38:49
+10	arama	arama	PART	FUT	Tense=Fut	9	advmod	_	SpaceAfter=No|TokenRange=50:55
+11	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=55:56
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
