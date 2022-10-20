@@ -1830,6 +1830,32 @@
 12	[...]	[...]	PUNCT	ELIP	PunctType=Elip	4	punct	_	SpaceAfter=No|TokenRange=61:66
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=66:67
 
+# sent_id = Avila2021:0:0:77
+# text = Yepé paá Iahuixa apigawa-itá suiwara uyupisirú-kwáu, aiwana usú umbeú amú mira-itá supé maã Buopé umunhã waá.
+# text_eng = One of Iahuixa's men, they say, was able to save himself, so he went and told the other people what Buopé had done.
+# text_por = Um dos homens de Iahuixa, contam, pôde salvar-se, foi então contar às outras pessoas o que Buopé tinha feito.
+# text_source = Amorim, 29, adap.
+1	Yepé	yepé	NUM	CARD	NumType=Card	6	nsubj	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=5:8
+3	Iahuixa	iahuixa	PROPN	PROPN	_	4	nmod:poss	_	TokenRange=9:16
+4	apigawa-itá	apigawa	NOUN	N	Number=Plur	1	nmod	_	TokenRange=17:28
+5	suiwara	suiwara	ADP	ADP	_	4	case	_	TokenRange=29:36
+6-7	uyupisirú-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=37:51
+6	uyupisirú	yupisirú	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
+7	kwáu	kwáu	AUX	AUXN	VerbForm=Inf	6	aux	_	_
+8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=51:52
+9	aiwana	aiwana	ADV	ADV	_	11	advmod	_	TokenRange=53:59
+10	usú	sú	AUX	V	Person=3|VerbForm=Fin	11	aux	_	TokenRange=60:63
+11	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=64:69
+12	amú	amú	DET	IND	Number=Sing|PronType=Ind	13	det	_	TokenRange=70:73
+13	mira-itá	mira	NOUN	N	Number=Plur	11	iobj	_	TokenRange=74:82
+14	supé	supé	ADP	ADP	_	13	case	_	TokenRange=83:87
+15	maã	maã	PRON	INT	PronType=Int	11	obj	_	TokenRange=88:91
+16	Buopé	buopé	PROPN	PROPN	_	17	nsubj	_	TokenRange=92:97
+17	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	15	acl:relcl	_	TokenRange=98:104
+18	waá	waá	PRON	REL	Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=105:108
+19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=108:109
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
