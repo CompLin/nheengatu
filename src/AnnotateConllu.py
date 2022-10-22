@@ -1,26 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 17, 2022
+# Last update: October 22, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
-from BuildDictionary import MAPPING,extract_feats, loadGlossary
+from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
 from conllu import parse_incr
 import re
 
+# Separator of multiword tokens
+HYPHEN='-'
 # Case of second class pronouns
 CASE="Gen"
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
-'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV', 'ADVJ': 'ADV',
-'ADVD': 'ADV', 'ADVL': 'ADV', 'A2': 'VERB',
+'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
+'ADVJ': 'ADV', 'ADVD': 'ADV',
+'ADVL': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
-'AUXN' : 'VERB', 'AUXF' : 'AUX', 'CARD' : 'NUM',
-'ORD' : 'ADJ', 'ELIP' : 'PUNCT'}
+'COP' : 'AUX',
+'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
+'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT'}
 
 # TODO: extractDemonstratives()
 DET =  {'DEM' : 'DET', 'QUANT' : 'DET',
@@ -32,9 +36,15 @@ DEIXIS={'DEMS' : 'Remt', 'DEMX' : 'Prox'}
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
     auxiliaries=list(filter(lambda x: tag in x.get('pos'),glossary))
-    return [auxiliary['lemma'] for auxiliary in auxiliaries]
+    for auxiliar in auxiliaries:
+        pos=auxiliar['pos']
+        auxiliar['pos']=extractTags(pos,isAux)[0]
+    return auxiliaries
 
 AUX = extractAuxiliaries()
+
+def extractAuxEntry(lemma):
+    return list(filter(lambda x: lemma == x.get('lemma'), AUX))
 
 def extractParticles(mapping):
     dic={}
@@ -90,6 +100,20 @@ def RelAbbr(rel):
     if rel == 'NCONT':
         return 'NCont'
     return rel.title()
+
+def mkTokenRange(token, start, end):
+    token['misc']={'TokenRange': f'{start}:{end}'}
+
+def mkMultiWordToken(ident,form,start=0,end=0,spaceafter=None):
+    token=Token()
+    token['id']=ident
+    token['form']=form
+    for field in ('lemma','upos','xpos','feats','head','deprel','deps'):
+        token[field] = None
+    mkTokenRange(token,start,end)
+    if spaceafter:
+        token['misc'].update({'SpaceAfter':'No'})
+    return token
 
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     end=start + len(word)
@@ -223,6 +247,7 @@ def handleAdpCompl(token,verbs,nextToken):
 
 def handleNounPron(token,nextToken,verbs):
     if nextToken['upos'] == 'ADP':
+        print()
         handleAdpCompl(token,verbs,nextToken)
     elif nextToken['upos'] == 'ADJ':
         if token['upos'] == 'NOUN':
@@ -231,9 +256,8 @@ def handleNounPron(token,nextToken,verbs):
     elif nextToken['upos'] == 'VERB':
         token['deprel'] = 'nsubj'
         token['head'] =nextToken['id']
-    else:
-        if  token['xpos'] != 'PRON2':
-            SubjOrObj(token,verbs)
+    if  token['xpos'] != 'PRON2':
+        SubjOrObj(token,verbs)
 
 def updateFeats(token,feature,value):
     if not token['feats']:
@@ -291,8 +315,11 @@ def handlePart(token,verbs):
     elif xpos == 'PRET':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'Tense','Past')
-    elif xpos == 'CQ' or xpos == 'PQ':
+    elif xpos == 'CQ':
         headPartNextVerb(token,verbs)
+        updateFeats(token,'PartType', 'Int')
+    elif xpos == 'PQ':
+        headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
 
 def handleVerb(token,nextToken,verbs):
@@ -309,12 +336,6 @@ def handleVerb(token,nextToken,verbs):
                 token['head'] = verbs[0]['id']
                 token['deprel'] = 'advcl'
                 """
-def handleSconj(token,tokenlist,verbs):
-    token['deprel'] = 'mark'
-    tokid=token['id']
-    previous=getPreviousToken(token,tokenlist)
-    if previous['xpos'] == 'NEG':
-        token['head']=nextVerb()
 
 def handleSconj0(token,tokenlist,verbs):
     token['deprel'] = 'mark'
@@ -373,14 +394,16 @@ def handleCconj(token,verbs):
 def handleSconj(token,tokenlist,verbs):
     token['deprel'] = 'mark'
     previous=getPreviousToken(token,tokenlist)
-    if previous['xpos'] == 'NEG':
+    if previous and previous['xpos'] == 'NEG':
         token['head']=nextVerb(token,verbs)
     else:
         token['head']=previousVerb(token,verbs)
     headid=token['head']
-    head=verbs.filter(id=headid)[0]
-    head['deprel']='advcl'
-    head['head']=previousVerb(head,verbs)
+    headlist=verbs.filter(id=headid)
+    if headlist:
+        head=headlist[0]
+        head['deprel']='advcl'
+        head['head']=getHeadVerb(head,verbs)
 
 
 def getHeadVerb(token,verbs):
@@ -431,6 +454,8 @@ def getPreviousToken(token,tokenlist):
             if previous['form'] != token['form']:
                 return previous
             i=i-1
+    elif c == 1:
+        return tokenlist[:index][0]
 
 def previousCat(token,cats):
     tokenid=token['id']
@@ -472,7 +497,8 @@ def handleDetNum(upos,token,nextToken,tokenlist,verbs):
         else:
             token['head']=nounid
     else:
-        handleAdpCompl(token,verbs,nextToken)
+        if nextToken['upos'] == 'ADP':
+            handleAdpCompl(token,verbs,nextToken)
     xpos=token['xpos']
     value=xpos.title()
     deixis=DEIXIS.get(xpos)
@@ -498,22 +524,34 @@ def headAux(verb,headid):
         verb['deprel'] = 'aux'
         verb['head'] = headid
 
+def setUposXpos(verb,pos):
+    verb['xpos'] = pos
+    verb['upos'] = UDTAGS[pos]
+
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
     c=len(verbs)
     if c == 1:
         if verbs[0]['lemma'] == 'ikú':
             verbs[0]['deprel'] = 'cop'
+            verbs[0]['xpos'] = 'COP'
+            verbs[0]['upos'] = 'AUX'
             # handleNonVerbalRoot()
     elif c > 1:
         for verb in verbs:
             lemma=verb['lemma']
-            if lemma in ('sú','puderi','putari'):
+            entries=extractAuxEntry(lemma)
+            pos=''
+            if entries:
+                pos=entries[0]['pos']
+            if pos == 'AUXFR':
                 headid=nextVerb(verb,verbs)
                 headAux(verb,headid)
-            elif lemma == 'ikú':
+                setUposXpos(verb,pos)
+            elif pos == 'AUXFS' or pos == 'AUXN':
                 headid=previousVerb(verb,verbs)
                 headAux(verb,headid)
+                setUposXpos(verb,pos)
             else:
                 pass # TODO: ccomp, xcomp, advcl
 
@@ -552,15 +590,24 @@ def handlePunct(token,nextToken, tokenlist,verbs):
 
 def handleRel(token,tokenlist):
     token['deprel'] = 'nsubj'
-    j= i - 1
-    if j >= 0:
-        previous=tokenlist[j]
-        token['head'] = previous['id']
-        nouns=TokensOfCatList(tokenlist,'NOUN')
-        nounid=previousCat(token,nouns)
-        if nounid:
-            previous['head'] = nounid
-        previous['deprel'] = 'acl:relcl'
+    i=len(tokenlist)
+    previous=getPreviousToken(token,tokenlist)
+    token['head'] = previous['id']
+    nouns=TokensOfCatList(tokenlist,'NOUN')
+    prons=TokensOfCatList(tokenlist,'PRON')
+    tokenid=token['id']
+    headids=[tokenid]
+    nounid=previousCat(token,nouns)
+    headids.append(nounid)
+    pronid=previousCat(token,prons)
+    headids.append(pronid)
+    headids.sort()
+    j=headids.index(tokenid)
+    headid=nounid
+    if headids.index(tokenid) > 0:
+        headid=headids[j-1]
+    previous['head'] = headid
+    previous['deprel'] = 'acl:relcl'
 
 def handleVerbs(verbs):
     rootlist=verbs.filter(deprel='root')
@@ -609,6 +656,53 @@ def addFeatures(tokenlist):
 def filterparselist(tag,parselist):
     return list(filter(lambda x: x[1].split('+')[0] == tag.upper(),parselist))
 
+def handleCompoundAux(token):
+    updateFeats(token,'Compound','Yes')
+
+def getStartEnd(token):
+    dic={}
+    misc=token.get('misc')
+    if misc:
+        tokenrange=misc.pop('TokenRange')
+        if not misc:
+            token['misc']=None
+        if tokenrange:
+            start,end=tokenrange.split(':')
+            dic['start']=start
+            dic['end']=end
+    return dic
+
+def getSpaceAfter(token):
+    misc=token.get('misc')
+    if misc.get('SpaceAfter'):
+        return misc.pop('SpaceAfter')
+
+def insertCompoundAux(tokenlist):
+    for token in tokenlist:
+        feats=token.get('feats')
+        if feats:
+            if feats.get('Compound') == 'Yes':
+                index=tokenlist.index(token)
+                tokenid=token['id']
+                ident=f'{tokenid-1}-{tokenid}'
+                previous=tokenlist[index-1]
+                start=getStartEnd(previous)['start']
+                spaceafter=getSpaceAfter(token)
+                end=getStartEnd(token)['end']
+                form=f"{previous['form']}-{token['form']}"
+                compound=mkMultiWordToken(ident,form,start,end,spaceafter)
+                tokenlist.insert(index-1,compound)
+                break
+
+def handleHyphen(form):
+    dic={}
+    dic['form']=form
+    dic['hyphen']=False
+    if form.startswith(HYPHEN):
+        dic['form']=form[1:]
+        dic['hyphen']=True
+    return dic
+
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
     ident=1
@@ -617,7 +711,9 @@ def mkConlluSentence(tokens):
         tag=''
         if '/' in token:
             token,tag=token.split('/')
-        parselist=getparselist(token.lower())
+        dic=handleHyphen(token)
+        form=dic.get('form')
+        parselist=getparselist(form.lower())
         if tag:
             newparselist=filterparselist(tag,parselist)
             if newparselist:
@@ -626,12 +722,15 @@ def mkConlluSentence(tokens):
         for entry in entries:
             if entry.get('pos') == 'PUNCT':
                 start=start-1
-            t=mkConlluToken(token,entry,start=start, ident=ident)
+            t=mkConlluToken(form,entry,start=start, ident=ident)
+            if dic.get('hyphen'):
+                handleCompoundAux(t)
             tokenlist.append(t)
         start=start+len(token)+1
         ident+=1
     handleSpaceAfter(tokenlist)
     addFeatures(tokenlist)
+    insertCompoundAux(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -697,8 +796,18 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
     parseSentence(sents[0])
 
+def splitMultiWordTokens(tokens):
+    newlist=[]
+    for t in tokens:
+        if HYPHEN in t:
+            index=t.index(HYPHEN)
+            newlist.extend([t[:index],t[index:]])
+        else:
+            newlist.append(t)
+    return newlist
+
 def parseSentence(sent):
-    tokens=tokenize(sent)
+    tokens=splitMultiWordTokens(tokenize(sent))
     tk=mkConlluSentence(tokens)
     print(tk.serialize())
 

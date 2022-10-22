@@ -10,7 +10,13 @@ DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
 # non-finite verb
 NFIN="NFIN"
 
-TAGSET="""
+# auxiliary
+AUX='aux.'
+
+# copula verb
+COP='cop.'
+
+TAGSET=f"""
 adj.\tA\tadjetivo de 1ª cl.
 adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
 adv.\tADV\tadvérbio
@@ -20,9 +26,10 @@ adv. interr.\tADVR\tadvérbio interrogativo
 adv. rel.\tADVL\tadvérbio relativo
 adv. conj.\tADVJ\tadvérbio conjuncional
 art. indef.\tART\tartigo indefinido
-aux. flex.\tAUXF\tauxiliar flexionado
-aux. não-flex.\tAUXN\tauxiliar não flexionado
-cop.\tV\tverbo de ligação
+{AUX} flex. pós.\tAUXFS\tauxiliar flexionado pós-verbal
+{AUX} flex. pré.\tAUXFR\tauxiliar flexionado pré-verbal
+{AUX} não-flex.\tAUXN\tauxiliar não flexionado
+{COP}\tV\tverbo de ligação
 conj.\tCONJ\tconjunção
 sconj.\tSCONJ\tconjunção subordinativa
 cconj.\tCCONJ\tconjunção coordenativa
@@ -325,42 +332,57 @@ def hasNumberInflection(tag,lemma):
             return True
     return False
 
-def WordParsePairs(glossary):
-    pairs=set()
-    for n in glossary:
-        lemma=n.get('lemma')
-        pos=n.get('pos') # TODO: change 'pos' to 'cat(egory) throughout the module'
-        tags=[MAPPING.get(tag.strip()) for tag in pos.split("/")]
-        rel=n.get('rel')
-        forms=set()
-        if rel:
-            tag=tags[0]
-            l=len(rel)
-            if l == 2:
-                forms.add((rel[0],f"{lemma}+{tag}+CONT"))
-                ncont=rel[1].split("/")
-                for form in ncont:
-                    forms.add((form,f"{lemma}+{tag}+NCONT"))
-                if tag == "N":
-                    forms.add((lemma,f"{lemma}+{tag}+ABS"))
-                    pairs.update(makeNumber(forms))
-                else:
-                    pairs.update(forms)
-            elif l == 1:
-                pairs.add(f"{lemma}\t{lemma}+{tag}+CONT")
-                pairs.add(f"{rel[0]}\t{lemma}+{tag}+NCONT")
-        else:
-            for tag in tags:
-                if hasNumberInflection(tag,lemma):
-                    pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
-                elif tag == "V" and not isImpersonal(n.get('gloss')):
-                    pairs.update(conjugateVerb(lemma,tag))
-                elif tag in ('PRON','PRON2'):
-                    pairs.add(expandpronoun(lemma,tag))
-                else:
-                    pairs.add(f"{lemma}\t{lemma}+{tag}")
+def isAux(tag):
+	return AUX in tag
 
-    return pairs
+def excludeAux(tag):
+	if isAux(tag):
+		return False
+	else:
+		return True
+
+def extractTags(pos,includefunction):
+	return [MAPPING.get(tag.strip()) for tag in pos.split("/") if includefunction(tag)]
+
+def getLemmaPosTags(entry,includefunction):
+	lemma=entry.get('lemma')
+	pos=entry.get('pos')
+	tags=extractTags(pos,includefunction)
+	return lemma, pos, tags
+
+def WordParsePairs(glossary):
+	pairs=set()
+	for entry in glossary:
+		lemma,pos,tags=getLemmaPosTags(entry,excludeAux)
+		rel=entry.get('rel')
+		forms=set()
+		if rel:
+			tag=tags[0]
+			l=len(rel)
+			if l == 2:
+				forms.add((rel[0],f"{lemma}+{tag}+CONT"))
+				ncont=rel[1].split("/")
+				for form in ncont:
+					forms.add((form,f"{lemma}+{tag}+NCONT"))
+				if tag == "N":
+					forms.add((lemma,f"{lemma}+{tag}+ABS"))
+					pairs.update(makeNumber(forms))
+				else:
+					pairs.update(forms)
+			elif l == 1:
+				pairs.add(f"{lemma}\t{lemma}+{tag}+CONT")
+				pairs.add(f"{rel[0]}\t{lemma}+{tag}+NCONT")
+		else:
+			for tag in tags:
+				if hasNumberInflection(tag,lemma):
+					pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
+				elif tag == "V" and not isImpersonal(entry.get('gloss')):
+					pairs.update(conjugateVerb(lemma,tag))
+				elif tag in ('PRON','PRON2'):
+					pairs.add(expandpronoun(lemma,tag))
+				else:
+					pairs.add(f"{lemma}\t{lemma}+{tag}")
+	return pairs
 
 def extractHomonyms(glossary):
     newdict=dict()

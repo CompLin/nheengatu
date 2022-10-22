@@ -23,7 +23,8 @@ Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
 'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana',
-'jesus', 'deus', 'kurukuí', 'augusto']
+'jesus', 'kristu', 'deus', 'kurukuí', 'augusto', 'yuruparí',
+'iahuixa', 'buopé']
 
 def propernames(namelist=NAMES):
     dic={}

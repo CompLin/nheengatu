@@ -1905,6 +1905,47 @@
 14	resewara	resewara	ADP	ADP	Rel=Cont	13	case	_	SpaceAfter=No|TokenRange=61:69
 15	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=69:70
 
+# sent_id = Avila2021:0:0:81
+# text = Pitunawasú ramé ti yaxipiaka-kwáu maã.
+# text_eng = When it's dark we can't see anything.
+# text_por = Quando está escuro nada podemos ver.
+# text_source = Hartt, 362, adap.
+1	Pitunawasú	pitunawasú	NOUN	N	Number=Sing	4	obl	_	TokenRange=0:10
+2	ramé	ramé	ADP	ADP	_	1	case	_	TokenRange=11:15
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=16:18
+4-5	yaxipiaka-kwáu	_	_	_	_	_	_	_	TokenRange=19:33
+4	yaxipiaka	xipiaka	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	_
+5	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	4	aux	_	_
+6	maã	maã	PRON	IND	PronType=Ind	4	obj	_	SpaceAfter=No|TokenRange=35:38
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Avila2021:10:1:82
+# text = Pituna usika ramé aintá ti ukiri-kwáu.
+# text_eng = When night came they could not sleep.
+# text_por = Quando a noite chegou eles não conseguiam dormir.
+# text_source = Magalhães, 223, adap.
+1	Pituna	pituna	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	usika	sika	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=7:12
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=13:17
+4	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=18:23
+5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=24:26
+6-7	ukiri-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=27:37
+6	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
+7	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
+8	.	.	PUNCT	PUNCT	_	6 	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Avila2021:10:2:83
+# text = Aintá uyusikié uikú amú suí.
+# text_eng =  They were fearing each other.
+# text_por = Estavam temendo um ao outro.
+# text_source = Magalhães, 223, adap.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	uyusikié	yusikié	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:14
+3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	TokenRange=15:19
+4	amú	amú	PRON	IND	Number=Sing|PronType=Ind	2	obl	_	TokenRange=20:23
+5	suí	suí	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=24:27
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
