@@ -2048,6 +2048,74 @@
 5	itá	itá	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=25:28
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# sent_id = Avila2021:0:0:90
+# text = Se arasí reté ti resé asú-kwáu.
+# text_eng = I'm sorry I can't go.
+# text_por = Sinto muito por não poder ir.
+# text_source = Hartt,370, adap.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	arasí	arasí	VERB	V2	_	0	root	_	TokenRange=3:8
+3	reté	reté	ADV	ADVS	_	2	advmod	_	TokenRange=9:13
+4	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=14:16
+5	resé	resé	SCONJ	SCONJ	_	6	mark	_	TokenRange=17:21
+6-7	asú-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=22:30
+6	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	advcl	_	_
+7	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Avila2021:0:0:91
+# text = Se arasí reté tuyué resé.
+# text_eng = I feel very sorry for the old man.
+# text_por = Tenho muita pena do velho.
+# text_source = Hartt, 355, adap.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	arasí	arasí	VERB	V2	_	0	root	_	TokenRange=3:8
+3	reté	reté	ADV	ADVS	_	2	advmod	_	TokenRange=9:13
+4	tuyué	tuyué	NOUN	N	Number=Sing	2	obl	_	TokenRange=14:19
+5	resé	resé	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=20:24
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Avila2021:0:0:92
+# text = Asú amunuka nhaã mirá uwari arama pé árupi, ti arama awá usasá-kwáu arupí.
+# text_eng = I'm going to cut down that tree so it falls on the path, so no one can get through there.
+# text_por = Vou cortar aquela árvore para ela cair sobre o caminho, para que ninguém possa passar por ali.
+# text_source = Hartt, 380, adap.
+1	Asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:3
+2	amunuka	munuka	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=4:11
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=12:16
+4	mirá	mirá	NOUN	N	Number=Sing	2	obj	_	TokenRange=17:21
+5	uwari	wari	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=22:27
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=28:33
+7	pé	pé	NOUN	N	Number=Sing|Rel=Abs	5	obl	_	TokenRange=34:36
+8	árupi	árupi	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=37:42
+9	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=42:43
+10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	13	advmod	_	TokenRange=44:46
+11	arama	arama	SCONJ	SCONJ	_	13	mark	_	TokenRange=47:52
+12	awá	awá	PRON	IND	PronType=Ind	13	nsubj	_	TokenRange=53:56
+13-14	usasá-kwáu	_	_	_	_	_	_	_	TokenRange=57:67
+13	usasá	sasá	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	_
+14	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	13	aux	_	_
+15	arupí	arupí	ADV	ADV	_	13	advmod	_	SpaceAfter=No|TokenRange=69:74
+16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=74:75
+
+# sent_id = Avila2021:0:0:93
+# text = Yawaraté upuri, uyana, umaité suasú uyuká-putari aé.
+# text_eng = The jaguar jumped, ran, thinking that the deer wanted to kill it.
+# text_por = A onça pulou, correu, pensando que o veado queria matá-la.
+# text_source = Magalhães, 223, adap.
+1	Yawaraté	yawaraté	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
+2	upuri	puri	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:14
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
+4	uyana	yana	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=16:21
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=21:22
+6	umaité	maité	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=23:29
+7	suasú	suasú	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=30:35
+8-9	uyuká-putari	_	_	_	_	_	_	_	TokenRange=36:48
+8	uyuká	yuká	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	_
+9	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	8	aux	_	_
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=50:52
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=52:53
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
