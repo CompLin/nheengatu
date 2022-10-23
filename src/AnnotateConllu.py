@@ -678,21 +678,26 @@ def getSpaceAfter(token):
         return misc.pop('SpaceAfter')
 
 def insertCompoundAux(tokenlist):
+    newlist=TokenList()
     for token in tokenlist:
         feats=token.get('feats')
         if feats:
             if feats.get('Compound') == 'Yes':
                 index=tokenlist.index(token)
-                tokenid=token['id']
-                ident=f'{tokenid-1}-{tokenid}'
                 previous=tokenlist[index-1]
-                start=getStartEnd(previous)['start']
-                spaceafter=getSpaceAfter(token)
-                end=getStartEnd(token)['end']
-                form=f"{previous['form']}-{token['form']}"
-                compound=mkMultiWordToken(ident,form,start,end,spaceafter)
-                tokenlist.insert(index-1,compound)
-                break
+                #print(previous)
+                #start=getStartEnd(previous)['start']
+                startend=getStartEnd(previous)
+                start=startend.get('start')
+                if start:
+                    spaceafter=getSpaceAfter(token)
+                    end=getStartEnd(token)['end']
+                    form=f"{previous['form']}-{token['form']}"
+                    tokenid=token['id']
+                    ident=f'{tokenid-1}-{tokenid}'
+                    compound=mkMultiWordToken(ident,form,start,end,spaceafter)
+                    tokenlist.insert(index-1,compound)
+                #break
 
 def handleHyphen(form):
     dic={}
@@ -797,11 +802,16 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     parseSentence(sents[0])
 
 def splitMultiWordTokens(tokens):
+    aux=[d['lemma'] for d in AUX]
     newlist=[]
     for t in tokens:
         if HYPHEN in t:
             index=t.index(HYPHEN)
-            newlist.extend([t[:index],t[index:]])
+            second=t[index:]
+            if second[1:] in aux:
+                newlist.extend([t[:index],second])
+            else:
+                newlist.append(t)
         else:
             newlist.append(t)
     return newlist

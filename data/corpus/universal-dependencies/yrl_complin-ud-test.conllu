@@ -1932,7 +1932,7 @@
 6-7	ukiri-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=27:37
 6	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
 7	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
-8	.	.	PUNCT	PUNCT	_	6 	punct	_	SpaceAfter=No|TokenRange=38:39
+8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Avila2021:10:2:83
 # text = Aintá uyusikié uikú amú suí.
@@ -1945,6 +1945,108 @@
 4	amú	amú	PRON	IND	Number=Sing|PronType=Ind	2	obl	_	TokenRange=20:23
 5	suí	suí	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=24:27
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Avila2021:0:0:84
+# text = Ti aputari mira iwí arawara-itá unheẽ Buopé, taria-itá akanga, ti umuseẽ-kwáu i piá mairamé i piaíwa uikú.
+# text_eng = I don't want people on earth to say that Buopé, head of the Tarians, doesn't know how to sweeten his heart when angry.
+# text_por = Não quero que a gente de sobre a terra diga que Buopé, cabeça dos tarianas, não sabe adoçar seu coração quando irado.
+# text_source = Amorim, 32, adap.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	aputari	putari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=3:10
+3	mira	mira	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:15
+4	iwí	iwí	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=16:19
+5	arawara-itá	arawara	NOUN	N	Number=Plur	3	nmod	_	TokenRange=20:31
+6	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=32:37
+7	Buopé	buopé	PROPN	PROPN	_	13	nsubj	_	SpaceAfter=No|TokenRange=38:43
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=43:44
+9	taria-itá	taria	NOUN	N	Number=Plur	10	nmod:poss	_	TokenRange=45:54
+10	akanga	akanga	NOUN	N	Number=Sing	7	appos	_	SpaceAfter=No|TokenRange=55:61
+11	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=61:62
+12	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	13	advmod	_	TokenRange=63:65
+13-14	umuseẽ-kwáu	_	_	_	_	_	_	_	TokenRange=66:77
+13	umuseẽ	museẽ	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	_
+14	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	13	aux	_	_
+15	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=79:80
+16	piá	piá	NOUN	N	Number=Sing	13	obj	_	TokenRange=81:84
+17	mairamé	mairamé	SCONJ	SCONJ	_	19	mark	_	TokenRange=85:92
+18	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	TokenRange=93:94
+19	piaíwa	piaíwa	VERB	A2	_	13	advcl	_	TokenRange=95:101
+20	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	19	aux	_	SpaceAfter=No|TokenRange=102:106
+21	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=106:107
+
+# sent_id = Avila2021:0:0:85
+# text = Resú-putari será amukití?
+# text_eng = Do you want to go somewhere?
+# text_por = Você quer ir a alguma parte?
+# text_source = Magalhães, 69, 98, adap.; Studart, 38, adap.
+1-2	Resú-putari	_	_	_	_	_	_	_	TokenRange=0:11
+1	Resú	sú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=13:17
+4	amukití	amukití	ADV	ADV	_	1	advmod	_	SpaceAfter=No|TokenRange=18:25
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Avila2021:0:0:87
+# text = Kunhã uyumuseẽ-kwáu ixé arama, aé umurí-kwáu tẽ ixé, se resá ti amuyeréu aintá i xupé, amukití aintá uikú.
+# text_eng = A woman can sweeten herself for me, she can even please me, my eyes don't turn to her, they are turned to the other side.
+# text_por = Muher pode adoçar-se para mim, pode mesmo agradar-me, meus olhos não os viro para ela, estão para outro lado.
+# text_source = Amorim, 368, adap.
+1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2-3	uyumuseẽ-kwáu	_	_	_	_	_	_	_	TokenRange=6:19
+2	uyumuseẽ	yumuseẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
+3	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	2	aux	_	_
+4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	obl	_	TokenRange=21:24
+5	arama	arama	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=25:30
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=30:31
+7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	nsubj	_	TokenRange=32:34
+8-9	umurí-kwáu	_	_	_	_	_	_	_	TokenRange=35:45
+8	umurí	murí	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	_
+9	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	8	aux	_	_
+10	tẽ	tẽ	ADV	ADV	_	8	advmod	_	TokenRange=47:49
+11	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=50:53
+12	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=53:54
+13	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=55:57
+14	resá	sesá	NOUN	N	Number=Sing|Rel=Cont	16	dislocated	_	TokenRange=58:62
+15	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	16	advmod	_	TokenRange=63:65
+16	amuyeréu	muyeréu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	8	parataxis	_	TokenRange=66:74
+17	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	obj	_	TokenRange=75:80
+18	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	16	obl	_	TokenRange=81:82
+19	xupé	xupé	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=83:87
+20	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=87:88
+21	amukití	amukití	ADV	ADV	_	16	parataxis	_	TokenRange=89:96
+22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	21	nsubj	_	TokenRange=97:102
+23	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	21	cop	_	SpaceAfter=No|TokenRange=103:107
+24	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=107:108
+
+# sent_id = Avila2021:11:1:88
+# text = Aramé piri uyumunhã itá, ti ana Rairú uwatá-kwáu.
+# text_eng = Then the stone grew even bigger, Rairu could no longer walk.
+# text_por = Então a pedra cresceu mais ainda, Rairu não pôde mais andar.
+# text_source = Rodrigues, 246, adap.
+1	Aramé	aramé	ADV	ADV	_	3	advmod	_	TokenRange=0:5
+2	piri	piri	ADV	ADV	_	3	advmod	_	TokenRange=6:10
+3	uyumunhã	yumunhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
+4	itá	itá	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=20:23
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=23:24
+6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=25:27
+7	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=28:31
+8	Rairú	rairú	PROPN	PROPN	_	9	nsubj	_	TokenRange=32:37
+9-10	uwatá-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=38:48
+9	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	_
+10	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	9	aux	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# sent_id = Avila2021:11:2:89
+# text = Aramé piri uyumunhã nhaã itá.
+# text_eng =  Then the stone grew even bigger.
+# text_por = Então a pedra cresceu ainda mais.
+# text_source = Rodrigues, 246, adap.
+1	Aramé	aramé	ADV	ADV	_	3	advmod	_	TokenRange=0:5
+2	piri	piri	ADV	ADV	_	3	advmod	_	TokenRange=6:10
+3	uyumunhã	yumunhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=20:24
+5	itá	itá	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=25:28
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
