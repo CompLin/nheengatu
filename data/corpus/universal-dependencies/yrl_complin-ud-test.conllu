@@ -2116,6 +2116,44 @@
 10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=50:52
 11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=52:53
 
+# sent_id = Avila2021:0:0:94
+# text = Awá taá uwatá-putari igara aíwa pupé?
+# text_eng = Who wants to ride in an old canoe?
+# text_por = .  Quem quer passear numa canoa velha?
+# text_source = Hartt, 364, adap.
+1	Awá	awá	PRON	INT	PronType=Int	3	nsubj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3-4	uwatá-putari	_	_	_	_	_	_	_	TokenRange=8:20
+3	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
+4	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	3	aux	_	_
+5	igara	igara	NOUN	N	Number=Sing	3	obl	_	TokenRange=22:27
+6	aíwa	aíwa	ADJ	A	_	5	amod	_	TokenRange=28:32
+7	pupé	pupé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=33:37
+8	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = Avila2021:0:0:95
+# text = Aikwé yepé Isana rakanga sera waá Pirayawara, wirandé asú-putari apinaitika i apira kití.
+# text_eng = There is a tributary of the Içana called Piraiauara, tomorrow I want to go fishing towards its headwaters.
+# text_por =  Há um afluente do Içana chamado Piraiauara, amanhã eu quero ir pescar rumo a sua cabeceira.
+# text_source =
+1	Aikwé	aikwé	PART	EXST	_	0	root	_	TokenRange=0:5
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=6:10
+3	Isana	isana	PROPN	PROPN	_	4	nmod:poss	_	TokenRange=11:16
+4	rakanga	sakanga	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	TokenRange=17:24
+5	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	7	nsubj	_	TokenRange=25:29
+6	waá	waá	PRON	REL	Number=Sing	5	nmod:poss	_	TokenRange=30:33
+7	Pirayawara	pirayawara	PROPN	PROPN	_	4	acl:relcl	_	SpaceAfter=No|TokenRange=34:44
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=44:45
+9	wirandé	wirandé	ADV	ADV	_	10	advmod	_	TokenRange=46:53
+10-11	asú-putari	_	_	_	_	_	_	_	TokenRange=54:64
+10	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	_
+11	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	10	aux	_	_
+12	apinaitika	pinaitika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	10	xcomp	_	TokenRange=66:76
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=77:78
+14	apira	apira	NOUN	N	Number=Sing	10	obl	_	TokenRange=79:84
+15	kití	kití	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=85:89
+16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=89:90
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
