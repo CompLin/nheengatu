@@ -2381,7 +2381,7 @@
 # text_source = O Novo Testamento em nyengatu, Gálatas 5:10, adap.
 1	[...]	[...]	PUNCT	ELIP	_	12	punct	_	TokenRange=0:5
 2	asuí	asuí	CCONJ	CCONJ	_	12	cc	_	TokenRange=6:10
-3	mayé	mayé	ADV	ADVR	_	5	det	_	TokenRange=11:15
+3	mayé	mayé	ADV	ADV	_	5	det	_	TokenRange=11:15
 4	waá	waá	PRON	REL	Number=Sing	3	fixed	_	TokenRange=16:19
 5	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	dislocated	_	TokenRange=20:23
 6	utiari	tiari	VERB	V	Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=24:30
@@ -2441,10 +2441,80 @@
 19	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=90:91
 20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	21	advmod	_	TokenRange=92:94
 21	mayé	mayé	ADV	ADV	_	18	parataxis	_	TokenRange=95:99
-22	ra	ra	SCONJ	SCONJ	_	21	mark	_	SpaceAfter=No|TokenRange=100:102
+22	ra	ra	SCONJ	SCONJ	_	21	advcl	_	SpaceAfter=No|TokenRange=100:102
 23	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=102:103
 24	[...]	[...]	PUNCT	ELIP	PunctType=Elip	5	punct	_	SpaceAfter=No|TokenRange=104:109
 25	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=109:110
+
+# sent_id = Avila2021:0:0:110
+# text = [...] mairamé ta umunhã dabukurí, ta uparawaka nhaã kurumiwasú puranga mirĩ waá, mayé waá ta piá suí, [...].
+# text_eng = [...] when they made dabucuri, they chose the boy who was cute, the one they liked, [...].
+# text_por =  [...] quando eles faziam dabucuri, elas escolhiam o rapaz que era bonitinho, aquele que era do seu agrado, [...].
+# text_source = Leetra Indígena. n. 17, 27, adap.
+1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
+2	mairamé	mairamé	SCONJ	SCONJ	_	4	mark	_	TokenRange=6:13
+3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=14:16
+4	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=17:23
+5	dabukurí	dabukurí	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=24:32
+6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=32:33
+7	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=34:36
+8	uparawaka	parawaka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=37:46
+9	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	10	det	_	TokenRange=47:51
+10	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	8	obj	_	TokenRange=52:62
+11	puranga	puranga	ADJ	A	_	10	acl:relcl	_	TokenRange=63:70
+12	mirĩ	mirĩ	ADV	ADV	_	11	advmod	_	TokenRange=71:75
+13	waá	waá	PRON	REL	Number=Sing	10	nsubj	_	SpaceAfter=No|TokenRange=76:79
+14	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=79:80
+15	mayé	mayé	ADV	ADV	_	18	nsubj	_	TokenRange=81:85
+16	waá	waá	PRON	REL	Number=Sing	15	fixed	_	TokenRange=86:89
+17	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=90:92
+18	piá	piá	NOUN	N	Number=Sing	8	parataxis	_	TokenRange=93:96
+19	suí	suí	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=97:100
+20	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=100:101
+21	[...]	[...]	PUNCT	ELIP	PunctType=Elip	8	punct	_	SpaceAfter=No|TokenRange=102:107
+22	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=107:108
+
+# sent_id = Avila2021:0:0:111
+# text = Ti mayé ayuká arama kwá buya.
+# text_eng = There's no way I can kill this snake.
+# text_por = Não há como eu matar essa cobra.
+# text_source =
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	mayé	mayé	ADV	ADV	_	0	root	_	TokenRange=3:7
+3	ayuká	yuká	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	advcl	_	TokenRange=8:13
+4	arama	arama	SCONJ	SCONJ	_	3	mark	_	TokenRange=14:19
+5	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=20:23
+6	buya	buya	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=24:28
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Avila2021:0:0:112
+# text = Ti arama yaikú kwayé taína yawé, kwayé iwitú upeyú waá yawé, kwá-itá uruyari waá-itá panhẽ mayé waá nheenga, [...].
+# text_eng = So that we don't live like children, like the wind that blows, those who believe in every word, [...].
+# text_por = Para não vivermos como crianças, como o vento que sopra, esses que acreditam em toda e qualquer palavra, [...].
+# text_source = O Novo Testamento em nyengatu, Efésios 4:14, adap.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	arama	arama	SCONJ	SCONJ	_	3	mark	_	TokenRange=3:8
+3	yaikú	ikú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:14
+4	kwayé	kwayé	ADV	ADV	_	5	case	_	TokenRange=15:20
+5	taína	taína	NOUN	N	Number=Sing	3	obl	_	TokenRange=21:26
+6	yawé	yawé	ADP	ADP	_	4	fixed	_	SpaceAfter=No|TokenRange=27:31
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=31:32
+8	kwayé	kwayé	ADV	ADV	_	9	case	_	TokenRange=33:38
+9	iwitú	iwitú	NOUN	N	Number=Sing	5	conj	_	TokenRange=39:44
+10	upeyú	peyú	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=45:50
+11	waá	waá	PRON	REL	Number=Sing	10	nsubj	_	TokenRange=51:54
+12	yawé	yawé	ADP	ADP	_	8	fixed	_	SpaceAfter=No|TokenRange=55:59
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=59:60
+14	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	5	conj	_	TokenRange=61:68
+15	uruyari	ruyari	VERB	V	Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=69:76
+16	waá-itá	waá	PRON	REL	Number=Plur	15	nsubj	_	TokenRange=77:84
+17	panhẽ	panhẽ	DET	TOT	PronType=Tot	20	det	_	TokenRange=85:90
+18	mayé	mayé	ADV	ADV	_	20	det	_	TokenRange=91:95
+19	waá	waá	PRON	REL	Number=Sing	18	fixed	_	TokenRange=96:99
+20	nheenga	nheenga	NOUN	N	Number=Sing	15	obj	_	SpaceAfter=No|TokenRange=100:107
+21	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=107:108
+22	[...]	[...]	PUNCT	ELIP	PunctType=Elip	3	punct	_	SpaceAfter=No|TokenRange=109:114
+23	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=114:115
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
