@@ -45,6 +45,7 @@ part. perf.\tPFV\tpartícula de perfectivo
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
 part. afirm.\tAFF\tpartícula de afirmação
+part. exist.\tEXST\tpartícula de existencial
 part. fut.\tFUT\tpartícula de futuro
 part. frust.\tFRUST\tpartícula de frustativo
 part. pret.\tPRET\tpartícula de pretérito

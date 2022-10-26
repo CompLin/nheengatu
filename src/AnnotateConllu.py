@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 22, 2022
+# Last update: October 25, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
@@ -247,7 +247,6 @@ def handleAdpCompl(token,verbs,nextToken):
 
 def handleNounPron(token,nextToken,verbs):
     if nextToken['upos'] == 'ADP':
-        print()
         handleAdpCompl(token,verbs,nextToken)
     elif nextToken['upos'] == 'ADJ':
         if token['upos'] == 'NOUN':
@@ -284,14 +283,15 @@ def headPartPreviousVerb(token,verbs):
 
 def handlePart(token,verbs):
     mapping= {
-    'PQ': {'PartType': 'Int','QuestType':'Polar'},
-    'CQ': {'PartType': 'Int','QuestType':'Content'},
-    'FRUST': {'PartType': 'Tam','Aspect':'Frus'},
+    'PQ': {'PartType': 'Int','QestType':'Polar'},
+    'CQ': {'PartType': 'Int','QestType':'Content'},
     'NEG': {'PartType': 'Neg','Polarity':'Neg'},
-    'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
+    'RPRT': {'PartType': 'Mod','Evident':'Nfh'},
     'PFV': {'PartType': 'Tam','Aspect':'Perf'},
+    'FRUST': {'PartType': 'Tam','Aspect':'Frus'},
     'FUT': {'PartType': 'Tam','Tense':'Fut'},
     'PRET': {'PartType': 'Tam','Tense':'Past'},
+    'EXST': {'PartType': 'Exs'},
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
@@ -321,6 +321,9 @@ def handlePart(token,verbs):
     elif xpos == 'PQ':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
+    elif xpos == 'EXST':
+        headPartNextVerb(token,verbs)
+        updateFeats(token,'PartType', 'Exs')
 
 def handleVerb(token,nextToken,verbs):
     if nextToken['upos'] == 'NOUN': # TODO: possibly deprecated
@@ -405,6 +408,11 @@ def handleSconj(token,tokenlist,verbs):
         head['deprel']='advcl'
         head['head']=getHeadVerb(head,verbs)
 
+def handleAdp():
+    '''TODO:
+    1. implement a function analogous to handleSconj and handleCconj
+    2. change ADP treatment in the functions dealing with precedent categories
+    '''
 
 def getHeadVerb(token,verbs):
     headid=previousVerb(token,verbs)
@@ -521,7 +529,7 @@ def getNextWord(token, tokenlist):
 def headAux(verb,headid):
     if headid:
         verb['upos'] = 'AUX'
-        verb['deprel'] = 'aux'
+        AUXverb['deprel'] = 'aux'
         verb['head'] = headid
 
 def setUposXpos(verb,pos):
@@ -639,7 +647,10 @@ def addFeatures(tokenlist):
             handlePart(token,verbs)
         elif upos == "VERB":
             pass
-            # handleVerb(token,nextToken,verbs)
+            # TODO: handleVerb(token,nextToken,verbs)
+        elif upos == "ADP":
+            pass
+            # TODO: handleAdp(token,tokenlist,verbs)
         elif upos == "SCONJ":
             handleSconj(token,tokenlist,verbs)
         elif upos == "CCONJ":
