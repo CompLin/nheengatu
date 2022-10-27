@@ -57,7 +57,7 @@ pron. 2ª cl.\tPRON2\tpronome de 2ª classe
 pron. enf.\tEMP\tpronome de ênfase
 pron. indef.\tIND\tpronome indefinido
 pron. interr.\tINT\tpronome interrogativo
-pron. quant.\tQUANT\tpronome quantitativo
+pron. quant.\tINDQ\tpronome quantitativo indefinido
 pron. quant. univ.\tTOT\tpronome quantitativo universal
 pron. relativo\tREL\tpronome relativo
 suf.\tSUFF\tsufixo
