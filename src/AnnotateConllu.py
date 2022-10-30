@@ -262,6 +262,18 @@ def SubjOrObj(token,verbs):
     elif nextverb:
         setDeprel(token,nextverb,'nsubj')
 
+def handleNmodPoss(tokenlist):
+    nouns=TokensOfCatList(tokenlist,'NOUN')
+    i=0
+    while(i < len(nouns)-1):
+        token=nouns[i]
+        nexttoken=nouns[i+1]
+        if token['id'] == nexttoken['id'] - 1:
+            if token['head']==nexttoken['head'] and token['deprel']==nexttoken['deprel']:
+                token['deprel']='nmod:poss'
+                token['head']=nexttoken['id']
+        i+=1
+
 def handleAdpCompl(token,verbs,nextToken):
     token['deprel'] = 'obl'
     headid=previousVerb(token,verbs)
@@ -750,6 +762,7 @@ def addFeatures(tokenlist):
             handlePunct(token,nextToken, tokenlist,verbs)
         i+=1
     handleVerbs(verbs)
+    handleNmodPoss(tokenlist)
 
 def filterparselist(tag,parselist):
     return list(filter(lambda x: x[1].split('+')[0] == tag.upper(),parselist))
