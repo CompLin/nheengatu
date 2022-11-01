@@ -262,14 +262,32 @@ def SubjOrObj(token,verbs):
     elif nextverb:
         setDeprel(token,nextverb,'nsubj')
 
+def hasNext(token,nexttoken):
+    return token['id'] == nexttoken['id'] - 1
+
+def sameHead(token,nexttoken):
+    return token['head']==nexttoken['head']
+
+def sameDeprel(token,nexttoken):
+    dep1=token['deprel']
+    dep2=nexttoken['deprel']
+    return dep1==dep2
+
+def ListOfCats(tokenlist,cats):
+    newlist=TokenList()
+    for token in tokenlist:
+        if token.get('upos') in cats:
+            newlist.append(token)
+    return newlist
+
 def handleNmodPoss(tokenlist):
-    nouns=TokensOfCatList(tokenlist,'NOUN')
+    nouns=ListOfCats(tokenlist,('NOUN','PROPN'))
     i=0
     while(i < len(nouns)-1):
         token=nouns[i]
         nexttoken=nouns[i+1]
-        if token['id'] == nexttoken['id'] - 1:
-            if token['head']==nexttoken['head'] and token['deprel']==nexttoken['deprel']:
+        if hasNext(token,nexttoken):
+            if sameHead(token,nexttoken) and sameDeprel(token,nexttoken):
                 token['deprel']='nmod:poss'
                 token['head']=nexttoken['id']
         i+=1
@@ -461,23 +479,29 @@ def handleSconj(token,tokenlist,verbs):
         head['deprel']='advcl'
         head['head']=getHeadVerb(head,verbs)
 
-def handleAdp(token,tokenlist):
+def handleAdp(token,tokenlist,verbs):
     '''TODO:
     1. implement a function analogous to handleSconj and handleCconj
     2. change ADP treatment in the functions dealing with precedent categories
+    3. does handleAdpCompl perform a similar job?
     '''
-    token['deprel'] = 'case'
-    nouns=TokensOfCatList(tokenlist,'NOUN')
-    previous=getPreviousToken(token,tokenlist)
-    if previous['upos'] not in ('NOUN','PRON','PROPN'):
-        nounid=previousCat(token,nouns)
-        token['head']=nounid
-        for noun in nouns:
-            if noun['id'] == nounid:
-                noun['deprel'] = 'obl'
-                headlist=tokenlist.filter(deprel='root')
-                head=previousCat(noun,headlist)
-                noun['head'] = head
+    feats=token.get('feats')
+    if feats and feats.get('Rel') == 'NCont':
+        token['deprel'] = 'obl'
+        token['head'] = getHeadVerb(token,verbs)
+    else:
+        token['deprel'] = 'case'
+        nouns=TokensOfCatList(tokenlist,'NOUN')
+        previous=getPreviousToken(token,tokenlist)
+        if previous['upos'] not in ('NOUN','PRON','PROPN'):
+            nounid=previousCat(token,nouns)
+            token['head']=nounid
+            for noun in nouns:
+                if noun['id'] == nounid:
+                    noun['deprel'] = 'obl'
+                    headlist=tokenlist.filter(deprel='root')
+                    head=previousCat(noun,headlist)
+                    noun['head'] = head
 
 def getHeadVerb(token,verbs):
     headid=previousVerb(token,verbs)
@@ -660,6 +684,7 @@ def AdjOrNounRoot(tokenlist):
     adjs=TokensOfCatList(tokenlist,'ADJ')
     nouns=TokensOfCatList(tokenlist,'NOUN')
     rootid=0
+    nsubjid=0
     if adjs:
         rootid=adjs[-1]['id']
     elif nouns:
@@ -749,7 +774,7 @@ def addFeatures(tokenlist):
             pass
             # TODO: handleVerb(token,nextToken,verbs)
         elif upos == "ADP":
-            handleAdp(token,tokenlist)
+            handleAdp(token,tokenlist,verbs)
         elif upos == "SCONJ":
             handleSconj(token,tokenlist,verbs)
         elif upos == "CCONJ":
