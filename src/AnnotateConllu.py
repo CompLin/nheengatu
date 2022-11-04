@@ -36,9 +36,9 @@ DEIXIS={'DEMS' : 'Remt', 'DEMX' : 'Prox'}
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
     auxiliaries=list(filter(lambda x: tag in x.get('pos'),glossary))
-    for auxiliar in auxiliaries:
-        pos=auxiliar['pos']
-        auxiliar['pos']=extractTags(pos,isAux)[0]
+    for auxiliary in auxiliaries:
+        pos=auxiliary['pos']
+        auxiliary['pos']=extractTags(pos,isAux)[0]
     return auxiliaries
 
 AUX = extractAuxiliaries()
@@ -80,13 +80,13 @@ def tokenrange(sentence):
             print(token,m,n)
             print(".",n,n+1)
 
-def decrementRange(r='107:111',i=-1):
+def incrementRange(r='107:111',i=1):
 	m,n=[int(x) for x in r.split(':')]
-	return f"{m-i}:{n-i}"
+	return f"{m+i}:{n+i}"
 
-def decrementTokenRange(tokenlist,i=-1):
+def incrementTokenRange(tokenlist,i=1):
     for t in tokenlist:
-        value=decrementRange(t['misc']['TokenRange'],i)
+        value=incrementRange(t['misc']['TokenRange'],i)
         t['misc']['TokenRange']=value
 
 def getudtag(tag):
@@ -114,6 +114,10 @@ def mkMultiWordToken(ident,form,start=0,end=0,spaceafter=None):
     if spaceafter:
         token['misc'].update({'SpaceAfter':'No'})
     return token
+
+def WordsOfLenghth(lenght,pos):
+    glossary=loadGlossary()
+    return list(filter(lambda x:  len(x['lemma']) == lenght and x['pos'] == pos,glossary))
 
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
@@ -626,8 +630,12 @@ def setUposXpos(verb,pos):
     verb['xpos'] = pos
     verb['upos'] = UDTAGS[pos]
 
+def sameClause(headid,punctid):
+    return headid > punctid
+
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
+    puncts=nouns=TokensOfCatList(tokenlist,'PUNCT')
     c=len(verbs)
     if c == 1:
         if verbs[0]['lemma'] == 'ikú':
@@ -637,6 +645,7 @@ def handleAux(tokenlist):
             # handleNonVerbalRoot()
     elif c > 1:
         for verb in verbs:
+            verbid=verb['id']
             lemma=verb['lemma']
             entries=extractAuxEntry(lemma)
             pos=''
@@ -647,9 +656,12 @@ def handleAux(tokenlist):
                 headAux(verb,headid)
                 setUposXpos(verb,pos)
             elif pos == 'AUXFS' or pos == 'AUXN':
+                # TODO: get id previous PUNCT, headid > punctid
+                punctid=previousCat(verb,puncts)
                 headid=previousVerb(verb,verbs)
-                headAux(verb,headid)
-                setUposXpos(verb,pos)
+                if sameClause(headid,punctid):
+                    headAux(verb,headid)
+                    setUposXpos(verb,pos)
             else:
                 pass # TODO: ccomp, xcomp, advcl
 
