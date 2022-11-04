@@ -333,6 +333,19 @@ def headPartNextVerb(token,verbs):
 
 def headPartPreviousVerb(token,verbs):
     tokid=token['id']
+    i=len(verbs)-1
+    while(i >=0):
+        verb=verbs[i]
+        verbid=verb['id']
+        if verbid < tokid:
+            token['head']=verbid
+            break
+        else:
+            headPartNextVerb(token,verbs)
+        i=i-1
+
+def headPartPreviousVerb0(token,verbs):
+    tokid=token['id']
     for verb in verbs:
         verbid=verb['id']
         if verbid < tokid:

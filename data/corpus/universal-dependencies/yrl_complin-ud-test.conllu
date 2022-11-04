@@ -3267,6 +3267,121 @@
 4	aikú	ikú	AUX	AUXFS	Number=Sing|Person=1|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=12:16
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# sent_id = Avila2021:0:0:151
+# text = Nhaãsé kurasí usemu irumu umuturí sakú, asuí uxirika kwá kapiĩ, asuí uwari i putira, asuí i purangasawa ukanhemu.
+# text_eng = For when the sun rises, it glows warmly, and the grass dries up, and its flower falls, and its beauty disappears.
+# text_por = Porque ao sair o sol, ele ilumina calorosamente, e a erva seca, e sua flor cai, e sua beleza desaparece. [Corr. transl.]
+# text_source = O Novo Testamento em nyengatu, Tiago 1:11 adap.
+1	Nhaãsé	nhaãsé	ADV	ADVJ	_	5	advmod	_	TokenRange=0:6
+2	kurasí	kurasí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=7:13
+3	usemu	semu	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=14:19
+4	irumu	irumu	SCONJ	SCONJ	_	3	mark	_	TokenRange=20:25
+5	umuturí	muturí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=26:33
+6	sakú	sakú	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=34:38
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=38:39
+8	asuí	asuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=40:44
+9	uxirika	xirika	VERB	V	Person=3|VerbForm=Fin	5	conj	_	TokenRange=45:52
+10	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	11	det	_	TokenRange=53:56
+11	kapiĩ	kapiĩ	NOUN	N	Number=Sing	9	nsubj	_	SpaceAfter=No|TokenRange=57:62
+12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=62:63
+13	asuí	asuí	CCONJ	CCONJ	_	14	cc	_	TokenRange=64:68
+14	uwari	wari	VERB	V	Person=3|VerbForm=Fin	9	conj	_	TokenRange=69:74
+15	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=75:76
+16	putira	putira	NOUN	N	Number=Sing	14	nsubj	_	SpaceAfter=No|TokenRange=77:83
+17	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=83:84
+18	asuí	asuí	CCONJ	CCONJ	_	21	cc	_	TokenRange=85:89
+19	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	TokenRange=90:91
+20	purangasawa	purangasawa	NOUN	N	Number=Sing	21	nsubj	_	TokenRange=92:103
+21	ukanhemu	kanhemu	VERB	V	Person=3|VerbForm=Fin	14	conj	_	SpaceAfter=No|TokenRange=104:112
+22	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=112:113
+
+# sent_id = Avila2021:0:0:152
+# text = Mayé ixé ti kirimbawa amaramunha arama awá irumu, amunhã yepé yurá kwá iwa apira upé ayawáu arama Poronominare suí.
+# text_eng = As I'm not brave enough to fight with anyone, I made a platform at the end of this tree to escape Poronominare.
+# text_por = Como eu não sou valente para brigar com ninguém, fiz um jirau na ponta dessa árvore para fugir de Poronominare.
+# text_source = Amorim, 165, adap.
+# text_orig = Mayé ixé ti kirimbawa amaramunha arama awá irumu, amunhã yepé yurá kwá iwa apira upé ayawau arama Poronominare suí.
+1	Mayé	mayé	SCONJ	SCONJ	_	4	mark	_	TokenRange=0:4
+2	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=5:8
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:11
+4	kirimbawa	kirimbawa	ADJ	A	_	10	advcl	_	TokenRange=12:21
+5	amaramunha	maramunha	VERB	V	Number=Sing|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=22:32
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=33:38
+7	awá	awá	PRON	IND	PronType=Ind	5	obl	_	TokenRange=39:42
+8	irumu	irumu	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=43:48
+9	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=48:49
+10	amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=50:56
+11	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	12	det	_	TokenRange=57:61
+12	yurá	yurá	NOUN	N	Number=Sing	10	obj	_	TokenRange=62:66
+13	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	det	_	TokenRange=67:70
+14	iwa	iwa	NOUN	N	Number=Sing	15	nmod:poss	_	TokenRange=71:74
+15	apira	apira	NOUN	N	Number=Sing	10	obl	_	TokenRange=75:80
+16	upé	upé	ADP	ADP	_	15	case	_	TokenRange=81:84
+17	ayawáu	yawáu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	10	advcl	_	TokenRange=85:91
+18	arama	arama	SCONJ	SCONJ	_	17	mark	_	TokenRange=92:97
+19	Poronominare	poronominare	PROPN	PROPN	_	17	obl	_	TokenRange=98:110
+20	suí	suí	ADP	ADP	_	19	case	_	SpaceAfter=No|TokenRange=111:114
+21	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=114:115
+
+# sent_id = Avila2021:0:0:153
+# text = Porominare usú yeperesé uyuuka patawá raintí, umunhã tamanduá rikwara.
+# text_eng = Porominare immediately went to take the stalk of the patauá, [with it] he made the anus of the anteater.
+# text_por = Porominare foi logo tirar talo de patauá, [com ele] fez o ânus do tamanduá.
+# text_source = Amorim, 168, adap.
+1	Porominare	porominare	PROPN	PROPN	_	4	nsubj	_	TokenRange=0:10
+2	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	4	aux	_	TokenRange=11:14
+3	yeperesé	yeperesé	ADV	ADV	_	4	advmod	_	TokenRange=15:23
+4	uyuuka	yuuka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=24:30
+5	patawá	patawá	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=31:37
+6	raintí	saintí	NOUN	N	Number=Sing|Rel=Cont	4	obj	_	SpaceAfter=No|TokenRange=38:44
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=44:45
+8	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=46:52
+9	tamanduá	tamanduá	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=53:61
+10	rikwara	tikwara	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	SpaceAfter=No|TokenRange=62:69
+11	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
+
+# sent_id = Avila2021:0:0:154
+# text = Awá yakwaíma kurí umbeú arama kunhã-itá supé kwá yumimisawa umanú kurí yeperesé.
+# text_eng = Whoever is foolish enough to tell women this secret will die immediately.
+# text_por = Quem for sem juízo para contar às mulheres este segredo morrerá imediatamente.
+# text_source = Amorim, 367, adap.
+1	Awá	awá	PRON	INT	PronType=Int	2	nsubj	_	TokenRange=0:3
+2	yakwaíma	yakwaíma	ADJ	A	_	10	csubj	_	TokenRange=4:12
+3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	TokenRange=13:17
+4	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=18:23
+5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
+6	kunhã-itá	kunhã	NOUN	N	Number=Plur	4	obl	_	TokenRange=30:39
+7	supé	supé	ADP	ADP	_	6	case	_	TokenRange=40:44
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=45:48
+9	yumimisawa	yumimisawa	NOUN	N	Number=Sing	4	obj	_	TokenRange=49:59
+10	umanú	manú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=60:65
+11	kurí	kurí	PART	FUT	Tense=Fut	10	advmod	_	TokenRange=66:70
+12	yeperesé	yeperesé	ADV	ADV	_	10	advmod	_	SpaceAfter=No|TokenRange=71:79
+13	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=79:80
+
+# sent_id = Avila2021:0:0:155
+# text = Pemaã, wirandé asú amukameẽ penhẽ arã iwité, pemunhã arã pe kupixá pe rimirikú-itá irumu.
+# text_eng = See, tomorrow I'm going to show you land, so that you can make your gardens with your wives.
+# text_por = Vejam, amanhã eu vou mostrar para vocês terra firme, para que vocês façam suas roças com as suas esposas.
+# text_source = Casasnovas, 94, adap.
+1	Pemaã	maã	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
+3	wirandé	wirandé	ADV	ADV	_	5	advmod	_	TokenRange=7:14
+4	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	TokenRange=15:18
+5	amukameẽ	mukameẽ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=19:27
+6	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	5	iobj	_	TokenRange=28:33
+7	arã	arã	ADP	ADP	_	6	case	_	TokenRange=34:37
+8	iwité	iwité	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=38:43
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=43:44
+10	pemunhã	munhã	VERB	V	Number=Plur|Person=2|VerbForm=Fin	5	advcl	_	TokenRange=45:52
+11	arã	arã	SCONJ	SCONJ	_	10	mark	_	TokenRange=53:56
+12	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=57:59
+13	kupixá	kupixá	NOUN	N	Number=Sing	10	obj	_	TokenRange=60:66
+14	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=67:69
+15	rimirikú-itá	simirikú	NOUN	N	Number=Plur|Rel=Cont	10	obl	_	TokenRange=70:82
+16	irumu	irumu	ADP	ADP	_	15	case	_	SpaceAfter=No|TokenRange=83:88
+17	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=88:89
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.

@@ -26,7 +26,7 @@ NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
 'jesus', 'kristu', 'deus', 'kurukuí', 'augusto', 'yuruparí',
 'iahuixa', 'buopé','rairú','isana',
 'pirayawara','matapí','uauhi', 'uanskẽ',
-'porominare', 'karu', 'kukuí', 'pitiápo']
+'porominare', 'poronominare', 'karu', 'kukuí', 'pitiápo']
 
 def propernames(namelist=NAMES):
     dic={}
