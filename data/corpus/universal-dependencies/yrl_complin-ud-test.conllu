@@ -3382,6 +3382,76 @@
 16	irumu	irumu	ADP	ADP	_	15	case	_	SpaceAfter=No|TokenRange=83:88
 17	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=88:89
 
+# sent_id = Avila2021:0:0:156
+# text = Yasú se irumu se ruka kití!
+# text_eng = Come with me to my house!
+# text_por = Vamos comigo para a minha casa!
+# text_source = Rodrigues, 83, adap.
+1	Yasú	sú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=5:7
+3	irumu	irumu	ADP	ADP	_	2	case	_	TokenRange=8:13
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=14:16
+5	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=17:21
+6	kití	kití	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=22:26
+7	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Avila2021:14:1:157
+# text = Nẽ paá uxari i manha.
+# text_eng = They say he didn't leave his mother.
+# text_por = Dizem que ele não deixava sua mãe.
+# text_source = Rodrigues, 233, adap.
+1	Nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=3:6
+3	uxari	xari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=13:14
+5	manha	manha	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=15:20
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Avila2021:14:2:158
+# text = Makití i manha usú, usú i irumu.
+# text_eng =  Where her mother went, he went with her.
+# text_por = Para onde sua mãe ia, ele ia com ela.
+# text_source = Rodrigues, 233, adap.
+1	Makití	makití	ADV	ADVR	_	4	advmod	_	TokenRange=0:6
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:8
+3	manha	manha	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=9:14
+4	usú	sú	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	SpaceAfter=No|TokenRange=15:18
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=18:19
+6	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:23
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=24:25
+8	irumu	irumu	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=26:31
+9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Avila2021:14:1:159
+# text = Ape tẽ uikú nhaã iwitera makití asú-putari wirandé.
+# text_eng = Right there is the mountain to which I want to go tomorrow.
+# text_por = Lá mesmo está a serra à qual eu quero ir amanhã.
+# text_source =
+# text_orig = Apé tẽ uikú nhaã iwitera makití asú-putari wirandé.
+1	Ape	ape	ADV	ADVD	PronType=Dem	0	root	_	TokenRange=0:3
+2	tẽ	tẽ	ADV	ADV	_	1	advmod	_	TokenRange=4:6
+3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	1	cop	_	TokenRange=7:11
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=12:16
+5	iwitera	iwitera	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=17:24
+6	makití	makití	ADV	ADVL	PronType=Rel	7	advmod	_	TokenRange=25:31
+7-8	asú-putari	_	_	_	_	_	_	_	TokenRange=32:42
+7	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	acl:relcl	_	_
+8	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	7	aux	_	_
+9	wirandé	wirandé	ADV	ADV	_	7	advmod	_	SpaceAfter=No|TokenRange=44:51
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=51:52
+
+# sent_id = Avila2021:14:1:160
+# text = Yamanú ramé, makití yasú?
+# text_eng = When we die, where do we go?
+# text_por = Quando morremos, para onde vamos? [corr. transl.]
+# text_source = Aguiar, 33, adap.
+1	Yamanú	manú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=0:6
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	SpaceAfter=No|TokenRange=7:11
+3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12
+4	makití	makití	ADV	ADVR	_	1	advmod	_	TokenRange=13:19
+5	yasú	sú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:24
+6	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=24:25
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.

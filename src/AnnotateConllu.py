@@ -44,7 +44,13 @@ def extractAuxiliaries(tag='aux.'):
 AUX = extractAuxiliaries()
 
 def extractAuxEntry(lemma):
-    return list(filter(lambda x: lemma == x.get('lemma'), AUX))
+    entry=dict()
+    entries=list(filter(lambda x: lemma == x.get('lemma'), AUX))
+    if entries:
+        entry.update(entries[0])
+    return entry
+
+
 
 def extractParticles(mapping):
     dic={}
@@ -440,12 +446,26 @@ def handleSconj0(token,tokenlist,verbs):
                     break
                 j=j-1
 
-def handleAdv(token,verbs):
+def handleAdv(token,tokenlist,verbs):
     token['deprel']='advmod'
-    if token['xpos']=='ADVD':
+    if token['xpos']=='ADVL':
+        previous=getPreviousToken(token,tokenlist)
         token['feats']={}
-        token['feats'].update({'PronType': 'Dem'})
-    token['head']=getHeadVerb(token,verbs)
+        token['feats'].update({'PronType': 'Rel'})
+        nouns=TokensOfCatList(tokenlist,'NOUN')
+        nounid=previousCat(token,nouns)
+        headid=nextVerb(token,verbs)
+        token['head']=headid
+        headlist=tokenlist.filter(id=headid)
+        if headlist:
+            head=headlist[0]
+            head['deprel']='acl:relcl'
+            head['head']=previous['id']
+    else:
+        token['head']=getHeadVerb(token,verbs)
+        if token['xpos']=='ADVD':
+            token['feats']={}
+            token['feats'].update({'PronType': 'Dem'})
 
 def handleAdv0(token,verbs):
     token['deprel']='advmod'
@@ -643,12 +663,20 @@ def setUposXpos(verb,pos):
     verb['xpos'] = pos
     verb['upos'] = UDTAGS[pos]
 
-def sameClause(headid,punctid):
-    return headid > punctid
+def inInterval(num,begin,end):
+    return begin < num < end
+
+def sameClause(headid,previous,next):
+    return inInterval(headid,previous,next)
+
+def handleSameClause(verb,pos,headid,previous,next):
+    if sameClause(headid,previous,next):
+        headAux(verb,headid)
+        setUposXpos(verb,pos)
 
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
-    puncts=nouns=TokensOfCatList(tokenlist,'PUNCT')
+    puncts=TokensOfCatList(tokenlist,'PUNCT')
     c=len(verbs)
     if c == 1:
         if verbs[0]['lemma'] == 'ikú':
@@ -660,21 +688,24 @@ def handleAux(tokenlist):
         for verb in verbs:
             verbid=verb['id']
             lemma=verb['lemma']
-            entries=extractAuxEntry(lemma)
-            pos=''
-            if entries:
-                pos=entries[0]['pos']
+            entry=extractAuxEntry(lemma)
+            pos=entry.get('pos')
+            previous=previousCat(verb,puncts)
+            next=nextCat(verb,puncts)
+            headid=0
             if pos == 'AUXFR':
-                headid=nextVerb(verb,verbs)
-                headAux(verb,headid)
-                setUposXpos(verb,pos)
+                i=verbs.index(verb)
+                if i+1 < len(verbs):
+                    nextverb=verbs[i+1]
+                    feats=nextverb.get('feats')
+                    if feats and feats.get('Compound'):
+                        pass
+                    else:
+                        headid=nextVerb(verb,verbs)
+                        handleSameClause(verb,pos,headid,previous,next)
             elif pos == 'AUXFS' or pos == 'AUXN':
-                # TODO: get id previous PUNCT, headid > punctid
-                punctid=previousCat(verb,puncts)
                 headid=previousVerb(verb,verbs)
-                if sameClause(headid,punctid):
-                    headAux(verb,headid)
-                    setUposXpos(verb,pos)
+                handleSameClause(verb,pos,headid,previous,next)
             else:
                 pass # TODO: ccomp, xcomp, advcl
 
@@ -805,7 +836,7 @@ def addFeatures(tokenlist):
         elif upos == "CCONJ":
             handleCconj(token,verbs)
         elif upos == "ADV":
-            handleAdv(token,verbs)
+            handleAdv(token,tokenlist,verbs)
         elif upos in ("DET","NUM"):
             handleDetNum(upos,token,nextToken,tokenlist,verbs)
         if nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
