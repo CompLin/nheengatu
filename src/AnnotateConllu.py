@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 25, 2022
+# Last update: November 6, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
@@ -449,7 +449,7 @@ def handleSconj0(token,tokenlist,verbs):
 def handleAdv(token,tokenlist,verbs):
     token['deprel']='advmod'
     if token['xpos']=='ADVL':
-        previous=getPreviousToken(token,tokenlist)
+        previous=getPreviousToken(token,tokenlist,skip='PUNCT')
         token['feats']={}
         token['feats'].update({'PronType': 'Rel'})
         nouns=TokensOfCatList(tokenlist,'NOUN')
@@ -578,14 +578,14 @@ def getNextToken(token,tokenlist):
         if t['form'] != token['form']:
             return t
 
-def getPreviousToken(token,tokenlist):
+def getPreviousToken(token,tokenlist,skip=''):
     index=tokenlist.index(token)
     c=len(tokenlist[:index])
     if c > 1:
         i=c-1
         while(i >= 0):
             previous=tokenlist[i]
-            if previous['form'] != token['form']:
+            if previous['form'] != token['form'] and previous['upos'] != skip:
                 return previous
             i=i-1
     elif c == 1:
