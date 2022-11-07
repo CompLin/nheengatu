@@ -3538,6 +3538,70 @@
 3	makití	makití	ADV	ADVR	_	0	root	_	SpaceAfter=No|TokenRange=4:10
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=10:11
 
+# sent_id = Avila2021:0:0:167
+# text = Tenupá, ara ramé ayuká aé.
+# text_eng = Let it be, I'll kill him during the day.
+# text_por = Deixa estar, eu o mato de dia.
+# text_source = Amorim, 157, adap.
+1	Tenupá	tenupá	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No|TokenRange=0:6
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=6:7
+3	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=8:11
+4	ramé	ramé	ADP	ADP	_	3	case	_	TokenRange=12:16
+5	ayuká	yuká	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=17:22
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=23:25
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Avila2021:17:1:168
+# text = Tenupá!
+# text_eng = Let it be!
+# text_por = Deixe estar!
+# text_source = Magalhães, 184, adap.
+1	Tenupá	tenupá	INTJ	INTJ	_	0	root	_	SpaceAfter=No|TokenRange=0:6
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Avila2021:17:2:169
+# text = Amú ara ayuyuantí kurí ne irumu.
+# text_eng =  Someday I will meet you.
+# text_por = Algum dia eu me encontrarei com você.
+# text_source = Magalhães, 184, adap.
+1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
+2	ara	ara	NOUN	N	Number=Sing	3	obl	_	TokenRange=4:7
+3	ayuyuantí	yuyuantí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=8:17
+4	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=18:22
+5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	obl	_	TokenRange=23:25
+6	irumu	irumu	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=26:31
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Avila2021:0:0:170
+# text = Yautí mirĩ usú ana usikari i anama-itá, uyuyuantí suasú irumu.
+# text_eng = The little tortoise went to look for his relatives, it met the deer.
+# text_por = O pequeno jabuti foi procurar seus parentes, encontrou-se com o veado.
+# text_source = Magalhães, 185, adap.
+1	Yautí	yautí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:5
+2	mirĩ	mirĩ	ADJ	A	_	1	amod	_	TokenRange=6:10
+3	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	5	aux	_	TokenRange=11:14
+4	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=15:18
+5	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=19:26
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=27:28
+7	anama-itá	anama	NOUN	N	Number=Plur	5	obj	_	SpaceAfter=No|TokenRange=29:38
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=38:39
+9	uyuyuantí	yuyuantí	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=40:49
+10	suasú	suasú	NOUN	N	Number=Sing	9	obl	_	TokenRange=50:55
+11	irumu	irumu	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=56:61
+12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=61:62
+
+# sent_id = Avila2021:0:0:171
+# text = Aintá uyuyuantí se ruka upé.
+# text_eng = They met at my house.
+# text_por = Eles encontraram-se na minha casa.
+# text_source =
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	uyuyuantí	yuyuantí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:15
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=16:18
+4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=19:23
+5	upé	upé	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=24:27
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.
