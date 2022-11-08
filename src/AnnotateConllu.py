@@ -20,7 +20,7 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
 'ADVJ': 'ADV', 'ADVD': 'ADV',
-'ADVL': 'ADV', 'A2': 'VERB',
+'ADVL': 'ADV', 'ADVG': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
@@ -360,6 +360,10 @@ def headPartPreviousVerb0(token,verbs):
         else:
             headPartNextVerb(token,verbs)
 
+def handleIntj(token,verbs):
+    token['deprel'] = 'discourse'
+    headPartNextVerb(token,verbs)
+
 def handlePart(token,verbs):
     mapping= {
     'PQ': {'PartType': 'Int','QestType':'Polar'},
@@ -372,6 +376,7 @@ def handlePart(token,verbs):
     'FUT': {'PartType': 'Tam','Tense':'Fut'},
     'PRET': {'PartType': 'Tam','Tense':'Past'},
     'EXST': {'PartType': 'Exs'},
+    'CERT': {'PartType': 'Mod'}
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
@@ -381,6 +386,9 @@ def handlePart(token,verbs):
         headPartNextVerb(token,verbs)
     elif xpos == 'RPRT':
         updateFeats(token,'Evident','Nfh')
+        updateFeats(token,'PartType', 'Mod')
+        headPartPreviousVerb(token,verbs)
+    elif xpos == 'CERT':
         updateFeats(token,'PartType', 'Mod')
         headPartPreviousVerb(token,verbs)
     elif xpos == 'PFV':
@@ -448,10 +456,9 @@ def handleSconj0(token,tokenlist,verbs):
 
 def handleAdv(token,tokenlist,verbs):
     token['deprel']='advmod'
+    previous=getPreviousToken(token,tokenlist,skip='PUNCT')
     if token['xpos']=='ADVL':
-        previous=getPreviousToken(token,tokenlist,skip='PUNCT')
-        token['feats']={}
-        token['feats'].update({'PronType': 'Rel'})
+        updateFeats(token,'PronType', 'Rel')
         nouns=TokensOfCatList(tokenlist,'NOUN')
         nounid=previousCat(token,nouns)
         headid=nextVerb(token,verbs)
@@ -461,11 +468,19 @@ def handleAdv(token,tokenlist,verbs):
             head=headlist[0]
             head['deprel']='acl:relcl'
             head['head']=previous['id']
+    elif token['xpos']=='ADVG':
+        token['head']=previous['id']
+        next=getNextToken(token,tokenlist)
+        updateFeats(token,'AdvType','Deg')
+        feats=next.get('feats')
+        if feats and feats.get('PronType') == 'Rel':
+            updateFeats(token,'Degree','Sup')
+        else:
+            updateFeats(token,'Degree','Cmp')
     else:
         token['head']=getHeadVerb(token,verbs)
         if token['xpos']=='ADVD':
-            token['feats']={}
-            token['feats'].update({'PronType': 'Dem'})
+            updateFeats(token,'PronType', 'Dem')
 
 def handleAdv0(token,verbs):
     token['deprel']='advmod'
@@ -826,6 +841,8 @@ def addFeatures(tokenlist):
                     handlePron(token,nextToken)
         elif upos == "PART":
             handlePart(token,verbs)
+        elif upos == "INTJ":
+            handleIntj(token,verbs)
         elif upos == "VERB":
             pass
             # TODO: handleVerb(token,nextToken,verbs)
@@ -900,6 +917,9 @@ def handleHyphen(form):
         dic['hyphen']=True
     return dic
 
+def mkPropn(form):
+    return [[form.lower(), 'PROPN']]
+
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
     ident=1
@@ -912,7 +932,10 @@ def mkConlluSentence(tokens):
         form=dic.get('form')
         parselist=getparselist(form.lower())
         if tag:
-            newparselist=filterparselist(tag,parselist)
+            if tag == 'p':
+                newparselist=mkPropn(token)
+            else:
+                newparselist=filterparselist(tag,parselist)
             if newparselist:
                 parselist=newparselist
         entries=extract_feats(parselist)

@@ -2024,7 +2024,7 @@
 # text_por = Então a pedra cresceu mais ainda, Rairu não pôde mais andar.
 # text_source = Rodrigues, 246, adap.
 1	Aramé	aramé	ADV	ADV	_	3	advmod	_	TokenRange=0:5
-2	piri	piri	ADV	ADV	_	3	advmod	_	TokenRange=6:10
+2	piri	piri	ADV	ADV	AdvType=Deg|Degree=Cmp	3	advmod	_	TokenRange=6:10
 3	uyumunhã	yumunhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
 4	itá	itá	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=20:23
 5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=23:24
@@ -2042,7 +2042,7 @@
 # text_por = Então a pedra cresceu ainda mais.
 # text_source = Rodrigues, 246, adap.
 1	Aramé	aramé	ADV	ADV	_	3	advmod	_	TokenRange=0:5
-2	piri	piri	ADV	ADV	_	3	advmod	_	TokenRange=6:10
+2	piri	piri	ADV	ADV	AdvType=Deg|Degree=Cmp	3	advmod	_	TokenRange=6:10
 3	uyumunhã	yumunhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
 4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=20:24
 5	itá	itá	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=25:28
@@ -2326,7 +2326,7 @@
 13	anhũ	anhũ	ADV	ADV	_	12	advmod	_	TokenRange=74:78
 14	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	12	obl	_	TokenRange=79:83
 15	kirimbawa	kirimbawa	ADJ	A	_	14	acl:relcl	_	TokenRange=84:93
-16	piri	piri	ADV	ADV	_	15	advmod	_	TokenRange=94:98
+16	piri	piri	ADV	ADV	AdvType=Deg|Degree=Sup	15	advmod	_	TokenRange=94:98
 17	waá	waá	PRON	REL	Number=Sing	15	nsubj	_	TokenRange=99:102
 18	tetamawara-itá	tetamawara	NOUN	N	Number=Plur	14	nmod	_	TokenRange=103:117
 19	suiwara	suiwara	ADP	ADP	_	18	case	_	TokenRange=118:125
@@ -2735,7 +2735,7 @@
 18	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	19	det	_	TokenRange=82:86
 19	inayá	inayá	NOUN	N	Number=Sing	15	obj	_	TokenRange=87:92
 20	turusú	turusú	ADJ	A	_	19	acl:relcl	_	TokenRange=93:99
-21	piri	piri	ADV	ADV	_	20	advmod	_	TokenRange=100:104
+21	piri	piri	ADV	ADV	AdvType=Deg|Degree=Sup	20	advmod	_	TokenRange=100:104
 22	waá	waá	PRON	REL	Number=Sing	21	nsubj	_	SpaceAfter=No|TokenRange=105:108
 23	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=108:109
 24	yawé	yawé	ADV	ADV	_	27	advmod	_	TokenRange=110:114
@@ -3521,7 +3521,7 @@
 2	Ah	ah	INTJ	INTJ	_	9	discourse	_	SpaceAfter=No|TokenRange=1:3
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=3:4
 4	kuíri	kuíri	ADV	ADV	_	9	advmod	_	TokenRange=5:10
-5	supí	supí	ADV	ADV	_	9	advmod	_	SpaceAfter=No|TokenRange=11:15
+5	supí	supí	PART	CERT	PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=11:15
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=15:16
 7	makití	makití	ADV	ADVR	_	9	advmod	_	TokenRange=17:23
 8	taá	taá	PART	CQ	PartType=Int	9	advmod	_	TokenRange=24:27
@@ -3601,6 +3601,62 @@
 4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=19:23
 5	upé	upé	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=24:27
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Avila2021:0:0:172
+# text = Kuíri supí, yautí, akwáu ana indé apigawa piri se suí.
+# text_eng = Now yes, tortoise, I already know that you are manlier than I am.
+# text_por = Agora sim, jabuti, eu já sei que tu és mais macho do que eu.
+# text_source = Magalhães, 218, adap.
+1	Kuíri	kuíri	ADV	ADV	_	6	advmod	_	TokenRange=0:5
+2	supí	supí	PART	CERT	PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:10
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
+4	yautí	yautí	NOUN	N	Number=Sing	6	vocative	_	SpaceAfter=No|TokenRange=12:17
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=17:18
+6	akwáu	kwáu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=19:24
+7	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=25:28
+8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	TokenRange=29:33
+9	apigawa	apigawa	ADJ	A	_	6	ccomp	_	TokenRange=34:41
+10	piri	piri	ADV	ADV	AdvType=Deg|Degree=Cmp	9	advmod	_	TokenRange=42:46
+11	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	obl	_	TokenRange=47:49
+12	suí	suí	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=50:53
+13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Avila2021:0:0:173
+# text = Indé kirimbawa piri amú-itá suí.
+# text_eng = You are stronger than the others.
+# text_por = Tu és mais forte que os outros.
+# text_source = Hartt, 369, adap.
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
+2	kirimbawa	kirimbawa	ADJ	A	_	0	root	_	TokenRange=5:14
+3	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	2	advmod	_	TokenRange=15:19
+4	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	2	obl	_	TokenRange=20:27
+5	suí	suí	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=28:31
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Avila2021:0:0:174
+# text = Yepé ara paá wainambí uyusaã manguarí irumu, ta umaã arã awá taá kutara piri uyasá paranawasú.
+# text_eng = One day, they say, the hummingbird competed with the maguari, for them to see who crossed the sea faster.
+# text_por = Um dia, contam, o beija-flor disputou com o maguari, para eles verem quem atravessava mais rapidamente o mar.
+# text_source = Casasnovas, 92
+# text_orig = Yepé ara paá wainambí uyusaã mangwarí irumu, ta umaã arã awá taá kutara piri uyasá paranawasú.
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=9:12
+4	wainambí	wainambí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:21
+5	uyusaã	yusaã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=22:28
+6	manguarí	manguarí	NOUN	N	Number=Sing	5	obl	_	TokenRange=29:37
+7	irumu	irumu	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=38:43
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=43:44
+9	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=45:47
+10	umaã	maã	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=48:52
+11	arã	arã	SCONJ	SCONJ	_	10	mark	_	TokenRange=53:56
+12	awá	awá	PRON	INT	PronType=Int	16	nsubj	_	TokenRange=57:60
+13	taá	taá	PART	CQ	PartType=Int	16	advmod	_	TokenRange=61:64
+14	kutara	kutara	ADV	ADV	_	16	advmod	_	TokenRange=65:71
+15	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	14	advmod	_	TokenRange=72:76
+16	uyasá	yasá	VERB	V	Person=3|VerbForm=Fin	10	ccomp	_	TokenRange=77:82
+17	paranawasú	paranawasú	NOUN	N	Number=Sing	16	obj	_	SpaceAfter=No|TokenRange=83:93
+18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=93:94
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.

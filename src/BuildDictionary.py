@@ -21,6 +21,7 @@ adj.\tA\tadjetivo de 1ª cl.
 adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
 adv.\tADV\tadvérbio
 adv. dem.\tADVD\tadvérbio demonstrativo
+adv. gr.\tADVG\tadvérbio de grau
 adv. intensif.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
 adv. rel.\tADVL\tadvérbio relativo
@@ -45,6 +46,7 @@ part. perf.\tPFV\tpartícula de perfectivo
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
 part. afirm.\tAFF\tpartícula de afirmação
+part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
 part. fut.\tFUT\tpartícula de futuro
 part. frust.\tFRUST\tpartícula de frustativo
