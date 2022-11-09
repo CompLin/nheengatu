@@ -3658,6 +3658,133 @@
 17	paranawasú	paranawasú	NOUN	N	Number=Sing	16	obj	_	SpaceAfter=No|TokenRange=83:93
 18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=93:94
 
+# sent_id = Avila2021:18:1:175
+# text = Buburi, kirimbawa piri, uwitá amú ruaxara kití.
+# text_eng = Buburi, stronger, swam the other way.
+# text_por = Buburi, mais forte, nadou para o outro lado.
+# text_source = Casasnovas, 92, adap.
+1	Buburi	buburi	PROPN	PROPN	_	6	nsubj	_	SpaceAfter=No|TokenRange=0:6
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=6:7
+3	kirimbawa	kirimbawa	ADJ	A	_	1	acl	_	TokenRange=8:17
+4	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	3	advmod	_	SpaceAfter=No|TokenRange=18:22
+5	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=22:23
+6	uwitá	witá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=24:29
+7	amú	amú	DET	IND	Number=Sing|PronType=Ind	8	det	_	TokenRange=30:33
+8	ruaxara	suaxara	NOUN	N	Number=Sing|Rel=Cont	6	obl	_	TokenRange=34:41
+9	kití	kití	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=42:46
+10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=46:47
+
+# sent_id = Avila2021:18:2:176
+# text = Uyeréu amú pirantá, turusú piri, sera Buburi.
+# text_eng =  It turned into another waterfall, bigger, called Buburi.
+# text_por = Virou outra cachoeira, maior, chamada Buburi.
+# text_source = Casasnovas, 92, adap.
+1	Uyeréu	yeréu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	amú	amú	DET	IND	Number=Sing|PronType=Ind	3	det	_	TokenRange=7:10
+3	pirantá	pirantá	NOUN	N	Number=Sing	1	xcomp	_	SpaceAfter=No|TokenRange=11:18
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+5	turusú	turusú	ADJ	A	_	3	acl	_	TokenRange=20:26
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=27:31
+7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=31:32
+8	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	nsubj	_	TokenRange=33:37
+9	Buburi	buburi	PROPN	PROPN	_	5	parataxis	_	SpaceAfter=No|TokenRange=38:44
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = Avila2021:0:0:177
+# text = Panhẽ urikú aintá piá surí, uyapukúi puranga, satambika paranawasú pitera kití, ti umaã sakakwera kití, yandara upituú umbaú arama.
+# text_eng = Everyone had a happy heart, they rowed well, straight into the middle of the big river, they didn't look back, at noon they stopped to eat.
+# text_por = Todos tinham alegre seu coração, remaram bem, direto para o meio do rio grande, não olharam para trás, ao meio-dia pararam para comer.
+# text_source = Amorim, 196, adap.
+1	Panhẽ	panhẽ	PRON	TOT	PronType=Tot	2	nsubj	_	TokenRange=0:5
+2	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:17
+4	piá	piá	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=18:21
+5	surí	rurí	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	2	xcomp	_	SpaceAfter=No|TokenRange=22:26
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=26:27
+7	uyapukúi	yapukúi	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=28:36
+8	puranga	puranga	ADV	ADV	_	7	advmod	_	SpaceAfter=No|TokenRange=37:44
+9	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=44:45
+10	satambika	satambika	ADV	ADV	_	7	advmod	_	TokenRange=46:55
+11	paranawasú	paranawasú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=56:66
+12	pitera	pitera	NOUN	N	Number=Sing	7	obl	_	TokenRange=67:73
+13	kití	kití	ADP	ADP	_	12	case	_	SpaceAfter=No|TokenRange=74:78
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=78:79
+15	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	16	advmod	_	TokenRange=80:82
+16	umaã	maã	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=83:87
+17	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	16	obl	_	TokenRange=88:97
+18	kití	kití	ADP	ADP	_	17	case	_	SpaceAfter=No|TokenRange=98:102
+19	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=102:103
+20	yandara	yandara	NOUN	N	Number=Sing	21	obl	_	TokenRange=104:111
+21	upituú	pituú	VERB	V	Person=3|VerbForm=Fin	16	parataxis	_	TokenRange=112:118
+22	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	21	advcl	_	TokenRange=119:124
+23	arama	arama	SCONJ	SCONJ	_	22	mark	_	SpaceAfter=No|TokenRange=125:130
+24	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=130:131
+
+# sent_id = Avila2021:0:0:178
+# text = Nhaãsé paá nhaã yawareté-itá, ta akanga upitá ta rakwera kití.
+# text_eng = Because these jaguars, their heads are turned back.
+# text_por = Porque essas onças, a cabeça delas fica para trás.
+# text_source = Leetra Indígena. n. 17, 51, adap.
+1	Nhaãsé	nhaãsé	ADV	ADVJ	_	8	advmod	_	TokenRange=0:6
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	TokenRange=7:10
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
+4	yawareté-itá	yawareté	NOUN	N	Number=Plur	8	dislocated	_	SpaceAfter=No|TokenRange=16:28
+5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=28:29
+6	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:32
+7	akanga	akanga	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=33:39
+8	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=40:45
+9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=46:48
+10	rakwera	sakwera	NOUN	N	Number=Sing|Rel=Cont	8	obl	_	TokenRange=49:56
+11	kití	kití	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=57:61
+12	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=61:62
+
+# sent_id = Avila2021:0:0:179
+# text = Tapiíra uwatá sakakwera kití, ariré uyuíri panhẽ pirantasawa irumu, upirú satambika tẽ yawawira piísawa resé, xake!
+# text_eng = The tapir recoiled, then came with all its strength, stomping right on top of the stingray's stinger, kick!
+# text_por = A anta recuou, depois veio com toda a força, pisou direto mesmo em cima do ferrão da arraia, xaque!
+# text_source = Amorim, 161, adap.
+# text_orig = Tapiira uwatá sakakwera kití, ariré uyuíri panhẽ pirantasawa irumu, upirú satambika tẽ yawawira piisawa resé, xake!
+1	Tapiíra	tapiíra	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
+2	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
+3	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obl	_	TokenRange=14:23
+4	kití	kití	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=24:28
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
+6	ariré	ariré	ADV	ADV	_	7	advmod	_	TokenRange=30:35
+7	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=36:42
+8	panhẽ	panhẽ	DET	TOT	PronType=Tot	9	det	_	TokenRange=43:48
+9	pirantasawa	pirantasawa	NOUN	N	Number=Sing	7	obl	_	TokenRange=49:60
+10	irumu	irumu	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=61:66
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=66:67
+12	upirú	pirú	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=68:73
+13	satambika	satambika	ADV	ADV	_	12	advmod	_	TokenRange=74:83
+14	tẽ	tẽ	ADV	ADV	_	12	advmod	_	TokenRange=84:86
+15	yawawira	yawawira	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=87:95
+16	piísawa	piísawa	NOUN	N	Number=Sing	12	obl	_	TokenRange=96:103
+17	resé	resé	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=104:108
+18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=108:109
+19	xake	xake	INTJ	INTJ	_	12	discourse	_	SpaceAfter=No|TokenRange=110:114
+20	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=114:115
+
+# sent_id = Avila2021:0:0:180
+# text = Rembeú ne resewara kwá tetama supé, maãresé ti ana kurí repirú sesé.
+# text_eng = Say goodbye to this land, for you will never set foot on it again.
+# text_por = Despede-te desta terra, porque nunca mais pisarás nela.
+# text_source = Amorim, 445, adap.
+1	Rembeú	mbeú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=7:9
+3	resewara	resewara	ADP	ADP	Rel=Cont	2	case	_	TokenRange=10:18
+4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=19:22
+5	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=23:29
+6	supé	supé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=30:34
+7	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=34:35
+8	maãresé	maãresé	SCONJ	SCONJ	_	12	mark	_	TokenRange=36:43
+9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=44:46
+10	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	TokenRange=47:50
+11	kurí	kurí	PART	FUT	Tense=Fut	12	advmod	_	TokenRange=51:55
+12	repirú	pirú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	1	advcl	_	TokenRange=56:62
+13	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	12	obl	_	SpaceAfter=No|TokenRange=63:67
+14	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=67:68
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_eng = Ele casou com uma uerequena.

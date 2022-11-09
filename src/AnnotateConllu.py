@@ -364,7 +364,7 @@ def handleIntj(token,verbs):
     token['deprel'] = 'discourse'
     headPartNextVerb(token,verbs)
 
-def handlePart(token,verbs):
+def handlePart(token,tokenlist,verbs):
     mapping= {
     'PQ': {'PartType': 'Int','QestType':'Polar'},
     'CQ': {'PartType': 'Int','QestType':'Content'},
@@ -392,13 +392,15 @@ def handlePart(token,verbs):
         updateFeats(token,'PartType', 'Mod')
         headPartPreviousVerb(token,verbs)
     elif xpos == 'PFV':
-        headPartPreviousVerb(token,verbs)
+        #headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
         updateFeats(token,'Aspect','Perf')
     elif xpos == 'FRUST':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'Aspect','Frus')
     elif xpos == 'FUT':
-        headPartPreviousVerb(token,verbs)
+        #headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
         updateFeats(token,'Tense','Fut')
     elif xpos == 'PRET':
         headPartPreviousVerb(token,verbs)
@@ -454,6 +456,18 @@ def handleSconj0(token,tokenlist,verbs):
                     break
                 j=j-1
 
+def previousPunct(token,tokenlist):
+    puncts=TokensOfCatList(tokenlist,'PUNCT')
+    return previousCat(token,puncts)
+
+def getAdvHead(token,tokenlist,verbs):
+    punctid=previousPunct(token,tokenlist)
+    headid=previousVerb(token,verbs)
+    tokenid=token['id']
+    if not inInterval(headid,punctid,tokenid):
+        headid=nextVerb(token,verbs)
+    return headid
+
 def handleAdv(token,tokenlist,verbs):
     token['deprel']='advmod'
     previous=getPreviousToken(token,tokenlist,skip='PUNCT')
@@ -478,7 +492,7 @@ def handleAdv(token,tokenlist,verbs):
         else:
             updateFeats(token,'Degree','Cmp')
     else:
-        token['head']=getHeadVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
         if token['xpos']=='ADVD':
             updateFeats(token,'PronType', 'Dem')
 
@@ -840,7 +854,7 @@ def addFeatures(tokenlist):
                 if upos == 'PRON':
                     handlePron(token,nextToken)
         elif upos == "PART":
-            handlePart(token,verbs)
+            handlePart(token,tokenlist,verbs)
         elif upos == "INTJ":
             handleIntj(token,verbs)
         elif upos == "VERB":
