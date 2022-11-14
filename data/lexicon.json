@@ -14,19 +14,25 @@
     "-me": [
         [
             "-me",
-            "None"
+            "CLADP"
         ]
     ],
     "-ntu": [
         [
             "-ntu",
-            "None"
+            "CLADV"
         ]
     ],
     "-pawa": [
         [
             "-pawa",
             "SUFF"
+        ]
+    ],
+    "-pe": [
+        [
+            "-pe",
+            "CLADP"
         ]
     ],
     "-pura": [
@@ -941,6 +947,58 @@
             "INTJ"
         ]
     ],
+    "embiwa-itá": [
+        [
+            "embiwa",
+            "N+ABS+PL"
+        ]
+    ],
+    "embiwa": [
+        [
+            "embiwa",
+            "N+ABS+SG"
+        ]
+    ],
+    "rembiwa-itá": [
+        [
+            "embiwa",
+            "N+CONT+PL"
+        ],
+        [
+            "tembiwa",
+            "N+CONT+PL"
+        ]
+    ],
+    "rembiwa": [
+        [
+            "embiwa",
+            "N+CONT+SG"
+        ],
+        [
+            "tembiwa",
+            "N+CONT+SG"
+        ]
+    ],
+    "sembiwa-itá": [
+        [
+            "embiwa",
+            "N+NCONT+PL"
+        ],
+        [
+            "tembiwa",
+            "N+NCONT+PL"
+        ]
+    ],
+    "sembiwa": [
+        [
+            "embiwa",
+            "N+NCONT+SG"
+        ],
+        [
+            "tembiwa",
+            "N+NCONT+SG"
+        ]
+    ],
     "eré": [
         [
             "eré",
@@ -1221,13 +1279,13 @@
             "V+3"
         ]
     ],
-    "tauikupukú": [
+    "taikupukú": [
         [
             "ikupukú",
             "V+3+PL"
         ]
     ],
-    "taikupukú": [
+    "tauikupukú": [
         [
             "ikupukú",
             "V+3+PL"
@@ -1291,6 +1349,42 @@
         [
             "ikú",
             "V+NFIN"
+        ]
+    ],
+    "imbiwa-itá": [
+        [
+            "imbiwa",
+            "N+ABS+PL"
+        ]
+    ],
+    "imbiwa": [
+        [
+            "imbiwa",
+            "N+ABS+SG"
+        ]
+    ],
+    "rimbiwa-itá": [
+        [
+            "imbiwa",
+            "N+CONT+PL"
+        ]
+    ],
+    "rimbiwa": [
+        [
+            "imbiwa",
+            "N+CONT+SG"
+        ]
+    ],
+    "simbiwa-itá": [
+        [
+            "imbiwa",
+            "N+NCONT+PL"
+        ]
+    ],
+    "simbiwa": [
+        [
+            "imbiwa",
+            "N+NCONT+SG"
         ]
     ],
     "inambú-itá": [
@@ -2221,13 +2315,13 @@
             "V+3"
         ]
     ],
-    "taukaú": [
+    "takaú": [
         [
             "kaú",
             "V+3+PL"
         ]
     ],
-    "takaú": [
+    "taukaú": [
         [
             "kaú",
             "V+3+PL"
@@ -2275,13 +2369,13 @@
             "V+3"
         ]
     ],
-    "takiri": [
+    "taukiri": [
         [
             "kiri",
             "V+3+PL"
         ]
     ],
-    "taukiri": [
+    "takiri": [
         [
             "kiri",
             "V+3+PL"
@@ -2651,13 +2745,13 @@
             "V+3"
         ]
     ],
-    "taukupiri": [
+    "takupiri": [
         [
             "kupiri",
             "V+3+PL"
         ]
     ],
-    "takupiri": [
+    "taukupiri": [
         [
             "kupiri",
             "V+3+PL"
@@ -3185,13 +3279,13 @@
             "V+3"
         ]
     ],
-    "takwáu": [
+    "taukwáu": [
         [
             "kwáu",
             "V+3+PL"
         ]
     ],
-    "taukwáu": [
+    "takwáu": [
         [
             "kwáu",
             "V+3+PL"
@@ -3487,13 +3581,13 @@
             "V+3"
         ]
     ],
-    "tamanduári": [
+    "taumanduári": [
         [
             "manduári",
             "V+3+PL"
         ]
     ],
-    "taumanduári": [
+    "tamanduári": [
         [
             "manduári",
             "V+3+PL"
@@ -3733,13 +3827,13 @@
             "V+3"
         ]
     ],
-    "tamanú": [
+    "taumanú": [
         [
             "manú",
             "V+3+PL"
         ]
     ],
-    "taumanú": [
+    "tamanú": [
         [
             "manú",
             "V+3+PL"
@@ -3793,13 +3887,13 @@
             "V+3"
         ]
     ],
-    "taumaramunha": [
+    "tamaramunha": [
         [
             "maramunha",
             "V+3+PL"
         ]
     ],
-    "tamaramunha": [
+    "taumaramunha": [
         [
             "maramunha",
             "V+3+PL"
@@ -4143,13 +4237,13 @@
             "V+3"
         ]
     ],
-    "taumaã": [
+    "tamaã": [
         [
             "maã",
             "V+3+PL"
         ]
     ],
-    "tamaã": [
+    "taumaã": [
         [
             "maã",
             "V+3+PL"
@@ -4213,13 +4307,13 @@
             "V+3"
         ]
     ],
-    "tamaãĩ": [
+    "taumaãĩ": [
         [
             "maãĩ",
             "V+3+PL"
         ]
     ],
-    "taumaãĩ": [
+    "tamaãĩ": [
         [
             "maãĩ",
             "V+3+PL"
@@ -4261,13 +4355,13 @@
             "V+3"
         ]
     ],
-    "tambaú": [
+    "taumbaú": [
         [
             "mbaú",
             "V+3+PL"
         ]
     ],
-    "taumbaú": [
+    "tambaú": [
         [
             "mbaú",
             "V+3+PL"
@@ -4309,13 +4403,13 @@
             "V+3"
         ]
     ],
-    "tambeú": [
+    "taumbeú": [
         [
             "mbeú",
             "V+3+PL"
         ]
     ],
-    "taumbeú": [
+    "tambeú": [
         [
             "mbeú",
             "V+3+PL"
@@ -4569,13 +4663,13 @@
             "V+3"
         ]
     ],
-    "tamemũi": [
+    "taumemũi": [
         [
             "memũi",
             "V+3+PL"
         ]
     ],
-    "taumemũi": [
+    "tamemũi": [
         [
             "memũi",
             "V+3+PL"
@@ -4665,13 +4759,13 @@
             "V+3"
         ]
     ],
-    "tamendari": [
+    "taumendari": [
         [
             "mendari",
             "V+3+PL"
         ]
     ],
-    "taumendari": [
+    "tamendari": [
         [
             "mendari",
             "V+3+PL"
@@ -5041,13 +5135,13 @@
             "V+3"
         ]
     ],
-    "taumuakú": [
+    "tamuakú": [
         [
             "muakú",
             "V+3+PL"
         ]
     ],
-    "tamuakú": [
+    "taumuakú": [
         [
             "muakú",
             "V+3+PL"
@@ -5137,13 +5231,13 @@
             "V+3"
         ]
     ],
-    "taumukameẽ": [
+    "tamukameẽ": [
         [
             "mukameẽ",
             "V+3+PL"
         ]
     ],
-    "tamukameẽ": [
+    "taumukameẽ": [
         [
             "mukameẽ",
             "V+3+PL"
@@ -5152,6 +5246,102 @@
     "mukameẽ": [
         [
             "mukameẽ",
+            "V+NFIN"
+        ]
+    ],
+    "yamukaturu": [
+        [
+            "mukaturu",
+            "V+1+PL"
+        ]
+    ],
+    "amukaturu": [
+        [
+            "mukaturu",
+            "V+1+SG"
+        ]
+    ],
+    "pemukaturu": [
+        [
+            "mukaturu",
+            "V+2+PL"
+        ]
+    ],
+    "remukaturu": [
+        [
+            "mukaturu",
+            "V+2+SG"
+        ]
+    ],
+    "umukaturu": [
+        [
+            "mukaturu",
+            "V+3"
+        ]
+    ],
+    "taumukaturu": [
+        [
+            "mukaturu",
+            "V+3+PL"
+        ]
+    ],
+    "tamukaturu": [
+        [
+            "mukaturu",
+            "V+3+PL"
+        ]
+    ],
+    "mukaturu": [
+        [
+            "mukaturu",
+            "V+NFIN"
+        ]
+    ],
+    "yamukaturú": [
+        [
+            "mukaturú",
+            "V+1+PL"
+        ]
+    ],
+    "amukaturú": [
+        [
+            "mukaturú",
+            "V+1+SG"
+        ]
+    ],
+    "pemukaturú": [
+        [
+            "mukaturú",
+            "V+2+PL"
+        ]
+    ],
+    "remukaturú": [
+        [
+            "mukaturú",
+            "V+2+SG"
+        ]
+    ],
+    "umukaturú": [
+        [
+            "mukaturú",
+            "V+3"
+        ]
+    ],
+    "taumukaturú": [
+        [
+            "mukaturú",
+            "V+3+PL"
+        ]
+    ],
+    "tamukaturú": [
+        [
+            "mukaturú",
+            "V+3+PL"
+        ]
+    ],
+    "mukaturú": [
+        [
+            "mukaturú",
             "V+NFIN"
         ]
     ],
@@ -5245,13 +5435,13 @@
             "V+3"
         ]
     ],
-    "tamukwara": [
+    "taumukwara": [
         [
             "mukwara",
             "V+3+PL"
         ]
     ],
-    "taumukwara": [
+    "tamukwara": [
         [
             "mukwara",
             "V+3+PL"
@@ -5293,13 +5483,13 @@
             "V+3"
         ]
     ],
-    "tamukwekatú": [
+    "taumukwekatú": [
         [
             "mukwekatú",
             "V+3+PL"
         ]
     ],
-    "taumukwekatú": [
+    "tamukwekatú": [
         [
             "mukwekatú",
             "V+3+PL"
@@ -5405,13 +5595,13 @@
             "V+3"
         ]
     ],
-    "taumumbeú": [
+    "tamumbeú": [
         [
             "mumbeú",
             "V+3+PL"
         ]
     ],
-    "tamumbeú": [
+    "taumumbeú": [
         [
             "mumbeú",
             "V+3+PL"
@@ -5501,13 +5691,13 @@
             "V+3"
         ]
     ],
-    "taumumurã": [
+    "tamumurã": [
         [
             "mumurã",
             "V+3+PL"
         ]
     ],
-    "tamumurã": [
+    "taumumurã": [
         [
             "mumurã",
             "V+3+PL"
@@ -5561,13 +5751,13 @@
             "V+3"
         ]
     ],
-    "taumundeka": [
+    "tamundeka": [
         [
             "mundeka",
             "V+3+PL"
         ]
     ],
-    "tamundeka": [
+    "taumundeka": [
         [
             "mundeka",
             "V+3+PL"
@@ -5681,13 +5871,13 @@
             "V+3"
         ]
     ],
-    "taumundéu": [
+    "tamundéu": [
         [
             "mundéu",
             "V+3+PL"
         ]
     ],
-    "tamundéu": [
+    "taumundéu": [
         [
             "mundéu",
             "V+3+PL"
@@ -5747,6 +5937,54 @@
             "V+NFIN"
         ]
     ],
+    "yamungaturu": [
+        [
+            "mungaturu",
+            "V+1+PL"
+        ]
+    ],
+    "amungaturu": [
+        [
+            "mungaturu",
+            "V+1+SG"
+        ]
+    ],
+    "pemungaturu": [
+        [
+            "mungaturu",
+            "V+2+PL"
+        ]
+    ],
+    "remungaturu": [
+        [
+            "mungaturu",
+            "V+2+SG"
+        ]
+    ],
+    "umungaturu": [
+        [
+            "mungaturu",
+            "V+3"
+        ]
+    ],
+    "taumungaturu": [
+        [
+            "mungaturu",
+            "V+3+PL"
+        ]
+    ],
+    "tamungaturu": [
+        [
+            "mungaturu",
+            "V+3+PL"
+        ]
+    ],
+    "mungaturu": [
+        [
+            "mungaturu",
+            "V+NFIN"
+        ]
+    ],
     "yamungaturú": [
         [
             "mungaturú",
@@ -5777,13 +6015,13 @@
             "V+3"
         ]
     ],
-    "tamungaturú": [
+    "taumungaturú": [
         [
             "mungaturú",
             "V+3+PL"
         ]
     ],
-    "taumungaturú": [
+    "tamungaturú": [
         [
             "mungaturú",
             "V+3+PL"
@@ -5901,13 +6139,13 @@
             "V+3"
         ]
     ],
-    "taumunhã": [
+    "tamunhã": [
         [
             "munhã",
             "V+3+PL"
         ]
     ],
-    "tamunhã": [
+    "taumunhã": [
         [
             "munhã",
             "V+3+PL"
@@ -6045,13 +6283,13 @@
             "V+3"
         ]
     ],
-    "taumupaka": [
+    "tamupaka": [
         [
             "mupaka",
             "V+3+PL"
         ]
     ],
-    "tamupaka": [
+    "taumupaka": [
         [
             "mupaka",
             "V+3+PL"
@@ -6093,13 +6331,13 @@
             "V+3"
         ]
     ],
-    "taumupawa": [
+    "tamupawa": [
         [
             "mupawa",
             "V+3+PL"
         ]
     ],
-    "tamupawa": [
+    "taumupawa": [
         [
             "mupawa",
             "V+3+PL"
@@ -6189,13 +6427,13 @@
             "V+3"
         ]
     ],
-    "taumupinima": [
+    "tamupinima": [
         [
             "mupinima",
             "V+3+PL"
         ]
     ],
-    "tamupinima": [
+    "taumupinima": [
         [
             "mupinima",
             "V+3+PL"
@@ -6297,13 +6535,13 @@
             "V+3"
         ]
     ],
-    "tamupitá": [
+    "taumupitá": [
         [
             "mupitá",
             "V+3+PL"
         ]
     ],
-    "taumupitá": [
+    "tamupitá": [
         [
             "mupitá",
             "V+3+PL"
@@ -6345,13 +6583,13 @@
             "V+3"
         ]
     ],
-    "taumupuka": [
+    "tamupuka": [
         [
             "mupuka",
             "V+3+PL"
         ]
     ],
-    "tamupuka": [
+    "taumupuka": [
         [
             "mupuka",
             "V+3+PL"
@@ -6537,13 +6775,13 @@
             "V+3"
         ]
     ],
-    "taumupuãmu": [
+    "tamupuãmu": [
         [
             "mupuãmu",
             "V+3+PL"
         ]
     ],
-    "tamupuãmu": [
+    "taumupuãmu": [
         [
             "mupuãmu",
             "V+3+PL"
@@ -6741,13 +6979,13 @@
             "V+3"
         ]
     ],
-    "taumururú": [
+    "tamururú": [
         [
             "mururú",
             "V+3+PL"
         ]
     ],
-    "tamururú": [
+    "taumururú": [
         [
             "mururú",
             "V+3+PL"
@@ -6891,13 +7129,13 @@
             "V+3"
         ]
     ],
-    "tamusaka": [
+    "taumusaka": [
         [
             "musaka",
             "V+3+PL"
         ]
     ],
-    "taumusaka": [
+    "tamusaka": [
         [
             "musaka",
             "V+3+PL"
@@ -6939,13 +7177,13 @@
             "V+3"
         ]
     ],
-    "taumusakú": [
+    "tamusakú": [
         [
             "musakú",
             "V+3+PL"
         ]
     ],
-    "tamusakú": [
+    "taumusakú": [
         [
             "musakú",
             "V+3+PL"
@@ -6999,13 +7237,13 @@
             "V+3"
         ]
     ],
-    "taumusaruã": [
+    "tamusaruã": [
         [
             "musaruã",
             "V+3+PL"
         ]
     ],
-    "tamusaruã": [
+    "taumusaruã": [
         [
             "musaruã",
             "V+3+PL"
@@ -7095,13 +7333,13 @@
             "V+3"
         ]
     ],
-    "taumusasiara": [
+    "tamusasiara": [
         [
             "musasiara",
             "V+3+PL"
         ]
     ],
-    "tamusasiara": [
+    "taumusasiara": [
         [
             "musasiara",
             "V+3+PL"
@@ -7191,13 +7429,13 @@
             "V+3"
         ]
     ],
-    "taumusemu": [
+    "tamusemu": [
         [
             "musemu",
             "V+3+PL"
         ]
     ],
-    "tamusemu": [
+    "taumusemu": [
         [
             "musemu",
             "V+3+PL"
@@ -7239,13 +7477,13 @@
             "V+3"
         ]
     ],
-    "tamuseẽ": [
+    "taumuseẽ": [
         [
             "museẽ",
             "V+3+PL"
         ]
     ],
-    "taumuseẽ": [
+    "tamuseẽ": [
         [
             "museẽ",
             "V+3+PL"
@@ -7575,13 +7813,13 @@
             "V+3"
         ]
     ],
-    "taumuturusú": [
+    "tamuturusú": [
         [
             "muturusú",
             "V+3+PL"
         ]
     ],
-    "tamuturusú": [
+    "taumuturusú": [
         [
             "muturusú",
             "V+3+PL"
@@ -7623,13 +7861,13 @@
             "V+3"
         ]
     ],
-    "tamuturí": [
+    "taumuturí": [
         [
             "muturí",
             "V+3+PL"
         ]
     ],
-    "taumuturí": [
+    "tamuturí": [
         [
             "muturí",
             "V+3+PL"
@@ -7719,13 +7957,13 @@
             "V+3"
         ]
     ],
-    "tamuyatikú": [
+    "taumuyatikú": [
         [
             "muyatikú",
             "V+3+PL"
         ]
     ],
-    "taumuyatikú": [
+    "tamuyatikú": [
         [
             "muyatikú",
             "V+3+PL"
@@ -8053,13 +8291,13 @@
             "V+3"
         ]
     ],
-    "taunaseri": [
+    "tanaseri": [
         [
             "naseri",
             "V+3+PL"
         ]
     ],
-    "tanaseri": [
+    "taunaseri": [
         [
             "naseri",
             "V+3+PL"
@@ -8223,13 +8461,13 @@
             "V+3"
         ]
     ],
-    "tanheengari": [
+    "taunheengari": [
         [
             "nheengari",
             "V+3+PL"
         ]
     ],
-    "taunheengari": [
+    "tanheengari": [
         [
             "nheengari",
             "V+3+PL"
@@ -8307,13 +8545,13 @@
             "V+3"
         ]
     ],
-    "taunheẽ": [
+    "tanheẽ": [
         [
             "nheẽ",
             "V+3+PL"
         ]
     ],
-    "tanheẽ": [
+    "taunheẽ": [
         [
             "nheẽ",
             "V+3+PL"
@@ -8397,13 +8635,13 @@
             "V+3"
         ]
     ],
-    "tanupá": [
+    "taunupá": [
         [
             "nupá",
             "V+3+PL"
         ]
     ],
-    "taunupá": [
+    "tanupá": [
         [
             "nupá",
             "V+3+PL"
@@ -8701,13 +8939,13 @@
             "V+3"
         ]
     ],
-    "tapawa": [
+    "taupawa": [
         [
             "pawa",
             "V+3+PL"
         ]
     ],
-    "taupawa": [
+    "tapawa": [
         [
             "pawa",
             "V+3+PL"
@@ -8815,13 +9053,13 @@
             "V+3"
         ]
     ],
-    "taupeyú": [
+    "tapeyú": [
         [
             "peyú",
             "V+3+PL"
         ]
     ],
-    "tapeyú": [
+    "taupeyú": [
         [
             "peyú",
             "V+3+PL"
@@ -9153,13 +9391,13 @@
             "V+3"
         ]
     ],
-    "tapirari": [
+    "taupirari": [
         [
             "pirari",
             "V+3+PL"
         ]
     ],
-    "taupirari": [
+    "tapirari": [
         [
             "pirari",
             "V+3+PL"
@@ -9461,13 +9699,13 @@
             "V+3"
         ]
     ],
-    "tapisika": [
+    "taupisika": [
         [
             "pisika",
             "V+3+PL"
         ]
     ],
-    "taupisika": [
+    "tapisika": [
         [
             "pisika",
             "V+3+PL"
@@ -9509,13 +9747,13 @@
             "V+3"
         ]
     ],
-    "taupisirũ": [
+    "tapisirũ": [
         [
             "pisirũ",
             "V+3+PL"
         ]
     ],
-    "tapisirũ": [
+    "taupisirũ": [
         [
             "pisirũ",
             "V+3+PL"
@@ -9635,13 +9873,13 @@
             "V+3"
         ]
     ],
-    "tapitimũ": [
+    "taupitimũ": [
         [
             "pitimũ",
             "V+3+PL"
         ]
     ],
-    "taupitimũ": [
+    "tapitimũ": [
         [
             "pitimũ",
             "V+3+PL"
@@ -9879,6 +10117,18 @@
             "N+SG"
         ]
     ],
+    "puampé-itá": [
+        [
+            "puampé",
+            "N+PL"
+        ]
+    ],
+    "puampé": [
+        [
+            "puampé",
+            "N+SG"
+        ]
+    ],
     "yapuamu": [
         [
             "puamu",
@@ -10049,13 +10299,13 @@
             "V+3"
         ]
     ],
-    "taupuká": [
+    "tapuká": [
         [
             "puká",
             "V+3+PL"
         ]
     ],
-    "tapuká": [
+    "taupuká": [
         [
             "puká",
             "V+3+PL"
@@ -10241,13 +10491,13 @@
             "V+3"
         ]
     ],
-    "tapurakari": [
+    "taupurakari": [
         [
             "purakari",
             "V+3+PL"
         ]
     ],
-    "taupurakari": [
+    "tapurakari": [
         [
             "purakari",
             "V+3+PL"
@@ -10301,13 +10551,13 @@
             "V+3"
         ]
     ],
-    "tapurakí": [
+    "taupurakí": [
         [
             "purakí",
             "V+3+PL"
         ]
     ],
-    "taupurakí": [
+    "tapurakí": [
         [
             "purakí",
             "V+3+PL"
@@ -10599,13 +10849,13 @@
             "V+3"
         ]
     ],
-    "taupurungitá": [
+    "tapurungitá": [
         [
             "purungitá",
             "V+3+PL"
         ]
     ],
-    "tapurungitá": [
+    "taupurungitá": [
         [
             "purungitá",
             "V+3+PL"
@@ -10665,13 +10915,13 @@
             "V+3"
         ]
     ],
-    "taupurú": [
+    "tapurú": [
         [
             "purú",
             "V+3+PL"
         ]
     ],
-    "tapurú": [
+    "taupurú": [
         [
             "purú",
             "V+3+PL"
@@ -10731,13 +10981,13 @@
             "V+3"
         ]
     ],
-    "taupusú": [
+    "tapusú": [
         [
             "pusú",
             "V+3+PL"
         ]
     ],
-    "tapusú": [
+    "taupusú": [
         [
             "pusú",
             "V+3+PL"
@@ -10779,13 +11029,13 @@
             "V+3"
         ]
     ],
-    "taputari": [
+    "tauputari": [
         [
             "putari",
             "V+3+PL"
         ]
     ],
-    "tauputari": [
+    "taputari": [
         [
             "putari",
             "V+3+PL"
@@ -10941,13 +11191,13 @@
             "V+3"
         ]
     ],
-    "tapuíri": [
+    "taupuíri": [
         [
             "puíri",
             "V+3+PL"
         ]
     ],
-    "taupuíri": [
+    "tapuíri": [
         [
             "puíri",
             "V+3+PL"
@@ -10989,13 +11239,13 @@
             "V+3"
         ]
     ],
-    "tapuú": [
+    "taupuú": [
         [
             "puú",
             "V+3+PL"
         ]
     ],
-    "taupuú": [
+    "tapuú": [
         [
             "puú",
             "V+3+PL"
@@ -11317,13 +11567,13 @@
             "V+3"
         ]
     ],
-    "taurasú": [
+    "tarasú": [
         [
             "rasú",
             "V+3+PL"
         ]
     ],
-    "tarasú": [
+    "taurasú": [
         [
             "rasú",
             "V+3+PL"
@@ -11851,13 +12101,13 @@
             "V+3"
         ]
     ],
-    "tausaisú": [
+    "tasaisú": [
         [
             "saisú",
             "V+3+PL"
         ]
     ],
-    "tasaisú": [
+    "tausaisú": [
         [
             "saisú",
             "V+3+PL"
@@ -12157,13 +12407,13 @@
             "V+3"
         ]
     ],
-    "tasapí": [
+    "tausapí": [
         [
             "sapí",
             "V+3+PL"
         ]
     ],
-    "tausapí": [
+    "tasapí": [
         [
             "sapí",
             "V+3+PL"
@@ -12285,13 +12535,13 @@
             "V+3"
         ]
     ],
-    "tasasemu": [
+    "tausasemu": [
         [
             "sasemu",
             "V+3+PL"
         ]
     ],
-    "tausasemu": [
+    "tasasemu": [
         [
             "sasemu",
             "V+3+PL"
@@ -12453,13 +12703,13 @@
             "V+3"
         ]
     ],
-    "tasaã": [
+    "tausaã": [
         [
             "saã",
             "V+3+PL"
         ]
     ],
-    "tausaã": [
+    "tasaã": [
         [
             "saã",
             "V+3+PL"
@@ -12571,13 +12821,13 @@
             "V+3"
         ]
     ],
-    "tasemu": [
+    "tausemu": [
         [
             "semu",
             "V+3+PL"
         ]
     ],
-    "tausemu": [
+    "tasemu": [
         [
             "semu",
             "V+3+PL"
@@ -12699,13 +12949,13 @@
             "V+3"
         ]
     ],
-    "tausenũi": [
+    "tasenũi": [
         [
             "senũi",
             "V+3+PL"
         ]
     ],
-    "tasenũi": [
+    "tausenũi": [
         [
             "senũi",
             "V+3+PL"
@@ -12851,13 +13101,13 @@
             "V+3"
         ]
     ],
-    "taseruka": [
+    "tauseruka": [
         [
             "seruka",
             "V+3+PL"
         ]
     ],
-    "tauseruka": [
+    "taseruka": [
         [
             "seruka",
             "V+3+PL"
@@ -13081,13 +13331,13 @@
             "V+3"
         ]
     ],
-    "tausika": [
+    "tasika": [
         [
             "sika",
             "V+3+PL"
         ]
     ],
-    "tasika": [
+    "tausika": [
         [
             "sika",
             "V+3+PL"
@@ -13481,13 +13731,13 @@
             "V+3"
         ]
     ],
-    "tausuantí": [
+    "tasuantí": [
         [
             "suantí",
             "V+3+PL"
         ]
     ],
-    "tasuantí": [
+    "tausuantí": [
         [
             "suantí",
             "V+3+PL"
@@ -13569,13 +13819,13 @@
             "V+3"
         ]
     ],
-    "tausuaxara": [
+    "tasuaxara": [
         [
             "suaxara",
             "V+3+PL"
         ]
     ],
-    "tasuaxara": [
+    "tausuaxara": [
         [
             "suaxara",
             "V+3+PL"
@@ -14163,13 +14413,13 @@
             "V+3"
         ]
     ],
-    "tasuú": [
+    "tausuú": [
         [
             "suú",
             "V+3+PL"
         ]
     ],
-    "tausuú": [
+    "tasuú": [
         [
             "suú",
             "V+3+PL"
@@ -14857,6 +15107,42 @@
             "N+PL"
         ]
     ],
+    "tembiiwa-itá": [
+        [
+            "tembiiwa",
+            "N+ABS+PL"
+        ]
+    ],
+    "tembiiwa": [
+        [
+            "tembiiwa",
+            "N+ABS+SG"
+        ]
+    ],
+    "rembiiwa-itá": [
+        [
+            "tembiiwa",
+            "N+CONT+PL"
+        ]
+    ],
+    "rembiiwa": [
+        [
+            "tembiiwa",
+            "N+CONT+SG"
+        ]
+    ],
+    "sembiiwa-itá": [
+        [
+            "tembiiwa",
+            "N+NCONT+PL"
+        ]
+    ],
+    "sembiiwa": [
+        [
+            "tembiiwa",
+            "N+NCONT+SG"
+        ]
+    ],
     "tembiwa-itá": [
         [
             "tembiwa",
@@ -14867,30 +15153,6 @@
         [
             "tembiwa",
             "N+ABS+SG"
-        ]
-    ],
-    "rembiwa-itá": [
-        [
-            "tembiwa",
-            "N+CONT+PL"
-        ]
-    ],
-    "rembiwa": [
-        [
-            "tembiwa",
-            "N+CONT+SG"
-        ]
-    ],
-    "sembiwa-itá": [
-        [
-            "tembiwa",
-            "N+NCONT+PL"
-        ]
-    ],
-    "sembiwa": [
-        [
-            "tembiwa",
-            "N+NCONT+SG"
         ]
     ],
     "tendawa-itá": [
@@ -15191,13 +15453,13 @@
             "V+3"
         ]
     ],
-    "tatiari": [
+    "tautiari": [
         [
             "tiari",
             "V+3+PL"
         ]
     ],
-    "tautiari": [
+    "tatiari": [
         [
             "tiari",
             "V+3+PL"
@@ -15317,13 +15579,13 @@
             "V+3"
         ]
     ],
-    "tatipika": [
+    "tautipika": [
         [
             "tipika",
             "V+3+PL"
         ]
     ],
-    "tautipika": [
+    "tatipika": [
         [
             "tipika",
             "V+3+PL"
@@ -15413,13 +15675,13 @@
             "V+3"
         ]
     ],
-    "tatirika": [
+    "tautirika": [
         [
             "tirika",
             "V+3+PL"
         ]
     ],
-    "tautirika": [
+    "tatirika": [
         [
             "tirika",
             "V+3+PL"
@@ -15461,13 +15723,13 @@
             "V+3"
         ]
     ],
-    "tautitika": [
+    "tatitika": [
         [
             "titika",
             "V+3+PL"
         ]
     ],
-    "tatitika": [
+    "tautitika": [
         [
             "titika",
             "V+3+PL"
@@ -15689,13 +15951,13 @@
             "V+3"
         ]
     ],
-    "tatuká": [
+    "tautuká": [
         [
             "tuká",
             "V+3+PL"
         ]
     ],
-    "tautuká": [
+    "tatuká": [
         [
             "tuká",
             "V+3+PL"
@@ -16443,13 +16705,13 @@
             "V+3"
         ]
     ],
-    "tauwasemu": [
+    "tawasemu": [
         [
             "wasemu",
             "V+3+PL"
         ]
     ],
-    "tawasemu": [
+    "tauwasemu": [
         [
             "wasemu",
             "V+3+PL"
@@ -16611,13 +16873,13 @@
             "V+3"
         ]
     ],
-    "tawatá-watá": [
+    "tauwatá-watá": [
         [
             "watá-watá",
             "V+3+PL"
         ]
     ],
-    "tauwatá-watá": [
+    "tawatá-watá": [
         [
             "watá-watá",
             "V+3+PL"
@@ -16699,13 +16961,13 @@
             "V+3"
         ]
     ],
-    "tauweena": [
+    "taweena": [
         [
             "weena",
             "V+3+PL"
         ]
     ],
-    "taweena": [
+    "tauweena": [
         [
             "weena",
             "V+3+PL"
@@ -16751,13 +17013,13 @@
             "V+3"
         ]
     ],
-    "tauwena": [
+    "tawena": [
         [
             "wena",
             "V+3+PL"
         ]
     ],
-    "tawena": [
+    "tauwena": [
         [
             "wena",
             "V+3+PL"
@@ -16805,13 +17067,13 @@
             "V+3"
         ]
     ],
-    "tauwerá": [
+    "tawerá": [
         [
             "werá",
             "V+3+PL"
         ]
     ],
-    "tawerá": [
+    "tauwerá": [
         [
             "werá",
             "V+3+PL"
@@ -16853,13 +17115,13 @@
             "V+3"
         ]
     ],
-    "tawewé": [
+    "tauwewé": [
         [
             "wewé",
             "V+3+PL"
         ]
     ],
-    "tauwewé": [
+    "tawewé": [
         [
             "wewé",
             "V+3+PL"
@@ -17003,13 +17265,13 @@
             "V+3"
         ]
     ],
-    "tawitá": [
+    "tauwitá": [
         [
             "witá",
             "V+3+PL"
         ]
     ],
-    "tauwitá": [
+    "tawitá": [
         [
             "witá",
             "V+3+PL"
@@ -17063,13 +17325,13 @@
             "V+3"
         ]
     ],
-    "tauwiyé": [
+    "tawiyé": [
         [
             "wiyé",
             "V+3+PL"
         ]
     ],
-    "tawiyé": [
+    "tauwiyé": [
         [
             "wiyé",
             "V+3+PL"
@@ -17129,13 +17391,13 @@
             "V+3"
         ]
     ],
-    "tauxari": [
+    "taxari": [
         [
             "xari",
             "V+3+PL"
         ]
     ],
-    "taxari": [
+    "tauxari": [
         [
             "xari",
             "V+3+PL"
@@ -17515,13 +17777,13 @@
             "V+3"
         ]
     ],
-    "tauyamĩ": [
+    "tayamĩ": [
         [
             "yamĩ",
             "V+3+PL"
         ]
     ],
-    "tayamĩ": [
+    "tauyamĩ": [
         [
             "yamĩ",
             "V+3+PL"
@@ -17563,13 +17825,13 @@
             "V+3"
         ]
     ],
-    "tauyana": [
+    "tayana": [
         [
             "yana",
             "V+3+PL"
         ]
     ],
-    "tayana": [
+    "tauyana": [
         [
             "yana",
             "V+3+PL"
@@ -17659,13 +17921,13 @@
             "V+3"
         ]
     ],
-    "tayapukúi": [
+    "tauyapukúi": [
         [
             "yapukúi",
             "V+3+PL"
         ]
     ],
-    "tauyapukúi": [
+    "tayapukúi": [
         [
             "yapukúi",
             "V+3+PL"
@@ -17779,13 +18041,13 @@
             "V+3"
         ]
     ],
-    "tauyapí": [
+    "tayapí": [
         [
             "yapí",
             "V+3+PL"
         ]
     ],
-    "tayapí": [
+    "tauyapí": [
         [
             "yapí",
             "V+3+PL"
@@ -17843,13 +18105,13 @@
             "V+3"
         ]
     ],
-    "tayari": [
+    "tauyari": [
         [
             "yari",
             "V+3+PL"
         ]
     ],
-    "tauyari": [
+    "tayari": [
         [
             "yari",
             "V+3+PL"
@@ -17891,13 +18153,13 @@
             "V+3"
         ]
     ],
-    "tayasá": [
+    "tauyasá": [
         [
             "yasá",
             "V+3+PL"
         ]
     ],
-    "tauyasá": [
+    "tayasá": [
         [
             "yasá",
             "V+3+PL"
@@ -17999,13 +18261,13 @@
             "V+3"
         ]
     ],
-    "tauyatikú": [
+    "tayatikú": [
         [
             "yatikú",
             "V+3+PL"
         ]
     ],
-    "tayatikú": [
+    "tauyatikú": [
         [
             "yatikú",
             "V+3+PL"
@@ -18125,13 +18387,13 @@
             "V+3"
         ]
     ],
-    "tayawáu": [
+    "tauyawáu": [
         [
             "yawáu",
             "V+3+PL"
         ]
     ],
-    "tauyawáu": [
+    "tayawáu": [
         [
             "yawáu",
             "V+3+PL"
@@ -18243,13 +18505,13 @@
             "V+3"
         ]
     ],
-    "tayenú": [
+    "tauyenú": [
         [
             "yenú",
             "V+3+PL"
         ]
     ],
-    "tauyenú": [
+    "tayenú": [
         [
             "yenú",
             "V+3+PL"
@@ -18433,13 +18695,13 @@
             "V+3"
         ]
     ],
-    "tayeréu": [
+    "tauyeréu": [
         [
             "yeréu",
             "V+3+PL"
         ]
     ],
-    "tauyeréu": [
+    "tayeréu": [
         [
             "yeréu",
             "V+3+PL"
@@ -18481,13 +18743,13 @@
             "V+3"
         ]
     ],
-    "tauyuka": [
+    "tayuka": [
         [
             "yuka",
             "V+3+PL"
         ]
     ],
-    "tayuka": [
+    "tauyuka": [
         [
             "yuka",
             "V+3+PL"
@@ -18673,13 +18935,13 @@
             "V+3"
         ]
     ],
-    "tauyukwá": [
+    "tayukwá": [
         [
             "yukwá",
             "V+3+PL"
         ]
     ],
-    "tayukwá": [
+    "tauyukwá": [
         [
             "yukwá",
             "V+3+PL"
@@ -18721,13 +18983,13 @@
             "V+3"
         ]
     ],
-    "tayukwáu": [
+    "tauyukwáu": [
         [
             "yukwáu",
             "V+3+PL"
         ]
     ],
-    "tauyukwáu": [
+    "tayukwáu": [
         [
             "yukwáu",
             "V+3+PL"
@@ -18769,13 +19031,13 @@
             "V+3"
         ]
     ],
-    "tayuká": [
+    "tauyuká": [
         [
             "yuká",
             "V+3+PL"
         ]
     ],
-    "tauyuká": [
+    "tayuká": [
         [
             "yuká",
             "V+3+PL"
@@ -18893,13 +19155,13 @@
             "V+3"
         ]
     ],
-    "tauyumaã": [
+    "tayumaã": [
         [
             "yumaã",
             "V+3+PL"
         ]
     ],
-    "tayumaã": [
+    "tauyumaã": [
         [
             "yumaã",
             "V+3+PL"
@@ -19001,13 +19263,13 @@
             "V+3"
         ]
     ],
-    "tayumeẽ": [
+    "tauyumeẽ": [
         [
             "yumeẽ",
             "V+3+PL"
         ]
     ],
-    "tauyumeẽ": [
+    "tayumeẽ": [
         [
             "yumeẽ",
             "V+3+PL"
@@ -19049,13 +19311,13 @@
             "V+3"
         ]
     ],
-    "tauyumimi": [
+    "tayumimi": [
         [
             "yumimi",
             "V+3+PL"
         ]
     ],
-    "tayumimi": [
+    "tauyumimi": [
         [
             "yumimi",
             "V+3+PL"
@@ -19169,13 +19431,13 @@
             "V+3"
         ]
     ],
-    "tayumuapatuka": [
+    "tauyumuapatuka": [
         [
             "yumuapatuka",
             "V+3+PL"
         ]
     ],
-    "tauyumuapatuka": [
+    "tayumuapatuka": [
         [
             "yumuapatuka",
             "V+3+PL"
@@ -19217,13 +19479,13 @@
             "V+3"
         ]
     ],
-    "tayumuatiri": [
+    "tauyumuatiri": [
         [
             "yumuatiri",
             "V+3+PL"
         ]
     ],
-    "tauyumuatiri": [
+    "tayumuatiri": [
         [
             "yumuatiri",
             "V+3+PL"
@@ -19361,13 +19623,13 @@
             "V+3"
         ]
     ],
-    "tayumuperewa": [
+    "tauyumuperewa": [
         [
             "yumuperewa",
             "V+3+PL"
         ]
     ],
-    "tauyumuperewa": [
+    "tayumuperewa": [
         [
             "yumuperewa",
             "V+3+PL"
@@ -19409,13 +19671,13 @@
             "V+3"
         ]
     ],
-    "tayumuruakí": [
+    "tauyumuruakí": [
         [
             "yumuruakí",
             "V+3+PL"
         ]
     ],
-    "tauyumuruakí": [
+    "tayumuruakí": [
         [
             "yumuruakí",
             "V+3+PL"
@@ -19457,13 +19719,13 @@
             "V+3"
         ]
     ],
-    "tauyumuseẽ": [
+    "tayumuseẽ": [
         [
             "yumuseẽ",
             "V+3+PL"
         ]
     ],
-    "tayumuseẽ": [
+    "tauyumuseẽ": [
         [
             "yumuseẽ",
             "V+3+PL"
@@ -19649,13 +19911,13 @@
             "V+3"
         ]
     ],
-    "tauyumũ": [
+    "tayumũ": [
         [
             "yumũ",
             "V+3+PL"
         ]
     ],
-    "tayumũ": [
+    "tauyumũ": [
         [
             "yumũ",
             "V+3+PL"
@@ -19709,13 +19971,13 @@
             "V+3"
         ]
     ],
-    "tayupika": [
+    "tauyupika": [
         [
             "yupika",
             "V+3+PL"
         ]
     ],
-    "tauyupika": [
+    "tayupika": [
         [
             "yupika",
             "V+3+PL"
@@ -19757,13 +20019,13 @@
             "V+3"
         ]
     ],
-    "tayupiri": [
+    "tauyupiri": [
         [
             "yupiri",
             "V+3+PL"
         ]
     ],
-    "tauyupiri": [
+    "tayupiri": [
         [
             "yupiri",
             "V+3+PL"
@@ -19877,13 +20139,13 @@
             "V+3"
         ]
     ],
-    "tauyupirú": [
+    "tayupirú": [
         [
             "yupirú",
             "V+3+PL"
         ]
     ],
-    "tayupirú": [
+    "tauyupirú": [
         [
             "yupirú",
             "V+3+PL"
@@ -19925,13 +20187,13 @@
             "V+3"
         ]
     ],
-    "tayupisirú": [
+    "tauyupisirú": [
         [
             "yupisirú",
             "V+3+PL"
         ]
     ],
-    "tauyupisirú": [
+    "tayupisirú": [
         [
             "yupisirú",
             "V+3+PL"
@@ -19973,13 +20235,13 @@
             "V+3"
         ]
     ],
-    "tauyupukwari": [
+    "tayupukwari": [
         [
             "yupukwari",
             "V+3+PL"
         ]
     ],
-    "tayupukwari": [
+    "tauyupukwari": [
         [
             "yupukwari",
             "V+3+PL"
@@ -20021,13 +20283,13 @@
             "V+3"
         ]
     ],
-    "tayupukwawa": [
+    "tauyupukwawa": [
         [
             "yupukwawa",
             "V+3+PL"
         ]
     ],
-    "tauyupukwawa": [
+    "tayupukwawa": [
         [
             "yupukwawa",
             "V+3+PL"
@@ -20069,13 +20331,13 @@
             "V+3"
         ]
     ],
-    "tayupukwá": [
+    "tauyupukwá": [
         [
             "yupukwá",
             "V+3+PL"
         ]
     ],
-    "tauyupukwá": [
+    "tayupukwá": [
         [
             "yupukwá",
             "V+3+PL"
@@ -20165,13 +20427,13 @@
             "V+3"
         ]
     ],
-    "tayupusí": [
+    "tauyupusí": [
         [
             "yupusí",
             "V+3+PL"
         ]
     ],
-    "tauyupusí": [
+    "tayupusí": [
         [
             "yupusí",
             "V+3+PL"
@@ -20243,13 +20505,13 @@
             "V+3"
         ]
     ],
-    "tayuruari": [
+    "tauyuruari": [
         [
             "yuruari",
             "V+3+PL"
         ]
     ],
-    "tauyuruari": [
+    "tayuruari": [
         [
             "yuruari",
             "V+3+PL"
@@ -20625,13 +20887,13 @@
             "V+3"
         ]
     ],
-    "tayusí": [
+    "tauyusí": [
         [
             "yusí",
             "V+3+PL"
         ]
     ],
-    "tauyusí": [
+    "tayusí": [
         [
             "yusí",
             "V+3+PL"
@@ -20763,13 +21025,13 @@
             "V+3"
         ]
     ],
-    "tayuuka": [
+    "tauyuuka": [
         [
             "yuuka",
             "V+3+PL"
         ]
     ],
-    "tauyuuka": [
+    "tayuuka": [
         [
             "yuuka",
             "V+3+PL"
@@ -20823,13 +21085,13 @@
             "V+3"
         ]
     ],
-    "tayuyuantí": [
+    "tauyuyuantí": [
         [
             "yuyuantí",
             "V+3+PL"
         ]
     ],
-    "tauyuyuantí": [
+    "tayuyuantí": [
         [
             "yuyuantí",
             "V+3+PL"

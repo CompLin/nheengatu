@@ -16,6 +16,10 @@ HYPHEN='-'
 # Case of second class pronouns
 CASE="Gen"
 
+# Enclitic postpositions
+# TODO: extract fom glossary
+CLITICS=['pe','me']
+
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
@@ -882,6 +886,16 @@ def filterparselist(tag,parselist):
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
 
+def handleClitic(token):
+    updateFeats(token,'Clitic','Yes')
+
+def handleHyphenSepToken(token):
+    upos=token['upos']
+    if upos == 'V':
+        handleCompoundAux(token)
+    else:
+        handleClitic(token)
+
 def getStartEnd(token):
     dic={}
     misc=token.get('misc')
@@ -900,12 +914,15 @@ def getSpaceAfter(token):
     if misc.get('SpaceAfter'):
         return misc.pop('SpaceAfter')
 
+def insertMultitokenWord(tokenlist):
+    'TODO'
+
 def insertCompoundAux(tokenlist):
     newlist=TokenList()
     for token in tokenlist:
         feats=token.get('feats')
         if feats:
-            if feats.get('Compound') == 'Yes':
+            if feats.get('Compound') == 'Yes'or feats.get('Clitic') == 'Yes':
                 index=tokenlist.index(token)
                 previous=tokenlist[index-1]
                 #print(previous)
@@ -928,11 +945,31 @@ def handleHyphen(form):
     dic['hyphen']=False
     if form.startswith(HYPHEN):
         dic['form']=form[1:]
+        if form[1:] in CLITICS:
+            dic['lemma']='upé'
+            dic['upos']='ADP'
         dic['hyphen']=True
     return dic
 
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
+
+def mkNoun(form,orig='pt'):
+    dic={}
+    dic['OrigLang']=orig
+    dic['parselist']=[[form.lower(), 'N']]
+    return dic
+
+def mkClitic(lemma,upos):
+    return [[lemma, upos]]
+
+def handleRedup(token):
+    redup={}
+    parts=token.split('-')
+    if len(parts) == 2:
+        if parts[0].endswith(parts[1]):
+            redup['form'],redup['lemma']=parts[0],parts[1]
+    return redup
 
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
@@ -943,11 +980,25 @@ def mkConlluSentence(tokens):
         if '/' in token:
             token,tag=token.split('/')
         dic=handleHyphen(token)
+        new={}
         form=dic.get('form')
-        parselist=getparselist(form.lower())
+        redup=handleRedup(token)
+        parselist=[]
+        lemma=dic.get('lemma')
+        upos=dic.get('upos')
+        if redup:
+            parselist=getparselist(redup['form'])
+        else:
+            if lemma:
+                parselist=mkClitic(lemma,upos)
+            else:
+                parselist=getparselist(form.lower())
         if tag:
-            if tag == 'p':
+            if tag == '=p':
                 newparselist=mkPropn(token)
+            elif tag == '=n':
+                new=mkNoun(form)
+                newparselist=new['parselist']
             else:
                 newparselist=filterparselist(tag,parselist)
             if newparselist:
@@ -958,7 +1009,9 @@ def mkConlluSentence(tokens):
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen'):
-                handleCompoundAux(t)
+                handleHyphenSepToken(t)
+            if new:
+                t['misc'].update({'OrigLang': new['OrigLang']})
             tokenlist.append(t)
         start=start+len(token)+1
         ident+=1
@@ -1008,7 +1061,7 @@ def mkText(text):
 	ppText(extract_sents(lines=text))
 
 def extractYrl(sent):
-    return re.sub(r"[/]\w+",'',sent)
+    return re.sub(r"[/=]+\w+",'',sent)
 
 def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     if not text:
@@ -1031,13 +1084,14 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     parseSentence(sents[0])
 
 def splitMultiWordTokens(tokens):
-    aux=[d['lemma'] for d in AUX]
+    sep=[d['lemma'] for d in AUX]
+    sep.extend(CLITICS)
     newlist=[]
     for t in tokens:
         if HYPHEN in t:
             index=t.index(HYPHEN)
             second=t[index:]
-            if second[1:] in aux:
+            if second[1:] in sep:
                 newlist.extend([t[:index],second])
             else:
                 newlist.append(t)

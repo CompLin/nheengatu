@@ -20,6 +20,7 @@ TAGSET=f"""
 adj.\tA\tadjetivo de 1ª cl.
 adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
 adv.\tADV\tadvérbio
+adv. encl.\tCLADV\tadvérbio enclítico
 adv. dem.\tADVD\tadvérbio demonstrativo
 adv. gr.\tADVG\tadvérbio de grau
 adv. intensif.\tADVS\tadvérbio de intensidade
@@ -54,6 +55,7 @@ part. pret.\tPRET\tpartícula de pretérito
 part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
 part. interr. pol.\tPQ\tpartícula de pergunta polar
 posp.\tADP\tposposição
+posp. encl.\tCLADP\tposposição enclítica
 pron.\tPRON\tpronome de 1ª classe
 pron. 2ª cl.\tPRON2\tpronome de 2ª classe
 pron. enf.\tEMP\tpronome de ênfase
