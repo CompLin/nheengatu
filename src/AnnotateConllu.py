@@ -11,6 +11,8 @@ from io import open
 from conllu import parse_incr
 import re
 
+# Characters to be removed from input sentence
+REMOVE=r"[/=]+\w+"
 # Separator of multiword tokens
 HYPHEN='-'
 # Case of second class pronouns
@@ -900,7 +902,9 @@ def getStartEnd(token):
     dic={}
     misc=token.get('misc')
     if misc:
-        tokenrange=misc.pop('TokenRange')
+        tokenrange=''
+        if misc.get('TokenRange'):
+            tokenrange=misc.pop('TokenRange')
         if not misc:
             token['misc']=None
         if tokenrange:
@@ -932,7 +936,14 @@ def insertCompoundAux(tokenlist):
                 if start:
                     spaceafter=getSpaceAfter(token)
                     end=getStartEnd(token)['end']
-                    form=f"{previous['form']}-{token['form']}"
+                    alomorph=''
+                    misc=previous['misc']
+                    if misc:
+                        alomorph=misc.get('Alomorph')
+                    first=previous['form']
+                    if alomorph:
+                        first=alomorph
+                    form=f"{first}-{token['form']}"
                     tokenid=token['id']
                     ident=f'{tokenid-1}-{tokenid}'
                     compound=mkMultiWordToken(ident,form,start,end,spaceafter)
@@ -949,6 +960,9 @@ def handleHyphen(form):
             dic['lemma']='upé'
             dic['upos']='ADP'
         dic['hyphen']=True
+    elif form.endswith(HYPHEN):
+        dic['host']=True
+        dic['form']=form[:-1]
     return dic
 
 def mkPropn(form):
@@ -966,10 +980,13 @@ def mkClitic(lemma,upos):
 def handleRedup(token):
     redup={}
     parts=token.split('-')
-    if len(parts) == 2:
+    if len(parts) == 2 and parts[1]:
         if parts[0].endswith(parts[1]):
             redup['form'],redup['lemma']=parts[0],parts[1]
     return redup
+
+def handleAlomorph(form):
+    return form.replace('ií','iwa')
 
 def mkConlluSentence(tokens):
     tokenlist=TokenList()
@@ -986,13 +1003,17 @@ def mkConlluSentence(tokens):
         parselist=[]
         lemma=dic.get('lemma')
         upos=dic.get('upos')
+        host=dic.get('host')
         if redup:
             parselist=getparselist(redup['form'])
         else:
             if lemma:
                 parselist=mkClitic(lemma,upos)
             else:
-                parselist=getparselist(form.lower())
+                if host:
+                    parselist=getparselist(handleAlomorph(form.lower()))
+                else:
+                    parselist=getparselist(form.lower())
         if tag:
             if tag == '=p':
                 newparselist=mkPropn(token)
@@ -1012,6 +1033,8 @@ def mkConlluSentence(tokens):
                 handleHyphenSepToken(t)
             if new:
                 t['misc'].update({'OrigLang': new['OrigLang']})
+            if host:
+                t['misc'].update({'Alomorph': form})
             tokenlist.append(t)
         start=start+len(token)+1
         ident+=1
@@ -1061,7 +1084,7 @@ def mkText(text):
 	ppText(extract_sents(lines=text))
 
 def extractYrl(sent):
-    return re.sub(r"[/=]+\w+",'',sent)
+    return re.sub(REMOVE,'',sent)
 
 def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     if not text:
@@ -1090,9 +1113,12 @@ def splitMultiWordTokens(tokens):
     for t in tokens:
         if HYPHEN in t:
             index=t.index(HYPHEN)
+            first=t[:index]
             second=t[index:]
             if second[1:] in sep:
-                newlist.extend([t[:index],second])
+                if second[1:] in CLITICS:
+                    first=f"{first}-"
+                newlist.extend([first,second])
             else:
                 newlist.append(t)
         else:

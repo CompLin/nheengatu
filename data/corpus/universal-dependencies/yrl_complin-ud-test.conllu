@@ -3887,6 +3887,99 @@
 8	kití	kití	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=35:39
 9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
 
+# sent_id = Avila2021:0:0:186
+# text = Kuíri, ti arama aintá umusarái ne resé, remutatatinga aintá sikantá-pe uyeréu arama itá.
+# text_eng = Now, lest they mock you, smoke them with resin to turn them to stone.
+# text_por = Agora, para eles não escarnecerem de ti, defuma-os com resina para virarem pedra.
+# text_source = Amorim, 294, adap.
+1	Kuíri	kuíri	ADV	ADV	_	6	advmod	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=5:6
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=7:9
+4	arama	arama	SCONJ	SCONJ	_	6	mark	_	TokenRange=10:15
+5	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=16:21
+6	umusarái	musarái	VERB	V	Person=3|VerbForm=Fin	10	advcl	_	TokenRange=22:30
+7	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	obl	_	TokenRange=31:33
+8	resé	resé	ADP	ADP	Rel=Cont	7	case	_	SpaceAfter=No|TokenRange=34:38
+9	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=38:39
+10	remutatatinga	mutatatinga	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=40:53
+11	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	obj	_	TokenRange=54:59
+12-13	sikantá-pe	_	_	_	_	_	_	_	TokenRange=60:71
+12	sikantá	sikantá	NOUN	N	Number=Sing	10	obl	_	Alomorph=sikantá
+13	pe	upé	ADP	ADP	Clitic=Yes	12	case	_	_
+14	uyeréu	yeréu	VERB	V	Person=3|VerbForm=Fin	10	advcl	_	TokenRange=73:79
+15	arama	arama	SCONJ	SCONJ	_	14	mark	_	TokenRange=80:85
+16	itá	itá	NOUN	N	Number=Sing	14	xcomp	_	SpaceAfter=No|TokenRange=86:89
+17	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=89:90
+
+# sent_id = Avila2021:20:1:187
+# text = Mukũi tapuya manáu usú paá aintá umaã aintá kupixawa.
+# text_eng = They say that two Manao indians went to see their gardens.
+# text_por = Dizem que duas índias manaos foram ver suas roças. [Corr. transl.]
+# text_source = Rodrigues, 137, adap.
+1	Mukũi	mukũi	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:5
+2	tapuya	tapuya	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=6:12
+3	manáu	manáu	NOUN	N	Number=Sing	2	appos	_	TokenRange=13:18
+4	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	7	aux	_	TokenRange=19:22
+5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=23:26
+6	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	expl	_	TokenRange=27:32
+7	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=33:37
+8	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=38:43
+9	kupixawa	kupixawa	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=44:52
+10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=52:53
+
+# sent_id = Avila2021:20:2:188
+# text = Usika ramé aintá kupixá-pe, umaã paá suasú umuaíwa aintá kupixawa.
+# text_eng =  When they arrived at their gardens, they saw, as they say, that the deer had spoiled their plantations.
+# text_por = Quando chegaram às suas roças, viram, segundo dizem, que o veado estragara as roças delas.
+# text_source = Rodrigues, 137, adap.
+# text_orig = Usika ramé aintá kupixá-pe, umaã paá suasú umuaíwa aintá kupixawa
+1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	7	advcl	_	TokenRange=0:5
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
+3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:16
+4-5	kupixá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=17:27
+4	kupixá	kupixá	NOUN	N	Number=Sing	1	obl	_	Alomorph=kupixá
+5	pe	upé	ADP	ADP	Clitic=Yes	4	case	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=28:29
+7	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=30:34
+8	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=35:38
+9	suasú	suasú	NOUN	N	Number=Sing	10	obj	_	TokenRange=39:44
+10	umuaíwa	muaíwa	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=45:52
+11	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=53:58
+12	kupixawa	kupixawa	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=59:67
+13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=67:68
+
+# sent_id = Avila2021:0:0:189
+# text = Aé upuká, upurasí, upurungitá aintá irumu, umuseẽ aintá piá, mairamé aintá unheẽ aé umendari arama aintá irumu, aé ti usuaxara.
+# text_eng = She laughed, danced, talked with them, softened their hearts, when they told her to marry them, she didn't respond.
+# text_por = Ela ria, dançava, conversava com eles, adoçava o coração deles, quando eles diziam para ela casar com eles, ela não respondia.
+# text_source = Amorim, 47, adap.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	upuká	puká	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	upurasí	purasí	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=10:17
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=17:18
+6	upurungitá	purungitá	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=19:29
+7	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	obl	_	TokenRange=30:35
+8	irumu	irumu	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=36:41
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=41:42
+10	umuseẽ	museẽ	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=43:49
+11	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=50:55
+12	piá	piá	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=56:59
+13	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=59:60
+14	mairamé	mairamé	SCONJ	SCONJ	_	16	mark	_	TokenRange=61:68
+15	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	nsubj	_	TokenRange=69:74
+16	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	25	advcl	_	TokenRange=75:80
+17	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	18	nsubj	_	TokenRange=81:83
+18	umendari	mendari	VERB	V	Person=3|VerbForm=Fin	16	advcl	_	TokenRange=84:92
+19	arama	arama	SCONJ	SCONJ	_	18	mark	_	TokenRange=93:98
+20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	18	obl	_	TokenRange=99:104
+21	irumu	irumu	ADP	ADP	_	20	case	_	SpaceAfter=No|TokenRange=105:110
+22	,	,	PUNCT	PUNCT	_	25	punct	_	TokenRange=110:111
+23	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	25	nsubj	_	TokenRange=112:114
+24	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	25	advmod	_	TokenRange=115:117
+25	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=118:126
+26	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=126:127
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
