@@ -5,21 +5,28 @@
 |ADP|posp.|posposição|
 |ADV|adv.|advérbio|
 |ADVD|adv. dem.|advérbio demonstrativo|
+|ADVG|adv. gr.|advérbio de grau|
+|ADVJ|adv. conj.|advérbio conjuncional|
 |ADVL|adv. rel.|advérbio relativo|
 |ADVR|adv. interr.|advérbio interrogativo|
 |ADVS|adv. intensif.|advérbio de intensidade|
 |AFF|part. afirm.|partícula de afirmação|
 |ART|art. indef.|artigo indefinido|
-|AUXF|aux. flex.|auxiliar flexionado|
+|AUXFR|aux. flex. pré.|auxiliar flexionado pré-verbal|
+|AUXFS|aux. flex. pós.|auxiliar flexionado pós-verbal|
 |AUXN|aux. não-flex.|auxiliar não flexionado|
 |CARD|num. card.|numeral cardinal|
 |CCONJ|cconj.|conjunção coordenativa|
+|CERT|part. cert.|partícula de certeza|
+|CLADP|posp. encl.|posposição enclítica|
+|CLADV|adv. encl.|advérbio enclítico|
 |CONJ|conj.|conjunção|
 |CQ|part. interr. cont.|partícula de pergunta de conteúdo|
 |DEM|pron. dem.|pronome demostrativo|
 |DEMS|pron. dem. dist.|pronome demostrativo distal|
 |DEMX|pron. dem. prox.|pronome demostrativo proximal|
 |EMP|pron. enf.|pronome de ênfase|
+|EXST|part. exist.|partícula de existencial|
 |FRUST|part. frust.|partícula de frustativo|
 |FUT|part. fut.|partícula de futuro|
 |IND|pron. indef.|pronome indefinido|
