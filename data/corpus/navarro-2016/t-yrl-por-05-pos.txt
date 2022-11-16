@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,13 +12,13 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel
 # Last update: May 15, 2022
 
-Maria/PROPN uwasemu/V yepé/ART+CARD+CONJ+FRUST sumuara-kunhã/N ./PUNCT 
+Maria/PROPN uwasemu/V yepé/ART+CARD+FRUST+SCONJ sumuara-kunhã/N ./PUNCT 
 # Maria encontra uma amiga.
 
-Garapá/N upé/ADP Maria/PROPN uwasemu/V ana/PFV yepé/ART+CARD+CONJ+FRUST sumuara-kunhã/N umurari/V waá/REL tawa/N upé/ADP ./PUNCT 
+Garapá/N upé/ADP Maria/PROPN uwasemu/V ana/PFV yepé/ART+CARD+FRUST+SCONJ sumuara-kunhã/N umurari/V waá/REL tawa/N upé/ADP ./PUNCT 
 # No porto, Maria encontrou uma amiga que mora na cidade.
 
-Aé/PRON surí/A2 upitá/V ,/PUNCT asuí/ADV+CONJ unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
+Aé/PRON surí/A2 upitá/V ,/PUNCT asuí/ADV+CCONJ unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
 # Ela ficou feliz e disse-lhe:
 
 Puranga/A+ADV karuka/N ,/PUNCT Catarina/PROPN !/PUNCT 
@@ -27,10 +27,10 @@ Puranga/A+ADV karuka/N ,/PUNCT Catarina/PROPN !/PUNCT
 Puranga/A+ADV karuka/N ,/PUNCT Maria/PROPN !/PUNCT 
 # Boa tarde, Maria!
 
-Indé/PRON muíri/IND+INT akayú/N taá/CQ remurari/V iké/ADVD kwá/ADVD+AUXN+DEMX+V tawa/N upé/ADP ?/PUNCT 
+Indé/PRON muíri/IND+INT akayú/N taá/CQ remurari/V iké/ADVD kwá/ADVD+DEMX+V tawa/N upé/ADP ?/PUNCT 
 # Você há quantos anos mora aqui nesta cidade?
 
-Aikwé/V mukũi/CARD+QUANT akayú/N ana/PFV ayuri/V se/PRON2 retama/N suí/ADP ./PUNCT 
+Aikwé/EXST mukũi/CARD+INDQ akayú/N ana/PFV ayuri/V se/PRON2 retama/N suí/ADP ./PUNCT 
 # Já há dois anos, vim da minha terra.
 
 Ixé/PRON ayupukwáu/V ana/PFV iké/ADVD ./PUNCT 
@@ -42,7 +42,7 @@ Ixé/PRON nti/NEG amandwari/V ayuíri/V se/PRON2 anama-itá/N ruka/N kití/ADP .
 Akwáu/V katú/A2+ADV ixé/PRON nti/NEG ayupukwáu/V akití/ADVD ./PUNCT 
 # Sei bem que eu não me acostumo por ali.
 
-Apitá/V kurí/FUT iké/ADVD té/ADV mairamé/ADVR+CONJ Tupana/PROPN uputari/V ./PUNCT 
+Apitá/V kurí/FUT iké/ADVD té/ADV mairamé/ADVR+SCONJ Tupana/PROPN uputari/V ./PUNCT 
 # Ficarei aqui até quando Deus quiser.
 
 Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP amaã/V arã/ADP+FUT+SCONJ nhuntu/ADV se/PRON2 anama-itá/N ?/PUNCT 
@@ -51,13 +51,13 @@ Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP amaã/V
 Ixé/PRON nti/NEG amandwari/V ayuíri/V akití/ADVD ./PUNCT 
 # Eu não penso em voltar para lá.
 
-Ixé/PRON asaisú/V kwá/ADVD+AUXN+DEMX+V tetama/N kuíri/ADV ./PUNCT 
+Ixé/PRON asaisú/V kwá/ADVD+DEMX+V tetama/N kuíri/ADV ./PUNCT 
 # Eu amo esta terra agora.
 
-Kuxiíma/ADV ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVD+AUXN+DEMX+V kití/ADP ,/PUNCT mayé/ADV+ADVR+SCONJ taá/CQ reyuri/V ?/PUNCT 
+Kuxiíma/ADV ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVD+DEMX+V kití/ADP ,/PUNCT mayé/ADV+ADVR+SCONJ taá/CQ reyuri/V ?/PUNCT 
 # Antigamente, quando você veio para cá, como você veio?
 
-Aikwé/V awá/IND+INT ururi/V indé/PRON ú/V reputari/V reyuri/V ne/PRON2 retama/N suí/ADP ne/PRON2 rupí/ADP ?/PUNCT 
+Aikwé/EXST awá/IND+INT ururi/V indé/PRON ú/V reputari/V reyuri/V ne/PRON2 retama/N suí/ADP ne/PRON2 rupí/ADP ?/PUNCT 
 # Houve quem a trouxesse ou você quis vir da sua terra por você (mesma)?
 
 Aputari/V ayuri/V se/PRON2 rupí/ADP ./PUNCT 
@@ -69,7 +69,7 @@ Uií/ADV ixé/PRON se/PRON2 rurí/A2 iké/ADVD ./PUNCT
 Awá/IND+INT sumuara-itá/N taá/CQ indé/PRON rerikú/V iké/ADVD ?/PUNCT 
 # Quais amigos você tem aqui?
 
-Siía/QUANT sumuara/N ./PUNCT 
+Siía/INDQ sumuara/N ./PUNCT 
 # Muitos amigos.
 
 Catarina/PROPN ,/PUNCT asarú/V indé/PRON se/PRON2 rendawa/N upé/ADP wirandé/ADV ./PUNCT 

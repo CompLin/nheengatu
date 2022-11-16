@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:18 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -33,7 +33,7 @@ Pituna/N sakurana/A ./PUNCT
 Panhẽ/TOT mira/N usú/V ukara/N kití/ADP ./PUNCT 
 # Todas as pessoas vão para fora.
 
-Kuíri/ADV supí/ADV aintá/PRON+PRON2 uyumusurí-kwáu/V ./PUNCT 
+Kuíri/ADV supí/CERT+N aintá/PRON+PRON2 uyumusurí-kwáu/V ./PUNCT 
 # Agora de fato eles podem se divertir.
 
 Maria/PROPN usenũi/V aintá/PRON+PRON2 :/PUNCT 
@@ -42,10 +42,10 @@ Maria/PROPN usenũi/V aintá/PRON+PRON2 :/PUNCT
 Yasú/V panhẽuka/??? kwara/N kití/ADP !/PUNCT 
 # Vamos todos para dentro de casa!
 
-Aikwé/V bũa/A+QUANT timbiú/N penhẽ/PRON arama/ADP+FUT+SCONJ !/PUNCT 
+Aikwé/EXST bũa/A+INDQ timbiú/N penhẽ/PRON arama/ADP+FUT+SCONJ !/PUNCT 
 # Há muita comida para vocês!
 
-Aikwé/V bũa/A+QUANT meyú-itá/N yurá/N árupi/ADP pembaú/V arama/ADP+FUT+SCONJ !/PUNCT 
+Aikwé/EXST bũa/A+INDQ meyú-itá/N yurá/N árupi/ADP pembaú/V arama/ADP+FUT+SCONJ !/PUNCT 
 # Há grandes bijus sobre o jirau para vocês comerem!
 
 Antônio/PROPN ,/PUNCT Maria/PROPN mimbira/N ,/PUNCT uyupirú/V unheengari/V ./PUNCT 
@@ -69,7 +69,7 @@ Rute/PROPN ,/PUNCT indé/PRON renheengari/V ramé/ADP+SCONJ maã/IND+INT+N+V ,/P
 Panhẽ/TOT mira/N umbaú/V meyú/N ./PUNCT 
 # Todas as pessoas comem beiju.
 
-Yepé/ART+CARD+CONJ+FRUST apigawa/A+N kawera/N usika/V murasí/N upé/ADP ./PUNCT 
+Yepé/ART+CARD+FRUST+SCONJ apigawa/A+N kawera/N usika/V murasí/N upé/ADP ./PUNCT 
 # Um homem bêbado chega à festa.
 
 Maria/PROPN uyakáu/V aé/PRON :/PUNCT 
@@ -99,5 +99,5 @@ Maria/PROPN unheẽ/V :/PUNCT
 Kawera-itá/N yawé/ADP+ADV tẽ/ADV ./PUNCT 
 # Bêbados são assim mesmo.
 
-Ne/PRON2 mairamé/ADVR+CONJ aintá/PRON+PRON2 rurí/A2 ./PUNCT 
+Ne/PRON2 mairamé/ADVR+SCONJ aintá/PRON+PRON2 rurí/A2 ./PUNCT 
 # Nunca são felizes.

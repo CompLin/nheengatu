@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:16 2022.
+Date: Wed Nov 16 12:44:41 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -21,7 +21,7 @@ Asaisú/V se/PRON2 maã-itá/N ./PUNCT
 Yasú/V tendawa/N kití/ADP yamunhã/V arama/ADP+FUT+SCONJ kupixawa/N ./PUNCT 
 # Vamos à comunidade para fazer a roça.
 
-Apitá/V ne/PRON2 ruka/N upé/ADP apurungitá/V arama/ADP+FUT+SCONJ ne/PRON2 irũmu/ADP ./PUNCT 
+Apitá/V ne/PRON2 ruka/N upé/ADP apurungitá/V arama/ADP+FUT+SCONJ ne/PRON2 irũmu/ADP+SCONJ ./PUNCT 
 # Fico na sua casa para falar com você.
 
 Xukúi/V pirá/N indé/PRON rembaú/V arã/ADP+FUT+SCONJ ./PUNCT 
@@ -33,7 +33,7 @@ Remunhã/V ne/PRON2 kakurí/N nti/NEG arã/ADP+FUT+SCONJ rewatá/V remundá/V se
 Maria/PROPN umaã/V ixé/PRON ./PUNCT 
 # Maria me vê.
 
-Ixé/PRON aruri/V aé/PRON kwá/ADVD+AUXN+DEMX+V kití/ADP ./PUNCT 
+Ixé/PRON aruri/V aé/PRON kwá/ADVD+DEMX+V kití/ADP ./PUNCT 
 # Eu o trago para cá.
 
 Pedro/PROPN umaã/V kurí/FUT indé/PRON suka/N upé/ADP ./PUNCT 
@@ -48,7 +48,7 @@ Asarú/V remanũ/??? ambaú/V arã/ADP+FUT+SCONJ indé/PRON ./PUNCT
 Asú/V ramé/ADP+SCONJ ,/PUNCT arasú/V se/PRON2 mimbira/N ./PUNCT 
 # Quando vou, levo meu filho.
 
-Arasú/V ramé/ADP+SCONJ timbiú/N ,/PUNCT nti/NEG apitá/V yumasisawa/N irũmu/ADP ./PUNCT 
+Arasú/V ramé/ADP+SCONJ timbiú/N ,/PUNCT nti/NEG apitá/V yumasisawa/N irũmu/ADP+SCONJ ./PUNCT 
 # Quando levo comida, não fico com fome.
 
 Nti/NEG ramé/ADP+SCONJ repurakí/V ,/PUNCT indé/PRON repitá/V pirasua/A+N ./PUNCT 
@@ -78,7 +78,7 @@ Amú/IND ara/N ramé/ADP+SCONJ ana/PFV ,/PUNCT paá/RPRT ,/PUNCT aintá/PRON+PRO
 Nti/NEG aé/PRON uputari/V será/PQ indé/PRON ?/PUNCT 
 # Ele não quis você?
 
-Mairamé/ADVR+CONJ arasú/V timbiú/N ,/PUNCT ixé/PRON nti/NEG apitá/V yumasisawa/N irũmu/ADP ./PUNCT 
+Mairamé/ADVR+SCONJ arasú/V timbiú/N ,/PUNCT ixé/PRON nti/NEG apitá/V yumasisawa/N irũmu/ADP+SCONJ ./PUNCT 
 # Quando levo comida, eu não fico com fome.
 
 Maria/PROPN usú/V ana/PFV suka/N kití/ADP ./PUNCT 
@@ -87,13 +87,13 @@ Maria/PROPN usú/V ana/PFV suka/N kití/ADP ./PUNCT
 Ixé/PRON apitá/V ana/PFV se/PRON2 retama/N upé/ADP ./PUNCT 
 # Eu fiquei na minha terra.
 
-Ixé/PRON apurungitá/V ana/PFV aikú/V mairamé/ADVR+CONJ indé/PRON rewiké/V ./PUNCT 
+Ixé/PRON apurungitá/V ana/PFV aikú/V mairamé/ADVR+SCONJ indé/PRON rewiké/V ./PUNCT 
 # Eu estava falando quando você entrou.
 
-Aé/PRON nti/NEG uyukataka/V ;/PUNCT umaã/V yepé/ART+CARD+CONJ+FRUST iwaka/N kití/ADP ,/PUNCT unheengari/V uikú/V yepé/ART+CARD+CONJ+FRUST nheengarisawa/N surí/A2 ./PUNCT 
+Aé/PRON nti/NEG uyukataka/V ;/PUNCT umaã/V yepé/ART+CARD+FRUST+SCONJ iwaka/N kití/ADP ,/PUNCT unheengari/V uikú/V yepé/ART+CARD+FRUST+SCONJ nheengarisawa/N surí/A2 ./PUNCT 
 # Ele não se mexeu; olhava para o céu, estando a cantar uma canção alegre.
 
-Mayawé/CONJ ixé/PRON maraari/A aikú/V yepé/ART+CARD+CONJ+FRUST ,/PUNCT ayenũ/V se/PRON2 mimbira/N ruakí/ADP ,/PUNCT akiri/V ana/PFV ./PUNCT 
+Mayawé/SCONJ ixé/PRON maraari/A aikú/V yepé/ART+CARD+FRUST+SCONJ ,/PUNCT ayenũ/V se/PRON2 mimbira/N ruakí/ADP ,/PUNCT akiri/V ana/PFV ./PUNCT 
 # Como eu estava cansado, deitei-me perto de meu filho e dormi.
 
 Se/PRON2 manha/N unheẽ/V kwera/A+PRET ixé/PRON arama/ADP+FUT+SCONJ :/PUNCT 
@@ -102,7 +102,7 @@ Se/PRON2 manha/N unheẽ/V kwera/A+PRET ixé/PRON arama/ADP+FUT+SCONJ :/PUNCT
 Nhaã/DEMS se/PRON2 kurumĩ/N ./PUNCT 
 # Aquele é meu menino.
 
-Kuxiíma/ADV ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVD+AUXN+DEMX+V kití/ADP ,/PUNCT mayé/ADV+ADVR+SCONJ taá/CQ reyuri/V ?/PUNCT 
+Kuxiíma/ADV ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVD+DEMX+V kití/ADP ,/PUNCT mayé/ADV+ADVR+SCONJ taá/CQ reyuri/V ?/PUNCT 
 # Antigamente, quando você veio para cá, como você veio?
 
 Kunhã/A+N surí/A2 ./PUNCT 
@@ -123,16 +123,16 @@ Aintá/PRON+PRON2 rakú/A2 ./PUNCT
 Se/PRON2 rikwé/A2+N aikú/V ./PUNCT 
 # Eu estou vivo.
 
-Kwá/ADVD+AUXN+DEMX+V wirá/N sikwé/A2+N uikú/V ./PUNCT 
+Kwá/ADVD+DEMX+V wirá/N sikwé/A2+N uikú/V ./PUNCT 
 # Este pássaro está vivo.
 
 Maria/PROPN uyupirú/V umunhã/V timbiú/N i/PRON2 anama-itá/N supé/ADP ./PUNCT 
 # Maria começa a fazer comida para seus familiares.
 
-Aputari/V apurungitá/V ne/PRON2 irũmu/ADP ./PUNCT 
+Aputari/V apurungitá/V ne/PRON2 irũmu/ADP+SCONJ ./PUNCT 
 # Quero falar com você.
 
-Pedro/PROPN usú/V upurungitá/V Maria/PROPN irũmu/ADP suka/N upé/ADP ./PUNCT 
+Pedro/PROPN usú/V upurungitá/V Maria/PROPN irũmu/ADP+SCONJ suka/N upé/ADP ./PUNCT 
 # Pedro vai falar com Maria na sua casa.
 
 Ixé/PRON axari/V usasá/V pituna/N ./PUNCT 

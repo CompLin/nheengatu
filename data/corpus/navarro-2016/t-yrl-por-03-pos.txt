@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -15,7 +15,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 São/PROPN Gabriel/PROPN upé/ADP ./PUNCT 
 # Em São Gabriel.
 
-Maria/PROPN usemu/V igara/N irũmu/ADP ./PUNCT 
+Maria/PROPN usemu/V igara/N irũmu/ADP+SCONJ ./PUNCT 
 # Maria sai com a canoa.
 
 Aé/PRON usú/V São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 
@@ -24,31 +24,31 @@ Aé/PRON usú/V São/PROPN Gabriel/PROPN kití/ADP ./PUNCT
 São/PROPN Gabriel/PROPN tawa/N puranga/A+ADV ,/PUNCT apekatú/A+ADV Barra/PROPN suí/ADP ./PUNCT 
 # São Gabriel é uma cidade bonita, distante de Manaus.
 
-Siía/QUANT mira/N umurari/V ape/ADVD+CONJ ./PUNCT 
+Siía/INDQ mira/N umurari/V ape/ADVD+ADVJ ./PUNCT 
 # Muitas pessoas moram ali.
 
-Aé/PRON upiripana/V kurí/FUT maã-itá/N i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
+Aé/PRON upiripana/V kurí/FUT maã-itá/N i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+CCONJ+V ./PUNCT 
 # Ela vai comprar coisas para seu filho, para seu marido também.
 
-Aé/PRON usika/V ape/ADVD+CONJ ,/PUNCT usú/V yepé/ART+CARD+CONJ+FRUST piripanasawa/N ruka/N kití/ADP ./PUNCT 
+Aé/PRON usika/V ape/ADVD+ADVJ ,/PUNCT usú/V yepé/ART+CARD+FRUST+SCONJ piripanasawa/N ruka/N kití/ADP ./PUNCT 
 # Ela chega lá, vai a uma loja.
 
-Aé/PRON unheẽ/V yepé/ART+CARD+CONJ+FRUST meẽsara/N supé/ADP :/PUNCT 
+Aé/PRON unheẽ/V yepé/ART+CARD+FRUST+SCONJ meẽsara/N supé/ADP :/PUNCT 
 # Ela diz a um vendedor:
 
-Ixé/PRON aputari/V yepé/ART+CARD+CONJ+FRUST kamixá/N se/PRON2 mimbira/N supé/ADP ./PUNCT 
+Ixé/PRON aputari/V yepé/ART+CARD+FRUST+SCONJ kamixá/N se/PRON2 mimbira/N supé/ADP ./PUNCT 
 # Eu quero uma camisa para meu filho.
 
-Aé/PRON urikú/V mukũi/CARD+QUANT akayú/N ./PUNCT 
+Aé/PRON urikú/V mukũi/CARD+INDQ akayú/N ./PUNCT 
 # Ele tem dois anos.
 
-Kwá/ADVD+AUXN+DEMX+V kamixá/N puranga/A+ADV retana/ADVS ./PUNCT 
+Kwá/ADVD+DEMX+V kamixá/N puranga/A+ADV retana/ADVS ./PUNCT 
 # Esta camisa é muito bonita.
 
 Aé/PRON sepiasuíma/A ./PUNCT 
 # Ela é barata.
 
-Maã/IND+INT+N+V taá/CQ aikwé/V se/PRON2 mena/N supé/ADP ?/PUNCT 
+Maã/IND+INT+N+V taá/CQ aikwé/EXST se/PRON2 mena/N supé/ADP ?/PUNCT 
 # Que há para o meu marido?
 
 Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT 
@@ -57,25 +57,25 @@ Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT
 Se/PRON2 mena/N upurakí/V kurí/FUT garapá/N upé/ADP ./PUNCT 
 # Meu marido vai trabalhar no porto.
 
-Aé/PRON uputari/V yepé/ART+CARD+CONJ+FRUST xirura/N pisasú/A ./PUNCT 
+Aé/PRON uputari/V yepé/ART+CARD+FRUST+SCONJ xirura/N pisasú/A ./PUNCT 
 # Ele quer uma calça nova.
 
 I/PRON2 xirura-itá/N suruka/A ./PUNCT 
 # As calças dele estão rasgadas.
 
-Kwá/ADVD+AUXN+DEMX+V puranga/A+ADV ./PUNCT 
+Kwá/ADVD+DEMX+V puranga/A+ADV ./PUNCT 
 # Esta é bonita.
 
-Muíri/IND+INT rupí/ADP taá/CQ kwá/ADVD+AUXN+DEMX+V xirura/N ?/PUNCT 
+Muíri/IND+INT rupí/ADP taá/CQ kwá/ADVD+DEMX+V xirura/N ?/PUNCT 
 # Por quanto é esta calça?
 
-Mukũi/CARD+QUANT real/??? ./PUNCT 
+Mukũi/CARD+INDQ real/??? ./PUNCT 
 # Dois reais.
 
 Muíri/IND+INT rupí/ADP nhaã/DEMS ?/PUNCT 
 # Por quanto é aquela?
 
-Nhaã/DEMS xirura/N mukũi/CARD+QUANT real/??? yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
+Nhaã/DEMS xirura/N mukũi/CARD+INDQ real/??? yuíri/ADV+CCONJ+V ./PUNCT 
 # Aquela calça é dois reais também.
 
 Aputari/V nhaã/DEMS ./PUNCT 
@@ -87,7 +87,7 @@ Xukúi/V xirura/N ./PUNCT
 Nti/NEG reputari/V ne maã/IND indé/PRON arama/ADP+FUT+SCONJ ?/PUNCT 
 # Não quer nada para você?
 
-Umbaá/ADV ./PUNCT 
+Umbaá/NEG ./PUNCT 
 # Não.
 
 Ariré/ADV kurí/FUT apiripana/V maã-itá/N ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
@@ -108,7 +108,7 @@ Xukúi/V sekuyaramirĩ/N ./PUNCT
 Maria/PROPN umukwekatú/V :/PUNCT 
 # Maria agradece:
 
-Kwekatú/A reté/ADVS !/PUNCT 
+Kwekatú/A reté/A+ADVS !/PUNCT 
 # Muito obrigada!
 
 Ariré/ADV ,/PUNCT aé/PRON usú/V amú/IND piripanasawa/N ruka/N kití/ADP ./PUNCT 

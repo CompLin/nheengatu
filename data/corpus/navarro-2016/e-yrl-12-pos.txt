@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Ixé/PRON arikú/V yepé/ART+CARD+CONJ+FRUST se/PRON2 mũ/N surara/N ./PUNCT 
+Ixé/PRON arikú/V yepé/ART+CARD+FRUST+SCONJ se/PRON2 mũ/N surara/N ./PUNCT 
 # Eu tenho um irmão soldado.
 
 Maria/PROPN amũ/N nti/NEG urikú/V i/PRON2 mimbira/N ./PUNCT 
@@ -24,16 +24,16 @@ Se/PRON2 paya/N rendira/N usú/V umunhã/V uí/N ./PUNCT
 Se/PRON2 rimirikú/N kiwira/??? nti/NEG ukwáu/V witá/V paranãme/??? ./PUNCT 
 # O irmão da minha esposa não sabe nadar no rio.
 
-Se/PRON2 paya/N urikú/V yepé/ART+CARD+CONJ+FRUST taíra/N ximirikú/N ambira/A+N irũmu/ADP ./PUNCT 
+Se/PRON2 paya/N urikú/V yepé/ART+CARD+FRUST+SCONJ taíra/N ximirikú/N ambira/A+N irũmu/ADP+SCONJ ./PUNCT 
 # Meu pai tem um filho com sua finada esposa.
 
-José/PROPN urikú/V yepé/ART+CARD+CONJ+FRUST tayera/N murakisara/N ./PUNCT 
+José/PROPN urikú/V yepé/ART+CARD+FRUST+SCONJ tayera/N murakisara/N ./PUNCT 
 # José tem uma filha trabalhadeira.
 
 Maria/PROPN urikú/V i/PRON2 mimbira/N ./PUNCT 
 # Maria tem filho.
 
-Nti/NEG nhuntu/ADV akwáu/V indé/PRON yepé/ART+CARD+CONJ+FRUST pitua/A ./PUNCT 
+Nti/NEG nhuntu/ADV akwáu/V indé/PRON yepé/ART+CARD+FRUST+SCONJ pitua/A ./PUNCT 
 # Só não sabia que você era um covarde.
 
 Remaã/V mamentu/ADV reikú/V !/PUNCT 
@@ -51,7 +51,7 @@ Pewapikantu/??? ./PUNCT
 Pewapika/V nhuntu/ADV ./PUNCT 
 # Fiquem só sentados.
 
-Amunhã/V yepé/ART+CARD+CONJ+FRUST kamixá/N nhuntu/ADV ./PUNCT 
+Amunhã/V yepé/ART+CARD+FRUST+SCONJ kamixá/N nhuntu/ADV ./PUNCT 
 # Fiz uma camisa só.
 
 Aikwentu/ADV usika/V ./PUNCT 
@@ -60,10 +60,10 @@ Aikwentu/ADV usika/V ./PUNCT
 Pedro/PROPN uikuntu/V sendawa/N upé/ADP ./PUNCT 
 # Pedro está quieto na sua comunidade.
 
-Usika/V kwesentu/ADV yepé/ART+CARD+CONJ+FRUST apigawa/A+N ./PUNCT 
+Usika/V kwesentu/ADV yepé/ART+CARD+FRUST+SCONJ apigawa/A+N ./PUNCT 
 # Chegou recentemente um homem.
 
-Mayawé/CONJ aé/PRON nti/NEG rẽ/ADV uyupiri-kwáu/V ,/PUNCT upitá/V iwá/??? wirpe/ADP ./PUNCT 
+Mayawé/SCONJ aé/PRON nti/NEG rẽ/ADV uyupiri-kwáu/V ,/PUNCT upitá/V iwá/??? wirpe/ADP ./PUNCT 
 # Como ele ainda não sabia subir, ficou embaixo da árvore.
 
 Nti/NEG ramé/ADP+SCONJ remunhã/V kwayé/ADV ,/PUNCT yarasú/V indé/PRON sasisawa/N rupí/ADP tawa/N kití/ADP ./PUNCT 
@@ -72,8 +72,8 @@ Nti/NEG ramé/ADP+SCONJ remunhã/V kwayé/ADV ,/PUNCT yarasú/V indé/PRON sasis
 Nti/NEG kurí/FUT yawé/ADP+ADV remunhã/V ./PUNCT 
 # Você não fará assim.
 
-Mukũi/CARD+QUANT tuxawa/N nti/NEG ana/PFV umaã/V maanungara/IND ./PUNCT 
+Mukũi/CARD+INDQ tuxawa/N nti/NEG ana/PFV umaã/V maanungara/IND ./PUNCT 
 # Os dois tuxauas já não viam nada.
 
-Nti/NEG ana/PFV remandwari/V será/PQ mayawé/CONJ resé/ADP+SCONJ repuká/V sé/A+ADV nhaã/DEMS kunhã-itá/N renundé/ADP ?/PUNCT 
+Nti/NEG ana/PFV remandwari/V será/PQ mayawé/SCONJ resé/ADP+SCONJ repuká/V sé/A+ADV nhaã/DEMS kunhã-itá/N renundé/ADP ?/PUNCT 
 # Você não lembra de como você riu gostoso diante daquelas mulheres?

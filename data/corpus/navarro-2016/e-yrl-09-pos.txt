@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre — Reviewer: Leonel Figueiredo de Alencar
 # Last update: June 5, 2022
 
-Ape/ADVD+CONJ té/ADV usasá/V sumuara/N urubú/N ./PUNCT 
+Ape/ADVD+ADVJ té/ADV usasá/V sumuara/N urubú/N ./PUNCT 
 # Nesse momento mesmo passou seu amigo urubu.
 
 Wirandé/ADV tẽ/ADV kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
@@ -30,10 +30,10 @@ Yawé/ADP+ADV tẽ/ADV aputari/V ./PUNCT
 Aintá/PRON+PRON2 umupuranga/V tupauku/N ./PUNCT 
 # Enfeitaram a igreja.
 
-Tá/PRON+PRON2 uyuká/V yepé/ART+CARD+CONJ+FRUST tatú/N paranã/N upé/ADP ./PUNCT 
+Tá/PRON+PRON2 uyuká/V yepé/ART+CARD+FRUST+SCONJ tatú/N paranã/N upé/ADP ./PUNCT 
 # Mataram um tatu no rio.
 
-Yepé/ART+CARD+CONJ+FRUST ara/N ,/PUNCT paá/RPRT ,/PUNCT São/PROPN Pedro/PROPN umunhã/V murasí/N iwaka/N kití/ADP ./PUNCT 
+Yepé/ART+CARD+FRUST+SCONJ ara/N ,/PUNCT paá/RPRT ,/PUNCT São/PROPN Pedro/PROPN umunhã/V murasí/N iwaka/N kití/ADP ./PUNCT 
 # Dizem que, um dia, São Pedro fez um baile lá para o céu.
 
 Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP ?/PUNCT 
@@ -48,7 +48,7 @@ yasí/N pitera/N kití/ADP
 Iwakape/??? murasí/N surí/A2 ./PUNCT 
 # No céu o baile foi alegre.
 
-Yepé/ART+CARD+CONJ+FRUST uwapika/V igara/N gantĩme/??? ,/PUNCT amú/IND uwapika/V yakumãme/??? ./PUNCT 
+Yepé/ART+CARD+FRUST+SCONJ uwapika/V igara/N gantĩme/??? ,/PUNCT amú/IND uwapika/V yakumãme/??? ./PUNCT 
 # Um sentou na proa da canoa, outro sentou na popa.
 
 Paranãme/??? igara/N upitá/V ana/PFV ./PUNCT 
@@ -66,13 +66,13 @@ Upitá/V uka/N pupé/ADP ./PUNCT
 Pedro/PROPN usemu/V tupauku/N kwara/N suí/ADP ./PUNCT 
 # Pedro saiu de dentro da igreja.
 
-Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+CONJ+FRUST nhaã/DEMS murasí/N ,/PUNCT ma/CONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
+Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT ma/CCONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
 # Era para eu ver aquele baile, mas não tenho minhas asas para voar.
 
-Ixé/PRON apitá/V arama/ADP+FUT+SCONJ yepé/ART+CARD+CONJ+FRUST iké/ADVD ./PUNCT 
+Ixé/PRON apitá/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ iké/ADVD ./PUNCT 
 # Era para eu ficar aqui.
 
-Watarampuá/??? ,/PUNCT nhaã/DEMS kurumiwasú/N kirimbawa/A+N piri/ADP+ADV waá/REL yandé/PRON retamawara/A|N aintá/PRON+PRON2 suí/ADP ,/PUNCT umendari/V arama/ADP+FUT+SCONJ waá/REL yepé/ART+CARD+CONJ+FRUST xe/PRON2 irũmu/ADP ,/PUNCT nti/NEG rẽ/ADV uyana/V kwá/ADVD+AUXN+DEMX+V kaxiwera/N ./PUNCT 
+Watarampuá/??? ,/PUNCT nhaã/DEMS kurumiwasú/N kirimbawa/A+N piri/ADP+ADVG waá/REL yandé/PRON retamawara/A|N aintá/PRON+PRON2 suí/ADP ,/PUNCT umendari/V arama/ADP+FUT+SCONJ waá/REL yepé/ART+CARD+FRUST+SCONJ xe/PRON2 irũmu/ADP+SCONJ ,/PUNCT nti/NEG rẽ/ADV uyana/V kwá/ADVD+DEMX+V kaxiwera/N ./PUNCT 
 # Uatarampuá, aquele moço que é o mais valente dos que são de nossa terra, que era para casar-se comigo, não correu ainda esta cachoeira.
 
 Se/PRON2 kerpi/V2 ./PUNCT 

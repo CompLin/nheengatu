@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:41 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -15,7 +15,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 Maria/PROPN umunhã/V uikú/V timbiú/N memũitendawa/N upé/ADP ./PUNCT 
 # Maria está fazendo comida na cozinha.
 
-Ixé/PRON apitá/V aikú/V yumasisawa/N irũmu/ADP ./PUNCT 
+Ixé/PRON apitá/V aikú/V yumasisawa/N irũmu/ADP+SCONJ ./PUNCT 
 # Eu estou ficando com fome.
 
 Indé/PRON reyenũ/V reikú/V ./PUNCT 
@@ -27,16 +27,16 @@ Aé/PRON uwapika/V ana/PFV uikú/V mimi/ADV ./PUNCT
 Uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT 
 # Está-se dependurando na árvore.
 
-Aé/PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
+Aé/PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+CCONJ+V ./PUNCT 
 # Ela está vendo árvores e casas de caboclos.
 
-Nhaã/DEMS apigawa/A+N umbaú/V ana/PFV pirá/N meyú/N yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
+Nhaã/DEMS apigawa/A+N umbaú/V ana/PFV pirá/N meyú/N yuíri/ADV+CCONJ+V ./PUNCT 
 # Aquele homem comeu peixe e biju.
 
-Aé/PRON umbué/V aintá/PRON+PRON2 upurungitá/V asuí/ADV+CONJ umupinima/V ./PUNCT 
+Aé/PRON umbué/V aintá/PRON+PRON2 upurungitá/V asuí/ADV+CCONJ umupinima/V ./PUNCT 
 # Ele os ensinou a falar, depois a escrever.
 
-Ixé/PRON apuamu/V asuí/ADV+CONJ apurasí/V ./PUNCT 
+Ixé/PRON apuamu/V asuí/ADV+CCONJ apurasí/V ./PUNCT 
 # Eu levanto, depois danço.
 
 Aé/PRON uyupiri/V ana/PFV mirá/N resé/ADP+SCONJ ./PUNCT 
@@ -90,7 +90,7 @@ Kunhã/A+N usú/V i/PRON2 mena/N renundé/ADP ./PUNCT
 Kunhã/A+N usú/V senundé/ADP ./PUNCT 
 # A mulher foi antes dele.
 
-Asú/V amunhã/V yepé/ART+CARD+CONJ+FRUST kakurí/N senundé/ADP ./PUNCT 
+Asú/V amunhã/V yepé/ART+CARD+FRUST+SCONJ kakurí/N senundé/ADP ./PUNCT 
 # Vou fazer um cacuri antes dele.
 
 Aintá/PRON+PRON2 upitá/V akangaíwa/A+N kurumĩwasú/N purangasawa/N renundé/ADP ./PUNCT 
@@ -102,5 +102,5 @@ Asú/V aikú/V se/PRON2 renundé/ADP kití/ADP ./PUNCT
 Kunhã/A+N uri/V tawa/N kití/ADP ./PUNCT 
 # A mulher vem para a cidade.
 
-Aé/PRON usú/V Maria/PROPN piri/ADP+ADV ./PUNCT 
+Aé/PRON usú/V Maria/PROPN piri/ADP+ADVG ./PUNCT 
 # Ele vai para junto de Maria.

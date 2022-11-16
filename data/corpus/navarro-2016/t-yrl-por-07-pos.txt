@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,19 +18,19 @@ Maria/PROPN umunhã/V timbiú/N ./PUNCT
 Maria/PROPN umemũi/V kurí/FUT timbiú/N i/PRON2 anama-itá/N supé/ADP ./PUNCT 
 # Maria vai cozinhar comida para seus parentes.
 
-Aé/PRON umunhã/V kurí/FUT kwaíra/A uí/N yuíri/ADV+AUXN+CCONJ+V ./PUNCT 
+Aé/PRON umunhã/V kurí/FUT kwaíra/A uí/N yuíri/ADV+CCONJ+V ./PUNCT 
 # Ela fará um pouco de farinha também.
 
-Aé/PRON upisika/V maniaka/N ,/PUNCT upiruka/V aé/PRON ,/PUNCT ukitika/V aé/PRON i/PRON2 iwisé/N irũmu/ADP ./PUNCT 
+Aé/PRON upisika/V maniaka/N ,/PUNCT upiruka/V aé/PRON ,/PUNCT ukitika/V aé/PRON i/PRON2 iwisé/N irũmu/ADP+SCONJ ./PUNCT 
 # Ela pega a mandioca, descasca-a, rala-a com seu ralador.
 
-Ariré/ADV ,/PUNCT aé/PRON upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP ./PUNCT 
+Ariré/ADV ,/PUNCT aé/PRON upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP+SCONJ ./PUNCT 
 # Depois, ela enche o tipití com a mandioca ralada.
 
 Utipika/V aé/PRON ,/PUNCT umusemu/V manikwera/N ,/PUNCT umburi/V pá/IND urupema/N upé/ADP ,/PUNCT umuáu/V uí/N ,/PUNCT umutiní/V aé/PRON yapuna/N upé/ADP ./PUNCT 
 # Espreme-a, faz sair a manipueira, põe tudo na peneira, peneira a farinha, torra-a no forno.
 
-Aé/PRON upisika/V mukũi/CARD+QUANT sapukaya/N ,/PUNCT uyuká/V aintá/PRON+PRON2 i/PRON2 pu/N irũmu/ADP umemũi/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 ./PUNCT 
+Aé/PRON upisika/V mukũi/CARD+INDQ sapukaya/N ,/PUNCT uyuká/V aintá/PRON+PRON2 i/PRON2 pu/N irũmu/ADP+SCONJ umemũi/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 ./PUNCT 
 # Ela pegou duas galinhas, matou-as com suas mãos para cozinhá-las.
 
 Aé/PRON umusaimbé/V i/PRON2 kisé/N ,/PUNCT umunuka/V musapiri/CARD pirá/N i/PRON2 mena/N ururi/V waá/REL paranã/N suí/ADP ./PUNCT 
@@ -81,7 +81,7 @@ Maria/PROPN umburi/V kamutí/N tatá/N árupi/ADP ./PUNCT
 Yepeawa/N upawa/V ana/PFV ./PUNCT 
 # A lenha acabou.
 
-Antônio/PROPN ururi/V ana/PFV piri/ADP+ADV yepeawa/N memũitawa/N kití/ADP ./PUNCT 
+Antônio/PROPN ururi/V ana/PFV piri/ADP+ADVG yepeawa/N memũitawa/N kití/ADP ./PUNCT 
 # Antônio já trouxe mais lenha para o fogão.
 
 Tik/INTJ !/PUNCT 
@@ -93,7 +93,7 @@ Manha/N ,/PUNCT repuíri/V timbiú/N !/PUNCT
 Aé/PRON ukái/V uikú/V !/PUNCT 
 # Ela está-se queimando!
 
-Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+AUXN+CCONJ+V ?/PUNCT 
+Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+CCONJ+V ?/PUNCT 
 # Antônio, você quer que eu faça biju também?
 
 Eẽ/AFF ,/PUNCT meyú/N sé/A+ADV ./PUNCT 

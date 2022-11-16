@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:42 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,34 +18,34 @@ Maria/PROPN anama/N usú/V uwatá-watá/V
 Maria/PROPN anama-itá/N amuramé/ADV aintá/PRON+PRON2 usemu/V uwatá-watá/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Os familiares de Maria às vezes saem para passear.
 
-Aintá/PRON+PRON2 uwiyé/V yepé/ART+CARD+CONJ+FRUST yupirisawa/N paranã/N ruakí/ADP ,/PUNCT asuí/ADV+CONJ aintá/PRON+PRON2 uyuruari/V yepé/ART+CARD+CONJ+FRUST igara/N puranga/A+ADV upé/ADP ./PUNCT 
+Aintá/PRON+PRON2 uwiyé/V yepé/ART+CARD+FRUST+SCONJ yupirisawa/N paranã/N ruakí/ADP ,/PUNCT asuí/ADV+CCONJ aintá/PRON+PRON2 uyuruari/V yepé/ART+CARD+FRUST+SCONJ igara/N puranga/A+ADV upé/ADP ./PUNCT 
 # Eles descem uma escada perto do rio, e embarcam numa bonita canoa.
 
-Pedro/PROPN igara/N pisasú/A piri/ADP+ADV amú/IND igara-itá/N suí/ADP ./PUNCT 
+Pedro/PROPN igara/N pisasú/A piri/ADP+ADVG amú/IND igara-itá/N suí/ADP ./PUNCT 
 # A canoa de Pedro é mais nova que as outras canoas.
 
-Aé/PRON usú/V kutara/ADV piri/ADP+ADV Paranãwasú/N rupí/ADP ./PUNCT 
+Aé/PRON usú/V kutara/ADV piri/ADP+ADVG Paranãwasú/N rupí/ADP ./PUNCT 
 # Ela vai mais rápido pelo rio Negro.
 
 Aintá/PRON+PRON2 usika/V kurí/FUT Tefé/PROPN kití/ADP musapiri/CARD ara/N riré/ADP ./PUNCT 
 # Eles chegarão a Tefé depois de três dias.
 
-Maria/PROPN surí/A2 uikú/V nhaãsé/CONJ aé/PRON umaã/V kurí/FUT amú-itá/IND tetama/N ./PUNCT 
+Maria/PROPN surí/A2 uikú/V nhaãsé/ADVJ aé/PRON umaã/V kurí/FUT amú-itá/IND tetama/N ./PUNCT 
 # Maria está feliz porque ela vai ver outras regiões.
 
-Maria/PROPN umaã/V uikú/V arara-itá/N ,/PUNCT tukana-itá/N ,/PUNCT amú-itá/IND wirá/N kaapura/A+N yuíri/ADV+AUXN+CCONJ+V i/PRON2 igara/N suí/ADP ./PUNCT 
+Maria/PROPN umaã/V uikú/V arara-itá/N ,/PUNCT tukana-itá/N ,/PUNCT amú-itá/IND wirá/N kaapura/A+N yuíri/ADV+CCONJ+V i/PRON2 igara/N suí/ADP ./PUNCT 
 # Maria está vendo araras, tucanos e outras aves silvestres de sua canoa.
 
 Maria/PROPN anama-itá/N upitá/V kwaíra/A ara/N Tefé/PROPN upé/ADP ./PUNCT 
 # Os familiares de Maria ficam poucos dias em Tefé.
 
-Aintá/PRON+PRON2 umundá/V ana/PFV Maria/PROPN ruka/N mairamé/ADVR+CONJ aintá/PRON+PRON2 uikú/V ukara/N kití/ADP ./PUNCT 
+Aintá/PRON+PRON2 umundá/V ana/PFV Maria/PROPN ruka/N mairamé/ADVR+SCONJ aintá/PRON+PRON2 uikú/V ukara/N kití/ADP ./PUNCT 
 # Roubaram a casa de Maria quando eles estavam fora.
 
 Ne/PRON2 awá/IND+INT ukwáu/V awá/IND+INT umundá/V aintá/PRON+PRON2 ruka/N ./PUNCT 
 # Ninguém sabe quem roubou a casa deles.
 
-Yepé-yepé/QUANT apigawa/A+N manawara/N usika/V ana/PFV pituna/N ramé/ADP+SCONJ Maria/PROPN rendawa/N upé/ADP ./PUNCT 
+Yepé-yepé/INDQ apigawa/A+N manawara/N usika/V ana/PFV pituna/N ramé/ADP+SCONJ Maria/PROPN rendawa/N upé/ADP ./PUNCT 
 # Alguns homens de Manaus (Barra) chegaram de noite à comunidade de Maria.
 
 Nti/NEG awá/IND+INT ukwáu/V awá/IND+INT nhaã/DEMS mira-itá/N ./PUNCT 
@@ -57,5 +57,5 @@ Maria/PROPN sasiara/A retana/ADVS ./PUNCT
 Kuxiíma/ADV ne awá/IND umunhã/V kwayé/ADV ./PUNCT 
 # Antigamente ninguém fazia assim.
 
-Ne/PRON2 mairamé/ADVR+CONJ aintá/PRON+PRON2 umaã/V nhaã/DEMS mimi/ADV ./PUNCT 
+Ne/PRON2 mairamé/ADVR+SCONJ aintá/PRON+PRON2 umaã/V nhaã/DEMS mimi/ADV ./PUNCT 
 # Nunca viram isso ali.

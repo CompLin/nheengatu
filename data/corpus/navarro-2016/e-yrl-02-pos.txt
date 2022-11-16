@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:16 2022.
+Date: Wed Nov 16 12:44:41 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,7 +18,7 @@ Maria/PROPN upitá/V São/PROPN Gabriel/PROPN upé/ADP ./PUNCT
 Maria/PROPN unheẽ/V nheenga-itá/N puranga/A+ADV Pedro/PROPN supé/ADP ./PUNCT 
 # Maria diz palavras bonitas a Pedro.
 
-Pedro/PROPN uikú/V Maria/PROPN irũmu/ADP ./PUNCT 
+Pedro/PROPN uikú/V Maria/PROPN irũmu/ADP+SCONJ ./PUNCT 
 # Pedro está com Maria.
 
 Pedro/PROPN usú/V igarapé/N kití/ADP ./PUNCT 
@@ -72,7 +72,7 @@ Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT
 Kuíri/ADV taá/CQ ?/PUNCT 
 # E agora?
 
-Asuí/ADV+CONJ taá/CQ ?/PUNCT Maã/IND+INT+N+V taá/CQ kurí/FUT yamunhã/V ?/PUNCT 
+Asuí/ADV+CCONJ taá/CQ ?/PUNCT Maã/IND+INT+N+V taá/CQ kurí/FUT yamunhã/V ?/PUNCT 
 # E daí? Que faremos?
 
 Mamé/ADVR taá/CQ té/ADV remaã/V se/PRON2 manha/N ?/PUNCT 
@@ -108,7 +108,7 @@ Awá/IND+INT penhé/??? suí/ADP usú-putari/??? ?/PUNCT
 Kunhã-itá/N usika/V ./PUNCT 
 # As mulheres chegam.
 
-mukũi/CARD+QUANT apigawa/A+N 
+mukũi/CARD+INDQ apigawa/A+N 
 # dois homens
 
 kunhã-itá/N puranga/A+ADV 
@@ -117,8 +117,8 @@ kunhã-itá/N puranga/A+ADV
 Uka-itá/N mirĩ/A+ADV ./PUNCT 
 # As casas são pequenas.
 
-yepé/ART+CARD+CONJ+FRUST apigawa/A+N 
+yepé/ART+CARD+FRUST+SCONJ apigawa/A+N 
 # um homem
 
-yepé/ART+CARD+CONJ+FRUST kunhã/A+N 
+yepé/ART+CARD+FRUST+SCONJ kunhã/A+N 
 # uma mulher

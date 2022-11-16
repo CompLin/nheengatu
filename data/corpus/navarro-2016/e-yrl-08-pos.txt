@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Mon Oct 10 18:32:17 2022.
+Date: Wed Nov 16 12:44:41 2022.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -27,10 +27,10 @@ Ixé/PRON ayuseruka/V Pedro/PROPN ./PUNCT
 Apigawa/A+N uyuyuká/V ana/PFV ./PUNCT 
 # O homem se matou.
 
-Ayuyeréu/V xinga/ADVS+QUANT ./PUNCT 
+Ayuyeréu/V xinga/ADVS+INDQ ./PUNCT 
 # Virei-me um pouco.
 
-Mukũi/CARD+QUANT apigawa/A+N uyuyuká/V ./PUNCT 
+Mukũi/CARD+INDQ apigawa/A+N uyuyuká/V ./PUNCT 
 # Os dois homens se mataram.
 
 Kunhã-itá/N uyumuapatuka/V ./PUNCT 
@@ -60,7 +60,7 @@ Kamixá/N uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT
 Maria/PROPN ukitika/V maniaka/N ./PUNCT 
 # Maria rala a mandioca.
 
-Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP ./PUNCT 
+Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP+SCONJ ./PUNCT 
 # Maria enche o tipití com a mandioca ralada.
 
 Pedro/PROPN ,/PUNCT paá/RPRT ,/PUNCT sera/N ./PUNCT 
@@ -69,16 +69,16 @@ Pedro/PROPN ,/PUNCT paá/RPRT ,/PUNCT sera/N ./PUNCT
 Upitá/V ,/PUNCT paá/RPRT ,/PUNCT suka/N upé/ADP ./PUNCT 
 # Contam que ficou na sua casa.
 
-Ape/ADVD+CONJ ,/PUNCT paá/RPRT ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
+Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
 # Então, dizem que chegou a ele o gavião.
 
-Aramé/ADV té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+CONJ+FRUST wiramirĩ/N ./PUNCT 
+Aramé/ADV té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+FRUST+SCONJ wiramirĩ/N ./PUNCT 
 # Nesse momento mesmo, dizem que passava um passarinho.
 
-Reyana/V taína-itá/N rakakwera/ADP ./PUNCT 
+Reyana/V taína-itá/N rakakwera/ADP+N ./PUNCT 
 # Corres atrás das crianças.
 
-Indé/PRON reyuri/V ana/PFV sakakwera/ADP ./PUNCT 
+Indé/PRON reyuri/V ana/PFV sakakwera/ADP+N ./PUNCT 
 # Tu vieste atrás dele.
 
 Aé/PRON uikú/V se/PRON2 ruka/N kupé/N upé/ADP ./PUNCT 
@@ -93,5 +93,5 @@ Uwapika/V riré/ADP ,/PUNCT umaã/V i/PRON2 manha/N resé/ADP+SCONJ ./PUNCT
 Ukiri/V renundé/ADP ,/PUNCT aé/PRON uú/V xibé/N ./PUNCT 
 # Antes de dormir, ele bebe chibé.
 
-Aé/PRON upurungitá/V pukusawa/ADP+CONJ ,/PUNCT ixé/PRON apurakí/V ./PUNCT 
+Aé/PRON upurungitá/V pukusawa/ADP+SCONJ ,/PUNCT ixé/PRON apurakí/V ./PUNCT 
 # Enquanto ele fala, eu trabalho.
