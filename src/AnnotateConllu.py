@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 6, 2022
+# Last update: November 16, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
@@ -168,6 +168,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         token['feats']=feats
     else:
         token['feats']=None
+    if token['xpos'] == 'REL':
+        updateFeats(token,'PronType','Rel')
     token['head']=head
     dprl=mapping.get(upos)
     if not dprl:
@@ -474,7 +476,7 @@ def getAdvHead(token,tokenlist,verbs):
         headid=nextVerb(token,verbs)
     return headid
 
-def handleAdv(token,tokenlist,verbs):
+def handleAdv(token,nextToken, tokenlist,verbs):
     token['deprel']='advmod'
     previous=getPreviousToken(token,tokenlist,skip='PUNCT')
     if token['xpos']=='ADVL':
@@ -490,9 +492,8 @@ def handleAdv(token,tokenlist,verbs):
             head['head']=previous['id']
     elif token['xpos']=='ADVG':
         token['head']=previous['id']
-        next=getNextToken(token,tokenlist)
         updateFeats(token,'AdvType','Deg')
-        feats=next.get('feats')
+        feats=nextToken.get('feats')
         if feats and feats.get('PronType') == 'Rel':
             updateFeats(token,'Degree','Sup')
         else:
@@ -873,7 +874,7 @@ def addFeatures(tokenlist):
         elif upos == "CCONJ":
             handleCconj(token,verbs)
         elif upos == "ADV":
-            handleAdv(token,tokenlist,verbs)
+            handleAdv(token,nextToken,tokenlist,verbs)
         elif upos in ("DET","NUM"):
             handleDetNum(upos,token,nextToken,tokenlist,verbs)
         if nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
