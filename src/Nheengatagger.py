@@ -178,7 +178,9 @@ def restoreEllipsis(newList,ellipis,xxxx):
             newList[i] = ellipis
         i+=1
 
-def tagWord(token,tagger=DICTIONARY):
+def tagWord(token,tagger=None):
+    if not tagger:
+        tagger=DICTIONARY
     tags=tagger.get(tuple(token.split()))
     if not tags:
         parselist=guesser(token,LEXICON)

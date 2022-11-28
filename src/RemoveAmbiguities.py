@@ -28,6 +28,11 @@ def disambiguate(sent):
                 # if ... TODO: context
             if 'ADV' in tags:
                 pass # TODO: if-rule
+            if 'ART' in tags:
+                if next.issubset({'N'}):
+                    tagged[i]=(word,'ART')
+                else:
+                    tagged[i]=(word,'FRUST')
         i+=1
     return tagged[1:-1]
 

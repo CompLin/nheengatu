@@ -13,14 +13,20 @@ import re
 
 # Characters to be removed from input sentence
 REMOVE=r"[/=]+\w+"
-# Separator of multiword tokens
+
+# Separators of multiword tokens
 HYPHEN='-'
+UNDERSCORE='_'
+
 # Case of second class pronouns
 CASE="Gen"
 
 # Enclitic postpositions
 # TODO: extract fom glossary
 CLITICS=['pe','me']
+
+# clitic adverb "-ntu"
+NTU='ntu'
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
@@ -920,10 +926,8 @@ def getSpaceAfter(token):
         return misc.pop('SpaceAfter')
 
 def insertMultitokenWord(tokenlist):
-    'TODO'
-
-def insertCompoundAux(tokenlist):
     newlist=TokenList()
+    sep='-'
     for token in tokenlist:
         feats=token.get('feats')
         if feats:
@@ -944,7 +948,9 @@ def insertCompoundAux(tokenlist):
                     first=previous['form']
                     if alomorph:
                         first=alomorph
-                    form=f"{first}-{token['form']}"
+                    if token['upos'] == 'ADV':
+                        sep=''
+                    form=f"{first}{sep}{token['form']}"
                     tokenid=token['id']
                     ident=f'{tokenid-1}-{tokenid}'
                     compound=mkMultiWordToken(ident,form,start,end,spaceafter)
@@ -964,6 +970,11 @@ def handleHyphen(form):
     elif form.endswith(HYPHEN):
         dic['host']=True
         dic['form']=form[:-1]
+    elif form.startswith(UNDERSCORE):
+        dic['form']=form[1:]
+        dic['lemma']='ntu'
+        dic['upos']='ADV'
+        dic['underscore']=True
     return dic
 
 def mkPropn(form):
@@ -1030,7 +1041,7 @@ def mkConlluSentence(tokens):
             if entry.get('pos') == 'PUNCT':
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)
-            if dic.get('hyphen'):
+            if dic.get('hyphen') or dic.get('underscore'):
                 handleHyphenSepToken(t)
             if new:
                 t['misc'].update({'OrigLang': new['OrigLang']})
@@ -1041,7 +1052,7 @@ def mkConlluSentence(tokens):
         ident+=1
     handleSpaceAfter(tokenlist)
     addFeatures(tokenlist)
-    insertCompoundAux(tokenlist)
+    insertMultitokenWord(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -1107,11 +1118,18 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
     parseSentence(sents[0])
 
+def hasCliticAdv(token):
+    if token not in ('nhuntu'):
+        if token.endswith(NTU):
+            return token[:-len(NTU)]
+    return ''
+
 def splitMultiWordTokens(tokens):
     sep=[d['lemma'] for d in AUX]
     sep.extend(CLITICS)
     newlist=[]
     for t in tokens:
+        host=hasCliticAdv(t)
         if HYPHEN in t:
             index=t.index(HYPHEN)
             first=t[:index]
@@ -1120,8 +1138,10 @@ def splitMultiWordTokens(tokens):
                 if second[1:] in CLITICS:
                     first=f"{first}-"
                 newlist.extend([first,second])
-            else:
+            else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(t)
+        elif host:
+            newlist.extend([host,f"{UNDERSCORE}{NTU}"])
         else:
             newlist.append(t)
     return newlist
