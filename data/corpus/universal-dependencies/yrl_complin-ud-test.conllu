@@ -4202,6 +4202,35 @@
 7	maraari	maraari	VERB	V2	_	1	parataxis	_	SpaceAfter=No|TokenRange=29:36
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# sent_id = Avila2021:0:0:204
+# text = Rairú kuité uxari yepé nhaã tatú ruaya, ti maã usaka-kwáu i pú maãresé nhaã isika upisika i pú.
+# text_eng = Rairú then let go of that armadillo tail, but his hand couldn't let go because the resin stuck to his hand.
+# text_por = Rairú, então, largava aquele rabo de tatu, mas sua mão não conseguia se desprender porque a resina pegava sua mão.
+# text_source = Rodrigues, 248, adap.
+# text_orig = Rairú kuité uxari yepé nhaã tatú ruáya, ti maã usaka-kwáu i pú maãresé nhaã isika upisika i pú.
+1	Rairú	rairú	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:5
+2	kuité	kuité	ADV	ADVJ	_	3	advmod	_	TokenRange=6:11
+3	uxari	xari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	yepé	yepé	PART	FRUST	Aspect=Frus	3	advmod	_	TokenRange=18:22
+5	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=23:27
+6	tatú	tatú	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=28:32
+7	ruaya	suaya	NOUN	N	Number=Sing|Rel=Cont	3	obj	_	SpaceAfter=No|TokenRange=33:38
+8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=38:39
+9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=40:42
+10	maã	maã	PRON	IND	PronType=Ind	9	fixed	_	TokenRange=43:46
+11-12	usaka-kwáu	_	_	_	_	_	_	_	TokenRange=47:57
+11	usaka	saka	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	_
+12	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	11	aux	_	_
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=59:60
+14	pú	pú	NOUN	N	Number=Sing	11	nsubj	_	TokenRange=61:63
+15	maãresé	maãresé	SCONJ	SCONJ	_	18	mark	_	TokenRange=64:71
+16	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	17	det	_	TokenRange=72:76
+17	isika	isika	NOUN	N	Number=Sing	18	nsubj	_	TokenRange=77:82
+18	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	11	advcl	_	TokenRange=83:90
+19	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	TokenRange=91:92
+20	pú	pú	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=93:95
+21	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=95:96
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
