@@ -4231,6 +4231,116 @@
 20	pú	pú	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=93:95
 21	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=95:96
 
+# sent_id = Avila2021:0:0:205
+# text = Aé uikú kupixá-pe.
+# text_eng = He's in the plantation.
+# text_por = Ele está na roça.
+# text_source = Magalhães, 100, adap.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	3	cop	_	TokenRange=3:7
+3-4	kupixá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:18
+3	kupixá	kupixá	NOUN	N	Number=Sing	0	root	_	Alomorph=kupixá
+4	pe	upé	ADP	ADP	Clitic=Yes	3	case	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Avila2021:0:0:206
+# text = Aé usú wã i tawa kití.
+# text_eng = He went to his village.
+# text_por = Ele foi para a aldeia dele.
+# text_source = Hartt, 335, adap.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:6
+3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=7:9
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=10:11
+5	tawa	tawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:16
+6	kití	kití	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=17:21
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Avila2021:0:0:207
+# text = Ti manungara aé unheẽ.
+# text_eng = She didn't say anything.
+# text_por = Ela não disse coisa alguma.
+# text_source = Amorim, 283, adap.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:2
+2	manungara	manungara	PRON	IND	PronType=Ind	4	obj	_	TokenRange=3:12
+3	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=13:15
+4	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Avila2021:0:0:208
+# text = Asuí Jesus upisika aé i pú irumu, asuí umukaturu aé, asuí uxari usú.
+# text_eng = Then Jesus took him in his hand and healed him, then let him go.
+# text_por = Em seguida Jesus pegou-o com sua mão e curou-o, depois o deixou partir.
+# text_source = O Novo Testamento em nyengatu, Lucas, 14:4
+# text_orig = Asuí Jesus upisika aé i pú irumu, asuí umukaturu aé, asuí uxari usú
+1	Asuí	asuí	ADV	ADV	_	3	advmod	_	TokenRange=0:4
+2	Jesus	jesus	PROPN	PROPN	_	3	nsubj	_	TokenRange=5:10
+3	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
+4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	obj	_	TokenRange=19:21
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=22:23
+6	pú	pú	NOUN	N	Number=Sing	3	obl	_	TokenRange=24:26
+7	irumu	irumu	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=27:32
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=32:33
+9	asuí	asuí	CCONJ	CCONJ	_	10	cc	_	TokenRange=34:38
+10	umukaturu	mukaturu	VERB	V	Person=3|VerbForm=Fin	3	conj	_	TokenRange=39:48
+11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	SpaceAfter=No|TokenRange=49:51
+12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=51:52
+13	asuí	asuí	CCONJ	CCONJ	_	14	cc	_	TokenRange=53:57
+14	uxari	xari	VERB	V	Person=3|VerbForm=Fin	10	conj	_	TokenRange=58:63
+15	usú	sú	VERB	V	Person=3|VerbForm=Fin	14	xcomp	_	SpaceAfter=No|TokenRange=64:67
+16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=67:68
+
+# sent_id = Avila2021:0:0:209
+# text = Ta akanhemu katú ta umaã ramé nhaã buya.
+# text_eng = They were very scared when they saw that snake.
+# text_por = Eles assustaram-se muito quando viram aquela cobra.
+# text_source =
+1	Ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	akanhemu	akanhemu	VERB	V2	_	0	root	_	TokenRange=3:11
+3	katú	katú	ADV	ADV	_	2	advmod	_	TokenRange=12:16
+4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=17:19
+5	umaã	maã	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=20:24
+6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=25:29
+7	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	det	_	TokenRange=30:34
+8	buya	buya	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=35:39
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = Avila2021:22:1:210
+# text = Yawé werekena-itá umunhã.
+# text_eng = So the Werekenas did.
+# text_por = Assim os uerequenas fizeram.
+# text_source = Amorim, 37, adap.
+1	Yawé	yawé	ADV	ADV	_	3	advmod	_	TokenRange=0:4
+2	werekena-itá	werekena	NOUN	N	Number=Plur	3	nsubj	_	TokenRange=5:17
+3	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:24
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Avila2021:22:2:211
+# text = Aintá uyuíri aintá tawa kwera kití, kwá paraná rumasá-pe, masuí kariwa-itá umusãi aintá panhẽ rupí.
+# text_eng =  They returned to their old village, at the mouth of this river, from where the whites scattered them far and wide.
+# text_por = Eles voltaram para sua antiga aldeia, na boca deste rio, donde os brancos os espalharam por toda parte.
+# text_source = Amorim, 37, adap.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:12
+3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:18
+4	tawa	tawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=19:23
+5	kwera	kwera	ADJ	A	_	4	amod	_	TokenRange=24:29
+6	kití	kití	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=30:34
+7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=34:35
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=36:39
+9	paraná	paraná	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=40:46
+10-11	rumasá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=47:57
+10	rumasá	tumasá	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	Alomorph=rumasá
+11	pe	upé	ADP	ADP	Clitic=Yes	10	case	_	_
+12	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=58:59
+13	masuí	masuí	ADV	ADVL	PronType=Rel	15	advmod	_	TokenRange=60:65
+14	kariwa-itá	kariwa	NOUN	N	Number=Plur	15	nsubj	_	TokenRange=66:76
+15	umusãi	musãi	VERB	V	Person=3|VerbForm=Fin	10	acl:relcl	_	TokenRange=77:83
+16	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	15	obj	_	TokenRange=84:89
+17	panhẽ	panhẽ	PRON	TOT	PronType=Tot	15	obl	_	TokenRange=90:95
+18	rupí	rupí	ADP	ADP	_	17	case	_	SpaceAfter=No|TokenRange=96:100
+19	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=100:101
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.

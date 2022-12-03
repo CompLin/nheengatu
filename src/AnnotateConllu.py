@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 16, 2022
+# Last update: December 3, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
@@ -572,7 +572,7 @@ def handleAdp(token,tokenlist,verbs):
         token['deprel'] = 'case'
         nouns=TokensOfCatList(tokenlist,'NOUN')
         previous=getPreviousToken(token,tokenlist)
-        if previous['upos'] not in ('NOUN','PRON','PROPN'):
+        if previous and previous['upos'] not in ('NOUN','PRON','PROPN'):
             nounid=previousCat(token,nouns)
             token['head']=nounid
             for noun in nouns:
@@ -900,7 +900,7 @@ def handleClitic(token):
 
 def handleHyphenSepToken(token):
     upos=token['upos']
-    if upos == 'V':
+    if upos == 'VERB':
         handleCompoundAux(token)
     else:
         handleClitic(token)
