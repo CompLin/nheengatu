@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 3, 2022
+# Last update: December 6, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
@@ -326,13 +326,16 @@ def handleAdpCompl(token,verbs,nextToken):
     nextToken['head'] =token['id']
 
 def handleNounPron(token,nextToken,verbs):
-    if nextToken['upos'] == 'ADP':
+    upos=''
+    if nextToken:
+        upos=nextToken['upos']
+    if upos == 'ADP':
         handleAdpCompl(token,verbs,nextToken)
-    elif nextToken['upos'] == 'ADJ':
+    elif upos == 'ADJ':
         if token['upos'] == 'NOUN':
             nextToken['deprel']='amod'
             nextToken['head'] =token['id']
-    elif nextToken['upos'] == 'VERB':
+    elif upos == 'VERB':
         token['deprel'] = 'nsubj'
         token['head'] =nextToken['id']
     if  token['xpos'] != 'PRON2':
@@ -390,7 +393,8 @@ def handlePart(token,tokenlist,verbs):
     'FUT': {'PartType': 'Tam','Tense':'Fut'},
     'PRET': {'PartType': 'Tam','Tense':'Past'},
     'EXST': {'PartType': 'Exs'},
-    'CERT': {'PartType': 'Mod'}
+    'CERT': {'PartType': 'Mod'},
+    'COND': {'PartType': 'Mod', 'Mood': 'Cnd'}
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
@@ -422,6 +426,10 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'CQ':
         headPartNextVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
+    elif xpos == 'COND':
+        headPartNextVerb(token,verbs)
+        updateFeats(token,'PartType', 'Mod')
+        updateFeats(token,'Mood', 'Cnd')
     elif xpos == 'PQ':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
@@ -883,7 +891,7 @@ def addFeatures(tokenlist):
             handleAdv(token,nextToken,tokenlist,verbs)
         elif upos in ("DET","NUM"):
             handleDetNum(upos,token,nextToken,tokenlist,verbs)
-        if nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
+        if nextToken and nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
             handlePunct(token,nextToken, tokenlist,verbs)
         i+=1
     handleVerbs(verbs)

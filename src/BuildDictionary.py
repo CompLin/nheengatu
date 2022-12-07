@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 12, 2022
+# Last update: December 6, 2022
 
 import re, sys, os, json
 
@@ -52,6 +52,7 @@ part. exist.\tEXST\tpartícula de existencial
 part. fut.\tFUT\tpartícula de futuro
 part. frust.\tFRUST\tpartícula de frustativo
 part. pret.\tPRET\tpartícula de pretérito
+part. cond.\tCOND\tpartícula de condicional
 part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
 part. interr. pol.\tPQ\tpartícula de pergunta polar
 posp.\tADP\tposposição

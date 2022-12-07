@@ -4454,6 +4454,80 @@
 18	navio	navio	NOUN	N	_	15	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=85:90
 19	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=90:91
 
+# sent_id = Avila2021:0:0:217
+# text = Supí katú ti rẽ sikwé iwí-pe kunhã urikú waá akanga!
+# text_eng = It is quite certain that there is still no woman on earth who has any sense!
+# text_por = É bem certo que na terra ainda não vive mulher que tenha cabeça!
+# text_source = Amorim, 32, adap.
+1	Supí	supí	PART	CERT	PartType=Mod	5	advmod	_	TokenRange=0:4
+2	katú	katú	ADV	ADV	_	1	advmod	_	TokenRange=5:9
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=10:12
+4	rẽ	rẽ	ADV	ADV	_	5	advmod	_	TokenRange=13:15
+5	sikwé	rikwé	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=16:21
+6-7	iwí-pe	_	_	_	_	_	_	_	TokenRange=22:29
+6	iwí	iwí	NOUN	N	Number=Sing	5	obl	_	Alomorph=iwí
+7	pe	upé	ADP	ADP	Clitic=Yes	6	case	_	_
+8	kunhã	kunhã	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:36
+9	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	8	acl:relcl	_	TokenRange=37:42
+10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	TokenRange=43:46
+11	akanga	akanga	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=47:53
+12	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Avila2021:0:0:218
+# text = Aintá umunhã ramé kwayé sikwé ramé rẽ kwá mirá, maita maã aintá umunhã tikanga ramé ana kurí aé?
+# text_eng = If they do this when the tree is still alive, how will they do it when it is dry?
+# text_por = Se eles fazem isso quando a árvore ainda está viva, como farão porventura quando ela já estiver seca?
+# text_source = O Novo Testamento em nyengatu, Lucas 23:31, adap.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	14	advcl	_	TokenRange=6:12
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=13:17
+4	kwayé	kwayé	ADV	ADV	_	2	advmod	_	TokenRange=18:23
+5	sikwé	rikwé	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	2	advcl	_	TokenRange=24:29
+6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=30:34
+7	rẽ	rẽ	ADV	ADV	_	5	advmod	_	TokenRange=35:37
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=38:41
+9	mirá	mirá	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=42:46
+10	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=46:47
+11	maita	maita	ADV	ADVR	_	14	advmod	_	TokenRange=48:53
+12	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=54:57
+13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	14	nsubj	_	TokenRange=58:63
+14	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=64:70
+15	tikanga	tikanga	ADJ	A	_	14	advcl	_	TokenRange=71:78
+16	ramé	ramé	SCONJ	SCONJ	_	15	mark	_	TokenRange=79:83
+17	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=84:87
+18	kurí	kurí	PART	FUT	Tense=Fut	15	advmod	_	TokenRange=88:92
+19	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	nsubj	_	SpaceAfter=No|TokenRange=93:95
+20	?	?	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No|TokenRange=95:96
+
+# sent_id = Avila2021:0:0:219
+# text = Ti ramé maã Deus umuatuka kwá ara, ti maã awá uyumukaturu, ma umuatuka kwá ara aintá resewara kwá-itá uparawaka waá-itá.
+# text_eng = If God did not shorten these days, no one would be saved, but he shortens these days for the sake of those he has chosen.
+# text_por = Se Deus não abreviasse esses dias, ninguém se salvaria, mas ele abrevia esses dias por causa daqueles que ele elegeu.
+# text_source = O Novo Testamento em nyengatu, Mateus 24:22, adap.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
+2	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=3:7
+3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	5	advmod	_	TokenRange=8:11
+4	Deus	deus	PROPN	PROPN	_	5	nsubj	_	TokenRange=12:16
+5	umuatuka	muatuka	VERB	V	Person=3|VerbForm=Fin	12	advcl	_	TokenRange=17:25
+6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=26:29
+7	ara	ara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=30:33
+8	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=33:34
+9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=35:37
+10	maã	maã	PRON	IND	PronType=Ind	9	fixed	_	TokenRange=38:41
+11	awá	awá	PRON	IND	PronType=Ind	12	nsubj	_	TokenRange=42:45
+12	uyumukaturu	yumukaturu	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=46:57
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=57:58
+14	ma	ma	CCONJ	CCONJ	_	15	cc	_	TokenRange=59:61
+15	umuatuka	muatuka	VERB	V	Person=3|VerbForm=Fin	12	conj	_	TokenRange=62:70
+16	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	17	det	_	TokenRange=71:74
+17	ara	ara	NOUN	N	Number=Sing	15	obj	_	TokenRange=75:78
+18	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	15	expl	_	TokenRange=79:84
+19	resewara	resewara	ADP	ADP	Rel=Cont	18	case	_	TokenRange=85:93
+20	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	15	obl	_	TokenRange=94:101
+21	uparawaka	parawaka	VERB	V	Person=3|VerbForm=Fin	20	acl:relcl	_	TokenRange=102:111
+22	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	21	obj	_	SpaceAfter=No|TokenRange=112:119
+23	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=119:120
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
