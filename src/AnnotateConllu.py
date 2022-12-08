@@ -427,7 +427,7 @@ def handlePart(token,tokenlist,verbs):
         headPartNextVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
     elif xpos == 'COND':
-        headPartNextVerb(token,verbs)
+        headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Mod')
         updateFeats(token,'Mood', 'Cnd')
     elif xpos == 'PQ':
