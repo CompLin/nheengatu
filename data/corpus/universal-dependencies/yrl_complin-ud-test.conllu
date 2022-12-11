@@ -4606,6 +4606,74 @@
 20	yawé	yawé	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=102:106
 21	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=106:107
 
+# sent_id = Avila2021:0:0:223
+# text = Yasú yapisika pirá mayé sinimũ upisika wana.
+# text_eng = Let's catch fish like the chameleon did.
+# text_por = Vamos apanhar peixe como o camaleão apanhou.
+# text_source = Magalhães, 268, adap.
+# text_orig = Yasú yapisika pirá mayé sinimũ upisika wana
+1	Yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yapisika	pisika	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:13
+3	pirá	pirá	NOUN	N	Number=Sing	2	obj	_	TokenRange=14:18
+4	mayé	mayé	SCONJ	SCONJ	_	6	mark	_	TokenRange=19:23
+5	sinimũ	sinimũ	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=24:30
+6	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=31:38
+7	wana	wana	PART	PFV	Aspect=Perf	6	advmod	_	SpaceAfter=No|TokenRange=39:43
+8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Avila2021:0:0:224
+# text = Ape paá ta uyeréu yawaratewasú-itá, yawé paá ta ukanhemu ta usú kaá kití.
+# text_eng = Then, they say they turned into big jaguars, so, they say, they disappeared towards the forest.
+# text_por = Aí, dizem que eles se transformaram em grandes onças, assim, dizem, foram sumindo em direção à mata.
+# text_source = Casasnovas, 85, adap.
+1	Ape	ape	ADV	ADVJ	_	4	advmod	_	TokenRange=0:3
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=4:7
+3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=8:10
+4	uyeréu	yeréu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:17
+5	yawaratewasú-itá	yawaraté	NOUN	N	Degree=Aug|Number=Plur	4	xcomp	_	SpaceAfter=No|TokenRange=18:34
+6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=34:35
+7	yawé	yawé	ADV	ADV	_	10	advmod	_	TokenRange=36:40
+8	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	TokenRange=41:44
+9	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=45:47
+10	ukanhemu	kanhemu	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=48:56
+11	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=57:59
+12	usú	sú	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=60:63
+13	kaá	kaá	NOUN	N	Number=Sing	12	obl	_	TokenRange=64:67
+14	kití	kití	ADP	ADP	_	13	case	_	SpaceAfter=No|TokenRange=68:72
+15	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=72:73
+
+# sent_id = Avila2021:0:0:225
+# text = Yawé anheẽ, amutiĩ kurí penhẽ.
+# text_eng = So saying, I will put you to shame.
+# text_por = Assim dizendo, vos envergonharei.
+# text_source = O Novo Testamento em nyengatu, 1 Coríntios 6:5, adap.
+1	Yawé	yawé	ADV	ADV	_	2	advmod	_	TokenRange=0:4
+2	anheẽ	nheẽ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:10
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
+4	amutiĩ	mutiĩ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	parataxis	_	TokenRange=12:18
+5	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=19:23
+6	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	4	obj	_	SpaceAfter=No|TokenRange=24:29
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Avila2021:0:0:226
+# text = Yané ramunha-itá ti umutĩ aintá paya-itá, yawé kurí yandé yamunhã yuíri.
+# text_eng = Our grandparents didn't shame our parents, so will we.
+# text_por = Nossos avós não envergonharam nossos pais, nós assim também havemos de fazer.
+# text_source = Amorim, 36, adap.
+1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
+2	ramunha-itá	tamunha	NOUN	N	Number=Plur|Rel=Cont	4	nsubj	_	TokenRange=5:16
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=17:19
+4	umutĩ	mutĩ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:25
+5	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=26:31
+6	paya-itá	paya	NOUN	N	Number=Plur	4	obj	_	SpaceAfter=No|TokenRange=32:40
+7	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=40:41
+8	yawé	yawé	ADV	ADV	_	11	advmod	_	TokenRange=42:46
+9	kurí	kurí	PART	FUT	Tense=Fut	11	advmod	_	TokenRange=47:51
+10	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	TokenRange=52:57
+11	yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=58:65
+12	yuíri	yuíri	ADV	ADV	_	11	advmod	_	SpaceAfter=No|TokenRange=66:71
+13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
