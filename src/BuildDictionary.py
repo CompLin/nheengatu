@@ -51,6 +51,7 @@ part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
 part. fut.\tFUT\tpartícula de futuro
 part. frust.\tFRUST\tpartícula de frustativo
+part. foco\tFOC\tpartícula de foco
 part. pret.\tPRET\tpartícula de pretérito
 part. cond.\tCOND\tpartícula de condicional
 part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
@@ -447,7 +448,7 @@ def extract_feats(parses):
     global featsdic
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
-    'NFIN' : 'vform'}
+    'NFIN' : 'vform', 'AUG|DIM' : 'degree', }
     entries=[]
     for lemma,feats in parses:
         new={}

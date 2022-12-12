@@ -4,7 +4,7 @@
 # Last update: December 6, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
-from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux
+from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -157,6 +157,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     upos=token['upos']
     person=entry.get('person')
     number=entry.get('number')
+    degree=entry.get('degree')
     vform=entry.get('vform')
     rel=entry.get('rel')
     if person:
@@ -170,6 +171,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     if rel:
         feats['Rel']=RelAbbr(rel)
         handleNCont(upos,feats)
+    if degree:
+        feats['Degree']=f"{degree.title()}"
     if feats:
         token['feats']=feats
     else:
@@ -381,6 +384,11 @@ def handleIntj(token,verbs):
     token['deprel'] = 'discourse'
     headPartNextVerb(token,verbs)
 
+def PreviousContentWord(token,tokenlist):
+    funct=['ADP','AUX','CONJ','SCONJ']
+    return getPreviousToken(token,tokenlist,funct)
+
+
 def handlePart(token,tokenlist,verbs):
     mapping= {
     'PQ': {'PartType': 'Int','QestType':'Polar'},
@@ -394,7 +402,8 @@ def handlePart(token,tokenlist,verbs):
     'PRET': {'PartType': 'Tam','Tense':'Past'},
     'EXST': {'PartType': 'Exs'},
     'CERT': {'PartType': 'Mod'},
-    'COND': {'PartType': 'Mod', 'Mood': 'Cnd'}
+    'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
+    'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
@@ -433,6 +442,11 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'PQ':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
+    elif xpos == 'FOC':
+        previous=PreviousContentWord(token,tokenlist)
+        token['head']=previous['id']
+        updateFeats(token,'PartType', 'Emp')
+        updateFeats(token,'Foc', 'Yes')
     elif xpos == 'EXST':
         if len(verbs) > 0:
             headPartNextVerb(token,verbs)
@@ -492,7 +506,7 @@ def getAdvHead(token,tokenlist,verbs):
 
 def handleAdv(token,nextToken, tokenlist,verbs):
     token['deprel']='advmod'
-    previous=getPreviousToken(token,tokenlist,skip='PUNCT')
+    previous=getPreviousToken(token,tokenlist,skip=['PUNCT'])
     if token['xpos']=='ADVL':
         updateFeats(token,'PronType', 'Rel')
         nouns=TokensOfCatList(tokenlist,'NOUN')
@@ -628,14 +642,17 @@ def getNextToken(token,tokenlist):
         if t['form'] != token['form']:
             return t
 
-def getPreviousToken(token,tokenlist,skip=''):
+def skipToken(upos,skip):
+    return upos not in skip
+
+def getPreviousToken(token,tokenlist,skip=[]):
     index=tokenlist.index(token)
     c=len(tokenlist[:index])
     if c > 1:
         i=c-1
         while(i >= 0):
             previous=tokenlist[i]
-            if previous['form'] != token['form'] and previous['upos'] != skip:
+            if previous['form'] != token['form'] and skipToken(previous['upos'],skip):
                 return previous
             i=i-1
     elif c == 1:
@@ -988,11 +1005,37 @@ def handleHyphen(form):
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
 
-def mkNoun(form,orig='pt'):
+def mkNoun(form,orig='pt',dic={}):
+    feats=[]
+    new={}
+    if orig:
+        new['OrigLang']=orig
+    number=dic.get('number')
+    degree=dic.get('degree')
+    if degree:
+        feats.append(degree)
+    if not number:
+        number=getNumber(form)['number']
+    feats.append(number)
+    new['parselist']=[[form.lower(), f"N+{'+'.join(feats)}"]]
+    return new
+
+def getNumber(form):
     dic={}
-    dic['OrigLang']=orig
-    dic['parselist']=[[form.lower(), 'N']]
+    dic['number']='SG'
+    if form.endswith('-itá'):
+        dic['number']='PL'
     return dic
+
+def mkAug(form):
+    i=-4
+    dic=getNumber(form)
+    dic['degree']='AUG'
+    number=dic.get('number')
+    if number == 'PL':
+        i=-8
+    lemma=accent(form[:i])
+    return mkNoun(lemma,None,dic)
 
 def mkClitic(lemma,upos):
     return [[lemma, upos]]
@@ -1040,6 +1083,9 @@ def mkConlluSentence(tokens):
             elif tag == '=n':
                 new=mkNoun(form)
                 newparselist=new['parselist']
+            elif tag == '=aug':
+                new=mkAug(form)
+                newparselist=new['parselist']
             else:
                 newparselist=filterparselist(tag,parselist)
             if newparselist:
@@ -1052,7 +1098,9 @@ def mkConlluSentence(tokens):
             if dic.get('hyphen') or dic.get('underscore'):
                 handleHyphenSepToken(t)
             if new:
-                t['misc'].update({'OrigLang': new['OrigLang']})
+                orig=new.get('OrigLang')
+                if orig:
+                    t['misc'].update({'OrigLang': orig})
             if host:
                 t['misc'].update({'Alomorph': form})
             tokenlist.append(t)

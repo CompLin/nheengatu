@@ -2002,7 +2002,7 @@
 8-9	umurí-kwáu	_	_	_	_	_	_	_	TokenRange=35:45
 8	umurí	murí	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	_
 9	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	8	aux	_	_
-10	tẽ	tẽ	ADV	ADV	_	8	advmod	_	TokenRange=47:49
+10	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	8	advmod	_	TokenRange=47:49
 11	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=50:53
 12	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=53:54
 13	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=55:57
@@ -3429,7 +3429,7 @@
 # text_source =
 # text_orig = Apé tẽ uikú nhaã iwitera makití asú-putari wirandé.
 1	Ape	ape	ADV	ADVD	PronType=Dem	0	root	_	TokenRange=0:3
-2	tẽ	tẽ	ADV	ADV	_	1	advmod	_	TokenRange=4:6
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=4:6
 3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	1	cop	_	TokenRange=7:11
 4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=12:16
 5	iwitera	iwitera	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=17:24
@@ -3757,7 +3757,7 @@
 11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=66:67
 12	upirú	pirú	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=68:73
 13	satambika	satambika	ADV	ADV	_	12	advmod	_	TokenRange=74:83
-14	tẽ	tẽ	ADV	ADV	_	12	advmod	_	TokenRange=84:86
+14	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	13	advmod	_	TokenRange=84:86
 15	yawawira	yawawira	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=87:95
 16	piísawa	piísawa	NOUN	N	Number=Sing	12	obl	_	TokenRange=96:103
 17	resé	resé	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=104:108
@@ -4673,6 +4673,45 @@
 11	yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=58:65
 12	yuíri	yuíri	ADV	ADV	_	11	advmod	_	SpaceAfter=No|TokenRange=66:71
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
+
+# sent_id = Avila2021:0:0:227
+# text = Yakurutú kuxiíma mirawasú, yawé tẽ sendira.
+# text_eng = The jacurutu was formerly a giant, much like its sister.
+# text_por = O jacurutu antigamente era um gigante, bem como sua irmã.
+# text_source = Rodrigues, 267, adap.
+# text_orig = Yakurutú kuxiima mirawasú, yawé tẽ sendira.
+1	Yakurutú	yakurutú	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
+2	kuxiíma	kuxiíma	ADV	ADV	_	3	advmod	_	TokenRange=9:16
+3	mirawasú	mirawasú	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=17:25
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=25:26
+5	yawé	yawé	ADV	ADV	_	3	advmod	_	TokenRange=27:31
+6	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	5	advmod	_	TokenRange=32:34
+7	sendira	tendira	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obj	_	SpaceAfter=No|TokenRange=35:42
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = Avila2021:0:0:228
+# text = Mayé paraná umuyasuka yané suí yané kiasawa, yawé tẽ Kristu ruwí umuyasuka yané suí yané pekadu.
+# text_eng = As the river washes away our filth from us, so the blood of Christ washes away our sin from us.
+# text_por = Como o rio lava a nossa sujeira eliminando-a de nós, assim também o sangue de Cristo lava nosso pecado eliminando-o de nós.
+# text_source = Missão Novas Tribos do Brasil, 2016, canto 267
+1	Mayé	mayé	SCONJ	SCONJ	_	3	mark	_	TokenRange=0:4
+2	paraná	paraná	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:11
+3	umuyasuka	muyasuka	VERB	V	Person=3|VerbForm=Fin	13	advcl	_	TokenRange=12:21
+4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	3	obl	_	TokenRange=22:26
+5	suí	suí	ADP	ADP	_	4	case	_	TokenRange=27:30
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=31:35
+7	kiasawa	kiasawa	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=36:43
+8	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=43:44
+9	yawé	yawé	ADV	ADV	_	13	advmod	_	TokenRange=45:49
+10	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	9	advmod	_	TokenRange=50:52
+11	Kristu	kristu	PROPN	PROPN	_	12	nmod:poss	_	TokenRange=53:59
+12	ruwí	tuwí	NOUN	N	Number=Sing|Rel=Cont	13	nsubj	_	TokenRange=60:64
+13	umuyasuka	muyasuka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=65:74
+14	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	13	obl	_	TokenRange=75:79
+15	suí	suí	ADP	ADP	_	14	case	_	TokenRange=80:83
+16	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	TokenRange=84:88
+17	pekadu	pekadu	NOUN	N	Number=Sing	13	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=89:95
+18	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
