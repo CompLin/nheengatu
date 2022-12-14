@@ -4713,6 +4713,98 @@
 17	pekadu	pekadu	NOUN	N	Number=Sing	13	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=89:95
 18	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=95:96
 
+# sent_id = Avila2021:23:1:229
+# text = Poronominare upurandú: ― Marupí taá kuité indé remburi timbiú reú waá?
+# text_eng = Poronominare asked: ― But where do you expel the food you eat?
+# text_por = Poronominare perguntou: ― Mas por onde tu expeles a comida que comes?
+# text_source = Amorim, 168, adap.
+1	Poronominare	poronominare	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:12
+2	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:21
+3	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=21:22
+4	―	―	PUNCT	PUNCT	_	9	punct	_	TokenRange=22:23
+5	Marupí	marupí	ADV	ADVR	_	9	advmod	_	TokenRange=24:30
+6	taá	taá	PART	CQ	PartType=Int	9	advmod	_	TokenRange=31:34
+7	kuité	kuité	ADV	ADVJ	_	9	advmod	_	TokenRange=35:40
+8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	TokenRange=41:45
+9	remburi	mburi	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=46:53
+10	timbiú	timbiú	NOUN	N	Number=Sing	9	obj	_	TokenRange=54:60
+11	reú	ú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	10	acl:relcl	_	TokenRange=61:64
+12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	obj	_	SpaceAfter=No|TokenRange=65:68
+13	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=68:69
+
+# sent_id = Avila2021:23:2:230
+# text = Tamanduá usuaxara: ― Se yurú rupí tẽ.
+# text_eng =  The anteater replied: — Through my mouth.
+# text_por = O tamanduá respondeu: ― Pela minha boca mesmo.
+# text_source = Amorim, 168, adap.
+1	Tamanduá	tamanduá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
+2	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:17
+3	:	:	PUNCT	PUNCT	_	6	punct	_	TokenRange=17:18
+4	―	―	PUNCT	PUNCT	_	6	punct	_	TokenRange=18:19
+5	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=20:22
+6	yurú	yurú	NOUN	N	Number=Sing	2	ccomp	_	TokenRange=23:27
+7	rupí	rupí	ADP	ADP	_	6	case	_	TokenRange=28:32
+8	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	SpaceAfter=No|TokenRange=33:35
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Avila2021:0:0:231
+# text = Se ruixawa, ne yara tẽ ixé.
+# text_eng = My Lord, I am really yours.
+# text_por = Meu Senhor, eu sou mesmo teu.
+# text_source = Missão Novas Tribos do Brasil, 2016, canto 251, adap.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	5	vocative	_	SpaceAfter=No|TokenRange=3:10
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
+5	yara	yara	NOUN	N	Number=Sing	0	root	_	TokenRange=15:19
+6	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	5	advmod	_	TokenRange=20:22
+7	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	SpaceAfter=No|TokenRange=23:26
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Avila2021:0:0:232
+# text = Aape ta umanú paá, nhaã tuyu-itá kwera, ta marakaimbara upé tẽ.
+# text_eng = So they died, those old ones, with their own poison.
+# text_por = Então eles morreram, aqueles velhos, com seu próprio veneno.
+# text_source = Leetra Indígena. n. 17, 43, adap.
+1	Aape	aape	ADV	ADVJ	_	3	advmod	_	TokenRange=0:4
+2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=5:7
+3	umanú	manú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=14:17
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=19:23
+7	tuyu-itá	tuyu	NOUN	N	Number=Plur	3	dislocated	_	TokenRange=24:32
+8	kwera	kwera	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=33:38
+9	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=38:39
+10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=40:42
+11	marakaimbara	marakaimbara	NOUN	N	Number=Sing	3	obl	_	TokenRange=43:55
+12	upé	upé	ADP	ADP	_	11	case	_	TokenRange=56:59
+13	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	11	advmod	_	SpaceAfter=No|TokenRange=60:62
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Avila2021:0:0:233
+# text =  Ixé yawaité, maíwa, marakaimbara, uíwa, iwaka ratá, ti awá umusarái se resé.
+# text_eng = I am terrible, I am enchanted, spell, arrow, lightning, nobody makes fun of me.
+# text_por = Eu sou terrível, sou encantado, feitiço, flecha, raio, ninguém zomba de mim.
+# text_source = Amorim, 153, adap.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	yawaité	yawaité	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=4:11
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
+4	maíwa	maíwa	NOUN	N	Number=Sing	2	conj	_	SpaceAfter=No|TokenRange=13:18
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=18:19
+6	marakaimbara	marakaimbara	NOUN	N	Number=Sing	15	nsubj	_	SpaceAfter=No|TokenRange=20:32
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=32:33
+8	uíwa	uíwa	NOUN	N	Number=Sing|Rel=Abs	6	conj	_	SpaceAfter=No|TokenRange=34:38
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=38:39
+10	iwaka	iwaka	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=40:45
+11	ratá	tatá	NOUN	N	Number=Sing|Rel=Cont	6	conj	_	SpaceAfter=No|TokenRange=46:50
+12	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=50:51
+13	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	14	advmod	_	TokenRange=52:54
+14	awá	awá	PRON	IND	PronType=Ind	6	conj	_	TokenRange=55:58
+15	umusarái	musarái	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=59:67
+16	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	15	obl	_	TokenRange=68:70
+17	resé	resé	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=71:75
+18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=75:76
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
