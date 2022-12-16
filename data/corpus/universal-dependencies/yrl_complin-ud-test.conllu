@@ -4834,6 +4834,37 @@
 22	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	nsubj	_	SpaceAfter=No|TokenRange=100:103
 23	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=103:104
 
+# sent_id = Avila2021:0:0:235
+# text = Aintá tẽ umuakanhemu ixé amanú arama.
+# text_eng = They themselves scared me to death.
+# text_por = Eles mesmos me espantaram para eu morrer.
+# text_source = Amorim, 293, adap.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:5
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=6:8
+3	umuakanhemu	muakanhemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:20
+4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	obj	_	TokenRange=21:24
+5	amanú	manú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=25:30
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	SpaceAfter=No|TokenRange=31:36
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Avila2021:0:0:236
+# text =  Asú tẽ kurí, ayumuyakwaíma kurí aintá umaité arama se akangaíma.
+# text_eng = I'll go anyway, I'll pretend to be innocent so they'll think I'm a fool.
+# text_por = Assim mesmo irei, eu me farei de inocente para elas pensarem que eu sou tolo.
+# text_source = Amorim, 367, adap.
+1	Asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=4:6
+3	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	SpaceAfter=No|TokenRange=7:11
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=11:12
+5	ayumuyakwaíma	yumuyakwaíma	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=13:26
+6	kurí	kurí	PART	FUT	Tense=Fut	5	advmod	_	TokenRange=27:31
+7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=32:37
+8	umaité	maité	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=38:44
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=45:50
+10	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	TokenRange=51:53
+11	akangaíma	akangaíma	VERB	V2	_	8	ccomp	_	SpaceAfter=No|TokenRange=54:63
+12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=63:64
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
