@@ -4805,6 +4805,35 @@
 17	resé	resé	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=71:75
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=75:76
 
+# sent_id = Avila2021:0:0:234
+# text = Nhaã paá yakaré rayera-itá ta upuíri ta uikú uí, aité paá i apekú tẽ paá aité nhaã ta yapuna wírupi waá.
+# text_eng = Those daughters of the alligator were roasting flour, it was his own tongue that was under their oven.
+# text_por = Aquelas filhas do jacaré estavam torrando farinha, era a sua própria língua aquilo que estava embaixo do forno deles.
+# text_source = Leetra Indígena. n. 17, 83, adap.
+1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=5:8
+3	yakaré	yakaré	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=9:15
+4	rayera-itá	tayera	NOUN	N	Number=Plur|Rel=Cont	6	nsubj	_	TokenRange=16:26
+5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	expl	_	TokenRange=27:29
+6	upuíri	puíri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=30:36
+7	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	expl	_	TokenRange=37:39
+8	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	6	aux	_	TokenRange=40:44
+9	uí	uí	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=45:47
+10	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=47:48
+11	aité	aité	PRON	EMP	PronType=Emp	14	nsubj	_	TokenRange=49:53
+12	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	14	advmod	_	TokenRange=54:57
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=58:59
+14	apekú	apekú	NOUN	N	Number=Sing	6	parataxis	_	TokenRange=60:65
+15	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	14	advmod	_	TokenRange=66:68
+16	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	14	advmod	_	TokenRange=69:72
+17	aité	aité	PRON	EMP	PronType=Emp	14	dislocated	_	TokenRange=73:77
+18	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	17	det	_	TokenRange=78:82
+19	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	20	nmod:poss	_	TokenRange=83:85
+20	yapuna	yapuna	NOUN	N	Number=Sing	18	acl:relcl	_	TokenRange=86:92
+21	wírupi	wírupi	ADP	ADP	_	20	case	_	TokenRange=93:99
+22	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	nsubj	_	SpaceAfter=No|TokenRange=100:103
+23	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=103:104
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
