@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 6, 2022
+# Last update: December 16, 2022
 
 import re, sys, os, json
 
@@ -56,6 +56,7 @@ part. pret.\tPRET\tpartícula de pretérito
 part. cond.\tCOND\tpartícula de condicional
 part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
 part. interr. pol.\tPQ\tpartícula de pergunta polar
+part. neces.\tNEC\tpartícula deôntica de necessidade
 posp.\tADP\tposposição
 posp. encl.\tCLADP\tposposição enclítica
 pron.\tPRON\tpronome de 1ª classe
@@ -292,6 +293,25 @@ def getpersnum():
     return {'a': '1+SG','re': '2+SG','u': '3','ya':
     '1+PL','pe': '2+PL','ta': '3+PL','tau': '3+PL'
     }
+
+def guessVerb(form):
+	persnum=getpersnum()
+	entries=[]
+	for pref,feats in persnum.items():
+		entry={}
+		if form.startswith(pref):
+			entry['pref']=pref
+			tags=feats.split('+')
+			if len(tags) == 2:
+				entry['person'],entry['number'] = tags
+			else:
+				entry['person']=tags[0]
+			start=len(pref)
+			entry['lemma']=form[start:]
+			entries.append(entry)
+	if len(entries) > 1:
+		return list(filter(lambda x: x['pref'] == 'tau',entries))[0]
+	return entries[0]
 
 def secondclasspron():
     """2nd class pronouns (Avila, 2021; Navarro, 2020),

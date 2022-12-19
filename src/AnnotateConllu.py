@@ -4,7 +4,7 @@
 # Last update: December 6, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
-from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent
+from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -403,6 +403,7 @@ def handlePart(token,tokenlist,verbs):
     'EXST': {'PartType': 'Exs'},
     'CERT': {'PartType': 'Mod'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
+    'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
     'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
     }
     token['deprel'] = 'advmod'
@@ -418,6 +419,9 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'CERT':
         updateFeats(token,'PartType', 'Mod')
         headPartPreviousVerb(token,verbs)
+    elif xpos == 'NEC':
+        updateFeats(token,'PartType', 'Mod')
+        headPartNextVerb(token,verbs)
     elif xpos == 'PFV':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
@@ -526,6 +530,9 @@ def handleAdv(token,nextToken, tokenlist,verbs):
             updateFeats(token,'Degree','Sup')
         else:
             updateFeats(token,'Degree','Cmp')
+    elif token['xpos']=='ADVR':
+        token['head']=nextVerb(token,verbs)
+        updateFeats(token,'PronType', 'Int')
     else:
         token['head']=getAdvHead(token,tokenlist,verbs)
         if token['xpos']=='ADVD':
@@ -1005,6 +1012,16 @@ def handleHyphen(form):
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
 
+def mkVerb(form,orig='pt'):
+    new={}
+    entry=guessVerb(form)
+    tags=f"V+{entry['person']}"
+    number=entry.get('number')
+    if number:
+        tags=f"{tags}+{number}"
+    new['parselist']=[[entry['lemma'], tags]]
+    return new
+
 def mkNoun(form,orig='pt',dic={}):
     feats=[]
     new={}
@@ -1082,6 +1099,9 @@ def mkConlluSentence(tokens):
                 newparselist=mkPropn(token)
             elif tag == '=n':
                 new=mkNoun(form)
+                newparselist=new['parselist']
+            elif tag == '=v':
+                new=mkVerb(form)
                 newparselist=new['parselist']
             elif tag == '=aug':
                 new=mkAug(form)
