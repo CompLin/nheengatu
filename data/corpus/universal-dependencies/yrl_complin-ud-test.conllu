@@ -4978,6 +4978,20 @@
 11	akangaíma	akangaíma	VERB	V2	_	8	ccomp	_	SpaceAfter=No|TokenRange=54:63
 12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=63:64
 
+# sent_id = Avila2021:0:0:237
+# text = [...] asuí tenki uyasuka puranga sabãu irũ.
+# text_eng = [...] then one should wash oneself well with soap.
+# text_por = [...] depois tem que lavar-se bem com sabão.
+# text_source = Muniz, 88, adap.
+1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
+2	asuí	asuí	ADV	ADV	_	4	advmod	_	TokenRange=6:10
+3	tenki	tenki	PART	NEC	PartType=Mod	4	advmod	_	TokenRange=11:16
+4	uyasuka	yasuka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=17:24
+5	puranga	puranga	ADV	ADV	_	4	advmod	_	TokenRange=25:32
+6	sabãu	sabãu	NOUN	N	Number=Sing	4	obl	_	TokenRange=33:38
+7	irũ	irũ	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=39:42
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=42:43
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
@@ -5244,3 +5258,60 @@
 3	kweré	kweré	VERB	A2	_	0	root	_	TokenRange=8:13
 4	wã	wã	PART	PFV	Aspect=Perf	3	advmod	_	SpaceAfter=No|TokenRange=14:16
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Cruz2011:0:0:18
+# text = Nhaãsé ti presizu yapiripana maã.
+# text_eng = Therefore, we don't need to buy anything.
+# text_por = Por isso, não precisamos comprar nada.
+# text_source = Example 686 Br
+1	Nhaãsé	nhaãsé	ADV	ADVJ	_	4	advmod	_	TokenRange=0:6
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=7:9
+3	presizu	presizu	PART	NEC	PartType=Mod	4	advmod	_	TokenRange=10:17
+4	yapiripana	piripana	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=18:28
+5	maã	maã	PRON	IND	PronType=Ind	4	obj	_	SpaceAfter=No|TokenRange=29:32
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Cruz2011:0:0:19
+# text = Tenki resú rembeú kwekatú.
+# text_eng = You have to go speak the message.
+# text_por = Você tem que ir falar o recado.
+# text_source = Example 682 Wr
+1	Tenki	tenki	PART	NEC	PartType=Mod	3	advmod	_	TokenRange=0:5
+2	resú	sú	AUX	AUXFR	Number=Sing|Person=2|VerbForm=Fin	3	aux	_	TokenRange=6:10
+3	rembeú	mbeú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=11:17
+4	kwekatú	kwekatú	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=18:25
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Cruz2011:0:0:20
+# text = Ape anheẽ: "Umbaá, yepé ara tenki pekuntari!"
+# text_eng = Then I said: "No! One day, you have to talk!"
+# text_por = Aí, eu disse: "Não! Um dia, vocês têm que falar!"
+# text_source = Mrs. Olímpia Wr
+# text_orig = Ape anheẽ umba! yepe ara tenki pekuntari
+1	Ape	ape	ADV	ADVJ	_	2	advmod	_	TokenRange=0:3
+2	anheẽ	nheẽ	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:9
+3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=9:10
+4	"	"	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=10:11
+5	Umbaá	umbaá	PART	NEG	PartType=Neg|Polarity=Neg	2	ccomp	_	SpaceAfter=No|TokenRange=12:17
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=17:18
+7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=19:23
+8	ara	ara	NOUN	N	Number=Sing	10	obl	_	TokenRange=24:27
+9	tenki	tenki	PART	NEC	PartType=Mod	10	advmod	_	TokenRange=28:33
+10	pekuntari	kuntari	VERB	V	Number=Plur|Person=2|VerbForm=Fin	5	parataxis	_	SpaceAfter=No|TokenRange=34:43
+11	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
+12	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = Cruz2011:0:0:21
+# text = Tenki yasikari yayuíri awá taá upuderi umpinima aé.
+# text_eng = We have to look again for who can write it.
+# text_por = Temos que procurar novamente quem pode escrevê-lo. [Corr. trans.]
+# text_source = Example 888 Br
+1	Tenki	tenki	PART	NEC	PartType=Mod	2	advmod	_	TokenRange=0:5
+2	yasikari	sikari	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:14
+3	yayuíri	yuíri	AUX	AUXN	Aspect=Iter|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=15:22
+4	awá	awá	PRON	INT	PronType=Int	7	nsubj	_	TokenRange=23:26
+5	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=27:30
+6	upuderi	puderi	AUX	AUXFR	Person=3|VerbForm=Fin	7	aux	_	TokenRange=31:38
+7	umpinima	mpinima	VERB	V	Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=39:47
+8	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=48:50
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51

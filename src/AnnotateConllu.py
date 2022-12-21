@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 6, 2022
+# Last update: December 21, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -782,6 +782,10 @@ def handleAux(tokenlist):
                 handleSameClause(verb,pos,headid,previous,next)
             else:
                 pass # TODO: ccomp, xcomp, advcl
+    for verb in verbs:
+        if verb['upos'] == 'AUX':
+            if verb['lemma'] == 'yuíri':
+                updateFeats(verb,'Aspect','Iter')
 
 def handleNCont(upos,feats):
     if feats['Rel'] == 'NCont':
