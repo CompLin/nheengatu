@@ -4992,6 +4992,72 @@
 7	irũ	irũ	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=39:42
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=42:43
 
+# sent_id = Avila2021:0:0:238
+# text =  Arikú se rimbawa, se kwekatú rasusara.
+# text_eng = I have my animals, bearer of my memories.
+# text_por = Eu tenho minha criação [animal], portadora de minhas lembranças.
+# text_source = Rodrigues, 300, adap.
+1	Arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
+3	rimbawa	simbawa	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	SpaceAfter=No|TokenRange=9:16
+4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=18:20
+6	kwekatú	kwekatú	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=21:28
+7	rasusara	rasusara	NOUN	N	Number=Sing	3	appos	_	SpaceAfter=No|TokenRange=29:37
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = Avila2021:0:0:239
+# text = Ixé, Paulo, ampinima penhẽ arama kwá kwekatú se pú irumu.
+# text_eng = I, Paul, write this greeting to you with my own hand.
+# text_por = Eu, Paulo, escrevo a vós essa saudação de próprio punho.
+# text_source = O Novo Testamento em nyengatu, 2 Tessalonicenses 3:17, adap.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=3:4
+3	Paulo	paulo	PROPN	PROPN	_	1	appos	_	SpaceAfter=No|TokenRange=5:10
+4	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=10:11
+5	ampinima	mpinima	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=12:20
+6	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	5	iobj	_	TokenRange=21:26
+7	arama	arama	ADP	ADP	_	6	case	_	TokenRange=27:32
+8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=33:36
+9	kwekatú	kwekatú	NOUN	N	Number=Sing	5	obj	_	TokenRange=37:44
+10	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=45:47
+11	pú	pú	NOUN	N	Number=Sing	5	obl	_	TokenRange=48:50
+12	irumu	irumu	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=51:56
+13	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=56:57
+
+# sent_id = Avila2021:0:0:240
+# text = Asuí yepé-yepé Aziawara-itá, Paulo anama-itá, aintá umundú i xupé kwekatú, aintá upurandú aé ti arama uwiké aintá irumu aintá uyumuatiriwera waá upé.
+# text_eng = And some Asiatics, friends of Paul, sent him a message, begging him not to enter with them where they met.
+# text_por = E alguns asiáticos, amigos de Paulo, mandaram a ele um recado, rogando-lhe que não entrasse com eles no local onde eles se reuniam.
+# text_source = O Novo Testamento em nyengatu, Atos 19:31, adap.
+# text_orig = Asuí yepeyepé Aziawara-itá, Paulo anama-itá, aintá umundú i xupé kwekatú, aintá upurandú aé ti arama uwiké aintá irumu aintá uyumuatiriwera waá upé.
+1	Asuí	asuí	ADV	ADV	_	9	advmod	_	TokenRange=0:4
+2	yepé-yepé	yepé	DET	INDQ	PronType=Ind	3	det	_	TokenRange=5:14
+3	Aziawara-itá	aziawara	NOUN	N	Number=Plur	9	nsubj	_	SpaceAfter=No|TokenRange=15:27
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=27:28
+5	Paulo	paulo	PROPN	PROPN	_	6	nmod:poss	_	TokenRange=29:34
+6	anama-itá	anama	NOUN	N	Number=Plur	3	appos	_	SpaceAfter=No|TokenRange=35:44
+7	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=44:45
+8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	expl	_	TokenRange=46:51
+9	umundú	mundú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=52:58
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	iobj	_	TokenRange=59:60
+11	xupé	xupé	ADP	ADP	_	10	case	_	TokenRange=61:65
+12	kwekatú	kwekatú	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=66:73
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=73:74
+14	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	15	nsubj	_	TokenRange=75:80
+15	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=81:89
+16	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	obj	_	TokenRange=90:92
+17	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	19	advmod	_	TokenRange=93:95
+18	arama	arama	SCONJ	SCONJ	_	19	mark	_	TokenRange=96:101
+19	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	15	ccomp	_	TokenRange=102:107
+20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	19	obl	_	TokenRange=108:113
+21	irumu	irumu	ADP	ADP	_	20	case	_	TokenRange=114:119
+22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=120:125
+23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Hab|Person=3|VerbForm=Fin	19	obl	_	TokenRange=126:140
+24	waá	waá	PRON	REL	Number=Sing|PronType=Rel	23	obl	_	TokenRange=141:144
+25	upé	upé	ADP	ADP	_	24	case	_	SpaceAfter=No|TokenRange=145:148
+26	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=148:149
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
