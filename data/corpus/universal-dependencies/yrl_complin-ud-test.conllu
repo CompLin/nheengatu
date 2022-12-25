@@ -5260,6 +5260,26 @@
 20	upé	upé	ADP	ADP	_	19	case	_	SpaceAfter=No|TokenRange=88:91
 21	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=91:92
 
+# sent_id = Avila2021:0:0:244
+# text = Ma mairamé apigá, uwatá i manha irumu até mairamé umpuruã i manha.
+# text_eng = But when [the tapir] is male, it walks with its mother until the moment when it impregnates the mother.
+# text_por = Mas quando [a anta] é macho, anda com sua mãe até o momento no qual engravida a mãe.
+# text_source = Payema, 60, adap.
+1	Ma	ma	CCONJ	CCONJ	_	5	cc	_	TokenRange=0:2
+2	mairamé	mairamé	SCONJ	SCONJ	_	3	mark	_	TokenRange=3:10
+3	apigá	apigá	NOUN	N	Number=Sing	5	advcl	_	SpaceAfter=No|TokenRange=11:16
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=16:17
+5	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=18:23
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=24:25
+7	manha	manha	NOUN	N	Number=Sing	5	obl	_	TokenRange=26:31
+8	irumu	irumu	ADP	ADP	_	7	case	_	TokenRange=32:37
+9	até	até	SCONJ	SCONJ	_	11	mark	_	TokenRange=38:41
+10	mairamé	mairamé	ADV	ADVR	PronType=Int	11	advmod	_	TokenRange=42:49
+11	umpuruã	mpuruã	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=50:57
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=58:59
+13	manha	manha	NOUN	N	Number=Sing	11	obj	_	SpaceAfter=No|TokenRange=60:65
+14	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=65:66
+
 # sent_id = NT:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
 # text_eng = For the grace of God has been revealed, bringing salvation to all people.
