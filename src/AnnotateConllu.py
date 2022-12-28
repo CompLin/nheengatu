@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 21, 2022
+# Last update: December 27, 2022
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -34,16 +34,16 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'ADVJ': 'ADV', 'ADVD': 'ADV',
 'ADVL': 'ADV', 'ADVG': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
-'COP' : 'AUX',
+'COP' : 'AUX', 'PREP' : 'ADP',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
-'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT'}
+'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT', 'PRV': 'Priv'}
 
 # TODO: extractDemonstratives()
 DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 'INT' : 'DET', 'ART' : 'DET', 'DEMX' : 'DET', 'DEMS' : 'DET',
-'IND' : 'DET', 'TOT' : 'DET'}
+'DEMSN' : 'DET', 'IND' : 'DET', 'TOT' : 'DET'}
 
-DEIXIS={'DEMS' : 'Remt', 'DEMX' : 'Prox'}
+DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox'}
 
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
@@ -158,6 +158,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     person=entry.get('person')
     number=entry.get('number')
     degree=entry.get('degree')
+    derivation=entry.get('derivation')
     vform=entry.get('vform')
     rel=entry.get('rel')
     if person:
@@ -173,6 +174,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         handleNCont(upos,feats)
     if degree:
         feats['Degree']=f"{degree.title()}"
+    if derivation:
+        feats['Derivation']=UDTAGS.get(derivation)
     if feats:
         token['feats']=feats
     else:
@@ -319,14 +322,19 @@ def handleNmodPoss(tokenlist):
                 token['head']=nexttoken['id']
         i+=1
 
+def handlePospCompl(token,nextToken):
+    nextToken['deprel']='case'
+    nextToken['head'] =token['id']
+
 def handleAdpCompl(token,verbs,nextToken):
     token['deprel'] = 'obl'
     headid=previousVerb(token,verbs)
     if not headid:
         headid=nextVerb(token,verbs)
     token['head'] = headid
-    nextToken['deprel']='case'
-    nextToken['head'] =token['id']
+    posp=nextToken['xpos'] == 'ADP'
+    if posp:
+        handlePospCompl(token,nextToken)
 
 def handleNounPron(token,nextToken,verbs):
     upos=''
@@ -587,6 +595,36 @@ def handleSconj(token,tokenlist,verbs):
         head['deprel']='advcl'
         head['head']=getHeadVerb(head,verbs)
 
+def handlePosp(token,tokenlist,nouns):
+    previous=getPreviousToken(token,tokenlist)
+    if previous and previous['upos'] not in ('NOUN','PRON','PROPN'):
+        nounid=previousCat(token,nouns)
+        token['head']=nounid
+        nounHead(nounid,nouns,tokenlist)
+
+def nounHead(nounid,nouns,tokenlist):
+    for noun in nouns:
+        if noun['id'] == nounid:
+            noun['deprel'] = 'obl'
+            headlist=tokenlist.filter(deprel='root')
+            head=previousCat(noun,headlist)
+            noun['head'] = head
+            break
+
+def handlePrep(token,tokenlist,nouns):
+    i=tokenlist.index(token)
+    next=getNextToken(token,tokenlist[i+1:])
+    nounid=0
+    if next:
+        upos=next['upos']
+        if upos in ('NOUN','PRON','PROPN'):
+            nounid=next['id']
+            token['head']=nounid
+        else:
+            nounid=nextCat(token,nouns)
+            token['head']=nounid
+    nounHead(nounid,nouns,tokenlist)
+
 def handleAdp(token,tokenlist,verbs):
     '''TODO:
     1. implement a function analogous to handleSconj and handleCconj
@@ -600,16 +638,10 @@ def handleAdp(token,tokenlist,verbs):
     else:
         token['deprel'] = 'case'
         nouns=TokensOfCatList(tokenlist,'NOUN')
-        previous=getPreviousToken(token,tokenlist)
-        if previous and previous['upos'] not in ('NOUN','PRON','PROPN'):
-            nounid=previousCat(token,nouns)
-            token['head']=nounid
-            for noun in nouns:
-                if noun['id'] == nounid:
-                    noun['deprel'] = 'obl'
-                    headlist=tokenlist.filter(deprel='root')
-                    head=previousCat(noun,headlist)
-                    noun['head'] = head
+        if token['xpos'] == 'PREP':
+            handlePrep(token,tokenlist,nouns)
+        else:
+            handlePosp(token,tokenlist,nouns)
 
 def getHeadVerb(token,verbs):
     headid=previousVerb(token,verbs)
@@ -925,8 +957,14 @@ def addFeatures(tokenlist):
     handleVerbs(verbs)
     handleNmodPoss(tokenlist)
 
+def getTag(parse):
+	tag=parse[1]
+	if tag:
+		return tag.split('+')[0]
+	return ''
+
 def filterparselist(tag,parselist):
-    return list(filter(lambda x: x[1].split('+')[0] == tag.upper(),parselist))
+    return list(filter(lambda x: getTag(x) == tag.upper(),parselist))
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
@@ -1041,6 +1079,21 @@ def mkNoun(form,orig='pt',dic={}):
     new['parselist']=[[form.lower(), f"N+{'+'.join(feats)}"]]
     return new
 
+def mkAdj(form,orig='pt',dic={}):
+    feats=[]
+    new={}
+    if orig:
+        new['OrigLang']=orig
+    degree=dic.get('degree')
+    derivation=dic.get('derivation')
+    if degree:
+        feats.append(degree)
+    if derivation:
+        feats.append(derivation)
+    new['parselist']=[[form.lower(), f"A+{'+'.join(feats)}"]]
+    return new
+
+
 def getNumber(form):
     dic={}
     dic['number']='SG'
@@ -1057,6 +1110,13 @@ def mkAug(form):
         i=-8
     lemma=accent(form[:i])
     return mkNoun(lemma,None,dic)
+
+def mkPrv(form):
+    i=-4
+    dic={}
+    dic['derivation']='PRV'
+    lemma=form[:i]
+    return mkAdj(lemma,None,dic)
 
 def mkClitic(lemma,upos):
     return [[lemma, upos]]
@@ -1109,6 +1169,9 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=aug':
                 new=mkAug(form)
+                newparselist=new['parselist']
+            elif tag == '=prv':
+                new=mkPrv(form)
                 newparselist=new['parselist']
             else:
                 newparselist=filterparselist(tag,parselist)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 16, 2022
+# Last update: December 27, 2022
 
 import re, sys, os, json
 
@@ -38,6 +38,7 @@ cconj.\tCCONJ\tconjunção coordenativa
 pron. dem.\tDEM\tpronome demostrativo
 pron. dem. prox.\tDEMX\tpronome demostrativo proximal
 pron. dem. dist.\tDEMS\tpronome demostrativo distal
+pron. dem. dist. não-flex.\tDEMSN\tpronome demostrativo distal não flexionado
 num. card.\tCARD\tnumeral cardinal
 num. ord.\tORD\tnumeral ordinal
 interj.\tINTJ\tinterjeição
@@ -58,6 +59,7 @@ part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
 part. interr. pol.\tPQ\tpartícula de pergunta polar
 part. neces.\tNEC\tpartícula deôntica de necessidade
 posp.\tADP\tposposição
+prep.\tPREP\tpreposição
 posp. encl.\tCLADP\tposposição enclítica
 pron.\tPRON\tpronome de 1ª classe
 pron. 2ª cl.\tPRON2\tpronome de 2ª classe
@@ -349,13 +351,14 @@ def conjugateVerb(lemma,pos='V'):
     return forms
 
 def isDemPron(tag):
-    if tag.startswith('DEM'):
-        return True
-    return False
+    return tag.startswith('DEM')
+
+def isInflectableDem(tag):
+	return isDemPron(tag) and not tag.endswith('N')
 
 def hasNumberInflection(tag,lemma):
     if tag:
-        if tag in ('N','REL') or isDemPron(tag) or lemma in ('amú',):
+        if tag in ('N','REL') or isInflectableDem(tag) or lemma in ('amú',):
             return True
     return False
 
@@ -468,7 +471,7 @@ def extract_feats(parses):
     global featsdic
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
-    'NFIN' : 'vform', 'AUG|DIM' : 'degree', }
+    'NFIN' : 'vform', 'AUG|DIM' : 'degree', 'PRV':'derivation'}
     entries=[]
     for lemma,feats in parses:
         new={}
