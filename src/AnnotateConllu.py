@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 27, 2022
+# Last update: January 1, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -34,7 +34,7 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'ADVJ': 'ADV', 'ADVD': 'ADV',
 'ADVL': 'ADV', 'ADVG': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
-'COP' : 'AUX', 'PREP' : 'ADP',
+'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT', 'PRV': 'Priv'}
 
@@ -410,6 +410,7 @@ def handlePart(token,tokenlist,verbs):
     'PRET': {'PartType': 'Tam','Tense':'Past'},
     'EXST': {'PartType': 'Exs'},
     'CERT': {'PartType': 'Mod'},
+    'ASSUM': {'PartType': 'Mod'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
     'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
@@ -424,7 +425,7 @@ def handlePart(token,tokenlist,verbs):
         updateFeats(token,'Evident','Nfh')
         updateFeats(token,'PartType', 'Mod')
         headPartPreviousVerb(token,verbs)
-    elif xpos == 'CERT':
+    elif xpos == 'CERT' or xpos == 'ASSUM':
         updateFeats(token,'PartType', 'Mod')
         headPartPreviousVerb(token,verbs)
     elif xpos == 'NEC':
@@ -573,10 +574,18 @@ def handleCconj(token,verbs):
                 break
 
 def handleSconj(token,tokenlist,verbs):
+    # token['deprel'] = 'mark'
+    xpos=token['xpos']
+    if xpos == 'SCONJR':
+        token['head']=nextVerb(token,verbs)
+    else:
+        handleSconjS(token,tokenlist,verbs)
+    headSconj(token,verbs)
+
+def handleSconjS(token,tokenlist,verbs):
     '''TODO:
     1. adapt function to handle non-verbal clauses
     '''
-    token['deprel'] = 'mark'
     previous=getPreviousToken(token,tokenlist)
     if previous:
         if previous['xpos'] == 'NEG':
@@ -588,6 +597,9 @@ def handleSconj(token,tokenlist,verbs):
                 token['head']=previousVerb(token,verbs)
     else:
         token['head']=nextVerb(token,verbs)
+    headSconj(token,verbs)
+
+def headSconj(token,verbs):
     headid=token['head']
     headlist=verbs.filter(id=headid)
     if headlist:
@@ -1148,6 +1160,7 @@ def mkConlluSentence(tokens):
         lemma=dic.get('lemma')
         upos=dic.get('upos')
         host=dic.get('host')
+        alomorph=form.lower()
         if redup:
             parselist=getparselist(redup['form'])
         else:
@@ -1155,7 +1168,8 @@ def mkConlluSentence(tokens):
                 parselist=mkClitic(lemma,upos)
             else:
                 if host:
-                    parselist=getparselist(handleAlomorph(form.lower()))
+                    alomorph=handleAlomorph(form.lower())
+                    parselist=getparselist(alomorph)
                 else:
                     parselist=getparselist(form.lower())
         if tag:
@@ -1188,7 +1202,7 @@ def mkConlluSentence(tokens):
                 orig=new.get('OrigLang')
                 if orig:
                     t['misc'].update({'OrigLang': orig})
-            if host:
+            if host and form.lower() != alomorph:
                 t['misc'].update({'Alomorph': form})
             tokenlist.append(t)
         start=start+len(token)+1

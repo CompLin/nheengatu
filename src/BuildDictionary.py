@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 27, 2022
+# Last update: January 1, 2023
 
 import re, sys, os, json
 
@@ -33,7 +33,8 @@ art. indef.\tART\tartigo indefinido
 {AUX} não-flex.\tAUXN\tauxiliar não flexionado
 {COP}\tV\tverbo de ligação
 conj.\tCONJ\tconjunção
-sconj.\tSCONJ\tconjunção subordinativa
+sconj.\tSCONJ\tconjunção subordinativa pós-verbal
+sconj. pré.\tSCONJR\tconjunção subordinativa pré-verbal
 cconj.\tCCONJ\tconjunção coordenativa
 pron. dem.\tDEM\tpronome demostrativo
 pron. dem. prox.\tDEMX\tpronome demostrativo proximal
@@ -45,6 +46,7 @@ interj.\tINTJ\tinterjeição
 s.\tN\tsubstantivo
 part.\tPART\tpartícula
 part. perf.\tPFV\tpartícula de perfectivo
+part. assum.\tASSUM\tpartícula de suposição
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
 part. afirm.\tAFF\tpartícula de afirmação
