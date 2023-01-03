@@ -427,7 +427,8 @@ def handlePart(token,tokenlist,verbs):
         headPartPreviousVerb(token,verbs)
     elif xpos == 'CERT' or xpos == 'ASSUM':
         updateFeats(token,'PartType', 'Mod')
-        headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
+        # headPartPreviousVerb(token,verbs)
     elif xpos == 'NEC':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
@@ -530,7 +531,8 @@ def handleAdv(token,nextToken, tokenlist,verbs):
         if headlist:
             head=headlist[0]
             head['deprel']='acl:relcl'
-            head['head']=previous['id']
+            if previous:
+                head['head']=previous['id']
     elif token['xpos']=='ADVG':
         token['head']=previous['id']
         updateFeats(token,'AdvType','Deg')
