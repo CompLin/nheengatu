@@ -473,7 +473,8 @@ def extract_feats(parses):
     global featsdic
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
-    'NFIN' : 'vform', 'AUG|DIM' : 'degree', 'PRV':'derivation'}
+    'NFIN' : 'vform', 'AUG|DIM' : 'degree',
+	'HAB':'aspect', 'PRV':'derivation'}
     entries=[]
     for lemma,feats in parses:
         new={}

@@ -159,6 +159,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     number=entry.get('number')
     degree=entry.get('degree')
     derivation=entry.get('derivation')
+    aspect=entry.get('aspect')
     vform=entry.get('vform')
     rel=entry.get('rel')
     if person:
@@ -174,6 +175,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         handleNCont(upos,feats)
     if degree:
         feats['Degree']=f"{degree.title()}"
+    if aspect:
+        feats['Aspect']=f"{aspect.title()}"
     if derivation:
         feats['Derivation']=UDTAGS.get(derivation)
     if feats:
@@ -1068,15 +1071,26 @@ def handleHyphen(form):
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
 
-def mkVerb(form,orig='pt'):
+def mkVerb(form,derivation='',orig='pt'):
     new={}
+    feats=['V']
+    if derivation:
+        feats.append(derivation)
     entry=guessVerb(form)
-    tags=f"V+{entry['person']}"
+    feats.append(entry['person'])
     number=entry.get('number')
     if number:
-        tags=f"{tags}+{number}"
-    new['parselist']=[[entry['lemma'], tags]]
+        feats.append(number)
+    tags='+'.join(feats)
+    lemma=accent(entry['lemma'])
+    new['parselist']=[[lemma, tags]]
     return new
+
+def mkHab(form):
+    suff='tiwa'
+    if form.endswith(suff):
+        form=form[:-len(suff)]
+        return mkVerb(form,derivation='HAB')
 
 def mkNoun(form,orig='pt',dic={}):
     feats=[]
@@ -1182,6 +1196,9 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=v':
                 new=mkVerb(form)
+                newparselist=new['parselist']
+            elif tag == '=hab':
+                new=mkHab(form)
                 newparselist=new['parselist']
             elif tag == '=aug':
                 new=mkAug(form)
