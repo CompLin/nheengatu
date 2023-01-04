@@ -5887,7 +5887,7 @@
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=24:25
 6	pituna-pisayé	pituna-pisayé	NOUN	N	Number=Sing	8	obl	_	TokenRange=26:39
 7	kunhamukú	kunhamukú	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=40:49
-8	ukanhemutiwa	kanhemú	VERB	V	Aspect=Hab|Person=3|VerbForm=Fin	0	root	_	TokenRange=50:62
+8	ukanhemutiwa	kanhemu	VERB	V	Aspect=Hab|Person=3|VerbForm=Fin	0	root	_	TokenRange=50:62
 9	uka	uka	NOUN	N	Number=Sing|Rel=Abs	8	obl	_	TokenRange=63:66
 10	suí	suí	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=67:70
 11	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=70:71
@@ -5920,6 +5920,20 @@
 6	ambautiwa	mbaú	VERB	V	Aspect=Hab|Number=Sing|Person=1|VerbForm=Fin	5	acl:relcl	_	TokenRange=30:39
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	obj	_	SpaceAfter=No|TokenRange=40:43
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Avila2021:0:0:285
+# text = Aé uyukatiwa yakaré usú rametiwa tumasawa kití.
+# text_eng = He used to kill alligators when he went down the river.
+# text_por = Avila 2021
+# text_source = Ele costumava matar jacaré quando ia rio abaixo.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	uyukatiwa	yuká	VERB	V	Aspect=Hab|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:12
+3	yakaré	yakaré	NOUN	N	Number=Sing	2	obj	_	TokenRange=13:19
+4	usú	sú	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=20:23
+5	rametiwa	ramé	SCONJ	SCONJ	Aspect=Hab	4	mark	_	TokenRange=24:32
+6	tumasawa	tumasawa	NOUN	N	Number=Sing|Rel=Abs	4	obl	_	TokenRange=33:41
+7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=42:46
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.

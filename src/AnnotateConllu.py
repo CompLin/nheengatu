@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 1, 2023
+# Last update: January 3, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -1082,15 +1082,32 @@ def mkVerb(form,derivation='',orig='pt'):
     if number:
         feats.append(number)
     tags='+'.join(feats)
-    lemma=accent(entry['lemma'])
+    lemma=entry['lemma']
     new['parselist']=[[lemma, tags]]
     return new
+
+def handleAccent(base):
+    parselist=getparselist(base)
+    tags=list(filter(lambda x: x[1],parselist))
+    if tags:
+        return base
+    return accent(base)
 
 def mkHab(form):
     suff='tiwa'
     if form.endswith(suff):
-        form=form[:-len(suff)]
+        base=form[:-len(suff)]
+        form=handleAccent(base)
         return mkVerb(form,derivation='HAB')
+
+def mkHabSconj(form):
+    suff='tiwa'
+    new={}
+    if form.endswith(suff):
+        base=form[:-len(suff)]
+        lemma=handleAccent(base)
+        new['parselist']=[[lemma, 'SCONJ+HAB']]
+        return new
 
 def mkNoun(form,orig='pt',dic={}):
     feats=[]
@@ -1199,6 +1216,9 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=hab':
                 new=mkHab(form)
+                newparselist=new['parselist']
+            elif tag == '=hab=sconj':
+                new=mkHabSconj(form)
                 newparselist=new['parselist']
             elif tag == '=aug':
                 new=mkAug(form)
