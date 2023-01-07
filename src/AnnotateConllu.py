@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 3, 2023
+# Last update: January 7, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
-from BuildDictionary import MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
 from conllu import parse_incr
-import re
+import re, os
 
 # Characters to be removed from input sentence
 REMOVE=r"[/=]+\w+"
@@ -27,6 +27,7 @@ CLITICS=['pe','me']
 
 # clitic adverb "-ntu"
 NTU='ntu'
+GLOSSARY=loadGlossary(infile=os.path.join(DIR,"glossary.json"))
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
@@ -1153,7 +1154,7 @@ def mkAug(form):
     number=dic.get('number')
     if number == 'PL':
         i=-8
-    lemma=accent(form[:i])
+    lemma=handleAccent(form[:i])
     return mkNoun(lemma,None,dic)
 
 def mkPrv(form):
@@ -1314,10 +1315,21 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
     #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
     parseSentence(sents[0])
 
+def endswithNTU(word):
+    return word.endswith(NTU)
+
+def extractNTU(glossary):
+    return [entry['lemma'] for entry in filter(lambda x: endswithNTU(x['lemma']),glossary)]
+
+def inGlossary(word):
+    wordlist=extractNTU(GLOSSARY)
+    if word in wordlist:
+        return True
+    return False
+
 def hasCliticAdv(token):
-    if token not in ('nhuntu'):
-        if token.endswith(NTU):
-            return token[:-len(NTU)]
+    if endswithNTU(token) and not inGlossary(token):
+            return handleAccent(token[:-len(NTU)])
     return ''
 
 def splitMultiWordTokens(tokens):
