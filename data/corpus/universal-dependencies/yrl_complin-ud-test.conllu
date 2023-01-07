@@ -6130,6 +6130,149 @@
 19	murakisara	murakisara	NOUN	N	Number=Sing	17	ccomp	_	SpaceAfter=No|TokenRange=102:112
 20	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=112:113
 
+# sent_id = Avila2021:0:0:298
+# text = Amaã aintá resewara.
+# text_eng = I watch over them.
+# text_por = Vigio sobre eles.
+# text_source = Tastevin, 658, adap.
+1	Amaã	maã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	1	obl	_	TokenRange=5:10
+3	resewara	resewara	ADP	ADP	Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=11:19
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Avila2021:0:0:299
+# text = Kuxiíma ta useruka kwá nheengatú "kariwa nheenga", ta ukuntari resewara kwá nheenga apekatuwara-itá irumu.
+# text_eng = In the past, they called Nheengatu the "white man's language", because they spoke that language with those from far away.
+# text_por = Antigamente chamavam o nheengatu de "língua de branco", porque falavam essa língua com os de longe. [Corr. transl.]
+# text_source = Leetra Indígena. n. 17, 19, adap.
+# text_orig = Kuxiima ta useruka kwá nheengatú "kariwa nheenga", ta ukuntari resewara kwá nheenga apekatuwara-itá irumu.
+1	Kuxiíma	kuxiíma	ADV	ADV	_	3	advmod	_	TokenRange=0:7
+2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
+3	useruka	seruka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
+4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=19:22
+5	nheengatú	nheengatú	NOUN	N	Number=Sing	3	obj	_	TokenRange=23:32
+6	"	"	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
+7	kariwa	kariwa	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=34:40
+8	nheenga	nheenga	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=41:48
+9	"	"	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=49:50
+11	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=51:53
+12	ukuntari	kuntari	VERB	V	Person=3|VerbForm=Fin	3	advcl	_	TokenRange=54:62
+13	resewara	resewara	SCONJ	SCONJ	Rel=Cont	12	mark	_	TokenRange=63:71
+14	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	15	det	_	TokenRange=72:75
+15	nheenga	nheenga	NOUN	N	Number=Sing	12	obj	_	TokenRange=76:83
+16	apekatuwara-itá	apekatuwara	NOUN	N	Number=Plur	12	obl	_	TokenRange=84:99
+17	irumu	irumu	ADP	ADP	_	16	case	_	SpaceAfter=No|TokenRange=100:105
+18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=105:106
+
+# sent_id = Avila2021:0:0:300
+# text = Nhaãsé kuxiíma mira-itá ta uú ta rimbiú uyiíma, ti resewara ta urikú tatá.
+# text_eng = Nhaãsé kuxiima mira-itá ta uú ta rimbiú uyiima, ti resewara ta urikú tatá.
+# text_por = Porque antigamente as pessoas comiam suas comidas cruas, porque não tinham fogo.
+# text_source = Leetra Indígena. n. 17, 83, adap.
+1	Nhaãsé	nhaãsé	ADV	ADVJ	_	5	advmod	_	TokenRange=0:6
+2	kuxiíma	kuxiíma	ADV	ADV	_	5	advmod	_	TokenRange=7:14
+3	mira-itá	mira	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=15:23
+4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	expl	_	TokenRange=24:26
+5	uú	ú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=27:29
+6	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:32
+7	rimbiú	timbiú	NOUN	N	Number=Sing|Rel=Cont	5	obj	_	TokenRange=33:39
+8	uyiíma	uyiíma	ADJ	A	_	5	advcl	_	SpaceAfter=No|TokenRange=40:46
+9	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=46:47
+10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	13	advmod	_	TokenRange=48:50
+11	resewara	resewara	SCONJ	SCONJ	Rel=Cont	13	mark	_	TokenRange=51:59
+12	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	13	nsubj	_	TokenRange=60:62
+13	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=63:68
+14	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	13	obj	_	SpaceAfter=No|TokenRange=69:73
+15	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=73:74
+
+# sent_id = Avila2021:0:0:301
+# text = Taína-itá, kuíri asú ambeú penhẽ arama arú resewara.
+# text_eng = Children, now I will tell you the story of the aru.
+# text_por = Crianças, agora eu vou contar para vocês a história do aru.
+# text_source = Comunidade de Terra Preta, 16, adap.
+# text_orig = Taina-itá, kuíri asú ambeú penhẽ arama arú resewara.
+1	Taína-itá	taína	NOUN	N	Number=Plur	5	vocative	_	SpaceAfter=No|TokenRange=0:9
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=9:10
+3	kuíri	kuíri	ADV	ADV	_	5	advmod	_	TokenRange=11:16
+4	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	TokenRange=17:20
+5	ambeú	mbeú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=21:26
+6	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	5	iobj	_	TokenRange=27:32
+7	arama	arama	ADP	ADP	_	6	case	_	TokenRange=33:38
+8	arú	arú	NOUN	N	Number=Sing	9	nmod:poss	_	TokenRange=39:42
+9	resewara	sesewara	NOUN	N	Number=Sing|Rel=Cont	5	obj	_	SpaceAfter=No|TokenRange=43:51
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=51:52
+
+# sent_id = Avila2021:26:1:302
+# text = Aiwã paá usika nhaã upé.
+# text_eng = Then came the "upé" tortoise.
+# text_por = Então chegou o "upé".
+# text_source = Leetra Indígena. n. 17, 15, adap.
+1	Aiwã	aiwã	ADV	ADV	_	3	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
+3	usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=15:19
+5	upé	upé	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=20:23
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Avila2021:26:2:303
+# text = Aité nhaã upé pixuna waá, amú tẽ i suí nhaã piranga waá.
+# text_eng =  That "upé" tortoise that is black, different from the red one.
+# text_por = Aquele "upé" que é preto, diferente do vermelho.
+# text_source = Leetra Indígena. n. 17, 15, adap.
+1	Aité	aité	PRON	EMP	PronType=Emp	3	det	_	TokenRange=0:4
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:9
+3	upé	upé	NOUN	N	Number=Sing	0	root	_	TokenRange=10:13
+4	pixuna	pixuna	ADJ	A	_	3	acl:relcl	_	TokenRange=14:20
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	SpaceAfter=No|TokenRange=21:24
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=24:25
+7	amú	amú	PRON	IND	Number=Sing|PronType=Ind	3	parataxis	_	TokenRange=26:29
+8	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	7	advmod	_	TokenRange=30:32
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nmod	_	TokenRange=33:34
+10	suí	suí	ADP	ADP	_	9	case	_	TokenRange=35:38
+11	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	nsubj	_	TokenRange=39:43
+12	piranga	piranga	ADJ	A	_	11	acl:relcl	_	TokenRange=44:51
+13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nsubj	_	SpaceAfter=No|TokenRange=52:55
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=55:56
+
+# sent_id = Avila2021:26:3:304
+# text = Aé urikú amú tẽ sesewara.
+# text_eng = It [the red one] has another story.
+# text_por = Ele [o vermelho] tem outra história.
+# text_source = Leetra Indígena. n. 17, 15, adap.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:8
+3	amú	amú	DET	IND	Number=Sing|PronType=Ind	5	det	_	TokenRange=9:12
+4	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	3	advmod	_	TokenRange=13:15
+5	sesewara	sesewara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obj	_	SpaceAfter=No|TokenRange=16:24
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Avila2021:0:0:305
+# text = Asuí yambeú yané resewara aintá supé, asuí yawiyé navio kití, ma amú-itá aintá uyuíri aintá ruka kití.
+# text_eng = Then we said goodbye to them and went down to the ship, but the others went back to their homes.
+# text_por = Depois nos despedimos deles e descemos para o navio, mas os outros voltaram para suas casas.
+# text_source = O Novo Testamento em nyengatu, Atos 21:6, adap.
+1	Asuí	asuí	ADV	ADV	_	2	advmod	_	TokenRange=0:4
+2	yambeú	mbeú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:11
+3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:16
+4	resewara	sesewara	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	TokenRange=17:25
+5	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	obl	_	TokenRange=26:31
+6	supé	supé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=32:36
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
+8	asuí	asuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=38:42
+9	yawiyé	wiyé	VERB	V	Number=Plur|Person=1|VerbForm=Fin	2	conj	_	TokenRange=43:49
+10	navio	navio	NOUN	N	Number=Sing	9	obl	_	OrigLang=pt|TokenRange=50:55
+11	kití	kití	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=56:60
+12	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=60:61
+13	ma	ma	CCONJ	CCONJ	_	16	cc	_	TokenRange=62:64
+14	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	16	nsubj	_	TokenRange=65:72
+15	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	expl	_	TokenRange=73:78
+16	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	9	conj	_	TokenRange=79:85
+17	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=86:91
+18	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	16	obl	_	TokenRange=92:96
+19	kití	kití	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=97:101
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=101:102
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.

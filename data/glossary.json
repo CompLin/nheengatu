@@ -2040,6 +2040,21 @@
         "gloss": "cozer, cozinhar"
     },
     {
+        "lemma": "uyí",
+        "pos": "adj.",
+        "gloss": "cozido"
+    },
+    {
+        "lemma": "uyiíma",
+        "pos": "adj.",
+        "gloss": "cru"
+    },
+    {
+        "lemma": "uyima",
+        "pos": "adj.",
+        "gloss": "var. uyiíma"
+    },
+    {
         "lemma": "mena",
         "pos": "s.",
         "gloss": "marido"
@@ -3872,14 +3887,6 @@
         ]
     },
     {
-        "lemma": "resewara",
-        "pos": "posp.",
-        "gloss": "1. (o) que é a respeito de, (o) que é relativo a; 2. por, por causa de",
-        "rel": [
-            "sesewara"
-        ]
-    },
-    {
         "lemma": "retana",
         "pos": "adv. intensif.",
         "gloss": "muito"
@@ -5072,9 +5079,39 @@
         ]
     },
     {
+        "lemma": "resewara",
+        "pos": "posp.",
+        "gloss": "1. relativo a; 2. por causa de",
+        "rel": [
+            "sesewara"
+        ]
+    },
+    {
+        "lemma": "sesewara",
+        "pos": "s.",
+        "gloss": "1) o que diz respeito a; 2) história, notícia; 3) significado, valor; 4) despedida",
+        "rel": [
+            "resewara",
+            "sesewara"
+        ]
+    },
+    {
+        "lemma": "resewara",
+        "pos": "sconj.",
+        "gloss": "porque",
+        "rel": [
+            "sesewara"
+        ]
+    },
+    {
         "lemma": "tetamawara",
         "pos": "s.",
         "gloss": "nativo"
+    },
+    {
+        "lemma": "apekatuwara",
+        "pos": "s. / adj.",
+        "gloss": "estrangeiro"
     },
     {
         "lemma": "teyú",
@@ -5161,7 +5198,11 @@
     {
         "lemma": "timbiú",
         "pos": "s.",
-        "gloss": "comida"
+        "gloss": "comida",
+        "rel": [
+            "rimbiú",
+            "ximbiú"
+        ]
     },
     {
         "lemma": "timbiwa",
@@ -5171,6 +5212,11 @@
             "rimbiwa",
             "simbiwa"
         ]
+    },
+    {
+        "lemma": "upé",
+        "pos": "s.",
+        "gloss": "tipo de réptil"
     },
     {
         "lemma": "tiní",
