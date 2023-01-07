@@ -6273,6 +6273,51 @@
 19	kití	kití	ADP	ADP	_	18	case	_	SpaceAfter=No|TokenRange=97:101
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=101:102
 
+# sent_id = Avila2021:0:0:306
+# text = Mairamé paá waimĩ usendú tiapú unheengari puranga, umbeú sesewara, ape paá waimĩ usemu ukara kití, umaã paá iwaté ana uyupiri usú uikú, usú ana iwaka kití i membira mirĩ irumu i anama-itá piri.
+# text_eng = When the old woman heard her singing loudly and beautifully, saying goodbye, then the old woman went out to the yard and saw that she was already going up high, she went to heaven with her little son, close to her relatives.
+# text_por = Quando a velha a ouviu cantando alto e belamente, despedindo-se, aí a velha saiu para o terreiro e viu que ela já ia subindo alto, foi com seu filho pequeno para o céu perto de seus parentes. [Adapt. transl.]
+# text_source = Casasnovas, 89, adap.
+# text_orig = Mairamé paá waimĩ usendú, tiapú unheengari puranga, umbeú sesewara, ape paá waimĩ usemu ukara kití, umaã paá iwaté ana uyupiri usú uikú, [...].
+1	Mairamé	mairamé	SCONJ	SCONJ	_	4	mark	_	TokenRange=0:7
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=8:11
+3	waimĩ	waimĩ	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:17
+4	usendú	sendú	VERB	V	Person=3|VerbForm=Fin	15	advcl	_	TokenRange=18:24
+5	tiapú	tiapú	ADV	ADV	_	6	advmod	_	TokenRange=25:30
+6	unheengari	nheengari	VERB	V	Person=3|VerbForm=Fin	4	ccomp	_	TokenRange=31:41
+7	puranga	puranga	ADV	ADV	_	6	advmod	_	SpaceAfter=No|TokenRange=42:49
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=49:50
+9	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=51:56
+10	sesewara	sesewara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	obj	_	SpaceAfter=No|TokenRange=57:65
+11	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=65:66
+12	ape	ape	ADV	ADVJ	_	15	advmod	_	TokenRange=67:70
+13	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	15	advmod	_	TokenRange=71:74
+14	waimĩ	waimĩ	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=75:80
+15	usemu	semu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=81:86
+16	ukara	ukara	NOUN	N	Number=Sing	15	obl	_	TokenRange=87:92
+17	kití	kití	ADP	ADP	_	16	case	_	SpaceAfter=No|TokenRange=93:97
+18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=97:98
+19	umaã	maã	VERB	V	Person=3|VerbForm=Fin	15	parataxis	_	TokenRange=99:103
+20	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	19	advmod	_	TokenRange=104:107
+21	iwaté	iwaté	NOUN	N	Number=Sing	23	obj	_	TokenRange=108:113
+22	ana	ana	PART	PFV	Aspect=Perf	23	advmod	_	TokenRange=114:117
+23	uyupiri	yupiri	VERB	V	Person=3|VerbForm=Fin	19	ccomp	_	TokenRange=118:125
+24	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	23	aux	_	TokenRange=126:129
+25	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	23	aux	_	SpaceAfter=No|TokenRange=130:134
+26	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=134:135
+27	usú	sú	VERB	V	Person=3|VerbForm=Fin	23	parataxis	_	TokenRange=136:139
+28	ana	ana	PART	PFV	Aspect=Perf	27	advmod	_	TokenRange=140:143
+29	iwaka	iwaka	NOUN	N	Number=Sing	27	obl	_	TokenRange=144:149
+30	kití	kití	ADP	ADP	_	29	case	_	TokenRange=150:154
+31	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	32	nmod:poss	_	TokenRange=155:156
+32	membira	membira	NOUN	N	Number=Sing	27	obl	_	TokenRange=157:164
+33	mirĩ	mirĩ	ADJ	A	_	32	amod	_	TokenRange=165:169
+34	irumu	irumu	ADP	ADP	_	32	case	_	TokenRange=170:175
+35	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	36	nmod:poss	_	TokenRange=176:177
+36	anama-itá	anama	NOUN	N	Number=Plur	27	obl	_	TokenRange=178:187
+37	piri	piri	ADP	ADP	_	36	case	_	SpaceAfter=No|TokenRange=188:192
+38	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=192:193
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
