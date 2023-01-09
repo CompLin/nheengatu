@@ -30,14 +30,15 @@ NTU='ntu'
 GLOSSARY=loadGlossary(infile=os.path.join(DIR,"glossary.json"))
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
-'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB',
+'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
 'ADVJ': 'ADV', 'ADVD': 'ADV',
 'ADVL': 'ADV', 'ADVG': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
-'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT', 'PRV': 'Priv'}
+'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
+'COL':'Coll', 'PRV': 'Priv'}
 
 # TODO: extractDemonstratives()
 DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
@@ -1094,6 +1095,11 @@ def handleAccent(base):
         return base
     return accent(base)
 
+def endswith(form,suff):
+    if form.endswith(suff):
+        return form[:-len(suff)]
+    return ''
+
 def mkHab(form):
     suff='tiwa'
     if form.endswith(suff):
@@ -1117,8 +1123,11 @@ def mkNoun(form,orig='pt',dic={}):
         new['OrigLang']=orig
     number=dic.get('number')
     degree=dic.get('degree')
+    derivation=dic.get('derivation')
     if degree:
         feats.append(degree)
+    if derivation:
+        feats.append(derivation)
     if not number:
         number=getNumber(form)['number']
     feats.append(number)
@@ -1154,6 +1163,17 @@ def mkAug(form):
     number=dic.get('number')
     if number == 'PL':
         i=-8
+    lemma=handleAccent(form[:i])
+    return mkNoun(lemma,None,dic)
+
+def mkCol(form):
+    suff='tiwa'
+    i=-len(suff)
+    dic=getNumber(form)
+    dic['derivation']='COL'
+    number=dic.get('number')
+    if number == 'PL':
+        i-=-4
     lemma=handleAccent(form[:i])
     return mkNoun(lemma,None,dic)
 
@@ -1217,6 +1237,9 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=hab':
                 new=mkHab(form)
+                newparselist=new['parselist']
+            elif tag == '=col':
+                new=mkCol(form)
                 newparselist=new['parselist']
             elif tag == '=hab=sconj':
                 new=mkHabSconj(form)

@@ -75,6 +75,7 @@ suf.\tSUFF\tsufixo
 pref.\tPREF\tprefixo
 v.\tV\tverbo de 1ª classe
 v. 2ª cl.\tV2\tverbo de 2ª classe
+v. 3ª cl.\tV3\tverbo de 3ª classe
 """
 def sortFunc(line):
 	return line[1]
@@ -338,6 +339,11 @@ def expandpronoun(lemma, pos):
     prons.update(secondclasspron())
     return f"{lemma}\t{lemma}+{pos}+{prons[lemma]}"
 
+def handleV3(lemma,tag):
+	forms=set()
+	forms.add(f"{lemma}\t{lemma}+{tag}+NCONT")
+	return forms
+
 def conjugateVerb(lemma,pos='V'):
     persnum=getpersnum()
     forms=set()
@@ -410,6 +416,8 @@ def WordParsePairs(glossary):
 					pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
 				elif tag == "V" and not isImpersonal(entry.get('gloss')):
 					pairs.update(conjugateVerb(lemma,tag))
+				elif tag == 'V3':
+					pairs.update(handleV3(lemma,tag))
 				elif tag in ('PRON','PRON2'):
 					pairs.add(expandpronoun(lemma,tag))
 				else:
@@ -474,7 +482,7 @@ def extract_feats(parses):
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
-	'HAB':'aspect', 'PRV':'derivation'}
+	'HAB':'aspect', 'PRV|COL':'derivation'}
     entries=[]
     for lemma,feats in parses:
         new={}

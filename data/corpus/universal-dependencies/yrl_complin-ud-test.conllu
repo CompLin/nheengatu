@@ -6460,6 +6460,103 @@
 26	apekatú	apekatú	ADV	ADV	_	20	advmod	_	SpaceAfter=No|TokenRange=108:115
 27	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=115:116
 
+# sent_id = Avila2021:27:1:313
+# text = Mira usikari mirawasutiwa rupí masariku-iwa i pukú waá supitá.
+# text_eng = The person looks for, in a place with many big trees, a "curlew tree" whose trunk is long.
+# text_por = A pessoa procura, num lugar com muitas árvores grandes, um "pé de maçarico" cujo tronco seja comprido.
+# text_source = Muniz, 87, adap.
+1	Mira	mira	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
+2	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
+3	mirawasutiwa	mirawasú	NOUN	N	Derivation=Coll|Number=Sing	2	obl	_	MSeg=mirá-wasú-tiwa|MGloss=tree-AUG-COLL|TokenRange=13:25
+4	rupí	rupí	ADP	ADP	_	3	case	_	TokenRange=26:30
+5	masariku-iwa	masariku-iwa	NOUN	N	Number=Sing	2	obj	_	TokenRange=31:43
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	expl	_	TokenRange=44:45
+7	pukú	pukú	VERB	A2	_	5	acl:relcl	_	TokenRange=46:50
+8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nmod:poss	_	TokenRange=51:54
+9	supitá	supitá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	7	nsubj	_	SpaceAfter=No|TokenRange=55:61
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=61:62
+
+# sent_id = Avila2021:27:2:314
+# text = Ape mira ukarãi iwaté suí iwí kití.
+# text_eng =  Then the person shaves from top to bottom.
+# text_por = Aí a pessoa raspa de cima para baixo.
+# text_source = Muniz, 87, adap.
+1	Ape	ape	ADV	ADVJ	_	3	advmod	_	TokenRange=0:3
+2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
+3	ukarãi	karãi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
+4	iwaté	iwaté	NOUN	N	Number=Sing	3	obl	_	TokenRange=16:21
+5	suí	suí	ADP	ADP	_	4	case	_	TokenRange=22:25
+6	iwí	iwí	NOUN	N	Number=Sing	3	obl	_	TokenRange=26:29
+7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=30:34
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Avila2021:0:0:315
+# text = Pirá puxí mamayakú umukuna waá akará sakaitiwa upé!
+# text_eng = Bad fish is the puffer fish that swallows the acara in the collection of sticks!
+# text_por = Peixe ruim é o baiacu que engole o acará no ajuntamento de gravetos!
+# text_source = Escola Indígena Barekeniwa, 2014, s/p
+1	Pirá	pirá	NOUN	N	Number=Sing	0	root	_	TokenRange=0:4
+2	puxí	puxí	ADJ	A	_	1	amod	_	TokenRange=5:9
+3	mamayakú	mamayakú	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=10:18
+4	umukuna	mukuna	VERB	V	Person=3|VerbForm=Fin	3	acl:relcl	_	TokenRange=19:26
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	TokenRange=27:30
+6	akará	akará	NOUN	N	Number=Sing	4	obj	_	TokenRange=31:36
+7	sakaitiwa	sakaí	NOUN	N	Derivation=Coll|Number=Sing	4	obl	_	TokenRange=37:46
+8	upé	upé	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=47:50
+9	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Avila2021:0:0:316
+# text = tukunaré: [...] umburi supiá itatiwa rupí asuí kapĩtiwa rupí yuíri, tipiima waá rupí.
+# text_eng = peacock bass: [...] it lays its eggs in places with many stones and also in pastures, where it is shallow.
+# text_por = tucunaré: [...] bota seus ovos em lugares com muitas pedras e também em pastagens, onde é raso.
+# text_source = Payema, 68, adap.
+1	tukunaré	tukunaré	NOUN	N	Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=0:8
+2	:	:	PUNCT	PUNCT	_	1	punct	_	TokenRange=8:9
+3	[...]	[...]	PUNCT	ELIP	PunctType=Elip	4	punct	_	TokenRange=10:15
+4	umburi	mburi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=16:22
+5	supiá	supiá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obj	_	TokenRange=23:28
+6	itatiwa	itá	NOUN	N	Derivation=Coll|Number=Sing	4	obl	_	TokenRange=29:36
+7	rupí	rupí	ADP	ADP	_	6	case	_	TokenRange=37:41
+8	asuí	asuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=42:46
+9	kapĩtiwa	kapĩ	NOUN	N	Derivation=Coll|Number=Sing	6	conj	_	TokenRange=47:55
+10	rupí	rupí	ADP	ADP	_	9	case	_	TokenRange=56:60
+11	yuíri	yuíri	ADV	ADV	_	4	advmod	_	SpaceAfter=No|TokenRange=61:66
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=66:67
+13	tipiima	tipiima	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	9	acl:relcl	_	TokenRange=68:75
+14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	obl	_	TokenRange=76:79
+15	rupí	rupí	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=80:84
+16	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=84:85
+
+# sent_id = Avila2021:0:0:317
+# text = Ikupukú ã paá pituna, mairamé mira-itá ta ukaúkaú xinga pawa, ta umaã uyukwá ta murasí pitérupi siiya kariwa tipitinga mirĩ waá-itá.
+# text_eng = Late at night, they say, when everyone had already gotten a little drunk, they saw appear in the middle of their party many white men who were very fair.
+# text_por = Avançada a noite, contam, quando todos já tinham se embriagado um pouco, eles viram aparecer no meio de sua festa muitos homens brancos que eram clarinhos.
+# text_source = Casasnovas, 72-3, adap.
+1	Ikupukú	ikupukú	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=8:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=10:13
+4	pituna	pituna	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=14:20
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=20:21
+6	mairamé	mairamé	SCONJ	SCONJ	_	9	mark	_	TokenRange=22:29
+7	mira-itá	mira	NOUN	N	Number=Plur	9	nsubj	_	TokenRange=30:38
+8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	expl	_	TokenRange=39:41
+9	ukaúkaú	kaú	VERB	V	Person=3|Red=Yes|VerbForm=Fin	1	advcl	_	TokenRange=42:49
+10	xinga	xinga	ADV	ADVS	_	9	advmod	_	TokenRange=50:55
+11	pawa	pawa	DET	TOT	PronType=Tot	7	det	_	SpaceAfter=No|TokenRange=56:60
+12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=60:61
+13	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	14	nsubj	_	TokenRange=62:64
+14	umaã	maã	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=65:69
+15	uyukwá	yukwá	VERB	V	Person=3|VerbForm=Fin	14	ccomp	_	TokenRange=70:76
+16	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	17	nmod:poss	_	TokenRange=77:79
+17	murasí	murasí	NOUN	N	Number=Sing	15	obl	_	TokenRange=80:86
+18	pitérupi	pitérupi	ADP	ADP	_	17	case	_	TokenRange=87:95
+19	siiya	siiya	DET	INDQ	PronType=Ind	20	det	_	TokenRange=96:101
+20	kariwa	kariwa	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=102:108
+21	tipitinga	tipitinga	ADJ	A	_	20	acl:relcl	_	TokenRange=109:118
+22	mirĩ	mirĩ	ADV	ADV	_	21	advmod	_	TokenRange=119:123
+23	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	22	nsubj	_	SpaceAfter=No|TokenRange=124:131
+24	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=131:132
+
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried.
