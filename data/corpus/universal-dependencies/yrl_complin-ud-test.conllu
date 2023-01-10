@@ -1062,8 +1062,8 @@
 13	ukwá	kwá	VERB	V	Person=3|VerbForm=Fin	11	xcomp	_	TokenRange=72:76
 14	aité	aité	PRON	EMP	PronType=Emp	16	det	_	TokenRange=77:81
 15	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	16	det	_	TokenRange=82:85
-16	nheenga	nheenga	NOUN	N	Number=Sing	13	obl	_	TokenRange=86:93
-17	resewara	resewara	ADP	ADP	Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=94:102
+16	nheenga	nheenga	NOUN	N	Number=Sing	17	nmod:poss	_	TokenRange=86:93
+17	resewara	sesewara	NOUN	N	Number=Sing|Rel=Cont	13	obj	_	SpaceAfter=No|TokenRange=94:102
 18	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=102:103
 19	[...]	[...]	PUNCT	ELIP	PunctType=Elip	7	punct	_	SpaceAfter=No|TokenRange=104:109
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=109:110
@@ -4009,10 +4009,10 @@
 # text_por = Despede-te desta terra, porque nunca mais pisarás nela.
 # text_source = Amorim, 445, adap.
 1	Rembeú	mbeú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=7:9
-3	resewara	resewara	ADP	ADP	Rel=Cont	2	case	_	TokenRange=10:18
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
+3	resewara	sesewara	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	TokenRange=10:18
 4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=19:22
-5	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=23:29
+5	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	1	iobj	_	TokenRange=23:29
 6	supé	supé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=30:34
 7	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=34:35
 8	maãresé	maãresé	SCONJ	SCONJ	_	12	mark	_	TokenRange=36:43
@@ -6556,6 +6556,27 @@
 22	mirĩ	mirĩ	ADV	ADV	_	21	advmod	_	TokenRange=119:123
 23	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	22	nsubj	_	SpaceAfter=No|TokenRange=124:131
 24	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=131:132
+
+# sent_id = Avila2021:0:0:318
+# text = Kunhã-itá, te peyawáu mukũisawa, te pemuirawa se piá pe resewara, [...].
+# text_eng = Women, do not run away a second time, do not make my heart bitter against you, [...].
+# text_por = Mulheres, não fujam uma segunda vez, não façam meu coração amargo contra vocês, [...].
+# text_source = Amorim, 25-6, adap.
+1	Kunhã-itá	kunhã	NOUN	N	Number=Plur	4	vocative	_	SpaceAfter=No|TokenRange=0:9
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=9:10
+3	te	te	PART	NEG	Mood=Imp|PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=11:13
+4	peyawáu	yawáu	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=14:21
+5	mukũisawa	mukũisawa	ADV	ADVO	NumType=Ord	4	advmod	_	SpaceAfter=No|TokenRange=22:31
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
+7	te	te	PART	NEG	Mood=Imp|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=33:35
+8	pemuirawa	muirawa	VERB	V	Number=Plur|Person=2|VerbForm=Fin	4	parataxis	_	TokenRange=36:45
+9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=46:48
+10	piá	piá	NOUN	N	Number=Sing	8	obj	_	TokenRange=49:52
+11	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	obl	_	TokenRange=53:55
+12	resewara	resewara	ADP	ADP	Rel=Cont	11	case	_	SpaceAfter=No|TokenRange=56:64
+13	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=64:65
+14	[...]	[...]	PUNCT	ELIP	PunctType=Elip	4	punct	_	SpaceAfter=No|TokenRange=66:71
+15	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
 
 # sent_id = NT:0:0:1
 # text = Ti pe sikari kirimbawa pembaú arama peú arama yuíri ti pe yuka pe piá aintá resé.
