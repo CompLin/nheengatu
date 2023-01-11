@@ -21,6 +21,7 @@ adj.\tA\tadjetivo de 1ª cl.
 adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
 adv.\tADV\tadvérbio
 adv. encl.\tCLADV\tadvérbio enclítico
+adv. ord.\tADVO\tadvérbio ordinal
 adv. dem.\tADVD\tadvérbio demonstrativo
 adv. gr.\tADVG\tadvérbio de grau
 adv. intensif.\tADVS\tadvérbio de intensidade
@@ -46,6 +47,7 @@ interj.\tINTJ\tinterjeição
 s.\tN\tsubstantivo
 part.\tPART\tpartícula
 part. perf.\tPFV\tpartícula de perfectivo
+part. tot.\tTOTAL\tpartícula de totalitativo
 part. assum.\tASSUM\tpartícula de suposição
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação

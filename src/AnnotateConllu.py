@@ -33,7 +33,7 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
 'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
 'ADVJ': 'ADV', 'ADVD': 'ADV',
-'ADVL': 'ADV', 'ADVG': 'ADV', 'A2': 'VERB',
+'ADVL': 'ADV', 'ADVG': 'ADV', 'ADVO': 'ADV', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
@@ -187,6 +187,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         token['feats']=None
     if token['xpos'] == 'REL':
         updateFeats(token,'PronType','Rel')
+    elif token['xpos'] in ('ORD','ADVO'):
+        updateFeats(token,'NumType','Ord')
     token['head']=head
     dprl=mapping.get(upos)
     if not dprl:
@@ -416,6 +418,7 @@ def handlePart(token,tokenlist,verbs):
     'EXST': {'PartType': 'Exs'},
     'CERT': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
+    'TOTAL': {'PartType': 'Quant'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
     'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
@@ -461,6 +464,9 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'PQ':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')
+    elif xpos == 'TOTAL':
+        headPartPreviousVerb(token,verbs)
+        # updateFeats(token,'PartType': 'Quant')
     elif xpos == 'FOC':
         previous=PreviousContentWord(token,tokenlist)
         token['head']=previous['id']
@@ -1290,7 +1296,7 @@ def insertSentId(sent,pref='MooreFP1994',textid=0,sentid=1):
 def extract_sents(line=None,lines=None):
     sents=[]
     if lines:
-        for sent in text.split("\n"):
+        for sent in lines.split("\n"):
             sents.append(sent.strip())
     else:
         sents=[sent for sent in re.split(r"\s+-\s+|[)(]",line) if sent]
@@ -1318,17 +1324,7 @@ def mkText(text):
 def extractYrl(sent):
     return re.sub(REMOVE,'',sent)
 
-def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
-    if not text:
-        text='''Aité kwá sera waá piranha yakunheseri
-        aé i turususá i apuã waá rupí, asuí sanha
-        saimbé yuíri. (Payema, 68, adap.)
-        - Este que se chama piranha nós o conhecemos
-        por seu formato oval e por seus dentes afiados.
-        - This one called piranha we know for its oval shape
-        and its sharp teeth.'''.replace('\n','')
-        text=re.sub(r"\s+",' ',text)
-    sents=extract_sents(text)
+def handleSents(sents,pref,textid,index,sentid):
     yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
     if len(sents) == 5:
@@ -1337,6 +1333,19 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
         ppText([yrl,sents[3],sents[2],sents[1]],pref,textid,index,sentid)
     #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
     parseSentence(sents[0])
+
+def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
+    if not text:
+        text='''Aité kwá sera waá piranha yakunheseri
+        aé i turususá i apuã waá rupí, asuí sanha
+        saimbé yuíri. (Payema, 68, adap.)
+        - Este que se chama piranha nós o conhecemos
+        por seu formato oval e por seus dentes afiados.
+        - This one called piranha we know for its oval shape
+        and its sharp teeth.'''.replace('\n','') # Avila (2021, p. 256)
+        text=re.sub(r"\s+",' ',text)
+    sents=extract_sents(text)
+    handleSents(sents, pref,textid,index,sentid)
 
 def endswithNTU(word):
     return word.endswith(NTU)
