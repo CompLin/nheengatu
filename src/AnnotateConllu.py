@@ -409,6 +409,7 @@ def handlePart(token,tokenlist,verbs):
     'PQ': {'PartType': 'Int','QestType':'Polar'},
     'CQ': {'PartType': 'Int','QestType':'Content'},
     'NEG': {'PartType': 'Neg','Polarity':'Neg'},
+    'NEGI': {'PartType': 'Neg','Polarity':'Neg','Mood': 'Imp'},
     'RPRT': {'PartType': 'Mod','Evident':'Nfh'},
     # 'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
     'PFV': {'PartType': 'Tam','Aspect':'Perf'},
@@ -425,9 +426,11 @@ def handlePart(token,tokenlist,verbs):
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
-    if xpos == 'NEG': #TODO: use the dictionary instead
+    if xpos.startswith('NEG'): #TODO: use the dictionary instead
         updateFeats(token,'Polarity', 'Neg')
         updateFeats(token,'PartType', 'Neg')
+        if xpos == 'NEGI':
+            updateFeats(token,'Mood', 'Imp')
         headPartNextVerb(token,verbs)
     elif xpos == 'RPRT':
         updateFeats(token,'Evident','Nfh')
@@ -1346,6 +1349,18 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
         text=re.sub(r"\s+",' ',text)
     sents=extract_sents(text)
     handleSents(sents, pref,textid,index,sentid)
+
+def includeTranslation(example):
+    from deep_translator import GoogleTranslator
+    parts=extract_sents(example)
+    text_por=parts[-1]
+    text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
+    parts.append(text_eng)
+    return parts
+
+def parseExample(example,pref,textid,index,sentid):
+	sents=includeTranslation(example)
+	handleSents(sents,pref,textid,index,sentid)
 
 def endswithNTU(word):
     return word.endswith(NTU)

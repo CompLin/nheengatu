@@ -51,6 +51,7 @@ part. tot.\tTOTAL\tpartícula de totalitativo
 part. assum.\tASSUM\tpartícula de suposição
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
+part. neg. imp.\tNEGI\tpartícula de imperativo negativo
 part. afirm.\tAFF\tpartícula de afirmação
 part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
