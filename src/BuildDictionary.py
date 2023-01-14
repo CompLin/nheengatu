@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 3, 2023
+# Last update: January 14, 2023
 
 import re, sys, os, json
 
@@ -466,12 +466,15 @@ def insertA(word):
         return f"{word}a"
     return accent(word)
 
-def accent(word):
-    mapping={'a': 'á', 'e': 'é', 'o': 'ó', 'u': 'ú', 'i': 'í'}
-    for k,v in mapping.items():
-        if word.endswith(k):
-            return f"{word[:-1]}{v}"
-    return word
+def accent(word,nasal=False):
+	oralVowels={'a': 'á', 'e': 'é', 'o': 'ó', 'u': 'ú', 'i': 'í'}
+	nasalVowels={'á':'ã','é':'ẽ','ó':'õ','ú':'ũ','í':'ĩ'}
+	for k,v in oralVowels.items():
+		if word.endswith(k):
+			if nasal:
+				v=nasalVowels[v]
+			return f"{word[:-1]}{v}"
+	return word
 
 def extract_pos(parses):
     poslist=[]

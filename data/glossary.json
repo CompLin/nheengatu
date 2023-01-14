@@ -1655,7 +1655,7 @@
     },
     {
         "lemma": "maãresé",
-        "pos": "sconj.",
+        "pos": "sconj. pré.",
         "gloss": "porque, pois, visto que"
     },
     {
@@ -1676,7 +1676,7 @@
     },
     {
         "lemma": "mairamé",
-        "pos": "sconj.",
+        "pos": "sconj. pré.",
         "gloss": "quando",
         "var": 2
     },
@@ -1991,7 +1991,7 @@
     },
     {
         "lemma": "mayawé",
-        "pos": "sconj.",
+        "pos": "sconj. pré.",
         "gloss": "como; uma vez que"
     },
     {
@@ -2002,7 +2002,7 @@
     },
     {
         "lemma": "mayé",
-        "pos": "sconj.",
+        "pos": "sconj. pré.",
         "gloss": "como, da mesma forma que",
         "var": 2
     },
@@ -2012,8 +2012,51 @@
         "gloss": "assim"
     },
     {
+        "lemma": "muwapika",
+        "pos": "v.",
+        "gloss": "sentar, assentar"
+    },
+    {
+        "lemma": "wapikawa",
+        "pos": "s.",
+        "gloss": "assento"
+    },
+    {
+        "lemma": "wapiká",
+        "pos": "s.",
+        "gloss": "var. wapikawa"
+    },
+    {
+        "lemma": "yupuruka",
+        "pos": "v.",
+        "gloss": "deslocar-se"
+    },
+    {
+        "lemma": "senúi",
+        "pos": "v.",
+        "gloss": "chamar"
+    },
+    {
+        "lemma": "sera-rakapira",
+        "pos": "s.",
+        "gloss": "sobrenome",
+        "rel": [
+            "rera-rakapira",
+            "sera-rakapira"
+        ]
+    },
+    {
+        "lemma": "sakapira",
+        "pos": "s.",
+        "gloss": "extremidade",
+        "rel": [
+            "rakapira",
+            "sakapira"
+        ]
+    },
+    {
         "lemma": "mayepé",
-        "pos": "sconj.",
+        "pos": "sconj. pré.",
         "gloss": "como, segundo o que, conforme"
     },
     {
@@ -2180,6 +2223,16 @@
         "gloss": "var. membira"
     },
     {
+        "lemma": "abensuári",
+        "pos": "v.",
+        "gloss": "abençoar"
+    },
+    {
+        "lemma": "wabensuári",
+        "pos": "v.",
+        "gloss": "var. abensuári"
+    },
+    {
         "lemma": "mimi",
         "pos": "adv.",
         "gloss": "lá, ali"
@@ -2243,6 +2296,21 @@
         "lemma": "mpuranga",
         "pos": "v.",
         "gloss": "embelezar"
+    },
+    {
+        "lemma": "mupena",
+        "pos": "v.",
+        "gloss": "quebrar; partir"
+    },
+    {
+        "lemma": "mpena",
+        "pos": "v.",
+        "gloss": "var. mupena"
+    },
+    {
+        "lemma": "umpena",
+        "pos": "v.",
+        "gloss": "var. mupena"
     },
     {
         "lemma": "muaíwa",
@@ -2693,6 +2761,30 @@
         "lemma": "iwá",
         "pos": "s.",
         "gloss": "fruta"
+    },
+    {
+        "lemma": "iyá",
+        "pos": "s.",
+        "gloss": "fruta",
+        "var": 1
+    },
+    {
+        "lemma": "iyaá",
+        "pos": "s.",
+        "gloss": "var. iyá",
+        "var": 1
+    },
+    {
+        "lemma": "iyá",
+        "pos": "v. 3ª cl.",
+        "gloss": "frutificar",
+        "var": 2
+    },
+    {
+        "lemma": "iyaá",
+        "pos": "v. 3ª cl.",
+        "gloss": "var. iyá",
+        "var": 2
     },
     {
         "lemma": "yuyumimi",
@@ -4009,9 +4101,27 @@
         ]
     },
     {
+        "lemma": "renundé",
+        "pos": "sconj.",
+        "gloss": "antes de, antes que",
+        "rel": [
+            "senundé"
+        ]
+    },
+    {
         "lemma": "re-",
         "pos": "pref.",
         "gloss": "morf. núm.-pess. de 2ª pess. sing."
+    },
+    {
+        "lemma": "muteresemu",
+        "pos": "v.",
+        "gloss": "encher"
+    },
+    {
+        "lemma": "yupipika",
+        "pos": "v.",
+        "gloss": "submergir"
     },
     {
         "lemma": "resaíma",
@@ -4669,6 +4779,36 @@
         "lemma": "siya",
         "pos": "pron. quant.",
         "gloss": "var. siiya"
+    },
+    {
+        "lemma": "setá",
+        "pos": "pron. quant.",
+        "gloss": "muitos",
+        "var": 1
+    },
+    {
+        "lemma": "sitá",
+        "pos": "pron. quant.",
+        "gloss": "var. setá 1",
+        "var": 1
+    },
+    {
+        "lemma": "setá",
+        "pos": "v. 3ª cl.",
+        "gloss": "serem muitos",
+        "var": 2
+    },
+    {
+        "lemma": "sitá",
+        "pos": "v. 3ª cl.",
+        "gloss": "var. setá 2",
+        "var": 2
+    },
+    {
+        "lemma": "setá",
+        "pos": "adv. intensif.",
+        "gloss": "muito",
+        "var": 3
     },
     {
         "lemma": "suái",
@@ -5688,13 +5828,13 @@
     },
     {
         "lemma": "sa",
-        "pos": "sconj.",
-        "gloss": "se"
+        "pos": "sconj. pré.",
+        "gloss": "var. sã"
     },
     {
         "lemma": "sã",
-        "pos": "sconj.",
-        "gloss": "var. se"
+        "pos": "sconj. pré.",
+        "gloss": "se"
     },
     {
         "lemma": "yuí",

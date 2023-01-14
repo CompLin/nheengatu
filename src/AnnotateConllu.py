@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 7, 2023
+# Last update: January 14, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -18,15 +18,26 @@ REMOVE=r"[/=]+\w+"
 HYPHEN='-'
 UNDERSCORE='_'
 
+# Multiword token
+MULTIWORDTOKENS={}
+
 # Case of second class pronouns
 CASE="Gen"
 
 # Enclitic postpositions
 # TODO: extract fom glossary
-CLITICS=['pe','me']
+# hyphenated
+CLITICS=['pe']
+
+# non-hyphenated
+# clitic alomorph of postposition 'upé'
+ME='me'
 
 # clitic adverb "-ntu"
 NTU='ntu'
+
+NONHYPHEN=[NTU,ME]
+
 GLOSSARY=loadGlossary(infile=os.path.join(DIR,"glossary.json"))
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
@@ -1050,9 +1061,13 @@ def insertMultitokenWord(tokenlist):
                     first=previous['form']
                     if alomorph:
                         first=alomorph
-                    if token['upos'] == 'ADV':
-                        sep=''
-                    form=f"{first}{sep}{token['form']}"
+                    #if token['upos'] == 'ADV' or token['form'] == ME:
+                    #    sep=''
+                    mwt=MULTIWORDTOKENS.get(first)
+                    if mwt:
+                        form=mwt
+                    else:
+                        form=f"{first}{sep}{token['form']}"
                     tokenid=token['id']
                     ident=f'{tokenid-1}-{tokenid}'
                     compound=mkMultiWordToken(ident,form,start,end,spaceafter)
@@ -1073,11 +1088,29 @@ def handleHyphen(form):
         dic['host']=True
         dic['form']=form[:-1]
     elif form.startswith(UNDERSCORE):
-        dic['form']=form[1:]
-        dic['lemma']='ntu'
-        dic['upos']='ADV'
-        dic['underscore']=True
+        mkSuff(form,dic)
     return dic
+
+def mkNTU(dic):
+    dic['form']=form[1:]
+    dic['lemma']='ntu'
+    dic['upos']='ADV'
+    dic['underscore']=True
+
+def mkSuff(form,dic):
+    form=form[1:]
+    ntu={'upos':'ADV','lemma':'ntu','clitic': NTU}
+    me={'upos':'ADP','lemma':'upé','clitic':ME}
+    suffs=[ntu,me]
+    for suff in suffs:
+        clitic=suff.get('clitic')
+        if clitic == form:
+            dic['form']=form
+            dic['upos']=suff['upos']
+            dic['lemma']=suff['lemma']
+            dic['underscore']=True
+            break
+
 
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
@@ -1097,12 +1130,12 @@ def mkVerb(form,derivation='',orig='pt'):
     new['parselist']=[[lemma, tags]]
     return new
 
-def handleAccent(base):
+def handleAccent(base,nasal=False):
     parselist=getparselist(base)
     tags=list(filter(lambda x: x[1],parselist))
     if tags:
         return base
-    return accent(base)
+    return accent(base,nasal)
 
 def endswith(form,suff):
     if form.endswith(suff):
@@ -1368,8 +1401,20 @@ def endswithNTU(word):
 def extractNTU(glossary):
     return [entry['lemma'] for entry in filter(lambda x: endswithNTU(x['lemma']),glossary)]
 
+def endswithSuff(suff,word):
+    return word.endswith(suff)
+
+def extractSuff(suff,glossary):
+    return [entry['lemma'] for entry in filter(lambda x: endswithSuff(suff,x['lemma']),glossary)]
+
 def inGlossary(word):
     wordlist=extractNTU(GLOSSARY)
+    if word in wordlist:
+        return True
+    return False
+
+def withSuff(suff,word):
+    wordlist=extractSuff(suff,GLOSSARY)
     if word in wordlist:
         return True
     return False
@@ -1379,12 +1424,33 @@ def hasCliticAdv(token):
             return handleAccent(token[:-len(NTU)])
     return ''
 
+def startswithNasal(suff):
+    return suff[0] in 'mn'
+
+def hasClitic(suff,token):
+    if endswithSuff(suff,token) and not withSuff(suff,token):
+            nasal=startswithNasal(suff)
+            return handleAccent(token[:-len(suff)],nasal)
+    return ''
+
+def extractHost(token):
+    dic={}
+    for clitic in NONHYPHEN:
+        host=hasClitic(clitic,token)
+        if host:
+            dic['host']=host
+            dic['suff']=clitic
+            dic['multiwordtoken']=token
+            return dic
+    return dic
+
 def splitMultiWordTokens(tokens):
+    MULTIWORDTOKENS.clear()
     sep=[d['lemma'] for d in AUX]
     sep.extend(CLITICS)
     newlist=[]
     for t in tokens:
-        host=hasCliticAdv(t)
+        dic=extractHost(t)
         if HYPHEN in t:
             index=t.index(HYPHEN)
             first=t[:index]
@@ -1395,8 +1461,12 @@ def splitMultiWordTokens(tokens):
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(t)
-        elif host:
-            newlist.extend([host,f"{UNDERSCORE}{NTU}"])
+        elif dic: # TODO: if dic ...?
+            host=dic['host']
+            suff=dic['suff']
+            mwt=dic['multiwordtoken']
+            MULTIWORDTOKENS[host]=mwt
+            newlist.extend([host,f"{UNDERSCORE}{suff}"])
         else:
             newlist.append(t)
     return newlist
