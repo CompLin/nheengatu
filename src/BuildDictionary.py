@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 14, 2023
+# Last update: January 24, 2023
 
 import re, sys, os, json
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
+INFILE=os.path.join(DIR,"glossary.txt")
+GLOSSARY=os.path.join(DIR,"glossary.json")
+LEXICON=os.path.join(DIR,"lexicon.json")
 
 # non-finite verb
 NFIN="NFIN"
@@ -110,34 +113,34 @@ REGEX=re.compile(
     \((\w+\.[^)]*)\) # group 5: part of speech information
     \s+\-(.+$) # group 6: gloss""",re.VERBOSE)
 
-def loadGlossary(glossary=None, infile="glossary.json"):
+def loadGlossary(glossary=None, jsonformat=GLOSSARY):
     if glossary:
         glossary=glossary
     else:
-        with open(infile) as f:
+        with open(jsonformat) as f:
             glossary = json.load(f)
     return glossary
 
-def loadLexicon(infile="lexicon.json"):
+def loadLexicon(infile=LEXICON):
     with open(infile) as f:
         lexicon = json.load(f)
     return lexicon
 
-def saveJSON(glossary, outfile="glossary.json"):
+def saveJSON(glossary, outfile=GLOSSARY):
     with open(outfile, "w") as write_file:
         json.dump(glossary, write_file, indent=4, ensure_ascii=False)
 
-def saveGlossary(infile="glossary.txt",outfile="glossary.json"):
+def saveGlossary(infile=INFILE,outfile=GLOSSARY):
     entries=extractEntries(extractLines(infile))
     glossary=buildGlossary(entries)
     saveJSON(glossary, outfile)
 
-def inGloss(string,glossary=None, infile="glossary.json"):
-    glossary=loadGlossary(glossary,infile)
+def inGloss(string,textformat=None, jsonformat=GLOSSARY):
+    glossary=loadGlossary(textformat,jsonformat)
     return list(filter(lambda x: string in x.get('gloss'),glossary))
 
-def getwords(key,value,glossary=None, infile="glossary.json"):
-    glossary=loadGlossary(glossary,infile)
+def getwords(key,value,textformat=None, jsonformat=GLOSSARY):
+    glossary=loadGlossary(textformat,jsonformat)
     return list(filter(lambda x: x.get(key) == value, glossary))
 
 def extractLines(infile):
@@ -698,7 +701,7 @@ def compare(outfile,goldfile):
                     if x not in diff and o != g:
                         print(f"{k}\t{x}\t{o}\t{g}")
 
-def main(infile="glossary.txt",outfile="lexicon.json",path=None):
+def main(infile=INFILE,outfile=LEXICON,path=None):
     if path:
         infile=os.path.join(path,infile)
         outfile=os.path.join(path,outfile)

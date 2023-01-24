@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 14, 2023
+# Last update: January 24, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
@@ -38,7 +38,9 @@ NTU='ntu'
 
 NONHYPHEN=[NTU,ME]
 
-GLOSSARY=loadGlossary(infile=os.path.join(DIR,"glossary.json"))
+ROOT=[]
+
+GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
@@ -339,6 +341,7 @@ def handleNmodPoss(tokenlist):
                 token['deprel']='nmod:poss'
                 token['head']=nexttoken['id']
         i+=1
+    GenitiveConstruction(nouns)
 
 def handlePospCompl(token,nextToken):
     nextToken['deprel']='case'
@@ -346,13 +349,21 @@ def handlePospCompl(token,nextToken):
 
 def handleAdpCompl(token,verbs,nextToken):
     token['deprel'] = 'obl'
-    headid=previousVerb(token,verbs)
-    if not headid:
-        headid=nextVerb(token,verbs)
-    token['head'] = headid
+    verb=previousVerb(token,verbs)
+    if not verb:
+        verb=nextVerb(token,verbs)
+    if verb:
+        token['head'] = verb
     posp=nextToken['xpos'] == 'ADP'
     if posp:
         handlePospCompl(token,nextToken)
+
+def setAttribute(token,attribute,value,overwrite=False):
+    if overwrite:
+        token[attribute] = value
+    else:
+        if not token[attribute]:
+            token[attribute] = value
 
 def handleNounPron(token,nextToken,verbs):
     upos=''
@@ -362,8 +373,11 @@ def handleNounPron(token,nextToken,verbs):
         handleAdpCompl(token,verbs,nextToken)
     elif upos == 'ADJ':
         if token['upos'] == 'NOUN':
-            nextToken['deprel']='amod'
-            nextToken['head'] =token['id']
+            #nextToken['deprel']='amod'
+            #nextToken['head'] =token['id']
+            setAttribute(nextToken,'deprel','amod')
+            if nextToken['deprel']=='amod':
+                nextToken['head'] =token['id']
     elif upos == 'VERB':
         token['deprel'] = 'nsubj'
         token['head'] =nextToken['id']
@@ -885,13 +899,47 @@ def extractClauses(tokenlist):
             break
     return clauses
 
+def assignHead(tokenlist,rootid):
+    for token in tokenlist:
+        if token['head'] == 0 and token['deprel'] != 'root':
+            token['head'] = rootid
+
 def AdjOrNounRoot(tokenlist):
+    adjs=TokensOfCatList(tokenlist,'ADJ')
+    nouns=TokensOfCatList(tokenlist,'NOUN')
+    nouns.extend(TokensOfCatList(tokenlist,'PRON'))
+    nouns.extend(TokensOfCatList(tokenlist,'PROPN'))
+    cop=tokenlist.filter(deprel='cop')
+    rootid=0
+    if adjs:
+        root=adjs[-1]
+        setAttribute(root,'deprel','root')
+        rootid=root['id']
+        if nouns:
+            i=-1
+            while(i>=-len(nouns)):
+                noun=nouns[i]
+                if noun['id'] < rootid:
+                    setAttribute(noun,'deprel','nsubj')
+                    noun['head']=rootid
+                    break
+                i=i-1
+    if cop:
+        cop[0]['head'] = rootid
+    assignHead(tokenlist,rootid)
+
+def AdjOrNounRoot0(tokenlist):
     adjs=TokensOfCatList(tokenlist,'ADJ')
     nouns=TokensOfCatList(tokenlist,'NOUN')
     rootid=0
     nsubjid=0
     if adjs:
         rootid=adjs[-1]['id']
+        if nouns:
+            for noun in nouns:
+                if noun['id'] < rootid:
+                    setAttribute('deprel','nsubj')
+                    noun['head']=rootid
     elif nouns:
         if len(nouns) > 1:
             nsubjid=nouns[0]['id']
@@ -909,9 +957,32 @@ def AdjOrNounRoot(tokenlist):
                 token['deprel']='nsubj'
                 break
 
-def GenitiveConstruction(tokenlist):
+def GenitiveConstruction0(tokenlist):
     nouns=TokensOfCatList(tokenlist,'NOUN')
-    #TODO
+    i=0
+    c=len(nouns)-1
+    while(i<c):
+        this=nouns[i]
+        if not this['deprel']:
+            j=i+1
+            if j <=c:
+                this['deprel']='nmod:poss'
+                next=nouns[j]
+                this['head']=next['id']
+        i+=1
+
+def GenitiveConstruction(nouns):
+    i=0
+    c=len(nouns)-1
+    while(i<c):
+        this=nouns[i]
+        if not this['deprel']:
+            j=i+1
+            if j <=c:
+                this['deprel']='nmod:poss'
+                next=nouns[j]
+                this['head']=next['id']
+        i+=1
 
 def handlePunct(token,nextToken,tokenlist,verbs):
     if nextToken['lemma'] == ",":
@@ -1047,8 +1118,6 @@ def insertMultitokenWord(tokenlist):
             if feats.get('Compound') == 'Yes'or feats.get('Clitic') == 'Yes':
                 index=tokenlist.index(token)
                 previous=tokenlist[index-1]
-                #print(previous)
-                #start=getStartEnd(previous)['start']
                 startend=getStartEnd(previous)
                 start=startend.get('start')
                 if start:
@@ -1229,6 +1298,12 @@ def mkPrv(form):
 def mkClitic(lemma,upos):
     return [[lemma, upos]]
 
+def mkUpos(lemma,upos):
+    return [[lemma, upos]]
+
+def mkIntj(lemma):
+    return mkUpos(lemma,'INTJ')
+
 def handleRedup(token):
     redup={}
     parts=token.split('-')
@@ -1240,11 +1315,35 @@ def handleRedup(token):
 def handleAlomorph(form):
     return form.replace('ií','iwa')
 
+def mkRoot(index):
+    ROOT.append(index)
+
+def handleRoot(tokenlist):
+    rootid=0
+    rootlist=list(tokenlist.filter(deprel='root'))
+    if not rootlist:
+        if ROOT:
+            rootid=ROOT.pop()+1
+            token=tokenlist.filter(id=rootid)[0]
+            token['deprel']='root'
+            token['head']=0
+            for t in tokenlist:
+                if t['id'] != rootid and t['head'] == 0:
+                    t['head']=rootid
+                    if not t['deprel']:
+                        if isNominal(t['upos']) and t['id'] < rootid:
+                            t['deprel']='nsubj'
+
+def isNominal(upos):
+    return upos in ['NOUN','PROPN','PRON']
+
 def mkConlluSentence(tokens):
+    ROOT.clear()
     tokenlist=TokenList()
     ident=1
     start=0
     for token in tokens:
+        old=token
         tag=''
         if '/' in token:
             token,tag=token.split('/')
@@ -1269,6 +1368,7 @@ def mkConlluSentence(tokens):
                 else:
                     parselist=getparselist(form.lower())
         if tag:
+            newparselist=[]
             if tag == '=p':
                 newparselist=mkPropn(token)
             elif tag == '=n':
@@ -1292,6 +1392,10 @@ def mkConlluSentence(tokens):
             elif tag == '=prv':
                 new=mkPrv(form)
                 newparselist=new['parselist']
+            elif tag == '=intj':
+                newparselist=mkIntj(form)
+            elif tag == '=r':
+                mkRoot(tokens.index(old))
             else:
                 newparselist=filterparselist(tag,parselist)
             if newparselist:
@@ -1315,6 +1419,7 @@ def mkConlluSentence(tokens):
     handleSpaceAfter(tokenlist)
     addFeatures(tokenlist)
     insertMultitokenWord(tokenlist)
+    handleRoot(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -1339,8 +1444,9 @@ def extract_sents(line=None,lines=None):
     return sents
 
 def ppText(sents,pref='',textid=0,index=0,sentid=0):
+    output=[]
     if pref:
-        print(f"# sent_id = {pref}:{textid}:{index}:{sentid}")
+        output.append(f"# sent_id = {pref}:{textid}:{index}:{sentid}")
     yrl,eng,por=sents[0],sents[1],sents[2]
     template=f"# text = {yrl}\n# text_eng = {eng}\n# text_por = {por}"
     dic={}
@@ -1350,12 +1456,13 @@ def ppText(sents,pref='',textid=0,index=0,sentid=0):
                 dic['source']=sent[1:-1]
             else:
                 dic['orig']=sent
-    print(template)
+    output.append(template)
     for k,v in dic.items():
-        print(f"# text_{k} = {v}")
+        output.append(f"# text_{k} = {v}")
+    return '\n'.join(output)
 
 def mkText(text):
-	ppText(extract_sents(lines=text))
+	print(ppText(extract_sents(lines=text)))
 
 def extractYrl(sent):
     return re.sub(REMOVE,'',sent)
@@ -1363,14 +1470,31 @@ def extractYrl(sent):
 def handleSents(sents,pref,textid,index,sentid):
     yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
+    output=[]
     if len(sents) == 5:
-        ppText([yrl,sents[3],sents[2],sents[1],sents[4]],pref,textid,index,sentid)
+        output.append(ppText([yrl,sents[3],
+        sents[2],
+        sents[1],
+        sents[4]],
+        pref,textid,index,sentid))
     else:
-        ppText([yrl,sents[3],sents[2],sents[1]],pref,textid,index,sentid)
-    #mkText("\n".join((sents[0],sents[3],sents[2],f"({sents[1]})")))
-    parseSentence(sents[0])
+        output.append(ppText([yrl,
+        sents[3],
+        sents[2],
+        sents[1]],
+        pref,textid,index,sentid))
+    tk=parseSentence(sents[0])
+    output.append(tk.serialize())
+    return output
 
-def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
+def handleParse(output,copyboard=True):
+    outstring='\n'.join(output)
+    if copyboard:
+        import pyperclip
+        pyperclip.copy(outstring)
+    print(outstring)
+
+def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True):
     if not text:
         text='''Aité kwá sera waá piranha yakunheseri
         aé i turususá i apuã waá rupí, asuí sanha
@@ -1381,7 +1505,7 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0):
         and its sharp teeth.'''.replace('\n','') # Avila (2021, p. 256)
         text=re.sub(r"\s+",' ',text)
     sents=extract_sents(text)
-    handleSents(sents, pref,textid,index,sentid)
+    handleParse(handleSents(sents, pref,textid,index,sentid),copyboard=copyboard)
 
 def includeTranslation(example):
     from deep_translator import GoogleTranslator
@@ -1391,9 +1515,9 @@ def includeTranslation(example):
     parts.append(text_eng)
     return parts
 
-def parseExample(example,pref,textid,index,sentid):
+def parseExample(example,pref,textid,index,sentid,copyboard=True):
 	sents=includeTranslation(example)
-	handleSents(sents,pref,textid,index,sentid)
+	handleParse(handleSents(sents, pref,textid,index,sentid),copyboard=copyboard)
 
 def endswithNTU(word):
     return word.endswith(NTU)
@@ -1474,7 +1598,7 @@ def splitMultiWordTokens(tokens):
 def parseSentence(sent):
     tokens=splitMultiWordTokens(tokenize(sent))
     tk=mkConlluSentence(tokens)
-    print(tk.serialize())
+    return tk
 
 def mkDict(text,pref='MooreFP1994',textid=0,sentid=1):
 	groups=text.split('|')
@@ -1493,7 +1617,8 @@ def mkDict(text,pref='MooreFP1994',textid=0,sentid=1):
 	dic['eng'].append(groups[3])
 	return dic
 
-def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1):
+def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboard=True):
+    output=[]
     dic=mkDict(text)
     i=0
     sentid=sentid
@@ -1501,13 +1626,19 @@ def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1):
     source=dic.get('source')
     yrl,eng,por=dic['yrl'],dic['eng'],dic['por']
     while(i < len(yrl)):
-        ppText([extractYrl(yrl[i]),eng[i],por[i]],pref,textid,index,sentid)
+        output.append(
+        ppText(
+        [extractYrl(yrl[i]),eng[i],por[i]],
+        pref,textid,index,sentid)
+        )
         if source:
-            print(f"# text_source = {source}")
-        parseSentence(yrl[i])
+            output.append(f"# text_source = {source}")
+        tk=parseSentence(yrl[i])
+        output.append(tk.serialize())
         sentid+=1
         index+=1
         i+=1
+    handleParse(output,copyboard=copyboard)
 
 def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
     i=0
