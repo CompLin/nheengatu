@@ -3,7 +3,7 @@ This repository contains tools and resources for the computational processing of
 
 Unless otherwise stated, the Nheengatu data and text materials derive from the following sources:
 
-AVILA, Marcel Twardowsky. **Proposta de dicionário nheengatu-português**. 2021. Tese (Doutorado em Estudos da Tradução) - Faculdade de Filosofia, Letras e Ciências Humanas, Universidade de São Paulo, São Paulo, 2021. doi:10.11606/T.8.2021.tde-10012022-201925.
+AVILA, Marcel Twardowsky. **Proposta de dicionário nheengatu-português**. 2021. Tese (Doutorado em Estudos da Tradução) - Faculdade de Filosofia, Letras e Ciências Humanas, Universidade de São Paulo, São Paulo, 2021. doi:[10.11606/T.8.2021.tde-10012022-201925](https://doi.org/10.11606/T.8.2021.tde-10012022-201925).
 
 NAVARRO, Eduardo de Almeida. **Curso de Língua Geral (nheengatu ou tupi moderno)**: a língua das origens da civilização amazônica. 2. ed. São Paulo: Centro Angel Rama da Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo, 2016.
 

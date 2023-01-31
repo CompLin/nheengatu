@@ -8,7 +8,7 @@ Minor formatting and orthographic inconsistencies in the glossary were corrected
 
 We also acknowledge the use of Avila (2021)'s dictionary, which provided invaluable lexical, grammatical, and semantic information for the construction of the morphological analyzer and related treebank annotation tools:
 
-Avila, Marcel Twardowsky.(2021). *Proposta de dicionário nheengatu-português* [Doctoral dissertation, University of São Paulo]. doi:10.11606/T.8.2021.tde-10012022-201925
+Avila, Marcel Twardowsky.(2021). *Proposta de dicionário nheengatu-português* [Doctoral dissertation, University of São Paulo]. doi:[10.11606/T.8.2021.tde-10012022-201925](https://doi.org/10.11606/T.8.2021.tde-10012022-201925).
 
 Dozens of new entries of the glossary or corrections on existing entries were based on this work. These additions, however, represent simplifications of the original entries. The scope and format of the glossary entries are tailored to the automatic annotation tools, meaning explanations often limit themselves to the readings manifest in the corpus examples. Therefore, usage of the glossary in other contexts, e.g., translation or language learning and teaching, should be done with caution. The use of Avila's dictionary should be preferred in these situations.      
 
