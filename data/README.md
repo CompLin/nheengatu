@@ -10,8 +10,8 @@ We also acknowledge the use of Avila (2021)'s dictionary, which provided invalua
 
 Avila, Marcel Twardowsky.(2021). *Proposta de dicionário nheengatu-português* [Doctoral dissertation, University of São Paulo]. doi:10.11606/T.8.2021.tde-10012022-201925
 
-Many new entries of the glossary or corrections on existing entries were based on this work.
+Dozens of new entries of the glossary or corrections on existing entries were based on this work. These additions, however, represent simplifications of the original entries. Scope and format of the glossary entries are mostly tailored to the automatic annotation tools, meaning explanations often limit themselves to the readings manifest in the corpus examples. Therefore, usage of the glossary in other contexts, e.g., translation or language learning and teaching, should be done with some caution. Avila's dictionary should be prefered in these situations.     
 
-The glossary was processed by bash and Python scripts to extract the relevant information for the computational processing of Nheengatu, mostly for tagging and lemmatization. The extracted lexical information is encoded in different data structures stored in the other files of this folder.
+The glossary feeds a couple bash and Python scripts to extract the relevant information for the computational processing of Nheengatu, mostly for tagging and lemmatization. The extracted lexical information is encoded in different data structures stored in the other files of this folder.
 
 If you detect any errors in the data, please submit an issue.
