@@ -4,7 +4,7 @@
 # Last update: January 24, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
-from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, extractTags, isAux, accent, guessVerb
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -41,12 +41,11 @@ NONHYPHEN=[NTU,ME]
 ROOT=[]
 
 GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
+LEXICON=loadLexicon()
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
-'A': 'ADJ', 'ADVR': 'ADV', 'ADVS': 'ADV',
-'ADVJ': 'ADV', 'ADVD': 'ADV',
-'ADVL': 'ADV', 'ADVG': 'ADV', 'ADVO': 'ADV', 'A2': 'VERB',
+'A': 'ADJ', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
@@ -59,6 +58,8 @@ DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 'DEMSN' : 'DET', 'IND' : 'DET', 'TOT' : 'DET'}
 
 DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox'}
+
+ADVTYPE={'ADVC':'Loc', 'ADVM': 'Man', 'ADVT': 'Tim'}
 
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
@@ -77,7 +78,25 @@ def extractAuxEntry(lemma):
         entry.update(entries[0])
     return entry
 
+def AdverbTags():
+    adv='adv.'
+    upos='ADV'
+    dic={}
+    for pos,xpos in MAPPING.items():
+        if pos.startswith(adv):
+            dic[xpos]=upos
+    return dic
 
+def extractAdverbs():
+    advs={}
+    for lemma,entries in LEXICON.items():
+        for entry in entries:
+            if entry[1].startswith('ADV'):
+                if advs.get(lemma):
+                    advs[lemma].append(entry[1])
+                else:
+                    advs[lemma]=[entry[1]]
+    return advs
 
 def extractParticles(mapping):
     dic={}
@@ -99,6 +118,7 @@ def extractPronouns(mapping):
 
 UDTAGS.update(extractParticles(MAPPING))
 UDTAGS.update(extractPronouns(MAPPING))
+UDTAGS.update(AdverbTags())
 
 def tokenrange(sentence):
     m=0
@@ -199,6 +219,10 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     else:
         token['feats']=None
     if token['xpos'] == 'REL':
+        updateFeats(token,'PronType','Rel')
+    elif token['xpos'] == 'ADVR':
+        updateFeats(token,'PronType','Int')
+    elif token['xpos'] == 'ADVL':
         updateFeats(token,'PronType','Rel')
     elif token['xpos'] in ('ORD','ADVO'):
         updateFeats(token,'NumType','Ord')
@@ -557,11 +581,22 @@ def getAdvHead(token,tokenlist,verbs):
         headid=nextVerb(token,verbs)
     return headid
 
+def includeAdvType(token):
+    advs=extractAdverbs()
+    for xpos,value in ADVTYPE.items():
+        if xpos==token['xpos']:
+            updateFeats(token,'AdvType',value)
+        else:
+            tags=advs.get(token['lemma'])
+            for tag in tags:
+                if tag == xpos:
+                    updateFeats(token,'AdvType',value)
+
 def handleAdv(token,nextToken, tokenlist,verbs):
     token['deprel']='advmod'
     previous=getPreviousToken(token,tokenlist,skip=['PUNCT'])
     if token['xpos']=='ADVL':
-        updateFeats(token,'PronType', 'Rel')
+        #updateFeats(token,'PronType', 'Rel')
         nouns=TokensOfCatList(tokenlist,'NOUN')
         nounid=previousCat(token,nouns)
         headid=nextVerb(token,verbs)
@@ -587,6 +622,7 @@ def handleAdv(token,nextToken, tokenlist,verbs):
         token['head']=getAdvHead(token,tokenlist,verbs)
         if token['xpos']=='ADVD':
             updateFeats(token,'PronType', 'Dem')
+    includeAdvType(token)
 
 def handleAdv0(token,verbs):
     token['deprel']='advmod'
@@ -1345,8 +1381,12 @@ def mkConlluSentence(tokens):
     for token in tokens:
         old=token
         tag=''
+        root=False
         if '/' in token:
             token,tag=token.split('/')
+            if '@' in tag:
+                root=True
+                tag=tag[:-1]
         dic=handleHyphen(token)
         new={}
         form=dic.get('form')
@@ -1394,12 +1434,14 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=intj':
                 newparselist=mkIntj(form)
-            elif tag == '=r':
-                mkRoot(tokens.index(old))
+            #elif tag == '=r':
+            #    mkRoot(tokens.index(old))
             else:
                 newparselist=filterparselist(tag,parselist)
             if newparselist:
                 parselist=newparselist
+        if root:
+            mkRoot(tokens.index(old))
         entries=extract_feats(parselist)
         for entry in entries:
             if entry.get('pos') == 'PUNCT':

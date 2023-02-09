@@ -2745,17 +2745,17 @@
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	arama	arama	SCONJ	SCONJ	_	3	mark	_	TokenRange=3:8
 3	yaikú	ikú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:14
-4	kwayé	kwayé	ADV	ADV	_	5	case	_	TokenRange=15:20
-5	taína	taína	NOUN	N	Number=Sing	3	obl	_	TokenRange=21:26
-6	yawé	yawé	ADP	ADP	_	4	fixed	_	SpaceAfter=No|TokenRange=27:31
-7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=31:32
-8	kwayé	kwayé	ADV	ADV	_	9	case	_	TokenRange=33:38
-9	iwitú	iwitú	NOUN	N	Number=Sing	5	conj	_	TokenRange=39:44
+4	kwayé	kwayé	ADV	ADV	_	3	advmod	_	TokenRange=15:20
+5	taína	taína	NOUN	N	Number=Sing	4	obl	_	TokenRange=21:26
+6	yawé	yawé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=27:31
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
+8	kwayé	kwayé	ADV	ADV	_	4	conj	_	TokenRange=33:38
+9	iwitú	iwitú	NOUN	N	Number=Sing	8	obl	_	TokenRange=39:44
 10	upeyú	peyú	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=45:50
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=51:54
-12	yawé	yawé	ADP	ADP	_	8	fixed	_	SpaceAfter=No|TokenRange=55:59
+12	yawé	yawé	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=55:59
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=59:60
-14	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	5	conj	_	TokenRange=61:68
+14	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	9	conj	_	TokenRange=61:68
 15	uruyari	ruyari	VERB	V	Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=69:76
 16	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	15	nsubj	_	TokenRange=77:84
 17	panhẽ	panhẽ	DET	TOT	PronType=Tot	20	det	_	TokenRange=85:90
@@ -4850,10 +4850,10 @@
 14	pemunhã	munhã	VERB	V	Number=Plur|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=67:74
 15	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=75:78
 16	mayé	mayé	ADV	ADVR	_	14	advmod	_	TokenRange=79:83
-17	Abraão	abraão	PROPN	PROPN	_	18	nsubj	_	TokenRange=84:90
-18	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	16	acl:relcl	_	TokenRange=91:97
-19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obl	_	TokenRange=98:101
-20	yawé	yawé	ADP	ADP	_	19	case	_	SpaceAfter=No|TokenRange=102:106
+17	Abraão	abraão	PROPN	PROPN	_	16	obl	_	TokenRange=84:90
+18	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	17	acl:relcl	_	TokenRange=91:97
+19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	nsubj	_	TokenRange=98:101
+20	yawé	yawé	ADP	ADP	_	17	case	_	SpaceAfter=No|TokenRange=102:106
 21	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=106:107
 
 # sent_id = Avila2021:0:0:223
@@ -7098,11 +7098,11 @@
 5	usendú	sendú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=24:30
 6	iwaka	iwaka	NOUN	N	Number=Sing	5	obl	_	TokenRange=31:36
 7	suí	suí	ADP	ADP	_	6	case	_	TokenRange=37:40
-8	kwayé	kwayé	ADV	ADV	_	9	case	_	TokenRange=41:46
-9	iwitú	iwitú	NOUN	N	Number=Sing	5	obl	_	TokenRange=47:52
+8	kwayé	kwayé	ADV	ADV	_	5	advmod	_	TokenRange=41:46
+9	iwitú	iwitú	NOUN	N	Number=Sing	8	obl	_	TokenRange=47:52
 10	upeyú	peyú	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=53:58
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=59:62
-12	yawé	yawé	ADP	ADP	_	8	fixed	_	SpaceAfter=No|TokenRange=63:67
+12	yawé	yawé	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=63:67
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=67:68
 14	asuí	asuí	CCONJ	CCONJ	_	15	cc	_	TokenRange=69:73
 15	umuteresemu	muteresemu	VERB	V	Person=3|VerbForm=Fin	5	conj	_	TokenRange=74:85

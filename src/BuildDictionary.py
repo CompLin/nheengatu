@@ -30,6 +30,9 @@ adv. gr.\tADVG\tadvérbio de grau
 adv. intensif.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
 adv. rel.\tADVL\tadvérbio relativo
+adv. loc.\tADVC\tadvérbio locativo
+adv. mod.\tADVM\tadvérbio de modo
+adv. temp.\tADVT\tadvérbio temporal
 adv. conj.\tADVJ\tadvérbio conjuncional
 art. indef.\tART\tartigo indefinido
 {AUX} flex. pós.\tAUXFS\tauxiliar flexionado pós-verbal
