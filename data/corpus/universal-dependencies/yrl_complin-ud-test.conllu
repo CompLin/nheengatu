@@ -657,7 +657,7 @@
 5	ruakí	ruakí	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=28:33
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
-# sent_id = Navarro2016:0:1
+# sent_id = Navarro2016:0:0:1
 # text = Yandé yasasá puranga.
 # text_eng = We are doing well.
 # text_por = Nós passamos bem.
@@ -666,7 +666,7 @@
 3	puranga	puranga	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=13:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = Navarro2016:0:2
+# sent_id = Navarro2016:0:0:2
 # text = Panhẽ musapiri, paá, aintá urikú aintá rimirikú.
 # text_source = apud Cruz, 270, modif.
 # text_eng = It is said that all three had their wives.
@@ -682,7 +682,7 @@
 9	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=39:47
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=47:48
 
-# sent_id = Navarro2016:0:3
+# sent_id = Navarro2016:0:0:3
 # text = Ixé aputari amemũi musapiri pirá yambaú arama.
 # text_eng = I want to cook three fish for us to eat.
 # text_por = Eu quero cozinhar três peixes para nós comermos.
@@ -695,7 +695,7 @@
 7	arama	arama	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=40:45
 8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 
-# sent_id = Navarro2016:0:4
+# sent_id = Navarro2016:0:0:4
 # text = Apigawa i paya waá umurari iké, sera José.
 # text_eng = The man whose father lives here, his name is José.
 # text_por = O homem que o pai dele mora aqui, seu nome é José.
@@ -710,7 +710,7 @@
 9	José	josé	PROPN	PROPN	_	0	root	_	SpaceAfter=No|TokenRange=37:41
 10	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=41:42
 
-# sent_id = Navarro2016:0:5
+# sent_id = Navarro2016:0:0:5
 # text = Pirá sera waá pirarukú, turusú retana.
 # text_eng = The fish whose name is pirarucu is very large.
 # text_por = O peixe cujo nome é pirarucu, é muito grande.
@@ -722,6 +722,31 @@
 6	turusú	turusú	ADJ	A	_	0	root	_	TokenRange=24:30
 7	retana	retana	ADV	ADVS	_	6	advmod	_	SpaceAfter=No|TokenRange=31:37
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = Navarro2016:4:1:6
+# text = Maria uwatá São Gabriel rupí
+# text_eng = Maria walks through São Gabriel
+# text_por =  Maria caminha por São Gabriel
+# text_source = L4, p. 30
+1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
+2	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	São	são	PROPN	PROPN	_	2	obl	_	TokenRange=12:15
+4	Gabriel	gabriel	PROPN	PROPN	_	3	flat	_	TokenRange=16:23
+5	rupí	rupí	ADP	ADP	_	3	case	_	TokenRange=24:28
+
+# sent_id = Navarro2016:4:2:7
+# text = Maria uwatá ara pukusawa tawa rapé-itá rupí.
+# text_eng = Maria walks the streets of the city during the day.
+# text_por =  Maria anda durante o dia pelas ruas da cidade.
+# text_source = L4, p. 30
+1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
+2	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:15
+4	pukusawa	pukusawa	ADP	ADP	_	3	case	_	TokenRange=16:24
+5	tawa	tawa	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=25:29
+6	rapé-itá	pé	NOUN	N	Number=Plur|Rel=Cont	2	obl	_	TokenRange=30:38
+7	rupí	rupí	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=39:43
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Avila2021:0:0:1
 # text = Kuẽma irumu paá mukũi aintá suiwara tauwiyé garapá kití asuí akití taukanhemu.
