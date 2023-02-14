@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 24, 2023
+# Last update: February 14, 2023
 
 import re, sys, os, json
 
@@ -31,7 +31,8 @@ adv. intensif.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
 adv. rel.\tADVL\tadvérbio relativo
 adv. loc.\tADVC\tadvérbio locativo
-adv. mod.\tADVM\tadvérbio de modo
+adv. man.\tADVA\tadvérbio de maneira
+adv. mod.\tADVM\tadvérbio modal
 adv. temp.\tADVT\tadvérbio temporal
 adv. conj.\tADVJ\tadvérbio conjuncional
 art. indef.\tART\tartigo indefinido

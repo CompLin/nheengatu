@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 24, 2023
+# Last update: February 14, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -59,7 +59,7 @@ DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 
 DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox'}
 
-ADVTYPE={'ADVC':'Loc', 'ADVM': 'Man', 'ADVT': 'Tim'}
+ADVTYPE={'ADVC':'Loc', 'ADVA': 'Man', 'ADVT': 'Tim', 'ADVJ':'Cau', 'ADVM': 'Mod'}
 
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
@@ -582,6 +582,12 @@ def getAdvHead(token,tokenlist,verbs):
     return headid
 
 def includeAdvType(token):
+    xpos=token['xpos']
+    value=ADVTYPE.get(xpos)
+    if value:
+        updateFeats(token,'AdvType',value)
+
+def includeAdvType0(token):
     advs=extractAdverbs()
     for xpos,value in ADVTYPE.items():
         if xpos==token['xpos']:
