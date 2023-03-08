@@ -301,9 +301,9 @@
 3	asasá	sasá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:12
 4	i	i	PRON	PRON2	Case=Gen|PronType=Prs	5	expl	_	TokenRange=13:14
 5	puxí	puxí	ADV	ADV	_	3	advmod	_	TokenRange=15:19
-6	mayé	mayé	SCONJ	CONJ	_	8	mark	_	TokenRange=20:24
+6	mayé	mayé	ADV	ADVLA	AdvType=Man|PronType=Rel	3	advmod	_	TokenRange=20:24
 7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=25:30
-8	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	3	advcl	_	SpaceAfter=No|TokenRange=31:36
+8	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	6	advcl:relcl	_	SpaceAfter=No|TokenRange=31:36
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = MooreFP1994:0:0:23
