@@ -5287,7 +5287,7 @@
 7	manha	manha	NOUN	N	Number=Sing	5	obl	_	TokenRange=26:31
 8	irumu	irumu	ADP	ADP	_	7	case	_	TokenRange=32:37
 9	até	até	SCONJ	SCONJ	_	11	mark	_	TokenRange=38:41
-10	mairamé	mairamé	ADV	ADVR	PronType=Int	11	advmod	_	TokenRange=42:49
+10	mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	11	advmod	_	TokenRange=42:49
 11	umpuruã	mpuruã	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=50:57
 12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=58:59
 13	manha	manha	NOUN	N	Number=Sing	11	obj	_	SpaceAfter=No|TokenRange=60:65
@@ -5303,7 +5303,7 @@
 2	yurutawí	yurutawí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=8:16
 3	uwapika	wapika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=17:24
 4	umaã	maã	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=25:29
-5	masuí	masuí	ADV	ADVR	PronType=Int	4	advmod	_	TokenRange=30:35
+5	masuí	masuí	ADV	ADVRC	AdvType=Loc|PronType=Int	4	advmod	_	TokenRange=30:35
 6	kurasí	kurasí	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=36:42
 7	usemu	semu	VERB	V	Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=43:48
 8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	obl	_	SpaceAfter=No|TokenRange=49:52
@@ -5322,7 +5322,7 @@
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
 4	uwapika	wapika	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=13:20
 5	umaã	maã	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=21:25
-6	makití	makití	ADV	ADVR	PronType=Int	5	advmod	_	TokenRange=26:32
+6	makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	5	advmod	_	TokenRange=26:32
 7	kurasí	kurasí	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=33:39
 8	uwapika	wapika	VERB	V	Person=3|VerbForm=Fin	6	acl:relcl	_	TokenRange=40:47
 9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	8	obl	_	SpaceAfter=No|TokenRange=48:51
@@ -5842,7 +5842,7 @@
 # text_eng = Where did he go?
 # text_por = Aonde será que ele foi?
 # text_source = Avila 2021
-1	Makití	makití	ADV	ADVR	PronType=Int	4	advmod	_	TokenRange=0:6
+1	Makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	4	advmod	_	TokenRange=0:6
 2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=7:10
 3	pu	pu	PART	ASSUM	PartType=Mod	4	advmod	_	TokenRange=11:13
 4	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:17
@@ -5870,7 +5870,7 @@
 # text_eng = Why do they not even laugh at us?
 # text_por = Por que será que elas nem riem para nós?
 # text_source = Leetra Indígena. n. 17, 27, adap.
-1	Marã	marã	ADV	ADVR	PronType=Int	9	advmod	_	TokenRange=0:4
+1	Marã	marã	ADV	ADVRU	AdvType=Cau|PronType=Int	9	advmod	_	TokenRange=0:4
 2	taá	taá	PART	CQ	PartType=Int	9	advmod	_	TokenRange=5:8
 3	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	9	advmod	_	TokenRange=9:11
 4	pu	pu	PART	ASSUM	PartType=Mod	9	advmod	_	TokenRange=12:14
@@ -8024,7 +8024,7 @@
 # text_source = Amorim, 284, adap.
 1	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	5	vocative	_	SpaceAfter=No|TokenRange=0:10
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
-3	masuí	masuí	ADV	ADVR	PronType=Int	5	advmod	_	TokenRange=12:17
+3	masuí	masuí	ADV	ADVRC	AdvType=Loc|PronType=Int	5	advmod	_	TokenRange=12:17
 4	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=18:21
 5	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=22:28
 6	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=28:29
@@ -8072,7 +8072,7 @@
 # text_eng = Where is your path?
 # text_por = Por onde é o teu caminho?
 # text_source = Hartt, 358, adap.
-1	Marupí	marupí	ADV	ADVR	PronType=Int	0	root	_	TokenRange=0:6
+1	Marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=7:10
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
 4	rapé	pé	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=14:18
@@ -8083,7 +8083,7 @@
 # text_eng = Where is my path, my grandfather?
 # text_por = Por onde é o meu caminho, meu avô?
 # text_source = Rodrigues, 77, adap.
-1	Marupí	marupí	ADV	ADVR	PronType=Int	0	root	_	TokenRange=0:6
+1	Marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
 3	rapé	pé	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=10:14
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=14:15
@@ -8118,7 +8118,7 @@
 3	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=10:16
 4	rupí	rupí	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=17:21
 5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=21:22
-6	marupí	marupí	ADV	ADVR	PronType=Int	9	advmod	_	TokenRange=23:29
+6	marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	9	advmod	_	TokenRange=23:29
 7	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	6	acl:relcl	_	TokenRange=30:33
 8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	obl	_	TokenRange=34:37
 9	uxari	xari	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=38:43
@@ -9436,7 +9436,7 @@
 21	Kristu	kristu	PROPN	PROPN	_	15	nsubj	_	SpaceAfter=No|TokenRange=106:112
 22	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=112:113
 23	asuí	asuí	CCONJ	CCONJ	_	26	cc	_	TokenRange=114:118
-24	marã	marã	ADV	ADVR	PronType=Int	26	advmod	_	TokenRange=119:123
+24	marã	marã	ADV	ADVRU	AdvType=Cau|PronType=Int	26	advmod	_	TokenRange=119:123
 25	taá	taá	PART	CQ	PartType=Int	26	advmod	_	TokenRange=124:127
 26	rembeú	mbeú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	12	conj	_	TokenRange=128:134
 27	kuíri	kuíri	ADV	ADV	_	28	advmod	_	TokenRange=135:140

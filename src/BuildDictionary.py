@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 14, 2023
+# Last update: March 7, 2023
 
 import re, sys, os, json
 
@@ -26,9 +26,18 @@ adv.\tADV\tadvérbio
 adv. encl.\tCLADV\tadvérbio enclítico
 adv. ord.\tADVO\tadvérbio ordinal
 adv. dem.\tADVD\tadvérbio demonstrativo
+adv. dem. dist.\tADVDI\tadvérbio demonstrativo distal
+adv. dem. prox.\tADVDX\tadvérbio demonstrativo proximal
 adv. gr.\tADVG\tadvérbio de grau
-adv. intensif.\tADVS\tadvérbio de intensidade
+adv. intens.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
+adv. interr. man.\tADVRA\tadvérbio interrogativo de maneira
+adv. interr. loc.\tADVRC\tadvérbio interrogativo locativo
+adv. interr. temp.\tADVRT\tadvérbio interrogativo temporal
+adv. interr. caus.\tADVRU\tadvérbio interrogativo causal
+adv. rel. man.\tADVLA\tadvérbio relativo de maneira
+adv. rel. loc.\tADVLC\tadvérbio relativo locativo
+adv. rel. temp.\tADVLT\tadvérbio relativo temporal
 adv. rel.\tADVL\tadvérbio relativo
 adv. loc.\tADVC\tadvérbio locativo
 adv. man.\tADVA\tadvérbio de maneira
@@ -55,6 +64,7 @@ s.\tN\tsubstantivo
 part.\tPART\tpartícula
 part. perf.\tPFV\tpartícula de perfectivo
 part. tot.\tTOTAL\tpartícula de totalitativo
+part. prot.\tPROTST\tpartícula de protestivo
 part. assum.\tASSUM\tpartícula de suposição
 part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
@@ -495,7 +505,7 @@ def extract_feats(parses):
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
-	'HAB':'aspect', 'PRV|COL':'derivation'}
+	'FREQ|HAB':'aspect', 'PRV|COL':'derivation'}
     entries=[]
     for lemma,feats in parses:
         new={}

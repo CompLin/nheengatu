@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 14, 2023
+# Last update: March 7, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -12,7 +12,7 @@ from conllu import parse_incr
 import re, os
 
 # Characters to be removed from input sentence
-REMOVE=r"[/=]+\w+"
+REMOVE=r"/=?\w*([:=|]\w+)*@?"
 
 # Separators of multiword tokens
 HYPHEN='-'
@@ -36,6 +36,9 @@ ME='me'
 # clitic adverb "-ntu"
 NTU='ntu'
 
+# clitic question particle "-ta"
+TA='taá'
+
 NONHYPHEN=[NTU,ME]
 
 ROOT=[]
@@ -57,9 +60,20 @@ DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 'INT' : 'DET', 'ART' : 'DET', 'DEMX' : 'DET', 'DEMS' : 'DET',
 'DEMSN' : 'DET', 'IND' : 'DET', 'TOT' : 'DET'}
 
-DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox'}
+DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox', 'I': 'Remt', 'X': 'Prox'}
 
-ADVTYPE={'ADVC':'Loc', 'ADVA': 'Man', 'ADVT': 'Tim', 'ADVJ':'Cau', 'ADVM': 'Mod'}
+ADVTYPE={'ADVO':'Loc','ADVD':'Loc', 'ADVS':'Deg', 'ADVJ':'Cau', 'ADVG':'Deg'}
+
+WH_ADVTYPE={'ADVC':'Loc', 'ADVA':'Man',
+'ADVT':'Tim', 'ADVM':'Mod', 'ADVU': 'Cau'}
+
+WH_ADV={'ADVR': 'Int', 'ADVL':'Rel'}
+DEM_ADV={'ADVD': 'Dem'}
+ADVPRONTYPE={}
+ADVPRONTYPE.update(WH_ADV)
+ADVPRONTYPE.update(DEM_ADV)
+
+ADVTYPE.update(WH_ADVTYPE)
 
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
@@ -220,12 +234,13 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         token['feats']=None
     if token['xpos'] == 'REL':
         updateFeats(token,'PronType','Rel')
-    elif token['xpos'] == 'ADVR':
-        updateFeats(token,'PronType','Int')
-    elif token['xpos'] == 'ADVL':
-        updateFeats(token,'PronType','Rel')
+    #elif token['xpos'] == 'ADVR':
+    #    updateFeats(token,'PronType','Int')
+    #elif token['xpos'] == 'ADVL':
+    #    updateFeats(token,'PronType','Rel')
     elif token['xpos'] in ('ORD','ADVO'):
         updateFeats(token,'NumType','Ord')
+    includeAdvType(token)
     token['head']=head
     dprl=mapping.get(upos)
     if not dprl:
@@ -434,16 +449,6 @@ def headPartPreviousVerb(token,verbs):
             headPartNextVerb(token,verbs)
         i=i-1
 
-def headPartPreviousVerb0(token,verbs):
-    tokid=token['id']
-    for verb in verbs:
-        verbid=verb['id']
-        if verbid < tokid:
-            token['head']=verbid
-            break
-        else:
-            headPartNextVerb(token,verbs)
-
 def handleIntj(token,verbs):
     token['deprel'] = 'discourse'
     headPartNextVerb(token,verbs)
@@ -468,6 +473,7 @@ def handlePart(token,tokenlist,verbs):
     'EXST': {'PartType': 'Exs'},
     'CERT': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
+    'PROTST': {'PartType': 'Mod'},
     'TOTAL': {'PartType': 'Quant'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
@@ -499,6 +505,9 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'FRUST':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'Aspect','Frus')
+    elif xpos == 'PROTST':
+        headPartPreviousVerb(token,verbs)
+        updateFeats(token,'PartType', 'Mod')
     elif xpos == 'FUT':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
@@ -548,27 +557,6 @@ def handleVerb(token,nextToken,verbs):
                 token['deprel'] = 'advcl'
                 """
 
-def handleSconj0(token,tokenlist,verbs):
-    token['deprel'] = 'mark'
-    tokid=token['id']
-    if tokid > 0:
-        if tokenlist[tokid-1]['lemma'] == 'ti':
-            for verb in verbs:
-                verbid=verb['id']
-                if verbid > tokid:
-                    token['head']=verbid
-                    #verb['deprel'] = 'advcl'
-                    break
-        else:
-            j=-1
-            while(j >= -len(verbs)) :
-                verbid=verbs[j]['id']
-                if verbid < token['id']:
-                    token['head']= verbid
-                    #verbs[j]['deprel'] = 'advcl'
-                    break
-                j=j-1
-
 def previousPunct(token,tokenlist):
     puncts=TokensOfCatList(tokenlist,'PUNCT')
     return previousCat(token,puncts)
@@ -581,27 +569,70 @@ def getAdvHead(token,tokenlist,verbs):
         headid=nextVerb(token,verbs)
     return headid
 
+def AdvPronType(lastchar):
+    for adv,prontype in ADVPRONTYPE.items():
+        if adv.endswith(lastchar):
+            return prontype
+    return None
+
+def WhAdvType(lastchar):
+    for adv,advtype in WH_ADVTYPE.items():
+        if adv.endswith(lastchar):
+            return advtype
+    return None
+
+def RelativeInterrogativeAdv(tag):
+    feats={}
+    #feats['xpos']=tag
+    prontype=None
+    advtype=None
+    if tag and tag.startswith('ADV') and len(tag) > 3:
+        i=-1
+        if len(tag) == 5:
+            i=-2
+            advtype=WhAdvType(tag[-1])
+            if not advtype:
+                advtype=ADVTYPE.get(tag[:-1])
+                if tag.startswith('ADVD'):
+                    lastchar=tag[-1]
+                    feats['Deixis']=DEIXIS.get(lastchar)
+        #xpos=f"{tag[0:3]}{tag[i]}"
+        #feats['xpos']=xpos
+        prontype=AdvPronType(tag[i])
+    #if not prontype:
+    #    prontype=
+    feats['PronType']=prontype
+    if not advtype:
+        advtype=ADVTYPE.get(tag)
+    feats['AdvType']=advtype
+    return feats
+
 def includeAdvType(token):
     xpos=token['xpos']
-    value=ADVTYPE.get(xpos)
-    if value:
-        updateFeats(token,'AdvType',value)
-
-def includeAdvType0(token):
-    advs=extractAdverbs()
-    for xpos,value in ADVTYPE.items():
-        if xpos==token['xpos']:
-            updateFeats(token,'AdvType',value)
-        else:
-            tags=advs.get(token['lemma'])
-            for tag in tags:
-                if tag == xpos:
-                    updateFeats(token,'AdvType',value)
+    dic=RelativeInterrogativeAdv(xpos)
+    #key=dic['xpos']
+    prontype=dic.get('PronType')
+    advtype=dic.get('AdvType')
+    deixis=dic.get('Deixis')
+    if advtype:
+        updateFeats(token,'AdvType',advtype)
+    if prontype:
+        updateFeats(token,'PronType',prontype)
+    if deixis:
+        updateFeats(token,'Deixis',deixis)
 
 def handleAdv(token,nextToken, tokenlist,verbs):
     token['deprel']='advmod'
     previous=getPreviousToken(token,tokenlist,skip=['PUNCT'])
-    if token['xpos']=='ADVL':
+    xpos=token['xpos']
+    #includeAdvType(token)
+    feats=token.get('feats')
+    prontype=None
+    advtype=None
+    if feats:
+        prontype=feats.get('PronType')
+        advtype=feats.get('AdvType')
+    if prontype =='Rel':
         #updateFeats(token,'PronType', 'Rel')
         nouns=TokensOfCatList(tokenlist,'NOUN')
         nounid=previousCat(token,nouns)
@@ -613,37 +644,23 @@ def handleAdv(token,nextToken, tokenlist,verbs):
             head['deprel']='acl:relcl'
             if previous:
                 head['head']=previous['id']
-    elif token['xpos']=='ADVG':
+    elif prontype =='Deg':
         token['head']=previous['id']
-        updateFeats(token,'AdvType','Deg')
+        #updateFeats(token,'AdvType','Deg')
         feats=nextToken.get('feats')
         if feats and feats.get('PronType') == 'Rel':
             updateFeats(token,'Degree','Sup')
         else:
             updateFeats(token,'Degree','Cmp')
-    elif token['xpos']=='ADVR':
+    elif prontype =='Int':
         token['head']=nextVerb(token,verbs)
-        updateFeats(token,'PronType', 'Int')
+        #updateFeats(token,'PronType', 'Int')
     else:
         token['head']=getAdvHead(token,tokenlist,verbs)
-        if token['xpos']=='ADVD':
-            updateFeats(token,'PronType', 'Dem')
-    includeAdvType(token)
-
-def handleAdv0(token,verbs):
-    token['deprel']='advmod'
-    if token['xpos']=='ADVD':
-        token['feats']={}
-        token['feats'].update({'PronType': 'Dem'})
-    tokenid=token['id']
-    i=-1
-    c=-len(verbs)
-    while(i >= c):
-        verbid=verbs[i]['id']
-        if verbid < tokenid:
-            token['head']=verbid
-            break
-        i=i-1
+        #if xpos=='ADVD':
+        #    updateFeats(token,'PronType', 'Dem')
+        #    updateFeats(token,'AdvType', 'Loc')
+    #includeAdvType(token)
 
 def handleCconj(token,verbs):
     headid=nextVerb(token,verbs)
@@ -970,49 +987,6 @@ def AdjOrNounRoot(tokenlist):
         cop[0]['head'] = rootid
     assignHead(tokenlist,rootid)
 
-def AdjOrNounRoot0(tokenlist):
-    adjs=TokensOfCatList(tokenlist,'ADJ')
-    nouns=TokensOfCatList(tokenlist,'NOUN')
-    rootid=0
-    nsubjid=0
-    if adjs:
-        rootid=adjs[-1]['id']
-        if nouns:
-            for noun in nouns:
-                if noun['id'] < rootid:
-                    setAttribute('deprel','nsubj')
-                    noun['head']=rootid
-    elif nouns:
-        if len(nouns) > 1:
-            nsubjid=nouns[0]['id']
-            rootid=nouns[1]['id']
-    if rootid:
-        for token in tokenlist:
-            if token['id']==rootid:
-                token['head']=0
-                token['deprel']='root'
-                break
-    if nsubjid:
-        for token in tokenlist:
-            if token['id']==nsubjid:
-                token['head']=rootid
-                token['deprel']='nsubj'
-                break
-
-def GenitiveConstruction0(tokenlist):
-    nouns=TokensOfCatList(tokenlist,'NOUN')
-    i=0
-    c=len(nouns)-1
-    while(i<c):
-        this=nouns[i]
-        if not this['deprel']:
-            j=i+1
-            if j <=c:
-                this['deprel']='nmod:poss'
-                next=nouns[j]
-                this['head']=next['id']
-        i+=1
-
 def GenitiveConstruction(nouns):
     i=0
     c=len(nouns)-1
@@ -1193,7 +1167,7 @@ def handleHyphen(form):
         dic['form']=form[1:]
         if form[1:] in CLITICS:
             dic['lemma']='upé'
-            dic['upos']='ADP'
+            dic['xpos']='ADP'
         dic['hyphen']=True
     elif form.endswith(HYPHEN):
         dic['host']=True
@@ -1202,7 +1176,7 @@ def handleHyphen(form):
         mkSuff(form,dic)
     return dic
 
-def mkNTU(dic):
+def mkNTU(dic): # TODO: remove if deprecated
     dic['form']=form[1:]
     dic['lemma']='ntu'
     dic['upos']='ADV'
@@ -1210,14 +1184,16 @@ def mkNTU(dic):
 
 def mkSuff(form,dic):
     form=form[1:]
-    ntu={'upos':'ADV','lemma':'ntu','clitic': NTU}
-    me={'upos':'ADP','lemma':'upé','clitic':ME}
-    suffs=[ntu,me]
+    ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
+    me={'xpos':'ADP','lemma':'upé','clitic':ME}
+    ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
+    suffs=[ntu,me,ta]
     for suff in suffs:
         clitic=suff.get('clitic')
         if clitic == form:
             dic['form']=form
-            dic['upos']=suff['upos']
+            dic['upos']=UDTAGS[suff['xpos']]
+            dic['xpos']=suff['xpos']
             dic['lemma']=suff['lemma']
             dic['underscore']=True
             break
@@ -1226,11 +1202,18 @@ def mkSuff(form,dic):
 def mkPropn(form):
     return [[form.lower(), 'PROPN']]
 
-def mkVerb(form,derivation='',orig='pt'):
+def mkAdv(form):
+    return [[form.lower(), 'ADV']]
+
+def mkVerb(form,derivation='',orig=None, orig_form=None):
     new={}
     feats=['V']
     if derivation:
         feats.append(derivation)
+    if orig:
+        new['OrigLang']=orig
+    if orig_form:
+        new['Orig']=orig_form
     entry=guessVerb(form)
     feats.append(entry['person'])
     number=entry.get('number')
@@ -1241,10 +1224,10 @@ def mkVerb(form,derivation='',orig='pt'):
     new['parselist']=[[lemma, tags]]
     return new
 
-def handleAccent(base,nasal=False):
+def handleAccent(base,nasal=False,force=False):
     parselist=getparselist(base)
     tags=list(filter(lambda x: x[1],parselist))
-    if tags:
+    if tags and not force:
         return base
     return accent(base,nasal)
 
@@ -1269,11 +1252,49 @@ def mkHabSconj(form):
         new['parselist']=[[lemma, 'SCONJ+HAB']]
         return new
 
-def mkNoun(form,orig='pt',dic={}):
+def parseWord(form,lenght):
+    base=form[:-lenght].lower()
+    suff=form[-lenght:]
+    return base,suff
+
+def getval(key,dic):
+    for k,v in dic.items():
+        if k.startswith(key):
+            return v
+    return None
+
+def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
+    if not lenght:
+        lenght=4
+    suffs={'wara':'FREQ','tiwa': 'HAB'}
+    base, suff=parseWord(form,lenght)
+    tag=suffs[suff]
+    new={}
+    if accent:
+        base=handleAccent(base,force=force)
+    if not xpos:
+        xpos='V'
+    if not guess:
+        parselist=getparselist(base)
+        parse=filterparselist(xpos,parselist)[0]
+        parse[1]=f"{parse[1]}+{tag}"
+        new['parselist']=[parse]
+        return new
+    if xpos == 'V':
+        new=mkVerb(base,derivation=tag)
+    elif xpos == 'N':
+        pass
+    else:
+        new['parselist']=[[base, f"{xpos}+{tag}"]]
+    return new
+
+def mkNoun(form,orig=None,dic={},orig_form=''):
     feats=[]
     new={}
     if orig:
         new['OrigLang']=orig
+    if orig_form:
+        new['Orig']=orig_form
     number=dic.get('number')
     degree=dic.get('degree')
     derivation=dic.get('derivation')
@@ -1309,14 +1330,14 @@ def getNumber(form):
         dic['number']='PL'
     return dic
 
-def mkAug(form):
+def mkAug(form,force=False):
     i=-4
     dic=getNumber(form)
     dic['degree']='AUG'
     number=dic.get('number')
     if number == 'PL':
         i=-8
-    lemma=handleAccent(form[:i])
+    lemma=handleAccent(form[:i],force=force)
     return mkNoun(lemma,None,dic)
 
 def mkCol(form):
@@ -1362,22 +1383,50 @@ def mkRoot(index):
 
 def handleRoot(tokenlist):
     rootid=0
-    rootlist=list(tokenlist.filter(deprel='root'))
-    if not rootlist:
-        if ROOT:
-            rootid=ROOT.pop()+1
-            token=tokenlist.filter(id=rootid)[0]
-            token['deprel']='root'
-            token['head']=0
-            for t in tokenlist:
-                if t['id'] != rootid and t['head'] == 0:
-                    t['head']=rootid
-                    if not t['deprel']:
-                        if isNominal(t['upos']) and t['id'] < rootid:
-                            t['deprel']='nsubj'
+    if ROOT:
+        rootid=ROOT.pop()+1
+        token=tokenlist.filter(id=rootid)[0]
+        token['deprel']='root'
+        token['head']=0
+        for t in tokenlist:
+            if t['id'] != rootid and t['head'] == 0:
+                t['head']=rootid
+                if not t['deprel']:
+                    if isNominal(t['upos']) and t['id'] < rootid:
+                        t['deprel']='nsubj'
 
 def isNominal(upos):
     return upos in ['NOUN','PROPN','PRON']
+
+def parseArgs(string):
+    dic={}
+    #oper='='
+    #index=string.index(oper)
+    #parts=string[index+1:].split(':')
+    parts=string.split(':')
+    dic['func'] = parts[0]
+    for part in parts[1:]:
+        arg,val=part.split('|')
+        dic[arg]=val
+    return dic
+
+def parseTag(tag):
+    values={'t': True, 'f': 'False'}
+    sep=':'
+    dic={}
+    if sep in tag:
+        args=parseArgs(tag)
+        for k,v in args.items():
+            value = values.get(v)
+            if value:
+                args[k]=values[v]
+            else:
+                if k == 'l':
+                    args[k]=int(v)
+        dic.update(args)
+    else:
+        dic['func']=tag
+    return dic
 
 def mkConlluSentence(tokens):
     ROOT.clear()
@@ -1386,7 +1435,7 @@ def mkConlluSentence(tokens):
     start=0
     for token in tokens:
         old=token
-        tag=''
+        tag=MULTIWORDTOKENS.get('xpos')
         root=False
         if '/' in token:
             token,tag=token.split('/')
@@ -1399,14 +1448,15 @@ def mkConlluSentence(tokens):
         redup=handleRedup(token)
         parselist=[]
         lemma=dic.get('lemma')
-        upos=dic.get('upos')
+        upos=dic.get('upos') # TODO: problably not used
+        xpos=dic.get('xpos')
         host=dic.get('host')
         alomorph=form.lower()
         if redup:
             parselist=getparselist(redup['form'])
         else:
             if lemma:
-                parselist=mkClitic(lemma,upos)
+                parselist=mkClitic(lemma,xpos)
             else:
                 if host:
                     alomorph=handleAlomorph(form.lower())
@@ -1414,14 +1464,26 @@ def mkConlluSentence(tokens):
                 else:
                     parselist=getparselist(form.lower())
         if tag:
+            tagparse=parseTag(tag)
+            t=tagparse.get('func')
+            if t:
+                tag=t
+            orig=tagparse.get('o')
+            orig_form=tagparse.get('s')
+            force=tagparse.get('f')
             newparselist=[]
             if tag == '=p':
                 newparselist=mkPropn(token)
+            elif tag == '=adv':
+                newparselist=mkAdv(token)
             elif tag == '=n':
-                new=mkNoun(form)
+                new=mkNoun(form,orig=orig,orig_form=orig_form)
+                newparselist=new['parselist']
+            elif tag == '=a':
+                new=mkAdj(form,orig=orig)
                 newparselist=new['parselist']
             elif tag == '=v':
-                new=mkVerb(form)
+                new=mkVerb(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
             elif tag == '=hab':
                 new=mkHab(form)
@@ -1432,8 +1494,20 @@ def mkConlluSentence(tokens):
             elif tag == '=hab=sconj':
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
+            elif tag == '=mkhab':
+                xpos=tagparse.get('x')
+                if xpos:
+                    xpos=xpos.upper()
+                new=mkHabXpos(  form,
+                                xpos=tagparse.get('x'),
+                                lenght=tagparse.get('l'),
+                                accent=tagparse.get('a'),
+                                guess=tagparse.get('g'),
+                                force=force
+                                )
+                newparselist=new['parselist']
             elif tag == '=aug':
-                new=mkAug(form)
+                new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=prv':
                 new=mkPrv(form)
@@ -1457,8 +1531,11 @@ def mkConlluSentence(tokens):
                 handleHyphenSepToken(t)
             if new:
                 orig=new.get('OrigLang')
+                orig_form=new.get('Orig')
                 if orig:
                     t['misc'].update({'OrigLang': orig})
+                if orig_form:
+                    t['misc'].update({'Orig': orig_form})
             if host and form.lower() != alomorph:
                 t['misc'].update({'Alomorph': form})
             tokenlist.append(t)
@@ -1587,17 +1664,17 @@ def inGlossary(word):
 
 def withSuff(suff,word):
     wordlist=extractSuff(suff,GLOSSARY)
-    if word in wordlist:
+    if word.lower() in wordlist:
         return True
     return False
 
-def hasCliticAdv(token):
+def hasCliticAdv(token): # TODO: possibly deprecated
     if endswithNTU(token) and not inGlossary(token):
-            return handleAccent(token[:-len(NTU)])
+        return handleAccent(token[:-len(NTU)])
     return ''
 
 def startswithNasal(suff):
-    return suff[0] in 'mn'
+    return suff != NTU and suff[0] in 'mn'
 
 def hasClitic(suff,token):
     if endswithSuff(suff,token) and not withSuff(suff,token):
@@ -1605,15 +1682,23 @@ def hasClitic(suff,token):
             return handleAccent(token[:-len(suff)],nasal)
     return ''
 
+def mkHost(host,clitic,token,xpos=''):
+    dic={}
+    dic['host']=host
+    dic['suff']=clitic
+    if xpos:
+        dic['xpos']=xpos
+    dic['multiwordtoken']=token
+    return dic
+
 def extractHost(token):
     dic={}
+    if token.lower() == 'maita':
+        return mkHost('mayé',TA,token,'ADVRA')
     for clitic in NONHYPHEN:
         host=hasClitic(clitic,token)
         if host:
-            dic['host']=host
-            dic['suff']=clitic
-            dic['multiwordtoken']=token
-            return dic
+            return mkHost(host,clitic,token)
     return dic
 
 def splitMultiWordTokens(tokens):
@@ -1637,6 +1722,9 @@ def splitMultiWordTokens(tokens):
             host=dic['host']
             suff=dic['suff']
             mwt=dic['multiwordtoken']
+            xpos=dic.get('xpos')
+            if xpos:
+                MULTIWORDTOKENS['xpos']=xpos
             MULTIWORDTOKENS[host]=mwt
             newlist.extend([host,f"{UNDERSCORE}{suff}"])
         else:

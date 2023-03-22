@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 10, 2022
+# Last update: February 18, 2023
 
 import os, sys, string, json, datetime
 from BuildDictionary import extract_feats, loadLexicon, guesser
@@ -121,7 +121,12 @@ def splitPunctuation(token,punctuation=PUNCTUATION):
             if char in punctuation:
                 tokenlist.append(char)
             else:
-                tokenlist.append(token[:i+1])
+                t=token[:i+1]
+                if t.startswith('"'):
+                    tokenlist.append(t[1:])
+                    tokenlist.append(t[0])
+                else:
+                    tokenlist.append(token[:i+1])
                 break
             i=i-1
         tokenlist.reverse()
