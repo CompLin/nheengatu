@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: March 7, 2023
+# Last update: March 23, 2023
 
 import re, sys, os, json
 
 DIR=os.path.join(os.path.expanduser("~"),"complin/nheengatu/data")
+ALTDIR=os.path.join(os.path.expanduser("~"),"nheengatu/data")
+if not os.path.exists(DIR):
+	DIR=ALTDIR
 INFILE=os.path.join(DIR,"glossary.txt")
 GLOSSARY=os.path.join(DIR,"glossary.json")
 LEXICON=os.path.join(DIR,"lexicon.json")
