@@ -33,7 +33,7 @@
 # text_eng = I want to return to my land.
 # text_por = Quero voltar para a minha terra.
 # text_source = p. 105
-# text_orig = ayuwíri putái seretãma kití [corr.]
+# text_orig = ayuwíri putái seretãma kiti
 1-2	Ayuíri-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
 2	putari	putari	AUX	AUXN	VerbForm=Inf	1	aux	_	_
@@ -966,7 +966,7 @@
 5	seé	seé	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=23:26
 6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=26:27
 7	yawé	yawé	ADV	ADVA	AdvType=Man	10	advmod	_	TokenRange=28:32
-8	rã	rã	PART	PART	_	7	fixed	_	TokenRange=33:35
+8	rã	rã	ADP	ADP	_	7	fixed	_	TokenRange=33:35
 9	mira-itá	mira	NOUN	N	Number=Plur	10	nsubj	_	TokenRange=36:44
 10	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=45:52
 11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	TokenRange=53:55
