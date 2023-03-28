@@ -2079,7 +2079,7 @@
 # text_eng = So they made their headdresses, which were very pretty, [...].
 # text_por = Então eles fizeram seus cocares, que eram muito bonitos, [...].
 # text_source = Leetra Indígena. n. 17, 31, adap.
-1	Aiwã	aiwã	ADV	ADV	_	4	advmod	_	TokenRange=0:4
+1	Aiwã	aiwã	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=5:8
 3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=9:11
 4	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=12:18
@@ -2107,7 +2107,7 @@
 6	uyupisirú	yupisirú	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
 7	kwáu	kwáu	AUX	AUXN	VerbForm=Inf	6	aux	_	_
 8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=51:52
-9	aiwana	aiwana	ADV	ADV	_	11	advmod	_	TokenRange=53:59
+9	aiwana	aiwana	ADV	ADVT	AdvType=Tim	11	advmod	_	TokenRange=53:59
 10	usú	sú	AUX	V	Person=3|VerbForm=Fin	11	aux	_	TokenRange=60:63
 11	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=64:69
 12	amú	amú	DET	IND	Number=Sing|PronType=Ind	13	det	_	TokenRange=70:73
@@ -2124,7 +2124,7 @@
 # text_eng = Then he took the knife.
 # text_por = Então ele pegou a faca.
 # text_source = Rodrigues, 26, adap.
-1	Aiwana	aiwana	ADV	ADV	_	2	advmod	_	TokenRange=0:6
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:6
 2	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:14
 3	kisé	kisé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
@@ -3438,7 +3438,7 @@
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=60:61
 14	utirika	tirika	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=62:69
 15	pawa	pawa	PRON	TOT	PronType=Tot	14	nsubj	_	TokenRange=70:74
-16	kwá	kwá	ADV	ADVD	PronType=Dem	14	obl	_	TokenRange=75:78
+16	kwá	kwá	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	14	obl	_	TokenRange=75:78
 17	suí	suí	ADP	ADP	_	16	case	_	TokenRange=79:82
 18	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	19	nsubj	_	TokenRange=83:88
 19	usikié	sikié	VERB	V	Person=3|VerbForm=Fin	14	advcl	_	TokenRange=89:95
@@ -6265,7 +6265,7 @@
 # text_eng = Then came the "upé" tortoise.
 # text_por = Então chegou o "upé".
 # text_source = Leetra Indígena. n. 17, 15, adap.
-1	Aiwã	aiwã	ADV	ADV	_	3	advmod	_	TokenRange=0:4
+1	Aiwã	aiwã	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
 3	usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
 4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=15:19
@@ -6407,7 +6407,7 @@
 # text_eng = Soon, they say, he came from above, fell into the fire.
 # text_por = Logo, dizem, ele veio do alto, caiu no fogo.
 # text_source = Rodrigues, 175, adap.
-1	Aiwana	aiwana	ADV	ADV	_	3	advmod	_	TokenRange=0:6
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=7:10
 3	uri	yuri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:14
 4	iwaté	iwaté	NOUN	N	Number=Sing	3	obl	_	TokenRange=15:20
@@ -7418,7 +7418,7 @@
 # text_source = Rodrigues, 130, adap.
 # text_orig = [...] kunhamukú-itá umaã Yuruparí resé, puxiwera, i marika tipí.
 # text_prim = Aé ana coema cunhan mucu etá u maan Yurupari recé, puchi uera i marica tepê.
-1	Aiwana	aiwana	ADV	ADV	_	4	advmod	_	TokenRange=0:6
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:6
 2	kuẽma	kuẽma	NOUN	N	Number=Sing	4	obl	_	TokenRange=7:12
 3	kunhamukú-itá	kunhamukú	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=13:26
 4	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=27:31
@@ -7939,7 +7939,7 @@
 # text_eng = So, they say, he went to test his strength on buriti sprouts.
 # text_por = Então, contam, ele foi testar sua força no grelo do buriti.
 # text_source = Rodrigues, 168, adap.
-1	Aiwana	aiwana	ADV	ADV	_	4	advmod	_	TokenRange=0:6
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:6
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=7:10
 3	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	4	aux	_	TokenRange=11:14
 4	usaã	saã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:19
