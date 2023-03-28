@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: March 23, 2023
+# Last update: March 28, 2023
 
 import re, sys, os, json
 
@@ -73,6 +73,7 @@ part. report.\tRPRT\tpartícula de reportativo
 part. neg.\tNEG\tpartícula de negação
 part. neg. imp.\tNEGI\tpartícula de imperativo negativo
 part. afirm.\tAFF\tpartícula de afirmação
+part. cons.\tCONS\tpartícula de consentimento
 part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
 part. fut.\tFUT\tpartícula de futuro

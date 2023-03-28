@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: March 7, 2023
+# Last update: March 28, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -463,6 +463,7 @@ def handlePart(token,tokenlist,verbs):
     'PQ': {'PartType': 'Int','QestType':'Polar'},
     'CQ': {'PartType': 'Int','QestType':'Content'},
     'NEG': {'PartType': 'Neg','Polarity':'Neg'},
+    'CONS': {'PartType': 'Mod','Polarity':'Pos'},
     'NEGI': {'PartType': 'Neg','Polarity':'Neg','Mood': 'Imp'},
     'RPRT': {'PartType': 'Mod','Evident':'Nfh'},
     # 'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
@@ -528,6 +529,10 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'TOTAL':
         headPartPreviousVerb(token,verbs)
         # updateFeats(token,'PartType': 'Quant')
+    elif xpos == 'CONS':
+        headPartPreviousVerb(token,verbs)
+        for feat,val in mapping['CONS'].items():
+            updateFeats(token,feat, val)
     elif xpos == 'FOC':
         previous=PreviousContentWord(token,tokenlist)
         token['head']=previous['id']
