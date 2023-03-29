@@ -6809,20 +6809,42 @@
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Avila2021:29:1:332
-# text = ― Eré, se ruayara.
-# text_eng = — All right, my brother-in-law.
-# text_por = ― Está bem, meu cunhado.
+# text = ― Mairamé taá?
+# text_eng = "When?"
+# text_por = ― Quando?
 # text_source = Rodrigues, 174, adap.
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Eré	eré	INTJ	INTJ	_	0	root	_	SpaceAfter=No|TokenRange=1:4
-3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=4:5
-4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=6:8
-5	ruayara	tuayara	NOUN	N	Number=Sing|Rel=Cont	2	vocative	_	SpaceAfter=No|TokenRange=9:16
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+2	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	0	root	_	TokenRange=1:8
+3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=9:12
+4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
-# sent_id = Avila2021:29:2:333
+# sent_id = Avila2021:29:2:332
+# text = ― Siusí usemu ramé, amú-wirandé.
+# text_eng =  "When the Pleiades are born, the day after tomorrow."
+# text_por = ― Quando as plêiades nascerem, depois de amanhã.
+# text_source = Rodrigues, 174, adap.
+1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
+2	Siusí	siusí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=1:6
+3	usemu	semu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
+4	ramé	ramé	SCONJ	SCONJ	_	3	mark	_	SpaceAfter=No|TokenRange=13:17
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=17:18
+6	amú-wirandé	amú-wirandé	ADV	ADVT	AdvType=Tim	3	advmod	_	SpaceAfter=No|TokenRange=19:30
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = Avila2021:29:3:332
+# text = Eré, se ruayara.
+# text_eng = "All right, my brother-in-law.
+# text_por =  ― Está bem, meu cunhado.
+# text_source = Rodrigues, 174, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=3:4
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=5:7
+4	ruayara	tuayara	NOUN	N	Number=Sing|Rel=Cont	1	vocative	_	SpaceAfter=No|TokenRange=8:15
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Avila2021:29:4:333
 # text = Ayuri ne piri karuka ramé.
-# text_eng =  I'll come to you in the afternoon.
+# text_eng =  I'll come to you in the afternoon."
 # text_por = Eu venho ter contigo de tarde.
 # text_source = Rodrigues, 174, adap.
 1	Ayuri	yuri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
