@@ -8893,6 +8893,138 @@
 11	[...]	[...]	PUNCT	ELIP	PunctType=Elip	8	punct	_	SpaceAfter=No|TokenRange=45:50
 12	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=50:51
 
+# sent_id = Avila2021:0:0:468
+# text = Wirandé kurí yasú akití, eré?
+# text_eng = We'll go there tomorrow, okay?
+# text_por = Amanhã nós vamos para lá, está bem?
+# text_source = Avila 2021
+1	Wirandé	wirandé	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:7
+2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=8:12
+3	yasú	sú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=13:17
+4	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=18:23
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=23:24
+6	eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	3	advmod	_	SpaceAfter=No|TokenRange=25:28
+7	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Avila2021:0:0:469
+# text = Pituna irumu wana, umaã arapasu unheẽ arara supé: ― Eré, asú rẽ akiri.
+# text_eng = At dusk, he saw the woodpecker say to the macaw: - Well, now I'm going to sleep.
+# text_por = Já ao anoitecer, viu o pica-pau dizer à arara: ― Bem, agora vou dormir.
+# text_source = Rodrigues, 157, adap.
+1	Pituna	pituna	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	irumu	irumu	ADP	ADP	_	1	case	_	TokenRange=7:12
+3	wana	wana	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=13:17
+4	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=17:18
+5	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=19:23
+6	arapasu	arapasu	NOUN	N	Number=Sing	5	obj	_	TokenRange=24:31
+7	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	5	xcomp	_	TokenRange=32:37
+8	arara	arara	NOUN	N	Number=Sing	7	iobj	_	TokenRange=38:43
+9	supé	supé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=44:48
+10	:	:	PUNCT	PUNCT	_	16	punct	_	TokenRange=48:49
+11	―	―	PUNCT	PUNCT	_	16	punct	_	TokenRange=49:50
+12	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	16	advmod	_	SpaceAfter=No|TokenRange=51:54
+13	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=54:55
+14	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	16	aux	_	TokenRange=56:59
+15	rẽ	rẽ	ADV	ADVT	AdvType=Tim	16	advmod	_	TokenRange=60:62
+16	akiri	kiri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	SpaceAfter=No|TokenRange=63:68
+17	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=68:69
+
+# sent_id = Avila2021:0:0:470
+# text = Eré, se mú mirĩ-itá, yasú ana iwaka kití yasitatá arama.
+# text_eng = Well, my little brothers, let's go to heaven soon to be stars.
+# text_por = Bem, meus irmãozinhos, vamos logo para o céu para sermos estrelas.
+# text_source = Rodrigues, 224, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	7	advmod	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=5:7
+4	mú	mú	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=8:10
+5	mirĩ-itá	mirĩ	NOUN	N	Number=Plur	7	vocative	_	SpaceAfter=No|TokenRange=11:19
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
+7	yasú	sú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=21:25
+8	ana	ana	PART	PFV	Aspect=Perf	7	advmod	_	TokenRange=26:29
+9	iwaka	iwaka	NOUN	N	Number=Sing	7	obl	_	TokenRange=30:35
+10	kití	kití	ADP	ADP	_	9	case	_	TokenRange=36:40
+11	yasitatá	yasitatá	NOUN	N	Number=Sing	7	advcl	_	TokenRange=41:49
+12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=50:55
+13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=55:56
+
+# sent_id = Avila2021:0:0:471
+# text = Eré, suasú, asú rẽ.
+# text_eng = Well, deer, I'm off.
+# text_por = Bem, veado, já me vou.
+# text_source = Magalhães, 186, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	5	advmod	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
+3	suasú	suasú	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=5:10
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
+5	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=12:15
+6	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=16:18
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Avila2021:38:1:472
+# text = Pepuri pawa paraná upé.
+# text_eng = Everyone jump into the river.
+# text_por = Pulem todos para o rio.
+# text_source = Rondon, 118, adap.
+1	Pepuri	puri	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	pawa	pawa	PRON	TOT	PronType=Tot	1	nsubj	_	TokenRange=7:11
+3	paraná	paraná	NOUN	N	Number=Sing	1	obl	_	TokenRange=12:18
+4	upé	upé	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=19:22
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Avila2021:38:2:473
+# text = Eré!
+# text_eng =  Let's go!
+# text_por = Vamos!
+# text_source = Rondon, 118, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=3:4
+
+# sent_id = Avila2021:38:3:474
+# text = Eré!
+# text_eng =  Let's go!
+# text_por = Vamos!
+# text_source = Rondon, 118, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=3:4
+
+# sent_id = Avila2021:38:4:475
+# text = Kutara!
+# text_eng = Quickly!
+# text_por = Depressa!
+# text_source = Rondon, 118, adap.
+1	Kutara	kutara	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:6
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Avila2021:38:5:476
+# text = Kutara!
+# text_eng = Quickly!
+# text_por = Depressa!
+# text_source = Rondon, 118, adap.
+1	Kutara	kutara	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:6
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Avila2021:39:1:477
+# text = Repisirú yandé panhẽ maã puxí suí.
+# text_eng = Deliver us from all bad things.
+# text_por = Livra-nos de todas as coisas ruins.
+# text_source = Rodrigues, 283, adap.
+1	Repisirú	pisirú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	TokenRange=9:14
+3	panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=15:20
+4	maã	maã	NOUN	N	Number=Sing	1	obl	_	TokenRange=21:24
+5	puxí	puxí	ADJ	A	_	4	amod	_	TokenRange=25:29
+6	suí	suí	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=30:33
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Avila2021:39:2:478
+# text = Eré!
+# text_eng =  So be it!
+# text_por = Assim seja!
+# text_source = Rodrigues, 283, adap.
+1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=3:4
+
 # sent_id = NTLN:0:0:1
 # text = Te pesikari kirimbawa pembaú arama peú arama yuíri, te peyuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried. [ESV]
