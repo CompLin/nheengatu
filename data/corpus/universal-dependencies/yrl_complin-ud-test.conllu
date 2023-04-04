@@ -11378,3 +11378,306 @@
 14	kurí	kurí	PART	FUT	Tense=Fut	13	advmod	_	TokenRange=74:78
 15	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	13	obj	_	SpaceAfter=No|TokenRange=79:83
 16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=83:84
+
+# sent_id = Casasnovas2006:1:1:1
+# text = Yepé ara paá taína-itá taunheẽ ta ramunha Tamakwarí tuyué supé: — Abú, puxiwera paá marandua yandé.
+# text_eng = One day, they say, children said to their grandfather, old Tamaquari: "Grandpa, we have bad news.
+# text_por = Um dia, contam, crianças disseram para o seu avô, o velho Tamaquari: — Vovô, temos uma má notícia. [Adapt. transl.]
+# text_source = p. 83
+# title = Tamakwarí Ukwasá
+# title_pt = A sabedoria do Tamaquari
+# text_orig = Yepé ara paá, tainaitá taunheé taramunha tamakwarí tuyué supé: Abú, puxwera paá marandúa yandé.
+# text_annotator = Leonel Figueiredo de Alencar (LFdeA)
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=9:12
+4	taína-itá	taína	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=13:22
+5	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:30
+6	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=31:33
+7	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	5	iobj	_	TokenRange=34:41
+8	Tamakwarí	tamakwarí	PROPN	PROPN	_	9	nmod:poss	_	TokenRange=42:51
+9	tuyué	tuyué	NOUN	N	Number=Sing	7	appos	_	TokenRange=52:57
+10	supé	supé	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=58:62
+11	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=62:63
+12	—	—	PUNCT	PUNCT	_	17	punct	_	TokenRange=63:64
+13	Abú	abú	NOUN	N	Number=Sing	17	vocative	_	SpaceAfter=No|TokenRange=65:68
+14	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=68:69
+15	puxiwera	puxiwera	ADJ	A	_	17	amod	_	TokenRange=70:78
+16	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	17	advmod	_	TokenRange=79:82
+17	marandua	marandua	NOUN	N	Number=Sing	5	ccomp	_	TokenRange=83:91
+18	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	17	dislocated	_	SpaceAfter=No|TokenRange=92:97
+19	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=97:98
+
+# sent_id = Casasnovas2006:1:2:2
+# text = Kwá iwí paá yepé ara ukái arã yané irumu!
+# text_eng = The world, they say, will one day burn with us!"
+# text_por = O mundo, dizem, um dia queimará conosco! [Avila 2021]
+# text_source = p. 83
+# text_adapt = Avila (2021)
+# text_orig = Kwa iwí, paá, yepé ara ukaí arã yané irumu!
+# text_annotator = LFdeA
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	iwí	iwí	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=4:7
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=8:11
+4	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	5	det	_	TokenRange=12:16
+5	ara	ara	NOUN	N	Number=Sing	6	obl	_	TokenRange=17:20
+6	ukái	kái	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:25
+7	arã	arã	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=26:29
+8	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	6	obl	_	TokenRange=30:34
+9	irumu	irumu	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=35:40
+10	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Casasnovas2006:1:3:3
+# text = — Tik! — unheẽ paá usuaxara aintá.
+# text_eng = "Oh!" he answered them.
+# text_por = — Nossa! — respondeu-lhes. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Tikl [sic], unheé, paá, usuaxara aintá.
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Tik	tik	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No|TokenRange=1:4
+3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=4:5
+4	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=5:6
+5	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
+6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=13:16
+7	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=17:25
+8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=26:31
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Casasnovas2006:1:4:4
+# text = — Ukái ramé kurí, awiké kurí i suí iwí kwara kití!
+# text_eng = "If it burns I'll go into a hole in the earth."
+# text_por = — Se queimar entrarei dentro de um buraco da terra. [Adapt. transl.]
+# text_source = p. 83
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Ukái	kái	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=1:5
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=6:10
+4	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=11:15
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
+6	awiké	wiké	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=17:22
+7	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=23:27
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=28:29
+9	suí	suí	ADP	ADP	_	8	case	_	TokenRange=30:33
+10	iwí	iwí	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=34:37
+11	kwara	kwara	NOUN	N	Number=Sing	6	obl	_	TokenRange=38:43
+12	kití	kití	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=44:48
+13	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = Casasnovas2006:1:5:5
+# text = — Umbaá, abú — taunheẽ paá.
+# text_eng = "No, grandfather," they say they said.
+# text_por = — Não, vovô — contam que disseram. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Umbaá, abú, taunheé paá.
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Umbaá	umbaá	PART	NEG	PartType=Neg|Polarity=Neg	6	ccomp	_	SpaceAfter=No|TokenRange=1:6
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=6:7
+4	abú	abú	NOUN	N	Number=Sing	2	vocative	_	TokenRange=8:11
+5	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=11:12
+6	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:20
+7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=21:24
+8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Casasnovas2006:1:6:6
+# text = — Panhẽ paá iwí ukái arã!
+# text_eng = "They say the whole earth will burn!"
+# text_por = — Dizem que toda a terra queimará! [Adapt. transl.]
+# text_source = p. 83
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=1:6
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=7:10
+4	iwí	iwí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=11:14
+5	ukái	kái	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:19
+6	arã	arã	PART	FUT	Tense=Fut	5	advmod	_	SpaceAfter=No|TokenRange=20:23
+7	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Casasnovas2006:1:7:7
+# text = — Yawé ramé kurí, apuri kurí i suí paraná kití!
+# text_eng = "If so, I'll jump into the river."
+# text_por = — Se for assim, pularei no rio. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Yawé ramé kurí, apuri kurí isuí paraná kití!
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Yawé	yawé	ADV	ADVA	AdvType=Man	6	advcl	_	TokenRange=1:5
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=6:10
+4	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=11:15
+5	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=15:16
+6	apuri	puri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=17:22
+7	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=23:27
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=28:29
+9	suí	suí	ADP	ADP	_	8	case	_	TokenRange=30:33
+10	paraná	paraná	NOUN	N	Number=Sing	6	obl	_	TokenRange=34:40
+11	kití	kití	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=41:45
+12	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = Casasnovas2006:1:8:8
+# text = — Tenhuntu indé, abú — taunheẽ paá i xupé.
+# text_eng = "In vain, grandpa," they told him.
+# text_por = — Debalde, vovô — disseram-lhe. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Tenhuntu indé abú, taunheé paá ixupé.
+# text_sec = Tenhuntu indé, abú! [Avila 2021]
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Tenhuntu	tenhuntu	ADV	ADVA	AdvType=Man	7	ccomp	_	TokenRange=1:9
+3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	dislocated	_	SpaceAfter=No|TokenRange=10:14
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
+5	abú	abú	NOUN	N	Number=Sing	2	vocative	_	TokenRange=16:19
+6	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=19:20
+7	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=21:28
+8	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=29:32
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=33:34
+10	xupé	xupé	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=35:39
+11	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=39:40
+
+# sent_id = Casasnovas2006:1:9:9
+# text = — Panhẽ paá kwá ií upupuri arã.
+# text_eng = “They say all water will boil."
+# text_por = — Dizem que toda a água ferverá. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Panhé paá kwa ií upupuri arã.
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Panhẽ	panhẽ	DET	TOT	PronType=Tot	5	det	_	TokenRange=1:6
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=7:10
+4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=11:14
+5	ií	ií	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=15:17
+6	upupuri	pupuri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=18:25
+7	arã	arã	PART	FUT	Tense=Fut	6	advmod	_	SpaceAfter=No|TokenRange=26:29
+8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Casasnovas2006:1:10:10
+# text = Yawé paá Tamakwarí tuyué upitá sasiara, asuí i piaíwa xinga.
+# text_eng = So old Tamaquari got sad, then he got a little angry.
+# text_por = Assim, o velho Tamaquari ficou triste, depois ficou um pouco zangado. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Yawé paá, tamakwarí tuyué upitá sasiara, asuí ipiaiwa xinga.
+# text_annotator = LFdeA
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=5:8
+3	Tamakwarí	tamakwarí	PROPN	PROPN	_	4	nmod:poss	_	TokenRange=9:18
+4	tuyué	tuyué	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=19:24
+5	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=25:30
+6	sasiara	sasiara	ADJ	A	_	5	xcomp	_	SpaceAfter=No|TokenRange=31:38
+7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=38:39
+8	asuí	asuí	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=40:44
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=45:46
+10	piaíwa	piaíwa	VERB	A2	_	5	parataxis	_	TokenRange=47:53
+11	xinga	xinga	ADV	ADVS	AdvType=Deg	10	advmod	_	SpaceAfter=No|TokenRange=54:59
+12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=59:60
+
+# sent_id = Casasnovas2006:1:11:11
+# text = Ma ti arã taumuserana aé, usuaxara yuíri aintá: ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itá kwara kití!
+# text_eng = But so they don't defeat him, he also replied: "If the water boils, I'll dive deep to get into the hole of a stone!"
+# text_por = Mas para eles não o vencerem, respondeu-lhes também: — Se a água ferver, mergulharei fundo para entrar no buraco de uma pedra! [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Ma tiarã taumuserana aé, usuaxara yuíri aintá: Ií upupúi ramé kurí, ayapumi kurí tipí awiké arã isuí itá kwara kití!
+# text_sec = ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itakwara kití! [Avila 2021]
+# text_annotator = LFdeA
+1	Ma	ma	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:2
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=3:5
+3	arã	arã	SCONJ	SCONJ	_	4	mark	_	TokenRange=6:9
+4	taumuserana	muserana	VERB	V	Number=Plur|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=10:21
+5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No|TokenRange=22:24
+6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=24:25
+7	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=26:34
+8	yuíri	yuíri	ADV	ADV	_	7	advmod	_	TokenRange=35:40
+9	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=41:46
+10	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=46:47
+11	―	―	PUNCT	PUNCT	_	17	punct	_	TokenRange=47:48
+12	Ií	ií	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=49:51
+13	upupuri	pupuri	VERB	V	Person=3|VerbForm=Fin	17	advcl	_	TokenRange=52:59
+14	ramé	ramé	SCONJ	SCONJ	_	13	mark	_	TokenRange=60:64
+15	kurí	kurí	PART	FUT	Tense=Fut	13	advmod	_	SpaceAfter=No|TokenRange=65:69
+16	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=69:70
+17	ayapumi	yapumi	VERB	V	Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	TokenRange=71:78
+18	kurí	kurí	PART	FUT	Tense=Fut	17	advmod	_	TokenRange=79:83
+19	tipí	tipí	ADV	ADVC	AdvType=Loc	17	advmod	_	SpaceAfter=No|TokenRange=84:88
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=88:89
+21	awiké	wiké	VERB	V	Number=Sing|Person=1|VerbForm=Fin	17	advcl	_	TokenRange=90:95
+22	arã	arã	SCONJ	SCONJ	_	21	mark	_	TokenRange=96:99
+23	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	21	obl	_	TokenRange=100:101
+24	suí	suí	ADP	ADP	_	23	case	_	TokenRange=102:105
+25	itá	itá	NOUN	N	Number=Sing	26	nmod:poss	_	TokenRange=106:109
+26	kwara	kwara	NOUN	N	Number=Sing	21	obl	_	TokenRange=110:115
+27	kití	kití	ADP	ADP	_	26	case	_	SpaceAfter=No|TokenRange=116:120
+28	!	!	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=120:121
+
+# sent_id = Casasnovas2006:1:12:12
+# text = ― Umbaá, abú — taunheẽ paá i xupé.
+# text_eng = "No, grandpa," they say they told him.
+# text_por = — Não, vovô — contam que lhe disseram. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Umbaá, abú, taunheé paá ixupé.
+# text_annotator = LFdeA
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Umbaá	umbaá	PART	NEG	PartType=Neg|Polarity=Neg	6	ccomp	_	SpaceAfter=No|TokenRange=1:6
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=6:7
+4	abú	abú	NOUN	N	Number=Sing	2	vocative	_	TokenRange=8:11
+5	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=11:12
+6	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:20
+7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=21:24
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	iobj	_	TokenRange=25:26
+9	xupé	xupé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=27:31
+10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Casasnovas2006:1:13:13
+# text = — Panhẽ paá kwá-itá itá tautikú arã.
+# text_eng = "It is said that all stones will melt."
+# text_por = — Dizem que todas as pedras derreterão. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Panhé paá kwaitá itá tautikú arã.
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Panhẽ	panhẽ	DET	TOT	PronType=Tot	5	det	_	TokenRange=1:6
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=7:10
+4	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	5	det	_	TokenRange=11:18
+5	itá	itá	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=19:22
+6	tautikú	tikú	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:30
+7	arã	arã	PART	FUT	Tense=Fut	6	advmod	_	SpaceAfter=No|TokenRange=31:34
+8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Casasnovas2006:1:14:14
+# text = — Mayé taá kurí remunhã? — taunheẽ paá i xupé.
+# text_eng = “What are you going to do?" they asked him.
+# text_por = — O que você vai fazer? — perguntaram-lhe. [Adapt. transl.]
+# text_source = p. 83
+# text_orig = Mayé taá kurí remunha, taunheé paá ixupé.
+# text_annotator = LFdeA
+1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Mayé	mayé	ADV	ADVR	PronType=Int	5	advmod	_	TokenRange=1:5
+3	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=6:9
+4	kurí	kurí	PART	FUT	Tense=Fut	5	advmod	_	TokenRange=10:14
+5	remunhã	munhã	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	SpaceAfter=No|TokenRange=15:22
+6	?	?	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
+7	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
+8	taunheẽ	nheẽ	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=25:32
+9	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	TokenRange=33:36
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	iobj	_	TokenRange=37:38
+11	xupé	xupé	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=39:43
+12	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Casasnovas2006:1:15:15
+# text = Tamakwarí tuyué ti ã paá ukwá mayé usuaxara, ape upitá sasiara.
+# text_eng = Old Tamaquari no longer knew how to respond and was sad.
+# text_por = O velho Tamaquari não sabia mais como responder e ficou triste.
+# text_source = p. 83
+# text_orig = Tamakwarí tuyué tiã paá ukwá mayé usuaxara, ápe upitá sasiara.
+# text_annotator = LFdeA
+1	Tamakwarí	tamakwarí	PROPN	PROPN	_	2	nmod:poss	_	TokenRange=0:9
+2	tuyué	tuyué	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=10:15
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=16:18
+4	ã	ã	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=19:20
+5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=21:24
+6	ukwá	kwá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=25:29
+7	mayé	mayé	ADV	ADVR	PronType=Int	8	advmod	_	TokenRange=30:34
+8	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=35:43
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=43:44
+10	ape	ape	ADV	ADVJ	AdvType=Cau	11	advmod	_	TokenRange=45:48
+11	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=49:54
+12	sasiara	sasiara	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
+13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
