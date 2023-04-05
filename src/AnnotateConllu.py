@@ -1293,14 +1293,12 @@ def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
     if not xpos:
         xpos='V'
     if not guess:
-        print('lu')
         parselist=getparselist(base)
         parse=filterparselist(xpos,parselist)[0]
         parse[1]=f"{parse[1]}+{'+'.join(feats)}"
         new['parselist']=[parse]
         return new
     if xpos == 'V':
-        print('bu')
         new=mkVerb(base,derivation=tag)
     elif xpos == 'N':
         pass
@@ -1515,7 +1513,6 @@ def mkConlluSentence(tokens):
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
             elif tag == '=mkhab':
-                print('zu')
                 xpos=tagparse.get('x')
                 if xpos:
                     xpos=xpos.upper()
