@@ -9044,7 +9044,7 @@
 # text_por = Eu sempre me lembro de você.
 # text_source = Avila 2021
 # text_annotator = LFdeA
-1	Amanduariwara	manduári	VERB	V	Aspect=Freq|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:13
+1	Amanduariwara	manduári	VERB	V	Aspect=Freq|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=0:13
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=14:16
 3	resé	resé	ADP	ADP	Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=17:21
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
@@ -9073,7 +9073,7 @@
 # text_por = Eu sempre vou para lá.
 # text_source = Avila 2021
 # text_annotator = LFdeA
-1	Asuwara	sú	VERB	V	Aspect=Freq|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
+1	Asuwara	sú	VERB	V	Aspect=Freq|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	mikití	mikití	ADV	ADVC	AdvType=Loc	1	advmod	_	SpaceAfter=No|TokenRange=8:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -9085,7 +9085,7 @@
 # text_annotator = LFdeA
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	csubj	_	TokenRange=0:4
 2	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	1	nsubj	_	TokenRange=5:12
-3	aikwewara	aikwé	PART	EXST	Aspect=Freq|PartType=Exs	0	root	_	TokenRange=13:22
+3	aikwewara	aikwé	PART	EXST	Aspect=Freq|PartType=Exs|Tense=Pres	0	root	_	TokenRange=13:22
 4	mairamé	mairamé	SCONJ	SCONJR	_	5	mark	_	TokenRange=23:30
 5	yakuntari	kuntari	VERB	V	Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=31:40
 6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=41:44
