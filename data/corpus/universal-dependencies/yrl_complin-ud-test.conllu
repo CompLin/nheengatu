@@ -5493,7 +5493,7 @@
 20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	19	obl	_	TokenRange=108:113
 21	irumu	irumu	ADP	ADP	_	20	case	_	TokenRange=114:119
 22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=120:125
-23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Hab|Person=3|VerbForm=Fin	19	obl	_	TokenRange=126:140
+23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Freq|Person=3|Tense=Past|VerbForm=Fin	19	obl	_	TokenRange=126:140
 24	waá	waá	PRON	REL	Number=Sing|PronType=Rel	23	obl	_	TokenRange=141:144
 25	upé	upé	ADP	ADP	_	24	case	_	SpaceAfter=No|TokenRange=145:148
 26	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=148:149
@@ -9027,7 +9027,7 @@
 # text_por = Eu estou sempre aqui, quando você vier, venha me visitar.
 # text_source = Avila 2021
 # text_annotator = LFdeA
-1	Ikewara	Iké	ADV	ADVD	AdvType=Loc|Aspect=Freq|PronType=Dem	0	root	_	TokenRange=0:7
+1	Ikewara	Iké	ADV	ADVD	AdvType=Loc|Aspect=Freq|PronType=Dem|Tense=Pres	0	root	_	TokenRange=0:7
 2	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	1	cop	_	SpaceAfter=No|TokenRange=8:12
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=12:13
 4	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	7	advcl	_	TokenRange=14:20
@@ -9057,7 +9057,7 @@
 # text_annotator = LFdeA
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=4:6
-3	rukawara	uka	NOUN	N	Aspect=Freq|Number=Sing|Rel=Cont	0	root	_	TokenRange=7:15
+3	rukawara	uka	NOUN	N	Aspect=Freq|Number=Sing|Rel=Cont|Tense=Pres	0	root	_	TokenRange=7:15
 4	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	3	cop	_	SpaceAfter=No|TokenRange=16:20
 5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=20:21
 6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=22:24
@@ -9126,9 +9126,9 @@
 # text_source = Leetra Indígena. n. 17, 59, adap.
 # text_annotator = LFdeA
 1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	nsubj	_	TokenRange=0:4
-2	kwayewara	kwayé	ADV	ADVA	AdvType=Man|Aspect=Freq	0	root	_	SpaceAfter=No|TokenRange=5:14
+2	kwayewara	kwayé	ADV	ADVA	AdvType=Man|Aspect=Freq|Tense=Pres	0	root	_	SpaceAfter=No|TokenRange=5:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
-4	arawara	ara	NOUN	N	Aspect=Freq|Number=Sing	2	parataxis	_	TokenRange=16:23
+4	arawara	ara	NOUN	N	Aspect=Freq|Number=Sing|Tense=Pres	2	parataxis	_	TokenRange=16:23
 5	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	4	cop	_	SpaceAfter=No|TokenRange=24:28
 6	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=28:29
 7	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=30:34
@@ -9232,7 +9232,7 @@
 # text_annotator = LFdeA
 1	Panhẽ	panhẽ	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	awá	awá	PRON	IND	PronType=Ind	4	nsubj	_	TokenRange=6:9
-3	sewara	sé	ADV	ADVA	AdvType=Man|Aspect=Freq	4	advmod	_	TokenRange=10:16
+3	sewara	sé	ADV	ADVA	AdvType=Man|Aspect=Freq|Tense=Pres	4	advmod	_	TokenRange=10:16
 4	ukuntari	kuntari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=17:25
 5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No|TokenRange=26:28
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
@@ -10502,7 +10502,7 @@
 12	Yasendú	sendú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	7	ccomp	_	TokenRange=56:63
 13	Muizé	muizé	PROPN	PROPN	_	12	obj	_	TokenRange=64:69
 14	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	12	xcomp	_	TokenRange=70:75
-15	yawewara	yawé	ADV	ADVA	AdvType=Man|Aspect=Freq	14	ccomp	_	TokenRange=76:84
+15	yawewara	yawé	ADV	ADVA	AdvType=Man|Aspect=Freq|Tense=Pres	14	ccomp	_	TokenRange=76:84
 16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	fixed	_	TokenRange=85:88
 17	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	15	advmod	_	TokenRange=89:91
 18	kurí	kurí	PART	FUT	Tense=Fut	15	advmod	_	TokenRange=92:96
