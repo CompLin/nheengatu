@@ -9881,6 +9881,42 @@
 1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
 2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=3:4
 
+# sent_id = Avila2021:0:0:479
+# text = Ta upukawera tẽ paá, ma ti ta umaã tá resé.
+# text_eng = They actually laughed, but didn't look at them.
+# text_por = Elas riam mesmo, mas não olhavam para eles.
+# text_source = Leetra Indígena. n. 17, 29, adap.
+# text_annotator = LFdeA
+1	Ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	upukawera	puká	VERB	V	Aspect=Freq|Person=3|Tense=Past|VerbForm=Fin	0	root	_	TokenRange=3:12
+3	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	2	advmod	_	TokenRange=13:15
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	SpaceAfter=No|TokenRange=16:19
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=19:20
+6	ma	ma	CCONJ	CCONJ	_	9	cc	_	TokenRange=21:23
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=24:26
+8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=27:29
+9	umaã	maã	VERB	V	Person=3|VerbForm=Fin	2	conj	_	TokenRange=30:34
+10	tá	tá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	9	obl	_	TokenRange=35:37
+11	resé	resé	ADP	ADP	Rel=Cont	10	case	_	SpaceAfter=No|TokenRange=38:42
+12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = Avila2021:0:0:480
+# text = Tasiwa i katú reté, ma supí ti upuruwera.
+# text_eng = The ant was very good, but in fact it didn't lend itself.
+# text_por = A formiga era muito boa, mas de fato não costumava emprestar.
+# text_source = Costa, 165, adap.
+# text_annotator = LFdeA
+1	Tasiwa	tasiwa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:6
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=7:8
+3	katú	katú	VERB	A2	_	0	root	_	TokenRange=9:13
+4	reté	reté	ADV	ADVS	AdvType=Deg	3	advmod	_	SpaceAfter=No|TokenRange=14:18
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=18:19
+6	ma	ma	CCONJ	CCONJ	_	9	cc	_	TokenRange=20:22
+7	supí	supí	PART	CERT	PartType=Mod	9	advmod	_	TokenRange=23:27
+8	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=28:30
+9	upuruwera	purú	VERB	V	Aspect=Freq|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	SpaceAfter=No|TokenRange=31:40
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=40:41
+
 # sent_id = NTLN:0:0:1
 # text = Te pesikari kirimbawa pembaú arama peú arama yuíri, te peyuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried. [ESV]
