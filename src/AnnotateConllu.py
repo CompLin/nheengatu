@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: March 28, 2023
+# Last update: April 4, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -10,6 +10,9 @@ from conllu import parse
 from io import open
 from conllu import parse_incr
 import re, os
+
+# default annotator's name abbreviation
+ANNOTATOR = 'LFdeA'
 
 # Characters to be removed from input sentence
 REMOVE=r"/=?\w*([:=|]\w+)*@?"
@@ -209,6 +212,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     degree=entry.get('degree')
     derivation=entry.get('derivation')
     aspect=entry.get('aspect')
+    tense=entry.get('tense')
     vform=entry.get('vform')
     rel=entry.get('rel')
     if person:
@@ -226,6 +230,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Degree']=f"{degree.title()}"
     if aspect:
         feats['Aspect']=f"{aspect.title()}"
+    if tense:
+        feats['Tense']=f"{tense.title()}"
     if derivation:
         feats['Derivation']=UDTAGS.get(derivation)
     if feats:
@@ -1271,21 +1277,30 @@ def getval(key,dic):
 def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
     if not lenght:
         lenght=4
-    suffs={'wara':'FREQ','tiwa': 'HAB'}
+    suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
+    'tiwa': {'Aspect':'HAB'},
+    'wera': {'Aspect':'FREQ', 'Tense': 'PAST'}}
     base, suff=parseWord(form,lenght)
-    tag=suffs[suff]
+    tag=suffs[suff]['Aspect']
+    feats=[]
+    feats.append(tag)
+    tense=suffs[suff].get('Tense')
+    if tense:
+        feats.append(tense)
     new={}
     if accent:
         base=handleAccent(base,force=force)
     if not xpos:
         xpos='V'
     if not guess:
+        print('lu')
         parselist=getparselist(base)
         parse=filterparselist(xpos,parselist)[0]
-        parse[1]=f"{parse[1]}+{tag}"
+        parse[1]=f"{parse[1]}+{'+'.join(feats)}"
         new['parselist']=[parse]
         return new
     if xpos == 'V':
+        print('bu')
         new=mkVerb(base,derivation=tag)
     elif xpos == 'N':
         pass
@@ -1500,6 +1515,7 @@ def mkConlluSentence(tokens):
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
             elif tag == '=mkhab':
+                print('zu')
                 xpos=tagparse.get('x')
                 if xpos:
                     xpos=xpos.upper()
@@ -1564,6 +1580,10 @@ def insertSentId(sent,pref='MooreFP1994',textid=0,sentid=1):
     sent.metadata.update({'sent_id': f'{pref}:{textid}:{sentid}'})
     sent.metadata=sortDict(sent.metadata)
 
+def insertAnnotator(sentences,annotator):
+    for sent in sentences:
+        sent.metadata.update({'text_annotator':annotator})
+
 def extract_sents(line=None,lines=None):
     sents=[]
     if lines:
@@ -1597,7 +1617,7 @@ def mkText(text):
 def extractYrl(sent):
     return re.sub(REMOVE,'',sent)
 
-def handleSents(sents,pref,textid,index,sentid):
+def handleSents(sents,pref,textid,index,sentid,annotator):
     yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
     output=[]
@@ -1614,8 +1634,12 @@ def handleSents(sents,pref,textid,index,sentid):
         sents[1]],
         pref,textid,index,sentid))
     tk=parseSentence(sents[0])
+    includeAnnotator(output,annotator)
     output.append(tk.serialize())
     return output
+
+def includeAnnotator(output,annotator):
+    output.append(f"# text_annotator = {annotator}")
 
 def handleParse(output,copyboard=True):
     outstring='\n'.join(output)
@@ -1624,7 +1648,7 @@ def handleParse(output,copyboard=True):
         pyperclip.copy(outstring)
     print(outstring)
 
-def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True):
+def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True,annotator='LFdeA'):
     if not text:
         text='''Aité kwá sera waá piranha yakunheseri
         aé i turususá i apuã waá rupí, asuí sanha
@@ -1635,7 +1659,7 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True):
         and its sharp teeth.'''.replace('\n','') # Avila (2021, p. 256)
         text=re.sub(r"\s+",' ',text)
     sents=extract_sents(text)
-    handleParse(handleSents(sents, pref,textid,index,sentid),copyboard=copyboard)
+    handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
 
 def includeTranslation(example):
     from deep_translator import GoogleTranslator
@@ -1645,9 +1669,9 @@ def includeTranslation(example):
     parts.append(text_eng)
     return parts
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True):
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR):
 	sents=includeTranslation(example)
-	handleParse(handleSents(sents, pref,textid,index,sentid),copyboard=copyboard)
+	handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
 
 def endswithNTU(word):
     return word.endswith(NTU)
@@ -1758,7 +1782,7 @@ def mkDict(text,pref='MooreFP1994',textid=0,sentid=1):
 	dic['eng'].append(groups[3])
 	return dic
 
-def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboard=True):
+def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboard=True, annotator=ANNOTATOR):
     output=[]
     dic=mkDict(text)
     i=0
@@ -1775,6 +1799,7 @@ def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboar
         if source:
             output.append(f"# text_source = {source}")
         tk=parseSentence(yrl[i])
+        includeAnnotator(output,annotator)
         output.append(tk.serialize())
         sentid+=1
         index+=1
@@ -1792,3 +1817,13 @@ def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
             i+=1
             sentid+=1
             print(sent.serialize(),end='',file=f)
+
+def writeSentsConllu(sentences,outfile):
+    with open(outfile, 'w') as f:
+        for sent in sentences:
+            print(sent.serialize(),end='',file=f)
+
+def insertAnnotatorInSents(infile,outfile,annotator):
+    sents=extractConlluSents(infile)
+    insertAnnotator(sents,annotator)
+    writeSentsConllu(sents,outfile)

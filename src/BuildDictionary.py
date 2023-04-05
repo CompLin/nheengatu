@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: March 28, 2023
+# Last update: April 4, 2023
 
 import re, sys, os, json
 
@@ -509,7 +509,7 @@ def extract_feats(parses):
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
-	'FREQ|HAB':'aspect', 'PRV|COL':'derivation'}
+	'FREQ|HAB':'aspect', 'PRV|COL':'derivation', 'PRES|PAST': 'tense' }
     entries=[]
     for lemma,feats in parses:
         new={}
