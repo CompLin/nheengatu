@@ -10200,14 +10200,14 @@
 16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=89:90
 
 # sent_id = NTLN:0:0:10
-# text = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé, uputari paraná uyuká arama aé.
+# text = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé sakakwera kwá kunhã, uputari paraná uyuká arama aé.
 # text_eng = Then from his mouth the serpent spewed water like a river, to overtake the woman and sweep her away with the torrent. [NIV]
-# text_por = Então a serpente fez jorrar da sua boca água como um rio, para alcançar a mulher e arrastá-la com a correnteza. [NVI]
+# text_por =  Então a serpente fez jorrar da sua boca água como um rio, para alcançar a mulher e arrastá-la com a correnteza. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Rev 12:15
 # text_orig = Asui kua buya utumuna ii iyuru sui kuaye parana yawe sakakuera kua kunya, uputari parana uyuka arama ae.
 # text_sec = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé [...]. [Avila 2021]
 # text_annotator = LFdeA
-1	Asuí	asuí	ADV	ADV	_	4	advmod	_	TokenRange=0:4
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:8
 3	buya	buya	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=9:13
 4	utumuna	tumuna	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=14:21
@@ -10215,16 +10215,19 @@
 6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=25:26
 7	yurú	yurú	NOUN	N	Number=Sing	4	obl	_	TokenRange=27:31
 8	suí	suí	ADP	ADP	_	7	case	_	TokenRange=32:35
-9	kwayé	kwayé	ADV	ADV	_	4	advmod	_	TokenRange=36:41
+9	kwayé	kwayé	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=36:41
 10	paraná	paraná	NOUN	N	Number=Sing	9	obl	_	TokenRange=42:48
-11	yawé	yawé	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=49:53
-12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=53:54
-13	uputari	putari	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=55:62
-14	paraná	paraná	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=63:69
-15	uyuká	yuká	VERB	V	Person=3|VerbForm=Fin	13	ccomp	_	TokenRange=70:75
-16	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=76:81
-17	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=82:84
-18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=84:85
+11	yawé	yawé	ADP	ADP	_	10	case	_	TokenRange=49:53
+12	sakakwera	rakakwera	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	4	obl	_	TokenRange=54:63
+13	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	det	_	TokenRange=64:67
+14	kunhã	kunhã	NOUN	N	Number=Sing	4	dislocated	_	SpaceAfter=No|TokenRange=68:73
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=73:74
+16	uputari	putari	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=75:82
+17	paraná	paraná	NOUN	N	Number=Sing	18	nsubj	_	TokenRange=83:89
+18	uyuká	yuká	VERB	V	Person=3|VerbForm=Fin	16	ccomp	_	TokenRange=90:95
+19	arama	arama	SCONJ	SCONJ	_	18	mark	_	TokenRange=96:101
+20	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	18	obj	_	SpaceAfter=No|TokenRange=102:104
+21	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=104:105
 
 # sent_id = NTLN:0:0:11
 # text = Maita iwasuíma xinga ambeú: "Amburi ne suí ne pekadu" u iwasuíma xinga ambeú "Repuãmu, rewatá"?
