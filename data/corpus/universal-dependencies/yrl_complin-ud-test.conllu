@@ -322,7 +322,7 @@
 2	ti	ti	PART	NEG	Polarity=Neg	3	advmod	_	TokenRange=4:6
 3	asasá	sasá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:12
 4	i	i	PRON	PRON2	Case=Gen|PronType=Prs	5	expl	_	TokenRange=13:14
-5	puxí	puxí	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=15:19
+5	puxí	puxí	ADJ	A	_	3	xcomp	_	TokenRange=15:19
 6	mayé	mayé	ADV	ADVLA	AdvType=Man|PronType=Rel	3	advmod	_	TokenRange=20:24
 7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=25:30
 8	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	6	advcl:relcl	_	SpaceAfter=No|TokenRange=31:36
@@ -3937,11 +3937,11 @@
 # text_source = Amorim, 182, adap.
 # text_annotator = LFdeA
 1	Apekatú	apekatú	ADV	ADV	_	8	advmod	_	SpaceAfter=No|TokenRange=0:7
-2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=7:8
-3	makití	makití	ADV	ADVLC	AdvType=Loc|PronType=Rel	5	advmod	_	TokenRange=9:15
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
+3	makití	makití	ADV	ADVLC	AdvType=Loc|PronType=Rel	8	advmod	_	TokenRange=9:15
 4	kurasí	kurasí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=16:22
-5	uyenú	yenú	VERB	V	Person=3|VerbForm=Fin	1	acl:relcl	_	SpaceAfter=No|TokenRange=23:28
-6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=28:29
+5	uyenú	yenú	VERB	V	Person=3|VerbForm=Fin	3	advcl:relcl	_	SpaceAfter=No|TokenRange=23:28
+6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=28:29
 7	mira	mira	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=30:34
 8	usendú	sendú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=35:41
 9	Poronominare	poronominare	PROPN	PROPN	_	10	nmod:poss	_	TokenRange=42:54
