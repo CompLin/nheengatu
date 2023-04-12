@@ -5621,7 +5621,7 @@
 # text_por = Como tens passado?
 # text_source = Magalhães, 89, adap.
 # text_annotator = LFdeA
-1	Maita	maita	ADV	ADVR	PronType=Int	2	advmod	_	TokenRange=0:5
+1	Maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	2	advmod	_	TokenRange=0:5
 2	resasá	sasá	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:12
 3	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
@@ -5635,7 +5635,7 @@
 2	Asuí	asuí	CCONJ	CCONJ	_	6	cc	_	TokenRange=1:5
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=6:10
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=10:11
-5	maita	maita	ADV	ADVR	PronType=Int	6	advmod	_	TokenRange=12:17
+5	maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	6	advmod	_	TokenRange=12:17
 6	uyukwá	yukwá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=18:24
 7	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=25:27
 8	awa	awa	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=28:31
@@ -5666,7 +5666,7 @@
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=11:15
 4	amú-tetamawara	amú-tetamawara	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=16:30
 5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=30:31
-6	maita	maita	ADV	ADVR	PronType=Int	7	advmod	_	TokenRange=32:37
+6	maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	7	advmod	_	TokenRange=32:37
 7	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=38:44
 8	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=45:47
 9	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=47:48
@@ -6205,7 +6205,7 @@
 # text_por = Como será que eu poderia fazer?
 # text_source = Leetra Indígena. n. 17, 59, adap.
 # text_annotator = LFdeA
-1	Maita	maita	ADV	ADVR	PronType=Int	4	advmod	_	TokenRange=0:5
+1	Maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	TokenRange=0:5
 2	pu	pu	PART	ASSUM	PartType=Mod	4	advmod	_	TokenRange=6:8
 3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	4	advmod	_	TokenRange=9:12
 4	amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:19
@@ -6398,7 +6398,7 @@
 # text_por = Mas por que bates no cachorro?
 # text_source = Hartt, 379, adap.
 # text_annotator = LFdeA
-1	Marama	marama	ADV	ADVR	PronType=Int	3	advmod	_	TokenRange=0:6
+1	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	3	advmod	_	TokenRange=0:6
 2	kuité	kuité	ADV	ADVM	AdvType=Mod	3	advmod	_	TokenRange=7:12
 3	renupá	nupá	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:19
 4	yawara	yawara	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:26
@@ -10237,7 +10237,7 @@
 # text_orig = Maitaa iwasuima xinga hambeu hamburi nesui nepekadu u iwasuima xinga hambeu repuamu rewata?
 # text_sec = Maita iwasuíma xinga? Ambeú: ― Amburi ne suí ne pekado; u iwasuíma xinga ambeú: ― Repuãmu, rewatá? [Avila 2021]
 # text_annotator = LFdeA
-1	Maita	maita	ADV	ADVR	PronType=Int	4	advmod	_	TokenRange=0:5
+1	Maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	TokenRange=0:5
 2	iwasuíma	iwasuíma	ADJ	A	_	0	root	_	TokenRange=6:14
 3	xinga	xinga	ADV	ADVS	_	2	advmod	_	TokenRange=15:20
 4	ambeú	mbeú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	csubj	_	SpaceAfter=No|TokenRange=21:26
@@ -10285,7 +10285,7 @@
 # text_source = Novo Testamento na língua Nyengatu, John 12:27
 # text_orig = Maitaa hambeu, inde sepaya remukaturu ixe isui kua ura?
 # text_annotator = LFdeA
-1	Maita	maita	ADV	ADVR	PronType=Int	2	advmod	_	TokenRange=0:5
+1	Maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	2	advmod	_	TokenRange=0:5
 2	ambeú	mbeú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:11
 3	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=11:12
 4	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=12:13
