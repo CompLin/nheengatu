@@ -2639,7 +2639,7 @@
 20	pitunawasú	pitunawasú	NOUN	N	Number=Sing	19	xcomp	_	TokenRange=87:97
 21	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	19	obl	_	TokenRange=98:103
 22	arã	arã	ADP	ADP	_	21	case	_	TokenRange=104:107
-23	iké	iké	ADV	ADVD	PronType=Dem	19	advmod	_	TokenRange=108:111
+23	iké	iké	ADV	ADVDX	PronType=Dem	19	advmod	_	TokenRange=108:111
 24	ara	ara	NOUN	N	Number=Sing	19	obl	_	TokenRange=112:115
 25	upé	upé	ADP	ADP	_	24	case	_	SpaceAfter=No|TokenRange=116:119
 26	,	,	PUNCT	PUNCT	_	28	punct	_	TokenRange=119:120
@@ -2723,7 +2723,7 @@
 2	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	TokenRange=5:9
 3	reikú	ikú	AUX	COP	Number=Sing|Person=2|VerbForm=Fin	5	cop	_	TokenRange=10:15
 4	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=16:19
-5	iké	iké	ADV	ADVD	PronType=Dem	8	advcl	_	SpaceAfter=No|TokenRange=20:23
+5	iké	iké	ADV	ADVDX	PronType=Dem	8	advcl	_	SpaceAfter=No|TokenRange=20:23
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
 7	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=25:29
 8	rumuara	sumuara	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=30:37
@@ -6474,7 +6474,7 @@
 1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	obl	_	TokenRange=0:2
 2	resewara	resewara	ADP	ADP	Rel=Cont	1	case	_	TokenRange=3:11
 3	yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	4	cop	_	TokenRange=12:17
-4	iké	iké	ADV	ADVD	PronType=Dem	0	root	_	SpaceAfter=No|TokenRange=18:21
+4	iké	iké	ADV	ADVDX	PronType=Dem	0	root	_	SpaceAfter=No|TokenRange=18:21
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Avila2021:0:0:296
@@ -7636,7 +7636,7 @@
 1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	tipí	tipí	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=7:11
 3	reté	reté	ADV	ADVS	_	2	advmod	_	TokenRange=12:16
-4	iké	iké	ADV	ADVD	PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=17:20
+4	iké	iké	ADV	ADVDX	PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=17:20
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = Avila2021:31:1:356
@@ -8267,7 +8267,7 @@
 # text_source = Amorim, 317, adap.
 # text_annotator = LFdeA
 1	Peyuri	yuri	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	iké	iké	ADV	ADVD	PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=7:10
+2	iké	iké	ADV	ADVDX	PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=7:10
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
 4	mira	mira	NOUN	N	Number=Sing	1	vocative	_	TokenRange=12:16
 5	puranga	puranga	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=17:24
@@ -8950,7 +8950,7 @@
 3	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=10:13
 4	akití	akití	ADV	ADVD	PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=14:19
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=19:20
-6	iké	iké	ADV	ADVD	PronType=Dem	3	parataxis	_	TokenRange=21:24
+6	iké	iké	ADV	ADVDX	PronType=Dem	3	parataxis	_	TokenRange=21:24
 7	rẽ	rẽ	ADV	ADV	_	6	advmod	_	TokenRange=25:27
 8	aikú	ikú	AUX	AUXFS	Number=Sing|Person=1|VerbForm=Fin	6	cop	_	SpaceAfter=No|TokenRange=28:32
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=32:33
@@ -9027,7 +9027,7 @@
 # text_por = Eu estou sempre aqui, quando você vier, venha me visitar.
 # text_source = Avila 2021
 # text_annotator = LFdeA
-1	Ikewara	iké	ADV	ADVD	AdvType=Loc|Aspect=Freq|PronType=Dem|Tense=Pres	0	root	_	TokenRange=0:7
+1	Ikewara	iké	ADV	ADVDX	AdvType=Loc|Aspect=Freq|PronType=Dem|Tense=Pres	0	root	_	TokenRange=0:7
 2	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	1	cop	_	SpaceAfter=No|TokenRange=8:12
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=12:13
 4	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	7	advcl	_	TokenRange=14:20
@@ -10202,7 +10202,7 @@
 # sent_id = NTLN:0:0:10
 # text = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé sakakwera kwá kunhã, uputari paraná uyuká arama aé.
 # text_eng = Then from his mouth the serpent spewed water like a river, to overtake the woman and sweep her away with the torrent. [NIV]
-# text_por =  Então a serpente fez jorrar da sua boca água como um rio, para alcançar a mulher e arrastá-la com a correnteza. [NVI]
+# text_por = Então a serpente fez jorrar da sua boca água como um rio, para alcançar a mulher e arrastá-la com a correnteza. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Rev 12:15
 # text_orig = Asui kua buya utumuna ii iyuru sui kuaye parana yawe sakakuera kua kunya, uputari parana uyuka arama ae.
 # text_sec = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé [...]. [Avila 2021]
@@ -11033,7 +11033,7 @@
 1	Augusto	augusto	PROPN	PROPN	_	2	nmod:poss	_	TokenRange=0:7
 2	ambira	ambira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=8:14
 3	usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:20
-4	iké	iké	ADV	ADVD	PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=21:24
+4	iké	iké	ADV	ADVDX	PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=21:24
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Cruz2011:0:0:13
@@ -11094,7 +11094,7 @@
 7	taumunhã	munhã	VERB	V	Number=Plur|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=29:37
 8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=38:41
 9	pista	pista	NOUN	N	Number=Sing	7	obj	_	OrigLang=pt|TokenRange=42:47
-10	iké	iké	ADV	ADVD	PronType=Dem	7	advmod	_	SpaceAfter=No|TokenRange=48:51
+10	iké	iké	ADV	ADVDX	PronType=Dem	7	advmod	_	SpaceAfter=No|TokenRange=48:51
 11	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Cruz2011:0:0:17
@@ -11720,3 +11720,4 @@
 11	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=49:54
 12	sasiara	sasiara	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
+
