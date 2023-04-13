@@ -547,7 +547,7 @@
 3	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=7:8
 4	amanduári	manduári	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:18
 5	ayuíri	yuíri	AUX	AUXN	Aspect=Iter|Number=Sing|Person=1|VerbForm=Fin	4	aux	_	TokenRange=19:25
-6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=26:31
+6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=26:31
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = MooreFP1994:1:9:36
@@ -819,7 +819,7 @@
 8	garapá	garapá	NOUN	N	Number=Sing	7	obl	_	TokenRange=44:50
 9	kití	kití	ADP	ADP	_	8	case	_	TokenRange=51:55
 10	asuí	asuí	CCONJ	CONJ	_	12	cc	_	TokenRange=56:60
-11	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	12	advmod	_	TokenRange=61:66
+11	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	12	advmod	_	TokenRange=61:66
 12	taukanhemu	kanhemu	VERB	V	Number=Plur|Person=3|VerbForm=Fin	7	conj	_	SpaceAfter=No|TokenRange=67:77
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=77:78
 
@@ -1362,7 +1362,7 @@
 # text_annotator = LFdeA
 1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
-3	aape	aape	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=11:15
+3	aape	aape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=11:15
 4	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=15:16
 5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=17:19
 6	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:28
@@ -11720,4 +11720,3 @@
 11	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=49:54
 12	sasiara	sasiara	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
-
