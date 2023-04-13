@@ -355,7 +355,7 @@
 # text_annotator = LFdeA
 1	[...]	[...]	PUNCT	ELIP	_	2	punct	_	TokenRange=0:5
 2	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
-3	iké	iké	ADV	ADVD	PronType=Dem	2	advmod	_	TokenRange=15:18
+3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	2	advmod	_	TokenRange=15:18
 4	u	u	CCONJ	CCONJ	_	5	cc	_	TokenRange=19:20
 5	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=21:29
 6	interior	interior	NOUN	N	Number=Sing	5	obl	_	OrigLang=pt|TokenRange=30:38
@@ -421,8 +421,8 @@
 3	akayú	akayú	NOUN	N	Number=Sing	5	obl	_	TokenRange=11:16
 4	taá	taá	PART	CQ	_	5	advmod	_	TokenRange=17:20
 5	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=21:29
-6	iké	iké	ADV	ADVD	PronType=Dem	5	advmod	_	TokenRange=30:33
-7	kwá	kwá	DET	DEM	Number=Sing|PronType=Dem	8	det	_	TokenRange=34:37
+6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	TokenRange=30:33
+7	kwá	kwá	DET	DEMX	Number=Sing|PronType=Dem	8	det	_	TokenRange=34:37
 8	cidade	cidade	NOUN	N	Number=Sing	5	obl	_	OrigLang=pt|TokenRange=38:42
 9	upé	upé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=43:46
 10	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=46:47
@@ -456,7 +456,7 @@
 # text_annotator = LFdeA
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	ayupukwá	yupukwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=4:12
-3	iké	iké	ADV	ADVD	PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=13:16
+3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=13:16
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = MooreFP1994:1:4:31
@@ -503,7 +503,7 @@
 # text_annotator = LFdeA
 1	Apitá	pitá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=6:10
-3	iké	iké	ADV	ADVD	PronType=Dem	1	advmod	_	TokenRange=11:14
+3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	TokenRange=11:14
 4	até	até	SCONJ	SCONJR	_	9	mark	_	TokenRange=15:18
 5	ku	ku	PART	FUT	Tense=Fut	9	advmod	_	TokenRange=19:21
 6	mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	9	advmod	_	TokenRange=22:29
@@ -547,7 +547,7 @@
 3	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=7:8
 4	amanduári	manduári	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:18
 5	ayuíri	yuíri	AUX	AUXN	Aspect=Iter|Number=Sing|Person=1|VerbForm=Fin	4	aux	_	TokenRange=19:25
-6	akití	akití	ADV	ADVD	PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=26:31
+6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=26:31
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = MooreFP1994:1:9:36
@@ -755,7 +755,7 @@
 3	paya	paya	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=10:14
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nmod:poss	_	TokenRange=15:18
 5	umurari	murari	VERB	V	Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=19:26
-6	iké	iké	ADV	ADVD	PronType=Dem	5	advmod	_	SpaceAfter=No|TokenRange=27:30
+6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	SpaceAfter=No|TokenRange=27:30
 7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=30:31
 8	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	nsubj	_	TokenRange=32:36
 9	José	josé	PROPN	PROPN	_	0	root	_	SpaceAfter=No|TokenRange=37:41
@@ -819,7 +819,7 @@
 8	garapá	garapá	NOUN	N	Number=Sing	7	obl	_	TokenRange=44:50
 9	kití	kití	ADP	ADP	_	8	case	_	TokenRange=51:55
 10	asuí	asuí	CCONJ	CONJ	_	12	cc	_	TokenRange=56:60
-11	akití	akití	ADV	ADVD	PronType=Dem	12	advmod	_	TokenRange=61:66
+11	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	12	advmod	_	TokenRange=61:66
 12	taukanhemu	kanhemu	VERB	V	Number=Plur|Person=3|VerbForm=Fin	7	conj	_	SpaceAfter=No|TokenRange=67:77
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=77:78
 
@@ -870,7 +870,7 @@
 3	mirawasú	mirá	NOUN	N	Degree=Aug|Number=Sing	1	obl	_	TokenRange=11:19
 4	wírupi	wírupi	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=20:26
 5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=26:27
-6	ape	ape	ADV	ADVD	PronType=Dem	7	advmod	_	TokenRange=28:31
+6	ape	ape	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	7	advmod	_	TokenRange=28:31
 7	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=32:37
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
@@ -1362,7 +1362,7 @@
 # text_annotator = LFdeA
 1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
-3	aape	aape	ADV	ADVD	PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=11:15
+3	aape	aape	ADV	ADVDI	AdvType=Loc|Deixis=Dist|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=11:15
 4	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=15:16
 5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=17:19
 6	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=20:28
@@ -1543,7 +1543,7 @@
 # text_por = Então, o que fala em outra língua deve orar a Deus para saber o significado do que diz a eles.
 # text_source = O Novo Testamento em nyengatu, 1 Coríntios, 14:13
 # text_annotator = LFdeA
-1	Ape	ape	ADV	ADVD	PronType=Dem	8	advmod	_	TokenRange=0:3
+1	Ape	ape	ADV	ADVJ	AdvType=Cau	8	advmod	_	TokenRange=0:3
 2	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	nsubj	_	TokenRange=4:7
 3	upurungitá	purungitá	VERB	V	Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=8:18
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=19:22
