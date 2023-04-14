@@ -1009,6 +1009,113 @@
 4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=11:15
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
 
+# sent_id = Alencar2021:0:0:37
+# text = I igara i pusé.
+# text_eng = Her canoe is heavy.
+# text_por =  A canoa dela é pesada.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	igara	igara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:7
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=8:9
+4	pusé	pusé	VERB	A2	_	0	root	_	SpaceAfter=No|TokenRange=10:14
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Alencar2021:0:0:38
+# text = I igara i pusé uikú.
+# text_eng = Her canoe is heavy.
+# text_por =  A canoa dela está pesada.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	igara	igara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:7
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=8:9
+4	pusé	pusé	VERB	A2	_	0	root	_	TokenRange=10:14
+5	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	4	aux	_	SpaceAfter=No|TokenRange=15:19
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Alencar2021:0:0:39
+# text = I igara uikú paranã upé.
+# text_eng = His canoe is on the river.
+# text_por =  A canoa dele está no rio.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	igara	igara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:7
+3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	4	cop	_	TokenRange=8:12
+4	paranã	paranã	NOUN	N	Number=Sing	0	root	_	TokenRange=13:19
+5	upé	upé	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=20:23
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Alencar2021:0:0:40
+# text = I pusé.
+# text_eng = It is heavy.
+# text_por =  Ela é pesada.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:1
+2	pusé	pusé	VERB	A2	_	0	root	_	SpaceAfter=No|TokenRange=2:6
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Alencar2021:0:0:41
+# text = I pusé uikú.
+# text_eng = It is heavy.
+# text_por =  Ela está pesada.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:1
+2	pusé	pusé	VERB	A2	_	0	root	_	TokenRange=2:6
+3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=7:11
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
+# sent_id = Alencar2021:0:0:42
+# text = Yaikú pe ruakí.
+# text_eng = We are close to you.
+# text_por =  Estamos perto de vocês.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	Yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	3	cop	_	TokenRange=0:5
+2	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	obl	_	TokenRange=6:8
+3	ruakí	ruakí	ADP	ADP	Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=9:14
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Alencar2021:0:0:43
+# text = Yandé yaikú ne ruakí.
+# text_eng = We are close to you.
+# text_por =  Nós estamos perto de você.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:5
+2	yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	4	cop	_	TokenRange=6:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	obl	_	TokenRange=12:14
+4	ruakí	ruakí	ADP	ADP	Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=15:20
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Alencar2021:0:0:44
+# text = Yandé yaikú pe ruakí.
+# text_eng = We are close to you.
+# text_por =  Nós estamos perto de vocês.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:5
+2	yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	4	cop	_	TokenRange=6:11
+3	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	4	obl	_	TokenRange=12:14
+4	ruakí	ruakí	ADP	ADP	Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=15:20
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Alencar2021:0:0:45
+# text = Yandé ti yaikú tendawa upé.
+# text_eng = We are not in the community.
+# text_por =  Nós não estamos na comunidade.
+# text_source = Alencar 2021
+# text_annotator = LFdeA
+1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:5
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=6:8
+3	yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	4	cop	_	TokenRange=9:14
+4	tendawa	tendawa	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=15:22
+5	upé	upé	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=23:26
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
 # sent_id = Navarro2016:0:0:1
 # text = Yandé yasasá puranga.
 # text_eng = We are doing well.
