@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 4, 2023
+# Last update: April 14, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -20,6 +20,9 @@ REMOVE=r"/=?\w*([:=|]\w+)*@?"
 # Separators of multiword tokens
 HYPHEN='-'
 UNDERSCORE='_'
+
+# sentence terminators
+SENTTERM=('.','?','!')
 
 # Multiword token
 MULTIWORDTOKENS={}
@@ -257,21 +260,22 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     return token
 
 def spaceBefore(token):
-    if token['xpos'] == 'ELIP' or token['lemma'] in DASHES:
+    if token['xpos'] == 'ELIP' or token['lemma'] in DASHES or token['lemma'] == ':':
         return True
 
+def insertNoSpaceAfter(token):
+    if not spaceBefore(token):
+        token['misc'].update({'SpaceAfter' : 'No'})
+
 def handleSpaceAfter(tokenlist):
-    FinalPunct=('.','?','!')
-    s={'SpaceAfter' : 'No'}
     tokens=tokenlist.filter(upos='PUNCT')
     if tokens:
         for token in tokens:
-            if not spaceBefore(token):
-                precedentlist=tokenlist.filter(id=token['id']-1)
-                for precedent in precedentlist:
-                    precedent['misc'].update(s)
-                if token['lemma'] in FinalPunct:
-                    token['misc'].update(s)
+            precedentlist=tokenlist.filter(id=token['id']-1)
+            for precedent in precedentlist:
+                insertNoSpaceAfter(precedent)
+            if token['lemma'] in SENTTERM:
+                insertNoSpaceAfter(token)
 
 def sortDict(d):
     l=list(d.items())
@@ -322,7 +326,6 @@ def getprontype(xpos):
 def handlePron(token,nextToken):
     xpos=token['xpos']
     prontype=getprontype(xpos)
-    #print(xpos,prontype)
     if not token.get('feats'):
         token['feats']={}
     token['feats'].update({'PronType': prontype})
@@ -378,15 +381,23 @@ def ListOfCats(tokenlist,cats):
 def handleNmodPoss(tokenlist):
     nouns=ListOfCats(tokenlist,('NOUN','PROPN'))
     i=0
+    start=0
     while(i < len(nouns)-1):
         token=nouns[i]
-        nexttoken=nouns[i+1]
+        j=i+1
+        nexttoken=nouns[j]
+        feats=nexttoken.get('feats')
+        rel=''
+        if feats:
+            rel=feats.get('Rel')
         if hasNext(token,nexttoken):
-            if sameHead(token,nexttoken) and sameDeprel(token,nexttoken):
+            if rel == 'Cont' or (sameHead(token,nexttoken) and sameDeprel(token,nexttoken)):
+                start=j
                 token['deprel']='nmod:poss'
                 token['head']=nexttoken['id']
         i+=1
-    GenitiveConstruction(nouns)
+    GenitiveConstruction(nouns,tokenlist)
+    return start
 
 def handlePospCompl(token,nextToken):
     nextToken['deprel']='case'
@@ -974,6 +985,9 @@ def assignHead(tokenlist,rootid):
         if token['head'] == 0 and token['deprel'] != 'root':
             token['head'] = rootid
 
+def isNounModifier(token):
+    return token['uops'] in ('DET','PRON')
+
 def AdjOrNounRoot(tokenlist):
     adjs=TokensOfCatList(tokenlist,'ADJ')
     nouns=TokensOfCatList(tokenlist,'NOUN')
@@ -991,19 +1005,22 @@ def AdjOrNounRoot(tokenlist):
                 noun=nouns[i]
                 if noun['id'] < rootid:
                     setAttribute(noun,'deprel','nsubj')
-                    noun['head']=rootid
+                    setAttribute(noun,'head',rootid)
                     break
                 i=i-1
     if cop:
         cop[0]['head'] = rootid
     assignHead(tokenlist,rootid)
 
-def GenitiveConstruction(nouns):
+def GenitiveConstruction(nouns,tokenlist):
     i=0
     c=len(nouns)-1
     while(i<c):
         this=nouns[i]
         if not this['deprel']:
+            for token in tokenlist[this['id']:]:
+                if token['upos'] in ('AUX','VERB','ADV'):
+                    return
             j=i+1
             if j <=c:
                 this['deprel']='nmod:poss'
@@ -1011,8 +1028,29 @@ def GenitiveConstruction(nouns):
                 this['head']=next['id']
         i+=1
 
+def handleExpletive0(tokenlist): # TODO: handle non-adjacent subject
+    i=1
+    while(i<len(tokenlist)):
+        this=tokenlist[i]
+        previous=tokenlist[i-1]
+        if this['xpos'] == 'PRON2' and this['deprel'] == 'nsubj':
+            if previous['deprel'] == 'nsubj':
+                this['deprel'] = 'expl'
+        i+=1
+
+def handleExpletive(tokenlist): # TODO: handle non-adjacent subject
+    i=1
+    while(i<len(tokenlist)):
+        this=tokenlist[i]
+        if this['xpos'] == 'PRON2' and this['deprel'] == 'nsubj':
+            headid=this['head']
+            for token in tokenlist[:i]:
+                if token['head'] == headid and token['deprel'] == 'nsubj':
+                    this['deprel'] = 'expl'
+                    break
+        i+=1
 def handlePunct(token,nextToken,tokenlist,verbs):
-    if nextToken['lemma'] == ",":
+    if nextToken['lemma'] == "," or nextToken['lemma'] in DASHES or nextToken['lemma'] == ':':
         nextToken['head'] = nextVerb(token,verbs)
     elif nextToken['xpos'] == 'ELIP':
          updateFeats(nextToken,'PunctType','Elip')
@@ -1023,6 +1061,34 @@ def handlePunct(token,nextToken,tokenlist,verbs):
         if headlist:
             head=headlist[0]['id']
         nextToken['head']=head
+
+def handleComma(token,tokenlist):
+    verbs=VerbsList(tokenlist)
+    token['head'] = nextVerb(token,verbs)
+
+def mkPunctToken(punct,start,ident):
+    parselist=getparselist(punct)
+    entries=extract_feats(parselist)
+    return mkConlluToken(',',entries[0],start=start,ident=ident)
+
+def insertPunct(punct,tokenid,tokenlist):
+    position=tokenid-1
+    previous=tokenlist.filter(id=position)[0]
+    insertNoSpaceAfter(previous)
+    start=int(getStartEnd(previous,False)['end'])
+    token=mkPunctToken(punct,start,tokenid)
+    incrementSentId(tokenlist,tokenid)
+    tokenlist.insert(position,token)
+    comma=tokenlist.filter(id=tokenid)[0]
+    handleComma(comma,tokenlist) # TODO: adapt this to hanlde other punctuation
+    incrementTokenRange(tokenlist[tokenid+1:])
+
+def incrementSentId(tokenlist,startid):
+    for token in tokenlist:
+        if token['id'] >= startid:
+            token['id']+=1
+        if token['head'] >= startid:
+            token['head']+=1
 
 def handleRel(token,tokenlist):
     token['deprel'] = 'nsubj'
@@ -1053,12 +1119,14 @@ def handleVerbs(verbs):
             setDeprel(verb, headid,deprel='parataxis',overwrite=True)
 
 def addFeatures(tokenlist):
+    start=0
     i=0
     c=len(tokenlist) -1
     handleAux(tokenlist)
     verbid=FirstVerbId(tokenlist)
     verbs=VerbIdsList(tokenlist)
     if not verbs:
+        start=handleNmodPoss(tokenlist)
         AdjOrNounRoot(tokenlist)
     while(i < c) :
         token=tokenlist[i]
@@ -1092,7 +1160,7 @@ def addFeatures(tokenlist):
             handlePunct(token,nextToken, tokenlist,verbs)
         i+=1
     handleVerbs(verbs)
-    handleNmodPoss(tokenlist)
+    handleNmodPoss(tokenlist[start:])
 
 def getTag(parse):
 	tag=parse[1]
@@ -1116,13 +1184,16 @@ def handleHyphenSepToken(token):
     else:
         handleClitic(token)
 
-def getStartEnd(token):
+def getStartEnd(token,remove=True):
     dic={}
     misc=token.get('misc')
     if misc:
         tokenrange=''
         if misc.get('TokenRange'):
-            tokenrange=misc.pop('TokenRange')
+            if remove:
+                tokenrange=misc.pop('TokenRange')
+            else:
+                tokenrange=misc.get('TokenRange')
         if not misc:
             token['misc']=None
         if tokenrange:
@@ -1247,14 +1318,14 @@ def endswith(form,suff):
         return form[:-len(suff)]
     return ''
 
-def mkHab(form):
+def mkHab(form): # TODO: this seems deprecated (see mkHabXpos)
     suff='tiwa'
     if form.endswith(suff):
         base=form[:-len(suff)]
         form=handleAccent(base)
         return mkVerb(form,derivation='HAB')
 
-def mkHabSconj(form):
+def mkHabSconj(form): # TODO: this seems deprecated (see mkHabXpos)
     suff='tiwa'
     new={}
     if form.endswith(suff):
@@ -1407,11 +1478,15 @@ def handleRoot(tokenlist):
         token['deprel']='root'
         token['head']=0
         for t in tokenlist:
-            if t['id'] != rootid and t['head'] == 0:
-                t['head']=rootid
+            if t['id'] != rootid:
+                if t['head'] == 0:
+                    t['head']=rootid
                 if not t['deprel']:
                     if isNominal(t['upos']) and t['id'] < rootid:
-                        t['deprel']='nsubj'
+                        setAttribute(t,'deprel','nsubj')
+        last=tokenlist[-1]
+        if last['deprel'] == 'punct' and last['head'] != rootid:
+            last['head'] = rootid
 
 def isNominal(upos):
     return upos in ['NOUN','PROPN','PRON']
@@ -1563,6 +1638,7 @@ def mkConlluSentence(tokens):
     addFeatures(tokenlist)
     insertMultitokenWord(tokenlist)
     handleRoot(tokenlist)
+    handleExpletive(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
