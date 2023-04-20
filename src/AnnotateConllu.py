@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 14, 2023
+# Last update: April 20, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -1477,13 +1477,19 @@ def handleRoot(tokenlist):
         token=tokenlist.filter(id=rootid)[0]
         token['deprel']='root'
         token['head']=0
+        feats=token.get('feats')
+        isIntPron=False
+        if feats:
+            if feats.get('PronType') == 'Int':
+                isIntPron=True
         for t in tokenlist:
             if t['id'] != rootid:
                 if t['head'] == 0:
                     t['head']=rootid
                 if not t['deprel']:
-                    if isNominal(t['upos']) and t['id'] < rootid:
-                        setAttribute(t,'deprel','nsubj')
+                    if isNominal(t['upos']):
+                        if t['id'] < rootid or isIntPron:
+                            setAttribute(t,'deprel','nsubj')
         last=tokenlist[-1]
         if last['deprel'] == 'punct' and last['head'] != rootid:
             last['head'] = rootid
