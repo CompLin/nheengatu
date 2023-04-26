@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 25, 2023
+# Last update: April 26, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -76,7 +76,7 @@ ADVTYPE={'ADVO':'Loc','ADVD':'Loc', 'ADVS':'Deg', 'ADVJ':'Cau', 'ADVG':'Deg'}
 WH_ADVTYPE={'ADVC':'Loc', 'ADVA':'Man',
 'ADVT':'Tim', 'ADVM':'Mod', 'ADVU': 'Cau'}
 
-WH_ADV={'ADVR': 'Int', 'ADVL':'Rel'}
+WH_ADV={'ADVR': 'Int', 'ADVL':'Rel', 'ADVN': 'Ind'}
 DEM_ADV={'ADVD': 'Dem'}
 ADVPRONTYPE={}
 ADVPRONTYPE.update(WH_ADV)

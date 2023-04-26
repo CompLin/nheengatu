@@ -1471,7 +1471,7 @@
 2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:8
 3	pusanga	pusanga	NOUN	N	Number=Sing	4	obj	_	TokenRange=9:16
 4	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=17:20
-5	mairamé	mairamé	SCONJ	CONJ	_	6	mark	_	TokenRange=21:28
+5	mairamé	mairamé	SCONJ	SCONJR	_	6	mark	_	TokenRange=21:28
 6	uwatari	watari	VERB	V	Person=3|VerbForm=Fin	4	advcl	_	TokenRange=29:36
 7	yepé	yepé	NUM	CARD	NumType=Card	8	nummod	_	TokenRange=37:41
 8	yasí	yasí	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=42:46
@@ -10574,6 +10574,71 @@
 7	irumu	irumu	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=27:32
 8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
 
+# sent_id = Avila2021:40:1:486
+# text = Yupirungá upé kwá tetama urikú kwera sera "Bitiro Ponta", nheengatú rupí yepé wirá-mirĩ rera.
+# text_eng = In the beginning, this community was called "Bitiro Ponta", the name of a bird in Nheengatu.
+# text_por = No princípio essa comunidade tinha o nome de "Bitiro Ponta", o nome de um passarinho em nheengatu.
+# text_prim = Yumpirungá upé kua tetama ukrikú será 'Bitiro ponta' Nheengatú, rupí, yepé wiramirí rerá.
+# text_source = Leetra Indígena. n. 17, 23, adap.
+# text_annotator = LFdeA
+1	Yupirungá	yupirungá	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:9
+2	upé	upé	ADP	ADP	_	1	case	_	TokenRange=10:13
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=14:17
+4	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	5	nsubj	_	TokenRange=18:24
+5	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=25:30
+6	kwera	kwera	PART	PRET	Tense=Past	5	advmod	_	TokenRange=31:36
+7	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obj	_	TokenRange=37:41
+8	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=41:42
+9	Bitiro	bitiro	PROPN	PROPN	_	5	xcomp	_	TokenRange=43:49
+10	Ponta	ponta	PROPN	PROPN	_	9	flat	_	SpaceAfter=No|TokenRange=50:55
+11	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=55:56
+12	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=56:57
+13	nheengatú	nheengatú	NOUN	N	Number=Sing	17	obl	_	TokenRange=58:67
+14	rupí	rupí	ADP	ADP	_	13	case	_	TokenRange=68:72
+15	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	16	det	_	TokenRange=73:77
+16	wirá-mirĩ	wirá-mirĩ	NOUN	N	Number=Sing	17	nmod:poss	_	TokenRange=78:87
+17	rera	sera	NOUN	N	Number=Sing|Rel=Cont	9	appos	_	SpaceAfter=No|TokenRange=88:92
+18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=92:93
+
+# sent_id = Avila2021:40:2:487
+# text = Asuí, mairamé usika urubú mira-itá, ta umusera aé "Carminha".
+# text_eng = Then, when the people of the Urubu ethnicity arrived, they named it "Carminha" [that is, the community was thus named].
+# text_por = Depois, quando chegaram as pessoas da etnia urubu, nomearam-na "Carminha" [ou seja, a comunidade foi assim nomeada]. [Corr. transl.]
+# text_prim = Asui mairamem usika urubu miraitá tamusera aé Carminha.
+# text_source = Leetra Indígena. n. 17, 23, adap.
+# text_annotator = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=4:5
+3	mairamé	mairamé	SCONJ	SCONJR	_	4	mark	_	TokenRange=6:13
+4	usika	sika	VERB	V	Person=3|VerbForm=Fin	9	advcl	_	TokenRange=14:19
+5	urubú	urubú	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=20:25
+6	mira-itá	mira	NOUN	N	Number=Plur	4	nsubj	_	SpaceAfter=No|TokenRange=26:34
+7	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=34:35
+8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=36:38
+9	umusera	musera	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=39:46
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	9	obj	_	TokenRange=47:49
+11	"	"	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=49:50
+12	Carminha	carminha	PROPN	PROPN	_	9	xcomp	_	SpaceAfter=No|TokenRange=51:59
+13	"	"	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=59:60
+14	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=60:61
+
+# sent_id = Avila2021:0:0:488
+# text = Buopé, kwá awa murutinga ti mairamé uyumutĩ.
+# text_eng = Buopé, this white hair was never ashamed.
+# text_por = Buopé, este cabelo branco nunca se envergonhou.
+# text_source = Amorim, 104, adap.
+# text_orig = Buopé, kwá áwa murutinga ti mairamé uyumutĩ.
+# text_annotator = LFdeA
+1	Buopé	buopé	PROPN	PROPN	_	8	vocative	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=5:6
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=7:10
+4	awa	awa	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=11:14
+5	murutinga	murutinga	ADJ	A	_	4	amod	_	TokenRange=15:24
+6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=25:27
+7	mairamé	mairamé	ADV	ADVNT	AdvType=Tim|PronType=Ind	8	advmod	_	TokenRange=28:35
+8	uyumutĩ	yumutĩ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=36:43
+9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
+
 # sent_id = NTLN:0:0:1
 # text = Te pesikari kirimbawa pembaú arama peú arama yuíri, te peyuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried. [ESV]
@@ -11431,7 +11496,7 @@
 # text_eng = Then he said to it, “May you never bear fruit again!” [NIV]
 # text_por = Então lhe disse: "Nunca mais dê frutos!" [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Mt 21:19
-# text_orig = Asui umbeu ixupe: —Timairame kuri reriku neiya.
+# text_orig = Asui umbeu ixupe: — Timairame kuri reriku neiya.
 # text_annotator = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
@@ -11440,7 +11505,7 @@
 5	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=17:18
 6	―	―	PUNCT	PUNCT	_	10	punct	_	TokenRange=18:19
 7	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=20:22
-8	mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	10	advmod	_	TokenRange=23:30
+8	mairamé	mairamé	ADV	ADVNT	AdvType=Tim|PronType=Ind	10	advmod	_	TokenRange=23:30
 9	kurí	kurí	PART	FUT	Tense=Fut	10	advmod	_	TokenRange=31:35
 10	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=36:42
 11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=43:45
@@ -11747,7 +11812,7 @@
 # text_source = Novo Testamento na língua Nyengatu, Lk 14:14
 # text_orig = Suuri kuri inde nyãse timaa aintaupuderi aintaupagari inde sikuyara.
 # text_annotator = LFdeA
-1	surí	rurí	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:4
+1	Surí	rurí	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=5:9
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	TokenRange=10:14
 4	nhaãsé	nhaãsé	SCONJ	SCONJR	_	10	mark	_	TokenRange=15:21
@@ -11779,8 +11844,8 @@
 9	resendú	sendú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	6	advcl	_	TokenRange=48:55
 10	arama	arama	SCONJ	SCONJ	_	9	mark	_	TokenRange=56:61
 11	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	TokenRange=62:66
-12	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	13	flat	_	TokenRange=67:74
-13	Agripa	agripa	PROPN	PROPN	_	9	vocative	_	SpaceAfter=No|TokenRange=75:81
+12	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	9	vocative	_	TokenRange=67:74
+13	Agripa	agripa	PROPN	PROPN	_	12	flat	_	SpaceAfter=No|TokenRange=75:81
 14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=81:82
 15	ambeú	mbeú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	9	parataxis	_	TokenRange=83:88
 16	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	15	obl	_	TokenRange=89:91

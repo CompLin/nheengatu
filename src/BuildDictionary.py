@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 4, 2023
+# Last update: April 26, 2023
 
 import re, sys, os, json
 
@@ -38,6 +38,7 @@ adv. interr. man.\tADVRA\tadvérbio interrogativo de maneira
 adv. interr. loc.\tADVRC\tadvérbio interrogativo locativo
 adv. interr. temp.\tADVRT\tadvérbio interrogativo temporal
 adv. interr. caus.\tADVRU\tadvérbio interrogativo causal
+adv. ind. temp.\tADVNT\tadvérbio indefinido temporal
 adv. rel. man.\tADVLA\tadvérbio relativo de maneira
 adv. rel. loc.\tADVLC\tadvérbio relativo locativo
 adv. rel. temp.\tADVLT\tadvérbio relativo temporal
