@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 20, 2023
+# Last update: April 25, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -14,10 +14,13 @@ import re, os
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
 
-# Characters to be removed from input sentence
+# single and double quotes
+QUOTES='''"''"'''
+
+# characters to be removed from input sentence
 REMOVE=r"/=?\w*([:=|]\w+)*@?"
 
-# Separators of multiword tokens
+# separators of multiword tokens
 HYPHEN='-'
 UNDERSCORE='_'
 
@@ -269,13 +272,25 @@ def insertNoSpaceAfter(token):
 
 def handleSpaceAfter(tokenlist):
     tokens=tokenlist.filter(upos='PUNCT')
+    quotes=[token for token in tokenlist if token['form'] in QUOTES]
     if tokens:
+        spaceafter=False
         for token in tokens:
             precedentlist=tokenlist.filter(id=token['id']-1)
-            for precedent in precedentlist:
-                insertNoSpaceAfter(precedent)
+            if token in quotes:
+                if spaceafter:
+                    handlePrecedent(precedentlist)
+                else:
+                    insertNoSpaceAfter(token)
+                spaceafter=True
+            else:
+                handlePrecedent(precedentlist)
             if token['lemma'] in SENTTERM:
                 insertNoSpaceAfter(token)
+
+def handlePrecedent(precedentlist):
+    for precedent in precedentlist:
+        insertNoSpaceAfter(precedent)
 
 def sortDict(d):
     l=list(d.items())
