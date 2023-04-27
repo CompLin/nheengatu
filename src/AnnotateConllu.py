@@ -17,6 +17,11 @@ ANNOTATOR = 'LFdeA'
 # single and double quotes
 QUOTES='''"''"'''
 
+# punctuation introducing a dependent clause
+# TODO: the comma needs a special treatment when introducing non-clausal dependents
+DEPPUNCT=[',',':']
+DEPPUNCT.extend(DASHES)
+
 # characters to be removed from input sentence
 REMOVE=r"/=?\w*([:=|]\w+)*@?"
 
@@ -274,19 +279,29 @@ def handleSpaceAfter(tokenlist):
     tokens=tokenlist.filter(upos='PUNCT')
     quotes=[token for token in tokenlist if token['form'] in QUOTES]
     if tokens:
-        spaceafter=False
-        for token in tokens:
-            precedentlist=tokenlist.filter(id=token['id']-1)
-            if token in quotes:
-                if spaceafter:
+        previousHasSpaceAfter=False
+        i=0
+        c=len(tokenlist)
+        while(i<len(tokens)):
+            precedentlist=tokenlist.filter(id=tokens[i]['id']-1)
+            if tokens[i] in quotes:
+                if previousHasSpaceAfter:
                     handlePrecedent(precedentlist)
+                    quotid=previousCat(tokens[i],quotes)
+                    quote=tokens.filter(id=quotid)[0]
+                    tokens[i]['head']=quote['head']
+                    previousHasSpaceAfter=False
                 else:
-                    insertNoSpaceAfter(token)
-                spaceafter=True
+                    insertNoSpaceAfter(tokens[i])
+                    tokenid=tokens[i]['id']
+                    head=tokenlist.filter(id=tokenid+1)[0]
+                    tokens[i]['head']=head['id']
+                    previousHasSpaceAfter=True
             else:
                 handlePrecedent(precedentlist)
-            if token['lemma'] in SENTTERM:
-                insertNoSpaceAfter(token)
+            if tokens[i]['lemma'] in SENTTERM:
+                insertNoSpaceAfter(tokens[i])
+            i+=1
 
 def handlePrecedent(precedentlist):
     for precedent in precedentlist:
@@ -1065,12 +1080,12 @@ def handleExpletive(tokenlist): # TODO: handle non-adjacent subject
                     break
         i+=1
 def handlePunct(token,nextToken,tokenlist,verbs):
-    if nextToken['lemma'] == "," or nextToken['lemma'] in DASHES or nextToken['lemma'] == ':':
+    if nextToken['lemma'] in DEPPUNCT:
         nextToken['head'] = nextVerb(token,verbs)
     elif nextToken['xpos'] == 'ELIP':
          updateFeats(nextToken,'PunctType','Elip')
          nextToken['head'] = previousVerb(nextToken,verbs)
-    else:
+    elif nextToken['lemma'] not in QUOTES:
         headlist=tokenlist.filter(deprel='root')
         head=1
         if headlist:

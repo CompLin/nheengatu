@@ -10639,6 +10639,73 @@
 8	uyumutĩ	yumutĩ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=36:43
 9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
 
+# sent_id = Avila2021:0:0:489
+# text = Yaputari yepé "lanterna" tiramé yepé "lamparina" yapuderi arama yakasari aé pituna ramé.
+# text_eng = We need a flashlight or else a lamp so we can hunt it at night. [context: about paca]
+# text_por = Precisamos de uma lanterna ou então de uma lamparina para podermos caçá-la à noite. [contexto: sobre a paca]
+# text_source = Payema, 57
+# text_annotator = LFdeA
+1	Yaputari	putari	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=9:13
+3	"	"	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=13:14
+4	lanterna	lanterna	NOUN	N	Number=Sing	1	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=15:23
+5	"	"	PUNCT	PUNCT	_	4	punct	_	TokenRange=23:24
+6	tiramé	tiramé	CCONJ	CCONJ	_	9	cc	_	TokenRange=25:31
+7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	9	det	_	TokenRange=32:36
+8	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
+9	lamparina	lamparina	NOUN	N	Number=Sing	4	conj	_	OrigLang=pt|SpaceAfter=No|TokenRange=38:47
+10	"	"	PUNCT	PUNCT	_	9	punct	_	TokenRange=47:48
+11	yapuderi	puderi	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	13	aux	_	TokenRange=49:57
+12	arama	arama	SCONJ	SCONJ	_	13	mark	_	TokenRange=58:63
+13	yakasari	kasari	VERB	V	Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	Orig=caçar|OrigLang=pt|TokenRange=64:72
+14	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	13	obj	_	TokenRange=73:75
+15	pituna	pituna	NOUN	N	Number=Sing	13	obl	_	TokenRange=76:82
+16	ramé	ramé	ADP	ADP	_	15	case	_	SpaceAfter=No|TokenRange=83:87
+17	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=87:88
+
+# sent_id = Avila2021:0:0:490
+# text = bitiru: [...] mairamé unheengari "tiũ, tiũ", umbeú uikú puxiwera usasá uikú u usú usasá.
+# text_eng = bitiro: [...] when he sings "tiũ, tiũ", he is warning that something bad is happening or will happen.
+# text_por = bitiro: [...] quando ele canta "tiũ, tiũ", está avisando que algo ruim está acontecendo ou vai acontecer.
+# text_source = Payema, 50, adap.
+# text_annotator = LFdeA
+1	bitiru	bitiru	NOUN	N	Number=Sing	12	dep	_	SpaceAfter=No|TokenRange=0:6
+2	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=6:7
+3	[...]	[...]	PUNCT	ELIP	PunctType=Elip	5	punct	_	TokenRange=8:13
+4	mairamé	mairamé	SCONJ	SCONJR	_	5	mark	_	TokenRange=14:21
+5	unheengari	nheengari	VERB	V	Person=3|VerbForm=Fin	12	advcl	_	TokenRange=22:32
+6	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=32:33
+7	tiũ	tiũ	INTJ	INTJ	_	5	ccomp	_	SpaceAfter=No|TokenRange=34:37
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=37:38
+9	tiũ	tiũ	INTJ	INTJ	_	7	conj	_	SpaceAfter=No|TokenRange=39:42
+10	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=42:43
+11	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=43:44
+12	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=45:50
+13	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	12	aux	_	TokenRange=51:55
+14	puxiwera	puxiwera	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=56:64
+15	usasá	sasá	VERB	V	Person=3|VerbForm=Fin	12	ccomp	_	TokenRange=65:70
+16	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	15	aux	_	TokenRange=71:75
+17	u	u	CCONJ	CCONJ	_	19	cc	_	TokenRange=76:77
+18	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	19	aux	_	TokenRange=78:81
+19	usasá	sasá	VERB	V	Person=3|VerbForm=Fin	15	conj	_	SpaceAfter=No|TokenRange=82:87
+20	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=87:88
+
+# sent_id = Avila2021:0:0:491
+# text = Aiwana aintá usenúi nhaã iwikwara "Caru-Cupy".
+# text_eng = So they named that pit "Caru-Cupy".
+# text_por = Então eles nomearam aquela cova "Caru-Cupy".
+# text_source = Rodrigues, 250, adap.
+# text_annotator = LFdeA
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
+2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=7:12
+3	usenúi	senúi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=13:19
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=20:24
+5	iwikwara	iwikwara	NOUN	N	Number=Sing	3	obj	_	TokenRange=25:33
+6	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=33:34
+7	Caru-Cupy	caru-cupy	PROPN	PROPN	_	3	xcomp	_	SpaceAfter=No|TokenRange=35:44
+8	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=44:45
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+
 # sent_id = NTLN:0:0:1
 # text = Te pesikari kirimbawa pembaú arama peú arama yuíri, te peyuka pe piá aintá resé.
 # text_eng = And do not seek what you are to eat and what you are to drink, nor be worried. [ESV]
