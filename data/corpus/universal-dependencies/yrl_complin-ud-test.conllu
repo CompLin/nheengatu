@@ -911,27 +911,6 @@
 4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=10:14
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
 
-# sent_id = Alencar2021:0:0:28
-# text = Aé puranga.
-# text_eng = She is beautiful.
-# text_por = Ela é bonita.
-# text_source = Alencar 2021
-# text_annotator = LFdeA
-1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
-2	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=3:10
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
-
-# sent_id = Alencar2021:0:0:29
-# text = Aé puranga uikú.
-# text_eng = She is pretty.
-# text_por = Ela está bonita.
-# text_source = Alencar 2021
-# text_annotator = LFdeA
-1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
-2	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=3:10
-3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=11:15
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
-
 # sent_id = Alencar2021:0:0:30
 # text = Aé sakú.
 # text_eng = He's hot.
@@ -1245,17 +1224,6 @@
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	0	root	_	TokenRange=9:10
 4	irũmu	irũmu	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=11:16
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
-
-# sent_id = Alencar2021:0:0:57
-# text = Ixé aikú iké.
-# text_eng = I am here.
-# text_por = Eu estou aqui.
-# text_source = Alencar 2021
-# text_annotator = LFdeA
-1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
-2	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	3	cop	_	TokenRange=4:8
-3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	0	root	_	SpaceAfter=No|TokenRange=9:12
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Alencar2021:0:0:58
 # text = Ixé aikú suakí.
