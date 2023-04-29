@@ -606,7 +606,7 @@
 10	rupí	rupí	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=44:48
 11	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
 
-# sent_id = Alencar2021:0:1
+# sent_id = Alencar2021:0:0:1
 # text = Kambí sakú uikú.
 # text_eng = The milk is hot.
 # text_por = O leite está quente.
@@ -616,7 +616,7 @@
 3	uikú	ikú	AUX	V	Number=Sing|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
-# sent_id = Alencar2021:0:2
+# sent_id = Alencar2021:0:0:2
 # text = Kurumĩ rendawa pe tawa ruakí.
 # text_eng = The community of the boy is near your city.
 # text_por = A comunidade do menino é perto da cidade de vocês.
@@ -628,7 +628,7 @@
 5	ruakí	ruakí	ADP	ADP	Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=28:29
 
-# sent_id = Alencar2021:0:3
+# sent_id = Alencar2021:0:0:3
 # text = Yandé yaikú ne ruakí.
 # text_eng = We are near you.
 # text_por = Nós estamos perto de você.
@@ -639,7 +639,7 @@
 4	ruakí	ruakí	ADP	ADP	Rel=Cont	3	case	_	SpaceAfter=No|TokenRange=15:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = Alencar2021:0:4
+# sent_id = Alencar2021:0:0:4
 # text = Suka sakú.
 # text_eng = Her house is hot.
 # text_por = A casa dela é quente.
@@ -648,7 +648,7 @@
 2	sakú	rakú	VERB	A2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:9
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
 
-# sent_id = Alencar2021:0:5
+# sent_id = Alencar2021:0:0:5
 # text = Kunhã ruka puranga.
 # text_eng = The house of the woman is beautiful.
 # text_por = A casa da mulher é bonita.
@@ -658,7 +658,7 @@
 3	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=11:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
-# sent_id = Alencar2021:0:6
+# sent_id = Alencar2021:0:0:6
 # text = Kunhã puranga.
 # text_eng = The woman is beautiful.
 # text_por = A mulher é bonita.
@@ -667,7 +667,7 @@
 2	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=6:13
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
-# sent_id = Alencar2021:0:7
+# sent_id = Alencar2021:0:0:7
 # text = Kunhã puranga uikú.
 # text_eng = The woman is beautiful.
 # text_por = A mulher está bonita.
@@ -677,7 +677,7 @@
 3	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=14:18
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
-# sent_id = Alencar2021:0:8
+# sent_id = Alencar2021:0:0:8
 # text = Nhaã apigawa igara uikú se raíra ruka ruakí.
 # text_eng = That canoe of the man is near the house of my son.
 # text_por = Aquela canoa do homem está perto da casa do meu filho.
@@ -692,7 +692,7 @@
 8	ruakí	ruakí	ADP	ADP	Rel=Cont	7	case	_	SpaceAfter=No|TokenRange=38:43
 9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=43:44
 
-# sent_id = Alencar2021:0:9
+# sent_id = Alencar2021:0:0:9
 # text = Apigawa rendawa kurumĩ tawa ruakí.
 # text_eng = The community of the man is near the city of the boy.
 # text_por = A comunidade do homem é perto da cidade do menino.
@@ -2757,8 +2757,9 @@
 # text_source = Lesson 3, p. 21
 # text_annotator = DMA
 # reviewer1 = VAN
+# reviewer2 = LFdeA
 1	Xukúi	xukúi	VERB	V	_	0	root	_	TokenRange=0:5
-2	sekuyara	sekuyara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	nsubj	_	SpaceAfter=No|TokenRange=6:14
+2	sekuyara	sekuyara	NOUN	N	Number=Sing|Rel=Abs	1	nsubj	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Navarro2016:3:28:117
@@ -4420,7 +4421,7 @@
 # sent_id = Avila2021:0:0:43
 # text = Yamanú ramé, makití yasú?
 # text_eng = When we die, where do we go?
-# text_por = Quando morremos, para onde vamos?
+# text_por = Quando morremos, para onde vamos? [Corr. transl.]
 # text_source = Aguiar, 33, adap.
 # text_annotator = LFdeA
 1	Yamanú	manú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=0:6
@@ -5819,7 +5820,7 @@
 # text_eng = In the past, our ancestors worked in the forest.
 # text_por = Antigamente, nossos antepassados trabalhavam na mata.
 # text_source = Comunidade de Terra Preta, 3, adap.
-# text_orig = Kuxiima, yané rundewara-itá ta upurakí kaá kití. Asuí aikwé yuíri makú-itá nharú waá-itá kaá rupí.
+# text_orig = Kuxiima, yané rundewara-itá ta upurakí kaá kití.
 # text_annotator = LFdeA
 1	Kuxiíma	kuxiíma	ADV	ADV	_	5	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
@@ -12934,7 +12935,7 @@
 # text_por = Porque a graça de Deus se manifestou salvadora a todos os homens. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Tt 2:11
 # text_orig = Nyãse Deus purangasawa usikana aintarese umukaturu arama panye apigawaita;
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar (LFdeA)
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:6
 2	Deus	deus	PROPN	PROPN	_	3	nmod:poss	_	OrigLang=pt|TokenRange=7:11
 3	purangasawa	purangasawa	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:23
@@ -14536,8 +14537,9 @@
 # text_por = E havia também índios ferozes na mata. [Avila 2021]
 # text_source = Jonas Bruno Aleixo, p. 3
 # text_orig = Asuí aikué yuíri makuita yãrú waitá kaá rupi.
+# text_adapt = Avila (2021)
 # text_annotator = LFdeA
-1	Asuí	asuí	ADV	ADV	_	2	advmod	_	TokenRange=0:4
+1	Asuí	asuí	CCONJ	CCONJ	_	2	cc	_	TokenRange=0:4
 2	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=5:10
 3	yuíri	yuíri	ADV	ADV	_	2	advmod	_	TokenRange=11:16
 4	makú-itá	makú	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=17:25
