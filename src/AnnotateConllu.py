@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 26, 2023
+# Last update: April 30, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -325,8 +325,8 @@ def VerbIdsList1(tokenlist):
     return VerbsList(tokenlist)
 
 def isVerb(token):
-    'return True if token is a verb or an existential particle'
-    if token.get('upos') == 'VERB' or token.get('xpos') == 'EXST':
+    'return True if token is a verb or an existential or presentative particle'
+    if token.get('upos') == 'VERB' or token.get('xpos') in ('EXST', 'PRSV'):
         return True
     return False
 
@@ -519,6 +519,7 @@ def handlePart(token,tokenlist,verbs):
     'FUT': {'PartType': 'Tam','Tense':'Fut'},
     'PRET': {'PartType': 'Tam','Tense':'Past'},
     'EXST': {'PartType': 'Exs'},
+    'PRSV': {'PartType': 'Prs'},
     'CERT': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
@@ -585,14 +586,15 @@ def handlePart(token,tokenlist,verbs):
         token['head']=previous['id']
         updateFeats(token,'PartType', 'Emp')
         updateFeats(token,'Foc', 'Yes')
-    elif xpos == 'EXST':
+    elif xpos == 'EXST' or xpos == 'PRSV':
         if len(verbs) > 0:
             headPartNextVerb(token,verbs)
         else:
             token['head']=0
             token['deprel']='root'
             verbs.append(token)
-        updateFeats(token,'PartType', 'Exs')
+        value=mapping[xpos]['PartType']
+        updateFeats(token,'PartType', value)
 
 def handleVerb(token,nextToken,verbs):
     if nextToken['upos'] == 'NOUN': # TODO: possibly deprecated

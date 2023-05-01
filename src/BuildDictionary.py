@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 26, 2023
+# Last update: April 30, 2023
 
 import re, sys, os, json
 
@@ -77,6 +77,7 @@ part. afirm.\tAFF\tpartícula de afirmação
 part. cons.\tCONS\tpartícula de consentimento
 part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
+part. pres.\tPRSV\tpartícula de presentativo
 part. fut.\tFUT\tpartícula de futuro
 part. frust.\tFRUST\tpartícula de frustativo
 part. foco\tFOC\tpartícula de foco

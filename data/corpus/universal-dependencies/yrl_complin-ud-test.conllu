@@ -2690,7 +2690,7 @@
 # text_source = Lesson 3, p. 21
 # text_annotator = DMA
 # reviewer1 = VAN
-1	Xukúi	xukúi	VERB	V	_	0	root	_	TokenRange=0:5
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
 2	xirura	xirura	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=6:12
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
 
@@ -2746,7 +2746,7 @@
 # text_annotator = DMA
 # reviewer1 = VAN
 # reviewer2 = LFdeA
-1	Xukúi	xukúi	VERB	V	_	0	root	_	TokenRange=0:5
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
 2	sekuyara	sekuyara	NOUN	N	Number=Sing|Rel=Abs	1	nsubj	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -2784,7 +2784,7 @@
 # text_annotator = DMA
 # reviewer1 = VAN
 # reviewer2 = LFdeA
-1	Xukúi	xukúi	VERB	V	_	0	root	_	TokenRange=0:5
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
 2	sekuyaramirĩ	sekuyaramirĩ	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	nsubj	_	SpaceAfter=No|TokenRange=6:18
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
@@ -3321,7 +3321,7 @@
 # text_source = Lesson 3, p. 25
 # text_annotator = DMA
 # reviewer = LFdeA
-1	Xukúi	xukúi	VERB	V	_	0	root	_	TokenRange=0:5
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
 2	kamixá	kamixá	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=6:12
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
 
@@ -12836,6 +12836,20 @@
 8	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=44:45
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 
+# sent_id = Avila2021:0:0:492
+# text = Xukúi ana Piripiri i manha irumu.
+# text_eng = Here's Piripiri and her mother.
+# text_por = Eis aí já Piripiri e sua mãe.
+# text_source = Amorim, 126, adap.
+# text_annotator = LFdeA
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
+2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=6:9
+3	Piripiri	piripiri	PROPN	PROPN	_	1	nsubj	_	TokenRange=10:18
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:20
+5	manha	manha	NOUN	N	Number=Sing	1	obl	_	TokenRange=21:26
+6	irumu	irumu	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=27:32
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = NTLN:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
 # text_eng = For the grace of God has been revealed, bringing salvation to all people. [NLT]
@@ -14396,13 +14410,60 @@
 5	ara	ara	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=22:25
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
 
+# sent_id = Cruz2011:0:0:26
+# text = Xukúi i makira aíwa.
+# text_eng = Here is his dirty hammock.
+# text_por =  Eis aqui a rede suja dele.
+# text_source = Example 910 Br
+# text_orig = xukũi imalira aiwa
+# text_annotator = LFdeA
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:7
+3	makira	makira	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=8:14
+4	aíwa	aíwa	ADJ	A	_	3	amod	_	SpaceAfter=No|TokenRange=15:19
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Cruz2011:0:0:27
+# text = Se aria, xukúi indé arã.
+# text_eng = My grandmother, here it is for you.
+# text_por =  Minha avó, eis aqui para você. [Adapt. transl.]
+# text_source = Example 701 Wr
+# text_orig = searia xukũi indarã
+# text_annotator = LFdeA
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	aria	aria	NOUN	N	Number=Sing	4	vocative	_	SpaceAfter=No|TokenRange=3:7
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=7:8
+4	xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=9:14
+5	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	4	obl	_	TokenRange=15:19
+6	arã	arã	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=20:23
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Cruz2011:1:100:28
+# text = Xukúi tẽ ixé, ne mbira.
+# text_eng = Here I am, your son.
+# text_por =  Eis-me aqui, teu filho. [Adapt. transl.]
+# text_source = p. 604 Wr
+# text_orig = "Xukui te ixe, nembira
+# title = Kunhã asuí sukuriyú
+# title_orig = Kunhã asui sukuriu
+# title_pt = A mulher e a sucuri
+# title_eng = The woman and the anaconda
+# text_annotator = LFdeA
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=6:8
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=9:12
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=12:13
+5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=14:16
+6	mbira	mbira	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=17:22
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
+
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
 # text_eng = Now I'm going to tell you about them, these two men who worked with balata.
 # text_por = Agora vou contar sobre eles, estes dois homens que trabalhavam com balata.
 # text_source = Jonas Bruno Aleixo, p. 3
 # title = Mukuĩ apigawa-itá
-# titel_orig = Mukuĩ Apigawaitá
+# title_orig = Mukuĩ Apigawaitá
 # title_eng = Two men
 # title_pt = Dois homens
 # text_orig = Kuiri asú ãbeú taresé, kuaitá mukuĩ, apigawaitá, upuraké waitá balata.
@@ -14891,4 +14952,3 @@
 11	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=49:54
 12	sasiara	sasiara	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
-
