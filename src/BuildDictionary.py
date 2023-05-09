@@ -16,6 +16,9 @@ LEXICON=os.path.join(DIR,"lexicon.json")
 # non-finite verb
 NFIN="NFIN"
 
+# imperative verb form
+IMP="IMP"
+
 # auxiliary
 AUX='aux.'
 
@@ -378,6 +381,7 @@ def conjugateVerb(lemma,pos='V'):
             if not '3' in tag:
                 forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
         forms.add(f"uri\t{lemma}+{pos}+3")
+        forms.add(f"yuri\t{lemma}+{pos}+{IMP}+2")
         return forms
     for pref,tag in persnum.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
@@ -511,7 +515,9 @@ def extract_feats(parses):
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
-	'FREQ|HAB':'aspect', 'PRV|COL':'derivation', 'PRES|PAST': 'tense' }
+	'IMP' : 'mood',
+	'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
+	'PRES|PAST': 'tense' }
     entries=[]
     for lemma,feats in parses:
         new={}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 30, 2023
+# Last update: May 9, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -13,6 +13,11 @@ import re, os
 
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
+
+TREEBANK_SENTS=set()
+TREEBANK_FILE='yrl_complin-ud-test.conllu'
+TREEBANK_DIR='corpus/universal-dependencies'
+TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
 
 # single and double quotes
 QUOTES='''"''"'''
@@ -88,6 +93,22 @@ ADVPRONTYPE.update(WH_ADV)
 ADVPRONTYPE.update(DEM_ADV)
 
 ADVTYPE.update(WH_ADVTYPE)
+
+def extractTreebankSents(infile=TREEBANK_PATH):
+    sents=extractConlluSents(infile)
+    for sent in sents:
+        text=sent.metadata.get('text_orig')
+        if not text:
+            text=sent.metadata.get('text')
+        TREEBANK_SENTS.add(text)
+
+def checkSentence(sent):
+    if not TREEBANK_SENTS:
+        extractTreebankSents()
+    sents=list(filter(lambda x:x == sent, TREEBANK_SENTS))
+    if sents:
+        return True
+    return False
 
 def extractAuxiliaries(tag='aux.'):
     glossary=loadGlossary()
@@ -225,6 +246,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     aspect=entry.get('aspect')
     tense=entry.get('tense')
     vform=entry.get('vform')
+    mood=entry.get('mood')
     rel=entry.get('rel')
     if person:
         feats['Person']=person
@@ -241,6 +263,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Degree']=f"{degree.title()}"
     if aspect:
         feats['Aspect']=f"{aspect.title()}"
+    if mood:
+        feats['Mood']=f"{mood.title()}"
     if tense:
         feats['Tense']=f"{tense.title()}"
     if derivation:
