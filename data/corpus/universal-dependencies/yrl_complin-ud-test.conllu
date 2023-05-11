@@ -13266,7 +13266,7 @@
 6	nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	8	advmod	_	TokenRange=17:23
 7	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=24:33
 8	umuruayana	muruayana	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=34:44
-9	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	obj	_	TokenRange=45:48
+9	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	obj	_	TokenRange=45:48
 10	yambeú	mbeú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	9	acl:relcl	_	TokenRange=49:55
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	obj	_	SpaceAfter=No|TokenRange=56:59
 12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=59:60
@@ -13319,6 +13319,17 @@
 13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	14	nsubj	_	TokenRange=65:70
 14	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	SpaceAfter=No|TokenRange=71:77
 15	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=77:78
+
+# sent_id = Avila2021:0:0:523
+# text = Sapukaya apigawa unheengari.
+# text_eng = The rooster sings.
+# text_por = O galo canta.
+# text_source = Hartt, 321, adap.
+# text_annotator = LFdeA
+1	Sapukaya	sapukaya	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:8
+2	apigawa	apigawa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=9:16
+3	unheengari	nheengari	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:27
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = NTLN:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
