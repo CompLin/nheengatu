@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 30, 2023
+# Last update: May 11, 2023
 
 import re, sys, os, json
 
@@ -42,6 +42,7 @@ adv. interr. loc.\tADVRC\tadvérbio interrogativo locativo
 adv. interr. temp.\tADVRT\tadvérbio interrogativo temporal
 adv. interr. caus.\tADVRU\tadvérbio interrogativo causal
 adv. ind. temp.\tADVNT\tadvérbio indefinido temporal
+adv. ind. loc.\tADVNC\tadvérbio indefinido locativo
 adv. rel. man.\tADVLA\tadvérbio relativo de maneira
 adv. rel. loc.\tADVLC\tadvérbio relativo locativo
 adv. rel. temp.\tADVLT\tadvérbio relativo temporal
