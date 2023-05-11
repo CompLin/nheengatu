@@ -13342,7 +13342,7 @@
 3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=15:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = Avila2021:0:0:526
+# sent_id = Avila2021:0:0:525
 # text = Ariré nhaã kunhãmukú upitá i puruã tenhuntu, ti masuí apigawa uyukwáu.
 # text_eng = Then that woman got pregnant for no reason, no man appeared from anywhere.
 # text_por = Depois aquela mulher ficou grávida sem motivo, não apareceu homem de parte alguma.
@@ -13362,7 +13362,7 @@
 12	uyukwáu	yukwáu	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	SpaceAfter=No|TokenRange=62:69
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
 
-# sent_id = Avila2021:0:0:527
+# sent_id = Avila2021:0:0:526
 # text = Apigawa uxari ximirikú tawa upé.
 # text_eng = The man left his wife in the village.
 # text_por = O homem deixou sua mulher na vila.
@@ -13375,11 +13375,12 @@
 5	upé	upé	ADP	ADP	_	4	case	_	SpaceAfter=No|TokenRange=28:31
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
-# sent_id = Avila2021:0:0:528
+# sent_id = Avila2021:0:0:527
 # text = Mimi uikú apigawa resikari waá.
 # text_eng = There's the man you're looking for.
 # text_por = Acolá está o homem que procuras.
 # text_source = Seixas, 28, adap.
+# text_orig = Mimi uikú apigawa resikari waá
 # text_annotator = LFdeA
 1	Mimi	mimi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	0	root	_	TokenRange=0:4
 2	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
@@ -13387,6 +13388,48 @@
 4	resikari	sikari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	3	acl:relcl	_	TokenRange=18:26
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	obj	_	SpaceAfter=No|TokenRange=27:30
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = Avila2021:0:0:528
+# text = Kunhamukú-itá ti ana ukwáu maã umunhã aintá umurí arama aé.
+# text_eng = The girls no longer knew what to do to please him.
+# text_por = As moças já não sabiam o que fazer para agradá-lo.
+# text_source = Amorim, 249, adap.
+# text_orig = Kunhamukú-itá ti ana ukwáu maã umunhã aintá umurí arama aé
+# text_annotator = LFdeA
+1	Kunhamukú-itá	kunhamukú	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=0:13
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=14:16
+3	ana	ana	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=17:20
+4	ukwáu	kwáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:26
+5	maã	maã	PRON	INT	PronType=Int	6	obj	_	TokenRange=27:30
+6	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	4	ccomp	_	TokenRange=31:37
+7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=38:43
+8	umurí	murí	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=44:49
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=50:55
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=56:58
+11	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=58:59
+
+# sent_id = Avila2021:0:0:529
+# text = Kunhamukú upeteka i amaniú.
+# text_eng = The girl beats her cotton.
+# text_por = A moça bate seu algodão.
+# text_source = Hartt, 324, adap.
+# text_annotator = LFdeA
+1	Kunhamukú	kunhamukú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:9
+2	upeteka	peteka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=10:17
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=18:19
+4	amaniú	amaniú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=20:26
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Avila2021:0:0:530
+# text = Ixé kunhamukú reté.
+# text_eng = I'm very young.
+# text_por = Eu sou muita moça.
+# text_source = Hartt, 346
+# text_annotator = LFdeA
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	kunhamukú	kunhamukú	ADJ	A	_	0	root	_	TokenRange=4:13
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=14:18
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = NTLN:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
