@@ -1799,9 +1799,15 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True,an
 def includeTranslation(example):
     from deep_translator import GoogleTranslator
     parts=extract_sents(example)
-    text_por=parts[-1]
+    i=-1
+    if len(parts) == 4:
+        i=-2
+    text_por=parts[i]
     text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
-    parts.append(text_eng)
+    if len(parts) == 4:
+        parts.insert(-1,text_eng)
+    else:
+        parts.append(text_eng)
     return parts
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR):
