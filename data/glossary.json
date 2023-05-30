@@ -12,14 +12,34 @@
         "var": 2
     },
     {
+        "lemma": "wakarí",
+        "pos": "s.",
+        "gloss": "tipo de macaco ou de peixe"
+    },
+    {
+        "lemma": "akarí",
+        "pos": "s.",
+        "gloss": "var. wakarí"
+    },
+    {
         "lemma": "anhuíra",
         "pos": "adj.",
         "gloss": "sozinho"
     },
     {
+        "lemma": "rikuyara",
+        "pos": "posp.",
+        "gloss": "em lugar de",
+        "var": 1,
+        "rel": [
+            "sikuyara"
+        ]
+    },
+    {
         "lemma": "sikuyara",
         "pos": "s.",
         "gloss": "preço",
+        "var": 2,
         "rel": [
             "rikuyara",
             "sikuyara"
@@ -275,6 +295,17 @@
         "pron2": "se"
     },
     {
+        "lemma": "karuára",
+        "pos": "v. 2ª cl.",
+        "gloss": "ter reumatismo",
+        "pron2": "se"
+    },
+    {
+        "lemma": "mutawá",
+        "pos": "v.",
+        "gloss": "espantar"
+    },
+    {
         "lemma": "mukanhemu",
         "pos": "v.",
         "gloss": "1) fazer desaparecer; 2) arruinar; 3) perder"
@@ -503,9 +534,20 @@
     },
     {
         "lemma": "arama",
+        "pos": "posp.",
+        "gloss": "como",
+        "var": 4
+    },
+    {
+        "lemma": "arama",
         "pos": "sconj.",
         "gloss": "expressa finalidade ou intenção",
         "var": 3
+    },
+    {
+        "lemma": "rama",
+        "pos": "posp.",
+        "gloss": "var. arama 4"
     },
     {
         "lemma": "aramé",
@@ -636,9 +678,19 @@
         "gloss": "quem? qual? ● awá irũmu? - com quem?"
     },
     {
+        "lemma": "awá",
+        "pos": "pron. rel. livre",
+        "gloss": "quem"
+    },
+    {
         "lemma": "awa",
         "pos": "s.",
         "gloss": "cabelo"
+    },
+    {
+        "lemma": "karayurú",
+        "pos": "s.",
+        "gloss": "planta"
     },
     {
         "lemma": "awatí",
@@ -1816,6 +1868,11 @@
         "lemma": "kwá",
         "pos": "v. / aux. não-flex.",
         "gloss": "var. kwáu"
+    },
+    {
+        "lemma": "kari",
+        "pos": "v. suf. / aux. não-flex.",
+        "gloss": "mandar, ordenar"
     },
     {
         "lemma": "kwawasá",
@@ -3259,9 +3316,24 @@
         "gloss": "var. kurũ"
     },
     {
+        "lemma": "piawasú",
+        "pos": "adj.",
+        "gloss": "corajoso"
+    },
+    {
+        "lemma": "yawaité",
+        "pos": "adj.",
+        "gloss": "perigoso"
+    },
+    {
         "lemma": "musasá",
         "pos": "v.",
         "gloss": "passar (tr.)"
+    },
+    {
+        "lemma": "musasawa",
+        "pos": "v.",
+        "gloss": "var. musasá"
     },
     {
         "lemma": "musasiara",
@@ -3272,6 +3344,11 @@
         "lemma": "yumusasiara",
         "pos": "v.",
         "gloss": "entristecer-se"
+    },
+    {
+        "lemma": "pitera",
+        "pos": "v.",
+        "gloss": "chupar"
     },
     {
         "lemma": "museẽ",
@@ -4737,6 +4814,7 @@
         "lemma": "renundé",
         "pos": "posp.",
         "gloss": "1. adiante de, à frente de; 2. antes de; 3. diante de",
+        "var": 1,
         "rel": [
             "senundé"
         ]
@@ -4745,9 +4823,33 @@
         "lemma": "renundé",
         "pos": "sconj.",
         "gloss": "antes de, antes que",
+        "var": 2
+    },
+    {
+        "lemma": "rundé",
+        "pos": "posp.",
+        "gloss": "var. renundé 1",
         "rel": [
-            "senundé"
+            "sundé"
         ]
+    },
+    {
+        "lemma": "renuné",
+        "pos": "posp.",
+        "gloss": "var. renundé 1",
+        "rel": [
+            "senuné"
+        ]
+    },
+    {
+        "lemma": "rundé",
+        "pos": "sconj.",
+        "gloss": "var. renundé 2"
+    },
+    {
+        "lemma": "renuné",
+        "pos": "sconj.",
+        "gloss": "var. renundé 2"
     },
     {
         "lemma": "re-",
@@ -5484,6 +5586,11 @@
         "lemma": "siya",
         "pos": "pron. quant.",
         "gloss": "var. siiya"
+    },
+    {
+        "lemma": "panakarika",
+        "pos": "s.",
+        "gloss": "tipo de toldo"
     },
     {
         "lemma": "setá",
@@ -6485,6 +6592,11 @@
         "gloss": "espalhar"
     },
     {
+        "lemma": "kunawarú",
+        "pos": "s.",
+        "gloss": "tipo de anfíbio"
+    },
+    {
         "lemma": "tupana",
         "pos": "s.",
         "gloss": "Deus"
@@ -6596,7 +6708,7 @@
     },
     {
         "lemma": "uií",
-        "pos": "adv.",
+        "pos": "adv. temp.",
         "gloss": "hoje"
     },
     {
@@ -7254,6 +7366,16 @@
         "gloss": "fugir"
     },
     {
+        "lemma": "yawá",
+        "pos": "v.",
+        "gloss": "var. yawáu"
+    },
+    {
+        "lemma": "musangawa",
+        "pos": "v.",
+        "gloss": "demarcar"
+    },
+    {
         "lemma": "yawawira",
         "pos": "s.",
         "gloss": "arraia"
@@ -7269,6 +7391,12 @@
         "pos": "posp.",
         "gloss": "como",
         "var": 2
+    },
+    {
+        "lemma": "yawé",
+        "pos": "pron. indef.",
+        "gloss": "cada",
+        "var": 3
     },
     {
         "lemma": "yawerã",
@@ -7399,6 +7527,11 @@
         "var": 1
     },
     {
+        "lemma": "wiwa",
+        "pos": "s.",
+        "gloss": "vassalo"
+    },
+    {
         "lemma": "yuka",
         "pos": "v. 2ª cl. / adj.",
         "gloss": "(estar ou tornar-se) podre",
@@ -7408,6 +7541,11 @@
         "lemma": "yukataka",
         "pos": "v.",
         "gloss": "mexer-se (com o corpo)"
+    },
+    {
+        "lemma": "membirari",
+        "pos": "v.",
+        "gloss": "parir"
     },
     {
         "lemma": "yuká",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 11, 2023
+# Last update: May 29, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -67,12 +67,13 @@ LEXICON=loadLexicon()
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
+'VSUFF': 'VERB',
 'A': 'ADJ', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
-'COL':'Coll', 'PRV': 'Priv'}
+'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON'}
 
 # TODO: extractDemonstratives()
 DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
@@ -273,7 +274,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         token['feats']=feats
     else:
         token['feats']=None
-    if token['xpos'] == 'REL':
+    if token['xpos'] in ('REL', 'RELF'):
         updateFeats(token,'PronType','Rel')
     #elif token['xpos'] == 'ADVR':
     #    updateFeats(token,'PronType','Int')
@@ -1725,7 +1726,7 @@ def extract_sents(line=None,lines=None):
         for sent in lines.split("\n"):
             sents.append(sent.strip())
     else:
-        sents=[sent for sent in re.split(r"\s+-\s+|[)(]",line) if sent]
+        sents=[sent.strip() for sent in re.split(r"\s+-\s+|[)(]",line) if sent]
     return sents
 
 def ppText(sents,pref='',textid=0,index=0,sentid=0):

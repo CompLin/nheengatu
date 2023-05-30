@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 11, 2023
+# Last update: May 29, 2023
 
 import re, sys, os, json
 
@@ -21,6 +21,12 @@ IMP="IMP"
 
 # auxiliary
 AUX='aux.'
+
+# impersonal verb
+IMPERS='(impess.)'
+
+# suffixal verb
+VSUFF='v. suf.'
 
 # copula verb
 COP='cop.'
@@ -101,11 +107,13 @@ pron. interr.\tINT\tpronome interrogativo
 pron. quant.\tINDQ\tpronome quantitativo indefinido
 pron. quant. univ.\tTOT\tpronome quantitativo universal
 pron. relativo\tREL\tpronome relativo
+pron. rel. livre\tRELF\tpronome relativo livre
 suf.\tSUFF\tsufixo
 pref.\tPREF\tprefixo
 v.\tV\tverbo de 1ª classe
 v. 2ª cl.\tV2\tverbo de 2ª classe
 v. 3ª cl.\tV3\tverbo de 3ª classe
+{VSUFF}\tVSUFF\tverbo sufixal não-flexionável
 """
 def sortFunc(line):
 	return line[1]
@@ -222,8 +230,9 @@ def makeNumber(forms):
         entries.add(f"{form}-itá\t{parse}+PL")
     return entries
 
-def isImpersonal(gloss):
-    return "(impess.)" in gloss # TODO: change 'gloss' to 'usage'
+def isImpersonal(entry):
+	return "{IMPERS}" in entry.get('gloss') or VSUFF in entry.get('pos')
+    # TODO: change 'gloss' to 'usage'
 
 def parseprefs1(stem):
     prefs={ 'yu' : 'REFL',
@@ -445,7 +454,7 @@ def WordParsePairs(glossary):
 			for tag in tags:
 				if hasNumberInflection(tag,lemma):
 					pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
-				elif tag == "V" and not isImpersonal(entry.get('gloss')):
+				elif tag == "V" and not isImpersonal(entry):
 					pairs.update(conjugateVerb(lemma,tag))
 				elif tag == 'V3':
 					pairs.update(handleV3(lemma,tag))
