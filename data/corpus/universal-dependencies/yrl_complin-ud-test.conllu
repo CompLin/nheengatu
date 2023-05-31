@@ -3427,7 +3427,7 @@
 4	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=20:23
 5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = Navarro2016:0:0:168
+# sent_id = Navarro2016:0:0:0168
 # text = Mairamé taá kurí indé repurungitá nheengatú?
 # text_eng = When will you speak nheengatu?
 # text_por = Quando você falará nheengatu?
@@ -3442,7 +3442,7 @@
 6	nheengatú	nheengatú	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=34:43
 7	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
 
-# sent_id = Navarro2016:0:0:169
+# sent_id = Navarro2016:0:0:0169
 # text = Se mena usika kurí paranã suí.
 # text_eng = My husband will arrive from the river.
 # text_por = Meu marido vai chegar do rio.
@@ -3457,7 +3457,7 @@
 6	suí	suí	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=26:29
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
-# sent_id = Navarro2016:0:0:170
+# sent_id = Navarro2016:0:0:0170
 # text = Mairamé kurí bũa, ixé asú kurí ayuká indé arama kwá tukunaré.
 # text_eng = When I'm big, I'm going to kill this peacock bass for you.
 # text_por = Quando eu for grande, eu vou matar para você este tucunaré.
@@ -3478,9 +3478,10 @@
 12	tukunaré	tukunaré	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=52:60
 13	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
 
+
 # sent_id = Navarro2016:0:0:400
 # text = Panhẽ musapiri, paá, aintá urikú aintá rimirikú.
-# text_source = apud Cruz, 270, modif.
+# text_source = Lesson 7, p. 56 (apud Cruz, 270, modif.)
 # text_eng = It is said that all three had their wives.
 # text_por = Dizem que todos os três tinham suas esposas.
 # text_annotator = LFdeA
@@ -3539,11 +3540,11 @@
 7	retana	retana	ADV	ADVS	_	6	advmod	_	SpaceAfter=No|TokenRange=31:37
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
 
-# sent_id = Navarro2016:4:1:6
+# sent_id = Navarro2016:4:1:06
 # text = Maria uwatá São Gabriel rupí
 # text_eng = Maria walks through São Gabriel
 # text_por = Maria caminha por São Gabriel
-# text_source = L4, p. 30
+# text_source = Lesson 4, p. 30
 # text_annotator = LFdeA
 1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
 2	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
@@ -3551,12 +3552,14 @@
 4	Gabriel	gabriel	PROPN	PROPN	_	3	flat	_	TokenRange=16:23
 5	rupí	rupí	ADP	ADP	_	3	case	_	TokenRange=24:28
 
-# sent_id = Navarro2016:4:2:7
+# sent_id = Navarro2016:4:1:168
 # text = Maria uwatá ara pukusawa tawa rapé-itá rupí.
 # text_eng = Maria walks the streets of the city during the day.
-# text_por = Maria anda durante o dia pelas ruas da cidade.
-# text_source = L4, p. 30
-# text_annotator = LFdeA
+# text_por =  Maria anda durante o dia pelas ruas da cidade.
+# text_source = Lesson 4, p. 30
+# text_annotator = VAN
+# reviewer1 = DMA
+# reviewer2 = LFdeA
 1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
 2	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:15
@@ -16662,4 +16665,3 @@
 4	katú	katú	ADV	ADVS	AdvType=Deg	3	advmod	_	TokenRange=21:25
 5	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Sup	4	advmod	_	SpaceAfter=No|TokenRange=26:30
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
-
