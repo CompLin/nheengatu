@@ -3478,7 +3478,6 @@
 12	tukunaré	tukunaré	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=52:60
 13	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
 
-
 # sent_id = Navarro2016:0:0:400
 # text = Panhẽ musapiri, paá, aintá urikú aintá rimirikú.
 # text_source = Lesson 7, p. 56 (apud Cruz, 270, modif.)
@@ -4226,7 +4225,7 @@
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
 7	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=21:24
 8	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=24:25
-9	purangamirĩ	puranga	ADJ	A	Degree=Dim	0	root	_	SpaceAfter=No|TokenRange=26:37
+9	purangamirĩ	puranga	ADJ	A	Degree=Dim	0	root	_	TokenRange=26:37
 10	[...]	[...]	PUNCT	ELIP	PunctType=Elip	9	punct	_	TokenRange=38:43
 11	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	9	cop	_	SpaceAfter=No|TokenRange=44:48
 12	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=48:49
@@ -17401,3 +17400,4 @@
 4	katú	katú	ADV	ADVS	AdvType=Deg	3	advmod	_	TokenRange=21:25
 5	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Sup	4	advmod	_	SpaceAfter=No|TokenRange=26:30
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
+
