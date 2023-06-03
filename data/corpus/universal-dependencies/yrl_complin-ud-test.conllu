@@ -69,7 +69,7 @@
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=4:6
 3	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=7:11
 4	upé	upé	ADP	ADP	_	3	case	_	TokenRange=12:15
-5	aikú	ikú	AUX	V	Number=Sing|Person=1|VerbForm=Fin	3	cop	_	SpaceAfter=No|TokenRange=16:20
+5	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	3	cop	_	SpaceAfter=No|TokenRange=16:20
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = MooreFP1994:0:0:6
@@ -634,7 +634,7 @@
 # text_por = Nós estamos perto de você.
 # text_annotator = LFdeA
 1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:5
-2	yaikú	ikú	AUX	V	Number=Plur|Person=1|VerbForm=Fin	3	cop	_	TokenRange=6:11
+2	yaikú	ikú	AUX	COP	Number=Plur|Person=1|VerbForm=Fin	3	cop	_	TokenRange=6:11
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	0	root	_	TokenRange=12:14
 4	ruakí	ruakí	ADP	ADP	Rel=Cont	3	case	_	SpaceAfter=No|TokenRange=15:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
@@ -674,7 +674,7 @@
 # text_annotator = LFdeA
 1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=6:13
-3	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=14:18
+3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=14:18
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Alencar2021:0:0:8
@@ -3554,7 +3554,7 @@
 # sent_id = Navarro2016:4:1:168
 # text = Maria uwatá ara pukusawa tawa rapé-itá rupí.
 # text_eng = Maria walks the streets of the city during the day.
-# text_por =  Maria anda durante o dia pelas ruas da cidade.
+# text_por = Maria anda durante o dia pelas ruas da cidade.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3571,7 +3571,7 @@
 # sent_id = Navarro2016:4:2:169
 # text = São Gabriel mairí turusú uikú waá Paranãwasú rembiwa upé.
 # text_eng = São Gabriel is a city on the banks of the Rio Negro.
-# text_por =  São Gabriel é uma cidade que está nas margens do rio Negro.
+# text_por = São Gabriel é uma cidade que está nas margens do rio Negro.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3590,7 +3590,7 @@
 # sent_id = Navarro2016:4:3:170
 # text = I garapá upé aikwé siía igara turusú usemu waá tendawa-itá kití uikú waá paranã rembiwa upé.
 # text_eng = In her port there are many large canoes that go out to the communities that are on the banks of the river.
-# text_por =  No porto dela há muitas canoas grandes que saem para as comunidades que estão nas margens do rio.
+# text_por = No porto dela há muitas canoas grandes que saem para as comunidades que estão nas margens do rio.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3606,7 +3606,7 @@
 9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	8	nsubj	_	TokenRange=43:46
 10	tendawa-itá	tendawa	NOUN	N	Number=Plur|Rel=Abs	8	obl	_	TokenRange=47:58
 11	kití	kití	ADP	ADP	_	10	case	_	TokenRange=59:63
-12	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	15	cop	_	TokenRange=64:68
+12	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	15	cop	_	TokenRange=64:68
 13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	nsubj	_	TokenRange=69:72
 14	paranã	paranã	NOUN	N	Number=Sing	15	nmod:poss	_	TokenRange=73:79
 15	rembiwa	tembiwa	NOUN	N	Number=Sing|Rel=Cont	10	acl:relcl	_	TokenRange=80:87
@@ -3616,7 +3616,7 @@
 # sent_id = Navarro2016:4:4:171
 # text = Siía mira upurungitá nheengatú ape.
 # text_eng = Many people speak Nheengatu there.
-# text_por =  Muitas pessoas falam nheengatu ali.
+# text_por = Muitas pessoas falam nheengatu ali.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3631,7 +3631,7 @@
 # sent_id = Navarro2016:4:5:172
 # text = Aikwé mira-itá upurungitá waá amú nheenga-itá São Gabriel upé: Baniwa, Tukano, Desana, Yanomami.
 # text_eng = There are people who speak other languages ​​in São Gabriel: Baniwa, Tucano, Desana, Yanomami.
-# text_por =  Há pessoas que falam outras línguas em São Gabriel: baniwa, tucano, desana, ianomami.
+# text_por = Há pessoas que falam outras línguas em São Gabriel: baniwa, tucano, desana, ianomami.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3658,7 +3658,7 @@
 # sent_id = Navarro2016:4:6:173
 # text = Nhaã tawa ruakí aikwé siía tendawa mira-itá irũmu ukwáu waá nheengatú.
 # text_eng = Near that city there are many communities with people who know Nheengatu.
-# text_por =  Perto daquela cidade há muitas comunidades com pessoas que sabem nheengatu.
+# text_por = Perto daquela cidade há muitas comunidades com pessoas que sabem nheengatu.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3679,7 +3679,7 @@
 # sent_id = Navarro2016:4:7:174
 # text = Maria uwatá ana retana.
 # text_eng = Maria walked a lot.
-# text_por =  Maria andou muito.
+# text_por = Maria andou muito.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3693,7 +3693,7 @@
 # sent_id = Navarro2016:4:8:175
 # text = Aé uwapika, asuí umbaú pirá uí irũmu nhaãsé aé i yumasí.
 # text_eng = She sits down and eats fish with flour because she is hungry.
-# text_por =  Ela senta-se e come peixe com farinha porque ela está faminta.
+# text_por = Ela senta-se e come peixe com farinha porque ela está faminta.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3715,7 +3715,7 @@
 # sent_id = Navarro2016:4:9:176
 # text = Aé urasú pirá suka suí sukwera waá membeka.
 # text_eng = She takes fish from her house, whose meat is soft.
-# text_por =  Ela leva peixe da sua casa, cuja carne é mole.
+# text_por = Ela leva peixe da sua casa, cuja carne é mole.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3733,7 +3733,7 @@
 # sent_id = Navarro2016:4:10:177
 # text = Maria umbaú pirá i pú irũmu, ma uú ií i kuya irũmu.
 # text_eng = Maria eats the fish with her hands, but drinks water with her gourd.
-# text_por =  Maria come o peixe com suas mãos, mas bebe água com sua cuia.
+# text_por = Maria come o peixe com suas mãos, mas bebe água com sua cuia.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3756,7 +3756,7 @@
 # sent_id = Navarro2016:4:11:178
 # text = Asuí aé usú uyuruari i igara mirá suiwara upé.
 # text_eng = Afterwards, she will board her wooden canoe.
-# text_por =  Depois, ela vai embarcar em sua canoa de madeira.
+# text_por = Depois, ela vai embarcar em sua canoa de madeira.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3775,7 +3775,7 @@
 # sent_id = Navarro2016:4:12:179
 # text = Aé usú sendawa kití, sera waá São Miguel.
 # text_eng = She goes to her community, whose name is São Miguel.
-# text_por =  Ela vai para sua comunidade, cujo nome é São Miguel.
+# text_por = Ela vai para sua comunidade, cujo nome é São Miguel.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3794,7 +3794,7 @@
 # sent_id = Navarro2016:0:0:180
 # text = Se paya, paá, usú ana kaá kití, ma aé nti usú.
 # text_eng = They say my father went into the woods, but he didn't.
-# text_por =  Dizem que meu pai foi para a mata, mas ele não foi.
+# text_por = Dizem que meu pai foi para a mata, mas ele não foi.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3818,7 +3818,7 @@
 # sent_id = Navarro2016:0:0:181
 # text = Apigawa upurungitá waá se paya, ma aé ukiri waá se tutira.
 # text_eng = The man who speaks is my father, but the one who sleeps is my uncle.
-# text_por =  O homem que fala é meu pai, mas o que dorme é meu tio.
+# text_por = O homem que fala é meu pai, mas o que dorme é meu tio.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3840,7 +3840,7 @@
 # sent_id = Navarro2016:0:0:182
 # text = Kunhã-itá indé remaã waá ne mimbira.
 # text_eng = The women you see are your daughters.
-# text_por =  As mulheres que você vê são suas filhas.
+# text_por = As mulheres que você vê são suas filhas.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3856,7 +3856,7 @@
 # sent_id = Navarro2016:0:0:183
 # text = Apigawa i paya waá umurari iké, sera José.
 # text_eng = The man his father lives here, his name is José.
-# text_por =  O homem que o pai dele mora aqui, seu nome é José.
+# text_por = O homem que o pai dele mora aqui, seu nome é José.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3875,7 +3875,7 @@
 # sent_id = Navarro2016:0:0:184
 # text = Pirá sera waá pirarukú, turusú retana.
 # text_eng = The fish whose name is pirarucu, is very big.
-# text_por =  O peixe cujo nome é pirarucu, é muito grande.
+# text_por = O peixe cujo nome é pirarucu, é muito grande.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3892,7 +3892,7 @@
 # sent_id = Navarro2016:0:0:185
 # text = Amaã ana yepé kurumĩ, kunhã puranga waá mimbira.
 # text_eng = I saw a boy, the son of the woman who is beautiful.
-# text_por =  Vi um menino, filho da mulher que é bonita.
+# text_por = Vi um menino, filho da mulher que é bonita.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3911,7 +3911,7 @@
 # sent_id = Navarro2016:0:0:186
 # text = Kunhã i mimbira waá indé remaã, usú paranã kití.
 # text_eng = The woman whose daughter you see goes to the river.
-# text_por =  A mulher cuja filha você vê, vai ao rio.
+# text_por = A mulher cuja filha você vê, vai ao rio.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3931,7 +3931,7 @@
 # sent_id = Navarro2016:0:0:187
 # text = Aikwé yepé uka turusú waá.
 # text_eng = There is a house that is big.
-# text_por =  Há uma casa que é grande.
+# text_por = Há uma casa que é grande.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3946,7 +3946,7 @@
 # sent_id = Navarro2016:0:0:188
 # text = Uií ara umanũ waá-itá ara.
 # text_eng = Today is the day of those who died.
-# text_por =  O dia de hoje é o dia dos que morreram.
+# text_por = O dia de hoje é o dia dos que morreram.
 # text_source = Lesson 4, p. 31
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3962,7 +3962,7 @@
 # sent_id = Navarro2016:0:0:189
 # text = Akwáu amunhã waá.
 # text_eng = I know what I do.
-# text_por =  Sei o que faço.
+# text_por = Sei o que faço.
 # text_source = Lesson 4, p. 32
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3975,7 +3975,7 @@
 # sent_id = Navarro2016:0:0:190
 # text = Akwáu maã amunhã waá.
 # text_eng = I know what I do.
-# text_por =  Sei o que faço.
+# text_por = Sei o que faço.
 # text_source = Lesson 4, p. 32
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -3989,7 +3989,7 @@
 # sent_id = Navarro2016:0:0:191
 # text = Aé upitá-putari mamé puranga waá.
 # text_eng = He wants to stay where it's beautiful.
-# text_por =  Ele quer ficar onde é bonito.
+# text_por = Ele quer ficar onde é bonito.
 # text_source = Lesson 4, p. 32
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4006,7 +4006,7 @@
 # sent_id = Navarro2016:0:0:192
 # text = Uka puranga.
 # text_eng = The house is beautiful.
-# text_por =  A casa é bonita.
+# text_por = A casa é bonita.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4018,7 +4018,7 @@
 # sent_id = Navarro2016:0:0:193
 # text = Se ruka puranga.
 # text_eng = My house is beautiful.
-# text_por =  Minha casa é bonita.
+# text_por = Minha casa é bonita.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4031,7 +4031,7 @@
 # sent_id = Navarro2016:0:0:194
 # text = Suka puranga.
 # text_eng = His house is beautiful.
-# text_por =  A casa dele é bonita.
+# text_por = A casa dele é bonita.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4043,7 +4043,7 @@
 # sent_id = Navarro2016:0:0:195
 # text = Aintá ruka puranga.
 # text_eng = Their house is beautiful.
-# text_por =  A casa deles é bonita.
+# text_por = A casa deles é bonita.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4056,7 +4056,7 @@
 # sent_id = Navarro2016:0:0:196
 # text = Amaã pé kaá pitérupi.
 # text_eng = I see the path through the woods.
-# text_por =  Vejo o caminho no meio do mato.
+# text_por = Vejo o caminho no meio do mato.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4070,7 +4070,7 @@
 # sent_id = Navarro2016:0:0:197
 # text = Ne rapé i pukú.
 # text_eng = Your path is long.
-# text_por =  Teu caminho é longo.
+# text_por = Teu caminho é longo.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4084,7 +4084,7 @@
 # sent_id = Navarro2016:0:0:198
 # text = Atuká ukena.
 # text_eng = I knocked on the door.
-# text_por =  Bati à porta.
+# text_por = Bati à porta.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4096,7 +4096,7 @@
 # sent_id = Navarro2016:0:0:199
 # text = Atuká pe rukena.
 # text_eng = I knocked on your door.
-# text_por =  Bati à porta de vocês.
+# text_por = Bati à porta de vocês.
 # text_source = Lesson 4, p. 33
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4109,7 +4109,7 @@
 # sent_id = Navarro2016:0:0:200
 # text = Ixé São Paulo suiwara.
 # text_eng = I'm from São Paulo.
-# text_por =  Eu sou de São Paulo.
+# text_por = Eu sou de São Paulo.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4123,7 +4123,7 @@
 # sent_id = Navarro2016:0:0:201
 # text = Ixé aikú iké kwesé suiwara.
 # text_eng = I've been here since yesterday.
-# text_por =  Eu estou aqui desde ontem.
+# text_por = Eu estou aqui desde ontem.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4138,7 +4138,7 @@
 # sent_id = Navarro2016:0:0:202
 # text = Aikú nhaã tawa ruakí.
 # text_eng = I'm close to that city.
-# text_por =  Estou perto daquela cidade.
+# text_por = Estou perto daquela cidade.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4152,7 +4152,7 @@
 # sent_id = Navarro2016:0:0:203
 # text = Aikú suakí.
 # text_eng = I'm close to her.
-# text_por =  Estou perto dela.
+# text_por = Estou perto dela.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4164,7 +4164,7 @@
 # sent_id = Navarro2016:0:0:204
 # text = Kwá mirá turusú.
 # text_eng = This tree is big.
-# text_por =  Esta árvore é grande.
+# text_por = Esta árvore é grande.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4177,7 +4177,7 @@
 # sent_id = Navarro2016:0:0:205
 # text = Arikú yepé uka turusú.
 # text_eng = I have a big house.
-# text_por =  Tenho uma casa grande.
+# text_por = Tenho uma casa grande.
 # text_source = Lesson 4, p. 34
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4191,7 +4191,7 @@
 # sent_id = Navarro2016:0:0:206
 # text = Awá urikú turusú iwí umeẽ-kwáu awá nti urikú supé.
 # text_eng = Those who have a lot of land can give it to those who don't.
-# text_por =  Quem tem muita terra pode dar para quem não tem.
+# text_por = Quem tem muita terra pode dar para quem não tem.
 # text_source = Lesson 4, p. 34 (Grenand et al., 174, modif.)
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4212,7 +4212,7 @@
 # sent_id = Navarro2016:0:0:207
 # text = Kwaíra ramé rẽ, paá, ixé, purangamirĩ [...] aikú.
 # text_eng = They say that when I was still little, I was cute [...].
-# text_por =  Dizem que, quando eu ainda era pequeno, bonitinho [...] era. [Corr. transl.]
+# text_por = Dizem que, quando eu ainda era pequeno, bonitinho [...] era. [Corr. transl.]
 # text_source = Lesson 4, p. 35 (Ademarzinho da Gaita, São Gabriel da Cachoeira, AM)
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4233,7 +4233,7 @@
 # sent_id = Navarro2016:0:0:208
 # text = Aé kwera, taité!
 # text_eng = He's gone, poor thing!
-# text_por =  Ele já era, coitado!
+# text_por = Ele já era, coitado!
 # text_source = Lesson 4, p. 35
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4247,7 +4247,7 @@
 # sent_id = Navarro2016:0:0:209
 # text = Pedro uyuká ana yawareté.
 # text_eng = Pedro killed the jaguar.
-# text_por =  Pedro matou a onça.
+# text_por = Pedro matou a onça.
 # text_source = Lesson 4, p. 35
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4273,7 +4273,7 @@
 # sent_id = Navarro2016:0:0:211
 # text = Awá kwera?
 # text_eng = Who was it?
-# text_por =  Quem era?
+# text_por = Quem era?
 # text_source = Lesson 4, p. 35
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -4285,7 +4285,7 @@
 # sent_id = Navarro2016:0:0:212
 # text = Asuiwara kwera, mukũi apigawa nhũ upitá umanhana uikú yané itá uka.
 # text_eng = Since then, only two men have been guarding our stone house.
-# text_por =  Desde então, somente dois homens ficaram vigiando nossa casa de pedra.
+# text_por = Desde então, somente dois homens ficaram vigiando nossa casa de pedra.
 # text_source = Lesson 4, p. 36 (Amorim, p. 36, 229)
 # text_annotator = VAN
 # reviewer1 = DMA
@@ -5406,7 +5406,7 @@
 1	Remaité	maité	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=8:12
 3	apekatú	apekatú	ADV	ADV	_	1	ccomp	_	TokenRange=13:20
-4	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	3	cop	_	SpaceAfter=No|TokenRange=21:25
+4	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	3	cop	_	SpaceAfter=No|TokenRange=21:25
 5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Avila2021:9:2:59
@@ -5425,7 +5425,7 @@
 8	upé	upé	ADP	ADP	_	7	case	_	TokenRange=27:30
 9	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=31:33
 10	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	7	nsubj	_	TokenRange=34:42
-11	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	7	cop	_	SpaceAfter=No|TokenRange=43:47
+11	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	7	cop	_	SpaceAfter=No|TokenRange=43:47
 12	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Avila2021:0:0:60
@@ -5928,7 +5928,7 @@
 20	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=87:88
 21	amukití	amukití	ADV	ADV	_	16	parataxis	_	TokenRange=89:96
 22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	21	nsubj	_	TokenRange=97:102
-23	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	21	cop	_	SpaceAfter=No|TokenRange=103:107
+23	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	21	cop	_	SpaceAfter=No|TokenRange=103:107
 24	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=107:108
 
 # sent_id = Avila2021:11:1:88
@@ -7492,7 +7492,7 @@
 # text_annotator = LFdeA
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=1:3
-3	makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	SpaceAfter=No|TokenRange=4:10
+3	makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Ind	0	root	_	SpaceAfter=No|TokenRange=4:10
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Avila2021:0:0:167
@@ -10889,7 +10889,7 @@
 6	renundé	renundé	SCONJ	SCONJ	Rel=Cont	4	mark	_	SpaceAfter=No|TokenRange=28:35
 7	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=35:36
 8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	13	nsubj	_	TokenRange=37:42
-9	uikú	ikú	AUX	V	Person=3|VerbForm=Fin	13	cop	_	TokenRange=43:47
+9	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	13	cop	_	TokenRange=43:47
 10	ana	ana	PART	PFV	Aspect=Perf	13	advmod	_	TokenRange=48:51
 11	Wirawasú	wirawasú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=52:60
 12	Wapikawa	wapikawa	NOUN	N	Number=Sing	13	nmod:poss	_	TokenRange=61:69
@@ -11977,7 +11977,7 @@
 7	tenhuntu	tenhuntu	ADV	ADV	_	6	advmod	_	SpaceAfter=No|TokenRange=35:43
 8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=43:44
 9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=45:47
-10	masuí	masuí	ADV	ADV	_	12	advmod	_	TokenRange=48:53
+10	masuí	masuí	ADV	ADVNC	AdvType=Loc|PronType=Ind	12	advmod	_	TokenRange=48:53
 11	apigawa	apigawa	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=54:61
 12	uyukwáu	yukwáu	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	SpaceAfter=No|TokenRange=62:69
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
@@ -12107,7 +12107,7 @@
 8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=34:35
 9	ma	ma	CCONJ	CCONJ	_	12	cc	_	TokenRange=36:38
 10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=39:41
-11	marupí	marupí	ADV	ADVC	AdvType=Loc	12	advmod	_	TokenRange=42:48
+11	marupí	marupí	ADV	ADVNC	AdvType=Loc|PronType=Ind	12	advmod	_	TokenRange=42:48
 12	usika	sika	VERB	V	Person=3|VerbForm=Fin	3	conj	_	SpaceAfter=No|TokenRange=49:54
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=54:55
 
@@ -12148,7 +12148,7 @@
 11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=61:62
 12	mamé	mamé	ADV	ADVR	AdvType=Loc|PronType=Int	5	advmod	_	TokenRange=63:67
 13	igara	igara	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=68:73
-14	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	15	cop	_	TokenRange=74:78
+14	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	15	cop	_	TokenRange=74:78
 15	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	advcl:relcl	_	SpaceAfter=No|TokenRange=79:82
 16	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=82:83
 
@@ -12426,7 +12426,7 @@
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=19:20
 6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	parataxis	_	TokenRange=21:24
 7	rẽ	rẽ	ADV	ADV	_	6	advmod	_	TokenRange=25:27
-8	aikú	ikú	AUX	AUXFS	Number=Sing|Person=1|VerbForm=Fin	6	cop	_	SpaceAfter=No|TokenRange=28:32
+8	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	6	cop	_	SpaceAfter=No|TokenRange=28:32
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=32:33
 10	aramé	aramé	ADV	ADVJ	AdvType=Cau	11	advmod	_	TokenRange=34:39
 11	resarú	sarú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	6	parataxis	_	TokenRange=40:46
@@ -12869,7 +12869,7 @@
 # text_source = Seixas, 28, adap.
 # text_annotator = LFdeA
 1	Mimi	mimi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	0	root	_	TokenRange=0:4
-2	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
+2	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
 3	apigawa	apigawa	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=10:17
 4	resikari	sikari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	3	acl:relcl	_	TokenRange=18:26
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	obj	_	SpaceAfter=No|TokenRange=27:30
@@ -13606,7 +13606,7 @@
 
 # sent_id = Avila2021:41:2:494
 # text = ― Xukúi, aruri tayasú riiya yayuká arama kaisara upé, ti arama uyawáu.
-# text_eng =  "Here it is, I brought a bunch of pigs to kill in the corral, so they don't run away."
+# text_eng = "Here it is, I brought a bunch of pigs to kill in the corral, so they don't run away."
 # text_por = ― Aqui está, eu trouxe um bando de porcos para matarmos no curral, para não fugirem.
 # text_source = Rodrigues, 45, adap.
 # text_annotator = LFdeA
@@ -13642,7 +13642,7 @@
 
 # sent_id = Avila2021:42:2:496
 # text = Ximirikú umpuka, umunhã yukisé.
-# text_eng =  His wife broke them, made juice.
+# text_eng = His wife broke them, made juice.
 # text_por = Sua esposa partiu-os, fez suco.
 # text_source = Comunidade Indígena Anamuim, 18, adap.
 # text_annotator = LFdeA
@@ -14124,7 +14124,7 @@
 # text_orig = Mimi uikú apigawa resikari waá
 # text_annotator = LFdeA
 1	Mimi	mimi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	0	root	_	TokenRange=0:4
-2	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
+2	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
 3	apigawa	apigawa	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=10:17
 4	resikari	sikari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	3	acl:relcl	_	TokenRange=18:26
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	obj	_	SpaceAfter=No|TokenRange=27:30
@@ -14337,7 +14337,7 @@
 # text_annotator = LFdeA
 1	Awá	awá	PRON	RELF	PronType=Rel	9	dislocated	_	TokenRange=0:3
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=4:6
-3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	5	cop	_	TokenRange=7:11
+3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	5	cop	_	TokenRange=7:11
 4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
 5	piá	piá	NOUN	N	Number=Sing	1	acl:relcl	_	TokenRange=15:18
 6	upé	upé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=19:22
@@ -14492,7 +14492,7 @@
 6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=28:30
 7	kisé	kisé	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=31:35
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=35:36
-9	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	12	cop	_	TokenRange=37:41
+9	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	12	cop	_	TokenRange=37:41
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nsubj	_	TokenRange=42:45
 11	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	12	det	_	TokenRange=46:50
 12	yurá	yurá	NOUN	N	Number=Sing	7	acl:relcl	_	TokenRange=51:55
@@ -14795,7 +14795,7 @@
 # text_source = Rodrigues, 182, adap.
 # text_orig = Kunhã, amú-wirandé yasú arama yasapí yané kupixawa [...].
 # text_prim = Cunhan amorandé ya çu arama yá capy yandé copichaua i catu re nhehê ne manhã çupê ne paia çupé.
-# text_por_prim = Mulher, depois de amanhã, vamos queimar nossa roça. É bom que digas a tua mãe e a teu pai. [Rodrigues, 185, adapt.]
+# text_prim_por = Mulher, depois de amanhã, vamos queimar nossa roça. É bom que digas a tua mãe e a teu pai. [Rodrigues, 185, adapt.]
 # text_annotator = LFdeA
 1	Kunhã	kunhã	NOUN	N	Number=Sing	6	vocative	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=5:6
@@ -15000,6 +15000,68 @@
 3	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=13:17
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
+# sent_id = Avila2021:0:0:571
+# text = Marupí taá ne rapé?
+# text_eng = Where is your path?
+# text_por = Por onde é o teu caminho?
+# text_source = Hartt, 358, adap.
+# text_annotator = LFdeA
+1	Marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
+2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=7:10
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
+4	rapé	pé	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=14:18
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Avila2021:0:0:572
+# text = Marupí se rapé, se ramunha?
+# text_eng = Where is my path, my grandfather?
+# text_por = Por onde é o meu caminho, meu avô?
+# text_source = Rodrigues, 77, adap.
+# text_annotator = LFdeA
+1	Marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
+3	rapé	pé	NOUN	N	Number=Sing|Rel=Cont	6	nmod:poss	_	SpaceAfter=No|TokenRange=10:14
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=14:15
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=16:18
+6	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	1	vocative	_	SpaceAfter=No|TokenRange=19:26
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Avila2021:0:0:573
+# text = Se ramunha, ti ana makití asú-kwáu.
+# text_eng = My grandfather, I can't go anywhere anymore.
+# text_por = Meu avô, não posso mais ir a lugar nenhum.
+# text_source = Rodrigues, 187, adap.
+# text_annotator = LFdeA
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	7	vocative	_	SpaceAfter=No|TokenRange=3:10
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
+4	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=12:14
+5	ana	ana	PART	PFV	Aspect=Perf	7	advmod	_	TokenRange=15:18
+6	makití	makití	ADV	ADVNC	AdvType=Loc|PronType=Ind	7	advmod	_	TokenRange=19:25
+7-8	asú-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=26:34
+7	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+8	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	7	aux	_	_
+9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Avila2021:0:0:574
+# text = Ape tẽ uikú nhaã iwitera makití asú-putari wirandé.
+# text_eng = Right there is the mountain I want to go to tomorrow.
+# text_por = Lá mesmo está a serra à qual eu quero ir amanhã.
+# text_source = Avila 2021
+# text_orig = Apé tẽ uikú nhaã iwitera makití asú-putari wirandé.
+# text_annotator = LFdeA
+1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	0	root	_	TokenRange=0:3
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=4:6
+3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	1	cop	_	TokenRange=7:11
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=12:16
+5	iwitera	iwitera	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=17:24
+6	makití	makití	ADV	ADVLC	AdvType=Loc|PronType=Rel	7	advmod	_	TokenRange=25:31
+7-8	asú-putari	_	_	_	_	_	_	_	TokenRange=32:42
+7	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	acl:relcl	_	_
+8	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	7	aux	_	_
+9	wirandé	wirandé	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=44:51
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=51:52
+
 # sent_id = NTLN:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
 # text_eng = For the grace of God has been revealed, bringing salvation to all people. [NLT]
@@ -15118,7 +15180,7 @@
 14	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	obl	_	TokenRange=80:81
 15	piri	piri	ADP	ADP	_	14	case	_	TokenRange=82:86
 16	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	13	obj	_	TokenRange=87:94
-17	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	18	cop	_	TokenRange=95:99
+17	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	18	cop	_	TokenRange=95:99
 18	aíwa	aíwa	ADJ	A	_	16	acl:relcl	_	TokenRange=100:104
 19	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	18	nsubj	_	SpaceAfter=No|TokenRange=105:112
 20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=112:113
@@ -16565,7 +16627,7 @@
 # sent_id = Cruz2011:0:0:26
 # text = Xukúi i makira aíwa.
 # text_eng = Here is his dirty hammock.
-# text_por =  Eis aqui a rede suja dele.
+# text_por = Eis aqui a rede suja dele.
 # text_source = Example 910 Br
 # text_orig = xukũi imalira aiwa
 # text_annotator = LFdeA
@@ -16578,7 +16640,7 @@
 # sent_id = Cruz2011:0:0:27
 # text = Se aria, xukúi indé arã.
 # text_eng = My grandmother, here it is for you.
-# text_por =  Minha avó, eis aqui para você. [Adapt. transl.]
+# text_por = Minha avó, eis aqui para você. [Adapt. transl.]
 # text_source = Example 701 Wr
 # text_orig = searia xukũi indarã
 # text_annotator = LFdeA
@@ -16593,7 +16655,7 @@
 # sent_id = Cruz2011:1:100:28
 # text = Xukúi tẽ ixé, ne mbira.
 # text_eng = Here I am, your son.
-# text_por =  Eis-me aqui, teu filho. [Adapt. transl.]
+# text_por = Eis-me aqui, teu filho. [Adapt. transl.]
 # text_source = p. 604 Wr
 # text_orig = "Xukui te ixe, nembira
 # title = Kunhã asuí sukuriyú
@@ -17230,7 +17292,7 @@
 # sent_id = Casasnovas2006:0:0:16
 # text = Yepé tapira kunhã umanú.
 # text_eng = A cow died.
-# text_por =  Morreu uma vaca.
+# text_por = Morreu uma vaca.
 # text_source = p. 31
 # text_annotator = LFdeA
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
@@ -17242,7 +17304,7 @@
 # sent_id = Casasnovas2006:0:0:17
 # text = Remeẽ panhẽ maã ta uputari waá.
 # text_eng = Give them everything they want.
-# text_por =  Dá tudo o que eles querem.
+# text_por = Dá tudo o que eles querem.
 # text_source = p. 34
 # text_orig = Remeé panhé maá ta uputari waá.
 # text_annotator = LFdeA
@@ -17257,7 +17319,7 @@
 # sent_id = Casasnovas2006:0:0:18
 # text = Yamunhã-putari panhẽ maã aé umundú waá.
 # text_eng = We want to do everything he said.
-# text_por =  Queremos fazer tudo o que ele mandou.
+# text_por = Queremos fazer tudo o que ele mandou.
 # text_source = p. 36
 # text_orig = Yamunhã putari panhe maã aé umundú waá.
 # text_annotator = LFdeA
@@ -17274,7 +17336,7 @@
 # sent_id = Casasnovas2006:0:0:19
 # text = Suú yukasara yamaã waá kaá upé usika ana.
 # text_eng = The hunter we saw in the forest has arrived.
-# text_por =  Chegou o caçador que vimos na floresta.
+# text_por = Chegou o caçador que vimos na floresta.
 # text_source = p. 37
 # text_orig = Yukasara suúyamaã waá kaá upé usikana.
 # text_annotator = LFdeA
@@ -17291,7 +17353,7 @@
 # sent_id = Casasnovas2006:0:0:20
 # text = Putira, i sakwena uyuká waá mira, utiní.
 # text_eng = The flower, whose perfume kills people, withered.
-# text_por =  A flor, cujo perfume mata gente, murchou.
+# text_por = A flor, cujo perfume mata gente, murchou.
 # text_source = p. 37
 # text_orig = Putira, isakwena uyuká waá mira, utiní.
 # text_annotator = LFdeA
@@ -17309,7 +17371,7 @@
 # sent_id = Casasnovas2006:0:0:21
 # text = Kwá apigá usasá waá kwesé kwá rupí, aité se mú.
 # text_eng = That man who passed by yesterday is my brother himself.
-# text_por =  Aquele homem que passou ontem por aqui, ele mesmo é meu irmão.
+# text_por = Aquele homem que passou ontem por aqui, ele mesmo é meu irmão.
 # text_source = p. 37
 # text_orig = Kwa apigá usasá waá kwesé kwa rupí, aeté se mu.
 # text_annotator = LFdeA
@@ -17329,7 +17391,7 @@
 # sent_id = Casasnovas2006:0:0:22
 # text = Apiripana-putari ne igara remunhã waá akwera mirá tawá suiwara.
 # text_eng = I want to buy the canoe you made out of yellow wood.
-# text_por =  Quero comprar a canoa que você fez de pau amarelo.
+# text_por = Quero comprar a canoa que você fez de pau amarelo.
 # text_source = p. 39
 # text_orig = Apiripana putari ne igara remunhã waá akwera mirá tawá suíwara.
 # text_annotator = LFdeA
@@ -17372,7 +17434,7 @@
 # sent_id = Stradelli2014:0:0:1
 # text = Yané tuixawa umanú ana mira amusuaxarawara usikié tenhẽ waá.
 # text_eng = Our tuxaua, who was feared by the people on the other side, died.
-# text_por =  Morreu o nosso tuxaua, que era temido deveras pela gente da outra banda.
+# text_por = Morreu o nosso tuxaua, que era temido deveras pela gente da outra banda.
 # text_source = p. 75
 # text_orig = iané tuixaua omanoana mira amusuaxarauara ocikié tenhẽn uá
 # text_annotator = LFdeA
@@ -17390,7 +17452,7 @@
 # sent_id = Stradelli2014:0:0:2
 # text = Aputari maã reputari katú piri.
 # text_eng = I want what you want best.
-# text_por =  Quero o que queres melhor.
+# text_por = Quero o que queres melhor.
 # text_source = p. 75
 # text_orig = xaputare maá reputare catu pire
 # text_annotator = LFdeA
@@ -17400,4 +17462,3 @@
 4	katú	katú	ADV	ADVS	AdvType=Deg	3	advmod	_	TokenRange=21:25
 5	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Sup	4	advmod	_	SpaceAfter=No|TokenRange=26:30
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
-
