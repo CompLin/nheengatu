@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 29, 2023
+# Last update: June 4, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -971,15 +971,21 @@ def handleSameClause(verb,pos,headid,previous,next):
         headAux(verb,headid)
         setUposXpos(verb,pos)
 
+def isCop(token):
+    return token['lemma'] == 'ikú'
+
+def mkCop(token):
+    token['deprel'] = 'cop'
+    token['xpos'] = 'COP'
+    token['upos'] = 'AUX'
+
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
     puncts=TokensOfCatList(tokenlist,'PUNCT')
     c=len(verbs)
     if c == 1:
-        if verbs[0]['lemma'] == 'ikú':
-            verbs[0]['deprel'] = 'cop'
-            verbs[0]['xpos'] = 'COP'
-            verbs[0]['upos'] = 'AUX'
+        if isCop(verbs[0]):
+            mkCop(verbs[0])
             # handleNonVerbalRoot()
     elif c > 1:
         for verb in verbs:
@@ -1218,6 +1224,35 @@ def addFeatures(tokenlist):
         i+=1
     handleVerbs(verbs)
     handleNmodPoss(tokenlist[start:])
+
+def mkVocative(token,punct):
+    if punct['lemma'] == ',':
+        token['deprel'] = 'vocative'
+        punct['head'] = token['id']
+
+def handleVocative(tokenlist):
+    for token in tokenlist:
+        if token['deprel'] == 'nsubj':
+            i=tokenlist.index(token)
+            next=getNextToken(token,tokenlist[i+1:])
+            previous=getPreviousToken(token,tokenlist)
+            if next and next['upos'] == 'PUNCT':
+                if previous:
+                    if previous['upos'] == 'PUNCT':
+                        mkVocative(token,previous)
+                        break
+                    elif previous['deprel'] == 'nmod:poss':
+                        beforeprevious=getPreviousToken(previous,tokenlist)
+                        if beforeprevious:
+                            if beforeprevious['upos'] == 'PUNCT':
+                                mkVocative(token,beforeprevious)
+                                break
+                        else:
+                            mkVocative(token,next)
+                            break
+                else:
+                    mkVocative(token,next)
+                    break
 
 def getTag(parse):
 	tag=parse[1]
@@ -1543,6 +1578,8 @@ def handleRoot(tokenlist):
             if t['id'] != rootid:
                 if t['head'] == 0:
                     t['head']=rootid
+                    if isCop(t):
+                        mkCop(t)
                 if not t['deprel']:
                     if isNominal(t['upos']):
                         if t['id'] < rootid or isIntPron:
@@ -1702,6 +1739,7 @@ def mkConlluSentence(tokens):
     insertMultitokenWord(tokenlist)
     handleRoot(tokenlist)
     handleExpletive(tokenlist)
+    handleVocative(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 

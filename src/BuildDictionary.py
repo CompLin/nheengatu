@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 29, 2023
+# Last update: June 4, 2023
 
 import re, sys, os, json
 
@@ -62,7 +62,6 @@ art. indef.\tART\tartigo indefinido
 {AUX} flex. pós.\tAUXFS\tauxiliar flexionado pós-verbal
 {AUX} flex. pré.\tAUXFR\tauxiliar flexionado pré-verbal
 {AUX} não-flex.\tAUXN\tauxiliar não flexionado
-{COP}\tV\tverbo de ligação
 conj.\tCONJ\tconjunção
 sconj.\tSCONJ\tconjunção subordinativa pós-verbal
 sconj. pré.\tSCONJR\tconjunção subordinativa pré-verbal
@@ -110,6 +109,7 @@ pron. relativo\tREL\tpronome relativo
 pron. rel. livre\tRELF\tpronome relativo livre
 suf.\tSUFF\tsufixo
 pref.\tPREF\tprefixo
+{COP}\tCOP\tverbo de ligação
 v.\tV\tverbo de 1ª classe
 v. 2ª cl.\tV2\tverbo de 2ª classe
 v. 3ª cl.\tV3\tverbo de 3ª classe
