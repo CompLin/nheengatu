@@ -229,6 +229,15 @@
         "gloss": "fundo da água"
     },
     {
+        "lemma": "tipí",
+        "pos": "s.",
+        "gloss": "fundo",
+        "rel": [
+            "ripí",
+            "tipí"
+        ]
+    },
+    {
         "lemma": "sukuriyú",
         "pos": "s.",
         "gloss": "sucuri"
@@ -854,7 +863,7 @@
     },
     {
         "lemma": "ikú",
-        "pos": "aux. flex. pós./ cop. / v.",
+        "pos": "aux. flex. pós. / cop. / v.",
         "gloss": "estar"
     },
     {
@@ -2134,8 +2143,8 @@
     },
     {
         "lemma": "makití",
-        "pos": "adv. interr. loc./ adv. rel. loc.",
-        "gloss": "1. (interr.) - aonde? para onde? 2. (afirm.) - aonde"
+        "pos": "adv. interr. loc. / adv. rel. loc. / adv. ind. loc.",
+        "gloss": "1. (interr.) - aonde? para onde? 2. (afirm.) - aonde 3. (neg.) - para lugar nenhum"
     },
     {
         "lemma": "mikití",
@@ -2408,8 +2417,8 @@
     },
     {
         "lemma": "marupí",
-        "pos": "adv. interr. loc./ adv. rel. loc.",
-        "gloss": "1. (interr.) por onde? 2. (afirm.) por onde"
+        "pos": "adv. interr. loc. / adv. rel. loc. / adv. ind. loc.",
+        "gloss": "1. (interr.) por onde? 2. (afirm.) por onde 3. (neg.) por lugar nenhum"
     },
     {
         "lemma": "marupiara",
@@ -6428,6 +6437,11 @@
         "gloss": "não"
     },
     {
+        "lemma": "intí",
+        "pos": "part. neg.",
+        "gloss": "var. ti"
+    },
+    {
         "lemma": "tipiaka",
         "pos": "s.",
         "gloss": "tapioca"
@@ -7516,7 +7530,7 @@
     },
     {
         "lemma": "yuíri",
-        "pos": "v. / aux. não-flex.",
+        "pos": "v. / aux. não-flex. / aux. flex. pós.",
         "gloss": "voltar",
         "var": 3
     },
