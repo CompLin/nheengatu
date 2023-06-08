@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 4, 2023
+# Last update: June 8, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -11,13 +11,19 @@ from io import open
 from conllu import parse_incr
 import re, os
 
+# set with lexicalized reduplications
+LEXREDUP=set()
+
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
 
-TREEBANK_SENTS=set()
+# path to treebank file
 TREEBANK_FILE='yrl_complin-ud-test.conllu'
 TREEBANK_DIR='corpus/universal-dependencies'
 TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
+
+# set with all treebank sentences
+TREEBANK_SENTS=set()
 
 # single and double quotes
 QUOTES='''"''"'''
@@ -94,6 +100,18 @@ ADVPRONTYPE.update(WH_ADV)
 ADVPRONTYPE.update(DEM_ADV)
 
 ADVTYPE.update(WH_ADVTYPE)
+
+def extract_redup(glossary=GLOSSARY):
+    lexredup=set()
+    entries=list(filter(lambda x: HYPHEN in x['lemma'], glossary))
+    for entry in entries:
+        lemma=entry['lemma']
+        parts=lemma.split(HYPHEN)
+        if len(parts) == 2 and parts[0] == parts[1]:
+            lexredup.add(lemma)
+    return lexredup
+
+LEXREDUP=extract_redup()
 
 def extractTreebankSents(infile=TREEBANK_PATH):
     sents=extractConlluSents(infile)
@@ -1112,6 +1130,7 @@ def handleExpletive(tokenlist): # TODO: handle non-adjacent subject
                     this['deprel'] = 'expl'
                     break
         i+=1
+
 def handlePunct(token,nextToken,tokenlist,verbs):
     if nextToken['lemma'] in DEPPUNCT:
         nextToken['head'] = nextVerb(token,verbs)
@@ -1128,6 +1147,13 @@ def handlePunct(token,nextToken,tokenlist,verbs):
 def handleComma(token,tokenlist):
     verbs=VerbsList(tokenlist)
     token['head'] = nextVerb(token,verbs)
+
+def handleStartPunct(tokenlist):
+    first=tokenlist[0]
+    if first['upos'] == 'PUNCT' and first['lemma'] in DASHES:
+        root=tokenlist.filter(deprel='root')
+        if root:
+            first['head']=root[0]['id']
 
 def mkPunctToken(punct,start,ident):
     parselist=getparselist(punct)
@@ -1550,10 +1576,11 @@ def mkIntj(lemma):
 
 def handleRedup(token):
     redup={}
-    parts=token.split('-')
-    if len(parts) == 2 and parts[1]:
-        if parts[0].endswith(parts[1]):
-            redup['form'],redup['lemma']=parts[0],parts[1]
+    if HYPHEN in token and not token in LEXREDUP:
+        parts=token.split('-')
+        if len(parts) == 2 and parts[1]:
+            if parts[0].endswith(parts[1]):
+                redup['form'],redup['lemma']=parts[0],parts[1]
     return redup
 
 def handleAlomorph(form):
@@ -1740,6 +1767,7 @@ def mkConlluSentence(tokens):
     handleRoot(tokenlist)
     handleExpletive(tokenlist)
     handleVocative(tokenlist)
+    handleStartPunct(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -1849,9 +1877,14 @@ def includeTranslation(example):
         parts.append(text_eng)
     return parts
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR):
-	sents=includeTranslation(example)
-	handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True):
+    yrl=extract_sents(example)[0] # TODO: avoid calling this function three times
+    if check:
+        if checkSentence(yrl):
+            print(f"Sentence '{yrl}' already is in the treebank.")
+            return
+    sents=includeTranslation(example)
+    handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
 
 def endswithNTU(word):
     return word.endswith(NTU)

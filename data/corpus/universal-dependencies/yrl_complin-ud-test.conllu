@@ -7441,7 +7441,7 @@
 
 # sent_id = Avila2021:15:1:163
 # text = ― Makití taá kuíri uikú aé?
-# text_eng = — Where is him now?
+# text_eng = — Where is he now?
 # text_por = ― Onde ele está agora?
 # text_source = Amorim, 156, adap.
 # text_annotator = LFdeA
@@ -7492,7 +7492,7 @@
 # text_annotator = LFdeA
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=1:3
-3	makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Ind	0	root	_	SpaceAfter=No|TokenRange=4:10
+3	makití	makití	ADV	ADVNC	AdvType=Loc|PronType=Ind	0	root	_	SpaceAfter=No|TokenRange=4:10
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Avila2021:0:0:167
@@ -15122,6 +15122,109 @@
 17	arama	arama	ADP	ADP	_	16	case	_	SpaceAfter=No|TokenRange=77:82
 18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=82:83
 
+# sent_id = Avila2021:44:1:578
+# text = ― Makití se igara?
+# text_eng = “Where is my canoe?”
+# text_por = ― Onde está a minha canoa?
+# text_source = Stradelli, 317, adap.
+# text_annotator = LFdeA
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=1:7
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=8:10
+4	igara	igara	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=11:16
+5	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Avila2021:44:2:579
+# text = ― Aikwé.
+# text_eng =  "Here it is."
+# text_por = ― Aqui está.
+# text_source = Stradelli, 317, adap.
+# text_annotator = LFdeA
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	SpaceAfter=No|TokenRange=1:6
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Avila2021:0:0:580
+# text = Wará usú ã, ti ã uyuíri, usú retana karãu suí.
+# text_eng = The ibis left, it didn't come back, it really got away from the limpkin.
+# text_por = O guará partiu, não voltou mais, afastou-se realmente do carão.
+# text_source = Hartt 1872, 75
+# text_annotator = LFdeA
+1	Wará	wará	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
+2	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:8
+3	ã	ã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=9:10
+4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=10:11
+5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=12:14
+6	ã	ã	PART	PFV	Aspect=Perf	7	advmod	_	TokenRange=15:16
+7	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=17:23
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=23:24
+9	usú	sú	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=25:28
+10	retana	retana	ADV	ADVS	AdvType=Deg	9	advmod	_	TokenRange=29:35
+11	karãu	karãu	NOUN	N	Number=Sing	9	obl	_	TokenRange=36:41
+12	suí	suí	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=42:45
+13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = Avila2021:0:0:581
+# text = Paraná uyuíri wã, uwiké uikú.
+# text_eng = The river has already emptied, it is filling up.
+# text_por = O rio já vazou, está enchendo.
+# text_source = Hartt, 327, adap.
+# text_annotator = LFdeA
+1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
+3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=14:16
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
+5	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=18:23
+6	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=24:28
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Avila2021:0:0:582
+# text = Uyuíri ã será paraná?
+# text_eng = Has the river already emptied?
+# text_por = Já vazou o rio?
+# text_source = Hartt, 347, adap.
+# text_annotator = LFdeA
+1	Uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=7:8
+3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=9:13
+4	paraná	paraná	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=14:20
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Avila2021:0:0:583
+# text = Ti reganani apigawa supé, ma reganani Deus supé.
+# text_eng = You have not lied to man, but you have lied to God.
+# text_por = Não mentiste ao homem, mas mentiste a Deus.
+# text_source = O Novo Testamento em nyengatu, Atos 5:4
+# text_orig = Ti regagani apigawa supé, ma reganani Deus supé.
+# text_annotator = LFdeA
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	reganani	ganani	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:11
+3	apigawa	apigawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:19
+4	supé	supé	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=20:24
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=24:25
+6	ma	ma	CCONJ	CCONJ	_	7	cc	_	TokenRange=26:28
+7	reganani	ganani	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=29:37
+8	Deus	deus	PROPN	PROPN	_	7	obl	_	OrigLang=pt|TokenRange=38:42
+9	supé	supé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=43:47
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=47:48
+
+# sent_id = Avila2021:0:0:584
+# text = Asuí yepé-yepé upuãmu aintá uganani sesé, [...].
+# text_eng = And some rose up and lied about him, [...].
+# text_por = E alguns levantaram-se e mentiram a seu respeito, [...].
+# text_source = O Novo Testamento em nyengatu, Marcos 14:57
+# text_orig = Asuí yepé-yepé upuãmu aintá uganani sesé, [...]
+# text_annotator = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
+2	yepé-yepé	yepé-yepé	PRON	INDQ	PronType=Ind	3	nsubj	_	TokenRange=5:14
+3	upuãmu	puãmu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:21
+4	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=22:27
+5	uganani	ganani	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=28:35
+6	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	5	obl	_	SpaceAfter=No|TokenRange=36:40
+7	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=40:41
+8	[...]	[...]	PUNCT	ELIP	PunctType=Elip	3	punct	_	SpaceAfter=No|TokenRange=42:47
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=47:48
+
 # sent_id = NTLN:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
 # text_eng = For the grace of God has been revealed, bringing salvation to all people. [NLT]
@@ -15852,7 +15955,7 @@
 9	puxí	puxí	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=39:43
 10	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	8	obl	_	TokenRange=44:48
 11	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	13	det	_	TokenRange=49:52
-12	Deus	deus	PROPN	PROPN	_	13	nmod:poss	_	TokenRange=53:57
+12	Deus	deus	PROPN	PROPN	_	13	nmod:poss	_	OrigLang=pt|TokenRange=53:57
 13	nheenga	nheenga	NOUN	N	Number=Sing	8	dislocated	_	TokenRange=58:65
 14	kuxiimawara	kuxiimawara	ADJ	A	_	13	amod	_	SpaceAfter=No|TokenRange=66:77
 15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=77:78
@@ -16074,7 +16177,7 @@
 15	yapurandú	purandú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	10	ccomp	_	TokenRange=62:71
 16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	obl	_	TokenRange=72:75
 17	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=76:81
-18	Deus	deus	PROPN	PROPN	_	15	obl	_	TokenRange=82:86
+18	Deus	deus	PROPN	PROPN	_	15	obl	_	OrigLang=pt|TokenRange=82:86
 19	irumu	irumu	ADP	ADP	_	18	case	_	TokenRange=87:92
 20	panhẽ	panhẽ	DET	TOT	PronType=Tot	22	det	_	TokenRange=93:98
 21	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	22	det	_	TokenRange=99:106
