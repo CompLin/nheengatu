@@ -42,15 +42,15 @@ MAPPING={
 
 	'å':{'char':'ẫ','code':'U+1EAB','phonetic':'stressed nasal a', 'name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE', 'compose':'oa'},
 
-	'ā':{'char':'ẫ','code':'U+1EAB','phonetic':'stressed nasal a', 'name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE', 'compose':'_a'},
+	'ā':{'char':'ẫ','variant': 'å', 'compose':'_a'},
 	
-	'ă': {'char':'ẫ','code':'U+1EAB','phonetic':'stressed nasal a', 'name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE', 'compose':'ba'},
+	'ă': {'char':'ẫ','variant': 'å', 'compose':'ba'},
 	
 	'ŏ':{'char':'ṍ', 'code':'U+1ED7','phonetic':'stressed nasal o', 'name':'LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE', 'compose':'bo'},
 
-	'ø':{'char':'ô', 'phonetic':'stressed close o', 'compose':'/o', 'example': '''"ipô" in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232)'''},
+	'ø':{'char':'ô', 'phonetic':'possibly stressed close o', 'compose':'/o', 'example': '''"ipô" in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232), cf. "[...] ahé	ipộ	oçộ	rẹtệãna.(p. 179, PDF 231)"'''},
 	
-	'ò':{'char':'ô', 'variant': 'ø'},
+	'ò':{'char':'ô', 'variant': 'ø', 'compose':'`o'},
 	
 	'è':{'char':'ê', 'phonetic':'possibly stressed close e', 'compose':'`e', 'example': '''"uê", "wé" in Avila (2021), in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232)'''}
 }
