@@ -48,5 +48,24 @@ MAPPING={
 	
 	'ŏ':{'char':'ṍ', 'code':'U+1ED7','phonetic':'stressed nasal o', 'name':'LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE', 'compose':'bo'},
 
-	'ø':{'char':'ô', 'phonetic':'stressed close o', 'compose':'/o'}
+	'ø':{'char':'ô', 'phonetic':'stressed close o', 'compose':'/o', 'example': '''"ipô" in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232)'''},
+	
+	'ò':{'char':'ô', 'variant': 'ø'},
+	
+	'è':{'char':'ê', 'phonetic':'possibly stressed close e', 'compose':'`e', 'example': '''"uê", "wé" in Avila (2021), in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232)'''}
 }
+
+
+def mkTable(mapping=MAPPING):
+	table=[]
+	for k,d in MAPPING.items():
+		table.append((k,d['char']))
+	return table
+
+TABLE=mkTable()
+
+def main(string,table=TABLE):
+	for old, new in table:
+		string=string.replace(old,new)
+	return string
+
