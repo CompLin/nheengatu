@@ -122,6 +122,8 @@ def pprint(sents):
 def printAlignmentErrors(infile):
 	sents=parseText(infile)
 	errors=checkAlignment(sents)
+	er=len(errors)
+	sn=len(sents)
 	if len(errors):
 		pprint(errors)
-		print(f"\n{len(errors)} sentences out of {len(sents)} has alignment problems.")
+		print(f"\n{er} out of {sn} sentences ({er/sn*100:.2f}%) has alignment problems.")
