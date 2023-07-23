@@ -46,7 +46,9 @@ MAPPING={
 	
 	'ă': {'char':'ẫ','variant': 'å', 'compose':'ba'},
 	
-	'ŏ':{'char':'ṍ', 'code':'U+1ED7','phonetic':'stressed nasal o', 'name':'LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE', 'compose':'bo'},
+	'ŏ':{'char':'ṍ', 'code':'U+1E4D','phonetic':'stressed nasal o', 'name':'LATIN SMALL LETTER O WITH TILDE AND ACUTE', 'compose':'bo'},
+	
+	'ō':{'char':'ṍ','variant': 'ŏ', 'compose':'_o'},
 
 	'ø':{'char':'ô', 'phonetic':'possibly stressed close o', 'compose':'/o', 'example': '''"ipô" in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232), cf. "[...] ahé	ipộ	oçộ	rẹtệãna.(p. 179, PDF 231)"'''},
 	
@@ -62,10 +64,55 @@ def mkTable(mapping=MAPPING):
 		table.append((k,d['char']))
 	return table
 
-TABLE=mkTable()
+def mkDictionary(mapping=MAPPING):
+	dic={}
+	for k,v in mapping.items():
+		dic[k]=v['char']
+	return dic
 
-def main(string,table=TABLE):
+TABLE=mkTable()
+DICTIONARY=mkDictionary()
+
+def translate(string,dic=DICTIONARY):
+	table=str.maketrans(dic)
+	return string.translate(table)
+
+def replace(string,table=TABLE):
 	for old, new in table:
 		string=string.replace(old,new)
 	return string
 
+def parseText(infile):
+	text=open(infile).read()
+	pairs=text.split("\n\n")
+	sents=[]
+	for pair in pairs:
+		yrl,por=pair.strip().split("\n")
+		dic={}
+		dic['yrl']=yrl.split("\t")
+		dic['por']=por.split("\t")
+		sents.append(dic)
+	return sents
+
+def checkAlignment(sents):
+	errors=[]
+	for sent in sents:
+		yrl,por=sent['yrl'],sent['por']
+		if len(yrl) != len(por):
+			errors.append(sent)
+	return errors
+
+def pprint(sents):
+	for sent in sents:
+		yrl,por=sent['yrl'],sent['por']
+		c=min(len(yrl),len(por))
+		i=0
+		while(i<c):
+			print(yrl[i],por[i],sep="\n",end="\n\n")
+			i+=1
+
+def printAlignmentErrors(infile):
+	sents=parseText(infile)
+	errors=checkAlignment(sents)
+	if len(errors):
+		pprint(errors)
