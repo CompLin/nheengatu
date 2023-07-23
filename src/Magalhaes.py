@@ -109,7 +109,7 @@ def checkAlignment(sents):
 
 def pprint(sents):
 	msg="Sentence number: "
-	sep=f"{(len(msg)+3)*'-'}"
+	sep=f"{(len(msg)+4)*'-'}"
 	for sent in sents:
 		yrl,por=sent['yrl'],sent['por']
 		c=min(len(yrl),len(por))
@@ -124,3 +124,4 @@ def printAlignmentErrors(infile):
 	errors=checkAlignment(sents)
 	if len(errors):
 		pprint(errors)
+		print(f"\n{len(errors)} sentences out of {len(sents)} has alignment problems.")
