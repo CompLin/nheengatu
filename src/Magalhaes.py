@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 27, 2023
+# Last update: July 23, 2023
 
 # https://en.wikipedia.org/wiki/Compose_key
 # https://math.dartmouth.edu/~sarunas/Linux_Compose_Key_Sequences.html
@@ -83,15 +83,20 @@ def replace(string,table=TABLE):
 	return string
 
 def parseText(infile):
-	text=open(infile).read()
+	text=open(infile).read().strip()
 	pairs=text.split("\n\n")
 	sents=[]
-	for pair in pairs:
+	i=0
+	c=len(pairs)
+	while(i<c):
+		pair=pairs[i]
 		yrl,por=pair.strip().split("\n")
 		dic={}
 		dic['yrl']=yrl.split("\t")
 		dic['por']=por.split("\t")
+		dic['sent_num']=i+1
 		sents.append(dic)
+		i+=1
 	return sents
 
 def checkAlignment(sents):
@@ -103,10 +108,13 @@ def checkAlignment(sents):
 	return errors
 
 def pprint(sents):
+	msg="Sentence number: "
+	sep=f"{(len(msg)+3)*'-'}"
 	for sent in sents:
 		yrl,por=sent['yrl'],sent['por']
 		c=min(len(yrl),len(por))
 		i=0
+		print(f"{sep}\n{msg}{sent['sent_num']}.\n{sep}")
 		while(i<c):
 			print(yrl[i],por[i],sep="\n",end="\n\n")
 			i+=1
