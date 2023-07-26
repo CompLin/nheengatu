@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,76 +12,76 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel
 # Last update: May 15, 2022
 
-São/PROPN Gabriel/PROPN upé/ADP ./PUNCT 
+São/PROPN Gabriel/PROPN upé/ADP+N ./PUNCT 
 # Em São Gabriel.
 
 Maria/PROPN usemu/V igara/N irũmu/ADP+SCONJ ./PUNCT 
 # Maria sai com a canoa.
 
-Aé/PRON usú/V São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 
+Aé/DEMSN+PRON usú/V São/PROPN Gabriel/PROPN kití/ADP ./PUNCT 
 # Ela vai a São Gabriel.
 
-São/PROPN Gabriel/PROPN tawa/N puranga/A+ADV ,/PUNCT apekatú/A+ADV Barra/PROPN suí/ADP ./PUNCT 
+São/PROPN Gabriel/PROPN tawa/N puranga/A+ADVA ,/PUNCT apekatú/A+ADVC Barra/PROPN suí/ADP ./PUNCT 
 # São Gabriel é uma cidade bonita, distante de Manaus.
 
-Siía/INDQ mira/N umurari/V ape/ADVD+ADVJ ./PUNCT 
+Siía/INDQ mira/N umurari/V ape/ADVDI+ADVJ+ADVT ./PUNCT 
 # Muitas pessoas moram ali.
 
-Aé/PRON upiripana/V kurí/FUT maã-itá/N i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+CCONJ+V ./PUNCT 
+Aé/DEMSN+PRON upiripana/V kurí/FUT maã-itá/N+REL i/PRON2 mimbira/N supé/ADP ,/PUNCT i/PRON2 mena/N supé/ADP yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Ela vai comprar coisas para seu filho, para seu marido também.
 
-Aé/PRON usika/V ape/ADVD+ADVJ ,/PUNCT usú/V yepé/ART+CARD+FRUST+SCONJ piripanasawa/N ruka/N kití/ADP ./PUNCT 
+Aé/DEMSN+PRON usika/V ape/ADVDI+ADVJ+ADVT ,/PUNCT usú/V yepé/ART+CARD+FRUST+SCONJ piripanasawa/N ruka/N kití/ADP ./PUNCT 
 # Ela chega lá, vai a uma loja.
 
-Aé/PRON unheẽ/V yepé/ART+CARD+FRUST+SCONJ meẽsara/N supé/ADP :/PUNCT 
+Aé/DEMSN+PRON unheẽ/V yepé/ART+CARD+FRUST+SCONJ meẽsara/N supé/ADP :/PUNCT 
 # Ela diz a um vendedor:
 
 Ixé/PRON aputari/V yepé/ART+CARD+FRUST+SCONJ kamixá/N se/PRON2 mimbira/N supé/ADP ./PUNCT 
 # Eu quero uma camisa para meu filho.
 
-Aé/PRON urikú/V mukũi/CARD+INDQ akayú/N ./PUNCT 
+Aé/DEMSN+PRON urikú/V mukũi/CARD+INDQ akayú/N ./PUNCT 
 # Ele tem dois anos.
 
-Kwá/ADVD+DEMX+V kamixá/N puranga/A+ADV retana/ADVS ./PUNCT 
+Kwá/ADVDX+DEMX+V kamixá/N puranga/A+ADVA retana/ADVS ./PUNCT 
 # Esta camisa é muito bonita.
 
-Aé/PRON sepiasuíma/A ./PUNCT 
+Aé/DEMSN+PRON sepiasuíma/A ./PUNCT 
 # Ela é barata.
 
-Maã/IND+INT+N+V taá/CQ aikwé/EXST se/PRON2 mena/N supé/ADP ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V taá/CQ aikwé/EXST se/PRON2 mena/N supé/ADP ?/PUNCT 
 # Que há para o meu marido?
 
-Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V taá/CQ indé/PRON reputari/V ne/PRON2 mena/N supé/ADP ?/PUNCT 
 # Que você quer para seu marido?
 
-Se/PRON2 mena/N upurakí/V kurí/FUT garapá/N upé/ADP ./PUNCT 
+Se/PRON2 mena/N upurakí/V kurí/FUT garapá/N upé/ADP+N ./PUNCT 
 # Meu marido vai trabalhar no porto.
 
-Aé/PRON uputari/V yepé/ART+CARD+FRUST+SCONJ xirura/N pisasú/A ./PUNCT 
+Aé/DEMSN+PRON uputari/V yepé/ART+CARD+FRUST+SCONJ xirura/N pisasú/A ./PUNCT 
 # Ele quer uma calça nova.
 
-I/PRON2 xirura-itá/N suruka/A ./PUNCT 
+I/PRON2 xirura-itá/N suruka/A+V ./PUNCT 
 # As calças dele estão rasgadas.
 
-Kwá/ADVD+DEMX+V puranga/A+ADV ./PUNCT 
+Kwá/ADVDX+DEMX+V puranga/A+ADVA ./PUNCT 
 # Esta é bonita.
 
-Muíri/IND+INT rupí/ADP taá/CQ kwá/ADVD+DEMX+V xirura/N ?/PUNCT 
+Muíri/INDQ+INT+TOT rupí/ADP taá/CQ kwá/ADVDX+DEMX+V xirura/N ?/PUNCT 
 # Por quanto é esta calça?
 
 Mukũi/CARD+INDQ real/??? ./PUNCT 
 # Dois reais.
 
-Muíri/IND+INT rupí/ADP nhaã/DEMS ?/PUNCT 
+Muíri/INDQ+INT+TOT rupí/ADP nhaã/DEMS ?/PUNCT 
 # Por quanto é aquela?
 
-Nhaã/DEMS xirura/N mukũi/CARD+INDQ real/??? yuíri/ADV+CCONJ+V ./PUNCT 
+Nhaã/DEMS xirura/N mukũi/CARD+INDQ real/??? yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Aquela calça é dois reais também.
 
 Aputari/V nhaã/DEMS ./PUNCT 
 # Quero aquela.
 
-Xukúi/V xirura/N ./PUNCT 
+Xukúi/PRSV xirura/N ./PUNCT 
 # Aqui está a calça.
 
 Nti/NEG reputari/V ne maã/IND indé/PRON arama/ADP+FUT+SCONJ ?/PUNCT 
@@ -90,26 +90,26 @@ Nti/NEG reputari/V ne maã/IND indé/PRON arama/ADP+FUT+SCONJ ?/PUNCT
 Umbaá/NEG ./PUNCT 
 # Não.
 
-Ariré/ADV kurí/FUT apiripana/V maã-itá/N ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
+Ariré/ADVT kurí/FUT apiripana/V maã-itá/N+REL ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Depois comprarei coisas para mim.
 
-Xukúi/V sekuyara/N ./PUNCT 
+Xukúi/PRSV sekuyara/N ./PUNCT 
 # Aqui está o dinheiro.
 
 Maria/PROPN usepimeẽ/??? ./PUNCT 
 # Maria paga.
 
-Meẽsara/N upupeka/V panhẽ/TOT maã-itá/N ./PUNCT 
+Meẽsara/N upupeka/V panhẽ/TOT maã-itá/N+REL ./PUNCT 
 # O vendedor embrulha todas as coisas.
 
-Xukúi/V sekuyaramirĩ/N ./PUNCT 
+Xukúi/PRSV sekuyaramirĩ/N ./PUNCT 
 # Aqui está o troco.
 
 Maria/PROPN umukwekatú/V :/PUNCT 
 # Maria agradece:
 
-Kwekatú/A reté/A+ADVS !/PUNCT 
+Kwekatú/A+N reté/A+ADVS+N !/PUNCT 
 # Muito obrigada!
 
-Ariré/ADV ,/PUNCT aé/PRON usú/V amú/IND piripanasawa/N ruka/N kití/ADP ./PUNCT 
+Ariré/ADVT ,/PUNCT aé/DEMSN+PRON usú/V amú/IND piripanasawa/N ruka/N kití/ADP ./PUNCT 
 # Depois, ela vai a uma outra loja.

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Maã/IND+INT+N+V i/PRON2 katú/A2+ADV yambué-kwáu/??? ./PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V i/PRON2 katú/A+A2+ADVS+FOC yambué-kwáu/??? ./PUNCT 
 # O que é bom devemos ensinar.
 
 Nti/NEG ukiri-kwáu/??? ./PUNCT 
@@ -21,16 +21,16 @@ Nti/NEG ukiri-kwáu/??? ./PUNCT
 Resarú-kwáu/??? ./PUNCT 
 # Podes esperar.
 
-Nti/NEG yambeú-kwáu/??? maã/IND+INT+N+V i/PRON2 xupé/ADP ./PUNCT 
+Nti/NEG yambeú-kwáu/??? maã/COND+IND+INT+N+REL+RELF+V i/PRON2 xupé/ADP ./PUNCT 
 # Não podemos contar nada a ele.
 
 Aintá/PRON+PRON2 usenũi/V ramé/ADP+SCONJ ixé/PRON ,/PUNCT ixé/PRON asú/V aintá/PRON+PRON2 murasí/N kití/ADP ./PUNCT 
 # Se eles me convidam, eu vou ao baile deles.
 
-Mira/N ramé/ADP+SCONJ maã/IND+INT+N+V indé/PRON ,/PUNCT indé/PRON nti maã/IND rexari/V ixé/PRON amanũ/??? ,/PUNCT indé/PRON resú-kwáu/??? maã/IND+INT+N+V reyuka/V meyú/N ixé/PRON ambaú/V arama/ADP+FUT+SCONJ ./PUNCT 
+Mira/N ramé/ADP+SCONJ maã/COND+IND+INT+N+REL+RELF+V indé/PRON ,/PUNCT indé/PRON nti maã/IND+NEG rexari/V ixé/PRON amanũ/??? ,/PUNCT indé/PRON resú-kwáu/??? maã/COND+IND+INT+N+REL+RELF+V reyuka/V meyú/N ixé/PRON ambaú/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Se você fosse gente, você não me deixaria morrer, você poderia ir arranjar beiju para eu comer.
 
-Penhẽ/PRON kirimbawa/A+N ramé/ADP+SCONJ maã/IND+INT+N+V ,/PUNCT pesú/V maã/IND+INT+N+V i/PRON2 irũmu/ADP+SCONJ ./PUNCT 
+Penhẽ/PRON kirimbawa/A+ADVA+N ramé/ADP+SCONJ maã/COND+IND+INT+N+REL+RELF+V ,/PUNCT pesú/V maã/COND+IND+INT+N+REL+RELF+V i/PRON2 irũmu/ADP+SCONJ ./PUNCT 
 # Se vocês fossem valentes, iriam com ele.
 
 Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT arikú/V ramé/ADP+SCONJ yepé/ART+CARD+FRUST+SCONJ se/PRON2 pepú/N awewé/V arama/ADP+FUT+SCONJ ./PUNCT 
@@ -48,7 +48,7 @@ Aintá/PRON+PRON2 uyumaãwera/V ./PUNCT
 Aintá/PRON+PRON2 umundawera/V igara/N ./PUNCT 
 # Eles são acostumados a roubar canoa.
 
-Akwera/ADV yawewera/ADP+ADV aé/PRON ./PUNCT 
+Akwera/ADVT yawewera/ADP+ADVA+IND aé/DEMSN+PRON ./PUNCT 
 # Há muito tempo ele é acostumado assim.
 
 Maria/PROPN umeẽ/V kawĩrana/N aintá/PRON+PRON2 supé/ADP nti/NEG arã/ADP+FUT+SCONJ aintá/PRON+PRON2 ukaú/V ./PUNCT 
@@ -57,5 +57,5 @@ Maria/PROPN umeẽ/V kawĩrana/N aintá/PRON+PRON2 supé/ADP nti/NEG arã/ADP+FU
 Indé/PRON nheengarisararana/N ./PUNCT 
 # Você é um mau cantor.
 
-Kwá/ADVD+DEMX+V ií/N sakurana/A ./PUNCT 
+Kwá/ADVDX+DEMX+V ií/N sakurana/A ./PUNCT 
 # Esta água está está morna.

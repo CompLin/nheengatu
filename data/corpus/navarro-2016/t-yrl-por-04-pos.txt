@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,22 +12,22 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel
 # Last update: May 15, 2022
 
-Maria/PROPN uwatá/V São/PROPN Gabriel/PROPN rupí/ADP ./PUNCT 
-# Maria caminha por São Gabriel.
+Maria/PROPN uwatá/V São/PROPN Gabriel/PROPN rupí/ADP 
+# Maria caminha por São Gabriel
 
 Maria/PROPN uwatá/V ara/N pukusawa/ADP+SCONJ tawa/N rapé-itá/N rupí/ADP ./PUNCT 
 # Maria anda durante o dia pelas ruas da cidade.
 
-São/PROPN Gabriel/PROPN mairí/N turusú/A+ADVS+INDQ uikú/V waá/REL Paranãwasú/N rembiwa/N upé/ADP ./PUNCT 
+São/PROPN Gabriel/PROPN mairí/N turusú/A+ADVS+INDQ uikú/V waá/REL Paranãwasú/N rembiwa/N upé/ADP+N ./PUNCT 
 # São Gabriel é uma cidade que está nas margens do rio Negro.
 
-I/PRON2 garapá/N upé/ADP aikwé/EXST siía/INDQ igara/N turusú/A+ADVS+INDQ usemu/V waá/REL tendawa-itá/N kití/ADP uikú/V waá/REL paranã/N rembiwa/N upé/ADP ./PUNCT 
+I/PRON2 garapá/N upé/ADP+N aikwé/EXST siía/INDQ igara/N turusú/A+ADVS+INDQ usemu/V waá/REL tendawa-itá/N kití/ADP uikú/V waá/REL paranã/N rembiwa/N upé/ADP+N ./PUNCT 
 # No porto dela há muitas canoas grandes que saem para as comunidades que estão nas margens do rio.
 
-Siía/INDQ mira/N upurungitá/V nheengatú/N ape/ADVD+ADVJ ./PUNCT 
+Siía/INDQ mira/N upurungitá/V nheengatú/N ape/ADVDI+ADVJ+ADVT ./PUNCT 
 # Muitas pessoas falam nheengatu ali.
 
-Aikwé/EXST mira-itá/N upurungitá/V waá/REL amú/IND nheenga-itá/N São/PROPN Gabriel/PROPN upé/ADP :/PUNCT 
+Aikwé/EXST mira-itá/N upurungitá/V waá/REL amú/IND nheenga-itá/N São/PROPN Gabriel/PROPN upé/ADP+N :/PUNCT 
 # Há pessoas que falam outras línguas em São Gabriel:
 
 Baniwa/N ,/PUNCT Tukano/N ,/PUNCT Desana/N ,/PUNCT Yanomami/N ./PUNCT 
@@ -39,17 +39,17 @@ Nhaã/DEMS tawa/N ruakí/ADP aikwé/EXST siía/INDQ tendawa/N mira-itá/N irũmu
 Maria/PROPN uwatá/V ana/PFV retana/ADVS ./PUNCT 
 # Maria andou muito.
 
-Aé/PRON uwapika/V ,/PUNCT asuí/ADV+CCONJ umbaú/V pirá/N uí/N irũmu/ADP+SCONJ nhaãsé/ADVJ aé/PRON i/PRON2 yumasí/A2+N ./PUNCT 
+Aé/DEMSN+PRON uwapika/V ,/PUNCT asuí/ADVC+ADVT+CCONJ umbaú/V pirá/N uí/N irũmu/ADP+SCONJ nhaãsé/ADVJ+SCONJR aé/DEMSN+PRON i/PRON2 yumasí/A2+N ./PUNCT 
 # Ela senta-se e come peixe com farinha porque ela está faminta.
 
-Aé/PRON urasú/V pirá/N suka/N suí/ADP sukwera/N waá/REL membeka/A+N+V2 ./PUNCT 
+Aé/DEMSN+PRON urasú/V pirá/N suka/N+V suí/ADP sukwera/N waá/REL membeka/A+N+V2 ./PUNCT 
 # Ela leva peixe da sua casa, cuja carne é mole.
 
-Maria/PROPN umbaú/V pirá/N i/PRON2 pú/N irũmu/ADP+SCONJ ,/PUNCT ma/CCONJ uú/V ií/N i/PRON2 kuya/N irũmu/ADP+SCONJ ./PUNCT 
+Maria/PROPN umbaú/V pirá/N i/PRON2 pú/N irũmu/ADP+SCONJ ,/PUNCT ma/ADVJ+CCONJ uú/V ií/N i/PRON2 kuya/N irũmu/ADP+SCONJ ./PUNCT 
 # Maria come o peixe com suas mãos, mas bebe água com sua cuia.
 
-Asuí/ADV+CCONJ aé/PRON usú/V uyuruari/V i/PRON2 igara/N mirá/N suiwara/ADP upé/ADP ./PUNCT 
+Asuí/ADVC+ADVT+CCONJ aé/DEMSN+PRON usú/V uyuruari/V i/PRON2 igara/N mirá/N suiwara/ADP upé/ADP+N ./PUNCT 
 # Depois, ela vai embarcar em sua canoa de madeira.
 
-Aé/PRON usú/V sendawa/N kití/ADP ,/PUNCT sera/N waá/REL São/PROPN Miguel/PROPN ./PUNCT 
+Aé/DEMSN+PRON usú/V sendawa/N kití/ADP ,/PUNCT sera/N waá/REL São/PROPN Miguel/PROPN ./PUNCT 
 # Ela vai para sua comunidade, cujo nome é São Miguel.

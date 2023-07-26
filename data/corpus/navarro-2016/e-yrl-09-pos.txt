@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,37 +12,37 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre — Reviewer: Leonel Figueiredo de Alencar
 # Last update: June 5, 2022
 
-Ape/ADVD+ADVJ té/ADV usasá/V sumuara/N urubú/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT té/FOC+PREP+SCONJR usasá/V sumuara/N urubú/N ./PUNCT 
 # Nesse momento mesmo passou seu amigo urubu.
 
-Wirandé/ADV tẽ/ADV kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
+Wirandé/ADVT tẽ/FOC+NEGI kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
 # Amanhã mesmo farei minha casa.
 
-Wirandé/ADV tenhẽ/ADV kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
+Wirandé/ADVT tenhẽ/FOC+NEGI kurí/FUT amunhã/V se/PRON2 ruka/N ./PUNCT 
 # Amanhã mesmo farei minha casa.
 
-Ixé/PRON té/ADV amunhã/V ana/PFV timbiú/N ./PUNCT 
+Ixé/PRON té/FOC+PREP+SCONJR amunhã/V ana/PFV timbiú/N ./PUNCT 
 # Eu mesmo fiz a comida.
 
-Yawé/ADP+ADV tẽ/ADV aputari/V ./PUNCT 
+Yawé/ADP+ADVA+IND tẽ/FOC+NEGI aputari/V ./PUNCT 
 # É assim mesmo que eu quero.
 
 Aintá/PRON+PRON2 umupuranga/V tupauku/N ./PUNCT 
 # Enfeitaram a igreja.
 
-Tá/PRON+PRON2 uyuká/V yepé/ART+CARD+FRUST+SCONJ tatú/N paranã/N upé/ADP ./PUNCT 
+Tá/PRON+PRON2 uyuká/V yepé/ART+CARD+FRUST+SCONJ tatú/N paranã/N upé/ADP+N ./PUNCT 
 # Mataram um tatu no rio.
 
 Yepé/ART+CARD+FRUST+SCONJ ara/N ,/PUNCT paá/RPRT ,/PUNCT São/PROPN Pedro/PROPN umunhã/V murasí/N iwaka/N kití/ADP ./PUNCT 
 # Dizem que, um dia, São Pedro fez um baile lá para o céu.
 
-Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP ?/PUNCT 
+Mayé/ADVLA+ADVRA+SCONJR taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP ?/PUNCT 
 # Como vou andar lá para a minha terra?
 
-Mamé/ADVR taá/CQ uikú/V ne/PRON2 retama/N ?/PUNCT Pará/PROPN kití/ADP ./PUNCT 
+Mamé/ADVLC+ADVRC taá/CQ uikú/V ne/PRON2 retama/N ?/PUNCT Pará/PROPN kití/ADP ./PUNCT 
 # Onde está tua terra? Para os lados do Pará.
 
-yasí/N pitera/N kití/ADP 
+yasí/N pitera/N+V kití/ADP 
 # lá para o meio do mês
 
 Iwakape/??? murasí/N surí/A2 ./PUNCT 
@@ -54,10 +54,10 @@ Yepé/ART+CARD+FRUST+SCONJ uwapika/V igara/N gantĩme/??? ,/PUNCT amú/IND uwapi
 Paranãme/??? igara/N upitá/V ana/PFV ./PUNCT 
 # No rio a canoa ficou.
 
-Yautí/N usú/V ararapewa/N kwara/N upé/ADP ./PUNCT 
+Yautí/N usú/V ararapewa/N kwara/N upé/ADP+N ./PUNCT 
 # O jabuti foi dentro do violão.
 
-Usuaxara/V aé/PRON i/PRON2 marika/N pupé/ADP ./PUNCT 
+Usuaxara/V aé/DEMSN+PRON i/PRON2 marika/N pupé/ADP ./PUNCT 
 # Respondeu ele dentro da barriga dela.
 
 Upitá/V uka/N pupé/ADP ./PUNCT 
@@ -66,13 +66,13 @@ Upitá/V uka/N pupé/ADP ./PUNCT
 Pedro/PROPN usemu/V tupauku/N kwara/N suí/ADP ./PUNCT 
 # Pedro saiu de dentro da igreja.
 
-Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT ma/CCONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
+Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT ma/ADVJ+CCONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
 # Era para eu ver aquele baile, mas não tenho minhas asas para voar.
 
-Ixé/PRON apitá/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ iké/ADVD ./PUNCT 
+Ixé/PRON apitá/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ iké/ADVDX ./PUNCT 
 # Era para eu ficar aqui.
 
-Watarampuá/??? ,/PUNCT nhaã/DEMS kurumiwasú/N kirimbawa/A+N piri/ADP+ADVG waá/REL yandé/PRON retamawara/A|N aintá/PRON+PRON2 suí/ADP ,/PUNCT umendari/V arama/ADP+FUT+SCONJ waá/REL yepé/ART+CARD+FRUST+SCONJ xe/PRON2 irũmu/ADP+SCONJ ,/PUNCT nti/NEG rẽ/ADV uyana/V kwá/ADVD+DEMX+V kaxiwera/N ./PUNCT 
+Watarampuá/??? ,/PUNCT nhaã/DEMS kurumiwasú/N kirimbawa/A+ADVA+N piri/ADP+ADVG waá/REL yandé/PRON retamawara/A+N aintá/PRON+PRON2 suí/ADP ,/PUNCT umendari/V arama/ADP+FUT+SCONJ waá/REL yepé/ART+CARD+FRUST+SCONJ xe/PRON2 irũmu/ADP+SCONJ ,/PUNCT nti/NEG rẽ/ADVT uyana/V kwá/ADVDX+DEMX+V kaxiwera/N ./PUNCT 
 # Uatarampuá, aquele moço que é o mais valente dos que são de nossa terra, que era para casar-se comigo, não correu ainda esta cachoeira.
 
 Se/PRON2 kerpi/V2 ./PUNCT 
@@ -87,7 +87,7 @@ I/PRON2 kerpi/V2 ./PUNCT
 Yané/PRON2 kerpi/V2 ./PUNCT 
 # Nós sonhamos.
 
-Pe/PRON2 kerpi/V2 ./PUNCT 
+Pe/CLADP+PRON2 kerpi/V2 ./PUNCT 
 # Vocês sonham.
 
 Aintá/PRON+PRON2 kerpi/V2 ./PUNCT 
@@ -99,13 +99,13 @@ Ixé/PRON se/PRON2 akanhemu/V+V2 ./PUNCT
 Indé/PRON ne/PRON2 akanhemu/V+V2 ./PUNCT 
 # Você se assusta.
 
-Aé/PRON i/PRON2 akanhemu/V+V2 ./PUNCT 
+Aé/DEMSN+PRON i/PRON2 akanhemu/V+V2 ./PUNCT 
 # Ele se assusta.
 
 Yandé/PRON yané/PRON2 akanhemu/V+V2 ./PUNCT 
 # Nós nos assustamos.
 
-Penhẽ/PRON pe/PRON2 akanhemu/V+V2 ./PUNCT 
+Penhẽ/PRON pe/CLADP+PRON2 akanhemu/V+V2 ./PUNCT 
 # Vocês se assustam.
 
 Aintá/PRON+PRON2 tá/PRON+PRON2 akanhemu/V+V2 ./PUNCT 
@@ -117,13 +117,13 @@ Ixé/PRON se/PRON2 resarái/V2 ./PUNCT
 Indé/PRON ne/PRON2 resarái/V2 ./PUNCT 
 # Você se esquece.
 
-Aé/PRON sesarái/V2 ./PUNCT 
+Aé/DEMSN+PRON sesarái/V2 ./PUNCT 
 # Ele se esquece.
 
 Yandé/PRON yané/PRON2 resarái/V2 ./PUNCT 
 # Nós nos esquecemos.
 
-Penhẽ/PRON pe/PRON2 resarái/V2 ./PUNCT 
+Penhẽ/PRON pe/CLADP+PRON2 resarái/V2 ./PUNCT 
 # Vocês se esquecem.
 
 Aintá/PRON+PRON2 tá/PRON+PRON2 resarái/V2 ./PUNCT 

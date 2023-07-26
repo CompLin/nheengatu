@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,13 +12,13 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Yepé/ART+CARD+FRUST+SCONJ ara/N Tupana/PROPN usú/V uwatá/V ,/PUNCT uxari/V tatá/N uka/N ukara/N kití/ADP ./PUNCT 
+Yepé/ART+CARD+FRUST+SCONJ ara/N Tupana/N usú/V uwatá/V ,/PUNCT uxari/V tatá/N uka/N ukara/N kití/ADP ./PUNCT 
 # Um dia Tupã foi andar e deixou o fogo para fora de casa.
 
 Ukara/N suí/ADP ana/PFV ,/PUNCT paá/RPRT ,/PUNCT uri/V yepé/ART+CARD+FRUST+SCONJ uíwa/N ./PUNCT 
 # Contam que, de fora, veio uma flecha.
 
-Aé/PRON usú/V uwari/V ukara/N kití/ADP ./PUNCT 
+Aé/DEMSN+PRON usú/V uwari/V ukara/N kití/ADP ./PUNCT 
 # Ele foi cair fora.
 
 Pedro/PROPN utuká/V ukena/N ./PUNCT 
@@ -30,7 +30,7 @@ Pedro/PROPN utuká-tuká/??? ukena/N ./PUNCT
 Pedro/PROPN ukupí-kupiri/??? i/PRON2 iwí/N ./PUNCT 
 # Pedro roça muitas vezes sua terra.
 
-Reyeré-yeréu/??? igara/N upé/ADP ./PUNCT 
+Reyeré-yeréu/??? igara/N upé/ADP+N ./PUNCT 
 # Você vira muitas vezes na canoa.
 
 Taína/N upuẽ-puẽ/??? pirá-itá/N ./PUNCT 
@@ -48,10 +48,10 @@ Kunhã/A+N i/PRON2 pukú-pukú/??? ./PUNCT
 Ne/PRON2 ranha-itá/N purã-puranga/??? ./PUNCT 
 # Teus dentes são muito bonitos.
 
-Apigawa/A+N puxí/A+ADV ukaú-kaú/??? ,/PUNCT paá/RPRT ./PUNCT 
+Apigawa/A+N puxí/A+ADVA ukaú-kaú/??? ,/PUNCT paá/RPRT ./PUNCT 
 # Contam que o homem mau ficou muito bêbado.
 
-Nhaã/DEMS pituna/N suí/ADP ,/PUNCT paá/RPRT ,/PUNCT yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ kunhãmukú-itá/N usasá/V akití/ADVD ./PUNCT 
+Nhaã/DEMS pituna/N suí/ADP ,/PUNCT paá/RPRT ,/PUNCT yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ kunhãmukú-itá/N usasá/V akití/ADVDI ./PUNCT 
 # Contam que, desde aquela noite, as moças, uma a uma, passaram para lá.
 
 Taria-itá/N uyuká/V yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ i/PRON2 maramunhangara-itá/N ./PUNCT 
@@ -60,37 +60,37 @@ Taria-itá/N uyuká/V yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ i/PR
 Maria/PROPN ,/PUNCT Pedro/PROPN ,/PUNCT Antônio/PROPN aintá/PRON+PRON2 usemu/V uwatá-watá/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Maria, Pedro, Antônio saem para passear.
 
-Kunhã-itá/N tá/PRON+PRON2 usemu/V tá/PRON+PRON2 uikú/V kaá/N suí/ADP kuíri/ADV ./PUNCT 
+Kunhã-itá/N tá/PRON+PRON2 usemu/V tá/PRON+PRON2 uikú/V kaá/N+V suí/ADP kuíri/ADVT ./PUNCT 
 # As mulheres estão saindo da mata agora.
 
-Ne/PRON2 maã/IND+INT+N+V aintá/PRON+PRON2 urikú/V aintá/PRON+PRON2 umbaú/V arã/ADP+FUT+SCONJ ./PUNCT 
+Ne/PRON2 maã/COND+IND+INT+N+REL+RELF+V aintá/PRON+PRON2 urikú/V aintá/PRON+PRON2 umbaú/V arã/ADP+FUT+SCONJ ./PUNCT 
 # Nada eles têm para eles comerem.
 
-Upukwari/??? aintá/PRON+PRON2 yepé/ART+CARD+FRUST+SCONJ amú-itá/IND resé/ADP+SCONJ ./PUNCT 
+Upukwari/V aintá/PRON+PRON2 yepé/ART+CARD+FRUST+SCONJ amú-itá/IND resé/ADP+SCONJ ./PUNCT 
 # Amarraram-nos uns nos outros.
 
-Kunhãmukú-itá/N yepé/ART+CARD+FRUST+SCONJ aintá/PRON+PRON2 suí/ADP usú/V uikú/V uyumana/V aé/PRON ,/PUNCT amú-itá/IND upurungitá/V puranga/A+ADV ./PUNCT 
+Kunhãmukú-itá/N yepé/ART+CARD+FRUST+SCONJ aintá/PRON+PRON2 suí/ADP usú/V uikú/V uyumana/V aé/DEMSN+PRON ,/PUNCT amú-itá/IND upurungitá/V puranga/A+ADVA ./PUNCT 
 # As moças, algumas delas estavam indo abraçá-lo, outras falavam bonito.
 
-Awá/IND+INT usendú/V aintá/PRON+PRON2 upurungitá/V uruyari/V katú/A2+ADV Piriripi/PROPN uikú/V ana/PFV aintá/PRON+PRON2 pú/N resé/ADP+SCONJ ./PUNCT 
+Awá/IND+INT+RELF usendú/V aintá/PRON+PRON2 upurungitá/V uruyari/V katú/A+A2+ADVS+FOC Piriripi/PROPN uikú/V ana/PFV aintá/PRON+PRON2 pú/N resé/ADP+SCONJ ./PUNCT 
 # Quem as ouvia falar acreditava bem que Piriripi estava nas mãos deles.
 
-Ixé/PRON nti/NEG kirimbawa/A+N amaramunhã/V arama/ADP+FUT+SCONJ awá/IND+INT irũmu/ADP+SCONJ ./PUNCT 
+Ixé/PRON nti/NEG kirimbawa/A+ADVA+N amaramunhã/V arama/ADP+FUT+SCONJ awá/IND+INT+RELF irũmu/ADP+SCONJ ./PUNCT 
 # Eu não sou valente para brigar com ninguém.
 
-Mayawé/SCONJ kuíri/ADV pekwáu/V ana/PFV maã/IND+INT+N+V kurí/FUT pemunhã/V ,/PUNCT asú/V ana/PFV ./PUNCT 
+Mayawé/SCONJR kuíri/ADVT pekwáu/V ana/PFV maã/COND+IND+INT+N+REL+RELF+V kurí/FUT pemunhã/V ,/PUNCT asú/V ana/PFV ./PUNCT 
 # Como agora vocês já sabem o que farão, eu já vou.
 
-Nti/NEG ukwáu/V maã/IND+INT+N+V unheẽ/V ./PUNCT 
+Nti/NEG ukwáu/V maã/COND+IND+INT+N+REL+RELF+V unheẽ/V ./PUNCT 
 # Não sabe o que diz.
 
-Nti/NEG yambeú-kwáu/??? maã/IND+INT+N+V i/PRON2 xupé/ADP ./PUNCT 
+Nti/NEG yambeú-kwáu/??? maã/COND+IND+INT+N+REL+RELF+V i/PRON2 xupé/ADP ./PUNCT 
 # Não podemos contar nada a ele.
 
 Manungara/IND amaã/V waá/REL asú/V ambeú/V penhẽ/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Algo que vi vou contar para vocês.
 
-Upisí-pisika/??? aintá/PRON+PRON2 pira/N awá/IND+INT usikari/V maãnungara/IND yawé/ADP+ADV ./PUNCT 
+Upisí-pisika/??? aintá/PRON+PRON2 pira/N awá/IND+INT+RELF usikari/V maãnungara/IND yawé/ADP+ADVA+IND ./PUNCT 
 # Ficava apalpando seus corpos como quem procura algo.
 
 Se/PRON2 paya/N nti/NEG kurí/FUT unheẽ/V maãnungara/IND ./PUNCT 
@@ -99,13 +99,13 @@ Se/PRON2 paya/N nti/NEG kurí/FUT unheẽ/V maãnungara/IND ./PUNCT
 Nti/NEG asaisú/V ne maã/IND i/PRON2 suí/ADP ./PUNCT 
 # Não sovino nada dele.
 
-Nti/NEG yambeú-kwáu/??? maã/IND+INT+N+V i/PRON2 xupé/ADP ./PUNCT 
+Nti/NEG yambeú-kwáu/??? maã/COND+IND+INT+N+REL+RELF+V i/PRON2 xupé/ADP ./PUNCT 
 # Não podemos contar-lhe nada.
 
-Mayawé/SCONJ nti yepé/IND apigawa/A+N usaisú/V nhaã/DEMS kunhãmukú/A+N ,/PUNCT aé/PRON nti/NEG upurasí/V ./PUNCT 
+Mayawé/SCONJR nti yepé/IND apigawa/A+N usaisú/V nhaã/DEMS kunhãmukú/A+N ,/PUNCT aé/DEMSN+PRON nti/NEG upurasí/V ./PUNCT 
 # Como nenhum homem amava aquela moça, ela não dançou.
 
-Kurí/FUT mirĩ/A+ADV xinga/ADVS+INDQ ,/PUNCT nti awá/IND ukwáu/V masuí/ADVL+ADVR uyukwáu/V mira/N ./PUNCT 
+Kurí/FUT mirĩ/A+ADVS+N xinga/ADVS+INDQ ,/PUNCT nti awá/IND ukwáu/V masuí/ADVLC+ADVNC+ADVRC uyukwáu/V mira/N ./PUNCT 
 # Um pouquinho depois, ninguém sabe donde apareceu gente.
 
 Upanhẽ/TOT urikú/V aintá/PRON+PRON2 piá/N surí/A2 ./PUNCT 
@@ -114,16 +114,16 @@ Upanhẽ/TOT urikú/V aintá/PRON+PRON2 piá/N surí/A2 ./PUNCT
 Panhẽ/TOT kunhã/A+N usú/V ana/PFV ./PUNCT 
 # Todas as mulheres foram.
 
-Suá/N i/PRON2 kiá/A2 pawa/PART+TOT+V ./PUNCT 
+Suá/N i/PRON2 kiá/A2 pawa/TOTAL+V ./PUNCT 
 # A cara dele está toda suja.
 
-Ambaú/V pá/IND pirá/N ./PUNCT 
+Ambaú/V pá/TOTAL+V pirá/N ./PUNCT 
 # Comi todo o peixe.
 
-Ambaú/V pá/IND ./PUNCT 
+Ambaú/V pá/TOTAL+V ./PUNCT 
 # Comi tudo.
 
-I/PRON2 kiá/A2 pá/IND upitá/V ./PUNCT 
+I/PRON2 kiá/A2 pá/TOTAL+V upitá/V ./PUNCT 
 # Ele ficou todo sujo.
 
 Yepé/ART+CARD+FRUST+SCONJ ara/N makú/N usú/V i/PRON2 irũmu/ADP+SCONJ umbaú/V ira/N kaapura/A+N ./PUNCT 
@@ -132,5 +132,5 @@ Yepé/ART+CARD+FRUST+SCONJ ara/N makú/N usú/V i/PRON2 irũmu/ADP+SCONJ umbaú/
 Ixé/PRON iwakapura/A+N mira/N !/PUNCT 
 # Eu sou pessoa celestial!
 
-Ukiri/V mukũi/CARD+INDQ ara/N pura/A ./PUNCT 
+Ukiri/V mukũi/CARD+INDQ ara/N pura/A+N ./PUNCT 
 # Dormiu dois dias inteiros.

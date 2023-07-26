@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:21 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,10 +18,10 @@ Akayú/N pisasú/A usika/V ./PUNCT
 Akayú/N pisasú/A usika/V uikú/V ./PUNCT 
 # O ano novo está chegando.
 
-São/PROPN Gabriel/PROPN upé/ADP mira-itá/N uyumuatiri/V usarú/V arama/ADP+FUT+SCONJ pisayé/N ./PUNCT 
+São/PROPN Gabriel/PROPN upé/ADP+N mira-itá/N uyumuatiri/V usarú/V arama/ADP+FUT+SCONJ pisayé/N ./PUNCT 
 # Em São Gabriel as pessoas se ajuntam para esperar a meia-noite.
 
-Maria/PROPN usenũi/V ana/PFV mira-itá/N upinaitikawera/V sendawa/N ruakí/ADP uri/V arama/ADP+FUT+SCONJ suka/N kití/ADP ./PUNCT 
+Maria/PROPN usenũi/V ana/PFV mira-itá/N upinaitikawera/V sendawa/N ruakí/ADP uri/V arama/ADP+FUT+SCONJ suka/N+V kití/ADP ./PUNCT 
 # Maria convidou pessoas que costumam pescar perto de sua comunidade para virem a sua casa.
 
 Uri/V apigawa-itá/N unheengariwera/V umusurí/V arama/ADP+FUT+SCONJ murasí/N ./PUNCT 
@@ -33,7 +33,7 @@ Pituna/N sakurana/A ./PUNCT
 Panhẽ/TOT mira/N usú/V ukara/N kití/ADP ./PUNCT 
 # Todas as pessoas vão para fora.
 
-Kuíri/ADV supí/CERT+N aintá/PRON+PRON2 uyumusurí-kwáu/V ./PUNCT 
+Kuíri/ADVT supí/CERT+N+V2 aintá/PRON+PRON2 uyumusurí-kwáu/V ./PUNCT 
 # Agora de fato eles podem se divertir.
 
 Maria/PROPN usenũi/V aintá/PRON+PRON2 :/PUNCT 
@@ -63,41 +63,41 @@ Repituú/V renheengari/V !/PUNCT
 Maria/PROPN unheẽ/V :/PUNCT 
 # Maria diz:
 
-Rute/PROPN ,/PUNCT indé/PRON renheengari/V ramé/ADP+SCONJ maã/IND+INT+N+V ,/PUNCT panhē/??? mira/N upitá/V maã/IND+INT+N+V surí/A2 ./PUNCT 
+Rute/PROPN ,/PUNCT indé/PRON renheengari/V ramé/ADP+SCONJ maã/COND+IND+INT+N+REL+RELF+V ,/PUNCT panhē/??? mira/N upitá/V maã/COND+IND+INT+N+REL+RELF+V surí/A2 ./PUNCT 
 # Rute, se você cantasse, toda a gente ficaria feliz.
 
 Panhẽ/TOT mira/N umbaú/V meyú/N ./PUNCT 
 # Todas as pessoas comem beiju.
 
-Yepé/ART+CARD+FRUST+SCONJ apigawa/A+N kawera/N usika/V murasí/N upé/ADP ./PUNCT 
+Yepé/ART+CARD+FRUST+SCONJ apigawa/A+N kawera/N usika/V murasí/N upé/ADP+N ./PUNCT 
 # Um homem bêbado chega à festa.
 
-Maria/PROPN uyakáu/V aé/PRON :/PUNCT 
+Maria/PROPN uyakáu/V aé/DEMSN+PRON :/PUNCT 
 # Maria o repreende:
 
-Remaã/V mamentu/ADV reikú/V !/PUNCT 
+Remaã/V mamentu/ADVC reikú/V !/PUNCT 
 # Veja só onde você está!
 
 Indé/PRON nti/NEG rerikú/V tĩsawa/N ?/PUNCT 
 # Você não tem vergonha?
 
-Reikuntu/V mimi/ADV !/PUNCT 
+Reikuntu/V mimi/ADVDI !/PUNCT 
 # Fique quieto ali!
 
-Resú/V mimi/ADV kití/ADP !/PUNCT 
+Resú/V mimi/ADVDI kití/ADP !/PUNCT 
 # Vá para lá!
 
-Nhaã/DEMS kawera/N uyana/V tenhuntu/ADV usikari/V arama/ADP+FUT+SCONJ i/PRON2 igara/N :/PUNCT 
+Nhaã/DEMS kawera/N uyana/V tenhuntu/ADVA usikari/V arama/ADP+FUT+SCONJ i/PRON2 igara/N :/PUNCT 
 # Aquele bêbado correu em vão procurando sua canoa:
 
-aé/PRON nti/NEG ana/PFV uwasemu/V ./PUNCT 
+aé/DEMSN+PRON nti/NEG ana/PFV uwasemu/V ./PUNCT 
 # ele já não a encontrou.
 
 Maria/PROPN unheẽ/V :/PUNCT 
 # Maria diz:
 
-Kawera-itá/N yawé/ADP+ADV tẽ/ADV ./PUNCT 
+Kawera-itá/N yawé/ADP+ADVA+IND tẽ/FOC+NEGI ./PUNCT 
 # Bêbados são assim mesmo.
 
-Ne/PRON2 mairamé/ADVR+SCONJ aintá/PRON+PRON2 rurí/A2 ./PUNCT 
+Ne/PRON2 mairamé/ADVLT+ADVNT+ADVRT+SCONJR aintá/PRON+PRON2 rurí/A2 ./PUNCT 
 # Nunca são felizes.

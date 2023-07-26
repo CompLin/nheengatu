@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,7 +18,7 @@ Kunhã/A+N uyumaã/V waruá/N resé/ADP+SCONJ ./PUNCT
 Kunhã/A+N ,/PUNCT apigawa/A+N uyumaã/V ./PUNCT 
 # A mulher e o homem se veem.
 
-Maã/IND+INT+N+V taá/CQ ne/PRON2 rera/N ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V taá/CQ ne/PRON2 rera/N ?/PUNCT 
 # Qual é seu nome?
 
 Ixé/PRON ayuseruka/V Pedro/PROPN ./PUNCT 
@@ -36,10 +36,10 @@ Mukũi/CARD+INDQ apigawa/A+N uyuyuká/V ./PUNCT
 Kunhã-itá/N uyumuapatuka/V ./PUNCT 
 # As mulheres se atrapalham.
 
-Mamé/ADVR taá/CQ puranga/A+ADV uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
+Mamé/ADVLC+ADVRC taá/CQ puranga/A+ADVA uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
 # Onde é bom para se fazer nossa casa?
 
-Mamé/ADVR taá/CQ puranga/A+ADV uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
+Mamé/ADVLC+ADVRC taá/CQ puranga/A+ADVA uyumunhã/V arã/ADP+FUT+SCONJ yané/PRON2 ruka/N ?/PUNCT 
 # Onde é bom de ser feita nossa casa?
 
 Usika/V ,/PUNCT paá/RPRT ,/PUNCT umaã/V uyukupiri/V wã/PFV ne/PRON2 iwí/N ./PUNCT 
@@ -48,7 +48,7 @@ Usika/V ,/PUNCT paá/RPRT ,/PUNCT umaã/V uyukupiri/V wã/PFV ne/PRON2 iwí/N ./
 Usika/V ,/PUNCT paá/RPRT ,/PUNCT umaã/V uyukupiri/V wã/PFV ne/PRON2 iwí/N ./PUNCT 
 # Dizem que chegou e viu que fora roçada tua terra.
 
-Mira/N puxí/A+ADV uyumundú/V apekatú/A+ADV kití/ADP ./PUNCT 
+Mira/N puxí/A+ADVA uyumundú/V apekatú/A+ADVC kití/ADP ./PUNCT 
 # Gente ruim é mandada para longe.
 
 Pedro/PROPN uyatikú/V kamixá/N mirá/N resé/ADP+SCONJ ./PUNCT 
@@ -66,13 +66,13 @@ Maria/PROPN upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP+SCONJ ./PUNCT
 Pedro/PROPN ,/PUNCT paá/RPRT ,/PUNCT sera/N ./PUNCT 
 # Dizem que o nome dele era Pedro.
 
-Upitá/V ,/PUNCT paá/RPRT ,/PUNCT suka/N upé/ADP ./PUNCT 
+Upitá/V ,/PUNCT paá/RPRT ,/PUNCT suka/N+V upé/ADP+N ./PUNCT 
 # Contam que ficou na sua casa.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT usika/V sesé/ADP wirawasú/N ./PUNCT 
 # Então, dizem que chegou a ele o gavião.
 
-Aramé/ADV té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+FRUST+SCONJ wiramirĩ/N ./PUNCT 
+Aramé/ADVJ+ADVT té/FOC+PREP+SCONJR ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+FRUST+SCONJ wiramirĩ/N ./PUNCT 
 # Nesse momento mesmo, dizem que passava um passarinho.
 
 Reyana/V taína-itá/N rakakwera/ADP+N ./PUNCT 
@@ -81,17 +81,17 @@ Reyana/V taína-itá/N rakakwera/ADP+N ./PUNCT
 Indé/PRON reyuri/V ana/PFV sakakwera/ADP+N ./PUNCT 
 # Tu vieste atrás dele.
 
-Aé/PRON uikú/V se/PRON2 ruka/N kupé/N upé/ADP ./PUNCT 
+Aé/DEMSN+PRON uikú/V se/PRON2 ruka/N kupé/N upé/ADP+N ./PUNCT 
 # Ele está atrás de minha casa.
 
 Yawara/N usika/V yané/PRON2 kupé/N rupí/ADP ./PUNCT 
 # O cão chega por trás de nós.
 
-Uwapika/V riré/ADP ,/PUNCT umaã/V i/PRON2 manha/N resé/ADP+SCONJ ./PUNCT 
+Uwapika/V riré/ADP+SCONJ ,/PUNCT umaã/V i/PRON2 manha/N resé/ADP+SCONJ ./PUNCT 
 # Depois que se sentou, olhou em sua mãe.
 
-Ukiri/V renundé/ADP ,/PUNCT aé/PRON uú/V xibé/N ./PUNCT 
+Ukiri/V renundé/ADP+N+SCONJ ,/PUNCT aé/DEMSN+PRON uú/V xibé/N ./PUNCT 
 # Antes de dormir, ele bebe chibé.
 
-Aé/PRON upurungitá/V pukusawa/ADP+SCONJ ,/PUNCT ixé/PRON apurakí/V ./PUNCT 
+Aé/DEMSN+PRON upurungitá/V pukusawa/ADP+SCONJ ,/PUNCT ixé/PRON apurakí/V ./PUNCT 
 # Enquanto ele fala, eu trabalho.

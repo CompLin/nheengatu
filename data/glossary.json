@@ -1,17 +1,5 @@
 [
     {
-        "lemma": "aape",
-        "pos": "adv. dem. dist.",
-        "gloss": "var. ape",
-        "var": 1
-    },
-    {
-        "lemma": "aape",
-        "pos": "adv. conj.",
-        "gloss": "var. ape",
-        "var": 2
-    },
-    {
         "lemma": "wakarí",
         "pos": "s.",
         "gloss": "tipo de macaco ou de peixe"
@@ -221,21 +209,15 @@
     {
         "lemma": "aíwa",
         "pos": "adj.",
-        "gloss": "ruimti"
+        "gloss": "ruim",
+        "var": 2
     },
     {
-        "lemma": "ipí",
-        "pos": "s.",
-        "gloss": "fundo da água"
-    },
-    {
-        "lemma": "tipí",
-        "pos": "s.",
-        "gloss": "fundo",
-        "rel": [
-            "ripí",
-            "tipí"
-        ]
+        "lemma": "aíwa",
+        "pos": "adj. 2ª cl.",
+        "gloss": "ruim",
+        "var": 1,
+        "pron2": "se"
     },
     {
         "lemma": "sukuriyú",
@@ -432,6 +414,11 @@
         "gloss": "só, somente"
     },
     {
+        "lemma": "anhunté",
+        "pos": "adv.",
+        "gloss": "var. anhuntẽ"
+    },
+    {
         "lemma": "apara",
         "pos": "adj. 2ª cl.",
         "gloss": "1. torto; 2. camboto, de pernas tortas",
@@ -449,6 +436,96 @@
         "var": 1
     },
     {
+        "lemma": "ape",
+        "pos": "adv. conj.",
+        "gloss": "então, aí",
+        "var": 2
+    },
+    {
+        "lemma": "ape",
+        "pos": "adv. temp.",
+        "gloss": "depois",
+        "var": 3
+    },
+    {
+        "lemma": "aape",
+        "pos": "adv. dem. dist.",
+        "gloss": "var. ape 1",
+        "var": 1
+    },
+    {
+        "lemma": "aape",
+        "pos": "adv. conj.",
+        "gloss": "var. ape 2",
+        "var": 2
+    },
+    {
+        "lemma": "aape",
+        "pos": "adv. temp.",
+        "gloss": "var. ape 3",
+        "var": 3
+    },
+    {
+        "lemma": "mupú",
+        "pos": "v.",
+        "gloss": "expulsar, enxotar"
+    },
+    {
+        "lemma": "mpú",
+        "pos": "v.",
+        "gloss": "var. mupú"
+    },
+    {
+        "lemma": "umpú",
+        "pos": "v.",
+        "gloss": "var. mupú"
+    },
+    {
+        "lemma": "mumbaka",
+        "pos": "v.",
+        "gloss": "fazer despertar"
+    },
+    {
+        "lemma": "mbaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "mpaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "mumaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "mupaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "umbaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "umpaka",
+        "pos": "v.",
+        "gloss": "var. mumbaka"
+    },
+    {
+        "lemma": "panakú",
+        "pos": "s.",
+        "gloss": "tipo de cesto"
+    },
+    {
+        "lemma": "pumanasara",
+        "pos": "s.",
+        "gloss": "fiador"
+    },
+    {
         "lemma": "wará",
         "pos": "s.",
         "gloss": "tipo de ave ou de árvore"
@@ -457,6 +534,16 @@
         "lemma": "karã",
         "pos": "s.",
         "gloss": "tipo de ave"
+    },
+    {
+        "lemma": "yusikindawa",
+        "pos": "v.",
+        "gloss": "fechar-se; estar fechado"
+    },
+    {
+        "lemma": "yusikindá",
+        "pos": "v.",
+        "gloss": "var. yusikindawa"
     },
     {
         "lemma": "karáu",
@@ -472,12 +559,6 @@
         "lemma": "rusika",
         "pos": "v.",
         "gloss": "1. trazer; 2. atingir"
-    },
-    {
-        "lemma": "ape",
-        "pos": "adv. conj.",
-        "gloss": "então, aí",
-        "var": 2
     },
     {
         "lemma": "apekatú",
@@ -659,6 +740,16 @@
         "gloss": "tipo de sapo"
     },
     {
+        "lemma": "kururú",
+        "pos": "s.",
+        "gloss": "sapo"
+    },
+    {
+        "lemma": "pirayawara",
+        "pos": "s.",
+        "gloss": "boto"
+    },
+    {
         "lemma": "asuí",
         "pos": "adv. temp.",
         "gloss": "depois",
@@ -671,12 +762,33 @@
         "var": 2
     },
     {
+        "lemma": "asuí",
+        "pos": "adv. loc.",
+        "gloss": "daí",
+        "var": 3
+    },
+    {
+        "lemma": "axií",
+        "pos": "adv. temp. / adv. loc. / cconj.",
+        "gloss": "var.asuí"
+    },
+    {
+        "lemma": "pirasema",
+        "pos": "s.",
+        "gloss": "piracema"
+    },
+    {
+        "lemma": "pirasemu",
+        "pos": "s.",
+        "gloss": "var. pirasema"
+    },
+    {
         "lemma": "-asú",
         "pos": "suf.",
         "gloss": "expressa o aumentativo: -ão, -ona, grande"
     },
     {
-        "lemma": "atiwa",
+        "lemma": "tatiwa",
         "pos": "s.",
         "gloss": "sogro",
         "rel": [
@@ -695,6 +807,26 @@
         "pos": "adj. 2ª cl.",
         "gloss": "perigoso",
         "pron2": "se"
+    },
+    {
+        "lemma": "maku",
+        "pos": "s. / adj.",
+        "gloss": "marrom"
+    },
+    {
+        "lemma": "serana",
+        "pos": "adv. man.",
+        "gloss": "levemente"
+    },
+    {
+        "lemma": "yuxari",
+        "pos": "v.",
+        "gloss": "desanimar"
+    },
+    {
+        "lemma": "pena",
+        "pos": "v.",
+        "gloss": "quebrar-se"
     },
     {
         "lemma": "awá",
@@ -1218,7 +1350,7 @@
     },
     {
         "lemma": "kwayentu",
-        "pos": "adv.",
+        "pos": "adv. man.",
         "gloss": "1) só assim; 2) perto; 3) quase"
     },
     {
@@ -1387,6 +1519,11 @@
         "gloss": "bem"
     },
     {
+        "lemma": "katú",
+        "pos": "part. foco",
+        "gloss": "até"
+    },
+    {
         "lemma": "katusawa",
         "pos": "s.",
         "gloss": "bondade"
@@ -1396,6 +1533,16 @@
         "pos": "adj. 2ª cl.",
         "gloss": "bom",
         "pron2": "se"
+    },
+    {
+        "lemma": "katú",
+        "pos": "adj.",
+        "gloss": "bom"
+    },
+    {
+        "lemma": "yumendari",
+        "pos": "v.",
+        "gloss": "casar-se"
     },
     {
         "lemma": "kaú",
@@ -1842,6 +1989,16 @@
         "var": 2
     },
     {
+        "lemma": "ké",
+        "pos": "adv. dem. prox.",
+        "gloss": "aqui"
+    },
+    {
+        "lemma": "kí",
+        "pos": "adv. dem. prox.",
+        "gloss": "var. ké"
+    },
+    {
         "lemma": "kwaá",
         "pos": "pron. dem. prox. / adv. dem.",
         "gloss": "var. kwá"
@@ -1999,7 +2156,7 @@
     },
     {
         "lemma": "maã",
-        "pos": "pron. indef. / pron. relativo",
+        "pos": "pron. indef. / pron. relativo / pron. rel. livre",
         "gloss": "1. aquilo que, o que; 2. (na neg.) nada",
         "var": 2
     },
@@ -2100,6 +2257,12 @@
         "pos": "adv. ind. temp.",
         "gloss": "nunca",
         "var": 3
+    },
+    {
+        "lemma": "mairamé",
+        "pos": "adv. rel. temp.",
+        "gloss": "quando (o momento que)",
+        "var": 4
     },
     {
         "lemma": "mairí",
@@ -2276,7 +2439,7 @@
     },
     {
         "lemma": "mamentu",
-        "pos": "adv.",
+        "pos": "adv. loc.",
         "gloss": "1. só onde, onde apenas, só aonde; 2. em qualquer lugar; em toda parte"
     },
     {
@@ -2563,7 +2726,7 @@
     },
     {
         "lemma": "mayesá",
-        "pos": "s. /adv. interr.",
+        "pos": "s. / adv. interr. man.",
         "gloss": "var. mayesawa"
     },
     {
@@ -2574,7 +2737,7 @@
     },
     {
         "lemma": "mayesawa",
-        "pos": "adv. interr.",
+        "pos": "adv. interr. man.",
         "gloss": "o que significa; por que",
         "var": 2
     },
@@ -2801,7 +2964,7 @@
     },
     {
         "lemma": "mirĩ",
-        "pos": "adv.",
+        "pos": "adv. intens.",
         "gloss": "pouco; um pouco"
     },
     {
@@ -3345,6 +3508,11 @@
         "gloss": "var. kurũ"
     },
     {
+        "lemma": "kurumú",
+        "pos": "adv. conj.",
+        "gloss": "pode ser que"
+    },
+    {
         "lemma": "piawasú",
         "pos": "adj.",
         "gloss": "corajoso"
@@ -3353,6 +3521,172 @@
         "lemma": "yawaité",
         "pos": "adj.",
         "gloss": "perigoso"
+    },
+    {
+        "lemma": "iwasú",
+        "pos": "adj.",
+        "gloss": "difícil"
+    },
+    {
+        "lemma": "iwasú",
+        "pos": "adv. man.",
+        "gloss": "dificilmente"
+    },
+    {
+        "lemma": "muyutikú",
+        "pos": "v.",
+        "gloss": "derreter"
+    },
+    {
+        "lemma": "sikindawa",
+        "pos": "v.",
+        "gloss": "fechar"
+    },
+    {
+        "lemma": "kurutẽiwara",
+        "pos": "adj.",
+        "gloss": "veloz",
+        "var": 1
+    },
+    {
+        "lemma": "kurutẽiwara",
+        "pos": "adv. man.",
+        "gloss": "rapidamente",
+        "var": 2
+    },
+    {
+        "lemma": "kuritẽiwara",
+        "pos": "adj. / adv. man.",
+        "gloss": "var. kurutẽiwara"
+    },
+    {
+        "lemma": "sãi",
+        "pos": "v.",
+        "gloss": "estar espalhado"
+    },
+    {
+        "lemma": "ipeka",
+        "pos": "s.",
+        "gloss": "pato"
+    },
+    {
+        "lemma": "urusakanga",
+        "pos": "s.",
+        "gloss": "tipo de cesto"
+    },
+    {
+        "lemma": "purakasara",
+        "pos": "s.",
+        "gloss": "pescador"
+    },
+    {
+        "lemma": "pirakasara",
+        "pos": "s.",
+        "gloss": "var. purakasara"
+    },
+    {
+        "lemma": "yasitatawasú",
+        "pos": "s.",
+        "gloss": "estrela-d'alva"
+    },
+    {
+        "lemma": "mbuí",
+        "pos": "v.",
+        "gloss": "rachar, fender, partir, rasgar; dividir"
+    },
+    {
+        "lemma": "muí",
+        "pos": "v.",
+        "gloss": "var. mbuí"
+    },
+    {
+        "lemma": "muĩ",
+        "pos": "v.",
+        "gloss": "var. mbuí"
+    },
+    {
+        "lemma": "inimbú",
+        "pos": "s.",
+        "gloss": "fio"
+    },
+    {
+        "lemma": "inimú",
+        "pos": "s.",
+        "gloss": "var. inimbú"
+    },
+    {
+        "lemma": "kuyubí",
+        "pos": "s.",
+        "gloss": "tipo de ave"
+    },
+    {
+        "lemma": "mutinga",
+        "pos": "v.",
+        "gloss": "embranquecer"
+    },
+    {
+        "lemma": "tawatinga",
+        "pos": "s.",
+        "gloss": "tipo de argila"
+    },
+    {
+        "lemma": "mupiranga",
+        "pos": "v.",
+        "gloss": "avermelhar"
+    },
+    {
+        "lemma": "mpiranga",
+        "pos": "v.",
+        "gloss": "var. mupiranga"
+    },
+    {
+        "lemma": "umpiranga",
+        "pos": "v.",
+        "gloss": "var. mupiranga"
+    },
+    {
+        "lemma": "urukú",
+        "pos": "s.",
+        "gloss": "urucum"
+    },
+    {
+        "lemma": "teté",
+        "pos": "s.",
+        "gloss": "corpo",
+        "rel": [
+            "reté",
+            "seté"
+        ]
+    },
+    {
+        "lemma": "rusakã",
+        "pos": "s.",
+        "gloss": "var. urusakanga"
+    },
+    {
+        "lemma": "urasukanga",
+        "pos": "s.",
+        "gloss": "var. urusakanga"
+    },
+    {
+        "lemma": "urusakã",
+        "pos": "s.",
+        "gloss": "var. urusakanga"
+    },
+    {
+        "lemma": "sikináu",
+        "pos": "v.",
+        "gloss": "var. sikindawa"
+    },
+    {
+        "lemma": "sikindá",
+        "pos": "v.",
+        "gloss": "var. sikindawa"
+    },
+    {
+        "lemma": "sikindáu",
+        "pos": "v.",
+        "gloss": "var. sikindawa"
     },
     {
         "lemma": "musasá",
@@ -3464,6 +3798,11 @@
         "gloss": "alegrar"
     },
     {
+        "lemma": "mururí",
+        "pos": "v.",
+        "gloss": "var. de musurí"
+    },
+    {
         "lemma": "mutatatinga",
         "pos": "v.",
         "gloss": "fumaçar, esfumaçar, defumar"
@@ -3494,12 +3833,6 @@
         "gloss": "afundar, aprofundar"
     },
     {
-        "lemma": "tipí",
-        "pos": "v. 3ª cl.",
-        "gloss": "(ser ou estar) fundo",
-        "var": 2
-    },
-    {
         "lemma": "sasí",
         "pos": "v. 3ª cl.",
         "gloss": "1. doer; 2. (ser ou estar) triste; 3. ser venenoso"
@@ -3511,9 +3844,36 @@
     },
     {
         "lemma": "tipí",
-        "pos": "s. / adv. loc.",
+        "pos": "adv. loc.",
         "gloss": "fundo",
         "var": 1
+    },
+    {
+        "lemma": "tipí",
+        "pos": "v. 3ª cl.",
+        "gloss": "(ser ou estar) fundo",
+        "var": 2
+    },
+    {
+        "lemma": "tipí",
+        "pos": "s.",
+        "gloss": "fundo",
+        "var": 3,
+        "rel": [
+            "ripí",
+            "tipí"
+        ]
+    },
+    {
+        "lemma": "tipí",
+        "pos": "s.",
+        "gloss": "fundo da água",
+        "var": 4
+    },
+    {
+        "lemma": "kukúi",
+        "pos": "v.",
+        "gloss": "cair"
     },
     {
         "lemma": "muserana",
@@ -3728,7 +4088,7 @@
     },
     {
         "lemma": "nuká",
-        "pos": "adv. conj.",
+        "pos": "adv. conj. opos.",
         "gloss": "no entanto"
     },
     {
@@ -3772,11 +4132,6 @@
         "lemma": "papera",
         "pos": "s.",
         "gloss": "1. papel; 2. carta"
-    },
-    {
-        "lemma": "pá",
-        "pos": "pron. indef.",
-        "gloss": "todo(a), tudo, todos(as)"
     },
     {
         "lemma": "paranãpura",
@@ -3827,8 +4182,8 @@
     },
     {
         "lemma": "pawa",
-        "pos": "pron. quant. univ. / part. tot.",
-        "gloss": "todo (a), totalmente, tudo",
+        "pos": "part. tot.",
+        "gloss": "todo (a)(s), totalmente, tudo",
         "var": 1
     },
     {
@@ -3836,6 +4191,21 @@
         "pos": "v.",
         "gloss": "acabar",
         "var": 2
+    },
+    {
+        "lemma": "pá",
+        "pos": "part. tot./ v.",
+        "gloss": "var. pawa"
+    },
+    {
+        "lemma": "pau",
+        "pos": "part. tot. / v.",
+        "gloss": "var. pawa"
+    },
+    {
+        "lemma": "kaá",
+        "pos": "v.",
+        "gloss": "defecar"
     },
     {
         "lemma": "-pawa",
@@ -4519,6 +4889,51 @@
         "gloss": "muito bonito"
     },
     {
+        "lemma": "sirirí",
+        "pos": "s.",
+        "gloss": "bolha"
+    },
+    {
+        "lemma": "taperiwá",
+        "pos": "s.",
+        "gloss": "cajá"
+    },
+    {
+        "lemma": "sirirí",
+        "pos": "v.",
+        "gloss": "borbulhar"
+    },
+    {
+        "lemma": "rirí",
+        "pos": "v.",
+        "gloss": "tremer"
+    },
+    {
+        "lemma": "mundí",
+        "pos": "v.",
+        "gloss": "impressionar, alvoroçar"
+    },
+    {
+        "lemma": "mawaku",
+        "pos": "s.",
+        "gloss": "tipo de flauta"
+    },
+    {
+        "lemma": "turí",
+        "pos": "s.",
+        "gloss": "1. tipo de árvore; 2. facho feito a partir da madeira dessa árvore"
+    },
+    {
+        "lemma": "xirirí",
+        "pos": "v. / s.",
+        "gloss": "var. sirirí"
+    },
+    {
+        "lemma": "yusuaxara",
+        "pos": "v.",
+        "gloss": "discutir"
+    },
+    {
         "lemma": "purará",
         "pos": "v.",
         "gloss": "sofrer, padecer (de)"
@@ -4546,7 +4961,7 @@
     },
     {
         "lemma": "puru",
-        "pos": "adv.",
+        "pos": "adv. intens.",
         "gloss": "apenas, completamente"
     },
     {
@@ -4840,6 +5255,35 @@
         "gloss": "ainda"
     },
     {
+        "lemma": "raĩ",
+        "pos": "adv. temp.",
+        "gloss": "var. rẽ"
+    },
+    {
+        "lemma": "tuba",
+        "pos": "s.",
+        "gloss": "pai",
+        "rel": [
+            "ruba",
+            "tuba"
+        ]
+    },
+    {
+        "lemma": "piamu",
+        "pos": "v.",
+        "gloss": "buscar"
+    },
+    {
+        "lemma": "piama",
+        "pos": "v.",
+        "gloss": "var. piamu"
+    },
+    {
+        "lemma": "piame",
+        "pos": "v.",
+        "gloss": "var. piamu"
+    },
+    {
         "lemma": "renundé",
         "pos": "posp.",
         "gloss": "1. adiante de, à frente de; 2. antes de; 3. diante de",
@@ -4978,7 +5422,7 @@
     },
     {
         "lemma": "pitupituna",
-        "pos": "adv.",
+        "pos": "adv. temp.",
         "gloss": "de madrugada"
     },
     {
@@ -5019,6 +5463,11 @@
         "lemma": "riré",
         "pos": "sconj.",
         "gloss": "depois que"
+    },
+    {
+        "lemma": "rirí",
+        "pos": "posp. / sconj.",
+        "gloss": "var. riré"
     },
     {
         "lemma": "ruakí",
@@ -5074,6 +5523,11 @@
         "gloss": "derrubar"
     },
     {
+        "lemma": "aziawara",
+        "pos": "n.",
+        "gloss": "asiático"
+    },
+    {
         "lemma": "yukasawa",
         "pos": "s.",
         "gloss": "assassinato"
@@ -5127,11 +5581,11 @@
         "gloss": "ponta"
     },
     {
-        "lemma": "saintí",
+        "lemma": "raintí",
         "pos": "v. 2ª cl.",
         "gloss": "(ser) pontudo",
         "rel": [
-            "raintí"
+            "saintí"
         ],
         "pron2": "se"
     },
@@ -5192,7 +5646,7 @@
     },
     {
         "lemma": "sakú",
-        "pos": "adv.",
+        "pos": "adv. man.",
         "gloss": "com calor, calorosamente"
     },
     {
@@ -5755,6 +6209,11 @@
         "gloss": "1. de (indicando origem ou causa); 2. desde"
     },
     {
+        "lemma": "xií",
+        "pos": "posp.",
+        "gloss": "var. suí"
+    },
+    {
         "lemma": "suiwara",
         "pos": "posp.",
         "gloss": "de, o que é de; 2. (feito) de, o que é feito de; 3. desde"
@@ -5790,6 +6249,16 @@
             "rumuara",
             "sumuara"
         ]
+    },
+    {
+        "lemma": "irumuára",
+        "pos": "s.",
+        "gloss": "companheiro"
+    },
+    {
+        "lemma": "yakumaíwa",
+        "pos": "s.",
+        "gloss": "piloto"
     },
     {
         "lemma": "sundewara",
@@ -5847,6 +6316,21 @@
         "lemma": "supí",
         "pos": "s.",
         "gloss": "verdade, realidade, fato"
+    },
+    {
+        "lemma": "supí",
+        "pos": "v. 2ª cl.",
+        "gloss": "ser fiel"
+    },
+    {
+        "lemma": "yatiri",
+        "pos": "adj.",
+        "gloss": "trepado"
+    },
+    {
+        "lemma": "yatiri",
+        "pos": "v.",
+        "gloss": "amontoar-se; reunir-se,"
     },
     {
         "lemma": "supitá",
@@ -5951,6 +6435,16 @@
         "lemma": "taité",
         "pos": "interj. / adj. / s.",
         "gloss": "var. teité"
+    },
+    {
+        "lemma": "teté",
+        "pos": "interj. / adj. / s.",
+        "gloss": "var. teité"
+    },
+    {
+        "lemma": "muwéu",
+        "pos": "v.",
+        "gloss": "apagar"
     },
     {
         "lemma": "taití",
@@ -6087,15 +6581,6 @@
         "gloss": "fumaça"
     },
     {
-        "lemma": "tatiwa",
-        "pos": "s.",
-        "gloss": "sogro",
-        "rel": [
-            "ratiwa",
-            "satiwa"
-        ]
-    },
-    {
         "lemma": "tatú",
         "pos": "s.",
         "gloss": "tatu"
@@ -6139,7 +6624,14 @@
     {
         "lemma": "tenhẽ",
         "pos": "part. foco",
-        "gloss": "var. tẽ 1"
+        "gloss": "var. tẽ 1",
+        "var": 1
+    },
+    {
+        "lemma": "tenhẽ",
+        "pos": "part. neg. imp.",
+        "gloss": "var. te",
+        "var": 2
     },
     {
         "lemma": "té",
@@ -6370,6 +6862,20 @@
         "var": 3
     },
     {
+        "lemma": "teapú",
+        "pos": "s.",
+        "gloss": "barulho",
+        "rel": [
+            "reapú",
+            "seapú"
+        ]
+    },
+    {
+        "lemma": "tukura",
+        "pos": "s.",
+        "gloss": "gafanhoto"
+    },
+    {
         "lemma": "tipawa",
         "pos": "v. / v. 3ª cl.",
         "gloss": "estar seco; secar"
@@ -6429,7 +6935,34 @@
         "gloss": "comida",
         "rel": [
             "rimbiú",
-            "ximbiú"
+            "simbiú/ximbiú"
+        ]
+    },
+    {
+        "lemma": "tembiú",
+        "pos": "s.",
+        "gloss": "var. timbiú",
+        "rel": [
+            "rembiú",
+            "sembiú/xembiú"
+        ]
+    },
+    {
+        "lemma": "temiú",
+        "pos": "s.",
+        "gloss": "var. timbiú",
+        "rel": [
+            "remiú",
+            "semiú/xemiú"
+        ]
+    },
+    {
+        "lemma": "timiú",
+        "pos": "s.",
+        "gloss": "var. timbiú",
+        "rel": [
+            "rimiú",
+            "ximiú"
         ]
     },
     {
@@ -6535,12 +7068,12 @@
         ]
     },
     {
-        "lemma": "tuí",
+        "lemma": "ruí",
         "pos": "v. 2ª cl.",
         "gloss": "sangrar",
         "var": 2,
         "rel": [
-            "ruí"
+            "tuí"
         ],
         "pron2": "se"
     },
@@ -6581,6 +7114,25 @@
         "lemma": "tukanu",
         "pos": "s.",
         "gloss": "var. tukano"
+    },
+    {
+        "lemma": "wayoro",
+        "pos": "s.",
+        "gloss": "trincheira"
+    },
+    {
+        "lemma": "ipisarinõ",
+        "pos": "s.",
+        "gloss": "casa de armas"
+    },
+    {
+        "lemma": "taíka",
+        "pos": "s.",
+        "gloss": "nervo; tendão; veia",
+        "rel": [
+            "raíka",
+            "saíka"
+        ]
     },
     {
         "lemma": "tuká",
@@ -6992,6 +7544,11 @@
         "gloss": "rato"
     },
     {
+        "lemma": "suapeteka",
+        "pos": "v.",
+        "gloss": "esmurrar na cara"
+    },
+    {
         "lemma": "weena",
         "pos": "v.",
         "gloss": "vomitar",
@@ -7089,6 +7646,11 @@
         "lemma": "wírupi",
         "pos": "posp.",
         "gloss": "sob, debaixo de"
+    },
+    {
+        "lemma": "sanhana",
+        "pos": "v.",
+        "gloss": "juntar"
     },
     {
         "lemma": "witá",
@@ -7192,6 +7754,11 @@
         "lemma": "xukúi",
         "pos": "part. pres.",
         "gloss": "aqui está, eis, olhe aqui"
+    },
+    {
+        "lemma": "kusukúi",
+        "pos": "part. pres.",
+        "gloss": "var. de xukúi"
     },
     {
         "lemma": "xupé",
@@ -7513,7 +8080,7 @@
     },
     {
         "lemma": "yeperesé",
-        "pos": "adv.",
+        "pos": "adv. temp.",
         "gloss": "imediatamente"
     },
     {
@@ -7538,15 +8105,41 @@
     },
     {
         "lemma": "yuíri",
-        "pos": "adv.",
-        "gloss": "1. também; 2. de novo, novamente",
+        "pos": "adv. temp.",
+        "gloss": "de novo, novamente",
         "var": 1
+    },
+    {
+        "lemma": "yuíri",
+        "pos": "adv.",
+        "gloss": "também",
+        "var": 3
+    },
+    {
+        "lemma": "miasúa",
+        "pos": "s.",
+        "gloss": "vassalo"
     },
     {
         "lemma": "yuíri",
         "pos": "cconj.",
         "gloss": "e",
         "var": 2
+    },
+    {
+        "lemma": "yukwakú",
+        "pos": "v.",
+        "gloss": "jejuar"
+    },
+    {
+        "lemma": "maluka",
+        "pos": "s.",
+        "gloss": "maloca"
+    },
+    {
+        "lemma": "maruka",
+        "pos": "s.",
+        "gloss": "var. maluka"
     },
     {
         "lemma": "yuíri",
@@ -7871,6 +8464,11 @@
         "gloss": "soltar"
     },
     {
+        "lemma": "pipura",
+        "pos": "s.",
+        "gloss": "pegada, rastro"
+    },
+    {
         "lemma": "yuri",
         "pos": "v.",
         "gloss": "vir (verbo irregular, 3ª pess.: uri)"
@@ -7882,8 +8480,13 @@
     },
     {
         "lemma": "Yuruparí",
+        "pos": "s. próprio",
+        "gloss": "1) Jurupari, nome de entidade sobrenatural que vive na floresta; 2) Diabo"
+    },
+    {
+        "lemma": "yuruparí",
         "pos": "s.",
-        "gloss": "Jurupari, nome de entidade sobrenatural que vive na floresta"
+        "gloss": "1) diabo; indivíduo perverso; 2) pessoa esperta ou travessa"
     },
     {
         "lemma": "yurupixuna",

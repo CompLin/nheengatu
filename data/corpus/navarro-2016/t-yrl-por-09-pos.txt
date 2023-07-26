@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:21 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel - Reviewer: Leonel Figueiredo de Alencar
 # Last update: June 3, 2022
 
-Murasí/N iwaka/N upé/ADP 
+Murasí/N iwaka/N upé/ADP+N 
 # Baile no céu
 
 Amú/IND pituna/N ramé/ADP+SCONJ ,/PUNCT Maria/PROPN umbeú/V ana/PFV amú/IND marandua/N i/PRON2 mimbira/N supé/ADP :/PUNCT 
@@ -21,40 +21,40 @@ Amú/IND pituna/N ramé/ADP+SCONJ ,/PUNCT Maria/PROPN umbeú/V ana/PFV amú/IND 
 “/PUNCT Yepé/ART+CARD+FRUST+SCONJ ara/N ,/PUNCT paá/RPRT ,/PUNCT São/PROPN Pedro/PROPN umunhã/V yepé/ART+CARD+FRUST+SCONJ murasí/N iwaka/N kití/ADP ./PUNCT 
 # “Dizem que, um dia, São Pedro fez um baile lá para os lados do céu.
 
-Ape/ADVD+ADVJ ,/PUNCT usenũi/V panhẽsuú/??? usú/V arã/ADP+FUT+SCONJ umaã/V murasí/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT usenũi/V panhẽsuú/??? usú/V arã/ADP+FUT+SCONJ umaã/V murasí/N ./PUNCT 
 # Então chamou todos os animais para irem ver o baile.
 
-Ape/ADVD+ADVJ yautí/N ,/PUNCT paá/RPRT ,/PUNCT unheẽ/V :/PUNCT 
+Ape/ADVDI+ADVJ+ADVT yautí/N ,/PUNCT paá/RPRT ,/PUNCT unheẽ/V :/PUNCT 
 # Contam que, então, o jabuti disse:
 
-—/PUNCT Ti/NEG mayé/ADV+ADVR+SCONJ asú/V akití/ADVD ./PUNCT 
+—/PUNCT Ti/NEG mayé/ADVLA+ADVRA+SCONJR asú/V akití/ADVDI ./PUNCT 
 # — Não há como eu ir para lá.
 
-Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT ma/CCONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
+Ixé/PRON amaã/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS murasí/N ,/PUNCT ma/ADVJ+CCONJ nti/NEG arikú/V se/PRON2 pepú/N awewé/V arã/ADP+FUT+SCONJ ./PUNCT 
 # Era para eu ver aquele baile, mas não tenho (minhas) asas para voar.
 
-Ape/ADVD+ADVJ té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V sumuara/N urubú/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT té/FOC+PREP+SCONJR ,/PUNCT paá/RPRT ,/PUNCT usasá/V sumuara/N urubú/N ./PUNCT 
 # Contam que, nesse momento mesmo, passou o seu amigo urubu.
 
 —/PUNCT Eh/INTJ compadre/??? !/PUNCT unheẽ/V ,/PUNCT paá/RPRT ,/PUNCT indé/PRON nti/NEG será/PQ rerasú/V ixé/PRON iwaka/N kití/ADP amaã/V arã/ADP+FUT+SCONJ murasí/N ?/PUNCT 
 # Contam que disse: — Eh compadre, você não me leva para o céu para ver o baile?
 
-—/PUNCT Ah/INTJ !/PUNCT ,/PUNCT paá/RPRT ,/PUNCT unheẽ/V ,/PUNCT anhũresú/??? kwá/ADVD+DEMX+V ararapewa/N kwara/N upé/ADP ./PUNCT 
+—/PUNCT Ah/INTJ !/PUNCT ,/PUNCT paá/RPRT ,/PUNCT unheẽ/V ,/PUNCT anhũresú/??? kwá/ADVDX+DEMX+V ararapewa/N kwara/N upé/ADP+N ./PUNCT 
 # Contam que disse: — Ah! só vai (se for) dentro deste violão.
 
-—/PUNCT Eré/ADV !/PUNCT 
+—/PUNCT Eré/CONS !/PUNCT 
 # — Certo!
 
-Ape/ADVD+ADVJ yautí/N uyuruari/V ararapewa/N kwara/N upé/ADP ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT yautí/N uyuruari/V ararapewa/N kwara/N upé/ADP+N ./PUNCT 
 # Então o jabuti embarcou dentro do violão.
 
 Usú/V ana/PFV ./PUNCT 
 # Foram.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT urubú/N uwewé/V i/PRON2 irũmu/ADP+SCONJ ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT urubú/N uwewé/V i/PRON2 irũmu/ADP+SCONJ ./PUNCT 
 # Contam que, então, o urubu voou com ele.
 
-Usú/V té/ADV iwaka/N kití/ADP ./PUNCT 
+Usú/V té/FOC+PREP+SCONJR iwaka/N kití/ADP ./PUNCT 
 # Foram até o céu.
 
 Iwaka-pe/??? murasí/N surí/A2 ./PUNCT 
@@ -66,31 +66,31 @@ Pisayé/N ramé/ADP+SCONJ upawa/V ana/PFV murasí/N ./PUNCT
 Panhẽsuú/??? usú/V ana/PFV iwí/N kití/ADP ,/PUNCT aintá/PRON+PRON2 uyuíri/V panhẽ/TOT ,/PUNCT aintá/PRON+PRON2 uwiyé/V panhẽ/TOT ./PUNCT 
 # Todos os animais foram para a terra, eles voltaram todos, eles desceram todos.
 
-Ma/CCONJ yautí/N nti/NEG urikú/V i/PRON2 pepú/N uwewé/V arama/ADP+FUT+SCONJ ./PUNCT 
+Ma/ADVJ+CCONJ yautí/N nti/NEG urikú/V i/PRON2 pepú/N uwewé/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Mas o jabuti não tinha (suas) asas para voar.
 
 Aintá/PRON+PRON2 resarái/V2 i/PRON2 suí/ADP ./PUNCT 
 # Esqueceram-se dele.
 
-Upitá/V ape/ADVD+ADVJ ./PUNCT 
+Upitá/V ape/ADVDI+ADVJ+ADVT ./PUNCT 
 # Ficou ali.
 
-Ape/ADVD+ADVJ i/PRON2 kwema/N+V2 ara/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT i/PRON2 kwema/N+V2 ara/N ./PUNCT 
 # Então amanheceu o dia.
 
-Uyeréu/V ,/PUNCT umaã/V iwí/N kití/ADP masuí/ADVL+ADVR uri/V iwaté/A+N kití/ADP ./PUNCT 
+Uyeréu/V ,/PUNCT umaã/V iwí/N kití/ADP masuí/ADVLC+ADVNC+ADVRC uri/V iwaté/A+ADVC+N kití/ADP ./PUNCT 
 # Virou, olhou para a terra donde veio para cima.
 
-Aé/PRON nti/NEG rẽ/ADV ukwáu/V mayé/ADV+ADVR+SCONJ umunhã/V uyuíri/V arama/ADP+FUT+SCONJ ./PUNCT 
+Aé/DEMSN+PRON nti/NEG rẽ/ADVT ukwáu/V mayé/ADVLA+ADVRA+SCONJR umunhã/V uyuíri/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Ele ainda não sabia como fazer para voltar.
 
-Uyeréu/V ,/PUNCT uwari/V asuí/ADV+CCONJ ,/PUNCT poh/INTJ !/PUNCT 
+Uyeréu/V ,/PUNCT uwari/V asuí/ADVC+ADVT+CCONJ ,/PUNCT poh/INTJ !/PUNCT 
 # Virou, caiu dali, poh!
 
-Iwí/N kití/ADP uwari/V ,/PUNCT poh/INTJ !/PUNCT Iwí/N kití/ADP ,/PUNCT kwá/ADVD+DEMX+V kití/ADP ,/PUNCT makití/ADVL+ADVR yaikú/V ./PUNCT 
+Iwí/N kití/ADP uwari/V ,/PUNCT poh/INTJ !/PUNCT Iwí/N kití/ADP ,/PUNCT kwá/ADVDX+DEMX+V kití/ADP ,/PUNCT makití/ADVLC+ADVNC+ADVRC yaikú/V ./PUNCT 
 # Caiu para a terra, poh! Para a terra, para cá, para onde estamos.
 
-Ape/ADVD+ADVJ yautí/N kwera/A+PRET upupuka/V pá/IND ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT yautí/N kwera/A+PRET upupuka/V pá/TOTAL+V ./PUNCT 
 # Então o jabuti (que “já era”) rebentou todo.
 
 Yawerã/ADVJ ,/PUNCT paá/RPRT ,/PUNCT perewa/N rangawa/N nhuntu/ADV nhaã/DEMS i/PRON2 pirera/N ./PUNCT ”/PUNCT 

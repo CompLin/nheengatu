@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -15,68 +15,68 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 Maria/PROPN uwasemu/V yepé/ART+CARD+FRUST+SCONJ sumuara-kunhã/N ./PUNCT 
 # Maria encontra uma amiga.
 
-Garapá/N upé/ADP Maria/PROPN uwasemu/V ana/PFV yepé/ART+CARD+FRUST+SCONJ sumuara-kunhã/N umurari/V waá/REL tawa/N upé/ADP ./PUNCT 
+Garapá/N upé/ADP+N Maria/PROPN uwasemu/V ana/PFV yepé/ART+CARD+FRUST+SCONJ sumuara-kunhã/N umurari/V waá/REL tawa/N upé/ADP+N ./PUNCT 
 # No porto, Maria encontrou uma amiga que mora na cidade.
 
-Aé/PRON surí/A2 upitá/V ,/PUNCT asuí/ADV+CCONJ unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
+Aé/DEMSN+PRON surí/A2 upitá/V ,/PUNCT asuí/ADVC+ADVT+CCONJ unheẽ/V i/PRON2 xupé/ADP :/PUNCT 
 # Ela ficou feliz e disse-lhe:
 
-Puranga/A+ADV karuka/N ,/PUNCT Catarina/PROPN !/PUNCT 
+Puranga/A+ADVA karuka/N ,/PUNCT Catarina/PROPN !/PUNCT 
 # Boa tarde, Catarina!
 
-Puranga/A+ADV karuka/N ,/PUNCT Maria/PROPN !/PUNCT 
+Puranga/A+ADVA karuka/N ,/PUNCT Maria/PROPN !/PUNCT 
 # Boa tarde, Maria!
 
-Indé/PRON muíri/IND+INT akayú/N taá/CQ remurari/V iké/ADVD kwá/ADVD+DEMX+V tawa/N upé/ADP ?/PUNCT 
+Indé/PRON muíri/INDQ+INT+TOT akayú/N taá/CQ remurari/V iké/ADVDX kwá/ADVDX+DEMX+V tawa/N upé/ADP+N ?/PUNCT 
 # Você há quantos anos mora aqui nesta cidade?
 
 Aikwé/EXST mukũi/CARD+INDQ akayú/N ana/PFV ayuri/V se/PRON2 retama/N suí/ADP ./PUNCT 
 # Já há dois anos, vim da minha terra.
 
-Ixé/PRON ayupukwáu/V ana/PFV iké/ADVD ./PUNCT 
+Ixé/PRON ayupukwáu/V ana/PFV iké/ADVDX ./PUNCT 
 # Eu me acostumei aqui.
 
 Ixé/PRON nti/NEG amandwari/V ayuíri/V se/PRON2 anama-itá/N ruka/N kití/ADP ./PUNCT 
 # Eu não penso em voltar para a casa dos meus familiares.
 
-Akwáu/V katú/A2+ADV ixé/PRON nti/NEG ayupukwáu/V akití/ADVD ./PUNCT 
+Akwáu/V katú/A+A2+ADVS+FOC ixé/PRON nti/NEG ayupukwáu/V akití/ADVDI ./PUNCT 
 # Sei bem que eu não me acostumo por ali.
 
-Apitá/V kurí/FUT iké/ADVD té/ADV mairamé/ADVR+SCONJ Tupana/PROPN uputari/V ./PUNCT 
+Apitá/V kurí/FUT iké/ADVDX té/FOC+PREP+SCONJR mairamé/ADVLT+ADVNT+ADVRT+SCONJR Tupana/N uputari/V ./PUNCT 
 # Ficarei aqui até quando Deus quiser.
 
-Mayé/ADV+ADVR+SCONJ taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP amaã/V arã/ADP+FUT+SCONJ nhuntu/ADV se/PRON2 anama-itá/N ?/PUNCT 
+Mayé/ADVLA+ADVRA+SCONJR taá/CQ asú/V awatá/V se/PRON2 retama/N kití/ADP amaã/V arã/ADP+FUT+SCONJ nhuntu/ADV se/PRON2 anama-itá/N ?/PUNCT 
 # Como vou andar para os lados da minha terra somente para ver meus parentes?
 
-Ixé/PRON nti/NEG amandwari/V ayuíri/V akití/ADVD ./PUNCT 
+Ixé/PRON nti/NEG amandwari/V ayuíri/V akití/ADVDI ./PUNCT 
 # Eu não penso em voltar para lá.
 
-Ixé/PRON asaisú/V kwá/ADVD+DEMX+V tetama/N kuíri/ADV ./PUNCT 
+Ixé/PRON asaisú/V kwá/ADVDX+DEMX+V tetama/N kuíri/ADVT ./PUNCT 
 # Eu amo esta terra agora.
 
-Kuxiíma/ADV ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVD+DEMX+V kití/ADP ,/PUNCT mayé/ADV+ADVR+SCONJ taá/CQ reyuri/V ?/PUNCT 
+Kuxiíma/ADVT ,/PUNCT reyuri/V ramé/ADP+SCONJ kwá/ADVDX+DEMX+V kití/ADP ,/PUNCT mayé/ADVLA+ADVRA+SCONJR taá/CQ reyuri/V ?/PUNCT 
 # Antigamente, quando você veio para cá, como você veio?
 
-Aikwé/EXST awá/IND+INT ururi/V indé/PRON ú/V reputari/V reyuri/V ne/PRON2 retama/N suí/ADP ne/PRON2 rupí/ADP ?/PUNCT 
+Aikwé/EXST awá/IND+INT+RELF ururi/V indé/PRON ú/V reputari/V reyuri/V ne/PRON2 retama/N suí/ADP ne/PRON2 rupí/ADP ?/PUNCT 
 # Houve quem a trouxesse ou você quis vir da sua terra por você (mesma)?
 
 Aputari/V ayuri/V se/PRON2 rupí/ADP ./PUNCT 
 # Quis vir por mim (mesma).
 
-Uií/ADV ixé/PRON se/PRON2 rurí/A2 iké/ADVD ./PUNCT 
+Uií/ADVT ixé/PRON se/PRON2 rurí/A2 iké/ADVDX ./PUNCT 
 # Hoje eu sou feliz aqui.
 
-Awá/IND+INT sumuara-itá/N taá/CQ indé/PRON rerikú/V iké/ADVD ?/PUNCT 
+Awá/IND+INT+RELF sumuara-itá/N taá/CQ indé/PRON rerikú/V iké/ADVDX ?/PUNCT 
 # Quais amigos você tem aqui?
 
 Siía/INDQ sumuara/N ./PUNCT 
 # Muitos amigos.
 
-Catarina/PROPN ,/PUNCT asarú/V indé/PRON se/PRON2 rendawa/N upé/ADP wirandé/ADV ./PUNCT 
+Catarina/PROPN ,/PUNCT asarú/V indé/PRON se/PRON2 rendawa/N upé/ADP+N wirandé/ADVT ./PUNCT 
 # Catarina, espero-a em minha comunidade amanhã.
 
-Eré/ADV ./PUNCT 
+Eré/CONS ./PUNCT 
 # Certo!
 
-Té/ADV wirandé/ADV !/PUNCT 
+Té/FOC+PREP+SCONJR wirandé/ADVT !/PUNCT 
 # Até amanhã!

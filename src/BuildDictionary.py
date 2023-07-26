@@ -57,7 +57,8 @@ adv. loc.\tADVC\tadvérbio locativo
 adv. man.\tADVA\tadvérbio de maneira
 adv. mod.\tADVM\tadvérbio modal
 adv. temp.\tADVT\tadvérbio temporal
-adv. conj.\tADVJ\tadvérbio conjuncional
+adv. conj.\tADVJ\tadvérbio conjuncional causal
+adv. conj. opos.\tADVP\tadvérbio conjuncional de oposição
 art. indef.\tART\tartigo indefinido
 {AUX} flex. pós.\tAUXFS\tauxiliar flexionado pós-verbal
 {AUX} flex. pré.\tAUXFR\tauxiliar flexionado pré-verbal
@@ -73,7 +74,8 @@ pron. dem. dist. não-flex.\tDEMSN\tpronome demostrativo distal não flexionado
 num. card.\tCARD\tnumeral cardinal
 num. ord.\tORD\tnumeral ordinal
 interj.\tINTJ\tinterjeição
-s.\tN\tsubstantivo
+s.\tN\tsubstantivo comum
+s. próprio\tPROPN\tsubstantivo próprio
 part.\tPART\tpartícula
 part. perf.\tPFV\tpartícula de perfectivo
 part. tot.\tTOTAL\tpartícula de totalitativo
@@ -393,6 +395,8 @@ def conjugateVerb(lemma,pos='V'):
         forms.add(f"uri\t{lemma}+{pos}+3")
         forms.add(f"yuri\t{lemma}+{pos}+{IMP}+2")
         return forms
+    elif lemma == 'sú':
+        forms.add(f"pekũi\t{lemma}+{pos}+{IMP}+2+PL")
     for pref,tag in persnum.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
@@ -527,7 +531,7 @@ def extract_feats(parses):
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
 	'IMP' : 'mood',
 	'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
-	'PRES|PAST': 'tense' }
+	'PRES|PAST': 'tense', 'RED' : 'redup' }
     entries=[]
     for lemma,feats in parses:
         new={}
@@ -595,7 +599,7 @@ def guesser(token,lexicon):
     "sara": {"pos": "N", "suff": "AGN", "function": accent},
     "tiwa": {"pos": "N", "suff": "COL", "function": accent},
     "íma": {"pos": "A", "suff": "PRIV", "function": accent},
-    "wara|pura": {"pos": "A|N", "suff": "ORIG", "function": accent}
+    "wara|pura": {"pos": "A+N", "suff": "ORIG", "function": accent}
     }
     newentries=[]
     #newentries.append(parseprefs(token))

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,37 +18,37 @@ Maria/PROPN umunhã/V timbiú/N ./PUNCT
 Maria/PROPN umemũi/V kurí/FUT timbiú/N i/PRON2 anama-itá/N supé/ADP ./PUNCT 
 # Maria vai cozinhar comida para seus parentes.
 
-Aé/PRON umunhã/V kurí/FUT kwaíra/A uí/N yuíri/ADV+CCONJ+V ./PUNCT 
+Aé/DEMSN+PRON umunhã/V kurí/FUT kwaíra/A uí/N yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Ela fará um pouco de farinha também.
 
-Aé/PRON upisika/V maniaka/N ,/PUNCT upiruka/V aé/PRON ,/PUNCT ukitika/V aé/PRON i/PRON2 iwisé/N irũmu/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON upisika/V maniaka/N ,/PUNCT upiruka/V aé/DEMSN+PRON ,/PUNCT ukitika/V aé/DEMSN+PRON i/PRON2 iwisé/N irũmu/ADP+SCONJ ./PUNCT 
 # Ela pega a mandioca, descasca-a, rala-a com seu ralador.
 
-Ariré/ADV ,/PUNCT aé/PRON upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP+SCONJ ./PUNCT 
+Ariré/ADVT ,/PUNCT aé/DEMSN+PRON upurakari/V tipití/N maniaka/N kitika/A+V irũmu/ADP+SCONJ ./PUNCT 
 # Depois, ela enche o tipití com a mandioca ralada.
 
-Utipika/V aé/PRON ,/PUNCT umusemu/V manikwera/N ,/PUNCT umburi/V pá/IND urupema/N upé/ADP ,/PUNCT umuáu/V uí/N ,/PUNCT umutiní/V aé/PRON yapuna/N upé/ADP ./PUNCT 
+Utipika/V aé/DEMSN+PRON ,/PUNCT umusemu/V manikwera/N ,/PUNCT umburi/V pá/TOTAL+V urupema/N upé/ADP+N ,/PUNCT umuáu/V uí/N ,/PUNCT umutiní/V aé/DEMSN+PRON yapuna/N upé/ADP+N ./PUNCT 
 # Espreme-a, faz sair a manipueira, põe tudo na peneira, peneira a farinha, torra-a no forno.
 
-Aé/PRON upisika/V mukũi/CARD+INDQ sapukaya/N ,/PUNCT uyuká/V aintá/PRON+PRON2 i/PRON2 pú/N irũmu/ADP+SCONJ umemũi/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 ./PUNCT 
+Aé/DEMSN+PRON upisika/V mukũi/CARD+INDQ sapukaya/N ,/PUNCT uyuká/V aintá/PRON+PRON2 i/PRON2 pú/N irũmu/ADP+SCONJ umemũi/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 ./PUNCT 
 # Ela pegou duas galinhas, matou-as com suas mãos para cozinhá-las.
 
-Aé/PRON umusaimbé/V i/PRON2 kisé/N ,/PUNCT umunuka/V musapiri/CARD pirá/N i/PRON2 mena/N ururi/V waá/REL paranã/N suí/ADP ./PUNCT 
+Aé/DEMSN+PRON umusaimbé/V i/PRON2 kisé/N ,/PUNCT umunuka/V musapiri/CARD pirá/N i/PRON2 mena/N ururi/V waá/REL paranã/N suí/ADP ./PUNCT 
 # Ela afia sua faca, corta três peixes que seu marido trouxe do rio.
 
-Aé/PRON unheẽ/V :/PUNCT 
+Aé/DEMSN+PRON unheẽ/V :/PUNCT 
 # Ela diz:
 
-Se/PRON2 mimbira/N ,/PUNCT reyuri/V repitimũ/V ixé/PRON se/PRON2 purakisawa/N upé/ADP ./PUNCT 
+Se/PRON2 mimbira/N ,/PUNCT reyuri/V repitimũ/V ixé/PRON se/PRON2 purakisawa/N upé/ADP+N ./PUNCT 
 # Meu filho, venha ajudar-me no meu trabalho.
 
-Maã/IND+INT+N+V taá/CQ reputari/V ixé/PRON amunhã/V ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V taá/CQ reputari/V ixé/PRON amunhã/V ?/PUNCT 
 # Que você quer que eu faça?
 
 Remundeka/V tatá/N ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Acenda o fogo para mim.
 
-Eré/ADV ./PUNCT 
+Eré/CONS ./PUNCT 
 # Certo.
 
 Amundeka/V kurí/FUT tatá/N indé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
@@ -57,16 +57,16 @@ Amundeka/V kurí/FUT tatá/N indé/PRON arama/ADP+FUT+SCONJ ./PUNCT
 Ixé/PRON aputari/V amemũi/V musapiri/CARD pirá/N yambaú/V arama/ADP+FUT+SCONJ ./PUNCT 
 # Eu quero cozinhar três peixes para nós comermos.
 
-Té/ADV remburi/V kiínha/N pirá/N resé/ADP+SCONJ ./PUNCT 
+Té/FOC+PREP+SCONJR remburi/V kiínha/N pirá/N resé/ADP+SCONJ ./PUNCT 
 # Não ponha pimenta no peixe.
 
 Ixé/PRON ayumusé/V pirá/N kiinhaíma/A ./PUNCT 
 # Eu gosto de peixe sem pimenta.
 
-Té/ADV remundeka/V tatá/N iwí/N upé/ADP ./PUNCT 
+Té/FOC+PREP+SCONJR remundeka/V tatá/N iwí/N upé/ADP+N ./PUNCT 
 # Não acenda fogo no chão
 
-Remunhã/V tatá/N memũitawa/N upé/ADP ./PUNCT 
+Remunhã/V tatá/N memũitawa/N upé/ADP+N ./PUNCT 
 # Faça fogo no fogão.
 
 Tatá/N i/PRON2 awaité/A2 ./PUNCT 
@@ -90,16 +90,16 @@ Tik/INTJ !/PUNCT
 Manha/N ,/PUNCT repuíri/V timbiú/N !/PUNCT 
 # Mãe, mexa a comida!
 
-Aé/PRON ukái/V uikú/V !/PUNCT 
+Aé/DEMSN+PRON ukái/V uikú/V !/PUNCT 
 # Ela está-se queimando!
 
-Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+CCONJ+V ?/PUNCT 
+Antônio/PROPN ,/PUNCT indé/PRON reputari/V ixé/PRON amunhã/V meyú/N yuíri/ADV+ADVT+CCONJ+V ?/PUNCT 
 # Antônio, você quer que eu faça biju também?
 
-Eẽ/AFF ,/PUNCT meyú/N sé/A+ADV ./PUNCT 
+Eẽ/AFF ,/PUNCT meyú/N sé/A+ADVA ./PUNCT 
 # Sim, biju é gostoso.
 
-Ariré/ADV ,/PUNCT Maria/PROPN usenũi/V i/PRON2 anama-itá/N :/PUNCT 
+Ariré/ADVT ,/PUNCT Maria/PROPN usenũi/V i/PRON2 anama-itá/N :/PUNCT 
 # Depois, Maria chama seus familiares:
 
 Yasú/V yambaú/V !/PUNCT 

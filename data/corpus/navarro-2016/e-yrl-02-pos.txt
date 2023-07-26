@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:19 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,10 +12,10 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Maria/PROPN upitá/V São/PROPN Gabriel/PROPN upé/ADP ./PUNCT 
+Maria/PROPN upitá/V São/PROPN Gabriel/PROPN upé/ADP+N ./PUNCT 
 # Maria fica em São Gabriel.
 
-Maria/PROPN unheẽ/V nheenga-itá/N puranga/A+ADV Pedro/PROPN supé/ADP ./PUNCT 
+Maria/PROPN unheẽ/V nheenga-itá/N puranga/A+ADVA Pedro/PROPN supé/ADP ./PUNCT 
 # Maria diz palavras bonitas a Pedro.
 
 Pedro/PROPN uikú/V Maria/PROPN irũmu/ADP+SCONJ ./PUNCT 
@@ -24,19 +24,19 @@ Pedro/PROPN uikú/V Maria/PROPN irũmu/ADP+SCONJ ./PUNCT
 Pedro/PROPN usú/V igarapé/N kití/ADP ./PUNCT 
 # Pedro vai ao igarapé.
 
-Ixé/PRON apitá/V té/ADV wirandé/ADV ./PUNCT 
+Ixé/PRON apitá/V té/FOC+PREP+SCONJR wirandé/ADVT ./PUNCT 
 # Eu fico até amanhã.
 
-Nti/NEG akwáu/V masuí/ADVL+ADVR Pedro/PROPN usika/V ./PUNCT 
+Nti/NEG akwáu/V masuí/ADVLC+ADVNC+ADVRC Pedro/PROPN usika/V ./PUNCT 
 # Não sei donde Pedro chegou.
 
-Makití/ADVL+ADVR resú/V ?/PUNCT 
+Makití/ADVLC+ADVNC+ADVRC resú/V ?/PUNCT 
 # Aonde vais?
 
-Asú/V makití/ADVL+ADVR aputari/V ./PUNCT 
+Asú/V makití/ADVLC+ADVNC+ADVRC aputari/V ./PUNCT 
 # Vou aonde quero.
 
-Marupí/ADVL+ADVR pirá/N usemu/V ?/PUNCT 
+Marupí/ADVLC+ADVNC+ADVRC pirá/N usemu/V ?/PUNCT 
 # Por onde o peixe sai?
 
 Ixé/PRON nti/NEG aputari/V pirá/N ./PUNCT 
@@ -45,19 +45,19 @@ Ixé/PRON nti/NEG aputari/V pirá/N ./PUNCT
 Maria/PROPN nti/NEG umaã/V João/PROPN ./PUNCT 
 # Maria não vê João.
 
-Pinaitikasara/N nti/NEG puranga/A+ADV ./PUNCT 
+Pinaitikasara/N nti/NEG puranga/A+ADVA ./PUNCT 
 # O pescador não é bom.
 
-Indé/PRON nti/NEG puranga/A+ADV ./PUNCT 
+Indé/PRON nti/NEG puranga/A+ADVA ./PUNCT 
 # Você não é bonita.
 
-Maria/PROPN uikú/V será/PQ igara/N upé/ADP ?/PUNCT 
+Maria/PROPN uikú/V será/PQ igara/N upé/ADP+N ?/PUNCT 
 # Maria está na canoa?
 
 Reputari/V será/PQ pirá/N ?/PUNCT 
 # Queres o peixe?
 
-Remunhã/V será/PQ maã/IND+INT+N+V amunhã/V ?/PUNCT 
+Remunhã/V será/PQ maã/COND+IND+INT+N+REL+RELF+V amunhã/V ?/PUNCT 
 # Você faz o que eu faço?
 
 Nti/NEG será/PQ indé/PRON ?/PUNCT 
@@ -66,43 +66,43 @@ Nti/NEG será/PQ indé/PRON ?/PUNCT
 Mira/N será/PQ indé/PRON ?/PUNCT 
 # Você é gente?
 
-Maã/IND+INT+N+V taá/CQ indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V taá/CQ indé/PRON reputari/V Maria/PROPN supé/ADP ?/PUNCT 
 # Que você quer para Maria?
 
-Kuíri/ADV taá/CQ ?/PUNCT 
+Kuíri/ADVT taá/CQ ?/PUNCT 
 # E agora?
 
-Asuí/ADV+CCONJ taá/CQ ?/PUNCT Maã/IND+INT+N+V taá/CQ kurí/FUT yamunhã/V ?/PUNCT 
+Asuí/ADVC+ADVT+CCONJ taá/CQ ?/PUNCT Maã/COND+IND+INT+N+REL+RELF+V taá/CQ kurí/FUT yamunhã/V ?/PUNCT 
 # E daí? Que faremos?
 
-Mamé/ADVR taá/CQ té/ADV remaã/V se/PRON2 manha/N ?/PUNCT 
+Mamé/ADVLC+ADVRC taá/CQ té/FOC+PREP+SCONJR remaã/V se/PRON2 manha/N ?/PUNCT 
 # Onde mesmo você viu minha mãe?
 
-Masuí/ADVL+ADVR taá/CQ reyuri/V kuxiíma/ADV ?/PUNCT 
+Masuí/ADVLC+ADVNC+ADVRC taá/CQ reyuri/V kuxiíma/ADVT ?/PUNCT 
 # Donde você veio antigamente?
 
-Muíri/IND+INT kuya/N taá/CQ aé/PRON uú/V ?/PUNCT 
+Muíri/INDQ+INT+TOT kuya/N taá/CQ aé/DEMSN+PRON uú/V ?/PUNCT 
 # Quantas cuias ele bebeu?
 
-Awá/IND+INT taá/CQ usika/V ana/PFV ?/PUNCT 
+Awá/IND+INT+RELF taá/CQ usika/V ana/PFV ?/PUNCT 
 # Quem chegou?
 
-Awá/IND+INT taá/CQ uyuká/V awá/IND+INT ?/PUNCT 
+Awá/IND+INT+RELF taá/CQ uyuká/V awá/IND+INT+RELF ?/PUNCT 
 # Quem matou quem?
 
-Maã/IND+INT+N+V miapé/N taá/CQ rerikú/V ?/PUNCT 
+Maã/COND+IND+INT+N+REL+RELF+V miapé/N taá/CQ rerikú/V ?/PUNCT 
 # Qual pão você tem?
 
-Ukwáu/V maã/IND+INT+N+V i/PRON2 murakí/N ./PUNCT 
+Ukwáu/V maã/COND+IND+INT+N+REL+RELF+V i/PRON2 murakí/N ./PUNCT 
 # Sabe qual é seu trabalho.
 
-Mayé/ADV+ADVR+SCONJ waá/REL kunhã/A+N taá/CQ usika/V ana/PFV ?/PUNCT 
+Mayé/ADVLA+ADVRA+SCONJR waá/REL kunhã/A+N taá/CQ usika/V ana/PFV ?/PUNCT 
 # Qual mulher chegou?
 
-Awá/IND+INT taá/CQ penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
+Awá/IND+INT+RELF taá/CQ penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
 # Qual de vocês quer ir?
 
-Awá/IND+INT penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
+Awá/IND+INT+RELF penhé/??? suí/ADP usú-putari/??? ?/PUNCT 
 # Qual de vocês quer ir?
 
 Kunhã-itá/N usika/V ./PUNCT 
@@ -111,10 +111,10 @@ Kunhã-itá/N usika/V ./PUNCT
 mukũi/CARD+INDQ apigawa/A+N 
 # dois homens
 
-kunhã-itá/N puranga/A+ADV 
+kunhã-itá/N puranga/A+ADVA 
 # mulheres bonitas
 
-Uka-itá/N mirĩ/A+ADV ./PUNCT 
+Uka-itá/N mirĩ/A+ADVS+N ./PUNCT 
 # As casas são pequenas.
 
 yepé/ART+CARD+FRUST+SCONJ apigawa/A+N 

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -18,10 +18,10 @@ Maria/PROPN umbeú/V yepé/ART+CARD+FRUST+SCONJ marandua/N i/PRON2 mimbira/N sup
 Pituna/N usika/V ana/PFV ./PUNCT 
 # A noite chegou.
 
-Umbaú/V riré/ADP ,/PUNCT Maria/PROPN mimbira/N usú/V ukiri/V ./PUNCT 
+Umbaú/V riré/ADP+SCONJ ,/PUNCT Maria/PROPN mimbira/N usú/V ukiri/V ./PUNCT 
 # Depois de comer, o filho de Maria vai dormir.
 
-Aé/PRON uyumuakú/V i/PRON2 makira/N upé/ADP ./PUNCT 
+Aé/DEMSN+PRON uyumuakú/V i/PRON2 makira/N upé/ADP+N ./PUNCT 
 # Ele se esquenta em sua rede.
 
 I/PRON2 manha/N upitá/V i/PRON2 makira/N ruakí/ADP umbeú/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ marandua/N i/PRON2 xupé/ADP ./PUNCT 
@@ -33,85 +33,85 @@ Yepé/ART+CARD+FRUST+SCONJ ara/N ,/PUNCT paá/RPRT ,/PUNCT urubú/N nti/NEG uwas
 Upitá/V sasiara/A yumasisawa/N irũmu/ADP+SCONJ ./PUNCT 
 # Ficou triste e com fome.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT uyumuruakí/V sesé/ADP wirawasú/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT uyumuruakí/V sesé/ADP wirawasú/N ./PUNCT 
 # Dizem que, então, aproximou-se dele o gavião.
 
 Aintá/PRON+PRON2 uyumumurã/V ./PUNCT 
 # Eles se saudaram.
 
-Asuí/ADV+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N upurandú/V urubú/N suí/ADP :/PUNCT 
+Asuí/ADVC+ADVT+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N upurandú/V urubú/N suí/ADP :/PUNCT 
 # Depois, contam que o gavião perguntou ao urubu:
 
 Compadre/??? ,/PUNCT marantaá/ADVR sasiara/A retana/ADVS indé/PRON ?/PUNCT 
 # Compadre, por que você está muito triste?
 
-Indé/PRON nti/NEG reyumusurí/V ne maã/IND irũmu/ADP+SCONJ uií/ADV ?/PUNCT 
+Indé/PRON nti/NEG reyumusurí/V ne maã/IND irũmu/ADP+SCONJ uií/ADVT ?/PUNCT 
 # Você não se alegra com nada hoje?
 
 Urubú/N usuaxara/V :/PUNCT 
 # O urubu respondeu:
 
-Compadre/??? ,/PUNCT nti/NEG será/PQ rekwáu/V uií/ADV ara/N nti/NEG puranga/A+ADV ,/PUNCT nti/NEG umanũ/??? ne yepé/IND suú/N+V ambaú/V arama/ADP+FUT+SCONJ ?/PUNCT 
+Compadre/??? ,/PUNCT nti/NEG será/PQ rekwáu/V uií/ADVT ara/N nti/NEG puranga/A+ADVA ,/PUNCT nti/NEG umanũ/??? ne yepé/IND suú/N+V ambaú/V arama/ADP+FUT+SCONJ ?/PUNCT 
 # Compadre, não sabe (que) hoje o dia não é bom, (que) não morreu nenhum animal para eu comer?
 
-Sesewara/ADP ixé/PRON apitá/V sasiara/A ./PUNCT 
+Sesewara/ADP+N+SCONJ ixé/PRON apitá/V sasiara/A ./PUNCT 
 # Por causa disso eu fico triste.
 
 Aintá/PRON+PRON2 uyumaã/V ./PUNCT 
 # Eles se olharam.
 
-Asuí/ADV+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
+Asuí/ADVC+ADVT+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
 # Depois, contam que o gavião disse:
 
-Compadre/??? ,/PUNCT remunhã/V mayé/ADV+ADVR+SCONJ se/PRON2 yawé/ADP+ADV :/PUNCT repisika/V suú/N+V sikwé/A2+N ,/PUNCT reyuká/V aé/PRON rembaú/V arã/ADP+FUT+SCONJ aé/PRON ./PUNCT 
+Compadre/??? ,/PUNCT remunhã/V mayé/ADVLA+ADVRA+SCONJR se/PRON2 yawé/ADP+ADVA+IND :/PUNCT repisika/V suú/N+V sikwé/A2+N ,/PUNCT reyuká/V aé/DEMSN+PRON rembaú/V arã/ADP+FUT+SCONJ aé/DEMSN+PRON ./PUNCT 
 # Compadre, faça assim como eu: pegue animal vivo, mate-o para comê-lo.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT urubú/N usuaxara/V :/PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT urubú/N usuaxara/V :/PUNCT 
 # Então, dizem que o urubu respondeu:
 
-Compadre/??? ,/PUNCT ixé/PRON nti/NEG aputari/V amunhã/V puxiwera/A+ADV suú-itá/N supé/ADP ,/PUNCT ma/CCONJ kuíri/ADV ixé/PRON se/PRON2 yumasí/A2+N retana/ADVS aikú/V ./PUNCT 
+Compadre/??? ,/PUNCT ixé/PRON nti/NEG aputari/V amunhã/V puxiwera/A+ADVA+N suú-itá/N supé/ADP ,/PUNCT ma/ADVJ+CCONJ kuíri/ADVT ixé/PRON se/PRON2 yumasí/A2+N retana/ADVS aikú/V ./PUNCT 
 # Compadre, eu não quero fazer mal aos animais, mas agora eu estou muito faminto.
 
-Indé/PRON remukameẽ/V ramé/ADP+SCONJ mayé/ADV+ADVR+SCONJ ixé/PRON amunhã/V arama/ADP+FUT+SCONJ ,/PUNCT amunhã/V kurí/FUT ./PUNCT 
+Indé/PRON remukameẽ/V ramé/ADP+SCONJ mayé/ADVLA+ADVRA+SCONJR ixé/PRON amunhã/V arama/ADP+FUT+SCONJ ,/PUNCT amunhã/V kurí/FUT ./PUNCT 
 # Se você mostrar como é para eu fazer, eu (o) farei.
 
-Aramé/ADV té/ADV ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+FRUST+SCONJ wiramirĩ/N ./PUNCT 
+Aramé/ADVJ+ADVT té/FOC+PREP+SCONJR ,/PUNCT paá/RPRT ,/PUNCT usasá/V yepé/ART+CARD+FRUST+SCONJ wiramirĩ/N ./PUNCT 
 # Nesse momento mesmo, contam que passou um passarinho.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
 # Então, contam que o gavião disse:
 
 Compadre/??? ,/PUNCT remaã/V ne/PRON2 rangawa/N ./PUNCT 
 # Compadre, olhe seu exemplo.
 
-Wiramirĩ/N kutara/ADV piri/ADP+ADVG uwewé/V kaá/N kití/ADP ./PUNCT 
+Wiramirĩ/N kutara/ADVA piri/ADP+ADVG uwewé/V kaá/N+V kití/ADP ./PUNCT 
 # O passarinho mais rápido voou para o mato.
 
-Sakakwera/ADP+N wirawasú/N usú/V ,/PUNCT ma/CCONJ uyutuká/V :/PUNCT 
+Sakakwera/ADP+N wirawasú/N usú/V ,/PUNCT ma/ADVJ+CCONJ uyutuká/V :/PUNCT 
 # Atrás dele foi o gavião, mas se chocou:
 
-mirá/N rumitera/N pisãwera/V uwiké/V i/PRON2 putiá/N upé/ADP ./PUNCT 
+mirá/N rumitera/N pisãwera/V uwiké/V i/PRON2 putiá/N upé/ADP+N ./PUNCT 
 # um pedaço de tronco de árvore entrou no seu peito.
 
-Aé/PRON uyumuperewa/V retana/ADVS ./PUNCT 
+Aé/DEMSN+PRON uyumuperewa/V retana/ADVS ./PUNCT 
 # Ele se feriu muito.
 
-Ape/ADVD+ADVJ ,/PUNCT paá/RPRT ,/PUNCT urubú/N usú/V sakakwera/ADP+N merupí/ADV ,/PUNCT té/ADV mairamé/ADVR+SCONJ umaã/V wirawasú/N ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT ,/PUNCT paá/RPRT ,/PUNCT urubú/N usú/V sakakwera/ADP+N merupí/ADVA ,/PUNCT té/FOC+PREP+SCONJR mairamé/ADVLT+ADVNT+ADVRT+SCONJR umaã/V wirawasú/N ./PUNCT 
 # Então, dizem que o urubu foi atrás dele devagar, quando viu o gavião.
 
 Uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT 
 # Estava dependurado na árvore.
 
-Asuí/ADV+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
+Asuí/ADVC+ADVT+CCONJ ,/PUNCT paá/RPRT ,/PUNCT wirawasú/N unheẽ/V :/PUNCT 
 # Depois, contam que o gavião disse:
 
-Compadre/??? ,/PUNCT puxiwera/A+ADV asasá/V ./PUNCT 
+Compadre/??? ,/PUNCT puxiwera/A+ADVA+N asasá/V ./PUNCT 
 # Compadre, passo mal.
 
-Mirá/N rumitera/N uwiké/V se/PRON2 putiá/N upé/ADP ./PUNCT 
+Mirá/N rumitera/N uwiké/V se/PRON2 putiá/N upé/ADP+N ./PUNCT 
 # O tronco de árvore entrou no meu peito.
 
-Reyuri/V reyuka/V ixé/PRON kwá/ADVD+DEMX+V suí/ADP !/PUNCT 
+Reyuri/V reyuka/V ixé/PRON kwá/ADVDX+DEMX+V suí/ADP !/PUNCT 
 # Vem tirar-me daqui!
 
 Urubú/N usuaxara/V :/PUNCT 

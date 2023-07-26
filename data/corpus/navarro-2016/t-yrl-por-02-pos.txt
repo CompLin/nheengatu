@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,25 +12,25 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel
 # Last update: May 15, 2022
 
-Paranãwasú/N upé/ADP 
+Paranãwasú/N upé/ADP+N 
 # No rio Negro
 
-Pedro/PROPN uikú/V paranã/N upé/ADP ./PUNCT 
+Pedro/PROPN uikú/V paranã/N upé/ADP+N ./PUNCT 
 # Pedro está no rio.
 
-Aé/PRON upitá/V yepé/ART+CARD+FRUST+SCONJ igara/N mirĩ/A+ADV upé/ADP Maria/PROPN irũmu/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON upitá/V yepé/ART+CARD+FRUST+SCONJ igara/N mirĩ/A+ADVS+N upé/ADP+N Maria/PROPN irũmu/ADP+SCONJ ./PUNCT 
 # Ele fica em uma canoa pequena com Maria.
 
-Aé/PRON unheẽ/V Maria/PROPN supé/ADP :/PUNCT 
+Aé/DEMSN+PRON unheẽ/V Maria/PROPN supé/ADP :/PUNCT 
 # Ele diz à Maria:
 
-Maria/PROPN ,/PUNCT mamé/ADVR taá/CQ pindá-itá/N uikú/V ?/PUNCT 
+Maria/PROPN ,/PUNCT mamé/ADVLC+ADVRC taá/CQ pindá-itá/N uikú/V ?/PUNCT 
 # Maria, onde os anzóis estão?
 
 Ixé/PRON nti/NEG akwáu/V ./PUNCT 
 # Eu não sei.
 
-Indé/PRON reputari/V será/PQ pindá-itá/N puranga/A+ADV ?/PUNCT 
+Indé/PRON reputari/V será/PQ pindá-itá/N puranga/A+ADVA ?/PUNCT 
 # Você quer bons anzóis?
 
 Eẽ/AFF ./PUNCT 
@@ -39,7 +39,7 @@ Eẽ/AFF ./PUNCT
 Ixé/PRON apinaitika/V siía/INDQ pirá/N ./PUNCT 
 # Eu pesco muitos peixes.
 
-Uií/ADV ara/N nti/NEG puranga/A+ADV pinaitikasara/N supé/ADP ./PUNCT 
+Uií/ADVT ara/N nti/NEG puranga/A+ADVA pinaitikasara/N supé/ADP ./PUNCT 
 # Hoje o dia não é bom para os pescadores.
 
 Pirá-itá/N uyawáu/V igarapé/N kití/ADP ./PUNCT 

@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre - Reviewer: Leonel Figueiredo de Alencar
 # Last update: May 15, 2022
 
-Meyú/N sé/A+ADV ./PUNCT 
+Meyú/N sé/A+ADVA ./PUNCT 
 # Biju é gostoso.
 
 Akayú/N yukisé/N seẽ/A+N ./PUNCT 
@@ -21,19 +21,19 @@ Akayú/N yukisé/N seẽ/A+N ./PUNCT
 Resú/V paranã/N kití/ADP !/PUNCT 
 # Vá ao rio!
 
-Té/ADV resú/V paranã/N kití/ADP !/PUNCT 
+Té/FOC+PREP+SCONJR resú/V paranã/N kití/ADP !/PUNCT 
 # Não vá ao rio!
 
 Pemunhã/V timbiú/N i/PRON2 xupé/ADP !/PUNCT 
 # Façam comida para ele!
 
-Té/ADV pemunhã/V timbiú/N i/PRON2 xupé/ADP !/PUNCT 
+Té/FOC+PREP+SCONJR pemunhã/V timbiú/N i/PRON2 xupé/ADP !/PUNCT 
 # Não façam comida para ele!
 
-Yapitá/V iké/ADVD !/PUNCT 
+Yapitá/V iké/ADVDX !/PUNCT 
 # Fiquemos aqui!
 
-Té/ADV yapitá/V iké/ADVD !/PUNCT 
+Té/FOC+PREP+SCONJR yapitá/V iké/ADVDX !/PUNCT 
 # Não fiquemos aqui!
 
 Apigawa/A+N usemu/V ana/PFV i/PRON2 tawa/N suí/ADP ./PUNCT 
@@ -48,7 +48,7 @@ Panhẽ/TOT musapiri/CARD ,/PUNCT paá/RPRT ,/PUNCT aintá/PRON+PRON2 urikú/V a
 Mukũi/CARD+INDQ itá/N umanũ/??? ana/PFV ./PUNCT 
 # Os dois já morreram.
 
-Aé/PRON upitá/V ana/PFV mbauíma/A nhaã/DEMS pituna/N ramé/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON upitá/V ana/PFV mbauíma/A nhaã/DEMS pituna/N ramé/ADP+SCONJ ./PUNCT 
 # Ele ficou sem comer naquela noite.
 
 Pedro/PROPN upitá/V purakisawaíma/A ./PUNCT 
@@ -60,11 +60,11 @@ Ixé/PRON aú/V kambí/N seẽíma/A ./PUNCT
 kamixá/N sepiasuíma/A 
 # camisa barata
 
-Ape/ADVD+ADVJ yautí/N kwera/A+PRET upupuka/V pá/IND ./PUNCT 
+Ape/ADVDI+ADVJ+ADVT yautí/N kwera/A+PRET upupuka/V pá/TOTAL+V ./PUNCT 
 # Aí o jabuti rebentou todo.
 
-Kurumĩ/N umbaú/V pawa/PART+TOT+V ./PUNCT 
+Kurumĩ/N umbaú/V pawa/TOTAL+V ./PUNCT 
 # O menino come tudo.
 
-I/PRON2 kiá/A2 pá/IND upitá/V ./PUNCT 
+I/PRON2 kiá/A2 pá/TOTAL+V upitá/V ./PUNCT 
 # Ele ficou todo sujo.

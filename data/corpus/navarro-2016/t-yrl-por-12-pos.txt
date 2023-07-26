@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:21 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,71 +12,71 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Juliana Lopes Gurgel
 # Last update: May 15, 2022
 
-Maria/PROPN umupuranga/V suka/N ./PUNCT 
+Maria/PROPN umupuranga/V suka/N+V ./PUNCT 
 # Maria embeleza sua casa.
 
 Akayú/N pausawa/N usika/V uikú/V ./PUNCT 
 # O fim do ano está chegando.
 
-Ne/PRON2 awá/IND+INT usú/V mbuesawa/N ruka/N kití/ADP kuíri/ADV ./PUNCT 
+Ne/PRON2 awá/IND+INT+RELF usú/V mbuesawa/N ruka/N kití/ADP kuíri/ADVT ./PUNCT 
 # Ninguém vai à escola agora.
 
-Maria/PROPN umupitá/V amuramé/ADV i/PRON2 amũ/N umurari/V waá/REL Barra/PROPN upé/ADP yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ ara/N rupí/ADP ./PUNCT 
+Maria/PROPN umupitá/V amuramé/ADVT i/PRON2 amũ/N umurari/V waá/REL Barra/PROPN upé/ADP+N yepé/ART+CARD+FRUST+SCONJ yepé/ART+CARD+FRUST+SCONJ ara/N rupí/ADP ./PUNCT 
 # Maria hospeda às vezes sua irmã que mora em Manaus por alguns dias.
 
 Sera/N Rute/PROPN ./PUNCT 
 # Seu nome é Rute.
 
-Aé/PRON nti/NEG rẽ/ADV usika/V ./PUNCT 
+Aé/DEMSN+PRON nti/NEG rẽ/ADVT usika/V ./PUNCT 
 # Ela não chegou ainda.
 
-Aé/PRON usika/V nhuntu/ADV amú/IND wirandé/ADV ./PUNCT 
+Aé/DEMSN+PRON usika/V nhuntu/ADV amú/IND wirandé/ADVT ./PUNCT 
 # Ela chegará somente depois de amanhã.
 
-Nhaã/DEMS pukusawa/ADP+SCONJ muíri/IND+INT ara/N Maria/PROPN umupuranga/V suka/N ./PUNCT 
+Nhaã/DEMS pukusawa/ADP+SCONJ muíri/INDQ+INT+TOT ara/N Maria/PROPN umupuranga/V suka/N+V ./PUNCT 
 # Enquanto isso, cada dia Maria enfeita sua casa.
 
-Suka/N urikú/V mukũi/CARD+INDQ ukapí/N ./PUNCT 
+Suka/N+V urikú/V mukũi/CARD+INDQ ukapí/N ./PUNCT 
 # Sua casa tem dois quartos.
 
-Yepesawa/ORD ukapí/N Antônio/PROPN yara/ADP+N ,/PUNCT mukũisawa/ORD ukapí/N mamé/ADVR Maria/PROPN ukiri/V i/PRON2 mena/N irũmu/ADP+SCONJ ./PUNCT 
+Yepesawa/ORD ukapí/N Antônio/PROPN yara/ADP+N ,/PUNCT mukũisawa/ADVO+ORD ukapí/N mamé/ADVLC+ADVRC Maria/PROPN ukiri/V i/PRON2 mena/N irũmu/ADP+SCONJ ./PUNCT 
 # O primeiro quarto é o de Antônio e o segundo quarto é onde Maria dorme com seu marido.
 
-Aé/PRON nti/NEG rẽ/ADV upawa/V umunhã/V suka/N ./PUNCT 
+Aé/DEMSN+PRON nti/NEG rẽ/ADVT upawa/V umunhã/V suka/N+V ./PUNCT 
 # Ela não acabou ainda de fazer sua casa.
 
-Aé/PRON umuputira/V ana/PFV ukapí-itá/N ,/PUNCT umusasá/V iwí-murutinga/N suka/N rupitá-itá/N resé/ADP+SCONJ ,/PUNCT umungaturú/V uka-pupekasara/N ./PUNCT 
+Aé/DEMSN+PRON umuputira/V ana/PFV ukapí-itá/N ,/PUNCT umusasá/V iwí-murutinga/N suka/N+V rupitá-itá/N resé/ADP+SCONJ ,/PUNCT umungaturú/V uka-pupekasara/N ./PUNCT 
 # Ela floriu os quartos, passou cal nas paredes de sua casa, consertou o telhado.
 
-Aé/PRON surí/A2 retana/ADVS uikú/V ./PUNCT 
+Aé/DEMSN+PRON surí/A2 retana/ADVS uikú/V ./PUNCT 
 # Ela está muito feliz.
 
-Aé/PRON upurandú/V i/PRON2 mena/N suí/ADP :/PUNCT 
+Aé/DEMSN+PRON upurandú/V i/PRON2 mena/N suí/ADP :/PUNCT 
 # Ela pergunta a seu marido:
 
-Pedro/PROPN ,/PUNCT mairamé/ADVR+SCONJ taá/CQ indé/PRON remupinima/V ukapí/N mamé/ADVR Rute/PROPN usú/V ukiri/V ?/PUNCT 
+Pedro/PROPN ,/PUNCT mairamé/ADVLT+ADVNT+ADVRT+SCONJR taá/CQ indé/PRON remupinima/V ukapí/N mamé/ADVLC+ADVRC Rute/PROPN usú/V ukiri/V ?/PUNCT 
 # Pedro, quando você pintará o quarto em que Rute vai dormir?
 
-Wirandé/ADV ./PUNCT 
+Wirandé/ADVT ./PUNCT 
 # Amanhã.
 
-Ixé/PRON amupinima/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS ukapí/N kwesé/ADV ./PUNCT 
+Ixé/PRON amupinima/V arama/ADP+FUT+SCONJ yepé/ART+CARD+FRUST+SCONJ nhaã/DEMS ukapí/N kwesé/ADVT ./PUNCT 
 # Era para eu pintar (ou ter pintado) aquele quarto ontem.
 
 Rute/PROPN urikú/V i/PRON2 mena/N ./PUNCT 
 # Rute tem seu marido.
 
-Yawerã/ADVJ aé/PRON ururi/V kurí/FUT aé/PRON ./PUNCT 
+Yawerã/ADVJ aé/DEMSN+PRON ururi/V kurí/FUT aé/DEMSN+PRON ./PUNCT 
 # Por isso, ela o trará.
 
-Maria/PROPN usú/V umupitá/V i/PRON2 amũ/N suka/N upé/ADP té/ADV akayú/N pisasú/A yupirungawa/N ./PUNCT 
+Maria/PROPN usú/V umupitá/V i/PRON2 amũ/N suka/N+V upé/ADP+N té/FOC+PREP+SCONJR akayú/N pisasú/A yupirungawa/N ./PUNCT 
 # Maria vai hospedar sua irmã em sua casa até o começo do ano novo.
 
-Rute/PROPN usasá/V kurí/FUT yepé/ART+CARD+FRUST+SCONJ yasí/N Maria/PROPN rendawa/N upé/ADP ./PUNCT 
+Rute/PROPN usasá/V kurí/FUT yepé/ART+CARD+FRUST+SCONJ yasí/N Maria/PROPN rendawa/N upé/ADP+N ./PUNCT 
 # Rute passará um mês na comunidade de Maria.
 
 Maria/PROPN umunhã/V kurí/FUT yepé/ART+CARD+FRUST+SCONJ murasí/N i/PRON2 xupé/ADP ./PUNCT 
 # Maria fará uma festa para ela.
 
-Aé/PRON umusurí/V kurí/FUT murasí/N nheengarisara-itá/N irũmu/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON umusurí/V kurí/FUT murasí/N nheengarisara-itá/N irũmu/ADP+SCONJ ./PUNCT 
 # Ela vai alegrar a festa com cantores.

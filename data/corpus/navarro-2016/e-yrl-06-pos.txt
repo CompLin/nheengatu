@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:18 2022.
+Date: Wed Jul 26 19:03:20 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -12,7 +12,7 @@ Therefore, this data may be subject to copyrights of the author of this book.'''
 # Producer: Dominick Maia Alexandre
 # Last update: May 15, 2022
 
-Maria/PROPN umunhã/V uikú/V timbiú/N memũitendawa/N upé/ADP ./PUNCT 
+Maria/PROPN umunhã/V uikú/V timbiú/N memũitendawa/N upé/ADP+N ./PUNCT 
 # Maria está fazendo comida na cozinha.
 
 Ixé/PRON apitá/V aikú/V yumasisawa/N irũmu/ADP+SCONJ ./PUNCT 
@@ -21,28 +21,28 @@ Ixé/PRON apitá/V aikú/V yumasisawa/N irũmu/ADP+SCONJ ./PUNCT
 Indé/PRON reyenũ/V reikú/V ./PUNCT 
 # Tu estás deitado.
 
-Aé/PRON uwapika/V ana/PFV uikú/V mimi/ADV ./PUNCT 
+Aé/DEMSN+PRON uwapika/V ana/PFV uikú/V mimi/ADVDI ./PUNCT 
 # Ele estava sentado ali.
 
 Uyatikú/V uikú/V mirá/N resé/ADP+SCONJ ./PUNCT 
 # Está-se dependurando na árvore.
 
-Aé/PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+CCONJ+V ./PUNCT 
+Aé/DEMSN+PRON umaã/V uikú/V mirá-itá/N ,/PUNCT kawoka/N ruka-itá/N yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Ela está vendo árvores e casas de caboclos.
 
-Nhaã/DEMS apigawa/A+N umbaú/V ana/PFV pirá/N meyú/N yuíri/ADV+CCONJ+V ./PUNCT 
+Nhaã/DEMS apigawa/A+N umbaú/V ana/PFV pirá/N meyú/N yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Aquele homem comeu peixe e biju.
 
-Aé/PRON umbué/V aintá/PRON+PRON2 upurungitá/V asuí/ADV+CCONJ umupinima/V ./PUNCT 
+Aé/DEMSN+PRON umbué/V aintá/PRON+PRON2 upurungitá/V asuí/ADVC+ADVT+CCONJ umupinima/V ./PUNCT 
 # Ele os ensinou a falar, depois a escrever.
 
-Ixé/PRON apuamu/V asuí/ADV+CCONJ apurasí/V ./PUNCT 
+Ixé/PRON apuamu/V asuí/ADVC+ADVT+CCONJ apurasí/V ./PUNCT 
 # Eu levanto, depois danço.
 
-Aé/PRON uyupiri/V ana/PFV mirá/N resé/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON uyupiri/V ana/PFV mirá/N resé/ADP+SCONJ ./PUNCT 
 # Ele subiu na árvore.
 
-Aé/PRON uyupiri/V sesé/ADP ./PUNCT 
+Aé/DEMSN+PRON uyupiri/V sesé/ADP ./PUNCT 
 # Ele subiu nela.
 
 Maria/PROPN mena/N ururi/V maniaka/N i/PRON2 pú-itá/N resé/ADP+SCONJ ./PUNCT 
@@ -51,7 +51,7 @@ Maria/PROPN mena/N ururi/V maniaka/N i/PRON2 pú-itá/N resé/ADP+SCONJ ./PUNCT
 Kunhã/A+N ururi/V yepeawa/N kawarú/N resé/ADP+SCONJ ./PUNCT 
 # A mulher traz lenha no cavalo.
 
-Pedro/PROPN upitá/V paranã/N upé/ADP ./PUNCT 
+Pedro/PROPN upitá/V paranã/N upé/ADP+N ./PUNCT 
 # Pedro fica no rio.
 
 Ixé/PRON amandwari/V Maria/PROPN resé/ADP+SCONJ ./PUNCT 
@@ -66,13 +66,13 @@ Aintá/PRON+PRON2 upuká/V yané/PRON2 resé/ADP+SCONJ ./PUNCT
 Aintá/PRON+PRON2 upurungitá/V ne/PRON2 resé/ADP+SCONJ ./PUNCT 
 # Falaram a respeito de você.
 
-Ixé/PRON apurakí/V ne/PRON2 resewara/ADP ./PUNCT 
+Ixé/PRON apurakí/V ne/PRON2 resewara/ADP+N+SCONJ ./PUNCT 
 # Eu trabalho por você.
 
-Ixé/PRON apurakí/V sesewara/ADP ./PUNCT 
+Ixé/PRON apurakí/V sesewara/ADP+N+SCONJ ./PUNCT 
 # Eu trabalho por ele.
 
-Akwáu/V sesewara/ADP ./PUNCT 
+Akwáu/V sesewara/ADP+N+SCONJ ./PUNCT 
 # Sei dele.
 
 Ixé/PRON amurari/V Maria/PROPN ruakí/ADP ./PUNCT 
@@ -81,26 +81,26 @@ Ixé/PRON amurari/V Maria/PROPN ruakí/ADP ./PUNCT
 Ixé/PRON amurari/V suakí/ADP ./PUNCT 
 # Eu moro perto dela.
 
-Kunhã/A+N usú/V se/PRON2 renundé/ADP ./PUNCT 
+Kunhã/A+N usú/V se/PRON2 renundé/ADP+N+SCONJ ./PUNCT 
 # A mulher foi à frente de mim.
 
-Kunhã/A+N usú/V i/PRON2 mena/N renundé/ADP ./PUNCT 
+Kunhã/A+N usú/V i/PRON2 mena/N renundé/ADP+N+SCONJ ./PUNCT 
 # A mulher foi antes de seu marido.
 
-Kunhã/A+N usú/V senundé/ADP ./PUNCT 
+Kunhã/A+N usú/V senundé/ADP+N ./PUNCT 
 # A mulher foi antes dele.
 
-Asú/V amunhã/V yepé/ART+CARD+FRUST+SCONJ kakurí/N senundé/ADP ./PUNCT 
+Asú/V amunhã/V yepé/ART+CARD+FRUST+SCONJ kakurí/N senundé/ADP+N ./PUNCT 
 # Vou fazer um cacuri antes dele.
 
-Aintá/PRON+PRON2 upitá/V akangaíwa/A+N kurumĩwasú/N purangasawa/N renundé/ADP ./PUNCT 
+Aintá/PRON+PRON2 upitá/V akangaíwa/A+N kurumĩwasú/N purangasawa/N renundé/ADP+N+SCONJ ./PUNCT 
 # Elas ficaram loucas diante da beleza do moço.
 
-Asú/V aikú/V se/PRON2 renundé/ADP kití/ADP ./PUNCT 
+Asú/V aikú/V se/PRON2 renundé/ADP+N+SCONJ kití/ADP ./PUNCT 
 # Estou indo para adiante de mim.
 
 Kunhã/A+N uri/V tawa/N kití/ADP ./PUNCT 
 # A mulher vem para a cidade.
 
-Aé/PRON usú/V Maria/PROPN piri/ADP+ADVG ./PUNCT 
+Aé/DEMSN+PRON usú/V Maria/PROPN piri/ADP+ADVG ./PUNCT 
 # Ele vai para junto de Maria.

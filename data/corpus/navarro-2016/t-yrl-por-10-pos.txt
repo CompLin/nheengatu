@@ -1,6 +1,6 @@
 '''Automatically POS-tagged by Nheengatagger.
 Operator: Leonel Figueiredo de Alencar.
-Date: Wed Nov 16 23:00:19 2022.
+Date: Wed Jul 26 19:03:21 2023.
 Metadata of the original corpus file reproduced below.'''
 
 ''' This text file contains aligned sentences in Nheengatu and Portuguese from the following source:
@@ -33,16 +33,16 @@ Pedro/PROPN unheẽ/V ximirikú/N supé/ADP :/PUNCT
 Reruri/V pururé/N ixé/PRON arama/ADP+FUT+SCONJ ./PUNCT 
 # Traga a enxada para mim.
 
-Aputari/V ayutima/V siía/INDQ maniaka/N ,/PUNCT siía/INDQ kará/N ,/PUNCT naná-itá/N yuíri/ADV+CCONJ+V ./PUNCT 
+Aputari/V ayutima/V siía/INDQ maniaka/N ,/PUNCT siía/INDQ kará/N ,/PUNCT naná-itá/N yuíri/ADV+ADVT+CCONJ+V ./PUNCT 
 # Quero plantar muita mandioca, muitos carás e abacaxis também.
 
 Maria/PROPN umeẽ/V yepé/ART+CARD+FRUST+SCONJ pururé/N i/PRON2 xupé/ADP ./PUNCT 
 # Maria dá uma enxada a ele.
 
-Maria/PROPN ,/PUNCT kwá/ADVD+DEMX+V pururé/N se/PRON2 mũyara/??? ./PUNCT 
+Maria/PROPN ,/PUNCT kwá/ADVDX+DEMX+V pururé/N se/PRON2 mũyara/??? ./PUNCT 
 # Maria, esta enxada é do meu irmão.
 
-Mamé/ADVR taá/CQ uikú/V se/PRON2 yara/ADP+N ?/PUNCT 
+Mamé/ADVLC+ADVRC taá/CQ uikú/V se/PRON2 yara/ADP+N ?/PUNCT 
 # Onde está a minha?
 
 Nti/NEG akwáu/V ./PUNCT 
@@ -51,37 +51,37 @@ Nti/NEG akwáu/V ./PUNCT
 Rerasú/V indé/PRON arama/ADP+FUT+SCONJ ne/PRON2 mũ/N yara/ADP+N ./PUNCT 
 # Leve para você a do seu irmão.
 
-Aé/PRON nti/NEG kurí/FUT upitá/V piaíwa/A2 ne/PRON2 irũmu/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON nti/NEG kurí/FUT upitá/V piaíwa/A2 ne/PRON2 irũmu/ADP+SCONJ ./PUNCT 
 # Ele não ficará bravo com você.
 
 Pedro/PROPN mũ/N pisasú/A piri/ADP+ADVG i/PRON2 suí/ADP ./PUNCT 
 # O irmão de Pedro é mais novo que ele.
 
-Aé/PRON umurari/V amú/IND tendawa/N upé/ADP ,/PUNCT mirĩ/A+ADV piri/ADP+ADVG Pedro/PROPN yara/ADP+N suí/ADP ./PUNCT 
+Aé/DEMSN+PRON umurari/V amú/IND tendawa/N upé/ADP+N ,/PUNCT mirĩ/A+ADVS+N piri/ADP+ADVG Pedro/PROPN yara/ADP+N suí/ADP ./PUNCT 
 # Ele mora em outra comunidade, menor que a de Pedro.
 
-Kwemaité/ADV Pedro/PROPN usú/V kupixawa/N kití/ADP ./PUNCT 
+Kwemaité/ADVT Pedro/PROPN usú/V kupixawa/N kití/ADP ./PUNCT 
 # Bem cedo Pedro vai à roça.
 
-Aé/PRON unheẽ/V sumuara-itá/N supé/ADP :/PUNCT 
+Aé/DEMSN+PRON unheẽ/V sumuara-itá/N supé/ADP :/PUNCT 
 # Ele diz a seus companheiros:
 
 Yasú/V yamunuka/V kwaíra/A mirá/N yamunhã/V arama/ADP+FUT+SCONJ kuiwara/N ,/PUNCT yasapí/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 ./PUNCT 
 # Vamos cortar poucas árvores para fazer coivara, para queimá-las.
 
-Aé/PRON umunhã/V kuiwara/N ,/PUNCT umuatiri/V mirá-itá/N uyusãi/V waá/REL iwí/N upé/ADP usapí/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 tatá/N upé/ADP ./PUNCT 
+Aé/DEMSN+PRON umunhã/V kuiwara/N ,/PUNCT umuatiri/V mirá-itá/N uyusãi/V waá/REL iwí/N upé/ADP+N usapí/V arama/ADP+FUT+SCONJ aintá/PRON+PRON2 tatá/N upé/ADP+N ./PUNCT 
 # Ele faz coivara, amontoa os paus espalhados no chão, para queimá-los no fogo.
 
-Aé/PRON urasú/V siía/INDQ yerimũ/N raínha/N uyutima/V arama/ADP+FUT+SCONJ kupixawa/N upé/ADP maniwa-itá/N irũmu/ADP+SCONJ ./PUNCT 
+Aé/DEMSN+PRON urasú/V siía/INDQ yerimũ/N raínha/N uyutima/V arama/ADP+FUT+SCONJ kupixawa/N upé/ADP+N maniwa-itá/N irũmu/ADP+SCONJ ./PUNCT 
 # Ele leva muitas sementes de abóbora para plantar na roça com as manivas.
 
-Asuí/ADV+CCONJ ,/PUNCT aé/PRON ukapiri/V pá/IND ,/PUNCT uyuka/V siía/INDQ tukandira/N ,/PUNCT xibuí/N ,/PUNCT yandú/N maniwatiwa/N suí/ADP ./PUNCT 
+Asuí/ADVC+ADVT+CCONJ ,/PUNCT aé/DEMSN+PRON ukapiri/V pá/TOTAL+V ,/PUNCT uyuka/V siía/INDQ tukandira/N ,/PUNCT xibuí/N ,/PUNCT yandú/N maniwatiwa/N suí/ADP ./PUNCT 
 # Depois, ele capina tudo, tira muitas tocandiras, vermes e aranhas do mandiocal.
 
-Aé/PRON umururú/V mitima/N ,/PUNCT asuí/ADV+CCONJ umusaka/V mukũi/CARD+INDQ makaxera/N urasú/V arama/ADP+FUT+SCONJ suka/N kití/ADP ./PUNCT 
+Aé/DEMSN+PRON umururú/V mitima/N ,/PUNCT asuí/ADVC+ADVT+CCONJ umusaka/V mukũi/CARD+INDQ makaxera/N urasú/V arama/ADP+FUT+SCONJ suka/N+V kití/ADP ./PUNCT 
 # Ele rega a plantação e arranca duas macaxeiras para levar para sua casa.
 
-Aé/PRON nti/NEG kurí/FUT upuú/V siía/INDQ kumandamirĩ/N kwá/ADVD+DEMX+V akayú/N nhaãsé/ADVJ amana/N nti/NEG uwari/V retana/ADVS ./PUNCT 
+Aé/DEMSN+PRON nti/NEG kurí/FUT upuú/V siía/INDQ kumandamirĩ/N kwá/ADVDX+DEMX+V akayú/N nhaãsé/ADVJ+SCONJR amana/N nti/NEG uwari/V retana/ADVS ./PUNCT 
 # Ele não vai colher muito feijão este ano porque a chuva não caiu muito (i.e., não choveu muito).
 
 Íwa-itá/N umanũ/??? ana/PFV ./PUNCT 
