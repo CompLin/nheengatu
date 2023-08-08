@@ -578,7 +578,7 @@
 1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
 2	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=8:14
 3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=15:19
-4	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	2	obl	_	TokenRange=20:23
+4	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	2	obl	_	TokenRange=20:23
 5	kití	kití	ADP	ADP	_	4	case	_	TokenRange=24:28
 6	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	8	advmod	_	TokenRange=29:33
 7	taá	taá	PART	CQ	PartType=Int	8	advmod	_	TokenRange=34:37
@@ -7819,7 +7819,7 @@
 13	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	parataxis	_	TokenRange=60:66
 14	reyuuka	yuuka	VERB	V	Number=Sing|Person=2|VerbForm=Fin	13	xcomp	_	TokenRange=67:74
 15	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	14	obj	_	TokenRange=75:78
-16	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	14	obl	_	TokenRange=79:82
+16	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	14	obl	_	TokenRange=79:82
 17	suí	suí	ADP	ADP	_	16	case	_	SpaceAfter=No|TokenRange=83:86
 18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=86:87
 
@@ -12098,7 +12098,7 @@
 5	kwesé	kwesé	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=25:30
 6	apekatú	apekatú	ADV	ADVC	AdvType=Loc	0	root	_	TokenRange=31:38
 7	será	será	PART	PQ	PartType=Int	6	advmod	_	TokenRange=39:43
-8	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	6	obl	_	TokenRange=44:47
+8	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	6	obl	_	TokenRange=44:47
 9	suí	suí	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=48:51
 10	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=51:52
 
@@ -12114,7 +12114,7 @@
 3	uri	yuri	VERB	V	Person=3|VerbForm=Fin	0	root	_	_
 4	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	3	aux	_	_
 5	yepé	yepé	PART	FRUST	Aspect=Frus	3	advmod	_	TokenRange=21:25
-6	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	3	obl	_	TokenRange=26:29
+6	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	3	obl	_	TokenRange=26:29
 7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=30:34
 8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=34:35
 9	ma	ma	CCONJ	CCONJ	_	12	cc	_	TokenRange=36:38
@@ -12549,7 +12549,7 @@
 6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=22:24
 7	xinga	xinga	ADV	ADVS	AdvType=Deg	8	advmod	_	TokenRange=25:30
 8	asemu	semu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	3	parataxis	_	TokenRange=31:36
-9	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	8	obl	_	TokenRange=37:40
+9	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	8	obl	_	TokenRange=37:40
 10	suí	suí	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=41:44
 11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=44:45
 
@@ -15115,7 +15115,7 @@
 # text_source = Magalhães, 186, adap.
 # text_orig = Kwá suí tẽ ayuíri asarú arama i yuka tapiira, ayuuka arama i kãwera se membí arama.
 # text_annotator = LFdeA
-1	Kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	4	obl	_	TokenRange=0:3
+1	Kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	4	obl	_	TokenRange=0:3
 2	suí	suí	ADP	ADP	_	1	case	_	TokenRange=4:7
 3	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=8:10
 4	ayuíri	yuíri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=11:17
@@ -19200,7 +19200,7 @@
 # text_sec = Yuri kwá kití [...]. (Avila 2021)
 # text_annotator = LFdeA
 1	Yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	kwá	kwá	ADV	ADVDX	Deixis=Prox|Number=Sing|PronType=Dem	1	obl	_	TokenRange=5:8
+2	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	1	obl	_	TokenRange=5:8
 3	kití	kití	ADP	ADP	_	2	case	_	SpaceAfter=No|TokenRange=9:13
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=13:14
 5	ayumimi	yumimi	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=15:22
@@ -19357,9 +19357,10 @@
 # sent_id = Magalhaes1876:2:5:48
 # text = — Retirika, yautí, kurumú apirú indé.
 # text_eng = "Get out, tortoise, or else I'll step on you."
-# text_por = — Retira-te, jabuti, senão eu piso você.
+# text_por = — Retira-te, jabuti, senão eu te piso.
 # text_source = p. 177
 # text_orig = TODO
+# cross-reference = Avila2021:0:0:593
 # text_annotator = LFdeA
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Retirika	tirika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=1:9
@@ -19374,7 +19375,7 @@
 # sent_id = Magalhaes1876:2:6:49
 # text = Repirú!… remaã arama, indé nhũ será apigawa!
 # text_eng = — Step on!… for you to see if only you are male!.
-# text_por = — Pisa!… para tu veres se só tu  és macho!.
+# text_por = — Pisa!… para tu veres se só tu és macho!.
 # text_source = p. 177
 # text_orig = TODO
 # text_annotator = LFdeA
