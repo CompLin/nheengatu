@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: July 26, 2023
+# Last update: September 9, 2023
 
 import re, sys, os, json
 
@@ -58,7 +58,7 @@ adv. man.\tADVA\tadvérbio de maneira
 adv. mod.\tADVM\tadvérbio modal
 adv. temp.\tADVT\tadvérbio temporal
 adv. conj.\tADVJ\tadvérbio conjuncional causal
-adv. conj. opos.\tADVP\tadvérbio conjuncional de oposição
+adv. conj. opos.\tADVP\tadvérbio conjuncional concessivo
 art. indef.\tART\tartigo indefinido
 {AUX} flex. pós.\tAUXFS\tauxiliar flexionado pós-verbal
 {AUX} flex. pré.\tAUXFR\tauxiliar flexionado pré-verbal

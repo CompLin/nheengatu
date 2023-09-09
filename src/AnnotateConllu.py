@@ -3,7 +3,7 @@
 # Author: Leonel Figueiredo de Alencar
 # Last update: June 8, 2023
 
-from Nheengatagger import getparselist, tokenize, DASHES
+from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
 from conllu.models import Token,TokenList
 from conllu import parse
@@ -14,6 +14,9 @@ import re, os
 # set with lexicalized reduplications
 LEXREDUP=set()
 
+# reduplication tag
+REDUP='RED'
+
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
 
@@ -23,18 +26,27 @@ TREEBANK_DIR='corpus/universal-dependencies'
 TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
 
 # set with all treebank sentences
-TREEBANK_SENTS=set()
+TREEBANK_SENTS=[]
 
 # single and double quotes
 QUOTES='''"''"'''
 
 # punctuation introducing a dependent clause
 # TODO: the comma needs a special treatment when introducing non-clausal dependents
-DEPPUNCT=[',',':']
+COMMA=','
+COLON=':'
+SEMICOLON=';'
+DEPPUNCT=[COMMA,COLON,SEMICOLON]
 DEPPUNCT.extend(DASHES)
 
 # characters to be removed from input sentence
-REMOVE=r"/=?\w*([:=|]\w+)*@?"
+REMOVE=re.compile(r"/=?[\w\+]*([:=|]\w+)*@?")
+
+# regex defining pattern to parse examples
+PARTS=re.compile(r"\s+-\s+|[)(]")
+
+# regex matching tags like 'N+ABS', 'N+NCONT', 'ABS', 'NCONT', etc.
+TAGSEQ=re.compile(r'(^\w+\+)?(\w+)\b')
 
 # separators of multiword tokens
 HYPHEN='-'
@@ -79,7 +91,7 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
-'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON'}
+'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON', 'RED': 'Red'}
 
 # TODO: extractDemonstratives()
 DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
@@ -88,7 +100,7 @@ DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 
 DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox', 'I': 'Remt', 'X': 'Prox'}
 
-ADVTYPE={'ADVO':'Loc','ADVD':'Loc', 'ADVS':'Deg', 'ADVJ':'Cau', 'ADVG':'Deg'}
+ADVTYPE={'ADVO':'Tim','ADVD':'Loc', 'ADVS':'Deg', 'ADVJ':'Cau', 'ADVG':'Deg', 'ADVP':'Con'}
 
 WH_ADVTYPE={'ADVC':'Loc', 'ADVA':'Man',
 'ADVT':'Tim', 'ADVM':'Mod', 'ADVU': 'Cau'}
@@ -119,7 +131,7 @@ def extractTreebankSents(infile=TREEBANK_PATH):
         text=sent.metadata.get('text_orig')
         if not text:
             text=sent.metadata.get('text')
-        TREEBANK_SENTS.add(text)
+        TREEBANK_SENTS.append(text)
 
 def checkSentence(sent):
     if not TREEBANK_SENTS:
@@ -262,6 +274,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     number=entry.get('number')
     degree=entry.get('degree')
     derivation=entry.get('derivation')
+    redup=entry.get('redup')
     aspect=entry.get('aspect')
     tense=entry.get('tense')
     vform=entry.get('vform')
@@ -288,6 +301,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Tense']=f"{tense.title()}"
     if derivation:
         feats['Derivation']=UDTAGS.get(derivation)
+    if redup:
+        feats['Red']='Yes'
     if feats:
         token['feats']=feats
     else:
@@ -311,7 +326,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     return token
 
 def spaceBefore(token):
-    if token['xpos'] == 'ELIP' or token['lemma'] in DASHES or token['lemma'] == ':':
+    if token['xpos'] == 'ELIP' or token['lemma'] in DEPPUNCT:
         return True
 
 def insertNoSpaceAfter(token):
@@ -319,6 +334,17 @@ def insertNoSpaceAfter(token):
         token['misc'].update({'SpaceAfter' : 'No'})
 
 def handleSpaceAfter(tokenlist):
+    i=0
+    while(i<len(tokenlist)-1):
+        token=tokenlist[i]
+        nexttoken=tokenlist[i+1]
+        if token['lemma'] == ',':
+            misc=token.get('misc')
+            if misc.get('SpaceAfter'):
+                misc.pop('SpaceAfter')
+        elif token['lemma'] == ELLIPSIS and nexttoken['lemma'] in SENTTERM+(',',):
+            token['misc'].update({'SpaceAfter' : 'No'})
+        i+=1
     tokens=tokenlist.filter(upos='PUNCT')
     quotes=[token for token in tokenlist if token['form'] in QUOTES]
     if tokens:
@@ -566,7 +592,7 @@ def handlePart(token,tokenlist,verbs):
     'CERT': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
-    'TOTAL': {'PartType': 'Quant'},
+    'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
     'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
@@ -594,6 +620,10 @@ def handlePart(token,tokenlist,verbs):
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
         updateFeats(token,'Aspect','Perf')
+    elif xpos == 'TOTAL':
+        #headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
+        updateFeats(token,'Aspect','Compl')
     elif xpos == 'FRUST':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'Aspect','Frus')
@@ -777,7 +807,7 @@ def handleSconj(token,tokenlist,verbs):
         token['head']=nextVerb(token,verbs)
     else:
         handleSconjS(token,tokenlist,verbs)
-    headSconj(token,verbs)
+    headSconj(token,verbs) # TODO: redundant? See below.
 
 def handleSconjS(token,tokenlist,verbs):
     '''TODO:
@@ -794,7 +824,7 @@ def handleSconjS(token,tokenlist,verbs):
                 token['head']=previousVerb(token,verbs)
     else:
         token['head']=nextVerb(token,verbs)
-    headSconj(token,verbs)
+    headSconj(token,verbs) # TODO: redundant? See above.
 
 def headSconj(token,verbs):
     headid=token['head']
@@ -806,10 +836,14 @@ def headSconj(token,verbs):
 
 def handlePosp(token,tokenlist,nouns):
     previous=getPreviousToken(token,tokenlist)
-    if previous and previous['upos'] not in ('NOUN','PRON','PROPN'):
-        nounid=previousCat(token,nouns)
-        token['head']=nounid
-        nounHead(nounid,nouns,tokenlist)
+    if previous:
+        if previous['upos'] == 'ADV':
+            token['head']=previous['id']
+            previous['deprel']='obl'
+        elif previous['upos'] not in ('NOUN','PRON','PROPN'):
+            nounid=previousCat(token,nouns)
+            token['head']=nounid
+            nounHead(nounid,nouns,tokenlist)
 
 def nounHead(nounid,nouns,tokenlist):
     for noun in nouns:
@@ -926,14 +960,45 @@ def pronOrDet(token,nounid,verbs):
             setDeprel(token,verbid,'nsubj')
     elif not nounid:
         token['upos']='PRON'
-        setDeprel(token,verbid,'obj')
+        headid=previousVerb(token,verbs)
+        setDeprel(token,headid,'obj')
+
+def handlePronSeq(tokenlist):
+    c=len(tokenlist)
+    i=0
+    while(i < c-1):
+        token=tokenlist[i]
+        if token['upos']=='PRON':
+            next=tokenlist[i+1]
+            if next['upos']=='PRON':
+                if token['deprel'] == next['deprel']:
+                    token['deprel']='det'
+                    token['head']=next['id']
+        i+=1
 
 def handleDetNum(upos,token,nextToken,tokenlist,verbs):
-    deprel={'DET': 'det', 'NUM': 'nummod'}
-    delta=2
     Pron='Pron'
     if upos == 'NUM':
         Pron='Num'
+    xpos=token['xpos']
+    value=getprontype(xpos)
+    #value=xpos.title()
+    deixis=DEIXIS.get(xpos)
+    if deixis:
+        updateFeats(token,'Deixis',deixis)
+        #value=value[:3]
+    updateFeats(token,f'{Pron}Type',value)
+    if token['feats'].get('PronType') == 'Art':
+        updateFeats(token,'Definite','Ind')
+    feats=nextToken.get('feats')
+    if feats:
+        rel=feats.get('Rel')
+        if rel == 'Cont':
+            token['upos']='PRON'
+            token['head']=nextToken['id']
+            token['deprel']='nmod:poss'
+    deprel={'DET': 'det', 'NUM': 'nummod'}
+    delta=2
     nouns=TokensOfCatList(tokenlist,'NOUN')
     nounid=nextCat(token,nouns)
     pronOrDet(token,nounid,verbs)
@@ -948,16 +1013,6 @@ def handleDetNum(upos,token,nextToken,tokenlist,verbs):
     else:
         if nextToken['upos'] == 'ADP':
             handleAdpCompl(token,verbs,nextToken)
-    xpos=token['xpos']
-    value=getprontype(xpos)
-    #value=xpos.title()
-    deixis=DEIXIS.get(xpos)
-    if deixis:
-        updateFeats(token,'Deixis',deixis)
-        #value=value[:3]
-    updateFeats(token,f'{Pron}Type',value)
-    if token['feats'].get('PronType') == 'Art':
-        updateFeats(token,'Definite','Ind')
 
 def getNextWord(token, tokenlist):
     start=tokenlist.index(token)
@@ -993,9 +1048,64 @@ def isCop(token):
     return token['lemma'] == 'ikú'
 
 def mkCop(token):
-    token['deprel'] = 'cop'
+    #token['deprel'] = 'cop' 070723
     token['xpos'] = 'COP'
-    token['upos'] = 'AUX'
+    #token['upos'] = 'AUX' 070723
+
+def AdjAdvorOblRoot(root,cop,overwrite=True):
+    rootid=root['id']
+    setDeprel(cop,rootid,'cop',overwrite)
+    cop['upos']='AUX'
+    root['deprel']='root'
+    root['head']=0
+
+def getAdjAdvRoot(tokenlist,cop,deps,overwrite):
+    rootid=None
+    for upos in ['ADJ','ADV']:
+        rootid=getUposRoot(tokenlist,upos,cop,deps,overwrite)
+        if rootid != None:
+            return rootid
+
+def getUposRoot(tokenlist,upos,cop,deps,overwrite):
+    for token in tokenlist:
+        if token['upos'] == upos:
+            AdjAdvorOblRoot(token,cop,overwrite)
+            rootid=token['id']
+            if token in deps:
+                deps.remove(token)
+            return rootid
+
+def handleCopClause(tokenlist,copulas):
+    cop=copulas[0]
+    copid=cop['id']
+    rootid=copid
+    deps=tokenlist.filter(head=copid)
+    obls=deps.filter(deprel='obl')
+    for obl in obls:
+        if obl['id'] > copid:
+            AdjAdvorOblRoot(obl,cop)
+            rootid=obl['id']
+            deps.remove(obl)
+            break
+    if rootid == copid:
+        advmods=deps.filter(deprel='advmod')
+        for advmod in advmods:
+            if advmod['id'] > copid:
+                AdjAdvorOblRoot(advmod,cop)
+                rootid=advmod['id']
+                deps.remove(advmod)
+                break
+    if rootid == copid:
+        tokenid=getAdjAdvRoot(tokenlist,cop,deps,True)
+        if tokenid:
+            rootid=tokenid
+    for dep in deps:
+        dep['head']=rootid
+
+def isAdvCl(verb,tokenlist,delta=1):
+    verbid=verb['id']
+    sconjs=verbid+delta
+    return tokenlist.filter(id=sconjs)
 
 def handleAux(tokenlist):
     verbs=VerbIdsList(tokenlist)
@@ -1023,7 +1133,11 @@ def handleAux(tokenlist):
                         pass
                     else:
                         headid=nextVerb(verb,verbs)
-                        handleSameClause(verb,pos,headid,previous,next)
+                        handleSconjList(tokenlist,verbs)
+                        advcl=tokenlist.filter(head=headid,deprel='mark')
+                        #if not isAdvCl(verb,tokenlist):
+                        if not advcl:
+                            handleSameClause(verb,pos,headid,previous,next)
             elif pos == 'AUXFS' or pos == 'AUXN':
                 headid=previousVerb(verb,verbs)
                 handleSameClause(verb,pos,headid,previous,next)
@@ -1069,12 +1183,49 @@ def assignHead(tokenlist,rootid):
 def isNounModifier(token):
     return token['uops'] in ('DET','PRON')
 
-def AdjOrNounRoot(tokenlist):
-    adjs=TokensOfCatList(tokenlist,'ADJ')
+def assignSubj(rootid,nouns):
+    i=-1
+    while(i>=-len(nouns)):
+        noun=nouns[i]
+        if noun['id'] < rootid:
+            setAttribute(noun,'deprel','nsubj')
+            setAttribute(noun,'head',rootid)
+            break
+        i=i-1
+
+def handleOblRoot(tokenlist):
+    copulas=tokenlist.filter(xpos='COP')
+    if copulas:
+        handleCopClause(tokenlist,copulas)
+    else:
+        verbs=tokenlist.filter(upos='VERB')
+        if not verbs:
+            handleOblRootNoCop(tokenlist)
+
+def handleOblRootNoCop(tokenlist):
+    obls=tokenlist.filter(deprel='obl')
+    puncts=tokenlist.filter(deprel='punct')
+    if obls:
+        nouns=extractNominals(tokenlist)
+        root=obls[-1]
+        root['deprel']='root'
+        root['head']=0
+        rootid=root['id']
+        if puncts:
+            puncts[-1]['head']=rootid
+        assignSubj(rootid,nouns)
+
+def extractNominals(tokenlist):
     nouns=TokensOfCatList(tokenlist,'NOUN')
     nouns.extend(TokensOfCatList(tokenlist,'PRON'))
     nouns.extend(TokensOfCatList(tokenlist,'PROPN'))
-    cop=tokenlist.filter(deprel='cop')
+    return nouns
+
+def AdjOrNounRoot(tokenlist):
+    adjs=TokensOfCatList(tokenlist,'ADJ')
+    nouns=extractNominals(tokenlist)
+    #cop=tokenlist.filter(deprel='cop') 070723
+    cop=tokenlist.filter(xpos='COP')
     rootid=0
     if adjs:
         root=adjs[-1]
@@ -1136,7 +1287,13 @@ def handlePunct(token,nextToken,tokenlist,verbs):
         nextToken['head'] = nextVerb(token,verbs)
     elif nextToken['xpos'] == 'ELIP':
          updateFeats(nextToken,'PunctType','Elip')
-         nextToken['head'] = previousVerb(nextToken,verbs)
+         if token['upos'] == 'PUNCT':
+             rootlist=tokenlist.filter(deprel='root')
+             if rootlist:
+                 token['head']=rootlist[0]['id']
+                 nextToken['head'] = token['head']
+         else:
+            nextToken['head'] = previousVerb(nextToken,verbs)
     elif nextToken['lemma'] not in QUOTES:
         headlist=tokenlist.filter(deprel='root')
         head=1
@@ -1158,7 +1315,7 @@ def handleStartPunct(tokenlist):
 def mkPunctToken(punct,start,ident):
     parselist=getparselist(punct)
     entries=extract_feats(parselist)
-    return mkConlluToken(',',entries[0],start=start,ident=ident)
+    return mkConlluToken(punct,entries[0],start=start,ident=ident)
 
 def insertPunct(punct,tokenid,tokenlist):
     position=tokenid-1
@@ -1183,9 +1340,14 @@ def handleRel(token,tokenlist):
     token['deprel'] = 'nsubj'
     i=len(tokenlist)
     previous=getPreviousToken(token,tokenlist)
+    if previous['upos'] == 'PART':
+        previous=getPreviousToken(previous,tokenlist)
     token['head'] = previous['id']
     nouns=TokensOfCatList(tokenlist,'NOUN')
     prons=TokensOfCatList(tokenlist,'PRON')
+    for pron in prons:
+        if pron['xpos'] == 'PRON2':
+            prons.remove(pron)
     tokenid=token['id']
     headids=[tokenid]
     nounid=previousCat(token,nouns)
@@ -1206,6 +1368,11 @@ def handleVerbs(verbs):
         for verb in rootlist[1:]:
             headid = previousVerb(verb,verbs)
             setDeprel(verb, headid,deprel='parataxis',overwrite=True)
+
+def handleSconjList(tokenlist,verbs):
+    for token in tokenlist:
+        if token['upos'] == 'SCONJ':
+            handleSconj(token,tokenlist,verbs)
 
 def addFeatures(tokenlist):
     start=0
@@ -1237,7 +1404,7 @@ def addFeatures(tokenlist):
             # TODO: handleVerb(token,nextToken,verbs)
         elif upos == "ADP":
             handleAdp(token,tokenlist,verbs)
-        elif upos == "SCONJ":
+        elif upos == "SCONJ": # TODO: iterate over tokenlist annotating all SCONJs
             handleSconj(token,tokenlist,verbs)
         elif upos == "CCONJ":
             handleCconj(token,verbs)
@@ -1252,13 +1419,13 @@ def addFeatures(tokenlist):
     handleNmodPoss(tokenlist[start:])
 
 def mkVocative(token,punct):
-    if punct['lemma'] == ',':
+    if punct['lemma'] == COMMA:
         token['deprel'] = 'vocative'
         punct['head'] = token['id']
 
 def handleVocative(tokenlist):
     for token in tokenlist:
-        if token['deprel'] == 'nsubj':
+        if token['deprel'] in ('nsubj','obj'):
             i=tokenlist.index(token)
             next=getNextToken(token,tokenlist[i+1:])
             previous=getPreviousToken(token,tokenlist)
@@ -1280,14 +1447,32 @@ def handleVocative(tokenlist):
                     mkVocative(token,next)
                     break
 
-def getTag(parse):
-	tag=parse[1]
-	if tag:
-		return tag.split('+')[0]
+def getXpos(parse):
+	tags=parse[1]
+	if tags:
+		return tags.split('+')[0]
 	return ''
 
-def filterparselist(tag,parselist):
-    return list(filter(lambda x: getTag(x) == tag.upper(),parselist))
+def getTags(parse):
+    tags=''
+    m=None
+    if parse[1]:
+        m=TAGSEQ.search(parse[1])
+    if m:
+        x,y=m.groups()
+        if x:
+            tags=f"{x}{y}"
+        else:
+            tags=y
+    return tags
+
+def hasTag(tags1,tags2):
+    if re.search(rf"\b{re.escape(tags2)}\b",tags1):
+        return True
+    return False
+
+def filterparselist(tags,parselist):
+    return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
@@ -1392,15 +1577,24 @@ def mkSuff(form,dic):
         clitic=suff.get('clitic')
         if clitic == form:
             dic['form']=form
-            dic['upos']=UDTAGS[suff['xpos']]
+            dic['upos']=getudtag(suff['xpos'])
             dic['xpos']=suff['xpos']
             dic['lemma']=suff['lemma']
             dic['underscore']=True
             break
 
 
-def mkPropn(form):
-    return [[form.lower(), 'PROPN']]
+def mkPropn(token,orig=None,orig_form=None):
+    new={}
+    feats=['PROPN']
+    tags='+'.join(feats)
+    lemma=token.lower()
+    if orig:
+        new['OrigLang']=orig
+    if orig_form:
+        new['Orig']=orig_form
+    new['parselist']=[[lemma, tags]]
+    return new
 
 def mkAdv(form):
     return [[form.lower(), 'ADV']]
@@ -1483,10 +1677,12 @@ def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
         xpos='V'
     if not guess:
         parselist=getparselist(base)
-        parse=filterparselist(xpos,parselist)[0]
-        parse[1]=f"{parse[1]}+{'+'.join(feats)}"
-        new['parselist']=[parse]
-        return new
+        parses=filterparselist(xpos,parselist)
+        if parses:
+            parse=parses[0]
+            parse[1]=f"{parse[1]}+{'+'.join(feats)}"
+            new['parselist']=[parse]
+            return new
     if xpos == 'V':
         new=mkVerb(base,derivation=tag)
     elif xpos == 'N':
@@ -1498,6 +1694,7 @@ def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
 def mkNoun(form,orig=None,dic={},orig_form=''):
     feats=[]
     new={}
+    lemma=form.lower()
     if orig:
         new['OrigLang']=orig
     if orig_form:
@@ -1510,34 +1707,42 @@ def mkNoun(form,orig=None,dic={},orig_form=''):
     if derivation:
         feats.append(derivation)
     if not number:
-        number=getNumber(form)['number']
+        d=getNumber(lemma)
+        number=d['number']
+        lemma=d.get('lemma')
     feats.append(number)
-    new['parselist']=[[form.lower(), f"N+{'+'.join(feats)}"]]
+    new['parselist']=[[lemma, f"N+{'+'.join(feats)}"]]
     return new
 
-def mkAdj(form,orig='pt',dic={}):
+def mkAdj(form,orig='pt',dic={},orig_form=''):
+    form=form.lower()
     feats=[]
     new={}
     if orig:
         new['OrigLang']=orig
+    if orig_form:
+        new['Orig']=orig_form
     degree=dic.get('degree')
     derivation=dic.get('derivation')
     if degree:
         feats.append(degree)
     if derivation:
         feats.append(derivation)
-    new['parselist']=[[form.lower(), f"A+{'+'.join(feats)}"]]
+    new['parselist']=[[form, f"A+{'+'.join(feats)}"]]
     return new
-
 
 def getNumber(form):
     dic={}
     dic['number']='SG'
     if form.endswith('-itá'):
         dic['number']='PL'
+        dic['lemma']=form[:-4]
+    else:
+        dic['lemma']=form
     return dic
 
-def mkAug(form,force=False):
+def mkAug(form,force=False): # TODO: superseded by mkEval
+    form=form.lower()
     i=-4
     dic=getNumber(form)
     dic['degree']='AUG'
@@ -1547,7 +1752,25 @@ def mkAug(form,force=False):
     lemma=handleAccent(form[:i],force=force)
     return mkNoun(lemma,None,dic)
 
+def mkEval(form,xpos='N',force=False):
+    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM'}
+    xpos=xpos
+    dic={}
+    dic['lemma']=form.lower()
+    if xpos=='N':
+        dic.update(getNumber(dic['lemma']))
+    for suff,feat in suffixes.items():
+         if dic['lemma'].endswith(suff):
+             dic['degree']=feat
+             dic['lemma']=dic['lemma'][:-len(suff)]
+             break
+    lemma=handleAccent(dic['lemma'],force=force)
+    if dic.get('number'):
+        return mkNoun(lemma,None,dic)
+    return mkAdj(lemma,None,dic)
+
 def mkCol(form):
+    form=form.lower()
     suff='tiwa'
     i=-len(suff)
     dic=getNumber(form)
@@ -1558,18 +1781,25 @@ def mkCol(form):
     lemma=handleAccent(form[:i])
     return mkNoun(lemma,None,dic)
 
-def mkPrv(form):
-    i=-4
+def mkPrv(form, xpos='A'):
+    form=form.lower()
+    i=-3
     dic={}
-    dic['derivation']='PRV'
-    lemma=form[:i]
-    return mkAdj(lemma,None,dic)
+    tag='PRV'
+    dic['derivation']=tag
+    lemma=handleAccent(form[:i])
+    new={}
+    if xpos == 'A':
+        new=mkAdj(lemma,None,dic)
+    elif xpos == 'A2':
+        new['parselist']=[[lemma, f"{xpos}+{tag}"]]
+    return new
 
 def mkClitic(lemma,upos):
     return [[lemma, upos]]
 
 def mkUpos(lemma,upos):
-    return [[lemma, upos]]
+    return [[lemma.lower(), upos]]
 
 def mkIntj(lemma):
     return mkUpos(lemma,'INTJ')
@@ -1588,6 +1818,20 @@ def handleAlomorph(form):
 
 def mkRoot(index):
     ROOT.append(index)
+
+def isMultitokenWord(tokenid):
+	return (type(tokenid) is tuple and len(tokenid) == 3) or (type(tokenid) is str and len(tokenid.split('-')) == 2)
+
+def setRoot(tokenlist):
+    rootlist=tokenlist.filter(deprel='root')
+    if rootlist:
+        root=rootlist[0]
+        rootid=root['id']
+        for token in tokenlist:
+            tokenid=token['id']
+            if not isMultitokenWord(tokenid) and tokenid != rootid:
+                if not token['head']:
+                    token['head'] = rootid
 
 def handleRoot(tokenlist):
     rootid=0
@@ -1648,6 +1892,22 @@ def parseTag(tag):
         dic['func']=tag
     return dic
 
+def insertRedup(parselist):
+    for parse in parselist:
+        lemma,tags=parse[0],parse[1]
+        if tags:
+            taglist=tags.split('+')
+            c=len(taglist)
+            if c > 1:
+                taglist.insert(1,REDUP)
+            elif c == 1:
+                taglist.append(REDUP)
+            parse[1]="+".join(taglist)
+
+def extractTag(token):
+    if '/' in token:
+        return token.split('/')
+
 def mkConlluSentence(tokens):
     ROOT.clear()
     tokenlist=TokenList()
@@ -1657,8 +1917,9 @@ def mkConlluSentence(tokens):
         old=token
         tag=MULTIWORDTOKENS.get('xpos')
         root=False
-        if '/' in token:
-            token,tag=token.split('/')
+        parts=extractTag(token)
+        if parts:
+            token,tag=parts
             if '@' in tag:
                 root=True
                 tag=tag[:-1]
@@ -1674,6 +1935,7 @@ def mkConlluSentence(tokens):
         alomorph=form.lower()
         if redup:
             parselist=getparselist(redup['form'])
+            insertRedup(parselist)
         else:
             if lemma:
                 parselist=mkClitic(lemma,xpos)
@@ -1691,21 +1953,25 @@ def mkConlluSentence(tokens):
             orig=tagparse.get('o')
             orig_form=tagparse.get('s')
             force=tagparse.get('f')
+            xpos=tagparse.get('x')
+            if xpos:
+                xpos=xpos.upper()
             newparselist=[]
             if tag == '=p':
-                newparselist=mkPropn(token)
+                new=mkPropn(token,orig=orig,orig_form=orig_form)
+                newparselist=new['parselist']
             elif tag == '=adv':
                 newparselist=mkAdv(token)
             elif tag == '=n':
                 new=mkNoun(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
             elif tag == '=a':
-                new=mkAdj(form,orig=orig)
+                new=mkAdj(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
             elif tag == '=v':
                 new=mkVerb(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
-            elif tag == '=hab':
+            elif tag == '=hab': # TODO hab -> ohab
                 new=mkHab(form)
                 newparselist=new['parselist']
             elif tag == '=col':
@@ -1714,12 +1980,9 @@ def mkConlluSentence(tokens):
             elif tag == '=hab=sconj':
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
-            elif tag == '=mkhab':
-                xpos=tagparse.get('x')
-                if xpos:
-                    xpos=xpos.upper()
+            elif tag == '=mkhab': # TODO mkhab -> hab
                 new=mkHabXpos(  form,
-                                xpos=tagparse.get('x'),
+                                xpos,
                                 lenght=tagparse.get('l'),
                                 accent=tagparse.get('a'),
                                 guess=tagparse.get('g'),
@@ -1729,8 +1992,11 @@ def mkConlluSentence(tokens):
             elif tag == '=aug':
                 new=mkAug(form,force)
                 newparselist=new['parselist']
+            elif tag == '=ev':
+                new=mkEval(form,xpos,force)
+                newparselist=new['parselist']
             elif tag == '=prv':
-                new=mkPrv(form)
+                new=mkPrv(form,xpos)
                 newparselist=new['parselist']
             elif tag == '=intj':
                 newparselist=mkIntj(form)
@@ -1764,10 +2030,13 @@ def mkConlluSentence(tokens):
     handleSpaceAfter(tokenlist)
     addFeatures(tokenlist)
     insertMultitokenWord(tokenlist)
+    handleOblRoot(tokenlist)
     handleRoot(tokenlist)
     handleExpletive(tokenlist)
     handleVocative(tokenlist)
     handleStartPunct(tokenlist)
+    setRoot(tokenlist)
+    handlePronSeq(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -1792,7 +2061,7 @@ def extract_sents(line=None,lines=None):
         for sent in lines.split("\n"):
             sents.append(sent.strip())
     else:
-        sents=[sent.strip() for sent in re.split(r"\s+-\s+|[)(]",line) if sent]
+        sents=[sent.strip() for sent in PARTS.split(line,4) if sent]
     return sents
 
 def ppText(sents,pref='',textid=0,index=0,sentid=0):
@@ -1817,7 +2086,7 @@ def mkText(text):
 	print(ppText(extract_sents(lines=text)))
 
 def extractYrl(sent):
-    return re.sub(REMOVE,'',sent)
+    return REMOVE.sub('',sent)
 
 def handleSents(sents,pref,textid,index,sentid,annotator):
     yrl=extractYrl(sents[0])
@@ -1843,14 +2112,20 @@ def handleSents(sents,pref,textid,index,sentid,annotator):
 def includeAnnotator(output,annotator):
     output.append(f"# text_annotator = {annotator}")
 
-def handleParse(output,copyboard=True):
-    outstring='\n'.join(output)
+def formatList(output):
+    return '\n'.join(output)
+
+def handleParse(outstring,copyboard=True):
     if copyboard:
         import pyperclip
         pyperclip.copy(outstring)
     print(outstring)
 
-def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True,annotator='LFdeA'):
+def getFileNameParts(pref,textid,index,sentid):
+    return {'pref':pref, 'textid':str(textid),
+    'index':str(index),'sentid':str(sentid)}
+
+def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True,annotator='LFdeA',outfile=False,overwrite=False):
     if not text:
         text='''Aité kwá sera waá piranha yakunheseri
         aé i turususá i apuã waá rupí, asuí sanha
@@ -1861,7 +2136,22 @@ def TreebankSentence(text='',pref='',textid=0,index=0,sentid=0,copyboard=True,an
         and its sharp teeth.'''.replace('\n','') # Avila (2021, p. 256)
         text=re.sub(r"\s+",' ',text)
     sents=extract_sents(text)
-    handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
+    output=handleSents(sents, pref,textid,index,sentid,annotator)
+    outstring=formatList(output)
+    if outfile:
+        metadata=getFileNameParts(pref,textid,index,sentid)
+        saveParseToFile(includeText(text,outstring),metadata,overwrite)
+    handleParse(outstring,copyboard=copyboard)
+
+def saveParseToFile(outstring,metadata,overwrite):
+    values=list(metadata.values())
+    filename=f"{'-'.join(values)}.conllu"
+    if os.path.exists(filename) and not overwrite:
+        print(f"{filename} already exists.")
+    else:
+        outfile=open(filename,'w')
+        print(outstring,file=outfile)
+        outfile.close()
 
 def includeTranslation(example):
     from deep_translator import GoogleTranslator
@@ -1877,14 +2167,22 @@ def includeTranslation(example):
         parts.append(text_eng)
     return parts
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True):
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False):
     yrl=extract_sents(example)[0] # TODO: avoid calling this function three times
     if check:
         if checkSentence(yrl):
             print(f"Sentence '{yrl}' already is in the treebank.")
             return
     sents=includeTranslation(example)
-    handleParse(handleSents(sents, pref,textid,index,sentid,annotator),copyboard=copyboard)
+    output=handleSents(sents,pref,textid,index,sentid,annotator)
+    outstring=formatList(output)
+    if outfile:
+        metadata=getFileNameParts(pref,textid,index,sentid)
+        saveParseToFile(includeText(example,outstring),metadata, overwrite)
+    handleParse(outstring,copyboard=copyboard)
+
+def includeText(text,outstring):
+    return f"# textinput = {text}\n{outstring}"
 
 def endswithNTU(word):
     return word.endswith(NTU)
@@ -1951,15 +2249,21 @@ def splitMultiWordTokens(tokens):
     for t in tokens:
         dic=extractHost(t)
         if HYPHEN in t:
+            tag=''
+            parts=extractTag(t)
+            if parts:
+                t,tag=parts
             index=t.index(HYPHEN)
             first=t[:index]
             second=t[index:]
             if second[1:] in sep:
                 if second[1:] in CLITICS:
                     first=f"{first}-"
+                if tag:
+                    first=f"{first}/{tag}"
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
-                newlist.append(t)
+                newlist.append(f"{t}/{tag}")
         elif dic: # TODO: if dic ...?
             host=dic['host']
             suff=dic['suff']
@@ -2017,7 +2321,8 @@ def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboar
         sentid+=1
         index+=1
         i+=1
-    handleParse(output,copyboard=copyboard)
+    outstring=formatList(output)
+    handleParse(outstring,copyboard=copyboard)
 
 def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
     i=0
@@ -2040,3 +2345,117 @@ def insertAnnotatorInSents(infile,outfile,annotator):
     sents=extractConlluSents(infile)
     insertAnnotator(sents,annotator)
     writeSentsConllu(sents,outfile)
+
+def extractWordTagPairs(tokenlist):
+	i=0
+	triples=[]
+	mapping={'ADV': '=adv', 'NOUN': '=n', 'ADJ': '=a',
+		 'PROPN': '=p', 'VERB': '=v', 'INTJ': '=intj'}
+	while(i<len(tokenlist)):
+		func=''
+		token=tokenlist[i]
+		tokenid=token['id']
+		form=token['form']
+		xpos=token['xpos']
+		tag=None
+		if xpos:
+			xpos=xpos.lower()
+			tag=xpos
+		upos=token['upos']
+		if upos in ('INTJ','PROPN'):
+			func=mapping[upos]
+		feats=token['feats']
+		if feats:
+			rel=feats.get('Rel')
+			if rel:
+				tag=f"{xpos}+{rel.lower()}"
+			aug=feats.get('Degree')
+			if aug == 'Aug':
+				func='=aug'
+			aspect=feats.get('Aspect')
+			if aspect in ('Freq','Hab'):
+				func=f"=mkhab:x|{tag}:a|t"
+			derivation=feats.get('Derivation')
+			if derivation:
+				if derivation == 'Priv':
+					func=f"=prv:x|{xpos}"
+				elif derivation == 'Coll':
+					func='=col'
+		misc=token['misc']
+		if misc:
+			spaceafter=misc.get('SpaceAfter')
+			origlang=misc.get('OrigLang')
+			if not func:
+				if origlang:
+					func=mapping.get(upos)
+		if isMultitokenWord(tokenid):
+			if HYPHEN in form:
+				tag=tokenlist[i+1]['xpos'].lower()
+			i+=2
+		if func:
+			tag=func
+		triples.append((form,tag,spaceafter))
+		i+=1
+	return triples
+
+def mkSent(triples):
+	sent=""
+	for form,tag,spaceafter in triples:
+		sep=' '
+		if spaceafter:
+			sep=''
+		word=f"{form}"
+		if tag and tag not in ('punct','elip'):
+			word=f"{form}/{tag}"
+		sent=f"{sent}{word}{sep}"
+	return sent
+
+def removeLemmaAmbiguity(tk):
+	i=0
+	while(i<len(tk)):
+		doubles=tk.filter(id=i)
+		if len(doubles) == 2:
+			t1=doubles[0]
+			t2=doubles[1]
+			form1=t1['form']
+			form2=t2['form']
+			if form1 == form2:
+				feats1=t1.get('feats')
+				feats2=t2.get('feats')
+				if feats1 and feats2:
+					rel1=feats1.get('Rel')
+					rel2=feats2.get('Rel')
+					vform1=feats1.get('VerbForm')
+					vform2=feats2.get('VerbForm')
+					if rel1 and rel2:
+						if rel1=='Abs':
+							index=tk.index(t1)
+							tk.pop(index)
+						elif rel2=='Abs':
+							index=tk.index(t2)
+							tk.pop(index)
+					if vform1 and vform2:
+						if vform1=='Inf':
+							index=tk.index(t1)
+							tk.pop(index)
+						elif vform2=='Inf':
+							index=tk.index(t2)
+							tk.pop(index)
+		i+=1
+
+def mkTestSet(sents):
+    test_sents=[]
+    i=0
+    while(i<len(sents)):
+        tk=sents[i]
+        triples=extractWordTagPairs(tk)
+        sent=mkSent(triples)
+        newtk=parseSentence(sent)
+        removeLemmaAmbiguity(newtk)
+        text=extractYrl(sent)
+        newtk.metadata['sent_id']=f"{i}"
+        newtk.metadata['text']=text
+        newtk.metadata['sent']=sent
+        test_sents.append(newtk)
+        i+=1
+    return test_sents
