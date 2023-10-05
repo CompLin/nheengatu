@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 9, 2023
+# Last update: October 4, 2023
 
 import re, sys, os, json
 
@@ -30,6 +30,9 @@ VSUFF='v. suf.'
 
 # copula verb
 COP='cop.'
+
+# pluralizable nouns and pronouns
+PLURALIZABLE=('N','REL')
 
 TAGSET=f"""
 adj.\tA\tadjetivo de 1ª cl.
@@ -410,7 +413,7 @@ def isInflectableDem(tag):
 
 def hasNumberInflection(tag,lemma):
     if tag:
-        if tag in ('N','REL') or isInflectableDem(tag) or lemma in ('amú',):
+        if tag in PLURALIZABLE or isInflectableDem(tag) or lemma in ('amú',):
             return True
     return False
 
