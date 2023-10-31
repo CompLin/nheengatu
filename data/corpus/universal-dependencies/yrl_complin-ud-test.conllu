@@ -17140,6 +17140,69 @@
 5	repinaitika	pinaitika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	4	xcomp	_	SpaceAfter=No|TokenRange=17:28
 6	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# sent_id = Avila2021:0:0:692
+# text = Tenupá ukiri.
+# text_eng = Let him sleep.
+# text_por = Deixe-o dormir.
+# text_source = Studart, 36, adap.; Magalhães, 180, adap.
+# text_annotator = LFdeA
+1	Tenupá	tenupá	PART	PREC	PartType=Mod	2	advmod	_	TokenRange=0:6
+2	ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:12
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+
+# sent_id = Avila2021:0:0:693
+# text = Ah, se ruái, tenupá apisika ne yakumã?
+# text_eng = Ah, my brother-in-law, let me take your helm?
+# text_por = Ah, meu cunhado, deixa eu pegar o teu leme?
+# text_source = Rodrigues, 164, adap.
+# text_prim = Ah! Che ruai! Tenupá cha pecêca ne yacumá?
+# text_annotator = LFdeA
+1	Ah	ah	INTJ	INTJ	_	7	discourse	_	SpaceAfter=No|TokenRange=0:2
+2	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=2:3
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=4:6
+4	ruái	suái	NOUN	N	Number=Sing|Rel=Cont	7	vocative	_	SpaceAfter=No|TokenRange=7:11
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
+6	tenupá	tenupá	PART	PREC	PartType=Mod	7	advmod	_	TokenRange=13:19
+7	apisika	pisika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=20:27
+8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=28:30
+9	yakumã	yakumã	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=31:37
+10	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = Avila2021:0:0:694
+# text = Resarú xinga rẽ, tenupá asika suindá-pe.
+# text_eng = Wait a minute, let me get to the other side.
+# text_por = Espera um pouco, deixa-me chegar à outra banda.
+# text_source = Magalhães, 187, adap.
+# text_annotator = LFdeA
+1	Resarú	sarú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=7:12
+3	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=13:15
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
+5	tenupá	tenupá	PART	PREC	PartType=Mod	6	advmod	_	TokenRange=17:23
+6	asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=24:29
+7-8	suindá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:40
+7	suindá	suindá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	obl	_	_
+8	pe	upé	ADP	ADP	Clitic=Yes	7	case	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=41:42
+
+# sent_id = Avila2021:0:0:695
+# text = Ah, puranga tẽ, tenupantu aikú iké.
+# text_eng = Ah, okay, let me stay right here then.
+# text_por = Ah, está bem, deixe-me ficar aqui mesmo então.
+# text_source = Leetra Indígena. n. 17, 65, adap.
+# text_annotator = LFdeA
+1	Ah	ah	INTJ	INTJ	_	3	discourse	_	SpaceAfter=No|TokenRange=0:2
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
+3	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=4:11
+4	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	3	advmod	_	SpaceAfter=No|TokenRange=12:14
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=14:15
+6-7	tenupantu	_	_	_	_	_	_	_	TokenRange=16:26
+6	tenupá	tenupá	PART	PREC	PartType=Mod	9	advmod	_	_
+7	ntu	ntu	ADV	ADV	Clitic=Yes	9	advmod	_	_
+8	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	9	cop	_	TokenRange=28:32
+9	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	parataxis	_	SpaceAfter=No|TokenRange=33:36
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
+
 # sent_id = NTLN:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
