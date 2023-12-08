@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 4, 2023
+# Last update: November 10, 2023
 
 import re, sys, os, json
 
@@ -80,7 +80,10 @@ interj.\tINTJ\tinterjeição
 s.\tN\tsubstantivo comum
 s. próprio\tPROPN\tsubstantivo próprio
 part.\tPART\tpartícula
+part. mod.\tMOD\tpartícula modal
 part. perf.\tPFV\tpartícula de perfectivo
+part. imperf.\tIMPF\tpartícula de imperfectivo
+part. prec.\tPREC\tpartícula de precativo
 part. tot.\tTOTAL\tpartícula de totalitativo
 part. prot.\tPROTST\tpartícula de protestivo
 part. assum.\tASSUM\tpartícula de suposição
@@ -374,7 +377,7 @@ def firstclasspron():
     """First class pronouns (Avila, 2021; Navarro, 2020),
     personal and anaphoric pronouns (Cruz, 2011).
     """
-    return {'ixé': '1+SG','indé': '2+SG','aé': '3+SG','yandé':
+    return {'ixé': '1+SG','indé': '2+SG','iné': '2+SG','aé': '3+SG','yandé':
     '1+PL','penhẽ': '2+PL','tá': '3+PL', 'ta': '3+PL','aintá': '3+PL'
     }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 8, 2023
+# Last update: November 28, 2023
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -45,6 +45,9 @@ REMOVE=re.compile(r"/=?[\w\+]*([:=|]\w+)*@?")
 # regex defining pattern to parse examples
 PARTS=re.compile(r"\s+-\s+|[)(]")
 
+# regex for squeezing white space
+SQUEEZE=re.compile(r"\s{2,}")
+
 # regex matching tags like 'N+ABS', 'N+NCONT', 'ABS', 'NCONT', etc.
 TAGSEQ=re.compile(r'(^\w+\+)?(\w+)\b')
 
@@ -61,12 +64,21 @@ MULTIWORDTOKENS={}
 # Case of second class pronouns
 CASE="Gen"
 
-# Enclitic postpositions
+# Enclitic items
 # TODO: extract fom glossary
-# hyphenated
-CLITICS=['pe']
+# hyphenated postposition
+PE='pe'
+# content question particle
+TACL='ta'
 
-# non-hyphenated
+CLITICENTRIES={
+PE : {'lemma':'upé','xpos':'ADP'},
+TACL : {'lemma':'taá','xpos':'CQ'}
+}
+#CLITICS=[list(dic.keys())[0] for dic in CLITICENTRIES]
+CLITICS=list(CLITICENTRIES.keys())
+
+# non-hyphenated clitics
 # clitic alomorph of postposition 'upé'
 ME='me'
 
@@ -94,9 +106,13 @@ UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON', 'RED': 'Red'}
 
 # TODO: extractDemonstratives()
+# TODO: implement function mapping these keys to 'DET'
 DET =  {'DEM' : 'DET', 'INDQ' : 'DET',
 'INT' : 'DET', 'ART' : 'DET', 'DEMX' : 'DET', 'DEMS' : 'DET',
 'DEMSN' : 'DET', 'IND' : 'DET', 'TOT' : 'DET'}
+
+# list of part-of-speech tags in determiner position
+DETERMINERS=("DET","NUM")
 
 DEIXIS={'DEMS' : 'Remt', 'DEMSN' : 'Remt','DEMX' : 'Prox', 'I': 'Remt', 'X': 'Prox'}
 
@@ -590,8 +606,10 @@ def handlePart(token,tokenlist,verbs):
     'EXST': {'PartType': 'Exs'},
     'PRSV': {'PartType': 'Prs'},
     'CERT': {'PartType': 'Mod'},
+    'PREC': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
+    'MOD': {'PartType': 'Mod'},
     'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
@@ -616,6 +634,12 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'NEC':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
+    elif xpos == 'PREC':
+        updateFeats(token,'PartType', 'Mod')
+        headPartNextVerb(token,verbs)
+    elif xpos == 'MOD':
+        updateFeats(token,'PartType', 'Mod')
+        headPartPreviousVerb(token,verbs)
     elif xpos == 'PFV':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
@@ -952,16 +976,18 @@ def previousCat(token,cats):
     return 0
 
 def pronOrDet(token,nounid,verbs):
-    verbid=nextVerb(token,verbs)
-    tokenid=token['id']
-    if verbid:
-        if nounid > verbid or not nounid:
+    if token['xpos'] not in ('CARD',):
+        print("mu",token,nounid)
+        verbid=nextVerb(token,verbs)
+        tokenid=token['id']
+        if verbid:
+            if nounid > verbid or not nounid:
+                token['upos']='PRON'
+                setDeprel(token,verbid,'nsubj')
+        elif not nounid:
             token['upos']='PRON'
-            setDeprel(token,verbid,'nsubj')
-    elif not nounid:
-        token['upos']='PRON'
-        headid=previousVerb(token,verbs)
-        setDeprel(token,headid,'obj')
+            headid=previousVerb(token,verbs)
+            setDeprel(token,headid,'obj')
 
 def handlePronSeq(tokenlist):
     c=len(tokenlist)
@@ -977,6 +1003,7 @@ def handlePronSeq(tokenlist):
         i+=1
 
 def handleDetNum(upos,token,nextToken,tokenlist,verbs):
+    print("bu",token,nextToken)
     Pron='Pron'
     if upos == 'NUM':
         Pron='Num'
@@ -1001,6 +1028,8 @@ def handleDetNum(upos,token,nextToken,tokenlist,verbs):
     delta=2
     nouns=TokensOfCatList(tokenlist,'NOUN')
     nounid=nextCat(token,nouns)
+    if not nounid:
+        nounid=previousCat(token,nouns)
     pronOrDet(token,nounid,verbs)
     deprel=deprel.get(token['upos'])
     if deprel:
@@ -1009,6 +1038,7 @@ def handleDetNum(upos,token,nextToken,tokenlist,verbs):
         if nounid - tokenid > delta:
             token['head']=getNextWord(token,tokenlist)['id']
         else:
+            print("ju",nounid)
             token['head']=nounid
     else:
         if nextToken['upos'] == 'ADP':
@@ -1410,7 +1440,7 @@ def addFeatures(tokenlist):
             handleCconj(token,verbs)
         elif upos == "ADV":
             handleAdv(token,nextToken,tokenlist,verbs)
-        elif upos in ("DET","NUM"):
+        elif upos in DETERMINERS:
             handleDetNum(upos,token,nextToken,tokenlist,verbs)
         if nextToken and nextToken['upos'] == 'PUNCT': # TODO: sentences without final punctuation
             handlePunct(token,nextToken, tokenlist,verbs)
@@ -1474,7 +1504,7 @@ def hasTag(tags1,tags2):
 def filterparselist(tags,parselist):
     return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
 
-def handleCompoundAux(token):
+def handleCompoundAuactx(token):
     updateFeats(token,'Compound','Yes')
 
 def handleClitic(token):
@@ -1544,15 +1574,22 @@ def insertMultitokenWord(tokenlist):
                     tokenlist.insert(index-1,compound)
                 #break
 
+def extractCliticEntry(clitic):
+    entries=list(filter(lambda dic: list(dic.keys())[0] ==clitic, CLITICENTRIES))
+    if entries:
+        return entries[0]
+
 def handleHyphen(form):
     dic={}
     dic['form']=form
     dic['hyphen']=False
     if form.startswith(HYPHEN):
         dic['form']=form[1:]
-        if form[1:] in CLITICS:
-            dic['lemma']='upé'
-            dic['xpos']='ADP'
+        entry=CLITICENTRIES.get(form[1:])
+        if entry:
+            dic.update(entry)
+            #dic['lemma']=CLITICENTRIES[form[1:]]['lemma']
+            #dic['xpos']=CLITICENTRIES[form[1:]]['xpos']
         dic['hyphen']=True
     elif form.endswith(HYPHEN):
         dic['host']=True
@@ -1753,12 +1790,14 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     return mkNoun(lemma,None,dic)
 
 def mkEval(form,xpos='N',force=False):
+    print('miu')
     suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM'}
     xpos=xpos
     dic={}
     dic['lemma']=form.lower()
     if xpos=='N':
         dic.update(getNumber(dic['lemma']))
+        print('pliu',dic)
     for suff,feat in suffixes.items():
          if dic['lemma'].endswith(suff):
              dic['degree']=feat
@@ -1766,7 +1805,7 @@ def mkEval(form,xpos='N',force=False):
              break
     lemma=handleAccent(dic['lemma'],force=force)
     if dic.get('number'):
-        return mkNoun(lemma,None,dic)
+        return mkNoun(lemma,dic=dic)
     return mkAdj(lemma,None,dic)
 
 def mkCol(form):
@@ -1791,7 +1830,7 @@ def mkPrv(form, xpos='A'):
     new={}
     if xpos == 'A':
         new=mkAdj(lemma,None,dic)
-    elif xpos == 'A2':
+    else:
         new['parselist']=[[lemma, f"{xpos}+{tag}"]]
     return new
 
@@ -1993,6 +2032,7 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev':
+                print('xiu',xpos)
                 new=mkEval(form,xpos,force)
                 newparselist=new['parselist']
             elif tag == '=prv':
@@ -2058,11 +2098,14 @@ def insertAnnotator(sentences,annotator):
 def extract_sents(line=None,lines=None):
     sents=[]
     if lines:
-        for sent in lines.split("\n"):
+        for sent in SqueezeWhiteSpace(lines).split("\n"):
             sents.append(sent.strip())
     else:
-        sents=[sent.strip() for sent in PARTS.split(line,4) if sent]
+        sents=[sent.strip() for sent in PARTS.split(SqueezeWhiteSpace(line),4) if sent]
     return sents
+
+def SqueezeWhiteSpace(s):
+    return SQUEEZE.sub(" ",s)
 
 def ppText(sents,pref='',textid=0,index=0,sentid=0):
     output=[]
@@ -2153,6 +2196,16 @@ def saveParseToFile(outstring,metadata,overwrite):
         print(outstring,file=outfile)
         outfile.close()
 
+def formatTextEng(s):
+    print('tlu')
+    s=s.strip()
+    c=s[0]
+    chars='-—'
+    if c in chars:
+        s=s.replace(c,'').strip()
+        return f'"{s.strip(chars).strip()}"'
+    return s
+
 def includeTranslation(example):
     from deep_translator import GoogleTranslator
     parts=extract_sents(example)
@@ -2161,6 +2214,7 @@ def includeTranslation(example):
         i=-2
     text_por=parts[i]
     text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
+    text_eng=formatTextEng(text_eng)
     if len(parts) == 4:
         parts.insert(-1,text_eng)
     else:
@@ -2259,8 +2313,10 @@ def splitMultiWordTokens(tokens):
             if second[1:] in sep:
                 if second[1:] in CLITICS:
                     first=f"{first}-"
+                    print('ziu')
                 if tag:
                     first=f"{first}/{tag}"
+                    print('wow')
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}/{tag}")
@@ -2459,3 +2515,28 @@ def mkTestSet(sents):
         test_sents.append(newtk)
         i+=1
     return test_sents
+
+def mkSecText(yrl=None,yrl_source=None,por=None, por_sec=False,por_source=None):
+    sep=''
+    if por_sec:
+        por_sec='sec'
+        sep='_'
+    else:
+        por_sec=''
+    dic={}
+    if yrl:
+        dic['text_sec']=yrl
+    if por:
+        text_por=f"{sep.join(['text_por',por_sec])}"
+        dic[text_por]=por
+    if yrl_source:
+        dic[f'text_sec_source']=yrl_source
+        if por_source:
+            dic[f'{text_por}_source']=por_source
+        else:
+            dic[f'{text_por}_source']=yrl_source
+    return dic
+
+def mkSecTextAvila(example,por_sec=False):
+    sents=extract_sents(example)
+    return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
