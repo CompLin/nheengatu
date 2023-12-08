@@ -188,6 +188,16 @@
         "gloss": "expressa diversos sentimentos"
     },
     {
+        "lemma": "adí",
+        "pos": "interj.",
+        "gloss": "expressa diversos sentimentos"
+    },
+    {
+        "lemma": "axí",
+        "pos": "interj.",
+        "gloss": "var. adí"
+    },
+    {
         "lemma": "araã",
         "pos": "interj.",
         "gloss": "expressa diversos sentimentos"
@@ -1262,6 +1272,11 @@
         "gloss": "1. tu; 2. te (pron. obj.)"
     },
     {
+        "lemma": "iné",
+        "pos": "pron.",
+        "gloss": "var. indé"
+    },
+    {
         "lemma": "ipadú",
         "pos": "s.",
         "gloss": "nome de uma planta alucinógena"
@@ -1830,11 +1845,6 @@
         "gloss": "1. para (fal. de lugar); 2. pode indicar localização vaga: para os lados de"
     },
     {
-        "lemma": "kiwíra",
-        "pos": "s.",
-        "gloss": "irmão (de m.)"
-    },
-    {
         "lemma": "kuẽma",
         "pos": "s.",
         "gloss": "manhã",
@@ -2093,7 +2103,7 @@
     {
         "lemma": "kuxiíma",
         "pos": "adv. temp.",
-        "gloss": "var. ort. kuxiima"
+        "gloss": "var. orth. kuxiima"
     },
     {
         "lemma": "kuxiima",
@@ -2331,7 +2341,14 @@
     {
         "lemma": "até",
         "pos": "prep. / sconj. pré.",
-        "gloss": "até"
+        "gloss": "até",
+        "var": 1
+    },
+    {
+        "lemma": "até",
+        "pos": "interj.",
+        "gloss": "var. adí",
+        "var": 2
     },
     {
         "lemma": "tikanga",
@@ -2442,6 +2459,11 @@
     {
         "lemma": "apisá-kwara",
         "pos": "s.",
+        "gloss": "orifício do ouvido"
+    },
+    {
+        "lemma": "apisá",
+        "pos": "s.",
         "gloss": "ouvido"
     },
     {
@@ -2498,6 +2520,16 @@
         "lemma": "makú",
         "pos": "s.",
         "gloss": "macu, nome de grupo indígena"
+    },
+    {
+        "lemma": "kunhambira",
+        "pos": "s.",
+        "gloss": "sobrinho"
+    },
+    {
+        "lemma": "paka",
+        "pos": "v.",
+        "gloss": "despertar (intr.)"
     },
     {
         "lemma": "muatuka",
@@ -2638,6 +2670,11 @@
         "gloss": "maguari"
     },
     {
+        "lemma": "mawarí",
+        "pos": "s.",
+        "gloss": "var. de manguarí"
+    },
+    {
         "lemma": "manhana",
         "pos": "v.",
         "gloss": "vigiar, guardar, velar"
@@ -2766,7 +2803,7 @@
     {
         "lemma": "marandua",
         "pos": "s.",
-        "gloss": "var. ort. marandúa"
+        "gloss": "var. orth. marandúa"
     },
     {
         "lemma": "marantaá",
@@ -2930,6 +2967,11 @@
         "lemma": "mbaú",
         "pos": "v.",
         "gloss": "comer"
+    },
+    {
+        "lemma": "maú",
+        "pos": "v.",
+        "gloss": "var. mbaú"
     },
     {
         "lemma": "mbeú",
@@ -3755,6 +3797,16 @@
         "gloss": "var. kurutẽiwara"
     },
     {
+        "lemma": "kurutẽi",
+        "pos": "adv.",
+        "gloss": "depressa"
+    },
+    {
+        "lemma": "kuritẽi",
+        "pos": "adv.",
+        "gloss": "var. kurutẽi"
+    },
+    {
         "lemma": "sãi",
         "pos": "v.",
         "gloss": "estar espalhado"
@@ -3763,6 +3815,15 @@
         "lemma": "ipeka",
         "pos": "s.",
         "gloss": "pato"
+    },
+    {
+        "lemma": "tapiá",
+        "pos": "s.",
+        "gloss": "escroto",
+        "rel": [
+            "rapiá",
+            "sapiá"
+        ]
     },
     {
         "lemma": "urusakanga",
@@ -5495,6 +5556,11 @@
         "gloss": "var. arama"
     },
     {
+        "lemma": "ra",
+        "pos": "part. foco",
+        "gloss": "\"partícula que exprime surpresa, ironia, irritação, ênfase etc.\" (Avila 2021, p. 652)"
+    },
+    {
         "lemma": "rã",
         "pos": "part. fut./ posp./ sconj.",
         "gloss": "var. arama"
@@ -5506,13 +5572,33 @@
     },
     {
         "lemma": "rẽ",
-        "pos": "adv. temp.",
-        "gloss": "ainda"
+        "pos": "part. imperf.",
+        "gloss": "partícula de aspecto imperfectivo"
     },
     {
         "lemma": "raĩ",
-        "pos": "adv. temp.",
+        "pos": "part. imperf.",
         "gloss": "var. rẽ"
+    },
+    {
+        "lemma": "raẽ",
+        "pos": "part. imperf.",
+        "gloss": "var. rẽ"
+    },
+    {
+        "lemma": "ranhẽ",
+        "pos": "part. imperf.",
+        "gloss": "var. rẽ"
+    },
+    {
+        "lemma": "reĩ",
+        "pos": "part. imperf.",
+        "gloss": "var. rẽ"
+    },
+    {
+        "lemma": "tipiáya",
+        "pos": "s.",
+        "gloss": "covão"
     },
     {
         "lemma": "tuba",
@@ -6194,13 +6280,23 @@
         ]
     },
     {
-        "lemma": "setimã",
+        "lemma": "tetimã",
         "pos": "s.",
         "gloss": "perna",
         "rel": [
             "retimã",
             "setimã"
         ]
+    },
+    {
+        "lemma": "wasema",
+        "pos": "v.",
+        "gloss": "var. wasemu"
+    },
+    {
+        "lemma": "sasema",
+        "pos": "v.",
+        "gloss": "var. sasemu"
     },
     {
         "lemma": "siía",
@@ -6333,9 +6429,27 @@
         ]
     },
     {
-        "lemma": "simiara",
+        "lemma": "simiára",
         "pos": "s.",
         "gloss": "caça, presa, pesca",
+        "rel": [
+            "rimiára",
+            "simiára/ximiára"
+        ]
+    },
+    {
+        "lemma": "semiára",
+        "pos": "s.",
+        "gloss": "var. simiára",
+        "rel": [
+            "remiára",
+            "semiára/xemiára"
+        ]
+    },
+    {
+        "lemma": "simiara",
+        "pos": "s.",
+        "gloss": "var. orth. simiára",
         "rel": [
             "rimiara",
             "simiara/ximiara"
@@ -6365,9 +6479,29 @@
         "gloss": "var. siiya"
     },
     {
+        "lemma": "kamunú",
+        "pos": "v.",
+        "gloss": "var. kamundú"
+    },
+    {
+        "lemma": "kaíma",
+        "pos": "v.",
+        "gloss": "var. kanhemu"
+    },
+    {
         "lemma": "panakarika",
         "pos": "s.",
         "gloss": "tipo de toldo"
+    },
+    {
+        "lemma": "mendasara",
+        "pos": "s. / adj.",
+        "gloss": "casado"
+    },
+    {
+        "lemma": "menasara",
+        "pos": "s. / adj.",
+        "gloss": "var. mendasara"
     },
     {
         "lemma": "setá",
@@ -6627,9 +6761,24 @@
         "gloss": "verdade"
     },
     {
+        "lemma": "kiwira",
+        "pos": "s.",
+        "gloss": "irmão (de m.)"
+    },
+    {
+        "lemma": "kiwíra",
+        "pos": "s.",
+        "gloss": "var. orth. kiwira"
+    },
+    {
         "lemma": "supí",
         "pos": "s.",
         "gloss": "verdade, realidade, fato"
+    },
+    {
+        "lemma": "supí",
+        "pos": "adj.",
+        "gloss": "\"[hist.] que tem certeza, certo (de algo)\" (Avila, 2021)"
     },
     {
         "lemma": "supí",
@@ -7026,6 +7175,35 @@
             "ruindá",
             "suindá"
         ]
+    },
+    {
+        "lemma": "ikiyú",
+        "pos": "s.",
+        "gloss": "grilo"
+    },
+    {
+        "lemma": "kirirí",
+        "pos": "v.",
+        "gloss": "calar-se"
+    },
+    {
+        "lemma": "kirirí",
+        "pos": "s.",
+        "gloss": "silêncio"
+    },
+    {
+        "lemma": "kirirí",
+        "pos": "adj.",
+        "gloss": "calado"
+    },
+    {
+        "lemma": "rinipuka",
+        "pos": "adj. 2ª cl.",
+        "gloss": "(ser ou estar) brilhante",
+        "rel": [
+            "sinipuka"
+        ],
+        "pron2": "se"
     },
     {
         "lemma": "tembiiwa",
