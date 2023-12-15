@@ -4620,7 +4620,7 @@
 # text = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga taunheẽ waá akutí ratá.
 # text_eng = However, they say that the poor agouti only caught smoke, the same smoke that we see after the rain, the smoke that they say is agouti fire.
 # text_por = No entanto, dizem que a pobre cutia pegou só fumaça, aquela mesma que nós vemos depois da chuva, a fumaça que dizem ser fogo de cutia.
-# text_source = Leetra Indígena. n. 17, 87, adap. [Corr. pager number]
+# text_source = Leetra Indígena. n. 17, 87, adap. [Corr. page number]
 # text_orig = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga ta unheẽ waá akutí ratá.
 # text_prim = Nunká pa taité akuti upisika tatatingantu, aité pa kua yamam waá amãna riré tatatinga tayem waá akuti ratá.
 # text_annotator = LFdeA
@@ -5911,8 +5911,10 @@
 # sent_id = Avila2021:0:0:87
 # text = Kunhã uyumuseẽ-kwáu ixé arama, aé umurí-kwáu tẽ ixé, se resá ti amuyeréu aintá i xupé, amukití aintá uikú.
 # text_eng = A woman can sweeten herself for me, she can even please me, my eyes don't turn to her, they are turned to the other side.
-# text_por = Muher pode adoçar-se para mim, pode mesmo agradar-me, meus olhos não os viro para ela, estão para outro lado.
+# text_por = Mulher pode adoçar-se para mim, pode mesmo agradar-me, meus olhos não os viro para ela, estão para outro lado.
 # text_source = Amorim, 368, adap.
+# text_prim = Kunhan oiumusee kuau ixé arama, aé omury kuau tenhé ixé, xe resá nti xamuiereu aetá i xupé, amu ketŷ aetá oiku.
+# text_prim_source = Amorim (1928, p. 366), No. 263
 # text_annotator = LFdeA
 1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2-3	uyumuseẽ-kwáu	_	_	_	_	_	_	_	TokenRange=6:19
@@ -6539,22 +6541,6 @@
 6	mirĩ	mirĩ	ADJ	A	_	5	amod	_	TokenRange=30:34
 7	upé	upé	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=35:38
 8	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
-
-# sent_id = Avila2021:12:1:119
-# text = Asuí aikwé yuíri makú-itá nharú waá-itá kaá rupí.
-# text_eng = And there were also fierce Indians in the woods.
-# text_por = E havia também índios ferozes na mata.
-# text_source = Comunidade de Terra Preta, 3, adap.
-# text_annotator = LFdeA
-1	Asuí	asuí	CCONJ	CCONJ	_	2	cc	_	TokenRange=0:4
-2	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=5:10
-3	yuíri	yuíri	ADV	ADV	_	2	advmod	_	TokenRange=11:16
-4	makú-itá	makú	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=17:25
-5	nharú	nharú	ADJ	A	_	4	acl:relcl	_	TokenRange=26:31
-6	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	5	nsubj	_	TokenRange=32:39
-7	kaá	kaá	NOUN	N	Number=Sing	2	obl	_	TokenRange=40:43
-8	rupí	rupí	ADP	ADP	_	7	case	_	SpaceAfter=No|TokenRange=44:48
-9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
 
 # sent_id = Avila2021:0:0:120
 # text = Kwá paá arú aintá mira-itá, yawé aintá umbeú kwá-itá yané rundewara-itá.
@@ -9109,6 +9095,8 @@
 # text_eng = How have you been?
 # text_por = Como tens passado?
 # text_source = Magalhães, 89, adap.
+# text_prim = Maíta rẹçaçáu?
+# cross-reference = Avila2021:51:1:689
 # text_annotator = LFdeA
 1-2	Maita	_	_	_	_	_	_	_	TokenRange=0:8
 1	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	3	advmod	_	_
@@ -10891,6 +10879,7 @@
 # text_eng = It is said that one was sitting in the bow of the canoe, the other was sitting in the stern.
 # text_por = Dizem que um estava sentado na proa da canoa, o outro estava sentado na popa.
 # text_source = Casasnovas, 75, adap.
+# text_prim = Yepé, paá, uwapika igara gantime, amú uwapika yakumame.
 # text_annotator = LFdeA
 1	Yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	3	nsubj	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
@@ -17125,6 +17114,7 @@
 # text_por = ― Como você está?
 # text_source = Magalhães, 89, adap.
 # text_prim = Maíta rẹçaçáu?
+# text_por_prim = Como passa?
 # text_annotator = LFdeA
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
 2-3	Maita	_	_	_	_	_	_	_	TokenRange=1:9
@@ -17135,7 +17125,7 @@
 
 # sent_id = Avila2021:51:2:689
 # text = ― Se katuntu.
-# text_eng =  "I am fine."
+# text_eng =  "I am just fine."
 # text_por = ― Estou bem.
 # text_source = Magalhães, 89, adap.
 # text_prim = Cẹ catúnte (ce katú etệ),
@@ -17222,6 +17212,7 @@
 # text_eng = Ah, okay, let me stay right here then.
 # text_por = Ah, está bem, deixe-me ficar aqui mesmo então.
 # text_source = Leetra Indígena. n. 17, 65, adap.
+# text_orig = — Háá puranga te, tenupantua aikú iké.
 # text_annotator = LFdeA
 1	Ah	ah	INTJ	INTJ	_	3	discourse	_	SpaceAfter=No|TokenRange=0:2
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
@@ -17374,7 +17365,7 @@
 2	tiapú	tiapú	ADV	ADVA	AdvType=Man	1	advmod	_	SpaceAfter=No|TokenRange=11:16
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = NTLN:0:0:1
+# sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
 # text_por = Sabemos que somos de Deus e que o mundo todo está sob o poder do Maligno. [NVI]
@@ -17399,7 +17390,7 @@
 15	upé	upé	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=82:85
 16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=85:86
 
-# sent_id = NTLN:0:0:2
+# sent_id = NTLN2019:0:0:2
 # text = Nhaãsé Deus purangasawa usika ana aintá resé umukaturu arama panhẽ apigawa-itá;
 # text_eng = For the grace of God has been revealed, bringing salvation to all people. [NLT]
 # text_por = Porque a graça de Deus se manifestou salvadora a todos os homens. [NVI]
@@ -17419,7 +17410,7 @@
 11	apigawa-itá	apigawa	NOUN	N	Number=Plur	8	obj	_	SpaceAfter=No|TokenRange=67:78
 12	;	;	PUNCT	PUNCT	_	4	punct	_	TokenRange=78:79
 
-# sent_id = NTLN:0:0:3
+# sent_id = NTLN2019:0:0:3
 # text = Kirimbawa aintá umuruayana yandé, puxiwera aintá umunhã yandé arama até yané kirimbawasawa upawa yané suí, ti yakwá mayé taá yamunhã yamanduári yamanú arama.
 # text_eng = We were under great pressure, far beyond our ability to endure, so that we despaired of life itself. [NIV]
 # text_por = Irmãos, não queremos que vocês desconheçam as tribulações que sofremos na província da Ásia, as quais foram muito além da nossa capacidade de suportar, a ponto de perdermos a esperança da própria vida. [NVI]
@@ -17454,7 +17445,7 @@
 25	arama	arama	SCONJ	SCONJ	_	24	mark	_	SpaceAfter=No|TokenRange=151:156
 26	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=156:157
 
-# sent_id = NTLN:0:0:4
+# sent_id = NTLN2019:0:0:4
 # text = Asuí mituú ramé yayumuatiri irumu yapixama arama pão, Paulu umbeú aintá supé nhaãsé uputari usú aintá suí wirandé kití, asuí uikupukú upurungitá aintá irumu até pituna pitérupi.
 # text_eng = On the first day of the week, when we were gathered together to break bread, Paul talked with them, intending to depart on the next day, and he prolonged his speech until midnight. [ESV]
 # text_por = No primeiro dia da semana, estando nós reunidos com o fim de partir o pão, Paulo, que devia seguir viagem no dia imediato, exortava-os e prolongou o discurso até à meia-noite. [ARA]
@@ -17493,7 +17484,7 @@
 29	pitérupi	pitérupi	ADP	ADP	_	28	case	_	SpaceAfter=No|TokenRange=168:176
 30	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=176:177
 
-# sent_id = NTLN:0:0:5
+# sent_id = NTLN2019:0:0:5
 # text = Asuí sesewara usika aintá resé panhẽ kwá-itá Síria upewara-itá, ape aintá ururi i piri kwá-itá uikú aíwa waá-itá, masiwera waá-itá yuíri, kwá-itá upurará waá-itá yuíri, demuniu upukwari waá-itá yuíri, kwá-itá urikú waá-itá masí puxuwera waá, pitúa waá-itá yuíri, asuí umukaturu aintá.
 # text_eng = News about him spread all over Syria, and people brought to him all who were ill with various diseases, those suffering severe pain, the demon-possessed, those having seizures, and the paralyzed; and he healed them. [NIV]
 # text_por = Notícias sobre ele se espalharam por toda a Síria, e o povo lhe trouxe todos os que sofriam de vários males e tormentos: endemoninhados, loucos e paralíticos; e ele os curou. [NIV]
@@ -17551,7 +17542,7 @@
 48	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	47	obj	_	SpaceAfter=No|TokenRange=278:283
 49	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=283:284
 
-# sent_id = NTLN:0:0:6
+# sent_id = NTLN2019:0:0:6
 # text = Uabensuári riré kwá pãu, umpena aé, unheẽ: "Aité se pira kwá, ukanhemu kurí pe resewara, pembaú aé pemanduári arama ixé."
 # text_eng = and when he had given thanks, he broke it and said, “This is my body, which is for you; do this in remembrance of me.” [NIV]
 # text_por = e, tendo dado graças, partiu-o e disse: "Isto é o meu corpo, que é dado em favor de vocês; façam isto em memória de mim". [NVI]
@@ -17587,7 +17578,7 @@
 27	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=119:120
 28	"	"	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=120:121
 
-# sent_id = NTLN:0:0:7
+# sent_id = NTLN2019:0:0:7
 # text = Indé Yuruparí raíra, teresemu indé panhẽ gananisawa irumu, panhẽ puxiwerasawa irumu, indé tẽ suanhana panhẽ kwá puranga waá.
 # text_eng = You are a child of the devil and an enemy of everything that is right! You are full of all kinds of deceit and trickery. [NIV]
 # text_por = Filho do Diabo e inimigo de tudo o que é justo! Você está cheio de toda espécie de engano e maldade. [NVI]
@@ -17618,7 +17609,7 @@
 21	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	nsubj	_	SpaceAfter=No|TokenRange=120:123
 22	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=123:124
 
-# sent_id = NTLN:1:1:8
+# sent_id = NTLN2019:1:1:8
 # text = Peyumusasiara, pejemeri, peyaxiú.
 # text_eng = Grieve, mourn and wail. [NIV]
 # text_por = Entristeçam-se, lamentem-se e chorem. [NVI]
@@ -17632,7 +17623,7 @@
 5	peyaxiú	yaxiú	VERB	V	Number=Plur|Person=2|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=25:32
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
-# sent_id = NTLN:1:2:9
+# sent_id = NTLN2019:1:2:9
 # text = Pemburi pe suí kwá upukasawa peyaxiú arama, pexari umusasiara penhẽ kwá umusurí waá penhẽ.
 # text_eng = Change your laughter to mourning and your joy to gloom. [NIV]
 # text_por = Troquem o riso por lamento e a alegria por tristeza. [NVI]
@@ -17657,7 +17648,7 @@
 15	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	13	obj	_	SpaceAfter=No|TokenRange=84:89
 16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=89:90
 
-# sent_id = NTLN:0:0:10
+# sent_id = NTLN2019:0:0:10
 # text = Asuí kwá buya utumuna ií i yurú suí kwayé paraná yawé sakakwera kwá kunhã, uputari paraná uyuká arama aé.
 # text_eng = Then from his mouth the serpent spewed water like a river, to overtake the woman and sweep her away with the torrent. [NIV]
 # text_por = Então a serpente fez jorrar da sua boca água como um rio, para alcançar a mulher e arrastá-la com a correnteza. [NVI]
@@ -17687,7 +17678,7 @@
 20	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	18	obj	_	SpaceAfter=No|TokenRange=102:104
 21	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=104:105
 
-# sent_id = NTLN:0:0:11
+# sent_id = NTLN2019:0:0:11
 # text = Maita iwasuíma xinga ambeú: "Amburi ne suí ne pekadu" u iwasuíma xinga ambeú "Repuãmu, rewatá"?
 # text_eng = Which is easier: to say, 'Your sins are forgiven,' or to say, 'Get up and walk'? [NIV]
 # text_por = Que é mais fácil dizer: 'Os seus pecados estão perdoados', ou: 'Levante-se e ande'? [NVI]
@@ -17718,7 +17709,7 @@
 21	"	"	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No|TokenRange=93:94
 22	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=94:95
 
-# sent_id = NTLN:2:1:12
+# sent_id = NTLN2019:2:1:12
 # text = Kuíri sasiara se piá, asuí maita kurí ambeú?
 # text_eng = “Now my soul is troubled, and what shall I say? [NIV]
 # text_por = "Agora meu coração está perturbado, e o que direi? [NVI]
@@ -17736,7 +17727,7 @@
 9	ambeú	mbeú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	conj	_	SpaceAfter=No|TokenRange=38:43
 10	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 
-# sent_id = NTLN:2:2:13
+# sent_id = NTLN2019:2:2:13
 # text = Maita ambeú: — Indé se paya, remukaturú ixé i suí kwá ura?
 # text_eng = ‘Father, save me from this hour’? [NIV]
 # text_por = Pai, salva-me desta hora? [NVI]
@@ -17759,7 +17750,7 @@
 14	ura	ura	NOUN	N	Number=Sing	9	dislocated	_	OrigLang=pt|SpaceAfter=No|TokenRange=53:56
 15	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=56:57
 
-# sent_id = NTLN:2:3:14
+# sent_id = NTLN2019:2:3:14
 # text = Ti maã ambeú yawé, ma ayuíri apurará arama.
 # text_eng = No, it was for this very reason I came to this hour. [NIV]
 # text_por = Não; eu vim exatamente para isto, para esta hora. [NVI]
@@ -17777,7 +17768,7 @@
 9	arama	arama	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=37:42
 10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=42:43
 
-# sent_id = NTLN:2:4:15
+# sent_id = NTLN2019:2:4:15
 # text = Indé se paya, kuíri rexari puranga waá ne rera resewara.
 # text_eng = Father, glorify your name.”
 # text_por = Pai, glorifica o teu nome!"
@@ -17797,7 +17788,7 @@
 11	resewara	resewara	ADP	ADP	Rel=Cont	10	case	_	SpaceAfter=No|TokenRange=47:55
 12	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=55:56
 
-# sent_id = NTLN:2:5:16
+# sent_id = NTLN2019:2:5:16
 # text = Asuí aintá usendú yepé nheenga iwaka suí unheẽ: — Axari ana puranga waá se rera resewara asuí axari yuíri mukũisawa puranga waá se rera resewara.
 # text_eng = Then a voice came from heaven: “I have glorified it, and I will glorify it again.” [NVI]
 # text_por = Então veio uma voz do céu: "Eu já o glorifiquei e o glorificarei novamente". [NVI]
@@ -17832,7 +17823,7 @@
 26	resewara	resewara	ADP	ADP	Rel=Cont	25	case	_	SpaceAfter=No|TokenRange=135:143
 27	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=143:144
 
-# sent_id = NTLN:2:6:17
+# sent_id = NTLN2019:2:6:17
 # text = Asuí kwá-itá mirá-itá apewara-itá aintá usendú riré kwá nheenga, aintá unheẽ: — Tiapú ana truvão.
 # text_eng = The crowd that was there and heard it said it had thundered;
 # text_por = A multidão que ali estava e a ouviu, disse que tinha trovejado;
@@ -17858,7 +17849,7 @@
 17	truvão	truvão	NOUN	N	Number=Sing	15	nsubj	_	Orig=trovão|OrigLang=pt|SpaceAfter=No|TokenRange=89:95
 18	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=95:96
 
-# sent_id = NTLN:2:7:18
+# sent_id = NTLN2019:2:7:18
 # text = Asuí amú-itá unheẽ: — Yepé anju upurungitá i irumu.
 # text_eng = others said an angel had spoken to him. [NIV]
 # text_por = outros disseram que um anjo lhe tinha falado.
@@ -17877,7 +17868,7 @@
 10	irumu	irumu	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=44:49
 11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=49:50
 
-# sent_id = NTLN:2:8:19
+# sent_id = NTLN2019:2:8:19
 # text = Asuí Jesus umbeú aintá supé: — Umbaá uri se resewara kwá i nheenga, ma uri pe resewara.
 # text_eng = Jesus said, “This voice was for your benefit, not mine.[NIV]
 # text_por = Jesus disse: "Esta voz veio por causa de vocês, e não por minha causa. [NVI]
@@ -17905,7 +17896,7 @@
 19	resewara	resewara	ADP	ADP	Rel=Cont	18	case	_	SpaceAfter=No|TokenRange=77:85
 20	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=85:86
 
-# sent_id = NTLN:2:9:20
+# sent_id = NTLN2019:2:9:20
 # text = Kuíri usika ana sangawa umbeú arama aintá pekadu resé kwá-itá mundu pura-itá, kuíri umburi kurí kwá mundu ruixawa.
 # text_eng = Now is the time for judgment on this world; now the prince of this world will be driven out.
 # text_por = Chegou a hora de ser julgado este mundo; agora será expulso o príncipe deste mundo.
@@ -17933,7 +17924,7 @@
 19	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	15	obj	_	SpaceAfter=No|TokenRange=106:113
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=113:114
 
-# sent_id = NTLN:2:10:21
+# sent_id = NTLN2019:2:10:21
 # text = Asuí aintá usupiri irumu kurí ixé iwí suí, axari kurí aintá uri se piri muíri aintá.
 # text_eng = And I, when I am lifted up from the earth, will draw all people to myself.” [NIV]
 # text_por = Mas eu, quando for levantado da terra, atrairei todos a mim". [NVI]
@@ -17959,7 +17950,7 @@
 17	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	13	nsubj	_	SpaceAfter=No|TokenRange=78:83
 18	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=83:84
 
-# sent_id = NTLN:2:11:22
+# sent_id = NTLN2019:2:11:22
 # text = Yawé unheẽ uxari arama aintá ukwawa mayé taá kurí umanú.
 # text_eng = He said this to show the kind of death he was going to die.
 # text_por = Ele disse isso para indicar o tipo de morte que haveria de sofrer.
@@ -17978,7 +17969,7 @@
 10	umanú	manú	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=50:55
 11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
-# sent_id = NTLN:2:12:23
+# sent_id = NTLN2019:2:12:23
 # text = Asuí kwá-itá mirá-itá siya waá-itá aintá unheẽ i xupé: — Yasendú Muizé umbeú yawewara waá tẽ kurí uikú kwá Kristu, asuí marã taá rembeú kuíri urikuté uxari aintá usupiri kwá unaseri waá umaã kwá mundu?
 # text_eng = The crowd spoke up, “We have heard from the Law that the Messiah will remain forever, so how can you say, ‘The Son of Man must be lifted up’? [NIV]
 # text_por = A multidão falou: "A Lei nos ensina que o Cristo permanecerá para sempre; como podes dizer: ‘O Filho do homem precisa ser levantado’?
@@ -18024,7 +18015,7 @@
 37	mundu	mundu	NOUN	N	Number=Sing	35	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=194:199
 38	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=199:200
 
-# sent_id = NTLN:0:0:24
+# sent_id = NTLN2019:0:0:24
 # text = Yawé tẽ yuíri penhẽ, pepurungitá ramé penhẽ pitúa amú nheenga rupí, maita kurí aintá upuderi aintá ukwawa kwá pembeú waá aintá supé, anhuntẽ pepurungitá iwitú upé.
 # text_eng = So it is with you. Unless you speak intelligible words with your tongue, how will anyone know what you are saying? You will just be speaking into the air. [NVI]
 # text_por = Assim acontece com vocês. Se não proferirem palavras compreensíveis com a língua, como alguém saberá o que está sendo dito? Vocês estarão simplesmente falando ao ar. [NVI]
@@ -18065,7 +18056,7 @@
 30	upé	upé	ADP	ADP	_	29	case	_	SpaceAfter=No|TokenRange=163:166
 31	.	.	PUNCT	PUNCT	_	20	punct	_	SpaceAfter=No|TokenRange=166:167
 
-# sent_id = NTLN:0:0:25
+# sent_id = NTLN2019:0:0:25
 # text = Aintá upeyú ramé trumbeta pitúa usenúi arama surara, maita aintá uyumukaturu aintá umunhã arama kera?
 # text_eng = Again, if the trumpet does not sound a clear call, who will get ready for battle? [NIV]
 # text_por = Além disso, se a trombeta não emitir um som claro, quem se preparará para a batalha? [NVI]
@@ -18092,7 +18083,7 @@
 17	kera	kera	NOUN	N	Number=Sing	15	obj	_	Orig=guerra|OrigLang=pt|SpaceAfter=No|TokenRange=100:104
 18	?	?	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=104:105
 
-# sent_id = NTLN:0:0:26
+# sent_id = NTLN2019:0:0:26
 # text = Asuí umbawa riré upurakí templu upé uyuíri suka kití.
 # text_eng = When his period of service in the Temple was over, Zechariah went back home. [GNT]
 # text_por = Quando se completou seu período de serviço, ele voltou para casa. [NVI]
@@ -18110,7 +18101,7 @@
 9	kití	kití	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=48:52
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=52:53
 
-# sent_id = NTLN:0:0:27
+# sent_id = NTLN2019:0:0:27
 # text = Kwá umbeú waá puxí sumuara resé, umbeú puxí sesé kwá Deus nheenga kuxiimawara.
 # text_eng = Anyone who speaks against a brother or sister or judges them speaks against the law and judges it.
 # text_por = Quem fala contra o seu irmão ou julga o seu irmão, fala contra a Lei e a julga. [NVI]- Anyone who speaks against a brother or sister or judges them speaks against the law and judges it.[NIV]
@@ -18134,7 +18125,7 @@
 14	kuxiimawara	kuxiimawara	ADJ	A	_	13	amod	_	SpaceAfter=No|TokenRange=66:77
 15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=77:78
 
-# sent_id = NTLN:3:1:28
+# sent_id = NTLN2019:3:1:28
 # text = Se mú-itá, maita kukura upuderi umusemu iyá patawá?
 # text_eng = My brothers and sisters, can a fig tree bear olives, or a grapevine bear figs? [NIV]
 # text_por = Meus irmãos, pode uma figueira produzir azeitonas ou uma videira, figos? [NVI]
@@ -18155,7 +18146,7 @@
 10	patawá	patawá	NOUN	N	Number=Sing	9	nmod	_	SpaceAfter=No|TokenRange=48:54
 11	?	?	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=54:55
 
-# sent_id = NTLN:3:2:29
+# sent_id = NTLN2019:3:2:29
 # text = Maita fava upuderi umusemu iyá kukura?
 # text_eng = My brothers and sisters, can a fig tree bear olives, or a grapevine bear figs? [NIV]
 # text_por = Meus irmãos, pode uma figueira produzir azeitonas ou uma videira, figos? [NVI]
@@ -18172,7 +18163,7 @@
 7	kukura	kukura	NOUN	N	Number=Sing	6	nmod	_	SpaceAfter=No|TokenRange=35:41
 8	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=41:42
 
-# sent_id = NTLN:3:3:30
+# sent_id = NTLN2019:3:3:30
 # text = Yawé tẽ yuíri kwá ií rukena sembika waá ti upuderi umusemu ií seẽ waá.
 # text_eng = Neither can a salt spring produce fresh water.
 # text_por = Da mesma forma, uma fonte de água salgada não pode produzir água doce.
@@ -18196,7 +18187,7 @@
 14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nsubj	_	SpaceAfter=No|TokenRange=66:69
 15	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=69:70
 
-# sent_id = NTLN:4:1:31
+# sent_id = NTLN2019:4:1:31
 # text = Asuí umaã mirá figera senundé kití peé arukanga upé, asuí uri umaã, ti yamaã iyá, anhuntẽ umaã sawa.
 # text_eng = Seeing a fig tree by the road, he went up to it but found nothing on it except leaves. [NVI]
 # text_por = Vendo uma figueira à beira do caminho, aproximou-se dela, mas nada encontrou, a não ser folhas.
@@ -18227,7 +18218,7 @@
 21	sawa	sawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	20	obj	_	SpaceAfter=No|TokenRange=95:99
 22	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=99:100
 
-# sent_id = NTLN:4:2:32
+# sent_id = NTLN2019:4:2:32
 # text = Asuí umbeú i xupé: ― Ti mairamé kurí rerikú ne iyá!
 # text_eng = Then he said to it, “May you never bear fruit again!” [NIV]
 # text_por = Então lhe disse: "Nunca mais dê frutos!" [NVI]
@@ -18248,7 +18239,7 @@
 12	iyá	iyá	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=46:49
 13	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=49:50
 
-# sent_id = NTLN:4:3:33
+# sent_id = NTLN2019:4:3:33
 # text = Asuí aramé tẽ utikanga kwá figera.
 # text_eng = Immediately the tree withered. [NVI]
 # text_por = Imediatamente a árvore secou. [NVI]
@@ -18264,7 +18255,7 @@
 6	figera	figera	NOUN	N	Number=Sing	4	nsubj	_	Orig=figueira|OrigLang=pt|SpaceAfter=No|TokenRange=27:33
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
-# sent_id = NTLN:0:0:34
+# sent_id = NTLN2019:0:0:34
 # text = Nhaãsé nẽ yepé aintá pitérupi uwatari i xupé i maã, nhaãsé muíri kwá-itá urikú waá-itá aintá kupixawa aintá ruka yuíri aintá uvenderi aintá, asuí aintá urasú sikuyara.
 # text_eng = There was not a needy person among them, for as many as were owners of lands or houses sold them and brought the proceeds of what was sold [ESV]
 # text_por = Não havia pessoas necessitadas entre eles, pois os que possuíam terras ou casas as vendiam, traziam o dinheiro da venda [NVI]
@@ -18303,7 +18294,7 @@
 29	sikuyara	sikuyara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	28	obj	_	SpaceAfter=No|TokenRange=158:166
 30	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=166:167
 
-# sent_id = NTLN:0:0:35
+# sent_id = NTLN2019:0:0:35
 # text = Te pesikari kirimbawa pembaú arama peú arama yuíri, te peyuka pe piá aintá resé.
 # text_eng = And do not set your heart on what you will eat or drink; do not worry about it. [NIV]
 # text_por = Não busquem ansiosamente o que hão de comer ou beber; não se preocupem com isso. [NVI]
@@ -18327,7 +18318,7 @@
 15	resé	resé	ADP	ADP	Rel=Cont	14	case	_	SpaceAfter=No|TokenRange=75:79
 16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=79:80
 
-# sent_id = NTLN:0:0:36
+# sent_id = NTLN2019:0:0:36
 # text = Asuí umbué aintá, umbeú: — Kuxiíma aintá umpinima, kwá se ruka yapurandú waá arama Deus irumu panhẽ kwá-itá mundu pura-itá, ma pexari aé mundawasú uikuwera waá.
 # text_eng = And as he taught them, he said, “Is it not written: ‘My house will be called a house of prayer for all nations’? But you have made it ‘a den of robbers.’” [NIV]
 # text_por = E os ensinava, dizendo: "Não está escrito: ‘A minha casa será chamada casa de oração para todos os povos’? Mas vocês fizeram dela um covil de ladrões". [NVI]
@@ -18366,7 +18357,7 @@
 30	waá	waá	PRON	REL	Number=Sing|PronType=Rel	27	acl:relcl	_	SpaceAfter=No|TokenRange=155:158
 31	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=158:159
 
-# sent_id = NTLN:5:1:37
+# sent_id = NTLN2019:5:1:37
 # text = Asuí aintá usika Betisaida kití, asuí aintá urasú i xupé yepé sesaíma waá aintá upurandú Jesus uxari arama i pú sesé.
 # text_eng = They came to Bethsaida, and some people brought a blind man and begged Jesus to touch him.
 # text_por = Eles foram para Betsaida, e algumas pessoas trouxeram um cego a Jesus, suplicando-lhe que tocasse nele. [NVI]
@@ -18397,7 +18388,7 @@
 22	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	18	obl	_	SpaceAfter=No|TokenRange=112:116
 23	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=116:117
 
-# sent_id = NTLN:5:2:38
+# sent_id = NTLN2019:5:2:38
 # text = Asuí Jesus upisika i pú urasú aé tetama suí asuí utumuna sesá upé uxari i pú sesé asuí upurandú aé: — Maita remaã wana?
 # text_eng = He took the blind man by the hand and led him outside the village. When he had spit on the man’s eyes and put his hands on him, Jesus asked, “Do you see anything?” [NIV]
 # text_por = Ele tomou o cego pela mão e o levou para fora do povoado. Depois de cuspir nos olhos do homem e impor-lhe as mãos, Jesus perguntou: "Você está vendo alguma coisa?" [NVI]
@@ -18433,7 +18424,7 @@
 26	wana	wana	PART	PFV	Aspect=Perf	25	advmod	_	SpaceAfter=No|TokenRange=117:121
 27	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=121:122
 
-# sent_id = NTLN:5:3:39
+# sent_id = NTLN2019:5:3:39
 # text = Asuí umaã wana, unheẽ i xupé: — Amaã apigawa-itá mayé mirá yawé, aintá uwatá.
 # text_eng = He looked up and said, “I see people; they look like trees walking around.”
 # text_por = Ele levantou os olhos e disse: "Vejo pessoas; elas parecem árvores andando".
@@ -18459,7 +18450,7 @@
 17	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=70:75
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=75:76
 
-# sent_id = NTLN:5:4:40
+# sent_id = NTLN2019:5:4:40
 # text = Asuí uxari mukũisawa i pú sesá upé, asuí umukaturu ana sesá asuí umaã wana puranga.
 # text_eng = Once more Jesus put his hands on the man’s eyes. Then his eyes were opened, his sight was restored, and he saw everything clearly.[NIV]
 # text_por = Mais uma vez, Jesus colocou as mãos sobre os olhos do homem. Então seus olhos foram abertos, e sua vista lhe foi restaurada, e ele via tudo claramente. [NVI]
@@ -18484,7 +18475,7 @@
 16	puranga	puranga	ADV	ADVA	AdvType=Man	14	advmod	_	SpaceAfter=No|TokenRange=75:82
 17	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=82:83
 
-# sent_id = NTLN:5:5:41
+# sent_id = NTLN2019:5:5:41
 # text = Asuí Jesus umundú usú suka kití asuí umbeú i xupé: — Te resú tetama kití kuíri.
 # text_eng = Jesus sent him home, saying, “Don’t even go into the village.” [NIV]
 # text_por = Jesus mandou-o para casa, dizendo: "Não entre no povoado!" [NVI]
@@ -18510,7 +18501,7 @@
 17	kuíri	kuíri	ADV	ADVT	AdvType=Tim	14	advmod	_	SpaceAfter=No|TokenRange=72:77
 18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=77:78
 
-# sent_id = NTLN:6:1:42
+# sent_id = NTLN2019:6:1:42
 # text = Asuí Juão umbué waá-itá aintá umbeú i xupé Jesus umunhã waá-itá resewara yuíri, asuí Juão usenúi i piri mukũi umbué waá-itá.
 # text_eng = John’s disciples told him about all these things. Calling two of them,
 # text_por = Os discípulos de João contaram-lhe todas essas coisas. Chamando dois deles,
@@ -18541,7 +18532,7 @@
 22	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	17	obj	_	SpaceAfter=No|TokenRange=116:123
 23	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=123:124
 
-# sent_id = NTLN:0:0:43
+# sent_id = NTLN2019:0:0:43
 # text = Surí kurí indé nhaãsé ti maã aintá upuderi aintá upagari indé sikuyara.
 # text_eng = and happy thou shalt be, because they have not to recompense thee [YLT]
 # text_por = Feliz será você, porque estes não têm como retribuir. [NVI]
@@ -18562,7 +18553,7 @@
 12	sikuyara	sikuyara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	obj	_	SpaceAfter=No|TokenRange=62:70
 13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=70:71
 
-# sent_id = NTLN:0:0:44
+# sent_id = NTLN2019:0:0:44
 # text = Kuíri surí ixé nhaãsé apuderi ambeú se resewara resendú arama indé tuixawa Agripa, ambeú se resewara suaxara kwá aintá umbeú waá puxí se resé kwá-itá judeu-itá.
 # text_eng = “I consider myself fortunate that it is before you, King Agrippa, I am going to make my defense today against all the accusations of the Jews, [ESV]
 # text_por = Tenho-me por feliz, ó rei Agripa, pelo privilégio de, hoje, na tua presença, poder produzir a minha defesa de todas as acusações feitas contra mim pelos judeus; [ARA]
@@ -18598,7 +18589,7 @@
 27	judeu-itá	judeu-itá	NOUN	N	Number=Plur	21	dislocated	_	Orig=judeu|OrigLang=pt|SpaceAfter=No|TokenRange=150:159
 28	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=159:160
 
-# sent_id = NTLN:7:1:45
+# sent_id = NTLN2019:7:1:45
 # text = Asuí aramé tẽ Jesus umbeú aintá supé kwá-itá siya waá-itá: — Maita peyuíri pepisika ixé espada irumu kaseti irumu yuíri kwayé pepisika waá yawé mundawasú?
 # text_eng = At that hour Jesus said to the crowds, “Have you come out as against a robber, with swords and clubs to capture me? [ESV] - Asui aramete Jesus umbeu ainta supe kuaita siyawaita: — Maitaa peyuiri pepisika ixe espada irumu kaseti irumu yuiri kuaye pepisikawaa yawe mundawasu?
 # text_por = Naquele momento, disse Jesus às multidões: Saístes com espadas e porretes para prender-me, como a um salteador? [ARA]
@@ -18634,7 +18625,7 @@
 27	mundawasú	mundawasú	NOUN	N	Number=Sing	24	obj	_	SpaceAfter=No|TokenRange=147:156
 28	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=156:157
 
-# sent_id = NTLN:7:2:46
+# sent_id = NTLN2019:7:2:46
 # text = Kuxiima aikú pe irumu muíri ara ambué ramé aikú templu upé, asuí ti kwera pemprezu ixé.
 # text_eng = Once I was with you every day when I was teaching in the temple, and you did not arrest me.
 # text_por = Outrora eu estava convosco todos os dias, quando estava ensinando no templo, e não me prendestes. [Avila 2021]
@@ -18661,7 +18652,7 @@
 17	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	16	obj	_	SpaceAfter=No|TokenRange=83:86
 18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=86:87
 
-# sent_id = NTLN:8:1:47
+# sent_id = NTLN2019:8:1:47
 # text = Ape pemusantá pe pú pitúa waá-itá, pemukirimbawa pe rinipiã membeka waá-itá;
 # text_eng = Therefore, strengthen your weakened hands and strengthen your wavering knees.
 # text_por = Portanto, enrijeçam as suas mãos enfraquecidas e fortaleçam os seus joelhos vacilantes.
@@ -18685,7 +18676,7 @@
 12	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	11	nsubj	_	SpaceAfter=No|TokenRange=68:75
 13	;	;	PUNCT	PUNCT	_	2	punct	_	TokenRange=75:76
 
-# sent_id = NTLN:8:2:48
+# sent_id = NTLN2019:8:2:48
 # text = Pemusatambika pe pi rapé ti arama kurí uyeréu uyumuapiri waá upé kwá alejadu, ma puranga arama kurí aé.
 # text_eng = and straight paths make for your feet, that that which is lame may not be turned aside, but rather be healed; [YLT]
 # text_por = "Façam caminhos retos para os seus pés", para que o manco não se desvie, mas antes seja curado. [NVI]
@@ -22698,7 +22689,7 @@
 # text = Yautí unheẽ paraná supé: — Maã resé taá yawé katú renheẽ ixé arama?
 # text_eng = The tortoise spoke to the river: — Why do you speak so well to me?
 # text_por = O jabuti falou ao rio: — Por que tão bem tu me falas a mim?
-# text_source = p. 179
+# text_source = p. 179-180
 # text_orig = Iáutí onhehẽ paraná çupé: — Mãhá rẹcệ tahá iaué catú rẹnhehẽ ixệ? (arãma?)
 # text_annotator = LFdeA
 1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
@@ -23014,7 +23005,7 @@
 13	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	SpaceAfter=No|TokenRange=61:63
 14	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=63:64
 
-# sent_id = amorim1928:6-1:145:145
+# sent_id = Amorim1928:6-1:145:145
 # text = Ixé tẽ asú ayuuka aé, nhaã renundé amumaã ti awá penhẽ suí usaisú kurí aé, maãresé pemukanhemu-kwáu aé.
 # text_eng = I'm going to look for him myself, before that I warn you that none of you will love him because you could lose him.
 # text_por = Eu mesmo vou buscá-lo, antes disso previno que nenhuma de vocês o há de amar porque poderão perdê-lo.
@@ -23049,7 +23040,7 @@
 21	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	19	obj	_	SpaceAfter=No|TokenRange=101:103
 22	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=103:104
 
-# sent_id = amorim1928:6-1:150:150
+# sent_id = Amorim1928:6-1:150:150
 # text = Marakaimbara yara unheẽ aramé: ― Pesarú ixé iké tẽ, asú ana ayuuka Supy.
 # text_eng = The wizard then said: — Wait for me right here, I'll go get Supi.
 # text_por = O feiticeiro disse então: ― Esperem por mim aqui mesmo, eu já vou buscar Supi.
@@ -23077,7 +23068,7 @@
 15	Supy	supy	PROPN	PROPN	_	14	obj	_	SpaceAfter=No|TokenRange=66:70
 16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=70:71
 
-# sent_id = amorim1928:6-1:155:155
+# sent_id = Amorim1928:6-1:155:155
 # text = Supy umuwari kurí aé yandé pú upé, aramé kurí yandé i piá suiwara.
 # text_eng = Supi will take him into our hands, then we will have his heart!
 # text_por = Supi o derrubará nas nossas mãos, havemos então de ser de seu coração!
@@ -23152,7 +23143,7 @@
 38	mira	mira	NOUN	N	Number=Sing	36	advcl	_	SpaceAfter=No|TokenRange=193:197
 39	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=197:198
 
-# sent_id = Amorim:2:101:5500
+# sent_id = Amorim1928:2:101:5500
 # text = Pukudana, muíri awa rerikú ne akanga upé muíri yuíri mira umanú kurí ne ara rikuyara.
 # text_eng = Pacudana, how many hairs you have on your head, so many people will also die in exchange for your life.
 # text_por = Pacudana, quantos cabelos tu tens na cabeça, tantas pessoas também hão de morrer em troca da tua vida.
