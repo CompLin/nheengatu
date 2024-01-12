@@ -18261,7 +18261,10 @@
 # text_por = Não havia pessoas necessitadas entre eles, pois os que possuíam terras ou casas as vendiam, traziam o dinheiro da venda [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Acts 4:34
 # text_orig = Nyãse nẽ yepe aintapiterupi uwatari ixupe imaa, nyãse muiri kuaita urikuwaita aintakupixawa aintaruka yuiri aintauvenderi ainta, asui aintaurasu sikuyara.
-# text_sec = Nhaãsé nẽ yepé aintá pitérupi uwatari i xupé i maã, nhaãsé muíri kwá-itá urikú waá-itá aintá kupixawa, aintá ruka yuíri, aintá uvenderi aintá, asuí aintá urasú sikuyara. [Avila 2021]
+# text_sec = Nhaãsé nẽ yepé aintá pitérupi uwatari i xupé i maã, nhaãsé muíri kwá-itá urikú waá-itá aintá kupixawa, aintá ruka yuíri, aintá uvenderi aintá, asuí aintá urasú sikuyara.
+# text_sec_source = Avila (2021)
+# text_por_sec = Pois nenhum dentre eles tinha falta de bens, porque todos os que tinham roças e casas venderam-nas e levaram o preço disso.
+# text_por_sec_source = Avila (2021)
 # text_annotator = LFdeA
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	6	advmod	_	TokenRange=0:6
 2	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=7:9
@@ -19765,6 +19768,36 @@
 15	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	13	obj	_	SpaceAfter=No|TokenRange=79:83
 16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=83:84
 
+# sent_id = Casasnovas2006:1:1:1
+# text = Yepé ara, paá, urubú ti uwasemu nẽ yepé suú umanú waá kwera umbaú arã.
+# text_eng = One day, they say, a vulture couldn't find any dead animals to eat.
+# text_por = Um dia, dizem, urubu não encontrou nenhum animal morto para comer.
+# text_source = p. 64, No. 1-2
+# title = Urubú, wirawasú
+# title_orig = Urubú, Wirá-Wasú
+# title_por = O urubu e o gavião
+# text_orig = Yepé ara, paá, urubú ti wasemu ne yepé súu umanú waá kwera umbaú arã.
+# text_annotator = LFdeA
+# text_orig_transcriber = Juliana Lopes Gurgel (JLG)
+# text_por_transcriber = JLG
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=10:13
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
+6	urubú	urubú	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=15:20
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=21:23
+8	uwasemu	wasemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=24:31
+9	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=32:34
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=35:39
+11	suú	suú	NOUN	N	Number=Sing	8	obj	_	TokenRange=40:43
+12	umanú	manú	VERB	V	Person=3|VerbForm=Fin	11	acl:relcl	_	TokenRange=44:49
+13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nsubj	_	TokenRange=50:53
+14	kwera	kwera	PART	PRET	Tense=Past	12	advmod	_	TokenRange=54:59
+15	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=60:65
+16	arã	arã	SCONJ	SCONJ	_	15	mark	_	SpaceAfter=No|TokenRange=66:69
+17	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=69:70
+
 # sent_id = Casasnovas2006:8:11:200
 # text = Kutara nungara, paá, tauyuíri tausika, muíri ururi tayasú i kupé upé.
 # text_eng = After a short time, each one returned with a big jaw on their shoulders.
@@ -19776,7 +19809,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = LFdeA
-# text_orig_transcriber = Juliana Lopes Gurgel (JLG)
+# text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 1	Kutara	kutara	ADV	ADVA	AdvType=Man	6	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
@@ -19794,7 +19827,7 @@
 14	upé	upé	ADP	ADP	_	13	case	_	SpaceAfter=No|TokenRange=65:68
 15	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=68:69
 
-# sent_id = Casasnovas2006:1:1:1
+# sent_id = Casasnovas2006:7:1:1
 # text = Yepé ara paá taína-itá taunheẽ ta ramunha tamakwarí tuyué supé: — Abú, puxiwera paá marandua yandé.
 # text_eng = One day, they say, children said to their grandfather, old Tamaquari: "Grandpa, we have bad news.
 # text_por = Um dia, contam, crianças disseram para o seu avô, o velho Tamaquari: — Vovô, temos uma má notícia. [Adapt. transl.]
@@ -19823,7 +19856,7 @@
 18	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	17	dislocated	_	SpaceAfter=No|TokenRange=92:97
 19	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=97:98
 
-# sent_id = Casasnovas2006:1:2:2
+# sent_id = Casasnovas2006:7:2:2
 # text = Kwá iwí paá yepé ara ukái arã yané irumu!
 # text_eng = The world, they say, will one day burn with us!"
 # text_por = O mundo, dizem, um dia queimará conosco! [Avila 2021]
@@ -19842,7 +19875,7 @@
 9	irumu	irumu	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=35:40
 10	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=40:41
 
-# sent_id = Casasnovas2006:1:3:3
+# sent_id = Casasnovas2006:7:3:3
 # text = — Tik! — unheẽ paá usuaxara aintá.
 # text_eng = "Oh!" he answered them.
 # text_por = — Nossa! — respondeu-lhes. [Adapt. transl.]
@@ -19859,7 +19892,7 @@
 8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=26:31
 9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
-# sent_id = Casasnovas2006:1:4:4
+# sent_id = Casasnovas2006:7:4:4
 # text = — Ukái ramé kurí, awiké kurí i suí iwí kwara kití!
 # text_eng = "If it burns I'll go into a hole in the earth."
 # text_por = — Se queimar entrarei dentro de um buraco da terra. [Adapt. transl.]
@@ -19879,7 +19912,7 @@
 12	kití	kití	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=44:48
 13	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
 
-# sent_id = Casasnovas2006:1:5:5
+# sent_id = Casasnovas2006:7:5:5
 # text = — Umbaá, abú — taunheẽ paá.
 # text_eng = "No, grandfather," they say they said.
 # text_por = — Não, vovô — contam que disseram. [Adapt. transl.]
@@ -19895,7 +19928,7 @@
 7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=21:24
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = Casasnovas2006:1:6:6
+# sent_id = Casasnovas2006:7:6:6
 # text = — Panhẽ paá iwí ukái arã!
 # text_eng = "They say the whole earth will burn!"
 # text_por = — Dizem que toda a terra queimará! [Adapt. transl.]
@@ -19909,7 +19942,7 @@
 6	arã	arã	PART	FUT	Tense=Fut	5	advmod	_	SpaceAfter=No|TokenRange=20:23
 7	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
 
-# sent_id = Casasnovas2006:1:7:7
+# sent_id = Casasnovas2006:7:7:7
 # text = — Yawé ramé kurí, apuri kurí i suí paraná kití!
 # text_eng = "If so, I'll jump into the river."
 # text_por = — Se for assim, pularei no rio. [Adapt. transl.]
@@ -19929,7 +19962,7 @@
 11	kití	kití	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=41:45
 12	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=45:46
 
-# sent_id = Casasnovas2006:1:8:8
+# sent_id = Casasnovas2006:7:8:8
 # text = — Tenhuntu indé, abú — taunheẽ paá i xupé.
 # text_eng = "In vain, grandpa," they told him.
 # text_por = — Debalde, vovô — disseram-lhe. [Adapt. transl.]
@@ -19949,7 +19982,7 @@
 10	xupé	xupé	ADP	ADP	_	9	case	_	SpaceAfter=No|TokenRange=35:39
 11	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=39:40
 
-# sent_id = Casasnovas2006:1:9:9
+# sent_id = Casasnovas2006:7:9:9
 # text = — Panhẽ paá kwá ií upupuri arã.
 # text_eng = “They say all water will boil."
 # text_por = — Dizem que toda a água ferverá. [Adapt. transl.]
@@ -19965,7 +19998,7 @@
 7	arã	arã	PART	FUT	Tense=Fut	6	advmod	_	SpaceAfter=No|TokenRange=26:29
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=29:30
 
-# sent_id = Casasnovas2006:1:10:10
+# sent_id = Casasnovas2006:7:10:10
 # text = Yawé paá tamakwarí tuyué upitá sasiara, asuí i piaíwa xinga.
 # text_eng = So old Tamaquari got sad, then he got a little angry.
 # text_por = Assim, o velho Tamaquari ficou triste, depois ficou um pouco zangado. [Adapt. transl.]
@@ -19985,7 +20018,7 @@
 11	xinga	xinga	ADV	ADVS	AdvType=Deg	10	advmod	_	SpaceAfter=No|TokenRange=54:59
 12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=59:60
 
-# sent_id = Casasnovas2006:1:11:11
+# sent_id = Casasnovas2006:7:11:11
 # text = Ma ti arã taumuserana aé, usuaxara yuíri aintá: ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itá kwara kití!
 # text_eng = But so they don't defeat him, he also replied: "If the water boils, I'll dive deep to get into the hole of a stone!"
 # text_por = Mas para eles não o vencerem, respondeu-lhes também: — Se a água ferver, mergulharei fundo para entrar no buraco de uma pedra! [Adapt. transl.]
@@ -20022,7 +20055,7 @@
 27	kití	kití	ADP	ADP	_	26	case	_	SpaceAfter=No|TokenRange=116:120
 28	!	!	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=120:121
 
-# sent_id = Casasnovas2006:1:12:12
+# sent_id = Casasnovas2006:7:12:12
 # text = ― Umbaá, abú — taunheẽ paá i xupé.
 # text_eng = "No, grandpa," they say they told him.
 # text_por = — Não, vovô — contam que lhe disseram. [Adapt. transl.]
@@ -20040,7 +20073,7 @@
 9	xupé	xupé	ADP	ADP	_	8	case	_	SpaceAfter=No|TokenRange=27:31
 10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=31:32
 
-# sent_id = Casasnovas2006:1:13:13
+# sent_id = Casasnovas2006:7:13:13
 # text = — Panhẽ paá kwá-itá itá tautikú arã.
 # text_eng = "It is said that all stones will melt."
 # text_por = — Dizem que todas as pedras derreterão. [Adapt. transl.]
@@ -20056,7 +20089,7 @@
 7	arã	arã	PART	FUT	Tense=Fut	6	advmod	_	SpaceAfter=No|TokenRange=31:34
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=34:35
 
-# sent_id = Casasnovas2006:1:14:14
+# sent_id = Casasnovas2006:7:14:14
 # text = — Mayé taá kurí remunhã? — taunheẽ paá i xupé.
 # text_eng = “What are you going to do?" they asked him.
 # text_por = — O que você vai fazer? — perguntaram-lhe. [Adapt. transl.]
@@ -20076,7 +20109,7 @@
 11	xupé	xupé	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=39:43
 12	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
 
-# sent_id = Casasnovas2006:1:15:15
+# sent_id = Casasnovas2006:7:15:15
 # text = Tamakwarí tuyué ti ã paá ukwá mayé usuaxara, ape upitá sasiara.
 # text_eng = Old Tamaquari no longer knew how to respond and was sad.
 # text_por = O velho Tamaquari não sabia mais como responder e ficou triste.
@@ -20991,7 +21024,7 @@
 
 # sent_id = Stradelli2014:0:0:1
 # text = Yané tuixawa umanú ana mira amusuaxarawara usikié tenhẽ waá.
-# text_eng = Our tuxaua, who was feared by the people on the other side, died.
+# text_eng = Our chief, who was feared by the people on the other side, died.
 # text_por = Morreu o nosso tuxaua, que era temido deveras pela gente da outra banda.
 # text_source = p. 75
 # text_orig = iané tuixaua omanoana mira amusuaxarauara ocikié tenhẽn uá
@@ -23855,7 +23888,8 @@
 # text_eng = That daughter of yours is disobedient.
 # text_por = Aquela sua filha é danada.
 # text_source = p. 112
-# text_orig = nhaã némbira apisá íma – aquela sua filha é danada,
+# text_orig = nhaã némbira apisá íma
+# text_por_orig = – aquela sua filha é danada,
 # text_annotator = LFdeA
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
