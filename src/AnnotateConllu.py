@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 28, 2023
+# Last update: January 11, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -977,7 +977,6 @@ def previousCat(token,cats):
 
 def pronOrDet(token,nounid,verbs):
     if token['xpos'] not in ('CARD',):
-        print("mu",token,nounid)
         verbid=nextVerb(token,verbs)
         tokenid=token['id']
         if verbid:
@@ -1003,7 +1002,6 @@ def handlePronSeq(tokenlist):
         i+=1
 
 def handleDetNum(upos,token,nextToken,tokenlist,verbs):
-    print("bu",token,nextToken)
     Pron='Pron'
     if upos == 'NUM':
         Pron='Num'
@@ -1038,7 +1036,6 @@ def handleDetNum(upos,token,nextToken,tokenlist,verbs):
         if nounid - tokenid > delta:
             token['head']=getNextWord(token,tokenlist)['id']
         else:
-            print("ju",nounid)
             token['head']=nounid
     else:
         if nextToken['upos'] == 'ADP':
@@ -1790,14 +1787,12 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     return mkNoun(lemma,None,dic)
 
 def mkEval(form,xpos='N',force=False):
-    print('miu')
     suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM'}
     xpos=xpos
     dic={}
     dic['lemma']=form.lower()
     if xpos=='N':
         dic.update(getNumber(dic['lemma']))
-        print('pliu',dic)
     for suff,feat in suffixes.items():
          if dic['lemma'].endswith(suff):
              dic['degree']=feat
@@ -2032,7 +2027,6 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev':
-                print('xiu',xpos)
                 new=mkEval(form,xpos,force)
                 newparselist=new['parselist']
             elif tag == '=prv':
@@ -2197,7 +2191,6 @@ def saveParseToFile(outstring,metadata,overwrite):
         outfile.close()
 
 def formatTextEng(s):
-    print('tlu')
     s=s.strip()
     c=s[0]
     chars='-—'
@@ -2313,10 +2306,8 @@ def splitMultiWordTokens(tokens):
             if second[1:] in sep:
                 if second[1:] in CLITICS:
                     first=f"{first}-"
-                    print('ziu')
                 if tag:
                     first=f"{first}/{tag}"
-                    print('wow')
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}/{tag}")
