@@ -4402,14 +4402,13 @@
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=69:70
 
 # sent_id = Avila2021:1:1:6
-# text = Kwá maniaka irumu yamunhã meyú asuí masuka, umeẽ turusú tipiaka.
-# text_orig = Kwá maniáka irumu yamunhã meyú asuí masuka, umeẽ turusú tipiáka.
+# text = Kwá maniáka irumu yamunhã meyú asuí masuka, umeẽ turusú tipiáka.
 # text_source = Payema, 22, adap.
 # text_eng = With this cassava we make beiju and massoca, it gives a lot of starch.
 # text_por = Com esta mandioca fazemos beiju e massoca, ela dá muita goma.
 # text_annotator = LFdeA
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	maniaka	maniaka	NOUN	N	Number=Sing	4	obl	_	TokenRange=4:11
+2	maniáka	maniáka	NOUN	N	Number=Sing	4	obl	_	TokenRange=4:11
 3	irumu	irumu	ADP	ADP	_	2	case	_	TokenRange=12:17
 4	yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=18:25
 5	meyú	meyú	NOUN	N	Number=Sing	4	obj	_	TokenRange=26:30
@@ -4418,7 +4417,7 @@
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=42:43
 9	umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=44:48
 10	turusú	turusú	DET	INDQ	PronType=Ind	11	det	_	TokenRange=49:55
-11	tipiaka	tipiaka	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=56:63
+11	tipiáka	tipiáka	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=56:63
 12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=63:64
 
 # sent_id = Avila2021:1:2:7
@@ -5461,6 +5460,7 @@
 # text_eng = Are you thirsty?
 # text_por = Tens sede?
 # text_source = Magalhães, 30, adap.
+# text_prim = Rẹ iumacɨ será ó nẹ ɨ cei será?
 # text_annotator = LFdeA
 1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	isí	isí	VERB	V2	_	0	root	_	TokenRange=3:6
@@ -7821,7 +7821,7 @@
 18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=86:87
 
 # sent_id = Avila2021:0:0:184
-# text = Usika kupixawa rembií-pe, usendú kunhã uyakáu uikú akutí irumu ti arama uú i maniaka.
+# text = Usika kupixawa rembií-pe, usendú kunhã uyakáu uikú akutí irumu ti arama uú i maniáka.
 # text_eng = He arrived at the edge of the field, heard a woman scolding the agouti so that it should not eat her manioc.
 # text_por = Chegou à beira da roça, ouviu uma mulher ralhando com a cutia para ela não comer sua mandioca.
 # text_source = Magalhães, 279, adap.
@@ -7843,7 +7843,7 @@
 13	arama	arama	SCONJ	SCONJ	_	14	mark	_	TokenRange=68:73
 14	uú	ú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=74:76
 15	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=77:78
-16	maniaka	maniaka	NOUN	N	Number=Sing	14	obj	_	SpaceAfter=No|TokenRange=79:86
+16	maniáka	maniáka	NOUN	N	Number=Sing	14	obj	_	SpaceAfter=No|TokenRange=79:86
 17	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=86:87
 
 # sent_id = Avila2021:0:0:185
@@ -11656,13 +11656,12 @@
 9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Avila2021:0:0:382
-# text = Sasiara paá apigawa-itá upitá, maãresé aintá usú umusaka maniaka uí arama, aintá ukapiri kupixawa-itá, aintá umungiri taína-itá kunhã yawé.
+# text = Sasiára paá apigawa-itá upitá, maãresé aintá usú umusaka maniáka uí arama, aintá ukapiri kupixawa-itá, aintá umungiri taína-itá kunhã yawé.
 # text_eng = The men, they say, were sad, because they were going to pluck cassava for flour, weed the gardens, make the children sleep like a woman.
 # text_por = Os homens, contam, ficaram tristes, porque iam arrancar mandioca para farinha, capinavam as roças, faziam dormir as crianças como mulher.
 # text_source = Amorim, 435, adap.
-# text_orig = Sasiára paá apigawa-itá upitá, maãresé aintá usú umusaka maniáka uí arama, aintá ukapiri kupixawa-itá, aintá umungiri taína-itá kunhã yawé.
 # text_annotator = LFdeA
-1	Sasiara	sasiara	ADJ	A	_	4	xcomp	_	TokenRange=0:7
+1	Sasiára	sasiára	ADJ	A	_	4	xcomp	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=8:11
 3	apigawa-itá	apigawa	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=12:23
 4	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=24:29
@@ -11671,7 +11670,7 @@
 7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=39:44
 8	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	9	aux	_	TokenRange=45:48
 9	umusaka	musaka	VERB	V	Person=3|VerbForm=Fin	4	advcl	_	TokenRange=49:56
-10	maniaka	maniaka	NOUN	N	Number=Sing	9	obj	_	TokenRange=57:64
+10	maniáka	maniáka	NOUN	N	Number=Sing	9	obj	_	TokenRange=57:64
 11	uí	uí	NOUN	N	Number=Sing	9	obl	_	TokenRange=65:67
 12	arama	arama	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=68:73
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=73:74
@@ -11702,11 +11701,10 @@
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Avila2021:0:0:384
-# text = Sururina, remungiri ne membira, yasú arama yamundá maniaka.
+# text = Sururina, remungiri ne membira, yasú arama yamundá maniáka.
 # text_eng = Sururina, put your daughter to sleep so we can go steal cassava.
 # text_por = Sururina, faz dormir a tua filha, para irmos roubar mandioca.
 # text_source = Rodrigues, 291, adap.
-# text_orig = Sururina, remungiri ne membira, yasú arama yamundá maniáka.
 # text_annotator = LFdeA
 1	Sururina	sururina	PROPN	PROPN	_	3	vocative	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=8:9
@@ -11717,7 +11715,7 @@
 7	yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	9	aux	_	TokenRange=32:36
 8	arama	arama	SCONJ	SCONJ	_	9	mark	_	TokenRange=37:42
 9	yamundá	mundá	VERB	V	Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=43:50
-10	maniaka	maniaka	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=51:58
+10	maniáka	maniáka	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=51:58
 11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = Avila2021:0:0:385
@@ -14189,7 +14187,10 @@
 # text = Kunhamukú upeteka i amaniú.
 # text_eng = The girl beats her cotton.
 # text_por = A moça bate seu algodão.
+# text_por_prim = A moça está batendo seu algodão.
 # text_source = Hartt, 324, adap.
+# text_prim = kuñán mukú opeték iamaniú.
+# text_prim_source = p. 324, No. 73
 # text_annotator = LFdeA
 1	Kunhamukú	kunhamukú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:9
 2	upeteka	peteka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=10:17
@@ -17365,6 +17366,17 @@
 2	tiapú	tiapú	ADV	ADVA	AdvType=Man	1	advmod	_	SpaceAfter=No|TokenRange=11:16
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# sent_id = Avila2021:0:0:707
+# text = Reyumasí será?
+# text_eng = Are you hungry?
+# text_por = Você tem fome?
+# text_source = Magalhães, 30, adap.
+# text_prim = Rẹ iumacɨ será ó nẹ ɨ cei será?
+# text_annotator = LFdeA
+1	Reyumasí	yumasí	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	será	será	PART	PQ	PartType=Int	1	advmod	_	SpaceAfter=No|TokenRange=9:13
+3	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -17710,14 +17722,14 @@
 22	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=94:95
 
 # sent_id = NTLN2019:2:1:12
-# text = Kuíri sasiara se piá, asuí maita kurí ambeú?
+# text = Kuíri sasiára se piá, asuí maita kurí ambeú?
 # text_eng = “Now my soul is troubled, and what shall I say? [NIV]
 # text_por = "Agora meu coração está perturbado, e o que direi? [NVI]
 # text_source = Novo Testamento na língua Nyengatu, John 12:27
 # text_orig = Kuiri sasiyara sepia, asui maitaa kuri hambeu?
 # text_annotator = LFdeA
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
-2	sasiara	sasiara	ADJ	A	_	0	root	_	TokenRange=6:13
+2	sasiára	sasiára	ADJ	A	_	0	root	_	TokenRange=6:13
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=14:16
 4	piá	piá	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=17:20
 5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=20:21
@@ -19999,7 +20011,7 @@
 8	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Casasnovas2006:7:10:10
-# text = Yawé paá tamakwarí tuyué upitá sasiara, asuí i piaíwa xinga.
+# text = Yawé paá tamakwarí tuyué upitá sasiára, asuí i piaíwa xinga.
 # text_eng = So old Tamaquari got sad, then he got a little angry.
 # text_por = Assim, o velho Tamaquari ficou triste, depois ficou um pouco zangado. [Adapt. transl.]
 # text_source = p. 83, No. 7
@@ -20010,7 +20022,7 @@
 3	tamakwarí	tamakwarí	PROPN	PROPN	_	4	nmod:poss	_	TokenRange=9:18
 4	tuyué	tuyué	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=19:24
 5	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=25:30
-6	sasiara	sasiara	ADJ	A	_	5	xcomp	_	SpaceAfter=No|TokenRange=31:38
+6	sasiára	sasiára	ADJ	A	_	5	xcomp	_	SpaceAfter=No|TokenRange=31:38
 7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=38:39
 8	asuí	asuí	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=40:44
 9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=45:46
@@ -20110,7 +20122,7 @@
 12	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Casasnovas2006:7:15:15
-# text = Tamakwarí tuyué ti ã paá ukwá mayé usuaxara, ape upitá sasiara.
+# text = Tamakwarí tuyué ti ã paá ukwá mayé usuaxara, ape upitá sasiára.
 # text_eng = Old Tamaquari no longer knew how to respond and was sad.
 # text_por = O velho Tamaquari não sabia mais como responder e ficou triste.
 # text_source = p. 83, No. 12
@@ -20127,7 +20139,7 @@
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=43:44
 10	ape	ape	ADV	ADVJ	AdvType=Cau	11	advmod	_	TokenRange=45:48
 11	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=49:54
-12	sasiara	sasiara	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
+12	sasiára	sasiára	ADJ	A	_	11	xcomp	_	SpaceAfter=No|TokenRange=55:62
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
 
 # sent_id = Casasnovas2006:0:0:16
