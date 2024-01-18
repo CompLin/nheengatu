@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: July 23, 2023
+# Last update: Janaury 17, 2024
 
 # https://en.wikipedia.org/wiki/Compose_key
 # https://math.dartmouth.edu/~sarunas/Linux_Compose_Key_Sequences.html
@@ -33,12 +33,20 @@ MAPPING={
 	'ä':{'char':'ạ','code':'U+1EA1','phonetic':'close a','name':'LATIN SMALL LETTER A WITH DOT BELOW'},
 
 	'ê':{'char':'ệ','code':'U+1EC7','phonetic':'stressed close e', 'name':'LATIN SMALL LETTER E WITH CIRCUMFLEX AND DOT BELOW'},
+	
+	'ĕ': {'char':'ệ','variant': 'ê', 'compose':'be'},
+	
+	'ē': {'char':'ệ','variant': 'ê', 'compose':'_e'},
 
 	'â':{'char':'ậ','code':'U+1EAD','phonetic':'stressed close a','name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND DOT BELOW'},
 
 	'ô':{'char':'ộ','code':'U+1ED9','phonetic':'stressed close o', 'name':'LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW'},
+	
+	'œ': {'char':'ộ','variant': 'ô', 'compose':'oe'},
 
-	'y':{'char':'ɨ','code':'U+0268', 'phonetic':'Close central unrounded vowel','name':'LATIN SMALL LETTER I WITH STROKE'},
+	#'y':{'char':'ɨ','code':'U+0268', 'phonetic':'Close central unrounded vowel','name':'LATIN SMALL LETTER I WITH STROKE'},
+	
+	'ý':{'char':'ɨ','variant': 'y', 'compose':"'y"},
 
 	'å':{'char':'ẫ','code':'U+1EAB','phonetic':'stressed nasal a', 'name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE', 'compose':'oa'},
 
@@ -90,12 +98,16 @@ def parseText(infile):
 	c=len(pairs)
 	while(i<c):
 		pair=pairs[i]
-		yrl,por=pair.strip().split("\n")
-		dic={}
-		dic['yrl']=yrl.split("\t")
-		dic['por']=por.split("\t")
-		dic['sent_num']=i+1
-		sents.append(dic)
+		parts=pair.strip().split("\n")
+		if len(parts) == 2:
+			yrl,por = parts
+			dic={}
+			dic['yrl']=yrl.split("\t")
+			dic['por']=por.split("\t")
+			dic['sent_num']=i+1
+			sents.append(dic)
+		else:
+			print(i,pair)
 		i+=1
 	return sents
 
