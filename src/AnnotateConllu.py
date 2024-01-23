@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 11, 2024
+# Last update: January 23, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -268,6 +268,12 @@ def WordsOfLenghth(lenght,pos):
     glossary=loadGlossary()
     return list(filter(lambda x:  len(x['lemma']) == lenght and x['pos'] == pos,glossary))
 
+def includeAdpType(token):
+    mapping={'ADP' : 'Post', 'PREP' : 'Prep'}
+    adptype=mapping.get(token['upos'])
+    if adptype:
+        updateFeats(token,'AdpType',adptype)
+
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
     'VERB':'root',
@@ -332,6 +338,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     elif token['xpos'] in ('ORD','ADVO'):
         updateFeats(token,'NumType','Ord')
     includeAdvType(token)
+    includeAdpType(token)
     token['head']=head
     dprl=mapping.get(upos)
     if not dprl:
@@ -2531,3 +2538,7 @@ def mkSecText(yrl=None,yrl_source=None,por=None, por_sec=False,por_source=None):
 def mkSecTextAvila(example,por_sec=False):
     sents=extract_sents(example)
     return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
+
+def ppMetadata(metadata):
+	for k,v in metadata:
+		print(f"# {k} = {v}")
