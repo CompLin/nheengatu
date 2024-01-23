@@ -273,6 +273,7 @@ def includeAdpType(token):
     adptype=mapping.get(token['upos'])
     if adptype:
         updateFeats(token,'AdpType',adptype)
+        token['feats']=sortDict(token['feats'])
 
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
