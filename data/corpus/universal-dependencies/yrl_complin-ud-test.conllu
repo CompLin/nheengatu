@@ -196,13 +196,13 @@
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = MooreFP1994:0:0:15
-# text = Kuxiíma aikwé yepé feiticeiro akunheseri waá.
+# text = Kuxiima aikwé yepé feiticeiro akunheseri waá.
 # text_eng = Antigamente, havia um feiticeiro que eu conhecia.
 # text_por = Formerly, there was a shaman whom I knew.
 # text_source = p. 107
 # text_orig = kušiʔĩma aikwé yepé feičiséiro akoñeséi waʔá
 # text_annotator = LFdeA
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
 2	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=8:13
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=14:18
 4	feiticeiro	feiticeiro	NOUN	N	Number=Sing	2	nsubj	_	OrigLang=pt|TokenRange=19:29
@@ -333,7 +333,7 @@
 # text_eng = [...] they didn't know what the curupiras do to us. [Corr. transl.]
 # text_por = [...] eles não sabiam o que os curupiras fazem com a gente.
 # text_source = p. 109
-# text_orig = ...čí aẽtá ukwá mãʔã kurupíraitá umũỹã yaneirũ
+# text_orig = …čí aẽtá ukwá mãʔã kurupíraitá umũỹã yaneirũ
 # text_annotator = LFdeA
 1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=6:8
@@ -348,10 +348,10 @@
 
 # sent_id = MooreFP1994:0:0:24
 # text = [...] remurari iké u remurari interior kití [...]
-# text_eng = [...] you live here or in the interior [...]
+# text_eng = [...] you live here or in the interior [...] [Adapt. transl.]
 # text_por = [...] você mora aqui ou no interior [...]
 # text_source = p. 109
-# text_orig = ...remurái iké u remurái ĩterió kičí
+# text_orig = …remurái iké u remurái ĩterió kičí
 # text_annotator = LFdeA
 1	[...]	[...]	PUNCT	ELIP	_	2	punct	_	TokenRange=0:5
 2	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
@@ -412,7 +412,7 @@
 # text = Indé muíri akayú taá remurari iké kwá cidade upé?
 # text_eng = For how long have you lived here in this city?
 # text_por = Você faz quantos anos mora aqui nesta cidade?
-# text_source = p. 111
+# text_source = p. 111, No. 1
 # speaker = Gerson
 # text_orig = ĩndé muʔí akayú taʔá remorái iké kwá sidádi upé
 # text_annotator = LFdeA
@@ -432,7 +432,7 @@
 # text_eng = It's been nine years since I came from my land. [Corr. transl.]
 # text_eng_orig = It has been nine years that I live in this city.
 # text_por = Eu já faz nove anos que vim da minha terra.
-# text_source = p. 111
+# text_source = p. 111, No. 2
 # speaker = Lenir
 # text_orig = išé akayú nóvi akayúana ayuwíri seretãma suʔí
 # text_annotator = LFdeA
@@ -451,7 +451,7 @@
 # text = Ixé ayupukwá iké.
 # text_eng = I got used to this place.
 # text_por = Me acostumei aqui.
-# text_source = p. 111
+# text_source = p. 111, No. 3
 # speaker = Lenir
 # text_orig = išé ayupukwá iké
 # text_annotator = LFdeA
@@ -465,7 +465,7 @@
 # text_eng = I don't think of returning to my family's house.
 # text_por = Eu não penso em voltar para a casa dos meus familiares.
 # text_source = p. 111
-# speaker = Lenir
+# speaker = Lenir, No. 4
 # text_orig = išé čí amãduʔái ayuwíri sefamíliaitá rúka kití
 # text_annotator = LFdeA
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
@@ -482,7 +482,7 @@
 # text = Akwá katú ixé ti ayupukwá akití.
 # text_eng = I think I cannot accustom myself to that place anymore.
 # text_por = Sei bem que não me acostumo lá.
-# text_source = p. 111
+# text_source = p. 111, No. 5
 # speaker = Lenir
 # text_orig = akwakatú išé čí ayupukwá akití
 # text_annotator = LFdeA
@@ -498,7 +498,7 @@
 # text = Apitá kurí iké até ku mairamé Tupana-itá kurí ukwá.
 # text_eng = I'll be here until God knows when.
 # text_por = Ficarei aqui até Deus sabe quando.
-# text_source = p. 111
+# text_source = p. 111, No. 6
 # speaker = Lenir
 # text_orig = apitá kurí iké até kumairamẽ Tupãna-itá kurí ukwá
 # text_annotator = LFdeA
@@ -517,7 +517,7 @@
 # text = Mayé taá asú anhũ awatá se retama kití amaã arã se anama-itá?
 # text_eng = How can I go back to that city only to see my family?
 # text_por = Como posso voltar à minha terra apenas para ver minha família?
-# text_source = p. 111
+# text_source = p. 111, No. 7
 # speaker = Lenir
 # text_orig = mayé taʔá asú aỹũ awatá seretãma kití amãʔã arã seanãmaitá
 # text_annotator = LFdeA
@@ -539,7 +539,7 @@
 # text = Ixé ti ã amanduári ayuíri akití.
 # text_eng = I don't think of going back there.
 # text_por = Não penso em voltar lá.
-# text_source = p. 111
+# text_source = p. 111, No. 8
 # speaker = Lenir
 # text_orig = išé čã amãduʔái ayuwíri akití
 # text_annotator = LFdeA
@@ -555,7 +555,7 @@
 # text = Ayuíri kurí anhũ amaã arã se anama-itá.
 # text_eng = I will go back there just to visit my family.
 # text_por = Voltarei lá apenas para visitar minha família.
-# text_source = p. 112
+# text_source = p. 112, No. 9
 # speaker = Lenir
 # text_orig = ayuwíri kurí ãỹũ amãʔã arã seanãmaitá
 # text_annotator = LFdeA
@@ -569,14 +569,14 @@
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = MooreFP1994:1:10:37
-# text = Kuxiíma reyuri ramé kwá kití mayé taá reyuri arã?
+# text = Kuxiima reyuri ramé kwá kití mayé taá reyuri arã?
 # text_eng = Formerly, when you came here, how did you come?
 # text_por = Anteriormente, quando você veio aqui, como você veio?
-# text_source = p. 112
+# text_source = p. 112, No. 10
 # speaker = Gerson
 # text_orig = kušiʔĩma reyúwi ramẽ kwá kití mayeta reyúwi arã
 # text_annotator = LFdeA
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
 2	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=8:14
 3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=15:19
 4	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	2	obl	_	TokenRange=20:23
@@ -591,21 +591,37 @@
 # text = Aikwé awá ururi indé u reyuri-putari tẽ ne rupí?
 # text_eng = Was there anybody to bring you or did you yourself want to come?
 # text_por = Havia alguém para trazer você ou você queria mesmo vir?
-# text_source = p. 112
-# text_orig = aikwé áwa urúi ĩndé o reyúwi putái te nerupí...
+# text_source = p. 112, No. 11
+# speaker = Gerson
+# text_orig = aikwé áwa u-rúi ĩndé o re-yúwi putái te ne-rupí …
 # text_annotator = LFdeA
-1	Aikwé	aikwé	PART	EXST	PartType=Exs	3	advmod	_	TokenRange=0:5
-2	awá	awá	PRON	IND	PronType=Ind	3	nsubj	_	TokenRange=6:9
-3	ururi	ruri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
+1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
+2	awá	awá	PRON	RELF	PronType=Rel	1	nsubj	_	TokenRange=6:9
+3	ururi	ruri	VERB	V	Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=10:15
 4	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	3	obj	_	TokenRange=16:20
 5	u	u	CCONJ	CCONJ	_	6	cc	_	TokenRange=21:22
 6-7	reyuri-putari	_	_	_	_	_	_	_	TokenRange=23:36
-6	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	3	conj	_	_
+6	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	1	conj	_	_
 7	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
 8	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	TokenRange=38:40
 9	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	obl	_	TokenRange=41:43
 10	rupí	rupí	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=44:48
-11	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+11	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = MooreFP1994:0:0:39
+# text = [...] nẽ ixé amanduári amaã indé.
+# text_eng = [...] nor I think of seeing you. [Adapt. transl.]
+# text_por = [...] nem penso em te ver.
+# text_source = p. 109
+# text_orig = …nẽ išé [a-mãnduʔái a-mãã ĩndé]S'Comp
+# text_annotator = LFdeA
+1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
+2	nẽ	nẽ	CCONJ	CCONJ	_	4	cc	_	TokenRange=6:8
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=9:12
+4	amanduári	manduári	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=13:22
+5	amaã	maã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	4	ccomp	_	TokenRange=23:27
+6	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=28:32
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Alencar2021:0:0:1
 # text = Kambí sakú uikú.
@@ -24189,4 +24205,3 @@
 1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	tiapuíma	tiapú	ADV	ADVA	AdvType=Man|Derivation=Priv	1	advmod	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
-

@@ -1509,7 +1509,7 @@ def hasTag(tags1,tags2):
 def filterparselist(tags,parselist):
     return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
 
-def handleCompoundAuactx(token):
+def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
 
 def handleClitic(token):
