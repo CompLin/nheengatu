@@ -2541,5 +2541,5 @@ def mkSecTextAvila(example,por_sec=False):
     return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
 
 def ppMetadata(metadata):
-	for k,v in metadata:
+	for k,v in metadata.items():
 		print(f"# {k} = {v}")
