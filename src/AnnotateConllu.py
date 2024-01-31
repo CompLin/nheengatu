@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 23, 2024
+# Last update: January 31, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -1375,7 +1375,7 @@ def handleRel(token,tokenlist):
     token['deprel'] = 'nsubj'
     i=len(tokenlist)
     previous=getPreviousToken(token,tokenlist)
-    if previous['upos'] == 'PART':
+    if previous['id'] > 1 and previous['upos'] == 'PART':
         previous=getPreviousToken(previous,tokenlist)
     token['head'] = previous['id']
     nouns=TokensOfCatList(tokenlist,'NOUN')
