@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 31, 2024
+# Last update: February 1, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -29,6 +29,7 @@ TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
 TREEBANK_SENTS=[]
 
 # single and double quotes
+DOUBQUOMARK='"'
 QUOTES='''"''"'''
 
 # punctuation introducing a dependent clause
@@ -2332,8 +2333,26 @@ def splitMultiWordTokens(tokens):
             newlist.append(t)
     return newlist
 
+def handleRightQuotationMark(tokens):
+	indexes=[]
+	j=0
+	quote=DOUBQUOMARK # TODO: handling of other quote types
+	while(j < len(tokens)):
+		if "/" in tokens[j]:
+			word,tags=tokens[j].split("/")
+			if word.endswith(quote):
+				tokens[j]=f"{word[:-1]}/{tags}"
+				indexes.append(j)
+		j+=1
+	for i in indexes:
+		if i == (len(tokens) -1):
+			tokens.append(quote)
+		else:
+			tokens.insert(i+1,quote)
+
 def parseSentence(sent):
     tokens=splitMultiWordTokens(tokenize(sent))
+    handleRightQuotationMark(tokens)
     tk=mkConlluSentence(tokens)
     return tk
 
