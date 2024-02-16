@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 18, 2023
+# Last update: February 16, 2024
 
 import os, sys, string, json, datetime
 from BuildDictionary import extract_feats, loadLexicon, guesser
@@ -23,9 +23,8 @@ Metadata of the original corpus file reproduced below.'''
 """
 NAMES=['antônio', 'barra', 'catarina', 'maria', 'miguel',
 'paulo', 'pedro', 'rute', 'são', 'tefé', 'josé', 'joana',
-'jesus', 'kristu', 'deus', 'kurukuí', 'augusto', 'yuruparí',
-'iahuixa', 'buopé','rairú','isana',
-'pirayawara','matapí','uauhi', 'uanskẽ',
+'jesus', 'kristu', 'deus', 'kurukuí', 'augusto',
+'iahuixa', 'buopé','rairú','isana','uauhi', 'uanskẽ',
 'porominare', 'poronominare', 'karu', 'kukuí', 'pitiápo']
 
 def propernames(namelist=NAMES):

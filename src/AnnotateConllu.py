@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 1, 2024
+# Last update: February 16, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -80,8 +80,9 @@ TACL : {'lemma':'taá','xpos':'CQ'}
 CLITICS=list(CLITICENTRIES.keys())
 
 # non-hyphenated clitics
-# clitic alomorph of postposition 'upé'
+# clitic alomorphs of postposition 'upé'
 ME='me'
+PI='pi'
 
 # clitic adverb "-ntu"
 NTU='ntu'
@@ -236,8 +237,10 @@ def incrementRange(r='107:111',i=1):
 
 def incrementTokenRange(tokenlist,i=1):
     for t in tokenlist:
-        value=incrementRange(t['misc']['TokenRange'],i)
-        t['misc']['TokenRange']=value
+        misc=t.get('misc')
+        if misc:
+            value=incrementRange(misc['TokenRange'],i)
+            misc['TokenRange']=value
 
 def getudtag(tag):
     udtag=UDTAGS.get(tag)
