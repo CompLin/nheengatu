@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 16, 2024
+# Last update: February 18, 2024
 
 import re, sys, os, json
 
@@ -79,6 +79,7 @@ num. ord.\tORD\tnumeral ordinal
 interj.\tINTJ\tinterjeição
 s.\tN\tsubstantivo comum
 s. próprio\tPROPN\tsubstantivo próprio
+s. loc.\tLOC\tsubstantivo locativo
 part.\tPART\tpartícula
 part. mod.\tMOD\tpartícula modal
 part. perf.\tPFV\tpartícula de perfectivo
@@ -438,6 +439,9 @@ def getLemmaPosTags(entry,includefunction):
 	tags=extractTags(pos,includefunction)
 	return lemma, pos, tags
 
+def TagNorLOC(tag):
+	return tag in ['N','LOC']
+
 def WordParsePairs(glossary):
 	pairs=set()
 	for entry in glossary:
@@ -452,7 +456,7 @@ def WordParsePairs(glossary):
 				ncont=rel[1].split("/")
 				for form in ncont:
 					forms.add((form,f"{lemma}+{tag}+NCONT"))
-				if tag == "N":
+				if TagNorLOC(tag):
 					forms.add((lemma,f"{lemma}+{tag}+ABS"))
 					pairs.update(makeNumber(forms))
 				else:
@@ -556,7 +560,7 @@ def extract_feats(parses):
 
 def insertSingularNumber(entry):
     pos=entry.get('pos')
-    if pos and pos == 'N':
+    if pos and TagNorLOC(pos):
         if not entry.get('number'):
             entry['number']='SG'
 
@@ -566,7 +570,7 @@ def removeNumber(entry,number,feats):
         if number in feats:
             feats.remove(number)
     pos=entry.get('pos')
-    if pos and pos != 'N':
+    if pos and not TagNorLOC(pos):
         #print('number removed')
         if number in feats:
             feats.remove(number)

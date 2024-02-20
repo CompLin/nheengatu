@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 16, 2024
+# Last update: February 19, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
@@ -40,6 +40,9 @@ SEMICOLON=';'
 DEPPUNCT=[COMMA,COLON,SEMICOLON]
 DEPPUNCT.extend(DASHES)
 
+# locative form
+LOCATIVE=re.compile(r"forma locativa de (\w+)")
+
 # characters to be removed from input sentence
 REMOVE=re.compile(r"/=?[\w\+]*([:=|]\w+)*@?")
 
@@ -66,7 +69,7 @@ MULTIWORDTOKENS={}
 CASE="Gen"
 
 # Enclitic items
-# TODO: extract fom glossary
+# TODO: extract from glossary
 # hyphenated postposition
 PE='pe'
 # content question particle
@@ -83,6 +86,8 @@ CLITICS=list(CLITICENTRIES.keys())
 # clitic alomorphs of postposition 'upé'
 ME='me'
 PI='pi'
+# normalized lemmatization of alomorph 'pi'
+PI=PE
 
 # clitic adverb "-ntu"
 NTU='ntu'
@@ -98,7 +103,7 @@ GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
 LEXICON=loadLexicon()
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
-'V': 'VERB', 'N': 'NOUN', 'V2': 'VERB', 'V3': 'VERB',
+'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
 'VSUFF': 'VERB',
 'A': 'ADJ', 'A2': 'VERB',
 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
@@ -141,7 +146,36 @@ def extract_redup(glossary=GLOSSARY):
             lexredup.add(lemma)
     return lexredup
 
+def getRelPrefix(token):
+    pref=''
+    firstchar=token[0]
+    if firstchar.lower() in ('r','s','t'):
+        pref=firstchar
+    return pref
+
+def extractLocativeNouns(glossary=GLOSSARY):
+    locatives=list(filter(lambda x: 's. loc.' == x.get('pos'), glossary))
+    for entry in locatives:
+        gloss=entry['gloss']
+        entry['base']=LOCATIVE.search(gloss).groups()[0]
+        entry['prefix']=getRelPrefix(entry['base'])
+    return locatives
+
+LOCATIVES=extractLocativeNouns()
+
 LEXREDUP=extract_redup()
+
+def getLocEntry(form):
+    def handleRelForm(entry,form):
+        rel=entry.get('rel')
+        if not rel:
+            rel=''
+        return form in rel
+    entries=list(filter(lambda entry: entry.get('lemma') == form or handleRelForm(entry,form),LOCATIVES))
+    if entries:
+        return entries[0]
+    else:
+        return {}
 
 def extractTreebankSents(infile=TREEBANK_PATH):
     sents=extractConlluSents(infile)
@@ -1617,8 +1651,9 @@ def mkSuff(form,dic):
     form=form[1:]
     ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
     me={'xpos':'ADP','lemma':'upé','clitic':ME}
+    pi={'xpos':'ADP','lemma':'upé','clitic':PI}
     ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
-    suffs=[ntu,me,ta]
+    suffs=[ntu,me,pi,ta]
     for suff in suffs:
         clitic=suff.get('clitic')
         if clitic == form:
@@ -2277,8 +2312,8 @@ def startswithNasal(suff):
 
 def hasClitic(suff,token):
     if endswithSuff(suff,token) and not withSuff(suff,token):
-            nasal=startswithNasal(suff)
-            return handleAccent(token[:-len(suff)],nasal)
+        nasal=startswithNasal(suff)
+        return handleAccent(token[:-len(suff)],nasal)
     return ''
 
 def mkHost(host,clitic,token,xpos=''):
@@ -2292,8 +2327,20 @@ def mkHost(host,clitic,token,xpos=''):
 
 def extractHost(token):
     dic={}
-    if token.lower() == 'maita':
+    form=token.lower()
+    if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
+    else:
+        entry=getLocEntry(form)
+        if entry:
+            base_pref=entry['prefix']
+            form_prefix=getRelPrefix(form)
+            base=entry['base']
+            if form_prefix and base_pref:
+                base=f"{form_prefix.lower()}{base[1:]}"
+            elif form_prefix:
+                base=f"{form_prefix.lower()}{base}"
+            return mkHost(base,PI,token)
     for clitic in NONHYPHEN:
         host=hasClitic(clitic,token)
         if host:
