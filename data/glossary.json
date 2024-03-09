@@ -859,11 +859,6 @@
         "gloss": "por lá"
     },
     {
-        "lemma": "árupi",
-        "pos": "posp.",
-        "gloss": "sobre"
-    },
-    {
         "lemma": "arú",
         "pos": "s.",
         "gloss": "tipo de sapo"
@@ -1083,6 +1078,36 @@
         "gloss": "forma locativa de gapira"
     },
     {
+        "lemma": "árupi",
+        "pos": "s. loc.",
+        "gloss": "forma locativa de ara"
+    },
+    {
+        "lemma": "wirpe",
+        "pos": "s. loc.",
+        "gloss": "forma locativa de wira"
+    },
+    {
+        "lemma": "wírupi",
+        "pos": "s. loc.",
+        "gloss": "forma locativa de wira"
+    },
+    {
+        "lemma": "santasawa",
+        "pos": "s.",
+        "gloss": "dureza"
+    },
+    {
+        "lemma": "santasá",
+        "pos": "s.",
+        "gloss": "var. santasawa"
+    },
+    {
+        "lemma": "kataka",
+        "pos": "v.",
+        "gloss": "balançar; mover-se"
+    },
+    {
         "lemma": "gapira",
         "pos": "s.",
         "gloss": "cabeceira de um curso de água; alto curso de rio ou igarapé [Avila 2021]"
@@ -1098,9 +1123,34 @@
         "gloss": "var. garapawa"
     },
     {
+        "lemma": "yurará",
+        "pos": "s.",
+        "gloss": "tipo de tartaruga"
+    },
+    {
+        "lemma": "mungí",
+        "pos": "v.",
+        "gloss": "recolher"
+    },
+    {
         "lemma": "garapawa",
         "pos": "s.",
         "gloss": "porto"
+    },
+    {
+        "lemma": "aría",
+        "pos": "s.",
+        "gloss": "avó"
+    },
+    {
+        "lemma": "tupé",
+        "pos": "s.",
+        "gloss": "esteira"
+    },
+    {
+        "lemma": "pariká",
+        "pos": "s.",
+        "gloss": "tipo de árvore; o fruto ou as sementes em pó dessa árvore"
     },
     {
         "lemma": "garapa",
@@ -1330,6 +1380,11 @@
         "lemma": "i",
         "pos": "pron. 2ª cl.",
         "gloss": "1. ele (a); 2. seu, sua, dele(-a)"
+    },
+    {
+        "lemma": "i",
+        "pos": "cconj.",
+        "gloss": "e"
     },
     {
         "lemma": "iraití",
@@ -3216,6 +3271,11 @@
         "gloss": "var. mirá"
     },
     {
+        "lemma": "muirá",
+        "pos": "s.",
+        "gloss": "var. mirá"
+    },
+    {
         "lemma": "mira",
         "pos": "s.",
         "gloss": "pessoa, gente"
@@ -3917,6 +3977,11 @@
         "gloss": "var. mbuí"
     },
     {
+        "lemma": "jí",
+        "pos": "s.",
+        "gloss": "machado"
+    },
+    {
         "lemma": "inimbú",
         "pos": "s.",
         "gloss": "fio"
@@ -4087,6 +4152,11 @@
         "pos": "v. 3ª cl.",
         "gloss": "frutificar",
         "var": 2
+    },
+    {
+        "lemma": "xipiá",
+        "pos": "v.",
+        "gloss": "var. de xipiaka"
     },
     {
         "lemma": "iyaá",
@@ -7505,6 +7575,15 @@
         ]
     },
     {
+        "lemma": "tetame",
+        "pos": "s. loc.",
+        "gloss": "forma locativa de tetama",
+        "rel": [
+            "retame",
+            "setame"
+        ]
+    },
+    {
         "lemma": "resewara",
         "pos": "posp.",
         "gloss": "1. relativo a; 2. por causa de",
@@ -7822,9 +7901,44 @@
         "gloss": "nome de grupo étnico e de língua do rio Negro"
     },
     {
+        "lemma": "pamarí",
+        "pos": "s.",
+        "gloss": "nome de grupo étnico do rio Purus"
+    },
+    {
         "lemma": "tukanu",
         "pos": "s.",
         "gloss": "var. tukano"
+    },
+    {
+        "lemma": "wirá-payé",
+        "pos": "s.",
+        "gloss": "uirapajé"
+    },
+    {
+        "lemma": "werá",
+        "pos": "s.",
+        "gloss": "luzeiro [uërá Aguiar, p. 67, 85]"
+    },
+    {
+        "lemma": "werá",
+        "pos": "s.",
+        "gloss": "brilhar, luzir"
+    },
+    {
+        "lemma": "yumumbeú",
+        "pos": "v.",
+        "gloss": "confessar-se; ser relatado [Avila2021]; yumumbeú katú/puxí ser bendito/maldito [Aguiar]"
+    },
+    {
+        "lemma": "yumbeú",
+        "pos": "v.",
+        "gloss": "var. yumumbeú"
+    },
+    {
+        "lemma": "yumumeú",
+        "pos": "v.",
+        "gloss": "var. yumumbeú"
     },
     {
         "lemma": "wayoro",
@@ -8380,16 +8494,6 @@
         "gloss": "gavião"
     },
     {
-        "lemma": "wirpe",
-        "pos": "posp.",
-        "gloss": "var. wírupi"
-    },
-    {
-        "lemma": "wírupi",
-        "pos": "posp.",
-        "gloss": "sob, debaixo de"
-    },
-    {
         "lemma": "sanhana",
         "pos": "v.",
         "gloss": "juntar"
@@ -8742,6 +8846,11 @@
         "lemma": "yawawira",
         "pos": "s.",
         "gloss": "arraia"
+    },
+    {
+        "lemma": "wira",
+        "pos": "s.",
+        "gloss": "parte inferior, parte de baixo"
     },
     {
         "lemma": "yawé",

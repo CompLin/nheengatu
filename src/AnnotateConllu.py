@@ -87,7 +87,8 @@ CLITICS=list(CLITICENTRIES.keys())
 ME='me'
 PI='pi'
 # normalized lemmatization of alomorph 'pi'
-PI=PE
+UPE='upé'
+PI=UPE
 
 # clitic adverb "-ntu"
 NTU='ntu'
@@ -1578,14 +1579,44 @@ def getStartEnd(token,remove=True):
             dic['end']=end
     return dic
 
+def correctTokenRanges(tokenlist):
+    start=0
+    end=0
+    i=0
+    previous=Token()
+    previd=0
+    c=len(tokenlist)
+    while(i<c):
+        token=tokenlist[i]
+        tokenid=token['id']
+        misc=token.get('misc')
+        if misc:
+            tokenrange=misc.get('TokenRange')
+            spaceafter=misc.get('SpaceAfter')
+            if tokenrange:
+                if i > 0:
+                    previous=tokenlist[i-1]
+                if previous:
+                    previd=previous['id']
+                if tokenid != previd:
+                    end=start+len(token['form'])
+                    startend=f"{start}:{end}"
+                    token['misc']['TokenRange']=startend
+                    increment=1
+                    if spaceafter:
+                        increment=0
+                    start=end+increment
+        i+=1
+
 def getSpaceAfter(token):
     misc=token.get('misc')
-    if misc.get('SpaceAfter'):
-        return misc.pop('SpaceAfter')
+    if misc:
+        if misc.get('SpaceAfter'):
+            return misc.pop('SpaceAfter')
 
 def insertMultitokenWord(tokenlist):
-    newlist=TokenList()
     sep='-'
+    compound=Token()
     for token in tokenlist:
         feats=token.get('feats')
         if feats:
@@ -1615,7 +1646,37 @@ def insertMultitokenWord(tokenlist):
                     ident=f'{tokenid-1}-{tokenid}'
                     compound=mkMultiWordToken(ident,form,start,end,spaceafter)
                     tokenlist.insert(index-1,compound)
-                #break
+    if compound:
+        correctTokenRanges(tokenlist) # TODO: verify whether this function suffices to correctly set TokenRange values
+
+def insertMultitokenWord1(tokenlist):
+    sep='-'
+    compound=Token()
+    for token in tokenlist:
+        feats=token.get('feats')
+        if feats:
+            if feats.get('Compound') == 'Yes'or feats.get('Clitic') == 'Yes':
+                index=tokenlist.index(token)
+                previous=tokenlist[index-1]
+                spaceafter=getSpaceAfter(token)
+                alomorph=''
+                misc=previous['misc']
+                if misc:
+                    alomorph=misc.get('Alomorph')
+                first=previous['form']
+                if alomorph:
+                    first=alomorph
+                mwt=MULTIWORDTOKENS.get(first)
+                if mwt:
+                    form=mwt
+                else:
+                    form=f"{first}{sep}{token['form']}"
+                tokenid=token['id']
+                ident=f'{tokenid-1}-{tokenid}'
+                compound=mkMultiWordToken(ident,form,spaceafter=spaceafter)
+                tokenlist.insert(index-1,compound)
+    if compound:
+        correctTokenRanges(tokenlist)
 
 def extractCliticEntry(clitic):
     entries=list(filter(lambda dic: list(dic.keys())[0] ==clitic, CLITICENTRIES))
@@ -2092,6 +2153,8 @@ def mkConlluSentence(tokens):
         entries=extract_feats(parselist)
         for entry in entries:
             if entry.get('pos') == 'PUNCT':
+                start=start-1
+            if dic.get('underscore'):
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen') or dic.get('underscore'):
