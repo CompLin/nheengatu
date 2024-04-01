@@ -25210,7 +25210,7 @@
 19	pitera	pitera	NOUN	N	Number=Sing	14	obl	_	_
 20	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	19	case	_	_
 21	,	,	PUNCT	PUNCT	_	22	punct	_	TokenRange=86:87
-22	yumumeú	yumumeú	VERB	V	Style=Arch|VerbForm=Inf	14	parataxis	_	ModernForm=uyumumeú|ModernPerson=3|ModernVerbForm=FinTokenRange
+22	yumumeú	yumumeú	VERB	V	Style=Arch|VerbForm=Inf	14	parataxis	_	ModernForm=uyumumeú|ModernPerson=3|ModernVerbForm=Fin|TokenRange=88:95
 23	katú	katú	ADV	ADVA	AdvType=Man	22	advmod	_	TokenRange=96:100
 24	yuwá	yuwá	NOUN	N	Number=Sing	22	nsubj	_	TokenRange=101:105
 25	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	26	nmod:poss	_	TokenRange=106:108
@@ -25435,9 +25435,10 @@
 # text = Tupana umeẽ aintá supé bênção, unheẽ arirí: — Penhẽ pemuturusú, penhẽ peyumunhã setá, penhẽ pepurakari iwí, penhẽ perikú aé, pe rimutara yawé waá, penhẽ peyumunhã pira-itá yara, wira-itá, upaĩ suú kataka waá iwí árupi yuíri.
 # text_eng = God gave them the blessing, and then said to them: — Grow and multiply, fill the earth, possess it, subject it to your will, be lords of the fish, the birds, and all the animals that move over the earth.
 # text_eng_ggl = God gave them the blessing, and then said to them: — Grow and multiply, fill the earth, possess it, subject it to your will, be lords of the fish, the birds, and all the animals that live. move over the earth.
-# text_por = [...], fazeis-vos senhores dos peixes, dos pássaros e de todos os animais que se movem sobre a terra.
+# text_por = Deus deu-lhes a benção, e disse-lhes depois: — Crescei e multiplicai-vos, enchei a terra, possui-a, sujeitai-a à vossa vontade, sede senhores dos peixes, dos pássaros, e de todos os animais que se movem sobre a terra.
 # text_source = p. 71
 # text_orig = Tupana u-mehen aitá çupé bençam, u-hinhin ariri: — Pehen pè-muturuçú, pe-nhen pe-iu-munhan cetá, penhen pé-puracari ïuhï, penhen pe-ricù aé, pè remutara iaué uahá, penhen pé-iu-munhan piraitá iára, uiraitá, upãin çuu' cataca uahá ïuhï arpe ïuirï.
+# text_por_sec = [...], fazeis-vos senhores dos peixes, dos pássaros e de todos os animais que se movem sobre a terra.
 # text_sec = [...], penhẽ peyumunhã pirá-itá yara, wirá-itá, panhẽ suú ukataka waá iwí árupi yuíri.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -25542,4 +25543,3 @@
 38	werá	werá	NOUN	N	Number=Sing	33	obl	_	TokenRange=170:174
 39	upé	upé	ADP	ADP	AdpType=Post	38	case	_	SpaceAfter=No|TokenRange=175:178
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
-
