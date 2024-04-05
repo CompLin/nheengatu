@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 19, 2024
+# Last update: April 5, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
-from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -106,12 +106,11 @@ LEXICON=loadLexicon()
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
 'VSUFF': 'VERB',
-'A': 'ADJ', 'A2': 'VERB',
-'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
+'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
-'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON', 'RED': 'Red'}
+'COL':'Coll', 'PRV': 'Priv', 'RELF' : 'PRON', 'RED': 'Red', 'PROND': 'PRON'}
 
 # TODO: extractDemonstratives()
 # TODO: implement function mapping these keys to 'DET'
@@ -334,6 +333,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     upos=token['upos']
     person=entry.get('person')
     number=entry.get('number')
+    case=entry.get('case')
     degree=entry.get('degree')
     derivation=entry.get('derivation')
     redup=entry.get('redup')
@@ -365,6 +365,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Derivation']=UDTAGS.get(derivation)
     if redup:
         feats['Red']='Yes'
+    if case:
+        feats['Case']=case.lower()
     if feats:
         token['feats']=feats
     else:
@@ -382,7 +384,11 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['head']=head
     dprl=mapping.get(upos)
     if not dprl:
-        dprl=deprel
+        feats=token.get('feats')
+        if feats and feats.get('Case') == 'dat':
+            dprl = 'iobj'
+        else:
+            dprl=deprel
     token['deprel']=dprl
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
@@ -479,7 +485,7 @@ def FirstVerbId(tokenlist):
 
 def getprontype(xpos):
     prontype='Prs'
-    if xpos not in ('PRON', 'PRON2'):
+    if xpos not in PRONOUNS:
         prontype=xpos.title()
         if len(prontype) > 3 and prontype not in ('Card',):
             prontype=prontype[:3]
@@ -1255,7 +1261,7 @@ def assignHead(tokenlist,rootid):
             token['head'] = rootid
 
 def isNounModifier(token):
-    return token['uops'] in ('DET','PRON')
+    return token['upos'] in ('DET','PRON')
 
 def assignSubj(rootid,nouns):
     i=-1

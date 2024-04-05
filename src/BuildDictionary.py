@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 18, 2024
+# Last update: April 5, 2024
 
 import re, sys, os, json
 
@@ -35,8 +35,7 @@ COP='cop.'
 PLURALIZABLE=('N','REL')
 
 TAGSET=f"""
-adj.\tA\tadjetivo de 1ª cl.
-adj. 2ª cl.\tA2\tadjetivo de 2ª cl.
+adj.\tA\tadjetivo
 adv.\tADV\tadvérbio
 adv. encl.\tCLADV\tadvérbio enclítico
 adv. ord.\tADVO\tadvérbio ordinal
@@ -108,6 +107,7 @@ posp.\tADP\tposposição
 prep.\tPREP\tpreposição
 posp. encl.\tCLADP\tposposição enclítica
 pron.\tPRON\tpronome de 1ª classe
+pron. dat.\tPROND\tpronome dativo de 1ª classe
 pron. 2ª cl.\tPRON2\tpronome de 2ª classe
 pron. enf.\tEMP\tpronome de ênfase
 pron. indef.\tIND\tpronome indefinido
@@ -124,6 +124,8 @@ v. 2ª cl.\tV2\tverbo de 2ª classe
 v. 3ª cl.\tV3\tverbo de 3ª classe
 {VSUFF}\tVSUFF\tverbo sufixal não-flexionável
 """
+
+PRONOUNS=('PRON','PRON2','PROND')
 def sortFunc(line):
 	return line[1]
 
@@ -379,7 +381,9 @@ def firstclasspron():
     personal and anaphoric pronouns (Cruz, 2011).
     """
     return {'ixé': '1+SG','indé': '2+SG','iné': '2+SG','aé': '3+SG','yandé':
-    '1+PL','penhẽ': '2+PL','tá': '3+PL', 'ta': '3+PL','aintá': '3+PL'
+    '1+PL','penhẽ': '2+PL','tá': '3+PL', 'ta': '3+PL','aintá': '3+PL', 'indéu': '2+SG+DAT',
+	'inéu': '2+SG+DAT', 'yandéu': '1+PL+DAT', 'yanéu': '1+PL+DAT', 'ixéu': '1+SG+DAT',
+	'penhemu': '2+PL+DAT'
     }
 
 def expandpronoun(lemma, pos):
@@ -472,7 +476,7 @@ def WordParsePairs(glossary):
 					pairs.update(conjugateVerb(lemma,tag))
 				elif tag == 'V3':
 					pairs.update(handleV3(lemma,tag))
-				elif tag in ('PRON','PRON2'):
+				elif tag in PRONOUNS:
 					pairs.add(expandpronoun(lemma,tag))
 				else:
 					pairs.add(f"{lemma}\t{lemma}+{tag}")
@@ -541,7 +545,7 @@ def extract_feats(parses):
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
 	'IMP' : 'mood',
 	'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
-	'PRES|PAST': 'tense', 'RED' : 'redup' }
+	'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case' }
     entries=[]
     for lemma,feats in parses:
         new={}
