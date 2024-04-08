@@ -13985,7 +13985,7 @@
 7	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=28:29
 8	panhẽ	panhẽ	PRON	TOT	PronType=Tot	11	nsubj	_	TokenRange=30:35
 9	kurí	kurí	PART	FUT	Tense=Fut	11	advmod	_	TokenRange=36:40
-10	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Arch	11	obj	_	ModernCase=Acc,Nom|ModernForm=lemma|TokenRange=41:43
+10	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Arch	11	obj	_	ModernCase=Acc,Nom|ModernForm=indé|ModernLemma=indé|TokenRange=41:43
 11	sendú	sendú	VERB	V	Style=Arch|VerbForm=Inf	6	parataxis	_	ModernForm=usendú|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=44:49
 12	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
 
@@ -20105,6 +20105,8 @@
 # text_annotator = LFdeA
 # text_orig_transcriber = Juliana Lopes Gurgel (JLG)
 # text_por_transcriber = JLG
+# reviewer = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -20122,6 +20124,410 @@
 15	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=60:65
 16	arã	arã	SCONJ	SCONJ	_	15	mark	_	SpaceAfter=No|TokenRange=66:69
 17	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=69:70
+
+# sent_id = Casasnovas2006:1:2:2
+# text = Upitá sasiára yumasí irumu.
+# text_eng = He was sad and hungry.
+# text_eng_ggl = I was sad and hungry.
+# text_por = Estava triste e com fome.
+# text_source = p. 66, No. 2
+# text_orig = Upitá sasiara yumasí irumu.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = Leonel Figueiredo de Alencar (LFdeA)
+1	Upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	sasiára	sasiára	ADJ	A	_	1	xcomp	_	TokenRange=6:13
+3	yumasí	yumasí	NOUN	N	Number=Sing	1	obl	_	TokenRange=14:20
+4	irumu	irumu	ADP	ADP	_	3	case	_	SpaceAfter=No|TokenRange=21:26
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Casasnovas2006:1:3:3
+# text = Ape, paá, usika sesé wirawasú.
+# text_eng = Then the hawk passed by him
+# text_por = Então o gavião passou perto dele
+# text_source = p. 66, No. 3
+# text_orig = Ape, paá, usika sesé wirá-wasú.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
+5	usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
+6	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	5	obl	_	TokenRange=16:20
+7	wirawasú	wirawasú	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=21:29
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Casasnovas2006:1:4:4
+# text = Asuí, paá, upurandú aé: Compadre, marã taá sasiára retana indé.
+# text_eng = and asked him: Compadre, why are you so sad?
+# text_por = e perguntou-lhe: Compadre, por que você está muito triste?
+# text_source = p. 66, No. 3-4
+# text_orig = Asuí, paá, upurandú aé: Compadre, marã taá sasiara retana indé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+# TODO = @juliana-gurgel, please insert the original quotes in "Compadre"
+# TODO_comment = Professor @leoalenc, on page 66, where I extracted this sentence from, there are no quotation marks around this word.
+# OK
+# inputline = Asuí/advt, paá, upurandú aé/pron: Compadre/=n:o|pt, marã taá sasiára retana indé.
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=20:22
+7	:	:	PUNCT	PUNCT	_	12	punct	_	TokenRange=22:23
+8	Compadre	compadre	NOUN	N	_	12	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=24:32
+9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=32:33
+10	marã	marã	ADV	ADVRU	AdvType=Cau|PronType=Int	12	advmod	_	TokenRange=34:38
+11	taá	taá	PART	CQ	PartType=Int	12	advmod	_	TokenRange=39:42
+12	sasiára	sasiára	ADJ	A	_	5	ccomp	_	TokenRange=43:50
+13	retana	retana	ADV	ADVS	AdvType=Deg	12	advmod	_	TokenRange=51:57
+14	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	12	nsubj	_	SpaceAfter=No|TokenRange=58:62
+15	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Casasnovas2006:1:5:5
+# text = Urubú usuaxara: Compadre, ti será rekwawa uií ara ti puranga, ti umanú nẽ yepé suú ambaú arã, sesewara ixé apitá sasiára.
+# text_eng = The vulture replied to him: Compadre, don't you know that today is bad for me, because I don't have any dead animals to eat? That's why I'm sad.
+# text_por = O urubu respondeu-lhe: Compadre, você não sabe que para mim o dia de hoje é ruim, pois não tenho nenhum bicho morto para comer? É por isso que estou triste.
+# text_source = p. 66, No. 4-6
+# text_orig = Urubú usuaxara: Compadre, ti será rekwawa uií ara ti puranga, ti umanú ne yepé suú ambaú arã, sesewara ixé apitá sasiara.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Urubú	urubú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
+3	:	:	PUNCT	PUNCT	_	8	punct	_	TokenRange=14:15
+4	Compadre	compadre	NOUN	N	_	8	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=16:24
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=24:25
+6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=26:28
+7	será	será	PART	PQ	PartType=Int	8	advmod	_	TokenRange=29:33
+8	rekwawa	kwawa	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=34:41
+9	uií	uií	ADV	ADVT	AdvType=Tim	10	nmod:poss	_	TokenRange=42:45
+10	ara	ara	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=46:49
+11	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=50:52
+12	puranga	puranga	ADJ	A	_	8	ccomp	_	SpaceAfter=No|TokenRange=53:60
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
+14	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	15	advmod	_	TokenRange=62:64
+15	umanú	manú	VERB	V	Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=65:70
+16	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	18	advmod	_	TokenRange=71:73
+17	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	18	det	_	TokenRange=74:78
+18	suú	suú	NOUN	N	Number=Sing	15	obj	_	TokenRange=79:82
+19	ambaú	mbaú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	15	advcl	_	TokenRange=83:88
+20	arã	arã	SCONJ	SCONJ	_	19	mark	_	SpaceAfter=No|TokenRange=89:92
+21	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=92:93
+22	sesewara	resewara	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	24	obl	_	TokenRange=94:102
+23	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	24	nsubj	_	TokenRange=103:106
+24	apitá	pitá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	19	parataxis	_	TokenRange=107:112
+25	sasiára	sasiára	ADJ	A	_	24	xcomp	_	SpaceAfter=No|TokenRange=113:120
+26	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=120:121
+
+# sent_id = Casasnovas2006:1:6:6
+# text = Asuí, paá, wirawasú unheẽ: "Compadre", remunhã mayé se yawé: repisika upaka waá rẽ suú, reyuká rembaú arã.
+# text_eng = Then the hawk said: Compadre, do as I do: Take a live animal and kill it to eat.
+# text_por = Então o gavião disse: Compadre, faça como eu: Pegue um animal vivo e mate-o para comer.
+# text_source = p. 66, No. 7-8
+# text_orig = Asuí, paá, wirá-wasú unheé: "Compadre", remunhã mayé se yawé: repisika upaka waáre suú, reyuká rembaú arã.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Compadre, remunhã mayé se yawé: repisika upaka waá rẽ suú, reyuká rembaú arã aé.
+# text_por_sec = Compadre, faça como eu: pegue um animal ainda vivo e mate-o para comê-lo.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	wirawasú	wirawasú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:19
+6	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
+7	:	:	PUNCT	PUNCT	_	12	punct	_	TokenRange=25:26
+8	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=26:27
+9	Compadre	compadre	NOUN	N	_	12	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=28:36
+10	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
+11	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=37:38
+12	remunhã	munhã	VERB	V	Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=39:46
+13	mayé	mayé	ADV	ADVLA	AdvType=Man|PronType=Rel	12	advmod	_	TokenRange=47:51
+14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	12	obl	_	TokenRange=52:54
+15	yawé	yawé	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=55:59
+16	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=59:60
+17	repisika	pisika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	12	parataxis	_	TokenRange=61:69
+18	upaka	paka	VERB	V	Person=3|VerbForm=Fin	21	acl:relcl	_	TokenRange=70:75
+19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	nsubj	_	TokenRange=76:79
+20	rẽ	rẽ	PART	IMPF	_	18	advmod	_	TokenRange=80:82
+21	suú	suú	NOUN	N	Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=83:86
+22	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=86:87
+23	reyuká	yuká	VERB	V	Number=Sing|Person=2|VerbForm=Fin	17	parataxis	_	TokenRange=88:94
+24	rembaú	mbaú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	23	advcl	_	TokenRange=95:101
+25	arã	arã	SCONJ	SCONJ	_	24	mark	_	SpaceAfter=No|TokenRange=102:105
+26	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=105:106
+
+# sent_id = Casasnovas2006:1:7:7
+# text = Aape, paá, urubú usuaxara: Compadre, ixé ti aputari amunhã puxiwera suú-itá supé, ma kuíri se yumasí retana, remukameẽ ramé mayé amunhã arã, akwá katú amunhã.
+# text_eng = The vulture, however, answered him. Compadre, I don't want to harm the animals, but now I'm very hungry, if you show me how to do it, maybe I'll do it.
+# text_por = O urubu, porém, respondeu-lhe. Compadre eu não quero fazer mal aos animais, mas agora estou com muita fome, se você me mostrar como fazer, talvez eu faça.
+# text_source = p. 66-67, No. 8-10
+# text_orig = Aápe, paá, urubú usuaxara: Compadre, ixé ti aputari amunhã puxiwera suuitá supé, maá kuíri seyumasí retana, remukameé ramé mayé amunhã arã, akwá katú amunhã.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	urubú	urubú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:16
+6	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:25
+7	:	:	PUNCT	PUNCT	_	13	punct	_	TokenRange=25:26
+8	Compadre	compadre	NOUN	N	_	13	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=27:35
+9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=35:36
+10	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	13	nsubj	_	TokenRange=37:40
+11	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=41:43
+12	aputari	putari	AUX	AUXN	Number=Sing|Person=1|VerbForm=Fin	13	aux	_	TokenRange=44:51
+13	amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	6	ccomp	_	TokenRange=52:58
+14	puxiwera	puxiwera	ADV	ADVA	AdvType=Man	13	advmod	_	TokenRange=59:67
+15	suú-itá	suú	NOUN	N	Number=Plur	13	obl	_	TokenRange=68:75
+16	supé	supé	ADP	ADP	_	15	case	_	SpaceAfter=No|TokenRange=76:80
+17	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=80:81
+18	ma	ma	CCONJ	CCONJ	_	21	cc	_	TokenRange=82:84
+19	kuíri	kuíri	ADV	ADVT	AdvType=Tim	21	advmod	_	TokenRange=85:90
+20	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	TokenRange=91:93
+21	yumasí	yumasí	VERB	A2	_	13	conj	_	TokenRange=94:100
+22	retana	retana	ADV	ADVS	AdvType=Deg	21	advmod	_	SpaceAfter=No|TokenRange=101:107
+23	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=107:108
+24	remukameẽ	mukameẽ	VERB	V	Number=Sing|Person=2|VerbForm=Fin	30	advcl	_	TokenRange=109:118
+25	ramé	ramé	SCONJ	SCONJ	_	24	mark	_	TokenRange=119:123
+26	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	27	advmod	_	TokenRange=124:128
+27	amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	24	ccomp	_	TokenRange=129:135
+28	arã	arã	SCONJ	SCONJ	_	27	mark	_	SpaceAfter=No|TokenRange=136:139
+29	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=139:140
+30	akwá	kwá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	21	parataxis	_	TokenRange=141:145
+31	katú	katú	ADV	ADVS	AdvType=Deg	30	advmod	_	TokenRange=146:150
+32	amunhã	munhã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	30	ccomp	_	SpaceAfter=No|TokenRange=151:157
+33	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=157:158
+
+# sent_id = Casasnovas2006:1:8:8
+# text = Aramé tẽ, paá, usasá yepé wirá-mirĩ.
+# text_eng = At that moment a little bird flew by.
+# text_por = Nesse momento passou voando um passarinho.
+# text_source = p. 67, No. 11
+# text_orig = Arameté, paá, usasá yepé wirá mirí.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+# comment = "wirá-mirĩ1 (s.)  passarinho (em geral)" (Avila, 2021)
+1	Aramé	aramé	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:5
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=6:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=10:13
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
+6	usasá	sasá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:20
+7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=21:25
+8	wirá-mirĩ	wirá-mirĩ	NOUN	N	Number=Sing	6	nsubj	_	SpaceAfter=No|TokenRange=26:35
+9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Casasnovas2006:1:9:9
+# text = Aape, paá, wirawasú unheẽ: Compadre, remaã ne rangawa.
+# text_eng = The hawk said to him: Compadre, look at your sign.
+# text_por = O gavião disse-lhe: Compadre, olhe o seu sinal.
+# text_source = p. 67, No. 11-12
+# text_orig = Aápe, paá, wirá-wasú unheé: Compadre, remaã ne rangawa.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	wirawasú	wirawasú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:19
+6	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
+7	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=25:26
+8	Compadre	compadre	NOUN	N	_	10	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=27:35
+9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=35:36
+10	remaã	maã	VERB	V	Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=37:42
+11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=43:45
+12	rangawa	sangawa	NOUN	N	Number=Sing|Rel=Cont	10	obj	_	SpaceAfter=No|TokenRange=46:53
+13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Casasnovas2006:1:10:10
+# text = Wirá-mirĩ kutara piri uwewé kaá kití.
+# text_eng = The bird flew faster through the bush.
+# text_por = O passarinho voou mais rápido pelo mato.
+# text_source = p. 67, No. 12
+# text_orig = Wirá mirí kutara piri uwewé kaá kití.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Wirá-mirĩ kutara piri uwewé kaá kití.
+# text_por_sec = O passarinho voou mais rápido para a mata.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Wirá-mirĩ	wirá-mirĩ	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:9
+2	kutara	kutara	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=10:16
+3	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	2	advmod	_	TokenRange=17:21
+4	uwewé	wewé	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=22:27
+5	kaá	kaá	NOUN	N	Number=Sing	4	obl	_	TokenRange=28:31
+6	kití	kití	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=32:36
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Casasnovas2006:1:11:11
+# text = Sakwera wirawasú, ma uyutuká mirá rumitera ruaxara uwiké i putiá-pe.
+# text_eng = Behind him, the hawk, but he hit a hard stick and a piece went into his chest.
+# text_por = Atrás dele, o gavião, mas bateu num pau duro e um pedaço entrou no seu peito.
+# text_source = p. 67, No. 13
+# text_orig = Sakwera wirá-wasú, maá uyutuká mirá rumitera ruaxara uwiké iputiápe.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Sakwera wirawasú, ma uyutuká mirá rumitera ruaxara. Uwiké i putiá-pe.
+# text_por_sec = Atrás dele [foi] o gavião, mas chocou-se contra um âmago de pau. Ele entrou em seu peito.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Sakwera	sakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	0	root	_	TokenRange=0:7
+2	wirawasú	wirawasú	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=8:16
+3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
+4	ma	ma	CCONJ	CCONJ	_	5	cc	_	TokenRange=18:20
+5	uyutuká	yutuká	VERB	V	Person=3|VerbForm=Fin	1	conj	_	TokenRange=21:28
+6	mirá	mirá	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=29:33
+7	rumitera	sumitera	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=34:42
+8	ruaxara	ruaxara	ADP	ADP	Rel=Cont	7	case	_	TokenRange=43:50
+9	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=51:56
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=57:58
+11-12	putiá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=59:68
+11	putiá	putiá	NOUN	N	Number=Sing	9	obl	_	_
+12	pe	upé	ADP	ADP	Clitic=Yes	11	case	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=69:70
+
+# sent_id = Casasnovas2006:1:12:12
+# text = Aape, paá, urubú usú sakakwera merupí mairamé umaã wirawasú uyatikú uikú mirá resé.
+# text_eng = Then the vulture slowly followed behind and saw the hawk hanging from the stick.
+# text_por = Depois o urubu foi detrás devagar e viu o gavião pendurado no pau.
+# text_source = p. 67, No. 14
+# text_orig = Aápe, paá, urubú usú sakakwera merupí mairamé umaã wirá-wasú uyatikú uikú mirá resé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Aape paá urubú usú sakakwera merupí, mairamé umaã wirawasú uyatikú uikú mirá resé.
+# text_por_sec = Aí, dizem, o urubu foi atrás dele devagar, quando viu o gavião, ele estava pendurado no pau.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	urubú	urubú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:16
+6	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=17:20
+7	sakakwera	rakakwera	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	6	obl	_	TokenRange=21:30
+8	merupí	merupí	ADV	ADVA	AdvType=Man	6	advmod	_	TokenRange=31:37
+9	mairamé	mairamé	SCONJ	SCONJR	_	10	mark	_	TokenRange=38:45
+10	umaã	maã	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=46:50
+11	wirawasú	wirawasú	NOUN	N	Number=Sing	10	obj	_	TokenRange=51:59
+12	uyatikú	yatikú	VERB	V	Person=3|VerbForm=Fin	10	xcomp	_	TokenRange=60:67
+13	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	12	aux	_	TokenRange=68:72
+14	mirá	mirá	NOUN	N	Number=Sing	12	obl	_	TokenRange=73:77
+15	resé	resé	ADP	ADP	Rel=Cont	14	case	_	SpaceAfter=No|TokenRange=78:82
+16	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=82:83
+
+# sent_id = Casasnovas2006:1:13:13
+# text = Asuí, paá, wirawasú unheẽ: "Compadre", puxiwera asasá, mirá rumitera uwiké se putiá-pe, reyuri reyuuka ixé kwá suí.
+# text_eng = Then the hawk said to him: Compadre, I felt sick, a hard stick entered my chest, come and get me out of here.
+# text_por = Aí o gavião disse-lhe: Compadre passei mal, um pedaço de pau duro entrou no meu peito, venha e tire-me daqui.
+# text_source = p. 67, No. 15-16
+# text_orig = Asuí, paá, wirá-wasú unheé: "Compadre", puxiwera asasá, mirá rumitera uwiké se putiápe, reyúi reyuka ixé kwa suí.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Compadre, puxiwera asasá, mirá rumitera uwiké se putiá-pe, reyuri reyuuka ixé kwá suí.
+# text_por_sec = Compadre, passei mal, o âmago do pau entrou no meu peito, venha me tirar daqui.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	wirawasú	wirawasú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:19
+6	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
+7	:	:	PUNCT	PUNCT	_	13	punct	_	TokenRange=25:26
+8	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=26:27
+9	Compadre	compadre	NOUN	N	_	13	vocative	_	SpaceAfter=No|TokenRange=28:36
+10	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
+11	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=37:38
+12	puxiwera	puxiwera	ADV	ADVA	AdvType=Man	13	advmod	_	TokenRange=39:47
+13	asasá	sasá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=48:53
+14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=53:54
+15	mirá	mirá	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=55:59
+16	rumitera	sumitera	NOUN	N	Number=Sing|Rel=Cont	17	nsubj	_	TokenRange=60:68
+17	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=69:74
+18	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	19	nmod:poss	_	TokenRange=75:77
+19-20	putiá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=78:87
+19	putiá	putiá	NOUN	N	Number=Sing	17	obl	_	_
+20	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	19	case	_	_
+21	,	,	PUNCT	PUNCT	_	22	punct	_	TokenRange=88:89
+22	reyuri	yuri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	17	parataxis	_	TokenRange=90:96
+23	reyuuka	yuuka	VERB	V	Number=Sing|Person=2|VerbForm=Fin	22	xcomp	_	TokenRange=97:104
+24	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	23	obj	_	TokenRange=103:106
+25	kwá	kwá	ADV	ADVDX	Deixis=Prox|PronType=Dem	23	obl	_	TokenRange=109:112
+26	suí	suí	ADP	ADP	AdpType=Post	25	case	_	SpaceAfter=No|TokenRange=111:114
+27	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=114:115
+
+# sent_id = Casasnovas2006:1:14:14
+# text = Urubú usuaxara: "Compadre", se yumasí retana, asarú rẽ remanú ambaú arã indé.
+# text_eng = The vulture answered him: Compadre, I'm very hungry. I'll wait for you to die to eat it.
+# text_por = O urubu respondeu-lhe: Compadre, estou com muita fome. Vou esperar você morrer para comê-lo.
+# text_source = p. 67, No. 17
+# text_orig = Urubú usuaxara: "Compadre", seyumasí retana, asaruré remanú ambaú arã indé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Urubú usuaxara: ― "Compadre", se yumasí retana, asarú rẽ remanú ambaú arã indé.
+# text_por_sec = O urubu respondeu-lhe: ― Compadre, estou com muita fome, vou esperar você morrer para comê-lo.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Urubú	urubú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
+3	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=14:15
+4	"	"	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=15:16
+5	Compadre	compadre	NOUN	N	_	9	vocative	_	SpaceAfter=No|TokenRange=17:25
+6	"	"	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
+7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=26:27
+8	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	TokenRange=28:30
+9	yumasí	yumasí	VERB	A2	_	2	ccomp	_	TokenRange=31:37
+10	retana	retana	ADV	ADVS	AdvType=Deg	9	advmod	_	SpaceAfter=No|TokenRange=38:44
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=44:45
+12	asarú	sarú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	9	parataxis	_	TokenRange=46:51
+13	rẽ	rẽ	PART	IMPF	_	12	advmod	_	TokenRange=52:54
+14	remanú	manú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	12	ccomp	_	TokenRange=55:61
+15	ambaú	mbaú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	12	advcl	_	TokenRange=62:67
+16	arã	arã	SCONJ	SCONJ	_	15	mark	_	TokenRange=68:71
+17	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=72:76
+18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=76:77
 
 # sent_id = Casasnovas2006:2:2:16
 # text = Ikupukú xinga uwatá, uwasemu umaã uyenú uikú yepé miráwasú rupitá ruakí.
@@ -20601,6 +21007,26 @@
 9	tawá	tawá	ADJ	A	_	8	amod	_	TokenRange=51:55
 10	suiwara	suiwara	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=56:63
 11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=63:64
+
+# sent_id = Casasnovas2006:0:0:23
+# text = Yandé yasarú usika waá pe manha, yaú arã pupunha yukisé.
+# text_eng = We wait for your mother to arrive, to drink peach palm wine.
+# text_por = Nós esperamos que chegue a mãe de vocês, para tomar vinho de pupunha.
+# text_source = p. 40
+# text_orig = Yandé yasarú usika waá pemanha, yaú arã pupunha yukisé
+# text_annotator = LFdeA
+1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	yasarú	sarú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:12
+3	usika	sika	VERB	V	Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=13:18
+4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=19:22
+5	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=23:25
+6	manha	manha	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=26:31
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
+8	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=33:36
+9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=37:40
+10	pupunha	pupunha	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=41:48
+11	yukisé	yukisé	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=49:55
+12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
 # sent_id = Rodrigues1890:1-1-1:10:100
 # text = Ah! se rimiarirú, maã taá resú?
@@ -24841,6 +25267,20 @@
 21	kuidarú	kuidarú	NOUN	N	Number=Sing	19	obl	_	_
 22	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	21	case	_	_
 23	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=117:118
+
+# sent_id = Seixas1853:0:0:50
+# text = Munhã iné aé umunuka waá.
+# text_eng = You make him cut it.
+# text_por = Faze tu que ele corte.
+# text_source = p. XII
+# text_orig = Munhá enê aê omunúca oá.
+# text_annotator = LFdeA
+1	Munhã	munhã	VERB	V	VerbForm=Inf	0	root	_	ModernForm=remunhã|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=0:5
+2	iné	iné	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	TokenRange=6:9
+3	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=10:12
+4	umunuka	munuka	VERB	V	Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=13:20
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	obj	_	SpaceAfter=No|TokenRange=21:24
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Seixas1853:0:100:100
 # text = Eẽ xipiaka mayé usú sinipuka iwaka kití!!!
