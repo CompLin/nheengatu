@@ -20525,6 +20525,32 @@
 17	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=72:76
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=76:77
 
+# sent_id = Casasnovas2006:2:1:15
+# text = Yepé ara, yawaraté usú usikari yautí umbaú arã aé.
+# text_eng = One day, the jaguar went looking for the tortoise to eat it.
+# text_por = Um dia, a onça foi procurar o jabuti para comê-lo.
+# text_source = p. 70, No. 1
+# text_orig = Yepé ara, yawaraté usú usikái yauti umbaú arã aé
+# title = Yautí, yawaraté
+# title_por = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=5:8
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=8:9
+4	yawaraté	yawaraté	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=10:18
+5	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	6	aux	_	TokenRange=19:22
+6	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=23:30
+7	yautí	yautí	NOUN	N	Number=Sing	6	obj	_	TokenRange=31:36
+8	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	6	advcl	_	TokenRange=37:42
+9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=43:46
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=47:49
+11	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=49:50
+
 # sent_id = Casasnovas2006:2:2:16
 # text = Ikupukú xinga uwatá, uwasemu umaã uyenú uikú yepé miráwasú rupitá ruakí.
 # text_eng = After a short time on the way, he found it and saw it: he was lying near the trunk of a large tree.
@@ -20536,6 +20562,10 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = LFdeA
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# reviewer = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ikupukú	ikupukú	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:13
 3	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=14:19
@@ -20549,6 +20579,318 @@
 11	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	7	obl	_	TokenRange=59:65
 12	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	11	case	_	SpaceAfter=No|TokenRange=66:71
 13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=71:72
+
+# sent_id = Casasnovas2006:2:3:17
+# text = Ape yawaraté uyusikí usú merupí sesé.
+# text_eng = Then the jaguar crawled slowly over him.
+# text_por = Aí a onça arrastando-se foi devagar sobre ele.
+# text_source = p. 70, No. 3
+# text_orig = Ape yawaraté uyusikí usú merupí sesé
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Ape yawaraté uyusikí usú sesé. Mairamé paá kwayentu ã aé, yautí uwiké ã i suí mirá kwara kití.
+# text_por_sec = Aí a onça foi arrastando-se sobre ele. Quando, dizem, ela já estava perto, o jabuti entrou no buraco do pau.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ape	ape	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:3
+2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:12
+3	uyusikí	uyusikí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=13:20
+4	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	3	aux	_	TokenRange=21:24
+5	merupí	merupí	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=25:31
+6	sesé	resé	ADP	ADP	Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	3	obl	_	SpaceAfter=No|TokenRange=32:36
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Casasnovas2006:2:4:18
+# text = Mairamé paá kwayentu ã aé, yautí uwiké ã i suí mirá kwara kití.
+# text_eng = When she was getting closer, the tortoise entered the hole of that dick.
+# text_por = Quando ela já se aproximava o jabuti entrou no buraco daquele pau.
+# text_source = p. 70, No. 4
+# text_orig = Mairamé paá kwayentuá aé, yautí uwikeã isuí mirá kwara kití.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Ape yawaraté uyusikí usú sesé. Mairamé paá kwayentu ã aé, yautí uwiké ã i suí mirá kwara kití.
+# text_por_sec = Aí a onça foi arrastando-se sobre ele. Quando, dizem, ela já estava perto, o jabuti entrou no buraco do pau.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=8:11
+3	kwayentu	kwayentu	ADV	ADVA	AdvType=Man	8	advcl	_	TokenRange=12:20
+4	ã	ã	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=21:22
+5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	SpaceAfter=No|TokenRange=23:25
+6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=25:26
+7	yautí	yautí	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=27:32
+8	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=33:38
+9	ã	ã	PART	PFV	Aspect=Perf	8	advmod	_	TokenRange=39:40
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	obl	_	TokenRange=41:42
+11	suí	suí	ADP	ADP	_	10	case	_	TokenRange=43:46
+12	mirá	mirá	NOUN	N	Number=Sing	13	nmod:poss	_	TokenRange=47:51
+13	kwara	kwara	NOUN	N	Number=Sing	8	obl	_	TokenRange=52:57
+14	kití	kití	ADP	ADP	_	13	case	_	SpaceAfter=No|TokenRange=58:62
+15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Casasnovas2006:2:5:19
+# text = Yawé yawaraté usika uyawiyawika umaã xikwara rupí.
+# text_eng = So, upon arriving, the jaguar bent down to look through the hole.
+# text_por = Desse modo ao chegar, a onça foi abaixando-se para espiar pelo buraco.
+# text_source = p. 70, No. 5
+# text_orig = Yawé yawaraté usika uyawiyawika umaã ikwara rupí.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
+2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:13
+3	usika	sika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
+4	uyawiyawika	yawika	VERB	V	Person=3|Red=Yes|VerbForm=Fin	3	parataxis	_	TokenRange=20:31
+5	umaã	maã	VERB	V	Person=3|VerbForm=Fin	4	advcl	_	TokenRange=32:36
+6	xikwara	tikwara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obl	_	TokenRange=37:44
+7	rupí	rupí	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=45:49
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=49:50
+
+# sent_id = Casasnovas2006:2:6:20
+# text = Asuí umundéu yepé i pú akití, upisika arã yautí i pí resé.
+# text_eng = Then he reached in with one of his hands to grab the tortoise's foot.
+# text_por = Depois, enfiou uma das mãos para lá, para pegar no pé do jabuti.
+# text_source = p. 70, No. 6
+# text_orig = Asuí umundéu yepé ipú akití, upisika arã yautí ipí resé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
+2	umundéu	mundéu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
+3	yepé	yepé	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=13:17
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=18:19
+5	pú	pú	NOUN	N	Number=Sing	2	obj	_	TokenRange=20:22
+6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	2	advmod	_	SpaceAfter=No|TokenRange=23:28
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=28:29
+8	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=30:37
+9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=38:41
+10	yautí	yautí	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=42:47
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=48:49
+12	pí	pí	NOUN	N	Number=Sing	8	obl	_	TokenRange=50:52
+13	resé	resé	ADP	ADP	Rel=Cont	12	case	_	SpaceAfter=No|TokenRange=53:57
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=57:58
+
+# sent_id = Casasnovas2006:2:7:21
+# text = Nhaã pukusá, yautí umundéu pawa i pi-itá i pirera kití.
+# text_eng = Meanwhile, the tortoise stuck all its feet inside its shell.
+# text_por = Enquanto isso, o jabuti enfiou todos os pés dentro de seu casco.
+# text_source = p. 70, No. 7
+# text_orig = Nhapukusá, yautí umundéu pawa ipitá ipirera kití.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
+2	pukusá	pukusá	ADP	ADP	_	1	case	_	SpaceAfter=No|TokenRange=5:11
+3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12
+4	yautí	yautí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:18
+5	umundéu	mundéu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=19:26
+6	pawa	pawa	PART	TOTAL	Aspect=Compl	5	advmod	_	TokenRange=27:31
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=32:33
+8	pi-itá	pi	NOUN	N	Number=Plur	5	obj	_	TokenRange=34:40
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=41:42
+10	pirera	pirera	NOUN	N	Number=Sing	5	obl	_	TokenRange=43:49
+11	kití	kití	ADP	ADP	_	10	case	_	SpaceAfter=No|TokenRange=50:54
+12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=54:55
+
+# sent_id = Casasnovas2006:2:8:22
+# text = Ti waá upé yawaraté usarú, mairamé usaã usuú ana i puampé usaka.
+# text_eng = Unexpectedly, the jaguar felt himself biting and tearing off his own finger.
+# text_por = Inesperadamente a onça sentiu morder e arrancar o próprio dedo.
+# text_source = p. 70, No. 8
+# text_orig = Ti waupé yawaraté usarú, mairamé usaã usuúana ipwampé usaka.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
+2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	mark	_	MWEPOS=SCONJ|TokenRange=3:6
+3	upé	upé	ADP	ADP	AdpType=Post	2	fixed	_	TokenRange=7:10
+4	yawaraté	yawaraté	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=11:19
+5	usarú	sarú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	SpaceAfter=No|TokenRange=20:25
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=25:26
+7	mairamé	mairamé	ADV	ADVLT	AdvType=Tim|PronType=Rel	8	advmod	_	TokenRange=27:34
+8	usaã	saã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=35:39
+9	usuú	suú	VERB	V	Person=3|VerbForm=Fin	8	ccomp	_	TokenRange=40:44
+10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=45:48
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=49:50
+12	puampé	puampé	NOUN	N	Number=Sing	9	obj	_	TokenRange=51:57
+13	usaka	saka	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	SpaceAfter=No|TokenRange=58:63
+14	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=63:64
+
+# sent_id = Casasnovas2006:2:9:23
+# text = Ape tuwí retana aé.
+# text_eng = Then it bled a lot.
+# text_por = Então sangrou muito.
+# text_source = p. 71, No. 9
+# text_orig = Ape tuwí retana aé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ape	ape	ADV	ADVJ	AdvType=Cau	2	advmod	_	TokenRange=0:3
+2	tuwí	tuwí	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=4:8
+3	retana	retana	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:15
+4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	SpaceAfter=No|TokenRange=16:18
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Casasnovas2006:2:10:24
+# text = Tiapú yawaraté usasemu uyana usú kaá kití, sasisawa usaã i perewa.
+# text_eng = Feeling the pain of its wound, the jaguar ran and screamed into the bush.
+# text_por = Sentindo a dor de sua ferida, a onça saiu correndo e gritando pelo mato adentro.
+# text_source = p. 71, No. 10
+# text_orig = Tiapú yawaraté usasemu uyana usú kaá kití, sasisã usaã iperewa.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Tiapú	tiapú	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:5
+2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:14
+3	usasemu	sasemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:22
+4	uyana	yana	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=23:28
+5	usú	sú	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=29:32
+6	kaá	kaá	NOUN	N	Number=Sing	5	obl	_	TokenRange=33:36
+7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=37:41
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=41:42
+9	sasisawa	sasisawa	NOUN	N	Number=Sing	10	obj	_	TokenRange=43:51
+10	usaã	saã	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=52:56
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=57:58
+12	perewa	perewa	NOUN	N	Number=Sing	9	nmod:poss	_	SpaceAfter=No|TokenRange=59:65
+13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=65:66
+
+# sent_id = Casasnovas2006:3:1:25
+# text = Yepé ara, paá, siía mira-itá tamunhã murasí yepé tendawa upé.
+# text_eng = Once, a lot of people were having a party in a place.
+# text_por = Uma vez, muita gente estava fazendo festa num sítio.
+# text_source = p. 72, No. 1
+# text_orig = Yepé ara, paá, siía miraitá tamunhã murasí yepé tendawa upé.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=10:13
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
+6	siía	siía	DET	INDQ	PronType=Ind	7	det	_	TokenRange=15:19
+7	mira-itá	mira	NOUN	N	Number=Plur	8	nsubj	_	TokenRange=20:28
+8	tamunhã	munhã	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=29:36
+9	murasí	murasí	NOUN	N	Number=Sing	8	obj	_	TokenRange=37:43
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=44:48
+11	tendawa	tendawa	NOUN	N	Number=Sing|Rel=Abs	8	obl	_	TokenRange=49:56
+12	upé	upé	ADP	ADP	_	11	case	_	SpaceAfter=No|TokenRange=57:60
+13	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
+
+# sent_id = Casasnovas2006:3:2:26
+# text = Tapurasí, paá, ara, pituna pukusawa.
+# text_eng = They danced all day and night.
+# text_por = Dançaram durante todo o dia e a noite.
+# text_source = p. 72, No. 2
+# text_orig = Tapurasí, paá, ara, pituna pukusawa.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Tapurasí	purasí	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:8
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=10:13
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
+5	ara	ara	NOUN	N	Number=Sing	1	obl	_	SpaceAfter=No|TokenRange=15:18
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
+7	pituna	pituna	NOUN	N	Number=Sing	5	conj	_	TokenRange=20:26
+8	pukusawa	pukusawa	ADP	ADP	_	5	case	_	SpaceAfter=No|TokenRange=27:35
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Casasnovas2006:3:3:27
+# text = Ikupukú ã, paá, pituna, mairamé mira-itá ta ukaú-kaú xinga pawa, ta umaã uyukwá ta murasí pitérupi siiya kariwa tipitinga mirĩ waá-itá.
+# text_eng = Late in the night, when everyone was already drunk, many young white people appeared in the middle of the party.
+# text_por = Avançada a noite, quando todos já estavam embriagados, apareceram no meio da festa muitos jovens brancos.
+# text_source = p. 72-73, No. 3-4
+# text_orig = Ikupukuã, paá, pituna, mairamé miraitá takaúkaú xinga pawa, tamaã uyukwá tamurasí pitérupi siía karíwa tipitinga mirí waitá.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Ikupukú ã paá pituna, mairamé mira-itá ta ukaú-kaú xinga pawa, ta umaã uyukwá ta murasí pitérupi siiya kariwa tipitinga mirĩ waá-itá.
+# text_por_sec = Avançada a noite, contam, quando todos já tinham se embriagado um pouco, eles viram aparecer no meio de sua festa muitos homens brancos que eram clarinhos.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ikupukú	ikupukú	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=8:9
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=11:14
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
+6	pituna	pituna	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=16:22
+7	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=22:23
+8	mairamé	mairamé	SCONJ	SCONJR	_	11	mark	_	TokenRange=24:31
+9	mira-itá	mira	NOUN	N	Number=Plur	11	nsubj	_	TokenRange=32:40
+10	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	11	expl	_	TokenRange=41:43
+11	ukaú-kaú	kaú	VERB	V	Person=3|Red=Yes|VerbForm=Fin	16	advcl	_	TokenRange=44:52
+12	xinga	xinga	ADV	ADVS	AdvType=Deg	11	advmod	_	TokenRange=53:58
+13	pawa	pawa	PART	TOTAL	Aspect=Compl	11	advmod	_	SpaceAfter=No|TokenRange=59:63
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=63:64
+15	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	nsubj	_	TokenRange=65:67
+16	umaã	maã	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=68:72
+17	uyukwá	yukwá	VERB	V	Person=3|VerbForm=Fin	16	ccomp	_	TokenRange=73:79
+18	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	TokenRange=80:82
+19	murasí	murasí	NOUN	N	Number=Sing	20	nmod:poss	_	TokenRange=83:89
+20-21	pitérupi	_	_	_	_	_	_	_	TokenRange=97:105
+20	pitera	pitera	NOUN	N	Number=Sing	17	obl	_	_
+21	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	20	case	_	_
+22	siiya	siiya	DET	INDQ	PronType=Ind	23	det	_	TokenRange=106:111
+23	kariwa	kariwa	NOUN	N	Number=Sing	17	nsubj	_	TokenRange=112:118
+24	tipitinga	tipitinga	ADJ	A	_	23	acl:relcl	_	TokenRange=119:128
+25	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	24	advmod	_	TokenRange=129:133
+26	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	24	nsubj	_	SpaceAfter=No|TokenRange=134:141
+27	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=141:142
+
+# sent_id = Casasnovas2006:3:4:28
+# text = Ape, paá, uka yara-itá ta umeẽ ta uú arã kutakutara garapa.
+# text_eng = The partygoers gave them lots of drinks.
+# text_por = Os festeiros deram-lhes muita bebida.
+# text_source = p. 73, No. 5
+# text_orig = Ape, paá, uka yaraitá tameé taú arã kutakutara garapa.
+# text_orig_transcriber = JLG
+# text_por_transcriber = JLG
+# text_sec = Ape paá uka yara-itá ta umeẽ ta uú arã kutakutara garapa.
+# text_por_sec = Aí dizem que os donos da casa deram garapa muitas vezes para eles tomarem.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = JLG
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer = LFdeA
+1	Ape	ape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:3
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
+5	uka	uka	NOUN	N	Number=Sing|Rel=Abs	6	nmod:poss	_	TokenRange=10:13
+6	yara-itá	yara	NOUN	N	Number=Plur	8	nsubj	_	TokenRange=14:22
+7	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	8	expl	_	TokenRange=23:25
+8	umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=26:30
+9	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=31:33
+10	uú	ú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=34:36
+11	arã	arã	SCONJ	SCONJ	_	10	mark	_	TokenRange=37:40
+12	kutakutara	kutakutara	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=41:51
+13	garapa	garapa	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=52:58
+14	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = Casasnovas2006:8:11:200
 # text = Kutara nungara, paá, tauyuíri tausika, muíri ururi tayasú i kupé upé.
