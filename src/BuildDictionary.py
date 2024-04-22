@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 5, 2024
+# Last update: April 20, 2024
 
 import re, sys, os, json
 
@@ -187,7 +187,11 @@ def getwords(key,value,textformat=None, jsonformat=GLOSSARY):
     return list(filter(lambda x: x.get(key) == value, glossary))
 
 def extractLines(infile):
-    return [line.strip() for line in open(infile,"r").readlines() if line.strip() != ""]
+    return [line.strip() for line in open(infile,"r").readlines() if not ignore(line)]
+
+def ignore(line):
+	line=line.strip()
+	return line == "" or line.startswith('#')
 
 def extractEntries(lines):
     entries=[]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 5, 2024
+# Last update: April 19, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS
@@ -48,6 +48,10 @@ REMOVE=re.compile(r"/=?[\w\+]*([:=|]\w+)*@?")
 
 # regex defining pattern to parse examples
 PARTS=re.compile(r"\s+-\s+|[)(]")
+
+PARTS1=re.compile(r"[)(]")
+
+PARTS2=re.compile(r"\s+-\s+")
 
 # regex for squeezing white space
 SQUEEZE=re.compile(r"\s{2,}")
@@ -366,7 +370,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     if redup:
         feats['Red']='Yes'
     if case:
-        feats['Case']=case.lower()
+        feats['Case']=case.title()
     if feats:
         token['feats']=feats
     else:
@@ -385,7 +389,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     dprl=mapping.get(upos)
     if not dprl:
         feats=token.get('feats')
-        if feats and feats.get('Case') == 'dat':
+        if feats and feats.get('Case') == 'Dat':
             dprl = 'iobj'
         else:
             dprl=deprel
@@ -1935,7 +1939,10 @@ def mkPrv(form, xpos='A'):
     dic={}
     tag='PRV'
     dic['derivation']=tag
-    lemma=handleAccent(form[:i])
+    form=form[:i]
+    if form.endswith('-'):
+        form=form[:-1]
+    lemma=handleAccent(form)
     new={}
     if xpos == 'A':
         new=mkAdj(lemma,None,dic)
@@ -1951,6 +1958,9 @@ def mkUpos(lemma,upos):
 
 def mkIntj(lemma):
     return mkUpos(lemma,'INTJ')
+
+def mkCard(lemma):
+    return mkUpos(lemma,'CARD')
 
 def handleRedup(token):
     redup={}
@@ -2148,6 +2158,10 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=intj':
                 newparselist=mkIntj(form)
+            elif tag == '=card':
+                newparselist=mkCard(form)
+            elif tag == '=upos':
+                newparselist=mkUpos(form,xpos)
             #elif tag == '=r':
             #    mkRoot(tokens.index(old))
             else:
@@ -2211,7 +2225,10 @@ def extract_sents(line=None,lines=None):
         for sent in SqueezeWhiteSpace(lines).split("\n"):
             sents.append(sent.strip())
     else:
-        sents=[sent.strip() for sent in PARTS.split(SqueezeWhiteSpace(line),4) if sent]
+        parts1=PARTS1.split(SqueezeWhiteSpace(line),2)
+        parts2=[sent.strip() for sent in PARTS2.split(parts1[-1]) if sent]
+        sents.extend(parts1[:2])
+        sents.extend(parts2)
     return sents
 
 def SqueezeWhiteSpace(s):
@@ -2241,7 +2258,7 @@ def mkText(text):
 def extractYrl(sent):
     return REMOVE.sub('',sent)
 
-def handleSents(sents,pref,textid,index,sentid,annotator):
+def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
     yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
     output=[]
@@ -2258,7 +2275,9 @@ def handleSents(sents,pref,textid,index,sentid,annotator):
         sents[1]],
         pref,textid,index,sentid))
     tk=parseSentence(sents[0])
-    includeAnnotator(output,annotator)
+    if metadata:
+        tk.metadata.update(metadata)
+    includeAnnotator(output,annotator) # TODO: update the TokenList's metadata
     output.append(tk.serialize())
     return output
 
@@ -2315,9 +2334,8 @@ def formatTextEng(s):
         return f'"{s.strip(chars).strip()}"'
     return s
 
-def includeTranslation(example):
+def includeTranslation(parts):
     from deep_translator import GoogleTranslator
-    parts=extract_sents(example)
     i=-1
     if len(parts) == 4:
         i=-2
@@ -2328,16 +2346,16 @@ def includeTranslation(example):
         parts.insert(-1,text_eng)
     else:
         parts.append(text_eng)
-    return parts
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False):
-    yrl=extract_sents(example)[0] # TODO: avoid calling this function three times
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}):
+    sents=extract_sents(example)
+    yrl=sents[0]
     if check:
         if checkSentence(yrl):
             print(f"Sentence '{yrl}' already is in the treebank.")
             return
-    sents=includeTranslation(example)
-    output=handleSents(sents,pref,textid,index,sentid,annotator)
+    includeTranslation(sents)
+    output=handleSents(sents,pref,textid,index,sentid,annotator,metadata)
     outstring=formatList(output)
     if outfile:
         metadata=getFileNameParts(pref,textid,index,sentid)
@@ -2681,3 +2699,26 @@ def mkSecTextAvila(example,por_sec=False):
 def ppMetadata(metadata):
 	for k,v in metadata.items():
 		print(f"# {k} = {v}")
+
+def ModernForm(form='remunhã',feats='Number=Sing|Person=2|VerbForm=Fin'):
+	featlist=[feat.split('=') for feat in feats.split('|')]
+	misc=[f"ModernForm={form}"]
+	for feat in featlist:
+		misc.append(f"Modern{feat[0]}={feat[1]}")
+	return "|".join(misc)
+
+def ExtractSentsMaslova(text):
+    pat=re.compile(r"\s+[—–]\s+-\s+")
+    lines=text.split("\n")
+    parsedLines=[pat.split(line) for line in lines]
+    dic={}
+    languages=('yrl','por','rus')
+    dic['number']=parsedLines[0][0]
+    dic.update(zip(languages,[line[1] for line in parsedLines]))
+    return dic
+
+def formatExampleMaslova(dic,orig_page,sec_page):
+    outdic={}
+    outdic['inputline']=f"{dic['yrl']} (p. {orig_page}, No. {dic['number']}) {dic['por']} - {dic['yrl']}"
+    outdic['text_transcriber'] = 'Maslova (2018:{sec_page})'
+    return outdic
