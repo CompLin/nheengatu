@@ -4255,7 +4255,7 @@
 # reviewer2 = LFdeA
 1	Kwaíra	kwaíra	ADJ	A	_	9	advcl	_	TokenRange=0:6
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=7:11
-3	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=12:14
+3	rẽ	rẽ	PART	IMPF	_	1	advmod	_	SpaceAfter=No|TokenRange=12:14
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
 5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=16:19
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
@@ -4847,7 +4847,7 @@
 13	pewasemu	wasemu	VERB	V	Number=Plur|Person=2|VerbForm=Fin	8	conj	_	TokenRange=67:75
 14	maã	maã	PRON	IND	PronType=Ind	13	obj	_	TokenRange=76:79
 15	ti	ti	PART	NEG	Polarity=Neg	18	advmod	_	TokenRange=80:82
-16	rẽ	rẽ	ADV	ADVT	AdvType=Tim	18	advmod	_	TokenRange=83:85
+16	rẽ	rẽ	PART	IMPF	_	18	advmod	_	TokenRange=83:85
 17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=86:89
 18	pekwawa	kwawa	VERB	V	Number=Plur|Person=2|VerbForm=Fin	14	acl:relcl	_	TokenRange=90:97
 19	asuí	asuí	CCONJ	CCONJ	_	20	cc	_	TokenRange=98:102
@@ -5541,7 +5541,7 @@
 1	Aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:5
 2	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	3	nsubj	_	TokenRange=6:13
 3	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	0	root	_	TokenRange=14:24
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=25:27
+4	rẽ	rẽ	PART	IMPF	_	3	advmod	_	TokenRange=25:27
 5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=28:31
 6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
 7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=33:35
@@ -7518,7 +7518,7 @@
 1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
 2	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	nsubj	_	TokenRange=1:3
 3	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	5	aux	_	TokenRange=4:7
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=8:10
+4	rẽ	rẽ	PART	IMPF	_	5	advmod	_	TokenRange=8:10
 5	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
 6	maniwara	maniwara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=19:27
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
@@ -8531,7 +8531,7 @@
 1	Supí	supí	PART	CERT	PartType=Mod	5	advmod	_	TokenRange=0:4
 2	katú	katú	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=5:9
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=10:12
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=13:15
+4	rẽ	rẽ	PART	IMPF	_	5	advmod	_	TokenRange=13:15
 5	sikwé	rikwé	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=16:21
 6-7	iwí-pe	_	_	_	_	_	_	_	TokenRange=22:29
 6	iwí	iwí	NOUN	N	Number=Sing	5	obl	_	_
@@ -8554,7 +8554,7 @@
 4	kwayé	kwayé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=18:23
 5	sikwé	rikwé	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	2	advcl	_	TokenRange=24:29
 6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=30:34
-7	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=35:37
+7	rẽ	rẽ	PART	IMPF	_	5	advmod	_	TokenRange=35:37
 8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=38:41
 9	mirá	mirá	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=42:46
 10	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=46:47
@@ -11506,7 +11506,7 @@
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	piá	piá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:6
 3	uyaxiú	yaxiú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=14:16
+4	rẽ	rẽ	PART	IMPF	_	3	advmod	_	TokenRange=14:16
 5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=17:18
 6	yukasawa	yukasawa	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=19:27
 7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=27:28
@@ -12520,12 +12520,12 @@
 4	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=14:19
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=19:20
 6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	parataxis	_	TokenRange=21:24
-7	rẽ	rẽ	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=25:27
+7	rẽ	rẽ	PART	IMPF	_	6	advmod	_	TokenRange=25:27
 8	aikú	ikú	AUX	COP	Number=Sing|Person=1|VerbForm=Fin	6	cop	_	SpaceAfter=No|TokenRange=28:32
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=32:33
 10	aramé	aramé	ADV	ADVJ	AdvType=Cau	11	advmod	_	TokenRange=34:39
 11	resarú	sarú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	6	parataxis	_	TokenRange=40:46
-12	rẽ	rẽ	ADV	ADVT	AdvType=Tim	11	advmod	_	SpaceAfter=No|TokenRange=47:49
+12	rẽ	rẽ	PART	IMPF	_	11	advmod	_	SpaceAfter=No|TokenRange=47:49
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=49:50
 14	yasú	sú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	11	advcl	_	TokenRange=51:55
 15	arama	arama	SCONJ	SCONJ	_	14	mark	_	TokenRange=56:61
@@ -13096,7 +13096,7 @@
 # text_source = Avila (2021)
 # text_annotator = LFdeA
 1	Asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=0:3
-2	rẽ	rẽ	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=4:6
+2	rẽ	rẽ	PART	IMPF	_	3	advmod	_	TokenRange=4:6
 3	akiri	kiri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:12
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=12:13
 5	wirandé	wirandé	ADV	ADVT	AdvType=Tim	7	advmod	_	TokenRange=14:21
@@ -13253,7 +13253,7 @@
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	[...]	[...]	PUNCT	ELIP	PunctType=Elip	3	punct	_	TokenRange=1:6
 3	repirari	pirari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:15
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=16:18
+4	rẽ	rẽ	PART	IMPF	_	3	advmod	_	TokenRange=16:18
 5	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=19:22
 6	uka	uka	NOUN	N	Number=Sing|Rel=Abs	7	nmod:poss	_	TokenRange=23:26
 7	rukena	ukena	NOUN	N	Number=Sing|Rel=Cont	3	obj	_	TokenRange=27:33
@@ -13324,7 +13324,7 @@
 12	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	16	advmod	_	SpaceAfter=No|TokenRange=51:54
 13	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=54:55
 14	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	16	aux	_	TokenRange=56:59
-15	rẽ	rẽ	ADV	ADVT	AdvType=Tim	16	advmod	_	TokenRange=60:62
+15	rẽ	rẽ	PART	IMPF	_	16	advmod	_	TokenRange=60:62
 16	akiri	kiri	VERB	V	Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	SpaceAfter=No|TokenRange=63:68
 17	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=68:69
 
@@ -13360,7 +13360,7 @@
 3	suasú	suasú	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=5:10
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
 5	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=12:15
-6	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=16:18
+6	rẽ	rẽ	PART	IMPF	_	5	advmod	_	SpaceAfter=No|TokenRange=16:18
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Avila2021:38:1:472
@@ -14363,7 +14363,7 @@
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	kunhamukú	kunhamukú	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=5:14
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=15:17
-4	rẽ	rẽ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=18:20
+4	rẽ	rẽ	PART	IMPF	_	5	advmod	_	TokenRange=18:20
 5	ukwáu	kwáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:26
 6	maã	maã	PRON	IND	PronType=Ind	5	obl	_	TokenRange=27:30
 7	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=31:39
@@ -15678,7 +15678,7 @@
 # text_source = Avila (2021)
 # text_annotator = LFdeA
 1	Asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
-2	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=4:6
+2	rẽ	rẽ	PART	IMPF	_	1	advmod	_	SpaceAfter=No|TokenRange=4:6
 3	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=6:7
 4	kurũ	kurũ	SCONJ	SCONJR	_	6	mark	_	TokenRange=8:12
 5	amana	amana	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=13:18
@@ -16473,7 +16473,7 @@
 5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=25:29
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=29:30
 7	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	9	aux	_	TokenRange=31:34
-8	rẽ	rẽ	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=35:37
+8	rẽ	rẽ	PART	IMPF	_	9	advmod	_	TokenRange=35:37
 9	amaã	maã	VERB	V	Number=Sing|Person=1|VerbForm=Fin	2	parataxis	_	TokenRange=38:42
 10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	9	obl	_	TokenRange=43:45
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	TokenRange=46:51
@@ -16488,7 +16488,7 @@
 # text_source = Hartt, 349, adap.
 # text_annotator = LFdeA
 1	Asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
-2	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=4:6
+2	rẽ	rẽ	PART	IMPF	_	1	advmod	_	SpaceAfter=No|TokenRange=4:6
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=6:7
 4	até	até	ADP	PREP	AdpType=Prep	5	case	_	TokenRange=8:11
 5	wirandé	wirandé	ADV	ADVT	AdvType=Tim	1	parataxis	_	SpaceAfter=No|TokenRange=12:19
@@ -16505,7 +16505,7 @@
 # text_source = Avila (2021)
 # text_annotator = LFdeA
 1	Rewapika	wapika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
-2	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	TokenRange=9:11
+2	rẽ	rẽ	PART	IMPF	_	1	advmod	_	TokenRange=9:11
 3	yapurungitá	purungitá	VERB	V	Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=12:23
 4	arama	arama	SCONJ	SCONJ	_	3	mark	_	SpaceAfter=No|TokenRange=24:29
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
@@ -17295,7 +17295,7 @@
 # text_annotator = LFdeA
 1	Resarú	sarú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=7:12
-3	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=13:15
+3	rẽ	rẽ	PART	IMPF	_	1	advmod	_	SpaceAfter=No|TokenRange=13:15
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
 5	tenupá	tenupá	PART	PREC	PartType=Mod	6	advmod	_	TokenRange=17:23
 6	asika	sika	VERB	V	Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=24:29
@@ -23270,7 +23270,7 @@
 3	:	:	PUNCT	PUNCT	_	2	punct	_	TokenRange=17:18
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
 5	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	ccomp	_	TokenRange=20:24
-6	raĩ	raĩ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=25:28
+6	raĩ	raĩ	PART	IMPF	_	5	advmod	_	TokenRange=25:28
 7	pituna	pituna	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=29:35
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
 
@@ -24374,7 +24374,7 @@
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
 5	Apekatú	apekatú	ADV	ADVC	AdvType=Loc	2	ccomp	_	TokenRange=17:24
-6	raĩ	raĩ	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=25:28
+6	raĩ	raĩ	PART	IMPF	_	5	advmod	_	TokenRange=25:28
 7	será	será	PART	PQ	PartType=Int	5	advmod	_	TokenRange=29:33
 8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=34:36
 9	yara	yara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=37:41
@@ -24512,7 +24512,7 @@
 5	—	—	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
 6	Aramé	aramé	ADV	ADVJ	AdvType=Cau	7	advmod	_	TokenRange=20:25
 7	usú	sú	VERB	V	Person=3|VerbForm=Fin	3	ccomp	_	TokenRange=26:29
-8	raĩ	raĩ	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=30:33
+8	raĩ	raĩ	PART	IMPF	_	7	advmod	_	SpaceAfter=No|TokenRange=30:33
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = Magalhaes1876:2:22:65
@@ -25712,7 +25712,7 @@
 # title_eng = Buopé's war
 # text_annotator = LFdeA
 1	Remukaturú	mukaturú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:10
-2	rẽ	rẽ	ADV	ADVT	AdvType=Tim	1	advmod	_	TokenRange=11:13
+2	rẽ	rẽ	PART	IMPF	_	1	advmod	_	TokenRange=11:13
 3	siiya	siiya	DET	INDQ	PronType=Ind	4	det	_	TokenRange=14:19
 4	akayú	akayú	NOUN	N	Number=Sing	1	obl	_	TokenRange=20:25
 5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	TokenRange=26:30
@@ -26424,7 +26424,7 @@
 3	katú	katú	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = Hart1938:0:0:8
+# sent_id = Hartt1938:0:0:8
 # text = Epurú ne kiwawa ixéu.
 # text_eng = Lend me your comb.
 # text_por = Empresta-me teu pente.
@@ -26438,7 +26438,7 @@
 4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=16:20
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = Hart1938:0:0:9
+# sent_id = Hartt1938:0:0:9
 # text = Repurú ne kisé ixéu.
 # text_eng = Lend me your knife.
 # text_por = Empresta-me tua faca.
@@ -26682,7 +26682,7 @@
 # text = Kwaá imirá uikupukú muíri akayú pura.
 # text_eng = This stick lasts for many years.
 # text_por = Este pau dura muitos anos.
-# text_source = Hartt, p. 352, No. 460
+# text_source = p. 352, No. 460
 # text_orig = kuaá ymyrá oikó pokú muyr akaiú-póra.
 # text_sec = Kwaá mirá uikupukú muíri akayú pura.
 # text_por_sec = Este pau dura muitos anos completos.
@@ -26697,7 +26697,7 @@
 6	pura	pura	ADJ	A	_	5	amod	_	SpaceAfter=No|TokenRange=32:36
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
 
-# sent_id = Hartt1937:0:0:692
+# sent_id = Hartt1938:0:0:692
 # text = Iné ne kirimawa piri amú-itá suí.
 # text_eng = You are stronger than the others.
 # text_por = Tu és mais forte que os outros.
@@ -27151,3 +27151,4 @@
 38	werá	werá	NOUN	N	Number=Sing	33	obl	_	TokenRange=170:174
 39	upé	upé	ADP	ADP	AdpType=Post	38	case	_	SpaceAfter=No|TokenRange=175:178
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
+
