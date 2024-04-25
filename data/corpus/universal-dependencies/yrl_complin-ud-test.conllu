@@ -52,6 +52,7 @@
 # text_source = p. 105
 # text_orig = yãndé [[ya-purĩngitá]V [ya-ikú]Aux yeʔẽngatú]VP
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	yapurungitá	purungitá	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:17
 3	yaikú	ikú	AUX	AUXFS	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=18:23
@@ -119,6 +120,7 @@
 # text_source = p. 106
 # text_orig = čí [a-pitá]VP a-iwíri kwá-kití
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ti	ti	PART	NEG	Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	apitá	pitá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -192,6 +194,7 @@
 # text_source = p. 107
 # text_orig = taína umãʔã mãʔã?
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Taína	taína	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:10
 3	maã	maã	PRON	INT	PronType=Int	2	obj	_	SpaceAfter=No|TokenRange=11:14
@@ -669,6 +672,7 @@
 # text_eng = Her house is hot.
 # text_por = A casa dela é quente.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	nsubj	_	TokenRange=0:4
 2	sakú	rakú	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:9
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
@@ -707,6 +711,7 @@
 # text_eng = That canoe of the man is near the house of my son.
 # text_por = Aquela canoa do homem está perto da casa do meu filho.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	apigawa	apigawa	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:12
 3	igara	igara	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=13:18
@@ -722,6 +727,7 @@
 # text_eng = The community of the man is near the city of the boy.
 # text_por = A comunidade do homem é perto da cidade do menino.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:7
 2	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=8:15
 3	kurumĩ	kurumĩ	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=16:22
@@ -758,6 +764,7 @@
 # text_por = O avô da Maria está no rio.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Maria	maria	PROPN	PROPN	_	2	nmod:poss	_	TokenRange=0:5
 2	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=6:13
 3	uikú	ikú	AUX	COP	Person=3|VerbForm=Fin	4	cop	_	TokenRange=14:18
@@ -771,6 +778,7 @@
 # text_por = Os filhos do Pedro são bonitos.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Pedro	pedro	PROPN	PROPN	_	2	nmod:poss	_	TokenRange=0:5
 2	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	3	nsubj	_	TokenRange=6:15
 3	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=16:23
@@ -875,6 +883,7 @@
 # text_por = Eles são felizes.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:5
 2	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	expl	_	TokenRange=6:11
 3	rurí	rurí	VERB	V2	Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=12:16
@@ -1267,6 +1276,7 @@
 # text_por = Eu não sou feliz.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:3
 2	nti	nti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=4:7
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	expl	_	TokenRange=8:10
@@ -3550,6 +3560,7 @@
 # text_eng = The man whose father lives here, his name is José.
 # text_por = O homem que o pai dele mora aqui, seu nome é José.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Apigawa	apigawa	NOUN	N	Number=Sing	9	dislocated	_	TokenRange=0:7
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:9
 3	paya	paya	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=10:14
@@ -4438,6 +4449,7 @@
 # text_eng = With this cassava we make beiju and massoca, it gives a lot of starch.
 # text_por = Com esta mandioca fazemos beiju e massoca, ela dá muita goma.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	maniáka	maniáka	NOUN	N	Number=Sing	4	obl	_	TokenRange=4:11
 3	irumu	irumu	ADP	ADP	AdpType=Post	2	case	_	TokenRange=12:17
@@ -4656,6 +4668,7 @@
 # text_orig = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga ta unheẽ waá akutí ratá.
 # text_prim = Nunká pa taité akuti upisika tatatingantu, aité pa kua yamam waá amãna riré tatatinga tayem waá akuti ratá.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Nuká	nuká	ADV	ADVP	AdvType=Con	5	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh	5	advmod	_	TokenRange=5:8
 3	taité	taité	ADJ	A	_	4	amod	_	TokenRange=9:14
@@ -5289,6 +5302,8 @@
 # text_por = Você voava rápido, mas veja só onde chegou. [Corr. transl.]
 # text_source = Casasnovas, 93
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
 2	rewewé	wewé	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	yepé	yepé	PART	FRUST	Aspect=Frus	2	advmod	_	TokenRange=12:16
@@ -5377,6 +5392,7 @@
 # text_por = Assim fazem alguns homens.
 # text_source = Rodrigues, 206, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:4
 2	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	amú	amú	DET	IND	Number=Sing|PronType=Ind	4	det	_	TokenRange=12:15
@@ -5403,6 +5419,7 @@
 # text_por = Por que você tem fome?
 # text_source = Costa, 165, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	2	advmod	_	TokenRange=0:6
 2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:13
 3	yumasí	yumasí	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:20
@@ -6329,6 +6346,7 @@
 # text_por = Por meio de qual língua vamos estudar?
 # text_source = Oliveira; Schwade, 82
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	3	det	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	nheenga	nheenga	NOUN	N	Number=Sing	6	obl	_	TokenRange=9:16
@@ -7254,6 +7272,7 @@
 # text_por = Para tirarmos seus pelos deixamos a água bem quente.
 # text_source = Payema, 65, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yamusaka	musaka	VERB	V	Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=0:8
 2	arama	arama	SCONJ	SCONJ	_	1	mark	_	TokenRange=9:14
 3	sawa	sawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obj	_	TokenRange=15:19
@@ -7571,6 +7590,7 @@
 # text_por = Deixe estar!
 # text_source = Magalhães, 184, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Tenupá	tenupá	INTJ	INTJ	_	0	root	_	SpaceAfter=No|TokenRange=0:6
 2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
 
@@ -7580,6 +7600,7 @@
 # text_por = Algum dia eu me encontrarei com você.
 # text_source = Magalhães, 184, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
 2	ara	ara	NOUN	N	Number=Sing	3	obl	_	TokenRange=4:7
 3	ayuyuantí	yuyuantí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=8:17
@@ -8084,6 +8105,7 @@
 # text_por = A onça meteu sua pata, pegou apenas a perna dele.
 # text_source = Magalhães, 197, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yawareté	yawareté	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
 2	umundéu	mundéu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=17:18
@@ -8702,6 +8724,7 @@
 # text_por = Aí, dizem que eles se transformaram em grandes onças, assim, dizem, foram sumindo em direção à mata.
 # text_source = Casasnovas, 85, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ape	ape	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=4:7
 3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=8:10
@@ -8975,6 +8998,7 @@
 # text_por = Eu tenho minha criação [animal], portadora de minhas lembranças.
 # text_source = Rodrigues, 300, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	rimbawa	simbawa	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	SpaceAfter=No|TokenRange=9:16
@@ -9163,6 +9187,8 @@
 # text_prim = Maíta rẹçaçáu?
 # cross_reference = Avila2021:51:1:689
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1-2	Maita	_	_	_	_	_	_	_	TokenRange=0:5
 1	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	3	advmod	_	_
 2	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	3	advmod	_	_
@@ -9383,6 +9409,7 @@
 # text_por = A Lua chorou o dia todo, a noite toda, aquelas suas lágrimas, contam, correram por sobre a terra e chegaram até ao mar.
 # text_source = Rodrigues, 211, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yasí	yasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
 2	uyaxiú	yaxiú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:15
@@ -9851,6 +9878,7 @@
 # text_por = Tu serás inambu, para cantares de tarde, de noite, à meia-noite, a altas horas, de madrugada.
 # text_source = Magalhães, 170, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
 2	inambú	inambú	NOUN	N	Number=Sing	0	root	_	TokenRange=5:11
 3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=12:16
@@ -10601,6 +10629,7 @@
 # text_por = Tive a desgraça de perder a minha irmã.
 # text_source = Magalhães, 130, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=6:9
 3	sasí	sasí	NOUN	N	Number=Sing	1	obj	_	TokenRange=10:14
@@ -10859,6 +10888,7 @@
 # text_por = Não posso passear com ele porque tenho muitas coisas para fazer.
 # text_source = Hartt, 325, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2-3	awatá-kwáu	_	_	_	_	_	_	_	TokenRange=3:13
 2	awatá	watá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
@@ -11297,6 +11327,8 @@
 # text_por = Iauhixa, teu cabelo branco não aconselha teu coração para seres sisudo.
 # text_source = Amorim, 92, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Iauhixa	iauhixa	PROPN	PROPN	_	7	vocative	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
@@ -11487,6 +11519,7 @@
 # text_por = Então eles foram ver a derrubada [de mata] do calango.
 # text_source = Casasnovas, 95
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=4:7
 3	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=8:13
@@ -11779,6 +11812,7 @@
 # text_por = Sururina, faz dormir a tua filha, para irmos roubar mandioca.
 # text_source = Rodrigues, 291, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Sururina	sururina	PROPN	PROPN	_	3	vocative	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=8:9
 3	remungiri	mungiri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=10:19
@@ -11832,6 +11866,7 @@
 # text_por = Venha cá, gente bonita, beber meu caxiri, ele é doce como mel, embebeda como caapi.
 # text_source = Amorim, 317, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Peyuri	yuri	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=7:10
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
@@ -11978,6 +12013,8 @@
 # text_por = Vamos medir a nossa força.
 # text_source = Tastevin, 659, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	yasaã	saã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:10
 3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:15
@@ -12328,6 +12365,8 @@
 # text_por = Aqueles moços, depois de pintarem a pedra, foram para a mata.
 # text_source = Amorim, 365, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	kurumiwasú-itá	kurumiwasú	NOUN	N	Number=Plur	4	nsubj	_	SpaceAfter=No|TokenRange=5:19
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
@@ -12405,6 +12444,7 @@
 # text_por = Quando chegou, encobertamente, foi procurar Adana, encontrou-a numa casa sozinha.
 # text_source = Casasnovas, 99, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=11:14
@@ -12514,6 +12554,8 @@
 # text_por = Eu também vou para lá, ainda estou aqui, então espere um pouco, para irmos juntos, é para lá também o meu dormitório.
 # text_source = Rodrigues, 60 adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
 2	yuíri	yuíri	ADV	ADV	_	3	advmod	_	TokenRange=4:9
 3	asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=10:13
@@ -12742,6 +12784,7 @@
 # text_por = Dá teu pé para eu comer.
 # text_source = Rodrigues, 25, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Remeẽ	meẽ	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	pí	pí	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:11
@@ -12865,6 +12908,7 @@
 # text_por = Daí o fogo espalhou-se para todos os povos, para nós hoje em dia cozinharmos nosso peixe, nossa caça, para comermos.
 # text_source = Amorim, 122, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	ana	ana	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=5:8
 3	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	4	nsubj	_	TokenRange=9:13
@@ -12893,6 +12937,7 @@
 # text_por = A mulher às vezes fica zangada com seus filhos.
 # text_source = Hartt, 324, modif.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Kunhã	kunhã	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:5
 2	amuramé	amuramé	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=6:13
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=14:15
@@ -13335,6 +13380,7 @@
 # text_source = Rodrigues, 224, adap.
 # text_prim = — Eré, ce mu miri etá, yá çu ana iuaca queté, yacytatá arama.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=5:7
@@ -13418,6 +13464,7 @@
 # text_source = Rodrigues, 283, adap.
 # text_prim = Re pycirô yané upáin maá pochi chii.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Repisirú	pisirú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
 2	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	TokenRange=9:14
 3	panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=15:20
@@ -13662,6 +13709,7 @@
 # text_por = Então eles nomearam aquela cova "Caru-Cupy".
 # text_source = Rodrigues, 250, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
 2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=7:12
 3	usenúi	senúi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=13:19
@@ -13756,6 +13804,7 @@
 # text_por = Sua esposa partiu-os, fez suco.
 # text_source = Comunidade Indígena Anamuim, 18, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	nsubj	_	TokenRange=0:8
 2	umpuka	mpuka	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:15
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
@@ -13884,6 +13933,7 @@
 # text_por = Vem cá!
 # text_source = Coudreau, 467; Magalhães, 97
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
@@ -13897,6 +13947,7 @@
 # text_prim_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_prim_source = p. 361, No. 147
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	rewapika	wapika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=6:14
@@ -14188,6 +14239,7 @@
 # text_por = O galo canta.
 # text_source = Hartt, 321, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Sapukaya	sapukaya	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:8
 2	apigawa	apigawa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=9:16
 3	unheengari	nheengari	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:27
@@ -14632,6 +14684,7 @@
 # text_por = É perigoso que o teu momento de entrar para junto dele passe.
 # text_source = Missão Novas Tribos do Brasil, 2016, canto 125, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yawaité	yawaité	ADJ	A	_	0	root	_	TokenRange=0:7
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:10
 3	rangawa	sangawa	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=11:18
@@ -14968,6 +15021,7 @@
 # text_por = Nós, Kusses, destinados a tuxauas, viemos nas costas de Makará, os Hineres, destinados a nossos vassalos, vieram em sua barriga.
 # text_source = Amorim, 313, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	8	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	Kuse-itá	kuse-itá	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No|TokenRange=7:15
@@ -15092,6 +15146,7 @@
 # text_por = Mande consertar o toldo da minha canoa. [Corr. transl.]
 # text_source = Magalhães, 94, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1-2	Remukaturu-kari	_	_	_	_	_	_	_	TokenRange=0:15
 1	Remukaturu	mukaturu	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 2	kari	kari	AUX	AUXN	Compound=Yes	1	aux	_	_
@@ -15629,6 +15684,8 @@
 # text_por = Para que ele não lhe pedisse outra coisa, pediu logo o coração do curupira.
 # text_source = Rodrigues, 26, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Kurumú	kurumú	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:6
 2	uyururé	yururé	VERB	V	Person=3|VerbForm=Fin	9	advcl	_	TokenRange=7:14
 3	amú	amú	DET	IND	Number=Sing|PronType=Ind	4	det	_	TokenRange=15:18
@@ -15692,6 +15749,7 @@
 # text_por = Quero parar de trabalhar à noite, senão fica difícil de acordar de manhã cedo para estudar.
 # text_source = Avila (2021)
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1-2	Apituú-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Apituú	pituú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -15885,6 +15943,7 @@
 # text_por = Este remédio nós tomamos quando estamos com diarreia.
 # text_source = Muniz, 86, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	pusanga	pusanga	NOUN	N	Number=Sing	3	obj	_	TokenRange=4:11
 3	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=12:15
@@ -16011,6 +16070,8 @@
 # text_por = O pote já está cheio.
 # text_source = Hartt, 375, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
+# reviewer2 = DMA
 1	Kamutí	kamutí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	teresemu	teresemu	ADJ	A	_	0	root	_	TokenRange=7:15
 3	ã	ã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=16:17
@@ -16356,6 +16417,7 @@
 # text_por = O morcego é o demônio, apagou meu fogo. [Corr. transl.]
 # text_source = Rodrigues, 290, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Andirá	andirá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	yuruparí	yuruparí	PROPN	PROPN	_	0	root	_	SpaceAfter=No|TokenRange=7:15
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
@@ -16608,6 +16670,7 @@
 # text_por = Depois de ele dizer tudo, elas todas morreram, viraram pedra.
 # text_source = Rodrigues, 112, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=0:5
 2	pawa	pawa	PART	TOTAL	Aspect=Compl	1	advmod	_	TokenRange=6:10
 3	riré	riré	SCONJ	SCONJ	_	1	mark	_	SpaceAfter=No|TokenRange=11:15
@@ -16702,6 +16765,7 @@
 # text_por = O tucumã tem seu espique coberto de espinhos.
 # text_source = Payema, 31, adap.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	tukumã	tukumã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:10
 3	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:16
@@ -16761,6 +16825,7 @@
 # text_por = Ninguém provoca a minha morte, mas espontaneamente eu deixo que me matem. [Corr. transl.]
 # text_source = O Novo Testamento em nyengatu, João 10:18
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	awá	awá	PRON	IND	PronType=Ind	3	nsubj	_	TokenRange=3:6
 3	uxari	xari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
@@ -19201,6 +19266,7 @@
 # text_source = Example 193a Wr
 # text_orig = ape ainta tau-maã nhaã mayuwa
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	TokenRange=0:3
 2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=4:9
 3	taumaã	maã	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:16
@@ -19229,6 +19295,7 @@
 # text_source = Example 195a Br
 # text_orig = aitekua se-iara
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Aité	aité	PRON	EMP	PronType=Emp	3	nsubj	_	TokenRange=0:4
 2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:8
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	0	root	_	TokenRange=9:11
@@ -19731,6 +19798,7 @@
 # text_source = Example 864 Br
 # text_orig = ya-munhã-pa(wa) kua misão
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	pá	pá	PART	TOTAL	Aspect=Compl	1	advmod	_	TokenRange=8:10
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:14
@@ -21498,6 +21566,7 @@
 # text_por = Morreu uma vaca.
 # text_source = p. 31
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	tapira	tapira	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:11
 3	kunhã	kunhã	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:17
@@ -22736,6 +22805,7 @@
 # text_source = p. 75
 # text_orig = xaputare maá reputare catu pire
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Aputari	putari	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	maã	maã	PRON	RELF	PronType=Rel	1	obj	_	TokenRange=8:11
 3	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	acl:relcl	_	TokenRange=12:20
@@ -23183,6 +23253,7 @@
 # text_orig = Quahá kurumi-uaçú orekộ muçapíra miaçúa catú rẹtệ.
 # text_annotator = LFdeA
 # spelling_adaptation = MTA
+# reviewer1 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:14
 3	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:20
@@ -23544,6 +23615,7 @@
 # text_orig = Aitá oçộ ãna.
 # text_annotator = LFdeA
 # spelling_adaptation = MTA
+# reviewer1 = JLG
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=6:9
 3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=10:13
@@ -24042,6 +24114,7 @@
 # text_orig = Penhẽ pepirári pitúna!
 # text_annotator = LFdeA
 # spelling_adaptation = MTA
+# reviewer1 = JLG
 1	Penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	pepirari	pirari	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
 3	pituna	pituna	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:21
@@ -24210,6 +24283,7 @@
 # text_source = p. 177
 # text_orig = Tapiíra, iarúparí, opirú iáutí teté.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Tapiira	tapiira	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	yuruparí	yuruparí	NOUN	N	_	1	nmod	_	SpaceAfter=No|TokenRange=9:17
