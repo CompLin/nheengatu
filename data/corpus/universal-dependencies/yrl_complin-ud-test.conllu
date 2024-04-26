@@ -993,6 +993,8 @@
 # text_por = Ela está muito feliz.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	surí	rurí	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=3:7
 3	retana	retana	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=8:14
@@ -6877,6 +6879,8 @@
 # text_por = Afundou bastante, contam, a pedra, onde ficou a figura de seu corpo para toda gente ver.
 # text_source = Amorim, 277, adap.
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Umutipí	mutipí	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	katú	katú	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:12
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=13:16
@@ -7645,8 +7649,6 @@
 # text_por = Agora sim, jabuti, eu já sei que tu és mais macho do que eu.
 # text_source = Magalhães, 218, adap.
 # text_annotator = LFdeA
-# reviewer1 = DMA
-# reviewer2 = JLG
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:5
 2	supí	supí	PART	CERT	PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:10
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
@@ -11864,7 +11866,6 @@
 # text_por = Venha cá, gente bonita, beber meu caxiri, ele é doce como mel, embebeda como caapi.
 # text_source = Amorim, 317, adap.
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Peyuri	yuri	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=7:10
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
@@ -12442,7 +12443,6 @@
 # text_por = Quando chegou, encobertamente, foi procurar Adana, encontrou-a numa casa sozinha.
 # text_source = Casasnovas, 99, adap.
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Usika	sika	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=11:14
@@ -13378,7 +13378,6 @@
 # text_source = Rodrigues, 224, adap.
 # text_prim = — Eré, ce mu miri etá, yá çu ana iuaca queté, yacytatá arama.
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=5:7
@@ -13724,6 +13723,8 @@
 # text_por = Eis aí já Piripiri e sua mãe.
 # text_source = Amorim, 126, adap.
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=6:9
 3	Piripiri	piripiri	PROPN	PROPN	_	1	nsubj	_	TokenRange=10:18
@@ -14774,6 +14775,8 @@
 # text_source = Amorim, 362, adap.
 # text_orig = Kwá yasí-pisasú ramé kurí uyukwáu yané pitérupi awá umukameẽ arama Kurasí piá.
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	yasí	yasí	NOUN	N	Number=Sing	6	obl	_	TokenRange=4:8
 3	pisasú	pisasú	ADJ	A	_	2	amod	_	TokenRange=9:15
@@ -15398,6 +15401,8 @@
 # text_source = O Novo Testamento em nyengatu, Marcos 14:57
 # text_orig = Asuí yepé-yepé upuãmu aintá uganani sesé, [...]
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
 2	yepé-yepé	yepé-yepé	PRON	INDQ	PronType=Ind	3	nsubj	_	TokenRange=5:14
 3	upuãmu	puãmu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:21
@@ -16668,7 +16673,6 @@
 # text_por = Depois de ele dizer tudo, elas todas morreram, viraram pedra.
 # text_source = Rodrigues, 112, adap.
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=0:5
 2	pawa	pawa	PART	TOTAL	Aspect=Compl	1	advmod	_	TokenRange=6:10
 3	riré	riré	SCONJ	SCONJ	_	1	mark	_	SpaceAfter=No|TokenRange=11:15
@@ -16763,7 +16767,6 @@
 # text_por = O tucumã tem seu espique coberto de espinhos.
 # text_source = Payema, 31, adap.
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	tukumã	tukumã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:10
 3	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:16
@@ -16823,7 +16826,6 @@
 # text_por = Ninguém provoca a minha morte, mas espontaneamente eu deixo que me matem. [Corr. transl.]
 # text_source = O Novo Testamento em nyengatu, João 10:18
 # text_annotator = LFdeA
-# reviewer1 = JLG
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	awá	awá	PRON	IND	PronType=Ind	3	nsubj	_	TokenRange=3:6
 3	uxari	xari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
@@ -18630,6 +18632,7 @@
 # text_source = Novo Testamento na língua Nyengatu, Mt 21:19
 # text_orig = Asui umbeu ixupe: — Timairame kuri reriku neiya.
 # text_annotator = LFdeA
+# reviewer1 = JLG
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umbeú	mbeú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=11:12
@@ -18947,6 +18950,8 @@
 # text_source = Novo Testamento na língua Nyengatu, Lk 14:14
 # text_orig = Suuri kuri inde nyãse timaa aintaupuderi aintaupagari inde sikuyara.
 # text_annotator = LFdeA
+# reviewer1 = DMA
+# reviewer2 = JLG
 1	Surí	rurí	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=5:9
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	TokenRange=10:14
