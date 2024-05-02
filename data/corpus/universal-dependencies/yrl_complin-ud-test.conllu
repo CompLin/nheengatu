@@ -22853,19 +22853,20 @@
 3	arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:16
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = Magalhaes1876:1-1-2:1:103
+# sent_id = Magalhaes1876:1-1-1:1:103
 # text = Rerikú será mukawa?
 # text_eng = Do you have the shotgun?
 # text_por = Tem você a espingarda?
 # text_source = p. 14
-# text_orig = Rẹrẹkộ será mukáua?
+# text_orig_corr = Rẹrẹkộ será mukáua?
+# text_orig = Rẹrẹkộ será mukáua.
 # text_annotator = LFdeA
 1	Rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=7:11
 3	mukawa	mukawa	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=12:18
 4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
-# sent_id = Magalhaes1876:1-1-2:2:104
+# sent_id = Magalhaes1876:1-1-1:2:104
 # text = Supí, tenhẽ, arikú mukawa.
 # text_eng = Yes, sir, I do.
 # text_por = Sim, senhor, eu tenho.
@@ -22880,21 +22881,22 @@
 6	mukawa	mukawa	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=19:25
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
 
-# sent_id = Magalhaes1876:1-1-3:1:105
-# text = Indé rerikú será se mukawa?
+# sent_id = Magalhaes1876:1-1-2:1:105
+# text = Iné rerikú será se mukawa?
 # text_eng = Do you have my shotgun?
 # text_por = Tem você a minha espingarda?
 # text_source = p. 15
-# text_orig = Inệ rẹrẹkộ será ce mukáua?
+# text_orig_corr = Inệ rẹrẹkộ será ce mukáua?
+# text_orig = Inệ rẹrẹkộ será ce mukáua.?
 # text_annotator = LFdeA
-1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
-2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
-3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=12:16
-4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:19
-5	mukawa	mukawa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=20:26
-6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
+1	Iné	iné	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=11:15
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:18
+5	mukawa	mukawa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=19:25
+6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
 
-# sent_id = Magalhaes1876:1-1-3:2:106
+# sent_id = Magalhaes1876:1-1-2:2:106
 # text = Supí tenhẽ, arikú ne mukawa.
 # text_eng = Yes, sir, I have your shotgun.
 # text_por = Sim, senhor, tenho vossa espingarda.
@@ -22909,22 +22911,22 @@
 6	mukawa	mukawa	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=21:27
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
 
-# sent_id = Magalhaes1876:1-1-4:1:107
-# text = Indé rerikú será ne miapé?
+# sent_id = Magalhaes1876:1-1-2:1:107
+# text = Iné rerikú será ne miapé?
 # text_eng = Do you have your bread?
 # text_por = Tem o seu pão?
 # text_source = p. 15
 # text_orig = Inệ rẹrekó será ne miapé?
 # text_orig_alt = Inệ rẹrekó será ne meapé?
 # text_annotator = LFdeA
-1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
-2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
-3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=12:16
-4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:19
-5	miapé	miapé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=20:25
-6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
+1	Iné	iné	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=11:15
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:18
+5	miapé	miapé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=19:24
+6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = Magalhaes1876:1-1-4:2:108
+# sent_id = Magalhaes1876:1-1-2:2:108
 # text = Arikú se miapé.
 # text_eng = I have my bread.
 # text_por = Tenho o meu pão.
@@ -22936,7 +22938,7 @@
 3	miapé	miapé	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:14
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
-# sent_id = Magalhaes1876:1-1-5:1:109
+# sent_id = Magalhaes1876:1-2-1:1:109
 # text = Ne rerikú será se mukawa?
 # text_eng = Do you have my shotgun?
 # text_por = Tem você a minha espingarda?
@@ -22950,11 +22952,11 @@
 5	mukawa	mukawa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=18:24
 6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = Magalhaes1876:1-1-5:2:110
+# sent_id = Magalhaes1876:1-2-1:2:110
 # text = Supí tenhẽ, arikú aé.
 # text_eng = Yes, sir, I have it.
 # text_por = Sim, senhor, eu a tenho.
-# text_source = p. 14
+# text_source = p. 18
 # text_orig = Çupí tenhén, xa rekộ ahé.
 # text_annotator = LFdeA
 1	Supí	supí	PART	CERT	PartType=Mod	4	advmod	_	TokenRange=0:4
@@ -22990,6 +22992,23 @@
 3	arikú	rikú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:14
 4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=15:17
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Magalhaes1876:1-5-1:0:300
+# text = Reyumasí será u ne isí será? 
+# text_eng = Are you hungry or thirsty?
+# text_por = Tem você fome ou sede?
+# text_source = p. 30
+# text_orig = Rẹ iumacɨ será ó nẹ ɨ cei será?
+# text_annotator = LFdeA
+# cross_reference1 = Avila2021:0:0:61
+# cross_reference2 = Avila2021:0:0:707
+1	Reyumasí	yumasí	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=9:13
+3	u	u	CCONJ	CCONJ	_	5	cc	_	TokenRange=14:15
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	TokenRange=16:18
+5	isí	isí	VERB	V2	_	1	conj	_	TokenRange=19:22
+6	será	será	PART	PQ	PartType=Int	5	advmod	_	SpaceAfter=No|TokenRange=23:27
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Magalhaes1876:1-12:0:101
 # text = Awá ruka kití taá resú-putari?
@@ -26473,6 +26492,20 @@
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:21
 5	purakisawa	purakisawa	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=22:32
 6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Hartt1938:0:0:5
+# text = Yandirawa i purã yamusení arama. 
+# text_eng = Andiroba oil is good for giving light.
+# text_por = Azeite de andiroba é bom para dar luz.
+# text_source = p. 319, No. 5
+# text_orig = yaneróa ipurán yamosyny aráma.
+# text_annotator = LFdeA
+1	Yandirawa	yandirawa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:9
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=10:11
+3	purã	purã	ADJ	A	_	0	root	_	TokenRange=12:16
+4	yamusení	musení	VERB	V	Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=17:25
+5	arama	arama	SCONJ	SCONJ	_	4	mark	_	SpaceAfter=No|TokenRange=26:31
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:6
 # text = Rerikú será sapukaya rupiá?
