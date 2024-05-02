@@ -21615,7 +21615,7 @@
 # text_source = p. 37
 # text_orig = Yukasara suú yamaã waá kaá upé usikana
 # text_annotator = LFdeA
-1	Yukasara	yukasara	NOUN	N	Number=Sing|Style=Rare	7	nsubj	_	LDeriv=yuká|ModernForm=Uyukasara|ModernPerson=3|TokenRange=0:8
+1	Yukasara	yukasara	NOUN	N	Number=Sing|Style=Rare	7	nsubj	_	LDeriv=yuká|StandardForm=Uyukasara|StandardPerson=3|TokenRange=0:8
 2	suú	suú	NOUN	N	Number=Sing	1	nmod	_	TokenRange=9:12
 3	yamaã	maã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	1	acl:relcl	_	TokenRange=13:18
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	obj	_	TokenRange=19:22
@@ -21940,7 +21940,7 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
 
 # sent_id = Rodrigues1890:1-1-5:91:91
-# text = Kurumĩ usú renundé uinú suíwa rakapírupi urarí, arirí usú uyenú kruatá pupé inayawasú aresé.
+# text = Kurumĩ usú renundé uinú suíwa rakapírupi urarí, arirí usú uyenú kuruatá pupé inayawasú aresé.
 # text_eng = The boy first put poison on the tip of the arrow, then went to lie down on the spathe of the large inajá.
 # text_por = O menino foi antes por veneno na ponta da frecha, depois foi deitar-se na espata do inajá grande.
 # text_source = p. 56
@@ -21968,11 +21968,11 @@
 10	arirí	arirí	ADV	ADVT	AdvType=Tim	12	advmod	_	TokenRange=48:53
 11	usú	sú	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=54:57
 12	uyenú	yenú	VERB	V	Person=3|VerbForm=Fin	11	xcomp	_	TokenRange=58:63
-13	kruatá	kruatá	NOUN	N	Number=Sing|Style=Arch	12	obl	_	ModernForm=kuruatá|TokenRange=64:70
-14	pupé	pupé	ADP	ADP	AdpType=Post	13	case	_	TokenRange=71:75
-15	inayawasú	inayá	NOUN	N	Degree=Aug|Number=Sing	12	obl	_	TokenRange=76:85
-16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=86:91
-17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=91:92
+13	kuruatá	kuruatá	NOUN	N	Number=Sing	12	obl	_	TokenRange=64:71
+14	pupé	pupé	ADP	ADP	AdpType=Post	13	case	_	TokenRange=72:76
+15	inayawasú	inayá	NOUN	N	Degree=Aug|Number=Sing	12	obl	_	TokenRange=77:86
+16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=87:92
+17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
 
 # sent_id = Rodrigues1890:1-1-9:101:101
 # text = — Se ramunha, remeẽ aú ne remiára?
@@ -22994,7 +22994,7 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Magalhaes1876:1-5-1:0:300
-# text = Reyumasí será u ne isí será? 
+# text = Reyumasí será u ne isí será?
 # text_eng = Are you hungry or thirsty?
 # text_por = Tem você fome ou sede?
 # text_source = p. 30
@@ -26494,7 +26494,7 @@
 6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:5
-# text = Yandirawa i purã yamusení arama. 
+# text = Yandirawa i purã yamusení arama.
 # text_eng = Andiroba oil is good for giving light.
 # text_por = Azeite de andiroba é bom para dar luz.
 # text_source = p. 319, No. 5
