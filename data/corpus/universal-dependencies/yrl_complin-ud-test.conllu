@@ -286,7 +286,7 @@
 5	arama	arama	SCONJ	SCONJ	_	7	mark	_	TokenRange=19:24
 6	kurupira-itá	kurupira	NOUN	N	Number=Plur	7	nsubj	_	TokenRange=25:37
 7	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	1	advcl	_	TokenRange=38:43
-8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=44:49
+8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=44:49
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=49:50
 
 # sent_id = MooreFP1994:0:0:20
@@ -2181,6 +2181,8 @@
 # text_eng = Are you people?
 # text_por = Você é gente?
 # text_source = Lesson 2, p. 18 (Stradelli, 413)
+# text_prim = Mira será indé?
+# text_por_prim = Tu és gente?
 # text_annotator = DMA
 # reviewer1 = LFdeA
 1	Mira	mira	NOUN	N	Number=Sing	0	root	_	TokenRange=0:4
@@ -14109,10 +14111,13 @@
 # text = Se rasú ne irũ.
 # text_eng = Take me with you.
 # text_por = Leva-me contigo.
+# text_prim = serasó nerúm.
+# text_prim_source = No. 487
 # text_source = Hartt, 354, adap.
 # text_annotator = LFdeA
-1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obj	_	TokenRange=0:2
-2	rasú	rasú	VERB	V	VerbForm=Inf	0	root	_	TokenRange=3:7
+# text_prim_transcriber = Antônio Levy Melo Nogueira
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	2	obj	_	ModernCase=Acc,Nom|ModernForm=Ixé|ModernLemma=ixé|TokenRange=0:2
+2	rasú	rasú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rerasú|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:7
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	2	obl	_	TokenRange=8:10
 4	irũ	irũ	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=11:14
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
@@ -14125,7 +14130,7 @@
 # text_annotator = LFdeA
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	manha	manha	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=3:8
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obj	_	TokenRange=9:11
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=9:11
 4	mundú	mundú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=umundú|ModernPerson=3|ModernVerbForm=Fin|TokenRange=12:17
 5-6	garapá-pe	_	_	_	_	_	_	_	TokenRange=18:27
 5	garapá	garapá	NOUN	N	Number=Sing	4	obl	_	_
@@ -22829,6 +22834,21 @@
 2	arama	arama	ADP	ADP	AdpType=Post	1	case	_	TokenRange=4:9
 3	reikupukú	ikupukú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:19
 4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = stradelli1929:0:0:2
+# text = Resú-putari será kwá rupí?
+# text_eng = Do you want to go this way?
+# text_por = Queres ir por cá?
+# text_source = p. 413
+# text_orig = Resó putari será cuá rupi?
+# text_annotator = LFdeA
+1-2	Resú-putari	_	_	_	_	_	_	_	TokenRange=0:11
+1	Resú	sú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=12:16
+4	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	obl	_	TokenRange=17:20
+5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
+6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Magalhaes1876:1-1-1:1:101
 # text = Rerikú será?
