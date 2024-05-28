@@ -17776,6 +17776,21 @@
 7	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	SpaceAfter=No|TokenRange=25:28
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# sent_id = Avila2021:0:0:722
+# text = Asú kurí ne irumu ne retama kití.
+# text_eng = "I will go with you to your land."
+# text_por = - Irei contigo para a tua terra.
+# text_source = Avila (2021)
+# text_annotator = LFdeA
+1	Asú	sú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=4:8
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=9:11
+4	irumu	irumu	ADP	ADP	AdpType=Post	3	case	_	TokenRange=12:17
+5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=18:20
+6	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=21:27
+7	kití	kití	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=28:32
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -18282,7 +18297,7 @@
 
 # sent_id = NTLN2019:2:8:19
 # text = Asuí Jesus umbeú aintá supé: — Umbaá uri se resewara kwá i nheenga, ma uri pe resewara.
-# text_eng = Jesus said, “This voice was for your benefit, not mine.[NIV]
+# text_eng = Jesus said, “This voice was for your benefit, not mine. [NIV]
 # text_por = Jesus disse: "Esta voz veio por causa de vocês, e não por minha causa. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, John 12:30
 # text_orig = Asui Jesus umbeu ainta supe: — Umbaa uri seresewara kua inyenga maa uri peresewara.
@@ -20344,7 +20359,7 @@
 # text_orig_transcriber = Juliana Lopes Gurgel (JLG)
 # text_por_transcriber = JLG
 # reviewer1 = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -20373,7 +20388,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar (LFdeA)
 1	Upitá	pitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	sasiára	sasiára	ADJ	A	_	1	xcomp	_	TokenRange=6:13
@@ -20390,7 +20405,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
@@ -20410,7 +20425,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 # inputline = Asuí/advt, paá, upurandú aé/pron: Compadre/=n:o|pt, marã taá sasiára retana indé.
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:4
@@ -20438,7 +20453,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Urubú	urubú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
@@ -20480,7 +20495,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -20518,7 +20533,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -20563,7 +20578,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aramé	aramé	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:5
 2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=6:8
@@ -20584,7 +20599,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -20613,7 +20628,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Wirá-mirĩ	wirá-mirĩ	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:9
 2	kutara	kutara	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=10:16
@@ -20636,7 +20651,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Sakwera	sakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	0	root	_	TokenRange=0:7
 2	wirawasú	wirawasú	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=8:16
@@ -20666,7 +20681,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -20698,7 +20713,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -20742,7 +20757,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Urubú	urubú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
@@ -20775,7 +20790,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -20803,7 +20818,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # reviewer1 = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ikupukú	ikupukú	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:13
 3	uwatá	watá	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=14:19
@@ -20831,7 +20846,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:3
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:12
@@ -20854,7 +20869,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=8:11
@@ -20881,7 +20896,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:13
@@ -20901,7 +20916,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umundéu	mundéu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
@@ -20927,7 +20942,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	_	1	case	_	SpaceAfter=No|TokenRange=5:11
@@ -20951,7 +20966,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	mark	_	MWEPOS=SCONJ|TokenRange=3:6
@@ -20977,7 +20992,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
 2	tuwí	tuwí	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=4:8
@@ -20994,7 +21009,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Tiapú	tiapú	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:5
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:14
@@ -21019,7 +21034,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -21044,7 +21059,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Tapurasí	purasí	VERB	V	Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
@@ -21069,7 +21084,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ikupukú	ikupukú	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=8:9
@@ -21113,7 +21128,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
@@ -21143,7 +21158,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Kwema	kwema	NOUN	N	Number=Sing	10	obl	_	TokenRange=0:5
 2	irumu	irumu	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=6:11
@@ -21178,7 +21193,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yepé	yepé	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=0:4
 2	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
@@ -21208,7 +21223,7 @@
 # text_orig_transcriber = JLG
 # text_por_transcriber = JLG
 # text_annotator = JLG
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Mairamé	mairamé	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:7
 2	puranga	puranga	ADJ	A	_	6	advcl	_	TokenRange=8:15
