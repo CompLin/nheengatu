@@ -8774,7 +8774,7 @@
 9	kurí	kurí	PART	FUT	Tense=Fut	11	advmod	_	TokenRange=47:51
 10	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	TokenRange=52:57
 11	yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=58:65
-12	yuíri	yuíri	ADV	ADV	_	11	advmod	_	SpaceAfter=No|TokenRange=66:71
+12	yuíri	yuíri	ADV	ADVG	AdvType=Deg	11	advmod	_	SpaceAfter=No|TokenRange=66:71
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
 
 # sent_id = Avila2021:0:0:227
@@ -17791,6 +17791,17 @@
 7	kití	kití	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=28:32
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
+# sent_id = Avila2021:0:0:723
+# text = Upuãmu se resé.
+# text_eng = He rose up against me.
+# text_por = Levantou-se contra mim.
+# text_source = Tastevin, 658, adap.
+# text_annotator = LFdeA
+1	Upuãmu	puãmu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=7:9
+3	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=10:14
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -22556,7 +22567,7 @@
 # text_source = p. 175
 # text_orig = Aé uana, paá, ure uaté chii, u are tatá pe.
 # text_annotator = LFdeA
-# text_prim_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # title_number = XII
 # text_por_gloss = Ela logo, dizem, veio alto do, caiu fogo no.
 # cross_reference = Avila2021:0:0:309
@@ -25422,6 +25433,30 @@
 38	mira	mira	NOUN	N	Number=Sing	36	advcl	_	SpaceAfter=No|TokenRange=192:196
 39	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=196:197
 
+# sent_id = Amorim1928:8-1:130:130
+# text = Asuí ana paá Buopé uyupirú umaramunhã upanhẽ mira resé.
+# text_eng = Then, they say, Buopé started fighting against everyone.
+# text_por = Daí, contam, Buopé começou já guerreando contra toda a gente.
+# text_source = p. 198, No. 130
+# text_orig = Asuhi ana paa Buopé oiýpyru omaramunhan upanhe mira resé.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_sec = Asuí ana paá Buopé uyupirú umaramunha panhẽ mira resé.
+# text_por_sec = Daí, contam, Buopé já começou a guerrear contra toda a gente.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = LFdeA
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:4
+2	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=5:8
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=9:12
+4	Buopé	buopé	PROPN	PROPN	_	5	nsubj	_	TokenRange=13:18
+5	uyupirú	yupirú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=19:26
+6	umaramunhã	maramunhã	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=27:37
+7	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	8	det	_	TokenRange=38:44
+8	mira	mira	NOUN	N	Number=Sing	6	obl	_	TokenRange=45:49
+9	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	8	case	_	SpaceAfter=No|TokenRange=50:54
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=54:55
+
 # sent_id = Amorim1928:7-1:64:64
 # text = Pisá árupi upitá wirá-payé umumbeú arama mairamé Yuruparí uikú ana pisá pupé.
 # text_eng = On top of the fishing net sat the squirrel cuckoo to warn when Jurupari was already inside the net.
@@ -25554,7 +25589,7 @@
 23	iwiwasú	iwí	NOUN	N	Degree=Aug|Number=Sing	20	xcomp	_	SpaceAfter=No|TokenRange=120:127
 24	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=127:128
 
-# sent_id = Amorim1928:2:5:5000
+# sent_id = Amorim1928:2:5:5005
 # text = Mayawé aintá intí upitá-kwáu aintá rimirikú-itá tetame uyuíri aintá tetama kití aintá rimirikú-itá irumu.
 # text_eng = As they could not stay in their women's land, they returned to their land with them.
 # text_por = Como eles não podiam ficar na terra de suas mulheres, voltaram para sua terra com elas.
@@ -25580,6 +25615,36 @@
 15	rimirikú-itá	simirikú	NOUN	N	Number=Plur|Rel=Cont	10	obl	_	TokenRange=86:98
 16	irumu	irumu	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=99:104
 17	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=104:105
+
+# sent_id = Amorim1928:2:6:5006
+# text = Mayawé Buopé sikú upurasí pituna yawé-yawé Yuruparí Iwitera upé upanhẽ apigawa-etá uyawáu aintá rimirikú aintá suí pituna irumu.
+# text_eng = As Buopé used to dance Jurupari every night in Serra do Jurupari, all the men ran away from their wives at nightfall.
+# text_eng_ggl = As it was Buopé's custom of dancing Jurupari every night in Serra do Jurupari, all the men ran away from their wives at nightfall.
+# text_por = Como era costume de Buopé de dançar Jurupari todas as noites na Serra do Jurupari, todos os homens fugiam de suas mulheres ao vir da noite.
+# text_source = p. 23, No. 6
+# text_orig = Maaiaué Buopé seku opurasê pytuna iaué-iaué Iurupari-Yuytŷrupé upanhe apigauaetá oiauau aetá remiré aetá suhi pytuna yrumo.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Mayawé	mayawé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:6
+2	Buopé	buopé	PROPN	PROPN	_	3	dislocated	_	TokenRange=7:12
+3	sikú	tikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	12	advcl	_	TokenRange=13:17
+4	upurasí	purasí	VERB	V	Person=3|VerbForm=Fin	3	csubj	_	TokenRange=18:25
+5	pituna	pituna	NOUN	N	Number=Sing	4	obj	_	TokenRange=26:32
+6	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	5	det	_	TokenRange=33:42
+7	Yuruparí	yuruparí	PROPN	PROPN	_	8	nmod:poss	_	TokenRange=43:51
+8	Iwitera	iwitera	NOUN	N	Number=Sing	4	obl	_	TokenRange=52:59
+9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=60:63
+10	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	11	det	_	TokenRange=64:70
+11	apigawa-etá	apigawa	NOUN	N	Number=Plur	12	nsubj	_	TokenRange=71:82
+12	uyawáu	yawáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=83:89
+13	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=90:95
+14	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	12	dislocated	_	TokenRange=96:104
+15	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	obl	_	TokenRange=105:110
+16	suí	suí	ADP	ADP	AdpType=Post	15	case	_	TokenRange=111:114
+17	pituna	pituna	NOUN	N	Number=Sing	12	obl	_	TokenRange=115:121
+18	irumu	irumu	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=122:127
+19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=127:128
 
 # sent_id = Amorim1928:2:101:5500
 # text = Pukudana, muíri awa rerikú ne akanga upé muíri yuíri mira umanú kurí ne ara rikuyara.
@@ -25855,6 +25920,29 @@
 11	itakwara	itakwara	NOUN	N	Number=Sing	7	acl:relcl	_	TokenRange=58:66
 12	pupé	pupé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=67:71
 13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=71:72
+
+# sent_id = Amorim1928:2:227:227
+# text = Yandé ramunha-etá intíu umutĩ aintá paya-etá, yawé kurí yandé yamunhã yuíri.
+# text_eng = Our grandparents didn't shame our parents, we should too.
+# text_por = Nossos avós não envergonharam nossos pais, nós assim também havemos de fazer.
+# text_source = p. 34, No. 227
+# text_orig = Iandé ramunhaetá ntyo omutin aetá paiaetá, iaué kuri iandé iamunhan iuŷre.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# cross_reference = Avila2021:0:0:226
+# text_annotator = LFdeA
+1	Yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	ModernForm=Yané|ModernLemma=yané|TokenRange=0:5
+2	ramunha-etá	tamunha	NOUN	N	Number=Plur|Rel=Cont	4	nsubj	_	TokenRange=6:17
+3	intíu	intíu	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=18:23
+4	umutĩ	mutĩ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=24:29
+5	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=30:35
+6	paya-etá	paya	NOUN	N	Number=Plur	4	obj	_	SpaceAfter=No|TokenRange=36:44
+7	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=44:45
+8	yawé	yawé	ADV	ADVA	AdvType=Man	11	advmod	_	TokenRange=46:50
+9	kurí	kurí	PART	FUT	Tense=Fut	11	advmod	_	TokenRange=51:55
+10	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	11	nsubj	_	TokenRange=56:61
+11	yamunhã	munhã	VERB	V	Number=Plur|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=62:69
+12	yuíri	yuíri	ADV	ADVG	AdvType=Deg	11	advmod	_	SpaceAfter=No|TokenRange=70:75
+13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=75:76
 
 # sent_id = Amorim1928:6-1:350:350
 # text = Supí, paá, usendú kirirí Puráe nheenga, mairamé Puráe umbawa aé unheẽ: — Eẽ, Puráe, puranga maã renheẽ waá, ti asendú indé maãresé se piá apekatú uikú kwá suí.
@@ -26137,6 +26225,45 @@
 14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=87:89
 15	pusanga	pusanga	NOUN	N	Number=Sing	13	obj	_	SpaceAfter=No|TokenRange=90:97
 16	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=97:98
+
+# sent_id = Amorim1928:15:5:5
+# text = Tenhẽ pemunhã saruá, kurumú Buyawasú umbaú yandé.
+# text_eng = Don't make saruá, Big Snake might eat us.
+# text_por = Não façam saruá, pode Cobra Grande nos comer.
+# text_source = p. 281, No. 5
+# text_orig = Teinhé pemunhan saruá, kurumu Mboiasu ombaú andé.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# cross_reference = Avila2021:0:0:596
+# text_annotator = LFdeA
+1	Tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:5
+2	pemunhã	munhã	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:13
+3	saruá	saruá	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:19
+4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
+5	kurumú	kurumú	SCONJ	SCONJR	_	7	mark	_	TokenRange=21:27
+6	Buyawasú	buya	NOUN	N	Degree=Aug|Number=Sing	7	nsubj	_	TokenRange=28:36
+7	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=37:42
+8	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=43:48
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
+
+# sent_id = Amorim1928:15:57:57
+# text = Marama intíu resaisú yandé?
+# text_eng = Why don't you love us?
+# text_por = Para que não nos queres bem?
+# text_source = p. 283, No. 57
+# text_orig = Máarama ntyo resaysu iandé?
+# text_sec = Marama ti resaisú yandé?
+# text_por_sec = Por que não nos queres bem?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	3	advmod	_	TokenRange=0:6
+2	intíu	intíu	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=7:12
+3	resaisú	saisú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:20
+4	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=21:26
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Amorim1928:33:108:108
 # text = Supisá-pe ipú Kurupira usendú nhuntu uikú ukara suí, yeperesé usú uyuuka karurú kaá kití.

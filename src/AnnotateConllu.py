@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 19, 2024
+# Last update: June 2, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
-from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
 from conllu import parse_incr
 import re, os
-
-# set with lexicalized reduplications
-LEXREDUP=set()
-
-# reduplication tag
-REDUP='RED'
 
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
@@ -24,6 +18,12 @@ ANNOTATOR = 'LFdeA'
 TREEBANK_FILE='yrl_complin-ud-test.conllu'
 TREEBANK_DIR='corpus/universal-dependencies'
 TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
+
+# set with lexicalized reduplications
+LEXREDUP=set()
+
+# reduplication tag
+REDUP='RED'
 
 # set with all treebank sentences
 TREEBANK_SENTS=[]
@@ -51,7 +51,7 @@ PARTS=re.compile(r"\s+-\s+|[)(]")
 
 PARTS1=re.compile(r"[)(]")
 
-PARTS2=re.compile(r"\s+-\s+")
+PARTS2=re.compile(r"\s*-\s+")
 
 # regex for squeezing white space
 SQUEEZE=re.compile(r"\s{2,}")
@@ -106,6 +106,9 @@ ROOT=[]
 
 GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
 LEXICON=loadLexicon()
+
+# archaic lemmas
+ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
@@ -321,6 +324,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
     'VERB':'root',
     'PUNCT':'punct'}
+    modernform={}
     end=start + len(word)
     feats={}
     token=Token()
@@ -346,6 +350,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     vform=entry.get('vform')
     mood=entry.get('mood')
     rel=entry.get('rel')
+    style=entry.get('style')
     if person:
         feats['Person']=person
         if token['upos']=='VERB':
@@ -371,6 +376,13 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Red']='Yes'
     if case:
         feats['Case']=case.title()
+    if style:
+        feats['Style']=style.title()
+        modern=list(filter(lambda entry: word.lower() == entry['ancient'] ,ARCHAIC_LEMMAS))[0]['modern']
+        modernform['ModernLemma']=modern
+        if word.istitle():
+            modern=modern.title()
+        modernform['ModernForm']=modern
     if feats:
         token['feats']=feats
     else:
@@ -396,6 +408,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['deprel']=dprl
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
+    if modernform:
+        token['misc'].update(modernform)
     return token
 
 def spaceBefore(token):
@@ -737,7 +751,8 @@ def handlePart(token,tokenlist,verbs):
             updateFeats(token,feat, val)
     elif xpos == 'FOC':
         previous=PreviousContentWord(token,tokenlist)
-        token['head']=previous['id']
+        if previous:
+            token['head']=previous['id']
         updateFeats(token,'PartType', 'Emp')
         updateFeats(token,'Foc', 'Yes')
     elif xpos == 'EXST' or xpos == 'PRSV':
@@ -1886,7 +1901,7 @@ def mkAdj(form,orig='pt',dic={},orig_form=''):
 def getNumber(form):
     dic={}
     dic['number']='SG'
-    if form.endswith('-itá'):
+    if form.endswith('-itá') or form.endswith('-etá'):
         dic['number']='PL'
         dic['lemma']=form[:-4]
     else:
@@ -2225,7 +2240,7 @@ def extract_sents(line=None,lines=None):
         for sent in SqueezeWhiteSpace(lines).split("\n"):
             sents.append(sent.strip())
     else:
-        parts1=PARTS1.split(SqueezeWhiteSpace(line),2)
+        parts1=[part.strip() for part in PARTS1.split(SqueezeWhiteSpace(line),2)]
         parts2=[sent.strip() for sent in PARTS2.split(parts1[-1]) if sent]
         sents.extend(parts1[:2])
         sents.extend(parts2)
@@ -2238,7 +2253,7 @@ def ppText(sents,pref='',textid=0,index=0,sentid=0):
     output=[]
     if pref:
         output.append(f"# sent_id = {pref}:{textid}:{index}:{sentid}")
-    yrl,eng,por=sents[0],sents[1],sents[2]
+    yrl,eng,por=[sent.strip() for sent in sents[:3]]
     template=f"# text = {yrl}\n# text_eng = {eng}\n# text_por = {por}"
     dic={}
     if len(sents) > 3:
@@ -2692,7 +2707,7 @@ def mkSecText(yrl=None,yrl_source=None,por=None, por_sec=False,por_source=None):
             dic[f'{text_por}_source']=yrl_source
     return dic
 
-def mkSecTextAvila(example,por_sec=False):
+def mkSecTextAvila(example,por_sec=True):
     sents=extract_sents(example)
     return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
 
@@ -2722,3 +2737,49 @@ def formatExampleMaslova(dic,orig_page,sec_page):
     outdic['inputline']=f"{dic['yrl']} (p. {orig_page}, No. {dic['number']}) {dic['por']} - {dic['yrl']}"
     outdic['text_transcriber'] = 'Maslova (2018:{sec_page})'
     return outdic
+
+def setSentReviewers(sent,namelist):
+	i=0
+	dic={}
+	while(i < len(namelist)):
+		dic[f"reviewer{i+1}"]=namelist[i]
+		i+=1
+	sent.metadata.update(dic)
+
+def includeReviewers(sents,sentids,namelist=['JLG','DMA']):
+    for sent in sents:
+        for sentid in sentids:
+            if sent.metadata['sent_id'] == sentid:
+                includeReviewers(sent,['JLG','DMA'])
+                sentids.remove(sentid)
+
+def pp(s):
+    print(parseSentence(s).serialize())
+
+def getSentsWithSentId(sentid,sents):
+	return list(filter(lambda sent: sentid in sent.metadata['sent_id'],sents))
+
+def getLastSentWithSentId(sentid,sents):
+	r=list(filter(lambda sent: sentid in sent.metadata['sent_id'],sents))
+	if r:
+		return r[-1].metadata['sent_id']
+
+def mkNextSentWithSentId(sentid,sents):
+    parts=[]
+    def incr_number(numbers):
+        i=0
+        while(i<len(numbers)):
+            if numbers[i] > 0:
+                numbers[i]= numbers[i]+1
+            i+=1
+    elements = getLastSentWithSentId(sentid,sents).split(":")
+    parts.append(elements[0])
+    numbers=[int(nr) for nr in elements[1:]]
+    incr_number(numbers)
+    parts.extend(numbers)
+    return parts
+
+def extractSourcesAvila(sents):
+	sources=[]
+	avila_sents=getSentsWithSentId("Avila2021",sents)
+	return [sent.metadata['text_source'].split(",")[0].strip("(2021)").strip() for sent in avila_sents]
