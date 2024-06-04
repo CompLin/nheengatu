@@ -27095,6 +27095,25 @@
 4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# sent_id = Hartt1938:0:0:52
+# text = Kariwa-itá maramunhã uikú tapuya-itá irũ.
+# text_eng = The whites are making war with the Tapuias.
+# text_por = Os brancos estão fazendo guerra com os tapuias.
+# text_source = p. 322, No. 52
+# text_orig = karíua itá maramuñan oikó tapya itá irúm.
+# text_sec = Kariwa-itá umaramunha uikú tapuya-itá irumu.
+# text_por_sec = Os brancos estão fazendo guerra com os tapuias.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Kariwa-itá	kariwa	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:10
+2	maramunhã	maramunhã	VERB	V	Style=Rare|VerbForm=Inf	0	root	_	StandardForm=umaramunhã|StandardPerson=3|StandardVerbForm=Fin|TokenRange=11:20
+3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	TokenRange=21:25
+4	tapuya-itá	tapuya	NOUN	N	Number=Plur	2	obl	_	TokenRange=26:36
+5	irũ	irũ	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=37:40
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=40:41
+
 # sent_id = Hartt1938:0:0:95
 # text = Axari se kisé itapewa árupi.
 # text_eng = I left my knife on the stone.
