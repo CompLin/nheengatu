@@ -26627,15 +26627,19 @@
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:3
-# text = Amumarandúa-putari se kamarara-itá.
+# text = Xamumarandúa-putari se kamarara-itá.
 # text_eng = I want to invite my companions.
-# text_por = Quero convidar meus companheiros.
+# text_por = Vou convidar meus companheiros (ou camaradas).
 # text_source = p. 319, No. 3
 # text_orig = xamumuranú putar se kamarára itá.
+# text_sec = Amumarandúa-putari se kamarara-itá.
+# text_por_sec = Quero convidar meus companheiros.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 # text_annotator = DMA
 # reviewer1 = LFdeA
-1-2	Amumarandúa-putari	_	_	_	_	_	_	_	TokenRange=0:18
-1	Amumarandúa	mumarandúa	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+1-2	Xamumarandúa-putari	_	_	_	_	_	_	_	TokenRange=0:18
+1	Xamumarandúa	mumarandúa	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	TokenRange=19:21
 4	kamarara-itá	kamarara	NOUN	N	Number=Plur	1	obj	_	SpaceAfter=No|TokenRange=22:34
