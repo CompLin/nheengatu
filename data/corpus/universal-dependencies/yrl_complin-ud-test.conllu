@@ -26939,27 +26939,28 @@
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:27
-# text = Maã upitá kwá intí kwá rerasú-kwáu ixé arasú se kupé-pe.
+# text = Maã upitá waá intí waá rerasú-kwáu ixé xarasú se kupé-pe.
 # text_eng = What remains that you cannot take, I will take on my back.
 # text_por = O que fica que tu não podes levar, hei de levar nas costas.
 # text_source = p. 321, No. 27
 # text_orig = maé opytá uaé intí uaé rerasó kuáu ixé xarasó sekupépe.
 # text_annotator = DMA
-1	Maã	maã	PRON	RELF	PronType=Rel	2	obj	_	TokenRange=0:3
-2	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	9	advcl	_	TokenRange=4:9
-3	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	obj	_	TokenRange=10:13
+# reviewer = LFdeA
+1	Maã	maã	PRON	INT	PronType=Int	9	obj	_	TokenRange=0:3
+2	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=4:9
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=10:13
 4	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=14:18
-5	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	nsubj	_	TokenRange=19:22
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	obj	_	TokenRange=19:22
 6-7	rerasú-kwáu	_	_	_	_	_	_	_	TokenRange=23:34
-6	rerasú	rasú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	_
+6	rerasú	rasú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	conj	_	_
 7	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
-8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	TokenRange=36:39
-9	arasú	rasú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=40:45
+8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	TokenRange=35:38
+9	xarasú	rasú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arasú|TokenRange=39:45
 10	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=46:48
-11-12	kupé-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=49:57
+11-12	kupé-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=49:56
 11	kupé	kupé	NOUN	N	Number=Sing	9	obl	_	_
 12	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	11	case	_	_
-13	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=58:59
+13	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=56:57
 
 # sent_id = Hartt1938:0:0:28
 # text = Mamé taá ne retama?
