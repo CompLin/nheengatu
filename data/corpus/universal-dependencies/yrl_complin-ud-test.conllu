@@ -19227,9 +19227,9 @@
 # text_orig = Ixe Paulu hampinima penye arama kua kuekatu seipu irumu.
 # text_annotator = LFdeA
 # text_sec = Ixé, Paulo, ampinima penhẽ arama kwá kwekatú se pú irumu.
-# text_por_alt = Eu, Paulo, escrevo a vós essa saudação de próprio punho.
+# text_por_sec = Eu, Paulo, escrevo a vós essa saudação de próprio punho.
 # text_sec_source = Avila (2021)
-# text_por_alt_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
 2	Paulo	paulo	PROPN	PROPN	_	1	nmod	_	TokenRange=4:9
 3	ampinima	mpinima	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=10:18
@@ -19253,9 +19253,9 @@
 # text_orig = Yawe hamusangawa panye hampinimawaita, yawe hampinima seipu irumu.
 # text_annotator = LFdeA
 # text_sec = Yawé amusangawa panhẽ ampinima waá-itá, yawé ampinima se pú irumu.
-# text_por_alt = Assim eu assinalo tudo que escrevo, assim eu escrevo de próprio punho.
+# text_por_sec = Assim eu assinalo tudo que escrevo, assim eu escrevo de próprio punho.
 # text_sec_source = Avila (2021)
-# text_por_alt_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:4
 2	amusangawa	musangawa	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:15
 3	panhẽ	panhẽ	PRON	TOT	PronType=Tot	2	obj	_	TokenRange=16:21
@@ -19844,7 +19844,7 @@
 # text = Taú pá wã uikú nhaã se mitima.
 # text_eng = They're already eating all my crops.
 # text_por = Já estão comendo toda aquela minha plantação.
-# text_por_alt = Já estão completando de comer esta minha plantação.
+# text_por_orig_alt = Já estão completando de comer esta minha plantação.
 # text_source = Example 865 Br
 # text_orig = ta-u-pa(wa)=wã u-iku nhaã se-mitima
 # text_annotator = LFdeA
@@ -21780,7 +21780,7 @@
 # text = — Ah! se ramunha! akaíma aikú se ruka xií.
 # text_eng = "Oh! my grandfather! I'm lost from my home."
 # text_por = — Ah! meu avô! eu estou perdido da minha casa.
-# text_por_alt = — Ah! meu avô! Eu perdi-me de casa.
+# text_por_orig_alt = — Ah! meu avô! Eu perdi-me de casa.
 # text_source = p. 24
 # text_orig = — Ah! ce ramunha! cha caíma cha icó ce roca chichy.
 # text_annotator = LFdeA
@@ -25056,8 +25056,10 @@
 # text_por = Kukuhy, já tem muita gente para a cabeceira deste rio, será custoso encontrares lugar bonito para tua cidade.
 # text_source = p. 311, No. 50-51
 # text_orig = Kauará opurungetá koiaué: — Kukuhi, aikué ana mira setá koá paraná apyra kyty, iuasu kuri reuasemo tendaua puranga ne táua arama.
-# text_sec = [...], iwasú kurí rewasemu tendawa puranga ne tawa arama. [Avila 2021]
-# text_por_alt = [...], será custoso encontrares um bom lugar para a tua cidade. [Avila 2021]
+# text_sec = [...], iwasú kurí rewasemu tendawa puranga ne tawa arama.
+# text_sec_source = Avila (2021)
+# text_por_sec = [...], será custoso encontrares um bom lugar para a tua cidade.
+# text_por_sec_source = Avila (2021)
 # text_transcriber = Maslova (2018:160-161)
 # text_annotator = LFdeA
 1	Kawará	kawará	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:6
@@ -25275,7 +25277,7 @@
 # text_source = p. 273, No. 10
 # text_orig = Mira ikéuara paa oreku iepé kupixaua pŷsasu, suu oú paa oiku aé.
 # text_sec = Mira ikewara paá urikú yepé kupixawa pisasú, [...]. [Avila 2021]
-# text_por_alt = O povo daqui, contam, tinha uma roça nova, [...]. [Avila 2021]
+# text_por_sec = O povo daqui, contam, tinha uma roça nova, [...]. [Avila 2021]
 # text_annotator = LFdeA
 1	Mira	mira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:4
 2	ikewara	ikewara	ADJ	A	_	1	amod	_	TokenRange=5:12
@@ -27094,6 +27096,112 @@
 3	uyawáu	yawáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
 4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Hartt1938:0:0:41
+# text = Maã yasí taá kwaá?
+# text_eng = What month are we in?
+# text_por = Em que mês estamos?
+# text_por_alt = Que mês é este?
+# text_por_alt_translator = LFdeA
+# text_source = p. 322, No. 41
+# text_orig = maé yasy taé kuaé?
+# text_annotator = DMA
+# reviewer = LFdeA
+# inputline = Maã/int yasí/@ taá kwaá/demx?
+1	Maã	maã	DET	INT	PronType=Int	2	det	_	TokenRange=0:3
+2	yasí	yasí	NOUN	N	Number=Sing	0	root	_	TokenRange=4:8
+3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	TokenRange=9:12
+4	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	nsubj	_	SpaceAfter=No|TokenRange=13:17
+5	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Hartt1938:0:0:42
+# text = Kwaá imirá saimé i pirera.
+# text_eng = The bark of this stick is rough.
+# text_por = A casca deste pau é áspera.
+# text_source = p. 322, No. 42
+# text_orig = kuaé ymyrá saimé ipiréra.
+# text_sec = Kwá mirá saimbé i pirera.
+# text_por_sec = A casca deste pau é áspera.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_por_alt = Esta árvore, a casca dela é áspera.
+# text_por_alt_translator = LFdeA
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
+2	imirá	imirá	NOUN	N	Number=Sing	3	dislocated	_	TokenRange=5:10
+3	saimé	saimé	ADJ	A	_	0	root	_	TokenRange=11:16
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:18
+5	pirera	pirera	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=19:25
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Hartt1938:0:0:43
+# text = Itá isima reté.
+# text_eng = The stone is smooth.
+# text_por = A pedra é lisa.
+# text_source = p. 322, No. 43
+# text_orig = itá isym reté.
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Itá	itá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:3
+2	isima	isima	ADJ	A	_	0	root	_	TokenRange=4:9
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=10:14
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Hartt1938:0:0:44
+# text = Iwá i membeka reté.
+# text_eng = The fruit is very soft.
+# text_por = A fruta é muito mole.
+# text_source = p. 322, No. 44
+# text_orig = yuá imembék reté.
+# text_sec = Iwá i membeka reté.
+# text_por_sec = A fruta é muito mole.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Iwá	iwá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:3
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=4:5
+3	membeka	membeka	ADJ	A	_	0	root	_	TokenRange=6:13
+4	reté	reté	ADV	ADVS	AdvType=Deg	3	advmod	_	SpaceAfter=No|TokenRange=14:18
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Hartt1938:0:0:46
+# text = Kwaá ne rikú intí i katú.
+# text_eng = This fashion of yours is not good.
+# text_por = Esta tua moda não está boa.
+# text_source = p. 322, No. 46
+# text_orig = kuaa nerekó intí ikatú.
+# text_sec = Kwaá ne rikú ti i katú.
+# text_por_sec = Esta tua moda não está boa.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
+3	rikú	rikú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=8:12
+4	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=13:15
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	expl	_	TokenRange=16:17
+6	katú	katú	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=18:22
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Hartt1938:0:0:48
+# text = Xasú ranhẽ apituú.
+# text_eng = Let me go and rest.
+# text_por = Deixe-me ir descansar.
+# text_source = p. 322, No. 48
+# text_orig = xasó rañé apytuú.
+# text_sec = Asú rẽ apituú
+# text_por_sec = Deixe-me ir descansar.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Xasú	sú	AUX	AUXFR	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	aux	_	ModernForm=Asú|TokenRange=0:4
+2	ranhẽ	ranhẽ	PART	IMPF	_	3	advmod	_	TokenRange=5:10
+3	apituú	pituú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:17
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Hartt1938:0:0:52
 # text = Kariwa-itá maramunhã uikú tapuya-itá irũ.
