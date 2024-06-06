@@ -12581,31 +12581,38 @@
 22	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = Avila2021:34:1:426
-# text = Setá será kuité sikantá arupí?
-# text_eng = — So there's plenty of pitch over there?
-# text_por = ― Então há bastante breu por lá? ―
+# text = — Setá será kuité sikantá arupí?
+# text_eng = "So there's plenty of pitch over there?"
+# text_por = ― Então há bastante breu por lá?
 # text_source = Hartt, 383, adap.
 # text_annotator = LFdeA
-1	Setá	setá	ADV	ADVS	AdvType=Deg	5	advmod	_	TokenRange=0:4
-2	será	será	PART	PQ	PartType=Int	5	advmod	_	TokenRange=5:9
-3	kuité	kuité	ADV	ADVM	AdvType=Mod	5	advmod	_	TokenRange=10:15
-4	sikantá	sikantá	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=16:23
-5	arupí	arupí	ADV	ADVC	AdvType=Loc	0	root	_	SpaceAfter=No|TokenRange=24:29
-6	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=29:30
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Setá	setá	VERB	V3	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=1:5
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=6:10
+4	kuité	kuité	ADV	ADVM	AdvType=Mod	2	advmod	_	TokenRange=11:16
+5	sikantá	sikantá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=17:24
+6	arupí	arupí	ADV	ADVC	AdvType=Loc	2	advmod	_	SpaceAfter=No|TokenRange=25:30
+7	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Avila2021:34:2:427
-# text = ― Yá, yawasemu tẽ!
-# text_eng = "Yes! We always find it."
-# text_por = Sim! Encontramos sempre.
+# text = — Yá!
+# text_eng = "Yes!
+# text_por = Sim!
 # text_source = Hartt, 383, adap.
-# text_orig = ― Yá! Yawasemu tẽ.
 # text_annotator = LFdeA
-1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
-2	Yá	yá	INTJ	INTJ	_	4	discourse	_	SpaceAfter=No|TokenRange=1:3
-3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=3:4
-4	yawasemu	wasemu	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:13
-5	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	4	advmod	_	SpaceAfter=No|TokenRange=14:16
-6	!	!	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=16:17
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=0:1
+2	Yá	yá	INTJ	INTJ	_	0	root	_	SpaceAfter=No|TokenRange=2:5
+3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=5:6
+
+# sent_id = Avila2021:34:3:427
+# text = Yawasemu tẽ.
+# text_eng = We always find it."
+# text_por = Encontramos sempre.
+# text_source = Hartt, 383, adap.
+# text_annotator = LFdeA
+1	Yawasemu	wasemu	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=9:11
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Avila2021:0:0:428
 # text = Aikwé paá kuxiíma mukũi apigawa: yepé kuité mendasara, amú kuité uyumuwarixí i mú rimirikú irumu.
@@ -26599,12 +26606,13 @@
 1	Supí	supí	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=0:4
 2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=4:5
 
-# sent_id = Hartt1938:0:0:1
+# sent_id = Hartt1938:0:0:1-1
 # text = Asú amupiririka se mantega.
 # text_eng = I'm going to fry my butter.
 # text_por = Vou frigir minha manteiga.
 # text_source = p. 319, No. 1
-# text_orig = hasó hompyryrik se mantéga.
+# text_orig = hasó hompyryrik se mantéga (Ereré).
+# place = Ereré
 # text_annotator = DMA
 # reviewer1 = LFdeA
 1	Asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:3
@@ -26612,6 +26620,20 @@
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	TokenRange=16:18
 4	mantega	mantega	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Hart1938:0:0:1-2
+# text = Xasú xamupiririka se mantega.
+# text_eng = I'm going to fry my butter.
+# text_por = Vou frigir minha manteiga.
+# text_source = p. 319, No. 1a
+# text_orig = xasó xamopyryryk se mantéga (Santarém).
+# place = Santarém
+# text_annotator = LFdeA
+1	Xasú	sú	AUX	AUXFR	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
+2	xamupiririka	mupiririka	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=amupiririka|TokenRange=5:17
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=18:20
+4	mantega	mantega	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=21:28
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hartt1938:0:0:2
 # text = Asú amuí imirá jí irũ.
@@ -27116,6 +27138,19 @@
 3	uyawáu	yawáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
 4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:20
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Hartt1938:0:0:39
+# text = Intí setá xarikú.
+# text_eng = I don't have enough.
+# text_por = Não tenho bastante.
+# text_source = p. 322, No. 39
+# text_orig = intí setá xareko.
+# text_annotator = DMA
+# reviewer = LFdeA
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
+2	setá	setá	PRON	INDQ	PronType=Ind	3	obj	_	TokenRange=5:9
+3	xarikú	rikú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arikú|SpaceAfter=No|TokenRange=10:16
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Hartt1938:0:0:41
 # text = Maã yasí taá kwaá?
