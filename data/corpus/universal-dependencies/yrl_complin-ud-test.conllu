@@ -27396,7 +27396,117 @@
 4	piri	piri	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=13:17
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
-# sent_id = Costa1909:1:1:2001
+# sent_id = Costa1909:1:50:50
+# text = Ukiri umanduári.
+# text_eng = It fell silent, thought,
+# text_eng_ggl = He fell silent, thought,
+# text_por = Calou-se, pensou,
+# text_por_source = Stradelli (2014, p. 116)
+# text_source = p. 165
+# text_orig = U-kiri u-manduari.
+# text_annotator = LFdeA
+1	Ukiri	kiri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	umanduári	manduári	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=6:15
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Costa1909:1:51:51
+# text = Upukú xinga riré unheẽ: — Ti maã pusanga.
+# text_eng = After a while it said: — There is no solution!
+# text_eng_ggl = After a while he said: — There is no medicine!
+# text_por = depois de pouco disse: — Não há remédio!
+# text_por_source = Stradelli (2014, p. 116)
+# text_source = p. p. 165
+# text_orig = Upucú xinga riré unheen: «Timaan puçanga.
+# text_sec = upucu xinga riré onheẽn: "Timaan pusanga!
+# text_sec_source = Stradelli (2014, p. 116)
+# text_annotator = LFdeA
+1	U	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs|Typo=Yes	2	nsubj	_	CorrectForm=I|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:1
+2	pukú	pukú	VERB	V2	_	5	advcl	_	TokenRange=2:6
+3	xinga	xinga	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=7:12
+4	riré	riré	SCONJ	SCONJ	_	2	mark	_	TokenRange=13:17
+5	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:23
+6	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=23:24
+7	—	—	PUNCT	PUNCT	_	10	punct	_	TokenRange=24:25
+8	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=26:28
+9	maã	maã	PRON	IND	PronType=Ind	8	fixed	_	TokenRange=29:32
+10	pusanga	pusanga	NOUN	N	Number=Sing	5	ccomp	_	SpaceAfter=No|TokenRange=33:40
+11	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Costa1909:1:52:52
+# text = Kuíri asú atuká-tuká se comadre tasiwa ukena.
+# text_eng = Now I'm going to knock on the door of my ant bedpan.
+# text_por = Agora eu vou bater à porta da minha comadre formiga.
+# text_por_source = Stradelli (2014, p. 116)
+# text_source = p. 165
+# text_orig = Cuhiri a-çú a-tucátucá ce comadre tacïua ukena.
+# text_sec = Kuíri asú atuká-tuká se comadre tasiwa rukena.
+# text_por_sec = Agora eu vou bater à porta da minha comadre formiga.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = LFdeA
+1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:5
+2	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=6:9
+3	atuká-tuká	tuká	VERB	V	Number=Sing|Person=1|Red=Yes|VerbForm=Fin	0	root	_	TokenRange=10:20
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=21:23
+5	comadre	comadre	NOUN	N	Number=Sing	6	nmod:poss	_	OrigLang=por|TokenRange=24:31
+6	tasiwa	tasiwa	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=32:38
+7	ukena	ukena	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	3	obj	_	ModernForm=rukena|ModernRel=Cont|SpaceAfter=No|TokenRange=39:44
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = Costa1909:1:53:53
+# text = Akwáu katú kurí puxí usuantí ixé.
+# text_eng = I don't know if he will receive me well or badly.
+# text_por = Não sei se me receberá bem ou mal.
+# text_por_source = Stradelli (2014, p. 116)
+# text_por_alt = Bem sei que me receberá mal.
+# text_por_alt_translator = LFdeA 
+# text_source = p. 165
+# text_orig = A-quau catú curi puxi u-çuainti ixé.
+# text_annotator = LFdeA
+1	Akwáu	kwáu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	katú	katú	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:10
+3	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=11:15
+4	puxí	puxí	ADV	ADVA	AdvType=Man	1	advmod	_	TokenRange=16:20
+5	usuantí	suantí	VERB	V	Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=21:28
+6	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=29:32
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Costa1909:1:55:55
+# text = Ma, maita maã umunhã?
+# text_eng = But what to do?
+# text_por = Mas que fazer?
+# text_por_source = Stradelli (2014, p. 116)
+# text_source = p. p. 165
+# text_orig = Mã, maita mahá u-munhan?
+# text_annotator = LFdeA
+1	Ma	ma	ADV	ADVP	AdvType=Con	6	advmod	_	SpaceAfter=No|TokenRange=0:2
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
+3-4	maita	_	_	_	_	_	_	_	TokenRange=4:9
+3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	6	advmod	_	_
+4	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	6	advmod	_	_
+5	maã	maã	PRON	INT	PronType=Int	6	obj	_	TokenRange=10:13
+6	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:20
+7	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Costa1909:1:56:56
+# text = Se pirasuasawa yawé umundú.
+# text_eng = My misfortune dictates it so.
+# text_por = A minha desgraça assim o manda.
+# text_por_source = Stradelli (2014, p. 116) 
+# text_source = p. 165
+# text_orig = Ce piraçuaçaua iaué u-mundú.»
+# text_sec = Se pirasuasawa yawé umundú.
+# text_por_sec = Assim manda a minha pobreza.
+# text_sec_source = Avila (2021)
+# text_por_source = Avila (2021)
+# text_annotator = LFdeA
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	pirasuasawa	pirasuasawa	NOUN	N	Number=Sing	4	obl	_	TokenRange=3:14
+3	yawé	yawé	ADP	ADP	AdpType=Post	2	case	_	TokenRange=15:19
+4	umundú	mundú	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:26
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Costa1909:10-1:1:2001
 # text = Ne mbira será?
 # text_eng = Is he your son?
 # text_por = É teu filho?
@@ -27408,7 +27518,7 @@
 3	será	será	PART	PQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=9:13
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
-# sent_id = Costa1909:1:2:2002
+# sent_id = Costa1909:10-2:2:2002
 # text = Se mbira.
 # text_eng = Yes, he's my son.
 # text_por = É meu filho.
