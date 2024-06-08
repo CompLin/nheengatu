@@ -17810,6 +17810,25 @@
 3	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=10:14
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
+# sent_id = Avila2021:0:0:724
+# text = Yeperesé tapurú-tapurú uyumunhã aintá [pira] suí.
+# text_eng = Soon many tapurus, they say, were generated [from their bodies].
+# text_por = Logo muitos tapurus, contam, geraram-se [dos corpos] deles.
+# text_source = Amorim, 20, adap.
+# text_annotator = LFdeA
+# text_orig = Iepéresé tapuru, tapuru paa oiumunhan aetá suhi.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# cross_reference = Amorim1928:2:116:116
+1	Yeperesé	yeperesé	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:8
+2	tapurú-tapurú	tapurú	NOUN	N	Number=Sing|Red=Yes	3	nsubj	_	TokenRange=9:22
+3	uyumunhã	munhã	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=23:31
+4	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	nmod:poss	_	TokenRange=32:37
+5	[	[	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
+6	pira	pira	NOUN	N	Number=Sing	3	obl	_	SpaceAfter=No|TokenRange=39:43
+7	]	]	PUNCT	PUNCT	_	6	punct	_	TokenRange=43:44
+8	suí	suí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=45:48
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -20216,7 +20235,8 @@
 # sent_id = TerraPreta2013:1:3:3
 # text = Asuí aikwé yuíri makú-itá nharú waá-itá kaá rupí.
 # text_eng = And there were also fierce Indians in the woods.
-# text_por = E havia também índios ferozes na mata. [Avila 2021]
+# text_por = E havia também índios ferozes na mata.
+# text_por_source = Avila (2021)
 # text_source = Jonas Bruno Aleixo, p. 3
 # text_orig = Asuí aikué yuíri makuita yãrú waitá kaá rupi.
 # text_adapt = Avila (2021)
@@ -25856,6 +25876,57 @@
 12	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	11	aux	_	SpaceAfter=No|TokenRange=46:50
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=50:51
 
+# sent_id = Amorim1928:2:102:102
+# text = Yepé ara ana tapiira uwasemu aé aé unheẽ paá i xupé: — Xe rimbawa, mira ramé maã indé, indé intí maã rexari ixé xamanú, indé resú-kwáu maã reyuuka meyú xambaú arama.
+# text_eng = Dude, if you were people you wouldn't let me starve, you could go get kisses for me to eat.
+# text_por = Meu xerimbabo, se tu fosses gente não deixarias eu morrer de fome, poderias ir buscar beiju para mim comer.
+# text_source = p. 28, No. 102-103
+# text_orig = Iepé ara ana tapiira oasemo aé aé onheen paa i xupé: — Xe rimbaua, mira ramé maa ndé, ndé nti maarexeare ixé xamanu, ndé resu kuau maa reiuuka meiu xambaú arama.
+# text_annotator = LFdeA
+# text_sec = Se rimbawa, mira ramé maã indé, indé ti maã rexari ixé amanú, indé resú-kwáu maã reyuuka meyú ambaú arama.
+# text_por_sec = Meu xerimbabo, se tu fosses gente, não deixarias eu morrer de fome, poderias ir buscar beiju para eu comer.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# cross_reference = Avila2021:0:0:220
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
+3	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=9:12
+4	tapiira	tapiira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:20
+5	uwasemu	wasemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:28
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=29:31
+7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	nsubj	_	TokenRange=32:34
+8	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=35:40
+9	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	TokenRange=41:44
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	iobj	_	TokenRange=45:46
+11	xupé	xupé	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=47:51
+12	:	:	PUNCT	PUNCT	_	25	punct	_	TokenRange=51:52
+13	—	—	PUNCT	PUNCT	_	25	punct	_	TokenRange=53:54
+14	Xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=55:57
+15	rimbawa	simbawa	NOUN	N	Number=Sing|Rel=Cont	25	vocative	_	SpaceAfter=No|TokenRange=58:65
+16	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=65:66
+17	mira	mira	NOUN	N	Number=Sing	25	advcl	_	TokenRange=67:71
+18	ramé	ramé	SCONJ	SCONJ	_	17	mark	_	TokenRange=72:76
+19	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	17	advmod	_	TokenRange=77:80
+20	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	17	nsubj	_	SpaceAfter=No|TokenRange=81:85
+21	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=85:86
+22	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	25	nsubj	_	TokenRange=87:91
+23	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	25	advmod	_	TokenRange=92:96
+24	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	25	advmod	_	TokenRange=97:100
+25	rexari	xari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=101:107
+26	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	27	nsubj	_	TokenRange=108:111
+27	xamanú	manú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	25	ccomp	_	ModernForm=amanú|SpaceAfter=No|TokenRange=112:118
+28	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=118:119
+29	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	30	nsubj	_	TokenRange=120:124
+30-31	resú-kwáu	_	_	_	_	_	_	_	TokenRange=125:134
+30	resú	sú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	27	parataxis	_	_
+31	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	30	aux	_	_
+32	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	30	advmod	_	TokenRange=135:138
+33	reyuuka	yuuka	VERB	V	Number=Sing|Person=2|VerbForm=Fin	30	xcomp	_	TokenRange=139:146
+34	meyú	meyú	NOUN	N	Number=Sing	33	obj	_	TokenRange=147:151
+35	xambaú	mbaú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	33	advcl	_	ModernForm=ambaú|TokenRange=152:158
+36	arama	arama	SCONJ	SCONJ	_	35	mark	_	SpaceAfter=No|TokenRange=159:164
+37	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=164:165
+
 # sent_id = Amorim1928:2:450:5350
 # text = Buopé uyuká pawa riré i suanhana-itá umundú umburi aintá pira-itá Tapurú Igarapé pupé, ape aintá uyumuyuka.
 # text_eng = After killing all his enemies, Buopé had their bodies thrown into the Tapuru Igarapé, where they rotted.
@@ -25906,6 +25977,56 @@
 4	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=32:37
 5	suí	suí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=38:41
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=41:42
+
+# sent_id = Amorim1928:2:116:116
+# text = Yeperesé tapurú, tapurú uyumunhã aintá suí.
+# text_eng = Tapuru, tapuru, they say, was born from them.
+# text_por = Tapuru, tapuru, contam, se gerou logo deles.
+# text_source = p. 28, No. 116
+# text_orig = Iepéresé tapuru, tapuru paa oiumunhan aetá suhi.
+# text_annotator = LFdeA
+# text_sec = Yeperesé tapurú-tapurú uyumunhã aintá [pira] suí.
+# text_por_sec = Logo muitos tapurus, contam, geraram-se [dos corpos] deles.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Yeperesé	yeperesé	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:8
+2	tapurú	tapurú	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=9:15
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
+4	tapurú	tapurú	NOUN	N	Number=Sing	2	conj	_	TokenRange=17:23
+5	uyumunhã	munhã	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=24:32
+6	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	5	obl	_	TokenRange=33:38
+7	suí	suí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=39:42
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = Amorim1928:2:178:178
+# text = Wanana-etá upitá waá sikwé setaíra uwiké kaaeté kití, amú-etá uwiyé kwá paraná.
+# text_eng = Of the Uananas that remained alive, some entered through the forest, the others went down this river.
+# text_por = Dos Uananas que ficaram vivos uma parte entrou pela mata, os outros desceram este rio.
+# text_source = p. 31, No. 178
+# text_orig = Uananaetá opytá uá sekué setahira oiké kaaeté ketŷ, amuetá oueiŷ koá paraná.
+# text_annotator = LFdeA
+# text_sec = Wanana-itá upitá waá sikwé setaíra uwiké kaaeté kití, amú-itá uwiyé kwá paraná.
+# text_por_sec = Dos Uananas que ficaram vivos, uma parte entrou pela mata, os outros desceram este rio.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Wanana-etá	wanana	NOUN	N	Number=Plur	5	nmod:poss	_	TokenRange=0:10
+2	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=11:16
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=17:20
+4	sikwé	rikwé	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	2	xcomp	_	TokenRange=21:26
+5	setaíra	setá	PRON	INDQ	Degree=Dim|PronType=Ind	6	nsubj	_	TokenRange=27:34
+6	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=35:40
+7	kaaeté	kaaeté	NOUN	N	Number=Sing	6	obl	_	TokenRange=41:47
+8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=48:52
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=52:53
+10	amú-etá	amú	PRON	IND	Number=Plur|PronType=Ind	11	nsubj	_	TokenRange=54:61
+11	uwiyé	wiyé	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=62:67
+12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	13	det	_	TokenRange=68:71
+13	paraná	paraná	NOUN	N	Number=Sing	11	obj	_	SpaceAfter=No|TokenRange=72:78
+14	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=78:79
 
 # sent_id = Amorim1928:2:500:6000
 # text = Remukaturú rẽ siiya akayú rupí yané maã-itá uikú waá yané itakwara pupé.
@@ -26274,6 +26395,39 @@
 3	resaisú	saisú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:20
 4	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=21:26
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Amorim1928:17:26:26
+# text = Aé umuwapika yepé yapuna, umukameẽ mayawé mira umunhã meyú, uí, uí tipiáka, maã setá.
+# text_eng = He set up an oven, showed how we make beiju, flour, tapioca flour, lots of things.
+# text_por = Sentou um forno, mostrou como a gente faz beiju, farinha, farinha de tapioca, porção de coisas.
+# text_source = p. 292, No. 26
+# text_orig = Aé omuapyka iepé iapuna, omukameen maaiaué mira omunhan meiu, uhi, uhi typyaka, maa set
+# text_annotator = LFdeA
+# text_sec = Aé umuwapika yepé yapuna, umukameẽ mayé mira umunhã meyú, uí, uí tipiáka, maã setá.
+# text_por_sec = Ele sentou um forno, mostrou como a gente faz beiju, farinha, farinha de tapioca, muitas coisas.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modern = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umuwapika	muwapika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:12
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=13:17
+4	yapuna	yapuna	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=18:24
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=24:25
+6	umukameẽ	mukameẽ	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=26:34
+7	mayawé	mayawé	ADV	ADVRA	AdvType=Man|PronType=Int	9	advmod	_	TokenRange=35:41
+8	mira	mira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=42:46
+9	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=47:53
+10	meyú	meyú	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=54:58
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=58:59
+12	uí	uí	NOUN	N	Number=Sing	10	conj	_	SpaceAfter=No|TokenRange=60:62
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=62:63
+14	uí	uí	NOUN	N	Number=Sing	15	nmod:poss	_	TokenRange=64:66
+15	tipiáka	tipiáka	NOUN	N	Number=Sing	10	conj	_	SpaceAfter=No|TokenRange=67:74
+16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=74:75
+17	maã	maã	NOUN	N	Number=Sing	10	conj	_	TokenRange=76:79
+18	setá	setá	DET	INDQ	PronType=Ind	17	det	_	SpaceAfter=No|TokenRange=80:84
+19	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=84:85
 
 # sent_id = Amorim1928:33:108:108
 # text = Supisá-pe ipú Kurupira usendú nhuntu uikú ukara suí, yeperesé usú uyuuka karurú kaá kití.
