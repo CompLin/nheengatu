@@ -25619,12 +25619,109 @@
 23	iwiwasú	iwí	NOUN	N	Degree=Aug|Number=Sing	20	xcomp	_	SpaceAfter=No|TokenRange=120:127
 24	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=127:128
 
+# sent_id = Amorim1928:2:1:1
+# text = Upanhẽ mira umanduári raẽ, mayawé Taria-etá umaramunha upanhẽ mira-etá kwá paranawara resé.
+# text_eng = Everyone still remembers how the Tárias fought against all the people of this river.
+# text_por = Toda gente se lembra ainda de como os Tárias guerrearam contra todos os povos deste rio.
+# text_source = p. 23, No. 1
+# text_orig = Upanhe mira omaanduare raen, maaiaué Táriaetá omaramunhan upanhe miraetá koá paranáuara resé.
+# title_orig = BUOPÉ MARAMUNHANGAUETÁ
+# title_por = GUERRA DE BUOPÉ
+# place = Ipanoré, São Gabriel da Cachoeira, Amazonas, Brazil, 0.311431N, 68.6526W (IBGE) 
+# narrator = Chief Casemiro
+# note = Esta lenda foi contada pelo tuxaua Casemiro, de Ipanoré.
+# note_source = p. 22
+# text_annotator = LFdeA
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Upanhẽ	upanhẽ	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:6
+2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=7:11
+3	umanduári	manduári	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=12:21
+4	raẽ	raẽ	PART	IMPF	_	3	advmod	_	SpaceAfter=No|TokenRange=22:25
+5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=25:26
+6	mayawé	mayawé	ADV	ADVRA	AdvType=Man|PronType=Int	8	advmod	_	TokenRange=27:33
+7	Taria-etá	taria	NOUN	N	Number=Plur	8	nsubj	_	TokenRange=34:43
+8	umaramunha	maramunha	VERB	V	Person=3|VerbForm=Fin	3	ccomp	_	TokenRange=44:54
+9	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	10	det	_	TokenRange=55:61
+10	mira-etá	mira	NOUN	N	Number=Plur	8	obj	_	TokenRange=62:70
+11	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	det	_	TokenRange=71:74
+12-13	paranawara	_	_	_	_	_	_	_	TokenRange=75:85
+12	paraná	paraná	NOUN	N	Number=Sing	10	nmod	_	_
+13	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	12	case	_	_
+14	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	10	case	_	SpaceAfter=No|TokenRange=86:90
+15	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=90:91
+
+# sent_id = Amorim1928:2:2-3:2
+# text = Buopé, tuixawa aramewara, urikú waá mira, mira i awa yawé, unheẽ paá yepé ara i apigawa-etá xupé: — Mayawé intí yarikú siiya kunhã-etá penhẽ yawé-yawé urikú arama i imirikú, upanhẽ penhẽ pepitá arama piá seẽ pemendari-kwáu kunhã-etá amú tetama-etá-wara irumu.
+# text_eng = TODO
+# text_por = Buopé, tuxaua de então, que tinha gente, gente como cabelo, disse um dia, contam, os seus homens: — Como não temos mulheres bastantes para cada um de vocês ter sua mulher, para todos ficarem de coração doce, podem casar-se com mulheres de outras terras.
+# text_source = p. 23, No. 2-3
+# text_orig = Buopé, tuhixaua araméuara, oreku uá mira, mira i áua iaué, onheen paa iepé ara i apigauaetá xupé: — Maaiaué nti iareku seyia kunhãetá penhé iaué-iaué oreku arama i emireku, upanhe penhé pepytá arama pŷá seen pemendaré kuau kunhãetá amu tetamaetáuara yrumo.
+# text_annotator = LFdeA
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Buopé	buopé	PROPN	PROPN	_	16	nsubj	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
+3	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	1	appos	_	TokenRange=7:14
+5-6	aramewara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:30
+4	aramé	aramé	ADV	ADVT	AdvType=Tim	3	nmod	_	_
+5	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=30:31
+7	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	3	acl:relcl	_	TokenRange=32:37
+8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	nsubj	_	TokenRange=38:41
+9	mira	mira	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=42:46
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=46:47
+11	mira	mira	NOUN	N	Number=Sing	9	conj	_	TokenRange=48:52
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=53:54
+13	awa	awa	NOUN	N	Number=Sing	7	obl	_	TokenRange=55:58
+14	yawé	yawé	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=59:63
+15	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=63:64
+16	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=65:70
+17	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	16	advmod	_	TokenRange=71:74
+18	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	19	det	_	TokenRange=75:79
+19	ara	ara	NOUN	N	Number=Sing	16	obl	_	TokenRange=80:83
+20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	TokenRange=84:85
+21	apigawa-etá	apigawa	NOUN	N	Number=Plur	16	iobj	_	TokenRange=86:97
+22	xupé	xupé	ADP	ADP	AdpType=Post	21	case	_	SpaceAfter=No|TokenRange=98:102
+24	:	:	PUNCT	PUNCT	_	27	punct	_	TokenRange=99:100
+23	—	—	PUNCT	PUNCT	_	43	punct	_	TokenRange=98:99
+25	Mayawé	mayawé	SCONJ	SCONJR	_	27	mark	_	TokenRange=101:107
+26	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	27	advmod	_	TokenRange=108:112
+27	yarikú	rikú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	43	advcl	_	TokenRange=113:119
+28	siiya	siiya	DET	INDQ	PronType=Ind	29	det	_	TokenRange=120:125
+29	kunhã-etá	kunhã	NOUN	N	Number=Plur	27	obj	_	TokenRange=126:135
+30	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	31	nmod:poss	_	TokenRange=136:141
+31	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	32	nsubj	_	TokenRange=142:151
+32	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	27	advcl	_	TokenRange=152:157
+33	arama	arama	SCONJ	SCONJ	_	32	mark	_	TokenRange=158:163
+34	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs|Style=Arch	35	nmod:poss	_	ModernForm=s|ModernSpaceAfter=No|TokenRange=164:165
+35	imirikú	imirikú	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	32	obj	_	ModernLemma=simirikú|ModernRel=NCont|ModernNumber[psor]=Sing|ModernPerson[psor]=3|SpaceAfter=No|TokenRange=166:174
+36	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=174:175
+37	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	38	det	_	TokenRange=176:182
+38	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	39	nsubj	_	TokenRange=183:188
+39	pepitá	pitá	VERB	V	Number=Plur|Person=2|VerbForm=Fin	43	advcl	_	TokenRange=189:195
+40	arama	arama	SCONJ	SCONJ	_	39	mark	_	TokenRange=196:201
+41	piá	piá	NOUN	N	Number=Sing	39	xcomp	_	TokenRange=202:205
+42	seẽ	seẽ	ADJ	A	_	41	amod	_	TokenRange=206:209
+43-44	pemendari-kwáu	_	_	_	_	_	_	_	TokenRange=210:224
+43	pemendari	mendari	VERB	V	Number=Plur|Person=2|VerbForm=Fin	16	ccomp	_	_
+44	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	43	aux	_	_
+45	kunhã-etá	kunhã	NOUN	N	Number=Plur	43	obl	_	TokenRange=225:234
+46	amú	amú	DET	IND	Number=Sing|PronType=Ind	47	det	_	TokenRange=235:238
+47-48	tetama-etá-wara	_	_	_	_	_	_	_	TokenRange=239:252
+47	tetama-etá	tetama	NOUN	N	Number=Plur	45	nmod	_	_
+48	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	47	case	_	_
+49	irumu	irumu	ADP	ADP	AdpType=Post	45	case	_	SpaceAfter=No|TokenRange=253:258
+50	.	.	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No|TokenRange=258:259
+
 # sent_id = Amorim1928:2:5:5005
 # text = Mayawé aintá intí upitá-kwáu aintá rimirikú-itá tetame uyuíri aintá tetama kití aintá rimirikú-itá irumu.
 # text_eng = As they could not stay in their women's land, they returned to their land with them.
-# text_por = Como eles não podiam ficar na terra de suas mulheres, voltaram para sua terra com elas.
+# text_por = Como eles não podiam ficar na terra de suas mulheres, voltaram para a sua com elas.
 # text_source = p. 23, No. 5
 # text_orig = Maaiaué aetá nti opytá kuau aetá remirekuetá tetame oiuŷre aetá tetama kety aetá remirekuetá yrumo.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = LFdeA
 1	Mayawé	mayawé	SCONJ	SCONJR	_	4	mark	_	TokenRange=0:6
 2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=7:12
@@ -25654,7 +25751,7 @@
 # text_source = p. 23, No. 6
 # text_orig = Maaiaué Buopé seku opurasê pytuna iaué-iaué Iurupari-Yuytŷrupé upanhe apigauaetá oiauau aetá remiré aetá suhi pytuna yrumo.
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = LFdeA
 1	Mayawé	mayawé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:6
 2	Buopé	buopé	PROPN	PROPN	_	3	dislocated	_	TokenRange=7:12
@@ -25681,8 +25778,6 @@
 # text_eng = Pacudana, how many hairs you have on your head, so many people will also die in exchange for your life.
 # text_por = Pacudana, quantos cabelos tu tens na cabeça, tantas pessoas também hão de morrer em troca da tua vida.
 # text_source = p. 24, No. 30
-# title_orig = BUOPÉ MARAMUNHANGAUETÁ
-# title_por = GUERRA DE BUOPÉ
 # text_orig = Pukudana, muyri áua rereku ne akangupé muyre iuŷre mira omanu kuri ne ara rekuiara.
 # text_annotator = LFdeA
 1	Pukudana	pukudana	PROPN	PROPN	_	5	vocative	_	SpaceAfter=No|TokenRange=0:8
@@ -25877,17 +25972,20 @@
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=50:51
 
 # sent_id = Amorim1928:2:102:102
-# text = Yepé ara ana tapiira uwasemu aé aé unheẽ paá i xupé: — Xe rimbawa, mira ramé maã indé, indé intí maã rexari ixé xamanú, indé resú-kwáu maã reyuuka meyú xambaú arama.
-# text_eng = Dude, if you were people you wouldn't let me starve, you could go get kisses for me to eat.
-# text_por = Meu xerimbabo, se tu fosses gente não deixarias eu morrer de fome, poderias ir buscar beiju para mim comer.
+# text = Yepé ara ana tapiira uwasemu aé aé unheẽ paá i xupé: — Xe rimbawa, mira ramé maã indé, indé intí maãrexari ixé xamanú, indé resú-kwáu maã reyuuka meyú xambaú arama.
+# text_eng = One day, the tapir finally found him, and, they say, he said to it: "My dear pet, if you were human, you wouldn't let me starve; you could go get some beiju flatbread for me to eat."
+# text_eng_ggl = One day the tapir finally found him and he, they say, said to him: — My sherimbabo, if you were people you wouldn't let me die of hunger, you could go get kisses for me to eat.
+# text_por = Um dia enfim a anta o encontrou, ele, contam, lhe disse: — Meu xerimbabo, se tu fosses gente não deixarias eu morrer de fome, poderias ir buscar beiju para mim comer.
 # text_source = p. 28, No. 102-103
-# text_orig = Iepé ara ana tapiira oasemo aé aé onheen paa i xupé: — Xe rimbaua, mira ramé maa ndé, ndé nti maarexeare ixé xamanu, ndé resu kuau maa reiuuka meiu xambaú arama.
+# text_orig = Iepé ara ana tapiira oasemo aé aé onheen paa i xupé: — Iepé ara ana tapiira oasemo aé aé onheen paa i xupé: — Xe rimbaua, mira ramé maa ndé, ndé nti maarexeare ixé xamanu, ndé resu kuau maa reiuuka meiu xambaú arama.
 # text_annotator = LFdeA
 # text_sec = Se rimbawa, mira ramé maã indé, indé ti maã rexari ixé amanú, indé resú-kwáu maã reyuuka meyú ambaú arama.
 # text_por_sec = Meu xerimbabo, se tu fosses gente, não deixarias eu morrer de fome, poderias ir buscar beiju para eu comer.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:220
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
 3	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=9:12
@@ -25911,7 +26009,7 @@
 21	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=85:86
 22	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	25	nsubj	_	TokenRange=87:91
 23	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	25	advmod	_	TokenRange=92:96
-24	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	25	advmod	_	TokenRange=97:100
+24	maã	maã	PART	COND	Mood=Cnd|PartType=Mod|Typo=Yes	25	advmod	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=97:100
 25	rexari	xari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=101:107
 26	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	27	nsubj	_	TokenRange=108:111
 27	xamanú	manú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	25	ccomp	_	ModernForm=amanú|SpaceAfter=No|TokenRange=112:118
@@ -26775,7 +26873,7 @@
 4	mantega	mantega	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=19:26
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
-# sent_id = Hart1938:0:0:1-2
+# sent_id = Hartt1938:0:0:1-2
 # text = Xasú xamupiririka se mantega.
 # text_eng = I'm going to fry my butter.
 # text_por = Vou frigir minha manteiga.
@@ -27430,6 +27528,32 @@
 4	tapuya-itá	tapuya	NOUN	N	Number=Plur	2	obl	_	TokenRange=26:36
 5	irũ	irũ	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=37:40
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Hart1938:0:0:91
+# text = Intí ã se kirimbá xasupiri arama maã i pusé reté waá.
+# text_eng = TODO
+# text_por = Não tenho bastante força para aguentar uma coisa muito pesada.
+# text_source = p. 325, No. 91
+# text_orig = intí án sekyrimbá xasupir aráma mbaa iporéi reté aá (Ereré).
+# place_orig = Ereré
+# place = Ererê, Monte Alegre, Pará, Brazil (Hartt 1898)
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_adapt = Dominick Maia Alexandre
+# text_adapt_review = Leonel Figueiredo de Alencar
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
+2	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=5:6
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=7:9
+4	kirimbá	kirimbá	VERB	V2	_	0	root	_	TokenRange=10:17
+5	xasupiri	supiri	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=asupiri|TokenRange=18:26
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=27:32
+7	maã	maã	PRON	IND	PronType=Ind	5	obj	_	TokenRange=33:36
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	expl	_	TokenRange=37:38
+9	pusé	pusé	VERB	V2	_	7	acl:relcl	_	TokenRange=39:43
+10	reté	reté	ADV	ADVS	AdvType=Deg	9	advmod	_	TokenRange=44:48
+11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=49:52
+12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=52:53
 
 # sent_id = Hartt1938:0:0:95
 # text = Axari se kisé itapewa árupi.
