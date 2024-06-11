@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 2, 2024
+# Last update: June 10, 2024
 
 import re, sys, os, json
 
@@ -359,7 +359,7 @@ def parseprefs(word,lexicon):
 def getpersnum():
     """Active person-number prefixes.
     """
-    return {'a': '1+SG','re': '2+SG','e': f"{IMP}+2+SG",'u': '3','ya':
+    return {'a': '1+SG','xa': f"{ARCHAIC}+1+SG",'ha': '1+SG','re': '2+SG','e': f"{IMP}+2+SG",'u': '3','ya':
     '1+PL','pe': '2+PL','ta': '3+PL','tau': '3+PL'
     }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 2, 2024
+# Last update: June 10, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -13,6 +13,9 @@ import re, os
 
 # default annotator's name abbreviation
 ANNOTATOR = 'LFdeA'
+
+# metadata attributes
+ANNOTATOR_ATT = 'text_annotator'
 
 # path to treebank file
 TREEBANK_FILE='yrl_complin-ud-test.conllu'
@@ -90,6 +93,9 @@ CLITICS=list(CLITICENTRIES.keys())
 # clitic alomorphs of postposition 'upé'
 ME='me'
 PI='pi'
+
+# clitic adpositions
+WARA='wara'
 # normalized lemmatization of alomorph 'pi'
 UPE='upé'
 PI=UPE
@@ -100,7 +106,7 @@ NTU='ntu'
 # clitic question particle "-ta"
 TA='taá'
 
-NONHYPHEN=[NTU,ME]
+NONHYPHEN=[NTU,ME,WARA]
 
 ROOT=[]
 
@@ -378,11 +384,21 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Case']=case.title()
     if style:
         feats['Style']=style.title()
-        modern=list(filter(lambda entry: word.lower() == entry['ancient'] ,ARCHAIC_LEMMAS))[0]['modern']
-        modernform['ModernLemma']=modern
-        if word.istitle():
-            modern=modern.title()
-        modernform['ModernForm']=modern
+        entries=list(filter(lambda entry: word.lower() == entry['ancient'] ,ARCHAIC_LEMMAS))
+        if entries:
+            modern=entries[0]['modern']
+            modernform['ModernLemma']=modern
+            if word.istitle():
+                modern=modern.title()
+            modernform['ModernForm']=modern
+        else:
+            entries=list(filter(lambda entry: entry['xpos'] == 'PREF' and word.lower().startswith(entry['ancient'].strip(HYPHEN)),ARCHAIC_LEMMAS))
+            if entries:
+                modern=entries[0]['modern'].strip(HYPHEN)
+                ancient=entries[0]['ancient'].strip(HYPHEN)
+                if word.istitle():
+                    modern=modern.title()
+                modernform['ModernForm']=f"{modern}{word[len(ancient):]}"
     if feats:
         token['feats']=feats
     else:
@@ -1429,11 +1445,16 @@ def insertPunct(punct,tokenid,tokenlist):
     incrementTokenRange(tokenlist[tokenid+1:])
 
 def incrementSentId(tokenlist,startid):
-    for token in tokenlist:
-        if token['id'] >= startid:
-            token['id']+=1
-        if token['head'] >= startid:
-            token['head']+=1
+	for token in tokenlist:
+		tokenid=token['id']
+		if isinstance(tokenid,int):
+			if token['id'] >= startid:
+				token['id']+=1
+		elif isinstance(tokenid,tuple):
+			token['id']=(tokenid[0]+1,'-',tokenid[2]+1)
+		head=token['head']
+		if head and head >= startid:
+			token['head']+=1
 
 def handleRel(token,tokenlist):
     token['deprel'] = 'nsubj'
@@ -1734,22 +1755,22 @@ def mkNTU(dic): # TODO: remove if deprecated
     dic['underscore']=True
 
 def mkSuff(form,dic):
-    form=form[1:]
-    ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
-    me={'xpos':'ADP','lemma':'upé','clitic':ME}
-    pi={'xpos':'ADP','lemma':'upé','clitic':PI}
-    ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
-    suffs=[ntu,me,pi,ta]
-    for suff in suffs:
-        clitic=suff.get('clitic')
-        if clitic == form:
-            dic['form']=form
-            dic['upos']=getudtag(suff['xpos'])
-            dic['xpos']=suff['xpos']
-            dic['lemma']=suff['lemma']
-            dic['underscore']=True
-            break
-
+	form=form[1:]
+	ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
+	me={'xpos':'ADP','lemma':'upé','clitic':ME}
+	wara={'xpos':'ADP','lemma':'wara','clitic':WARA}
+	pi={'xpos':'ADP','lemma':'upé','clitic':PI}
+	ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
+	suffs=[ntu,me,pi,ta,wara]
+	for suff in suffs:
+		clitic=suff.get('clitic')
+		if clitic == form:
+			dic['form']=form
+			dic['upos']=getudtag(suff['xpos'])
+			dic['xpos']=suff['xpos']
+			dic['lemma']=suff['lemma']
+			dic['underscore']=True
+			break
 
 def mkPropn(token,orig=None,orig_form=None):
     new={}
@@ -1881,7 +1902,7 @@ def mkNoun(form,orig=None,dic={},orig_form=''):
     new['parselist']=[[lemma, f"N+{'+'.join(feats)}"]]
     return new
 
-def mkAdj(form,orig='pt',dic={},orig_form=''):
+def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name
     form=form.lower()
     feats=[]
     new={}
@@ -1895,7 +1916,7 @@ def mkAdj(form,orig='pt',dic={},orig_form=''):
         feats.append(degree)
     if derivation:
         feats.append(derivation)
-    new['parselist']=[[form, f"A+{'+'.join(feats)}"]]
+    new['parselist']=[[form, f"{xpos.upper()}+{'+'.join(feats)}"]]
     return new
 
 def getNumber(form):
@@ -1920,7 +1941,7 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     return mkNoun(lemma,None,dic)
 
 def mkEval(form,xpos='N',force=False):
-    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM'}
+    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
     xpos=xpos
     dic={}
     dic['lemma']=form.lower()
@@ -1934,7 +1955,7 @@ def mkEval(form,xpos='N',force=False):
     lemma=handleAccent(dic['lemma'],force=force)
     if dic.get('number'):
         return mkNoun(lemma,dic=dic)
-    return mkAdj(lemma,None,dic)
+    return mkAdj(lemma,None,dic,xpos=xpos)
 
 def mkCol(form):
     form=form.lower()
@@ -2296,8 +2317,34 @@ def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
     output.append(tk.serialize())
     return output
 
+def _handleSents(sents,pref,textid,index,sentid,annotator,metadata):
+    yrl=extractYrl(sents[0])
+    sents[1]=f"({sents[1]})"
+    output=[]
+    if len(sents) == 5:
+        output.append(ppText([yrl,sents[3],
+        sents[2],
+        sents[1],
+        sents[4]],
+        pref,textid,index,sentid))
+    else:
+        output.append(ppText([yrl,
+        sents[3],
+        sents[2],
+        sents[1]],
+        pref,textid,index,sentid))
+    tokenlist=parseSentence(sents[0])
+    if metadata:
+        tokenlist.metadata.update(metadata)
+    _includeAnnotator(tokenlist,annotator)
+    return tokenlist
+
 def includeAnnotator(output,annotator):
-    output.append(f"# text_annotator = {annotator}")
+    output.append(f"# {ANNOTATOR_ATT} = {annotator}")
+
+def _includeAnnotator(tokenlist,annotator):
+    if annotator:
+        tokenlist[ANNOTATOR_ATT]=annotator
 
 def formatList(output):
     return '\n'.join(output)
@@ -2349,27 +2396,43 @@ def formatTextEng(s):
         return f'"{s.strip(chars).strip()}"'
     return s
 
-def includeTranslation(parts):
-    from deep_translator import GoogleTranslator
+def includeTranslation(parts,translate=True):
     i=-1
     if len(parts) == 4:
         i=-2
     text_por=parts[i]
-    text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
-    text_eng=formatTextEng(text_eng)
+    text_eng= 'TODO'
+    if translate:
+        from deep_translator import GoogleTranslator
+        text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
+        text_eng=formatTextEng(text_eng)
     if len(parts) == 4:
         parts.insert(-1,text_eng)
     else:
         parts.append(text_eng)
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}):
+def _parseExample(sents,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True):
+    yrl=sents[0]
+    if check:
+        if checkSentence(yrl):
+            print(f"Sentence '{yrl}' already is in the treebank.")
+            return
+    includeTranslation(sents,translate)
+    tokenlist=_handleSents(sents,pref,textid,index,sentid,annotator,metadata)
+    outstring=tokenlist.serialize()
+    #if outfile: TODO
+    #    metadata=getFileNameParts(pref,textid,index,sentid)
+    #    saveParseToFile(includeText(example,outstring),metadata, overwrite)
+    handleParse(outstring,copyboard=copyboard)
+
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True):
     sents=extract_sents(example)
     yrl=sents[0]
     if check:
         if checkSentence(yrl):
             print(f"Sentence '{yrl}' already is in the treebank.")
             return
-    includeTranslation(sents)
+    includeTranslation(sents,translate)
     output=handleSents(sents,pref,textid,index,sentid,annotator,metadata)
     outstring=formatList(output)
     if outfile:
@@ -2783,3 +2846,85 @@ def extractSourcesAvila(sents):
 	sources=[]
 	avila_sents=getSentsWithSentId("Avila2021",sents)
 	return [sent.metadata['text_source'].split(",")[0].strip("(2021)").strip() for sent in avila_sents]
+
+def capitilizeFirstLetter(sentence):
+    return f"{sentence[0].upper()}{sentence[1:]}"
+
+def handleSentsHartt(example):
+    """
+    Parse a string containing multiple versions of a Nheengatu sentence from Hartt (1938) into a dictionary.
+
+    The input string should be in the format where each line contains a different version of a Nheengatu sentence and/or its translation into Portuguese. The first line contains the number followed by the original text. The following lines contain different versions and translations.
+
+    Parameters:
+    input_string (str): A string with multiple lines, each containing a version of a Nheengatu sentence
+                        and/or its translation into Portuguese.
+
+    Returns:
+    dict: A dictionary with the parsed key-value pairs:
+          - 'number': the sentence number (int)
+          - 'text_orig': the original Nheengatu sentence (str)
+          - 'text': the first variant of the Nheengatu sentence (str)
+          - 'avila': Avila's (2021) variant with citation (str)
+          - 'text_por': Hartt's (1938) Portuguese translation (str)
+
+    Example:
+    >>> input_string = '''
+    53 - omú oeín okaú resé yapenúna suí.
+    53 - Amú uweena ukaú resé igapenú suí.
+    53 - Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.
+    53 - alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.
+    '''
+    >>> handleSentsHartt(input_string)
+    {'number': 53, 'text_orig': 'omú oeín okaú resé yapenúna suí.',
+     'text': 'Amú uweena ukaú resé igapenú suí.',
+     'avila': 'Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.',
+     'text_por': 'Alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.'}
+
+    Raises:
+    ValueError: If the input string does not contain the expected number of lines.
+    """
+    lines=[line.strip().split(' - ') for line in example.split('\n') if line.strip() != '']
+
+    if len(lines) != 4:
+        raise ValueError("Input string must contain exactly four non-empty lines.")
+
+    result = {}
+    # Extract the number from the first line
+    number=int(lines[0][0])
+    result['number']=number
+    keys=('text_orig','text','avila','text_por')
+    i=0
+    while(i < len(lines)):
+       result[keys[i]]=lines[i][1]
+       i+=1
+    result['text_por']=capitilizeFirstLetter(result['text_por'])
+    return result
+
+AVILA_SENTS=[]
+def handleSentsAmorim(example,text_nr=2, translate=True):
+	global AVILA_SENTS
+	pat=re.compile(r"No. (\d+)(\-(\d+))?")
+	section="§"
+	sep=re.compile(rf"\s*{section}\s*")
+	groups=pat.search(example).groups()
+	sent_nr=int(groups[0])
+	prefix="Amorim1928"
+	amorim,avila = '',''
+	person="Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin"
+	transcriber={'text_orig_transcriber': person,
+	'text_por_modernizer': person}
+	metadata={}
+	if section in example:
+		amorim,avila=sep.split(example)
+		metadata=mkSecTextAvila(avila)
+		if not AVILA_SENTS:
+			sents=extractConlluSents(TREEBANK_PATH)
+			AVILA_SENTS=getSentsWithSentId('Avila2021',sents)
+		result=list(filter(lambda sent: sent.metadata['text'] == metadata['text_sec'],AVILA_SENTS))
+		if result:
+			metadata['cross_reference']=result[0].metadata['sent_id']
+	else:
+		amorim=example
+	metadata.update(transcriber)
+	parseExample(amorim,prefix,text_nr,sent_nr,sent_nr,metadata=metadata,translate=translate)
