@@ -25115,6 +25115,62 @@
 24	arama	arama	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=122:127
 25	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=127:128
 
+# sent_id = Amorim1928:19:74:74
+# text = Muíri yasí nhuntu ana uwatari Yasí umanú arama mairamé aé usú umaramunhã Ukayarí mira-etá resé.
+# text_eng = TODO
+# text_por = Já faltavam somente algumas luas para a Lua morrer quando ele foi guerrear contra as gentes do Ucaiari.
+# text_source = p. 312, No. 74
+# text_orig = Muuyre iasy nhunto ana oatare Iasy omanu arama maeramé aé osu omaramunhan Ukaiari miraetá resé.
+# text_annotator = LFdeA
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Muíri	muíri	DET	INDQ	PronType=Ind	2	det	_	TokenRange=0:5
+2	yasí	yasí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=6:10
+3	nhuntu	nhuntu	ADV	ADV	_	5	advmod	_	TokenRange=11:17
+4	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=18:21
+5	uwatari	watari	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=22:29
+6	Yasí	yasí	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=30:34
+7	umanú	manú	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=35:40
+8	arama	arama	SCONJ	SCONJ	_	7	mark	_	TokenRange=41:46
+9	mairamé	mairamé	SCONJ	SCONJR	_	12	mark	_	TokenRange=47:54
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=55:57
+11	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	12	aux	_	TokenRange=58:61
+12	umaramunhã	maramunhã	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=62:72
+13	Ukayarí	ukayarí	PROPN	PROPN	_	14	nmod:poss	_	TokenRange=73:80
+14	mira-etá	mira	NOUN	N	Number=Plur	12	obl	_	TokenRange=81:89
+15	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	14	case	_	SpaceAfter=No|TokenRange=90:94
+16	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=94:95
+
+# sent_id = Amorim1928:19:75:75
+# text = Mairamé aé uyuíri asuí ururi kunhãmukú pisasú siiya, urasú aintá suka kití, uwiké aintá resé.
+# text_eng = TODO
+# text_por = Quando voltou de lá trouxe moça virgem porção, levou para casa, entrou nelas.
+# text_por_alt = Quando voltou de lá trouxe muitas moças virgens, levou para casa, entrou nelas.
+# text_por_alt_translator = LFdeA
+# text_source = p. 312, No. 75
+# text_orig = Maeramé aé oiuyre asuhi orure kunhãmuku pysasu seyia, orasu aetá sôka kyty, oiké aetá resé.
+# text_annotator = LFdeA
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
+3	uyuíri	yuíri	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=11:17
+4	asuí	asuí	ADV	ADVC	AdvType=Loc	3	advmod	_	TokenRange=18:22
+5	ururi	ruri	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=23:28
+6	kunhãmukú	kunhãmukú	NOUN	N	Number=Sing	5	obj	_	TokenRange=29:38
+7	pisasú	pisasú	ADJ	A	_	6	amod	_	TokenRange=39:45
+8	siiya	siiya	DET	INDQ	PronType=Ind	6	det	_	SpaceAfter=No|TokenRange=46:51
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=51:52
+10	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=53:58
+11	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	obj	_	TokenRange=59:64
+12	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	obl	_	TokenRange=65:69
+13	kití	kití	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=70:74
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=74:75
+15	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=76:81
+16	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	15	obl	_	TokenRange=82:87
+17	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=88:92
+18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=92:93
+
 # sent_id = Amorim1928:21:5:1000
 # text = Kurimirĩ xinga paá aintá usaã sakusawa, sé usika aintá pira resé iwitú yawé, ape ana tenhẽ, nti awá ukwáu mayawé, aintá ukiri nhaã sakusawa pitérupi.
 # text_eng = After a while, they say, they felt pleasant heat reach their body like wind, and then, they say, no one knows how, they slept in the middle of that heat.
