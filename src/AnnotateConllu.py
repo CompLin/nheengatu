@@ -2852,52 +2852,64 @@ def capitilizeFirstLetter(sentence):
 
 def handleSentsHartt(example):
     """
-    Parse a string containing multiple versions of a Nheengatu sentence from Hartt (1938) into a dictionary.
+    Parse a string containing an example from Hartt (1938) into a dictionary.
 
-    The input string should be in the format where each line contains a different version of a Nheengatu sentence and/or its translation into Portuguese. The first line contains the number followed by the original text. The following lines contain different versions and translations.
+    The input string should be in a format where each line contains a different version of a Nheengatu sentence and/or its translation into Portuguese. The first line contains the number and, if available, the letter of the example followed by the original text. The following lines contain different versions and translations thereof.
 
     Parameters:
-    input_string (str): A string with multiple lines, each containing a version of a Nheengatu sentence
-                        and/or its translation into Portuguese.
+    example (str): A string with multiple lines, each containing a version of a Nheengatu sentence and/or its translation into Portuguese, formatted as follows:
+                   53 - omú oeín okaú resé yapenúna suí.
+                   53 - Amú uweena ukaú resé igapenú suí.
+                   53 - Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.
+                   53 - alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.
 
-    Returns:
+
+     Returns:
     dict: A dictionary with the parsed key-value pairs:
-          - 'number': the sentence number (int)
-          - 'text_orig': the original Nheengatu sentence (str)
-          - 'text': the first variant of the Nheengatu sentence (str)
-          - 'avila': Avila's (2021) variant with citation (str)
-          - 'text_por': Hartt's (1938) Portuguese translation (str)
+          - 'index': a tuple where the first element is an integer representing the sentence number, and the second element is a string representing the letter if available, or an empty string if not (tuple (int, str))
+          - 'text_orig': Hartt's (1938) original Nheengatu sentence (str)
+          - 'text': the first variant of the Nheengatu sentence, with the spelling adapted to the one proposed by Avila (2021) (str)
+          - 'avila': Avila's (2021) example with citation or NA if non-available (str)
+          - 'text_por': Hartt's (1938) Portuguese translation in modernide orthography (str)
 
-    Example:
+    Examples:
     >>> input_string = '''
     53 - omú oeín okaú resé yapenúna suí.
     53 - Amú uweena ukaú resé igapenú suí.
     53 - Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.
     53 - alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.
     '''
-    >>> handleSentsHartt(input_string)
-    {'number': 53, 'text_orig': 'omú oeín okaú resé yapenúna suí.',
-     'text': 'Amú uweena ukaú resé igapenú suí.',
-     'avila': 'Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.',
-     'text_por': 'Alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.'}
+>>> handleSentsHartt(input_string)
+    {'index': (53, ''),
+    'text_orig': 'omú oeín okaú resé yapenúna suí.',
+    'text': 'Amú uweena ukaú resé igapenú suí.',
+    'avila': 'Amú-itá uweena ukaú resé gapenú suí. (Hartt, 387, adap.) Alguns vomitaram porque ficaram enjoados devido ao banzeiro.',
+    'text_por': 'Alguns lançaram (vomitaram) estando enjoados pelo movimento das maresias.'}
 
     Raises:
     ValueError: If the input string does not contain the expected number of lines.
     """
-    lines=[line.strip().split(' - ') for line in example.split('\n') if line.strip() != '']
+    lines=[line.strip().split(' - ',1) for line in example.split('\n') if line.strip() != '']
 
     if len(lines) != 4:
         raise ValueError("Input string must contain exactly four non-empty lines.")
 
     result = {}
-    # Extract the number from the first line
-    number=int(lines[0][0])
-    result['number']=number
+    # Extract the number and optionally the letter from the first line
+    number_letter = lines[0][0].split(" ")
+    if len(number_letter) == 2:
+        number, letter = number_letter
+        number = int(number)
+    else:
+        number = int(number_letter[0])
+        letter = ''
+    result['index']=(number,letter)
     keys=('text_orig','text','avila','text_por')
     i=0
     while(i < len(lines)):
        result[keys[i]]=lines[i][1]
        i+=1
+    # Capitalize the first letter of the Portuguese translation
     result['text_por']=capitilizeFirstLetter(result['text_por'])
     return result
 
