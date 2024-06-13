@@ -24969,7 +24969,8 @@
 # title_por = Kukuhy
 # text_source = p. 309, No. 1
 # text_orig = Iepé ara, paa, upãe mira osendu masuhi Kuarasy osemo kyty tyapu uasu omunhan uaá yuy oryry.
-# text_transcriber = Maslova (2018:155)
+# text_orig_transcriber = Maslova (2018:155)
+# text_por_modernizer = Maslova (2018:155)
 # text_annotator = LFdeA
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -25076,6 +25077,29 @@
 22	mira	mira	NOUN	N	Number=Sing	17	iobj	_	TokenRange=112:116
 23	xupé	xupé	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=117:121
 24	.	.	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No|TokenRange=121:122
+
+# sent_id = Amorim1928:19:21:21
+# text = Yandé kurabí sakapira manusawa, peyumú katú.
+# text_eng = TODO
+# text_por = Ponta de nossos curabis é morte, frechem certeiro.
+# text_por_orig = Ponta de nossos curabis é mórte, frecham certeiro.
+# text_por_alt = "A ponta das nossas flechas é a morte, flechem direito."
+# text_por_alt_source = Stradelli (1929:742)
+# text_rus = Наконечники наших стрел – смерть, цельтесь метко.
+# text_rus_source = Maslova (2018:157)
+# text_source = p. 310, No. 21
+# text_orig = Iandé kurabi sakâpyra manusaua, peiumu katu.
+# text_annotator = LFdeA
+# inputline = Yandé/pron2 kurabí sakapira/abs manusawa/@, peyumú katú/adva.
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	2	nmod:poss	_	ModernForm=Yané|ModernLemma=yané|TokenRange=0:5
+2	kurabí	kurabí	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=6:12
+3	sakapira	sakapira	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	4	nsubj	_	ModernForm=rakapira|ModernRel=Cont|TokenRange=13:21
+4	manusawa	manusawa	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=22:30
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=30:31
+6	peyumú	yumú	VERB	V	Number=Plur|Person=2|VerbForm=Fin	4	parataxis	_	TokenRange=32:38
+7	katú	katú	ADV	ADVA	AdvType=Man	6	advmod	_	SpaceAfter=No|TokenRange=39:43
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Amorim1928:19:51:51
 # text = Kawará upurungitá kwayawé: — Kukuí, aikwé ana mira setá kwá paraná apira kití, iwasú kurí rewasemu tendawa puranga ne tawa arama.
@@ -25719,7 +25743,7 @@
 1	Buopé	buopé	PROPN	PROPN	_	16	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	1	appos	_	TokenRange=7:14
-5-6	aramewara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:30
+4-5	aramewara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:30
 4	aramé	aramé	ADV	ADVT	AdvType=Tim	3	nmod	_	_
 5	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
 6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=30:31
@@ -25739,15 +25763,15 @@
 20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	TokenRange=84:85
 21	apigawa-etá	apigawa	NOUN	N	Number=Plur	16	iobj	_	TokenRange=86:97
 22	xupé	xupé	ADP	ADP	AdpType=Post	21	case	_	SpaceAfter=No|TokenRange=98:102
-24	:	:	PUNCT	PUNCT	_	27	punct	_	TokenRange=99:100
-23	—	—	PUNCT	PUNCT	_	43	punct	_	TokenRange=98:99
+23	:	:	PUNCT	PUNCT	_	43	punct	_	TokenRange=99:100
+24	—	—	PUNCT	PUNCT	_	43	punct	_	TokenRange=98:99
 25	Mayawé	mayawé	SCONJ	SCONJR	_	27	mark	_	TokenRange=101:107
 26	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	27	advmod	_	TokenRange=108:112
 27	yarikú	rikú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	43	advcl	_	TokenRange=113:119
 28	siiya	siiya	DET	INDQ	PronType=Ind	29	det	_	TokenRange=120:125
 29	kunhã-etá	kunhã	NOUN	N	Number=Plur	27	obj	_	TokenRange=126:135
 30	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	31	nmod:poss	_	TokenRange=136:141
-31	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	32	nsubj	_	TokenRange=142:151
+31	yawé-yawé	yawé	PRON	INDQ	PronType=Ind|Red=Yes	32	nsubj	_	TokenRange=142:151
 32	urikú	rikú	VERB	V	Person=3|VerbForm=Fin	27	advcl	_	TokenRange=152:157
 33	arama	arama	SCONJ	SCONJ	_	32	mark	_	TokenRange=158:163
 34	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs|Style=Arch	35	nmod:poss	_	ModernForm=s|ModernSpaceAfter=No|TokenRange=164:165

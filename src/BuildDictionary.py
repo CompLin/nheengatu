@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 10, 2024
+# Last update: June 13, 2024
 
 import re, sys, os, json
 
