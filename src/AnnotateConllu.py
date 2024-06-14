@@ -2940,3 +2940,15 @@ def handleSentsAmorim(example,text_nr=2, translate=True):
 		amorim=example
 	metadata.update(transcriber)
 	parseExample(amorim,prefix,text_nr,sent_nr,sent_nr,metadata=metadata,translate=translate)
+
+def getPortugueseTextProducer(sent):
+    source=sent.metadata.get('text_por_source')
+    if source:
+        return source
+    translator=sent.metadata.get('text_por_translator')
+    if translator:
+        return translator
+    orig=sent.metadata.get('text_por_orig')
+    if orig:
+        return sent.metadata.get('text_annotator')
+    return sent.metadata['sent_id'].split(':')[0]
