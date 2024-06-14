@@ -17829,6 +17829,20 @@
 8	suí	suí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=45:48
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
 
+# sent_id = Avila2021:0:0:725
+# text = Apigawa Piauíwara.
+# text_eng = TODO
+# text_por = O homem é natural do Piauí.
+# text_source = Hartt, 354, adap.
+# text_orig = Apigawa Piauíwara
+# text_annotator = LFdeA
+# inputline = Apigawa/n Piauíwara. (Hartt, 354, adap.) - O homem é natural do Piauí. - Apigawa Piauíwara
+1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
+2-3	Piauíwara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:17
+2	Piauí	piauí	PROPN	PROPN	_	0	root	_	_
+3	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	2	case	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -25103,8 +25117,9 @@
 
 # sent_id = Amorim1928:19:51:51
 # text = Kawará upurungitá kwayawé: — Kukuí, aikwé ana mira setá kwá paraná apira kití, iwasú kurí rewasemu tendawa puranga ne tawa arama.
-# text_eng = Kukuhy, there are already a lot of people at the head of this river, it will be difficult to find a beautiful place for your city.
-# text_por = Kukuhy, já tem muita gente para a cabeceira deste rio, será custoso encontrares lugar bonito para tua cidade.
+# text_eng = Kauará said: "Kukuhy, there are already a lot of people at the head of this river, it will be difficult to find a beautiful place for your city."
+# text_por = Kauará falou assim: — Kukuhy, já tem muita gente para a cabeceira deste rio, será custoso encontrares lugar bonito para tua cidade.
+# text_por_sec_alt = Kauará falou assim: — Kukuhy, já tem muita gente para a cabeceira deste rio; será custoso encontrares lugar bonito para tua cidade.
 # text_source = p. 311, No. 50-51
 # text_orig = Kauará opurungetá koiaué: — Kukuhi, aikué ana mira setá koá paraná apyra kyty, iuasu kuri reuasemo tendaua puranga ne táua arama.
 # text_sec = [...], iwasú kurí rewasemu tendawa puranga ne tawa arama.
@@ -25112,6 +25127,7 @@
 # text_por_sec = [...], será custoso encontrares um bom lugar para a tua cidade.
 # text_por_sec_source = Avila (2021)
 # text_transcriber = Maslova (2018:160-161)
+# text_por_sec_alt = Maslova (2018:160-161)
 # text_annotator = LFdeA
 1	Kawará	kawará	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:6
 2	upurungitá	purungitá	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=7:17
