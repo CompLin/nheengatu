@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 13, 2024
+# Last update: June 18, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
+from Metadata import Mindlin
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -2030,10 +2031,25 @@ def setRoot(tokenlist):
 def handleRoot(tokenlist):
     rootid=0
     if ROOT:
+        rootlist=tokenlist.filter(deprel='root')
         rootid=ROOT.pop()+1
         token=tokenlist.filter(id=rootid)[0]
         token['deprel']='root'
         token['head']=0
+        for t in rootlist:
+            headid=t['id']
+            deps=tokenlist.filter(head=headid)
+            for dep in deps:
+                depid=dep['id']
+                punctid=previousPunct(dep,tokenlist)
+                if punctid < headid < depid:
+                    pass
+                elif dep['lemma'] in DEPPUNCT:
+                    pass
+                else:
+                    dep['head']=rootid
+            t['deprel']='parataxis'
+            t['head']=rootid
         feats=token.get('feats')
         isIntPron=False
         if feats:
@@ -2102,6 +2118,12 @@ def extractTag(token):
     if '/' in token:
         return token.split('/')
 
+def mkTypo(correct,typo):
+    dic={}
+    dic['CorrectForm']=correct
+    dic['Typo']=typo
+    return dic
+
 def mkConlluSentence(tokens):
     ROOT.clear()
     tokenlist=TokenList()
@@ -2145,6 +2167,8 @@ def mkConlluSentence(tokens):
             if t:
                 tag=t
             orig=tagparse.get('o')
+            typo=tagparse.get('t')
+            correct=tagparse.get('c')
             orig_form=tagparse.get('s')
             force=tagparse.get('f')
             xpos=tagparse.get('x')
@@ -2154,6 +2178,9 @@ def mkConlluSentence(tokens):
             if tag == '=p':
                 new=mkPropn(token,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
+            elif tag == '=typo':
+                dic.update(mkTypo(correct,form))
+                newparselist=getparselist(correct.lower())
             elif tag == '=adv':
                 newparselist=mkAdv(token)
             elif tag == '=n':
@@ -2215,6 +2242,12 @@ def mkConlluSentence(tokens):
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen') or dic.get('underscore'):
                 handleHyphenSepToken(t)
+            correct_form=dic.get('CorrectForm')
+            typo=dic.get('Typo')
+            if correct_form and typo:
+                t['misc'].update({'CorrectForm': correct_form})
+                t['feats'].update({'Typo': 'Yes'})
+                t['form']=typo
             if new:
                 orig=new.get('OrigLang')
                 orig_form=new.get('Orig')
@@ -2270,6 +2303,25 @@ def extract_sents(line=None,lines=None):
 def SqueezeWhiteSpace(s):
     return SQUEEZE.sub(" ",s)
 
+def mkSentId(pref='',textid=0,index=0,sentid=0):
+	return f"{pref}:{textid}:{index}:{sentid}"
+
+def _ppText(sents,pref='',textid=0,index=0,sentid=0):
+	sentid=mkSentId(pref,textid,index,sentid)
+	metadata={}
+	if pref:
+		metadata['sent_id'] = sentid
+	yrl,eng,por=[sent.strip() for sent in sents[:3]]
+	template=f"# text = {yrl}\n# text_eng = {eng}\n# text_por = {por}"
+	metadata.update(dict(zip(["text", "text_eng", "text_por"], [yrl,eng,por])))
+	if len(sents) > 3:
+		for sent in sents[3:]:
+			if sent.startswith('(') and sent.endswith(')'):
+				metadata['source']=sent[1:-1]
+			else:
+				metadata['orig']=sent
+	return metadata
+
 def ppText(sents,pref='',textid=0,index=0,sentid=0):
     output=[]
     if pref:
@@ -2297,7 +2349,7 @@ def extractYrl(sent):
 def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
     yrl=extractYrl(sents[0])
     sents[1]=f"({sents[1]})"
-    output=[]
+    output=[] # TODO: update TokenList's  metadata instead
     if len(sents) == 5:
         output.append(ppText([yrl,sents[3],
         sents[2],
@@ -2317,34 +2369,22 @@ def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
     output.append(tk.serialize())
     return output
 
-def _handleSents(sents,pref,textid,index,sentid,annotator,metadata):
-    yrl=extractYrl(sents[0])
-    sents[1]=f"({sents[1]})"
-    output=[]
-    if len(sents) == 5:
-        output.append(ppText([yrl,sents[3],
-        sents[2],
-        sents[1],
-        sents[4]],
-        pref,textid,index,sentid))
-    else:
-        output.append(ppText([yrl,
-        sents[3],
-        sents[2],
-        sents[1]],
-        pref,textid,index,sentid))
-    tokenlist=parseSentence(sents[0])
-    if metadata:
-        tokenlist.metadata.update(metadata)
-    _includeAnnotator(tokenlist,annotator)
-    return tokenlist
+def _handleSents(sents,annotator,metadata):
+	text=sents['text']
+	sents['text']=extractYrl(text)
+	tokenlist=parseSentence(text)
+	tokenlist.metadata.update(sents)
+	if metadata:
+		tokenlist.metadata.update(metadata)
+	_includeAnnotator(tokenlist,annotator)
+	return tokenlist
 
 def includeAnnotator(output,annotator):
     output.append(f"# {ANNOTATOR_ATT} = {annotator}")
 
 def _includeAnnotator(tokenlist,annotator):
     if annotator:
-        tokenlist[ANNOTATOR_ATT]=annotator
+        tokenlist.metadata[ANNOTATOR_ATT]=annotator
 
 def formatList(output):
     return '\n'.join(output)
@@ -2411,19 +2451,29 @@ def includeTranslation(parts,translate=True):
     else:
         parts.append(text_eng)
 
-def _parseExample(sents,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True):
-    yrl=sents[0]
-    if check:
-        if checkSentence(yrl):
-            print(f"Sentence '{yrl}' already is in the treebank.")
-            return
-    includeTranslation(sents,translate)
-    tokenlist=_handleSents(sents,pref,textid,index,sentid,annotator,metadata)
-    outstring=tokenlist.serialize()
-    #if outfile: TODO
-    #    metadata=getFileNameParts(pref,textid,index,sentid)
-    #    saveParseToFile(includeText(example,outstring),metadata, overwrite)
-    handleParse(outstring,copyboard=copyboard)
+def _includeTranslation(text_por,translate=True):
+	text_eng= 'TODO'
+	if translate:
+		from deep_translator import GoogleTranslator
+		text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
+		text_eng=formatTextEng(text_eng)
+	return text_eng
+
+def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True):
+	yrl=sents['text']
+	por=sents['text_por']
+	if check:
+		if checkSentence(yrl):
+			print(f"Sentence '{yrl}' already is in the treebank.")
+			return
+	sents['text_eng'] = _includeTranslation(por,translate)
+	tokenlist=_handleSents(sents,annotator,metadata)
+	#print(f"TokenList: {tokenlist} Type:{type(tokenlist)}")
+	outstring=tokenlist.serialize()
+	#if outfile: TODO
+	#    metadata=getFileNameParts(pref,textid,index,sentid)
+	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
+	handleParse(outstring,copyboard=copyboard)
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True):
     sents=extract_sents(example)
@@ -2505,7 +2555,7 @@ def extractHost(token):
                 base=f"{form_prefix.lower()}{base[1:]}"
             elif form_prefix:
                 base=f"{form_prefix.lower()}{base}"
-            return mkHost(base,PI,token)
+            return mkHost(base,PI,token,'N')
     for clitic in NONHYPHEN:
         host=hasClitic(clitic,token)
         if host:
@@ -2919,8 +2969,11 @@ def handleSentsAmorim(example,text_nr=2, translate=True):
 	pat=re.compile(r"No. (\d+)(\-(\d+))?")
 	section="§"
 	sep=re.compile(rf"\s*{section}\s*")
-	groups=pat.search(example).groups()
-	sent_nr=int(groups[0])
+	sent_nr=0
+	match=pat.search(example)
+	if match:
+		groups=match.groups()
+		sent_nr=int(groups[0])
 	prefix="Amorim1928"
 	amorim,avila = '',''
 	person="Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin"
@@ -2952,3 +3005,29 @@ def getPortugueseTextProducer(sent):
     if orig:
         return sent.metadata.get('text_annotator')
     return sent.metadata['sent_id'].split(':')[0]
+
+def parseExampleAmorim(example,text_nr,page="355-369", copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False):
+	metadata.update(Mindlin())
+	title=''
+	i=0
+	sents={}
+	pat=r"[^_]+_(\w+)_(\w+).txt"
+	regex=re.compile(pat)
+	m=regex.search(example)
+	if m:
+		i=1
+		g=m.groups()
+		title=" ".join(g).upper()
+	lines=[line.strip() for line in example.split("\n") if line.strip() != '']
+	num,text=lines[i].split("\t")
+	num=int(num)
+	por,orig=[line.split("\t")[1] for line in lines[i+1:]]
+	prefix="Amorim1928"
+	sents['sent_id']=mkSentId(prefix,text_nr,num,num)
+	sents['text']=text
+	sents['text_por']=por
+	sents['text_source']=f"p. {page}, No. {num}"
+	sents['text_orig']=orig
+	if title:
+		sents['title_orig']=title
+	return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate)

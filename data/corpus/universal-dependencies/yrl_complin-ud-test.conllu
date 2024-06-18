@@ -7284,7 +7284,7 @@
 4	yaxari	xari	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=20:26
 5	sakú	rakú	VERB	V2	Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	ccomp	_	TokenRange=27:31
 6	katú	katú	ADV	ADVS	AdvType=Deg	5	advmod	_	TokenRange=32:36
-7	ií	ií	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=37:39
+7	ií	ií	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=37:39
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = Avila2021:0:0:150
@@ -13562,6 +13562,8 @@
 # text_eng = I'm happy.
 # text_por = Estou alegre.
 # text_source = Costa, 187, adap.; Hartt, 367, adap.
+# text_prim = Ce-ruri xa-icú.
+# text_prim_source = Costa (1909:187)
 # text_annotator = LFdeA
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	rurí	rurí	VERB	V2	Rel=Cont	0	root	_	TokenRange=3:7
@@ -25219,6 +25221,41 @@
 17	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=88:92
 18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=92:93
 
+# sent_id = Amorim1928:19:76:76
+# text = Musapiri yasí riré, paá, nhaã intí waá upitá i puruã aé uyupúi muxiwa umukirá arama aintá.
+# text_eng = TODO
+# text_por = Três luas depois, contam, àquelas que não tinham ficado cheias ele começou dando muchiba para engordar.
+# text_source = p. 312, No. 76
+# text_orig = Musapyre iasy riré, paa, nhaa nty uaá opytá ipuruan aé oiupe muxiua omukyrá arama aetá.
+# text_sec = Musapyre iasy riré, paa, nhaa nty uaá opytá ipuruan aé oiupué muxiua omukyrá aetá arama.
+# text_por_sec = Três luas depois, contam, as que não ficaram prenhes ele deu a comer muxiba para engordarem.
+# text_sec_source = Stradelli (1929:745)
+# text_por_sec_source = Stradelli (1929:745)
+# text_rus = Три месяца спустя теx, что не забеременели, он стал откармливать мушиуа, чтобы растолстели.
+# text_rus_source = Maslova (2018:164)
+# text_annotator = LFdeA
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Musapiri	musapiri	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:8
+2	yasí	yasí	NOUN	N	Number=Sing	10	obl	_	TokenRange=9:13
+3	riré	riré	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=14:18
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	SpaceAfter=No|TokenRange=20:23
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
+7	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	14	iobj	_	TokenRange=25:29
+8	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=30:34
+9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=35:38
+10	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	7	acl:relcl	_	TokenRange=39:44
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=45:46
+12	puruã	puruã	VERB	V2	_	10	xcomp	_	TokenRange=47:52
+13	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	14	nsubj	_	TokenRange=53:55
+14	uyupúi	yupúi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=56:62
+15	muxiwa	muxiwa	NOUN	N	Number=Sing	14	obj	_	TokenRange=63:69
+16	umukirá	mukirá	VERB	V	Person=3|VerbForm=Fin	14	advcl	_	TokenRange=70:77
+17	arama	arama	SCONJ	SCONJ	_	16	mark	_	TokenRange=78:83
+18	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	obj	_	SpaceAfter=No|TokenRange=84:89
+19	.	.	PUNCT	PUNCT	_	14	punct	_	SpaceAfter=No|TokenRange=89:90
+
 # sent_id = Amorim1928:21:5:1000
 # text = Kurimirĩ xinga paá aintá usaã sakusawa, sé usika aintá pira resé iwitú yawé, ape ana tenhẽ, nti awá ukwáu mayawé, aintá ukiri nhaã sakusawa pitérupi.
 # text_eng = After a while, they say, they felt pleasant heat reach their body like wind, and then, they say, no one knows how, they slept in the middle of that heat.
@@ -25261,6 +25298,283 @@
 28	sakusawa	sakusawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	26	obl	_	TokenRange=131:139
 29	pitérupi	pitérupi	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=140:148
 30	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=148:149
+
+# sent_id = Amorim1928:21:35:35
+# text = Yawé paá usasáu pituna pukusawa umuyumunhã nhaã Sakú Manha.
+# text_por = Assim, contam, passaram a duração da noite fazendo essa Mãe do Quente reproduzir-se.
+# text_source = p. 355-369, No. 35
+# text_orig = Iaué paa osasau pytuna pukusaua omuiumunhan nhaa Saku Manha.
+# text_eng = TODO
+# text_sec = Yawé paá usasá pituna pukusawa umuyumunhã nhaã Sakú Manha.
+# text_por_sec = Assim, contam, passaram a noite toda fazendo reproduzir-se a Mãe do Calor [ou seja, o fogo].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
+3	usasáu	sasáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
+4	pituna	pituna	NOUN	N	Number=Sing	3	obl	_	TokenRange=16:22
+5	pukusawa	pukusawa	ADP	ADP	AdpType=Post	4	case	_	TokenRange=23:31
+6	umuyumunhã	muyumunhã	VERB	V	Person=3|VerbForm=Fin	3	xcomp	_	TokenRange=32:42
+7	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	det	_	TokenRange=43:47
+8	Sakú	sakú	NOUN	N	Number=Sing	9	nmod:poss	_	TokenRange=48:52
+9	Manha	manha	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=53:58
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=58:59
+
+# sent_id = Amorim1928:21:36:36
+# text = Kuẽma ramé ana paá aintá unheẽ: — Kuíri yasú uarasú kwá iruisanga pusanga yandé retama kití!
+# text_por = Já de manhã, contam, disseram: — Agora vamos levar esta puçanga de frio para nossa terra!
+# text_source = p. 355-369, No. 36-37
+# text_orig = Koema ramé ana paa aetá onheen: — Kuyre iasu oarasu koá iruysanga pusanga iandé retama ketŷ!
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Kuẽma	kuẽma	NOUN	N	Number=Sing	6	obl	_	TokenRange=0:5
+2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=6:10
+3	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=11:14
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=15:18
+5	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=19:24
+6	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=25:30
+7	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=30:31
+8	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=31:32
+9	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	11	advmod	_	TokenRange=33:38
+10	yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	11	aux	_	TokenRange=39:43
+11	uarasú	rasú	VERB	V	Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	6	ccomp	_	CorrectForm=yarasú|TokenRange=44:50
+12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	det	_	TokenRange=51:54
+13	iruisanga	iruisanga	NOUN	N	Number=Sing	14	nmod:poss	_	TokenRange=55:64
+14	pusanga	pusanga	NOUN	N	Number=Sing	11	obj	_	TokenRange=65:72
+15	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	16	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=73:78
+16	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	11	obl	_	TokenRange=79:85
+17	kití	kití	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=86:90
+18	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=90:91
+
+# sent_id = Amorim1928:21:38:38
+# text = Aé umusakú yandé pira yandé manha pira umusakú yandé pira!
+# text_por = Ela aquenta nosso corpo como corpo de nossa mãe!
+# text_source = p. 355-369, No. 38
+# text_orig = Aé omusaku iandé pira iandé manha pira omusaku iandé pira!
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umusakú	musakú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:10
+3	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	4	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=11:16
+4	pira	pira	NOUN	N	Number=Sing	2	obj	_	TokenRange=17:21
+5	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	6	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=22:27
+6	manha	manha	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=28:33
+7	pira	pira	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=34:38
+8	umusakú	musakú	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=39:46
+9	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	10	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=47:52
+10	pira	pira	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=53:57
+11	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=57:58
+
+# sent_id = Amorim1928:21:39:39
+# text = Aé umutikanga pirá tuí, sé arama aé upitá!
+# text_por = Ela enxuga sangue do peixe para ficar gostoso!
+# text_source = p. 355-369, No. 39
+# text_orig = Aé omutykanga pirá tuhy, sé arama aé opytá!
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umutikanga	mutikanga	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:13
+3	pirá	pirá	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=14:18
+4	tuí	tuí	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obj	_	SpaceAfter=No|TokenRange=19:22
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=22:23
+6	sé	sé	ADJ	A	_	9	xcomp	_	TokenRange=24:26
+7	arama	arama	SCONJ	SCONJ	_	9	mark	_	TokenRange=27:32
+8	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	9	nsubj	_	TokenRange=33:35
+9	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	SpaceAfter=No|TokenRange=36:41
+10	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=41:42
+
+# sent_id = Amorim1928:21:40:40-1
+# text = Aé umbaú mirá!
+# text_por = Ela come pau!
+# text_source = p. 355-369, No. 40
+# text_orig = Aé ombaú myrá!
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=3:8
+3	mirá	mirá	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=9:13
+4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = Amorim1928:21:40:40-2
+# text = Mirá resé tenhẽ aé uyumunhã!
+# text_por = De pau ela se faz!
+# text_source = p. 355-369, No. 40
+# text_orig = Myrá resé tenhé aé oiumunhan!
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Mirá	mirá	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:4
+2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=5:9
+3	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=10:15
+4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	nsubj	_	TokenRange=16:18
+5	uyumunhã	munhã	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=19:27
+6	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Amorim1928:21:41:41
+# text = Indé kurí reyupúi mirá i xupé, ixé xayapukúi.
+# text_por = Tu a sustentarás de pau, eu remarei.
+# text_source = p. 355-369, No. 41
+# text_orig = Ndé kuri reiupui myrá i xupé, ixé xayapýkue.
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	TokenRange=0:4
+2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=5:9
+3	reyupúi	yupúi	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=10:17
+4	mirá	mirá	NOUN	N	Number=Sing	3	obj	_	TokenRange=18:22
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=23:24
+6	xupé	xupé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=25:29
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=29:30
+8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	TokenRange=31:34
+9	xayapukúi	yapukúi	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	parataxis	_	ModernForm=ayapukúi|SpaceAfter=No|TokenRange=35:44
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = Amorim1928:21:42:42
+# text = Yawé aintá umunhã.
+# text_por = Assim fizeram.
+# text_source = p. 355-369, No. 42
+# text_orig = Iaué aetá omunhan.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
+2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=5:10
+3	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:17
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Amorim1928:21:43:43
+# text = Yepé usú igara pitérupi, uyupúi usú uikú Sakú Manha, amú uyapukúi usú uikú igara rupitá-pe.
+# text_por = Um foi no meio da canoa, dando de comer à Mãe do Quente, o outro foi remando na popa.
+# text_source = p. 355-369, No. 43
+# text_orig = Iepé osu ygara puterupé, oiupui osu oiku Saku Manha, amu oyapukue osu oiku ygara rupytá pe.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	2	nsubj	_	TokenRange=0:4
+2	usú	sú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:8
+3	igara	igara	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=9:14
+4-5	pitérupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=22:30
+4	pitera	pitera	NOUN	N	Number=Sing	2	obl	_	TokenRange=15:21
+5	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=30:31
+7	uyupúi	yupúi	VERB	V	Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=32:38
+8	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	7	aux	_	TokenRange=39:42
+9	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	7	aux	_	TokenRange=43:47
+10	Sakú	sakú	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=48:52
+11	Manha	manha	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=53:58
+12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=58:59
+13	amú	amú	PRON	IND	Number=Sing|PronType=Ind	14	nsubj	_	TokenRange=60:63
+14	uyapukúi	yapukúi	VERB	V	Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=64:72
+15	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	14	aux	_	TokenRange=73:76
+16	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	14	aux	_	TokenRange=77:81
+17	igara	igara	NOUN	N	Number=Sing	18	nmod:poss	_	TokenRange=82:87
+18-19	rupitá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=88:97
+18	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	14	obl	_	_
+19	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	18	case	_	_
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=97:98
+
+# sent_id = Amorim1928:21:61:61
+# text = Kuíri penhẽ yawé-yawé perasú kurí Sakú Manha pe ruka kití peyupúi arama.
+# text_por = Agora cada um de vocês há de levar para casa a Mãe do Quente para lhe dar de comer.
+# text_source = p. 355-369, No. 61
+# text_orig = Kuyre penhé iaué-iaué perasu kuri Saku Manha pe roka ketŷ peiupui arama.
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:5
+2	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	TokenRange=6:11
+3	yawé-yawé	yawé	PRON	INDQ	PronType=Ind|Red=Yes	4	nsubj	_	TokenRange=12:21
+4	perasú	rasú	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=22:28
+5	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=29:33
+6	Sakú	sakú	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=34:38
+7	Manha	manha	NOUN	N	Number=Sing	4	obj	_	TokenRange=39:44
+8	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=45:47
+9	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=48:52
+10	kití	kití	ADP	ADP	AdpType=Post	9	case	_	TokenRange=53:57
+11	peyupúi	yupúi	VERB	V	Number=Plur|Person=2|VerbForm=Fin	4	advcl	_	TokenRange=58:65
+12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=66:71
+13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
+
+# sent_id = Amorim1928:21:106:106
+# text = Amú-etá uyupúi uikú Sakú Manha katú arama kuritẽi umusantá i pira.
+# text_por = Outras davam de comer à Mãe do Quente para bem depressa endurecer corpo dele.
+# text_source = p. 355-369, No. 106
+# text_orig = Amuetá oiupui oiku Saku Manha katu arama kuritẽi omusantá i pira.
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Amú-etá	amú	PRON	IND	Number=Plur|PronType=Ind	2	nsubj	_	TokenRange=0:7
+2	uyupúi	yupúi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=8:14
+3	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	TokenRange=15:19
+4	Sakú	sakú	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=20:24
+5	Manha	manha	NOUN	N	Number=Sing	2	obj	_	TokenRange=25:30
+6	katú	katú	ADV	ADVS	AdvType=Deg	8	advmod	_	TokenRange=31:35
+7	arama	arama	SCONJ	SCONJ	_	9	mark	_	TokenRange=36:41
+8	kuritẽi	kuritẽi	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=42:49
+9	umusantá	musantá	VERB	V	Person=3|VerbForm=Fin	2	advcl	_	TokenRange=50:58
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=59:60
+11	pira	pira	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=61:65
+12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
+
+# sent_id = Amorim1928:21:113:113
+# text = Yawé kurí pemunhã.
+# text_por = Assim vocês o façam.
+# text_source = p. 355-369, No. 113
+# text_orig = Iaué kuri pemunhan.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
+2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=5:9
+3	pemunhã	munhã	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:17
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Amorim1928:21:114:114
+# text = Kuíri pasú ana sembiiwa kití, pexari ixé xapitá pe akanga irumu nhũ.
+# text_por = Agora vão já para a beirada, me deixem ficar só com o cabeça de vocês.
+# text_source = p. 355-369, No. 114
+# text_orig = Kuyre pasu ana sembéyua ketŷ, pexeare ixé xapytá pe akanga yrumo nhu.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+# inputline = Kuíri pasú/=typo:c|pesú ana sembiiwa/ncont kití, pexari ixé xapitá pe/pron2 akanga irumu/adp nhũ.
+1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
+2	pasú	sú	VERB	V	Mood=Imp|Number=Plur|Person=2|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=pesú|TokenRange=6:10
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=11:14
+4	sembiiwa	tembiiwa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obl	_	TokenRange=15:23
+5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=24:28
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
+7	pexari	xari	VERB	V	Number=Plur|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=30:36
+8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	nsubj	_	TokenRange=37:40
+9	xapitá	pitá	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	7	ccomp	_	ModernForm=apitá|TokenRange=41:47
+10	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=48:50
+11	akanga	akanga	NOUN	N	Number=Sing	9	obl	_	TokenRange=51:57
+12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=58:63
+13	nhũ	nhũ	ADV	ADV	_	9	advmod	_	SpaceAfter=No|TokenRange=64:67
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=67:68
 
 # sent_id = Amorim1928:21:206:1206
 # text = Yepé kurumiwasú nhaã mira-itá suiwara unheẽ paá: — Amaã panhẽ yandé sasiára, maã taá yarikú?
@@ -26456,6 +26770,35 @@
 13	apusanú	pusanú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	5	ccomp	_	TokenRange=47:54
 14	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	13	obj	_	SpaceAfter=No|TokenRange=55:59
 15	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=59:60
+
+# sent_id = Amorim1928:10:89:89
+# text = Kurumiwasú membí i puranga reté ana paá i nheenga, umundí katú paá awá usendú!
+# text_por = A voz da memby do moço, contam, era bonita demais, chegava, contam, a impressionar a gente.
+# text_source = p. 355-369, No. 89
+# text_orig = Kurumiuasu mimbŷ ipuranga reté ana paa i nheenga, omundŷ katu paa auá osendu!
+# title_orig = PARAMAN_DUHI YRUMO
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_annotator = LFdeA
+# inputline = Kurumiwasú membí i/pron2 puranga/a@ reté/advs ana paá i/pron2 nheenga, umundí katú/advs paá awá/relf usendú!
+# cross_reference = Avila TODO
+1	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:10
+2	membí	membí	NOUN	N	Number=Sing	4	dislocated	_	TokenRange=11:16
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=17:18
+4	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=19:26
+5	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	TokenRange=27:31
+6	ana	ana	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=32:35
+7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=36:39
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=40:41
+9	nheenga	nheenga	NOUN	N	Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=42:49
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=49:50
+11	umundí	mundí	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=51:57
+12	katú	katú	ADV	ADVS	AdvType=Deg	11	advmod	_	TokenRange=58:62
+13	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	11	advmod	_	TokenRange=63:66
+14	awá	awá	PRON	RELF	PronType=Rel	11	obj	_	TokenRange=67:70
+15	usendú	sendú	VERB	V	Person=3|VerbForm=Fin	14	acl:relcl	_	SpaceAfter=No|TokenRange=71:77
+16	!	!	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=77:78
 
 # sent_id = Amorim1928:10:150:150
 # text = Kurumiwasú usú kaá rupí, apekatú ana aé uikú, uwapika upituú arama mairamé awá yepé mirá ara suí unheẽ: ― Sasí reté mairamé intí yepewasú yané piá.
@@ -27804,6 +28147,19 @@
 4	piri	piri	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=13:17
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
+# sent_id = Costa1909:0:0:1002
+# text = Se rurí xaikú.
+# text_eng = I'm happy.
+# text_por = Estou alegre.
+# text_source = p. 187
+# text_orig = Ce-ruri xa-icú.
+# text_annotator = LFdeA
+# cross_reference = Avila2021:0:0:483
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	rurí	rurí	VERB	V2	Rel=Cont	0	root	_	TokenRange=3:7
+3	xaikú	ikú	AUX	AUXFS	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=aikú|SpaceAfter=No|TokenRange=8:13
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
 # sent_id = Costa1909:1:50:50
 # text = Ukiri umanduári.
 # text_eng = It fell silent, thought,
@@ -28085,7 +28441,7 @@
 
 # sent_id = Aguiar1898:21-6:1:541
 # text = Tupana unheẽ yuíri iwí supé: — Remusema ne suí maã sikwé waá-itá, suú waá-itá uwatá waá, yusikí waá iwí rupí, suú upaĩ katú.
-# text_eng = God also said to the earth: Produce living beings, animals that walk and crawl on the earth, animals of all kinds.
+# text_eng = God also said to the earth: "Produce living beings, animals that walk and crawl on the earth, animals of all kinds."
 # text_por = Deus também disse à terra: Produze seres viventes, animais que andem, e se arrastem pela terra, animais de todas as espécies.
 # text_source = p. 69
 # title_por = Criação do mundo
