@@ -25222,7 +25222,7 @@
 18	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=92:93
 
 # sent_id = Amorim1928:19:76:76
-# text = Musapiri yasí riré, paá, nhaã intí waá upitá i puruã aé uyupúi muxiwa umukirá arama aintá.
+# text = Musapiri yasí riré, paá, nhaã intí waá upitá i puruã aé uyupi muxiwa umukirá arama aintá.
 # text_eng = TODO
 # text_por = Três luas depois, contam, àquelas que não tinham ficado cheias ele começou dando muchiba para engordar.
 # text_source = p. 312, No. 76
@@ -25249,7 +25249,7 @@
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=45:46
 12	puruã	puruã	VERB	V2	_	10	xcomp	_	TokenRange=47:52
 13	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	14	nsubj	_	TokenRange=53:55
-14	uyupúi	yupúi	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=56:62
+14	uyupi	yupúi	VERB	V	Person=3|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=uyupúi|TokenRange=56:62
 15	muxiwa	muxiwa	NOUN	N	Number=Sing	14	obj	_	TokenRange=63:69
 16	umukirá	mukirá	VERB	V	Person=3|VerbForm=Fin	14	advcl	_	TokenRange=70:77
 17	arama	arama	SCONJ	SCONJ	_	16	mark	_	TokenRange=78:83
