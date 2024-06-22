@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 18, 2024
+# Last update: June 22, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -1593,7 +1593,10 @@ def hasTag(tags1,tags2):
     return False
 
 def filterparselist(tags,parselist):
-    return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
+    if tags:
+        return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
+    else:
+        return parselist
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
@@ -2124,6 +2127,39 @@ def mkTypo(correct,typo):
     dic['Typo']=typo
     return dic
 
+def mkModernForm(modern):
+    dic={}
+    dic['ModernForm']=modern
+    return dic
+
+def formatModernFeats(feats):
+    new={}
+    for k,v in feats.items():
+        if k in ('lemma'):
+            modern_value=v
+        elif k == 'NCONT':
+            modern_value='NCont'
+        else:
+            modern_value=v.title()
+        new[f"Modern{k.title()}"]=modern_value
+    return new
+
+def diffFeats(modern_token,arch_token):
+    '''Return lemma and features in modern_token that are not in arch_token.
+    '''
+    arch_feats=arch_token.get('feats')
+    arch_lemma=arch_token['lemma']
+    modern_feats=modern_token.get('feats')
+    modern_lemma=modern_token['lemma']
+    newdic={}
+    if arch_lemma != modern_lemma:
+        newdic['lemma']=modern_lemma
+    for k,v in modern_feats.items():
+        m=arch_feats.get(k)
+        if m != v:
+            newdic.update({k : v})
+    return newdic
+
 def mkConlluSentence(tokens):
     ROOT.clear()
     tokenlist=TokenList()
@@ -2169,6 +2205,8 @@ def mkConlluSentence(tokens):
             orig=tagparse.get('o')
             typo=tagparse.get('t')
             correct=tagparse.get('c')
+            modern=tagparse.get('m')
+            archpos=tagparse.get('h')
             orig_form=tagparse.get('s')
             force=tagparse.get('f')
             xpos=tagparse.get('x')
@@ -2181,6 +2219,14 @@ def mkConlluSentence(tokens):
             elif tag == '=typo':
                 dic.update(mkTypo(correct,form))
                 newparselist=getparselist(correct.lower())
+            elif tag == '=mf':
+                dic.update(mkModernForm(modern))
+                newparselist=getparselist(form.lower())
+                modernparselist=getparselist(modern.lower())
+                if xpos:
+                    modernparselist=filterparselist(xpos,modernparselist)
+                if archpos:
+                    newparselist=filterparselist(archpos,newparselist)
             elif tag == '=adv':
                 newparselist=mkAdv(token)
             elif tag == '=n':
@@ -2248,6 +2294,14 @@ def mkConlluSentence(tokens):
                 t['misc'].update({'CorrectForm': correct_form})
                 t['feats'].update({'Typo': 'Yes'})
                 t['form']=typo
+            modern_form=dic.get('ModernForm')
+            if modern_form:
+                t['misc'].update({'ModernForm': modern_form})
+                modern_entries=extract_feats(modernparselist)
+                modern_token=mkConlluToken(modern_form,modern_entries[0])
+                diff=formatModernFeats(diffFeats(modern_token,t))
+                t['misc'].update(diff)
+                updateFeats(t,'Style','Arch')
             if new:
                 orig=new.get('OrigLang')
                 orig_form=new.get('Orig')
@@ -2468,7 +2522,6 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
 	tokenlist=_handleSents(sents,annotator,metadata)
-	#print(f"TokenList: {tokenlist} Type:{type(tokenlist)}")
 	outstring=tokenlist.serialize()
 	#if outfile: TODO
 	#    metadata=getFileNameParts(pref,textid,index,sentid)
@@ -2964,7 +3017,25 @@ def handleSentsHartt(example):
     return result
 
 AVILA_SENTS=[]
-def handleSentsAmorim(example,text_nr=2, translate=True):
+def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin):
+	"""
+	Parse a Nheengatu sentence example from Amorim (1928) or an analogous publication and print the respective analysis in the CoNNL-U format, copying it to the clipboard.
+
+	Parameters:
+	example (str): A string with a Nheengatu sentence in modernized orthography, page
+		and example number, its translation into Portuguese, and the text in the original orthography,
+		possibly followed by Avila's (2021) corresponding example, formatted as in the examples below.
+	text_nr (int, optional): Text number or identifier. Default is 2.
+	prefix (str, optional): Prefix for the output format. Default is "Amorim1928".
+	translate (bool, optional): Whether to translate the sentence. Default is True.
+	transcriber (function, optional): A function that creates a dictionary with information about the transcribers of the sentence. Default is Mindlin.
+
+	Examples:
+	>>> example = '''Musapiri yasí riré/adp, paá, nhaã intí waá upitá i/pron2 puruã aé/pron uyupúi muxiwa umukirá arama/sconj aintá/pron. (p. 312, No. 76) Três luas depois, contam, àquelas que não tinham ficado cheias ele começou dando muxiba para engordar. - Musapyre iasy riré, paa, nhaa nty uaá opytá ipuruan aé oiupe muxiua omukyrá arama aetá.'''
+
+	>>> example='''Buopé paá intí usuaxara, umundú yeperesé uyapí kaziwera/=typo:c|kaxiwera pupé nhaã kunhã-etá pirá rimbiú arama/sconj. (p. 24, No. 15) Buopé, contam, não respondeu, mandou imediatamente jogar essas mulheres na cachoeira para comida de peixe. - Buopé paa nti osuaixara, omundu iepéresé oiapi kaziuera pýpé nhaa kunhãetá pirá rembiú arama. § Buopé paá ti usuaxara, umundú yeperesé uyapí kaxiwera pupé nhaã kunhã-itá pirá rimbiú arama. (Amorim, 26, adap.) Buopé, contam, não respondeu, mandou imediatamente jogar essas mulheres na cachoeira para serem comida de peixe.'''
+
+	"""
 	global AVILA_SENTS
 	pat=re.compile(r"No. (\d+)(\-(\d+))?")
 	section="§"
@@ -2974,11 +3045,7 @@ def handleSentsAmorim(example,text_nr=2, translate=True):
 	if match:
 		groups=match.groups()
 		sent_nr=int(groups[0])
-	prefix="Amorim1928"
 	amorim,avila = '',''
-	person="Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin"
-	transcriber={'text_orig_transcriber': person,
-	'text_por_modernizer': person}
 	metadata={}
 	if section in example:
 		amorim,avila=sep.split(example)
@@ -2991,7 +3058,7 @@ def handleSentsAmorim(example,text_nr=2, translate=True):
 			metadata['cross_reference']=result[0].metadata['sent_id']
 	else:
 		amorim=example
-	metadata.update(transcriber)
+	metadata.update(transcriber())
 	parseExample(amorim,prefix,text_nr,sent_nr,sent_nr,metadata=metadata,translate=translate)
 
 def getPortugueseTextProducer(sent):
@@ -3006,27 +3073,64 @@ def getPortugueseTextProducer(sent):
         return sent.metadata.get('text_annotator')
     return sent.metadata['sent_id'].split(':')[0]
 
-def parseExampleAmorim(example,text_nr,page="355-369", copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False):
+def formatPages(start_page,end_page):
+	if start_page and end_page:
+		if start_page == end_page:
+			pages=start_page
+		else:
+			pages=f"{start_page}-{end_page}"
+	else:
+		if start_page:
+			pages=start_page
+		else:
+			pages=''
+	if pages:
+		pages=f"p. {pages}, "
+	return pages
+
+def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False):
+	"""
+	>>> example='''18: (Nheengatú) Aru (S. Gabriel) 297-299.
+29-30\tAé/pron unheẽ: — Remaã ne tuwí/=mf:m|ruwí kwera/n mayawé/advra uyumuaíwa, kuíri aé/=mf:m|i:x|pron2:h|pron irumu/adp tenhẽ/foc kurí xasú xapusanú indé, puranga/adva ne mira, umaã indé arama/sconj.
+29-30\tEla disse: — Vê teu sangue cuera como se estragou, agora com ele mesmo eu te curarei para tua gente olhar bonito para ti.
+29-30\tAé onheen: — Remaan ne tuuy kuera maaiaué oiumuayua, kuyre aé irumo tenhé kuri xasu xapusanu ndé, puranga ne mira, omaan ndé arama.'''
+	>>> AnnotateConllu.parseExampleAmorim(example)
+	"""
 	metadata.update(Mindlin())
-	title=''
-	i=0
 	sents={}
-	pat=r"[^_]+_(\w+)_(\w+).txt"
-	regex=re.compile(pat)
-	m=regex.search(example)
-	if m:
-		i=1
-		g=m.groups()
-		title=" ".join(g).upper()
+	title=''
 	lines=[line.strip() for line in example.split("\n") if line.strip() != '']
-	num,text=lines[i].split("\t")
-	num=int(num)
-	por,orig=[line.split("\t")[1] for line in lines[i+1:]]
+	if len(lines) == 4:
+		i=1
+		pat=r"(\d+):(\D+)(\d+-\d+)"
+		regex=re.compile(pat)
+		m=regex.search(lines[0])
+		if m:
+			groups=m.groups()
+			if groups:
+				number,lang_title_place,start_end=groups
+				start_page,end_page=start_end.split('-')
+				text_nr=int(number)
+				parts=re.split(r"[\)\(]",lang_title_place)
+				if parts:
+					if len(parts) == 2:
+						lang=parts[0]
+						title=parts[1].strip()
+						if language == "Nheengatú":
+							title=title.upper()
+					elif len(parts) == 3:
+						place=parts[2]
+						metadata.update({'place' : place})
+	elif len(lines) == 3:
+		i=0
+	sent_num,text=lines[i].split("\t")
+	#sent_num=int(sent_num)
+	text,por,orig=[line.split("\t")[1] for line in lines[i:]]
 	prefix="Amorim1928"
-	sents['sent_id']=mkSentId(prefix,text_nr,num,num)
+	sents['sent_id']=mkSentId(prefix,text_nr,sent_num,sent_num)
 	sents['text']=text
 	sents['text_por']=por
-	sents['text_source']=f"p. {page}, No. {num}"
+	sents['text_source']=f"{formatPages(start_page,end_page)}No. {sent_num}"
 	sents['text_orig']=orig
 	if title:
 		sents['title_orig']=title
