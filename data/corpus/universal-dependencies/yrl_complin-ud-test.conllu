@@ -9410,7 +9410,12 @@
 # text = Yasí uyaxiú ara pukusawa, pituna pukusawa, aé paá sesá yukisé uyana iwí ara rupí, usika katú paranawasú upé.
 # text_eng = The Moon cried all day, all night, those tears of hers, they say, ran over the earth and reached the sea.
 # text_por = A Lua chorou o dia todo, a noite toda, aquelas suas lágrimas, contam, correram por sobre a terra e chegaram até ao mar.
+# text_por_prim_gloss = A lua chorou dia todo noute toda, elas, dizem, lágrimas correram terra por cima chegaram bem mar no.
+# text_por_prim = A lua chorou todo o dia e toda a noute, foi então que as lágrimas correram por cima da terra até ao mar. 
+# text_por_prim_source = p. 212
 # text_source = Rodrigues, 211, adap.
+# text_prim = Yacy u iachiú ara poçucaua petuna pocuçaua, aé, paá, ceçá iuquicé u nhaan iui ara rupi ocêca catu paraná uassu opé.
+# text_prim_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = LFdeA
 # reviewer1 = JLG
 1	Yasí	yasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
@@ -9418,10 +9423,10 @@
 3	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:15
 4	pukusawa	pukusawa	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=16:24
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=24:25
-6	pituna	pituna	NOUN	N	Number=Sing	2	obl	_	TokenRange=26:32
+6	pituna	pituna	NOUN	N	Number=Sing	3	conj	_	TokenRange=26:32
 7	pukusawa	pukusawa	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:41
 8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=41:42
-9	aé	aé	DET	DEMSN	Deixis=Remt|PronType=Dem	11	det	_	TokenRange=43:45
+9	aé	aé	DET	DEMSN	Deixis=Remt|PronType=Dem	12	det	_	TokenRange=43:45
 10	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	13	advmod	_	TokenRange=46:49
 11	sesá	sesá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	12	nmod:poss	_	TokenRange=50:54
 12	yukisé	yukisé	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=55:61
@@ -9431,7 +9436,7 @@
 16	rupí	rupí	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=76:80
 17	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=80:81
 18	usika	sika	VERB	V	Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=82:87
-19	katú	katú	ADV	ADVS	AdvType=Deg	18	advmod	_	TokenRange=88:92
+19	katú	katú	PART	FOC	Foc=Yes|PartType=Emp	20	advmod	_	TokenRange=88:92
 20	paranawasú	paranawasú	NOUN	N	Number=Sing	18	obl	_	TokenRange=93:103
 21	upé	upé	ADP	ADP	AdpType=Post	20	case	_	SpaceAfter=No|TokenRange=104:107
 22	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=107:108
