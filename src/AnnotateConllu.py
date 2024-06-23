@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 22, 2024
+# Last update: June 23, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -2950,7 +2950,7 @@ def extractSourcesAvila(sents):
 	avila_sents=getSentsWithSentId("Avila2021",sents)
 	return [sent.metadata['text_source'].split(",")[0].strip("(2021)").strip() for sent in avila_sents]
 
-def capitilizeFirstLetter(sentence):
+def capitalizeFirstLetter(sentence):
     return f"{sentence[0].upper()}{sentence[1:]}"
 
 def handleSentsHartt(example):
@@ -3013,7 +3013,7 @@ def handleSentsHartt(example):
        result[keys[i]]=lines[i][1]
        i+=1
     # Capitalize the first letter of the Portuguese translation
-    result['text_por']=capitilizeFirstLetter(result['text_por'])
+    result['text_por']=capitalizeFirstLetter(result['text_por'])
     return result
 
 AVILA_SENTS=[]
