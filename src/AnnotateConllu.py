@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 23, 2024
+# Last update: June 24, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -1518,6 +1518,9 @@ def addFeatures(tokenlist):
                     handlePron(token,nextToken)
         elif upos == "PART":
             handlePart(token,tokenlist,verbs)
+        elif upos == "X":
+            token['deprel']='goeswith'
+            token['head']=tokenlist[i-1]['id']
         elif upos == "INTJ":
             handleIntj(token,verbs)
         elif upos == "VERB":
@@ -1790,6 +1793,9 @@ def mkPropn(token,orig=None,orig_form=None):
 
 def mkAdv(form):
     return [[form.lower(), 'ADV']]
+
+def mkX(form):
+    return [[None, 'X']]
 
 def mkVerb(form,derivation='',orig=None, orig_form=None):
     new={}
@@ -2229,6 +2235,8 @@ def mkConlluSentence(tokens):
                     newparselist=filterparselist(archpos,newparselist)
             elif tag == '=adv':
                 newparselist=mkAdv(token)
+            elif tag == '=x':
+                newparselist=mkX(token)
             elif tag == '=n':
                 new=mkNoun(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
@@ -2513,14 +2521,16 @@ def _includeTranslation(text_por,translate=True):
 		text_eng=formatTextEng(text_eng)
 	return text_eng
 
-def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True):
+def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True,inputline=True):
 	yrl=sents['text']
 	por=sents['text_por']
 	if check:
-		if checkSentence(yrl):
+		if checkSentence(yrl): # TODO: extractYrl before checking sentence!
 			print(f"Sentence '{yrl}' already is in the treebank.")
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
+	if inputline:
+		metadata.update({'inputline': yrl})
 	tokenlist=_handleSents(sents,annotator,metadata)
 	outstring=tokenlist.serialize()
 	#if outfile: TODO
@@ -3088,7 +3098,7 @@ def formatPages(start_page,end_page):
 		pages=f"p. {pages}, "
 	return pages
 
-def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False):
+def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	"""
 	>>> example='''18: (Nheengatú) Aru (S. Gabriel) 297-299.
 29-30\tAé/pron unheẽ: — Remaã ne tuwí/=mf:m|ruwí kwera/n mayawé/advra uyumuaíwa, kuíri aé/=mf:m|i:x|pron2:h|pron irumu/adp tenhẽ/foc kurí xasú xapusanú indé, puranga/adva ne mira, umaã indé arama/sconj.
@@ -3108,15 +3118,15 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 		if m:
 			groups=m.groups()
 			if groups:
-				number,lang_title_place,start_end=groups
+				number,lang_title_place,start_end=[part.strip() for part in groups]
 				start_page,end_page=start_end.split('-')
 				text_nr=int(number)
-				parts=re.split(r"[\)\(]",lang_title_place)
+				parts=[part.strip() for part in re.split(r"[\)\(]",lang_title_place) if part.strip() !='']
 				if parts:
 					if len(parts) == 2:
 						lang=parts[0]
-						title=parts[1].strip()
-						if language == "Nheengatú":
+						title=parts[1]
+						if lang == "Nheengatú":
 							title=title.upper()
 					elif len(parts) == 3:
 						place=parts[2]
@@ -3134,4 +3144,4 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 	sents['text_orig']=orig
 	if title:
 		sents['title_orig']=title
-	return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate)
+	return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
