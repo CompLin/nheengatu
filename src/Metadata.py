@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 23, 2024
+# Last update: June 24, 2024
 
 PEOPLE = {
 'gab' : "Gabriela Lourenço Fernandes",
@@ -10,7 +10,9 @@ PEOPLE = {
 
 INSTITUTIONS = {'min' : 'Biblioteca Brasiliana Guita e José Mindlin'}
 
-def Mindlin(person=PEOPLE['gab'],institution=INSTITUTIONS['min'],modernizer=True):
+def Mindlin(person='gab',institution='min',modernizer=True):
+	person=PEOPLE[person]
+	institution=INSTITUTIONS[institution]
 	person=f"{person}, {institution}"
 	transcriber={'text_orig_transcriber': person}
 	if modernizer:
