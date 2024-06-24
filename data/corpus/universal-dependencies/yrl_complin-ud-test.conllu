@@ -25836,6 +25836,125 @@
 14	suiwara	suiwara	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=58:65
 15	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
 
+# sent_id = Amorim1928:6:378:378
+# text = Resasáu kurí ne ara-etá retumunheẽ reikú pituna kiririwasú pitérupi.
+# text_por = Hás de passar teus dias assobiando no meio do silêncio da noite.
+# text_source = p. 149-168, No. 378
+# text_orig = Resasau kuri ne araetá retymunhé reiku pytuna kiriri uasu pytérype.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# title_orig = MIRA BARÉ: PORONOMINARE 
+# inputline = Resasáu kurí ne ara-etá retumunheẽ reikú pituna kiririwasú/=aug pitérupi.
+# text_annotator = LFdeA
+1	Resasáu	sasáu	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=8:12
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:15
+4	ara-etá	ara	NOUN	N	Number=Plur	1	obj	_	TokenRange=16:23
+5	retumunheẽ	tumunheẽ	VERB	V	Number=Sing|Person=2|VerbForm=Fin	1	xcomp	_	TokenRange=24:34
+6	reikú	ikú	AUX	AUXFS	Number=Sing|Person=2|VerbForm=Fin	5	aux	_	TokenRange=35:40
+7	pituna	pituna	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=41:47
+8	kiririwasú	kirirí	NOUN	N	Degree=Aug|Number=Sing	9	nmod:poss	_	TokenRange=48:58
+9-10	pitérupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=59:67
+9	pitera	pitera	NOUN	N	Number=Sing	5	obl	_	_
+10	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	9	case	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=67:68
+
+# sent_id = Amorim1928:6:379:379
+# text = Ateíma-etá tuixawa indé kurí.
+# text_por = Serás o chefe dos preguiçosos.
+# text_source = p. 149-168, No. 379
+# text_orig = Iateymaetá tuixaua ndé kuri.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Ateíma-etá tuixawa/@ indé kurí.
+# text_annotator = LFdeA
+1	Ateíma-etá	ateíma	NOUN	N	Number=Plur	2	nmod:poss	_	TokenRange=0:10
+2	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=11:18
+3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=19:23
+4	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=24:28
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Amorim1928:6:380:380
+# text = Amú ara Poronominare usasáu iwiwasú kití.
+# text_por = No outro dia Poronominare passou para a terra grande.
+# text_source = p. 149-168, No. 380
+# text_orig = Amu ara Poronominare osasau yuy uasu kyty.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Amú ara Poronominare/=p usasáu iwiwasú/=aug kití.
+# text_annotator = LFdeA
+1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
+2	ara	ara	NOUN	N	Number=Sing	4	obl	_	TokenRange=4:7
+3	Poronominare	poronominare	PROPN	PROPN	_	4	nsubj	_	TokenRange=8:20
+4	usasáu	sasáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=21:27
+5	iwiwasú	iwí	NOUN	N	Degree=Aug|Number=Sing	4	obl	_	TokenRange=28:35
+6	kití	kití	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=36:40
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Amorim1928:6:381:381
+# text = Yepé igarapé rembii-pe yepé tamanduá uú uikú ií, suakí Poronominare usú uyuyasuka.
+# text_por = Na beira de um igarapé um tamanduá estava bebendo água, Poronominare foi banhar-se perto dele.
+# text_source = p. 149-168, No. 381
+# text_orig = Iepé ygarapé rembéype iepé tamanduá ou oiku y, suakê Poronominare osu oiuiasuka.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Yepé/art igarapé rembiiwa-pe yepé/art tamanduá uú uikú í, suakí Poronominare/=p usú uyuyasuka.
+# text_annotator = LFdeA
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	igarapé	igarapé	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:12
+3-4	rembii-pe	_	_	_	_	_	_	_	TokenRange=13:24
+3	rembiiwa	tembiiwa	NOUN	N	Number=Sing|Rel=Cont	7	obl	_	_
+4	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	6	det	_	TokenRange=25:29
+6	tamanduá	tamanduá	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=30:38
+7	uú	ú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=39:41
+8	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	7	aux	_	TokenRange=42:46
+9	ií	ií	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=47:48
+10	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=48:49
+11	suakí	ruakí	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	14	obl	_	TokenRange=50:55
+12	Poronominare	poronominare	PROPN	PROPN	_	14	nsubj	_	TokenRange=56:68
+13	usú	sú	AUX	AUXFR	Person=3|VerbForm=Fin	14	aux	_	TokenRange=69:72
+14	uyuyasuka	yasuka	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	7	parataxis	_	SpaceAfter=No|TokenRange=73:82
+15	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=82:83
+
+# sent_id = Amorim1928:6:382:382
+# text = Aé wapika ana uikú ií pu pé, ape upinú-pinú, umunhã uikú xiririwasú.
+# text_por = Já sentado dentro d’água aí principiou ventaventando, fazendo chiriri grande.
+# text_source = p. 149-168, No. 382
+# text_orig = Aé iuapyka ana oiku y py pé, ápe opinupinu, omunhan oiku xiriri uasu.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_sec = Aé uwapika ana uikú ií pupé, ape upinúpinú, umunhã uikú siririwasú.
+# text_por_sec = Ele já estava sentado dentro d'água, aí ficou peidando, fazendo bolha grande.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aé/pron wapika/=mf:m|uwapika ana uikú ií pu/=typo:c|pupé pé/=x, ape/advdi upinú-pinú, umunhã uikú xiririwasú/=aug.
+# text_annotator = LFdeA
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	wapika	wapika	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uwapika|ModernPerson=3|ModernVerbform=Fin|TokenRange=3:9
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=10:13
+4	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	2	aux	_	TokenRange=14:18
+5	ií	ií	NOUN	N	Number=Sing	2	obl	_	TokenRange=19:21
+6	pu	pupé	ADP	ADP	AdpType=Post|Typo=Yes	5	case	_	CorrectForm=pupé|TokenRange=22:24
+7	pé	_	X	X	_	6	goeswith	_	SpaceAfter=No|TokenRange=25:27
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=27:28
+9	ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	10	advmod	_	TokenRange=29:32
+10	upinú-pinú	pinú	VERB	V	Person=3|Red=Yes|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=33:43
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=43:44
+12	umunhã	munhã	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=45:51
+13	uikú	ikú	AUX	AUXFS	Person=3|VerbForm=Fin	12	aux	_	TokenRange=52:56
+14	xiririwasú	xirirí	NOUN	N	Degree=Aug|Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=57:67
+15	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=67:68
+
 # sent_id = Amorim1928:8-1:3:3003
 # text = Amú ara tupá tiapú kirimbáu piri ana, uyapí nhaã sukwera i ara suí, nhaã sukwera usú uwari paranawasú amú suaxara upé, mairamé uyutuká iwí-pe uyumukuruí pawa, yepé i pisãwera yawé upuãmu yepé mira.
 # text_eng = The next day the thunder boomed loudly, threw the meat off him, the meat fell to the other side of the sea, when it hit the land it all crumbled, every piece of it was thrown up.
@@ -25887,6 +26006,41 @@
 37	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	38	det	_	TokenRange=187:191
 38	mira	mira	NOUN	N	Number=Sing	36	advcl	_	SpaceAfter=No|TokenRange=192:196
 39	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=196:197
+
+# sent_id = Amorim1928:8:64:64
+# text = Yepé aintá suiwara uyumasí waá reté ana, umaã tapurú siiya mirá-etá py pe, upisika yeperesé yepé putawa aintá suí, umbaú.
+# text_por = Um deles tinha mais fome viu tapuru porção no fundo do pau, tomou logo uma mão cheia deles, comeu.
+# text_source = p. 191-199, No. 64
+# text_orig = Iepé aetá suhiuara oiumasy uá retéana, omaan tapuru seyia mýráetá py pe, opŷsyka iepéresé iepé putaua aetá suhi, ombaú.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Yepé/card aintá/pron2 suiwara/adp uyumasí waá reté/advs ana, umaã tapurú/n siiya/=mf:m|riiya:x|n:h|n mirá-etá py/=typo:c|pupé pe/=x, upisika yeperesé yepé/card putawa aintá/pron2 suí, umbaú.
+# text_annotator = LFdeA
+1	Yepé	yepé	NUM	CARD	NumType=Card	9	nsubj	_	TokenRange=0:4
+2	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	1	nmod	_	TokenRange=5:10
+3	suiwara	suiwara	ADP	ADP	AdpType=Post	2	case	_	TokenRange=11:18
+4	uyumasí	yumasí	VERB	V	Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=19:26
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	TokenRange=27:30
+6	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	TokenRange=31:35
+7	ana	ana	PART	PFV	Aspect=Perf	4	advmod	_	SpaceAfter=No|TokenRange=36:39
+8	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=39:40
+9	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=41:45
+10	tapurú	tapurú	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=46:52
+11	siiya	siiya	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	9	obj	_	ModernForm=riiya|ModernRel=Cont|TokenRange=53:58
+12	mirá-etá	mirá	NOUN	N	Number=Plur	9	obl	_	TokenRange=59:67
+13	py	pupé	ADP	ADP	AdpType=Post|Typo=Yes	12	case	_	CorrectForm=pupé|TokenRange=68:70
+14	pe	_	X	X	_	13	goeswith	_	SpaceAfter=No|TokenRange=71:73
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=73:74
+16	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=75:82
+17	yeperesé	yeperesé	ADV	ADVT	AdvType=Tim	16	advmod	_	TokenRange=83:91
+18	yepé	yepé	NUM	CARD	NumType=Card	19	nummod	_	TokenRange=92:96
+19	putawa	putawa	NOUN	N	Number=Sing	16	obj	_	TokenRange=97:103
+20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	19	nmod	_	TokenRange=104:109
+21	suí	suí	ADP	ADP	AdpType=Post	20	case	_	SpaceAfter=No|TokenRange=110:113
+22	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=113:114
+23	umbaú	mbaú	VERB	V	Person=3|VerbForm=Fin	16	parataxis	_	SpaceAfter=No|TokenRange=115:120
+24	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=120:121
 
 # sent_id = Amorim1928:8-1:130:130
 # text = Asuí ana paá Buopé uyupirú umaramunhã upanhẽ mira resé.
