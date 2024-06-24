@@ -14,5 +14,5 @@ def Mindlin(person=PEOPLE['gab'],institution=INSTITUTIONS['min'],modernizer=True
 	person=f"{person}, {institution}"
 	transcriber={'text_orig_transcriber': person}
 	if modernizer:
-		transcriber.update{'text_por_modernizer': person}
+		transcriber.update({'text_por_modernizer': person})
 	return transcriber
