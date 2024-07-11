@@ -25101,7 +25101,7 @@
 
 # sent_id = Amorim1928:19:21:21
 # text = Yandé kurabí sakapira manusawa, peyumú katú.
-# text_eng = TODO
+# text_eng = The tip of our arrows is death, aim accurately.
 # text_por = Ponta de nossos curabis é morte, frechem certeiro.
 # text_por_orig = Ponta de nossos curabis é mórte, frecham certeiro.
 # text_por_alt = "A ponta das nossas flechas é a morte, flechem direito."
@@ -25110,7 +25110,9 @@
 # text_rus_source = Maslova (2018:157)
 # text_source = p. 310, No. 21
 # text_orig = Iandé kurabi sakâpyra manusaua, peiumu katu.
-# text_annotator = LFdeA
+# text_sec = Iandé kurabi sakapyra manusaua, peiuma katu.
+# text_sec_source = Stradelli (1929:742)
+# text_annotator = Leonel Figueiredo de Alencar
 # inputline = Yandé/pron2 kurabí sakapira/abs manusawa/@, peyumú katú/adva.
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 1	Yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	2	nmod:poss	_	ModernForm=Yané|ModernLemma=yané|TokenRange=0:5
@@ -25863,7 +25865,8 @@
 # sent_id = Amorim1928:6:379:379
 # text = Ateíma-etá tuixawa indé kurí.
 # text_por = Serás o chefe dos preguiçosos.
-# text_source = p. 149-168, No. 379
+# text_por_source = p. 145, No. 377
+# text_source = p. 165, No. 379
 # text_orig = Iateymaetá tuixaua ndé kuri.
 # title_orig = MIRA BARÉ: PORONOMINARE
 # text_eng = TODO
@@ -26013,6 +26016,16 @@
 # text_source = p. 191-199, No. 64
 # text_orig = Iepé aetá suhiuara oiumasy uá retéana, omaan tapuru seyia mýráetá py pe, opŷsyka iepéresé iepé putaua aetá suhi, ombaú.
 # text_eng = TODO
+# title_orig = TÁRIAETÁ IYPYRUNGAUA
+# title_por = ORIGEM DOS TÁRIAS
+# title_number = VIII
+# variant_number = I
+# place_orig = Ukaiari
+# place_orig_por = Ucaiari
+# place = Uaupés
+# people = Tariana
+# narrator = Kare (Marcelino)
+# note_por = A presente lenda foi contada pelo tuxaua Kare, hoje (1891) conhecido com o nome de Marcelino.
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # inputline = Yepé/card aintá/pron2 suiwara/adp uyumasí waá reté/advs ana, umaã tapurú/n siiya/=mf:m|riiya:x|n:h|n mirá-etá py/=typo:c|pupé pe/=x, upisika yeperesé yepé/card putawa aintá/pron2 suí, umbaú.
@@ -29039,4 +29052,50 @@
 38	werá	werá	NOUN	N	Number=Sing	33	obl	_	TokenRange=170:174
 39	upé	upé	ADP	ADP	AdpType=Post	38	case	_	SpaceAfter=No|TokenRange=175:178
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
+
+# sent_id = Studart1926:3650:1:36500
+# text = Mairamé resika?
+# text_eng = When did you arrive?
+# text_por = Quando chegaste?
+# text_source = p. 36
+# text_orig = Mairamê re cika?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# text_por_alt = A que horas chegaste?
+# inputline = Mairamé/advrt resika?
+1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	2	advmod	_	TokenRange=0:7
+2	resika	sika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:14
+3	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Studart1926:3670:1:36550
+# text = Awá-ta resaisú?
+# text_eng = Who do you love?
+# text_por = A quem amas?
+# text_source = p. 36
+# text_orig = Auátá re çaiçú?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Awá-ta/int resaisú?
+1-2	Awá-ta	_	_	_	_	_	_	_	TokenRange=0:6
+1	Awá	awá	PRON	INT	PronType=Int	3	nsubj	_	_
+2	ta	taá	PART	CQ	Clitic=Yes|PartType=Int	3	advmod	_	_
+3	resaisú	saisú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
+4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Studart1926:3670:2:36550
+# text = Xasaisú se manha.
+# text_eng = I love my mom.
+# text_por = Eu amo minha mãe.
+# text_source = p. 36
+# text_orig = Xa çaiçú ce manha
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Xasaisú se manha.
+1	Xasaisú	saisú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asaisú|TokenRange=0:7
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:10
+3	manha	manha	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=11:16
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
