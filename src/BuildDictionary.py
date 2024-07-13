@@ -150,7 +150,7 @@ for line in TABLE:
 def pprintTable(outfile=None):
     f=sys.stdout
     if outfile:
-        f=open(outfile,'w')
+        f=open(outfile,'w', encoding="utf-8")
     f.write("|**etiqueta**|**abreviatura no glossário**|**expansão da abreviatura**|\n")
     f.write("|------------|----------------------------|---------------------------|\n")
     for line in sorted(TABLE,key=sortFunc):
@@ -169,17 +169,17 @@ def loadGlossary(glossary=None, jsonformat=GLOSSARY):
     if glossary:
         glossary=glossary
     else:
-        with open(jsonformat) as f:
+        with open(jsonformat, encoding="utf-8") as f:
             glossary = json.load(f)
     return glossary
 
 def loadLexicon(infile=LEXICON):
-    with open(infile) as f:
+    with open(infile, encoding="utf-8") as f:
         lexicon = json.load(f)
     return lexicon
 
 def saveJSON(glossary, outfile=GLOSSARY):
-    with open(outfile, "w") as write_file:
+    with open(outfile, "w", encoding="utf-8") as write_file:
         json.dump(glossary, write_file, indent=4, ensure_ascii=False)
 
 def saveGlossary(infile=INFILE,outfile=GLOSSARY):
@@ -196,7 +196,7 @@ def getwords(key,value,textformat=None, jsonformat=GLOSSARY):
     return list(filter(lambda x: x.get(key) == value, glossary))
 
 def extractLines(infile):
-    return [line.strip() for line in open(infile,"r").readlines() if not ignore(line)]
+    return [line.strip() for line in open(infile,"r", encoding="utf-8").readlines() if not ignore(line)]
 
 def ignore(line):
 	line=line.strip()
@@ -724,7 +724,7 @@ def test(outfile='outfile.txt', words=words()):
     output={}
     for word in words:
         output[word]=guesser(word,lexicon)
-    with open(outfile, 'w') as f:
+    with open(outfile, 'w', encoding="utf-8") as f:
         if outfile.endswith(".json"):
             json.dump(output,
             f,
@@ -797,7 +797,7 @@ def main(infile=INFILE,outfile=LEXICON,path=None):
     glossary=buildGlossary(entries)
     pairs=list(WordParsePairs(glossary))
     pairs.sort(key= sort)
-    with open(outfile, 'w') as f:
+    with open(outfile, 'w', encoding="utf-8") as f:
         if outfile.endswith(".json"):
             json.dump(WordParseDict(pairs),
             f,
