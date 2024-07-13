@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 24, 2024
+# Last update: July 13, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
-from Metadata import Mindlin
+from Metadata import Mindlin, PEOPLE
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -13,10 +13,10 @@ from conllu import parse_incr
 import re, os
 
 # default annotator's name abbreviation
-ANNOTATOR = 'LFdeA'
+ANNOTATOR = PEOPLE['leo']
 
 # metadata attributes
-ANNOTATOR_ATT = 'text_annotator'
+ANNOTATOR_ATT = 'text_annotator' #TODO: this is deprecated as of the new version of Metadata
 
 # path to treebank file
 TREEBANK_FILE='yrl_complin-ud-test.conllu'
