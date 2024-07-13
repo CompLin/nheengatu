@@ -10,7 +10,7 @@
 # MAGALHÃES, Couto de. O selvagem: curso da língua geral segundo Ollendorf; origens, costumes, região selvagem. Rio de Janeiro: Tipografia da Reforma, 1876.
 # https://www.literaturabrasileira.ufsc.br/documentos/?id=135896
 '''
-Mapping from k to {'char':v,'code':p,'phonetic':f, 'name':n, 'compose':c}, where 
+Mapping from k to {'char':v,'code':p,'phonetic':f, 'name':n, 'compose':c}, where
 
 k is an alternativa character that can be directly typed in or using a compose-key sequence;
 
@@ -33,35 +33,35 @@ MAPPING={
 	'ä':{'char':'ạ','code':'U+1EA1','phonetic':'close a','name':'LATIN SMALL LETTER A WITH DOT BELOW'},
 
 	'ê':{'char':'ệ','code':'U+1EC7','phonetic':'stressed close e', 'name':'LATIN SMALL LETTER E WITH CIRCUMFLEX AND DOT BELOW'},
-	
+
 	'ĕ': {'char':'ệ','variant': 'ê', 'compose':'be'},
-	
+
 	'ē': {'char':'ệ','variant': 'ê', 'compose':'_e'},
 
 	'â':{'char':'ậ','code':'U+1EAD','phonetic':'stressed close a','name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND DOT BELOW'},
 
 	'ô':{'char':'ộ','code':'U+1ED9','phonetic':'stressed close o', 'name':'LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW'},
-	
+
 	'œ': {'char':'ộ','variant': 'ô', 'compose':'oe'},
 
 	#'y':{'char':'ɨ','code':'U+0268', 'phonetic':'Close central unrounded vowel','name':'LATIN SMALL LETTER I WITH STROKE'},
-	
+
 	'ý':{'char':'ɨ','variant': 'y', 'compose':"'y"},
 
 	'å':{'char':'ẫ','code':'U+1EAB','phonetic':'stressed nasal a', 'name':'LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE', 'compose':'oa'},
 
 	'ā':{'char':'ẫ','variant': 'å', 'compose':'_a'},
-	
+
 	'ă': {'char':'ẫ','variant': 'å', 'compose':'ba'},
-	
+
 	'ŏ':{'char':'ṍ', 'code':'U+1E4D','phonetic':'stressed nasal o', 'name':'LATIN SMALL LETTER O WITH TILDE AND ACUTE', 'compose':'bo'},
-	
+
 	'ō':{'char':'ṍ','variant': 'ŏ', 'compose':'_o'},
 
 	'ø':{'char':'ô', 'phonetic':'possibly stressed close o', 'compose':'/o', 'example': '''"ipô" in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232), cf. "[...] ahé	ipộ	oçộ	rẹtệãna.(p. 179, PDF 231)"'''},
-	
+
 	'ò':{'char':'ô', 'variant': 'ø', 'compose':'`o'},
-	
+
 	'è':{'char':'ê', 'phonetic':'possibly stressed close e', 'compose':'`e', 'example': '''"uê", "wé" in Avila (2021), in "Paraná	oçuaxára:	— Ah,	iáutí,	inệ	ipø	rẹiúiútɨma	putári	mocộĩ	uê!" (p. 180, PDF 232)'''}
 }
 
@@ -91,7 +91,7 @@ def replace(string,table=TABLE):
 	return string
 
 def parseText(infile):
-	text=open(infile).read().strip()
+	text=open(infile, encoding="utf-8").read().strip()
 	pairs=text.split("\n\n")
 	sents=[]
 	i=0

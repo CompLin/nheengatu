@@ -2485,7 +2485,7 @@ def saveParseToFile(outstring,metadata,overwrite):
     if os.path.exists(filename) and not overwrite:
         print(f"{filename} already exists.")
     else:
-        outfile=open(filename,'w')
+        outfile=open(filename,'w', encoding="utf-8")
         print(outstring,file=outfile)
         outfile.close()
 
@@ -2730,7 +2730,7 @@ def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
     i=0
     textid=textid
     sentid=sentid
-    with open(outfile, 'w') as f:
+    with open(outfile, 'w', encoding="utf-8") as f:
         while(i < len(sentences)):
             sent=sentences[i]
             insertSentId(sent,pref,textid,sentid)
@@ -2739,7 +2739,7 @@ def writeConlluUD(sentences,outfile,pref='MooreFP1994',textid=0,sentid=1):
             print(sent.serialize(),end='',file=f)
 
 def writeSentsConllu(sentences,outfile):
-    with open(outfile, 'w') as f:
+    with open(outfile, 'w', encoding="utf-8") as f:
         for sent in sentences:
             print(sent.serialize(),end='',file=f)
 

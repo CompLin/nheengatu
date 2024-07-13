@@ -52,7 +52,7 @@ def extractWordTag(entry):
     return f"{word} {pos}"
 
 def extractLines(infile="lexicon.txt"):
-    return [extractWordTag(line.strip()) for line in open(infile,"r").readlines() if line.strip() != ""]
+    return [extractWordTag(line.strip()) for line in open(infile,"r", encoding="utf-8").readlines() if line.strip() != ""]
 
 def makeDictionary(lines):
     dictionary=dict()
@@ -93,7 +93,7 @@ def convertDictionary(dic):
 def buildDictionary(infile="lexicon.json"):
     tagger={}
     if infile.endswith("json"):
-        with open(infile) as f:
+        with open(infile, encoding="utf-8") as f:
             tagger = convertDictionary(json.load(f))
     else:
         tagger=makeDictionary(extractLines(infile))
@@ -266,7 +266,7 @@ def getparselist(word,lexicon=None,infile=LEXICONFILE):
 def main(infile):
     print(MESSAGE)
     lines=[]
-    with open(infile) as f:
+    with open(infile, encoding="utf-8") as f:
         lines=f.readlines()
     tagText(lines)
 
