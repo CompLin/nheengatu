@@ -29068,6 +29068,38 @@
 2	resika	sika	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:14
 3	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
 
+# sent_id = Studart1926:3650:2-1:36501
+# text = Xasika pisayé ana.
+# text_eng = I arrived at midnight.
+# text_por = Cheguei à meia-noite.
+# text_por_orig = Cheguei á meia noite.
+# text_source = p. 36
+# text_orig = Xa cika peçaiê ana.
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Xasika pisayé ana. (p. 36)  Cheguei à meia-noite. - Xa cika peçaiê ana.
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xasika	sika	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asika|TokenRange=0:6
+2	pisayé	pisayé	NOUN	N	Number=Sing	1	obl	_	TokenRange=7:13
+3	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=14:17
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Studart1926:3650:2-2:36502
+# text = Pisayé ramé.
+# text_eng = At midnight.
+# text_por = À meia-noite.
+# text_source = p. 36
+# text_orig = peçaiê ana.
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Pisayé ramé/adp. (p. 36) À meia-noite. - peçaiê ramé.
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Pisayé	pisayé	NOUN	N	Number=Sing	0	root	_	TokenRange=0:6
+2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=7:11
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
+
 # sent_id = Studart1926:3670:1:36550
 # text = Awá-ta resaisú?
 # text_eng = Who do you love?
@@ -29098,4 +29130,98 @@
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:10
 3	manha	manha	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=11:16
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Studart1926:0:0:36100
+# text = Maã taá reputari?
+# text_eng_ggl = What you want?
+# text_eng = What do you want?
+# text_por = Que quer?
+# text_source = p. 36
+# text_orig = Ma há tá reputari?
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Maã/int taá reputari? (p. 36) Que quer? - Ma há tá reputari?
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:16
+4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Studart1926:0:0:36101
+# text = Yasú yamemúi timbiú.
+# text_eng = Let's cook meat.
+# text_por = Vamos cozinhar carne.
+# text_source = p. 36
+# text_orig = Iá çó iá memonhe timiú
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Yasú yamemúi timbiú. (p. 36) Vamos cozinhar carne. - Iá çó iá memonhe timiú
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yamemúi	memúi	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:12
+3	timbiú	timbiú	NOUN	N	Number=Sing|Rel=Abs	2	obj	_	SpaceAfter=No|TokenRange=13:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Studart1926:0:0:36102
+# text = Yasú yamixiri.
+# text_eng = Let's bake.
+# text_por = Vamos assar.
+# text_source = p. 36
+# text_orig = Iá çó iá mixiri
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Yasú yamixiri. (p. 36) Vamos assar. - Iá çó iá mixiri
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Yasú	sú	AUX	AUXFR	Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yamixiri	mixiri	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:13
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = Studart1926:0:0:36103
+# text = Remburi turusú.
+# text_eng = Put a lot.
+# text_por = Ponha muito.
+# text_source = p. 36
+# text_orig = Re mamori turuçú
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Remburi turusú/indq. (p. 36) Ponha muito. - Re mamori turuçú
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Remburi	mburi	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	turusú	turusú	PRON	INDQ	PronType=Ind	1	obj	_	SpaceAfter=No|TokenRange=8:14
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Studart1926:3660:1:36530
+# text = Repiiri ana uka será?
+# text_eng = Have you already swept the house?
+# text_por = Você já varreu a casa?
+# text_source = p. 36
+# text_orig = Re piire ana oca será?
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Repiiri ana uka será? (p. 36) Você já varreu a casa? - Re piire ana oca será?
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Repiiri	piiri	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=8:11
+3	uka	uka	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	TokenRange=12:15
+4	será	será	PART	PQ	PartType=Int	1	advmod	_	SpaceAfter=No|TokenRange=16:20
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Studart1926:3660:2:36531
+# text = Xapiiri ana.
+# text_eng = I already swept.
+# text_por = Já varri.
+# text_source = p. 36
+# text_orig = Xa piire ana
+# text_annotator = Hélio Leonam Barroso Silva
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xapiiri	piiri	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Apiiri|TokenRange=0:7
+2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=8:11
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
