@@ -10801,17 +10801,19 @@
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Avila2021:29:3:332
-# text = Eré, se ruayara.
+# text = — Eré, se ruayara.
 # text_eng = "All right, my brother-in-law.
 # text_por = ― Está bem, meu cunhado.
 # text_source = Rodrigues, 174, adap.
 # text_prim = — Eré, che ruaiara.
 # text_annotator = LFdeA
-1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:3
-2	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=3:4
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=5:7
-4	ruayara	tuayara	NOUN	N	Number=Sing|Rel=Cont	1	vocative	_	SpaceAfter=No|TokenRange=8:15
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
+# reviewer1 = Hélio Leonam Barroso Silva
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=1:4
+3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=4:5
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=6:8
+5	ruayara	tuayara	NOUN	N	Number=Sing|Rel=Cont	2	vocative	_	SpaceAfter=No|TokenRange=9:16
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Avila2021:29:4:333
 # text = Ayuri ne piri karuka ramé.
