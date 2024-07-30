@@ -2341,7 +2341,7 @@
 # text_source = Lesson 2, p. 19
 # text_annotator = DMA
 # reviewer1 = LFdeA
-1	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	3	det	_	TokenRange=0:4
+1	Mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	3	det	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	kunhã	kunhã	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=9:14
 4	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=15:18
@@ -5033,7 +5033,7 @@
 4	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=14:22
 5	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	iobj	_	TokenRange=23:30
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=31:34
-7	umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	4	xcomp	_	TokenRange=35:39
+7	umeẽ	meẽ	VERB	V	Person=3|VerbForm=Fin	4	ccomp	_	TokenRange=35:39
 8	arã	arã	SCONJ	SCONJ	_	7	mark	_	TokenRange=40:43
 9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=44:45
 10	xupé	xupé	ADP	ADP	AdpType=Post	9	case	_	TokenRange=46:50
@@ -6350,7 +6350,7 @@
 # text_source = Oliveira; Schwade, 82
 # text_annotator = LFdeA
 # reviewer1 = JLG
-1	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	3	det	_	TokenRange=0:4
+1	Mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	3	det	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	nheenga	nheenga	NOUN	N	Number=Sing	6	obl	_	TokenRange=9:16
 4	rupí	rupí	ADP	ADP	AdpType=Post	3	case	_	TokenRange=17:21
@@ -6395,7 +6395,7 @@
 # text_annotator = LFdeA
 1	[...]	[...]	PUNCT	ELIP	_	12	punct	_	TokenRange=0:5
 2	asuí	asuí	CCONJ	CCONJ	_	12	cc	_	TokenRange=6:10
-3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	5	det	_	TokenRange=11:15
+3	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	5	det	_	TokenRange=11:15
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	fixed	_	TokenRange=16:19
 5	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	dislocated	_	TokenRange=20:23
 6	utiari	tiari	VERB	V	Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=24:30
@@ -6528,7 +6528,7 @@
 15	uruyari	ruyari	VERB	V	Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=69:76
 16	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	15	nsubj	_	TokenRange=77:84
 17	panhẽ	panhẽ	DET	TOT	PronType=Tot	20	det	_	TokenRange=85:90
-18	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	20	det	_	TokenRange=91:95
+18	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	20	det	_	TokenRange=91:95
 19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	fixed	_	TokenRange=96:99
 20	nheenga	nheenga	NOUN	N	Number=Sing	15	obj	_	SpaceAfter=No|TokenRange=100:107
 21	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=107:108
@@ -14580,7 +14580,7 @@
 # sent_id = Avila2021:0:0:542
 # text = Ape paá i manha umeẽ i xupé pusanga umusasawa arã i pira rupí, ti arã nhaã urubú kunhã-itá umaã aé.
 # text_eng = Then, they say, the mother gave it a puçanga to pass over the body, so that the female vultures would not see it.
-# text_por = Então, contam, a mãe deu-lhe puçanga para passar pelo corpo, a fim de que as urubús fêmeas não o vissem.
+# text_por = Então, contam, a mãe deu-lhe puçanga para passar pelo corpo, a fim de que as urubus fêmeas não o vissem.
 # text_source = Casasnovas, 88
 # text_annotator = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:3
@@ -22288,7 +22288,8 @@
 # sent_id = Rodrigues1890:1-2-2:101:101
 # text = Umeẽ i nheenga pisasú unheẽ i xupé: — Upaĩ kunhã-itá ukwáu-putari waá se kwatukasawa umanú kuíri; muíri apigawa-itá umbeú waá umanú kurí; peumbeú kurumiwasú-itá supé, tenhẽ peumbeú taína-itá supé.
 # text_eng = He gave his new orders and said to them: — All women who want to know my secret will die; all the men who tell will die; you tell the boys, you don't tell the children.
-# text_por = Deu suas ordens novas e disse-lhes: — Todos as mulheres que quiserem saber meu segredo morrerão; todos os homens que contarem morrerão; vocês contem aos rapazes, vocês não contem às crianças.
+# text_por = Deu suas ordens novas e disse-lhes: — Todas as mulheres que quiserem saber meu segredo morrerão; todos os homens que contarem morrerão; vocês contem aos rapazes, vocês não contem às crianças.
+# text_por_gloss = Deu suas ordens novas e disse-lhes: — Todas as mulheres saber quiserem que meu segredo morrerão; todos os homens contarem que morrerão; vocês contem rapazes aos, não vocês contem crianças às.
 # text_source = p. 112
 # text_orig = U meeng i nheeng peçaçu u nheen ichupé: — U pain cunhan etá u cuáo putare uaá ce acuautuçaçaua u manu cuire; muire apegaua eta u umbeú uaá u manu curi; pe umbeú curumi uaçu etá çupé, tenhen pe umbeú taina etá çupé.
 # title_orig = IZY OU YURUPARI
@@ -26338,7 +26339,7 @@
 17	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=104:105
 
 # sent_id = Amorim1928:2:6:5006
-# text = Mayawé Buopé sikú upurasí pituna yawé-yawé Yuruparí Iwitera upé upanhẽ apigawa-etá uyawáu aintá rimirikú aintá suí pituna irumu.
+# text = Mayawé Buopé sikú upurasí pituna yawé-yawé Yuruparí Iwitera upé upanhẽ apigawa-etá uyawáu aintá remiré aetá suí pituna irumu.
 # text_eng = As Buopé used to dance Jurupari every night in Serra do Jurupari, all the men ran away from their wives at nightfall.
 # text_eng_ggl = As it was Buopé's custom of dancing Jurupari every night in Serra do Jurupari, all the men ran away from their wives at nightfall.
 # text_por = Como era costume de Buopé de dançar Jurupari todas as noites na Serra do Jurupari, todos os homens fugiam de suas mulheres ao vir da noite.
@@ -26347,9 +26348,10 @@
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = LFdeA
+# inputline = Mayawé/sconjr Buopé sikú upurasí pituna yawé-yawé/indq Yuruparí Iwitera upé/adp upanhẽ apigawa-etá uyawáu aintá/pron2 remiré/=typo:c|rimirikú-etá aetá/=typo:c|-etá:x|x suí pituna irumu/adp.
 1	Mayawé	mayawé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:6
-2	Buopé	buopé	PROPN	PROPN	_	3	dislocated	_	TokenRange=7:12
-3	sikú	tikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	12	advcl	_	TokenRange=13:17
+2	Buopé	buopé	PROPN	PROPN	_	3	nmod:poss	_	TokenRange=7:12
+3	sikú	tikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	12	advcl	_	ModernForm=rikú|ModernRel=Cont|TokenRange=13:17
 4	upurasí	purasí	VERB	V	Person=3|VerbForm=Fin	3	csubj	_	TokenRange=18:25
 5	pituna	pituna	NOUN	N	Number=Sing	4	obj	_	TokenRange=26:32
 6	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	5	det	_	TokenRange=33:42
@@ -26360,12 +26362,12 @@
 11	apigawa-etá	apigawa	NOUN	N	Number=Plur	12	nsubj	_	TokenRange=71:82
 12	uyawáu	yawáu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=83:89
 13	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=90:95
-14	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	12	dislocated	_	TokenRange=96:104
-15	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	obl	_	TokenRange=105:110
-16	suí	suí	ADP	ADP	AdpType=Post	15	case	_	TokenRange=111:114
-17	pituna	pituna	NOUN	N	Number=Sing	12	obl	_	TokenRange=115:121
-18	irumu	irumu	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=122:127
-19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=127:128
+14	remiré	simirikú	NOUN	N	Number=Plur|Rel=Cont|Typo=Yes	12	obl	_	CorrectForm=rimirikú-etá|TokenRange=96:102
+15	aetá	_	X	X	_	14	goeswith	_	CorrectForm=-etá|TokenRange=103:107
+16	suí	suí	ADP	ADP	AdpType=Post	14	case	_	TokenRange=108:111
+17	pituna	pituna	NOUN	N	Number=Sing	12	obl	_	TokenRange=112:118
+18	irumu	irumu	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=119:124
+19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=124:125
 
 # sent_id = Amorim1928:2:15:15
 # text = Buopé paá intí usuaxara, umundú yeperesé uyapí kaziwera pupé nhaã kunhã-etá pirá rimbiú arama.
@@ -28015,7 +28017,7 @@
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hartt1938:0:0:26
-# text = Se raíra mirĩ i pausawa wã kwaá.
+# text = Se rayera mirĩ i pausawa wã kwaá.
 # text_eng = This is my last daughter.
 # text_por = Essa é minha última filha.
 # text_por_alt = Minha filha pequena, essa é a última.
@@ -28025,13 +28027,13 @@
 # text_annotator = DMA
 # reviewer = LFdeA
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
-2	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	5	dislocated	_	TokenRange=3:8
-3	mirĩ	mirĩ	ADJ	A	_	2	amod	_	TokenRange=9:13
-4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	expl	_	TokenRange=14:15
-5	pausawa	pausawa	NOUN	N	Number=Sing	0	root	_	TokenRange=16:23
-6	wã	wã	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=24:26
-7	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	nsubj	_	SpaceAfter=No|TokenRange=27:31
-8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
+2	rayera	tayera	NOUN	N	Number=Sing|Rel=Cont	5	dislocated	_	TokenRange=3:9
+3	mirĩ	mirĩ	ADJ	A	_	2	amod	_	TokenRange=10:14
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	expl	_	TokenRange=15:16
+5	pausawa	pausawa	NOUN	N	Number=Sing	0	root	_	TokenRange=17:24
+6	wã	wã	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=25:27
+7	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	nsubj	_	SpaceAfter=No|TokenRange=28:32
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:27
 # text = Maã upitá waá intí waá rerasú-kwáu ixé xarasú se kupé-pe.
