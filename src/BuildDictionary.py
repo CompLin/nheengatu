@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 13, 2024
+# Last update: August 5, 2024
 
 import re, sys, os, json
 
@@ -444,8 +444,11 @@ def conjugateVerb(lemma,pos='V'):
         forms.add(f"pekũi\t{lemma}+{pos}+{IMP}+2+PL")
     for pref,tag in persnum.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
-    forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
+    includeInfinitive(pos,lemma,forms)
     return forms
+
+def includeInfinitive(pos,lemma,forms):
+	forms.add(f"{lemma}\t{lemma}+{pos}+{NFIN}")
 
 def isDemPron(tag):
     return tag.startswith('DEM')
@@ -510,6 +513,8 @@ def WordParsePairs(glossary):
 					pairs.update(conjugateVerb(lemma,tag))
 				elif tag == 'V3':
 					pairs.update(handleV3(lemma,tag))
+				elif tag == 'VSUFF':
+					includeInfinitive(tag,lemma,pairs)
 				elif tag in PRONOUNS:
 					pairs.add(expandpronoun(lemma,tag))
 				else:

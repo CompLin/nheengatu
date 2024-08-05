@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: July 13, 2024
+# Last update: August 5, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -1516,11 +1516,12 @@ def addFeatures(tokenlist):
                 handleNounPron(token,nextToken,verbs)
                 if upos == 'PRON':
                     handlePron(token,nextToken)
-        elif upos == "PART":
+        elif upos == 'PART':
             handlePart(token,tokenlist,verbs)
-        elif upos == "X":
+        elif upos == 'X':
             token['deprel']='goeswith'
-            token['head']=tokenlist[i-1]['id']
+            previous=tokenlist[i-1]
+            token['head']=previous['id']
         elif upos == "INTJ":
             handleIntj(token,verbs)
         elif upos == "VERB":
@@ -2224,7 +2225,11 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=typo':
                 dic.update(mkTypo(correct,form))
-                newparselist=getparselist(correct.lower())
+                if xpos == 'X':
+                    newparselist=mkX(correct)
+                    print(newparselist)
+                else:
+                    newparselist=getparselist(correct.lower())
             elif tag == '=mf':
                 dic.update(mkModernForm(modern))
                 newparselist=getparselist(form.lower())
@@ -2300,7 +2305,8 @@ def mkConlluSentence(tokens):
             typo=dic.get('Typo')
             if correct_form and typo:
                 t['misc'].update({'CorrectForm': correct_form})
-                t['feats'].update({'Typo': 'Yes'})
+                if xpos != 'X':
+                    t['feats'].update({'Typo': 'Yes'})
                 t['form']=typo
             modern_form=dic.get('ModernForm')
             if modern_form:
@@ -2625,6 +2631,15 @@ def extractHost(token):
             return mkHost(host,clitic,token)
     return dic
 
+def hasLinkingHyphen(token):
+    parts=token.split("|")
+    c=len(parts)
+    if c == 1:
+        return HYPHEN in token
+    else:
+        return HYPHEN in parts[0]
+    return False
+
 def splitMultiWordTokens(tokens):
     MULTIWORDTOKENS.clear()
     sep=[d['lemma'] for d in AUX]
@@ -2632,7 +2647,7 @@ def splitMultiWordTokens(tokens):
     newlist=[]
     for t in tokens:
         dic=extractHost(t)
-        if HYPHEN in t:
+        if hasLinkingHyphen(t):
             tag=''
             parts=extractTag(t)
             if parts:
