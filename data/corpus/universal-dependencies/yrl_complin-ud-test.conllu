@@ -9040,7 +9040,8 @@
 # text_por = E alguns asiáticos, amigos de Paulo, mandaram a ele um recado, rogando-lhe que não entrasse com eles no local onde eles se reuniam.
 # text_source = O Novo Testamento em nyengatu, Atos 19:31, adap.
 # text_orig = Asuí yepeyepé Aziawara-itá, Paulo anama-itá, aintá umundú i xupé kwekatú, aintá upurandú aé ti arama uwiké aintá irumu aintá uyumuatiriwera waá upé.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=0:4
 2	yepé-yepé	yepé-yepé	DET	INDQ	PronType=Ind	3	det	_	TokenRange=5:14
 3	Aziawara-itá	aziawara	NOUN	N	Number=Plur	9	nsubj	_	SpaceAfter=No|TokenRange=15:27
@@ -9056,15 +9057,15 @@
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=73:74
 14	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	15	nsubj	_	TokenRange=75:80
 15	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=81:89
-16	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	obj	_	TokenRange=90:92
+16	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	iobj	_	TokenRange=90:92
 17	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	19	advmod	_	TokenRange=93:95
 18	arama	arama	SCONJ	SCONJ	_	19	mark	_	TokenRange=96:101
 19	uwiké	wiké	VERB	V	Person=3|VerbForm=Fin	15	ccomp	_	TokenRange=102:107
 20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	19	obl	_	TokenRange=108:113
 21	irumu	irumu	ADP	ADP	AdpType=Post	20	case	_	TokenRange=114:119
 22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=120:125
-23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Freq|Person=3|Tense=Past|VerbForm=Fin	19	obl	_	TokenRange=126:140
-24	waá	waá	PRON	REL	Number=Sing|PronType=Rel	23	obl	_	TokenRange=141:144
+23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Freq|Person=3|Tense=Past|VerbForm=Fin	24	acl:relcl	_	TokenRange=126:140
+24	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	obl	_	TokenRange=141:144
 25	upé	upé	ADP	ADP	AdpType=Post	24	case	_	SpaceAfter=No|TokenRange=145:148
 26	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=148:149
 
@@ -18890,12 +18891,13 @@
 # text_por = Ele tomou o cego pela mão e o levou para fora do povoado. Depois de cuspir nos olhos do homem e impor-lhe as mãos, Jesus perguntou: "Você está vendo alguma coisa?" [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Mk 8:23
 # text_orig = Asui Jesus upisika ipu urasu ae tetama sui asui utumuna sesa upe uxari ipu sese asui upurandu ae: — Maitaa remaawana?
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
 2	Jesus	jesus	PROPN	PROPN	_	3	nsubj	_	TokenRange=5:10
 3	upisika	pisika	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:20
-5	pú	pú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=21:23
+5	pú	pú	NOUN	N	Number=Sing	3	obj	_	TokenRange=21:23
 6	urasú	rasú	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=24:29
 7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	obj	_	TokenRange=30:32
 8	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	6	obl	_	TokenRange=33:39
@@ -20975,15 +20977,21 @@
 
 # sent_id = Casasnovas2006:2:6:20
 # text = Asuí umundéu yepé i pú akití, upisika arã yautí i pí resé.
-# text_eng = Then he reached in with one of his hands to grab the tortoise's foot.
-# text_por = Depois, enfiou uma das mãos para lá, para pegar no pé do jabuti.
-# text_source = p. 70, No. 6
+# text_adapter = JLG
 # text_orig = Asuí umundéu yepé ipú akití, upisika arã yautí ipí resé.
+# text_eng_ggl = Then he reached in with one of his hands to grab the tortoise's foot.
+# text_por_orig = Depois, enfiou uma das mãos para lá, para pegar no pé do jabuti.
 # text_orig_transcriber = JLG
-# text_por_transcriber = JLG
+# text_por_orig_transcriber = JLG
+# text_source = p. 70, No. 6
+# title = Yautí, yawareté
+# title_orig = Yautí, Yawareté
+# title_por_orig = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
 # text_annotator = JLG
-# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
+# comment = Juliana, por que você utilizou o atributo text_eng_ggl em vez de text_eng? 
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umundéu	mundéu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
 3	yepé	yepé	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=13:17
@@ -21001,16 +21009,21 @@
 
 # sent_id = Casasnovas2006:2:7:21
 # text = Nhaã pukusá, yautí umundéu pawa i pi-itá i pirera kití.
-# text_eng = Meanwhile, the tortoise stuck all its feet inside its shell.
-# text_por = Enquanto isso, o jabuti enfiou todos os pés dentro de seu casco.
-# text_source = p. 70, No. 7
+# text_adapter = JLG
 # text_orig = Nhapukusá, yautí umundéu pawa ipitá ipirera kití.
+# text_eng_ggl = Meanwhile, the tortoise stuck all its feet inside its shell.
+# text_por_orig = Enquanto isso, o jabuti enfiou todos os pés dentro de seu casco.
 # text_orig_transcriber = JLG
-# text_por_transcriber = JLG
+# text_por_orig_transcriber = JLG
+# text_source = p. 70, No. 7
+# title = Yautí, yawareté
+# title_orig = Yautí, Yawareté
+# title_por_orig = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
 # text_annotator = JLG
-# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
-1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
+1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	_	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12
 4	yautí	yautí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:18
@@ -21081,14 +21094,14 @@
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:14
 3	usasemu	sasemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:22
 4	uyana	yana	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=23:28
-5	usú	sú	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=29:32
+5	usú	sú	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=29:32
 6	kaá	kaá	NOUN	N	Number=Sing	5	obl	_	TokenRange=33:36
 7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=37:41
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=41:42
 9	sasisawa	sasisawa	NOUN	N	Number=Sing	10	obj	_	TokenRange=43:51
-10	usaã	saã	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=52:56
+10	usaã	saã	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=52:56
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=57:58
-12	perewa	perewa	NOUN	N	Number=Sing	9	nmod:poss	_	SpaceAfter=No|TokenRange=59:65
+12	perewa	perewa	NOUN	N	Number=Sing	10	nsubj	_	SpaceAfter=No|TokenRange=59:65
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=65:66
 
 # sent_id = Casasnovas2006:3:1:25
@@ -27322,11 +27335,14 @@
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# text_annotator = LFdeA
 # text_sec = Remaã ne ruwí kwera, mayé uyumuaíwa, kuíri i irumu tẽ kurí asú apusanú indé, puranga arama ne mira umaã indé.
 # text_por_sec = Vê teu sangue, como se estragou, agora com ele mesmo eu te curarei, para tua gente te ver bonito.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
+# text_por_alt = Vê teu sangue cuera como se estragou!; agora, com ele mesmo eu te curarei para tua gente olhar bonito para ti.
+# text_por_alt_source = Maslova (2018:153)
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 # inputline = Aé/pron unheẽ: — Remaã ne tuwí/=mf:m|ruwí kwera/n mayawé/advra uyumuaíwa, kuíri aé/=mf:m|i:x|pron2:h|pron irumu/adp tenhẽ/foc kurí xasú xapusanú indé, puranga/adva ne mira, umaã indé arama/sconj.
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	unheẽ	nheẽ	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
@@ -27335,7 +27351,7 @@
 5	Remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=11:16
 6	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=17:19
 7	tuwí	tuwí	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	8	nmod:poss	_	ModernForm=ruwí|ModernRel=Cont|TokenRange=20:24
-8	kwera	kwera	NOUN	N	Number=Sing	5	obj	_	TokenRange=25:30
+8	kwera	kwera	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=25:30
 9	mayawé	mayawé	ADV	ADVRA	AdvType=Man|PronType=Int	10	advmod	_	TokenRange=31:37
 10	uyumuaíwa	muaíwa	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	5	ccomp	_	SpaceAfter=No|TokenRange=38:47
 11	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=47:48
@@ -27345,7 +27361,7 @@
 15	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	13	advmod	_	TokenRange=64:69
 16	kurí	kurí	PART	FUT	Tense=Fut	18	advmod	_	TokenRange=70:74
 17	xasú	sú	AUX	AUXFR	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	18	aux	_	ModernForm=asú|TokenRange=75:79
-18	xapusanú	pusanú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	10	parataxis	_	ModernForm=apusanú|TokenRange=80:88
+18	xapusanú	pusanú	VERB	V	Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	parataxis	_	ModernForm=apusanú|TokenRange=80:88
 19	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	18	obj	_	SpaceAfter=No|TokenRange=89:93
 20	,	,	PUNCT	PUNCT	_	25	punct	_	TokenRange=93:94
 21	puranga	puranga	ADV	ADVA	AdvType=Man	25	advmod	_	TokenRange=95:102
