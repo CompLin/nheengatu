@@ -21023,7 +21023,7 @@
 # text_annotator = JLG
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
-1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
+1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	_	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12
 4	yautí	yautí	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:18
@@ -21038,40 +21038,50 @@
 
 # sent_id = Casasnovas2006:2:8:22
 # text = Ti waá upé yawaraté usarú, mairamé usaã usuú ana i puampé usaka.
-# text_eng = Unexpectedly, the jaguar felt himself biting and tearing off his own finger.
-# text_por = Inesperadamente a onça sentiu morder e arrancar o próprio dedo.
-# text_source = p. 70, No. 8
+# text_adapter = JLG
 # text_orig = Ti waupé yawaraté usarú, mairamé usaã usuúana ipwampé usaka.
+# text_eng_ggl = Unexpectedly, the jaguar felt himself biting and tearing off his own finger.
+# text_por_orig = Inesperadamente a onça sentiu morder e arrancar o próprio dedo.
 # text_orig_transcriber = JLG
-# text_por_transcriber = JLG
+# text_por_orig_transcriber = JLG
+# text_source = p. 70, No. 8
+# title = Yautí, yawareté
+# title_orig = Yautí, Yawareté
+# title_por_orig = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
 # text_annotator = JLG
-# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
-2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	mark	_	MWEPOS=SCONJ|TokenRange=3:6
+2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	mark	_	TokenRange=3:6
 3	upé	upé	ADP	ADP	AdpType=Post	2	fixed	_	TokenRange=7:10
 4	yawaraté	yawaraté	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=11:19
-5	usarú	sarú	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	SpaceAfter=No|TokenRange=20:25
-6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=25:26
-7	mairamé	mairamé	ADV	ADVLT	AdvType=Tim|PronType=Rel	8	advmod	_	TokenRange=27:34
-8	usaã	saã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=35:39
+5	usarú	sarú	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=25:26
+7	mairamé	mairamé	SCONJ	SCONJR	_	8	mark	_	TokenRange=27:34
+8	usaã	saã	VERB	V	Person=3|VerbForm=Fin	5	advcl	_	TokenRange=35:39
 9	usuú	suú	VERB	V	Person=3|VerbForm=Fin	8	ccomp	_	TokenRange=40:44
 10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=45:48
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=49:50
 12	puampé	puampé	NOUN	N	Number=Sing	9	obj	_	TokenRange=51:57
 13	usaka	saka	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	SpaceAfter=No|TokenRange=58:63
-14	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=63:64
+14	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=63:64
 
 # sent_id = Casasnovas2006:2:9:23
 # text = Ape tuwí retana aé.
-# text_eng = Then it bled a lot.
-# text_por = Então sangrou muito.
-# text_source = p. 71, No. 9
+# text_adapter = JLG
 # text_orig = Ape tuwí retana aé.
+# text_eng_ggl = Then it bled a lot.
+# text_por_orig = Então sangrou muito.
 # text_orig_transcriber = JLG
-# text_por_transcriber = JLG
+# text_por_orig_transcriber = JLG
+# text_source = p. 71, No. 9
+# title = Yautí, yawareté
+# title_orig = Yautí, Yawareté
+# title_por_orig = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
 # text_annotator = JLG
-# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
 2	tuwí	tuwí	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=4:8
@@ -21081,27 +21091,32 @@
 
 # sent_id = Casasnovas2006:2:10:24
 # text = Tiapú yawaraté usasemu uyana usú kaá kití, sasisawa usaã i perewa.
-# text_eng = Feeling the pain of its wound, the jaguar ran and screamed into the bush.
-# text_por = Sentindo a dor de sua ferida, a onça saiu correndo e gritando pelo mato adentro.
-# text_source = p. 71, No. 10
+# text_adapter = JLG
 # text_orig = Tiapú yawaraté usasemu uyana usú kaá kití, sasisã usaã iperewa.
+# text_eng_ggl = Feeling the pain of its wound, the jaguar ran and screamed into the bush.
+# text_por_orig = Sentindo a dor de sua ferida, a onça saiu correndo e gritando pelo mato adentro.
 # text_orig_transcriber = JLG
-# text_por_transcriber = JLG
+# text_por_orig_transcriber = JLG
+# text_source = p. 71, No. 10
+# title = Yautí, yawareté
+# title_orig = Yautí, Yawareté
+# title_por_orig = O jabuti e a onça
+# title_eng = The tortoise and the jaguar
 # text_annotator = JLG
-# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = LFdeA
+# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = LFdeA TODO
 1	Tiapú	tiapú	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:5
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:14
 3	usasemu	sasemu	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=15:22
 4	uyana	yana	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=23:28
-5	usú	sú	VERB	V	Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=29:32
+5	usú	sú	VERB	V	Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=29:32
 6	kaá	kaá	NOUN	N	Number=Sing	5	obl	_	TokenRange=33:36
 7	kití	kití	ADP	ADP	_	6	case	_	SpaceAfter=No|TokenRange=37:41
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=41:42
 9	sasisawa	sasisawa	NOUN	N	Number=Sing	10	obj	_	TokenRange=43:51
 10	usaã	saã	VERB	V	Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=52:56
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=57:58
-12	perewa	perewa	NOUN	N	Number=Sing	10	nsubj	_	SpaceAfter=No|TokenRange=59:65
+12	perewa	perewa	NOUN	N	Number=Sing	9	nsubj	_	SpaceAfter=No|TokenRange=59:65
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=65:66
 
 # sent_id = Casasnovas2006:3:1:25
