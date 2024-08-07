@@ -21368,7 +21368,7 @@
 9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = Casasnovas2006:3:9:33
-# text = Kutara nungara, paá, nhaã kariwa mirĩ uyuakanhemu upaka, upuãmu, uyana, usú garapá kití, upuri usú tipí kití.
+# text = Kutara nungara, paá, nhaã kariwa mirĩ i akanhemu upaka, upuãmu, uyana, usú garapá kití, upuri usú tipí kití.
 # text_adapter = JLG
 # text_orig = Kutara nungara, paá, nhaã kariwa mirí yakanhemu upaka, upwamu, uyana, usú garapá kití, upuri usú tipí kití.
 # text_eng_ggl = The young man suddenly woke up in fright, got up and ran to the port and dived to the bottom of the river.
@@ -21382,30 +21382,31 @@
 # text_annotator = JLG
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
-1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	9	advmod	_	TokenRange=0:6
+1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	11	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
-4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=16:19
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	11	advmod	_	SpaceAfter=No|TokenRange=16:19
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
 6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=21:25
-7	kariwa	kariwa	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=26:32
+7	kariwa	kariwa	NOUN	N	Number=Sing	11	nsubj	_	TokenRange=26:32
 8	mirĩ	mirĩ	ADJ	A	_	7	amod	_	TokenRange=33:37
-9	uyuakanhemu	akanhemu	VERB	V	Number=Sing|Person=3|VerbForm=Fin	0	root	_	TokenRange=38:47
-10	upaka	paka	VERB	V	Person=3|VerbForm=Fin	9	parataxis	_	SpaceAfter=No|TokenRange=48:53
-11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=53:54
-12	upuãmu	puãmu	VERB	V	Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=55:61
-13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=61:62
-14	uyana	yana	VERB	V	Person=3|VerbForm=Fin	12	parataxis	_	SpaceAfter=No|TokenRange=63:68
-15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=68:69
-16	usú	sú	VERB	V	Person=3|VerbForm=Fin	14	parataxis	_	TokenRange=70:73
-17	garapá	garapá	NOUN	N	Number=Sing	16	obl	_	TokenRange=74:80
-18	kití	kití	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=81:85
-19	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=85:86
-20	upuri	puri	VERB	V	Person=3|VerbForm=Fin	16	parataxis	_	TokenRange=87:92
-21	usú	sú	VERB	V	Person=3|VerbForm=Fin	20	parataxis	_	TokenRange=93:96
-22	tipí	tipí	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	21	obl	_	TokenRange=97:101
-23	kití	kití	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=102:106
-24	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=106:107
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	expl	_	TokenRange=14:15
+10	akanhemu	akanhemu	VERB	V2	Number=Sing|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=38:47
+11	upaka	paka	VERB	V	Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=48:53
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=53:54
+13	upuãmu	puãmu	VERB	V	Person=3|VerbForm=Fin	11	parataxis	_	SpaceAfter=No|TokenRange=55:61
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=61:62
+15	uyana	yana	VERB	V	Person=3|VerbForm=Fin	13	parataxis	_	SpaceAfter=No|TokenRange=63:68
+16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=68:69
+17	usú	sú	VERB	V	Person=3|VerbForm=Fin	15	parataxis	_	TokenRange=70:73
+18	garapá	garapá	NOUN	N	Number=Sing	17	obl	_	TokenRange=74:80
+19	kití	kití	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=81:85
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=85:86
+21	upuri	puri	VERB	V	Person=3|VerbForm=Fin	17	parataxis	_	TokenRange=87:92
+22	usú	sú	VERB	V	Person=3|VerbForm=Fin	21	parataxis	_	TokenRange=93:96
+23	tipí	tipí	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	22	obl	_	TokenRange=97:101
+24	kití	kití	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=102:106
+25	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=106:107
 
 # sent_id = Casasnovas2006:3:10:34
 # text = Asuí ta umaã aé upuri, uyumusarái paraná ara rupí, uyeréu ã pirayawara.
@@ -21622,13 +21623,13 @@
 # text_annotator = JLG
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
-1	Mairamé	mairamé	SCONJ	SCONJR	_	6	mark	_	SpaceAfter=No|TokenRange=0:7
+1	Mairamé	mairamé	SCONJ	SCONJR	_	7	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:12
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=9:12
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=12:13
 5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=14:15
-6	akanhemu	akanhemu	VERB	V2	_	12	advcl	_	TokenRange=16:24
-7	umaã	maã	VERB	V	Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=25:29
+6	akanhemu	akanhemu	VERB	V2	_	7	advcl	_	TokenRange=16:24
+7	umaã	maã	VERB	V	Person=3|VerbForm=Fin	12	advcl	_	TokenRange=25:29
 8	sumuára	sumuára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	nmod:poss	_	TokenRange=30:37
 9	kwera	kwera	NOUN	N	_	10	nsubj	_	TokenRange=38:43
 10-11	ipí-pe	_	_	_	_	_	_	_	TokenRange=44:51
