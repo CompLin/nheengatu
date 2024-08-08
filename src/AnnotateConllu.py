@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 5, 2024
+# Last update: August 7, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
@@ -2504,6 +2504,11 @@ def formatTextEng(s):
         return f'"{s.strip(chars).strip()}"'
     return s
 
+def mkTranslation(text_por):
+    from deep_translator import GoogleTranslator
+    text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
+    return formatTextEng(text_eng)
+
 def includeTranslation(parts,translate=True):
     i=-1
     if len(parts) == 4:
@@ -2511,9 +2516,7 @@ def includeTranslation(parts,translate=True):
     text_por=parts[i]
     text_eng= 'TODO'
     if translate:
-        from deep_translator import GoogleTranslator
-        text_eng=GoogleTranslator(source='pt', target='en').translate(text_por)
-        text_eng=formatTextEng(text_eng)
+        text_eng=mkTranslation(text_por)
     if len(parts) == 4:
         parts.insert(-1,text_eng)
     else:
@@ -3160,3 +3163,17 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 	if title:
 		sents['title_orig']=title
 	return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
+
+def eliminateDependentToken(tokenlist,tokenid):
+	tokenlist.pop(tokenid-1)
+	for token in tokenlist:
+		if token['id'] > tokenid:
+			token['id'] = token['id'] -1
+		if token['head'] > tokenid:
+			token['head'] = token['head'] -1
+
+def mergePronoun3PP(tokenlist,tokenid,form):
+	updateFeats(tokenlist[tokenid],'Number','Plur')
+	tokenlist[tokenid]['form'] = form
+	eliminateDependentToken(tokenlist,tokenid)
+	sortTokens(tokenlist)
