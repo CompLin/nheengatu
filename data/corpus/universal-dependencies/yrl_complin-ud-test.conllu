@@ -11624,7 +11624,8 @@
 # text_source = Leetra Indígena. n. 17, 77, adap.
 # text_prim = Yawé paá upé uwiyé waupé taité uyukitika xibui iyuka wa resé ti yepé uputaisá yawé waupé upinum, (pem) ape paá inema sá usuam tuyu resé: hummmmm.......hummmmmm...
 # text_orig = Yawé paá, upé uwiyé waá upé, taité, uyukitika xibuí i yuka waá resé. Ti yepé uputarisá, yawé waá upé upinú, ape paá i nemasá usú tuyú resé [...]. [Adapt.]
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=8:9
@@ -19182,7 +19183,8 @@
 # text_por = "Façam caminhos retos para os seus pés", para que o manco não se desvie, mas antes seja curado. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Heb 12:13
 # text_orig = Pemusatambika peipi rapee tiarama kuri uyereu uyumuapiriwaa upe kua alejadu, maa puranga arama kuri ae.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Pemusatambika	musatambika	VERB	V	Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:13
 2	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=14:16
 3	pi	pi	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=17:19
@@ -19191,7 +19193,7 @@
 6	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=28:33
 7	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=34:38
 8	uyeréu	yeréu	VERB	V	Person=3|VerbForm=Fin	1	advcl	_	TokenRange=39:45
-9	uyumuapiri	yumuapiri	VERB	V	Person=3|VerbForm=Fin	8	advcl	_	TokenRange=46:56
+9	uyumuapiri	muapiri	VERB	V	Person=3|VerbForm=Fin|Voice=Mid,Pass	8	advcl	_	TokenRange=46:56
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	mark	_	MWEPOS=SCONJ|TokenRange=57:60
 11	upé	upé	ADP	ADP	AdpType=Post	10	fixed	_	TokenRange=61:64
 12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	13	det	_	TokenRange=65:68
@@ -21051,7 +21053,8 @@
 # title_eng = The tortoise and the jaguar
 # text_annotator = JLG
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = LFdeA
+# reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
 2	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	5	mark	_	TokenRange=3:6
 3	upé	upé	ADP	ADP	AdpType=Post	2	fixed	_	TokenRange=7:10
