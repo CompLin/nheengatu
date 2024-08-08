@@ -10128,14 +10128,14 @@
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Avila2021:0:0:299
-# text = Kuxiíma ta useruka kwá nheengatú "kariwa nheenga", ta ukuntari resewara kwá nheenga apekatuwara-itá irumu.
+# text = Kuxiima ta useruka kwá nheengatú "kariwa nheenga", ta ukuntari resewara kwá nheenga apekatuwara-itá irumu.
 # text_eng = In the past, they called Nheengatu the "white man's language", because they spoke that language with those from far away.
 # text_por = Antigamente chamavam o nheengatu de "língua de branco", porque falavam essa língua com os de longe. [Corr. transl.]
 # text_source = Leetra Indígena. n. 17, 19, adap.
-# text_orig = Kuxiima ta useruka kwá nheengatú "kariwa nheenga", ta ukuntari resewara kwá nheenga apekatuwara-itá irumu.
+# text_prim = Kuxima taseruka kua nheegatú "kariwa yenga", taukuntai resewara kua nheenga "apekatú wara tairumu".
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Hélio Leonam Barroso Silva
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:7
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:7
 2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
 3	useruka	seruka	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
 4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=19:22
@@ -11341,6 +11341,8 @@
 # text_eng = Iauhixa, your white hair does not advise your heart to be serious.
 # text_por = Iauhixa, teu cabelo branco não aconselha teu coração para seres sisudo.
 # text_source = Amorim, 92, adap.
+# text_prim = Iauhixa, ne áua murutinga ntyo omungetá ne pŷa ndé iakuau arama.
+# text_prim_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = LFdeA
 # reviewer1 = JLG
 # reviewer2 = DMA
@@ -11354,7 +11356,7 @@
 8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=38:40
 9	piá	piá	NOUN	N	Number=Sing	7	obj	_	TokenRange=41:44
 10	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	11	nsubj	_	TokenRange=45:49
-11	yakwáu	yakwáu	ADJ	A	_	7	ccomp	_	TokenRange=50:56
+11	yakwáu	yakwáu	ADJ	A	_	7	advcl	_	TokenRange=50:56
 12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=57:62
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=62:63
 
@@ -13210,13 +13212,18 @@
 # text = Asuí paá ta umbué aé mayé usikari arã ximiára piripiriáka irumu.
 # text_eng = Then they taught him how to look for game with piripirioca.
 # text_por = Depois ensinaram-no como procurar caça com piripirioca.
+# text_prim = Asuí, paá, taumbwé aé mayé usikái arã ximiara piripiriaka irumu.
+# text_por_orig = Depois ensinaram para ele como procurar caça com piprioca.
+# text_prim_transcriber = JLG
+# text_por_orig_transcriber = JLG
 # text_source = Casasnovas, 86, adap.
 # text_annotator = LFdeA
+# cross_reference = Casasnovas2006:8:13:81
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=5:8
 3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=9:11
 4	umbué	mbué	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
-5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	obj	_	TokenRange=18:20
+5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	iobj	_	TokenRange=18:20
 6	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	7	advmod	_	TokenRange=21:25
 7	usikari	sikari	VERB	V	Person=3|VerbForm=Fin	4	ccomp	_	TokenRange=26:33
 8	arã	arã	SCONJ	SCONJ	_	7	mark	_	TokenRange=34:37
