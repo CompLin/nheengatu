@@ -20510,7 +20510,7 @@
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=11:19
-6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=20:22
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=20:22
 7	:	:	PUNCT	PUNCT	_	12	punct	_	TokenRange=22:23
 8	Compadre	compadre	NOUN	N	_	12	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=24:32
 9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=32:33
@@ -21870,6 +21870,9 @@
 # text = Ma ti arã taumuserana aé, usuaxara yuíri aintá: ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itá kwara kití!
 # text_eng = But so they don't defeat him, he also replied: "If the water boils, I'll dive deep to get into the hole of a stone!"
 # text_por = Mas para eles não o vencerem, respondeu-lhes também: — Se a água ferver, mergulharei fundo para entrar no buraco de uma pedra! [Adapt. transl.]
+# text_por_orig = mas para não se dar por vencido, disse: Se as águas fervem, então mergulharei no fundo do buraco de uma pedra.
+# text_por_orig_transcriber = JLG
+# text_orig_transcriber = JLG
 # text_source = p. 83, No. 8-9
 # text_orig = Ma tiarã taumuserana aé, usuaxara yuíri aintá: Ií upupúi ramé kurí, ayapumi kurí tipí awiké arã isuí itá kwara kití!
 # text_sec = ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itakwara kití! [Avila 2021]
@@ -21882,7 +21885,7 @@
 6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=24:25
 7	usuaxara	suaxara	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=26:34
 8	yuíri	yuíri	ADV	ADV	_	7	advmod	_	TokenRange=35:40
-9	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=41:46
+9	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	iobj	_	SpaceAfter=No|TokenRange=41:46
 10	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=46:47
 11	―	―	PUNCT	PUNCT	_	17	punct	_	TokenRange=47:48
 12	Ií	ií	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=49:51
