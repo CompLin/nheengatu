@@ -221,10 +221,11 @@
 # text_por = Pedi para minha mãe ficar na nossa fazenda que meu avô deixou para nós.
 # text_source = p. 108
 # text_orig = a-yururé se-mẫỹã u-pitá arãma iane-rẽndá upé [se-ratíwa u-šári waʔá yãndé arã]S'Rel
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Ayururé	yururé	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=9:11
-3	manha	manha	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:17
+3	manha	manha	NOUN	N	Number=Sing	1	iobj	_	TokenRange=12:17
 4	upitá	pitá	VERB	V	Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=18:23
 5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
 6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:34
@@ -4389,7 +4390,7 @@
 5	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=13:17
 6	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	1	appos	_	SpaceAfter=No|TokenRange=18:25
 7	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=25:26
-8	rexari	xari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=27:33
+8	rexari	xari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=27:33
 9	yaú	ú	VERB	V	Number=Plur|Person=1|VerbForm=Fin	8	ccomp	_	TokenRange=34:37
 10	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	9	obl	_	TokenRange=38:40
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=41:46
@@ -5427,7 +5428,7 @@
 # text_annotator = LFdeA
 # reviewer1 = JLG
 1	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	2	advmod	_	TokenRange=0:6
-2	rerikú	rikú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:13
+2	rerikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:13
 3	yumasí	yumasí	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:20
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
@@ -18694,15 +18695,19 @@
 # text_por = Vendo uma figueira à beira do caminho, aproximou-se dela, mas nada encontrou, a não ser folhas.
 # text_source = Novo Testamento na língua Nyengatu, Mt 21:19
 # text_orig = Asui umaa mirá figera senunde kiti pee arukanga upe, asui uri umaa tiyamaa iya anyunte umaa sawa.
-# text_sec = Asuí umaã mirá gera senundé kití, peé arukanga upé, asuí uri umaã, ti yamaã iyá, anhunté umaã sawa. [Avila 2021]
-# text_annotator = LFdeA
+# text_sec = Asuí umaã mirá gera senundé kití, peé arukanga upé, asuí uri umaã, ti yamaã iyá, anhunté umaã sawa.
+# text_por_alt = E avistou uma figueira adiante, à beira do caminho, e veio ver, não havia frutos, viu apenas folhas.
+# text_por_alt_source = Avila (2021)
+# text_sec_source = Avila (2021) 
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umaã	maã	VERB	V	Person=3|VerbForm=Fin	0	root	_	TokenRange=5:9
 3	mirá	mirá	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=10:14
 4	figera	figera	NOUN	N	Number=Sing	2	obj	_	Orig=figueira|OrigLang=pt|TokenRange=15:21
 5	senundé	tenundé	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obl	_	TokenRange=22:29
 6	kití	kití	ADP	ADP	AdpType=Post	5	case	_	TokenRange=30:34
-7	peé	peé	NOUN	N	Number=Sing|Rel=Abs	2	obj	_	TokenRange=35:38
+7	peé	peé	NOUN	N	Number=Sing|Rel=Abs	8	nmod:poss	_	TokenRange=35:38
 8	arukanga	arukanga	NOUN	N	Number=Sing	2	obl	_	TokenRange=39:47
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=48:51
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=51:52
@@ -18715,7 +18720,7 @@
 17	iyá	iyá	NOUN	N	Number=Sing	16	obj	_	SpaceAfter=No|TokenRange=77:80
 18	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=80:81
 19	anhuntẽ	anhuntẽ	ADV	ADV	_	20	advmod	_	TokenRange=82:89
-20	umaã	maã	VERB	V	Person=3|VerbForm=Fin	17	parataxis	_	TokenRange=90:94
+20	umaã	maã	VERB	V	Person=3|VerbForm=Fin	16	parataxis	_	TokenRange=90:94
 21	sawa	sawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	20	obj	_	SpaceAfter=No|TokenRange=95:99
 22	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=99:100
 
@@ -18920,7 +18925,7 @@
 17	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	14	obl	_	TokenRange=77:81
 18	asuí	asuí	CCONJ	CCONJ	_	19	cc	_	TokenRange=82:86
 19	upurandú	purandú	VERB	V	Person=3|VerbForm=Fin	14	conj	_	TokenRange=87:95
-20	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	19	obj	_	SpaceAfter=No|TokenRange=96:98
+20	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	19	iobj	_	SpaceAfter=No|TokenRange=96:98
 21	:	:	PUNCT	PUNCT	_	25	punct	_	TokenRange=98:99
 22	—	—	PUNCT	PUNCT	_	25	punct	_	TokenRange=100:101
 23-24	Maita	_	_	_	_	_	_	_	TokenRange=102:107
@@ -28892,6 +28897,36 @@
 2	umanduári	manduári	VERB	V	Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=6:15
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
 
+# sent_id = Costa1909:1:12:12
+# text = Ti apurakí-putari kurasí ara ramé, ti maã pusanga kuíri ayururéu ti arama amanú.
+# text_eng = TODO
+# text_por = Não quis trabalhar no tempo do sol, agora não há remédio senão pedir para não morrer.
+# text_por_source = Stradelli (2014:126)
+# text_sec_part = Ti maã pusanga, kuíri ayururéu ti arama amanú.
+# text_por_sec_part = Não há solução, agora vou pedir [comida] para não morrer.
+# text_sec_part_source = Avila (2021)
+# text_por_sec_part_source = Avila (2021)
+# text_source = p. 165
+# text_orig = Ti apuraiki putari curaci ara ramé, timaan puçanga cuhiri a-iurureu ti arama amanú.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2-3	apurakí-putari	_	_	_	_	_	_	_	TokenRange=3:17
+2	apurakí	purakí	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+3	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	2	aux	_	_
+4	kurasí	kurasí	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=18:24
+5	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=25:28
+6	ramé	ramé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:33
+7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=33:34
+8	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=35:37
+9	maã	maã	DET	IND	PronType=Ind	8	fixed	_	TokenRange=38:41
+10	pusanga	pusanga	NOUN	N	Number=Sing	2	parataxis	_	TokenRange=42:49
+11	kuíri	kuíri	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=50:55
+12	ayururéu	yururéu	VERB	V	Number=Sing|Person=1|VerbForm=Fin	10	parataxis	_	TokenRange=56:64
+13	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	15	advmod	_	TokenRange=65:67
+14	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=68:73
+15	amanú	manú	VERB	V	Number=Sing|Person=1|VerbForm=Fin	12	advcl	_	SpaceAfter=No|TokenRange=74:79
+16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=79:80
+
 # sent_id = Costa1909:1:51:51
 # text = Upukú xinga riré unheẽ: — Ti maã pusanga.
 # text_eng = After a while it said: — There is no solution!
@@ -29089,7 +29124,7 @@
 2	Maria	maria	PROPN	PROPN	_	5	vocative	_	TokenRange=6:11
 3	Tupana	tupana	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=12:18
 4	Manha	manha	NOUN	N	Number=Sing	2	nmod	_	TokenRange=19:24
-5	reyururé	yururé	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=25:33
+5	reyururé	yururé	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=25:33
 6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	obl	_	TokenRange=34:38
 7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	TokenRange=39:43
 8	pekadori	pekadori	NOUN	N	Number=Sing	5	obl	_	Orig=pecadores|OrigLang=pt|TokenRange=44:52
