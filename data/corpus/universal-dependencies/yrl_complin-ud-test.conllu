@@ -182,7 +182,7 @@
 # text_orig = mãʔã taʔá rewasẽmu pušuéra?
 # text_annotator = LFdeA
 1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
-2	taá	taá	PART	CQ	_	3	advmod	_	TokenRange=4:7
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
 3	rewasemu	wasemu	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:16
 4	puxuwera	puxuwera	ADJ	A	_	3	xcomp	_	SpaceAfter=No|TokenRange=17:25
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
@@ -430,7 +430,7 @@
 1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	nsubj	_	TokenRange=0:4
 2	muíri	muíri	DET	INT	PronType=Int	3	det	_	TokenRange=5:10
 3	akayú	akayú	NOUN	N	Number=Sing	5	obl	_	TokenRange=11:16
-4	taá	taá	PART	CQ	_	5	advmod	_	TokenRange=17:20
+4	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=17:20
 5	remurari	murari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=21:29
 6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	TokenRange=30:33
 7	kwá	kwá	DET	DEMX	Number=Sing|PronType=Dem	8	det	_	TokenRange=34:37
@@ -534,7 +534,7 @@
 # text_orig = mayé taʔá a-sú aỹũ a-watá se-retãma kití a-mãʔã arã se-anãmaitá
 # text_annotator = LFdeA
 1	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	5	advmod	_	TokenRange=0:4
-2	taá	taá	PART	CQ	_	5	advmod	_	TokenRange=5:8
+2	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=5:8
 3	asú	sú	AUX	AUXFR	Number=Sing|Person=1|VerbForm=Fin	5	aux	_	TokenRange=9:12
 4	anhũ	anhũ	ADV	ADV	_	5	advmod	_	TokenRange=13:17
 5	awatá	watá	VERB	V	Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=18:23
@@ -2603,7 +2603,7 @@
 1	Maã	maã	PRON	INT	PronType=Int	4	obj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=4:7
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	TokenRange=8:12
-4	reputari	putari	AUX	AUXN	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:21
+4	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:21
 5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=22:24
 6	mena	mena	NOUN	N	Number=Sing	4	iobj	_	TokenRange=25:29
 7	supé	supé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=30:34
@@ -4506,7 +4506,7 @@
 # text_source = Rodrigues, 181, adap.
 # text_annotator = LFdeA
 1	Turusú	turusú	ADJ	A	_	0	root	_	TokenRange=0:6
-2	será	será	PART	PQ	_	1	advmod	_	TokenRange=7:11
+2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=7:11
 3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:17
 4	kupirisawa	kupirisawa	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=18:28
 5	?	?	PUNCT	PUNCT	_	1	punct	_	TokenRange=28:29
@@ -4636,7 +4636,7 @@
 5	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=21:22
 6	Maã	maã	DET	INT	PronType=Int	7	det	_	TokenRange=23:26
 7	rangawa	sangawa	NOUN	N	Number=Sing|Rel=Cont	2	ccomp	_	TokenRange=27:34
-8	taá	taá	PART	CQ	_	7	advmod	_	TokenRange=35:38
+8	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=35:38
 9	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	nsubj	_	TokenRange=39:42
 10	uyari	yari	VERB	V	Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=43:48
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=49:52
@@ -4645,7 +4645,7 @@
 14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=65:66
 15	awá	awá	DET	INT	PronType=Int	16	det	_	TokenRange=67:70
 16	rera	sera	NOUN	N	Number=Sing|Rel=Cont	7	parataxis	_	TokenRange=71:75
-17	taá	taá	PART	CQ	_	16	advmod	_	TokenRange=76:79
+17	taá	taá	PART	CQ	PartType=Int	16	advmod	_	TokenRange=76:79
 18	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	16	nsubj	_	TokenRange=80:83
 19	uyari	yari	VERB	V	Person=3|VerbForm=Fin	18	acl:relcl	_	TokenRange=84:89
 20	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	nsubj	_	TokenRange=90:93
@@ -4903,7 +4903,7 @@
 3	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
 4	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
 5	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	7	advmod	_	TokenRange=19:25
-6	taá	taá	PART	CQ	_	7	advmod	_	TokenRange=26:29
+6	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=26:29
 7	reputari	putari	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	SpaceAfter=No|TokenRange=30:38
 8	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
@@ -4935,7 +4935,7 @@
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=29:30
 8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	TokenRange=31:34
 9	masuí	masuí	ADV	ADVRC	AdvType=Loc|PronType=Int	12	advmod	_	TokenRange=35:40
-10	taá	taá	PART	CQ	_	12	advmod	_	TokenRange=41:44
+10	taá	taá	PART	CQ	PartType=Int	12	advmod	_	TokenRange=41:44
 11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=45:47
 12	uri	yuri	VERB	V	Person=3|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=48:51
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=51:52
@@ -4953,7 +4953,7 @@
 5	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=20:21
 6	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=21:22
 7	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	2	ccomp	_	TokenRange=23:27
-8	taá	taá	PART	CQ	_	7	advmod	_	TokenRange=28:31
+8	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=28:31
 9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=32:34
 10	manha	manha	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=35:40
 11	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	7	nsubj	_	SpaceAfter=No|TokenRange=41:45
@@ -4974,7 +4974,7 @@
 5	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=21:22
 6	―	―	PUNCT	PUNCT	_	9	punct	_	TokenRange=22:23
 7	Makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	9	advmod	_	TokenRange=24:30
-8	taá	taá	PART	CQ	_	9	advmod	_	TokenRange=31:34
+8	taá	taá	PART	CQ	PartType=Int	9	advmod	_	TokenRange=31:34
 9	resú	sú	VERB	V	Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	SpaceAfter=No|TokenRange=35:39
 10	?	?	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=39:40
 
@@ -19417,7 +19417,7 @@
 2	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	6	vocative	_	SpaceAfter=No|TokenRange=3:10
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
 4	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	6	advmod	_	TokenRange=12:16
-5	taá	taá	PART	CQ	_	6	advmod	_	TokenRange=17:20
+5	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=17:20
 6	yaseruka	seruka	VERB	V	Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=21:29
 7	aité	aité	PRON	EMP	PronType=Emp	6	obj	_	TokenRange=30:34
 8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	SpaceAfter=No|TokenRange=35:38
