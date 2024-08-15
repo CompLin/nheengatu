@@ -2347,7 +2347,8 @@
 # text_por = Qual mulher chegou?
 # text_source = Lesson 2, p. 19
 # text_annotator = DMA
-# reviewer1 = LFdeA
+# reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	3	det	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	kunhã	kunhã	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=9:14
@@ -6358,8 +6359,9 @@
 # text_eng = Through which language are we going to study?
 # text_por = Por meio de qual língua vamos estudar?
 # text_source = Oliveira; Schwade, 82
-# text_annotator = LFdeA
-# reviewer1 = JLG
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Juliana Lopes Gurgel
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	3	det	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	nheenga	nheenga	NOUN	N	Number=Sing	6	obl	_	TokenRange=9:16
@@ -6402,7 +6404,8 @@
 # text_eng = [...] and whoever troubles you, he will also suffer because of his wickedness.
 # text_por = [...] e quem quer que vos inquiete, ele também sofrerá por causa de sua maldade.
 # text_source = O Novo Testamento em nyengatu, Gálatas 5:10, adap.
-# text_annotator = LFdeA
+# reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
 1	[...]	[...]	PUNCT	ELIP	_	12	punct	_	TokenRange=0:5
 2	asuí	asuí	CCONJ	CCONJ	_	12	cc	_	TokenRange=6:10
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	5	det	_	TokenRange=11:15
@@ -6412,8 +6415,8 @@
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	nsubj	_	TokenRange=31:34
 8	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=35:40
 9	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=40:41
-10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	obj	_	TokenRange=42:44
-11	yuíri	yuíri	ADV	ADV	_	12	advmod	_	TokenRange=45:50
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=42:44
+11	yuíri	yuíri	ADV	ADVG	AdvType=Deg	12	advmod	_	TokenRange=45:50
 12	upurará	purará	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=51:58
 13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=59:60
 14	puxiwerasawa	puxiwerasawa	NOUN	N	Number=Sing	12	obl	_	TokenRange=61:73
@@ -6520,7 +6523,8 @@
 # text_eng = So that we don't live like children, like the wind that blows, those who believe in every word, [...].
 # text_por = Para não vivermos como crianças, como o vento que sopra, esses que acreditam em toda e qualquer palavra, [...].
 # text_source = O Novo Testamento em nyengatu, Efésios 4:14, adap.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	arama	arama	SCONJ	SCONJ	_	3	mark	_	TokenRange=3:8
 3	yaikú	ikú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:14
@@ -6534,7 +6538,7 @@
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=51:54
 12	yawé	yawé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=55:59
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=59:60
-14	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	9	conj	_	TokenRange=61:68
+14	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	4	conj	_	TokenRange=61:68
 15	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=69:76
 16	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	15	nsubj	_	TokenRange=77:84
 17	panhẽ	panhẽ	DET	TOT	PronType=Tot	20	det	_	TokenRange=85:90
