@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 7, 2024
+# Last update: August 15, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
-from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
 from Metadata import Mindlin, PEOPLE
 from conllu.models import Token,TokenList
 from conllu import parse
@@ -374,7 +374,10 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     if aspect:
         feats['Aspect']=f"{aspect.title()}"
     if mood:
-        feats['Mood']=f"{mood.title()}"
+        value=f"{mood.title()}"
+        if mood == IMPIND:
+            value='Imp,Ind'
+        feats['Mood']=value
     if tense:
         feats['Tense']=f"{tense.title()}"
     if derivation:
@@ -3177,3 +3180,84 @@ def mergePronoun3PP(tokenlist,tokenid,form):
 	tokenlist[tokenid]['form'] = form
 	eliminateDependentToken(tokenlist,tokenid)
 	sortTokens(tokenlist)
+
+def insertFeat(token,newfeat,value):
+	def condition(feat,feats):
+		if feat == 'Mood':
+			# return feats.get('VerbForm') == 'Fin'
+			return feats.get('VerbForm') != 'Inf'
+		return feat == 'VerbForm'
+	dic={newfeat:value}
+	feats=token.get('feats')
+	if feats:
+		oldfeat=feats.get(newfeat)
+		if not oldfeat:
+			if condition(newfeat,feats):
+				token['feats'].update(dic)
+	else:
+		token['feats']=dic
+
+def insertMoodVerbForm(sents):
+	for sent in sents:
+		tokenlist=sent.filter(upos='VERB', deprel='advcl')
+		tokenlist.extend(sent.filter(upos='VERB', deprel='xcomp'))
+		tokenlist.extend(sent.filter(upos='VERB', deprel='ccomp'))
+		tokenlist.extend(sent.filter(upos='VERB', deprel='acl:relcl'))
+		tokenlist.extend(sent.filter(upos='VERB', deprel='advcl:relcl'))
+		for token in tokenlist:
+			insertFeat(token,'Mood','Ind')
+		tokenlist=sent.filter(xpos='NEGI')
+		tokenlist.extend(sent.filter(xpos='NEG'))
+		mapping={'NEGI' : 'Imp', 'NEG' : 'Ind'}
+		for token in tokenlist:
+			headid = token['head']
+			headlist=sent.filter(id=headid)
+			if headlist:
+				head=headlist[0]
+				if head['upos'] == 'VERB':
+					xpos=token['xpos']
+					#print('bu')
+					insertFeat(head,'Mood',mapping[xpos])
+					#print('hu',head['feats'])
+		tokenlist=sent.filter(feats__PartType="Int")
+		tokenlist.extend(sent.filter(upos='PUNCT', lemma='?'))
+		tokenlist.extend(sent.filter(feats__PronType="Rel"))
+		for token in tokenlist:
+			headid = token['head']
+			headlist=sent.filter(id=headid)
+			if headlist:
+				head=headlist[0]
+				if head['upos'] == 'VERB':
+					insertFeat(head,'Mood','Ind')
+		tokenlist=sent.filter(upos='AUX')
+		tokenlist.extend(sent.filter(upos='VERB', deprel='conj'))
+		tokenlist.extend(sent.filter(upos='VERB', deprel='parataxis'))
+		for token in tokenlist:
+			headid = token['head']
+			headlist=sent.filter(id=headid)
+			if headlist:
+				head=headlist[0]
+				if head['upos'] == 'VERB':
+					feats=head.get('feats')
+					#print('du',feats)
+					#print('fu',token,token['feats'])
+					if feats:
+						mood=feats.get('Mood')
+						if mood:
+							insertFeat(token,'Mood',mood)
+							#print('gu',token['feats'])
+				else:
+					insertFeat(token,'Mood','Ind')
+		for token in sent:
+			if token['upos'] in ('AUX','VERB'):
+				insertFeat(token,'VerbForm','Fin')
+				feats=token.get('feats')
+				if feats:
+					person=feats.get('Person')
+					if person == '2':
+						insertFeat(token,'Mood','Imp,Ind')
+					elif person in ('1','3'):
+						insertFeat(token,'Mood','Ind')
+					else:
+						insertFeat(token,'Mood','Ind')
+		sortTokens(sent)

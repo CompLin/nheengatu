@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 5, 2024
+# Last update: August 15, 2024
 
 import re, sys, os, json
 
@@ -24,6 +24,12 @@ ARCHAIC_LEMMA="var. hist."
 
 # imperative verb form
 IMP="IMP"
+
+# indicative verb form
+IND="IND"
+
+# imperative or indicative verb form
+IMPIND="IMPIND"
 
 # auxiliary
 AUX='aux.'
@@ -359,8 +365,11 @@ def parseprefs(word,lexicon):
 def getpersnum():
     """Active person-number prefixes.
     """
-    return {'a': '1+SG','xa': f"{ARCHAIC}+1+SG",'ha': '1+SG','re': '2+SG','e': f"{IMP}+2+SG",'u': '3','ya':
-    '1+PL','pe': '2+PL','ta': '3+PL','tau': '3+PL'
+    return {'a': f"{IND}+1+SG",'xa': f"{ARCHAIC}+{IND}+1+SG",'ha': f"{IND}+1+SG",
+    're': f"{IMPIND}+2+SG",
+    'e': f"{IMP}+2+SG",
+    'i': f"{IMP}+2+SG", 'u': f"{IND}+3",'ya':
+    f"{IND}+1+PL",'pe': f"{IMPIND}+2+PL",'ta': f"{IND}+3+PL",'tau': f"{IND}+3+PL"
     }
 
 def guessVerb(form):
@@ -582,9 +591,9 @@ def extract_feats(parses):
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
-	'IMP' : 'mood',
-	'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
-	'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case', 'ARCH' : 'style' }
+    'IMP|IND|IMPIND' : 'mood',
+    'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
+    'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case', 'ARCH' : 'style' }
     entries=[]
     for lemma,feats in parses:
         new={}

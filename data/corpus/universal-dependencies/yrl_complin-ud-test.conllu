@@ -17682,7 +17682,7 @@
 # text_prim = maéramé reputár xayor nepyrí.
 # text_prim_transcriber = Antônio Levy Melo Nogueira (ALMN)
 # text_annotator = LFdeA
-1	Mairamé	mairamé	ADV	ADVNT	AdvType=Tim|PronType=Ind	2	advmod	_	TokenRange=0:7
+1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	2	advmod	_	TokenRange=0:7
 2	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:16
 3	ayuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	xcomp	_	TokenRange=17:22
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	obl	_	TokenRange=23:25
@@ -22144,6 +22144,24 @@
 4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	2	nsubj	_	SpaceAfter=No|TokenRange=14:18
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
+# sent_id = Rodrigues1890:1-1-1:170:170
+# text = Mairamé reputari ramé isú se piri.
+# text_eng = TODO
+# text_por = Quando quiseres vai ter comigo.
+# text_source = p. 28
+# text_orig = Mairamé re putare ramé içu ce pêre.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_gloss = Quando tu quiseres quando vai migo ter com.
+1	Mairamé	mairamé	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:7
+2	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	4	advcl	_	TokenRange=8:16
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=17:21
+4	isú	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=22:25
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obl	_	TokenRange=26:28
+6	piri	piri	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:33
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
+
 # sent_id = Rodrigues1890:1-1-2:101:101
 # text = — Ah! se raíra!
 # text_eng = "Oh! my son!"
@@ -22189,6 +22207,40 @@
 7	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	2	ccomp	_	SpaceAfter=No|TokenRange=16:19
 8	"	"	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=19:20
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Rodrigues1890:1-1-2:150:150
+# text = — Iruri xaú ne piá.
+# text_eng = TODO
+# text_por = — Dá-me o teu coração para eu comer.
+# text_source = p. 36
+# text_orig = — I rure cha ú ne peá.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_gloss = Traz eu comer teu coração.
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Iruri	ruri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=1:6
+3	xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	parataxis	_	ModernForm=aú|TokenRange=7:10
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=11:13
+5	piá	piá	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=14:17
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Rodrigues1890:1-1-2:170:170
+# text = — Iruri kuté ne kisé.
+# text_eng = TODO
+# text_por = — Me dá, então, a tua faca.
+# text_source = p. 36
+# text_orig = — Irure cuté ne quicé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_gloss = Traz então tua faca.
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Iruri	ruri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=1:6
+3	kuté	kuté	ADV	ADVM	AdvType=Mod	2	advmod	_	TokenRange=7:11
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
+5	kisé	kisé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:19
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Rodrigues1890:1-1-4:1:101
 # text = Yepé apigawa menasara urikú ximirikú taíra.
@@ -22323,6 +22375,25 @@
 16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=87:92
 17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
 
+# sent_id = Rodrigues1890:1-1-7:40:40
+# text = Iruri taíra ixé arama ukiri se irumu.
+# text_eng = TODO
+# text_por = Traze o filho para dormir comigo.
+# text_source = p. 60
+# text_orig = Irure tayra i cha arama u quîre ce irumo.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_gloss = Traz filho mim para dormir migo com.
+1	Iruri	ruri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obj	_	TokenRange=6:11
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	iobj	_	TokenRange=12:15
+4	arama	arama	ADP	ADP	AdpType=Post	3	case	_	TokenRange=16:21
+5	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=22:27
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	obl	_	TokenRange=28:30
+7	irumu	irumu	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=31:36
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
+
 # sent_id = Rodrigues1890:1-1-9:101:101
 # text = — Se ramunha, remeẽ aú ne remiára?
 # text_eng = "My grandfather, will you give me your game to eat?"
@@ -22446,7 +22517,7 @@
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Rodrigues1890:1-1-9:156:156
-# text = Umunhã kurusamirĩ-itá Kurupira rapé upé.
+# text = Umunhã kurusamirĩ-etá Kurupira rapé upé.
 # text_eng_ggl = They made little crosses on the path to Curupira.
 # text_eng = They made little crosses on Curupira's path.
 # text_por = Fizeram cruzezinhas no caminho do Curupira.
@@ -22454,7 +22525,7 @@
 # text_orig = O monhana curuçá mirim etá Curupira rapé opé.
 # text_annotator = LFdeA
 1	Umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	kurusamirĩ-itá	kurusá	NOUN	N	Degree=Dim|Number=Plur	1	obj	_	TokenRange=7:21
+2	kurusamirĩ-etá	kurusá	NOUN	N	Degree=Dim|Number=Plur	1	obj	_	TokenRange=7:21
 3	Kurupira	kurupira	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=22:30
 4	rapé	pé	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=31:35
 5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=36:39
@@ -22601,6 +22672,48 @@
 33	taína-itá	taína	NOUN	N	Number=Plur	32	iobj	_	TokenRange=181:190
 34	supé	supé	ADP	ADP	AdpType=Post	33	case	_	SpaceAfter=No|TokenRange=191:195
 35	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=195:196
+
+# sent_id = Rodrigues1890:1-2-2:120:120
+# text = Asuí usemu wirawasumirĩ-etá, usemu ramé wirawasú muakara Izi upisika aé unheẽ: — Wirawasú irasú ixé tiãnha iwitera upé arirí reruri kurí yuíri ixé arama kurí xaxari indé.
+# text_eng = TODO
+# text_por = Depois saíram gaviões e quando saía o Gavião real, Izi o agarrou e disse: — Gavião, leva-me à serra do gancho da lua e me tornarás a trazer para eu te soltar.
+# text_source = p. 110
+# text_orig = Achii u cemo uiráuaçu miri etá, u cemo ramé Uirá uaçu moacara Izy u pecyca aé u nheen: “Uirauaçu iraçu iché teanha iuitêra opé ariri re rure curi iuire iché arama curi cha chare indé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_gloss = Depois saíram gaviõezinhos, saiu quando gavião real Izi pegou ele disse: "Gavião leva me gancho serra na depois tu trarás também me para soltar te.
+# inputline = Asuí/advt usemu wirawasumirĩ-etá/=ev:x|n, usemu ramé/sconj wirawasú muakara Izi/=p upisika aé/pron unheẽ: — Wirawasú irasú ixé tiãnha iwitera upé/adp arirí/advt reruri kurí yuíri/advt ixé arama/sconj kurí xaxari indé.
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
+2	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
+3	wirawasumirĩ-etá	wirawasú	NOUN	N	Degree=Dim|Number=Plur	2	nsubj	_	SpaceAfter=No|TokenRange=11:27
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=27:28
+5	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=29:34
+6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=35:39
+7	wirawasú	wirawasú	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=40:48
+8	muakara	muakara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=49:56
+9	Izi	izi	PROPN	PROPN	_	10	nsubj	_	TokenRange=57:60
+10	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=61:68
+11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	TokenRange=69:71
+12	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=72:77
+13	:	:	PUNCT	PUNCT	_	16	punct	_	TokenRange=77:78
+14	—	—	PUNCT	PUNCT	_	16	punct	_	TokenRange=78:79
+15	Wirawasú	wirawasú	NOUN	N	Number=Sing	16	vocative	_	TokenRange=80:88
+16	irasú	rasú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	12	ccomp	_	TokenRange=89:94
+17	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	16	obj	_	TokenRange=95:98
+18	tiãnha	tiãnha	NOUN	N	Number=Sing	19	nmod:poss	_	TokenRange=99:105
+19	iwitera	iwitera	NOUN	N	Number=Sing	16	obl	_	TokenRange=106:113
+20	upé	upé	ADP	ADP	AdpType=Post	19	case	_	TokenRange=114:117
+21	arirí	arirí	ADV	ADVT	AdvType=Tim	22	advmod	_	TokenRange=118:123
+22	reruri	ruri	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	16	parataxis	_	TokenRange=124:130
+23	kurí	kurí	PART	FUT	Tense=Fut	22	advmod	_	TokenRange=131:135
+24	yuíri	yuíri	ADV	ADVT	AdvType=Tim	22	advmod	_	TokenRange=136:141
+25	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	22	obj	_	TokenRange=142:145
+26	arama	arama	SCONJ	SCONJ	_	28	mark	_	TokenRange=146:151
+27	kurí	kurí	PART	FUT	Tense=Fut	28	advmod	_	TokenRange=152:156
+28	xaxari	xari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	22	advcl	_	ModernForm=axari|TokenRange=157:163
+29	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	28	obj	_	SpaceAfter=No|TokenRange=164:168
+30	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=168:169
 
 # sent_id = Rodrigues1890:1-2-3:501:501
 # text = Muíri yasí riré umusema mukũi taína, yepé kunhã, yepé apigawa.
