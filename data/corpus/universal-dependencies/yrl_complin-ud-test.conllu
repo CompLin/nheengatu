@@ -1772,7 +1772,8 @@
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Navarro2016:0:0:41
-# text = Repuká sé.
+# text = [...] repuká sé [...].
+# text_orig = [...] Repuká sé [...].
 # text_eng = You laughed heartily.
 # text_por = Rias gostosamente.
 # text_source = Lesson 1, p. 13 (Amorim, 319)
@@ -1784,9 +1785,11 @@
 # text_por_prim_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_prim_source = No. 150, Amorim (1928:317)
 # text_por_prim_source = No. 151, Amorim (1928:308)
-1	Repuká	puká	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	sé	sé	ADV	ADVA	AdvType=Man	1	advmod	_	SpaceAfter=No|TokenRange=7:9
-3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+1	[...]	[...]	PUNCT	ELIP	_	2	punct	_	TokenRange=0:5
+2	repuká	puká	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:12
+3	sé	sé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=13:15
+4	[...]	[...]	PUNCT	ELIP	PunctType=Elip	2	punct	_	SpaceAfter=No|TokenRange=16:21
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Navarro2016:0:0:42
 # text = Mamé Barcelos?
@@ -27782,10 +27785,10 @@
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=4:7
 3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	obl	_	TokenRange=8:11
 4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=12:15
-5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=15:16
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
 6	mikura	mikura	NOUN	N	Number=Sing	1	vocative	_	TokenRange=17:23
 7	aíwa	aíwa	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=24:28
-8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
+8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=28:29
 9	kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=30:33
 10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=34:37
 11	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	9	obl	_	TokenRange=38:41
@@ -27913,7 +27916,7 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = LFdeA
 1	Eẽ	eẽ	PART	AFF	_	2	advmod	_	TokenRange=0:2
-2	xipiaka	xipiaka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rexipiaka|ModernMood=Ind|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:10
+2	xipiaka	xipiaka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rexipiaka|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:10
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	TokenRange=11:15
 4	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=16:19
 5	sinipuka	rinipuka	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	parataxis	_	TokenRange=20:28
