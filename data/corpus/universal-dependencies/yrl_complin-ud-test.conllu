@@ -27769,6 +27769,58 @@
 27	arama	arama	SCONJ	SCONJ	_	25	mark	_	SpaceAfter=No|TokenRange=122:127
 28	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=127:128
 
+# sent_id = Amorim1928:29:19:19
+# text = Kũi ana iké suí, mikura aíwa, kũi ana iké suí.
+# text_eng = TODO
+# text_por = Vai-te já daqui, mucura ruim, vai-te já daqui!
+# text_source = p. 442, No. 19
+# text_orig = Kuĩ ana ke suhi, mykura aiua, kuĩ ana ke suhi!
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+1	Kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=4:7
+3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	obl	_	TokenRange=8:11
+4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=12:15
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=15:16
+6	mikura	mikura	NOUN	N	Number=Sing	1	vocative	_	TokenRange=17:23
+7	aíwa	aíwa	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=24:28
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
+9	kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=30:33
+10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=34:37
+11	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	9	obl	_	TokenRange=38:41
+12	suí	suí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=42:45
+13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = Amorim1928:29:73:73
+# text = Kũi ana repi sika aintá xasú pukusawa xamunhã mukũi urusakanga yarasú arama aintá.
+# text_eng = TODO
+# text_por = Vai já pegá-los enquanto eu faço dois uruçacangas para nós os levarmos.
+# text_source = p. 444, No. 73
+# text_orig = Kuĩ ana repŷ syka aetá xasu pukusaua xamunhan mukũe ýrusakanga iarasu arama aetá.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Kũi ana repisika aintá, asú pukusawa amunhã mukũi urusakanga yarasú arama aintá.
+# text_por_sec = Vai já pegá-los enquanto eu faço dois paneiros para nós os levarmos.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Kũi ana repi/=typo:c|repisika sika/=x aintá/pron xasú pukusawa/sconj xamunhã mukũi/card urusakanga yarasú arama/sconj aintá/pron.
+1	Kũi	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	TokenRange=0:3
+2	ana	ana	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=4:7
+3	repi	pisika	VERB	V	Mood=Imp|Number=Sing|Person=2|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=repisika|TokenRange=8:12
+4	sika	_	X	X	_	3	goeswith	_	TokenRange=13:17
+5	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	obj	_	TokenRange=18:23
+6	xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	8	aux	_	ModernForm=asú|TokenRange=24:28
+7	pukusawa	pukusawa	SCONJ	SCONJ	_	8	mark	_	TokenRange=29:37
+8	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	advcl	_	ModernForm=amunhã|TokenRange=38:45
+9	mukũi	mukũi	NUM	CARD	NumType=Card	10	nummod	_	TokenRange=46:51
+10	urusakanga	urusakanga	NOUN	N	Number=Sing	8	obj	_	TokenRange=52:62
+11	yarasú	rasú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	8	advcl	_	TokenRange=63:69
+12	arama	arama	SCONJ	SCONJ	_	11	mark	_	TokenRange=70:75
+13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	11	obj	_	SpaceAfter=No|TokenRange=76:81
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=81:82
+
 # sent_id = Amorim1928:33:108:108
 # text = Supisá-pe ipú Kurupira usendú nhuntu uikú ukara suí, yeperesé usú uyuuka karurú kaá kití.
 # text_eng = Certainly, it seems, Curupira was just outside listening, because he immediately went into the woods to look for caruru.
@@ -27861,7 +27913,7 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = LFdeA
 1	Eẽ	eẽ	PART	AFF	_	2	advmod	_	TokenRange=0:2
-2	xipiaka	xipiaka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rexipiaka|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:10
+2	xipiaka	xipiaka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rexipiaka|ModernMood=Ind|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:10
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	TokenRange=11:15
 4	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=16:19
 5	sinipuka	rinipuka	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	parataxis	_	TokenRange=20:28

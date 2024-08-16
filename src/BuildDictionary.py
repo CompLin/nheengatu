@@ -362,15 +362,21 @@ def parseprefs(word,lexicon):
         new['pref']='+'.join(l)
     return new
 
-def getpersnum():
+def archaicImperativePrefix():
+    return {'e': f"{IMP}+2+SG", 'i': f"{IMP}+2+SG"}
+
+def getpersnum(impind=IMPIND):
     """Active person-number prefixes.
     """
-    return {'a': f"{IND}+1+SG",'xa': f"{ARCHAIC}+{IND}+1+SG",'ha': f"{IND}+1+SG",
-    're': f"{IMPIND}+2+SG",
-    'e': f"{IMP}+2+SG",
-    'i': f"{IMP}+2+SG", 'u': f"{IND}+3",'ya':
-    f"{IND}+1+PL",'pe': f"{IMPIND}+2+PL",'ta': f"{IND}+3+PL",'tau': f"{IND}+3+PL"
+    persnum= {'a': f"{IND}+1+SG",'xa': f"{ARCHAIC}+{IND}+1+SG",'ha': f"{IND}+1+SG",
+    're': f"{impind}+2+SG",
+    'u': f"{IND}+3",
+    'ya': f"{IND}+1+PL",
+    'pe': f"{impind}+2+PL",
+    'ta': f"{IND}+3+PL",'tau': f"{IND}+3+PL"
     }
+    persnum.update(archaicImperativePrefix())
+    return persnum
 
 def guessVerb(form):
 	persnum=getpersnum()
@@ -439,6 +445,16 @@ def handleV3(lemma,tag):
 	forms.add(f"{lemma}\t{lemma}+{tag}+NCONT")
 	return forms
 
+def conjugateIrrImp(lemma='sú',stem='kũi',pos='V'):
+    forms=set()
+    zeroprefix={'': f"{IMP}+2+SG"}
+    persnum=getpersnum(IMP)
+    persnum.update(zeroprefix)
+    for pref,tag in persnum.items():
+        if '+2' in tag:
+            forms.add(f"{pref}{stem}\t{lemma}+{pos}+{tag}")
+    return forms
+
 def conjugateVerb(lemma,pos='V'):
     persnum=getpersnum()
     forms=set()
@@ -450,7 +466,7 @@ def conjugateVerb(lemma,pos='V'):
         forms.add(f"yuri\t{lemma}+{pos}+{IMP}+2")
         return forms
     elif lemma == 'sú':
-        forms.add(f"pekũi\t{lemma}+{pos}+{IMP}+2+PL")
+        forms.update(conjugateIrrImp())
     for pref,tag in persnum.items():
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     includeInfinitive(pos,lemma,forms)
