@@ -22659,10 +22659,11 @@
 9	marandúa	marandúa	NOUN	N	Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=42:50
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
 
-# sent_id = Rodrigues1890:1-1-11:0:0
+# sent_id = Rodrigues1890:1-1-11:84:84
 # text = Usika ramé suka kití Kurupira unheẽ: — Ikũi ana ne manha piri, xasú ana ne xií; ti maã maã reú ikũi se piri se ruka upé.
 # text_eng = TODO
 # text_por = Quando chegou à casa, o Curupira disse: — Vai já ter com tua mãe. Eu me separo de ti. Quando não tiveres que comer, vem ter comigo em minha casa.
+# text_por_gloss = Vai já tua mãe ter com eu vou me embora ti de; não que tu comeres vem migo ter com minha casa em. 
 # text_source = p. 84
 # text_orig = U ceca ramé çoca queté Curupira u nhiin: — I cu ana ne manha pire, cha çu ana ne chii; timaan maa reú i có ce pire ce roca opé.
 # text_annotator = Leonel Figueiredo de Alencar
@@ -22686,12 +22687,12 @@
 16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=67:70
 17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	obl	_	TokenRange=71:73
 18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
-19	;	;	PUNCT	PUNCT	_	23	punct	_	TokenRange=77:78
-20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
+19	;	;	PUNCT	PUNCT	_	22	punct	_	TokenRange=77:78
+20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=79:81
 21	maã	maã	PRON	IND	PronType=Ind	20	fixed	_	TokenRange=82:85
-22	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	23	advmod	_	TokenRange=86:89
-23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
-24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	15	parataxis	_	TokenRange=94:98
+22	maã	maã	PRON	RELF	PronType=Rel	15	parataxis	_	TokenRange=86:89
+23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	22	acl:relcl	_	TokenRange=90:93
+24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	22	parataxis	_	TokenRange=94:98
 25	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	24	obl	_	TokenRange=99:101
 26	piri	piri	ADP	ADP	AdpType=Post	25	case	_	TokenRange=102:106
 27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=107:109
