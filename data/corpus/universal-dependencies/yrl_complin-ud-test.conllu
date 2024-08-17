@@ -22382,6 +22382,34 @@
 16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=87:92
 17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
 
+# sent_id = Rodrigues1890:1-1-6:0:0
+# text = — Ikũi ana, aikwé nhuntu ana Kurupira usika ixé yuíri xasú ana.
+# text_eng = TODO
+# text_por = — Vai já; o Curupira está a chegar e eu também vou-me embora.
+# text_source = p. 56
+# text_orig = — Icó ana, aicoé iunto ana Curupira u cêca che iuire cha çu ana.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = [...], aikwé nhuntu ana usika kurupira, ixé yuíri asú ana.
+# text_por_sec = [...], daqui a pouco o curupira já chega, eu também já me vou.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=1:5
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=9:10
+5	aikwé	aikwé	PART	EXST	ExtPos=ADV|PartType=Exs	9	advmod	_	TokenRange=11:16
+6	nhuntu	nhuntu	ADV	ADV	_	5	fixed	_	TokenRange=17:23
+7	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=24:27
+8	Kurupira	kurupira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=28:36
+9	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=37:42
+10	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	TokenRange=43:46
+11	yuíri	yuíri	ADV	ADVG	AdvType=Deg	10	advmod	_	TokenRange=47:52
+12	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=53:57
+13	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	SpaceAfter=No|TokenRange=58:61
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=61:62
+
 # sent_id = Rodrigues1890:1-1-7:40:40
 # text = Iruri taíra ixé arama ukiri se irumu.
 # text_eng = TODO
@@ -22607,13 +22635,14 @@
 12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=51:54
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
 
-# sent_id = Rodrigues1890:1-1-12:500:500
+# sent_id = Rodrigues1890:1-1-13:500:500
 # text = Aintá unheẽ unheengari ramé ti maã i katú marandúa.
 # text_eng = They say that when he sings, the news is not good.
 # text_por = Dizem que quando ele canta não é boa a notícia.
 # text_source = p. 91
 # text_orig = Aitá u nheeng u nheengare ramé intimaan i catu marandua.
 # title_orig = TINKUAN
+# title_number = XII
 # text_sec = Aintá unheẽ [wirá-payé] unheengari ramé ti maã i katú marandúa
 # text_por_sec = Dizem que quando [o pássaro feiticeiro] canta não é boa a notícia.
 # text_sec_source = Avila (2021)
@@ -22629,6 +22658,46 @@
 8	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	2	ccomp	_	TokenRange=37:41
 9	marandúa	marandúa	NOUN	N	Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=42:50
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Rodrigues1890:1-1-11:0:0
+# text = Usika ramé suka kití Kurupira unheẽ: — Ikũi ana ne manha piri, xasú ana ne xií; ti maã maã reú ikũi se piri se ruka upé.
+# text_eng = TODO
+# text_por = Quando chegou à casa, o Curupira disse: — Vai já ter com tua mãe. Eu me separo de ti. Quando não tiveres que comer, vem ter comigo em minha casa.
+# text_source = p. 84
+# text_orig = U ceca ramé çoca queté Curupira u nhiin: — I cu ana ne manha pire, cha çu ana ne chii; timaan maa reú i có ce pire ce roca opé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:5
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
+3	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obl	_	TokenRange=11:15
+4	kití	kití	ADP	ADP	AdpType=Post	3	case	_	TokenRange=16:20
+5	Kurupira	kurupira	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=21:29
+6	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=30:35
+7	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=35:36
+8	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
+9	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=38:42
+10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=43:46
+11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=47:49
+12	manha	manha	NOUN	N	Number=Sing	9	obl	_	TokenRange=50:55
+13	piri	piri	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=56:60
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
+15	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=62:66
+16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=67:70
+17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	obl	_	TokenRange=71:73
+18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
+19	;	;	PUNCT	PUNCT	_	23	punct	_	TokenRange=77:78
+20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
+21	maã	maã	PRON	IND	PronType=Ind	20	fixed	_	TokenRange=82:85
+22	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	23	advmod	_	TokenRange=86:89
+23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
+24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	15	parataxis	_	TokenRange=94:98
+25	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	24	obl	_	TokenRange=99:101
+26	piri	piri	ADP	ADP	AdpType=Post	25	case	_	TokenRange=102:106
+27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=107:109
+28	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	24	obl	_	TokenRange=110:114
+29	upé	upé	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=115:118
+30	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=118:119
 
 # sent_id = Rodrigues1890:1-2-2:101:101
 # text = Umeẽ i nheenga pisasú unheẽ i xupé: — Upaĩ kunhã-itá ukwáu-putari waá se kwatukasawa umanú kuíri; muíri apigawa-itá umbeú waá umanú kurí; peumbeú kurumiwasú-itá supé, tenhẽ peumbeú taína-itá supé.
@@ -28849,6 +28918,41 @@
 4	tapuya-itá	tapuya	NOUN	N	Number=Plur	2	obl	_	TokenRange=26:36
 5	irũ	irũ	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=37:40
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Hartt1938:0:0:63
+# text = I manha upitera i mimbira yurú.
+# text_por = A mãe beijou seu filho.
+# text_source = p. 323, No. 63
+# text_orig = imáinya opyter imymyra yurú.
+# text_por_alt = A mãe beijou a boca do filho.
+# text_por_alt_translator = LFdeA
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = LFdeA
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	manha	manha	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=2:7
+3	upitera	pitera	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:15
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:17
+5	mimbira	mimbira	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=18:25
+6	yurú	yurú	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=26:30
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = Hartt1938:0:0:64
+# text = Ixé xapitera kwaá kunhataĩ yurú.
+# text_por = Dei um beijo à menina.
+# text_source = p. 323, No. 64
+# text_orig = ixé xapytér kuae kuñántain yurú.
+# text_por_sec = Eu beijei a boca dessa menina.
+# text_por_sec_source = Avila (2021)
+# text_sec = Ixé apitera kwaá kunhatãi yurú.
+# text_sec_source = Avila (2021)
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = LFdeA
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	xapitera	pitera	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=apitera|TokenRange=4:12
+3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:17
+4	kunhataĩ	kunhataĩ	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=18:23
+5	yurú	yurú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=24:28
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hart1938:0:0:91
 # text = Intí ã se kirimbá xasupiri arama maã i pusé reté waá.
