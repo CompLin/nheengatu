@@ -5250,7 +5250,7 @@
 # text_source = O Novo Testamento em nyengatu, Mateus 5:38, adap.
 # text_orig = Pesendú ana mayé aintá umbeú kuxiima: amú unupá ramé ne resá upé, rerikuté renupá sesá upé yuíri; amú unupá ramé ne ranha, rerikuté renupá yuíri sanha.
 # text_annotator = LFdeA
-1	Pesendú	sendú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+1	Pesendú	sendú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=8:11
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	5	advmod	_	TokenRange=12:16
 4	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=17:22
@@ -5321,12 +5321,12 @@
 # reviewer1 = JLG
 # reviewer2 = DMA
 1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
-2	rewewé	wewé	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
+2	rewewé	wewé	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	yepé	yepé	PART	FRUST	Aspect=Frus	2	advmod	_	TokenRange=12:16
 4	kutara	kutara	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=17:23
 5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=23:24
 6	ma	ma	CCONJ	CCONJ	_	7	cc	_	TokenRange=25:27
-7	remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=28:33
+7	remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=28:33
 8	mamentu	mamentu	ADV	ADVC	AdvType=Loc	9	advmod	_	TokenRange=34:41
 9	resika	sika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	7	ccomp	_	SpaceAfter=No|TokenRange=42:48
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=48:49
@@ -8483,15 +8483,15 @@
 10	supé	supé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=51:55
 11	:	:	PUNCT	PUNCT	_	13	punct	_	TokenRange=55:56
 12	―	―	PUNCT	PUNCT	_	13	punct	_	TokenRange=56:57
-13	Pemaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=58:63
+13	Pemaã	maã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=58:63
 14	nhaã-itá	nhaã	PRON	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	13	obj	_	TokenRange=64:72
 15	upupuri	pupuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=73:80
 16	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	15	nsubj	_	SpaceAfter=No|TokenRange=81:88
 17	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=88:89
-18	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	19	aux	_	TokenRange=90:94
-19	peyuuka	yuuka	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	13	parataxis	_	SpaceAfter=No|TokenRange=95:102
+18	pesú	sú	AUX	AUXFR	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	19	aux	_	TokenRange=90:94
+19	peyuuka	yuuka	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	13	parataxis	_	SpaceAfter=No|TokenRange=95:102
 20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=102:103
-21	pemixiri	mixiri	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	19	parataxis	_	SpaceAfter=No|TokenRange=104:112
+21	pemixiri	mixiri	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	19	parataxis	_	SpaceAfter=No|TokenRange=104:112
 22	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=112:113
 23	yasaã	saã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	21	advcl	_	TokenRange=114:119
 24	arama	arama	SCONJ	SCONJ	_	23	mark	_	TokenRange=120:125
@@ -10892,12 +10892,12 @@
 10	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=40:44
 11	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	SpaceAfter=No|TokenRange=45:49
 12	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=49:50
-13	remuyeréu	muyeréu	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=51:60
+13	remuyeréu	muyeréu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=51:60
 14	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	13	obl	_	TokenRange=61:65
 15	arama	arama	ADP	ADP	AdpType=Post	14	case	_	TokenRange=66:71
 16	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	17	det	_	TokenRange=72:75
 17	itá	itá	NOUN	N	Number=Sing	13	obj	_	TokenRange=76:79
-18	pãu	pãu	NOUN	N	Number=Sing	13	obl	_	OrigLang=pt|TokenRange=80:83
+18	pãu	pãu	NOUN	N	Number=Sing	13	obl	_	Orig=pão|OrigLang=pt|TokenRange=80:83
 19	arama	arama	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=84:89
 20	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=89:90
 
@@ -12762,7 +12762,7 @@
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
 4	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
-5	Retirika	tirika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=17:25
+5	Retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=17:25
 6	mikití	mikití	ADV	ADVC	AdvType=Loc	5	advmod	_	TokenRange=26:32
 7	xinga	xinga	ADV	ADVS	AdvType=Deg	5	advmod	_	SpaceAfter=No|TokenRange=33:38
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
@@ -13318,7 +13318,7 @@
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:13
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=13:14
 4	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
-5	Reyutima	yutima	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=16:24
+5	Reyutima	yutima	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=16:24
 6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	det	_	TokenRange=25:28
 7	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=29:31
 8	taína	taína	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=32:37
@@ -18218,9 +18218,9 @@
 15	xinga	xinga	ADV	ADVS	AdvType=Deg	14	advmod	_	TokenRange=65:70
 16	ambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	14	csubj	_	TokenRange=71:76
 17	"	"	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No|TokenRange=76:77
-18	Repuãmu	puãmu	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	16	ccomp	_	SpaceAfter=No|TokenRange=78:85
+18	Repuãmu	puãmu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	16	ccomp	_	SpaceAfter=No|TokenRange=78:85
 19	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=85:86
-20	rewatá	watá	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	18	parataxis	_	SpaceAfter=No|TokenRange=87:93
+20	rewatá	watá	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	18	parataxis	_	SpaceAfter=No|TokenRange=87:93
 21	"	"	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No|TokenRange=93:94
 22	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=94:95
 
@@ -18243,26 +18243,26 @@
 10	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = NTLN2019:2:2:13
-# text = Maita ambeú: — Indé se paya, remukaturú ixé i suí kwá ura?
+# text = Maita hambeú: — Indé se paya, remukaturú ixé i suí kwá ura?
 # text_eng = ‘Father, save me from this hour’? [NIV]
 # text_por = Pai, salva-me desta hora? [NVI]
 # text_source = Novo Testamento na língua Nyengatu, John 12:27
 # text_orig = Maitaa hambeu, inde sepaya remukaturu ixe isui kua ura?
 # text_annotator = LFdeA
 1	Maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	2	advmod	_	TokenRange=0:5
-2	ambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:11
+2	hambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:11
 3	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=11:12
 4	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=12:13
 5	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	vocative	_	TokenRange=14:18
 6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=19:21
 7	paya	paya	NOUN	N	Number=Sing	5	appos	_	SpaceAfter=No|TokenRange=22:26
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=26:27
-9	remukaturú	mukaturú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=28:38
+9	remukaturú	mukaturú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=28:38
 10	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	obj	_	TokenRange=39:42
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	obl	_	TokenRange=43:44
 12	suí	suí	ADP	ADP	AdpType=Post	11	case	_	TokenRange=45:48
 13	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	det	_	TokenRange=49:52
-14	ura	ura	NOUN	N	Number=Sing	9	dislocated	_	OrigLang=pt|SpaceAfter=No|TokenRange=53:56
+14	ura	ura	NOUN	N	Number=Sing	9	dislocated	_	Orig=hora|OrigLang=pt|SpaceAfter=No|TokenRange=53:56
 15	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=56:57
 
 # sent_id = NTLN2019:2:3:14
@@ -19019,7 +19019,7 @@
 11	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=49:50
 12	—	—	PUNCT	PUNCT	_	14	punct	_	TokenRange=50:51
 13	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	14	advmod	_	TokenRange=52:54
-14	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=55:59
+14	resú	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=55:59
 15	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	14	obl	_	TokenRange=60:66
 16	kití	kití	ADP	ADP	AdpType=Post	15	case	_	TokenRange=67:71
 17	kuíri	kuíri	ADV	ADVT	AdvType=Tim	14	advmod	_	SpaceAfter=No|TokenRange=72:77
@@ -19117,8 +19117,9 @@
 
 # sent_id = NTLN2019:7:1:45
 # text = Asuí aramé tẽ Jesus umbeú aintá supé kwá-itá siya waá-itá: — Maita peyuíri pepisika ixé espada irumu kaseti irumu yuíri kwayé pepisika waá yawé mundawasú?
-# text_eng = At that hour Jesus said to the crowds, “Have you come out as against a robber, with swords and clubs to capture me? [ESV] - Asui aramete Jesus umbeu ainta supe kuaita siyawaita: — Maitaa peyuiri pepisika ixe espada irumu kaseti irumu yuiri kuaye pepisikawaa yawe mundawasu?
+# text_eng = At that hour Jesus said to the crowds, “Have you come out as against a robber, with swords and clubs to capture me? [ESV]
 # text_por = Naquele momento, disse Jesus às multidões: Saístes com espadas e porretes para prender-me, como a um salteador? [ARA]
+# text_orig = Asui aramete Jesus umbeu ainta supe kuaita siyawaita: — Maitaa peyuiri pepisika ixe espada irumu kaseti irumu yuiri kuaye pepisikawaa yawe mundawasu?
 # text_source = Novo Testamento na língua Nyengatu, Matt 26:55
 # text_annotator = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:4
@@ -20592,12 +20593,12 @@
 9	Compadre	compadre	NOUN	N	_	12	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=28:36
 10	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
 11	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=37:38
-12	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=39:46
+12	remunhã	munhã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=39:46
 13	mayé	mayé	ADV	ADVLA	AdvType=Man|PronType=Rel	12	advmod	_	TokenRange=47:51
 14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	12	obl	_	TokenRange=52:54
 15	yawé	yawé	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=55:59
 16	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=59:60
-17	repisika	pisika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	12	parataxis	_	TokenRange=61:69
+17	repisika	pisika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	12	parataxis	_	TokenRange=61:69
 18	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	21	acl:relcl	_	TokenRange=70:75
 19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	nsubj	_	TokenRange=76:79
 20	rẽ	rẽ	PART	IMPF	_	18	advmod	_	TokenRange=80:82
@@ -20688,7 +20689,7 @@
 7	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=25:26
 8	Compadre	compadre	NOUN	N	_	10	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=27:35
 9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=35:36
-10	remaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=37:42
+10	remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=37:42
 11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=43:45
 12	rangawa	sangawa	NOUN	N	Number=Sing|Rel=Cont	10	obj	_	SpaceAfter=No|TokenRange=46:53
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=53:54
@@ -22663,7 +22664,7 @@
 # text = Usika ramé suka kití Kurupira unheẽ: — Ikũi ana ne manha piri, xasú ana ne xií; ti maã maã reú ikũi se piri se ruka upé.
 # text_eng = TODO
 # text_por = Quando chegou à casa, o Curupira disse: — Vai já ter com tua mãe. Eu me separo de ti. Quando não tiveres que comer, vem ter comigo em minha casa.
-# text_por_gloss = Vai já tua mãe ter com eu vou me embora ti de; não que tu comeres vem migo ter com minha casa em. 
+# text_por_gloss = Vai já tua mãe ter com eu vou me embora ti de; não que tu comeres vem migo ter com minha casa em.
 # text_source = p. 84
 # text_orig = U ceca ramé çoca queté Curupira u nhiin: — I cu ana ne manha pire, cha çu ana ne chii; timaan maa reú i có ce pire ce roca opé.
 # text_annotator = Leonel Figueiredo de Alencar
@@ -23061,7 +23062,7 @@
 26	:	:	PUNCT	PUNCT	_	29	punct	_	TokenRange=117:118
 27	—	—	PUNCT	PUNCT	_	29	punct	_	TokenRange=119:120
 28	Pekũi	sú	AUX	AUXFR	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	29	aux	_	TokenRange=121:126
-29	pemuatiri	muatiri	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	23	ccomp	_	SpaceAfter=No|TokenRange=127:136
+29	pemuatiri	muatiri	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	23	ccomp	_	SpaceAfter=No|TokenRange=127:136
 30	,	,	PUNCT	PUNCT	_	31	punct	_	TokenRange=136:137
 31	pemungí	mungí	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	29	advcl	_	TokenRange=138:145
 32	arama	arama	SCONJ	SCONJ	_	31	mark	_	TokenRange=146:151
@@ -24782,11 +24783,11 @@
 8	xupé	xupé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=35:39
 9	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=39:40
 10	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=40:41
-11	Retirika	tirika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=42:50
+11	Retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	SpaceAfter=No|TokenRange=42:50
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=50:51
 13	yautí	yautí	NOUN	N	Number=Sing	11	vocative	_	SpaceAfter=No|TokenRange=52:57
 14	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=57:58
-15	retirika	tirika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	11	parataxis	_	TokenRange=59:67
+15	retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	11	parataxis	_	TokenRange=59:67
 16	kí	kí	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	15	obl	_	TokenRange=68:70
 17	xií	xií	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=71:74
 18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=74:75
@@ -25137,7 +25138,7 @@
 3	:	:	PUNCT	PUNCT	_	6	punct	_	TokenRange=12:13
 4	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=13:14
 5	Aramé	aramé	ADV	ADVJ	AdvType=Cau	6	advmod	_	TokenRange=15:20
-6	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=21:25
+6	resú	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=21:25
 7	wana	wana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=26:30
 8	paraná	paraná	NOUN	N	Number=Sing	6	obl	_	TokenRange=31:37
 9	mirĩ	mirĩ	ADJ	A	_	8	amod	_	TokenRange=38:42
@@ -25428,7 +25429,7 @@
 8	supé	supé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=37:41
 9	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=41:42
 10	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=42:43
-11	Remuatiri	muatiri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=44:53
+11	Remuatiri	muatiri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=44:53
 12	kaá	kaá	NOUN	N	Number=Sing	11	obj	_	TokenRange=54:57
 13	siiya	siiya	DET	INDQ	PronType=Ind	12	det	_	SpaceAfter=No|TokenRange=58:63
 14	;	;	PUNCT	PUNCT	_	19	punct	_	TokenRange=63:64
@@ -25436,7 +25437,7 @@
 16	ramé	ramé	SCONJ	SCONJ	_	15	mark	_	TokenRange=71:75
 17	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	SpaceAfter=No|TokenRange=76:79
 18	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=79:80
-19	remundeka	mundeka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	11	parataxis	_	TokenRange=81:90
+19	remundeka	mundeka	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	11	parataxis	_	TokenRange=81:90
 20	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	19	obj	_	TokenRange=91:95
 21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	obl	_	TokenRange=96:97
 22	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	21	case	_	SpaceAfter=No|TokenRange=98:102
@@ -26292,7 +26293,7 @@
 4	aramé	aramé	ADV	ADVT	AdvType=Tim	3	advmod	_	SpaceAfter=No|TokenRange=24:29
 5	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=29:30
 6	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=30:31
-7	Pesarú	sarú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=32:38
+7	Pesarú	sarú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=32:38
 8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	7	obj	_	TokenRange=39:42
 9	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	7	advmod	_	TokenRange=43:46
 10	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	9	advmod	_	SpaceAfter=No|TokenRange=47:49
@@ -27366,11 +27367,11 @@
 15	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=89:91
 16	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	14	appos	_	SpaceAfter=No|TokenRange=92:99
 17	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=99:100
-18	remaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	11	ccomp	_	TokenRange=101:106
+18	remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	11	ccomp	_	TokenRange=101:106
 19	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	18	obl	_	TokenRange=107:110
 20	arama	arama	ADP	ADP	AdpType=Post	19	case	_	TokenRange=111:116
 21	teité	teité	NOUN	N	Number=Sing	19	acl	_	TokenRange=117:122
-22	repirari	pirari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	18	parataxis	_	TokenRange=123:131
+22	repirari	pirari	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	18	parataxis	_	TokenRange=123:131
 23	raẽ	raẽ	PART	IMPF	_	22	advmod	_	TokenRange=132:135
 24	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	25	det	_	TokenRange=136:139
 25	uka	uka	NOUN	N	Number=Sing|Rel=Abs	26	nmod:poss	_	TokenRange=140:143
@@ -27584,7 +27585,7 @@
 9	Maĩ	maĩ	NOUN	N	Number=Sing	12	vocative	_	SpaceAfter=No|TokenRange=31:34
 10	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=34:35
 11	tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=36:41
-12	renheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=42:48
+12	renheẽ	nheẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=42:48
 13	yawé	yawé	ADV	ADVA	AdvType=Man	12	advmod	_	SpaceAfter=No|TokenRange=49:53
 14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=53:54
 15	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	17	nsubj	_	TokenRange=55:60
@@ -29437,7 +29438,7 @@
 5	supé	supé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:27
 6	:	:	PUNCT	PUNCT	_	8	punct	_	TokenRange=27:28
 7	—	—	PUNCT	PUNCT	_	8	punct	_	TokenRange=28:29
-8	Remusema	musema	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=30:38
+8	Remusema	musema	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=30:38
 9	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	8	obl	_	TokenRange=39:41
 10	suí	suí	ADP	ADP	AdpType=Post	9	case	_	TokenRange=42:45
 11	maã	maã	PRON	IND	PronType=Ind	8	obj	_	TokenRange=46:49

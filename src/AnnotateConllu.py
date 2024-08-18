@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 15, 2024
+# Last update: August 18, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -3048,7 +3048,7 @@ def handleSentsHartt(example):
     return result
 
 AVILA_SENTS=[]
-def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin):
+def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab'):
 	"""
 	Parse a Nheengatu sentence example from Amorim (1928) or an analogous publication and print the respective analysis in the CoNNL-U format, copying it to the clipboard.
 
@@ -3089,7 +3089,7 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Tru
 			metadata['cross_reference']=result[0].metadata['sent_id']
 	else:
 		amorim=example
-	metadata.update(transcriber())
+	metadata.update(transcriber(person))
 	parseExample(amorim,prefix,text_nr,sent_nr,sent_nr,metadata=metadata,translate=translate)
 
 def getPortugueseTextProducer(sent):
@@ -3196,59 +3196,62 @@ def insertFeat(token,newfeat,value):
 				token['feats'].update(dic)
 	else:
 		token['feats']=dic
+		
+def InsertIndDepClause(sent):
+	tokenlist=sent.filter(upos='VERB', deprel='advcl')
+	tokenlist.extend(sent.filter(upos='VERB', deprel='xcomp'))
+	#tokenlist.extend(sent.filter(upos='VERB', deprel='ccomp')) # this is incorrect (issue #503)
+	tokenlist.extend(sent.filter(upos='VERB', deprel='acl:relcl'))
+	tokenlist.extend(sent.filter(upos='VERB', deprel='advcl:relcl'))
+	for token in tokenlist:
+		insertFeat(token,'Mood','Ind')
+			
+def InsertMoodNegClause(sent):
+	tokenlist=sent.filter(xpos='NEGI')
+	tokenlist.extend(sent.filter(xpos='NEG'))
+	tokenlist.extend(sent.filter(xpos='COND'))
+	mapping={'NEGI' : 'Imp', 'NEG' : 'Ind', 'COND' : 'Ind'} # TODO: include FUT?
+	for token in tokenlist:
+		headid = token['head']
+		headlist=sent.filter(id=headid)
+		if headlist:
+			head=headlist[0]
+			if head['upos'] == 'VERB':
+				xpos=token['xpos']
+				insertFeat(head,'Mood',mapping[xpos])
+					
+def InsertMoodInterClause(sent):
+	tokenlist=sent.filter(feats__PartType="Int")
+	tokenlist.extend(sent.filter(upos='PUNCT', lemma='?'))
+	tokenlist.extend(sent.filter(feats__PronType="Rel"))
+	for token in tokenlist:
+		headid = token['head']
+		headlist=sent.filter(id=headid)
+		if headlist:
+			head=headlist[0]
+			if head['upos'] == 'VERB':
+				insertFeat(head,'Mood','Ind')
 
-def insertMoodVerbForm(sents):
-	for sent in sents:
-		tokenlist=sent.filter(upos='VERB', deprel='advcl')
-		tokenlist.extend(sent.filter(upos='VERB', deprel='xcomp'))
-		tokenlist.extend(sent.filter(upos='VERB', deprel='ccomp'))
-		tokenlist.extend(sent.filter(upos='VERB', deprel='acl:relcl'))
-		tokenlist.extend(sent.filter(upos='VERB', deprel='advcl:relcl'))
-		for token in tokenlist:
-			insertFeat(token,'Mood','Ind')
-		tokenlist=sent.filter(xpos='NEGI')
-		tokenlist.extend(sent.filter(xpos='NEG'))
-		mapping={'NEGI' : 'Imp', 'NEG' : 'Ind'}
-		for token in tokenlist:
-			headid = token['head']
-			headlist=sent.filter(id=headid)
-			if headlist:
-				head=headlist[0]
-				if head['upos'] == 'VERB':
-					xpos=token['xpos']
-					#print('bu')
-					insertFeat(head,'Mood',mapping[xpos])
-					#print('hu',head['feats'])
-		tokenlist=sent.filter(feats__PartType="Int")
-		tokenlist.extend(sent.filter(upos='PUNCT', lemma='?'))
-		tokenlist.extend(sent.filter(feats__PronType="Rel"))
-		for token in tokenlist:
-			headid = token['head']
-			headlist=sent.filter(id=headid)
-			if headlist:
-				head=headlist[0]
-				if head['upos'] == 'VERB':
-					insertFeat(head,'Mood','Ind')
-		tokenlist=sent.filter(upos='AUX')
-		tokenlist.extend(sent.filter(upos='VERB', deprel='conj'))
-		tokenlist.extend(sent.filter(upos='VERB', deprel='parataxis'))
-		for token in tokenlist:
-			headid = token['head']
-			headlist=sent.filter(id=headid)
-			if headlist:
-				head=headlist[0]
-				if head['upos'] == 'VERB':
-					feats=head.get('feats')
-					#print('du',feats)
-					#print('fu',token,token['feats'])
-					if feats:
-						mood=feats.get('Mood')
-						if mood:
-							insertFeat(token,'Mood',mood)
-							#print('gu',token['feats'])
-				else:
-					insertFeat(token,'Mood','Ind')
-		for token in sent:
+def CopyMoodFromHeadVerb(sent):
+	tokenlist=sent.filter(upos='AUX')
+	tokenlist.extend(sent.filter(upos='VERB', deprel='conj'))
+	tokenlist.extend(sent.filter(upos='VERB', deprel='parataxis'))
+	for token in tokenlist:
+		headid = token['head']
+		headlist=sent.filter(id=headid)
+		if headlist:
+			head=headlist[0]
+			if head['upos'] == 'VERB':
+				feats=head.get('feats')
+				if feats:
+					mood=feats.get('Mood')
+					if mood:
+						insertFeat(token,'Mood',mood)
+			else:
+				insertFeat(token,'Mood','Ind')
+					
+def HandleMoodPerson(sent):
+	for token in sent:
 			if token['upos'] in ('AUX','VERB'):
 				insertFeat(token,'VerbForm','Fin')
 				feats=token.get('feats')
@@ -3260,4 +3263,47 @@ def insertMoodVerbForm(sents):
 						insertFeat(token,'Mood','Ind')
 					else:
 						insertFeat(token,'Mood','Ind')
+	
+def insertMoodVerbForm(sents):
+	for sent in sents:
+		InsertIndDepClause(sent)
+		InsertMoodNegClause(sent)
+		InsertMoodInterClause(sent)
+		CopyMoodFromHeadVerb(sent)
+		HandleMoodPerson(sent)
 		sortTokens(sent)
+
+def ExtractCcompImp2Person(sents):
+	"""Extract sentences from the treebank according to issue #503.
+	"""
+	newsents=[]
+	for sent in sents:
+		tokenlist=sent.filter(upos='VERB', feats__Person='2',feats__Mood="Ind",deprel='ccomp')
+	if tokenlist:
+		newsents.append(sent)
+	return newsents
+
+def mkDictRevisedSents(ccomp):
+	"""Create a dictionary from the sentences returned by ExtractCcompImp2Person (issue #503)
+	"""
+	dic={}
+	for sent in ccomp:
+		sentid=sent.metadata['sent_id']
+		dic[sentid]=sent
+	return dic
+
+def correctSents(sents,dic):
+	"""Update the treebank with the manually corrected sentences (issue #503).
+	"""
+	i=0
+	newsents=[]
+	for sent in sents:
+		sentid=sent.metadata['sent_id']
+		newsent=dic.get(sentid)
+		if newsent:
+			newsents.append(newsent)
+			i+=1
+		else:
+			newsents.append(sent)
+	print(f"Total revised sentences: {i}")
+	return newsents
