@@ -21626,6 +21626,7 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -21633,8 +21634,8 @@
 5	usupiri	supiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:17
 6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=18:22
 7	sumuára	sumuára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obj	_	TokenRange=23:30
-8	yepewasú	yepewasú	ADJ	A	_	5	advmod	_	TokenRange=31:39
-9	sukuriú	sukuriú	NOUN	N	Number=Sing	5	obl	_	TokenRange=40:47
+8	yepewasú	yepewasú	ADJ	A	_	5	advcl	_	TokenRange=31:39
+9	sukuriú	sukuriú	NOUN	N	Number=Sing	8	obl	_	TokenRange=40:47
 10	irumu	irumu	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=48:53
 11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=53:54
 12	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=55:61
@@ -21657,16 +21658,17 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # text_sec = Nhaã paá sukuriú santá uyari, ti ukataka ti arã uxari ximiára uyawawa.
-# text_por_orig_sec = A sucuriju fixou-se firme, não se mexia para não deixar sua presa escapar.
+# text_por_sec = A sucuriju fixou-se firme, não se mexia para não deixar sua presa escapar.
 # text_sec_source = Avila (2021)
-# text_por_orig_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	sukuriú	sukuriú	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=11:18
-6	santá	santá	ADJ	A	_	5	amod	_	TokenRange=19:24
+6	santá	santá	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=19:24
 7	uyari	yari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=25:30
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=30:31
 9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=32:34
@@ -21679,7 +21681,7 @@
 16	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=72:73
 
 # sent_id = Casasnovas2006:4:9:44
-# text = Yawé, paá, ta usika ta rendawa kití.
+# text = Yawé, paá, tasika ta rendawa kití.
 # text_eng = TODO
 # text_eng_ggl = Just like that, they were taken to their farm.
 # text_por = Assim mesmo foram levados ao sítio deles.
@@ -21691,19 +21693,19 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
-5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=11:13
-6	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
-7	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nmod:poss	_	TokenRange=20:22
-8	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	6	obl	_	TokenRange=23:30
-9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=31:35
-10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=35:36
+5	tasika	sika	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
+6	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	TokenRange=20:22
+7	rendawa	tendawa	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=23:30
+8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=31:35
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Casasnovas2006:4:10:45
-# text = Ape, paá, mira-itá ta uyatiri ta ukamirika kirimbawa nhaã sukuriú resá resé, ariré wã uyurá nhaã apigá kwera suí.
+# text = Ape, paá, mira-itá ta yatiri takamirika kirimbawa nhaã sukuriú resá resé, ariré wã uyurá nhaã apigá kwera suí.
 # text_eng = TODO
 # text_eng_ggl = There people gathered together, squeezed the sacuriju's eyes very hard and only then did it unwrap itself from the young man.
 # text_por = Lá as pessoas se juntaram, apertaram com muita força os olhos da sacuriju e só então que se desenrolou do jovem.
@@ -21715,29 +21717,30 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	7	advmod	_	SpaceAfter=No|TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Ape/advdi, paá, mira-itá ta/=typo:c|tayatiri yatiri/=x takamirika kirimbawa/adva nhaã sukuriú resá resé/adp, ariré/advt wã uyurá nhaã apigá/n kwera/a suí.
+1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
-5	mira-itá	mira	NOUN	N	Number=Plur	7	nsubj	_	TokenRange=10:18
-6	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	expl	_	TokenRange=19:21
-7	uyatiri	yatiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=22:29
-8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=30:32
-9	ukamirika	kamirika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=33:42
-10	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=43:52
-11	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	12	det	_	TokenRange=53:57
-12	sukuriú	sukuriú	NOUN	N	Number=Sing	13	nmod:poss	_	TokenRange=58:65
-13	resá	sesá	NOUN	N	Number=Sing|Rel=Cont	9	obl	_	TokenRange=66:70
-14	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	13	case	_	SpaceAfter=No|TokenRange=71:75
-15	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=75:76
-16	ariré	ariré	ADV	ADVT	AdvType=Tim	18	advmod	_	TokenRange=77:82
-17	wã	wã	PART	PFV	Aspect=Perf	18	advmod	_	TokenRange=83:85
-18	uyurá	yurá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=86:91
-19	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	20	det	_	TokenRange=92:96
-20	apigá	apigá	NOUN	N	Number=Sing	18	obl	_	TokenRange=97:102
-21	kwera	kwera	ADJ	A	_	20	amod	_	TokenRange=103:108
-22	suí	suí	ADP	ADP	AdpType=Post	20	case	_	SpaceAfter=No|TokenRange=109:112
-23	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=112:113
+5	mira-itá	mira	NOUN	N	Number=Plur	6	nsubj	_	TokenRange=10:18
+6	ta	yatiri	VERB	V	Mood=Ind|Number=Plur|Person=3|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=tayatiri|TokenRange=19:21
+7	yatiri	_	X	X	_	6	goeswith	_	TokenRange=22:28
+8	takamirika	kamirika	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=33:42
+9	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=43:52
+10	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=53:57
+11	sukuriú	sukuriú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=58:65
+12	resá	sesá	NOUN	N	Number=Sing|Rel=Cont	8	obl	_	TokenRange=66:70
+13	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	12	case	_	SpaceAfter=No|TokenRange=71:75
+14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=75:76
+15	ariré	ariré	ADV	ADVT	AdvType=Tim	17	advmod	_	TokenRange=77:82
+16	wã	wã	PART	PFV	Aspect=Perf	17	advmod	_	TokenRange=83:85
+17	uyurá	yurá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=86:91
+18	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	19	det	_	TokenRange=92:96
+19	apigá	apigá	NOUN	N	Number=Sing	17	obl	_	TokenRange=97:102
+20	kwera	kwera	ADJ	A	_	19	amod	_	TokenRange=103:108
+21	suí	suí	ADP	ADP	AdpType=Post	19	case	_	SpaceAfter=No|TokenRange=109:112
+22	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=112:113
 
 # sent_id = Casasnovas2006:4:11:46
 # text = Asuí, paá, ta uyuká nhaã sukuriuwasú kwera.
@@ -21752,6 +21755,7 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -21780,6 +21784,7 @@
 # text_sec_source = Avila (2021)
 # text_por_orig_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -21815,6 +21820,7 @@
 # text_sec_source = Avila (2021)
 # text_por_orig_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -21849,6 +21855,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -21877,6 +21884,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
 3	uyumutawarí	yumutawarí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:19
@@ -21902,6 +21910,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -21929,6 +21938,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	kurupira	kurupira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:12
 3	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:18
@@ -21963,6 +21973,7 @@
 # text_sec_source = Avila (2021)
 # text_por_orig_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar TODO
 1-2	Sakakwerantu	_	_	_	_	_	_	_	TokenRange=0:13
 1	Sakakwera	rakakwera	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	7	obl	_	_
 2	ntu	ntu	ADV	ADV	Clitic=Yes	7	advmod	_	_
@@ -26315,7 +26326,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Yuruparí, paá, usú uyuuka kunhã yuwá suí i/pron2 membira uimu/=typo:c|uinú kisawa wírupi.
+# inputline = Yuruparí, paá, usú uyuuka kunhã yuwá suí i/pron2 membira uimú/=typo:c|uinú kisawa wírupi.
 1	Yuruparí	yuruparí	PROPN	PROPN	_	6	nsubj	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=10:13
@@ -26939,7 +26950,7 @@
 5	Iruri	ruri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	ccomp	_	TokenRange=16:21
 6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=22:26
 7	muirá	muirá	NOUN	N	Number=Sing	5	obj	_	TokenRange=27:32
-8	xayumukirimáu	mukirimáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin|Voice=Mid,Pass	5	advcl	_	ModernForm=ayumukirimbawa|TokenRange=33:48
+8	xayumukirimáu	mukirimáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin|Voice=Mid,Pass	5	advcl	_	ModernForm=ayumukirimbá|TokenRange=33:48
 9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=49:54
 10	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	8	obl	_	SpaceAfter=No|TokenRange=55:59
 11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=59:60
