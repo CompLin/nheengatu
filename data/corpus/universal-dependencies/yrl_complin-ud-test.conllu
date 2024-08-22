@@ -21743,7 +21743,7 @@
 22	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=112:113
 
 # sent_id = Casasnovas2006:4:11:46
-# text = Asuí, paá, ta uyuká nhaã sukuriuwasú kwera.
+# text = Asuí, paá, tayuká nhaã sukuriuwasú kwera.
 # text_eng = TODO
 # text_eng_ggl = Then they killed her.
 # text_por = Depois mataram-na.
@@ -21755,17 +21755,17 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
-1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Asuí/advt, paá, tayuká nhaã sukuriuwasú/=aug kwera/n.
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
-5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=11:13
-6	uyuká	yuká	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
-7	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	det	_	TokenRange=20:24
-8	sukuriuwasú	sukuriuwasú	NOUN	N	Number=Sing	6	obj	_	TokenRange=25:36
-9	kwera	kwera	ADJ	A	_	8	amod	_	SpaceAfter=No|TokenRange=37:42
-10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=42:43
+5	tayuká	yuká	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:17
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=18:22
+7	sukuriuwasú	sukuriú	NOUN	N	Degree=Aug|Number=Sing	8	nmod:poss	_	TokenRange=23:34
+8	kwera	kwera	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=35:40
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Casasnovas2006:4:12:47
 # text = Nhaã, paá, apigá taité upitá pitúa, nhaãsé sukuriú umpena siiya i kãwera-itá kwera.
@@ -21780,11 +21780,11 @@
 # title_por = A sucuri
 # title_eng = The anaconda
 # text_sec = [...] sukuriú umpena siiya i kãwera-itá kwera.
-# text_por_orig_sec = [...] a sucuriju quebrou-lhe muitos ossos.
+# text_por_sec = [...] a sucuriju quebrou-lhe muitos ossos.
 # text_sec_source = Avila (2021)
-# text_por_orig_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -21820,7 +21820,7 @@
 # text_sec_source = Avila (2021)
 # text_por_orig_sec_source = Avila (2021)
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -21832,15 +21832,15 @@
 9	kawasá	kawasá	NOUN	N	Number=Sing	6	obj	_	TokenRange=38:44
 10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=45:46
 11	pupé	pupé	ADP	ADP	AdpType=Post	10	case	_	TokenRange=47:51
-12	umpusanga	umpusanga	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=52:61
+12	umpusanga	mpusanga	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=52:61
 13	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	14	det	_	TokenRange=62:66
-14	sumuára	sumuára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	nmod:poss	_	TokenRange=67:74
-15	sasí	sasí	NOUN	N	Number=Sing	12	obj	_	TokenRange=75:79
-16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	nmod:poss	_	TokenRange=80:83
+14	sumuára	sumuára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	12	obj	_	TokenRange=67:74
+15	sasí	sasí	NOUN	N	Number=Sing	19	nsubj	_	TokenRange=75:79
+16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	nsubj	_	TokenRange=80:83
 17	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=84:85
-18	pira	pira	NOUN	N	Number=Sing	15	obl	_	TokenRange=86:90
+18	pira	pira	NOUN	N	Number=Sing	15	acl:relcl	_	TokenRange=86:90
 19	sukuriú	sukuriú	NOUN	N	Number=Sing	20	nmod:poss	_	TokenRange=91:98
-20	murakí	murakí	NOUN	N	Number=Sing	15	acl:relcl	_	SpaceAfter=No|TokenRange=99:105
+20	murakí	murakí	NOUN	N	Number=Sing	12	parataxis	_	SpaceAfter=No|TokenRange=99:105
 21	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=105:106
 
 # sent_id = Casasnovas2006:5:1:49
@@ -21855,7 +21855,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -21884,15 +21884,15 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
-3	uyumutawarí	yumutawarí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:19
+3	uyumutawarí	mutawarí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=10:19
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=20:23
 5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=23:24
 6	asuí	asuí	CCONJ	CCONJ	_	8	cc	_	TokenRange=25:29
 7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	8	aux	_	TokenRange=30:33
-8	uyuyumimi	yuyumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	conj	_	TokenRange=34:43
+8	uyuyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	3	conj	_	TokenRange=34:43
 9	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=44:48
 10	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=49:53
 11	kurupira	kurupira	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=54:62
@@ -21910,7 +21910,7 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -21921,7 +21921,7 @@
 8	upirú	pirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	acl:relcl	_	TokenRange=29:34
 9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	8	nsubj	_	TokenRange=35:38
 10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=39:40
-11	pí	pí	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=41:43
+11	pí	pí	NOUN	N	Number=Sing	8	obj	_	TokenRange=41:43
 12	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	8	obl	_	TokenRange=44:53
 13	kití	kití	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=54:58
 14	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=58:59
