@@ -20415,7 +20415,7 @@
 5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=19:23
 6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=23:24
 7	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	9	det	_	TokenRange=25:32
-8	mukũi	mukũi	NUM	CARD	NumType=Card	9	nummod	_	TokenRange=33:38
+8	mukũisau	mukũi	NUM	CARD	NumType=Card	9	nummod	_	TokenRange=33:38
 9	apigawa-itá	apigawa	NOUN	N	Number=Plur	3	dislocated	_	TokenRange=39:50
 10	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=51:58
 11	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	10	nsubj	_	TokenRange=59:66
@@ -23720,22 +23720,27 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+# reviewer_comment = ccomp instead of xcomp?
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 5	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:18
 6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=19:20
-7	mena	mena	NOUN	N	Number=Sing	5	iobj	_	TokenRange=21:25
+7	mena	mena	NOUN	N	Number=Sing	5	obl	_	TokenRange=21:25
 8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	TokenRange=26:29
 9	ururi	ruri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	xcomp	_	TokenRange=30:35
 10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=36:39
-11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	obl	_	TokenRange=40:41
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	iobj	_	TokenRange=40:41
 12	xupé	xupé	ADP	ADP	AdpType=Post	11	case	_	TokenRange=42:46
-13	maã	maã	DET	INT	PronType=Int	9	obj	_	TokenRange=47:50
-14	umbaúwera	mbaú	VERB	V	Aspect=Freq|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	acl:relcl	_	TokenRange=51:60
-15	waá	waá	PRON	REL	Number=Sing|PronType=Rel	14	obj	_	SpaceAfter=No|TokenRange=61:64
-16	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=64:65
+13	maã	maã	PRON	RELF	PronType=Rel	9	obj	_	TokenRange=47:50
+14-15	umbaúwera	_	_	_	_	_	_	_	TokenRange=51:60
+14	umbaú	mbaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	acl:relcl	_	_
+15	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	14	advmod	_	_
+16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	14	obj	_	SpaceAfter=No|TokenRange=61:64
+17	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=64:65
 
 # sent_id = Casasnovas2006:9:22:106
 # text = Ape, paá, nhaã apigá i piaíwa, unupá aé, yawé arã, paá, uyaxiú, upitá sasiara.
