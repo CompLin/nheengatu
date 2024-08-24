@@ -20247,6 +20247,156 @@
 2	ukena	ukena	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=11:16
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# sent_id = Cruz2011:0:0:64
+# text = Ti paá uruyariwera i manha.
+# text_eng = TODO
+# text_por = Diz que, habitualmente, não acreditava em sua mãe.
+# text_source = Example 270 Br
+# text_orig = ti=paa u-ruyai wera i-manha
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ti paá uruyariwera i/pron2 manha.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=3:6
+3-4	uruyariwera	_	_	_	_	_	_	_	TokenRange=7:18
+3	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+4	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	3	advmod	_	_
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=19:20
+6	manha	manha	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=21:26
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Cruz2011:0:0:65
+# text = "Mamãe", unheẽwera ixé arã nhaã se kurumĩ.
+# text_eng = TODO
+# text_por = "Mamãe", dizia sempre para mim aquele meu menino.
+# text_source = Example 359 Br
+# text_orig = "Mamãe" u-nheẽ wera xarã nhaã se-kurumĩ
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = "Mamãe/=n:o|pt", unheẽwera ixé arã/adp nhaã se kurumĩ.
+1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=0:1
+2	Mamãe	mamãe	NOUN	N	Number=Sing	5	ccomp	_	OrigLang=pt|SpaceAfter=No|TokenRange=1:6
+3	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=6:7
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=7:8
+5-6	unheẽwera	_	_	_	_	_	_	_	TokenRange=9:18
+5	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+6	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	5	advmod	_	_
+7	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	iobj	_	TokenRange=19:22
+8	arã	arã	ADP	ADP	AdpType=Post	7	case	_	TokenRange=23:26
+9	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=27:31
+10	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=32:34
+11	kurumĩ	kurumĩ	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=35:41
+12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=41:42
+
+# sent_id = Cruz2011:0:0:66
+# text = Amuriwera indé.
+# text_eng = TODO
+# text_por = Sempre agradava você.
+# text_source = Example 359 Br
+# text_orig = a-muri wera inde
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Amuriwera indé.
+1-2	Amuriwera	_	_	_	_	_	_	_	TokenRange=0:9
+1	Amurí	murí	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+2	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	1	advmod	_	_
+3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=10:14
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Cruz2011:0:0:67
+# text = "Arikú se noiva, mamãe", unheẽwera ixé arã nhaã se kurumĩ.
+# text_eng = TODO
+# text_por = "Tenho minha noiva, mamãe", aquele meu menino sempre dizia para mim.
+# text_source = Example 713 Br
+# text_orig = a-riku se-noiva, mamãe" u-nheẽ wera ix=arã nhaã se-kurumĩ
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = "Arikú se noiva/=n:o|pt, mamãe/=n:o|pt", unheẽwera ixé arã/adp nhaã se kurumĩ.
+1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=0:1
+2	Arikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=1:6
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=7:9
+4	noiva	noiva	NOUN	N	Number=Sing	2	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=10:15
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
+6	mamãe	mamãe	NOUN	N	Number=Sing	2	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=17:22
+7	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=23:24
+9-10	unheẽwera	_	_	_	_	_	_	_	TokenRange=25:34
+9	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	_
+10	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	9	advmod	_	_
+11	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	iobj	_	TokenRange=35:38
+12	arã	arã	ADP	ADP	AdpType=Post	11	case	_	TokenRange=39:42
+13	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	15	det	_	TokenRange=43:47
+14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=48:50
+15	kurumĩ	kurumĩ	NOUN	N	Number=Sing	9	nsubj	_	SpaceAfter=No|TokenRange=51:57
+16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=57:58
+
+# sent_id = Cruz2011:0:0:68
+# text = Ape umaãwera wã paá Nhãpirikuli uwapika uikú kwayé.
+# text_eng = TODO
+# text_por = Aí, ele via sempre Nhampirikoli sentado desse jeito.
+# text_por_orig = Aí, ele via sempre Nhampirikoli sentado desse jeito
+# text_source = Example 714 Br
+# text_orig = ape u-maã wera=wã paa Nhãpirikuli u-wapika u-iku kuaye
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ape/advt umaãwera wã paá Nhãpirikuli/=p uwapika uikú kwayé.
+1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
+2-3	umaãwera	_	_	_	_	_	_	_	TokenRange=4:12
+2	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+3	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	2	advmod	_	_
+4	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:15
+5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	TokenRange=16:19
+6	Nhãpirikuli	nhãpirikuli	PROPN	PROPN	_	7	nsubj	_	TokenRange=20:31
+7	uwapika	wapika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=32:39
+8	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	7	aux	_	TokenRange=40:44
+9	kwayé	kwayé	ADV	ADVA	AdvType=Man	7	advmod	_	SpaceAfter=No|TokenRange=45:50
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Cruz2011:0:0:69
+# text = Asú sauruwera kupixá kití.
+# text_eng = TODO
+# text_por = Eu vou todo sábado para roça.
+# text_source = Example 715 Br elicited
+# text_orig = a-su sauruwera kupixa kiti
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Asú sauruwera kupixá kití.
+1	Asú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:3
+2-3	sauruwera	_	_	_	_	_	_	_	TokenRange=4:13
+2	saurú	saurú	NOUN	N	Number=Sing	1	obl	_	_
+3	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	1	advmod	_	_
+4	kupixá	kupixá	NOUN	N	Number=Sing	1	obl	_	TokenRange=14:20
+5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Cruz2011:0:0:70
+# text = Kuxima, kwaíra ramé amuriwera indé.
+# text_eng = TODO
+# text_por = Antigamente, quando você era pequena, sempre agradava você.
+# text_source = Example 1011 Br
+# text_orig = kuxima, [kuaira rame] a-muri wera inde
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kuxima, kwaíra/a ramé/sconj amuriwera indé.
+1	Kuxima	kuxima	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:6
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=6:7
+3	kwaíra	kwaíra	ADJ	A	_	5	advcl	_	TokenRange=8:14
+4	ramé	ramé	SCONJ	SCONJ	_	3	mark	_	TokenRange=15:19
+5-6	amuriwera	_	_	_	_	_	_	_	TokenRange=20:29
+5	amurí	murí	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	_
+6	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	5	advmod	_	_
+7	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=30:34
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Cruz2011:0:0:71
+# text = Ape usikawera yané patrão.
+# text_eng = TODO
+# text_por = Aí, nosso patrão sempre chegava.
+# text_source = Example 1081 Wr
+# text_orig = ape u-sika wera yane patrão
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ape/advt usikawera yané/pron2 patrão/=n:o|pt.
+1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
+2-3	usikawera	_	_	_	_	_	_	_	TokenRange=4:13
+2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+3	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	2	advmod	_	_
+4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=14:18
+5	patrão	patrão	NOUN	N	Number=Sing	2	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=19:25
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
+
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
 # text_eng = Now I'm going to tell you about them, these two men who worked with balata.
