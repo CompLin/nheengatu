@@ -21942,24 +21942,26 @@
 # title_eng = Curupira
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# inputline = Kwá/demx kurupira unupá ramewera/=mkhab:a|t:l|4:x|sconj, paá, asuí/advt uxari mirá-piranga uyenú, usú ã kaá/n kití.
+# inputline = Kwá/demx kurupira unupá ramewera/sconj, paá, asuí/advt uxari mirá-piranga uyenú, usú ã kaá/n kití.
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	kurupira	kurupira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:12
-3	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=13:18
-4	ramewera	ramé	SCONJ	SCONJ	Aspect=Freq|Tense=Past	3	mark	_	SpaceAfter=No|TokenRange=19:27
-5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=27:28
-6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=29:32
-7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=32:33
-8	asuí	asuí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=34:38
-9	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=39:44
-10	mirá-piranga	mirá-piranga	NOUN	N	Number=Sing	10	nsubj	_	TokenRange=45:57
-11	uyenú	yenú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	ccomp	_	SpaceAfter=No|TokenRange=58:63
-12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=63:64
-13	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=65:68
-14	ã	ã	PART	PFV	Aspect=Perf	13	advmod	_	TokenRange=69:70
-15	kaá	kaá	NOUN	N	Number=Sing	13	obl	_	TokenRange=71:74
-16	kití	kití	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=75:79
-17	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=79:80
+3	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=13:18
+4-5	ramewera	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=19:27
+4	ramé	ramé	SCONJ	SCONJ	_	3	mark	_	_
+5	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	3	advmod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=27:28
+7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=29:32
+8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=32:33
+9	asuí	asuí	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=34:38
+10	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=39:44
+11	mirá-piranga	mirá-piranga	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=45:57
+12	uyenú	yenú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	ccomp	_	SpaceAfter=No|TokenRange=58:63
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=63:64
+14	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=65:68
+15	ã	ã	PART	PFV	Aspect=Perf	14	advmod	_	TokenRange=69:70
+16	kaá	kaá	NOUN	N	Number=Sing	14	obl	_	TokenRange=71:74
+17	kití	kití	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=75:79
+18	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=79:80
 
 # sent_id = Casasnovas2006:5:5:53
 # text = Sakakwerantu paá, nhaã apigá usú, upisika nhaã mirá-piranga, kurupira yara.
@@ -24055,7 +24057,7 @@
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = Casasnovas2006:10:1:120
-# text = Yepé ara, paá, wainambí uyusaã manguarí irumu, ta umaã arã awá taá kutara piri uyasá paranawasú.
+# text = Yepé ara, paá, wainambí uyusaã manguarí irumu, taumaã arã awá taá kutara piri uyasá paranawasú.
 # text_eng = TODO
 # text_eng_ggl = Once the hummingbird competed with the maguari to see who could cross the sea faster.
 # text_por = Uma vez o beija-flor disputou com o maguari para ver quem ia atravessar mais rapidamente o mar.
@@ -24071,7 +24073,7 @@
 # text_por_sec = Um dia, contam, o beija-flor disputou com o maguari, para eles verem quem atravessava mais rapidamente o mar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:174)
+# cross_reference = Avila2021:0:0:174
 # aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -24082,17 +24084,16 @@
 7	uyusaã	yusaã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:30
 8	manguarí	manguarí	NOUN	N	Number=Sing	7	obl	_	TokenRange=31:39
 9	irumu	irumu	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=40:45
-10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=45:46
-11	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=47:49
-12	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=50:54
-13	arã	arã	SCONJ	SCONJ	_	12	mark	_	TokenRange=55:58
-14	awá	awá	PRON	INT	PronType=Int	18	nsubj	_	TokenRange=59:62
-15	taá	taá	PART	CQ	PartType=Int	18	advmod	_	TokenRange=63:66
-16	kutara	kutara	ADV	ADVA	AdvType=Man	18	advmod	_	TokenRange=67:73
-17	piri	piri	ADV	ADVG	AdvType=Deg	16	advmod	_	TokenRange=74:78
-18	uyasá	yasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	ccomp	_	TokenRange=79:84
-19	paranawasú	paranawasú	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=85:95
-20	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=95:96
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=45:46
+11	taumaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=50:54
+12	arã	arã	SCONJ	SCONJ	_	11	mark	_	TokenRange=55:58
+13	awá	awá	PRON	INT	PronType=Int	17	nsubj	_	TokenRange=59:62
+14	taá	taá	PART	CQ	PartType=Int	17	advmod	_	TokenRange=63:66
+15	kutara	kutara	ADV	ADVA	AdvType=Man	17	advmod	_	TokenRange=67:73
+16	piri	piri	ADV	ADVG	AdvType=Deg	15	advmod	_	TokenRange=74:78
+17	uyasá	yasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	ccomp	_	TokenRange=79:84
+18	paranawasú	paranawasú	NOUN	N	Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=85:95
+19	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = Casasnovas2006:10:2:121
 # text = Usika ramé nhaã ara ta uyupirú waá, ta uyusaã.
