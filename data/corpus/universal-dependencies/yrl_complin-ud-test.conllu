@@ -17531,8 +17531,8 @@
 
 # sent_id = Avila2021:56:1:703
 # text = ― Nhaã yawara usuú se pú!
-# text_eng = — That dog bit my hand!
-# text_por = "Aquele cachorro mordeu a minha mão!"
+# text_eng = "That dog bit my hand!"
+# text_por = — Aquele cachorro mordeu a minha mão!
 # text_source = Avila (2021)
 # text_annotator = LFdeA
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
@@ -17872,7 +17872,7 @@
 # text_source = Hartt, 354, adap.
 # text_orig = Apigawa Piauíwara
 # text_annotator = LFdeA
-# inputline = Apigawa/n Piauíwara. (Hartt, 354, adap.) - O homem é natural do Piauí. - Apigawa Piauíwara
+# inputline = Apigawa/n Piauíwara.
 1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
 2-3	Piauíwara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:17
 2	Piauí	piauí	PROPN	PROPN	_	0	root	_	_
@@ -18068,7 +18068,7 @@
 1	Uabensuári	abensuári	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:10
 2	riré	riré	SCONJ	SCONJ	_	1	mark	_	TokenRange=11:15
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=16:19
-4	pãu	pãu	PROPN	PROPN	_	1	obj	_	SpaceAfter=No|TokenRange=20:23
+4	pãu	pãu	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=20:23
 5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=23:24
 6	umpena	mpena	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=25:31
 7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=32:34
@@ -20051,10 +20051,12 @@
 # text_por = É comprida aquela história.
 # text_source = Example 166a Bn
 # text_orig = puku nhaã istoria
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
+# inputline = Pukú/a nhaã história/=n:o|pt.
 1	Pukú	pukú	ADJ	A	_	0	root	_	TokenRange=0:4
 2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:9
-3	história	história	PROPN	PROPN	_	1	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=10:18
+3	história	história	NOUN	N	Number=Sing	1	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=10:18
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Cruz2011:0:0:48
