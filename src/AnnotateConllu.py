@@ -319,7 +319,7 @@ def mkMultiWordToken(ident,form,start=0,end=0,spaceafter=None):
         token['misc'].update({'SpaceAfter':'No'})
     return token
 
-def WordsOfLengthh(length,pos):
+def WordsOfLength(length,pos):
     glossary=loadGlossary()
     return list(filter(lambda x:  len(x['lemma']) == length and x['pos'] == pos,glossary))
 
