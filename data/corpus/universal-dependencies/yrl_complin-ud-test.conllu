@@ -3326,18 +3326,19 @@
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Navarro2016:0:0:155
-# text = Aikwé raẽ será tuxawa tuyuwé?
+# text = Aikwé raẽ será tuxawa tuyué?
 # text_eng = Does the old tuxaua still exist?
 # text_por = Existe ainda o velho tuxaua?
 # text_source = Lesson 3, p. 25 (Stradelli, 364)
 # text_annotator = DMA
+# text_prim = Aicué rain, será, tuicháua tuiué?
 # reviewer1 = LFdeA
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
 2	raẽ	raẽ	PART	IMPF	_	1	advmod	_	TokenRange=6:9
 3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=10:14
-4	tuxawa	tuxawa	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=15:21
-5	tuyuwé	tuyuwé	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=22:28
-6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+4	tuxawa	tuxawa	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=15:21
+5	tuyué	tuyué	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=22:27
+6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Navarro2016:0:0:156
 # text = Aiwã amana.
