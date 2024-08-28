@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 15, 2024
+# Last update: August 27, 2024
 
 import re, sys, os, json
 
@@ -108,6 +108,7 @@ part. cert.\tCERT\tpartícula de certeza
 part. exist.\tEXST\tpartícula de existencial
 part. pres.\tPRSV\tpartícula de presentativo
 part. fut.\tFUT\tpartícula de futuro
+part. encl. freq.\tFREQ\tpartícula enclítica de frequentativo
 part. frust.\tFRUST\tpartícula de frustativo
 part. foco\tFOC\tpartícula de foco
 part. pret.\tPRET\tpartícula de pretérito
@@ -135,6 +136,7 @@ v.\tV\tverbo de 1ª classe
 v. 2ª cl.\tV2\tverbo de 2ª classe
 v. 3ª cl.\tV3\tverbo de 3ª classe
 {VSUFF}\tVSUFF\tverbo sufixal não-flexionável
+x.\tX\tnão palavra
 """
 
 FIRST_CLASS_PRONOUNS=['PRON','PROND']
@@ -380,22 +382,17 @@ def getpersnum(impind=IMPIND):
 
 def guessVerb(form):
 	persnum=getpersnum()
+	sorted_prefixes = sorted(persnum.keys(), key=len, reverse=True)
 	entries=[]
-	for pref,feats in persnum.items():
+	for prefix in sorted_prefixes:
 		entry={}
-		if form.startswith(pref):
-			entry['pref']=pref
-			tags=feats.split('+')
-			if len(tags) == 2:
-				entry['person'],entry['number'] = tags
-			else:
-				entry['person']=tags[0]
-			start=len(pref)
+		if form.startswith(prefix):
+			entry['pref']=prefix
+			entry.update(process_feats(f"V+{persnum[prefix]}"))
+			start=len(prefix)
 			entry['lemma']=form[start:]
 			entries.append(entry)
-	if len(entries) > 1:
-		return list(filter(lambda x: x['pref'] == 'tau',entries))[0]
-	return entries[0]
+			return entry
 
 def extractArchaicLemmas(glossary):
     archaic_lemmas=[]
@@ -602,7 +599,8 @@ def extract_pos(parses):
     return poslist
 
 featsdic={}
-def extract_feats(parses):
+
+def process_feats(feats):
     global featsdic
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
@@ -610,17 +608,22 @@ def extract_feats(parses):
     'IMP|IND|IMPIND' : 'mood',
     'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
     'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case', 'ARCH' : 'style' }
+    new={}
+    featslist=feats.split('+')
+    new['pos']=featslist[0]
+    for f in featslist[1:]:
+        for k,v in featsdic.items():
+            if f in k:
+                new[v]=f
+    return new
+
+def extract_feats(parses):
     entries=[]
     for lemma,feats in parses:
         new={}
         new['lemma']=lemma
         if feats:
-            featslist=feats.split('+')
-            new['pos']=featslist[0]
-            for f in featslist[1:]:
-                for k,v in featsdic.items():
-                    if f in k:
-                        new[v]=f
+            new.update(process_feats(feats))
         else:
             new['pos']=None
         entries.append(new)

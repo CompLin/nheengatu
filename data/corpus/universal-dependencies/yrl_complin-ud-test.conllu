@@ -20131,7 +20131,7 @@
 
 # sent_id = Cruz2011:0:0:53
 # text = Ixé umbaá.
-# text_eng = I dont'.
+# text_eng = I don't.
 # text_por = Eu, não.
 # text_source = Example 191, Bn
 # text_orig = ixe umba
@@ -20398,6 +20398,19 @@
 4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=14:18
 5	patrão	patrão	NOUN	N	Number=Sing	2	nsubj	_	OrigLang=por|SpaceAfter=No|TokenRange=19:25
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Cruz2011:0:0:72
+# text = Aintá umunhã mujekawasú.
+# text_eng = TODO
+# text_por = Eles faziam muita mujeca.
+# text_source = Example 234 Bn
+# text_orig = ainta u-munhã mujeka-wasu
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aintá/pron umunhã mujekawasú/=ev:x|n:s|mujica:o|pt:a|f.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:12
+3	mujekawasú	mujeka	NOUN	N	Degree=Aug|Number=Sing	2	obj	_	Orig=mujica|OrigLang=por|SpaceAfter=No|TokenRange=13:23
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
@@ -21133,7 +21146,7 @@
 # title_orig = Yautí, Yawareté
 # title_por = O jabuti e a onça
 # title_eng = The tortoise and the jaguar
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 # comment = Juliana, por que você utilizou o atributo text_eng_ggl em vez de text_eng?
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
@@ -21163,7 +21176,7 @@
 # title_orig = Yautí, Yawareté
 # title_por = O jabuti e a onça
 # title_eng = The tortoise and the jaguar
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	_	1	case	_	SpaceAfter=No|TokenRange=5:11
@@ -21190,7 +21203,7 @@
 # title_orig = Yautí, Yawareté
 # title_por = O jabuti e a onça
 # title_eng = The tortoise and the jaguar
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # reviewer2 = Hélio Leonam Barroso Silva
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
@@ -21220,7 +21233,7 @@
 # title_orig = Yautí, Yawareté
 # title_por = O jabuti e a onça
 # title_eng = The tortoise and the jaguar
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
 2	tuwí	tuwí	NOUN	N	Number=Sing|Rel=Abs	0	root	_	TokenRange=4:8
@@ -21241,7 +21254,7 @@
 # title_orig = Yautí, Yawareté
 # title_por = O jabuti e a onça
 # title_eng = The tortoise and the jaguar
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA TODO
 1	Tiapú	tiapú	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:5
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:14
@@ -21474,7 +21487,7 @@
 # title = Pirayawara mira
 # title_por = Homem boto
 # title_eng = Boto man
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aape	aape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -21497,7 +21510,7 @@
 # title = Pirayawara mira
 # title_por = Homem boto
 # title_eng = Boto man
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	11	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
@@ -21540,7 +21553,7 @@
 # text_por_sec = Depois eles viram-no pular, brincar pela superfície da água, já se tinha transformado em boto.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	taumaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -21568,7 +21581,7 @@
 # title = Pirayawara mira
 # title_por = Homem boto
 # title_eng = Boto man
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Aramé	aramé	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
@@ -21596,7 +21609,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	9	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -21621,7 +21634,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Tasika	sika	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
@@ -21653,7 +21666,7 @@
 # text_por_sec = Dizem que um estava sentado na proa da canoa, o outro estava sentado na popa.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	5	nsubj	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -21684,7 +21697,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	nsubj	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
@@ -21721,7 +21734,7 @@
 # text_por_sec = Quando viu admirado seu colega dentro da água, era uma sucuriju que enrolava-se nele.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Mairamé	mairamé	SCONJ	SCONJR	_	7	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
@@ -21754,7 +21767,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	apigá	apigá	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=5:10
@@ -21780,7 +21793,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
@@ -21816,7 +21829,7 @@
 # text_por_sec = A sucuriju fixou-se firme, não se mexia para não deixar sua presa escapar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -21847,7 +21860,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -21871,7 +21884,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # inputline = Ape/advdi, paá, mira-itá ta/=typo:c|tayatiri yatiri/=x takamirika kirimbawa/adva nhaã sukuriú resá resé/adp, ariré/advt wã uyurá nhaã apigá/n kwera/a suí.
 1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	6	advmod	_	SpaceAfter=No|TokenRange=0:3
@@ -21909,7 +21922,7 @@
 # title_por_orig = A Sucuriju
 # title_por = A sucuri
 # title_eng = The anaconda
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # inputline = Asuí/advt, paá, tayuká nhaã sukuriuwasú/=aug kwera/n.
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:4
@@ -21938,7 +21951,7 @@
 # text_por_sec = [...] a sucuriju quebrou-lhe muitos ossos.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
@@ -21974,7 +21987,7 @@
 # text_por_sec = Aí o colega tirou a gordura da sucuriju e com ela curou seu companheiro [...].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
@@ -22009,7 +22022,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	TokenRange=5:8
@@ -22038,7 +22051,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
@@ -22064,7 +22077,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -22092,7 +22105,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # inputline = Kwá/demx kurupira unupá ramewera/sconj, paá, asuí/advt uxari mirá-piranga uyenú, usú ã kaá/n kití.
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
@@ -22130,7 +22143,7 @@
 # text_por_sec = Depois disso o homem foi, pegou o [pedaço de] pau-brasil do curupira.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar TODO
 1-2	Sakakwerantu	_	_	_	_	_	_	_	TokenRange=0:13
 1	Sakakwera	rakakwera	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	7	obl	_	_
@@ -22160,7 +22173,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
 2	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=4:9
 3	musapiri	musapiri	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=10:18
@@ -22192,7 +22205,7 @@
 # text_por_sec = Sem demora chegou curupira, [...].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kutara	kutara	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	TokenRange=7:14
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=15:18
@@ -22226,7 +22239,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
 3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:13
@@ -22256,7 +22269,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:5
 2	supí	supí	PART	CERT	PartType=Mod	4	advmod	_	TokenRange=6:10
 3	kurupira	kurupira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=11:19
@@ -22281,7 +22294,7 @@
 # text_por_sec = Maldito! Você não é bom, está me dando mau agouro!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=8:11
 3	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=12:16
@@ -22323,7 +22336,7 @@
 # title_orig = Kurupira
 # title_por_orig = Curupira
 # title_eng = Curupira
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=5:8
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=9:12
@@ -22351,7 +22364,7 @@
 # title_orig = Wakará
 # title_por_orig = A garça
 # title_eng = The heron
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=6:9
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=10:14
@@ -22393,7 +22406,7 @@
 # title_orig = Wakará
 # title_por_orig = A garça
 # title_eng = The heron
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	akayú	akayú	NOUN	N	Number=Sing	15	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -22428,7 +22441,7 @@
 # text_por_sec = Toda vez, antes de partirem, a velha avó alimentava-os com piripirioca verde.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Muíri	muíri	PRON	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	viáji	viáji	NOUN	N	Number=Sing	13	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -22473,7 +22486,7 @@
 # text_por_sec = Minhas netas, eu já as alimentei, agora vão, não terão mais necessidade de comida.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
 2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
 3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=11:14
@@ -22523,7 +22536,7 @@
 # text_por_sec = Quem acreditar em mim passará bem.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Awá	awá	PRON	RELF	PronType=Rel	9	nsubj	_	TokenRange=0:3
 2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=4:8
 3	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=9:16
@@ -22546,7 +22559,7 @@
 # title_orig = Wakará
 # title_por_orig = A garça
 # title_eng = The heron
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Awá	awá	PRON	RELF	PronType=Rel	7	nsubj	_	TokenRange=0:3
 2	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=4:8
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:11
@@ -22570,7 +22583,7 @@
 # title_orig = Wakará
 # title_por_orig = A garça
 # title_eng = The heron
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Pewatá	watá	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
 3	pituna	pituna	NOUN	N	Number=Sing	1	obl	_	TokenRange=12:18
@@ -22597,7 +22610,7 @@
 # text_por_sec = Por isso, contam, a garça que é gulosa, logo a matam.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	14	advcl	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	resewara	resewara	SCONJ	SCONJ	Rel=Cont	1	fixed	_	SpaceAfter=No|TokenRange=9:17
@@ -22631,7 +22644,7 @@
 # text_por_sec = Um dia, contam, uma pessoa comeu quinhapira fria antes de ir caçar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -22660,7 +22673,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kuemeté	kuemeté	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:8
 2	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
 3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:16
@@ -22680,7 +22693,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Mairamé	mairamé	SCONJ	SCONJR	_	5	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -22712,7 +22725,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	SpaceAfter=No|TokenRange=12:15
@@ -22743,7 +22756,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -22772,7 +22785,7 @@
 # text_por_sec = Você nos espera aqui, vamos caçar queixadas.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yakanhemu	kanhemu	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:9
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=10:13
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=13:14
@@ -22812,7 +22825,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:461)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=4:7
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=7:8
@@ -22846,7 +22859,7 @@
 # text_por_sec = Aí, dizem que eles transformaram-se em grandes onças, assim, dizem, foram sumindo em direção à mata.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -22883,7 +22896,7 @@
 # text_por_sec = O homem, coitado, ficou de pé tremendo de medo.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	mira	mira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=4:8
 3	taité	taité	ADJ	A	_	2	amod	_	SpaceAfter=No|TokenRange=9:14
@@ -22907,7 +22920,7 @@
 # reviewer1 = Juliana Lopes Gurgel
 # text_orig_transcriber = Juliana Lopes Gurgel
 # text_por_modernizer = Juliana Lopes Gurgel
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kutara	kutara	ADV	ADVA	AdvType=Man	6	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
@@ -22940,7 +22953,7 @@
 # text_por_sec = A seguir, dizem, eles voltaram para seu sítio com suas caças [...].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=5:8
 3	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	4	nsubj	_	TokenRange=9:11
@@ -22971,7 +22984,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	tendá	tendá	NOUN	N	Number=Sing|Rel=Abs	7	obl	_	TokenRange=4:11
 3	upé	upé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:15
@@ -23006,7 +23019,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:460)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -23038,7 +23051,7 @@
 # text_por_sec = Se transformavam em onça apenas quando iam atrás de caça para comer.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
 3	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
@@ -23082,7 +23095,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23119,7 +23132,7 @@
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	obl	_	TokenRange=0:4
 2	arã	arã	ADP	ADP	AdpType=Post	1	fixed	_	TokenRange=5:8
 3	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=9:11
@@ -23142,7 +23155,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -23168,7 +23181,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Uwatá	watá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=7:10
@@ -23199,7 +23212,7 @@
 # text_por_sec = Meu filho, vai tinguijar aquele lago a fim de pegar um urubu fêmea como esposa.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -23246,7 +23259,7 @@
 # text_por_sec = Aquelas são mulheres bonitas, mas não pegue uma branca, elas são preguiçosas.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã-itá	nhaã	DET	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:8
 2	kunhã	kunhã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=9:14
 3	puranga-itá	puranga-itá	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=15:26
@@ -23275,7 +23288,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23300,7 +23313,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	TokenRange=0:3
 2	upikũi	pikũi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=4:10
 3	timbú	timbú	NOUN	N	Number=Sing	2	obj	_	TokenRange=11:16
@@ -23322,7 +23335,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=6:11
 3	mukũi	mukũi	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=12:17
@@ -23346,7 +23359,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:542)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23383,7 +23396,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23411,7 +23424,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:198)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=6:10
 3	siía	siía	DET	INDQ	PronType=Ind	4	det	_	TokenRange=11:15
@@ -23435,7 +23448,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=6:13
@@ -23473,7 +23486,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23500,7 +23513,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Usarú	sarú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=6:10
@@ -23532,7 +23545,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:588)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23558,7 +23571,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
 2	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:13
 3	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=14:18
@@ -23586,7 +23599,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Anhũ	anhũ	ADV	ADV	_	2	advmod	_	TokenRange=0:4
 2	yepé	yepé	NUM	CARD	NumType=Card	4	nsubj	_	TokenRange=5:9
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=10:12
@@ -23607,7 +23620,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23637,7 +23650,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -23658,7 +23671,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -23691,7 +23704,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:24)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -23721,7 +23734,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # review_status = ongoing
 # reviewer_comment = ccomp instead of xcomp?
@@ -23756,7 +23769,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23797,7 +23810,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:36)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	ara	ara	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=6:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -23837,7 +23850,7 @@
 # text_por_sec = Um dia, quando estava sozinha na roça, viu o seu cacique deixar cair para ela umas asas.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
@@ -23873,7 +23886,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23903,7 +23916,7 @@
 # text_por_sec = No outro dia, contam, seu marido disse: ― Vou pescar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
 2	kwema	kwema	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=4:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -23930,7 +23943,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	obl	_	TokenRange=0:4
 2	pukusawa	pukusawa	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:13
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
@@ -23961,7 +23974,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23987,7 +24000,7 @@
 # text_por_sec = Então a avó perguntou de dentro da casa: ― O que tem a criança?
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24018,7 +24031,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:2
 2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	SpaceAfter=No|TokenRange=3:6
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=6:7
@@ -24051,7 +24064,7 @@
 # text_por_sec = Tira bem devagar [o bicho-de-pé] dele, não o faça chorar, [...].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Merupiára	merupiára	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:9
 2	reyuka	yuka	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	TokenRange=10:16
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	obl	_	TokenRange=17:18
@@ -24086,7 +24099,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:306)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Mairamé	mairamé	SCONJ	SCONJR	_	6	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -24144,7 +24157,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
 2	mena	mena	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:6
 3	kwera	kwera	PART	PRET	Tense=Past	4	advmod	_	TokenRange=7:12
@@ -24178,7 +24191,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24201,7 +24214,7 @@
 # title_orig = Tapayuna Mirí Puranga
 # title_por_orig = A moreninha
 # title_eng = The little brunette
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Sesewara	resewara	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	7	obl	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=10:13
@@ -24231,7 +24244,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:174
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -24265,7 +24278,7 @@
 # title_por_orig = O Beija-flor e o Maguari
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
@@ -24295,7 +24308,7 @@
 # text_por_sec = O beija-flor orgulhava-se porque voava rápido, enquanto o maguari voava lentamente.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Wainambí	wainambí	NOUN	N	Number=Sing	2	obl	_	TokenRange=0:8
 2	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	2	obl	_	TokenRange=17:21
@@ -24323,7 +24336,7 @@
 # title_por_orig = O Beija-flor e o Maguari
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=8:9
@@ -24347,7 +24360,7 @@
 # title_por_orig = O Beija-flor e o Maguari
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	7	case	_	TokenRange=5:11
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=12:15
@@ -24375,7 +24388,7 @@
 # text_por_sec = O maguari não estava ainda nem na metade do trajeto, quando viu o beija-flor sem forças, boiando no rio.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=0:2
 2	rẽ	rẽ	PART	IMPF	_	9	advmod	_	TokenRange=3:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -24412,7 +24425,7 @@
 # title_por_orig = O Beija-flor e o Maguari
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Manguarí	manguarí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
 2	pirasúa	pirasúa	ADJ	A	_	4	amod	_	TokenRange=9:16
 3	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:21
@@ -24451,7 +24464,7 @@
 # text_por_sec = Veja [o que aconteceu] beija-flor, para que você não seja tão orgulhoso.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=3:8
 3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=9:13
@@ -24496,7 +24509,7 @@
 # text_por_sec = Se eu fosse outro, não teria tido pena de ti.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Amú	amú	PRON	IND	Number=Sing|PronType=Ind	8	advcl	_	TokenRange=0:3
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=4:8
 3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	1	advmod	_	TokenRange=9:12
@@ -24527,7 +24540,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:7:1:47)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
 2	rewewé	wewé	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	yepé	yepé	PART	FRUST	Aspect=Frus	2	advmod	_	TokenRange=12:16
@@ -24557,7 +24570,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:7:2:48)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	awewé	wewé	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=4:9
 3	merupí	merupí	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=10:16
@@ -24583,7 +24596,7 @@
 # title_por_orig = O Beija-flor e o Maguari
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
 2	rerikuté	rikuté	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
 3	remanduári	manduári	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	xcomp	_	TokenRange=15:25
@@ -24610,7 +24623,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -24633,7 +24646,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -24660,7 +24673,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24688,7 +24701,7 @@
 # text_por_sec = No outro dia o lagarto foi pedir a mais nova [contexto: o lagarto foi pedir a mão da filha mais nova em casamento a seu pai].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=4:7
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=7:8
@@ -24713,7 +24726,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kurasí	kurasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	yuíri	yuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=13:18
@@ -24734,7 +24747,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Ape	ape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24765,7 +24778,7 @@
 # text_por_sec = Vejam, amanhã eu vou mostrar para vocês terra firme, para que vocês façam suas roças com as suas esposas.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:155)
 1	Pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
@@ -24796,7 +24809,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Kwemaité	kwemaité	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=10:13
@@ -24824,7 +24837,7 @@
 # text_por_sec = Porque viu que o calango, dorminhoco, acordava já com o Sol alto.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Teyú	teyú	NOUN	N	Number=Sing	7	obl	_	TokenRange=0:4
 2	supé	supé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -24868,7 +24881,7 @@
 # text_por_sec = Por isso pensava que o calango era preguiçoso.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Sesewara	sesewara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obl	_	TokenRange=0:8
 2	umaité	maité	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:15
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
@@ -24895,7 +24908,7 @@
 # text_por_sec = Ao bacurau, dizem, ele foi mostrar um [terreno] que era meio capoeira, porque viu que ele acordava de madrugada, por isso pensava que ele era trabalhador.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:297)
 1	Wakurawá	wakurawá	NOUN	N	Number=Sing	7	obl	_	TokenRange=0:8
 2	supé	supé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=9:13
@@ -24936,7 +24949,7 @@
 # text_por_sec = Na manhã seguinte, dizem que o Sol foi passear.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
 2	kwema	kwema	NOUN	N	Number=Sing	9	obl	_	SpaceAfter=No|TokenRange=4:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -24964,7 +24977,7 @@
 # text_por_sec = Enquanto isso, dizem, aqueles dois ficaram fazendo roça.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -24991,7 +25004,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	kwema	kwema	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -25026,7 +25039,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -25069,7 +25082,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Aape	aape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -25105,7 +25118,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	13	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -25145,7 +25158,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Amuramé	amuramé	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -25166,7 +25179,7 @@
 # title_orig = Kurasí Resewara
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
-# aknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	15	ccomp	_	TokenRange=0:5
 2	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=6:10
 3	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=10:11

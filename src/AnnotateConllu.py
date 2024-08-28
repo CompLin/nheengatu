@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 18, 2024
+# Last update: August 27, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -70,7 +70,7 @@ UNDERSCORE='_'
 # sentence terminators
 SENTTERM=('.','?','!')
 
-# Multiword token
+# Multiword token TODO: reimplement as list of dictionaries (see below)
 MULTIWORDTOKENS={}
 
 # Case of second class pronouns
@@ -95,6 +95,9 @@ CLITICS=list(CLITICENTRIES.keys())
 ME='me'
 PI='pi'
 
+# clitic particle
+WERA='wera'
+
 # clitic adpositions
 WARA='wara'
 # normalized lemmatization of alomorph 'pi'
@@ -107,7 +110,7 @@ NTU='ntu'
 # clitic question particle "-ta"
 TA='taá'
 
-NONHYPHEN=[NTU,ME,WARA]
+NONHYPHEN=[NTU,ME,WARA,WERA]
 
 ROOT=[]
 
@@ -316,9 +319,9 @@ def mkMultiWordToken(ident,form,start=0,end=0,spaceafter=None):
         token['misc'].update({'SpaceAfter':'No'})
     return token
 
-def WordsOfLenghth(lenght,pos):
+def WordsOfLengthh(length,pos):
     glossary=loadGlossary()
-    return list(filter(lambda x:  len(x['lemma']) == lenght and x['pos'] == pos,glossary))
+    return list(filter(lambda x:  len(x['lemma']) == length and x['pos'] == pos,glossary))
 
 def includeAdpType(token):
     mapping={'ADP' : 'Post', 'PREP' : 'Prep'}
@@ -704,7 +707,8 @@ def handlePart(token,tokenlist,verbs):
     'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
-    'FOC': {'PartType': 'Emp', 'Foc': 'Yes'}
+    'FOC': {'PartType': 'Emp', 'Foc': 'Yes'},
+    'FREQ': {'Aspect':'Freq', 'Tense' : 'Past'},
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
@@ -717,6 +721,10 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'RPRT':
         updateFeats(token,'Evident','Nfh')
         updateFeats(token,'PartType', 'Mod')
+        headPartPreviousVerb(token,verbs)
+    elif xpos == 'FREQ':
+        for k,v in mapping[xpos].items():
+            updateFeats(token,k, v)
         headPartPreviousVerb(token,verbs)
     elif xpos == 'CERT' or xpos == 'ASSUM':
         updateFeats(token,'PartType', 'Mod')
@@ -1770,9 +1778,10 @@ def mkSuff(form,dic):
 	ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
 	me={'xpos':'ADP','lemma':'upé','clitic':ME}
 	wara={'xpos':'ADP','lemma':'wara','clitic':WARA}
+	wera={'xpos':'FREQ','lemma':'wera','clitic':WERA}
 	pi={'xpos':'ADP','lemma':'upé','clitic':PI}
 	ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
-	suffs=[ntu,me,pi,ta,wara]
+	suffs=[ntu,me,pi,ta,wara,wera]
 	for suff in suffs:
 		clitic=suff.get('clitic')
 		if clitic == form:
@@ -1820,6 +1829,21 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     new['parselist']=[[lemma, tags]]
     return new
 
+def handlePartialRedup(form,length,xpos='V'): # TODO: reduplication of adjectives
+    new={}
+    entry=guessVerb(form)
+    lemma=entry['lemma'][length:] # TODO: check if lemma exists in the lexicon
+    entry['derivation']=REDUP
+    keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize entry dictionary
+    feats=[]
+    for k in keys:
+        value=entry.get(k)
+        if value:
+            feats.append(value)
+    tags='+'.join(feats)
+    new['parselist']=[[lemma,tags]]
+    return new
+
 def handleAccent(base,nasal=False,force=False):
     parselist=getparselist(base)
     tags=list(filter(lambda x: x[1],parselist))
@@ -1848,9 +1872,9 @@ def mkHabSconj(form): # TODO: this seems deprecated (see mkHabXpos)
         new['parselist']=[[lemma, 'SCONJ+HAB']]
         return new
 
-def parseWord(form,lenght):
-    base=form[:-lenght].lower()
-    suff=form[-lenght:]
+def parseWord(form,length):
+    base=form[:-length].lower()
+    suff=form[-length:]
     return base,suff
 
 def getval(key,dic):
@@ -1859,13 +1883,13 @@ def getval(key,dic):
             return v
     return None
 
-def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
-    if not lenght:
-        lenght=4
+def mkHabXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
+    if not length:
+        length=4
     suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
     'tiwa': {'Aspect':'HAB'},
     'wera': {'Aspect':'FREQ', 'Tense': 'PAST'}}
-    base, suff=parseWord(form,lenght)
+    base, suff=parseWord(form,length)
     tag=suffs[suff]['Aspect']
     feats=[]
     feats.append(tag)
@@ -1874,7 +1898,7 @@ def mkHabXpos(form,xpos='', lenght=0, accent=False, guess=False, force=False):
         feats.append(tense)
     new={}
     if accent:
-        base=handleAccent(base,force=force)
+        base=handleAccent(base,force=force) # TODO: accent handling based on the lexicon?
     if not xpos:
         xpos='V'
     if not guess:
@@ -1971,6 +1995,26 @@ def mkEval(form,xpos='N',force=False):
         return mkNoun(lemma,dic=dic)
     return mkAdj(lemma,None,dic,xpos=xpos)
 
+
+def _mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
+    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
+    xpos=xpos
+    dic={}
+    dic['lemma']=form.lower()
+    if xpos=='N':
+        dic.update(getNumber(dic['lemma']))
+    for suff,feat in suffixes.items():
+         if dic['lemma'].endswith(suff):
+             dic['degree']=feat
+             dic['lemma']=dic['lemma'][:-len(suff)]
+             break
+    lemma=dic['lemma']
+    if accent:
+        lemma=handleAccent(lemma,force=force)
+    if dic.get('number'):
+        return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form)
+    return mkAdj(lemma,None,dic,xpos=xpos)
+
 def mkCol(form):
     form=form.lower()
     suff='tiwa'
@@ -2006,8 +2050,67 @@ def mkClitic(lemma,upos):
 def mkUpos(lemma,upos):
     return [[lemma.lower(), upos]]
 
+def checkXposTag(pos_tag):
+    """
+    Process a part-of-speech tag from the XPOS set, raising an error if the tag is not in the valid tagset.
+
+    Args:
+        pos_tag (str): The part-of-speech tag to process.
+    
+    Returns:
+        str: The uppercase version of the part-of-speech tag.
+
+    Raises:
+        ValueError: If the pos_tag is not in the predefined tagset.
+    """
+    pos_tag=pos_tag.upper()
+    if pos_tag not in MAPPING.values():
+        raise ValueError(f"Invalid part-of-speech tag: '{pos_tag}'. Expected one of the XPOS tagset.")
+    
+    return pos_tag
+
+def get_iso_3_letter_code(language_code):
+    from iso639 import languages
+    """
+    Converts a valid 2-letter or 3-letter ISO language code to a 3-letter ISO language code.
+
+    Args:
+        language_code (str): A valid 2-letter or 3-letter ISO language code.
+    
+    Returns:
+        str: The corresponding 3-letter ISO language code.
+    
+    Raises:
+        ValueError: If the input string does not represent a valid ISO language code.
+    # Example usage
+        print(get_iso_3_letter_code('pt'))  # Output: 'por'
+        print(get_iso_3_letter_code('eng'))  # Output: 'eng'
+        print(get_iso_3_letter_code('xyzw'))  # Raises ValueError
+        print(get_iso_3_letter_code('xyz'))  # Raises ValueError
+    """
+    # Normalize to lowercase
+    language_code = language_code.lower()
+    language=languages.part1.get(language_code) or languages.part3.get(language_code)
+    if language is None:
+        raise ValueError(f"Invalid language code: {language_code}")
+    
+    return language.part3
+
+def _mkUpos(form,xpos,orig=None,orig_form=''):
+    new={}
+    lemma=form.lower()
+    if orig:
+        new['OrigLang']=orig
+    if orig_form:
+        new['Orig']=orig_form
+    new['parselist']=[[lemma, f"{xpos}"]]
+    return new
+
 def mkIntj(lemma):
     return mkUpos(lemma,'INTJ')
+
+def _mkIntj(form,orig=None,orig_form=''):
+    return _mkUpos(form,'INTJ',orig,orig_form)
 
 def mkCard(lemma):
     return mkUpos(lemma,'CARD')
@@ -2098,18 +2201,18 @@ def parseArgs(string):
     return dic
 
 def parseTag(tag):
-    values={'t': True, 'f': 'False'}
     sep=':'
     dic={}
     if sep in tag:
         args=parseArgs(tag)
         for k,v in args.items():
-            value = values.get(v)
-            if value:
-                args[k]=values[v]
-            else:
-                if k == 'l':
-                    args[k]=int(v)
+            if k == 'a':
+                if v == 'f':
+                    args[k]=False
+                elif v == 't':
+                    args[k]=True
+            elif k == 'l':
+                args[k]=int(v)
         dic.update(args)
     else:
         dic['func']=tag
@@ -2137,12 +2240,12 @@ def mkTypo(correct,typo):
     dic['Typo']=typo
     return dic
 
-def mkModernForm(modern):
+def mkModernForm(modern,attribute):
     dic={}
-    dic['ModernForm']=modern
+    dic[attribute]=modern
     return dic
 
-def formatModernFeats(feats):
+def formatModernFeats(feats,register):
     new={}
     for k,v in feats.items():
         if k in ('lemma'):
@@ -2151,7 +2254,7 @@ def formatModernFeats(feats):
             modern_value='NCont'
         else:
             modern_value=v.title()
-        new[f"Modern{k.title()}"]=modern_value
+        new[f"{register}{k.title()}"]=modern_value
     return new
 
 def diffFeats(modern_token,arch_token):
@@ -2170,7 +2273,14 @@ def diffFeats(modern_token,arch_token):
             newdic.update({k : v})
     return newdic
 
+def getStyle(attribute):
+    mapping={'ModernForm' : 'Arch', 'StandardForm' : 'Rare'}
+    return mapping.get(attribute)
+
 def mkConlluSentence(tokens):
+    register='Modern'
+    field='Form'
+    attribute=f"{register}{field}"
     ROOT.clear()
     tokenlist=TokenList()
     ident=1
@@ -2213,15 +2323,23 @@ def mkConlluSentence(tokens):
             if t:
                 tag=t
             orig=tagparse.get('o')
+            if orig:
+                orig=get_iso_3_letter_code(orig)
+            accent=tagparse.get('a')
+            length=tagparse.get('l')
             typo=tagparse.get('t')
             correct=tagparse.get('c')
             modern=tagparse.get('m')
+            newregister=tagparse.get('r')
+            if newregister:
+                register=newregister
+                attribute=f"{newregister.title()}{field}"
             archpos=tagparse.get('h')
             orig_form=tagparse.get('s')
             force=tagparse.get('f')
             xpos=tagparse.get('x')
             if xpos:
-                xpos=xpos.upper()
+                xpos=checkXposTag(xpos)
             newparselist=[]
             if tag == '=p':
                 new=mkPropn(token,orig=orig,orig_form=orig_form)
@@ -2230,11 +2348,10 @@ def mkConlluSentence(tokens):
                 dic.update(mkTypo(correct,form))
                 if xpos == 'X':
                     newparselist=mkX(correct)
-                    print(newparselist)
                 else:
                     newparselist=getparselist(correct.lower())
             elif tag == '=mf':
-                dic.update(mkModernForm(modern))
+                dic.update(mkModernForm(modern,attribute))
                 newparselist=getparselist(form.lower())
                 modernparselist=getparselist(modern.lower())
                 if xpos:
@@ -2254,39 +2371,44 @@ def mkConlluSentence(tokens):
             elif tag == '=v':
                 new=mkVerb(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
-            elif tag == '=hab': # TODO hab -> ohab
+            elif tag == '=hab': # TODO deprecated
                 new=mkHab(form)
                 newparselist=new['parselist']
             elif tag == '=col':
                 new=mkCol(form)
                 newparselist=new['parselist']
-            elif tag == '=hab=sconj':
+            elif tag == '=hab=sconj': # TODO deprecated
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
             elif tag == '=mkhab': # TODO mkhab -> hab
                 new=mkHabXpos(  form,
                                 xpos,
-                                lenght=tagparse.get('l'),
-                                accent=tagparse.get('a'),
+                                length=length,
+                                accent=accent,
                                 guess=tagparse.get('g'),
                                 force=force
                                 )
                 newparselist=new['parselist']
-            elif tag == '=aug':
+            elif tag == '=aug': # TODO possibly deprecated (see =ev)
                 new=mkAug(form,force)
                 newparselist=new['parselist']
-            elif tag == '=ev':
-                new=mkEval(form,xpos,force)
+            elif tag == '=ev': # TODO: handle accent argument
+                new=_mkEval(form,xpos,force,orig,orig_form,accent)
                 newparselist=new['parselist']
             elif tag == '=prv':
                 new=mkPrv(form,xpos)
                 newparselist=new['parselist']
             elif tag == '=intj':
-                newparselist=mkIntj(form)
+                new=_mkIntj(form,orig,orig_form)
+                newparselist=new['parselist']
             elif tag == '=card':
-                newparselist=mkCard(form)
+                newparselist=mkCard(form) # TODO see mkIntj
             elif tag == '=upos':
-                newparselist=mkUpos(form,xpos)
+                new=_mkUpos(form,xpos, orig,orig_form)
+                newparselist=new['parselist']
+            elif tag == '=red':
+                new=handlePartialRedup(form,length)
+                newparselist=new['parselist']
             #elif tag == '=r':
             #    mkRoot(tokens.index(old))
             else:
@@ -2311,14 +2433,14 @@ def mkConlluSentence(tokens):
                 if xpos != 'X':
                     t['feats'].update({'Typo': 'Yes'})
                 t['form']=typo
-            modern_form=dic.get('ModernForm')
+            modern_form=dic.get(attribute)
             if modern_form:
-                t['misc'].update({'ModernForm': modern_form})
+                t['misc'].update({attribute: modern_form})
                 modern_entries=extract_feats(modernparselist)
                 modern_token=mkConlluToken(modern_form,modern_entries[0])
-                diff=formatModernFeats(diffFeats(modern_token,t))
+                diff=formatModernFeats(diffFeats(modern_token,t),register)
                 t['misc'].update(diff)
-                updateFeats(t,'Style','Arch')
+                updateFeats(t,'Style',getStyle(attribute))
             if new:
                 orig=new.get('OrigLang')
                 orig_form=new.get('Orig')
@@ -2541,6 +2663,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 			print(f"Sentence '{yrl}' already is in the treebank.")
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
+	metadata=metadata
 	if inputline:
 		metadata.update({'inputline': yrl})
 	tokenlist=_handleSents(sents,annotator,metadata)
@@ -2550,9 +2673,12 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
 	handleParse(outstring,copyboard=copyboard)
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True):
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True, inputline=True):
     sents=extract_sents(example)
     yrl=sents[0]
+    metadata=metadata
+    if inputline:
+        metadata.update({'inputline': yrl})
     if check:
         if checkSentence(yrl):
             print(f"Sentence '{yrl}' already is in the treebank.")
@@ -2618,6 +2744,11 @@ def mkHost(host,clitic,token,xpos=''):
 def extractHost(token):
     dic={}
     form=token.lower()
+    pair=extractTag(token)
+    tag=''
+    if pair:
+        token,tag=pair
+        print('lu',pair,tag,token)
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     else:
@@ -2631,10 +2762,11 @@ def extractHost(token):
             elif form_prefix:
                 base=f"{form_prefix.lower()}{base}"
             return mkHost(base,PI,token,'N')
+    print('mu',token)
     for clitic in NONHYPHEN:
         host=hasClitic(clitic,token)
         if host:
-            return mkHost(host,clitic,token)
+            return mkHost(host,clitic,token,tag)
     return dic
 
 def hasLinkingHyphen(token):
@@ -2675,7 +2807,7 @@ def splitMultiWordTokens(tokens):
             mwt=dic['multiwordtoken']
             xpos=dic.get('xpos')
             if xpos:
-                MULTIWORDTOKENS['xpos']=xpos
+                MULTIWORDTOKENS['xpos']=xpos # TODO 23/08/2024: MULTIWORDTOKENS as list of dictionaries (a sentence can have more than one MWT)
             MULTIWORDTOKENS[host]=mwt
             newlist.extend([host,f"{UNDERSCORE}{suff}"])
         else:
@@ -2912,12 +3044,13 @@ def ppMetadata(metadata):
 	for k,v in metadata.items():
 		print(f"# {k} = {v}")
 
-def ModernForm(form='remunhã',feats='Number=Sing|Person=2|VerbForm=Fin'):
-	featlist=[feat.split('=') for feat in feats.split('|')]
-	misc=[f"ModernForm={form}"]
-	for feat in featlist:
-		misc.append(f"Modern{feat[0]}={feat[1]}")
-	return "|".join(misc)
+def ModernForm(form='remunhã',feats='Number=Sing|Person=2|VerbForm=Fin',register='Modern'):
+    featlist=[feat.split('=') for feat in feats.split('|')]
+    field='Form'
+    misc=[f"{register}{field}={form}"]
+    for feat in featlist:
+        misc.append(f"{register}{feat[0]}={feat[1]}")
+    return "|".join(misc)
 
 def ExtractSentsMaslova(text):
     pat=re.compile(r"\s+[—–]\s+-\s+")
@@ -3181,6 +3314,28 @@ def mergePronoun3PP(tokenlist,tokenid,form):
 	eliminateDependentToken(tokenlist,tokenid)
 	sortTokens(tokenlist)
 
+def _mergePronoun3PP(tokenlist):
+	pron3PP=tokenlist.filter(lemma='ta',feats__Number="Plur", feats__Person="3", feats__PronType="Prs")
+	print(pron3PP)
+	for token in pron3PP:
+		tokenid=token['id']
+		headid=token['head']
+		head=tokenlist.filter(upos='VERB',id=headid)[0]
+		pronform=token['form']
+		headform=head['form']
+		headlemma=head['lemma']
+		print(head,pronform,headform,headlemma)
+		text_orig=tokenlist.metadata['text_orig']
+		text=tokenlist.metadata['text']
+		match=re.search(rf"({pronform})(u?)({headlemma})",text_orig)
+		if match:
+			u=match.groups()[1]
+			form=f"{pronform}{u}{headlemma}"
+			newtext=text.replace(f"{pronform} {headform}",form,1)
+			print(form, newtext)
+			tokenlist.metadata['text']=text.replace(f"{pronform} {headform}",form)
+			mergePronoun3PP(tokenlist,tokenid,form)
+
 def insertFeat(token,newfeat,value):
 	def condition(feat,feats):
 		if feat == 'Mood':
@@ -3196,7 +3351,7 @@ def insertFeat(token,newfeat,value):
 				token['feats'].update(dic)
 	else:
 		token['feats']=dic
-		
+
 def InsertIndDepClause(sent):
 	tokenlist=sent.filter(upos='VERB', deprel='advcl')
 	tokenlist.extend(sent.filter(upos='VERB', deprel='xcomp'))
@@ -3205,7 +3360,7 @@ def InsertIndDepClause(sent):
 	tokenlist.extend(sent.filter(upos='VERB', deprel='advcl:relcl'))
 	for token in tokenlist:
 		insertFeat(token,'Mood','Ind')
-			
+
 def InsertMoodNegClause(sent):
 	tokenlist=sent.filter(xpos='NEGI')
 	tokenlist.extend(sent.filter(xpos='NEG'))
@@ -3219,7 +3374,7 @@ def InsertMoodNegClause(sent):
 			if head['upos'] == 'VERB':
 				xpos=token['xpos']
 				insertFeat(head,'Mood',mapping[xpos])
-					
+
 def InsertMoodInterClause(sent):
 	tokenlist=sent.filter(feats__PartType="Int")
 	tokenlist.extend(sent.filter(upos='PUNCT', lemma='?'))
@@ -3249,7 +3404,7 @@ def CopyMoodFromHeadVerb(sent):
 						insertFeat(token,'Mood',mood)
 			else:
 				insertFeat(token,'Mood','Ind')
-					
+
 def HandleMoodPerson(sent):
 	for token in sent:
 			if token['upos'] in ('AUX','VERB'):
@@ -3263,7 +3418,7 @@ def HandleMoodPerson(sent):
 						insertFeat(token,'Mood','Ind')
 					else:
 						insertFeat(token,'Mood','Ind')
-	
+
 def insertMoodVerbForm(sents):
 	for sent in sents:
 		InsertIndDepClause(sent)
