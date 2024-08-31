@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 27, 2024
+# Last update: August 31, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -1978,25 +1978,7 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     lemma=handleAccent(form[:i],force=force)
     return mkNoun(lemma,None,dic)
 
-def mkEval(form,xpos='N',force=False):
-    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
-    xpos=xpos
-    dic={}
-    dic['lemma']=form.lower()
-    if xpos=='N':
-        dic.update(getNumber(dic['lemma']))
-    for suff,feat in suffixes.items():
-         if dic['lemma'].endswith(suff):
-             dic['degree']=feat
-             dic['lemma']=dic['lemma'][:-len(suff)]
-             break
-    lemma=handleAccent(dic['lemma'],force=force)
-    if dic.get('number'):
-        return mkNoun(lemma,dic=dic)
-    return mkAdj(lemma,None,dic,xpos=xpos)
-
-
-def _mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
+def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
     xpos=xpos
     dic={}
@@ -2112,8 +2094,8 @@ def mkIntj(lemma):
 def _mkIntj(form,orig=None,orig_form=''):
     return _mkUpos(form,'INTJ',orig,orig_form)
 
-def mkCard(lemma):
-    return mkUpos(lemma,'CARD')
+def mkCard(lemma,orig=None,orig_form=''):
+    return _mkUpos(lemma,'CARD',orig,orig_form)
 
 def handleRedup(token):
     redup={}
@@ -2358,7 +2340,7 @@ def mkConlluSentence(tokens):
                     modernparselist=filterparselist(xpos,modernparselist)
                 if archpos:
                     newparselist=filterparselist(archpos,newparselist)
-            elif tag == '=adv':
+            elif tag == '=adv': # TODO: possibly deprecated (see mkUpos)
                 newparselist=mkAdv(token)
             elif tag == '=x':
                 newparselist=mkX(token)
@@ -2380,7 +2362,7 @@ def mkConlluSentence(tokens):
             elif tag == '=hab=sconj': # TODO deprecated
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
-            elif tag == '=mkhab': # TODO mkhab -> hab
+            elif tag == '=mkhab': # TODO change "mkhab" to "hab" (possibly deprecated, see issue #516
                 new=mkHabXpos(  form,
                                 xpos,
                                 length=length,
@@ -2393,7 +2375,7 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev': # TODO: handle accent argument
-                new=_mkEval(form,xpos,force,orig,orig_form,accent)
+                new=mkEval(form,xpos,force,orig,orig_form,accent)
                 newparselist=new['parselist']
             elif tag == '=prv':
                 new=mkPrv(form,xpos)
@@ -2402,7 +2384,8 @@ def mkConlluSentence(tokens):
                 new=_mkIntj(form,orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=card':
-                newparselist=mkCard(form) # TODO see mkIntj
+                new=mkCard(form, orig,orig_form) # TODO see mkIntj
+                newparselist=new['parselist']
             elif tag == '=upos':
                 new=_mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
@@ -2748,7 +2731,6 @@ def extractHost(token):
     tag=''
     if pair:
         token,tag=pair
-        print('lu',pair,tag,token)
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     else:
@@ -2762,7 +2744,6 @@ def extractHost(token):
             elif form_prefix:
                 base=f"{form_prefix.lower()}{base}"
             return mkHost(base,PI,token,'N')
-    print('mu',token)
     for clitic in NONHYPHEN:
         host=hasClitic(clitic,token)
         if host:
@@ -3462,3 +3443,24 @@ def correctSents(sents,dic):
 			newsents.append(sent)
 	print(f"Total revised sentences: {i}")
 	return newsents
+
+def changeAdjToNoun(sent, lemma='kwera'):
+	'''This function implements the analysis of "kwera" by Cruz (2011) ,referred to in issue #294. It transforms adjetives with lemma "kwera" attached to a head noun via the amod dependency relation into a noun the former one is attached to via the nmod:poss relation. 
+	'''
+	adjectives=sent.filter(lemma='kwera',upos='ADJ',deprel='amod')
+	for adj in adjectives:
+		head=sent.filter(upos='NOUN',id=adj['head'])
+		if head:
+			headnoun=head[0]
+			adj['deprel']=headnoun['deprel']
+			adj['head']=headnoun['head']
+			adj['upos']='NOUN'
+			adj['xpos']='N'
+			updateFeats(adj,'Number','Sing')
+			adpositions=sent.filter(head=headnoun['id'],upos='ADP',deprel='case')
+			if adpositions:
+				for adp in adpositions:
+					adp['head']=adj['id']
+			headnoun['head']=adj['id']
+			headnoun['deprel']='nmod:poss'
+			return True

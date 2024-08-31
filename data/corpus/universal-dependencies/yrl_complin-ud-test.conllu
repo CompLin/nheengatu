@@ -3329,6 +3329,7 @@
 # text = Aikwé raẽ será tuxawa tuyué?
 # text_eng = Does the old tuxaua still exist?
 # text_por = Existe ainda o velho tuxaua?
+# text_orig = Aikwé raẽ será tuxawa tuyuwé?
 # text_source = Lesson 3, p. 25 (Stradelli, 364)
 # text_annotator = DMA
 # text_prim = Aicué rain, será, tuicháua tuiué?
@@ -4302,7 +4303,7 @@
 # reviewer1 = DMA
 # reviewer2 = LFdeA
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
-2	kwera	kwera	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=3:8
+2	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=3:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
 4	taité	taité	INTJ	INTJ	_	2	discourse	_	SpaceAfter=No|TokenRange=10:15
 5	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
@@ -4330,7 +4331,7 @@
 # reviewer1 = DMA
 # reviewer2 = LFdeA
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=26:28
-2	kwera	kwera	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=29:34
+2	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=29:34
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Navarro2016:0:0:211
@@ -4861,6 +4862,7 @@
 # text_source = Muniz, 74, adap.
 # text_orig = Mairamé pepisika kwá papera resé, pesú pemuturusú pekwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
 # text_annotator = LFdeA
+# inputline = Mairamé/sconjr pepisika kwá/demx papera resé/adp, pesú pemuturusú pe/pron2 kwasawa, pesú pewasemu maã/int ti rẽ waá pekwawa asuí/cconj pesenduwera waá.
 1	Mairamé	mairamé	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:7
 2	pepisika	pisika	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=8:16
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=17:20
@@ -4873,16 +4875,18 @@
 10	kwasawa	kwasawa	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=53:60
 11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=60:61
 12	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	13	aux	_	TokenRange=62:66
-13	pewasemu	wasemu	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	conj	_	TokenRange=67:75
+13	pewasemu	wasemu	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	parataxis	_	TokenRange=67:75
 14	maã	maã	PRON	IND	PronType=Ind	13	obj	_	TokenRange=76:79
 15	ti	ti	PART	NEG	Polarity=Neg	18	advmod	_	TokenRange=80:82
 16	rẽ	rẽ	PART	IMPF	_	18	advmod	_	TokenRange=83:85
 17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=86:89
 18	pekwawa	kwawa	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	14	acl:relcl	_	TokenRange=90:97
 19	asuí	asuí	CCONJ	CCONJ	_	20	cc	_	TokenRange=98:102
-20	pesenduwera	sendú	VERB	V	Aspect=Freq|Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin	18	conj	_	TokenRange=103:114
-21	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	obj	_	SpaceAfter=No|TokenRange=115:118
-22	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=118:119
+20-21	pesenduwera	_	_	_	_	_	_	_	TokenRange=103:114
+20	pesendú	sendú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	18	conj	_	_
+21	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	20	advmod	_	_
+22	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	obj	_	SpaceAfter=No|TokenRange=115:118
+23	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=118:119
 
 # sent_id = Avila2021:5:1:28
 # text = Yautí unheẽ: ― Yasú yayuuka i kãwera.
@@ -8161,17 +8165,17 @@
 4	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=15:20
 5-6	sapekwerantu	_	_	_	_	_	_	_	TokenRange=21:33
 5	sapekwera	sapekwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obj	_	_
-6	ntu	ntu	ADV	ADV	Clitic=Yes	4	advmod	_	_
+6	ntu	ntu	ADV	ADV	Clitic=Yes	5	advmod	_	_
 7	piranga	piranga	ADJ	A	_	5	amod	_	TokenRange=34:41
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=42:43
 9	ayura	ayura	NOUN	N	Number=Sing	4	obl	_	TokenRange=44:49
 10	upé	upé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=50:53
-11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=53:54
-12	aité	aité	PRON	EMP	PronType=Emp	14	nsubj	_	TokenRange=55:59
-13	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	14	advmod	_	TokenRange=60:63
-14	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	4	parataxis	_	TokenRange=64:68
-15	kwera	kwera	ADJ	A	_	14	amod	_	TokenRange=69:74
-16	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	12	det	_	SpaceAfter=No|TokenRange=75:79
+11	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=53:54
+12	aité	aité	PRON	EMP	PronType=Emp	15	det	_	TokenRange=55:59
+13	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	15	advmod	_	TokenRange=60:63
+14	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	15	nmod:poss	_	TokenRange=64:68
+15	kwera	kwera	NOUN	N	Number=Sing	4	parataxis	_	TokenRange=69:74
+16	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	15	nsubj	_	SpaceAfter=No|TokenRange=75:79
 17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=79:80
 
 # sent_id = Avila2021:0:0:197
@@ -8429,9 +8433,9 @@
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:12
 3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:18
-4	tawa	tawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=19:23
-5	kwera	kwera	ADJ	A	_	4	amod	_	TokenRange=24:29
-6	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=30:34
+4	tawa	tawa	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=19:23
+5	kwera	kwera	NOUN	N	Number=Sing	2	obl	_	TokenRange=24:29
+6	kití	kití	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=30:34
 7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=34:35
 8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	9	det	_	TokenRange=36:39
 9	paraná	paraná	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=40:46
@@ -8898,11 +8902,11 @@
 2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=5:7
 3	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=14:17
-5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
+5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=17:18
 6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=19:23
-7	tuyu-itá	tuyu	NOUN	N	Number=Plur	3	dislocated	_	TokenRange=24:32
-8	kwera	kwera	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=33:38
-9	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=38:39
+7	tuyu-itá	tuyu	NOUN	N	Number=Plur	8	nmod:poss	_	TokenRange=24:32
+8	kwera	kwera	NOUN	N	Number=Sing	3	dislocated	_	SpaceAfter=No|TokenRange=33:38
+9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=38:39
 10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=40:42
 11	marakaimbara	marakaimbara	NOUN	N	Number=Sing	3	obl	_	TokenRange=43:55
 12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	TokenRange=56:59
@@ -9079,10 +9083,12 @@
 20	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	19	obl	_	TokenRange=108:113
 21	irumu	irumu	ADP	ADP	AdpType=Post	20	case	_	TokenRange=114:119
 22	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=120:125
-23	uyumuatiriwera	yumuatiri	VERB	V	Aspect=Freq|Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	24	acl:relcl	_	TokenRange=126:140
-24	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	obl	_	TokenRange=141:144
-25	upé	upé	ADP	ADP	AdpType=Post	24	case	_	SpaceAfter=No|TokenRange=145:148
-26	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=148:149
+23-24	uyumuatiriwera	_	_	_	_	_	_	_	TokenRange=126:140
+23	uyumuatiri	yumuatiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	25	acl:relcl	_	_
+24	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	23	advmod	_	_
+25	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	obl	_	TokenRange=141:144
+26	upé	upé	ADP	ADP	AdpType=Post	25	case	_	SpaceAfter=No|TokenRange=145:148
+27	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=148:149
 
 # sent_id = Avila2021:0:0:241
 # text = Arusika yepé papera amukameẽ arã indé arã.
@@ -9518,13 +9524,14 @@
 # text_source = Casasnovas, 75, adap.
 # text_orig = Mairamé paá i akanhemu umaã sumuára kwera ipí-pe, sukuriú umamana waá aé.
 # text_annotator = LFdeA
+# cross_reference = Casasnovas2006:4:5:40
 1	Mairamé	mairamé	SCONJ	SCONJR	_	5	mark	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=8:11
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=12:13
 4	akanhemu	akanhemu	VERB	V2	Mood=Ind|VerbForm=Fin	5	advcl	_	TokenRange=14:22
 5	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=23:27
-6	sumuara	sumuara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obj	_	TokenRange=28:35
-7	kwera	kwera	ADJ	A	_	6	amod	_	TokenRange=36:41
+6	sumuara	sumuara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	7	nmod:poss	_	TokenRange=28:35
+7	kwera	kwera	NOUN	N	Number=Sing	5	obj	_	TokenRange=36:41
 8-9	ipí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=42:48
 8	ipí	ipí	NOUN	N	Number=Sing	5	obl	_	_
 9	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	8	case	_	_
@@ -20035,7 +20042,8 @@
 # sent_id = Cruz2011:0:0:46
 # text = Yané ramunha ambira taukwá aé.
 # text_eng = Our deceased grandparents knew this.
-# text_por = Nossos avós falecidos sabiam isso. [Corr. transl.]
+# text_por = Nossos avós falecidos sabiam isso. 
+# text_por_orig = Nossos avos falecidos sabiam isso.
 # text_source = Example 446a Bn
 # text_orig = yane-ramunha ambira tau-kua ae
 # text_annotator = LFdeA
@@ -20201,9 +20209,9 @@
 # text_orig = ma=ta kuera?
 # text_annotator = LFdeA
 1-2	Maã-ta	_	_	_	_	_	_	_	TokenRange=0:6
-1	Maã	maã	PRON	INT	PronType=Int	0	root	_	_
+1	Maã	maã	DET	INT	PronType=Int	0	root	_	_
 2	ta	taá	PART	CQ	Clitic=Yes|PartType=Int	1	advmod	_	_
-3	kwera	kwera	PART	PRET	Tense=Past	1	advmod	_	SpaceAfter=No|TokenRange=7:12
+3	kwera	kwera	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=7:12
 4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Cruz2011:3:2:60
@@ -20412,6 +20420,371 @@
 2	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:12
 3	mujekawasú	mujeka	NOUN	N	Degree=Aug|Number=Sing	2	obj	_	Orig=mujica|OrigLang=por|SpaceAfter=No|TokenRange=13:23
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Cruz2011:0:0:73
+# text = Rekwá xinga kwera.
+# text_eng = TODO
+# text_por = Você sabe um pouco.
+# text_por_lit = Você sabe um pouco [coisas do passado].
+# text_context = The speaker asks the listener to tell about past events.
+# text_source = Example 236 Br
+# text_orig = re-kua xinga kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Rekwá xinga kwera/n.
+1	Rekwá	kwá	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:11
+3	kwera	kwera	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=12:17
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Cruz2011:4:1:74
+# text = Até oitu kwera aikwé iké.
+# text_eng = TODO
+# text_por = Até oito, teve aqui.
+# text_por_lit = Até oito [seres desprovidos de características originais]i,havia aqui.
+# text_source = Example 237 Wr
+# text_orig = ate oitu kuera aikue ike.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Até/prep oitu/=card:o|pt:s|oito kwera/n aikwé iké.
+1	Até	até	ADP	PREP	AdpType=Post	3	case	_	TokenRange=0:3
+2	oitu	oitu	NUM	CARD	NumType=Card	3	nummod	_	Orig=oito|OrigLang=por|TokenRange=4:8
+3	kwera	kwera	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=9:14
+4	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=15:20
+5	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=21:24
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Cruz2011:4:2:75
+# text = Yawé upitá…
+# text_eng = TODO
+# text_por = Assim ficaram…
+# text_source = Example 237 Wr
+# text_orig = yawe u-pita
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yawé/adva upitá…
+1	Yawé	yawé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:4
+2	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:10
+3	…	…	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
+
+# sent_id = Cruz2011:4:3:76
+# text = Oito pessoa anhuantẽ.
+# text_eng = TODO
+# text_por = Oito pessoas, só mesmo.
+# text_por_lit = Eram mesmo somente oito [pessoas]i.
+# text_source = Example 237 Bn
+# text_orig = oitu pesoa anhu=wã te
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Oito/=card:o|pt pessoa/=n:o|pt@ anhuantẽ.
+1	Oito	oitu	NUM	CARD	NumType=Card	2	nummod	_	OrigLang=por|TokenRange=0:4
+2	pessoa	pessoa	NOUN	N	Number=Sing	0	root	_	OrigLang=por|TokenRange=5:10
+3	anhuantẽ	anhuantẽ	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=11:19
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Cruz2011:0:0:77
+# text = Kuxima kwera puxuwera.
+# text_eng = TODO
+# text_por = Antigamente, era feio.
+# text_por_lit = In the past, 'an entity that has lost its own qualities' [was] ugly.
+# text_source = Example 238 Wr
+# text_orig = kuxima kuera puxuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kuxima kwera/n puxuwera/a@.
+1	Kuxima	kuxima	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
+2	kwera	kwera	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=7:12
+3	puxuwera	puxuwera	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=13:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Cruz2011:0:0:78
+# text = Nhaã surara puxuwera.
+# text_eng = TODO
+# text_por = Aquele soldado era feio.
+# text_source = Example 239 Wr
+# text_orig = nhaã surara puxuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Nhaã surara puxuwera/a.
+1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
+2	surara	surara	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:11
+3	puxuwera	puxuwera	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=12:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Cruz2011:0:0:79
+# text = Maita kwera uyupirú?
+# text_eng = TODO
+# text_por = Como isso começou?
+# text_source = Example 240 Br
+# text_orig = maita kuera u-yupiru
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Maita kwera/n uyupirú?
+1-2	Maita	_	_	_	_	_	_	_	TokenRange=0:5
+1	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	_
+2	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	4	advmod	_	_
+3	kwera	kwera	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=6:11
+4	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:19
+5	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Cruz2011:0:0:80
+# text = Abumirĩ kwera werekena.
+# text_eng = TODO
+# text_por = O avozinho era uerequena.
+# text_por_orig = O avozinho era Warekena.
+# text_por_lit = O resquício de avozinho era Warekena.
+# text_source = Example 242 Wr
+# text_orig = abo-miri kuera Werekena
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Abumirĩ/=ev:x|n:a|t kwera/n Werekena/@.
+1	Abumirĩ	abú	NOUN	N	Degree=Dim|Number=Sing	2	nmod:poss	_	TokenRange=0:7
+2	kwera	kwera	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=8:13
+3	werekena	werekena	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=14:22
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Cruz2011:0:0:81
+# text = Taína-itá kwera tayenũ balaio upé.
+# text_eng = TODO
+# text_por = O que eram as criancinhas ficaram deitadas no cesto.
+# text_por_lit = Resquício de criancinhas deitaram no cesto.
+# text_source = Example 243 Bn
+# text_orig = taina ita kuera ta-yenũ balaiu upe
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Taína-itá kwera/n tayenũ balaio/=n:o|pt upé/adp.
+1	Taína-itá	taína	NOUN	N	Number=Plur	2	nmod:poss	_	TokenRange=0:9
+2	kwera	kwera	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=10:15
+3	tayenũ	yenũ	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:22
+4	balaio	balaio	NOUN	N	Number=Sing	3	obl	_	OrigLang=por|TokenRange=23:29
+5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=30:33
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Cruz2011:0:0:82
+# text = Pemaã té kwá mirá kwera.
+# text_eng = TODO
+# text_por = Vejam este pau morto.
+# text_por_lit = Vejam este resquício [da] árvore.
+# text_source = Example 244 Br
+# text_orig = pe-maã te kua mirá kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pemaã té/foc kwá/demx mirá kwera/n.
+1	Pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	té	té	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=6:8
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=9:12
+4	mirá	mirá	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=13:17
+5	kwera	kwera	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=18:23
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Cruz2011:0:0:83
+# text = Xukúi rẽ i buxu kwera.
+# text_eng = TODO
+# text_por = Eis aqui ainda o que era bucho dele.
+# text_por_lit = Eis aqui ainda resquício de bucho dele.
+# text_source = Example 246 Bn
+# text_orig = xukũi=re i-buxu kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xukúi rẽ i/pron2 buxu kwera/n.
+1	Xukúi	xukúi	PART	PRSV	PartType=Prs	0	root	_	TokenRange=0:5
+2	rẽ	rẽ	PART	IMPF	_	1	advmod	_	TokenRange=6:8
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:10
+4	buxu	buxu	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=11:15
+5	kwera	kwera	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=16:21
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Cruz2011:0:0:84
+# text = Taumupuka ta kamutí kwera.
+# text_eng = TODO
+# text_por = Quebraram os resquícios de pote.
+# text_source = Example 247a Bn
+# text_orig = tampuka [ta-kamuti kuera]
+# text_orig_alt = tau-mu-puka [ta-kamuti kuera] 
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Taumupuka ta/pron2 kamutí kwera/n.
+1	Taumupuka	mupuka	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:9
+2	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=10:12
+3	kamutí	kamutí	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=13:19
+4	kwera	kwera	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=20:25
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Cruz2011:0:0:85
+# text = Ta kamutí kwera taumupuka.
+# text_eng = TODO
+# text_por = Os resquícios de pote, (eles) quebraram .
+# text_source = Example 247b Bn
+# text_orig = [ta-kamuti kuera] tampuka
+# text_orig_alt = [ta-kamuti kuera] tau-mu-puka
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ta/pron2 kamutí kwera/n taumupuka.
+1	Ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	kamutí	kamutí	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=3:9
+3	kwera	kwera	NOUN	N	Number=Sing	4	obj	_	TokenRange=10:15
+4	taumupuka	mupuka	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:25
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Cruz2011:0:0:86
+# text = Ixé kwera, taité.
+# text_eng = I am a remnant (of myself), poor thing.
+# text_por = Eu sou resquício (de mim mesma), coitada.
+# text_source = Example 250a Br
+# text_orig = ixe kuera, taite
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé kwera/n@, taité/intj.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=4:9
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
+4	taité	taité	INTJ	INTJ	_	2	discourse	_	SpaceAfter=No|TokenRange=11:16
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Cruz2011:0:0:87
+# text = Ixé kwera.
+# text_eng = I am a remnant (of myself).
+# text_por = Eu sou resquício (de mim mesma).
+# text_source = Example 250b Br
+# text_context = elicited from Example 250a
+# text_orig = ixe kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé kwera/n@.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=4:9
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Cruz2011:0:0:88
+# text = Homem ti kwera!
+# text_eng = They are still men.
+# text_por = Eles ainda são homens.
+# text_por_lit = O homem não [é] 'entidade que perdeu as qualidades próprias de si mesmo'.
+# text_source = Example 251
+# text_context = field note
+# text_orig = homem ti=kuera!
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Homem/=n:o|pt ti kwera/n@!
+1	Homem	homem	NOUN	N	Number=Sing	3	nsubj	_	OrigLang=por|TokenRange=0:5
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=6:8
+3	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=9:14
+4	!	!	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Cruz2011:5:1:89
+# text = Pronto!
+# text_eng = There!
+# text_eng_ggl = Ready!
+# text_por = Pronto!
+# text_source = Example 252 Br
+# text_orig = prontu!
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pronto/=intj:o|pt@!
+1	Pronto	pronto	INTJ	INTJ	_	0	root	_	OrigLang=por|SpaceAfter=No|TokenRange=0:6
+2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
+
+# sent_id = Cruz2011:5:2:90
+# text = Tayuká wã.
+# text_eng = They already killed him.
+# text_por = Já o mataram.
+# text_por_lit = Já mataram.
+# text_source = Example 252 Br
+# text_orig = ta-yuká=wã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Tayuká wã.
+1	Tayuká	yuká	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=7:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Cruz2011:5:3:91
+# text = Aé kwera.
+# text_eng = He’s done for.
+# text_eng_ggl = He was already gone.
+# text_por = Ele já era.
+# text_por_lit = Ele [é] 'entidade que perdeu as qualidades próprias de si mesmo'.
+# text_source = Example 252 Br
+# text_orig = ae kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aé/pron kwera/n@.
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=3:8
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = Cruz2011:0:0:92
+# text = Aité paá kurumirĩ kwera.
+# text_eng = TODO.
+# text_por = Diz que ele mesmo era resquício do menininho.
+# text_source = Example 253 Bn
+# text_orig = Ai=te paa [kuru-miri kuera].
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aité paá kurumirĩ/=ev:a|f:x|n kwera/n@.
+1	Aité	aité	PRON	EMP	PronType=Emp	4	nsubj	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=5:8
+3	kurumirĩ	kuru	NOUN	N	Degree=Dim|Number=Sing	4	nmod:poss	_	TokenRange=9:17
+4	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=18:23
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Cruz2011:0:0:93
+# text = Aité nhaã i buxu-itá kwera.
+# text_eng = TODO.
+# text_por = Aquilo era as víceras dela.
+# text_por_lit = Aquilo era resquício de buchos dela.
+# text_context = In myth, the entrails of a snake turn to stone.
+# text_source = Example 254 Wr
+# text_orig = aitenhaã i-buxu ita kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aité nhaã i/pron2 buxu-itá kwera/n@.
+1	Aité	aité	PRON	EMP	PronType=Emp	5	nsubj	_	TokenRange=0:4
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:9
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:11
+4	buxu-itá	buxu	NOUN	N	Number=Plur	5	nmod:poss	_	TokenRange=12:20
+5	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=21:26
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Cruz2011:0:0:94
+# text = Aité nhaã paá sukuriú pedasu-itá kwera.
+# text_eng = TODO
+# text_por = Diz que aquilo eram pedaços de sucuri.
+# text_por_lit = Diz que aquilo [é] resquício de pedaços de sucuri. 
+# text_source = Example 255 Wr
+# text_orig = aaitenhaã paa sukuriu pedasu ita kuera
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aité nhaã paá sukuriú pedasu-itá/=n:o|pt:s|pedaço kwera/n@.
+1	Aité	aité	PRON	EMP	PronType=Emp	6	nsubj	_	TokenRange=0:4
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	1	det	_	TokenRange=5:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=10:13
+4	sukuriú	sukuriú	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=14:21
+5	pedasu-itá	pedasu	NOUN	N	Number=Plur	6	nmod:poss	_	Orig=pedaço|OrigLang=por|TokenRange=22:32
+6	kwera	kwera	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=33:38
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Cruz2011:0:0:95
+# text = Mukura kuíri kwá tempo aé urikú sete vida porque uwari kwera upuka pá sete pedaço.
+# text_eng = TODO
+# text_por = O mico agora, neste tempo, ele tem sete vidas, porque ele tinha caído, e estourado completamente em sete pedaços.
+# text_source = Example 256
+# text_orig = mukura kui(ri) kua tempu ae u-riku sete vida porke u-wai kuera u-puka-pa(wa) seti pedasu
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mukura/=typo:c|Mikura kuíri kwá/demx tempo/=n:o|pt aé/pron urikú sete/=card:o|pt vida/=n:o|pt porque/=upos:x|sconjr:o|pt uwari kwera/n upuka pá/total sete/=card:o|pt pedaço=n:o|pt.
+1	Mukura	mikura	NOUN	N	Number=Sing|Typo=Yes	6	dislocated	_	CorrectForm=Mikura|TokenRange=0:6
+2	kuíri	kuíri	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=7:12
+3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:16
+4	tempo	tempo	NOUN	N	Number=Sing	6	obl	_	OrigLang=por|TokenRange=17:22
+5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=23:25
+6	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=26:31
+7	sete	sete	NUM	CARD	NumType=Card	8	nummod	_	OrigLang=por|TokenRange=32:36
+8	vida	vida	NOUN	N	Number=Sing	6	obj	_	OrigLang=por|TokenRange=37:41
+9	porque	porque	SCONJ	SCONJR	_	10	mark	_	OrigLang=por|TokenRange=42:48
+10	uwari	wari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=49:54
+11	kwera	kwera	NOUN	N	Number=Sing	10	parataxis	_	TokenRange=55:60
+12	upuka	puka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=61:66
+13	pá	pá	PART	TOTAL	Aspect=Compl	12	advmod	_	TokenRange=67:69
+14	sete	sete	NUM	CARD	NumType=Card	15	nummod	_	OrigLang=por|TokenRange=70:74
+15	pedaço	pedaço	NOUN	N	Number=Sing	12	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=75:81
+16	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=81:82
+
+# sent_id = Cruz2011:0:0:96
+# text = Uyana kwera yepé usikari igara ma ti wã uwasemu.
+# text_eng = TODO
+# text_por = Correu em vão procurando a canoa, mas não logrou encontrá-la.
+# text_source = Example 257
+# text_orig = u-yana kuera yepe / u-sikai igara ma ti=wã=u-wasemu
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Uyana kwera/pret yepé/frust usikari igara ma/cconj ti wã uwasemu.
+1	Uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	kwera	kwera	PART	PRET	Tense=Past	1	advmod	_	TokenRange=6:11
+3	yepé	yepé	PART	FRUST	Aspect=Frus	1	advmod	_	TokenRange=12:16
+4	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=17:24
+5	igara	igara	NOUN	N	Number=Sing	4	obj	_	TokenRange=25:30
+6	ma	ma	CCONJ	CCONJ	_	9	cc	_	TokenRange=31:33
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=34:36
+8	wã	wã	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=37:39
+9	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	conj	_	SpaceAfter=No|TokenRange=40:47
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
@@ -21887,7 +22260,7 @@
 # title_eng = The anaconda
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# inputline = Ape/advdi, paá, mira-itá ta/=typo:c|tayatiri yatiri/=x takamirika kirimbawa/adva nhaã sukuriú resá resé/adp, ariré/advt wã uyurá nhaã apigá/n kwera/a suí.
+# inputline = Ape/advdi, paá, mira-itá ta/=typo:c|tayatiri yatiri/=x takamirika kirimbawa/adva nhaã sukuriú resá resé/adp, ariré/advt wã uyurá nhaã apigá/n kwera/n suí.
 1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -21906,9 +22279,9 @@
 16	wã	wã	PART	PFV	Aspect=Perf	17	advmod	_	TokenRange=83:85
 17	uyurá	yurá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=86:91
 18	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	19	det	_	TokenRange=92:96
-19	apigá	apigá	NOUN	N	Number=Sing	17	obl	_	TokenRange=97:102
-20	kwera	kwera	ADJ	A	_	19	amod	_	TokenRange=103:108
-21	suí	suí	ADP	ADP	AdpType=Post	19	case	_	SpaceAfter=No|TokenRange=109:112
+19	apigá	apigá	NOUN	N	Number=Sing	20	nmod:poss	_	TokenRange=97:102
+20	kwera	kwera	NOUN	N	Number=Sing	17	obl	_	TokenRange=103:108
+21	suí	suí	ADP	ADP	AdpType=Post	20	case	_	SpaceAfter=No|TokenRange=109:112
 22	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=112:113
 
 # sent_id = Casasnovas2006:4:11:46
@@ -21968,8 +22341,8 @@
 12	umpena	mpena	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=51:57
 13	siiya	siiya	DET	INDQ	PronType=Ind	15	det	_	TokenRange=58:63
 14	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=64:65
-15	kãwera-itá	kãwera	NOUN	N	Number=Plur	12	obj	_	TokenRange=66:76
-16	kwera	kwera	ADJ	A	_	15	amod	_	SpaceAfter=No|TokenRange=77:82
+15	kãwera-itá	kãwera	NOUN	N	Number=Plur	16	nmod:poss	_	TokenRange=66:76
+16	kwera	kwera	NOUN	N	Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=77:82
 17	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=82:83
 
 # sent_id = Casasnovas2006:4:13:48
