@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 31, 2024
+# Last update: September 1, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -682,7 +682,6 @@ def handleIntj(token,verbs):
 def PreviousContentWord(token,tokenlist):
     funct=['ADP','AUX','CONJ','SCONJ']
     return getPreviousToken(token,tokenlist,funct)
-
 
 def handlePart(token,tokenlist,verbs):
     mapping= {
@@ -1455,6 +1454,44 @@ def insertPunct(punct,tokenid,tokenlist):
     comma=tokenlist.filter(id=tokenid)[0]
     handleComma(comma,tokenlist) # TODO: adapt this to hanlde other punctuation
     incrementTokenRange(tokenlist[tokenid+1:])
+    
+def separateClitic(data,token=None,hostid=29,tokenlist=None):
+    '''Separate a clitic attached to a host with token id 29, e.g., 'uikuwera',placing the clitic on the next position, thereby incrementing the ids of the following tokens. See issue #518.
+    '''
+    tokenlist=parse(data)[0]
+    tokenid=hostid+1
+    incrementSentId(tokenlist,tokenid)
+    base=tokenlist[hostid-1]
+    tk=parseSentence(base['form'])
+    mwt,head,token=tk
+    token['head']=base['id']
+    base['misc'].pop('TokenRange')
+    sp=base['misc'].get('SpaceAfter')
+    if not base.get('misc'):
+        base['misc']=None
+    lemma=base['lemma']
+    last=lemma[-1]
+    if last in ('á','í','ú'):
+        base['form']=f"{head['form'][:-1]}{last}"
+    else:
+        base['form']=head['form']
+    token['id']=tokenid
+    token['deprel']='advmod'
+    for att in 'Aspect','Tense':
+        token['feats'].update({att : base['feats'].pop(att)})
+    tokenlist.insert(hostid,token)
+    mwt['id']=(base['id'],'-',token['id'])
+    if sp:
+        base['misc'].pop('SpaceAfter')
+        misc=mwt.get('misc')
+        if misc:
+            mwt['misc'].update({'SpaceAfter' : sp})
+        else:
+            mwt['misc']=sp
+    tokenlist.insert(hostid-1,mwt)
+    incrementTokenRange(tokenlist[tokenid+1:])
+    sortTokens(tokenlist)
+    print(tokenlist.serialize())
 
 def incrementSentId(tokenlist,startid):
 	for token in tokenlist:
