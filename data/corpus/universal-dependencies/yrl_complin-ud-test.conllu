@@ -20837,7 +20837,7 @@
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:5
 2	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=6:9
 3	ambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=10:15
-4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=16:18
+4	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=16:18
 5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=19:23
 6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=23:24
 7	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	9	det	_	TokenRange=25:32
@@ -22834,7 +22834,7 @@
 18	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=83:84
 
 # sent_id = Casasnovas2006:6:4:63
-# text = Muíri viáji, paá, tausú rundé, aintá aría waimĩ uyupúi aintá piripiriáka suikiri waá irũ, ti arã ta usaã yumasí ta uwatá pukusawa.
+# text = Muíri viáji, paá, tausú rundé, aintá aría waimĩ uyupúi aintá piripiriáka suikiri waá irũ, ti arã tausaã yumasí tauwatá pukusawa.
 # text_eng = TODO
 # text_eng_ggl = Every time, before leaving, the old grandmother would give them green pipirioca to feed them during the journey back.
 # text_por = Toda vez, antes de partir, a velha avó dava-lhes de comer pipirioca verde para alimentá-las durante a jornada até à volta.
@@ -22849,6 +22849,8 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Muíri	muíri	PRON	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	viáji	viáji	NOUN	N	Number=Sing	12	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -22866,16 +22868,14 @@
 15	suikiri	suikiri	ADJ	A	_	14	acl:relcl	_	TokenRange=74:81
 16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	nsubj	_	TokenRange=82:85
 17	irũ	irũ	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=86:89
-18	,	,	PUNCT	PUNCT	_	22	punct	_	TokenRange=89:90
-19	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=91:93
-20	arã	arã	SCONJ	SCONJ	_	22	mark	_	TokenRange=94:97
-21	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	22	nsubj	_	TokenRange=98:100
-22	usaã	saã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=101:105
-23	yumasí	yumasí	NOUN	N	Number=Sing	22	obj	_	TokenRange=106:112
-24	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	25	nsubj	_	TokenRange=113:115
-25	uwatá	watá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	22	advcl	_	TokenRange=116:121
-26	pukusawa	pukusawa	SCONJ	SCONJ	_	25	mark	_	SpaceAfter=No|TokenRange=122:130
-27	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=130:131
+18	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=89:90
+19	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	21	advmod	_	TokenRange=91:93
+20	arã	arã	SCONJ	SCONJ	_	21	mark	_	TokenRange=94:97
+21	tausaã	saã	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=101:105
+22	yumasí	yumasí	NOUN	N	Number=Sing	21	obj	_	TokenRange=106:112
+23	tauwatá	watá	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	21	advcl	_	TokenRange=116:121
+24	pukusawa	pukusawa	SCONJ	SCONJ	_	23	mark	_	SpaceAfter=No|TokenRange=122:130
+25	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=130:131
 
 # sent_id = Casasnovas2006:6:5:64
 # text = Mairamé ta usú ã ta uikú, kwá ta aría waimĩ umbeú aintá: Se rimiarirú-itá, penhẽ ayupuí ã, kuíri pesú ã, ti ã kurí marã penhẽ arã timbiú.
@@ -23130,20 +23130,22 @@
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Aintá/pron usika paá, sesé, ta/pron upurungitá irumu/sconj, asuí/advt taurasú aé/pron ta/pron2 irumu/adp.
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	SpaceAfter=No|TokenRange=12:15
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
 5	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	8	obl	_	SpaceAfter=No|TokenRange=17:21
-6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=21:22
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=21:22
 7	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=23:25
-8	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=26:36
+8	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	advcl	_	TokenRange=26:36
 9	irumu	irumu	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=37:42
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=42:43
 11	asuí	asuí	ADV	ADVT	AdvType=Tim	12	advmod	_	TokenRange=44:48
-12	taurasú	rasú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=52:57
+12	taurasú	rasú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=52:57
 13	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	obj	_	TokenRange=58:60
-14	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	obl	_	TokenRange=61:63
+14	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	obl	_	TokenRange=60:62
 15	irumu	irumu	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=64:69
 16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=69:70
 
@@ -23212,7 +23214,7 @@
 21	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=90:91
 
 # sent_id = Casasnovas2006:8:7:75
-# text = Ape paá, tausuú piripiriáka, asuí, ta upuri ta uyatimana miráwasú rupitá.
+# text = Ape paá, tausuú piripiriáka, asuí, tapuri tauyatimana miráwasú rupitá.
 # text_eng = TODO
 # text_eng_ggl = They then began to chew piprioca, then jumped around a log,
 # text_por = Eles, então, puseram-se a mastigar piprioca, depois deram um salto em torno de um tronco,
@@ -23227,23 +23229,23 @@
 # text_por_sec = Aí, dizem que eles mastigaram piripirioca, depois saltaram rodeando o tronco de uma grande árvore.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:461)
+# cross_reference = Avila2021:0:0:461
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Ape	ape	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	SpaceAfter=No|TokenRange=4:7
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=7:8
 4	tausuú	suú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:16
 5	piripiriáka	piripiriáka	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=17:28
 6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
-7	asuí	asuí	ADV	ADVT	AdvType=Tim	10	advmod	_	SpaceAfter=No|TokenRange=30:34
+7	asuí	asuí	ADV	ADVT	AdvType=Tim	9	advmod	_	SpaceAfter=No|TokenRange=30:34
 8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=34:35
-9	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=36:38
-10	upuri	puri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=39:44
-11	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=45:47
-12	uyatimana	yatimana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=48:57
-13	miráwasú	miráwasú	NOUN	N	Number=Sing	14	nmod:poss	_	TokenRange=58:66
-14	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	12	obj	_	SpaceAfter=No|TokenRange=67:73
-15	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=73:74
+9	tapuri	puri	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=39:44
+10	tauyatimana	yatimana	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=48:57
+11	miráwasú	miráwasú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=58:66
+12	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	10	obj	_	SpaceAfter=No|TokenRange=67:73
+13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=73:74
 
 # sent_id = Casasnovas2006:8:8:76
 # text = Ape, paá, ta uyeréu yawaratewasú-itá, yawé, paá, ta ukanhemu ta usú kaá kití.
@@ -23404,7 +23406,7 @@
 16	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=69:70
 
 # sent_id = Casasnovas2006:8:13:81
-# text = Asuí, paá, ta umbué aé mayé usikari arã ximiára piripiriaka irumu.
+# text = Asuí, paá, taumbué aé mayé usikari arã ximiára piripiriaka irumu.
 # text_eng = TODO
 # text_eng_ggl = Then they taught him how to look for game with piprioca.
 # text_por = Depois ensinaram para ele como procurar caça com piprioca.
@@ -23421,20 +23423,21 @@
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:460)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
-5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=11:13
-6	umbué	mbué	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
-7	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	obj	_	TokenRange=20:22
-8	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	9	advmod	_	TokenRange=23:27
-9	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=28:35
-10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=36:39
-11	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	obj	_	TokenRange=40:47
-12	piripiriaka	piripiriaka	NOUN	N	Number=Sing	9	obl	_	TokenRange=48:59
-13	irumu	irumu	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=60:65
-14	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=65:66
+5	taumbué	mbué	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=20:22
+7	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	8	advmod	_	TokenRange=23:27
+8	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	ccomp	_	TokenRange=28:35
+9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=36:39
+10	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	8	obj	_	TokenRange=40:47
+11	piripiriaka	piripiriaka	NOUN	N	Number=Sing	8	obl	_	TokenRange=48:59
+12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=60:65
+13	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=65:66
 
 # sent_id = Casasnovas2006:8:14:82
 # text = Kwá mira upitá ta irumu musapiri ara, puranga usasá, nhaãsé, paá, tauyeréu yawaraté anhũ mairamé ta usú ta usikari ta rimiára ta umbaú arã.
@@ -23456,7 +23459,7 @@
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
 3	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
-4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=15:17
+4	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=15:17
 5	irumu	irumu	ADP	ADP	AdpType=Post	4	case	_	TokenRange=18:23
 6	musapiri	musapiri	NUM	CARD	NumType=Card	7	nummod	_	TokenRange=24:32
 7	ara	ara	NOUN	N	Number=Sing	3	obl	_	SpaceAfter=No|TokenRange=33:36
@@ -24666,7 +24669,7 @@
 19	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = Casasnovas2006:10:2:121
-# text = Usika ramé nhaã ara tauyupirú waá, ta uyusaã.
+# text = Usika ramé nhaã ara tauyupirú waá, tauyusaã.
 # text_eng = TODO
 # text_eng_ggl = When the agreed time arrived, they started betting.
 # text_por = Chegado o tempo combinado, iniciaram a aposta.
@@ -24679,16 +24682,17 @@
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=0:5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
 4	ara	ara	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=16:19
 5	tauyupirú	yupirú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=23:30
 6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=31:34
-7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=34:35
-8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=36:38
-9	uyusaã	yusaã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=39:45
-10	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=45:46
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=34:35
+8	tauyusaã	yusaã	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=39:45
+9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=45:46
 
 # sent_id = Casasnovas2006:10:3:122
 # text = Wainambí uruyari sesé nhaãsé kutara uwewé, nhaã pukusá manguarí merupí uwewé.
@@ -25215,7 +25219,7 @@
 5	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	7	aux	_	TokenRange=15:18
 6	ã	ã	PART	PFV	Aspect=Perf	7	advmod	_	TokenRange=19:20
 7	umukameẽ	mukameẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=21:29
-8	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	7	iobj	_	TokenRange=30:32
+8	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	iobj	_	TokenRange=30:32
 9	supé	supé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=33:37
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=37:38
 
@@ -28112,7 +28116,7 @@
 4	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=16:24
 5	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	advcl	_	TokenRange=25:30
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=31:36
-7	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	5	obl	_	ModernCase=Gen|ModernForm=i|TokenRange=37:39
+7	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	5	obl	_	ModernCase=Gen|ModernForm=i|ModernLemma=i|TokenRange=37:39
 8	irumu	irumu	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=40:45
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 
@@ -29265,7 +29269,7 @@
 8	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=36:39
 9	resuantí	suantí	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=40:48
 10	kurí	kurí	PART	FUT	Tense=Fut	9	advmod	_	TokenRange=49:53
-11	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	9	obl	_	ModernCase=Gen|ModernForm=i|TokenRange=54:56
+11	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	9	obl	_	ModernCase=Gen|ModernForm=i|ModernLemma=i|TokenRange=54:56
 12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=57:62
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=62:63
 
@@ -29332,7 +29336,7 @@
 9-10	apurungitá-putari	_	_	_	_	_	_	_	TokenRange=34:51
 9	apurungitá	purungitá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	parataxis	_	_
 10	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	9	aux	_	_
-11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	9	obl	_	TokenRange=52:54
+11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs|Style=Arch	9	obl	_	ModernCase=Gen|ModernForm=i|ModernLemma=i|TokenRange=52:54
 12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=55:60
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=60:61
 
@@ -33781,7 +33785,7 @@
 # text_annotator = LFdeA
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:11
-3	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	iobj	_	TokenRange=12:17
+3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	iobj	_	TokenRange=12:17
 4	supé	supé	ADP	ADP	AdpType=Post	3	case	_	TokenRange=18:22
 5	bênção	bênção	NOUN	N	Number=Sing	2	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=23:29
 6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=29:30
