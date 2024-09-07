@@ -25614,12 +25614,13 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mukũi	mukũi	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:5
 2	yasí	yasí	NOUN	N	Number=Sing	8	obl	_	TokenRange=6:10
 3	riré	riré	ADP	ADP	AdpType=Post	2	case	_	TokenRange=11:15
 4	Kurasí	kurasí	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=16:22
 5	tuyué	tuyué	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=23:28
-6	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=29:35
+6	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=29:35
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	nsubj	_	TokenRange=36:39
 8	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=40:45
 9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=45:46
@@ -25632,6 +25633,7 @@
 # text_orig = Ape, paá, upurandú nhaã mukuitá suí: pembawã pewitika.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -25653,6 +25655,7 @@
 # text_orig = Ixé ambá miríwãté, unheé, paá, Teyú.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	ambá	mbá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	TokenRange=4:8
 3	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:13
@@ -25674,13 +25677,14 @@
 # text_orig = Ixé watái kwaíra mirí twã, unheé, paá, Wakurawá.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	uwatari	watari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	ccomp	_	TokenRange=4:11
 3	kwaíra	kwaíra	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=12:18
 4	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=19:23
 5	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	2	advmod	_	TokenRange=24:26
 6	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=27:29
-7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=29:30
+7	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=29:30
 8	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=31:36
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=36:37
 10	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=38:41
@@ -25696,10 +25700,11 @@
 # text_orig = Aramé yasú yamaã, unheé paá aintá ratía Kurasí.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aramé	aramé	ADV	ADVJ	AdvType=Cau	3	advmod	_	TokenRange=0:5
 2	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	aux	_	TokenRange=6:10
 3	yamaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	5	ccomp	_	SpaceAfter=No|TokenRange=11:16
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=16:17
 5	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=18:23
 6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=24:27
 7	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=28:33
@@ -25718,8 +25723,9 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:371)
+# cross_reference = Avila2021:0:0:371
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -25744,6 +25750,7 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ukanhemu	kanhemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:8
 2	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	1	aux	_	TokenRange=9:12
 3	umbawa	mbawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=13:19
@@ -25764,17 +25771,18 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:5
 2	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	aux	_	TokenRange=6:10
 3	yamaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	ccomp	_	TokenRange=11:16
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:19
 5	yara	yara	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:24
-6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=24:25
+6	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=24:25
 7	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=26:31
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=31:32
 9	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=33:36
 10	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
-11	Wakurawá	wakurawá	NOUN	N	Number=Sing	7	obl	_	TokenRange=38:46
+11	Wakurawá	wakurawá	NOUN	N	Number=Sing	7	iobj	_	TokenRange=38:46
 12	supé	supé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=47:51
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=51:52
 
