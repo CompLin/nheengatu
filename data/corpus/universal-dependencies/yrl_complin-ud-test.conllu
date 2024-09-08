@@ -6425,8 +6425,8 @@
 # text_eng = [...] and whoever troubles you, he will also suffer because of his wickedness.
 # text_por = [...] e quem quer que vos inquiete, ele também sofrerá por causa de sua maldade.
 # text_source = O Novo Testamento em nyengatu, Gálatas 5:10, adap.
-# reviewer1 = Leonel Figueiredo de Alencar
-# reviewer2 = Hélio Leonam Barroso Silva
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
 1	[...]	[...]	PUNCT	ELIP	_	12	punct	_	TokenRange=0:5
 2	asuí	asuí	CCONJ	CCONJ	_	12	cc	_	TokenRange=6:10
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	5	det	_	TokenRange=11:15
@@ -21567,7 +21567,6 @@
 # title_eng = The tortoise and the jaguar
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = LFdeA
-# comment = Juliana, por que você utilizou o atributo text_eng_ggl em vez de text_eng?
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umundéu	mundéu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
 3	yepé	yepé	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=13:17
@@ -23228,7 +23227,7 @@
 # text_por = Eles, então, puseram-se a mastigar piprioca, depois deram um salto em torno de um tronco,
 # text_source = p. 85, No. 8
 # text_orig = Ape paá, tausuú piripiriaka, asuí, tapuri tauyatimana mirá wasú rupitá.
-# text_annotator = JLG
+# text_annotator = Juliana Lopes Gurgel
 # title = Yawaraté mira
 # title_orig = Yawaraté Mira
 # title_por_orig = Gente-onça
@@ -23251,7 +23250,7 @@
 8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=34:35
 9	tapuri	puri	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=39:44
 10	tauyatimana	yatimana	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=48:57
-11	miráwasú	miráwasú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=58:66
+11	miráwasú	mirá	NOUN	N	Degree=Aug|Number=Sing	12	nmod:poss	_	TokenRange=58:66
 12	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	10	obj	_	SpaceAfter=No|TokenRange=67:73
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=73:74
 
