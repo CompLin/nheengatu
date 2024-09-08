@@ -25458,7 +25458,7 @@
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar TODO
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -25466,9 +25466,9 @@
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
 6	Teyú	teyú	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=18:22
 7	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:28
-8	iwaté	iwaté	ADJ	A	_	10	amod	_	TokenRange=29:34
+8	iwaté	iwaté	ADJ	A	_	7	advcl	_	TokenRange=29:34
 9	ã	ã	PART	PFV	Aspect=Perf	8	advmod	_	TokenRange=35:36
-10	kurasí	kurasí	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=37:43
+10	kurasí	kurasí	NOUN	N	Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=37:43
 11	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=43:44
 12	aramé	aramé	ADV	ADVT	AdvType=Tim	17	advmod	_	TokenRange=45:50
 13	katú	katú	PART	FOC	Foc=Yes|PartType=Emp	12	advmod	_	SpaceAfter=No|TokenRange=51:55
@@ -25476,18 +25476,18 @@
 15	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	17	advmod	_	SpaceAfter=No|TokenRange=57:60
 16	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
 17	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=62:65
-18	kaá	kaá	NOUN	N	Number=Sing	17	iobj	_	TokenRange=66:69
+18	kaá	kaá	NOUN	N	Number=Sing	17	obl	_	TokenRange=66:69
 19	kití	kití	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=70:74
-20	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=74:75
-21	iwaté	iwaté	ADJ	A	_	26	amod	_	TokenRange=76:81
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=74:75
+21	iwaté	iwaté	ADJ	A	_	7	parataxis	_	TokenRange=76:81
 22	rẽ	rẽ	PART	IMPF	_	21	advmod	_	SpaceAfter=No|TokenRange=82:84
 23	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=84:85
-24	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	27	advmod	_	SpaceAfter=No|TokenRange=86:89
+24	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	21	advmod	_	SpaceAfter=No|TokenRange=86:89
 25	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=89:90
-26	kurasí	kurasí	NOUN	N	Number=Sing	27	obl	_	TokenRange=91:97
-27	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=98:104
-28	waá	waá	PRON	REL	Number=Sing|PronType=Rel	27	obl	_	TokenRange=105:108
-29	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=109:114
+26	kurasí	kurasí	NOUN	N	Number=Sing	21	nsubj	_	TokenRange=91:97
+27	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	28	advcl:relcl	_	TokenRange=98:104
+28	waá	waá	PRON	REL	Number=Sing|PronType=Rel	21	obl	_	TokenRange=105:108
+29	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	28	parataxis	_	SpaceAfter=No|TokenRange=109:114
 30	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=114:115
 
 # sent_id = Casasnovas2006:11:16:147
@@ -25502,6 +25502,8 @@
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Aape/advt, paá, ta/pron2 rimirikú-itá manha umaã piri/advg nhaã Wakurawá raíra resé/adp, nhaãsé/sconjr umaité resewara/=mf:m|sesewara:h|adp:x|adp, paá, aé/pron murakisara.
 1	Aape	aape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -25518,7 +25520,7 @@
 14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=67:68
 15	nhaãsé	nhaãsé	SCONJ	SCONJR	_	16	mark	_	TokenRange=69:75
 16	umaité	maité	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=76:82
-17	resewara	resewara	SCONJ	SCONJ	Rel=Cont	16	mark	_	SpaceAfter=No|TokenRange=83:91
+17	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	16	obl	_	ModernForm=sesewara|ModernNumber[Grnd]=Sing|ModernPerson[Grnd]=3|ModernRel=Ncont|SpaceAfter=No|TokenRange=83:91
 18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=91:92
 19	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	16	advmod	_	SpaceAfter=No|TokenRange=93:96
 20	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=96:97
@@ -25538,6 +25540,7 @@
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	13	obl	_	TokenRange=0:4
 2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -25550,7 +25553,7 @@
 10	teité	teité	INTJ	INTJ	_	13	discourse	_	SpaceAfter=No|TokenRange=35:40
 11	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=40:41
 12	arupí	arupí	ADV	ADVC	AdvType=Loc	13	advmod	_	TokenRange=42:47
-13	upunhẽ-punhẽ	punhẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=48:60
+13	upunhẽ-punhẽ	punhẽ	VERB	V	Mood=Ind|Person=3|Red=Yes|VerbForm=Fin	0	root	_	TokenRange=48:60
 14	ukara	ukara	NOUN	N	Number=Sing|Rel=Abs	13	obl	_	TokenRange=61:66
 15	rupí	rupí	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=67:71
 16	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=71:72
@@ -25600,20 +25603,21 @@
 # title_por_orig = História do Sol
 # title_eng = Story of the Sun
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	15	ccomp	_	TokenRange=0:5
 2	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=6:10
-3	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=10:11
+3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
-5	paya	paya	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=15:19
+5	paya	paya	NOUN	N	Number=Sing	1	obj	_	TokenRange=15:19
 6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=20:22
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	TokenRange=23:26
-8	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=27:32
+8	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=27:32
 9	pitupituna	pitupituna	ADV	ADVT	AdvType=Tim	8	advmod	_	TokenRange=33:43
 10	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=44:51
 11	arã	arã	SCONJ	SCONJ	_	10	mark	_	TokenRange=52:55
 12	rembaú	mbaú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	10	advcl	_	TokenRange=56:62
 13	arã	arã	SCONJ	SCONJ	_	12	mark	_	SpaceAfter=No|TokenRange=63:66
-14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=66:67
+14	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=66:67
 15	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=68:73
 16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=73:74
 17	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	15	advmod	_	SpaceAfter=No|TokenRange=75:78
@@ -25812,6 +25816,7 @@
 # text_orig = Aápe, paá, aintá usú aintá uwatá kukwera rupí.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aape	aape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
