@@ -33434,6 +33434,16 @@
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=49:52
 12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=52:53
 
+# sent_id = Hartt1938:0:0:93
+# text = Yawara usuú.
+# text_por = O cachorro se mordeu.
+# text_source = p. 325, No. 93
+# text_orig = yauára oyusuú.
+# text_annotator = Dominick Maia Alexandre
+1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	usuú	suú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+
 # sent_id = Hartt1938:0:0:95
 # text = Axari se kisé itapewa árupi.
 # text_eng = I left my knife on the stone.
