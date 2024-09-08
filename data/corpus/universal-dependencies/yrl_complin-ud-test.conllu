@@ -848,14 +848,15 @@
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Alencar2021:0:0:19
-# text = Aikú i irũmu.
+# text = Aikú i irumu.
 # text_eng = I'm with her.
 # text_por = Estou com ela.
 # text_source = Alencar 2021
 # text_annotator = LFdeA
+# text_orig = Aikú i irũmu.
 1	Aikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	cop	_	TokenRange=0:4
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=5:6
-3	irũmu	irũmu	ADP	ADP	AdpType=Post	0	root	_	SpaceAfter=No|TokenRange=7:12
+3	irumu	irumu	ADP	ADP	AdpType=Post	0	root	_	SpaceAfter=No|TokenRange=7:12
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Alencar2021:0:0:20
@@ -1854,12 +1855,13 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Navarro2016:2:2:47
-# text = Aé upitá yepé igara mirĩ upé Maria irũmu.
+# text = Aé upitá yepé igara mirĩ upé Maria irumu.
 # text_eng = He stays in a small canoe with Maria.
 # text_por = Ele fica em uma canoa pequena com Maria.
 # text_source = Lesson 2, p. 16
 # text_annotator = DMA
 # reviewer1 = LFdeA
+# text_orig = Aé upitá yepé igara mirĩ upé Maria irũmu.
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:8
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=9:13
@@ -1867,7 +1869,7 @@
 5	mirĩ	mirĩ	ADJ	A	_	4	amod	_	TokenRange=20:24
 6	upé	upé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=25:28
 7	Maria	maria	PROPN	PROPN	_	2	obl	_	TokenRange=29:34
-8	irũmu	irũmu	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=35:40
+8	irumu	irumu	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=35:40
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Navarro2016:2:3:48
@@ -1998,16 +2000,17 @@
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = Navarro2016:0:0:58
-# text = Pedro uikú Maria irũmu.
+# text = Pedro uikú Maria irumu.
 # text_eng = Peter is with Mary.
 # text_por = Pedro está com Maria.
 # text_source = Lesson 2, p. 17
 # text_annotator = DMA
 # reviewer1 = LFdeA
+# text_orig = Pedro uikú Maria irũmu.
 1	Pedro	pedro	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:5
 2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	3	cop	_	TokenRange=6:10
 3	Maria	maria	PROPN	PROPN	_	0	root	_	TokenRange=11:16
-4	irũmu	irũmu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=17:22
+4	irumu	irumu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=17:22
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = Navarro2016:0:0:59
@@ -2420,7 +2423,7 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Navarro2016:3:1:90
-# text = Maria usemu igara irũmu.
+# text = Maria usemu igara irumu.
 # text_eng = Maria leaves with the canoe.
 # text_por = Maria sai com a canoa.
 # text_source = Lesson 3, p. 21
@@ -2429,10 +2432,11 @@
 # text_annotator = DMA
 # reviewer1 = Vivianne Anselmo Nascimento (VAN)
 # reviewer2 = LFdeA
+# text_orig = Maria usemu igara irũmu.
 1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
 2	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	igara	igara	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:17
-4	irũmu	irũmu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=18:23
+4	irumu	irumu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=18:23
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = Navarro2016:3:2:91
@@ -2881,16 +2885,17 @@
 9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Navarro2016:0:0:123
-# text = Aé usú se irũmu.
+# text = Aé usú se irumu.
 # text_eng = He goes with me.
 # text_por = Ele vai comigo.
 # text_source = Lesson 3, p. 23
 # text_annotator = DMA
 # reviewer1 = LFdeA
+# text_orig = Aé usú se irũmu.
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:6
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obl	_	TokenRange=7:9
-4	irũmu	irũmu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=10:15
+4	irumu	irumu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=10:15
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Navarro2016:0:0:124
@@ -3720,13 +3725,14 @@
 18	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = Navarro2016:4:6:173
-# text = Nhaã tawa ruakí aikwé siía tendawa mira-itá irũmu ukwáu waá nheengatú.
+# text = Nhaã tawa ruakí aikwé siía tendawa mira-itá irumu ukwáu waá nheengatú.
 # text_eng = Near that city there are many communities with people who know Nheengatu.
 # text_por = Perto daquela cidade há muitas comunidades com pessoas que sabem nheengatu.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
 # reviewer2 = LFdeA
+# text_orig = Nhaã tawa ruakí aikwé siía tendawa mira-itá irũmu ukwáu waá nheengatú.
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	tawa	tawa	NOUN	N	Number=Sing	4	obl	_	TokenRange=5:9
 3	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	TokenRange=10:15
@@ -3734,7 +3740,7 @@
 5	siía	siía	DET	INDQ	PronType=Ind	6	det	_	TokenRange=22:26
 6	tendawa	tendawa	NOUN	N	Number=Sing|Rel=Abs	4	nsubj	_	TokenRange=27:34
 7	mira-itá	mira	NOUN	N	Number=Plur	6	nmod	_	TokenRange=35:43
-8	irũmu	irũmu	ADP	ADP	AdpType=Post	7	case	_	TokenRange=44:49
+8	irumu	irumu	ADP	ADP	AdpType=Post	7	case	_	TokenRange=44:49
 9	ukwáu	kwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	acl:relcl	_	TokenRange=50:55
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	TokenRange=56:59
 11	nheengatú	nheengatú	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=60:69
@@ -3755,13 +3761,14 @@
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = Navarro2016:4:8:175
-# text = Aé uwapika, asuí umbaú pirá uí irũmu nhaãsé aé i yumasí.
+# text = Aé uwapika, asuí umbaú pirá uí irumu nhaãsé aé i yumasí.
 # text_eng = She sits down and eats fish with flour because she is hungry.
 # text_por = Ela senta-se e come peixe com farinha porque ela está faminta.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
 # reviewer2 = LFdeA
+# text_orig = Aé uwapika, asuí umbaú pirá uí irũmu nhaãsé aé i yumasí.
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	uwapika	wapika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:10
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
@@ -3769,7 +3776,7 @@
 5	umbaú	mbaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	conj	_	TokenRange=17:22
 6	pirá	pirá	NOUN	N	Number=Sing	5	obj	_	TokenRange=23:27
 7	uí	uí	NOUN	N	Number=Sing	5	obl	_	TokenRange=28:30
-8	irũmu	irũmu	ADP	ADP	AdpType=Post	7	case	_	TokenRange=31:36
+8	irumu	irumu	ADP	ADP	AdpType=Post	7	case	_	TokenRange=31:36
 9	nhaãsé	nhaãsé	SCONJ	SCONJR	_	12	mark	_	TokenRange=37:43
 10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=44:46
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	expl	_	TokenRange=47:48
@@ -3795,26 +3802,27 @@
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = Navarro2016:4:10:177
-# text = Maria umbaú pirá i pú irũmu, ma uú ií i kuya irũmu.
+# text = Maria umbaú pirá i pú irumu, ma uú ií i kuya irumu.
 # text_eng = Maria eats the fish with her hands, but drinks water with her gourd.
 # text_por = Maria come o peixe com suas mãos, mas bebe água com sua cuia.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
 # reviewer1 = DMA
 # reviewer2 = LFdeA
+# text_orig = Maria umbaú pirá i pú irũmu, ma uú ií i kuya irũmu.
 1	Maria	maria	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:5
 2	umbaú	mbaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	pirá	pirá	NOUN	N	Number=Sing	2	obj	_	TokenRange=12:16
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:18
 5	pú	pú	NOUN	N	Number=Sing	2	obl	_	TokenRange=19:21
-6	irũmu	irũmu	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=22:27
+6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=22:27
 7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=27:28
 8	ma	ma	CCONJ	CCONJ	_	9	cc	_	TokenRange=29:31
 9	uú	ú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	conj	_	TokenRange=32:34
 10	ií	ií	NOUN	N	Number=Sing	9	obj	_	TokenRange=35:37
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=38:39
 12	kuya	kuya	NOUN	N	Number=Sing	9	obl	_	TokenRange=40:44
-13	irũmu	irũmu	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=45:50
+13	irumu	irumu	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=45:50
 14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
 
 # sent_id = Navarro2016:4:11:178
