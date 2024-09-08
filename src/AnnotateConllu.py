@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 1, 2024
+# Last update: September 8, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
-from Metadata import Mindlin, PEOPLE
+from Metadata import Mindlin, PEOPLE, mkReviewer
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -1493,6 +1493,69 @@ def separateClitic(data,token=None,hostid=29,tokenlist=None):
     sortTokens(tokenlist)
     print(tokenlist.serialize())
 
+def issue365(sents,lemma='pitérupi',display=False):
+	i=0
+	edited=[]
+	for sent in sents:
+		tk=sent.filter(lemma=lemma, upos='ADP')
+		if tk:
+			separateAdp(tokenlist=sent,lemma=lemma,display=display)
+			edited.append(sent.metadata['sent_id'])
+			i+=1
+	print(f"Total edited sentences: {i}")
+
+def separateAdp(data='',token=None,hostid=0,tokenlist=None,outfile='',lemma='pitérupi',display=False):
+    '''Separate the clitic alomorph of the postposition "upé" attached to a noun such as "pitera" in "pitérupi" with hostid id. See issue #365.
+    '''
+    base=None
+    if data:
+        tokenlist=parse(data)[0]
+    if not hostid:
+        base=tokenlist.filter(lemma=lemma)[0]
+        hostid=base['id']
+    tokenid=hostid+1
+    incrementSentId(tokenlist,tokenid)
+    previous=tokenlist[hostid-2]
+    if not base:
+        base=tokenlist[hostid-1]
+    tk=parseSentence(base['form'])
+    mwt,head,token=tk
+    token['head']=base['id']
+    base['misc'].pop('TokenRange')
+    sp=base['misc'].get('SpaceAfter')
+    for att in ('form','lemma','upos','xpos','feats'):
+        base[att]=head[att]
+    for att in ('head','deprel'):
+        base[att]=previous[att]
+    token['id']=tokenid
+    previous['head']=base['id']
+    previous['deprel']='nmod:poss'
+    dependents=tokenlist.filter(head=previous['id'])
+    for dep in dependents:
+        if dep['deprel'] in ('case','advmod'):
+            dep['head']=hostid
+    tokenlist.insert(hostid,token)
+    mwt['id']=(base['id'],'-',token['id'])
+    if sp:
+        base['misc'].pop('SpaceAfter')
+        misc=mwt.get('misc')
+        if misc:
+            mwt['misc'].update({'SpaceAfter' : sp})
+        else:
+            mwt['misc']=sp
+    if not base.get('misc'):
+        base['misc']=None
+    tokenlist.insert(hostid-1,mwt)
+    incrementTokenRange(tokenlist[tokenid+1:])
+    sortTokens(tokenlist)
+    if outfile:
+        f=open(outfile,'w')
+        print(tokenlist.serialize(),file=f)
+        f.close()
+    elif display:
+        print(tokenlist.serialize())
+    return tokenlist
+    
 def incrementSentId(tokenlist,startid):
 	for token in tokenlist:
 		tokenid=token['id']
@@ -3321,10 +3384,15 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 def eliminateDependentToken(tokenlist,tokenid):
 	tokenlist.pop(tokenid-1)
 	for token in tokenlist:
-		if token['id'] > tokenid:
-			token['id'] = token['id'] -1
-		if token['head'] > tokenid:
-			token['head'] = token['head'] -1
+		if isinstance(token['id'],int):
+			if token['id'] > tokenid:
+				token['id'] = token['id'] -1
+			if token['head'] > tokenid:
+				token['head'] = token['head'] -1
+		elif isinstance(token['id'],tuple):
+				start,hyphen,end = token['id']
+				if int(start) > tokenid:
+					token['id'] = (f"{int(start)-1}",hyphen,f"{int(end)-1}")
 
 def mergePronoun3PP(tokenlist,tokenid,form):
 	updateFeats(tokenlist[tokenid],'Number','Plur')
@@ -3332,27 +3400,74 @@ def mergePronoun3PP(tokenlist,tokenid,form):
 	eliminateDependentToken(tokenlist,tokenid)
 	sortTokens(tokenlist)
 
+def mkVariants(form):
+	variants=set()
+	variants.add(form.replace('é','ẽ'))
+	variants.add(form.replace('ẽ','é'))
+	return variants
+	
 def _mergePronoun3PP(tokenlist):
-	pron3PP=tokenlist.filter(lemma='ta',feats__Number="Plur", feats__Person="3", feats__PronType="Prs")
-	print(pron3PP)
+	edited=False
+	text_orig=tokenlist.metadata.get('text_orig')
+	if not text_orig:
+		return edited
+	pron3PP=tokenlist.filter(lemma='ta',xpos='PRON',feats__Number="Plur", feats__Person="3", feats__PronType="Prs")
+	print('pron3PP', pron3PP)
 	for token in pron3PP:
 		tokenid=token['id']
 		headid=token['head']
-		head=tokenlist.filter(upos='VERB',id=headid)[0]
+		print('tokenid,token,headid: ',tokenid,token,headid)
+		if headid - tokenid != 1:
+			return edited
+		headlist=tokenlist.filter(upos='VERB',id=headid)
+		head=None
+		if headlist:
+			head=headlist[0]
+		else:
+			return edited
 		pronform=token['form']
 		headform=head['form']
 		headlemma=head['lemma']
-		print(head,pronform,headform,headlemma)
-		text_orig=tokenlist.metadata['text_orig']
+		variants=mkVariants(headlemma)
+		print(f"head: {head},pronform: {pronform},headform: {headform}, headlemma: {headlemma}")
 		text=tokenlist.metadata['text']
-		match=re.search(rf"({pronform})(u?)({headlemma})",text_orig)
+		regex=rf"({pronform})(u?)({'|'.join(variants)})"
+		print(regex)
+		match=re.search(regex,text_orig)
+		if not match:
+			text_orig=text_orig.replace('bwé','bué')
+			match=re.search(regex,text_orig)
+		print('match',match)
 		if match:
 			u=match.groups()[1]
 			form=f"{pronform}{u}{headlemma}"
 			newtext=text.replace(f"{pronform} {headform}",form,1)
-			print(form, newtext)
+			print(f"form, newtext {form, newtext}")
 			tokenlist.metadata['text']=text.replace(f"{pronform} {headform}",form)
+			print(f"replaced text: {tokenlist.metadata['text']}")
 			mergePronoun3PP(tokenlist,tokenid,form)
+			edited=True
+			break
+	return edited
+
+def testFunction(sentid):
+	sents=extractConlluSents(TREEBANK_PATH)
+	tokenlist=getSentsWithSentId(sentid,sents)[0]
+	edited=_mergePronoun3PP(tokenlist)
+	return edited,tokenlist
+
+def issue480(sents=[]):
+	if not sents:
+		sents=extractConlluSents(TREEBANK_PATH)
+	edt=[]
+	for tokenlist in sents:
+		edited = _mergePronoun3PP(tokenlist)
+		if isinstance(edited,str):
+			return edited
+		if edited:
+			edt.append(tokenlist.metadata['sent_id'])
+			addReviewer(tokenlist)
+	return edt
 
 def insertFeat(token,newfeat,value):
 	def condition(feat,feats):
@@ -3501,3 +3616,74 @@ def changeAdjToNoun(sent, lemma='kwera'):
 			headnoun['head']=adj['id']
 			headnoun['deprel']='nmod:poss'
 			return True
+		
+def checkPron2(sents=[]):
+	'''Detect sentences with PRON2 in an atypical configuration. See issue #536.
+	'''
+	if not sents:
+		sents=extractConlluSents(TREEBANK_PATH)
+	pron2=[]
+	for sent in sents:
+		results=sent.filter(xpos='PRON2')
+		for r in results:
+			headid=r['head']
+			headlist=sent.filter(id=headid)
+			if headlist and headlist[0]['xpos'] == 'V':
+				case=sent.filter(deprel='case',head=r['id'])
+				if not case:
+					style=r.get('feats').get('Style')
+					if not style:
+						pron2.append(sent.metadata['sent_id'])
+	return pron2
+
+def checkPron(sents=[]):
+	'''Detect sentences with the XPOS tag PRON in an atypical configuration. See issue #536.
+	'''
+	if not sents:
+		sents=extractConlluSents(TREEBANK_PATH)
+	pron=[]
+	for sent in sents:
+		results=sent.filter(xpos='PRON',feats__Person='3')
+		for r in results:
+			case=sent.filter(deprel='case',head=r['id'])
+			if case:
+				style=r.get('feats').get('Style')
+				if not style:
+					pron.append(sent.metadata['sent_id'])
+	return pron
+
+def addReviewer(sent):
+	reviewers=[]
+	d={}
+	for k,v in sent.metadata.items():
+		if k.startswith('reviewer'):
+			reviewers.append(v)
+	c=len(reviewers)
+	if 'LFdeA' in reviewers or 'Leonel Figueiredo de Alencar' in reviewers:
+		pass
+	else:
+		d=mkReviewer('leo',c+1)
+	d['review_status']='ongoing'
+	sent.metadata.update(d)
+	
+def issue536(sents):
+	def repl(t):
+		return t.replace("rũmu","rumu")
+	for sent in sents:
+		error='irũmu'
+		correct='irumu'
+		irumu=sent.filter(lemma=error) or sent.filter(form=error) or sent.filter(form=error.title())
+		if irumu:
+			text_orig = sent.metadata['text']
+			sent.metadata['text']=repl(text_orig)
+			if sent.metadata.get('text_orig'):
+				print(sent.metadata['sent_id'])
+			else:
+				sent.metadata['text_orig']= text_orig
+			for token in sent:
+				if token['lemma']==error:
+					token['lemma']=correct
+				if token['form'].upper()==error.upper():
+					token['form']=f"{error[0]}{correct[1:]}"
+					token['lemma'] = correct
+
