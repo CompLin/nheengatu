@@ -29,6 +29,14 @@ LEXREDUP=set()
 # reduplication tag
 REDUP='RED'
 
+# tag for the middle, passive, reflexive or reciprocal voice
+MEDPASS='MID' # mediopassive voice
+
+# prefix for the middle, passive, reflexive or reciprocal voice
+YU = 'yu'
+
+VOICE={'MID' : 'Mid,Pass', 'ACT' : 'Act'}
+
 # set with all treebank sentences
 TREEBANK_SENTS=[]
 
@@ -354,6 +362,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     case=entry.get('case')
     degree=entry.get('degree')
     derivation=entry.get('derivation')
+    voice=entry.get('voice')
     redup=entry.get('redup')
     aspect=entry.get('aspect')
     tense=entry.get('tense')
@@ -376,6 +385,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         feats['Degree']=f"{degree.title()}"
     if aspect:
         feats['Aspect']=f"{aspect.title()}"
+    if voice:
+        feats['Voice']=VOICE[voice]
     if mood:
         value=f"{mood.title()}"
         if mood == IMPIND:
@@ -1922,19 +1933,45 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     entry=guessVerb(form)
     feats.append(entry['person'])
     number=entry.get('number')
+    mood=entry.get('mood')
     if number:
         feats.append(number)
+    if mood:
+        feats.append(mood)
     tags='+'.join(feats)
     lemma=entry['lemma']
     new['parselist']=[[lemma, tags]]
     return new
+
+def handleMiddlePassive(form):
+	new={}
+	entry=guessVerb(form)
+	if entry['lemma'].startswith(YU):
+		entry['voice']=MEDPASS
+		entry['lemma']=entry['lemma'][len(YU):]
+	parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
+	if parselist:
+		print(entry,serializeEntry(entry))
+		tags=serializeEntry(entry)
+		new['parselist']=[[entry['lemma'],tags]]
+		return new
+	
+def serializeEntry(entry):
+	keys=['pos','derivation','voice','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
+	feats=[]
+	for k in keys:
+		value=entry.get(k)
+		if value:
+			feats.append(value)
+	tags='+'.join(feats)
+	return tags
 
 def handlePartialRedup(form,length,xpos='V'): # TODO: reduplication of adjectives
     new={}
     entry=guessVerb(form)
     lemma=entry['lemma'][length:] # TODO: check if lemma exists in the lexicon
     entry['derivation']=REDUP
-    keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize entry dictionary
+    keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
     feats=[]
     for k in keys:
         value=entry.get(k)
@@ -2491,6 +2528,9 @@ def mkConlluSentence(tokens):
                 newparselist=new['parselist']
             elif tag == '=red':
                 new=handlePartialRedup(form,length)
+                newparselist=new['parselist']
+            elif tag == '=mid':
+                new=handleMiddlePassive(form)
                 newparselist=new['parselist']
             #elif tag == '=r':
             #    mkRoot(tokens.index(old))
