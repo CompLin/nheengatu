@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 27, 2024
+# Last update: September 9, 2024
 
 import re, sys, os, json
 
@@ -386,7 +386,7 @@ def guessVerb(form):
 	entries=[]
 	for prefix in sorted_prefixes:
 		entry={}
-		if form.startswith(prefix):
+		if form.lower().startswith(prefix):
 			entry['pref']=prefix
 			entry.update(process_feats(f"V+{persnum[prefix]}"))
 			start=len(prefix)
@@ -606,7 +606,7 @@ def process_feats(feats):
     'ABS|NCONT|CONT' : 'rel',
     'NFIN' : 'vform', 'AUG|DIM' : 'degree',
     'IMP|IND|IMPIND' : 'mood',
-    'FREQ|HAB':'aspect', 'PRV|COL':'derivation',
+    'FREQ|HAB':'aspect', 'PRV|COL':'derivation', 'MID|ACT' : 'voice', 
     'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case', 'ARCH' : 'style' }
     new={}
     featslist=feats.split('+')
