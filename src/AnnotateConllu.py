@@ -1921,16 +1921,39 @@ def mkAdv(form):
 def mkX(form):
     return [[None, 'X']]
 
+def isInLexicon(lemma,orig):
+    # If orig is None, check if lemma is in the lexicon
+    if orig is None:
+        _isInLexicon(lemma)
+
+def _isInLexicon(lemma='',parselist=[]):
+	if lemma:
+		parselist=getparselist(lemma)
+	else:
+		lemma=parselist[0][0]
+	if len(parselist) == 1 and parselist[0][1] is None:
+		raise Exception(f"Lemma '{lemma}' not found in the lexicon")
+
+def handleOrig(new,lemma,orig, orig_form):
+    if orig_form:
+        new['Orig']=orig_form
+        if not orig:
+                raise Exception(f"Original form '{orig_form}' without original language")
+    if orig:
+        new['OrigLang']=orig
+        if not orig_form:
+            pass # TODO: apply Portuguese spell checker on the lemma 
+    else:
+        _isInLexicon(lemma)
+
 def mkVerb(form,derivation='',orig=None, orig_form=None):
     new={}
     feats=['V']
+    entry=guessVerb(form)
+    lemma=entry['lemma']
+    handleOrig(new,lemma,orig, orig_form)
     if derivation:
         feats.append(derivation)
-    if orig:
-        new['OrigLang']=orig
-    if orig_form:
-        new['Orig']=orig_form
-    entry=guessVerb(form)
     feats.append(entry['person'])
     number=entry.get('number')
     mood=entry.get('mood')
@@ -1939,7 +1962,6 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     if mood:
         feats.append(mood)
     tags='+'.join(feats)
-    lemma=entry['lemma']
     new['parselist']=[[lemma, tags]]
     return new
 
@@ -1950,11 +1972,10 @@ def handleMiddlePassive(form):
 		entry['voice']=MEDPASS
 		entry['lemma']=entry['lemma'][len(YU):]
 	parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
-	if parselist:
-		print(entry,serializeEntry(entry))
-		tags=serializeEntry(entry)
-		new['parselist']=[[entry['lemma'],tags]]
-		return new
+	tags=serializeEntry(entry)
+	_isInLexicon(lemma='',parselist=parselist)
+	new['parselist']=[[entry['lemma'],tags]]
+	return new
 	
 def serializeEntry(entry):
 	keys=['pos','derivation','voice','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
@@ -1966,10 +1987,11 @@ def serializeEntry(entry):
 	tags='+'.join(feats)
 	return tags
 
-def handlePartialRedup(form,length,xpos='V'): # TODO: reduplication of adjectives
+def handlePartialRedup(form,length,xpos='V',orig=None, orig_form=''): # TODO: reduplication of adjectives
     new={}
     entry=guessVerb(form)
     lemma=entry['lemma'][length:] # TODO: check if lemma exists in the lexicon
+    handleOrig(new,lemma,orig, orig_form)
     entry['derivation']=REDUP
     keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
     feats=[]
@@ -2021,6 +2043,8 @@ def getval(key,dic):
     return None
 
 def mkHabXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
+    '''TODO: Possibly deprecated.
+    '''
     if not length:
         length=4
     suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
@@ -2058,10 +2082,7 @@ def mkNoun(form,orig=None,dic={},orig_form=''):
     feats=[]
     new={}
     lemma=form.lower()
-    if orig:
-        new['OrigLang']=orig
-    if orig_form:
-        new['Orig']=orig_form
+    handleOrig(new,lemma,orig, orig_form)
     number=dic.get('number')
     degree=dic.get('degree')
     derivation=dic.get('derivation')
@@ -2081,10 +2102,7 @@ def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name
     form=form.lower()
     feats=[]
     new={}
-    if orig:
-        new['OrigLang']=orig
-    if orig_form:
-        new['Orig']=orig_form
+    handleOrig(new,lemma,orig, orig_form)
     degree=dic.get('degree')
     derivation=dic.get('derivation')
     if degree:
