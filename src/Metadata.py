@@ -1,26 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: July 13, 2024
+# Last update: September 9, 2024
+
+INSTITUTIONS = {'min' : 'Biblioteca Brasiliana Guita e José Mindlin'}
 
 PEOPLE = {
-'gab' : "Gabriela Lourenço Fernandes",
+'gab' : 'Gabriela Lourenço Fernandes',
 'sus': 'Susan Gabriela Huallpa Huanacuni',
 'hel': 'Hélio Leonam Barroso Silva',
 'leo': 'Leonel Figueiredo de Alencar',
 'dom': 'Dominick Maia Alexandre',
 'lev': 'Antônio Levy Melo Nogueira',
 'jul': 'Juliana Lopes Gurgel',
-'mar': 'Marcel Twardowsky Avila'
+'mar': 'Marcel Twardowsky Avila',
+'viv': 'Vivianne Anselmo Nascimento'
 }
-
-INSTITUTIONS = {'min' : 'Biblioteca Brasiliana Guita e José Mindlin'}
 
 ROLES=[ {'scr' : 'transcriber'},
 {'an' : 'annotator', 'optional' : False,
 'description' : '''This the person who performs the annotation, running Yauti on the
- sentence, checking the output for correction, and correcting any detected errors.
- The annotator is also responsible for checking text transcription, modernization, and translation.'''},
+ sentence, checking the output for correction, and fixing any detected errors.
+ The annotator is also responsible for checking text transcription, modernization, and translation,
+ if these attributes are available.'''},
 {'nsl' : 'translator', 'optional' : True,},
 {'mod' : 'modernizer', 'optional' : True},
 {'rev' : 'reviewer', 'optional' : True}
@@ -34,30 +36,30 @@ def getRole(abbreviation='an'):
 			break
 	return role
 
-def mkRole(person='leo', text='text', abbreviation='an'):
+def mkRole(person='leo', text='text', abbreviation='an',institution=''):
 	dic={}
 	role=getRole(abbreviation)
-	dic[f"{'_'.join([text,role])}"]=PEOPLE[person]
+	person=PEOPLE[person]
+	if institution:
+		person=f"{', '.join([person,INSTITUTIONS[institution]])}"
+	dic[f"{'_'.join([text,role])}"]=person
 	return dic
 
-def mkTextModernizer(person='hel',text='text_por'):
-	return mkRole(person, text, 'mod')
+def mkTextModernizer(person='hel',text='text_por',institution=''):
+	return mkRole(person, text, 'mod',institution)
 
-def mkAnnotator(person='dom',text='text'):
-	return mkRole(person, text, 'an')
+def mkAnnotator(person='dom',text='text',institution=''):
+	return mkRole(person, text, 'an',institution)
 
 def mkReviewer(person='jul', number=1):
 	return {f"{getRole('rev')}{number}" : PEOPLE[person]}
 
-def mkTranscriber(person='gab',text='text_orig',modernizer=True, translation='por'):
-	dic=mkRole(person=person, text=text, abbreviation='scr')
+def mkTranscriber(person='gab',text='text_orig',modernizer=True, translation='por',institution=''):
+	dic=mkRole(person=person, text=text, abbreviation='scr',institution=institution)
 	if modernizer:
-		dic.update(mkTextModernizer(person,f"text_{translation}"))
+		dic.update(mkTextModernizer(person,f"text_{translation}",institution))
 	return dic
 
-def Mindlin(person='gab',institution='min',modernizer=True):
-	person=PEOPLE[person]
-	institution=INSTITUTIONS[institution]
-	person=f"{person}, {institution}"
-	transcriber=mkTranscriber(person, modernizer=True)
+def Mindlin(person='gab',modernizer=True):
+	transcriber=mkTranscriber(person, modernizer=True,institution='min')
 	return transcriber
