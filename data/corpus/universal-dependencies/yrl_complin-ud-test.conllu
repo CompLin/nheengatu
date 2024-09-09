@@ -33435,14 +33435,18 @@
 12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=52:53
 
 # sent_id = Hartt1938:0:0:93
-# text = Yawara usuú.
+# text = Yawara uyusuú.
 # text_por = O cachorro se mordeu.
+# text_eng = TODO
 # text_source = p. 325, No. 93
 # text_orig = yauára oyusuú.
 # text_annotator = Dominick Maia Alexandre
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar 
 1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	usuú	suú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:11
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
+2	uyusuú	suú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=7:13
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = Hartt1938:0:0:95
 # text = Axari se kisé itapewa árupi.
