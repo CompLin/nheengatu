@@ -25239,24 +25239,19 @@
 10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Casasnovas2006:11:9:140
-# text = Teyú supé, paá, usú umukameẽ yepé iwité wakú-iwa, nhaãsé umaã, paá, Teyú tipusimanha upaka, paá, iwaté wã kurasí.
+# text = Teyú supé, paá, usú umukameẽ yepé iwité wakutiwa, nhaãsé umaã, paá, Teyú tipusimanha upaka, paá, iwaté wã kurasí.
 # text_eng = TODO
-# text_eng_ggl = For Calango it showed a dry land that has a lot of uacu. Because he saw Calango who was sleepy and woke up very late
-# text_por = Para o Calango mostrou uma terra firme que tem muito uacu. Porque viu o Calango que era sonolento e desperta já bem tarde
+# text_por = Para o Calango mostrou uma terra firme que tem muito uacu. Porque viu o Calango que era sonolento e desperta já bem tarde.
+# text_por_orig = Para o Calango mostrou uma terra firme que tem muito uacu. Porque viu o Calango que era sonolento e desperta já bem tarde
 # text_source = p. 94-95, No. 10-11
 # text_orig = Teyú supé, paá, usú umukameé yepé iwité wakutiwa, nhasé umaã, paá,Teyú tipusí manha upaka, paá, iwatéwã kurasí.
-# text_annotator = JLG
-# title = Kurasí resewara
-# title_orig = Kurasí Resewara
-# title_por_orig = História do Sol
-# title_eng = Story of the Sun
+# text_annotator = Juliana Lopes Gurgel
 # text_sec = Nhaãsé umaã paá teyú, tipusimanha, upaka paá iwaté wã kurasí.
-# text_por_sec = Porque viu que o calango, dorminhoco, acordava já com o Sol alto.
-# text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
+# text_por_orig_sec = Porque viu que o calango, dorminhoco, acordava já com o Sol alto.
+# text_sec_source = Avilwakutiwaa (2021)
+# text_por_orig_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Teyú	teyú	NOUN	N	Number=Sing	7	iobj	_	TokenRange=0:4
 2	supé	supé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=5:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -25266,7 +25261,7 @@
 7	umukameẽ	mukameẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=20:28
 8	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	9	det	_	TokenRange=29:33
 9	iwité	iwité	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=34:39
-10	wakú-iwa	wakú-iwa	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=40:48
+10	wakutiwa	wakú	NOUN	N	Derivation=Coll|Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=40:48
 11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=48:49
 12	nhaãsé	nhaãsé	SCONJ	SCONJR	_	13	mark	_	TokenRange=50:56
 13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	SpaceAfter=No|TokenRange=57:61
