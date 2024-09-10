@@ -25836,6 +25836,124 @@
 10	rupí	rupí	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=41:45
 11	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=45:46
 
+# sent_id = Casasnovas2006:11:30:161
+# text = Aintá usika, paá, pitérupi aintá umaã, paá, isima mirĩ, mamé, paá, muíri ara Wakurawá usuwera ukiri.
+# text_eng = TODO
+# text_por = Chegando lá no meio viram um lugar limpo onde todos os dias o Bacurau ia dormir.
+# text_source = p. 95, No. 39-40
+# text_orig = Aintá usika, paá, pitérupi aintá umaã, paá, isima mirí, mamé, paá, muíri ara Wakurawá usuwera ukiri.
+# text_orig = Kuíri yasu yamaã neyara, unheé, paá, Wakurawá supé.
+# text_sec = [...] aintá umaã paá isima mirĩ mamé paá muíri ara wakurawá usuwera ukiri.
+# text_por_sec = [...] eles viram um pequeno lugar limpo onde todos os dias o bacurau ia dormir.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:11
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	SpaceAfter=No|TokenRange=13:16
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
+6-7	pitérupi	_	_	_	_	_	_	_	TokenRange=18:26
+6	pitera	pitera	NOUN	N	Number=Sing	2	obl	_	_
+7	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
+8	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	nsubj	_	TokenRange=27:32
+9	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=33:37
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=37:38
+11	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=39:42
+12	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=42:43
+13	isima	isima	NOUN	N	Number=Sing	9	obj	_	TokenRange=44:49
+14	mirĩ	mirĩ	ADJ	A	_	13	amod	_	SpaceAfter=No|TokenRange=50:54
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=54:55
+16	mamé	mamé	ADV	ADVLC	AdvType=Loc|PronType=Rel	25	advmod	_	SpaceAfter=No|TokenRange=56:60
+17	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=60:61
+18	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	25	advmod	_	SpaceAfter=No|TokenRange=62:65
+19	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=65:66
+20	muíri	muíri	DET	TOT	PronType=Tot	21	det	_	TokenRange=67:72
+21	ara	ara	NOUN	N	Number=Sing	25	obl	_	TokenRange=73:76
+22	Wakurawá	wakurawá	NOUN	N	Number=Sing	25	nsubj	_	TokenRange=77:85
+23-24	usuwera	_	_	_	_	_	_	_	TokenRange=86:93
+23	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	25	aux	_	_
+24	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	25	advmod	_	_
+25	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	acl:relcl	_	SpaceAfter=No|TokenRange=94:99
+26	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=99:100
+
+# sent_id = Casasnovas2006:11:31:162
+# text = Aape, paá, Kurasí tuyué i piaíwa upurandú Wakurawá suí: Anhuntẽ ne murakí kwá.
+# text_eng = TODO
+# text_por = Aí o velho Sol ficou bravo e perguntou a Bacurau: Somente isto é o seu trabalho?
+# text_source = p. 96, No. 41-42
+# text_orig = Aápe, paá, Kurasí tuyué ipiaíwa upurandú Wakurawá suí: Anhute ne muraki kwa.
+# text_sec = Anhuntẽ ne murakí kwá?
+# text_por_sec = É só isso o seu trabalho?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Aape	aape	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	Kurasí	kurasí	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=11:17
+6	tuyué	tuyué	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=18:23
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	expl	_	TokenRange=24:25
+8	piaíwa	piaíwa	VERB	V2	_	0	root	_	TokenRange=26:32
+9	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=33:41
+10	Wakurawá	wakurawá	NOUN	N	Number=Sing	9	obl	_	TokenRange=42:50
+11	suí	suí	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=51:54
+12	:	:	PUNCT	PUNCT	_	15	punct	_	TokenRange=54:55
+13	Anhuntẽ	anhuntẽ	ADV	ADV	_	15	advmod	_	TokenRange=56:63
+14	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=64:66
+15	murakí	murakí	NOUN	N	Number=Sing	9	ccomp	_	TokenRange=67:73
+16	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	15	nsubj	_	SpaceAfter=No|TokenRange=74:77
+17	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=77:78
+
+# sent_id = Casasnovas2006:11:32:163
+# text = Umbaá rẽ ambá, anheẽ rakú indé arã, unheẽ, paá, Wakurawá.
+# text_eng = TODO
+# text_por = Ainda não terminei, eu lhe falei, disse o Bacurau.
+# text_source = p. 96, No. 43
+# text_orig = Umbaré ambá, anheé rakú indé arã, unheé, paá, Wakurawá
+# text_sec =  ― Anhunté ne murakí kwá? ― Umbaá rẽ ambá, anheẽ rakú indé arã, [...].
+# text_por_sec = ― É só isso o seu trabalho? ― Eu ainda não terminei, eu te disse, [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Umbaá	umbaá	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:5
+2	rẽ	rẽ	PART	IMPF	_	3	advmod	_	TokenRange=6:8
+3	ambá	mbá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	ccomp	_	SpaceAfter=No|TokenRange=9:13
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
+5	anheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	10	ccomp	_	TokenRange=15:20
+6	rakú	rakú	PART	CERT	PartType=Mod	5	advmod	_	TokenRange=21:25
+7	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	5	iobj	_	TokenRange=26:30
+8	arã	arã	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=31:34
+9	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=34:35
+10	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=36:41
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=41:42
+12	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	SpaceAfter=No|TokenRange=43:46
+13	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=46:47
+14	Wakurawá	wakurawá	NOUN	N	Number=Sing	10	nsubj	_	SpaceAfter=No|TokenRange=48:56
+15	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=56:57
+
+# sent_id = Casasnovas2006:11:33:164
+# text = Indé yepé atimamanha.
+# text_eng = TODO
+# text_por = Você é preguiçoso,
+# text_source = p. 96, No. 44
+# text_orig = Indé yepé atima manha.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Indé yepé/art atimamanha/n@.
+1	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	3	nsubj	_	TokenRange=0:4
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=5:9
+3	atimamanha	atimamanha	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=10:20
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
 # sent_id = Casasnovas2006:7:1:1
 # text = Yepé ara paá taína-itá taunheẽ ta ramunha tamakwarí tuyué supé: — Abú, puxiwera paá marandua yandé.
 # text_eng = One day, they say, children said to their grandfather, old Tamaquari: "Grandpa, we have bad news.
