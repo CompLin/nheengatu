@@ -25949,6 +25949,297 @@
 3	atimamanha	atimamanha	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=10:20
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# sent_id = Casasnovas2006:11:34:165
+# text = Rewatá kurí remuatiri ara kiasá rembaú arã ne raíra-itá irumu, unheẽ, paá, i xupé Kurasí.
+# text_eng = TODO
+# text_por = você vai andar juntando sujeira do ar para comer com seus filhos, falou o Sol para ele.
+# text_source = p. 96, No. 44-45
+# text_orig = Rewatá kurí remuatiri ara kiasá rembaú arã ne rairaitá irumu, unheé, paá, ixupé Kurasí.
+# text_sec =  Rewatá kurí remuatiri ara kiasawa.
+# text_por_sec = Você vai andar juntando sujeira do ar.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Rewatá	watá	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	12	ccomp	_	TokenRange=0:6
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
+3	remuatiri	muatiri	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=12:21
+4	ara	ara	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=22:25
+5	kiasá	kiasá	NOUN	N	Number=Sing	3	obj	_	TokenRange=26:31
+6	rembaú	mbaú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	advcl	_	TokenRange=32:38
+7	arã	arã	SCONJ	SCONJ	_	6	mark	_	TokenRange=39:42
+8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=43:45
+9	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	6	obl	_	TokenRange=46:55
+10	irumu	irumu	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=56:61
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=61:62
+12	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=63:68
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=68:69
+14	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	12	advmod	_	SpaceAfter=No|TokenRange=70:73
+15	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=73:74
+16	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	obl	_	TokenRange=75:76
+17	xupé	xupé	ADP	ADP	AdpType=Post	16	case	_	TokenRange=77:81
+18	Kurasí	kurasí	NOUN	N	Number=Sing	12	nsubj	_	SpaceAfter=No|TokenRange=82:88
+19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=88:89
+
+# sent_id = Casasnovas2006:12:1:167
+# text = Kuxiima, paá, aikwé siiya mira-itá, amú-itá ta mirasawa Tupí, amú-itá Baré.
+# text_eng = TODO
+# text_por = Antigamente existiam muitas tribos indígenas, como a dos Tupi e outra dos Baré.
+# text_source = p. 98, No. 1
+# text_orig = Kuxiíma, paá, aikwé siía miraitá, amuitá ta mirasawa Tupí, amuitá Baré.
+# text_sec =  Kuxiima paá aikwé siiya mira-itá, amú-itá ta mirasawa tupí, amú-itá baré.
+# text_por_sec = Antigamente havia muitas pessoas, algumas eram do povo tupi, outras eram barés.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# title = Urubú, wirawasú
+# title_orig = Urubú, Wirá-Wasú
+# title_por_orig = O urubu e o gavião
+# title_eng = The vulture and the hawk
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=12:13
+5	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=14:19
+6	siiya	siiya	DET	INDQ	PronType=Ind	7	det	_	TokenRange=20:25
+7	mira-itá	mira	NOUN	N	Number=Plur	5	nsubj	_	SpaceAfter=No|TokenRange=26:34
+8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=34:35
+9	amú-itá	amú	DET	IND	Number=Plur|PronType=Ind	11	det	_	TokenRange=36:43
+10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	expl	_	TokenRange=44:46
+11	mirasawa	mirasawa	NOUN	N	Number=Sing	7	appos	_	TokenRange=47:58
+12	Tupí	tupí	NOUN	N	Number=Sing	11	nmod:poss	_	SpaceAfter=No|TokenRange=56:60
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
+14	amú-itá	amú	DET	IND	Number=Plur|PronType=Ind	15	det	_	TokenRange=62:69
+15	Baré	baré	NOUN	N	Number=Sing	7	appos	_	SpaceAfter=No|TokenRange=70:74
+16	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=74:75
+
+# sent_id = Casasnovas2006:12:2:168
+# text = Nhaã-itá, paá, ti ta uyumeẽ puranga.
+# text_eng = TODO
+# text_por = Ambas tribos eram rivais.
+# text_source = p. 98, No. 2
+# text_orig = Nhaaitá, paá, ti ta uyumeé puranga.
+# text_sec =  Nhaã-itá paá ti ta uyumeẽ puranga.
+# text_por_sec = Aqueles [povos] não se davam bem.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Nhaã-itá	nhaã	PRON	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	7	nsubj	_	SpaceAfter=No|TokenRange=0:8
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=10:13
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
+5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=15:17
+6	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	expl	_	TokenRange=18:20
+7	uyumeẽ	yumeẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=21:27
+8	puranga	puranga	ADV	ADVA	AdvType=Man	7	advmod	_	SpaceAfter=No|TokenRange=28:35
+9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Casasnovas2006:12:3:169
+# text = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé kunhã-itá i sera waá Adana.
+# text_eng = TODO
+# text_por = Na tribo Tupi, havia uma índia cujo nome era ADANA.
+# text_por_orig = Na tribo Tupi, havia uma índia cujo nome era ADANA,
+# text_source = p. 98, No. 3
+# text_orig = Nhaã Tupí miraitá pitérupi, paá, aikwé yepé kunhaitãi sera waá Adana.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
+2	Tupí	tupí	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:9
+3	mira-itá	mira	NOUN	N	Number=Plur	4	nmod:poss	_	TokenRange=10:18
+4-5	pitérupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=19:27
+4	pitera	pitera	NOUN	N	Number=Sing	9	obl	_	_
+5	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=27:28
+7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=29:32
+8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=32:33
+9	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=34:39
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	9	nsubj	_	TokenRange=40:44
+11	kunhã-itá	kunhã	NOUN	N	Number=Plur	10	nmod	_	TokenRange=45:54
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=55:56
+13	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	nsubj	_	TokenRange=59:63
+14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nmod:poss	_	TokenRange=62:65
+15	Adana	adana	PROPN	PROPN	_	10	acl:relcl	_	SpaceAfter=No|TokenRange=66:71
+16	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=71:72
+
+# sent_id = Casasnovas2006:12:4:170
+# text = I paya, paá, yepé tuxawa ukwawa piri waá panhẽ mira suí.
+# text_eng = TODO
+# text_por = Filha de um tuxawa, o mais célebre de todos os tuxawas.
+# text_por_orig = filha de um tuxawa, o mais célebre de todos os tuxawas.
+# text_source = p. 98, No. 4
+# text_orig = Ipaya, paá, yepé tuxawa ukwawa piri waá panhé mira suí.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
+2	paya	paya	NOUN	N	Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=2:6
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=6:7
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=8:11
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
+6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=13:17
+7	tuxawa	tuxawa	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=18:24
+8	ukwawa	kwawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=25:31
+9	piri	piri	ADV	ADVG	AdvType=Deg	8	advmod	_	TokenRange=32:36
+10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nsubj	_	TokenRange=37:40
+11	panhẽ	panhẽ	DET	TOT	PronType=Tot	12	det	_	TokenRange=41:46
+12	mira	mira	NOUN	N	Number=Sing	8	advcl:relcl	_	TokenRange=47:51
+13	suí	suí	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=52:55
+14	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=55:56
+
+# sent_id = Casasnovas2006:12:6:172
+# text = Adana, paá, uyumunhã, usú uikú, upitá yepé kunhamukú puranga, puranga piri panhẽ kunhamukú suí.
+# text_eng = TODO
+# text_por = Adana cresceu e tomou-se uma linda índia, a mais bonita de todas as moças.
+# text_source = p. 98, No. 7-8
+# text_orig = Adana, paá, uyumunhã, usú uikú, upitá yepé kunhã-mukú puranga, puranga piri panhé kunhã-mukú suí.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Adana	adana	PROPN	PROPN	_	5	nsubj	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=10:11
+5	uyumunhã	yumunhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:20
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=20:21
+7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	TokenRange=22:25
+8	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=26:30
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=30:31
+10	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=32:37
+11	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	12	det	_	TokenRange=38:42
+12	kunhamukú	kunhamukú	NOUN	N	Number=Sing	10	obj	_	TokenRange=43:52
+13	puranga	puranga	ADJ	A	_	12	amod	_	SpaceAfter=No|TokenRange=53:60
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
+15	puranga	puranga	ADJ	A	_	12	acl:relcl	_	TokenRange=62:69
+16	piri	piri	ADV	ADVG	AdvType=Deg	15	advmod	_	TokenRange=70:74
+17	panhẽ	panhẽ	DET	TOT	PronType=Tot	18	det	_	TokenRange=75:80
+18	kunhamukú	kunhamukú	NOUN	N	Number=Sing	15	obl	_	TokenRange=81:90
+19	suí	suí	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=91:94
+20	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=94:95
+
+# sent_id = Casasnovas2006:12:7:173
+# text = Nhaã, paá, amú mira-itá pitérupi aikwé yepé kurumiwasú, ti usikié ne maã suí, sera, paá, Buburi.
+# text_eng = TODO
+# text_por = Numa outra tribo, havia um jovem muito valente, chamado Buburi.
+# text_source = p. 98, No. 9
+# text_orig = Nhaã, paá, amú miraitá pitérupi aikwé yepé kurumĩ-wasú, ti usikié ne maã suí, sera, paá, Buburi.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	amú	amú	DET	IND	Number=Sing|PronType=Ind	6	det	_	TokenRange=11:14
+6	mira-itá	mira	NOUN	N	Number=Plur	7	nmod:poss	_	TokenRange=15:23
+7-8	pitérupi	_	_	_	_	_	_	_	TokenRange=24:32
+7	pitera	pitera	NOUN	N	Number=Sing	9	obl	_	_
+8	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	7	case	_	_
+9	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=33:38
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=39:43
+11	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	9	nsubj	_	SpaceAfter=No|TokenRange=44:54
+12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=54:55
+13	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	14	advmod	_	TokenRange=56:58
+14	usikié	sikié	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=59:65
+15	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	16	advmod	_	TokenRange=68:70
+16	maã	maã	NOUN	N	Number=Sing	14	obl	_	TokenRange=69:72
+17	suí	suí	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=73:76
+18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=76:77
+19	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	23	nsubj	_	SpaceAfter=No|TokenRange=80:84
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=82:83
+21	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	14	advmod	_	SpaceAfter=No|TokenRange=84:87
+22	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=87:88
+23	Buburi	buburi	PROPN	PROPN	_	11	acl:relcl	_	SpaceAfter=No|TokenRange=89:95
+24	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=95:96
+
+# sent_id = Casasnovas2006:12:8:174
+# text = Yepé ara, paá, nhaã Buburi uwatá, usú upinaitika, umaã Adana.
+# text_eng = TODO
+# text_por = Ele, numa de suas pescarias, viu Adana e gostou dela.
+# text_source = p. 98, No. 10
+# text_orig = Yepé ara, paá, nhaã Buburi uwatá, usú upinaitika, umaá Adana.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=10:13
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=15:19
+7	Buburi	buburi	PROPN	PROPN	_	8	nsubj	_	TokenRange=20:26
+8	uwatá	watá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=27:32
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=32:33
+10	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	11	aux	_	TokenRange=34:37
+11	upinaitika	pinaitika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=38:48
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=48:49
+13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=50:54
+14	Adana	adana	PROPN	PROPN	_	13	obj	_	SpaceAfter=No|TokenRange=55:60
+15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
+
+# sent_id = Casasnovas2006:12:9:175
+# text = Aápe, paá, aintá, uyusuantí, ta uyupirú ta upurungitá
+# text_eng = TODO
+# text_por = Ele, numa de suas pescarias, viu Adana e gostou dela.
+# text_source = p. 98, No. 11
+# text_orig = Aápe, paá, aintá, uyuswantí, ta uyupirú ta upurungitá
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Aape	aape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No|TokenRange=11:16
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
+7	uyusuantí	suantí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=18:27
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=27:28
+9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	expl	_	TokenRange=29:31
+10	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=32:39
+11	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	expl	_	TokenRange=40:42
+12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=43:53
+13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Casasnovas2006:12:10:176
+# text = Asuí, paá, Adana umbeú Buburi supé aé urikuté umendari arã Kurukuí irumu.
+# text_eng = TODO
+# text_por = Adana disse a Buburi que estava comprometida com Kurukuí,
+# text_source = p. 99, No. 12
+# text_orig = Asuí, paá, Adana umbeú Buburi supé aé urikuté umendari arã Kurukuí irumu.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
+5	Adana	adana	PROPN	PROPN	_	6	nsubj	_	TokenRange=11:16
+6	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:22
+7	Buburi	buburi	PROPN	PROPN	_	6	obl	_	TokenRange=23:29
+8	supé	supé	ADP	ADP	AdpType=Post	7	case	_	TokenRange=30:34
+9	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=35:37
+10	urikuté	rikuté	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=38:45
+11	umendari	mendari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=46:54
+12	arã	arã	SCONJ	SCONJ	_	11	mark	_	TokenRange=55:58
+13	Kurukuí	kurukuí	PROPN	PROPN	_	11	obl	_	TokenRange=59:66
+14	irumu	irumu	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=67:72
+15	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=72:73
+
+# sent_id = Casasnovas2006:12:11:177
+# text = Aé, paá, ti uputari Kurukuí i mena arã.
+# text_eng = TODO
+# text_por = Mas não gostava de seu futuro esposo.
+# text_source = p. 99, No. 13
+# text_orig = Aé, paá, ti uputái Kurukuí imena arã.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=0:2
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=2:3
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=4:7
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
+5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=9:11
+6	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:19
+7	Kurukuí	kurukuí	PROPN	PROPN	_	6	obj	_	TokenRange=20:27
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=28:29
+9	mena	mena	NOUN	N	Number=Sing	6	obj	_	TokenRange=30:34
+10	arã	arã	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=33:36
+11	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
+
 # sent_id = Casasnovas2006:7:1:1
 # text = Yepé ara paá taína-itá taunheẽ ta ramunha tamakwarí tuyué supé: — Abú, puxiwera paá marandua yandé.
 # text_eng = One day, they say, children said to their grandfather, old Tamaquari: "Grandpa, we have bad news.
