@@ -25961,6 +25961,7 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Rewatá	watá	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	12	ccomp	_	TokenRange=0:6
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
 3	remuatiri	muatiri	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=12:21
@@ -25971,12 +25972,12 @@
 8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=43:45
 9	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	6	obl	_	TokenRange=46:55
 10	irumu	irumu	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=56:61
-11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=61:62
+11	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=61:62
 12	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=63:68
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=68:69
 14	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	12	advmod	_	SpaceAfter=No|TokenRange=70:73
 15	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=73:74
-16	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	obl	_	TokenRange=75:76
+16	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	iobj	_	TokenRange=75:76
 17	xupé	xupé	ADP	ADP	AdpType=Post	16	case	_	TokenRange=77:81
 18	Kurasí	kurasí	NOUN	N	Number=Sing	12	nsubj	_	SpaceAfter=No|TokenRange=82:88
 19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=88:89
@@ -25997,6 +25998,7 @@
 # title_por_orig = O urubu e o gavião
 # title_eng = The vulture and the hawk
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -26004,14 +26006,14 @@
 5	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=14:19
 6	siiya	siiya	DET	INDQ	PronType=Ind	7	det	_	TokenRange=20:25
 7	mira-itá	mira	NOUN	N	Number=Plur	5	nsubj	_	SpaceAfter=No|TokenRange=26:34
-8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=34:35
+8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=34:35
 9	amú-itá	amú	DET	IND	Number=Plur|PronType=Ind	11	det	_	TokenRange=36:43
-10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	expl	_	TokenRange=44:46
-11	mirasawa	mirasawa	NOUN	N	Number=Sing	7	appos	_	TokenRange=47:58
-12	Tupí	tupí	NOUN	N	Number=Sing	11	nmod:poss	_	SpaceAfter=No|TokenRange=56:60
+10	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=44:46
+11	mirasawa	mirasawa	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=47:58
+12	Tupí	tupí	NOUN	N	Number=Sing	5	parataxis	_	SpaceAfter=No|TokenRange=56:60
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
-14	amú-itá	amú	DET	IND	Number=Plur|PronType=Ind	15	det	_	TokenRange=62:69
-15	Baré	baré	NOUN	N	Number=Sing	7	appos	_	SpaceAfter=No|TokenRange=70:74
+14	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	15	nsubj	_	TokenRange=62:69
+15	Baré	baré	NOUN	N	Number=Sing	5	parataxis	_	SpaceAfter=No|TokenRange=70:74
 16	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=74:75
 
 # sent_id = Casasnovas2006:12:2:168
@@ -26026,6 +26028,7 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã-itá	nhaã	PRON	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	7	nsubj	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=10:13
@@ -26037,14 +26040,14 @@
 9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Casasnovas2006:12:3:169
-# text = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé kunhã-itá i sera waá Adana.
+# text = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé kunhatãi sera waá Adana.
 # text_eng = TODO
 # text_por = Na tribo Tupi, havia uma índia cujo nome era ADANA.
-# text_por_orig = Na tribo Tupi, havia uma índia cujo nome era ADANA,
 # text_source = p. 98, No. 3
 # text_orig = Nhaã Tupí miraitá pitérupi, paá, aikwé yepé kunhaitãi sera waá Adana.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	Tupí	tupí	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:9
 3	mira-itá	mira	NOUN	N	Number=Plur	4	nmod:poss	_	TokenRange=10:18
@@ -26055,13 +26058,12 @@
 7	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	SpaceAfter=No|TokenRange=29:32
 8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=32:33
 9	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=34:39
-10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	9	nsubj	_	TokenRange=40:44
-11	kunhã-itá	kunhã	NOUN	N	Number=Plur	10	nmod	_	TokenRange=45:54
-12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=55:56
-13	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	nsubj	_	TokenRange=59:63
-14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nmod:poss	_	TokenRange=62:65
-15	Adana	adana	PROPN	PROPN	_	10	acl:relcl	_	SpaceAfter=No|TokenRange=66:71
-16	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=71:72
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=40:44
+11	kunhatãi	kunhatãi	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=45:53
+12	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	14	nsubj	_	TokenRange=56:60
+13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nmod:poss	_	TokenRange=59:62
+14	Adana	adana	PROPN	PROPN	_	11	acl:relcl	_	SpaceAfter=No|TokenRange=63:68
+15	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=68:69
 
 # sent_id = Casasnovas2006:12:4:170
 # text = I paya, paá, yepé tuxawa ukwawa piri waá panhẽ mira suí.
@@ -26091,26 +26093,27 @@
 # sent_id = Casasnovas2006:12:6:172
 # text = Adana, paá, uyumunhã, usú uikú, upitá yepé kunhamukú puranga, puranga piri panhẽ kunhamukú suí.
 # text_eng = TODO
-# text_por = Adana cresceu e tomou-se uma linda índia, a mais bonita de todas as moças.
+# text_por = Adana cresceu e tornou-se uma linda índia, a mais bonita de todas as moças.
 # text_source = p. 98, No. 7-8
 # text_orig = Adana, paá, uyumunhã, usú uikú, upitá yepé kunhã-mukú puranga, puranga piri panhé kunhã-mukú suí.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Adana	adana	PROPN	PROPN	_	5	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=10:11
 5	uyumunhã	yumunhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:20
-6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=20:21
-7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	TokenRange=22:25
-8	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	SpaceAfter=No|TokenRange=26:30
-9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=30:31
+6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=20:21
+7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	TokenRange=22:25
+8	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	SpaceAfter=No|TokenRange=26:30
+9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=30:31
 10	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=32:37
 11	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	12	det	_	TokenRange=38:42
-12	kunhamukú	kunhamukú	NOUN	N	Number=Sing	10	obj	_	TokenRange=43:52
+12	kunhamukú	kunhamukú	NOUN	N	Number=Sing	10	xcomp	_	TokenRange=43:52
 13	puranga	puranga	ADJ	A	_	12	amod	_	SpaceAfter=No|TokenRange=53:60
 14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
-15	puranga	puranga	ADJ	A	_	12	acl:relcl	_	TokenRange=62:69
+15	puranga	puranga	ADJ	A	_	13	conj	_	TokenRange=62:69
 16	piri	piri	ADV	ADVG	AdvType=Deg	15	advmod	_	TokenRange=70:74
 17	panhẽ	panhẽ	DET	TOT	PronType=Tot	18	det	_	TokenRange=75:80
 18	kunhamukú	kunhamukú	NOUN	N	Number=Sing	15	obl	_	TokenRange=81:90
