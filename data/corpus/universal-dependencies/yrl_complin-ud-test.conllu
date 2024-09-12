@@ -13666,14 +13666,14 @@
 # text_por = Depois disso, contam, ela ficou feliz com seu marido.
 # text_source = Rodrigues, 46, adap.
 # text_annotator = LFdeA
-1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
-2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
-3	surí	rurí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=9:13
-4	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=14:19
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=5:8
+3	surí	rurí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	xcomp	_	TokenRange=9:13
+4	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
 5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=20:21
-6	mena	mena	NOUN	N	Number=Sing	4	obl	_	TokenRange=22:26
+6	mena	mena	NOUN	N	Number=Sing	3	obl	_	TokenRange=22:26
 7	irumu	irumu	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=27:32
-8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Avila2021:40:1:486
 # text = Yupirungá upé kwá tetama urikú kwera sera "Bitiro Ponta", nheengatú rupí yepé wirá-mirĩ rera.
@@ -27452,6 +27452,60 @@
 11	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	12	det	_	TokenRange=49:53
 12	apigawa	apigawa	NOUN	N	Number=Sing	9	conj	_	SpaceAfter=No|TokenRange=54:61
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=61:62
+
+# sent_id = Rodrigues1890:1-2-3:130:130
+# text = Aintá usika ramé samunha retama pupé, nhaã kurumĩ mirĩ upisika yepé itawasú uyapí nhaã uka pupé i pewa katú puitá, kunhã-etá ikú aape uyana upaĩ axií, nhaã itá wari i pusesawa irumu umutipí katú iwí.
+# text_eng = When they arrived at his grandfather's land, the boy picked up a large stone and threw it at the house, flattening it; all the women who were there fled. The stone fell under its own weight and sank into the ground.
+# text_por = Quando eles chegaram na terra do avô, o menino pegou numa grande pedra e lançou sobre a casa e a achatou; as mulheres todas que lá estavam fugiram. A pedra que caiu pelo seu próprio peso afundou-se pela terra.
+# text_source = p. 123
+# text_orig = Aitá u ceca ramé çamunha retama pupé, nhaan curumi miri u pecêca yepé itá uaçu u iapi nhaan oca pupé i peua catu puitá, cunhan etá icó aap u nhana upain achii, nhaan itá uare i puciçaua irumo u mutêpê catu iui.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Nhaã kurumĩ mirĩ upisika yepé itawasú, uyapí nhaã uka upé, i pewa katú upitá.
+# text_por_sec = Aquele menino pequeno pegou uma pedrona, jogou naquela casa, ela ficou bem achatada.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni
+# inputline = Aintá/pron usika ramé/sconj samunha retama pupé, nhaã kurumĩ mirĩ/a upisika yepé/art itawasú/=ev:x|n:a|t uyapí nhaã uka pupé i/pron2 pewa/v2 katú/advs puitá/=mf:m|upitá, kunhã-etá ikú/=mf:m|uikú aape/advdi uyana upaĩ axií/advc, nhaã itá wari/=mf:m|uwari i/pron2 pusesawa irumu/adp umutipí katú/advs iwí.
+1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=6:11
+3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=12:16
+4	samunha	tamunha	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	nmod:poss	_	TokenRange=17:24
+5	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=25:31
+6	pupé	pupé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=32:36
+7	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=36:37
+8	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=38:42
+9	kurumĩ	kurumĩ	NOUN	N	Number=Sing	11	nsubj	_	TokenRange=43:49
+10	mirĩ	mirĩ	ADJ	A	_	9	amod	_	TokenRange=50:54
+11	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=55:62
+12	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	13	det	_	TokenRange=63:67
+13	itawasú	itá	NOUN	N	Degree=Aug|Number=Sing	11	obj	_	TokenRange=68:75
+14	uyapí	yapí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	TokenRange=76:81
+15	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	16	det	_	TokenRange=82:86
+16	uka	uka	NOUN	N	Number=Sing|Rel=Abs	14	obl	_	TokenRange=87:90
+17	pupé	pupé	ADP	ADP	AdpType=Post	16	case	_	TokenRange=91:95
+18	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	TokenRange=96:97
+19	pewa	pewa	VERB	V2	Mood=Ind|VerbForm=Fin	21	xcomp	_	TokenRange=98:102
+20	katú	katú	ADV	ADVS	AdvType=Deg	19	advmod	_	TokenRange=103:107
+21	puitá	puitá	VERB	V	Style=Arch|VerbForm=Inf	14	parataxis	_	ModernForm=upitá|ModernLemma=pitá|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=108:113
+22	,	,	PUNCT	PUNCT	_	25	punct	_	TokenRange=113:114
+23	kunhã-etá	kunhã	NOUN	N	Number=Plur	25	nsubj	_	TokenRange=115:124
+24	ikú	ikú	AUX	COP	Style=Arch|VerbForm=Inf	25	cop	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=125:128
+25	aape	aape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	11	parataxis	_	TokenRange=129:133
+26	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	25	parataxis	_	TokenRange=134:139
+27	upaĩ	upaĩ	PRON	TOT	PronType=Tot	26	nsubj	_	TokenRange=140:144
+28	axií	axií	ADV	ADVC	AdvType=Loc	26	advmod	_	SpaceAfter=No|TokenRange=145:149
+29	,	,	PUNCT	PUNCT	_	32	punct	_	TokenRange=149:150
+30	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	31	det	_	TokenRange=151:155
+31	itá	itá	NOUN	N	Number=Sing	32	nsubj	_	TokenRange=156:159
+32	wari	wari	VERB	V	Style=Arch|VerbForm=Inf	11	parataxis	_	ModernForm=uwari|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=160:164
+33	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	34	nmod:poss	_	TokenRange=165:166
+34	pusesawa	pusesawa	NOUN	N	Number=Sing	32	obl	_	TokenRange=167:175
+35	irumu	irumu	ADP	ADP	AdpType=Post	34	case	_	TokenRange=176:181
+36	umutipí	mutipí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	32	parataxis	_	TokenRange=182:189
+37	katú	katú	ADV	ADVS	AdvType=Deg	36	advmod	_	TokenRange=190:194
+38	iwí	iwí	NOUN	N	Number=Sing	36	obj	_	SpaceAfter=No|TokenRange=195:198
+39	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=198:199
 
 # sent_id = Rodrigues1890:1-2-3:734:734
 # text = Ariré, paá, i manha umaã aintá uikupukú usú aintá rakwera usikari arama aintá, usasáu ramé yepé igarapé ara rupí buyawasú umukuna aé.

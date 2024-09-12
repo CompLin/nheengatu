@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 8, 2024
+# Last update: September 12, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2043,7 +2043,7 @@ def getval(key,dic):
     return None
 
 def mkHabXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
-    '''TODO: Possibly deprecated.
+    '''TODO: Possibly deprecated. Morphem "wera" is no longer analysed as a suffix, but as a particle, see issue #512.  
     '''
     if not length:
         length=4
@@ -2397,17 +2397,18 @@ def formatModernFeats(feats,register):
 def diffFeats(modern_token,arch_token):
     '''Return lemma and features in modern_token that are not in arch_token.
     '''
-    arch_feats=arch_token.get('feats')
-    arch_lemma=arch_token['lemma']
-    modern_feats=modern_token.get('feats')
-    modern_lemma=modern_token['lemma']
     newdic={}
-    if arch_lemma != modern_lemma:
-        newdic['lemma']=modern_lemma
-    for k,v in modern_feats.items():
-        m=arch_feats.get(k)
-        if m != v:
-            newdic.update({k : v})
+    arch_feats=arch_token.get('feats')
+    if arch_feats:
+        arch_lemma=arch_token['lemma']
+        modern_feats=modern_token.get('feats')
+        modern_lemma=modern_token['lemma']
+        if arch_lemma != modern_lemma:
+            newdic['lemma']=modern_lemma
+        for k,v in modern_feats.items():
+            m=arch_feats.get(k)
+            if m != v:
+                newdic.update({k : v})
     return newdic
 
 def getStyle(attribute):
@@ -2604,8 +2605,12 @@ def mkConlluSentence(tokens):
     handleStartPunct(tokenlist)
     setRoot(tokenlist)
     handlePronSeq(tokenlist)
+    handleV2(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
+
+def handleV2(tokenlist):
+	HandleMoodPerson(tokenlist)
 
 def extractConlluSents(infile):
     sentences=[]
