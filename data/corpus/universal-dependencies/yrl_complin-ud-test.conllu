@@ -26040,7 +26040,7 @@
 9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Casasnovas2006:12:3:169
-# text = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé kunhatãi sera waá Adana.
+# text = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé kunhaitãi sera waá Adana.
 # text_eng = TODO
 # text_por = Na tribo Tupi, havia uma índia cujo nome era ADANA.
 # text_source = p. 98, No. 3
@@ -26048,6 +26048,7 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Nhaã Tupí mira-itá pitérupi, paá, aikwé yepé/art kunhaitãi/=typo:c|kunhatãi sera waá Adana/=p.
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	Tupí	tupí	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:9
 3	mira-itá	mira	NOUN	N	Number=Plur	4	nmod:poss	_	TokenRange=10:18
@@ -26059,7 +26060,7 @@
 8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=32:33
 9	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=34:39
 10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=40:44
-11	kunhatãi	kunhatãi	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=45:53
+11	kunhaitãi	kunhatãi	NOUN	N	Number=Sing|Typo=Yes	9	nsubj	_	CorrectForm=kunhatãi|TokenRange=45:53
 12	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	14	nsubj	_	TokenRange=56:60
 13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	nmod:poss	_	TokenRange=59:62
 14	Adana	adana	PROPN	PROPN	_	11	acl:relcl	_	SpaceAfter=No|TokenRange=63:68
