@@ -27466,7 +27466,7 @@
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni
-# inputline = Aintá/pron usika ramé/sconj samunha retama pupé, nhaã kurumĩ mirĩ/a upisika yepé/art itawasú/=ev:x|n:a|t uyapí nhaã uka pupé i/pron2 pewa/v2 katú/advs puitá/=mf:m|upitá, kunhã-etá ikú/=mf:m|uikú aape/advdi uyana upaĩ axií/advc, nhaã itá wari/=mf:m|uwari i/pron2 pusesawa irumu/adp umutipí katú/advs iwí.
+# inputline = Aintá/pron usika ramé/sconj samunha retama pupé, nhaã kurumĩ mirĩ/a upisika yepé/art itawasú/=ev:x|n:a|t uyapí nhaã uka pupé i/pron2 pewa/v2 katú/advs puitá/=mf:m|upitá, kunhã-etá ikú/=mf:m|uikú:h|cop:x|cop aape/advdi uyana upaĩ axií/advc, nhaã itá wari/=mf:m|uwari i/pron2 pusesawa irumu/adp umutipí katú/advs iwí.
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=6:11
 3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	TokenRange=12:16
@@ -28269,7 +28269,58 @@
 5	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Sup	4	advmod	_	SpaceAfter=No|TokenRange=26:30
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
 
-# sent_id = Stradelli1929:0:0:1
+# sent_id = Stradelli1929:0:0:200
+# text = Makití uikú ne mira?
+# text_eng = Where are your people?
+# text_por = Onde está a tua gente?
+# text_source = p. 202
+# text_orig = Makití oicó ne míra?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Makití/advrc uikú/cop ne mira?
+1	Makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
+2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	1	cop	_	TokenRange=7:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	mira	mira	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=15:19
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Stradelli1929:0:0:201
+# text = Makití ne mira?
+# text_eng = Where are your people?
+# text_por = Onde está a tua gente?
+# text_source = p. 203
+# text_orig = Makití ne míra?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Makití/advrc ne mira?
+1	Makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:6
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
+3	mira	mira	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=10:14
+4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Stradelli1929:0:0:202
+# text = Xaikú katú.
+# text_eng = I'm fine.
+# text_por = Estou bom.
+# text_source = p. 203
+# text_orig = Xaicó catú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xaikú/cop katú/a.
+1	Xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	cop	_	ModernForm=Aikú|TokenRange=0:5
+2	katú	katú	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=6:10
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = Stradelli1929:0:0:203
+# text = Ixé katú.
+# text_eng = I'm fine.
+# text_por = Estou bom.
+# text_source = p. 203
+# text_orig = Ixé catú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé katú/a.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	katú	katú	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=4:8
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = Stradelli1929:0:0:500
 # text = Maã arama reikupukú?
 # text_eng = Why are you delaying?
 # text_por = Por que demoras?
@@ -28283,7 +28334,7 @@
 3	reikupukú	ikupukú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:19
 4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = stradelli1929:0:0:2
+# sent_id = Stradelli1929:0:0:600
 # text = Resú-putari será kwá rupí?
 # text_eng = Do you want to go this way?
 # text_por = Queres ir por cá?
@@ -34598,6 +34649,21 @@
 39	upé	upé	ADP	ADP	AdpType=Post	38	case	_	SpaceAfter=No|TokenRange=175:178
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
 
+# sent_id = Studart1926:0:0:2790
+# text = Piná uikú patuá mirĩ pupé.
+# text_eng = The hook is in the box.
+# text_por = O anzol está na caixinha.
+# text_source = p. 27
+# text_orig = Piná oikô patuá mirî pupê.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Piná uikú/cop patuá/@ mirĩ/a pupé.
+1	Piná	piná	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:4
+2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	3	cop	_	TokenRange=5:9
+3	patuá	patuá	NOUN	N	Number=Sing	0	root	_	TokenRange=10:15
+4	mirĩ	mirĩ	ADJ	A	_	3	amod	_	TokenRange=16:20
+5	pupé	pupé	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=21:25
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
 # sent_id = Studart1926:3650:1:36500
 # text = Mairamé resika?
 # text_eng = When did you arrive?
@@ -34623,7 +34689,7 @@
 # text_annotator = Hélio Leonam Barroso Silva
 # text_orig_transcriber = Hélio Leonam Barroso Silva
 # text_por_modernizer = Hélio Leonam Barroso Silva
-# inputline = Xasika pisayé ana. (p. 36)  Cheguei à meia-noite. - Xa cika peçaiê ana.
+# inputline = Xasika pisayé ana.
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Xasika	sika	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asika|TokenRange=0:6
 2	pisayé	pisayé	NOUN	N	Number=Sing	1	obl	_	TokenRange=7:13
@@ -34639,7 +34705,7 @@
 # text_annotator = Hélio Leonam Barroso Silva
 # text_orig_transcriber = Hélio Leonam Barroso Silva
 # text_por_modernizer = Hélio Leonam Barroso Silva
-# inputline = Pisayé ramé/adp. (p. 36) À meia-noite. - peçaiê ramé.
+# inputline = Pisayé ramé/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Pisayé	pisayé	NOUN	N	Number=Sing	0	root	_	TokenRange=0:6
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=7:11
@@ -34656,7 +34722,7 @@
 # text_por_modernizer = Hélio Leonam Barroso Silva
 # inputline = Awá-ta/int resaisú?
 1-2	Awá-ta	_	_	_	_	_	_	_	TokenRange=0:6
-1	Awá	awá	PRON	INT	PronType=Int	3	nsubj	_	_
+1	Awá	awá	PRON	INT	PronType=Int	3	obj	_	_
 2	ta	taá	PART	CQ	Clitic=Yes|PartType=Int	3	advmod	_	_
 3	resaisú	saisú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
 4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15

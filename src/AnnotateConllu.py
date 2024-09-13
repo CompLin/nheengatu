@@ -131,7 +131,7 @@ ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
 'VSUFF': 'VERB',
-'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'ART' : 'DET',
+'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'FIN' : 'Fin', 'ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
@@ -372,11 +372,11 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     style=entry.get('style')
     if person:
         feats['Person']=person
-        if token['upos']=='VERB':
+        if token['upos']=='VERB': # TODO makes the verification below of vform redundant (include AUX)
             feats['VerbForm']='Fin'
     if number:
         feats['Number']=getudtag(number)
-    if vform:
+    if vform: # TODO problably redundant
         feats['VerbForm']=getudtag(vform)
     if rel:
         feats['Rel']=RelAbbr(rel)

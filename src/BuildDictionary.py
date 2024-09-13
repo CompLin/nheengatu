@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 9, 2024
+# Last update: September 13, 2024
 
 import re, sys, os, json
 
@@ -531,7 +531,7 @@ def WordParsePairs(glossary):
 			for tag in tags:
 				if hasNumberInflection(tag,lemma):
 					pairs.update(makeNumber([(lemma,f"{lemma}+{tag}")]))
-				elif tag == "V" and not isImpersonal(entry):
+				elif (tag == "V" or tag == "COP") and not isImpersonal(entry):
 					pairs.update(conjugateVerb(lemma,tag))
 				elif tag == 'V3':
 					pairs.update(handleV3(lemma,tag))
@@ -626,6 +626,9 @@ def extract_feats(parses):
             new.update(process_feats(feats))
         else:
             new['pos']=None
+        mood=new.get('mood')
+        if mood:
+            new['vform']='FIN'
         entries.append(new)
     return entries
 
