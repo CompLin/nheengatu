@@ -28349,6 +28349,34 @@
 5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
 6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
+# sent_id = Magalhaes1876:1-1-1:0:70
+# text = Awá taá uikú ape?
+# text_eng = Who's there?
+# text_por = Quem está aí?
+# text_source = p. 7
+# text_orig = auá tahá oiko ápe?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Awá/int taá uikú/cop ape/advt@?
+1	Awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=4:7
+3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	4	cop	_	TokenRange=8:12
+4	ape	ape	ADV	ADVT	AdvType=Tim	4	root	_	SpaceAfter=No|TokenRange=13:16
+5	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Magalhaes1876:1-1-1:0:71
+# text = Maã taá remunhã reikú?
+# text_eng = What are you doing?
+# text_por = O que você está fazendo?
+# text_source = p. 7
+# text_orig = Mahẫ tahá remunhã re iko?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Maã/int taá remunhã reikú/v?
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
+4	reikú	ikú	AUX	AUXFS	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:21
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
 # sent_id = Magalhaes1876:1-1-1:1:101
 # text = Rerikú será?
 # text_eng = Do you have it?
@@ -33212,6 +33240,98 @@
 2	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
 3	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=11:14
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Sympson1877:0:0:670
+# text = Xaputari aé se ximirikú arama.
+# text_eng = I want her for my wife.
+# text_por = Eu a quero para minha mulher.
+# text_source = p. 67
+# text_orig = Cha putare ahe sê chemiricú aráma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xaputari aé/pron se ximirikú arama/adp.
+1	Xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aputari|TokenRange=0:8
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	TokenRange=9:11
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obl	_	TokenRange=15:23
+5	arama	arama	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=24:29
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Sympson1877:0:0:675
+# text = Upuitá uka pupé.
+# text_eng = He stayed inside the house.
+# text_por = Ficou dentro de casa.
+# text_source = p. 67
+# text_orig = Hu-puitá ôca püpe.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Upuitá uka pupé.
+1	Upuitá	puitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	uka	uka	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=7:10
+3	pupé	pupé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=11:15
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Sympson1877:0:0:680
+# text = Pe ruakí, yara Tupã, nẽ maã yaikú.
+# text_eng = Before you, Lord God, we are nothing.
+# text_por = Ante vós, Senhor Deus, nada somos.
+# text_por_lit = Vós ante, Senhor Deus, nada cousa nós somos.
+# text_source = p. 68
+# text_orig = Pe ruaquy, iára Tupã, nè maá ya icú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pe/pron2 ruakí, yara/n Tupã/=p, nẽ/neg maã/ind@ yaikú/cop.
+1	Pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	obl	_	TokenRange=0:2
+2	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	SpaceAfter=No|TokenRange=3:8
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	yara	yara	NOUN	N	Number=Sing	8	vocative	_	TokenRange=10:14
+5	Tupã	tupã	PROPN	PROPN	_	4	flat	_	SpaceAfter=No|TokenRange=15:19
+6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
+7	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=21:23
+8	maã	maã	DET	IND	PronType=Ind	0	root	_	TokenRange=24:27
+9	yaikú	ikú	AUX	COP	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	8	_	_	SpaceAfter=No|TokenRange=28:33
+10	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Sympson1877:0:0:685
+# text = Meẽ aé supé nhaã pirá.
+# text_eng = Give him this fish.
+# text_por = Regala a ele esse peixe.
+# text_source = p. 68
+# text_orig = Mehê ahe supe nhaá pirá.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Meẽ/=mf:m|Remeẽ aé/pron supé nhaã pirá.
+1	Meẽ	meẽ	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=Remeẽ|ModernMood=Imp,Ind|ModernNumber=Sing|ModernPerson=2|ModernVerbform=Fin|TokenRange=0:3
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	iobj	_	TokenRange=4:6
+3	supé	supé	ADP	ADP	AdpType=Post	2	case	_	TokenRange=7:11
+4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=12:16
+5	pirá	pirá	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=17:21
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Sympson1877:0:0:690
+# text = Mamé taá ikú ne retama?
+# text_eng = Where is your land?
+# text_por = Onde é tua terra?
+# text_source = p. 69
+# text_orig = Mamé-taá icú ne retáma?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mamé/advrc@ taá ikú/=mf:m|uikú:h|cop:x|cop ne retama?
+1	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:4
+2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=5:8
+3	ikú	ikú	AUX	COP	Style=Arch|VerbForm=Inf	1	cop	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=9:12
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=13:15
+5	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=16:22
+6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Sympson1877:0:0:691
+# text = Mamé taá ne retama?
+# text_eng = Where is your land?
+# text_por = Onde é tua terra?
+# text_source = p. 69
+# text_orig = Mamé-taá ne retáma?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mamé/advrc@ taá ne retama?
+1	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:4
+2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=5:8
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
+4	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=12:18
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = DLGA2019:101:1:101
 # text = Supí taá?
