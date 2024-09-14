@@ -33174,6 +33174,45 @@
 4	será	será	PART	PQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=16:20
 5	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
+# sent_id = Sympson1877:0:0:600
+# text = Ixé maraari xaikú.
+# text_eng = I'm tired.
+# text_por = Eu estou cansado.
+# text_source = p. 60
+# text_orig = Iche maraáre cha icú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé maraari/a xaikú/cop.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	maraari	maraari	ADJ	A	_	0	root	_	TokenRange=4:11
+3	xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	cop	_	ModernForm=aikú|SpaceAfter=No|TokenRange=12:17
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Sympson1877:0:0:601
+# text = Xe maraari xaikú.
+# text_eng = I'm tired.
+# text_por = Eu estou cansado.
+# text_source = p. 60
+# text_orig = Xe maraáre cha icú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xe maraari/v2 xaikú/v.
+1	Xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	maraari	maraari	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=3:10
+3	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=aikú|SpaceAfter=No|TokenRange=11:16
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Sympson1877:0:0:602
+# text = Yuão ukiri ikú.
+# text_eng = John is sleeping.
+# text_por = João está dormindo.
+# text_source = p. 60
+# text_orig = Iuão hu quire icú.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yuão/=p ukiri ikú/=mf:m|uikú:h|v:x|v.
+1	Yuão	yuão	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:4
+2	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
+3	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=11:14
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
 # sent_id = DLGA2019:101:1:101
 # text = Supí taá?
 # text_eng = Is it right?
@@ -34656,6 +34695,8 @@
 # text_source = p. 27
 # text_orig = Piná oikô patuá mirî pupê.
 # text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
 # inputline = Piná uikú/cop patuá/@ mirĩ/a pupé.
 1	Piná	piná	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:4
 2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	3	cop	_	TokenRange=5:9
@@ -34663,6 +34704,22 @@
 4	mirĩ	mirĩ	ADJ	A	_	3	amod	_	TokenRange=16:20
 5	pupé	pupé	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=21:25
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Studart1926:0:0:2810
+# text = Maã taá remunhã reikú?
+# text_eng = What are you doing?
+# text_por = Que está fazendo?
+# text_source = p. 28
+# text_orig = Mahã tahá re munhã re ikô?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# inputline = Maã/int taá remunhã reikú/v?
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
+4	reikú	ikú	AUX	AUXFS	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:21
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Studart1926:3650:1:36500
 # text = Mairamé resika?

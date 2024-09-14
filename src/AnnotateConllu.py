@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 12, 2024
+# Last update: September 13, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -372,12 +372,12 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     style=entry.get('style')
     if person:
         feats['Person']=person
-        if token['upos']=='VERB': # TODO makes the verification below of vform redundant (include AUX)
-            feats['VerbForm']='Fin'
-    if number:
-        feats['Number']=getudtag(number)
+        #if token['upos']=='VERB': # TODO makes the verification below of vform redundant (include AUX)
+            #feats['VerbForm']='Fin'
     if vform: # TODO problably redundant
         feats['VerbForm']=getudtag(vform)
+    if number:
+        feats['Number']=getudtag(number)
     if rel:
         feats['Rel']=RelAbbr(rel)
         handleNCont(upos,feats)
