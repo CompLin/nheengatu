@@ -6464,13 +6464,14 @@
 12	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = Avila2021:0:0:109
-# text = Kuxiíma paá anhuantẽ paá aikwé ara, ti yamaã pituna, mira-itá ta uputari paá yepé ta ukiri, ti mayé ra, [...].
+# text = Kuxiima paá anhuantẽ paá aikwé ara, ti yamaã pituna, mira-itá ta uputari paá yepé ta ukiri, ti mayé ra, [...].
 # text_eng = In the past, there was only day, there was no night, people wanted to sleep, but it was not possible, [...].
 # text_por = Antigamente só havia dia, não havia noite, as pessoas queriam dormir, mas não era possível, [...].
 # text_source = Leetra Indígena. n. 17, 69, adap.
 # text_orig = Kuxiima paá anhuanté paá aikwé ara, ti yamaã pituna, mira-itá ta uputari paá yepé ta ukiri, ti mayé ra, [...].
+# text_prim = Kuxima paá, ayuanté pá aikué ára, ti yamam pituna, miraitá taputai páyepé takiri, ti mayera, aikué pituna mam apekatú tayuka ram, apé tauymuatiri apigaitá tasú ram taayuka: — Yasú yauka pituna.
 # text_annotator = LFdeA
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:7
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=8:11
 3	anhuantẽ	anhuantẽ	ADV	ADV	_	5	advmod	_	TokenRange=12:20
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=21:24
@@ -6491,7 +6492,7 @@
 19	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=90:91
 20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	21	advmod	_	TokenRange=92:94
 21	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	18	parataxis	_	TokenRange=95:99
-22	ra	ra	SCONJ	SCONJ	_	21	advcl	_	SpaceAfter=No|TokenRange=100:102
+22	ra	ra	PART	FOC	Foc=Yes|PartType=Emp	21	advmod	_	SpaceAfter=No|TokenRange=100:102
 23	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=102:103
 24	[...]	[...]	PUNCT	ELIP	PunctType=Elip	5	punct	_	SpaceAfter=No|TokenRange=104:109
 25	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=109:110
@@ -23085,10 +23086,12 @@
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Kuemeté	kuemeté	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:8
 2	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
 3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:16
-4	kaá	kaá	NOUN	N	Number=Sing	2	iobj	_	TokenRange=17:20
+4	kaá	kaá	NOUN	N	Number=Sing	2	obl	_	TokenRange=17:20
 5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
 
@@ -23271,6 +23274,8 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -23287,7 +23292,7 @@
 14	ukanhemu	kanhemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=52:60
 15	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	nsubj	_	TokenRange=61:63
 16	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=64:67
-17	kaá	kaá	NOUN	N	Number=Sing	16	iobj	_	TokenRange=68:71
+17	kaá	kaá	NOUN	N	Number=Sing	16	obl	_	TokenRange=68:71
 18	kití	kití	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=72:76
 19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=76:77
 
@@ -23807,13 +23812,15 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 5	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:13
 6	ã	ã	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=14:15
-7	ipawa	ipawa	NOUN	N	Number=Sing	5	iobj	_	TokenRange=16:21
+7	ipawa	ipawa	NOUN	N	Number=Sing	5	obl	_	TokenRange=16:21
 8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=22:26
 9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
 
@@ -24221,13 +24228,15 @@
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:36)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	ara	ara	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=6:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=11:14
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
 6	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:24
-7	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	iobj	_	TokenRange=25:32
+7	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	obl	_	TokenRange=25:32
 8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	TokenRange=33:36
 9	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	xcomp	_	TokenRange=37:41
 10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=42:45
@@ -24510,6 +24519,8 @@
 # text_por_sec_source = Avila (2021)
 # annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:306)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Mairamé	mairamé	SCONJ	SCONJR	_	6	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -24543,7 +24554,7 @@
 31	,	,	PUNCT	PUNCT	_	32	punct	_	TokenRange=139:140
 32	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	28	parataxis	_	TokenRange=141:144
 33	ana	ana	PART	PFV	Aspect=Perf	32	advmod	_	TokenRange=145:148
-34	iwaka	iwaka	NOUN	N	Number=Sing	32	iobj	_	TokenRange=149:154
+34	iwaka	iwaka	NOUN	N	Number=Sing	32	obl	_	TokenRange=149:154
 35	kití	kití	ADP	ADP	AdpType=Post	34	case	_	TokenRange=155:159
 36	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	37	nmod:poss	_	TokenRange=160:161
 37	membira	membira	NOUN	N	Number=Sing	32	obl	_	TokenRange=162:169
@@ -24568,6 +24579,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
 2	mena	mena	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:6
 3	kwera	kwera	PART	PRET	Tense=Past	4	advmod	_	TokenRange=7:12
@@ -24585,7 +24598,7 @@
 15	:	:	PUNCT	PUNCT	_	16	punct	_	TokenRange=60:61
 16	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	ccomp	_	TokenRange=62:65
 17	ana	ana	PART	PFV	Aspect=Perf	16	advmod	_	TokenRange=66:69
-18	iwaka	iwaka	NOUN	N	Number=Sing	16	iobj	_	TokenRange=70:75
+18	iwaka	iwaka	NOUN	N	Number=Sing	16	obl	_	TokenRange=70:75
 19	kití	kití	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=76:80
 20	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=80:81
 
@@ -25836,7 +25849,6 @@
 # text_eng = TODO
 # text_por = Chegando lá no meio viram um lugar limpo onde todos os dias o Bacurau ia dormir.
 # text_source = p. 95, No. 39-40
-# text_orig = Aintá usika, paá, pitérupi aintá umaã, paá, isima mirí, mamé, paá, muíri ara Wakurawá usuwera ukiri.
 # text_orig = Kuíri yasu yamaã neyara, unheé, paá, Wakurawá supé.
 # text_sec = [...] aintá umaã paá isima mirĩ mamé paá muíri ara wakurawá usuwera ukiri.
 # text_por_sec = [...] eles viram um pequeno lugar limpo onde todos os dias o bacurau ia dormir.
@@ -25911,7 +25923,7 @@
 # text_por = Ainda não terminei, eu lhe falei, disse o Bacurau.
 # text_source = p. 96, No. 43
 # text_orig = Umbaré ambá, anheé rakú indé arã, unheé, paá, Wakurawá
-# text_sec =  ― Anhunté ne murakí kwá? ― Umbaá rẽ ambá, anheẽ rakú indé arã, [...].
+# text_sec = ― Anhunté ne murakí kwá? ― Umbaá rẽ ambá, anheẽ rakú indé arã, [...].
 # text_por_sec = ― É só isso o seu trabalho? ― Eu ainda não terminei, eu te disse, [...].
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -25955,7 +25967,7 @@
 # text_por = você vai andar juntando sujeira do ar para comer com seus filhos, falou o Sol para ele.
 # text_source = p. 96, No. 44-45
 # text_orig = Rewatá kurí remuatiri ara kiasá rembaú arã ne rairaitá irumu, unheé, paá, ixupé Kurasí.
-# text_sec =  Rewatá kurí remuatiri ara kiasawa.
+# text_sec = Rewatá kurí remuatiri ara kiasawa.
 # text_por_sec = Você vai andar juntando sujeira do ar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -25988,7 +26000,7 @@
 # text_por = Antigamente existiam muitas tribos indígenas, como a dos Tupi e outra dos Baré.
 # text_source = p. 98, No. 1
 # text_orig = Kuxiíma, paá, aikwé siía miraitá, amuitá ta mirasawa Tupí, amuitá Baré.
-# text_sec =  Kuxiima paá aikwé siiya mira-itá, amú-itá ta mirasawa tupí, amú-itá baré.
+# text_sec = Kuxiima paá aikwé siiya mira-itá, amú-itá ta mirasawa tupí, amú-itá baré.
 # text_por_sec = Antigamente havia muitas pessoas, algumas eram do povo tupi, outras eram barés.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -26022,7 +26034,7 @@
 # text_por = Ambas tribos eram rivais.
 # text_source = p. 98, No. 2
 # text_orig = Nhaaitá, paá, ti ta uyumeé puranga.
-# text_sec =  Nhaã-itá paá ti ta uyumeẽ puranga.
+# text_sec = Nhaã-itá paá ti ta uyumeẽ puranga.
 # text_por_sec = Aqueles [povos] não se davam bem.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -28360,7 +28372,7 @@
 1	Awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=4:7
 3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	4	cop	_	TokenRange=8:12
-4	ape	ape	ADV	ADVT	AdvType=Tim	4	root	_	SpaceAfter=No|TokenRange=13:16
+4	ape	ape	ADV	ADVT	AdvType=Tim	0	root	_	SpaceAfter=No|TokenRange=13:16
 5	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Magalhaes1876:1-1-1:0:71
@@ -33286,7 +33298,7 @@
 6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
 7	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=21:23
 8	maã	maã	DET	IND	PronType=Ind	0	root	_	TokenRange=24:27
-9	yaikú	ikú	AUX	COP	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	8	_	_	SpaceAfter=No|TokenRange=28:33
+9	yaikú	ikú	AUX	COP	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	8	cop	_	SpaceAfter=No|TokenRange=28:33
 10	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = Sympson1877:0:0:685
@@ -34119,7 +34131,7 @@
 # text_annotator = Dominick Maia Alexandre
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# reviewer1 = Leonel Figueiredo de Alencar 
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	uyusuú	suú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=7:13
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
