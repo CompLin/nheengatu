@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 13, 2024
+# Last update: September 16, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -22,6 +22,20 @@ ANNOTATOR_ATT = 'text_annotator' #TODO: this is deprecated as of the new version
 TREEBANK_FILE='yrl_complin-ud-test.conllu'
 TREEBANK_DIR='corpus/universal-dependencies'
 TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
+
+
+def extractLemmaVariants(glossary,lemma='arama',pos='posp'):
+	entries=list(filter(lambda entry: lemma in entry['gloss'].split(' '),glossary))
+	lemmas=[entry['lemma'] for entry in entries if pos in entry.get('pos')]
+	lemmas.append(lemma)
+	return lemmas
+
+# dative postpositions
+# intralocutive dative postpositions
+INTRALOC_ADPS=extractLemmaVariants(GLOSSARY)
+# extralocutive dative postpositions
+EXTRALOC_ADPS=extractLemmaVariants(GLOSSARY,'supé','posp')
+DATIVE_ADPS=INTRALOC_ADPS.extend(EXTRALOC_ADPS)
 
 # set with lexicalized reduplications
 LEXREDUP=set()
@@ -2606,6 +2620,7 @@ def mkConlluSentence(tokens):
     setRoot(tokenlist)
     handlePronSeq(tokenlist)
     handleV2(tokenlist)
+    addIobj(tokenlist)
     sortTokens(tokenlist)
     return tokenlist
 
@@ -3749,4 +3764,41 @@ def issue536(sents):
 				if token['form'].upper()==error.upper():
 					token['form']=f"{error[0]}{correct[1:]}"
 					token['lemma'] = correct
+					
+def issue569(sents,annotator='jul'):
+	sample=[sent for sent in sents if (sent.metadata['text_annotator'] == 'JLG' or sent.metadata['text_annotator'] == PEOPLE[annotator]) and not sent.metadata.get('reviewer1')]
+	for sent in sample:
+		iobj=sent.filter(deprel='iobj')
+		for o in iobj:
+			case=sent.filter(head=o['id'])
+			if case and case[0]['lemma'] in ('kití','suí'):
+				print(sent.metadata['sent_id'],case[0]['lemma'])
+				o['deprel']='obl'
+				addReviewer(sent)
+
+def addIobj(tokenlist):
+	mapping={'intraloc' : ('1','2'), 'extraloc' : ('3',)}
+	objs=tokenlist.filter(deprel='obj')
+	for obj in objs:
+		obls=tokenlist.filter(deprel='obl',head=obj['head'])
+		for obl in obls:
+			case=tokenlist.filter(deprel='case',head=obl['id'])
+			for c in case:
+				addressee=()
+				if c['lemma'] in EXTRALOC_ADPS:
+					addressee=mapping['extraloc']
+				elif c['lemma'] in INTRALOC_ADPS:
+					addressee=mapping['intraloc']
+				else:
+					addressee=()
+				if addressee:
+					verb=tokenlist.filter(id=obj['head'])[0]
+					feats=obl.get('feats')
+					if feats:
+						person=feats.get('Person')
+						if not person and addressee == ('3',):
+							person='3'
+						if person in addressee:
+							obl['deprel']='iobj'
+				
 
