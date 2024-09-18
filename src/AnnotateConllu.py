@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 16, 2024
+# Last update: September 18, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -11,6 +11,9 @@ from conllu import parse
 from io import open
 from conllu import parse_incr
 import re, os
+
+GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
+LEXICON=loadLexicon()
 
 # default annotator's name abbreviation
 ANNOTATOR = PEOPLE['leo']
@@ -135,9 +138,6 @@ TA='taá'
 NONHYPHEN=[NTU,ME,WARA,WERA]
 
 ROOT=[]
-
-GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
-LEXICON=loadLexicon()
 
 # archaic lemmas
 ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
