@@ -26193,6 +26193,40 @@
 6	kwera	kwera	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=37:42
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=42:43
 
+# sent_id = Casasnovas2006:11:27:158
+# text = Puranga, se rayera mena; asú ameẽ indé arã siiya mitima reyutima arã, reú arã ne raíra-itá irumu.
+# text_eng = TODO
+# text_por = Muito bem, meu genro, vou dar para você muitas sementes para plantar e comer com teus filhos.
+# text_source = p. 95, No. 35-36
+# text_orig = Puranga, se rayera mena; asú ameé indé arã siía mitima reyutima arã, reú arã ne rairaitá irumu.
+# text_sec = Puranga, se rayera mena, asú ameẽ indé arã siiya mitima reyutima arã, reú arã ne raíra-itá irumu.
+# text_por_sec = Muito bem, meu genro, vou dar a você muitas plantas para você plantar, para comer com seus filhos.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Puranga	puranga	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:7
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
+4	rayera	tayera	NOUN	N	Number=Sing|Rel=Cont	5	nmod:poss	_	TokenRange=12:18
+5	mena	mena	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=19:23
+6	;	;	PUNCT	PUNCT	_	8	punct	_	TokenRange=23:24
+7	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	8	aux	_	TokenRange=25:28
+8	ameẽ	meẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=29:33
+9	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	8	obl	_	TokenRange=34:38
+10	arã	arã	ADP	ADP	AdpType=Post	9	case	_	TokenRange=39:42
+11	siiya	siiya	DET	INDQ	PronType=Ind	12	det	_	TokenRange=43:48
+12	mitima	mitima	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=49:55
+13	reyutima	yutima	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=56:64
+14	arã	arã	SCONJ	SCONJ	_	13	mark	_	SpaceAfter=No|TokenRange=65:68
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=68:69
+16	reú	ú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	13	parataxis	_	TokenRange=70:73
+17	arã	arã	SCONJ	SCONJ	_	16	mark	_	TokenRange=74:77
+18	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	19	nmod:poss	_	TokenRange=78:80
+19	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	16	obl	_	TokenRange=81:90
+20	irumu	irumu	ADP	ADP	AdpType=Post	19	case	_	SpaceAfter=No|TokenRange=91:96
+21	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=96:97
+
 # sent_id = Casasnovas2006:11:28:159
 # text = Kuíri yasú yamaã ne yara, unheẽ, paá, Wakurawá supé.
 # text_eng = TODO
