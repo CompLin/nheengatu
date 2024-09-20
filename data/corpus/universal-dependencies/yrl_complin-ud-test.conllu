@@ -12518,7 +12518,7 @@
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=11:14
 4	yumimisawa	yumimisawa	NOUN	N	Number=Sing	1	obl	_	TokenRange=15:25
 5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=26:30
-6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=30:31
+6	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=30:31
 7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	8	aux	_	TokenRange=32:35
 8	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=36:43
 9	Adana	adana	PROPN	PROPN	_	8	obj	_	SpaceAfter=No|TokenRange=44:49
@@ -26697,7 +26697,6 @@
 # text_source = p. 99, No. 14
 # text_orig = Asuí, paá, Buburi mayé Adana, aintá usaã ta piá upé ta uyuputari.
 # text_annotator = Juliana Lopes Gurgel
-# comment = Ver issue relacionada: CompLin/nheengatu/issues/582.
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Asuí/advt, paá, Buburi/=p mayé/advla Adana/=p, aintá/pron usaã ta/pron2 piá upé/adp ta/pron uyuputari/=mid.
 # reviewer1 = Leonel Figueiredo de Alencar
@@ -26806,8 +26805,9 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:555)
+# cross_reference = Avila2021:0:0:555
 # inputline = Buburi/=p unheẽ i/pron2 xupé uyuka arã/sconj aé/pron umendari rundé/sconj.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Buburi	buburi	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:6
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=13:14
@@ -26878,19 +26878,16 @@
 17	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=74:75
 
 # sent_id = Casasnovas2006:12:19:185
-# text = Usika ramé, paá, yumimisawa rupí, usú usikari Adana, uwasemu aé yepé uka upé anhuíra.
+# text = Usika ramé, paá, yumimisawa rupí, usú usikari Adana, wasemu aé yepé uka upé anhuíra.
 # text_eng = TODO
 # text_por = Tendo chegado à festa despercebido procurou Adana e a encontrou numa casa sozinha.
 # text_source = p. 99, No. 21
 # text_orig = Usika ramé, paá, yumimisawa rupí, usú usikái Adana, wasemu aé yepé uka upé anhuíra.
 # text_annotator = Juliana Lopes Gurgel
-# text_sec =  Usika ramé paá, yumimisawa rupí usú usikari Adana, uwasemu aé yepé uka upé anhuíra. (...)
-# text_por_sec = Quando chegou, foi encobertamente procurar Adana, encontrou-a numa casa sozinha. (...)
-# text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:33:1:420)
-# inputline = Usika ramé/sconj, paá, yumimisawa rupí, usú usikari Adana/=p, uwasemu aé/pron yepé/art uka upé/adp anhuíra.
+# cross_reference = Avila2021:33:1:420
+# inputline = Usika ramé/sconj, paá, yumimisawa rupí, usú usikari Adana/=p, wasemu/=typo:c|uwasemu aé/pron yepé/art uka upé/adp anhuíra.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	SpaceAfter=No|TokenRange=6:10
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=10:11
@@ -26898,12 +26895,12 @@
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
 6	yumimisawa	yumimisawa	NOUN	N	Number=Sing	1	obl	_	TokenRange=17:27
 7	rupí	rupí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=28:32
-8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=32:33
+8	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=32:33
 9	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	TokenRange=34:37
 10	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=38:45
 11	Adana	adana	PROPN	PROPN	_	10	obj	_	SpaceAfter=No|TokenRange=46:51
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=51:52
-13	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=53:60
+13	wasemu	wasemu	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	10	parataxis	_	CorrectForm=uwasemu|TokenRange=53:59
 14	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	13	obj	_	TokenRange=61:63
 15	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	16	det	_	TokenRange=64:68
 16	uka	uka	NOUN	N	Number=Sing|Rel=Abs	13	obl	_	TokenRange=69:72
@@ -26998,8 +26995,9 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:511)
+# cross_reference = Avila2021:0:0:511
 # inputline = I/pron2 piaiwasawa, paá, upisika igara usú arã/sconj aintá/pron2 rakwera/n.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
 2	piaiwasawa	piaiwasawa	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=2:12
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=12:13
@@ -27073,8 +27071,9 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:30:1:346)
+# cross_reference = Avila2021:30:1:346
 # inputline = Aintá/pron umaramunha pukusawa/sconj, paá, ií upurakari aintá/pron2 igara upé/adp.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	umaramunha	maramunha	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=6:16
 3	pukusawa	pukusawa	SCONJ	SCONJ	_	2	mark	_	SpaceAfter=No|TokenRange=17:25
@@ -27094,15 +27093,16 @@
 # text_por = Até que todos se alagaram no meio do rio.
 # text_por_orig = Até que todos se alagaram no meio do rio
 # text_source = p. 99, No. 29
-# text_orig = Ape, paá,aintá uyupipika paraná pitérupi,
+# text_orig = Ape, paá, aintá uyupipika paraná pitérupi,
 # text_annotator = Juliana Lopes Gurgel
 # text_sec =  Ape paá aintá uyupipika paraná pitérupi.
 # text_por_sec = Aí eles afundaram no meio do rio.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:30:2:347)
+# cross_reference = Avila2021:30:2:347
 # inputline = Ape/advt, paá, aintá/pron uyupipika paraná pitérupi.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -27143,14 +27143,16 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:18:2:176)
+# cross_reference = Avila2021:18:2:176
 # inputline = Uyeréu amú/ind pirantá/n turusú/a piri/advg, sera Buburi/=p.
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Uyeréu	yeréu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	amú	amú	DET	IND	Number=Sing|PronType=Ind	3	det	_	TokenRange=7:10
 3	pirantá	pirantá	NOUN	N	Number=Sing	1	xcomp	_	TokenRange=11:18
-4	turusú	turusú	ADJ	A	_	3	acl:relcl	_	TokenRange=19:25
+4	turusú	turusú	ADJ	A	_	3	amod	_	TokenRange=19:25
 5	piri	piri	ADV	ADVG	AdvType=Deg	4	advmod	_	SpaceAfter=No|TokenRange=26:30
-6	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=30:31
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=30:31
 7	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	8	nsubj	_	TokenRange=32:36
 8	Buburi	buburi	PROPN	PROPN	_	3	parataxis	_	SpaceAfter=No|TokenRange=37:43
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=43:44
@@ -27167,7 +27169,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# comment = a próxima sentença desta lenda já está no 'yrl_complin-ud-test.conllu' (Avila2021:0:0:517)
+# next = Avila2021:0:0:517
 # inputline = Yawé/adva resewara/sconj nhaã musapiri, paá, iké pawa/total tẽ/foc ta/pron uikú, yané/pron2 tawa upé/adp.
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=0:4
 2	resewara	resewara	SCONJ	SCONJ	Rel=Cont	1	fixed	_	TokenRange=5:13
