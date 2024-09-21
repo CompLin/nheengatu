@@ -8655,6 +8655,7 @@
 # text_eng = If God did not shorten these days, no one would be saved, but he shortens these days for the sake of those he has chosen.
 # text_por = Se Deus não abreviasse esses dias, ninguém se salvaria, mas ele abrevia esses dias por causa daqueles que ele elegeu.
 # text_source = O Novo Testamento em nyengatu, Mateus 24:22, adap.
+# text_prim = Tirame maa Deus umuatuka kua ara timaa awa uyumukaturu, maa umuatuka kua ara aintaresewara kuaita uparawakawaita.
 # text_annotator = LFdeA
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
 2	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=3:7
@@ -26580,7 +26581,7 @@
 15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
 
 # sent_id = Casasnovas2006:12:9:175
-# text = Aape, paá, aintá, uyusuantí, ta uyupirú ta upurungitá.
+# text = Aape, paá, aintá, uyusuantí, ta uyupirú ta upurungitá
 # text_eng = TODO
 # text_por = Os dois encontraram-se e começaram a conversar.
 # text_source = p. 98, No. 11
@@ -26599,7 +26600,6 @@
 10	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=32:39
 11	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	expl	_	TokenRange=40:42
 12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	xcomp	_	SpaceAfter=No|TokenRange=43:53
-13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=53:54
 
 # sent_id = Casasnovas2006:12:10:176
 # text = Asuí, paá, Adana umbeú Buburi supé aé urikuté umendari arã Kurukuí irumu.
@@ -28219,12 +28219,12 @@
 16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=67:70
 17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	obl	_	TokenRange=71:73
 18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
-19	;	;	PUNCT	PUNCT	_	22	punct	_	TokenRange=77:78
-20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=79:81
-21	maã	maã	PRON	IND	PronType=Ind	20	fixed	_	TokenRange=82:85
-22	maã	maã	PRON	RELF	PronType=Rel	15	parataxis	_	TokenRange=86:89
-23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	22	acl:relcl	_	TokenRange=90:93
-24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	22	parataxis	_	TokenRange=94:98
+19	;	;	PUNCT	PUNCT	_	24	punct	_	TokenRange=77:78
+20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
+21	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	23	advmod	_	TokenRange=82:85
+22	maã	maã	PRON	IND	PronType=Ind	23	obj	_	TokenRange=86:89
+23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
+24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	9	parataxis	_	TokenRange=94:98
 25	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	24	obl	_	TokenRange=99:101
 26	piri	piri	ADP	ADP	AdpType=Post	25	case	_	TokenRange=102:106
 27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=107:109
