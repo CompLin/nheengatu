@@ -23297,7 +23297,7 @@
 25	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=130:131
 
 # sent_id = Casasnovas2006:6:5:64
-# text = Mairamé ta usú ã ta uikú, kwá ta aría waimĩ umbeú aintá: Se rimiarirú-itá, penhẽ ayupuí ã, kuíri pesú ã, ti ã kurí marã penhẽ arã timbiú.
+# text = Mairamé tausú ã taikú, kwá ta aría waimĩ umbeú aintá: Se rimiarirú-itá, penhẽ ayupuí ã, kuíri pesú ã, ti ã kurí marã penhẽ arã timbiú.
 # text_eng = TODO
 # text_eng_ggl = When they were leaving, the grandmother gave advice: "My granddaughters, you are already fed, now you can go, as you will no longer need food."
 # text_por = Quando já estavam partindo, a avó dava um conselho: "Minhas netas, vocês já estão alimentadas, agora podem ir, pois não terão mais necessidade de comida."
@@ -23314,39 +23314,37 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # review_status = ongoing
-1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
-2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
-3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=11:14
-4	ã	ã	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=15:16
-5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	expl	_	TokenRange=17:19
-6	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=20:24
-7	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=24:25
-8	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	det	_	TokenRange=26:29
-9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=30:32
-10	aría	aría	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=33:37
-11	waimĩ	waimĩ	ADJ	A	_	10	amod	_	TokenRange=38:43
-12	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=44:49
-13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	iobj	_	SpaceAfter=No|TokenRange=50:55
-14	:	:	PUNCT	PUNCT	_	19	punct	_	TokenRange=55:56
-15	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=57:59
-16	rimiarirú-itá	timiarirú	NOUN	N	Number=Plur|Rel=Cont	19	vocative	_	SpaceAfter=No|TokenRange=60:73
-17	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=73:74
-18	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	19	obj	_	TokenRange=75:80
-19	ayupuí	yupuí	VERB	V	Mood=Ind|Person=1|VerbForm=Fin	12	ccomp	_	TokenRange=81:87
-20	ã	ã	PART	PFV	Aspect=Perf	19	advmod	_	SpaceAfter=No|TokenRange=88:89
-21	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=89:90
-22	kuíri	kuíri	ADV	ADVT	AdvType=Tim	23	advmod	_	TokenRange=91:96
-23	pesú	sú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	19	parataxis	_	TokenRange=97:101
-24	ã	ã	PART	PFV	Aspect=Perf	23	advmod	_	SpaceAfter=No|TokenRange=102:103
-25	,	,	PUNCT	PUNCT	_	32	punct	_	TokenRange=103:104
-26	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	29	advmod	_	TokenRange=105:107
-27	ã	ã	PART	PFV	Aspect=Perf	29	advmod	_	TokenRange=108:109
-28	kurí	kurí	PART	FUT	Tense=Fut	29	advmod	_	TokenRange=110:114
-29	marã	marã	ADV	ADVRU	AdvType=Cau|PronType=Int	32	acl	_	TokenRange=115:119
-30	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	29	obl	_	TokenRange=120:125
-31	arã	arã	ADP	ADP	AdpType=Post	30	case	_	TokenRange=126:129
-32	timbiú	timbiú	NOUN	N	Number=Sing|Rel=Abs	23	advcl	_	SpaceAfter=No|TokenRange=130:136
-33	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=136:137
+1	Mairamé	mairamé	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:7
+2	tausú	sú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=11:14
+3	ã	ã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=15:16
+4	taikú	ikú	AUX	AUXFS	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=20:24
+5	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=24:25
+6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	det	_	TokenRange=26:29
+7	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=30:32
+8	aría	aría	NOUN	N	Number=Sing	10	nsubj	_	TokenRange=33:37
+9	waimĩ	waimĩ	ADJ	A	_	8	amod	_	TokenRange=38:43
+10	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=44:49
+11	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	iobj	_	SpaceAfter=No|TokenRange=50:55
+12	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=55:56
+13	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=57:59
+14	rimiarirú-itá	timiarirú	NOUN	N	Number=Plur|Rel=Cont	17	vocative	_	SpaceAfter=No|TokenRange=60:73
+15	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=73:74
+16	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	17	obj	_	TokenRange=75:80
+17	ayupuí	yupuí	VERB	V	Mood=Ind|Person=1|VerbForm=Fin	10	ccomp	_	TokenRange=81:87
+18	ã	ã	PART	PFV	Aspect=Perf	17	advmod	_	SpaceAfter=No|TokenRange=88:89
+19	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=89:90
+20	kuíri	kuíri	ADV	ADVT	AdvType=Tim	21	advmod	_	TokenRange=91:96
+21	pesú	sú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	17	parataxis	_	TokenRange=97:101
+22	ã	ã	PART	PFV	Aspect=Perf	21	advmod	_	SpaceAfter=No|TokenRange=102:103
+23	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=103:104
+24	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	27	advmod	_	TokenRange=105:107
+25	ã	ã	PART	PFV	Aspect=Perf	27	advmod	_	TokenRange=108:109
+26	kurí	kurí	PART	FUT	Tense=Fut	27	advmod	_	TokenRange=110:114
+27	marã	marã	ADV	ADVRU	AdvType=Cau|PronType=Int	30	acl	_	TokenRange=115:119
+28	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	27	obl	_	TokenRange=120:125
+29	arã	arã	ADP	ADP	AdpType=Post	28	case	_	TokenRange=126:129
+30	timbiú	timbiú	NOUN	N	Number=Sing|Rel=Abs	21	advcl	_	SpaceAfter=No|TokenRange=130:136
+31	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=136:137
 
 # sent_id = Casasnovas2006:6:6:65
 # text = Awá kurí uruyari se resé, puranga kurí usasá.
