@@ -20380,26 +20380,26 @@
 # text_eng = TODO
 # text_por = "Tenho minha noiva, mamãe", aquele meu menino sempre dizia para mim.
 # text_source = Example 713 Br
-# text_orig = a-riku se-noiva, mamãe" u-nheẽ wera ix=arã nhaã se-kurumĩ
+# text_orig = "a-riku se-noiva, mamãe" u-nheẽ wera ix=arã nhaã se-kurumĩ
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = "Arikú se noiva/=n:o|pt, mamãe/=n:o|pt", unheẽwera ixé arã/adp nhaã se kurumĩ.
 1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=0:1
-2	Arikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=1:6
+2	Arikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	9	ccomp	_	TokenRange=1:6
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=7:9
 4	noiva	noiva	NOUN	N	Number=Sing	2	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=10:15
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
 6	mamãe	mamãe	NOUN	N	Number=Sing	2	vocative	_	OrigLang=por|SpaceAfter=No|TokenRange=17:22
 7	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=22:23
-8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=23:24
+8	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=23:24
 9-10	unheẽwera	_	_	_	_	_	_	_	TokenRange=25:34
-9	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	_
+9	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
 10	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	9	advmod	_	_
 11	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	9	iobj	_	TokenRange=35:38
 12	arã	arã	ADP	ADP	AdpType=Post	11	case	_	TokenRange=39:42
 13	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	15	det	_	TokenRange=43:47
 14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=48:50
 15	kurumĩ	kurumĩ	NOUN	N	Number=Sing	9	nsubj	_	SpaceAfter=No|TokenRange=51:57
-16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=57:58
+16	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=57:58
 
 # sent_id = Cruz2011:0:0:68
 # text = Ape umaãwera wã paá Nhãpirikuli uwapika uikú kwayé.
@@ -23312,6 +23312,8 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
 2	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:10
 3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=11:14
@@ -23324,7 +23326,7 @@
 10	aría	aría	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=33:37
 11	waimĩ	waimĩ	ADJ	A	_	10	amod	_	TokenRange=38:43
 12	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=44:49
-13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No|TokenRange=50:55
+13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	iobj	_	SpaceAfter=No|TokenRange=50:55
 14	:	:	PUNCT	PUNCT	_	19	punct	_	TokenRange=55:56
 15	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=57:59
 16	rimiarirú-itá	timiarirú	NOUN	N	Number=Plur|Rel=Cont	19	vocative	_	SpaceAfter=No|TokenRange=60:73
@@ -23334,7 +23336,7 @@
 20	ã	ã	PART	PFV	Aspect=Perf	19	advmod	_	SpaceAfter=No|TokenRange=88:89
 21	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=89:90
 22	kuíri	kuíri	ADV	ADVT	AdvType=Tim	23	advmod	_	TokenRange=91:96
-23	pesú	sú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	19	parataxis	_	TokenRange=97:101
+23	pesú	sú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	19	parataxis	_	TokenRange=97:101
 24	ã	ã	PART	PFV	Aspect=Perf	23	advmod	_	SpaceAfter=No|TokenRange=102:103
 25	,	,	PUNCT	PUNCT	_	32	punct	_	TokenRange=103:104
 26	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	29	advmod	_	TokenRange=105:107
@@ -23844,7 +23846,7 @@
 # text_por_sec = Depois ensinaram-no como procurar caça com piripirioca.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:460)
+# cross_reference = Avila2021:0:0:460
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 # review_status = ongoing
@@ -23853,7 +23855,7 @@
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	taumbué	mbué	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
-6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=20:22
+6	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	5	iobj	_	TokenRange=20:22
 7	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	8	advmod	_	TokenRange=23:27
 8	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	ccomp	_	TokenRange=28:35
 9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=36:39
@@ -26293,7 +26295,7 @@
 5	Kurasí	kurasí	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=11:17
 6	tuyué	tuyué	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=18:23
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	expl	_	TokenRange=24:25
-8	piaíwa	piaíwa	VERB	V2	_	0	root	_	TokenRange=26:32
+8	piaíwa	piaíwa	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=26:32
 9	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=33:41
 10	Wakurawá	wakurawá	NOUN	N	Number=Sing	9	obl	_	TokenRange=42:50
 11	suí	suí	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=51:54
@@ -26523,7 +26525,7 @@
 # sent_id = Casasnovas2006:12:7:173
 # text = Nhaã, paá, amú mira-itá pitérupi aikwé yepé kurumiwasú, ti usikié nẽ maã suí, sera, paá, Buburi.
 # text_eng = TODO
-# text_por = Numa outra tribo, havia um jovem muito valente, chamado Buburi.
+# text_por = Numa outra tribo, havia um jovem muito valente, chamado Buburi. 
 # text_source = p. 98, No. 9
 # text_orig = Nhaã, paá, amú miraitá pitérupi aikwé yepé kurumĩ-wasú, ti usikié ne maã suí, sera, paá, Buburi.
 # text_annotator = Juliana Lopes Gurgel
@@ -26633,6 +26635,7 @@
 # text_orig = Aé, paá, ti uputái Kurukuí imena arã.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No|TokenRange=0:2
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=2:3
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=4:7
@@ -26641,7 +26644,7 @@
 6	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:19
 7	Kurukuí	kurukuí	PROPN	PROPN	_	6	obj	_	TokenRange=20:27
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=28:29
-9	mena	mena	NOUN	N	Number=Sing	6	obj	_	TokenRange=30:34
+9	mena	mena	NOUN	N	Number=Sing	6	obl	_	TokenRange=30:34
 10	arã	arã	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=33:36
 11	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=38:39
 
