@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 18, 2024
+# Last update: September 23, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -129,13 +129,16 @@ WARA='wara'
 UPE='upé'
 PI=UPE
 
+# normalized lemmatization of alomorph 'rã'
+ARAMA='arã'
+
 # clitic adverb "-ntu"
 NTU='ntu'
 
 # clitic question particle "-ta"
 TA='taá'
 
-NONHYPHEN=[NTU,ME,WARA,WERA]
+NONHYPHEN=[NTU,ME,WARA,WERA, ARAMA]
 
 ROOT=[]
 
@@ -1903,10 +1906,11 @@ def mkSuff(form,dic):
 	ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
 	me={'xpos':'ADP','lemma':'upé','clitic':ME}
 	wara={'xpos':'ADP','lemma':'wara','clitic':WARA}
+	arama={'xpos':'ADP','lemma':'arã','clitic': ARAMA}
 	wera={'xpos':'FREQ','lemma':'wera','clitic':WERA}
 	pi={'xpos':'ADP','lemma':'upé','clitic':PI}
 	ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
-	suffs=[ntu,me,pi,ta,wara,wera]
+	suffs=[ntu,me,pi,ta,wara,wera,arama]
 	for suff in suffs:
 		clitic=suff.get('clitic')
 		if clitic == form:
@@ -2502,6 +2506,8 @@ def mkConlluSentence(tokens):
                     newparselist=mkX(correct)
                 else:
                     newparselist=getparselist(correct.lower())
+                    if xpos:
+                        newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
                 dic.update(mkModernForm(modern,attribute))
                 newparselist=getparselist(form.lower())
@@ -2560,7 +2566,7 @@ def mkConlluSentence(tokens):
                 new=_mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=red':
-                new=handlePartialRedup(form,length)
+                new=handlePartialRedup(form,length,xpos='V',orig=orig, orig_form=orig_form)
                 newparselist=new['parselist']
             elif tag == '=mid':
                 new=handleMiddlePassive(form)
@@ -2587,7 +2593,7 @@ def mkConlluSentence(tokens):
             if correct_form and typo:
                 t['misc'].update({'CorrectForm': correct_form})
                 if xpos != 'X':
-                    t['feats'].update({'Typo': 'Yes'})
+                    updateFeats(t,'Typo', 'Yes')
                 t['form']=typo
             modern_form=dic.get(attribute)
             if modern_form:
@@ -2911,6 +2917,8 @@ def extractHost(token):
         token,tag=pair
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
+    elif form == 'marã':
+        return mkHost('maã','arã',token,'IND')
     else:
         entry=getLocEntry(form)
         if entry:
