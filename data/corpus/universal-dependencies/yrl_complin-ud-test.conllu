@@ -2208,13 +2208,15 @@
 # text_eng = What do you want for Mary?
 # text_por = Que você quer para Maria?
 # text_source = Lesson 2, p. 18
-# text_annotator = DMA
-# reviewer1 = LFdeA
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Fiqueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
+# inputline = Maã/ind taá indé reputari Maria supé?
 1	Maã	maã	PRON	INT	PronType=Int	4	obj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=4:7
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	TokenRange=8:12
 4	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:21
-5	Maria	maria	PROPN	PROPN	_	4	obl	_	TokenRange=22:27
+5	Maria	maria	PROPN	PROPN	_	4	iobj	_	TokenRange=22:27
 6	supé	supé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=28:32
 7	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
 
@@ -2533,7 +2535,9 @@
 # text_por = Ela diz a um vendedor: — Eu quero uma camisa para meu filho.
 # text_source = Lesson 3, p. 21
 # text_annotator = DMA
-# reviewer2 = LFdeA
+# reviewer1 = Leonel Fiqueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
+# inputline = Aé/pron unheẽ yepé/art meẽsara supé: — Ixé aputari yepé/art kamixá se mimbira supé.
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:8
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=9:13
