@@ -24195,23 +24195,20 @@
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Casasnovas2006:9:8:92
-# text = Ape, paá, i manha umeẽ i xupé pusanga umusasawa arã i pira rupí, ti arã nhaã urubú-kunhã-itá umaã aé.
+# text = Ape, paá, i manha umeẽ i xupé pusanga umusasawa arã i pira rupí, ti arã nhaã urubú kunhã-itá umaã aé.
 # text_eng = TODO
-# text_eng_ggl = Then his mother gave him medicine to put on his body so that the vultures wouldn't see him.
 # text_por = Depois a mãe deu-lhe remédio para passar no corpo a fim de que os urubus não o vissem.
 # text_source = p. 88, No. 8-9
 # text_orig = Ape, paá, imanha umeé ixupé pusanga umusasawa arã ipira rupí, ti arã nhaã urubú kunhãitá umaã aé.
-# text_annotator = JLG
-# title = Tapayuna mirĩ puranga
-# title_orig = Tapayuna Mirí Puranga
-# title_por_orig = A moreninha
-# title_eng = The little brunette
+# text_annotator = Juliana Lopes Gurgel
 # text_sec = Ape paá i manha umeẽ i xupé pusanga umusasawa arã i pira rupí, ti arã nhaã urubú-kunhã-itá umaã aé.
-# text_por_sec = Então, contam, a mãe deu-lhe puçanga para passar pelo corpo, a fim de que as urubús fêmeas não o vissem.
+# text_por_orig_sec = Então, contam, a mãe deu-lhe puçanga para passar pelo corpo, a fim de que as urubús fêmeas não o vissem.
 # text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
-# annotator_comment = sentence already in 'yrl_complin-ud-test.conllu' (Avila2021:0:0:542)
+# text_por_orig_sec_source = Avila (2021)
+# cross_reference = Avila2021:0:0:542
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Ape/advt, paá, i/pron2 manha umeẽ i/pron2 xupé pusanga umusasawa arã/sconj i/pron2 pira rupí, ti arã/sconj nhaã urubú kunhã-itá umaã aé/pron.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24219,22 +24216,23 @@
 5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=10:11
 6	manha	manha	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=12:17
 7	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=18:22
-8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	obl	_	TokenRange=23:24
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=23:24
 9	xupé	xupé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=25:29
 10	pusanga	pusanga	NOUN	N	Number=Sing	7	obj	_	TokenRange=30:37
-11	umusasawa	musasawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	acl:relcl	_	TokenRange=38:47
+11	umusasawa	musasawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	advcl	_	TokenRange=38:47
 12	arã	arã	SCONJ	SCONJ	_	11	mark	_	TokenRange=48:51
 13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=52:53
 14	pira	pira	NOUN	N	Number=Sing	11	obl	_	TokenRange=54:58
 15	rupí	rupí	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=59:63
-16	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=63:64
-17	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	21	advmod	_	TokenRange=65:67
-18	arã	arã	SCONJ	SCONJ	_	21	mark	_	TokenRange=68:71
-19	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	20	det	_	TokenRange=72:76
-20	urubú-kunhã-itá	urubú-kunhã	NOUN	N	Number=Plur	21	nsubj	_	TokenRange=77:92
-21	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=93:97
-22	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	21	obj	_	SpaceAfter=No|TokenRange=98:100
-23	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=100:101
+16	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=63:64
+17	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=65:67
+18	arã	arã	SCONJ	SCONJ	_	22	mark	_	TokenRange=68:71
+19	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	21	det	_	TokenRange=72:76
+20	urubú	urubú	NOUN	N	Number=Sing	21	nmod:poss	_	TokenRange=77:82
+21	kunhã-itá	kunhã	NOUN	N	Number=Plur	22	nsubj	_	TokenRange=83:92
+22	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=93:97
+23	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	22	obj	_	SpaceAfter=No|TokenRange=98:100
+24	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=100:101
 
 # sent_id = Casasnovas2006:9:9:93
 # text = Ape, paá, usú ã ipawa kití.
