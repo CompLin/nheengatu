@@ -33923,7 +33923,7 @@
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	obj	_	SpaceAfter=No|TokenRange=21:24
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
-# sent_id = Seixas1853:0:100:100
+# sent_id = Seixas1853:0:0:100
 # text = Eẽ xipiaka mayé usú sinipuka iwaka kití!!!
 # text_eng = See how it goes so bright to the sky!!!
 # text_por = Vê como vai tão brilhante para o céu!!!
@@ -33934,7 +33934,9 @@
 # text_por_sec = Vê como vai tão brilhante para o céu!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
+# inputline = Eẽ xipiaka/=mf:m|rexipiaka mayé/advra usú sinipuka iwaka kití!!!
 1	Eẽ	eẽ	PART	AFF	_	2	advmod	_	TokenRange=0:2
 2	xipiaka	xipiaka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=rexipiaka|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:10
 3	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	4	advmod	_	TokenRange=11:15
@@ -35386,28 +35388,32 @@
 2	mbira	mbira	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=3:8
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
 
-# sent_id = Melgueiro2022:0:101:101
+# sent_id = Melgueiro2022:0:0:101
 # text = Nhaã ne mbira apisaíma.
 # text_eng = That daughter of yours is disobedient.
 # text_por = Aquela sua filha é danada.
 # text_source = p. 112
 # text_orig = nhaã némbira apisá íma
 # text_por_orig = – aquela sua filha é danada,
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
+# inputline = Nhaã ne mbira apisaíma/=prv.
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
 3	mbira	mbira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=8:13
 4	apisaíma	apisá	ADJ	A	Derivation=Priv	0	root	_	SpaceAfter=No|TokenRange=14:22
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=22:23
 
-# sent_id = Melgueiro2022:0:1001:1001
+# sent_id = Melgueiro2022:0:0:1001
 # text = Usika tiapuíma.
 # text_eng = It arrived without fuss.
 # text_por = Ele chegou sem barulho.
 # text_source = p. 948
 # text_orig = ukika tiapu íma.
 # text_por_orig = Ele cheou sem barulho.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Hélio Leonam Barroso Silva
+# inputline = Usika tiapuíma/=prv:x|adva.
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	tiapuíma	tiapú	ADV	ADVA	AdvType=Man|Derivation=Priv	1	advmod	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
