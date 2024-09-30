@@ -3703,7 +3703,7 @@
 
 # sent_id = Navarro2016:4:5:172
 # text = Aikwé mira-itá upurungitá waá amú nheenga-itá São Gabriel upé: Baniwa, Tukano, Desana, Yanomami.
-# text_eng = There are people who speak other languages ​​in São Gabriel: Baniwa, Tucano, Desana, Yanomami.
+# text_eng = There are people who speak other languages in São Gabriel: Baniwa, Tucano, Desana, Yanomami.
 # text_por = Há pessoas que falam outras línguas em São Gabriel: baniwa, tucano, desana, ianomami.
 # text_source = Lesson 4, p. 30
 # text_annotator = VAN
@@ -8036,9 +8036,10 @@
 # sent_id = Avila2021:20:1:187
 # text = Mukũi tapuya manáu usú paá aintá umaã aintá kupixawa.
 # text_eng = They say that two Manao indians went to see their gardens.
-# text_por = Dizem que duas índias manaos foram ver suas roças. [Corr. transl.]
+# text_por = Dizem que duas índias manaos foram ver suas roças.
+# text_por_orig = Dizem que duas índias manaus foram ver suas roças.
 # text_source = Rodrigues, 137, adap.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
 1	Mukũi	mukũi	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:5
 2	tapuya	tapuya	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=6:12
 3	manáu	manáu	NOUN	N	Number=Sing	2	appos	_	TokenRange=13:18
@@ -8056,7 +8057,8 @@
 # text_por = Quando chegaram às suas roças, viram, segundo dizem, que o veado estragara as roças delas.
 # text_source = Rodrigues, 137, adap.
 # text_orig = Usika ramé aintá kupixá-pe, umaã paá suasú umuaíwa aintá kupixawa
-# text_annotator = LFdeA
+# text_prim = Mocoin tapiiua Manáos u çu, paá etá u maan i cupichaua, u cêca aramé aitá cupichá pe u maan, paá, çuaçu u maiua i cupichaua.
+# text_annotator = Leonel Figueiredo de Alencar
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:16
@@ -8110,7 +8112,7 @@
 # text_eng = Does the tortoise run more than me?
 # text_por = O jabuti corre mais do que eu?
 # text_source = Muniz, 84, adap.
-# text_annotator = LFdeA
+# text_annotator = Leonel Figueiredo de Alencar
 1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	2	advmod	_	TokenRange=12:16
