@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 27, 2024
+# Last update: October 2, 2024
 
 INSTITUTIONS = {'min' : 'Biblioteca Brasiliana Guita e José Mindlin'}
 
@@ -35,6 +35,12 @@ TEXT= [ {'attribute_name': 'text', 'description': '''This the annotated text in 
        {'attribute_name': 'text_sec', 'description': '''This a version of the original text steming from a secondary source.''', 'optional' : True, 'requires': 'text_orig'},
        
         {'attribute_name': 'text_por_sec', 'description': '''This a version of the original text steming from a secondary source.''', 'optional' : True, 'requires': 'text_por'},
+
+        {'attribute_name': 'text_eng', 'description': '''This is a human translation of the Nheengatu text into English or a revised version thereof.''', 'optional' : False, 'default': 'TODO'},
+
+        {'attribute_name': 'text_eng_ggl', 'description': '''This is a machine translation by Google Translator of the Portuguese text into English.''', 'optional' : True, 'requires': 'text_eng'},
+
+        {'attribute_name': 'text_por', 'description': '''This is the Portuguese translation of the Nheengatu text found in the publication referred to in the sentence identity attribute or in another publication.''', 'optional' : False},
        
     ]
 
