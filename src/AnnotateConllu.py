@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 23, 2024
+# Last update: October 3, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2005,10 +2005,15 @@ def serializeEntry(entry):
 	tags='+'.join(feats)
 	return tags
 
-def handlePartialRedup(form,length,xpos='V',orig=None, orig_form=''): # TODO: reduplication of adjectives
+def handlePartialRedup(form,length,xpos='V',orig=None, orig_form='',accent=False, suffix=False): # TODO: reduplication of adjectives
     new={}
     entry=guessVerb(form)
-    lemma=entry['lemma'][length:] # TODO: check if lemma exists in the lexicon
+    if suffix:
+        lemma=entry['lemma'][:-length]
+        if accent:
+            lemma=handleAccent(lemma)
+    else:
+        lemma=entry['lemma'][length:]
     handleOrig(new,lemma,orig, orig_form)
     entry['derivation']=REDUP
     keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
@@ -2483,6 +2488,7 @@ def mkConlluSentence(tokens):
                 orig=get_iso_3_letter_code(orig)
             accent=tagparse.get('a')
             length=tagparse.get('l')
+            suffix=tagparse.get('u')
             typo=tagparse.get('t')
             correct=tagparse.get('c')
             modern=tagparse.get('m')
@@ -2566,7 +2572,7 @@ def mkConlluSentence(tokens):
                 new=_mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=red':
-                new=handlePartialRedup(form,length,xpos='V',orig=orig, orig_form=orig_form)
+                new=handlePartialRedup(form,length,xpos='V',orig=orig, orig_form=orig_form, accent=accent, suffix=suffix)
                 newparselist=new['parselist']
             elif tag == '=mid':
                 new=handleMiddlePassive(form)
