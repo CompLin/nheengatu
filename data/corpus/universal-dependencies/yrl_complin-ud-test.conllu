@@ -36125,3 +36125,46 @@
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=8:11
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
+# sent_id = Leetra2015:8:100:100
+# text = Uyawiyawika uikú taité, ukikiri paá uikú ra, ape paá kupukú xinga paá usika nhaã tukura mirĩ, guiliru mirĩ, aape paá usika nheengari suakí; tiiririrririririririririri.
+# text_eng = TODO
+# text_por = O coitado inclinava-se repetidamente, estava era cochilando, dali a pouco chegou um pequeno gafanhoto, então um grilinho pequeno chegou perto cantando "tiiririrririririririririri".
+# text_source = p. 65
+# text_author = Hermes Plácido
+# title_orig = PITUNA YUMPIRUNGÁ
+# title_por = Origem da noite
+# variant_number = I
+# text_orig = Uyawiyawika uikú taité, ukikiri pa uiku ra, apé páá kupuku xinga pa usika yam tukura mirí, guiliru mirí, aapé páá usika yengaí suakí; tiiririrririririririririri.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Uyawiyawika/=red:l|4 uikú/v taité/n, ukikiri/=red:l|2 paá uikú/v ra, ape/advt paá kupukú xinga paá usika nhaã tukura mirĩ/a, guiliru/=n:o|pt:s|grilo mirĩ/a, aape/advt paá usika nheengari suakí; tiiririrririririririririri/=intj.
+1	Uyawiyawika	yawika	VERB	V	Mood=Ind|Person=3|Red=Yes|VerbForm=Fin	0	root	_	TokenRange=0:11
+2	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	1	aux	_	TokenRange=12:16
+3	taité	taité	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=17:22
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
+5	ukikiri	kiri	VERB	V	Mood=Ind|Person=3|Red=Yes|VerbForm=Fin	1	parataxis	_	TokenRange=24:31
+6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=32:35
+7	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	TokenRange=36:40
+8	ra	ra	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	SpaceAfter=No|TokenRange=41:43
+9	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=43:44
+10	ape	ape	ADV	ADVT	AdvType=Tim	12	advmod	_	TokenRange=45:48
+11	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	12	advmod	_	TokenRange=49:52
+12	kupukú	kupukú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	1	parataxis	_	TokenRange=53:59
+13	xinga	xinga	ADV	ADVS	AdvType=Deg	12	advmod	_	TokenRange=60:65
+14	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	15	advmod	_	TokenRange=66:69
+15	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	parataxis	_	TokenRange=70:75
+16	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	17	det	_	TokenRange=76:80
+17	tukura	tukura	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=81:87
+18	mirĩ	mirĩ	ADJ	A	_	17	amod	_	SpaceAfter=No|TokenRange=88:92
+19	,	,	PUNCT	PUNCT	_	25	punct	_	TokenRange=92:93
+20	guiliru	guiliru	NOUN	N	Number=Sing	25	nsubj	_	Orig=grilo|OrigLang=por|TokenRange=94:101
+21	mirĩ	mirĩ	ADJ	A	_	20	amod	_	SpaceAfter=No|TokenRange=102:106
+22	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=106:107
+23	aape	aape	ADV	ADVT	AdvType=Tim	25	advmod	_	TokenRange=108:112
+24	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	25	advmod	_	TokenRange=113:116
+25	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	parataxis	_	TokenRange=117:122
+26	nheengari	nheengari	VERB	V	VerbForm=Inf	25	parataxis	_	TokenRange=123:132
+27	suakí	ruakí	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	26	obl	_	SpaceAfter=No|TokenRange=133:138
+28	;	;	PUNCT	PUNCT	_	1	punct	_	TokenRange=138:139
+29	tiiririrririririririririri	tiiririrririririririririri	INTJ	INTJ	_	26	ccomp	_	SpaceAfter=No|TokenRange=140:166
+30	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=166:167
+
