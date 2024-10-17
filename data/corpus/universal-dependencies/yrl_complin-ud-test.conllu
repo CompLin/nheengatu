@@ -2524,7 +2524,7 @@
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
 5	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	conj	_	TokenRange=14:17
 6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=18:22
-7	piripanasawa	piripanasawa	NOUN	N	Number=Sing	8	compound	_	TokenRange=23:35
+7	piripanasawa	piripanasawa	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=23:35
 8	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=36:40
 9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=41:45
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=45:46
@@ -2883,7 +2883,7 @@
 3	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=7:9
 4	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:13
 5	amú	amú	DET	IND	Number=Sing|PronType=Ind	7	det	_	TokenRange=14:17
-6	piripanasawa	piripanasawa	NOUN	N	Number=Sing	7	compound	_	TokenRange=18:30
+6	piripanasawa	piripanasawa	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=18:30
 7	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=31:35
 8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=36:40
 9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=40:41
@@ -3315,7 +3315,7 @@
 2	kamixá-itá	kamixá	NOUN	N	Number=Plur	1	nsubj	_	TokenRange=6:16
 3	puranga	puranga	ADJ	A	_	2	amod	_	TokenRange=17:24
 4	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=25:29
-5	piripanasawa	piripanasawa	NOUN	N	Number=Sing	6	compound	_	TokenRange=30:42
+5	piripanasawa	piripanasawa	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=30:42
 6	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=43:47
 7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=48:51
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=51:52
@@ -4378,8 +4378,8 @@
 8	umanhana	manhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=40:48
 9	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	8	aux	_	TokenRange=49:53
 10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=54:58
-11	itá	itá	NOUN	N	Number=Sing	8	obj	_	TokenRange=59:62
-12	uka	uka	NOUN	N	Number=Sing|Rel=Abs	11	compound	_	SpaceAfter=No|TokenRange=63:66
+11	itá	itá	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=59:62
+12	uka	uka	NOUN	N	Number=Sing|Rel=Abs	8	obj	_	SpaceAfter=No|TokenRange=63:66
 13	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=66:67
 
 # sent_id = Avila2021:0:0:1
@@ -28212,7 +28212,9 @@
 # sent_id = Rodrigues1890:1-1-9:155:155
 # text = Ariré usú ana aintá.
 # text_eng = After that, they left.
+# text_por_gloss = Depois disso foram-se embora eles.
 # text_por = Depois disso, eles foram-se embora.
+# text_por_orig = Depois disso, eles foram-se embora,
 # text_source = p. 78
 # text_orig = Ariré u ço ana anitá.
 # text_annotator = LFdeA
@@ -28226,7 +28228,9 @@
 # text = Umunhã kurusamirĩ-etá Kurupira rapé upé.
 # text_eng_ggl = They made little crosses on the path to Curupira.
 # text_eng = They made little crosses on Curupira's path.
-# text_por = Fizeram cruzezinhas no caminho do Curupira.
+# text_por = Fizeram cruzinhas no caminho do Curupira.
+# text_por_gloss = Fizeram cruzinhas do Curupira caminho no.
+# text_por_orig = fizeram umas cruzesinhas pelo caminho.
 # text_source = p. 78
 # text_orig = O monhana curuçá mirim etá Curupira rapé opé.
 # text_annotator = LFdeA
@@ -29837,8 +29841,8 @@
 # text_por_translator = Marcel Twardowsky Avila
 # text_source = p. 164
 # text_orig = Pitúna okệri oikộ ɨ rɨpɨpe.
-# text_annotator = LFdeA
-# spelling_adaptation = MTA
+# text_annotator = Leonel Figueiredo de Alencar
+# spelling_adaptation = Marcel Twardowsky Avila
 1	Pituna	pituna	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	TokenRange=13:17
