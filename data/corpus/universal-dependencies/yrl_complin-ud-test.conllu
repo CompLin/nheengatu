@@ -14680,6 +14680,8 @@
 # text_por = Então, contam, a mãe deu-lhe puçanga para passar pelo corpo, a fim de que as urubus fêmeas não o vissem.
 # text_source = Casasnovas, 88
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=4:7
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=8:9
@@ -14696,7 +14698,7 @@
 14	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=61:62
 15	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	20	advmod	_	TokenRange=63:65
 16	arã	arã	SCONJ	SCONJ	_	20	mark	_	TokenRange=66:69
-17	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	18	det	_	TokenRange=70:74
+17	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	19	det	_	TokenRange=70:74
 18	urubú	urubú	NOUN	N	Number=Sing	19	nmod:poss	_	TokenRange=75:80
 19	kunhã-itá	kunhã	NOUN	N	Number=Plur	20	nsubj	_	TokenRange=81:90
 20	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=91:95
@@ -24212,6 +24214,8 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Ape/advt, paá, i/pron2 manha umeẽ i/pron2 xupé pusanga umusasawa arã/sconj i/pron2 pira rupí, ti arã/sconj nhaã urubú kunhã-itá umaã aé/pron.
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Dominick Maia Alexandre
+# reviewer3 = Hélio Leonam Barroso Silva
 1	Ape	ape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24222,7 +24226,7 @@
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=23:24
 9	xupé	xupé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=25:29
 10	pusanga	pusanga	NOUN	N	Number=Sing	7	obj	_	TokenRange=30:37
-11	umusasawa	musasawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	advcl	_	TokenRange=38:47
+11	umusasawa	musasawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=38:47
 12	arã	arã	SCONJ	SCONJ	_	11	mark	_	TokenRange=48:51
 13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=52:53
 14	pira	pira	NOUN	N	Number=Sing	11	obl	_	TokenRange=54:58
