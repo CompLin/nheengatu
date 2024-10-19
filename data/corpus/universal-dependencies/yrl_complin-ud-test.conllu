@@ -29913,7 +29913,11 @@
 # sent_id = Magalhaes1876:1:6:6
 # text = Yepé ara upé usenúi musapiri miasúa, unheẽ aintá supé: — Pekũi pewatá; se rimirikú intí ukiri-putari se irumu.
 # text_eng = One day he called the three vassals and said to them: "Go for a walk because my wife doesn't want to sleep with me."
-# text_por = Um dia, chamou os três vassalos e disse-lhes: — Ide passear porque minha mulher não quer dormir comigo. [Magalhães, 1876, p. 172]
+# text_por = Um dia, chamou os três vassalos e disse-lhes: — Ide passear porque minha mulher não quer dormir comigo.
+# text_por_orig = Um dia, ele chamou os três fâmulos e lhes disse: — Ide passear porque minha mulher não quer dormir comigo.
+# text_por_orig_source = p. 172
+# text_por_alt = Um dia, chamou os três vassalos e disse-lhes: — Ide passear. Minha esposa não quer dormir comigo.
+# text_por_alt_translator = Marcel Twardowsky Avila
 # text_source = p. 164
 # text_orig = Oiepé ára upé ocenõĩ muçapɨra miaçúa, onhehẽ aitá çupé: — Pecõĩ peuatá; cerẹmirẹcó intí okệri putári cẹ irúmo.
 # text_annotator = LFdeA
@@ -29926,12 +29930,12 @@
 6	miasúa	miasúa	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=29:35
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=35:36
 8	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=37:42
-9	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	8	obl	_	TokenRange=43:48
+9	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	8	iobj	_	TokenRange=43:48
 10	supé	supé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=49:53
 11	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=53:54
 12	—	—	PUNCT	PUNCT	_	14	punct	_	TokenRange=55:56
 13	Pekũi	sú	AUX	AUXFR	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	14	aux	_	TokenRange=57:62
-14	pewatá	watá	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=63:69
+14	pewatá	watá	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	ccomp	_	SpaceAfter=No|TokenRange=63:69
 15	;	;	PUNCT	PUNCT	_	19	punct	_	TokenRange=69:70
 16	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	TokenRange=71:73
 17	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	19	nsubj	_	TokenRange=74:82
