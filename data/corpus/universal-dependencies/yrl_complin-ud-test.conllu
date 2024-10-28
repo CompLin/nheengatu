@@ -35168,7 +35168,7 @@
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hart1938:0:0:91
-# text = Intí ã se kirimbá xasupiri arama maã i pusé reté waá.
+# text = Intí ã se kirimbá xasupiri arama maã i poréi reté waá.
 # text_eng = TODO
 # text_por = Não tenho bastante força para aguentar uma coisa muito pesada.
 # text_source = p. 325, No. 91
@@ -35180,6 +35180,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_adapt = Dominick Maia Alexandre
 # text_adapt_review = Leonel Figueiredo de Alencar
+# inputline = Intí ã se kirimbá/v2 xasupiri arama/sconj maã/ind i/pron2 poréi/=typo:c|puséi reté/advs waá.
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
 2	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=5:6
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=7:9
@@ -35188,10 +35189,10 @@
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=27:32
 7	maã	maã	PRON	IND	PronType=Ind	5	obj	_	TokenRange=33:36
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	expl	_	TokenRange=37:38
-9	pusé	pusé	VERB	V2	Mood=Ind|VerbForm=Fin	7	acl:relcl	_	TokenRange=39:43
-10	reté	reté	ADV	ADVS	AdvType=Deg	9	advmod	_	TokenRange=44:48
-11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=49:52
-12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=52:53
+9	poréi	puséi	VERB	V2	Mood=Ind|Typo=Yes|VerbForm=Fin	7	acl:relcl	_	CorrectForm=puséi|TokenRange=39:44
+10	reté	reté	ADV	ADVS	AdvType=Deg	9	advmod	_	TokenRange=45:49
+11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=50:53
+12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=53:54
 
 # sent_id = Hartt1938:0:0:93
 # text = Yawara uyusuú.
