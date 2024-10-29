@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 13, 2024
+# Last update: October 29, 2024
 
 import re, sys, os, json
 
@@ -91,8 +91,6 @@ interj.\tINTJ\tinterjeição
 s.\tN\tsubstantivo comum
 s. próprio\tPROPN\tsubstantivo próprio
 s. loc.\tLOC\tsubstantivo locativo
-part.\tPART\tpartícula
-part. mod.\tMOD\tpartícula modal
 part. perf.\tPFV\tpartícula de perfectivo
 part. imperf.\tIMPF\tpartícula de imperfectivo
 part. prec.\tPREC\tpartícula de precativo

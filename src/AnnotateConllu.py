@@ -732,7 +732,6 @@ def handlePart(token,tokenlist,verbs):
     'PREC': {'PartType': 'Mod'},
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
-    'MOD': {'PartType': 'Mod'},
     'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
     'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
     'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
@@ -768,9 +767,6 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'PREC':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
-    elif xpos == 'MOD':
-        updateFeats(token,'PartType', 'Mod')
-        headPartPreviousVerb(token,verbs)
     elif xpos == 'PFV':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
