@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 3, 2024
+# Last update: October 29, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -717,10 +717,12 @@ def handlePart(token,tokenlist,verbs):
     'CQ': {'PartType': 'Int','QestType':'Content'},
     'NEG': {'PartType': 'Neg','Polarity':'Neg'},
     'CONS': {'PartType': 'Mod','Polarity':'Pos'},
+    'AFF': {'Polarity':'Pos'},
     'NEGI': {'PartType': 'Neg','Polarity':'Neg','Mood': 'Imp'},
     'RPRT': {'PartType': 'Mod','Evident':'Nfh'},
     # 'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
     'PFV': {'PartType': 'Tam','Aspect':'Perf'},
+    'IMPF': {'PartType': 'Tam','Aspect':'Imp'},
     'FRUST': {'PartType': 'Tam','Aspect':'Frus'},
     'FUT': {'PartType': 'Tam','Tense':'Fut'},
     'PRET': {'PartType': 'Tam','Tense':'Past'},
@@ -760,6 +762,9 @@ def handlePart(token,tokenlist,verbs):
     elif xpos == 'NEC':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
+    elif xpos == 'AFF':
+        updateFeats(token,'Polarity', 'Pos')
+        headPartNextVerb(token,verbs)
     elif xpos == 'PREC':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
@@ -770,6 +775,10 @@ def handlePart(token,tokenlist,verbs):
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
         updateFeats(token,'Aspect','Perf')
+    elif xpos == 'IMPF':
+        #headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
+        updateFeats(token,'Aspect','Imp')
     elif xpos == 'TOTAL':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
