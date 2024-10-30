@@ -27614,7 +27614,8 @@
 # text_source = p. 34
 # text_orig = Remeé panhé maá ta uputari waá.
 # text_annotator = LFdeA
-1	Remeẽ	meẽ	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+# reviewer1 = Juliana Lopes Gurgel
+1	Remeẽ	meẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	panhẽ	panhẽ	PRON	TOT	PronType=Tot	3	det	_	TokenRange=6:11
 3	maã	maã	PRON	IND	PronType=Ind	1	obj	_	TokenRange=12:15
 4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=16:18
@@ -27681,12 +27682,13 @@
 # text_source = p. 37
 # text_orig = Kwa apigá usasá waá kwesé kwa rupí, aeté se mu.
 # text_annotator = LFdeA
+# reviewer1 = Juliana Lopes Gurgel
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	11	dislocated	_	TokenRange=4:9
 3	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=10:15
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=16:19
 5	kwesé	kwesé	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=20:25
-6	kwá	kwá	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	advmod	_	TokenRange=26:29
+6	kwá	kwá	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	obl	_	TokenRange=26:29
 7	rupí	rupí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=30:34
 8	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=34:35
 9	aité	aité	PRON	EMP	PronType=Emp	11	nsubj	_	TokenRange=36:40
@@ -27721,14 +27723,16 @@
 # text_source = p. 40
 # text_orig = Yandé yasarú usika waá pemanha, yaú arã pupunha yukisé
 # text_annotator = LFdeA
+# reviewer1 = Juliana Lopes Gurgel
+# inputline = Yandé/pron yasarú usika waá/sconj pe/pron2 manha, yaú arã/sconj pupunha yukisé.
 1	Yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	yasarú	sarú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:12
-3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=13:18
-4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=19:22
+3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=13:18
+4	waá	waá	SCONJ	SCONJ	_	3	mark	_	TokenRange=19:22
 5	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=23:25
 6	manha	manha	NOUN	N	Number=Sing	3	nsubj	_	SpaceAfter=No|TokenRange=26:31
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
-8	yaú	ú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=33:36
+8	yaú	ú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	advcl	_	TokenRange=33:36
 9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=37:40
 10	pupunha	pupunha	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=41:48
 11	yukisé	yukisé	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=49:55
@@ -34045,11 +34049,11 @@
 # text_source = p. XII
 # text_orig = Munhá enê aê omunúca oá.
 # text_annotator = LFdeA
-1	Munhã	munhã	VERB	V	VerbForm=Inf	0	root	_	ModernForm=remunhã|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=0:5
+1	Munhã	munhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=remunhã|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=0:5
 2	iné	iné	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	TokenRange=6:9
 3	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=10:12
-4	umunuka	munuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=13:20
-5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	obj	_	SpaceAfter=No|TokenRange=21:24
+4	umunuka	munuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=13:20
+5	waá	waá	SCONJ	SCONJ	_	4	mark	_	SpaceAfter=No|TokenRange=21:24
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Seixas1853:0:0:100
@@ -35769,7 +35773,7 @@
 # text_eng = God saw that it was good.
 # text_por = Deus viu que era bom.
 # text_source = p. 69
-# text_orig = Tupana u-xipiá mahã catu' uahá.
+# text_orig = Tupana u-xipiá mahã catú uahá.
 # text_annotator = LFdeA
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	uxipiá	xipiá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
