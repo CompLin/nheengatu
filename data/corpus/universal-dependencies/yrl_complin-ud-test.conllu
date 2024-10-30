@@ -36229,6 +36229,27 @@
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	SpaceAfter=No|TokenRange=8:11
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
+# sent_id = Leetra2014:7:701:701
+# text = Bukúkuri yepé wirá pituna ramewara.
+# text_eng = TODO
+# text_por = A coruja é um pássaro noturno.
+# text_source = p. 25
+# text_orig = BUKÚKURI YEPÉ WIRÁ PITUNA RAMÉ WARA.
+# text_sec = Bukúkuri yepé wirá pituna ramewara.
+# text_por_sec = A coruja é um pássaro noturno.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Bukúkuri yepé/art wirá/@ pituna ramewara/adp.
+1	Bukúkuri	bukúkuri	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=9:13
+3	wirá	wirá	NOUN	N	Number=Sing	0	root	_	TokenRange=14:18
+4	pituna	pituna	NOUN	N	Number=Sing	3	nmod	_	TokenRange=19:25
+5-6	ramewara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=26:34
+5	ramé	ramé	ADP	ADP	AdpType=Post	4	case	_	_
+6	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+
 # sent_id = Leetra2015:8:100:100
 # text = Uyawiyawika uikú taité, ukikiri paá uikú ra, ape paá kupukú xinga paá usika nhaã tukura mirĩ, guiliru mirĩ, aape paá usika nheengari suakí; tiiririrririririririririri.
 # text_eng = TODO
