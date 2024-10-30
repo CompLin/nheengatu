@@ -27288,13 +27288,14 @@
 24	.	.	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No|TokenRange=108:109
 
 # sent_id = Casasnovas2006:7:1:1
-# text = Yepé ara paá taína-itá taunheẽ ta ramunha tamakwarí tuyué supé: — Abú, puxiwera paá marandua yandé.
+# text = Yepé ara paá taína-itá taunheẽ ta ramunha tamakwarí tuyué supé: — Abú, puxiwera paá marandúa yandé.
 # text_eng = One day, they say, children said to their grandfather, old Tamaquari: "Grandpa, we have bad news.
 # text_por = Um dia, contam, crianças disseram para o seu avô, o velho Tamaquari: — Vovô, temos uma má notícia. [Adapt. transl.]
 # text_source = p. 83, No. 1-2
 # title = Tamakwarí Ukwasá
 # title_por = A sabedoria do Tamaquari
 # text_orig = Yepé ara paá, tainaitá taunheé taramunha tamakwarí tuyué supé: Abú, puxwera paá marandúa yandé.
+# text_orig_transcriber = Juliana Lopes Gurgel
 # text_annotator = Leonel Figueiredo de Alencar (LFdeA)
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
@@ -27312,7 +27313,7 @@
 14	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=68:69
 15	puxiwera	puxiwera	ADJ	A	_	17	amod	_	TokenRange=70:78
 16	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	17	advmod	_	TokenRange=79:82
-17	marandua	marandua	NOUN	N	Number=Sing	5	ccomp	_	TokenRange=83:91
+17	marandúa	marandúa	NOUN	N	Number=Sing	5	ccomp	_	TokenRange=83:91
 18	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	17	dislocated	_	SpaceAfter=No|TokenRange=92:97
 19	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=97:98
 
@@ -27323,6 +27324,7 @@
 # text_source = p. 83, No. 2
 # text_adapt = Avila (2021)
 # text_orig = Kwa iwí, paá, yepé ara ukaí arã yané irumu!
+# text_orig_transcriber = Juliana Lopes Gurgel
 # text_annotator = LFdeA
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	iwí	iwí	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=4:7
@@ -27357,6 +27359,9 @@
 # text_eng = "If it burns I'll go into a hole in the earth."
 # text_por = — Se queimar entrarei dentro de um buraco da terra. [Adapt. transl.]
 # text_source = p. 83, No. 3
+# text_orig = Ukaí ramé kurí, awiké kurí isuí iwí kwara kití!
+# text_orig_transcriber = Juliana Lopes Gurgel
+# reviewer1 = Juliana Lopes Gurgel
 # text_annotator = LFdeA
 1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
 2	Ukái	kái	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=1:5
@@ -27367,7 +27372,7 @@
 7	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=23:27
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=28:29
 9	suí	suí	ADP	ADP	AdpType=Post	8	case	_	TokenRange=30:33
-10	iwí	iwí	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=34:37
+10	iwí	iwí	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=34:37
 11	kwara	kwara	NOUN	N	Number=Sing	6	obl	_	TokenRange=38:43
 12	kití	kití	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=44:48
 13	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=48:49
@@ -27487,6 +27492,9 @@
 # text_annotator = LFdeA
 # text_por_orig = mas para não se dar por vencido, disse: Se as águas fervem, então mergulharei no fundo do buraco de uma pedra.
 # text_sec = ― Ií upupuri ramé kurí, ayapumi kurí tipí, awiké arã i suí itakwara kití! [Avila 2021]
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# reviewer1 = Juliana Lopes Gurgel
 1	Ma	ma	ADV	ADVP	AdvType=Con	4	advmod	_	TokenRange=0:2
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=3:5
 3	arã	arã	SCONJ	SCONJ	_	4	mark	_	TokenRange=6:9
