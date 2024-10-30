@@ -35228,6 +35228,32 @@
 6	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	5	case	_	_
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
 
+# sent_id = Hartt1938:0:0:108
+# text = I puséi aité maã xarasú waá se atiiwa árupi.
+# text_eng = What I carry on my shoulder is very heavy.
+# text_por = O que levo no ombro é muito pesado.
+# text_source = p. 327, No. 108
+# text_orig = iposéi aete maé xarasó uaé seatiyua árpe.
+# text_sec =  I pusé aité maã arasú waá se atiiwa árupi.
+# text_por_sec = Isto que eu levo sobre meu ombro é pesado.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Dominick Maia Alexandre
+# inputline = I/pron2 puséi aité maã/ind xarasú waá se atiiwa árupi.
+# reviewer1 = Leonel Figueiredo de Alencar
+1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	expl	_	TokenRange=0:1
+2	puséi	puséi	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=2:7
+3	aité	aité	DET	EMP	PronType=Emp	4	det	_	TokenRange=8:12
+4	maã	maã	PRON	IND	PronType=Ind	2	nsubj	_	TokenRange=13:16
+5	xarasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	acl:relcl	_	ModernForm=arasú|TokenRange=17:23
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	TokenRange=24:27
+7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	8	nmod:poss	_	TokenRange=28:30
+8	atiiwa	atiiwa	NOUN	N	Number=Sing	9	nmod:poss	_	TokenRange=31:37
+9-10	árupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=38:43
+9	ara	ara	NOUN	N	Number=Sing	5	obl	_	_
+10	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	9	case	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
+
 # sent_id = Hartt1938:0:0:147
 # text = Asú apagari nhaã apigawa supé.
 # text_eng = I'm going to pay that man.
