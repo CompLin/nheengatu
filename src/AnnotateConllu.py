@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 29, 2024
+# Last update: October 31, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -718,7 +718,7 @@ def handlePart(token,tokenlist,verbs):
     'NEG': {'PartType': 'Neg','Polarity':'Neg'},
     'CONS': {'PartType': 'Mod','Polarity':'Pos'},
     'AFF': {'Polarity':'Pos'},
-    'NEGI': {'PartType': 'Neg','Polarity':'Neg','Mood': 'Imp'},
+    'NEGI': {'PartType': 'Mod','Polarity':'Neg','Modality': 'Proh'},
     'RPRT': {'PartType': 'Mod','Evident':'Nfh'},
     # 'RPRT': {'PartType': 'Tam','Evident':'Nfh'},
     'PFV': {'PartType': 'Tam','Aspect':'Perf'},
@@ -733,18 +733,17 @@ def handlePart(token,tokenlist,verbs):
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
     'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
-    'COND': {'PartType': 'Mod', 'Mood': 'Cnd'},
-    'NEC': {'PartType': 'Mod', 'Mood': 'Nec'},
+    'COND': {'PartType': 'Mod', 'Modality': 'Cond'},
+    'NEC': {'PartType': 'Mod', 'Modality': 'Nec'},
+    'OBL': {'PartType': 'Mod', 'Modality': 'Obl'},
     'FOC': {'PartType': 'Emp', 'Foc': 'Yes'},
     'FREQ': {'Aspect':'Freq', 'Tense' : 'Past'},
     }
     token['deprel'] = 'advmod'
     xpos=token['xpos']
-    if xpos.startswith('NEG'): #TODO: use the dictionary instead
-        updateFeats(token,'Polarity', 'Neg')
-        updateFeats(token,'PartType', 'Neg')
-        if xpos == 'NEGI':
-            updateFeats(token,'Mood', 'Imp')
+    if xpos == 'NEG' or xpos == 'NEGI':
+        for k,v in mapping[xpos].items():
+            updateFeats(token,k, v)
         headPartNextVerb(token,verbs)
     elif xpos == 'RPRT':
         updateFeats(token,'Evident','Nfh')
@@ -758,7 +757,7 @@ def handlePart(token,tokenlist,verbs):
         updateFeats(token,'PartType', 'Mod')
         token['head']=getAdvHead(token,tokenlist,verbs)
         # headPartPreviousVerb(token,verbs)
-    elif xpos == 'NEC':
+    elif xpos == 'NEC' or xpos == 'OBL':
         updateFeats(token,'PartType', 'Mod')
         headPartNextVerb(token,verbs)
     elif xpos == 'AFF':
@@ -797,8 +796,8 @@ def handlePart(token,tokenlist,verbs):
         updateFeats(token,'PartType', 'Int')
     elif xpos == 'COND':
         headPartPreviousVerb(token,verbs)
-        updateFeats(token,'PartType', 'Mod')
-        updateFeats(token,'Mood', 'Cnd')
+        for k,v in mapping[xpos].items():
+            updateFeats(token,k, v)
     elif xpos == 'PQ':
         headPartPreviousVerb(token,verbs)
         updateFeats(token,'PartType', 'Int')

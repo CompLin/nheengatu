@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 29, 2024
+# Last update: October 30, 2024
 
 import re, sys, os, json
 
@@ -114,6 +114,7 @@ part. cond.\tCOND\tpartícula de condicional
 part. interr. cont.\tCQ\tpartícula de pergunta de conteúdo
 part. interr. pol.\tPQ\tpartícula de pergunta polar
 part. neces.\tNEC\tpartícula deôntica de necessidade
+part. obrig.\tOBL\tpartícula deôntica de obrigação
 posp.\tADP\tposposição
 prep.\tPREP\tpreposição
 posp. encl.\tCLADP\tposposição enclítica
