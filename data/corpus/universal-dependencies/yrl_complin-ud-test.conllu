@@ -4823,6 +4823,9 @@
 # text_por = Mais tarde, aquela mulher já estava cansada de comer o que seu marido comia.
 # text_source = Casasnovas, 89
 # text_annotator = LFdeA
+# cross_reference = Casasnovas2006:9:20:104
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	TokenRange=5:8
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=9:13
@@ -5344,6 +5347,7 @@
 # text_annotator = LFdeA
 # reviewer1 = JLG
 # reviewer2 = DMA
+# reviewer1 = Hélio Leonam Barroso Silva
 # text_por_prim = Você voa rápido, mas veja onde conseguiu chegar.
 # text_prim_source = p. 93, No. 13
 # text_prim = Indé rewewé yepé kutara, ma remaã mamentu resika.
@@ -5376,6 +5380,8 @@
 # text_por_prim_transcriber = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # next = Casasnovas2006:10:12:131
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	awewé	wewé	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=4:9
 3	merupí	merupí	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=10:16
@@ -7464,6 +7470,7 @@
 # text_por = Vejam, amanhã eu vou mostrar para vocês terra firme, para que vocês façam suas roças com as suas esposas.
 # text_source = Casasnovas, 94, adap.
 # text_annotator = LFdeA
+# reviewer1 = Hélio Leonam Barroso Silva
 1	Pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
 3	wirandé	wirandé	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=7:14
@@ -7752,6 +7759,8 @@
 # text_source = Casasnovas, 92
 # text_orig = Yepé ara paá wainambí uyusaã mangwarí irumu, ta umaã arã awá taá kutara piri uyasá paranawasú.
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=9:12
@@ -10166,6 +10175,8 @@
 # text_por = Ao bacurau, dizem, ele foi mostrar um [terreno] que era meio capoeira, porque viu que ele acordava de madrugada, por isso pensava que ele era trabalhador.
 # text_source = Casasnovas, 95, adap.
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Wakurawá	wakurawá	NOUN	N	Number=Sing	5	iobj	_	TokenRange=0:8
 2	supé	supé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=9:13
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=14:17
@@ -10346,6 +10357,8 @@
 # text_source = Casasnovas, 89-90, adap.
 # text_orig = Mairamé paá waimĩ usendú, tiapú unheengari puranga, umbeú sesewara, ape paá waimĩ usemu ukara kití, umaã paá iwaté ana uyupiri usú uikú, [...].
 # text_annotator = LFdeA
+# reviewer1 = Hélio Leonam Barroso Silva
+# reviewer2 = Dominick Maia Alexandre
 1	Mairamé	mairamé	SCONJ	SCONJR	_	4	mark	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=8:11
 3	waimĩ	waimĩ	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:17
@@ -14161,6 +14174,9 @@
 # text_prim_por = Zangado, Kurukuí pegou sua canoa e foi atrás.
 # text_prim_por_source = Casasnovas, 101
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
+# inputline = I/pron2 piaiwasawa paá, upisika igara usú arã/sconj aintá/pron2 rakwera/adp.
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
 2	piaiwasawa	piaiwasawa	NOUN	N	Number=Sing	5	obl	_	TokenRange=2:12
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=13:16
@@ -14169,8 +14185,8 @@
 6	igara	igara	NOUN	N	Number=Sing	5	obj	_	TokenRange=26:31
 7	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	advcl	_	TokenRange=32:35
 8	arã	arã	SCONJ	SCONJ	_	7	mark	_	TokenRange=36:39
-9	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=40:45
-10	rakwera	sakwera	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=46:53
+9	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	obl	_	TokenRange=40:45
+10	rakwera	rakwera	ADP	ADP	AdpType=Post|Rel=Cont	9	case	_	SpaceAfter=No|TokenRange=46:53
 11	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=53:54
 
 # sent_id = Avila2021:0:0:512
@@ -14948,6 +14964,9 @@
 # text_por = Buburi disse-lhe que a levaria embora antes de ela se casar.
 # text_source = Casasnovas, 99
 # text_annotator = LFdeA
+# cross_reference = Casasnovas2006:12:16:182
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Buburi	buburi	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:6
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=13:14
@@ -15612,6 +15631,8 @@
 # text_por = Depois voltou a tornar-se gente para espantar aquelas outras.
 # text_source = Casasnovas, 89
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Ape	ape	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=4:7
 3	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
@@ -24439,6 +24460,8 @@
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:588
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24598,6 +24621,8 @@
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:24
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -25000,7 +25025,8 @@
 # cross_reference = Avila2021:0:0:306
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
+# reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Dominick Maia Alexandre
 1	Mairamé	mairamé	SCONJ	SCONJR	_	6	mark	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:12
@@ -25010,9 +25036,9 @@
 7	tiapú	tiapú	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=27:32
 8	unheengari	nheengari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=33:43
 9	puranga	puranga	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=44:51
-10	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=52:57
+10	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=52:57
 11	sesewara	sesewara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	obj	_	SpaceAfter=No|TokenRange=58:66
-12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=66:67
+12	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=66:67
 13	ape	ape	ADV	ADVT	AdvType=Tim	18	advmod	_	SpaceAfter=No|TokenRange=68:71
 14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=71:72
 15	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	18	advmod	_	SpaceAfter=No|TokenRange=73:76
@@ -25148,6 +25174,8 @@
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:174
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -25163,7 +25191,7 @@
 13	awá	awá	PRON	INT	PronType=Int	17	nsubj	_	TokenRange=59:62
 14	taá	taá	PART	CQ	PartType=Int	17	advmod	_	TokenRange=63:66
 15	kutara	kutara	ADV	ADVA	AdvType=Man	17	advmod	_	TokenRange=67:73
-16	piri	piri	ADV	ADVG	AdvType=Deg	15	advmod	_	TokenRange=74:78
+16	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	15	advmod	_	TokenRange=74:78
 17	uyasá	yasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	ccomp	_	TokenRange=79:84
 18	paranawasú	paranawasú	NOUN	N	Number=Sing	17	obj	_	SpaceAfter=No|TokenRange=85:95
 19	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=95:96
@@ -25412,6 +25440,8 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # next = Avila2021:7:1:47
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Dominick Maia Alexandre
 1	Amú	amú	PRON	IND	Number=Sing|PronType=Ind	8	advcl	_	TokenRange=0:3
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=4:8
 3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	TokenRange=9:12
@@ -25628,6 +25658,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # cross_reference = Avila2021:0:0:155
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Hélio Leonam Barroso Silva
 1	Pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
 3	wirandé	wirandé	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=7:14
@@ -25640,7 +25671,7 @@
 10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=52:55
 11	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=56:58
 12	kupixá	kupixá	NOUN	N	Number=Sing	9	obj	_	TokenRange=59:65
-13	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	14	nmod:poss	_	TokenRange=66:68
+13	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=66:68
 14	rimirikú-itá	simirikú	NOUN	N	Number=Plur|Rel=Cont	9	obl	_	TokenRange=69:81
 15	irumu	irumu	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=82:87
 16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=87:88
@@ -25758,6 +25789,9 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # cross_reference = Avila2021:0:0:297
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Dominick Maia Alexandre
+# reviewer3 = Hélio Leonam Barroso Silva
+# inputline = Wakurawá supé, paá, usú umukameẽ kukwera xinga waá/rel, nhaãsé/sconjr umaã aé/pron upaka pitupituna, sesewara/adp umaité aé/pron murakisara.
 1	Wakurawá	wakurawá	NOUN	N	Number=Sing	7	iobj	_	TokenRange=0:8
 2	supé	supé	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=9:13
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
@@ -25775,7 +25809,7 @@
 15	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	ccomp	_	TokenRange=67:72
 16	pitupituna	pitupituna	ADV	ADVT	AdvType=Tim	15	advmod	_	SpaceAfter=No|TokenRange=73:83
 17	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=83:84
-18	sesewara	sesewara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	19	obl	_	TokenRange=85:93
+18	sesewara	resewara	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	19	obl	_	TokenRange=85:93
 19	umaité	maité	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	parataxis	_	TokenRange=94:100
 20	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	21	nsubj	_	TokenRange=101:103
 21	murakisara	murakisara	NOUN	N	Number=Sing	19	ccomp	_	SpaceAfter=No|TokenRange=104:114
@@ -26830,6 +26864,8 @@
 # cross_reference = Avila2021:0:0:555
 # inputline = Buburi/=p unheẽ i/pron2 xupé uyuka arã/sconj aé/pron umendari rundé/sconj.
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Dominick Maia Alexandre
+# reviewer3 = Hélio Leonam Barroso Silva
 1	Buburi	buburi	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:6
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=13:14
@@ -27018,8 +27054,10 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # cross_reference = Avila2021:0:0:511
-# inputline = I/pron2 piaiwasawa, paá, upisika igara usú arã/sconj aintá/pron2 rakwera/n.
+# inputline = I/pron2 piaiwasawa, paá, upisika igara usú arã/sconj aintá/pron2 rakwera/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Dominick Maia Alexandre
+# reviewer3 = Hélio Leonam Barroso Silva
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
 2	piaiwasawa	piaiwasawa	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=2:12
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=12:13
@@ -27029,8 +27067,8 @@
 7	igara	igara	NOUN	N	Number=Sing	6	obj	_	TokenRange=27:32
 8	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=33:36
 9	arã	arã	SCONJ	SCONJ	_	8	mark	_	TokenRange=37:40
-10	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=41:46
-11	rakwera	sakwera	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	SpaceAfter=No|TokenRange=47:54
+10	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	8	obl	_	TokenRange=41:46
+11	rakwera	rakwera	ADP	ADP	AdpType=Post|Rel=Cont	10	case	_	SpaceAfter=No|TokenRange=47:54
 12	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=54:55
 
 # sent_id = Casasnovas2006:12:24:190
