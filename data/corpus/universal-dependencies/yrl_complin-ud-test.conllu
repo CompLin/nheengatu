@@ -9053,7 +9053,7 @@
 # text_annotator = LFdeA
 1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
 2	asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=6:10
-3	tenki	tenki	PART	NEC	PartType=Mod	4	advmod	_	TokenRange=11:16
+3	tenki	tenki	PART	OBL	PartType=Mod	4	advmod	_	TokenRange=11:16
 4	uyasuka	yasuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:24
 5	puranga	puranga	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=25:32
 6	sabãu	sabãu	NOUN	N	Number=Sing	4	obl	_	TokenRange=33:38
@@ -19718,7 +19718,7 @@
 # text_source = Example 682 Wr
 # text_orig = tenki re-su re-mbeu kwekatu
 # text_annotator = LFdeA
-1	Tenki	tenki	PART	NEC	PartType=Mod	3	advmod	_	TokenRange=0:5
+1	Tenki	tenki	PART	OBL	PartType=Mod	3	advmod	_	TokenRange=0:5
 2	resú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	TokenRange=6:10
 3	rembeú	mbeú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=11:17
 4	kwekatú	kwekatú	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=18:25
@@ -19739,7 +19739,7 @@
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=17:18
 7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=19:23
 8	ara	ara	NOUN	N	Number=Sing	10	obl	_	TokenRange=24:27
-9	tenki	tenki	PART	NEC	PartType=Mod	10	advmod	_	TokenRange=28:33
+9	tenki	tenki	PART	OBL	PartType=Mod	10	advmod	_	TokenRange=28:33
 10	pekuntari	kuntari	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	5	parataxis	_	SpaceAfter=No|TokenRange=34:43
 11	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 12	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=44:45
@@ -19751,7 +19751,7 @@
 # text_source = Example 888 Br
 # text_orig = tenki ya-sikari ya-yuiri awa=ta u-puderi u-m-pinima ae
 # text_annotator = LFdeA
-1	Tenki	tenki	PART	NEC	PartType=Mod	2	advmod	_	TokenRange=0:5
+1	Tenki	tenki	PART	OBL	PartType=Mod	2	advmod	_	TokenRange=0:5
 2	yasikari	sikari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=6:14
 3	yayuíri	yuíri	AUX	AUXN	Aspect=Iter|Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=15:22
 4	awá	awá	PRON	INT	PronType=Int	7	nsubj	_	TokenRange=23:26
