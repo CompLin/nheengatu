@@ -8646,7 +8646,7 @@
 9	mirá	mirá	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=42:46
 10	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=46:47
 11	maita	maita	ADV	ADVRA	AdvType=Man|PronType=Int	14	advmod	_	TokenRange=48:53
-12	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=54:57
+12	maã	maã	PART	COND	Modality=Cond|PartType=Mod	14	advmod	_	TokenRange=54:57
 13	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	14	nsubj	_	TokenRange=58:63
 14	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=64:70
 15	tikanga	tikanga	ADJ	A	_	14	advcl	_	TokenRange=71:78
@@ -8665,14 +8665,14 @@
 # text_annotator = LFdeA
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
 2	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=3:7
-3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	5	advmod	_	TokenRange=8:11
+3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	5	advmod	_	TokenRange=8:11
 4	Deus	deus	PROPN	PROPN	_	5	nsubj	_	OrigLang=por|TokenRange=12:16
 5	umuatuka	muatuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=17:25
 6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=26:29
 7	ara	ara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=30:33
 8	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=33:34
 9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=35:37
-10	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	12	advmod	_	TokenRange=38:41
+10	maã	maã	PART	COND	Modality=Cond|PartType=Mod	12	advmod	_	TokenRange=38:41
 11	awá	awá	PRON	IND	PronType=Ind	12	nsubj	_	TokenRange=42:45
 12	uyumukaturu	yumukaturu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=46:57
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=57:58
@@ -8698,12 +8698,12 @@
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=10:11
 4	mira	mira	NOUN	N	Number=Sing	12	advcl	_	TokenRange=12:16
 5	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=17:21
-6	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	4	advmod	_	TokenRange=22:25
+6	maã	maã	PART	COND	Modality=Cond|PartType=Mod	4	advmod	_	TokenRange=22:25
 7	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	SpaceAfter=No|TokenRange=26:30
 8	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=30:31
 9	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	12	nsubj	_	TokenRange=32:36
 10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=37:39
-11	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	12	advmod	_	TokenRange=40:43
+11	maã	maã	PART	COND	Modality=Cond|PartType=Mod	12	advmod	_	TokenRange=40:43
 12	rexari	xari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=44:50
 13	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	14	nsubj	_	TokenRange=51:54
 14	amanú	manú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	12	ccomp	_	SpaceAfter=No|TokenRange=55:60
@@ -8712,7 +8712,7 @@
 17-18	resú-kwáu	_	_	_	_	_	_	_	TokenRange=67:76
 17	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	12	parataxis	_	_
 18	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	17	aux	_	_
-19	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	17	advmod	_	TokenRange=77:80
+19	maã	maã	PART	COND	Modality=Cond|PartType=Mod	17	advmod	_	TokenRange=77:80
 20	reyuuka	yuuka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	17	xcomp	_	TokenRange=81:88
 21	meyú	meyú	NOUN	N	Number=Sing	20	obj	_	TokenRange=89:93
 22	ambaú	mbaú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	20	advcl	_	TokenRange=94:99
@@ -8727,14 +8727,14 @@
 # text_annotator = LFdeA
 1	Ayuká	yuká	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	9	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
-3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	1	advmod	_	TokenRange=11:14
+3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	TokenRange=11:14
 4	kuíri	kuíri	ADV	ADVT	AdvType=Tim	1	advmod	_	TokenRange=15:20
 5	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=21:25
 6	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=25:26
 7	panhẽ	panhẽ	DET	TOT	PronType=Tot	8	det	_	TokenRange=27:32
 8	mira	mira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=33:37
 9	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=38:43
-10	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	9	advmod	_	TokenRange=44:47
+10	maã	maã	PART	COND	Modality=Cond|PartType=Mod	9	advmod	_	TokenRange=44:47
 11	puxí	puxí	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=48:52
 12	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	obl	_	TokenRange=53:55
 13	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	12	case	_	SpaceAfter=No|TokenRange=56:60
@@ -8756,11 +8756,11 @@
 8	Abraão	abraão	PROPN	PROPN	_	9	nmod:poss	_	TokenRange=30:36
 9	rimiarirú-itá	timiarirú	NOUN	N	Number=Plur|Rel=Cont	14	advcl	_	TokenRange=37:50
 10	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=51:55
-11	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	9	advmod	_	TokenRange=56:59
+11	maã	maã	PART	COND	Modality=Cond|PartType=Mod	9	advmod	_	TokenRange=56:59
 12	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	9	nsubj	_	SpaceAfter=No|TokenRange=60:65
 13	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=65:66
 14	pemunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	3	ccomp	_	TokenRange=67:74
-15	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=75:78
+15	maã	maã	PART	COND	Modality=Cond|PartType=Mod	14	advmod	_	TokenRange=75:78
 16	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	14	advmod	_	TokenRange=79:83
 17	Abraão	abraão	PROPN	PROPN	_	16	obl	_	TokenRange=84:90
 18	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	acl:relcl	_	TokenRange=91:97
@@ -9864,7 +9864,7 @@
 1	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	5	advmod	_	_
 2	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	5	advmod	_	_
 3	pu	pu	PART	ASSUM	PartType=Mod	5	advmod	_	TokenRange=6:8
-4	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	5	advmod	_	TokenRange=9:12
+4	maã	maã	PART	COND	Modality=Cond|PartType=Mod	5	advmod	_	TokenRange=9:12
 5	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:19
 6	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=19:20
 
@@ -13201,7 +13201,7 @@
 8-9	maita	_	_	_	_	_	_	_	TokenRange=39:44
 8	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	12	advmod	_	_
 9	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	12	advmod	_	_
-10	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	12	advmod	_	TokenRange=45:48
+10	maã	maã	PART	COND	Modality=Cond|PartType=Mod	12	advmod	_	TokenRange=45:48
 11	yapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	12	aux	_	TokenRange=49:57
 12	yasetuna	setuna	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=58:66
 13	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=67:71
@@ -14964,7 +14964,7 @@
 # text_annotator = LFdeA
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:2
 2	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=3:7
-3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	4	advmod	_	TokenRange=8:11
+3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	4	advmod	_	TokenRange=8:11
 4	anheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	14	advcl	_	TokenRange=12:17
 5	ayuká	yuká	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	ccomp	_	TokenRange=18:23
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=24:29
@@ -14976,7 +14976,7 @@
 12	rikuyara	rikuyara	ADP	ADP	AdpType=Post|Rel=Cont	11	case	_	SpaceAfter=No|TokenRange=54:62
 13	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=62:63
 14	axari	xari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=64:69
-15	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=70:73
+15	maã	maã	PART	COND	Modality=Cond|PartType=Mod	14	advmod	_	TokenRange=70:73
 16	kuíri	kuíri	ADV	ADVT	AdvType=Tim	14	advmod	_	TokenRange=74:79
 17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	18	nsubj	_	TokenRange=80:82
 18	rikwé	rikwé	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	14	xcomp	_	SpaceAfter=No|TokenRange=83:88
@@ -21252,7 +21252,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Ti maã/cond aganaganari/=red:l|4:o|pt:s|enganar.
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
-2	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	3	advmod	_	TokenRange=3:6
+2	maã	maã	PART	COND	Modality=Cond|PartType=Mod	3	advmod	_	TokenRange=3:6
 3	aganaganari	ganari	VERB	V	Mood=Ind|Number=Sing|Person=1|Red=Yes|VerbForm=Fin	0	root	_	Orig=enganar|OrigLang=por|SpaceAfter=No|TokenRange=7:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
@@ -21265,7 +21265,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Aputari maã/cond asendú se/=upos:o|pt:x|sconjr nunca/=upos:o|pt:x|advt taukastigari/=v:o|pt:s|castigar indé.
 1	Aputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
-2	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	1	advmod	_	TokenRange=8:11
+2	maã	maã	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	TokenRange=8:11
 3	asendú	sendú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	xcomp	_	TokenRange=12:18
 4	se	se	SCONJ	SCONJR	_	6	mark	_	OrigLang=por|TokenRange=19:21
 5	nunca	nunca	ADV	ADVT	AdvType=Tim	6	advmod	_	OrigLang=por|TokenRange=22:27
@@ -25410,7 +25410,7 @@
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Amú	amú	PRON	IND	Number=Sing|PronType=Ind	8	advcl	_	TokenRange=0:3
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=4:8
-3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	1	advmod	_	TokenRange=9:12
+3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	TokenRange=9:12
 4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=13:16
 5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=16:17
 6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=18:20
@@ -28436,7 +28436,7 @@
 18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
 19	;	;	PUNCT	PUNCT	_	24	punct	_	TokenRange=77:78
 20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
-21	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	23	advmod	_	TokenRange=82:85
+21	maã	maã	PART	COND	Modality=Cond|PartType=Mod	23	advmod	_	TokenRange=82:85
 22	maã	maã	PRON	IND	PronType=Ind	23	obj	_	TokenRange=86:89
 23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
 24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	9	parataxis	_	TokenRange=94:98
@@ -29150,12 +29150,12 @@
 9	maã	maã	PRON	IND	PronType=Ind	14	obl	_	TokenRange=40:43
 10	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Typo=Yes	9	case	_	CorrectForm=resé|TokenRange=44:49
 11	u	u	CCONJ	CCONJ	_	14	cc	_	TokenRange=50:51
-12	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=52:55
+12	maã	maã	PART	COND	Modality=Cond|PartType=Mod	14	advmod	_	TokenRange=52:55
 13	yasí	yasí	NOUN	N	Number=Sing	14	nsubj	_	TokenRange=56:60
 14	umuwéu	muwéu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	conj	_	TokenRange=61:67
 15	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	14	obj	_	TokenRange=68:72
 16	u	u	CCONJ	CCONJ	_	18	cc	_	TokenRange=73:74
-17	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	14	advmod	_	TokenRange=75:78
+17	maã	maã	PART	COND	Modality=Cond|PartType=Mod	14	advmod	_	TokenRange=75:78
 18	ukupiri	kupiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	conj	_	TokenRange=79:86
 19	upaĩ	upaĩ	DET	TOT	PronType=Tot	20	det	_	TokenRange=87:91
 20	ií	ií	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=92:94
@@ -33265,12 +33265,12 @@
 16	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=65:66
 17	mira	mira	NOUN	N	Number=Sing	25	advcl	_	TokenRange=67:71
 18	ramé	ramé	SCONJ	SCONJ	_	17	mark	_	TokenRange=72:76
-19	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	17	advmod	_	TokenRange=77:80
+19	maã	maã	PART	COND	Modality=Cond|PartType=Mod	17	advmod	_	TokenRange=77:80
 20	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	17	nsubj	_	SpaceAfter=No|TokenRange=81:85
 21	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=85:86
 22	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	25	nsubj	_	TokenRange=87:91
 23	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	25	advmod	_	TokenRange=92:96
-24	maã	maã	PART	COND	Mood=Cnd|PartType=Mod|Typo=Yes	25	advmod	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=97:100
+24	maã	maã	PART	COND	Modality=Cond|PartType=Mod|Typo=Yes	25	advmod	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=97:100
 25	rexari	xari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=101:107
 26	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	27	nsubj	_	TokenRange=108:111
 27	xamanú	manú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	25	ccomp	_	ModernForm=amanú|SpaceAfter=No|TokenRange=112:118
@@ -33279,7 +33279,7 @@
 30-31	resú-kwáu	_	_	_	_	_	_	_	TokenRange=125:134
 30	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	27	parataxis	_	_
 31	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	30	aux	_	_
-32	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	30	advmod	_	TokenRange=135:138
+32	maã	maã	PART	COND	Modality=Cond|PartType=Mod	30	advmod	_	TokenRange=135:138
 33	reyuuka	yuuka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	30	xcomp	_	TokenRange=139:146
 34	meyú	meyú	NOUN	N	Number=Sing	33	obj	_	TokenRange=147:151
 35	xambaú	mbaú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	33	advcl	_	ModernForm=ambaú|TokenRange=152:158
@@ -33578,7 +33578,7 @@
 8	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=37:38
 9	repusanú	pusanú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	14	advcl	_	TokenRange=39:47
 10	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=48:52
-11	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	9	advmod	_	TokenRange=53:56
+11	maã	maã	PART	COND	Modality=Cond|PartType=Mod	9	advmod	_	TokenRange=53:56
 12	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=57:59
 13	rapiá	tapiá	NOUN	N	Number=Sing|Rel=Cont	9	obj	_	TokenRange=60:65
 14	ayuuka	yuuka	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	ccomp	_	TokenRange=66:72
