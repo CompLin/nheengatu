@@ -10647,11 +10647,11 @@
 # text_annotator = LFdeA
 1	Kunhã-itá	kunhã	NOUN	N	Number=Plur	4	vocative	_	SpaceAfter=No|TokenRange=0:9
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=9:10
-3	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=11:13
+3	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	4	advmod	_	TokenRange=11:13
 4	peyawáu	yawáu	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=14:21
 5	mukũisawa	mukũisawa	ADV	ADVO	AdvType=Tim|NumType=Ord	4	advmod	_	SpaceAfter=No|TokenRange=22:31
 6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
-7	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=33:35
+7	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	8	advmod	_	TokenRange=33:35
 8	pemuirawa	muirawa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	4	parataxis	_	TokenRange=36:45
 9	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=46:48
 10	piá	piá	NOUN	N	Number=Sing	8	obj	_	TokenRange=49:52
@@ -10780,7 +10780,7 @@
 # text_por = Não solte a canoa.
 # text_source = Rondon, 117, adap.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	rexari	xari	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:9
 3	ubá	ubá	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=10:13
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
@@ -10791,7 +10791,7 @@
 # text_por = Não vos mudeis de casa em casa.
 # text_source = O Novo Testamento em nyengatu, Lucas 10:7
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	petirika	tirika	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:11
 3	uka-itá	uka	NOUN	N	Number=Plur|Rel=Abs	2	obl	_	TokenRange=12:19
 4	rupí	rupí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=20:24
@@ -10806,7 +10806,7 @@
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	mú-itá	mú	NOUN	N	Number=Plur	5	vocative	_	SpaceAfter=No|TokenRange=3:9
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=9:10
-4	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=11:13
+4	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	5	advmod	_	TokenRange=11:13
 5	pembeú	mbeú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=14:20
 6	puxí	puxí	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=21:25
 7	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	5	obl	_	TokenRange=26:33
@@ -10822,7 +10822,7 @@
 1	Remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	SpaceAfter=No|TokenRange=6:10
 3	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=10:11
-4	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=12:14
+4	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	6	advmod	_	TokenRange=12:14
 5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	TokenRange=15:17
 6	akanhemu	akanhemu	VERB	V2	Mood=Imp|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=18:26
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=26:27
@@ -10837,7 +10837,7 @@
 # text_por = Não façam saruá, senão a cobra-grande nos come.
 # text_source = Amorim, 283, adap.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	pemunhã	munhã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:10
 3	saruã	saruã	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=11:16
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
@@ -10916,7 +10916,7 @@
 2	Asarú	sarú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=1:6
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	obj	_	SpaceAfter=No|TokenRange=7:11
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=11:12
-5	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=13:15
+5	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	6	advmod	_	TokenRange=13:15
 6	reganani	ganani	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=16:24
 7	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=25:28
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
@@ -11036,7 +11036,7 @@
 # text_por = Não poderás flechar pássaros que estiverem em bando, [...].
 # text_source = Rodrigues, 37, adap.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=3:7
 3-4	reyumú-kwáu	_	_	_	_	_	_	_	TokenRange=8:19
 3	reyumú	yumú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
@@ -15745,7 +15745,7 @@
 # text_por = Não fleches essas aves que estão em bando, senão pode ser que elas te matem.
 # text_source = Rodrigues, 37, adap.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=3:7
 3	reyumú	yumú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:14
 4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=15:18
@@ -15767,7 +15767,7 @@
 # text_por = Não façam saruá, senão pode ser que a cobra-grande nos coma.
 # text_source = Amorim, 283, adap.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	pemunhã	munhã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:10
 3	saruã	saruã	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=11:16
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
@@ -16135,7 +16135,7 @@
 # text_por = não deixem secar, para não queimar.
 # text_source = Avila (2021)
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	pexari	xari	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:9
 3	utikanga	tikanga	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	SpaceAfter=No|TokenRange=10:18
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
@@ -18923,7 +18923,7 @@
 # text_source = Novo Testamento na língua Nyengatu, Lk 12:29
 # text_orig = Tepesikari kirimbawa pembau arama peu arama yuiri tepeyuka pepia aintarese.
 # text_annotator = LFdeA
-1	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:2
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
 2	pesikari	sikari	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:11
 3	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=12:21
 4	pembaú	mbaú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	2	advcl	_	TokenRange=22:28
@@ -18932,7 +18932,7 @@
 7	arama	arama	SCONJ	SCONJ	_	6	mark	_	TokenRange=39:44
 8	yuíri	yuíri	CCONJ	CCONJ	_	6	cc	_	SpaceAfter=No|TokenRange=45:50
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=50:51
-10	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=52:54
+10	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	11	advmod	_	TokenRange=52:54
 11	peyuka	yuka	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=55:61
 12	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=62:64
 13	piá	piá	NOUN	N	Number=Sing	11	obj	_	TokenRange=65:68
@@ -19119,7 +19119,7 @@
 10	xupé	xupé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=45:49
 11	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=49:50
 12	—	—	PUNCT	PUNCT	_	14	punct	_	TokenRange=50:51
-13	Te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	14	advmod	_	TokenRange=52:54
+13	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	14	advmod	_	TokenRange=52:54
 14	resú	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=55:59
 15	tetama	tetama	NOUN	N	Number=Sing|Rel=Abs	14	obl	_	TokenRange=60:66
 16	kití	kití	ADP	ADP	AdpType=Post	15	case	_	TokenRange=67:71
@@ -24154,7 +24154,7 @@
 3	puranga-itá	puranga-itá	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=15:26
 4	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=26:27
 5	ma	ma	CCONJ	CCONJ	_	8	cc	_	TokenRange=28:30
-6	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=31:33
+6	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	8	advmod	_	TokenRange=31:33
 7	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=34:38
 8	repisika	pisika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	conj	_	TokenRange=39:47
 9	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	obj	_	TokenRange=48:52
@@ -24959,15 +24959,16 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar 
 1	Merupiára	merupiára	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:9
-2	reyuka	yuka	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	TokenRange=10:16
+2	reyuka	yuka	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	TokenRange=10:16
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	obl	_	TokenRange=17:18
 4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=19:22
 5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
-6	te	te	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=24:26
+6	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	7	advmod	_	TokenRange=24:26
 7	remunhã	munhã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=27:34
 8	uyaxiú	yaxiú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	ccomp	_	SpaceAfter=No|TokenRange=35:41
-9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=41:42
+9	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=41:42
 10	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=43:48
 11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=48:49
 12	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	SpaceAfter=No|TokenRange=50:53
@@ -25389,7 +25390,7 @@
 
 # sent_id = Casasnovas2006:10:9:128
 # text = Amú ramé maã ixé, ti maã amaã ne pirasuasá.
-# text_eng = TODO
+# text_eng = If I were someone else, I wouldn't have saved you
 # text_eng_ggl = If I were someone else, I wouldn't have saved him
 # text_por = Se eu fosse outro, não o teria salvado
 # text_source = p. 93, No. 12
@@ -25406,11 +25407,12 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # next = Avila2021:7:1:47
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Amú	amú	PRON	IND	Number=Sing|PronType=Ind	8	advcl	_	TokenRange=0:3
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=4:8
 3	maã	maã	PART	COND	Mood=Cnd|PartType=Mod	1	advmod	_	TokenRange=9:12
 4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=13:16
-5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=16:17
+5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=16:17
 6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=18:20
 7	maã	maã	PRON	IND	PronType=Ind	6	fixed	_	TokenRange=21:24
 8	amaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=25:29
@@ -28489,7 +28491,7 @@
 28	kurumiwasú-itá	kurumiwasú	NOUN	N	Number=Plur	27	iobj	_	TokenRange=146:160
 29	supé	supé	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=161:165
 30	,	,	PUNCT	PUNCT	_	32	punct	_	TokenRange=165:166
-31	tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	32	advmod	_	TokenRange=167:172
+31	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	32	advmod	_	TokenRange=167:172
 32	peumbeú	umbeú	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	27	parataxis	_	TokenRange=173:180
 33	taína-itá	taína	NOUN	N	Number=Plur	32	iobj	_	TokenRange=181:190
 34	supé	supé	ADP	ADP	AdpType=Post	33	case	_	SpaceAfter=No|TokenRange=191:195
@@ -30180,7 +30182,7 @@
 24	;	;	PUNCT	PUNCT	_	25	punct	_	TokenRange=113:114
 25	rerasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	22	parataxis	_	SpaceAfter=No|TokenRange=115:121
 26	;	;	PUNCT	PUNCT	_	29	punct	_	TokenRange=121:122
-27	tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	29	advmod	_	TokenRange=123:128
+27	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	29	advmod	_	TokenRange=123:128
 28	kurí	kurí	PART	FUT	Tense=Fut	29	advmod	_	TokenRange=129:133
 29	pepirari	pirari	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	22	parataxis	_	SpaceAfter=No|TokenRange=134:142
 30	!	!	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=142:143
@@ -33728,7 +33730,7 @@
 8	—	—	PUNCT	PUNCT	_	12	punct	_	TokenRange=29:30
 9	Maĩ	maĩ	NOUN	N	Number=Sing	12	vocative	_	SpaceAfter=No|TokenRange=31:34
 10	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=34:35
-11	tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=36:41
+11	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	12	advmod	_	TokenRange=36:41
 12	renheẽ	nheẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=42:48
 13	yawé	yawé	ADV	ADVA	AdvType=Man	12	advmod	_	SpaceAfter=No|TokenRange=49:53
 14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=53:54
@@ -33780,7 +33782,7 @@
 # text_por_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # cross_reference = Avila2021:0:0:596
 # text_annotator = LFdeA
-1	Tenhẽ	tenhẽ	PART	NEGI	Mood=Imp|PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:5
+1	Tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:5
 2	pemunhã	munhã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:13
 3	saruá	saruá	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:19
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
