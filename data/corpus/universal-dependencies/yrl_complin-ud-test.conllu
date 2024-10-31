@@ -5062,11 +5062,14 @@
 # text_por = Todos os dia ela pedia a seu cacique que lhe desse asas, para voltar para junto de seus parentes.
 # text_source = Casasnovas, 89
 # text_annotator = LFdeA
+# reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Juliana Lopes Gurgel
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	ara	ara	NOUN	N	Number=Sing	4	obl	_	TokenRange=6:9
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=10:13
 4	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:22
-5	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	iobj	_	TokenRange=23:30
+5	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obl	_	TokenRange=23:30
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=31:34
 7	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	ccomp	_	TokenRange=35:39
 8	arã	arã	SCONJ	SCONJ	_	7	mark	_	TokenRange=40:43
@@ -24702,7 +24705,8 @@
 # cross_reference = Avila2021:0:0:36
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
+# reviewer2 = Dominick Maia Alexandre
+# reviewer3 = Hélio Leonam Barroso Silva
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	ara	ara	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=6:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
@@ -24711,7 +24715,7 @@
 6	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:24
 7	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	obl	_	TokenRange=25:32
 8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	TokenRange=33:36
-9	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	xcomp	_	TokenRange=37:41
+9	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=37:41
 10	arã	arã	SCONJ	SCONJ	_	9	mark	_	TokenRange=42:45
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	iobj	_	TokenRange=46:47
 12	xupé	xupé	ADP	ADP	AdpType=Post	11	case	_	TokenRange=48:52
