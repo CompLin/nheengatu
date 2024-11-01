@@ -23789,13 +23789,14 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Ape/advt, paá, ta/pron uyeréu yawaratewasú-itá/=aug, yawé/adva, paá, ta/pron ukanhemu ta/pron usú kaá/n kití.
 1	Ape	ape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 5	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=10:12
 6	uyeréu	yeréu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:19
-7	yawaratewasú-itá	yawaratewasú	NOUN	N	Number=Plur	6	obj	_	SpaceAfter=No|TokenRange=20:36
+7	yawaratewasú-itá	yawaraté	NOUN	N	Degree=Aug|Number=Plur	6	obj	_	SpaceAfter=No|TokenRange=20:36
 8	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=36:37
 9	yawé	yawé	ADV	ADVA	AdvType=Man	14	advmod	_	SpaceAfter=No|TokenRange=38:42
 10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=42:43
@@ -23826,13 +23827,14 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	mira	mira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=4:8
 3	taité	taité	ADJ	A	_	2	amod	_	SpaceAfter=No|TokenRange=9:14
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
+4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=14:15
 5	urirí	rirí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:21
 6	upuãmu	puãmu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=22:28
-7	usikiesá	usikiesá	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=29:37
+7	usikiesá	sikiesá	NOUN	N	Number=Sing	6	obl	_	SpaceAfter=No|TokenRange=29:37
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Casasnovas2006:8:10:78
@@ -23850,6 +23852,7 @@
 # text_orig_transcriber = Juliana Lopes Gurgel
 # text_por_modernizer = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kutara	kutara	ADV	ADVA	AdvType=Man	6	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
@@ -23883,6 +23886,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=5:8
 3	tauyuíri	yuíri	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:18
@@ -23913,6 +23917,7 @@
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	tendá	tendá	NOUN	N	Number=Sing|Rel=Abs	7	obl	_	TokenRange=4:11
 3	upé	upé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:15
@@ -23925,7 +23930,7 @@
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=41:42
 11	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=43:45
 12	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=46:50
-13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	obl	_	TokenRange=51:52
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	iobj	_	TokenRange=51:52
 14	xupé	xupé	ADP	ADP	AdpType=Post	13	case	_	TokenRange=53:57
 15	piripiriáka	piripiriáka	NOUN	N	Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=58:69
 16	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=69:70
@@ -23980,6 +23985,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
 3	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
@@ -23990,14 +23996,14 @@
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=36:37
 9	puranga	puranga	ADV	ADVA	AdvType=Man	10	advmod	_	TokenRange=38:45
 10	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=46:51
-11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=51:52
-12	nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	16	advmod	_	SpaceAfter=No|TokenRange=53:59
+11	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=51:52
+12	nhaãsé	nhaãsé	SCONJ	SCONJR	_	16	mark	_	SpaceAfter=No|TokenRange=53:59
 13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=59:60
 14	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	16	advmod	_	SpaceAfter=No|TokenRange=61:64
 15	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=64:65
-16	tauyeréu	yeréu	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=69:75
-17	yawaraté	yawaraté	NOUN	N	Number=Sing	16	obj	_	TokenRange=76:84
-18	anhũ	anhũ	ADV	ADV	_	19	advmod	_	TokenRange=85:89
+16	tauyeréu	yeréu	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=69:75
+17	yawaraté	yawaraté	NOUN	N	Number=Sing	16	xcomp	_	TokenRange=76:84
+18	anhũ	anhũ	ADV	ADV	_	16	advmod	_	TokenRange=85:89
 19	mairamé	mairamé	ADV	ADVLT	AdvType=Tim|PronType=Rel	23	advmod	_	TokenRange=90:97
 20	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=98:100
 21	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	23	aux	_	TokenRange=101:104
@@ -25254,6 +25260,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Wainambí	wainambí	NOUN	N	Number=Sing	2	obl	_	TokenRange=0:8
 2	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	2	obl	_	TokenRange=17:21
