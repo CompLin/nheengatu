@@ -4,7 +4,7 @@
 # text_por = Fazemos comida, pescamos, fazemos caxiri.
 # text_source = p. 105
 # text_orig = [ya-mũỹã]VTrans čĩbiʔú [ya-pinačíka]VIntr [ya-mũỹã]VTrans kaširí
-# text_annotator = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# text_annotator = Leonel Figueiredo de Alencar
 1	Yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	timbiú	timbiú	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=8:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
@@ -4388,7 +4388,7 @@
 # text_source = Comunidade Indígena Anamuim, 24, adap.
 # text_eng = In the morning, they say, two of them went down to the harbor and there they disappeared.
 # text_por = De manhã, dizem, dois deles desceram para o porto e para lá eles sumiram.
-# text_annotator = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# text_annotator = Leonel Figueiredo de Alencar
 1	Kuẽma	kuẽma	NOUN	N	Number=Sing	7	obl	_	TokenRange=0:5
 2	irumu	irumu	ADP	ADP	AdpType=Post	1	case	_	TokenRange=6:11
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=12:15
@@ -7373,7 +7373,7 @@
 # sent_id = Avila2021:0:0:151
 # text = Nhaãsé kurasí usemu irumu umuturí sakú, asuí uxirika kwá kapiĩ, asuí uwari i putira, asuí i purangasawa ukanhemu.
 # text_eng = For when the sun rises, it glows warmly, and the grass dries up, and its flower falls, and its beauty disappears.
-# text_por = Porque ao sair o sol, ele ilumina calorosamente, e a erva seca, e sua flor cai, e sua beleza desaparece. [Corr. transl.]
+# text_por = Porque ao sair o sol, ele ilumina calorosamente, e a erva seca, e sua flor cai, e sua beleza desaparece.
 # text_source = O Novo Testamento em nyengatu, Tiago 1:11 adap.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	5	advmod	_	TokenRange=0:6
@@ -10241,19 +10241,22 @@
 18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=105:106
 
 # sent_id = Avila2021:0:0:300
-# text = Nhaãsé kuxiíma mira-itá ta uú ta rimbiú uyiíma, ti resewara ta urikú tatá.
-# text_eng = Nhaãsé kuxiima mira-itá ta uú ta rimbiú uyiima, ti resewara ta urikú tatá.
+# text = Nhaãsé kuxiima mira-itá ta uú ta rimbiú uyiima, ti resewara ta urikú tatá.
+# text_eng = TODO.
 # text_por = Porque antigamente as pessoas comiam suas comidas cruas, porque não tinham fogo.
+# text_prim = Yanse kuxima miraita taú tarimbiu uyima, tí resewara tarikú tatá.
+# text_por_prim = Porque antigamente as pessoas comiam cru por não ter o fogo.
 # text_source = Leetra Indígena. n. 17, 83, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Nhaãsé/advj kuxiima mira-itá ta/pron uú ta/pron2 rimbiú uyiima/=prv:x|a, ti resewara/sconj ta/pron urikú tatá.
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	5	advmod	_	TokenRange=0:6
-2	kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=7:14
+2	kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=7:14
 3	mira-itá	mira	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=15:23
 4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	expl	_	TokenRange=24:26
 5	uú	ú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=27:29
 6	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:32
 7	rimbiú	timbiú	NOUN	N	Number=Sing|Rel=Cont	5	obj	_	TokenRange=33:39
-8	uyiíma	uyiíma	ADJ	A	_	5	advcl	_	SpaceAfter=No|TokenRange=40:46
+8	uyiima	uyí	ADJ	A	Derivation=Priv	5	advcl	_	SpaceAfter=No|TokenRange=40:46
 9	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=46:47
 10	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	13	advmod	_	TokenRange=48:50
 11	resewara	resewara	SCONJ	SCONJ	Rel=Cont	13	mark	_	TokenRange=51:59
@@ -11783,11 +11786,12 @@
 # text_por = Em português nós sentimos que foi fácil, porque já nos acostumamos com ele [i. e., com o idioma português].
 # text_source = Leetra Indígena. n. 17, 15, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kariwa nheenga rupí yasaã iwasuíma/=prv:x|a, nhaãsé/sconjr yayupukwá wã i/pron2 irumu/adp.
 1	Kariwa	kariwa	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:6
 2	nheenga	nheenga	NOUN	N	Number=Sing	4	obl	_	TokenRange=7:14
 3	rupí	rupí	ADP	ADP	AdpType=Post	2	case	_	TokenRange=15:19
 4	yasaã	saã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=20:25
-5	iwasuíma	iwasuíma	ADJ	A	_	4	ccomp	_	SpaceAfter=No|TokenRange=26:34
+5	iwasuíma	iwasú	ADJ	A	Derivation=Priv	4	ccomp	_	SpaceAfter=No|TokenRange=26:34
 6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=34:35
 7	nhaãsé	nhaãsé	SCONJ	SCONJR	_	8	mark	_	TokenRange=36:42
 8	yayupukwá	yupukwá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=43:52
@@ -14321,14 +14325,15 @@
 # text_por = Guarda-te dele, porque resistiu fortemente ao que dissemos.
 # text_source = O Novo Testamento em nyengatu, 1973, 2 Timóteo 4:15
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Remaã ne suí aé/pron, nhaãsé/sconjr kirimbawa/adva umuruayana kwá/demx yambeú waá.
 1	Remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=6:8
 3	suí	suí	ADP	ADP	AdpType=Post	2	case	_	TokenRange=9:12
 4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=13:15
 5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=15:16
-6	nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	8	advmod	_	TokenRange=17:23
+6	nhaãsé	nhaãsé	SCONJ	SCONJR	_	8	mark	_	TokenRange=17:23
 7	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=24:33
-8	umuruayana	muruayana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=34:44
+8	umuruayana	muruayana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=34:44
 9	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	obj	_	TokenRange=45:48
 10	yambeú	mbeú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	9	acl:relcl	_	TokenRange=49:55
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	obj	_	SpaceAfter=No|TokenRange=56:59
@@ -15715,8 +15720,12 @@
 # sent_id = Avila2021:0:0:592
 # text = Nhaãsé yawé i paya usupiri waá yawé umanú waá-itá, umbaka aintá, yawé tẽ yuíri taíra umbaka kwá-itá uputari waá-itá.
 # text_eng = For just as the Father raises the dead and gives them life, so the Son also gives life to whomever he wants.
+# text_eng_alt = For, as the Father doth raise the dead, and doth make alive, so also the Son doth make alive whom he willeth;
+# text_eng_alt_source = YLT
 # text_por = Pois, assim como o Pai levanta os mortos e lhes dá vida, assim também o Filho dá vida a quem ele quer.
 # text_source = O Novo Testamento em nyengatu, João 5:21, adap.
+# text_por_alt = Porque, da mesma forma que o Pai ressuscita os mortos e lhes dá vida, o Filho também dá vida a quem ele quer. 
+# text_por_alt_source = NVI
 # text_annotator = Leonel Figueiredo de Alencar
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	18	advmod	_	TokenRange=0:6
 2	yawé	yawé	ADV	ADVA	AdvType=Man	18	advmod	_	TokenRange=7:11
@@ -15728,12 +15737,12 @@
 8	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=36:41
 9	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=42:49
 10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=49:50
-11	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	conj	_	TokenRange=51:57
+11	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=51:57
 12	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	11	obj	_	SpaceAfter=No|TokenRange=58:63
 13	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=63:64
 14	yawé	yawé	ADV	ADVA	AdvType=Man	18	advmod	_	TokenRange=65:69
 15	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	14	advmod	_	TokenRange=70:72
-16	yuíri	yuíri	ADV	ADV	_	18	advmod	_	TokenRange=73:78
+16	yuíri	yuíri	ADV	ADVG	AdvType=Deg	18	advmod	_	TokenRange=73:78
 17	taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	18	nsubj	_	TokenRange=79:84
 18	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=85:91
 19	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	18	obj	_	TokenRange=92:99
@@ -15976,6 +15985,7 @@
 # text_por = Então não nos cansemos de fazer o que é bom, pois em seu momento colheremos [os frutos], se não desanimarmos.
 # text_source = O Novo Testamento em nyengatu, Gálatas 6:9, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ape/advj ti yané/pron2 kweré yamunhã puranga/a waá/rel, nhaãsé/sconjr sangawa/ncont upé/adp kurí yapuú, ti ramé/sconj yayuxari.
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:3
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=4:6
 3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	TokenRange=7:11
@@ -15984,11 +15994,11 @@
 6	puranga	puranga	ADJ	A	_	7	acl:relcl	_	TokenRange=26:33
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=34:37
 8	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=37:38
-9	nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	13	advmod	_	TokenRange=39:45
+9	nhaãsé	nhaãsé	SCONJ	SCONJR	_	13	mark	_	TokenRange=39:45
 10	sangawa	sangawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	13	obl	_	TokenRange=46:53
 11	upé	upé	ADP	ADP	AdpType=Post	10	case	_	TokenRange=54:57
 12	kurí	kurí	PART	FUT	Tense=Fut	13	advmod	_	TokenRange=58:62
-13	yapuú	puú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	5	parataxis	_	SpaceAfter=No|TokenRange=63:68
+13	yapuú	puú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	SpaceAfter=No|TokenRange=63:68
 14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=68:69
 15	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	17	advmod	_	TokenRange=70:72
 16	ramé	ramé	SCONJ	SCONJ	_	17	mark	_	TokenRange=73:77
@@ -18038,7 +18048,7 @@
 # text_por = Porque a graça de Deus se manifestou salvadora a todos os homens. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Tt 2:11
 # text_orig = Nyãse Deus purangasawa usikana aintarese umukaturu arama panye apigawaita;
-# text_annotator = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# text_annotator = Leonel Figueiredo de Alencar
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:6
 2	Deus	deus	PROPN	PROPN	_	3	nmod:poss	_	OrigLang=por|TokenRange=7:11
 3	purangasawa	purangasawa	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:23
@@ -18908,6 +18918,8 @@
 # sent_id = NTLN2019:0:0:34
 # text = Nhaãsé nẽ yepé aintá pitérupi uwatari i xupé i maã, nhaãsé muíri kwá-itá urikú waá-itá aintá kupixawa aintá ruka yuíri aintá uvenderi aintá, asuí aintá urasú sikuyara.
 # text_eng = There was not a needy person among them, for as many as were owners of lands or houses sold them and brought the proceeds of what was sold [ESV]
+# text_eng_alt = for there was not any one among them who did lack, for as many as were possessors of fields, or houses, selling them, were bringing the prices of the thing sold,
+# text_eng_alt_source = YLT
 # text_por = Não havia pessoas necessitadas entre eles, pois os que possuíam terras ou casas as vendiam, traziam o dinheiro da venda [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Acts 4:34
 # text_orig = Nyãse nẽ yepe aintapiterupi uwatari ixupe imaa, nyãse muiri kuaita urikuwaita aintakupixawa aintaruka yuiri aintauvenderi ainta, asui aintaurasu sikuyara.
@@ -18916,6 +18928,7 @@
 # text_por_sec = Pois nenhum dentre eles tinha falta de bens, porque todos os que tinham roças e casas venderam-nas e levaram o preço disso.
 # text_por_sec_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Nhaãsé/advj nẽ/neg yepé/art aintá/pron2 pitérupi uwatari i/pron2 xupé i/pron2 maã, nhaãsé/sconjr muíri/tot kwá-itá urikú waá-itá aintá/pron2 kupixawa aintá/pron2 ruka yuíri/cconj aintá/pron uvenderi/=v:o|pt:s|vender aintá/pron2, asuí/advt aintá/pron urasú sikuyara/n+ncont.
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	7	advmod	_	TokenRange=0:6
 2	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=7:9
 3	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	7	dislocated	_	TokenRange=10:14
@@ -18929,7 +18942,7 @@
 10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=46:47
 11	maã	maã	NOUN	N	Number=Sing	7	nsubj	_	SpaceAfter=No|TokenRange=48:51
 12	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=51:52
-13	nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	24	advmod	_	TokenRange=53:59
+13	nhaãsé	nhaãsé	SCONJ	SCONJR	_	24	mark	_	TokenRange=52:58
 14	muíri	muíri	DET	TOT	PronType=Tot	15	det	_	TokenRange=60:65
 15	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	24	nsubj	_	TokenRange=66:73
 16	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	acl:relcl	_	TokenRange=74:79
@@ -18940,7 +18953,7 @@
 21	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	19	conj	_	TokenRange=109:113
 22	yuíri	yuíri	CCONJ	CCONJ	_	21	cc	_	TokenRange=114:119
 23	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	24	expl	_	TokenRange=120:125
-24	uvenderi	venderi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	Orig=vender|OrigLang=por|TokenRange=126:134
+24	uvenderi	venderi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	Orig=vender|OrigLang=por|TokenRange=126:134
 25	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	24	obj	_	SpaceAfter=No|TokenRange=135:140
 26	,	,	PUNCT	PUNCT	_	29	punct	_	TokenRange=140:141
 27	asuí	asuí	ADV	ADVT	AdvType=Tim	29	advmod	_	TokenRange=142:146
@@ -19492,7 +19505,7 @@
 # text_eng = He married a Werekena.
 # text_source = Example 192a Bn
 # text_orig = ae u-mendai yepe Werekena irũ
-# text_annotator = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# text_annotator = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	umendari	mendari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:11
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=12:16
@@ -21348,7 +21361,7 @@
 # title_eng = Two men
 # title_por = Dois homens
 # text_orig = Kuiri asú ãbeú taresé, kuaitá mukuĩ, apigawaitá, upuraké waitá balata.
-# text_annotator = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# text_annotator = Leonel Figueiredo de Alencar
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:5
 2	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=6:9
 3	ambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=10:15
@@ -21576,7 +21589,7 @@
 # text_orig = Upitá sasiara yumasí irumu.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# reviewer1 = Leonel Figueiredo de Alencar (Leonel Figueiredo de Alencar)
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	sasiára	sasiára	ADJ	A	_	1	xcomp	_	TokenRange=6:13
 3	yumasí	yumasí	NOUN	N	Number=Sing	1	obl	_	TokenRange=14:20
@@ -24017,7 +24030,7 @@
 29	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=139:140
 
 # sent_id = Casasnovas2006:8:15:83
-# text = Kwá, paá, mira uyuíri suka kití surí retana, nhaãsé kuíri upitá marupiara reté waá, mairamé usú usikari ximiára.
+# text = Kwá, paá, mira uyuíri suka kití surí retana, nhaãsé kuíri upitá marupiára reté waá, mairamé usú usikari ximiára.
 # text_eng = TODO
 # text_eng_ggl = He soon returned to his home happy because he became expert when looking for game,
 # text_por = Logo voltou alegre para sua casa porque ficou experto quando vá procurar caça,
@@ -24029,6 +24042,7 @@
 # title_por_orig = Gente-onça
 # title_eng = Jaguar people
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24042,14 +24056,14 @@
 11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=43:44
 12	nhaãsé	nhaãsé	SCONJ	SCONJR	_	14	mark	_	TokenRange=45:51
 13	kuíri	kuíri	ADV	ADVT	AdvType=Tim	14	advmod	_	TokenRange=52:57
-14	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=58:63
-15	marupiara	marupiara	ADJ	A	_	14	xcomp	_	TokenRange=64:73
-16	reté	reté	ADJ	A	_	15	advmod	_	TokenRange=74:78
+14	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=58:63
+15	marupiára	marupiára	NOUN	N	Number=Sing	14	xcomp	_	TokenRange=64:73
+16	reté	reté	ADJ	A	_	15	acl:relcl	_	TokenRange=74:78
 17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	16	nsubj	_	SpaceAfter=No|TokenRange=79:82
 18	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=82:83
-19	mairamé	mairamé	ADV	ADVLT	AdvType=Tim|PronType=Rel	21	advmod	_	TokenRange=84:91
+19	mairamé	mairamé	SCONJ	SCONJR	_	21	mark	_	TokenRange=84:91
 20	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	21	aux	_	TokenRange=92:95
-21	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	acl:relcl	_	TokenRange=96:103
+21	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	advcl	_	TokenRange=96:103
 22	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	21	obj	_	SpaceAfter=No|TokenRange=104:111
 23	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=111:112
 
@@ -26854,6 +26868,7 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Adana/=p, paá, ti uputari umendari Kurukuí irumu/adp, nhaãsé/sconjr uputari piri/advg nhaã Buburi/=p.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Adana	adana	PROPN	PROPN	_	7	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=7:10
