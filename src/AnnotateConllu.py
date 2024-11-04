@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 31, 2024
+# Last update: November 4, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2129,7 +2129,7 @@ def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name
     form=form.lower()
     feats=[]
     new={}
-    handleOrig(new,lemma,orig, orig_form)
+    handleOrig(new,form,orig, orig_form)
     degree=dic.get('degree')
     derivation=dic.get('derivation')
     if degree:
