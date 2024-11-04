@@ -22992,9 +22992,9 @@
 3	uyumutawarí	mutawarí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=10:19
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=20:23
 5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=23:24
-6	asuí	asuí	CCONJ	CCONJ	_	8	cc	_	TokenRange=25:29
+6	asuí	asuí	ADV	ADVT	AdvType=Tim	8	advmod	_	TokenRange=27:31
 7	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	8	aux	_	TokenRange=30:33
-8	uyuyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	3	conj	_	TokenRange=34:43
+8	uyuyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	3	parataxis	_	TokenRange=34:43
 9	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=44:48
 10	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=49:53
 11	kurupira	kurupira	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=54:62
@@ -33258,6 +33258,37 @@
 19	kití	kití	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=105:109
 20	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=109:110
 
+# sent_id = Amorim1928:2:84:8400
+# text = Mayawé intí wana Buopé urikú awá resé umaramunhã, aé usú asuí i mira irumu.
+# text_eng = TODO
+# text_por = Como Buopé não tinha mais contra quem combater partiu daí com a sua gente.
+# text_source = p. 27, Np. 84
+# text_orig = Maaiaué nti uana Buopé oreku auá resé omaramunhan, aé oiusu asuhi i mira yrumo.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_sec = [...] aé usú asuí i mira irumu.
+# text_por_sec = [...] ele partiu dali com sua gente.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Mayawé/sconjr intí wana Buopé urikú awá/relf resé/adp umaramunhã, aé/pron usú asuí/advc i/pron2 mira irumu/adp.
+1	Mayawé	mayawé	SCONJ	SCONJR	_	5	mark	_	TokenRange=0:6
+2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=7:11
+3	wana	wana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=12:16
+4	Buopé	buopé	PROPN	PROPN	_	5	nsubj	_	TokenRange=17:22
+5	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=23:28
+6	awá	awá	PRON	RELF	PronType=Rel	5	obl	_	TokenRange=29:32
+7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	TokenRange=33:37
+8	umaramunhã	maramunhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	acl:relcl	_	SpaceAfter=No|TokenRange=38:48
+9	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=48:49
+10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	11	nsubj	_	TokenRange=50:52
+11	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=53:56
+12	asuí	asuí	ADV	ADVC	AdvType=Loc	11	advmod	_	TokenRange=57:61
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=62:63
+14	mira	mira	NOUN	N	Number=Sing	11	obl	_	TokenRange=64:68
+15	irumu	irumu	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=69:74
+16	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=74:75
+
 # sent_id = Amorim1928:2:98:5698
 # text = Yepé apigawa nhũ paá upitá, aé uyupisirú yepé kumã iwa árupi.
 # text_eng_ggl = Only one man escaped, they say, because he fled into a rowan tree.
@@ -36331,6 +36362,71 @@
 5	ramé	ramé	ADP	ADP	AdpType=Post	4	case	_	_
 6	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Leetra2015:4:1:1
+# text = Kuxima paá aikwé yepé tapira asuí wariwa.
+# text_eng = TODO
+# text_por = Antigamente havia um animal chamado anta, e outro que chamamos de gauriba ("waríwa", em nheengatu).
+# text_source = p. 45
+# text_orig = Kuxima paá aikue yepé tapira asui wariwa.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_author = Amarildo Castro
+# title_orig = WARIWA ASUÍ TAPIRA
+# title_por_orig = GAURIBA E ANTA
+# title_por = Gauriba e anta
+# inputline = Kuxima paá aikwé yepé/art tapira asuí/cconj wariwa.
+1	Kuxima	kuxima	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=7:10
+3	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=11:16
+4	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	5	det	_	TokenRange=17:21
+5	tapira	tapira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=22:28
+6	asuí	asuí	CCONJ	CCONJ	_	7	cc	_	TokenRange=29:33
+7	wariwa	wariwa	NOUN	N	Number=Sing	5	conj	_	SpaceAfter=No|TokenRange=34:40
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=40:41
+
+# sent_id = Leetra2015:4:2:2
+# text = Kuxima paá mairamé wariwa usasemu tapiira i nheengawasú, asuí wariwa nheenga mirĩ "fiií" mirintu paá i nheenga puxa unheẽ waria ti puranga.
+# text_eng = TODO
+# text_por = Dizem que antigamente quando a guariba gritava, a anta tinha um vozeirão, e a voz da guariba era fina: ― Fiií, dizem que era fininha a sua voz. — Puxa, dizia a gauriba, não é bonita.
+# text_source = p. 45
+# text_annotator = Leonel Figueiredo de Alencar
+# text_author = Amarildo Castro
+# title_orig = WARIWA ASUÍ TAPIRA
+# title_por_orig = GAURIBA E ANTA
+# title_por = Gauriba e anta
+# inputline = Kuxima paá mairamé/sconjr wariwa usasemu tapiira i/pron2 nheengawasú/=aug, asuí/cconj wariwa nheenga mirĩ/a "fiií/=intj" mirintu paá i/pron2 nheenga puxa/=intj:o|pt unheẽ waria/=typo:c|wariwa ti puranga/a.
+# text_sec = kuxiima paá mairamé wariwa usasemu,tapiira i nheengawasú, asuí wariwa nheenga mirĩ: ― Fiií, mirintu paá i nheenga [...].
+# text_por_sec = Dizem que antigamente quando a guariba gritava, a anta tinha um vozeirão, e a voz da guariba era fina: ― Fiií, dizem que era fininha a sua voz.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+1	Kuxima	kuxima	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:6
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=7:10
+3	mairamé	mairamé	SCONJ	SCONJR	_	5	mark	_	TokenRange=11:18
+4	wariwa	wariwa	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=19:25
+5	usasemu	sasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=26:33
+6	tapiira	tapiira	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=34:41
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=42:43
+8	nheengawasú	nheenga	NOUN	N	Degree=Aug|Number=Sing	0	root	_	SpaceAfter=No|TokenRange=44:55
+9	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=55:56
+10	asuí	asuí	CCONJ	CCONJ	_	13	cc	_	TokenRange=57:61
+11	wariwa	wariwa	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=62:68
+12	nheenga	nheenga	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=69:76
+13	mirĩ	mirĩ	ADJ	A	_	8	conj	_	TokenRange=77:81
+14	"	"	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=82:83
+15	fiií	fiií	INTJ	INTJ	_	17	discourse	_	SpaceAfter=No|TokenRange=83:87
+16	"	"	PUNCT	PUNCT	_	15	punct	_	TokenRange=87:88
+17-18	mirintu	_	_	_	_	_	_	_	TokenRange=89:96
+17	mirĩ	mirĩ	ADJ	A	_	13	parataxis	_	_
+18	ntu	ntu	ADV	ADV	Clitic=Yes	17	advmod	_	_
+19	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	17	advmod	_	TokenRange=97:100
+20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	TokenRange=101:102
+21	nheenga	nheenga	NOUN	N	Number=Sing	17	nsubj	_	TokenRange=103:110
+22	puxa	puxa	INTJ	INTJ	_	23	ccomp	_	OrigLang=por|TokenRange=111:115
+23	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=116:121
+24	waria	wariwa	NOUN	N	Number=Sing|Typo=Yes	23	nsubj	_	CorrectForm=wariwa|TokenRange=122:127
+25	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	26	advmod	_	TokenRange=128:130
+26	puranga	puranga	ADJ	A	_	22	parataxis	_	SpaceAfter=No|TokenRange=131:138
+27	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=138:139
 
 # sent_id = Leetra2015:8:100:100
 # text = Uyawiyawika uikú taité, ukikiri paá uikú ra, ape paá kupukú xinga paá usika nhaã tukura mirĩ, guiliru mirĩ, aape paá usika nheengari suakí; tiiririrririririririririri.
