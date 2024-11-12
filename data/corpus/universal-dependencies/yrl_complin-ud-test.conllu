@@ -29638,7 +29638,7 @@
 4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Magalhaes1876:1-1-1:2:104
-# text = Supí, tenhẽ, arikú mukawa.
+# text = Supí, tenhẽ, xarikú mukawa.
 # text_eng = Yes, sir, I do.
 # text_por = Sim, senhor, eu tenho.
 # text_source = p. 14
@@ -29648,9 +29648,9 @@
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=6:11
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=11:12
-5	arikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=13:18
-6	mukawa	mukawa	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=19:25
-7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
+5	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arikú|TokenRange=13:19
+6	mukawa	mukawa	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=20:26
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Magalhaes1876:1-1-2:1:105
 # text = Iné rerikú será se mukawa?
