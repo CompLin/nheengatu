@@ -29799,6 +29799,94 @@
 6	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	5	aux	_	_
 7	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=29:30
 
+# sent_id = Magalhaes1876:1-14:1:501
+# text = Mairamé taá kurí xamaã indé?
+# text_eng = When will I see you?
+# text_por = Quando eu hei de ver você?
+# text_source = p. 73
+# text_orig = Mairamé tahá curí xa mahã ndệ?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mairamé/advrt taá kurí xamaã indé?
+1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	4	advmod	_	TokenRange=0:7
+2	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=8:11
+3	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=12:16
+4	xamaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=amaã|TokenRange=17:22
+5	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	4	obj	_	SpaceAfter=No|TokenRange=23:27
+6	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Magalhaes1876:1-14:2:502
+# text = Remaã kurí ixé wirandé.
+# text_eng = You will see me tomorrow.
+# text_por = Você me há de ver amanhã.
+# text_source = p. 73
+# text_orig = Rẹmahã curí ixệ uirandệ.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Remaã kurí ixé wirandé.
+1	Remaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=6:10
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	obj	_	TokenRange=11:14
+4	wirandé	wirandé	ADV	ADVT	AdvType=Tim	1	advmod	_	SpaceAfter=No|TokenRange=15:22
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Magalhaes1876:1-14:1:503
+# text = Mairamé taá remaã ana ixé?
+# text_eng = When did you see me?
+# text_por = Quando você me viu?
+# text_source = p. 73
+# text_orig = Mairamé tahá rẹmahã ãna ixệ?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mairamé/advrt taá remaã ana ixé?
+1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	3	advmod	_	TokenRange=0:7
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=8:11
+3	remaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	ana	ana	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=18:21
+5	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=22:25
+6	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Magalhaes1876:1-14:2:504
+# text = Ixé xamaã ana indé.
+# text_eng = I've already seen you.
+# text_por = Eu já lhe vi.
+# text_source = p. 73
+# text_orig = Ixệ xa mahã ãna indệ.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé xamaã ana indé.
+1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	xamaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=amaã|TokenRange=4:9
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=10:13
+4	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	2	obj	_	SpaceAfter=No|TokenRange=14:18
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Magalhaes1876:1-14:0:600
+# text = Xanheẽ ana Pedro supé.
+# text_eng = I already spoke to Pedro.
+# text_por = Eu já fallei a Pedro.
+# text_source = p. 74
+# text_orig = Xa nheẽ ãna Pedro çupé.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xanheẽ ana Pedro supé.
+1	Xanheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Anheẽ|TokenRange=0:6
+2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=7:10
+3	Pedro	pedro	PROPN	PROPN	_	1	iobj	_	TokenRange=11:16
+4	supé	supé	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=17:21
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Magalhaes1876:1-14:0:601
+# text = Xaruri kurí yepé iwá Pedro arama.
+# text_eng = I will bring a fruit for Pedro.
+# text_por = Eu hei de trazer uma fruta para Pedro.
+# text_source = p. 74
+# text_orig = Xa rúri curí iepé ɨuá Pedro arãma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xaruri kurí yepé/art iwá Pedro arama/adp.
+1	Xaruri	ruri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aruri|TokenRange=0:6
+2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=12:16
+4	iwá	iwá	NOUN	N	Number=Sing	1	obj	_	TokenRange=17:20
+5	Pedro	pedro	PROPN	PROPN	_	1	obl	_	TokenRange=21:26
+6	arama	arama	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=27:32
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = Magalhaes1876:2-3:1:201
 # text = — Resikari-putari será suú?
 # text_eng = "Do you want to go hunting?"
