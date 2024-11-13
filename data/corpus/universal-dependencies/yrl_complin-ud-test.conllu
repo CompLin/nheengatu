@@ -29601,6 +29601,37 @@
 4	reikú	ikú	AUX	AUXFS	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:21
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# sent_id = Magalhaes1876:1-1-1:0:200
+# text = Xasú-putari Surimã kití.
+# text_eng = I want to go to the Amazon.
+# text_por = Eu quero ir para o Amazonas.
+# text_source = p. 11
+# text_orig = Xa çộ putári Suriman ketê.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xasú-putari Surimã/=p kití.
+1-2	Xasú-putari	_	_	_	_	_	_	_	TokenRange=0:11
+1	Xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asú
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	Surimã	surimã	PROPN	PROPN	_	1	obl	_	TokenRange=12:18
+4	kití	kití	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=19:23
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Magalhaes1876:1-1-1:0:201
+# text = Xasú xasenũi-kari se mira-itá.
+# text_eng = I will send for my people.
+# text_por = Eu vou mandar chamar o meu povo.
+# text_source = p. 11
+# text_orig = Xaço xa cenóin kári çe míraitá.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xasú xasenũi-kari se mira-itá.
+1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
+2-3	xasenũi-kari	_	_	_	_	_	_	_	TokenRange=5:17
+2	xasenũi	senũi	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asenũi
+3	kari	kari	AUX	AUXN	Compound=Yes|VerbForm=Inf	2	aux	_	_
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=18:20
+5	mira-itá	mira	NOUN	N	Number=Plur	2	obj	_	SpaceAfter=No|TokenRange=21:29
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+
 # sent_id = Magalhaes1876:1-1-1:1:101
 # text = Rerikú será?
 # text_eng = Do you have it?
@@ -29919,6 +29950,39 @@
 7	pirá	pirá	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=27:31
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
+# sent_id = Magalhaes1876:2-3:1:301
+# text = Remixiri-putari será pirá?
+# text_eng = Do you want to grill fish?
+# text_por = Você quer assar peixe?
+# text_source = p. 96
+# text_orig = Rẹmixíri putári será pirá?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Remixiri-putari será pirá?
+1-2	Remixiri-putari	_	_	_	_	_	_	_	TokenRange=0:15
+1	Remixiri	mixiri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=16:20
+4	pirá	pirá	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=21:25
+5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Magalhaes1876:2-3:2:302
+# text = Intí maã; xaputari yepé panera xamemúi arama.
+# text_eng = No; I want a pot to cook in.
+# text_por = Não; eu quero uma panela para cozinhar.
+# text_source = p. 96-97
+# text_orig = Intimahã; xa putári iepé panệra xa mimóî arãma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Intí maã/ind; xaputari yepé/card panera xamemúi arama/sconj.
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
+2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	SpaceAfter=No|TokenRange=5:8
+3	;	;	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
+4	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aputari|TokenRange=10:18
+5	yepé	yepé	NUM	CARD	NumType=Card	6	nummod	_	TokenRange=19:23
+6	panera	panera	NOUN	N	Number=Sing	7	obj	_	TokenRange=24:30
+7	xamemúi	memúi	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=amemúi|TokenRange=31:38
+8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=39:44
+9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=44:45
+
 # sent_id = Magalhaes1876:2-6:0:1
 # text = Asú kí xií se paya ruka kití anheẽ arama Joaquim irumu.
 # text_eng = I'm going from here to my father's house to talk to Joaquim.
@@ -29938,6 +30002,35 @@
 10	Joaquim	joaquim	PROPN	PROPN	_	8	obl	_	TokenRange=41:48
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=49:54
 12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=54:55
+
+# sent_id = Magalhaes1876:2-9:1:301
+# text = Maã-ta pesú pemunhã?
+# text_eng = What are you guys going to do?
+# text_por = O que vocês vão fazer?
+# text_source = p. 107
+# text_orig = Mãháta peçộ pemunhã?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Maã-ta/int pesú pemunhã?
+1-2	Maã-ta	_	_	_	_	_	_	_	TokenRange=0:6
+1	Maã	maã	PRON	INT	PronType=Int	4	obj	_	_
+2	ta	taá	PART	CQ	Clitic=Yes|PartType=Int	4	advmod	_	_
+3	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	4	aux	_	TokenRange=7:11
+4	pemunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:19
+5	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Magalhaes1876:2-9:2:302
+# text = Yasú yamunhã yané kupixawa.
+# text_eng = We are going to make our planting area.
+# text_por = Nós vamos fazer a nossa roça.
+# text_source = p. 107
+# text_orig = Iaçộ iamunhã ianệ cupixáua.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yasú yamunhã yané/pron2 kupixawa.
+1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:12
+3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:17
+4	kupixawa	kupixawa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=18:26
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Magalhaes1876:2-18:1:101
 # text = Awá taá upurú indé nhaã igara?
