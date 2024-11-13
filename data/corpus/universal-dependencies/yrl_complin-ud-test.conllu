@@ -29918,6 +29918,21 @@
 6	arama	arama	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=27:32
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
+# sent_id = Magalhaes1876:2-2:0:100
+# text = Rekũi apigawa úkupi.
+# text_eng = Go to the man's house.
+# text_por = Vá a casa do homem.
+# text_source = p. 95
+# text_orig = Rẹcóin apgáua ócopé.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Rekũi apigawa/n úkupi.
+1	Rekũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	apigawa	apigawa	NOUN	N	Number=Sing	1	obj	_	TokenRange=6:13
+3-4	úkupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:19
+3	uka	uka	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	_
+4	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
+
 # sent_id = Magalhaes1876:2-3:1:201
 # text = — Resikari-putari será suú?
 # text_eng = "Do you want to go hunting?"
@@ -31174,8 +31189,11 @@
 # text_eng = The tapir from the bush arrived there, said to him: "Get out, tortoise, get out of here."
 # text_por = A anta do mato chegou ali, disse a ele: — Retire-se, jabuti, retire-se daqui.
 # text_source = p. 176
-# text_orig = TODO
+# text_orig = Tapiíra	cahaiúára	oçɨka	ápe,	onhehẽ	ixupé:	—	Rẹtɨrɨca	iáutí,	rẹtɨrɨca	kí (iké)	xií.
+# text_por_gloss = Anta	do mato	chegou	ali,	disse	a ele:	—	Retire-se,	jabuti,	retire-se	aqui	de.
 # text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Tapiira	tapiira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:7
 2	kaawara	kaawara	ADJ	A	_	1	amod	_	TokenRange=8:15
 3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:21
@@ -31222,22 +31240,25 @@
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=77:78
 
 # sent_id = Magalhaes1876:2:5:48
-# text = — Retirika, yautí, kurumú apirú indé.
+# text = — Retirika, yautí, kurumú xapirú indé.
 # text_eng = "Get out, tortoise, or else I'll step on you."
-# text_por = — Retira-te, jabuti, senão eu te piso.
+# text_por = — Retira-te, jabuti, senão eu piso você.
 # text_source = p. 177
-# text_orig = TODO
+# text_orig = — Rẹtɨrɨca,	iautí,	curumú	xa	pirú	indệ.
+# text_por_gloss = — Retira-te,	jabuti,	senão	eu	piso	você.
 # cross_reference = Avila2021:0:0:593
 # text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Retirika	tirika	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=1:9
+2	Retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=1:9
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
 4	yautí	yautí	NOUN	N	Number=Sing	2	vocative	_	SpaceAfter=No|TokenRange=11:16
-5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
 6	kurumú	kurumú	ADV	ADVJ	AdvType=Cau	7	advmod	_	TokenRange=18:24
-7	apirú	pirú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	parataxis	_	TokenRange=25:30
-8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=31:35
-9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+7	xapirú	pirú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	parataxis	_	ModernForm=apirú|TokenRange=25:31
+8	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=32:36
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = Magalhaes1876:2:6:49
 # text = — Repirú!… remaã arama, indé nhũ será apigawa!
