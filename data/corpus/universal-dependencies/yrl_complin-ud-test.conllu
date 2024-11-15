@@ -33285,6 +33285,70 @@
 18	irumu	irumu	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=119:124
 19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=124:125
 
+# sent_id = Amorim1928:2:10:10
+# text = Yeperesé, paá, Buopé umundú aintá mena-etá uyuuka aintá, musapiri yasí riré aintá uyuíri, aramé aé unheẽ: — Kunhã-etá, tenhẽ peyawáu mukũisawa, tenhẽ pemuirawa xe piá pe resewara, maãresé aramé xamundú uyapí upanhẽ penhẽ kaxiwera pupé, pirá-etá rembiú arama.
+# text_eng = TODO
+# text_por = Buopé, contam, mandou logo seus maridos no encalço delas, três luas depois voltaram todos, ele disse então: — Mulheres, não fujam segunda vez, não façam meu coração amargoso contra vocês, porque então mandarei jogar vocês todas na cachoeira para comida de peixe.
+# text_source = p. 23-24, No. 10-11
+# text_orig = Iepéresé, paa, Buopé omundu aetá menaetá oiuúka aetá, musapyre iasy riré aetá oiuŷre, aramé aé onheen: Kunhãetá, teinhé peiauau mukũisaua, teinhé pemuiraua xe pŷá pe reséuara, maaresé aramé xamundu oiapi upanhe penhé kaxiuerapýpé, piráetá rembiú arama.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Kunhã-itá, te peyawáu mukũisawa, te pemuirawa se piá pe resewara, [...].
+# text_por_sec = Mulheres, não fujam uma segunda vez, não façam meu coração amargo contra vocês, [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# cross_reference = Avila2021:0:0:318
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Yeperesé, paá, Buopé umundú aintá/pron2 mena-etá uyuuka aintá/pron, musapiri yasí riré/adp aintá/pron uyuíri, aramé/advt aé/pron unheẽ: — Kunhã-etá, tenhẽ/negi peyawáu mukũisawa/advo, tenhẽ/negi pemuirawa xe piá pe/pron2 resewara/adp, maãresé aramé/advt xamundú uyapí upanhẽ penhẽ kaxiwera pupé, pirá-etá rembiú arama/adp.
+1	Yeperesé	yeperesé	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:8
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=10:13
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
+5	Buopé	buopé	PROPN	PROPN	_	6	nsubj	_	TokenRange=15:20
+6	umundú	mundú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=21:27
+7	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=28:33
+8	mena-etá	mena	NOUN	N	Number=Plur	9	nsubj	_	TokenRange=34:42
+9	uyuuka	yuuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=43:49
+10	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	9	obj	_	SpaceAfter=No|TokenRange=50:55
+11	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=55:56
+12	musapiri	musapiri	NUM	CARD	NumType=Card	13	nummod	_	TokenRange=57:65
+13	yasí	yasí	NOUN	N	Number=Sing	16	obl	_	TokenRange=66:70
+14	riré	riré	ADP	ADP	AdpType=Post	13	case	_	TokenRange=71:75
+15	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	16	nsubj	_	TokenRange=76:81
+16	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	SpaceAfter=No|TokenRange=82:88
+17	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=88:89
+18	aramé	aramé	ADV	ADVT	AdvType=Tim	20	advmod	_	TokenRange=90:95
+19	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	20	nsubj	_	TokenRange=96:98
+20	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	16	parataxis	_	SpaceAfter=No|TokenRange=99:104
+21	:	:	PUNCT	PUNCT	_	26	punct	_	TokenRange=104:105
+22	—	—	PUNCT	PUNCT	_	26	punct	_	TokenRange=105:106
+23	Kunhã-etá	kunhã	NOUN	N	Number=Plur	26	vocative	_	SpaceAfter=No|TokenRange=107:116
+24	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=116:117
+25	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	26	advmod	_	TokenRange=118:123
+26	peyawáu	yawáu	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	20	ccomp	_	TokenRange=124:131
+27	mukũisawa	mukũisawa	ADV	ADVO	AdvType=Tim|NumType=Ord	26	advmod	_	SpaceAfter=No|TokenRange=132:141
+28	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=141:142
+29	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	30	advmod	_	TokenRange=143:148
+30	pemuirawa	muirawa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	26	parataxis	_	TokenRange=149:158
+31	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	32	nmod:poss	_	TokenRange=159:161
+32	piá	piá	NOUN	N	Number=Sing	30	obj	_	TokenRange=162:165
+33	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	30	obl	_	TokenRange=166:168
+34	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont	33	case	_	SpaceAfter=No|TokenRange=169:177
+35	,	,	PUNCT	PUNCT	_	38	punct	_	TokenRange=177:178
+36	maãresé	maãresé	SCONJ	SCONJR	_	38	mark	_	TokenRange=179:186
+37	aramé	aramé	ADV	ADVT	AdvType=Tim	38	advmod	_	TokenRange=187:192
+38	xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	26	advcl	_	ModernForm=amundú|TokenRange=193:200
+39	uyapí	yapí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	38	ccomp	_	TokenRange=201:206
+40	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	42	det	_	TokenRange=207:213
+41	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	39	obj	_	TokenRange=214:219
+42	kaxiwera	kaxiwera	NOUN	N	Number=Sing	39	obl	_	TokenRange=220:228
+43	pupé	pupé	ADP	ADP	AdpType=Post	42	case	_	SpaceAfter=No|TokenRange=229:233
+44	,	,	PUNCT	PUNCT	_	46	punct	_	TokenRange=233:234
+45	pirá-etá	pirá	NOUN	N	Number=Plur	46	nmod:poss	_	TokenRange=235:243
+46	rembiú	tembiú	NOUN	N	Number=Sing|Rel=Cont	39	obl	_	TokenRange=244:250
+47	arama	arama	ADP	ADP	AdpType=Post	46	case	_	SpaceAfter=No|TokenRange=251:256
+48	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=256:257
+
 # sent_id = Amorim1928:2:15:15
 # text = Buopé paá intí usuaxara, umundú yeperesé uyapí kaziwera pupé nhaã kunhã-etá pirá rimbiú arama.
 # text_eng = TODO
