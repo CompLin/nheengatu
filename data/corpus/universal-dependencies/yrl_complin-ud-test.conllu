@@ -34367,7 +34367,7 @@
 28	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=127:128
 
 # sent_id = Amorim1928:29:19:19
-# text = Kũi ana iké suí, mikura aíwa, kũi ana iké suí.
+# text = Kũi ana ké suí, mikura aíwa, kũi ana ké suí!
 # text_eng = TODO
 # text_por = Vai-te já daqui, mucura ruim, vai-te já daqui!
 # text_source = p. 442, No. 19
@@ -34375,19 +34375,20 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Kũi ana ké suí, mikura aíwa/a, kũi ana ké suí!
 1	Kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:3
 2	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=4:7
-3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	obl	_	TokenRange=8:11
-4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=12:15
-5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
-6	mikura	mikura	NOUN	N	Number=Sing	1	vocative	_	TokenRange=17:23
-7	aíwa	aíwa	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=24:28
-8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=28:29
-9	kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=30:33
-10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=34:37
-11	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	9	obl	_	TokenRange=38:41
-12	suí	suí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=42:45
-13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
+3	ké	ké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	obl	_	TokenRange=8:10
+4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=11:14
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=14:15
+6	mikura	mikura	NOUN	N	Number=Sing	1	vocative	_	TokenRange=16:22
+7	aíwa	aíwa	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=23:27
+8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=27:28
+9	kũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=29:32
+10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=33:36
+11	ké	ké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	9	obl	_	TokenRange=37:39
+12	suí	suí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=40:43
+13	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Amorim1928:29:73:73
 # text = Kũi ana repi sika aintá xasú pukusawa xamunhã mukũi urusakanga yarasú arama aintá.
