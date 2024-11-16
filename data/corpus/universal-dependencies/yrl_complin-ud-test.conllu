@@ -33286,7 +33286,7 @@
 19	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=124:125
 
 # sent_id = Amorim1928:2:10:10
-# text = Yeperesé, paá, Buopé umundú aintá mena-etá uyuuka aintá, musapiri yasí riré aintá uyuíri, aramé aé unheẽ: — Kunhã-etá, tenhẽ peyawáu mukũisawa, tenhẽ pemuirawa xe piá pe resewara, maãresé aramé xamundú uyapí upanhẽ penhẽ kaxiwera pupé, pirá-etá rembiú arama.
+# text = Yeperesé, paá, Buopé umundú aintá mena-etá uyuuka aintá, musapiri yasí riré aintá uyuíri, aramé aé unheẽ: — Kunhã-etá, tenhẽ peyawáu mukũisawa, tenhẽ pemuirawa xe piá pe resewara, maãresé aramé xamundú uyapí upanhẽ penhẽ kaxiwerapupé, pirá-etá rembiú arama.
 # text_eng = TODO
 # text_por = Buopé, contam, mandou logo seus maridos no encalço delas, três luas depois voltaram todos, ele disse então: — Mulheres, não fujam segunda vez, não façam meu coração amargoso contra vocês, porque então mandarei jogar vocês todas na cachoeira para comida de peixe.
 # text_source = p. 23-24, No. 10-11
@@ -33341,7 +33341,7 @@
 39	uyapí	yapí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	38	ccomp	_	TokenRange=201:206
 40	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	42	det	_	TokenRange=207:213
 41	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	39	obj	_	TokenRange=214:219
-42	kaxiwera	kaxiwera	NOUN	N	Number=Sing	39	obl	_	TokenRange=220:228
+42	kaxiwera	kaxiwera	NOUN	N	Number=Sing	39	obl	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=220:228
 43	pupé	pupé	ADP	ADP	AdpType=Post	42	case	_	SpaceAfter=No|TokenRange=229:233
 44	,	,	PUNCT	PUNCT	_	46	punct	_	TokenRange=233:234
 45	pirá-etá	pirá	NOUN	N	Number=Plur	46	nmod:poss	_	TokenRange=235:243
