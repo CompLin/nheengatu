@@ -14076,6 +14076,8 @@
 # text_por = Vem cá!
 # text_source = Coudreau, 467; Magalhães, 97
 # text_annotator = Leonel Figueiredo de Alencar
+# text_prim = iúri ikệ.
+# text_prim_source = Magalhães (1876:97)
 # reviewer1 = Juliana Lopes Gurgel
 1	Yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -14088,7 +14090,7 @@
 # text_source = Amorim, 363, adap.
 # text_prim = Iúre, reuapŷka iké xe ruakê rembaú arama.
 # text_prim_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# text_prim_source = p. 361, No. 147
+# text_prim_source = Amorim (1928:361), No. 147
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Juliana Lopes Gurgel
 1	Yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:4
@@ -14108,11 +14110,12 @@
 # text_eng = My relatives, come!
 # text_por = Meus parentes, venham!
 # text_source = Magalhães, 183, adap.
-# text_prim = Cẹ anãma itá, iúre!
+# text_prim = Cẹ	anãma itá,	iúre!
+# text_por_prim_gloss = Meus	parentes,	venham!
 # text_annotator = Leonel Figueiredo de Alencar
 # previous = Magalhaes1876:3:1:201
-# text_prim_transcription = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# text_prim_transcriber = Dominick Maia Alexandre
+# text_prim_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_prim_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	anama-itá	anama	NOUN	N	Number=Plur	4	vocative	_	SpaceAfter=No|TokenRange=3:12
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=12:13
@@ -28170,6 +28173,34 @@
 2	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
 
+# sent_id = Rodrigues1890:1-1-5:90:90
+# text = — Ikũi ana, aikwé nhuntu ana Kurupira usika ixé yuíri xasú ana.
+# text_eng = TODO
+# text_por = — Vai já; o Curupira está a chegar e eu também vou-me embora.
+# text_source = p. 56
+# text_orig = — Icó ana, aicoé iunto ana Curupira u cêca che iuire cha çu ana.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = [...], aikwé nhuntu ana usika kurupira, ixé yuíri asú ana.
+# text_por_sec = [...], daqui a pouco o curupira já chega, eu também já me vou.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=1:5
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=9:10
+5	aikwé	aikwé	PART	EXST	ExtPos=ADV|PartType=Exs	9	advmod	_	TokenRange=11:16
+6	nhuntu	nhuntu	ADV	ADV	_	5	fixed	_	TokenRange=17:23
+7	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=24:27
+8	Kurupira	kurupira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=28:36
+9	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=37:42
+10	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	TokenRange=43:46
+11	yuíri	yuíri	ADV	ADVG	AdvType=Deg	10	advmod	_	TokenRange=47:52
+12	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=53:57
+13	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	SpaceAfter=No|TokenRange=58:61
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=61:62
+
 # sent_id = Rodrigues1890:1-1-5:91:91
 # text = Kurumĩ usú renundé uinú suíwa rakapírupi urarí, arirí usú uyenú kuruatá pupé inayawasú aresé.
 # text_eng = The boy first put poison on the tip of the arrow, then went to lie down on the spathe of the large inajá.
@@ -28204,34 +28235,6 @@
 15	inayawasú	inayá	NOUN	N	Degree=Aug|Number=Sing	12	obl	_	TokenRange=77:86
 16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=87:92
 17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
-
-# sent_id = Rodrigues1890:1-1-6:0:0
-# text = — Ikũi ana, aikwé nhuntu ana Kurupira usika ixé yuíri xasú ana.
-# text_eng = TODO
-# text_por = — Vai já; o Curupira está a chegar e eu também vou-me embora.
-# text_source = p. 56
-# text_orig = — Icó ana, aicoé iunto ana Curupira u cêca che iuire cha çu ana.
-# text_annotator = Leonel Figueiredo de Alencar
-# text_sec = [...], aikwé nhuntu ana usika kurupira, ixé yuíri asú ana.
-# text_por_sec = [...], daqui a pouco o curupira já chega, eu também já me vou.
-# text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
-# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=1:5
-3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=6:9
-4	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=9:10
-5	aikwé	aikwé	PART	EXST	ExtPos=ADV|PartType=Exs	9	advmod	_	TokenRange=11:16
-6	nhuntu	nhuntu	ADV	ADV	_	5	fixed	_	TokenRange=17:23
-7	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=24:27
-8	Kurupira	kurupira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=28:36
-9	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=37:42
-10	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	TokenRange=43:46
-11	yuíri	yuíri	ADV	ADVG	AdvType=Deg	10	advmod	_	TokenRange=47:52
-12	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=53:57
-13	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	SpaceAfter=No|TokenRange=58:61
-14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=61:62
 
 # sent_id = Rodrigues1890:1-1-7:40:40
 # text = Iruri taíra ixé arama ukiri se irumu.
@@ -30107,6 +30110,33 @@
 7	xamemúi	memúi	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=amemúi|TokenRange=31:38
 8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=39:44
 9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=44:45
+
+# sent_id = Magalhaes1876:2-3:0:970
+# text = Rerasú tatá se rendira supé.
+# text_eng = Bring fire to my sister.
+# text_por = Leve fogo para minha irmã.
+# text_source = p. 97
+# text_orig = Rẹraçộ tatá ce rendệra çupé.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Rerasú tatá se rendira supé.
+1	Rerasú	rasú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	TokenRange=7:11
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	rendira	tendira	NOUN	N	Number=Sing|Rel=Cont	1	iobj	_	TokenRange=15:22
+5	supé	supé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:27
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Magalhaes1876:2-2:0:973
+# text = Rekũi ape.
+# text_eng = Go there.
+# text_por = Vai lá.
+# text_source = p. 97
+# text_orig = Rẹcoĩ ápe.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Rekũi ape/advdi.
+1	Rekũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=6:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = Magalhaes1876:2-6:0:1
 # text = Asú kí xií se paya ruka kití anheẽ arama Joaquim irumu.
