@@ -29223,6 +29223,39 @@
 11	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	10	case	_	_
 12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=41:42
 
+# sent_id = Amorim1928:2-13:50:50
+# text = — Tenupá, se raixú, mutaraíma ixé, kwá se kamarara irumu, ixé xakwáu umaã xamunhã, xayupika kurí.
+# text_eng = TODO
+# text_por = — Deixe estar, minha sogra, tenha raiva de mim e deste meu camarada; eu saberei ver e hei de fazer por me vingar.
+# text_source = p. 180
+# text_orig = — Tenupá, ce raichu, mutara ima iché, cuá ce camarara irumo, iché cha cuau u maan cha munhan, cha iupêca curi.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Tenupá/intj, se raixú, mutaraíma/=mf:x|v:h|v:m|remutaraíma ixé, kwá/demx se kamarara irumu/adp, ixé xakwáu umaã xamunhã, xayupika kurí.
+1	—	—	PUNCT	PUNCT	_	7	punct	_	TokenRange=-1:0
+2	Tenupá	tenupá	INTJ	INTJ	_	7	discourse	_	SpaceAfter=No|TokenRange=1:7
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=7:8
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=9:11
+5	raixú	taixú	NOUN	N	Number=Sing|Rel=Cont	7	vocative	_	SpaceAfter=No|TokenRange=12:17
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=17:18
+7	mutaraíma	mutaraíma	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=remutaraíma|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbform=Fin|TokenRange=19:28
+8	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=29:32
+9	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=32:33
+10	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	det	_	TokenRange=34:37
+11	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=38:40
+12	kamarara	kamarara	NOUN	N	Number=Sing	7	obl	_	TokenRange=41:49
+13	irumu	irumu	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=50:55
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=55:56
+15	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	16	nsubj	_	TokenRange=57:60
+16	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	7	parataxis	_	ModernForm=akwáu|TokenRange=61:67
+17	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	16	parataxis	_	TokenRange=68:72
+18	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	16	parataxis	_	ModernForm=amunhã|SpaceAfter=No|TokenRange=73:80
+19	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=80:81
+20	xayupika	yupika	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	16	parataxis	_	ModernForm=ayupika|TokenRange=82:90
+21	kurí	kurí	PART	FUT	Tense=Fut	20	advmod	_	SpaceAfter=No|TokenRange=91:95
+22	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=95:96
+
 # sent_id = Rodrigues1890:2-14:1:500
 # text = Mikura urikú, paá, tayera mena Arirambá.
 # text_eng = The opossum, they say, had a kingfisher son-in-law.
