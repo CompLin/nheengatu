@@ -28236,7 +28236,7 @@
 16	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Style=Arch	15	case	_	ModernForm=resé|SpaceAfter=No|TokenRange=87:92
 17	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
 
-# sent_id = Rodrigues1890:1-1-7:40:40
+# sent_id = Rodrigues1890:1-1-6:40:40
 # text = Iruri taíra ixé arama ukiri se irumu.
 # text_eng = TODO
 # text_por = Traze o filho para dormir comigo.
@@ -28255,11 +28255,52 @@
 7	irumu	irumu	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=31:36
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# sent_id = Rodrigues1890:1-1-7:4:4
+# text = Kunhãbukú usika muirá Kunawarú-etá wírupi, usasema kunawarú-etá resé: — Kunawarú iyuri piamu ixé, Kurupira se yuká-putari, remuyé ixé ne waturá.
+# text_eng = TODO
+# text_por = A rapariga chegou debaixo da árvore do Cunauaru e gritou para os Cunauarus: — Cunauaru, venha me buscar... O Curupira quer me matar... Abaixa-me teu cesto.
+# text_source = p. 65
+# text_orig = Cunhan bucu u cyca muirá Cunauaru eta uirpe, u çacema cunauaru etá rece: — Cunauaru i yure piamo iché, Curupira ce iucá putare, re mu uié iché ne uaturá.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni
+# inputline = Kunhãbukú/=typo:c|Kunhãmukú:x|n usika muirá Kunawarú-etá wírupi, usasema kunawarú-etá resé/adp: — Kunawarú iyuri piamu/=mf:m|repiamu ixé, Kurupira se/=mf:m|ixé yuká-putari/=mf:m|uyuká, remuyé ixé ne waturá.
+1	Kunhãbukú	kunhãmukú	NOUN	N	Number=Sing|Typo=Yes	2	nsubj	_	CorrectForm=Kunhãmukú|TokenRange=0:9
+2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
+3	muirá	muirá	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=16:21
+4	Kunawarú-etá	kunawarú	NOUN	N	Number=Plur	5	nmod:poss	_	TokenRange=22:34
+5-6	wírupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=35:41
+5	wira	wira	NOUN	N	Number=Sing	2	obl	_	_
+6	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	5	case	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=41:42
+8	usasema	sasema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=43:50
+9	kunawarú-etá	kunawarú	NOUN	N	Number=Plur	8	iobj	_	TokenRange=51:63
+10	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	9	case	_	SpaceAfter=No|TokenRange=64:68
+11	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=68:69
+12	—	—	PUNCT	PUNCT	_	14	punct	_	TokenRange=70:71
+13	Kunawarú	kunawarú	NOUN	N	Number=Sing	14	nsubj	_	TokenRange=72:80
+14	iyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=81:86
+15	piamu	piamu	VERB	V	Style=Arch|VerbForm=Inf	14	xcomp	_	ModernForm=repiamu|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbform=Fin|TokenRange=87:92
+16	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=93:96
+17	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=96:97
+18	Kurupira	kurupira	NOUN	N	Number=Sing	20	nsubj	_	TokenRange=98:106
+19	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	20	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=107:109
+20-21	yuká-putari	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=110:121
+20	yuká	yuká	VERB	V	Style=Arch|VerbForm=Inf	15	parataxis	_	ModernForm=uyuká|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin
+21	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	20	aux	_	_
+22	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=121:122
+23	remuyé	muyé	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	20	parataxis	_	TokenRange=123:129
+24	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	23	iobj	_	TokenRange=130:133
+25	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	26	nmod:poss	_	TokenRange=134:136
+26	waturá	waturá	NOUN	N	Number=Sing	23	obj	_	SpaceAfter=No|TokenRange=137:143
+27	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=143:144
+
 # sent_id = Rodrigues1890:1-1-9:101:101
 # text = — Se ramunha, remeẽ aú ne remiára?
 # text_eng = "My grandfather, will you give me your game to eat?"
 # text_por = — Meu avô, tu me dás tua caça para comer?
 # text_source = p. 77
+# place = Tefé, Amazonas, Brazil
 # text_orig = — Ce ramonha, re meen cha ú ne remiara?
 # title_orig = CURUPIRA CAÍMA ETA IRUMO
 # title_por = O curupira e os perdidos
@@ -28465,7 +28506,50 @@
 12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=51:54
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
 
-# sent_id = Rodrigues1890:1-1-13:500:500
+# sent_id = Amorim1928:1-1-12:10:10
+# text = Axií yepé payé usenúi tuixawa-etá unheẽ supé arama: — Se remiarerú-etá, penhẽ te pepisika piraíwa aé intí maã i katú, aé maíwa, aé mira anga tuixawa raíra.
+# text_eng = TODO
+# text_por = Depois um feiticeiro chamou os chefes e lhes disse: — Meus netos, vocês não peguem a piraíba porque ela não é boa, é coisa má, é a alma do filho do chefe.
+# text_source = p. 90
+# text_orig = Achii yepé payé u cenôe tuichaua étá u nheeng çupé arama: — Ce remiareru etá, penhen tepé pecica piráyua aé intimaan i catu, aé mayiua, aé mira anga tuichaua raira.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Axií/advt yepé/art payé usenúi tuixawa-etá unheẽ supé arama/adp: — Se remiarerú-etá, penhẽ te/negi pepisika piraíwa aé/pron intí maã/ind i/pron2 katú/v2, aé/pron maíwa, aé/pron mira anga tuixawa raíra.
+1	Axií	axií	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=5:9
+3	payé	payé	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=10:14
+4	usenúi	senúi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=15:21
+5	tuixawa-etá	tuixawa	NOUN	N	Number=Plur|Rel=Abs	4	iobj	_	TokenRange=22:33
+6	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=34:39
+7	supé	supé	ADP	ADP	AdpType=Post	5	case	_	TokenRange=40:44
+8	arama	arama	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=45:50
+9	:	:	PUNCT	PUNCT	_	16	punct	_	TokenRange=50:51
+10	—	—	PUNCT	PUNCT	_	16	punct	_	TokenRange=51:52
+11	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=53:55
+12	remiarerú-etá	temiarerú	NOUN	N	Number=Plur|Rel=Cont	16	vocative	_	SpaceAfter=No|TokenRange=56:69
+13	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=69:70
+14	penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	16	nsubj	_	TokenRange=71:76
+15	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	16	advmod	_	TokenRange=77:79
+16	pepisika	pisika	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=80:88
+17	piraíwa	piraíwa	NOUN	N	Number=Sing	16	obj	_	TokenRange=89:96
+18	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	22	nsubj	_	TokenRange=97:99
+19	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=100:104
+20	maã	maã	PRON	IND	PronType=Ind	19	fixed	_	TokenRange=105:108
+21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	expl	_	TokenRange=109:110
+22	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	16	parataxis	_	SpaceAfter=No|TokenRange=111:115
+23	,	,	PUNCT	PUNCT	_	25	punct	_	TokenRange=115:116
+24	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	25	nsubj	_	TokenRange=117:119
+25	maíwa	maíwa	NOUN	N	Number=Sing	16	parataxis	_	SpaceAfter=No|TokenRange=120:125
+26	,	,	PUNCT	PUNCT	_	29	punct	_	TokenRange=125:126
+27	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	29	nsubj	_	TokenRange=127:129
+28	mira	mira	NOUN	N	Number=Sing	29	nmod:poss	_	TokenRange=130:134
+29	anga	anga	NOUN	N	Number=Sing	16	parataxis	_	TokenRange=135:139
+30	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	31	nmod:poss	_	TokenRange=140:147
+31	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	29	nmod	_	SpaceAfter=No|TokenRange=148:153
+32	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=153:154
+
+# sent_id = Rodrigues1890:1-1-12:500:500
 # text = Aintá unheẽ unheengari ramé ti maã i katú marandúa.
 # text_eng = They say that when he sings, the news is not good.
 # text_por = Dizem que quando ele canta não é boa a notícia.
@@ -28473,6 +28557,7 @@
 # text_orig = Aitá u nheeng u nheengare ramé intimaan i catu marandua.
 # title_orig = TINKUAN
 # title_number = XII
+# place = Rio Negro
 # text_sec = Aintá unheẽ [wirá-payé] unheengari ramé ti maã i katú marandúa
 # text_por_sec = Dizem que quando [o pássaro feiticeiro] canta não é boa a notícia.
 # text_sec_source = Avila (2021)
