@@ -28845,13 +28845,37 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = — Ururi/=mf:m|Iruri Karã se muirakitã.
+# inputline = — Ururi/=mf:m|Iruri:r|Standard Karã se muirakitã.
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Ururi	ruri	VERB	V	Mood=Ind|Person=3|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Iruri|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|TokenRange=1:6
+2	Ururi	ruri	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	0	root	_	StandardForm=Iruri|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=1:6
 3	Karã	karã	NOUN	N	Number=Sing	2	vocative	_	TokenRange=7:11
 4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
 5	muirakitã	muirakitã	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:24
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Rodrigues1890:1-2-4:103:103
+# text = — Ururi Karã se muirakitã!
+# text_eng = "Carão, bring my talisman!"
+# text_por = — Carão, traz o meu talismã!
+# title = Yuruparí kunhãmukú-etá irumu
+# title_orig = YURUPARI CUNHAN MUCU ETÁ IRUMO
+# title_por = O Jurupari e as moças
+# variant_number = 2
+# place = on the Canumã River
+# narrator = Munduruku woman
+# text_source = p. 132
+# text_orig = — U rure Karan ce muyrakytan!
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Ururi/=mf:m|Iruri:r|Standard Karã se muirakitã!
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Ururi	ruri	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	0	root	_	StandardForm=Iruri|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=1:6
+3	Karã	karã	NOUN	N	Number=Sing	2	vocative	_	TokenRange=7:11
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
+5	muirakitã	muirakitã	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:24
+6	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
 
 # sent_id = Rodrigues1890:1-2-5:1:1
 # text = Yepé kunhã, paá, ukiri taíra irumu i kisawa pupé.
@@ -28955,9 +28979,9 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Uxipiá/=mf:m|Ixipiá Yuruparí/=p yané/pron2 wírupi uyenú uikú!…
+# inputline = Uxipiá/=mf:m|Ixipiá:r|Standard Yuruparí/=p yané/pron2 wírupi uyenú uikú!…
 # text_por_gloss = Espia Yurupari nós debaixo deitado está!…
-1	Uxipiá	xipiá	VERB	V	Mood=Ind|Person=3|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Ixipiá|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|TokenRange=0:6
+1	Uxipiá	xipiá	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	0	root	_	StandardForm=Ixipiá|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=0:6
 2	Yuruparí	yuruparí	PROPN	PROPN	_	1	obj	_	TokenRange=7:15
 3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=16:20
 4-5	wírupi	_	_	_	_	_	_	_	TokenRange=21:27
@@ -29711,7 +29735,7 @@
 # text = Yuri kwá kití, ayumimi indé igasawa wírupi nti arama aintá ne ripiaka.
 # text_eng = Come here, I'll hide you under the pot so they don't see you.
 # text_por = Vem pra cá, eu te escondo debaixo do panelão para que eles não te vejam.
-# text_source = p. 258 (2018, p. 462)
+# text_source = p. 258, Rodrigues (2018:462)
 # text_orig = Yure quê quetê cha iumime iné igaçaua uirpe enti arama aintá ne repiaca.
 # text_sec = Yuri kwá kití [...]. (Avila 2021)
 # text_annotator = Leonel Figueiredo de Alencar
@@ -29741,12 +29765,13 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Iwapika itá árupi umunhã/=mf:m|imunhã:r|Standard maã/relf yamunhã yaikú/v.
 1	Iwapika	wapika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	itá	itá	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=8:11
 3-4	árupi	_	_	_	_	_	_	_	TokenRange=12:17
 3	ara	ara	NOUN	N	Number=Sing	1	obl	_	_
 4	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
-5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=18:24
+5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	1	parataxis	_	StandardForm=imunhã|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=18:24
 6	maã	maã	PRON	RELF	PronType=Rel	5	obj	_	TokenRange=25:28
 7	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	6	acl:relcl	_	TokenRange=29:36
 8	yaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	aux	_	SpaceAfter=No|TokenRange=37:42
