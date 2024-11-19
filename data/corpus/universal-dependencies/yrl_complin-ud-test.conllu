@@ -10928,11 +10928,10 @@
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Avila2021:29:5:334
-# text = ― Asarú indé, te reganani ixé, apuú kiínha yané pusanga arama, [...].
+# text = ― Asarú indé, te reganani ixé, apuú kiinha yané pusanga arama, [...].
 # text_eng = ― I'm waiting for you, don't deceive me, I gather pepper for our medicine, [...].
 # text_por = ― Eu te espero, não me enganes, eu colho pimenta para o nosso remédio, [...].
 # text_source = Rodrigues, 174, adap.
-# text_orig = ― Asarú indé, te reganani ixé, apuú kiinha yané pusanga arama, [...].
 # text_prim = — Cha çaru indé, tenhen negane iché, chá poó quêinha yandí puçanga arama, yané reçá rupiara arama.
 # text_annotator = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
@@ -10944,7 +10943,7 @@
 7	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=25:28
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
 9	apuú	puú	VERB	V	Mood=Imp|Number=Sing|Person=1|VerbForm=Fin	6	parataxis	_	TokenRange=30:34
-10	kiínha	kiínha	NOUN	N	Number=Sing	9	obj	_	TokenRange=35:41
+10	kiinha	kiinha	NOUN	N	Number=Sing	9	obj	_	TokenRange=35:41
 11	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=42:46
 12	pusanga	pusanga	NOUN	N	Number=Sing	9	obl	_	TokenRange=47:54
 13	arama	arama	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=55:60
@@ -28304,6 +28303,7 @@
 # text_orig = — Ce ramonha, re meen cha ú ne remiara?
 # title_orig = CURUPIRA CAÍMA ETA IRUMO
 # title_por = O curupira e os perdidos
+# title_number = IX
 # text_annotator = Leonel Figueiredo de Alencar
 1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
 2	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=1:3
@@ -28506,11 +28506,58 @@
 12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=51:54
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
 
-# sent_id = Amorim1928:1-1-12:10:10
+# sent_id = Rodrigues1890:1-1-10:84:84
+# text = Usika ramé suka kití Kurupira unheẽ: — Ikũi ana ne manha piri, xasú ana ne xií; ti maã maã reú ikũi se piri se ruka upé.
+# text_eng = TODO
+# text_por = Quando chegou à casa, o Curupira disse: — Vai já ter com tua mãe. Eu me separo de ti. Quando não tiveres que comer, vem ter comigo em minha casa.
+# text_por_gloss = Chegou quando casa em o Curupira disse: — Vai já tua mãe ter com eu vou me embora ti de; não que tu comeres vem migo ter com minha casa em.
+# text_source = p. 84
+# title_number = X
+# place = Silves
+# title_orig = CURUPIRA CUNHAN IRUMO
+# text_orig = U ceca ramé çoca queté Curupira u nhiin: — I cu ana ne manha pire, cha çu ana ne chii; timaan maa reú i có ce pire ce roca opé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:5
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
+3	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obl	_	TokenRange=11:15
+4	kití	kití	ADP	ADP	AdpType=Post	3	case	_	TokenRange=16:20
+5	Kurupira	kurupira	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=21:29
+6	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=30:35
+7	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=35:36
+8	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
+9	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=38:42
+10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=43:46
+11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=47:49
+12	manha	manha	NOUN	N	Number=Sing	9	obl	_	TokenRange=50:55
+13	piri	piri	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=56:60
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
+15	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=62:66
+16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=67:70
+17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	obl	_	TokenRange=71:73
+18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
+19	;	;	PUNCT	PUNCT	_	24	punct	_	TokenRange=77:78
+20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
+21	maã	maã	PART	COND	Modality=Cond|PartType=Mod	23	advmod	_	TokenRange=82:85
+22	maã	maã	PRON	IND	PronType=Ind	23	obj	_	TokenRange=86:89
+23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
+24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	9	parataxis	_	TokenRange=94:98
+25	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	24	obl	_	TokenRange=99:101
+26	piri	piri	ADP	ADP	AdpType=Post	25	case	_	TokenRange=102:106
+27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=107:109
+28	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	24	obl	_	TokenRange=110:114
+29	upé	upé	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=115:118
+30	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=118:119
+
+# sent_id = Rodrigues1890:1-1-12:10:10
 # text = Axií yepé payé usenúi tuixawa-etá unheẽ supé arama: — Se remiarerú-etá, penhẽ te pepisika piraíwa aé intí maã i katú, aé maíwa, aé mira anga tuixawa raíra.
 # text_eng = TODO
 # text_por = Depois um feiticeiro chamou os chefes e lhes disse: — Meus netos, vocês não peguem a piraíba porque ela não é boa, é coisa má, é a alma do filho do chefe.
 # text_source = p. 90
+# title_number = XII
+# title_orig = TINKUAN
+# place = Rio Negro
 # text_orig = Achii yepé payé u cenôe tuichaua étá u nheeng çupé arama: — Ce remiareru etá, penhen tepé pecica piráyua aé intimaan i catu, aé mayiua, aé mira anga tuichaua raira.
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
@@ -28573,47 +28620,6 @@
 8	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	2	ccomp	_	TokenRange=37:41
 9	marandúa	marandúa	NOUN	N	Number=Sing	8	nsubj	_	SpaceAfter=No|TokenRange=42:50
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
-
-# sent_id = Rodrigues1890:1-1-11:84:84
-# text = Usika ramé suka kití Kurupira unheẽ: — Ikũi ana ne manha piri, xasú ana ne xií; ti maã maã reú ikũi se piri se ruka upé.
-# text_eng = TODO
-# text_por = Quando chegou à casa, o Curupira disse: — Vai já ter com tua mãe. Eu me separo de ti. Quando não tiveres que comer, vem ter comigo em minha casa.
-# text_por_gloss = Chegou quando casa em o Curupira disse: — Vai já tua mãe ter com eu vou me embora ti de; não que tu comeres vem migo ter com minha casa em.
-# text_source = p. 84
-# text_orig = U ceca ramé çoca queté Curupira u nhiin: — I cu ana ne manha pire, cha çu ana ne chii; timaan maa reú i có ce pire ce roca opé.
-# text_annotator = Leonel Figueiredo de Alencar
-# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=0:5
-2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
-3	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	1	obl	_	TokenRange=11:15
-4	kití	kití	ADP	ADP	AdpType=Post	3	case	_	TokenRange=16:20
-5	Kurupira	kurupira	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=21:29
-6	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=30:35
-7	:	:	PUNCT	PUNCT	_	9	punct	_	TokenRange=35:36
-8	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
-9	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=38:42
-10	ana	ana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=43:46
-11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=47:49
-12	manha	manha	NOUN	N	Number=Sing	9	obl	_	TokenRange=50:55
-13	piri	piri	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=56:60
-14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
-15	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=asú|TokenRange=62:66
-16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=67:70
-17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	obl	_	TokenRange=71:73
-18	xií	xií	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=74:77
-19	;	;	PUNCT	PUNCT	_	24	punct	_	TokenRange=77:78
-20	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	23	advmod	_	TokenRange=79:81
-21	maã	maã	PART	COND	Modality=Cond|PartType=Mod	23	advmod	_	TokenRange=82:85
-22	maã	maã	PRON	IND	PronType=Ind	23	obj	_	TokenRange=86:89
-23	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	advcl	_	TokenRange=90:93
-24	ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	9	parataxis	_	TokenRange=94:98
-25	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	24	obl	_	TokenRange=99:101
-26	piri	piri	ADP	ADP	AdpType=Post	25	case	_	TokenRange=102:106
-27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=107:109
-28	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	24	obl	_	TokenRange=110:114
-29	upé	upé	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=115:118
-30	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=118:119
 
 # sent_id = Rodrigues1890:1-2-2:101:101
 # text = Umeẽ i nheenga pisasú unheẽ i xupé: — Upaĩ kunhã-itá ukwáu-putari waá se kwatukasawa umanú kuíri; muíri apigawa-itá umbeú waá umanú kurí; peumbeú kurumiwasú-itá supé, tenhẽ peumbeú taína-itá supé.
@@ -29114,14 +29120,15 @@
 7	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Rodrigues1890:2-9:7:107
-# text = — Aikú kirimbawa.
+# text = — Xaikú kirimbawa.
 # text_eng = "I have strength."
 # text_por = — Tenho força.
 # text_source = p. 163
 # text_orig = — Cha icó querembaua.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = — Xaikú/cop kirimbawa/a.
 1	—	—	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
-2	Aikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	cop	_	TokenRange=1:5
+2	Xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	cop	_	ModernForm=Aikú|TokenRange=1:6
 3	kirimbawa	kirimbawa	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=6:15
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
 
@@ -29177,8 +29184,51 @@
 34	xií	xií	ADP	ADP	AdpType=Post	33	case	_	SpaceAfter=No|TokenRange=158:161
 35	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=161:162
 
+# sent_id = Rodrigues1890:2-11:29:29
+# text = — Awá taá tenundé?
+# text_eng = TODO
+# text_por = — Quem há de ser o primeiro?
+# text_source = p. 174
+# text_orig = — Aua taá tenondé?
+# title_orig = MICURA CENEMUE IRUMO
+# title_number = XII
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Awá/int taá tenundé/@?
+1	—	—	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=5:8
+4	tenundé	tenundé	NOUN	N	Number=Sing|Rel=Abs	0	root	_	SpaceAfter=No|TokenRange=9:16
+5	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Rodrigues1890:2-11:30:30
+# text = — Indé, xe ruaya; remaã siusí usema ramé rerasú ne pusanga.
+# text_eng = TODO
+# text_por = — Tu, meu cunhado. Tu levarás teu remédio e vigiarás siiuci quando sair.
+# text_source = p. 174
+# text_orig = — Indé, che ruaia; re manhan cyiucy u cema rami re raçu ne puçanga.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Indé, xe ruaya; remaã siusí usema ramé/sconj rerasú ne pusanga.
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	0	root	_	SpaceAfter=No|TokenRange=1:5
+3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
+4	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=7:9
+5	ruaya	suaya	NOUN	N	Number=Sing|Rel=Cont	2	appos	_	SpaceAfter=No|TokenRange=10:15
+6	;	;	PUNCT	PUNCT	_	7	punct	_	TokenRange=15:16
+7	remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=17:22
+8	siusí	siusí	NOUN	N	Number=Sing	9	obj	_	TokenRange=23:28
+9	usema	sema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=29:34
+10	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=35:39
+11	rerasú	rasú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	9	parataxis	_	TokenRange=40:46
+12	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=47:49
+13	pusanga	pusanga	NOUN	N	Number=Sing	11	obj	_	SpaceAfter=No|TokenRange=50:57
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=57:58
+
 # sent_id = Rodrigues1890:2-11:35:35
-# text = — Oh! se ruaya!
+# text = — Oh! xe ruaya!
 # text_eng = "Oh! my brother-in-law!"
 # text_por = — Oh! meu cunhado!
 # text_source = p. 174
@@ -29186,7 +29236,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = — Oh! se ruaya/@!
+# inputline = — Oh! xe ruaya/@!
 # title_number = XII
 # title_orig = MICURA CENEMUE IRUMO
 # title_por = A mucura e o camaleão
@@ -29194,9 +29244,42 @@
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Oh	oh	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No|TokenRange=1:3
 3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=3:4
-4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=5:7
+4	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=5:7
 5	ruaya	suaya	NOUN	N	Number=Sing|Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=8:13
 6	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = Rodrigues1890:2-11:36:36
+# text = Munhã tatá, siusí-etá usema ikú.
+# text_eng = TODO
+# text_por = Faze fogo. Cyiucy vem saindo.
+# text_source = p. 174
+# text_orig = Munhan tatá, cyiucy etá u cema icó.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Munhã/=mf:m|Remunhã tatá, siusí-etá usema ikú/=mf:m|uikú:x|v:h|v.
+1	Munhã	munhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=Remunhã|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbform=Fin|TokenRange=0:5
+2	tatá	tatá	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=6:10
+3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
+4	siusí-etá	siusí	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=12:21
+5	usema	sema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=22:27
+6	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	5	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=28:31
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Rodrigues1890:2-11:37:37
+# text = — Xamunhã wana.
+# text_eng = TODO
+# text_por = — Já fiz.
+# text_source = p. 174
+# text_orig = — Cha munhan uana.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Xamunhã wana.
+1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amunhã|TokenRange=1:8
+3	wana	wana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=9:13
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = Rodrigues1890:2-11:50:50
 # text = Aiwana, paá, uri iwaté xií, uwari tatá-pe.
@@ -29223,7 +29306,7 @@
 11	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	10	case	_	_
 12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=41:42
 
-# sent_id = Amorim1928:2-13:50:50
+# sent_id = Rodrigues1890:2-13:50:50
 # text = — Tenupá, se raixú, mutaraíma ixé, kwá se kamarara irumu, ixé xakwáu umaã xamunhã, xayupika kurí.
 # text_eng = TODO
 # text_por = — Deixe estar, minha sogra, tenha raiva de mim e deste meu camarada; eu saberei ver e hei de fazer por me vingar.
@@ -29309,7 +29392,7 @@
 8	maraká	maraká	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=42:48
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=48:49
 
-# sent_id = Amorim1928:2-14:0:0
+# sent_id = Rodrigues1890:2-14:30:536
 # text = Aiwana, paá, unheẽ i mena supé: — Kũi remaã se paya pirá mukuna wana.
 # text_eng = TODO
 # text_por = Esta disse a seu marido: — Vai ver meu pai que o peixe já engoliu.
