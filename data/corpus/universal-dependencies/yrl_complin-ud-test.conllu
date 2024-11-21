@@ -21353,6 +21353,87 @@
 3	yukira	yukira	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=13:19
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
+# sent_id = Cruz2011:0:0:123
+# text = Te rekiri, Aline!
+# text_eng = Don't sleep, Aline!
+# text_por = Não durma, Aline!
+# text_source = Example No. 787 Br
+# text_orig = te=re-kiri Aline
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Te rekiri, Aline/=p!
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	rekiri	kiri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:9
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=9:10
+4	Aline	aline	PROPN	PROPN	_	2	vocative	_	SpaceAfter=No|TokenRange=11:16
+5	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Cruz2011:0:0:124
+# text = Te rembaú kwá!
+# text_eng = Don't eat this!
+# text_por = Não coma isto!
+# text_source = Example No. 788 Bn elicited
+# text_orig = te=re-mbau! kua
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Te rembaú kwá/demx!
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	rembaú	mbaú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:9
+3	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No|TokenRange=10:13
+4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
+
+# sent_id = Cruz2011:0:0:126
+# text = Te pemunhã!
+# text_eng = Don't do it!
+# text_por = Não façam!
+# text_source = Example No. 789 Bn elicited
+# text_orig = te=pe-munhã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Te pemunhã!
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	pemunhã	munhã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:10
+3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = Cruz2011:0:0:127
+# text = Pewapikantu pemaã.
+# text_eng = Just sit and watch!
+# text_por = Fiquem só sentados e olhem!
+# text_source = Example No. 791 Br
+# text_orig = pe-wapika=ntu pe-maã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pewapikantu pemaã.
+1-2	Pewapikantu	_	_	_	_	_	_	_	TokenRange=0:11
+1	Pewapika	wapika	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	_
+2	ntu	ntu	ADV	ADV	Clitic=Yes	1	advmod	_	_
+3	pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=12:17
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Cruz2011:0:0:128
+# text = Pewapika pesendú.
+# text_eng = Sit down and listen.
+# text_por = Sentem e ouçam.
+# text_source = Example No. 792 Br
+# text_orig = pe-wapika pe-sendu
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pewapika pesendú.
+1	Pewapika	wapika	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	pesendú	sendú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=9:16
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Cruz2011:0:0:129
+# text = "Pepuri kurí" unheẽ paá.
+# text_eng = "Jump!" he is said to have said.
+# text_por = "Pulem!", diz que ele disse.
+# text_source = Example No. 793 Br
+# text_orig = pe-pui kuri" u-nheẽ paa
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = "Pepuri kurí" unheẽ paá.
+1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=-1:0
+2	Pepuri	puri	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	5	ccomp	_	TokenRange=1:7
+3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=8:12
+4	"	"	PUNCT	PUNCT	_	2	punct	_	TokenRange=12:13
+5	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
+6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=20:23
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
+
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
 # text_eng = Now I'm going to tell you about them, these two men who worked with balata.
@@ -27883,6 +27964,210 @@
 11	yukisé	yukisé	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=49:55
 12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
+# sent_id = Casasnovas2006:0:0:24
+# text = Maã taá remunhã?
+# text_eng = TODO
+# text_por = O que estás fazendo?
+# text_source = p. 19
+# text_orig = Maá taá (mata) remunhã?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Maã/int taá remunhã?
+1	Maã	maã	PRON	INT	PronType=Int	3	nsubj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:15
+4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Casasnovas2006:0:0:26
+# text = Penhẽ peyumasí.
+# text_eng = TODO
+# text_por = Vocês estão famintos.
+# text_source = p. 26
+# text_orig = Penhé peyumasi.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Penhẽ peyumasí.
+1	Penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	peyumasí	yumasí	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Casasnovas2006:0:0:27
+# text = Penhẽ pepurakí muíri ara.
+# text_eng = TODO
+# text_por = Vocês trabalham todos os dias.
+# text_source = p. 28
+# text_orig = Penhé pepurakí muíri ara.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Penhẽ pepurakí muíri/tot ara.
+1	Penhẽ	penhẽ	PRON	PRON	Number=Plur|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	pepurakí	purakí	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
+3	muíri	muíri	DET	TOT	PronType=Tot	4	det	_	TokenRange=15:20
+4	ara	ara	NOUN	N	Number=Sing	2	obl	_	SpaceAfter=No|TokenRange=21:24
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Casasnovas2006:0:0:28
+# text = Wirandé resú se ruka kití.
+# text_eng = TODO
+# text_por = Amanhã irás à minha casa.
+# text_source = p. 31
+# text_orig = Wirandé resú se ruka kiti.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Wirandé resú se ruka kití.
+1	Wirandé	wirandé	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
+2	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:12
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=13:15
+4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=16:20
+5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Casasnovas2006:0:0:29
+# text = Resú repinaitika.
+# text_eng = TODO
+# text_por = Vá pescar.
+# text_source = p. 32
+# text_orig = Resú repinaitika.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Resú repinaitika.
+1	Resú	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	repinaitika	pinaitika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:16
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Casasnovas2006:0:0:30
+# text = Remeẽ mukũi pakúa ixé arã.
+# text_eng = TODO
+# text_por = Dá-me duas bananas.
+# text_source = p. 38
+# text_orig = Remeé mukui pakuwa ixé arã.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Remeẽ mukũi/card pakúa ixé arã/adp.
+1	Remeẽ	meẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	mukũi	mukũi	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=6:11
+3	pakúa	pakúa	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:17
+4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	iobj	_	TokenRange=18:21
+5	arã	arã	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=22:25
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Casasnovas2006:0:0:31
+# text = Reyumimi taína.
+# text_eng = TODO
+# text_por = Esconde a criança.
+# text_source = p. 42
+# text_orig = Reyumimi taína.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Reyumimi taína.
+1	Reyumimi	yumimi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	taína	taína	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:14
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Casasnovas2006:0:0:32
+# text = Reyuyumimi.
+# text_eng = TODO
+# text_por = Esconde-te.
+# text_source = p. 42
+# text_orig = Reyuyumimi.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Reyuyumimi/=mid.
+1	Reyuyumimi	yumimi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=0:10
+2	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = Casasnovas2006:0:0:33
+# text = Reyumupuranga, resú arã tawa kití.
+# text_eng = TODO
+# text_por = Enfeita-te para ir à cidade.
+# text_source = p. 42
+# text_orig = Reyumupuranga, resú arã tawa kití.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Reyumupuranga/=mid, resú arã/sconj tawa kití.
+1	Reyumupuranga	mupuranga	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=0:13
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
+3	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	1	advcl	_	TokenRange=15:19
+4	arã	arã	SCONJ	SCONJ	_	3	mark	_	TokenRange=20:23
+5	tawa	tawa	NOUN	N	Number=Sing	3	obl	_	TokenRange=24:28
+6	kití	kití	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:33
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Casasnovas2006:0:0:34
+# text = Remundéu taína.
+# text_eng = TODO
+# text_por = Veste a criança.
+# text_source = p. 43
+# text_orig = Remundéu taína.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Remundéu taína.
+1	Remundéu	mundéu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	taína	taína	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:14
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Casasnovas2006:0:0:35
+# text = Se manha umuyenú taína.
+# text_eng = TODO
+# text_por = Minha mãe deitou a criança.
+# text_source = p. 44
+# text_orig = Se manha umuyenú taína.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Se manha umuyenú taína.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	manha	manha	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:8
+3	umuyenú	muyenú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
+4	taína	taína	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=17:22
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = Casasnovas2006:0:0:36
+# text = Sembira, resú remusakú timbiú ne paya supé.
+# text_eng = TODO
+# text_por = Minha filha, vai esquentar a comida para teu pai.
+# text_source = p. 44
+# text_orig = Sembira, resú remusakú timbiú ne paya supé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Se mbira, resú remusakú timbiú ne paya supé/adp.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs|Style=Rare	2	nmod:poss	_	SpaceAfter=No|StandardSpaceAfter=Yes|TokenRange=0:2
+2	mbira	mbira	NOUN	N	Number=Sing	5	vocative	_	SpaceAfter=No|TokenRange=3:8
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=8:9
+4	resú	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	5	aux	_	TokenRange=10:14
+5	remusakú	musakú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=15:23
+6	timbiú	timbiú	NOUN	N	Number=Sing|Rel=Abs	5	obj	_	TokenRange=24:30
+7	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=31:33
+8	paya	paya	NOUN	N	Number=Sing	5	iobj	_	TokenRange=34:38
+9	supé	supé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=39:43
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Casasnovas2006:0:0:37
+# text = Te remunhã yawé.
+# text_eng = TODO
+# text_por = Não faças isso.
+# text_source = p. 49
+# text_orig = Te remunhã yawé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Juliana Lopes Gurgel
+# text_por_modernizer = Juliana Lopes Gurgel
+# inputline = Te/negi remunhã yawé/adva.
+1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
+2	remunhã	munhã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:10
+3	yawé	yawé	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=11:15
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
 # sent_id = Rodrigues1890:1-1-1:10:100
 # text = Ah! se rimiarirú, maã taá resú?
 # text_eng = Oh! my grandson, how are you?
@@ -27977,7 +28262,7 @@
 
 # sent_id = Rodrigues1890:1-1-1:170:170
 # text = Mairamé reputari ramé isú se piri.
-# text_eng = TODO
+# text_eng = Whenever you want, come and see me.
 # text_por = Quando quiseres vai ter comigo.
 # text_source = p. 28
 # text_orig = Mairamé re putare ramé içu ce pêre.
@@ -28041,7 +28326,7 @@
 
 # sent_id = Rodrigues1890:1-1-2:150:150
 # text = — Iruri xaú ne piá.
-# text_eng = TODO
+# text_eng = Give me your heart to eat.
 # text_por = — Dá-me o teu coração para eu comer.
 # text_source = p. 36
 # text_orig = — I rure cha ú ne peá.
@@ -28855,7 +29140,7 @@
 
 # sent_id = Rodrigues1890:1-2-4:103:103
 # text = — Ururi Karã se muirakitã!
-# text_eng = "Carão, bring my talisman!"
+# text_eng = "Limpkin, bring my talisman!"
 # text_por = — Carão, traz o meu talismã!
 # title = Yuruparí kunhãmukú-etá irumu
 # title_orig = YURUPARI CUNHAN MUCU ETÁ IRUMO
@@ -28971,7 +29256,7 @@
 
 # sent_id = Rodrigues1890:1-2-5:5:5
 # text = Uxipiá Yuruparí yané wírupi uyenú uikú!…
-# text_eng = Do you spy the Yurupari that is lying beneath us?
+# text_eng = Look at the Yurupari lying beneath us!
 # text_por = Espia o Yurupari que está deitado debaixo de nós?
 # text_source = p. 133
 # text_orig = U chipiá Yurupari yané uirpe unhenu u icó!…
@@ -29022,7 +29307,7 @@
 
 # sent_id = Rodrigues1890:2-7:1:101
 # text = — Mitú eruri se igara asú arama aú tuyuka.
-# text_eng = "Mutum bring my canoe so I can go eat clay."
+# text_eng = "Curassow, bring my canoe so I can go eat clay."
 # text_eng_ggl = "Mutum brings my canoe so I can go eat clay."
 # text_por = — Mutum traz minha canoa para eu ir comer barro.
 # text_source = p. 159
