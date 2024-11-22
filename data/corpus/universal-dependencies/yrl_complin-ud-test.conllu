@@ -11730,7 +11730,7 @@
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=8:9
 4	upé	upé	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=10:13
 5	uwiyé	wiyé	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=14:19
-6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	mark	_	MWEPOS=SCONJ|TokenRange=20:23
+6	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	5	mark	_	TokenRange=20:23
 7	upé	upé	ADP	ADP	AdpType=Post	6	fixed	_	SpaceAfter=No|TokenRange=24:27
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=27:28
 9	taité	taité	INTJ	INTJ	_	11	discourse	_	SpaceAfter=No|TokenRange=29:34
@@ -19371,7 +19371,7 @@
 7	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=34:38
 8	uyeréu	yeréu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=39:45
 9	uyumuapiri	muapiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	8	advcl	_	TokenRange=46:56
-10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	mark	_	MWEPOS=SCONJ|TokenRange=57:60
+10	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	9	mark	_	TokenRange=57:60
 11	upé	upé	ADP	ADP	AdpType=Post	10	fixed	_	TokenRange=61:64
 12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	13	det	_	TokenRange=65:68
 13	alejadu	alejadu	NOUN	N	Number=Sing	9	nsubj	_	Orig=aleijado|OrigLang=por|SpaceAfter=No|TokenRange=69:76
