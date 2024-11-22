@@ -13218,6 +13218,8 @@
 # text_eng = If our ear were our whole body, how could we smell with our nose?
 # text_por = Se nosso ouvido fosse todo o nosso corpo, como poderíamos cheirar com nosso nariz?
 # text_source = O Novo Testamento em nyengatu, 1 Coríntios 12:17, adap.
+# text_prim = Yaneapisa kuara rame panye yanepira, maitaa maa yapuderi yasetuna yanetiĩ upe?
+# text_prim_source = https://www.bible.com/bible/2986/1CO.12.17.BBP
 # text_annotator = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
 2	apisá-kwara	apisá-kwara	NOUN	N	Number=Sing	12	advcl	_	TokenRange=5:16
@@ -21433,6 +21435,25 @@
 5	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
 6	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=20:23
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
+
+# sent_id = Cruz2011:0:0:130
+# text = Ti ramé manungara rerikú remeẽ xibentu.
+# text_eng = If you have nothing, you have to give at least chibé.
+# text_por = Se não tiver nada, tem de dar pelo menos chibé.
+# text_por_lit = Se não tem algo, dá só chibé.
+# text_source = Example 1010 Bn
+# text_orig = [ti=rame manunga(ra) re-riku] re-meẽ xibe=ntu
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ti ramé/sconj manungara rerikú remeẽ xibentu.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:2
+2	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=3:7
+3	manungara	manungara	PRON	IND	PronType=Ind	4	obj	_	TokenRange=8:17
+4	rerikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	5	advcl	_	TokenRange=18:24
+5	remeẽ	meẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=25:30
+6-7	xibentu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=31:38
+6	xibé	xibé	NOUN	N	Number=Sing	5	obj	_	_
+7	ntu	ntu	ADV	ADV	Clitic=Yes	5	advmod	_	_
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
@@ -34332,6 +34353,10 @@
 # text_por_sec = Meu xerimbabo, se tu fosses gente, não deixarias eu morrer de fome, poderias ir buscar beiju para eu comer.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
+# text_sec_alt = [...] Mira ramé maã indé, indé nti maã rexari ixé amanũ, indé resú-kwáu maã reyuka meyú ixé ambaú arama.
+# text_por_sec_alt = Se você fosse gente, você não me deixaria morrer, você poderia ir arranjar beiju para eu comer.
+# text_sec_alt_source = Navarro (2016:97)
+# text_por_sec_alt_source = Navarro (2016:97)
 # cross_reference = Avila2021:0:0:220
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
