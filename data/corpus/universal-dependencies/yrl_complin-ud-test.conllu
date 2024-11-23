@@ -4619,7 +4619,7 @@
 4	sukwera	sukwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=15:22
 5	seé	seé	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=23:26
 6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=26:27
-7	yawé	yawé	ADV	ADVA	AdvType=Man	10	advmod	_	TokenRange=28:32
+7	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	10	advmod	_	TokenRange=28:32
 8	rã	rã	ADP	ADP	AdpType=Post	7	fixed	_	TokenRange=33:35
 9	mira-itá	mira	NOUN	N	Number=Plur	10	nsubj	_	TokenRange=36:44
 10	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=45:52
@@ -6263,7 +6263,7 @@
 # text_por = Assim, enquanto eles brigavam, o jacaré mordeu o fogo e pulou com ele para o rio, aí ficou escuro pra nós aqui no mundo, não tínhamos como ver.
 # text_source = Leetra Indígena. n. 17, 73, adap.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	9	advmod	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=8:9
 4	ta	ta	PRON	PRON	Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=10:12
@@ -6439,7 +6439,7 @@
 8	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	7	obj	_	TokenRange=39:46
 9	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=47:53
 10	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=53:54
-11	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	17	obl	_	TokenRange=55:59
+11	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	17	obl	_	TokenRange=55:59
 12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	fixed	_	TokenRange=60:63
 13	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont	11	case	_	TokenRange=64:72
 14	taá	taá	PART	CQ	PartType=Int	17	advmod	_	TokenRange=73:76
@@ -6481,7 +6481,7 @@
 # text_por = Qual de vocês deixou este remo dentro da minha canoa?
 # text_annotator = Leonel Figueiredo de Alencar
 # text_source = Avila (2021)
-1	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	6	nsubj	_	TokenRange=0:4
+1	Mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	6	nsubj	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=9:12
 4	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	1	nmod	_	TokenRange=13:15
@@ -6548,7 +6548,7 @@
 12	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	11	advmod	_	TokenRange=71:75
 13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	SpaceAfter=No|TokenRange=76:79
 14	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=79:80
-15	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	18	nsubj	_	TokenRange=81:85
+15	mayé	mayé	ADV	ADVRA	AdvType=Man|ExtPos=DET|PronType=Int	18	nsubj	_	TokenRange=81:85
 16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	fixed	_	TokenRange=86:89
 17	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=90:92
 18	piá	piá	NOUN	N	Number=Sing	8	parataxis	_	TokenRange=93:96
@@ -8375,7 +8375,7 @@
 6	tatú	tatú	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=28:32
 7	ruaya	suaya	NOUN	N	Number=Sing|Rel=Cont	3	obj	_	SpaceAfter=No|TokenRange=33:38
 8	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=38:39
-9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=40:42
+9	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=40:42
 10	maã	maã	PRON	IND	PronType=Ind	9	fixed	_	TokenRange=43:46
 11-12	usaka-kwáu	_	_	_	_	_	_	_	TokenRange=47:57
 11	usaka	saka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	_
@@ -11501,7 +11501,7 @@
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:14
 3	nhuntu	nhuntu	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=15:21
 4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=21:22
-5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=23:25
+5	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=23:25
 6	maã	maã	PRON	IND	PronType=Ind	5	fixed	_	TokenRange=26:29
 7	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=30:33
 8	aramé	aramé	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=34:39
@@ -11667,7 +11667,7 @@
 # text_por = Por isso seu peito é branco onde o sol o tinha torrado. [Adapt. transl.]
 # text_source = Leetra Indígena. n. 17, 79, adap.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	4	advmod	_	TokenRange=0:4
 2	rã	rã	ADP	ADP	AdpType=Post	1	fixed	_	TokenRange=5:7
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=8:11
 4	murutinga	murutinga	ADJ	A	_	0	root	_	TokenRange=12:21
@@ -11704,7 +11704,7 @@
 # text_por = Por isso, nós, coitados, não saímos muito bonitos.
 # text_source = Leetra Indígena. n. 17, 37, adap.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	9	advmod	_	TokenRange=0:4
 2	arã	arã	ADP	ADP	AdpType=Post	1	fixed	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	9	advmod	_	TokenRange=9:12
 4	yandé	yandé	PRON	PRON	Number=Plur|Person=1|PronType=Prs	9	nsubj	_	SpaceAfter=No|TokenRange=13:18
@@ -11746,7 +11746,7 @@
 19	yepé	yepé	PART	FRUST	Aspect=Frus	20	advmod	_	TokenRange=72:76
 20	uputarisá	putarisá	NOUN	N	Number=Sing	25	obl	_	SpaceAfter=No|TokenRange=77:86
 21	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=86:87
-22	yawé	yawé	ADV	ADVA	AdvType=Man	25	advmod	_	TokenRange=88:92
+22	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	25	advmod	_	TokenRange=88:92
 23	waá	waá	PRON	REL	Number=Sing|PronType=Rel	22	fixed	_	TokenRange=93:96
 24	upé	upé	ADP	ADP	AdpType=Post	22	fixed	_	TokenRange=97:100
 25	upinú	pinú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	SpaceAfter=No|TokenRange=101:106
@@ -11845,7 +11845,7 @@
 9	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	ccomp	_	TokenRange=33:38
 10	xinga	xinga	ADV	ADVS	AdvType=Deg	9	advmod	_	SpaceAfter=No|TokenRange=39:44
 11	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=44:45
-12	yawé	yawé	ADV	ADVA	AdvType=Man	17	advcl	_	TokenRange=46:50
+12	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	17	advmod	_	TokenRange=46:50
 13	waá	waá	PRON	REL	Number=Sing|PronType=Rel	12	fixed	_	TokenRange=51:54
 14	aité	aité	DET	EMP	PronType=Emp	16	det	_	TokenRange=55:59
 15	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	16	det	_	TokenRange=60:64
@@ -11869,7 +11869,7 @@
 # text_por = Por isso é fedido o peido do "upé" [tipo de quelônio].
 # text_source = Leetra Indígena. n. 17, 77, adap.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advcl	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	5	advmod	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=9:12
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	expl	_	TokenRange=13:14
@@ -12975,7 +12975,7 @@
 4	ukuntari	kuntari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:25
 5	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No|TokenRange=26:28
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=28:29
-7	yawé	yawé	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=30:34
+7	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	9	advmod	_	TokenRange=30:34
 8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	fixed	_	TokenRange=35:38
 9	taseruka	seruka	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=39:47
 10	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	9	obj	_	TokenRange=48:50
@@ -16435,7 +16435,7 @@
 24	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	25	aux	_	TokenRange=96:99
 25	uyusuaxara	yusuaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	ccomp	_	SpaceAfter=No|TokenRange=100:110
 26	,	,	PUNCT	PUNCT	_	35	punct	_	TokenRange=110:111
-27	u	u	CCONJ	CCONJ	_	35	cc	_	TokenRange=112:113
+27	u	u	CCONJ	CCONJ	ExtPos=CCONJ	35	cc	_	TokenRange=112:113
 28	tiramé	tiramé	CCONJ	CCONJ	_	27	fixed	_	TokenRange=114:120
 29	maã	maã	PRON	IND	PronType=Ind	35	nsubj	_	TokenRange=121:124
 30	umanduári	manduári	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	29	acl:relcl	_	TokenRange=125:134
@@ -18416,7 +18416,7 @@
 # text_source = Novo Testamento na língua Nyengatu, John 12:27
 # text_orig = Timaa hambeu yawe, maa hayuiri hapurara arama.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+1	Ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
 2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	TokenRange=3:6
 3	ambeú	mbeú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:12
 4	yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	SpaceAfter=No|TokenRange=13:17
@@ -18649,7 +18649,7 @@
 12	Yasendú	sendú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	ccomp	_	TokenRange=56:63
 13	Muizé	muizé	PROPN	PROPN	_	12	obj	_	TokenRange=64:69
 14	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	xcomp	_	TokenRange=70:75
-15	yawewara	yawé	ADV	ADVA	AdvType=Man|Aspect=Freq|Tense=Pres	14	ccomp	_	TokenRange=76:84
+15	yawewara	yawé	ADV	ADVA	AdvType=Man|Aspect=Freq|ExtPos=ADV|Tense=Pres	14	ccomp	_	TokenRange=76:84
 16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	fixed	_	TokenRange=85:88
 17	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	15	advmod	_	TokenRange=89:91
 18	kurí	kurí	PART	FUT	Tense=Fut	15	advmod	_	TokenRange=92:96
@@ -19220,7 +19220,7 @@
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=5:9
 3	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	nsubj	_	TokenRange=10:14
 4	nhaãsé	nhaãsé	SCONJ	SCONJR	_	10	mark	_	TokenRange=15:21
-5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=22:24
+5	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=22:24
 6	maã	maã	PRON	IND	PronType=Ind	5	fixed	_	TokenRange=25:28
 7	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=29:34
 8	upuderi	puderi	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	TokenRange=35:42
@@ -23244,7 +23244,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Kutara	kutara	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:6
+1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	5	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	TokenRange=7:14
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=15:18
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
@@ -23649,21 +23649,20 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	13	advcl	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	13	advmod	_	TokenRange=0:4
 2	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	fixed	_	TokenRange=5:8
 3	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont	1	fixed	_	SpaceAfter=No|TokenRange=9:17
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=17:18
 5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	13	advmod	_	SpaceAfter=No|TokenRange=19:22
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
 7	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	nsubj	_	TokenRange=24:27
-8	wakará	wakará	NOUN	N	Number=Sing	13	obj	_	TokenRange=28:34
+8	wakará	wakará	NOUN	N	Number=Sing	13	dislocated	_	TokenRange=28:34
 9	tiára	tiára	ADJ	A	_	8	acl:relcl	_	TokenRange=35:40
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=41:44
-11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=44:45
+11	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=44:45
 12	kutara	kutara	ADV	ADVA	AdvType=Man	13	advmod	_	TokenRange=46:52
 13	tauyuká	yuká	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=56:61
-14	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	13	expl	_	SpaceAfter=No|TokenRange=62:64
+14	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	13	obj	_	SpaceAfter=No|TokenRange=62:64
 15	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=64:65
 
 # sent_id = Casasnovas2006:8:1:69
@@ -23970,7 +23969,7 @@
 # text_por_modernizer = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Kutara	kutara	ADV	ADVA	AdvType=Man	6	advmod	_	TokenRange=0:6
+1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	6	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	SpaceAfter=No|TokenRange=7:14
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=16:19
@@ -24185,7 +24184,7 @@
 # title_eng = Jaguar people
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	obl	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	5	advmod	_	TokenRange=0:4
 2	arã	arã	ADP	ADP	AdpType=Post	1	fixed	_	TokenRange=5:8
 3	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=9:11
 4	mairamé	mairamé	ADV	ADVNT	AdvType=Tim|PronType=Ind	5	advmod	_	TokenRange=12:19
@@ -24826,6 +24825,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = LFdeA
+# review_status = ongoing
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -24838,7 +24839,7 @@
 10	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=31:36
 11	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	10	obj	_	SpaceAfter=No|TokenRange=37:39
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=39:40
-13	yawé	yawé	ADV	ADVA	AdvType=Man	18	obl	_	TokenRange=41:45
+13	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	18	advmod	_	TokenRange=41:45
 14	arã	arã	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=46:49
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=49:50
 16	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	18	advmod	_	SpaceAfter=No|TokenRange=51:54
@@ -25493,12 +25494,13 @@
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = LFdeA
 1	Manguarí	manguarí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
 2	pirasúa	pirasúa	ADJ	A	_	4	amod	_	TokenRange=9:16
 3	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:21
 4	wainambí	wainambí	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=22:30
 5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=30:31
-6	yawé	yawé	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=32:36
+6	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	8	advmod	_	TokenRange=32:36
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	fixed	_	TokenRange=37:40
 8	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=41:47
 9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=48:49
@@ -25508,7 +25510,7 @@
 12	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=58:60
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=60:61
 14	asuí	asuí	ADV	ADVT	AdvType=Tim	15	advmod	_	TokenRange=62:66
-15	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=67:72
+15	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=67:72
 16	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	15	obj	_	TokenRange=73:75
 17	suaxara	suaxara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	obl	_	TokenRange=78:85
 18	kití	kití	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=84:88
@@ -25585,7 +25587,7 @@
 3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	TokenRange=9:12
 4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	nsubj	_	SpaceAfter=No|TokenRange=13:16
 5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=16:17
-6	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=18:20
+6	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=18:20
 7	maã	maã	PRON	IND	PronType=Ind	6	fixed	_	TokenRange=21:24
 8	amaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=25:29
 9	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=30:32
@@ -27412,7 +27414,7 @@
 # next = Avila2021:0:0:517
 # inputline = Yawé/adva resewara/adp nhaã musapiri, paá, iké pawa/total tẽ/foc ta/pron uikú, yané/pron2 tawa upé/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Yawé	yawé	ADV	ADVA	AdvType=Man	8	advmod	_	TokenRange=0:4
+1	Yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	8	advmod	_	TokenRange=0:4
 2	resewara	resewara	ADP	ADP	AdpType=Post|Rel=Cont	1	fixed	_	TokenRange=5:13
 3	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=14:18
 4	musapiri	musapiri	NUM	CARD	NumType=Card	8	nsubj	_	SpaceAfter=No|TokenRange=19:27
@@ -28210,6 +28212,8 @@
 # text = Ah! se ramunha, nẽ mayé katú nhuntu, indé taá mayé taá resasawa?
 # text_eng = Oh! My grandfather, not at all well, and you, how have you been?
 # text_por = Ah! meu avô, de jeito nenhum bem, e tu, como tens passado?
+# text_por_orig = — Sempre bom, meu avô e como você passa?
+# text_por_gloss = Ah! meu avô, não como bom somente, você então como que tu passas?
 # text_source = p. 23
 # text_orig = Ah! ce ramunha, ne mahy catu iunto, ineta ahá mahy taá re çaçaua?
 # text_annotator = Leonel Figueiredo de Alencar
@@ -28218,7 +28222,7 @@
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=4:6
 4	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	8	vocative	_	SpaceAfter=No|TokenRange=7:14
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
-6	nẽ	nẽ	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=16:18
+6	nẽ	nẽ	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=16:18
 7	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	6	fixed	_	TokenRange=19:23
 8	katú	katú	ADJ	A	_	0	root	_	TokenRange=24:28
 9	nhuntu	nhuntu	ADV	ADV	_	8	advmod	_	SpaceAfter=No|TokenRange=29:35
@@ -28886,7 +28890,7 @@
 16	pepisika	pisika	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=80:88
 17	piraíwa	piraíwa	NOUN	N	Number=Sing	16	obj	_	TokenRange=89:96
 18	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	22	nsubj	_	TokenRange=97:99
-19	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=100:104
+19	intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	22	advmod	_	TokenRange=100:104
 20	maã	maã	PRON	IND	PronType=Ind	19	fixed	_	TokenRange=105:108
 21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	expl	_	TokenRange=109:110
 22	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	16	parataxis	_	SpaceAfter=No|TokenRange=111:115
@@ -28919,7 +28923,7 @@
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	unheengari	nheengari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=12:22
 4	ramé	ramé	SCONJ	SCONJ	_	3	mark	_	TokenRange=23:27
-5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=28:30
+5	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=28:30
 6	maã	maã	PRON	IND	PronType=Ind	5	fixed	_	TokenRange=31:34
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	expl	_	TokenRange=35:36
 8	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	2	ccomp	_	TokenRange=37:41
@@ -29862,7 +29866,7 @@
 # inputline = Nhaã aresé/=typo:c|resé:x|adp intí maã/ind aintá/pron umenari-kwáu, maã/ind aresé/=typo:c|resé:x|adp u maã/cond yasí umuwéu tatá u maã/cond ukupiri upaĩ ií.
 1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	obl	_	TokenRange=0:4
 2	aresé	resé	ADP	ADP	AdpType=Post|Rel=Cont|Typo=Yes	1	case	_	CorrectForm=resé|TokenRange=5:10
-3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=11:15
+3	intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=11:15
 4	maã	maã	PRON	IND	PronType=Ind	3	fixed	_	TokenRange=16:19
 5	aintá	aintá	PRON	PRON	Number=Plur|Person=3|PronType=Prs	6	nsubj	_	TokenRange=20:25
 6-7	umenari-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=26:38
@@ -30495,7 +30499,7 @@
 # text_source = p. 19
 # text_orig = Intimahã xa rekó ahé.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
+1	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
 2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	TokenRange=5:8
 3	arikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:14
 4	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=15:17
@@ -30662,7 +30666,7 @@
 # text_orig = — Intimahã, xa cicári putári pirá.
 # text_annotator = Leonel Figueiredo de Alencar
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=0:1
-2	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=2:6
+2	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	0	root	_	TokenRange=2:6
 3	maã	maã	PRON	IND	PronType=Ind	2	fixed	_	SpaceAfter=No|TokenRange=7:10
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
 5-6	asikari-putari	_	_	_	_	_	_	_	TokenRange=12:26
@@ -30694,7 +30698,7 @@
 # text_orig = Intimahã; xa putári iepé panệra xa mimóî arãma.
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Intí maã/ind; xaputari yepé/card panera xamemúi arama/sconj.
-1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
+1	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
 2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	SpaceAfter=No|TokenRange=5:8
 3	;	;	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
 4	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aputari|TokenRange=10:18
@@ -30902,7 +30906,7 @@
 # spelling_adaptation = Marcel Twardowsky Avila
 1	Yupirungawa	yupirungawa	NOUN	N	Number=Sing	0	root	_	TokenRange=0:11
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=12:16
-3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	1	advmod	_	TokenRange=17:21
+3	intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	1	advmod	_	TokenRange=17:21
 4	maã	maã	DET	IND	PronType=Ind	3	fixed	_	TokenRange=22:25
 5	pituna	pituna	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=26:32
 6	;	;	PUNCT	PUNCT	_	10	punct	_	TokenRange=32:33
@@ -30941,7 +30945,7 @@
 # text_orig = Intimahã cọộtá; opaĩ mahã onhehẽ.
 # text_annotator = Leonel Figueiredo de Alencar
 # spelling_adaptation = Marcel Twardowsky Avila
-1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=0:4
+1	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	0	root	_	TokenRange=0:4
 2	maã	maã	DET	IND	PronType=Ind	1	fixed	_	TokenRange=5:8
 3	suú-itá	suú	NOUN	N	Number=Plur	1	nsubj	_	SpaceAfter=No|TokenRange=9:16
 4	;	;	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
@@ -31083,7 +31087,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # spelling_adaptation = Marcel Twardowsky Avila
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=1:5
+2	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	0	root	_	TokenRange=1:5
 3	maã	maã	DET	IND	PronType=Ind	2	fixed	_	TokenRange=6:9
 4	pituna	pituna	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=10:16
 5	;	;	PUNCT	PUNCT	_	2	punct	_	TokenRange=16:17
@@ -31313,7 +31317,7 @@
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:15
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
-5	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	ccomp	_	TokenRange=18:22
+5	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	2	ccomp	_	TokenRange=18:22
 6	maã	maã	PRON	IND	PronType=Ind	5	fixed	_	SpaceAfter=No|TokenRange=23:26
 7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=26:27
 8	kurumú	kurumú	SCONJ	SCONJR	_	10	mark	_	TokenRange=28:34
@@ -31895,7 +31899,7 @@
 2	mira	mira	NOUN	N	Number=Sing	0	root	_	TokenRange=6:10
 3	katú	katú	ADJ	A	_	2	amod	_	SpaceAfter=No|TokenRange=11:15
 4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=15:16
-5	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=17:21
+5	intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=17:21
 6	maã	maã	DET	IND	PronType=Ind	5	fixed	_	TokenRange=22:25
 7	mira	mira	NOUN	N	Number=Sing	2	parataxis	_	TokenRange=26:30
 8	puxí	puxí	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=31:35
@@ -32344,7 +32348,7 @@
 9	—	—	PUNCT	PUNCT	_	12	punct	_	TokenRange=39:40
 10	Paraná	paraná	NOUN	N	Number=Sing	12	vocative	_	SpaceAfter=No|TokenRange=41:47
 11	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=47:48
-12	maã	maã	PRON	INT	PronType=Int	7	ccomp	_	TokenRange=49:52
+12	maã	maã	PRON	INT	ExtPos=ADV|PronType=Int	7	ccomp	_	TokenRange=49:52
 13	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	12	fixed	_	TokenRange=53:56
 14	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=57:59
 15	yara	yara	NOUN	N	Number=Sing	12	nsubj	_	SpaceAfter=No|TokenRange=60:64
@@ -36618,7 +36622,7 @@
 5	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=25:28
 6	ramé	ramé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:33
 7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=33:34
-8	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=35:37
+8	ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=35:37
 9	maã	maã	DET	IND	PronType=Ind	8	fixed	_	TokenRange=38:41
 10	pusanga	pusanga	NOUN	N	Number=Sing	2	parataxis	_	TokenRange=42:49
 11	kuíri	kuíri	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=50:55
@@ -36646,7 +36650,7 @@
 5	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:23
 6	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=23:24
 7	—	—	PUNCT	PUNCT	_	10	punct	_	TokenRange=24:25
-8	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=26:28
+8	Ti	ti	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=26:28
 9	maã	maã	PRON	IND	PronType=Ind	8	fixed	_	TokenRange=29:32
 10	pusanga	pusanga	NOUN	N	Number=Sing	5	ccomp	_	SpaceAfter=No|TokenRange=33:40
 11	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
