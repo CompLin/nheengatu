@@ -36431,7 +36431,6 @@
 # text_annotator = Dominick Maia Alexandre
 # inputline = Xapirú murumurú yú árupi, upena se pí upé/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Xapirú	pirú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Apirú|TokenRange=0:6
 2	murumurú	murumurú	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=7:15
 3	yú	yú	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=16:18
@@ -36455,11 +36454,10 @@
 # text_annotator = Dominick Maia Alexandre
 # inputline = Aé/pron intí uxari xawiké suka/n upé/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=3:7
 3	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
-4	xawiké	wiké	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	xcomp	_	ModernForm=awiké|TokenRange=14:20
+4	xawiké	wiké	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	ccomp	_	ModernForm=awiké|TokenRange=14:20
 5	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obl	_	TokenRange=21:25
 6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:29
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
@@ -36470,11 +36468,10 @@
 # text_source = p. 326, No. 98
 # text_orig = tapañúna sekotóg ikysé irúm.
 # text_annotator = Dominick Maia Alexandre
-# inputline = Tapayuna se ukutuka i/pron2 kisé irũ/adp.
+# inputline = Tapayuna se/=mf:m|ixé ukutuka i/pron2 kisé irũ/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Tapayuna	tapayuna	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	obj	_	TokenRange=9:11
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=9:11
 3	ukutuka	kutuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:19
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=20:21
 5	kisé	kisé	NOUN	N	Number=Sing	3	obl	_	TokenRange=22:26
@@ -36489,7 +36486,6 @@
 # text_annotator = Dominick Maia Alexandre
 # inputline = Maã/int taá ne mimbira?
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Maã	maã	DET	INT	PronType=Int	0	root	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=4:7
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=8:10
@@ -36507,11 +36503,12 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Dominick Maia Alexandre
 # inputline = Tayasú upitá kwaá mukũi imirá pitérupi.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tayasú	tayasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=13:17
 4	mukũi	mukũi	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=18:23
-5	imirá	imirá	NOUN	N	Number=Sing	2	obj	_	TokenRange=24:29
+5	imirá	imirá	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=24:29
 6-7	pitérupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=30:38
 6	pitera	pitera	NOUN	N	Number=Sing	2	obl	_	_
 7	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
@@ -36524,6 +36521,7 @@
 # text_orig = emukaterún oí tenáua otikan pupé.
 # text_annotator = Dominick Maia Alexandre
 # inputline = Emukaturú uí tenawa tikã pupé.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Emukaturú	mukaturú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:9
 2	uí	uí	NOUN	N	Number=Sing	1	obj	_	TokenRange=10:12
 3	tenawa	tenawa	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=13:19
@@ -36538,6 +36536,8 @@
 # text_orig = resó será tupaóka pupé?
 # text_annotator = Dominick Maia Alexandre
 # inputline = Resú será tupauku pupé?
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=5:9
 3	tupauku	tupauku	NOUN	N	Number=Sing	1	obl	_	TokenRange=10:17
