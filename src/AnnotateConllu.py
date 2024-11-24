@@ -3333,7 +3333,9 @@ def handleSentsHartt(example):
     Raises:
     ValueError: If the input string does not contain the expected number of lines.
     """
-    lines=[line.strip().split(' - ',1) for line in example.split('\n') if line.strip() != '']
+    pat=re.compile(r"#.*$")
+    
+    lines=[pat.sub('',line).strip().split(' - ',1) for line in example.split('\n') if line.strip() != '']
 
     if len(lines) != 4:
         raise ValueError("Input string must contain exactly four non-empty lines.")
