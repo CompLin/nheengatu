@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 4, 2024
+# Last update: November 24, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
-from Metadata import Mindlin, PEOPLE, mkReviewer
+from Metadata import Mindlin, PEOPLE, mkReviewer, mkTranscriber
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -3358,7 +3358,7 @@ def handleSentsHartt(example):
     return result
 
 AVILA_SENTS=[]
-def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab'):
+def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab',sent_nr=0):
 	"""
 	Parse a Nheengatu sentence example from Amorim (1928) or an analogous publication and print the respective analysis in the CoNNL-U format, copying it to the clipboard.
 
@@ -3370,6 +3370,8 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Tru
 	prefix (str, optional): Prefix for the output format. Default is "Amorim1928".
 	translate (bool, optional): Whether to translate the sentence. Default is True.
 	transcriber (function, optional): A function that creates a dictionary with information about the transcribers of the sentence. Default is Mindlin.
+	person (str, optional): Three-letter abreviation of transcriber's given name. Default is 'gab'.
+	sent_nr (int, optional): Sentence number or identifier. Default is 0.
 
 	Examples:
 	>>> example = '''Musapiri yasí riré/adp, paá, nhaã intí waá upitá i/pron2 puruã aé/pron uyupúi muxiwa umukirá arama/sconj aintá/pron. (p. 312, No. 76) Três luas depois, contam, àquelas que não tinham ficado cheias ele começou dando muxiba para engordar. - Musapyre iasy riré, paa, nhaa nty uaá opytá ipuruan aé oiupe muxiua omukyrá arama aetá.'''
@@ -3381,7 +3383,6 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Tru
 	pat=re.compile(r"No. (\d+)(\-(\d+))?")
 	section="§"
 	sep=re.compile(rf"\s*{section}\s*")
-	sent_nr=0
 	match=pat.search(example)
 	if match:
 		groups=match.groups()
@@ -3819,4 +3820,71 @@ def addIobj(tokenlist):
 						if person in addressee:
 							obl['deprel']='iobj'
 				
+def parseExampleCasasnovas(example,page,num,translation=False):
+	"""
+>>> example='''Maá taá (mata) remunhã?
+# O que estás fazendo?
+# What are you doing?
+Maã/int taá remunhã?'''
+>>> parseExampleCasasnovas(example,19,24)
+	"""
+	orig,por,eng,text = example.split('\n')
+	m={}
+	if translation:
+		m['text_eng']=eng[2:]
+	por=por[2:]
+	t=mkTranscriber('jul')
+	m.update(t)
+	s=f"{text} (p. {page}) {por} - {orig}"
+	parseExample(s,'Casasnovas2006',0,0,num,metadata=m,translate=False)
 
+def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True,outfile=False,overwrite=False,metadata={}, translate=False,transcriber='lev'):
+    """
+    Author: Hélio Leonam Barroso Silva
+    Bug fixes and enhancements: Leonel Figueiredo de Alencar
+    
+    Annotate an example from Hartt (1938) by:
+    - receiving a dictionary from handleSentsHartt;
+    - checking the third line of the example for the indication of cross reference with Avila (2021) to decide whether to insert the relevant metadata;
+    - insert the other metadata;
+    - invoking _parseExample
+
+    The examples below (40 and 91) were extracted as they were from "dominickmaia/hartt/frases.txt":
+
+    >>> input_string='''40 - ixé xamonó amú osú omopók nesuí nekamutí.
+40 - Ixé xamunú amú usú umupuka ne suí ne kamutí.
+40 - Ixé amundú amú usú umupuka ne suí ne kamutí. (Hartt, 322, adap.) - Eu mando outro ir quebrar-te o teu pote.
+40 - mando um outro ir quebrar teu pote.
+    '''
+    >>> Yauti.parseExampleHartt(input_string,page=322)
+    >>> input_string='''91 - intí án sekyrimbá xasupir aráma mbaa iporéi reté aá (Ereré).
+91 - Intí ã se kirimbá xasupiri arama maã i pusé reté waá.
+91 - NA
+91 - não tenho bastante força para aguentar uma coisa muito pesada.'''
+    >>> Yauti.parseExampleHartt(input_string,page=325)
+    """
+    sents={}
+    person="Antônio Levy Melo Nogueira"
+    transcriber={'text_orig_transcriber': person,
+    'text_por_modernizer': person}
+    handled=handleSentsHartt(example)
+
+    metadata={}
+    # Checking the existence of cross reference
+    if handled['avila'] != 'NA':
+        sec=mkSecTextAvila(handled['avila'])
+        metadata.update(sec)
+    
+    metadata.update(transcriber)
+
+    # Organizing main attributes
+    prefix="Hartt1938"
+    sent_nr=handled['index'][0]
+    sents['sent_id']=mkSentId(prefix,sentid=sent_nr)
+    sents['text']=handled['text']
+    sents['text_por']=handled['text_por']
+    #sents['text_eng']=handled['text_eng']
+    sents['text_source']=f"p. {page}, No. {sent_nr}"
+    sents['text_orig']=handled['text_orig']
+
+    return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check,outfile=outfile, overwrite=overwrite,metadata=metadata,translate=translate)
