@@ -3866,9 +3866,8 @@ def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True
     >>> Yauti.parseExampleHartt(input_string,page=325)
     """
     sents={}
-    person="Antônio Levy Melo Nogueira"
-    transcriber={'text_orig_transcriber': person,
-    'text_por_modernizer': person}
+    if transcriber:
+        transcriber=mkTranscriber(transcriber)
     handled=handleSentsHartt(example)
 
     metadata={}
