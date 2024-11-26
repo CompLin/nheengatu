@@ -18022,6 +18022,21 @@
 11	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	9	nsubj	_	SpaceAfter=No|TokenRange=52:56
 12	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=56:57
 
+# sent_id = Avila2021:0:0:727
+# text = Remundú aé payé piamu.
+# text_por = Manda[-o] em busca do pajé.
+# text_source = Hartt, 
+# text_annotator = Dominick Maia Alexandre
+# cross_reference = Hartt1938:0:0:276
+# inputline = Remundú aé payé piamu.
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Remundú	mundú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	TokenRange=8:10
+3	payé	payé	NOUN	N	Number=Sing	4	obj	_	TokenRange=11:15
+4	piamu	piamu	VERB	V	VerbForm=Inf	1	xcomp	_	SpaceAfter=No|TokenRange=16:21
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
+
 # sent_id = NTLN2019:0:0:1
 # text = Yakwawa tẽ Deus suiwara-itá yandé, yakwawa tẽ yuíri panhẽ kwá mundu uikú Yuruparí upé.
 # text_eng = We know that we are children of God, and that the whole world is under the control of the evil one. [NIV]
@@ -36708,30 +36723,28 @@
 3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Hartt1938:0:0:132
-# text = Eyuri, yawara!
+# text = Eyuri yawara!
 # text_por = Cachorro, vem cá!
 # text_source = p. 328, No. 132
 # text_orig = eyúr yauára!
 # text_annotator = Dominick Maia Alexandre
-# inputline = Eyuri, yawara!
+# inputline = Eyuri yawara!
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Eyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
-2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
-3	yawara	yawara	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=7:13
-4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+1	Eyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	yawara	yawara	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=6:12
+3	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Hartt1938:0:0:133
-# text = Eyuri, pixana!
+# text = Eyuri pixana!
 # text_por = Gato, vem cá!
 # text_orig = eyúr pixána!
 # text_source = p. 328, No. 133
 # text_annotator = Dominick Maia Alexandre
-# inputline = Eyuri, pixana!
+# inputline = Eyuri pixana!
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Eyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
-2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
-3	pixana	pixana	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=7:13
-4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
+1	Eyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	pixana	pixana	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=6:12
+3	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Hartt1938:0:0:147
 # text = Xasú xapagari nhaã apigawa supé.
@@ -36922,7 +36935,6 @@
 # text_annotator = Dominick Maia Alexandre
 # inputline = Emuí musapiri í, remeẽ warama ixéu.
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Emuí	muí	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	musapiri	musapiri	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=5:13
 3	í	í	NOUN	N	Number=Sing	1	obl	_	SpaceAfter=No|TokenRange=14:15
@@ -36948,21 +36960,6 @@
 5	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	3	obl	_	TokenRange=21:28
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
-
-# sent_id = Avila2021:0:0:727
-# text = Remundú aé payé piamu.
-# text_por = Manda[-o] em busca do pajé.
-# text_source = No. 727
-# text_annotator = Dominick Maia Alexandre
-# cross_reference = Hartt1938:0:0:276
-# inputline = Remundú aé payé piamu.
-# reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
-1	Remundú	mundú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
-2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	TokenRange=8:10
-3	payé	payé	NOUN	N	Number=Sing	1	obj	_	TokenRange=11:15
-4	piamu	piamu	VERB	V	VerbForm=Inf	1	xcomp	_	SpaceAfter=No|TokenRange=16:21
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:847
 # text = Rerikú será urusakã purã ne "vizinho" suí?
