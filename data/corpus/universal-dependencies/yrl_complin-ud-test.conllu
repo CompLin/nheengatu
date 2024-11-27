@@ -28425,7 +28425,105 @@
 5	kisé	kisé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:19
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = Rodrigues1890:3:50:50
+# sent_id = Rodrigues1890:1-1-3:1:101
+# text = Yepé apigawa menasara urikú ximirikú taíra.
+# text_eng = A married man had a wife and children.
+# text_por = Um homem casado tinha mulher e filhos.
+# title_orig = CURUPIRA PANEMA IRUMO
+# title_por = O Curupira e o infeliz
+# text_source = p. 39
+# text_orig = Yepé apegaua menaçara u ricó che miricó taira.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	apigawa	apigawa	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:12
+3	menasara	menasara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=13:21
+4	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=22:27
+5	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obj	_	TokenRange=28:36
+6	taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	conj	_	SpaceAfter=No|TokenRange=37:42
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=42:43
+
+# sent_id = Rodrigues1890:1-1-3:3:103
+# text = Yepé ara usú kaá kití kamunú ukaíma kaá-pe, arupí ukiri.
+# text_eng = One day, he went to the woods to hunt and got lost, and slept there.
+# text_por = Um dia, foi ao mato caçar e perdeu-se, por lá dormiu.
+# text_source = p. 39
+# text_orig = Yepé ara u çu caá quetê camunu u caíma caa pe, arupi u quire.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	ara	ara	NOUN	N	Number=Sing	3	obl	_	TokenRange=5:8
+3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
+4	kaá	kaá	NOUN	N	Number=Sing	3	obl	_	TokenRange=13:16
+5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	TokenRange=17:21
+6	kamunú	kamunú	VERB	V	Style=Arch|VerbForm=Inf	3	xcomp	_	ModernForm=ukamunú|ModernPerson=3|ModernVerbForm=Fin|TokenRange=22:28
+7	ukaíma	kaíma	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=29:35
+8-9	kaá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=36:42
+8	kaá	kaá	NOUN	N	Number=Sing	7	obl	_	_
+9	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	8	case	_	_
+10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=42:43
+11	arupí	arupí	ADV	ADVC	AdvType=Loc	12	advmod	_	TokenRange=44:49
+12	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=50:55
+13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=55:56
+
+# sent_id = Rodrigues1890:1-1-3:4:104
+# text = Pituna pukú usika i piri Kurupira uwasemu ukiri ikú.
+# text_eng = Late at night, Corupira went to see him and found him sleeping.
+# text_por = Alta noite, foi ter com ele o Corupira e o achou dormindo.
+# text_source = p. 39
+# text_orig = Petuna pucu u cêca i pêre Curupira u cema u quire icú.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Pituna	pituna	NOUN	N	Number=Sing	3	obl	_	TokenRange=0:6
+2	pukú	pukú	ADJ	A	_	1	amod	_	TokenRange=7:11
+3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=18:19
+5	piri	piri	ADP	ADP	AdpType=Post	4	case	_	TokenRange=20:24
+6	Kurupira	kurupira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=25:33
+7	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=34:41
+8	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=42:47
+9	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	8	aux	_	ModernForm=uikú|ModernNumber=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=48:51
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=51:52
+
+# sent_id = Rodrigues1890:1-1-3:5:105
+# text = Usenúi aé.
+# text_eng = He called him.
+# text_por = Chamou-o.
+# text_source = p. 39
+# text_orig = U cenoe aé.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Usenúi	senúi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=7:9
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Rodrigues1890:1-1-3:6:106
+# text = — Oh! se kunhambira!
+# text_eng = "Oh! my nephew!"
+# text_por = — Oh! meu sobrinho!
+# text_source = p. 39
+# text_orig = — Oh! ce cunhambyra!
+# text_annotator = Leonel Figueiredo de Alencar
+1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Oh	oh	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No|TokenRange=1:3
+3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=3:4
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=5:7
+5	kunhambira	kunhambira	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=8:18
+6	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Rodrigues1890:1-1-3:7:107
+# text = Aé upaka.
+# text_eng = He woke up.
+# text_por = Ele acordou.
+# text_source = p. 39
+# text_orig = Aé u poca.
+# title_number = III
+# title_orig = CURUPIRA PANEMA IRUMO
+# title_por_gloss = O Corupira infeliz com (eo)
+# title_por = O Curupia e o infeliz
+# place = Rio Negro
+# text_annotator = Leonel Figueiredo de Alencar
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
+
+# sent_id = Rodrigues1890:1-1-3:50:50
 # text = Ximirikú umaã sesé, aiwana aé unheẽ ixupé: — Maã reyuri upiama, panemawasú?
 # text_eng = TODO
 # text_por = Vendo-o, a mulher logo lhe disse: — O que vieste buscar, desgraçado?
@@ -28452,104 +28550,6 @@
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=62:63
 16	panemawasú	panema	ADJ	A	Degree=Aug	13	vocative	_	SpaceAfter=No|TokenRange=64:74
 17	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=74:75
-
-# sent_id = Rodrigues1890:1-1-4:1:101
-# text = Yepé apigawa menasara urikú ximirikú taíra.
-# text_eng = A married man had a wife and children.
-# text_por = Um homem casado tinha mulher e filhos.
-# title_orig = CURUPIRA PANEMA IRUMO
-# title_por = O Curupira e o infeliz
-# text_source = p. 39
-# text_orig = Yepé apegaua menaçara u ricó che miricó taira.
-# text_annotator = Leonel Figueiredo de Alencar
-1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
-2	apigawa	apigawa	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:12
-3	menasara	menasara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=13:21
-4	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=22:27
-5	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	obj	_	TokenRange=28:36
-6	taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	conj	_	SpaceAfter=No|TokenRange=37:42
-7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=42:43
-
-# sent_id = Rodrigues1890:1-1-4:3:103
-# text = Yepé ara usú kaá kití kamunú ukaíma kaá-pe, arupí ukiri.
-# text_eng = One day, he went to the woods to hunt and got lost, and slept there.
-# text_por = Um dia, foi ao mato caçar e perdeu-se, por lá dormiu.
-# text_source = p. 39
-# text_orig = Yepé ara u çu caá quetê camunu u caíma caa pe, arupi u quire.
-# text_annotator = Leonel Figueiredo de Alencar
-1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
-2	ara	ara	NOUN	N	Number=Sing	3	obl	_	TokenRange=5:8
-3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
-4	kaá	kaá	NOUN	N	Number=Sing	3	obl	_	TokenRange=13:16
-5	kití	kití	ADP	ADP	AdpType=Post	4	case	_	TokenRange=17:21
-6	kamunú	kamunú	VERB	V	Style=Arch|VerbForm=Inf	3	xcomp	_	ModernForm=ukamunú|ModernPerson=3|ModernVerbForm=Fin|TokenRange=22:28
-7	ukaíma	kaíma	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=29:35
-8-9	kaá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=36:42
-8	kaá	kaá	NOUN	N	Number=Sing	7	obl	_	_
-9	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	8	case	_	_
-10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=42:43
-11	arupí	arupí	ADV	ADVC	AdvType=Loc	12	advmod	_	TokenRange=44:49
-12	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=50:55
-13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=55:56
-
-# sent_id = Rodrigues1890:1-1-4:4:104
-# text = Pituna pukú usika i piri Kurupira uwasemu ukiri ikú.
-# text_eng = Late at night, Corupira went to see him and found him sleeping.
-# text_por = Alta noite, foi ter com ele o Corupira e o achou dormindo.
-# text_source = p. 39
-# text_orig = Petuna pucu u cêca i pêre Curupira u cema u quire icú.
-# text_annotator = Leonel Figueiredo de Alencar
-1	Pituna	pituna	NOUN	N	Number=Sing	3	obl	_	TokenRange=0:6
-2	pukú	pukú	ADJ	A	_	1	amod	_	TokenRange=7:11
-3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
-4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=18:19
-5	piri	piri	ADP	ADP	AdpType=Post	4	case	_	TokenRange=20:24
-6	Kurupira	kurupira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=25:33
-7	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=34:41
-8	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=42:47
-9	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	8	aux	_	ModernForm=uikú|ModernNumber=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=48:51
-10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=51:52
-
-# sent_id = Rodrigues1890:1-1-4:5:105
-# text = Usenúi aé.
-# text_eng = He called him.
-# text_por = Chamou-o.
-# text_source = p. 39
-# text_orig = U cenoe aé.
-# text_annotator = Leonel Figueiredo de Alencar
-1	Usenúi	senúi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	SpaceAfter=No|TokenRange=7:9
-3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=9:10
-
-# sent_id = Rodrigues1890:1-1-4:6:106
-# text = — Oh! se kunhambira!
-# text_eng = "Oh! my nephew!"
-# text_por = — Oh! meu sobrinho!
-# text_source = p. 39
-# text_orig = — Oh! ce cunhambyra!
-# text_annotator = Leonel Figueiredo de Alencar
-1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
-2	Oh	oh	INTJ	INTJ	_	5	discourse	_	SpaceAfter=No|TokenRange=1:3
-3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=3:4
-4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=5:7
-5	kunhambira	kunhambira	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=8:18
-6	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=18:19
-
-# sent_id = Rodrigues1890:1-1-4:7:107
-# text = Aé upaka.
-# text_eng = He woke up.
-# text_por = Ele acordou.
-# text_source = p. 39
-# text_orig = Aé u poca.
-# title_number = IV
-# title_orig = CURUPIRA CURUMI ETA IRUMO
-# variant_number = 1
-# place = Rio Branco
-# title_por = O Curupira e os meninos
-# text_annotator = Leonel Figueiredo de Alencar
-1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
-2	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:8
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
 
 # sent_id = Rodrigues1890:1-1-5:90:90
 # text = — Ikũi ana, aikwé nhuntu ana Kurupira usika ixé yuíri xasú ana.
