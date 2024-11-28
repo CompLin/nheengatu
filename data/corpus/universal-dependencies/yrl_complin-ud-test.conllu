@@ -18032,7 +18032,7 @@
 # cross_reference = Hartt1938:0:0:276
 # inputline = Remundú aé/pron payé piamu/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Remundú	mundú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+1	Remundú	mundú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	TokenRange=8:10
 3	payé	payé	NOUN	N	Number=Sing	1	obl	_	TokenRange=11:15
 4	piamu	piamu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=16:21
@@ -29258,6 +29258,33 @@
 25	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	24	obj	_	SpaceAfter=No|TokenRange=130:132
 26	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=132:133
 
+# sent_id = Rodrigues1890:1-2-4:70:70
+# text = Xarasú indé ne manha ruka upé, arirí xayuíri xayuri i piama ne amú.
+# text_eng = TODO
+# text_por = eu te levo para casa de tua mãe. Depois, voltarei outra vez a buscar tua parenta.
+# text_source = p. 130
+# title_orig = YURUPARI CUNHAN MUCU ETÁ IRUMO
+# place_orig = Rio Madeira
+# title_number = III
+# text_orig = Cha raçu indé ne manha roca opé, ariri cha iuire cha iure i piama ne amu.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xarasú indé ne manha ruka upé/adp, arirí/advt xayuíri xayuri i/pron2 piama/adp ne amú.
+1	Xarasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arasú|TokenRange=0:6
+2	indé	indé	PRON	PRON	Number=Sing|Person=2|PronType=Prs	1	obj	_	TokenRange=7:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	manha	manha	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=15:20
+5	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=21:25
+6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:29
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=29:30
+8	arirí	arirí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=31:36
+9	xayuíri	yuíri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	parataxis	_	ModernForm=ayuíri|TokenRange=37:44
+10	xayuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	xcomp	_	ModernForm=ayuri|TokenRange=45:51
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	obl	_	TokenRange=52:53
+12	piama	piama	ADP	ADP	AdpType=Post	11	case	_	TokenRange=54:59
+13	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=60:62
+14	amú	amú	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=63:66
+15	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=66:67
+
 # sent_id = Rodrigues1890:1-2-4:100:100
 # text = — Ururi Karã se muirakitã.
 # text_eng = "Carão, bring my talisman."
@@ -29892,6 +29919,33 @@
 8	kisé	kisé	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=35:39
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=39:40
 
+# sent_id = Rodrigues1890:2-15:7:7
+# text = Se manha usú i piama xe purangasawa arama, tinta umundá wainambí xií.
+# text_eng = TODO
+# text_por = — Minha mãe foi buscar beleza para mim; foi furtar as tintas do beija-flor.
+# text_por_gloss = Minha mãe foi buscar minha beleza para, tinta furtar beija-flor do.
+# text_source = p. 195
+# place_orig = Rio Branco
+# text_orig = — Ce manha u çu i piama che puranga çaua arama, tinta u mundá uanamby chii.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se manha usú i/pron2 piama/adp xe purangasawa arama/fut, tinta/=n:o|pt umundá wainambí xií.
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	manha	manha	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:8
+3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=13:14
+5	piama	piama	ADP	ADP	AdpType=Post	4	case	_	TokenRange=15:20
+6	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=21:23
+7	purangasawa	purangasawa	NOUN	N	Number=Sing	3	obj	_	TokenRange=24:35
+8	arama	arama	PART	FUT	Tense=Fut	3	advmod	_	SpaceAfter=No|TokenRange=36:41
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=41:42
+10	tinta	tinta	NOUN	N	Number=Sing	11	obj	_	OrigLang=por|TokenRange=43:48
+11	umundá	mundá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=49:55
+12	wainambí	wainambí	NOUN	N	Number=Sing	11	obl	_	TokenRange=56:64
+13	xií	xií	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=65:68
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=68:69
+
 # sent_id = Rodrigues1890:2-15:20:20
 # text = — Mamé taá ikú ne purangasawa xameẽ waá indé arama?
 # text_eng = TODO
@@ -30158,6 +30212,25 @@
 9	tiára	tiára	ADJ	A	_	3	ccomp	_	SpaceAfter=No|TokenRange=41:46
 10	!	!	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=46:47
 11	…	…	PUNCT	PUNCT	_	3	punct	_	TokenRange=47:48
+
+# sent_id = Rodrigues1890:3-13:20:20
+# text = Maã taá reyuri i piama kwárupí?
+# text_eng = TODO
+# text_por = — Que vens tu buscar por aqui?
+# text_source = p. 258
+# text_orig = — Maa taá re ure i piama quêrupi?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Maã/int taá reyuri i/pron2 piama/adp kwá/demx rupí?
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
+3	reyuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:14
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	TokenRange=15:16
+5	piama	piama	ADP	ADP	AdpType=Post	4	case	_	TokenRange=17:22
+6	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem|Style=Arch	3	obl	_	ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=23:26
+7	rupí	rupí	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=27:31
+8	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Rodrigues1890:3-13:30:30
 # text = Yuri kwá kití, ayumimi indé igasawa wírupi nti arama aintá ne ripiaka.
@@ -31264,7 +31337,14 @@
 # sent_id = Magalhaes1876:1:13:13
 # text = Aé usenúi musapiri miasúa; ximirikú umundú aintá i ruba uka piri, usú upiamu arama yepé tukumã raínha.
 # text_eng = He called the three vassals; his wife sent them to her father's house to fetch a tucumã seed.
-# text_por = Ele chamou os três vassalos; sua esposa mandou-os à casa de seu pai, para irem buscar um caroço de tucumã. [Magalhães, 1876, p. 165, adapt.]
+# text_por = Ele chamou os três vassalos; sua esposa mandou-os à casa de seu pai, para irem buscar um caroço de tucumã.
+# text_por_source_adapt = p. 165
+# text_por_alt = O moço chamou os três fâmulos; a moça mandou-os à casa de seu pai para trazerem um caroço de tucumã.
+# text_por_sec = Ele chamou os três vassalos. Sua esposa mandou-os à casa de seu pai, para irem buscar um caroço de tucumã.
+# text_sec = Aé usenúi musapiri miasúa. Ximirikú umundú aintá i ruba uka piri, usú upiamu arama yepé tukumã raínha.
+# text_sec_source = Marcel Twardowsky Avila
+# text_por_sec_source = Marcel Twardowsky Avila
+# text_por_alt_source = p. 172
 # text_source = p. 165
 # text_orig = Ahé	ocenõĩ	muçapɨra	miaçúa;	xẹmirẹcó	omundú aitá	i	rúba	ộca	píri,	oçộ	opiámo	arãma	iepé	tucumã	rainha.
 # text_por_gloss = Ele	chamou	os três	vassalos;	sua mulher	mandou-os	de seu	pai	casa	à,	irem	buscar	para,	um	de tucumã	caroço.
@@ -31284,9 +31364,9 @@
 10	ruba	tuba	NOUN	N	Number=Sing|Rel=Cont	11	nmod:poss	_	TokenRange=51:55
 11	uka	uka	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	7	obl	_	ModernForm=ruka|ModernRel=Cont|TokenRange=56:59
 12	piri	piri	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=60:64
-13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=64:65
-14	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	15	aux	_	TokenRange=66:69
-15	upiamu	piamu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=70:76
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=64:65
+14	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=66:69
+15	upiamu	piamu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	advcl	_	TokenRange=70:76
 16	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=77:82
 17	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	18	det	_	TokenRange=83:87
 18	tukumã	tukumã	NOUN	N	Number=Sing	19	nmod:poss	_	TokenRange=88:94
@@ -32634,15 +32714,15 @@
 # text_por_gloss = Macaco	disse: — Somente	o que eu	fazer	posso	a você é o	eu	ir	a você	buscar	daí	aqui	para.
 1	Makaka	makaka	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:12
-3	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=12:13
-4	—	—	PUNCT	PUNCT	_	10	punct	_	TokenRange=14:15
-5	Maã	maã	PRON	RELF	PronType=Rel|Style=Arch	10	nsubj	_	SpaceAfter=No|ModernSpaceAfter=Yes|ModeTokenRange=16:19
+3	:	:	PUNCT	PUNCT	_	2	punct	_	TokenRange=12:13
+4	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=14:15
+5	Maã	maã	PRON	RELF	PronType=Rel|Style=Arch	2	ccomp	_	SpaceAfter=No|ModernSpaceAfter=Yes|ModeTokenRange=16:19
 6	nhũ	nhũ	ADV	ADV	_	5	advmod	_	TokenRange=20:23
 7-8	xamunhã-kwáu	_	_	_	_	_	_	_	TokenRange=24:36
 7	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	acl:relcl	_	ModernForm=amunhã
 8	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	7	aux	_	_
 9	indéu	indéu	PRON	PROND	Case=Dat|Number=Sing|Person=2|PronType=Prs	7	iobj	_	TokenRange=37:42
-10	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	ccomp	_	ModernForm=asú|TokenRange=43:47
+10	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	csubj	_	ModernForm=asú|TokenRange=43:47
 11	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	10	obl	_	TokenRange=48:50
 12	piamu	piamu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=51:56
 13	asuí	asuí	ADV	ADVC	AdvType=Loc	10	advmod	_	TokenRange=57:61
@@ -35760,21 +35840,22 @@
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Sympson1877:0:0:684
-# text = Ikũi ií upiama supé uú arama.
+# text = Ikũi upiama iíi supé uú arama.
 # text_eng = TODO
 # text_por = Vai buscar água para ele beber.
 # text_por_gloss = Vai buscar água para ele beber para.
 # text_source = p. 68
 # text_orig = Icuim hu-ipiáma ɨ supé hu-hú aráma.
 # text_annotator = Leonel Figueiredo de Alencar
-# inputline = Ikũi ií upiama/=mf:m|repiama:h|v:r|Standard supé uú arama/sconj.
+# inputline = Ikũi upiama/=mf:m|repiama:h|v:r|Standard ií i/pron2 supé uú arama/sconj.
 1	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	ií	ií	NOUN	N	Number=Sing	3	obj	_	TokenRange=5:7
-3	upiama	piama	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	1	xcomp	_	StandardForm=repiama|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=8:14
-4	supé	supé	ADP	ADP	AdpType=Post	3	iobj	_	TokenRange=15:19
-5	uú	ú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	advcl	_	TokenRange=20:22
-6	arama	arama	SCONJ	SCONJ	_	5	mark	_	SpaceAfter=No|TokenRange=23:28
-7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+2	upiama	piama	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	1	xcomp	_	StandardForm=repiama|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=5:11
+3	ií	ií	NOUN	N	Number=Sing|Style=Arch	2	obj	_	ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=12:14
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=15:16
+5	supé	supé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=17:21
+6	uú	ú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	advcl	_	TokenRange=22:24
+7	arama	arama	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=25:30
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Sympson1877:0:0:690
 # text = Mamé taá ikú ne retama?
