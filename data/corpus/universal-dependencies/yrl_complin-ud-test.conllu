@@ -18030,13 +18030,12 @@
 # text_source = Hartt, 
 # text_annotator = Dominick Maia Alexandre
 # cross_reference = Hartt1938:0:0:276
-# inputline = Remundú aé payé piamu.
+# inputline = Remundú aé/pron payé piamu/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
-1	Remundú	mundú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+1	Remundú	mundú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	1	obj	_	TokenRange=8:10
-3	payé	payé	NOUN	N	Number=Sing	4	obj	_	TokenRange=11:15
-4	piamu	piamu	VERB	V	VerbForm=Inf	1	xcomp	_	SpaceAfter=No|TokenRange=16:21
+3	payé	payé	NOUN	N	Number=Sing	1	obl	_	TokenRange=11:15
+4	piamu	piamu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=16:21
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = NTLN2019:0:0:1
@@ -28546,10 +28545,30 @@
 11	—	—	PUNCT	PUNCT	_	13	punct	_	TokenRange=43:44
 12	Maã	maã	PRON	INT	PronType=Int	14	obj	_	TokenRange=45:48
 13	reyuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	7	ccomp	_	TokenRange=49:55
-14	upiama	piama	VERB	V	Mood=Ind|Person=3|Style=Arch|VerbForm=Fin	13	xcomp	_	ModernForm=repiama|ModernMood=Ind|ModernNumber=Sing|ModernPerson=2|SpaceAfter=No|TokenRange=56:62
+14	upiama	piama	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	13	xcomp	_	StandardForm=repiama|StandardMood=Ind|StandardNumber=Sing|StandardPerson=2|SpaceAfter=No|TokenRange=56:62
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=62:63
 16	panemawasú	panema	ADJ	A	Degree=Aug	13	vocative	_	SpaceAfter=No|TokenRange=64:74
 17	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=74:75
+
+# sent_id = Rodrigues1890:1-1-3:80:80
+# text = — Maã taá kwá uri piama?
+# text_eng = TODO
+# text_por = — O que vens buscar?
+# text_por_source = p. 48
+# text_por_gloss = O que que este vem buscar ?
+# text_source = p. 44
+# text_orig = — Maá taá cuá ure piama?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Maã/int taá kwá/demx uri piama/=mf:m|upiama:h|v:r|Standard?
+1	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Maã	maã	PRON	INT	PronType=Int	6	obj	_	TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=5:8
+4	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	nsubj	_	TokenRange=9:12
+5	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:16
+6	piama	piama	VERB	V	Style=Rare|VerbForm=Inf	5	xcomp	_	SpaceAfter=No|StandardForm=upiama|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=17:22
+7	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = Rodrigues1890:1-1-5:90:90
 # text = — Ikũi ana, aikwé nhuntu ana Kurupira usika ixé yuíri xasú ana.
@@ -28642,7 +28661,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni
-# inputline = Kunhãbukú/=typo:c|Kunhãmukú:x|n usika muirá Kunawarú-etá wírupi, usasema kunawarú-etá resé/adp: — Kunawarú iyuri piamu/=mf:m|repiamu ixé, Kurupira se/=mf:m|ixé yuká-putari/=mf:m|uyuká, remuyé ixé ne waturá.
+# inputline = Kunhãbukú/=typo:c|Kunhãmukú:x|n usika muirá Kunawarú-etá wírupi, usasema kunawarú-etá resé/adp: — Kunawarú iyuri piamu/=mf:m|repiamu:r|Standard ixé, Kurupira se/=mf:m|ixé yuká-putari/=mf:m|uyuká, remuyé ixé ne waturá.
 1	Kunhãbukú	kunhãmukú	NOUN	N	Number=Sing|Typo=Yes	2	nsubj	_	CorrectForm=Kunhãmukú|TokenRange=0:9
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
 3	muirá	muirá	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=16:21
@@ -28656,9 +28675,9 @@
 10	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	9	case	_	SpaceAfter=No|TokenRange=64:68
 11	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=68:69
 12	—	—	PUNCT	PUNCT	_	14	punct	_	TokenRange=70:71
-13	Kunawarú	kunawarú	NOUN	N	Number=Sing	14	nsubj	_	TokenRange=72:80
+13	Kunawarú	kunawarú	NOUN	N	Number=Sing	14	vocative	_	TokenRange=72:80
 14	iyuri	yuri	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=81:86
-15	piamu	piamu	VERB	V	Style=Arch|VerbForm=Inf	14	xcomp	_	ModernForm=repiamu|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbform=Fin|TokenRange=87:92
+15	piamu	piamu	VERB	V	Style=Rare|VerbForm=Inf	14	xcomp	_	StandardForm=repiamu|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|StandardVerbform=Fin|TokenRange=87:92
 16	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=93:96
 17	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=96:97
 18	Kurupira	kurupira	NOUN	N	Number=Sing	20	nsubj	_	TokenRange=98:106
@@ -31211,13 +31230,23 @@
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Magalhaes1876:1:12:12
-# text = Rekiri-putari ramé se irumu remundú upiamu aé, paraná rupí.
+# text = Rekiri-putari ramé se irumu remundú piamu aé, paraná rupí.
 # text_eng = If you want to sleep with me, send for her across the river.
+# text_eng_man = If you want to sleep with me, send to seek it by the river.
+# text_eng_man_translator = Anonymous
 # text_por = Se queres dormir comigo manda buscá-la, pelo rio. [Magalhães, 1876, p. 172, adapt.]
+# text_por_alt = Se queres dormir comigo manda buscá-la lá, pelo grande rio.
+# text_por_sec = Se quiseres dormir comigo, mande buscá-la, pelo rio.
+# text_por_sec_translator = Marcel Twardowsky Avila
+# text_por_alt_source = Magalhães (1876:172)
 # text_source = p. 165
-# text_orig = Rẹkệri putari ramé çẹ irúmo rẹmundú piậmo ahé, paraná rupí.
+# text_orig = Rẹkệri	putari	ramé	çẹ	irúmo	rẹmundú	piậmo	ahé,	paraná	rupí.
+# text_por_gloss = Dormir	queres	se	eu	com	tu mandes	buscar	ela,	rio	pelo.
 # text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # spelling_adaptation = Marcel Twardowsky Avila
+# inputline = Rekiri-putari ramé/sconj se irumu/adp remundú piamu/=mf:m|upiamu:h|v:r|Standard aé/pron, paraná rupí.
 1-2	Rekiri-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Rekiri	kiri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	advcl	_	_
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -31225,7 +31254,7 @@
 4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=19:21
 5	irumu	irumu	ADP	ADP	AdpType=Post	4	case	_	TokenRange=22:27
 6	remundú	mundú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=28:35
-7	upiamu	piamu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=36:42
+7	piamu	piamu	VERB	V	Style=Rare|VerbForm=Inf	6	ccomp	_	StandardForm=upiamu|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=36:41
 8	aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No|TokenRange=43:45
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=45:46
 10	paraná	paraná	NOUN	N	Number=Sing	7	obl	_	TokenRange=47:53
@@ -31237,7 +31266,10 @@
 # text_eng = He called the three vassals; his wife sent them to her father's house to fetch a tucumã seed.
 # text_por = Ele chamou os três vassalos; sua esposa mandou-os à casa de seu pai, para irem buscar um caroço de tucumã. [Magalhães, 1876, p. 165, adapt.]
 # text_source = p. 165
-# text_orig = Ahé ocenõĩ muçapɨra miaçúa; xẹmirẹcó omundú aitá i rúba ộca píri, oçộ opiámo arãma iepé tucumã rainha.
+# text_orig = Ahé	ocenõĩ	muçapɨra	miaçúa;	xẹmirẹcó	omundú aitá	i	rúba	ộca	píri,	oçộ	opiámo	arãma	iepé	tucumã	rainha.
+# text_por_gloss = Ele	chamou	os três	vassalos;	sua mulher	mandou-os	de seu	pai	casa	à,	irem	buscar	para,	um	de tucumã	caroço.
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_annotator = Leonel Figueiredo de Alencar
 # spelling_adaptation = Marcel Twardowsky Avila
 1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
@@ -35727,6 +35759,23 @@
 5	pirá	pirá	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=17:21
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# sent_id = Sympson1877:0:0:684
+# text = Ikũi ií upiama supé uú arama.
+# text_eng = TODO
+# text_por = Vai buscar água para ele beber.
+# text_por_gloss = Vai buscar água para ele beber para.
+# text_source = p. 68
+# text_orig = Icuim hu-ipiáma ɨ supé hu-hú aráma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ikũi ií upiama/=mf:m|repiama:h|v:r|Standard supé uú arama/sconj.
+1	Ikũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	ií	ií	NOUN	N	Number=Sing	3	obj	_	TokenRange=5:7
+3	upiama	piama	VERB	V	Mood=Ind|Person=3|Style=Rare|VerbForm=Fin	1	xcomp	_	StandardForm=repiama|StandardMood=Imp|StandardNumber=Sing|StandardPerson=2|TokenRange=8:14
+4	supé	supé	ADP	ADP	AdpType=Post	3	iobj	_	TokenRange=15:19
+5	uú	ú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	advcl	_	TokenRange=20:22
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	SpaceAfter=No|TokenRange=23:28
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+
 # sent_id = Sympson1877:0:0:690
 # text = Mamé taá ikú ne retama?
 # text_eng = Where is your land?
@@ -36977,11 +37026,11 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Dominick Maia Alexandre
 # cross_reference = Avila2021:0:0:727
-# inputline = Emunú payé piamu/=mf:m|upiamu.
+# inputline = Emunú payé piamu/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Emunú	munú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
-2	payé	payé	NOUN	N	Number=Sing	3	obj	_	TokenRange=6:10
-3	piamu	piamu	VERB	V	Style=Arch|VerbForm=Inf	1	ccomp	_	ModernForm=upiamu|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=11:16
+2	payé	payé	NOUN	N	Number=Sing	1	obl	_	TokenRange=6:10
+3	piamu	piamu	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=11:16
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Hartt1938:0:0:286
@@ -37742,6 +37791,21 @@
 3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
 4	reikú	ikú	AUX	AUXFS	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=16:21
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Studart1926:0:0:3590
+# text = Ekũi ipiama ií.
+# text_eng = Go get some water.
+# text_por = Vá buscar água.
+# text_source = p. 35
+# text_orig = Ecoim ipiuma i
+# text_orig_transcriber = Hélio Leonam Barroso Silva
+# text_por_modernizer = Hélio Leonam Barroso Silva
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ekũi ipiama ií.
+1	Ekũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	ipiama	piama	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	xcomp	_	TokenRange=5:11
+3	ií	ií	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=12:14
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Studart1926:3650:1:36500
 # text = Mairamé resika?
