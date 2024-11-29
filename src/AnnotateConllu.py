@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 24, 2024
+# Last update: November 26, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
-from Metadata import Mindlin, PEOPLE, mkReviewer, mkTranscriber
+from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -2717,22 +2717,30 @@ def extractYrl(sent):
     return REMOVE.sub('',sent)
 
 def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
-    yrl=extractYrl(sents[0])
-    sents[1]=f"({sents[1]})"
+    inputline=sents[0].replace('\t',' ')
+    yrl=extractYrl(inputline)
+    source=f"({sents[1]})"
+    eng=sents[3]
     output=[] # TODO: update TokenList's  metadata instead
+    por=sents[2]
+    gloss=''
+    if '\t' in por:
+        gloss=por
+        por=por.replace('\t',' ')
+        metadata.update(mkTextGloss(gloss))
     if len(sents) == 5:
-        output.append(ppText([yrl,sents[3],
-        sents[2],
-        sents[1],
+        output.append(ppText([yrl,eng,
+        por,
+        source,
         sents[4]],
         pref,textid,index,sentid))
     else:
         output.append(ppText([yrl,
-        sents[3],
-        sents[2],
-        sents[1]],
+        eng,
+        por,
+        source],
         pref,textid,index,sentid))
-    tk=parseSentence(sents[0])
+    tk=parseSentence(inputline)
     if metadata:
         tk.metadata.update(metadata)
     includeAnnotator(output,annotator) # TODO: update the TokenList's metadata
@@ -2852,7 +2860,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True, inputline=True):
     sents=extract_sents(example)
-    yrl=sents[0]
+    yrl=sents[0].replace('\t', ' ')
     metadata=metadata
     if inputline:
         metadata.update({'inputline': yrl})
@@ -3360,7 +3368,7 @@ def handleSentsHartt(example):
     return result
 
 AVILA_SENTS=[]
-def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab',sent_nr=0):
+def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab',sent_nr=0, metadata={}):
 	"""
 	Parse a Nheengatu sentence example from Amorim (1928) or an analogous publication and print the respective analysis in the CoNNL-U format, copying it to the clipboard.
 
@@ -3390,10 +3398,9 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Tru
 		groups=match.groups()
 		sent_nr=int(groups[0])
 	amorim,avila = '',''
-	metadata={}
 	if section in example:
 		amorim,avila=sep.split(example)
-		metadata=mkSecTextAvila(avila)
+		metadata.update(mkSecTextAvila(avila))
 		if not AVILA_SENTS:
 			sents=extractConlluSents(TREEBANK_PATH)
 			AVILA_SENTS=getSentsWithSentId('Avila2021',sents)
