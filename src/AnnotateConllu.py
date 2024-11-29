@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 26, 2024
+# Last update: November 29, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2496,6 +2496,7 @@ def mkConlluSentence(tokens):
             typo=tagparse.get('t')
             correct=tagparse.get('c')
             modern=tagparse.get('m')
+            function=tagparse.get('n')
             newregister=tagparse.get('r')
             if newregister:
                 register=newregister
@@ -2515,7 +2516,11 @@ def mkConlluSentence(tokens):
                 if xpos == 'X':
                     newparselist=mkX(correct)
                 else:
-                    newparselist=getparselist(correct.lower())
+                    if function and function == 'mid':
+                        new=handleMiddlePassive(correct.lower())
+                        newparselist=new['parselist']
+                    else:
+                        newparselist=getparselist(correct.lower())
                     if xpos:
                         newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
