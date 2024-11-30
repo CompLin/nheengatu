@@ -18742,12 +18742,11 @@
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Leonel Figueiredo de Alencar
-# inputline = Paraná yumunhã uikú/v.
+# inputline = Paraná yumunhã/=mf:m|uyumunhã uikú/v.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=7:14
+2	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=7:14
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=15:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
@@ -18849,27 +18848,27 @@
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Hartt1938:0:0:191
-# text = Aé se xari ixé nhũ.
+# text = Aé seriyár ixé nhũ.
 # text_por = Ele me deixou sozinho.
 # text_source = p. 333, No. 191
 # text_orig = aé seriyár ixé ñún.
 # text_eng = TODO
-# text_sec = Aé pron uxari ixé nhũ.
+# text_modernizer = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Aé uxari ixé nhũ.
 # text_por_sec = Ele me deixou sozinho.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# text_orig_transcriber = Antônio Levy Melo Nogueira
-# text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Aé/pron se xari ixé nhũ/=a.
+# inputline = Aé/pron seriyár/=typo:c|uxari ixé nhũ.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
-1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:2
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	obj	_	TokenRange=3:5
-3	xari	xari	VERB	V	VerbForm=Inf	0	root	_	TokenRange=6:10
-4	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=11:14
-5	nhũ	nhũ	ADJ	A	_	3	ccomp	_	SpaceAfter=No|TokenRange=15:18
-6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
+# comment = https://github.com/CompLin/nheengatu/issues/657#issuecomment-2509029348
+1	Aé	aé	PRON	PRON	Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	seriyár	xari	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=uxari|TokenRange=3:10
+3	ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	2	obj	_	TokenRange=11:14
+4	nhũ	nhũ	ADV	ADV	_	2	advmod	_	SpaceAfter=No|TokenRange=15:18
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Hartt1938:0:0:245
 # text = Ekũi Antônio piri.
