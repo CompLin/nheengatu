@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 29, 2024
+# Last update: November 30, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -3901,3 +3901,63 @@ def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True
     sents['text_orig']=handled['text_orig']
 
     return _parseExample(sents,copyboard=copyboard,annotator=annotator,check=check,outfile=outfile, overwrite=overwrite,metadata=metadata,translate=translate)
+
+
+def SplitTestSet(sents):
+    """
+    Splits off a test set of at least 10,000 words from a Universal Dependencies (UD) treebank.
+
+    This function extracts a subset of sentences from the input list `sents`, ensuring that the total 
+    number of words in the subset is at least 10,000. Sentences are not split, so the final word count 
+    may slightly exceed 10,000. The `sents` input is expected to be a list of sentences, where each 
+    sentence is represented as a list of Token objects. Each Token object is a dictionary containing 
+    ten keys as defined by the CoNLL-U format. The `id` key of the last dictionary in each sentence 
+    corresponds to the total number of words in that sentence (since tokens are indexed sequentially 
+    starting from 1).
+
+    Parameters:
+    -----------
+    sents : list of list of dict
+        A list of sentences, where each sentence is represented as a list of Token objects (dictionaries).
+        The `id` key of the last dictionary in each sentence indicates the total number of words 
+        in that sentence.
+
+    Returns:
+    --------
+    test : list of list of dict
+        A subset of `sents` containing the first sentences whose cumulative word count meets or exceeds
+        10,000 words.
+
+    Notes:
+    ------
+    - This function assumes that the `id` key of the last token in each sentence is a reliable indicator 
+      of the total number of words in the sentence.
+    - Input sentences must conform to the CoNLL-U format and be processed into Token objects by a library 
+      like CoNLL-U Parser.
+    - The input list `sents` is not modified by this function.
+
+    Example:
+    --------
+    >>> sents = [
+    ...     [{'id': 1, ...}, {'id': 2, ...}, {'id': 3, ...}],  # Sentence with 3 words
+    ...     [{'id': 1, ...}, {'id': 2, ...}],                 # Sentence with 2 words
+    ...     [{'id': 1, ...}, {'id': 2, ...}, {'id': 3, ...}, {'id': 4, ...}],  # Sentence with 4 words
+    ... ]
+    >>> test_set = SplitTestSet(sents)
+    >>> len(test_set)
+    3
+    >>> sum(sent[-1]['id'] for sent in test_set)
+    9
+    """
+    test = []
+    m = 10000
+    c = 0
+    i = 0
+    while c <= m:
+        sent = sents[i]
+        test.append(sent)
+        i += 1
+        c += sent[-1]['id']
+    return test
+
+
