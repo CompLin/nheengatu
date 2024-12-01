@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 30, 2024
+# Code contributions by others specified in the docstrings of individual functions
+# Last update: December 1, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -22,9 +23,11 @@ ANNOTATOR = PEOPLE['leo']
 ANNOTATOR_ATT = 'text_annotator' #TODO: this is deprecated as of the new version of Metadata
 
 # path to treebank file
-TREEBANK_FILE='yrl_complin-ud-test.conllu'
+TREEBANK_TEST='yrl_complin-ud-test.conllu'
+TREEBANK_TRAIN='yrl_complin-ud-test.conllu'
+TREEBANK_FILES=[TREEBANK_TEST,TREEBANK_TRAIN]
 TREEBANK_DIR='corpus/universal-dependencies'
-TREEBANK_PATH=os.path.join(DIR,TREEBANK_DIR, TREEBANK_FILE)
+TREEBANK_PATH=[os.path.join(DIR,TREEBANK_DIR, filename) for filename in TREEBANK_FILES]
 
 
 def extractLemmaVariants(glossary,lemma='arama',pos='posp'):
@@ -2648,11 +2651,12 @@ def mkConlluSentence(tokens):
 def handleV2(tokenlist):
 	HandleMoodPerson(tokenlist)
 
-def extractConlluSents(infile):
-    sentences=[]
-    data_file = open(infile, "r", encoding="utf-8")
-    for tokenlist in parse_incr(data_file):
-        sentences.append(tokenlist)
+def extractConlluSents(*infiles):
+    sentences = []
+    for infile in infiles:
+        with open(infile, "r", encoding="utf-8") as data_file:
+            for tokenlist in parse_incr(data_file):
+                sentences.append(tokenlist)
     return sentences
 
 def insertSentId(sent,pref='MooreFP1994',textid=0,sentid=1):
@@ -3407,7 +3411,7 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Tru
 		amorim,avila=sep.split(example)
 		metadata.update(mkSecTextAvila(avila))
 		if not AVILA_SENTS:
-			sents=extractConlluSents(TREEBANK_PATH)
+			sents=extractConlluSents(*TREEBANK_PATH)
 			AVILA_SENTS=getSentsWithSentId('Avila2021',sents)
 		result=list(filter(lambda sent: sent.metadata['text'] == metadata['text_sec'],AVILA_SENTS))
 		if result:
@@ -3562,14 +3566,14 @@ def _mergePronoun3PP(tokenlist):
 	return edited
 
 def testFunction(sentid):
-	sents=extractConlluSents(TREEBANK_PATH)
+	sents=extractConlluSents(*TREEBANK_PATH)
 	tokenlist=getSentsWithSentId(sentid,sents)[0]
 	edited=_mergePronoun3PP(tokenlist)
 	return edited,tokenlist
 
 def issue480(sents=[]):
 	if not sents:
-		sents=extractConlluSents(TREEBANK_PATH)
+		sents=extractConlluSents(*TREEBANK_PATH)
 	edt=[]
 	for tokenlist in sents:
 		edited = _mergePronoun3PP(tokenlist)
@@ -3732,7 +3736,7 @@ def checkPron2(sents=[]):
 	'''Detect sentences with PRON2 in an atypical configuration. See issue #536.
 	'''
 	if not sents:
-		sents=extractConlluSents(TREEBANK_PATH)
+		sents=extractConlluSents(*TREEBANK_PATH)
 	pron2=[]
 	for sent in sents:
 		results=sent.filter(xpos='PRON2')
@@ -3751,7 +3755,7 @@ def checkPron(sents=[]):
 	'''Detect sentences with the XPOS tag PRON in an atypical configuration. See issue #536.
 	'''
 	if not sents:
-		sents=extractConlluSents(TREEBANK_PATH)
+		sents=extractConlluSents(*TREEBANK_PATH)
 	pron=[]
 	for sent in sents:
 		results=sent.filter(xpos='PRON',feats__Person='3')
@@ -3852,10 +3856,16 @@ Maã/int taá remunhã?'''
 	s=f"{text} (p. {page}) {por} - {orig}"
 	parseExample(s,'Casasnovas2006',0,0,num,metadata=m,translate=False)
 
+def copy_dic(dic):
+    new_dic={}
+    for k,v in dic.items():
+        new_dic[k]=v
+    return new_dic
+
 def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True,outfile=False,overwrite=False,metadata={}, translate=False,transcriber='lev'):
     """
     Author: Hélio Leonam Barroso Silva
-    Bug fixes and enhancements: Leonel Figueiredo de Alencar
+    Bug fixes and improvements: Leonel Figueiredo de Alencar
     
     Annotate an example from Hartt (1938) by:
     - receiving a dictionary from handleSentsHartt;
@@ -3877,19 +3887,17 @@ def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True
 91 - não tenho bastante força para aguentar uma coisa muito pesada.'''
     >>> Yauti.parseExampleHartt(input_string,page=325)
     """
+    metadata=copy_dic(metadata)
     sents={}
     if transcriber:
         transcriber=mkTranscriber(transcriber)
+        metadata.update(transcriber)
     handled=handleSentsHartt(example)
 
-    metadata={}
     # Checking the existence of cross reference
     if handled['avila'] != 'NA':
         sec=mkSecTextAvila(handled['avila'])
         metadata.update(sec)
-    
-    metadata.update(transcriber)
-
     # Organizing main attributes
     prefix="Hartt1938"
     sent_nr=handled['index'][0]
