@@ -24,11 +24,14 @@ ANNOTATOR_ATT = 'text_annotator' #TODO: this is deprecated as of the new version
 
 # path to treebank file
 TREEBANK_TEST='yrl_complin-ud-test.conllu'
-TREEBANK_TRAIN='yrl_complin-ud-test.conllu'
+TREEBANK_TRAIN='yrl_complin-ud-train.conllu'
 TREEBANK_FILES=[TREEBANK_TEST,TREEBANK_TRAIN]
 TREEBANK_DIR='corpus/universal-dependencies'
-TREEBANK_PATH=[os.path.join(DIR,TREEBANK_DIR, filename) for filename in TREEBANK_FILES]
 
+def mkTreebankPath(directory=DIR,treebank_dir=TREEBANK_DIR,filenames=TREEBANK_FILES):
+    return [os.path.join(directory,treebank_dir, filename) for filename in filenames]
+
+TREEBANK_PATH=mkTreebankPath()
 
 def extractLemmaVariants(glossary,lemma='arama',pos='posp'):
 	entries=list(filter(lambda entry: lemma in entry['gloss'].split(' '),glossary))
