@@ -570,18 +570,20 @@ def getprontype(xpos):
             prontype=prontype[:3]
     return prontype
 
-def insertCase(xpos):
+def getCase(xpos):
     return PRONCASE.get(xpos)
 
+def insertCase(token):
+    case=getCase(token['xpos'])
+    if case:
+        token['feats'].update({'Case': case})
+
 def handlePron(token):
-    xpos=token['xpos']
-    prontype=getprontype(xpos)
+    prontype=getprontype(token['xpos'])
     if not token.get('feats'):
         token['feats']={}
     token['feats'].update({'PronType': prontype})
-    case=insertCase(xpos)
-    if case:
-        token['feats'].update({'Case': case})
+    insertCase(token)
 
 def handlePron2(token,nextToken):
     if token['xpos'] == 'PRON2':
@@ -3985,4 +3987,32 @@ def SplitTestSet(sents):
         c += sent[-1]['id']
     return test
 
+def SplitTestTrain(sents):
+    test=SplitTestSet(sents)
+    start=len(test)
+    train=sents[start:]
+    return test,train
 
+def writeTestTrain(test,train):
+    ext='.edt.conllu'
+    testfile=f"{TREEBANK_TEST.split('.')[0]}{ext}"
+    trainfile=f"{TREEBANK_TRAIN.split('.')[0]}{ext}"
+    dic={}
+    dic[testfile]=test
+    dic[trainfile]=train
+    for k,v in dic.items():
+        writeSentsConllu(v,os.path.join(DIR,TREEBANK_DIR,k))
+
+
+def issue325(sents):
+    for sent in sents:
+        pron=sent.filter(xpos='PRON')
+        for p in pron:
+            feats=p.get('feats')
+            if feats:
+                case=feats.get('Case')
+                if not case:
+                    insertCase(p)
+                    p['feats']=sortDict(p['feats'])
+    test,train = SplitTestTrain(sents)
+    writeTestTrain(test,train)
