@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 1, 2024
+# Last update: December 2, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -105,7 +105,11 @@ SENTTERM=('.','?','!')
 MULTIWORDTOKENS={}
 
 # Case of second class pronouns
-CASE="Gen"
+GENITIVE="Gen"
+ACCNOM='Acc,Nom'
+
+# Assigning case to pronouns
+PRONCASE={'PRON2' : GENITIVE, 'PRON': ACCNOM}
 
 # Enclitic items
 # TODO: extract from glossary
@@ -566,14 +570,21 @@ def getprontype(xpos):
             prontype=prontype[:3]
     return prontype
 
-def handlePron(token,nextToken):
+def insertCase(xpos):
+    return PRONCASE.get(xpos)
+
+def handlePron(token):
     xpos=token['xpos']
     prontype=getprontype(xpos)
     if not token.get('feats'):
         token['feats']={}
     token['feats'].update({'PronType': prontype})
-    if xpos == 'PRON2':
-        token['feats'].update({'Case': CASE})
+    case=insertCase(xpos)
+    if case:
+        token['feats'].update({'Case': case})
+
+def handlePron2(token,nextToken):
+    if token['xpos'] == 'PRON2':
         if nextToken['upos'] == 'NOUN':
             token['feats'].update({'Poss': 'Yes'})
             token['deprel'] ='nmod:poss'
@@ -1664,7 +1675,8 @@ def addFeatures(tokenlist):
             else:
                 handleNounPron(token,nextToken,verbs)
                 if upos == 'PRON':
-                    handlePron(token,nextToken)
+                    handlePron(token)
+                    handlePron2(token,nextToken)
         elif upos == 'PART':
             handlePart(token,tokenlist,verbs)
         elif upos == 'X':
@@ -2621,6 +2633,8 @@ def mkConlluSentence(tokens):
                 t['misc'].update({attribute: modern_form})
                 modern_entries=extract_feats(modernparselist)
                 modern_token=mkConlluToken(modern_form,modern_entries[0])
+                if modern_token['upos'] == 'PRON':
+                    handlePron(modern_token)
                 diff=formatModernFeats(diffFeats(modern_token,t),register)
                 t['misc'].update(diff)
                 updateFeats(t,'Style',getStyle(attribute))
