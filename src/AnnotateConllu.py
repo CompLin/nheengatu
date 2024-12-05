@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 2, 2024
+# Last update: December 5, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -230,7 +230,7 @@ def getLocEntry(form):
         return {}
 
 def extractTreebankSents(infile=TREEBANK_PATH):
-    sents=extractConlluSents(infile)
+    sents=extractConlluSents(*infile)
     for sent in sents:
         text=sent.metadata.get('text_orig')
         if not text:
@@ -1830,6 +1830,11 @@ def getSpaceAfter(token):
     if misc:
         if misc.get('SpaceAfter'):
             return misc.pop('SpaceAfter')
+        
+def getMultiWordToken(first):
+    dic=MULTIWORDTOKENS.get(first)
+    if dic:
+        return dic['multiwordtoken']
 
 def insertMultitokenWord(tokenlist):
     sep='-'
@@ -1854,7 +1859,7 @@ def insertMultitokenWord(tokenlist):
                         first=alomorph
                     #if token['upos'] == 'ADV' or token['form'] == ME:
                     #    sep=''
-                    mwt=MULTIWORDTOKENS.get(first)
+                    mwt=getMultiWordToken(first)
                     if mwt:
                         form=mwt
                     else:
@@ -1883,7 +1888,7 @@ def insertMultitokenWord1(tokenlist):
                 first=previous['form']
                 if alomorph:
                     first=alomorph
-                mwt=MULTIWORDTOKENS.get(first)
+                mwt=getMultiWordToken(first)
                 if mwt:
                     form=mwt
                 else:
@@ -2472,7 +2477,11 @@ def mkConlluSentence(tokens):
     start=0
     for token in tokens:
         old=token
-        tag=MULTIWORDTOKENS.get('xpos')
+        tag=''
+        mwt=MULTIWORDTOKENS.get(token)
+        if mwt:
+            tag=mwt.get('xpos')
+        #tag=MULTIWORDTOKENS.get('xpos')
         root=False
         parts=extractTag(token)
         if parts:
@@ -2991,6 +3000,7 @@ def hasLinkingHyphen(token):
         return HYPHEN in parts[0]
     return False
 
+
 def splitMultiWordTokens(tokens):
     MULTIWORDTOKENS.clear()
     sep=[d['lemma'] for d in AUX]
@@ -3015,14 +3025,21 @@ def splitMultiWordTokens(tokens):
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}/{tag}")
         elif dic: # TODO: if dic ...?
-            host=dic['host']
-            suff=dic['suff']
             mwt=dic['multiwordtoken']
-            xpos=dic.get('xpos')
-            if xpos:
-                MULTIWORDTOKENS['xpos']=xpos # TODO 23/08/2024: MULTIWORDTOKENS as list of dictionaries (a sentence can have more than one MWT)
-            MULTIWORDTOKENS[host]=mwt
-            newlist.extend([host,f"{UNDERSCORE}{suff}"])
+            #if len(parselist) == 1 and parselist[0][1] == None:
+            host=dic['host']
+            parselist=getparselist(host)
+            if len(parselist) == 1 and parselist[0][1] == None:
+                newlist.append(t)
+            else:
+                suff=dic['suff']
+                #xpos=dic.get('xpos')
+                MULTIWORDTOKENS[host]=dic
+                #if xpos:
+                #    MULTIWORDTOKENS['xpos']=xpos # TODO 23/08/2024: MULTIWORDTOKENS as list of dictionaries (a sentence can have more than one MWT)
+                newlist.extend([host,f"{UNDERSCORE}{suff}"])
+            #else:
+            #    newlist.append(t)
         else:
             newlist.append(t)
     return newlist

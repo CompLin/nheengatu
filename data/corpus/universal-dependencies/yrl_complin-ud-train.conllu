@@ -14416,6 +14416,38 @@
 19	arama	arama	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=91:96
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=96:97
 
+# sent_id = Magalhaes1876:2:27:70
+# text = Aramé kuíri, paraná, xasú ne suí; remaẽ ramé kurí ixé ne paya riãwera irumu wana.
+# text_eng = TODO
+# text_por = Então agora, rio, vou deixar você; quando me avistares estarei com o cadáver de teu pai.
+# text_por_translator = Leonel Figueiredo de Alencar
+# text_source = p. 180
+# text_orig = Aramé	cuhɨre,	paraná,	xa	cộ	nẹ	çuí;	remahẽ	ramé	curí	ixệ	nẹ	páia	reẫuệra	irúmo	uãna.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Aramé/advt kuíri, paraná, xasú ne suí; remaẽ ramé/sconj kurí ixé ne paya riãwera irumu/adp wana.
+# text_por_gloss = Então	agora,	rio,	me	vou	você	de;	avistares	quando eu	de teu	pai	cadáver	com	estarei.
+1	Aramé	aramé	ADV	ADVT	AdvType=Tim	6	advmod	_	TokenRange=0:5
+2	kuíri	kuíri	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=6:11
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
+4	paraná	paraná	NOUN	N	Number=Sing	6	vocative	_	SpaceAfter=No|TokenRange=13:19
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=19:20
+6	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asú|TokenRange=21:25
+7	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	obl	_	TokenRange=26:28
+8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=29:32
+9	;	;	PUNCT	PUNCT	_	16	punct	_	TokenRange=32:33
+10	remaẽ	maẽ	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	16	advcl	_	TokenRange=34:39
+11	ramé	ramé	SCONJ	SCONJ	_	10	mark	_	TokenRange=40:44
+12	kurí	kurí	PART	FUT	Tense=Fut	10	advmod	_	TokenRange=45:49
+13	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	10	obj	_	TokenRange=50:53
+14	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=54:56
+15	paya	paya	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=57:61
+16	riãwera	tiãwera	NOUN	N	Number=Sing|Rel=Cont	6	parataxis	_	TokenRange=62:69
+17	irumu	irumu	ADP	ADP	AdpType=Post	16	case	_	TokenRange=70:75
+18	wana	wana	PART	PFV	Aspect=Perf	16	advmod	_	SpaceAfter=No|TokenRange=76:80
+19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=80:81
+
 # sent_id = Magalhaes1876:3:1:201
 # text = Yautí usasema: — Se anama-itá!
 # text_eng = The tortoise shouted: — My relatives!
