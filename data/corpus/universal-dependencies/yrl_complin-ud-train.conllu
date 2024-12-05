@@ -12726,6 +12726,74 @@
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=49:54
 12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=54:55
 
+# sent_id = Magalhaes1876:2-6:1:20
+# text = Remundú-putari será ipiama pakúa-itá uikú waá aape?
+# text_eng = TODO
+# text_por = Você quer mandar buscar as pacovas que estão lá?
+# text_source = p. 102
+# text_orig = Rẹmundù putári será ipiãma paouaitá oikộ uahá aápe?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Remundú-putari será ipiama/=typo:c|upiama pakúa-itá uikú/cop waá/rel aape/advt?
+1-2	Remundú-putari	_	_	_	_	_	_	_	TokenRange=0:14
+1	Remundú	mundú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=15:19
+4	ipiama	piama	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	1	ccomp	_	CorrectForm=upiama|TokenRange=20:26
+5	pakúa-itá	pakúa	NOUN	N	Number=Plur	4	obj	_	TokenRange=27:36
+6	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	8	cop	_	TokenRange=37:41
+7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	8	nsubj	_	TokenRange=42:45
+8	aape	aape	ADV	ADVT	AdvType=Tim	5	acl:relcl	_	SpaceAfter=No|TokenRange=46:50
+9	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Magalhaes1876:2-6:2:21
+# text = Intí xarikú awá xamundú arama ipiama.
+# text_eng = TODO
+# text_por = Eu não tenho agora por quem mandar buscá-las.
+# text_source = p. 102
+# text_orig = Intí xa rekộ cuhɨre auá xa mundú arãma ipiãma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Intí xarikú awá/ind xamundú arama/sconj ipiama/=typo:c|upiama.
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
+2	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arikú|TokenRange=5:11
+3	awá	awá	PRON	IND	PronType=Ind	2	obj	_	TokenRange=12:15
+4	xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=amundú|TokenRange=16:23
+5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
+6	ipiama	piama	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	4	ccomp	_	CorrectForm=upiama|SpaceAfter=No|TokenRange=30:36
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Magalhaes1876:2-7:3:22
+# text = Xamundú kurumirĩ ipiama, xarikú ramé xamundú arama.
+# text_eng = TODO
+# text_por = Eu mando buscar logo, quando tiver uma pessoa para ir.
+# text_source = p. 103
+# text_orig = Xa mundú curumirɨ ipiãma, xa rekộ ramệ xa mundú arậma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xamundú kurumirĩ ipiama/=typo:c|upiama, xarikú ramé/sconj xamundú arama/sconj.
+1	Xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amundú|TokenRange=0:7
+2	kurumirĩ	kurumirĩ	ADV	ADVT	AdvType=Tim	1	advmod	_	TokenRange=8:16
+3	ipiama	piama	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	1	ccomp	_	CorrectForm=upiama|SpaceAfter=No|TokenRange=17:23
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
+5	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	advcl	_	ModernForm=arikú|TokenRange=25:31
+6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=32:36
+7	xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	advcl	_	ModernForm=amundú|TokenRange=37:44
+8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=45:50
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Magalhaes1876:2-8:0:50
+# text = Yasú ipiama ne kamarara-itá.
+# text_eng = TODO
+# text_por = Vamos buscar teu camarada.
+# text_por_translator = Leonel Figueiredo de Alencar
+# text_source = p. 105
+# text_orig = Iaçó ipiãma (buscar) nẹ camarára itá.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yasú ipiama/=typo:c|yapiama ne kamarara-itá.
+1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	ipiama	piama	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=yapiama|TokenRange=5:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	kamarara-itá	kamarara	NOUN	N	Number=Plur	2	obj	_	SpaceAfter=No|TokenRange=15:27
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
+
 # sent_id = Magalhaes1876:2-9:1:301
 # text = Maã-ta pesú pemunhã?
 # text_eng = What are you guys going to do?
