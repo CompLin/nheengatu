@@ -12788,8 +12788,8 @@
 # text_orig = Iaçó ipiãma (buscar) nẹ camarára itá.
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Yasú ipiama/=typo:c|yapiama ne kamarara-itá.
-1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
-2	ipiama	piama	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=yapiama|TokenRange=5:11
+1	Yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	ipiama	piama	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	1	xcomp	_	CorrectForm=yapiama|TokenRange=5:11
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
 4	kamarara-itá	kamarara	NOUN	N	Number=Plur	2	obj	_	SpaceAfter=No|TokenRange=15:27
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
