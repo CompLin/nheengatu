@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 5, 2024
+# Last update: December 7, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2481,7 +2481,6 @@ def mkConlluSentence(tokens):
         mwt=MULTIWORDTOKENS.get(token)
         if mwt:
             tag=mwt.get('xpos')
-        #tag=MULTIWORDTOKENS.get('xpos')
         root=False
         parts=extractTag(token)
         if parts:
@@ -2877,7 +2876,7 @@ def _includeTranslation(text_por,translate=True):
 		text_eng=formatTextEng(text_eng)
 	return text_eng
 
-def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=True,inputline=True):
+def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	yrl=sents['text']
 	por=sents['text_por']
 	if check:
@@ -2895,7 +2894,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
 	handleParse(outstring,copyboard=copyboard)
 
-def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=True, inputline=True):
+def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=False, inputline=True):
     sents=extract_sents(example)
     yrl=sents[0].replace('\t', ' ')
     metadata=metadata
@@ -3000,6 +2999,9 @@ def hasLinkingHyphen(token):
         return HYPHEN in parts[0]
     return False
 
+def hasNoParse(word):
+    parselist=getparselist(word)
+    return len(parselist) == 1 and parselist[0][1] == None
 
 def splitMultiWordTokens(tokens):
     MULTIWORDTOKENS.clear()
@@ -3010,36 +3012,34 @@ def splitMultiWordTokens(tokens):
         dic=extractHost(t)
         if hasLinkingHyphen(t):
             tag=''
+            bar=''
             parts=extractTag(t)
             if parts:
                 t,tag=parts
+            if tag:
+                bar='/'
             index=t.index(HYPHEN)
             first=t[:index]
             second=t[index:]
             if second[1:] in sep:
                 if second[1:] in CLITICS:
                     first=f"{first}-"
-                if tag:
+                if tag: # TODO: else: ?
                     first=f"{first}/{tag}"
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
-                newlist.append(f"{t}/{tag}")
+                newlist.append(f"{t}{bar}{tag}")
         elif dic: # TODO: if dic ...?
             mwt=dic['multiwordtoken']
-            #if len(parselist) == 1 and parselist[0][1] == None:
             host=dic['host']
-            parselist=getparselist(host)
-            if len(parselist) == 1 and parselist[0][1] == None:
+            #parselist=getparselist(host)
+            #if len(parselist) == 1 and parselist[0][1] == None:
+            if hasNoParse(host):
                 newlist.append(t)
             else:
                 suff=dic['suff']
-                #xpos=dic.get('xpos')
                 MULTIWORDTOKENS[host]=dic
-                #if xpos:
-                #    MULTIWORDTOKENS['xpos']=xpos # TODO 23/08/2024: MULTIWORDTOKENS as list of dictionaries (a sentence can have more than one MWT)
                 newlist.extend([host,f"{UNDERSCORE}{suff}"])
-            #else:
-            #    newlist.append(t)
         else:
             newlist.append(t)
     return newlist
@@ -3413,7 +3413,7 @@ def handleSentsHartt(example):
     return result
 
 AVILA_SENTS=[]
-def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=True, transcriber=Mindlin, person='gab',sent_nr=0, metadata={}):
+def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=False, transcriber=Mindlin, person='gab',sent_nr=0, metadata={}):
 	"""
 	Parse a Nheengatu sentence example from Amorim (1928) or an analogous publication and print the respective analysis in the CoNNL-U format, copying it to the clipboard.
 
