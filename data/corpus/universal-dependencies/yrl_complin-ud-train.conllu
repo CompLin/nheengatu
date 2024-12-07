@@ -1300,6 +1300,28 @@
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=60:65
 12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
 
+# sent_id = NTLN2019:1-9:0:52
+# text = Umukaturu yepé i membeka waá i pira
+# text_eng = TODO
+# text_por = Ele cura um paralítico
+# text_por_alt = A cura de um paralítico em Cafarnaum
+# text_por_alt_source = Almeida Revista e Atualizada
+# text_source = Matt 9, pericope heading
+# text_orig = Umukaturu yepe imembekawaa ipira
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Umukaturu yepé i membeka waá i pira.
+# text_por_sec = Ele curou um paralítico.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Umukaturu yepé/art i/pron2 membeka/v2 waá/rel i/pron2 pira
+1	Umukaturu	mukaturu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:9
+2	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	1	obj	_	TokenRange=10:14
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=15:16
+4	membeka	membeka	VERB	V2	Mood=Ind|VerbForm=Fin	2	acl:relcl	_	TokenRange=17:24
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	dislocated	_	TokenRange=25:28
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=29:30
+7	pira	pira	NOUN	N	Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=31:35
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
@@ -15326,6 +15348,32 @@
 12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=66:71
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=71:72
 
+# sent_id = Amorim1928:21:94:94
+# text = Membeka páu paá i pira, taína yakira yawé.
+# text_por = Todo mole, contam, era corpo dele, como da criança verde.
+# text_source = p. 355-369, No. 94
+# text_orig = Membeka pau paa i pira, tayna iakyra iaué.
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_sec = Membeka pawa paá i pira, taína yakira yawé.
+# text_por_sec = Contam que o corpo dele era todo mole, como criança nova.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Membeka/a@ páu/total paá i/pron2 pira, taína yakira/a yawé/adp.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Membeka	membeka	ADJ	A	_	0	root	_	TokenRange=0:7
+2	páu	páu	PART	TOTAL	Aspect=Compl	1	advmod	_	TokenRange=8:11
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=12:15
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:17
+5	pira	pira	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=18:22
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
+7	taína	taína	NOUN	N	Number=Sing	1	obl	_	TokenRange=24:29
+8	yakira	yakira	ADJ	A	_	7	amod	_	TokenRange=30:36
+9	yawé	yawé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=37:41
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=41:42
+
 # sent_id = Amorim1928:21:106:106
 # text = Amú-etá uyupúi uikú Sakú Manha katú arama kuritẽi umusantá i pira.
 # text_por = Outras davam de comer à Mãe do Quente para bem depressa endurecer corpo dele.
@@ -18273,8 +18321,10 @@
 # text_orig = semoapysy.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	2	nsubj	_	ModernCase=Acc,Nom|ModernForm=Ixé|ModernLemma=ixé|TokenRange=0:2
-2	muapisí	muapisí	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=ayumuapisí|ModernNumber=Sing|ModernPerson=1|VerbForm=Fin|SpaceAfter=No|TokenRange=3:10
+# review_status = ongoing
+# inputline = Se/=mf:m|Ixé muapisí/=mf:m|ayumuapisí.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	2	nsubj	_	ModernCase=Acc,Nom|ModernForm=Ixé|ModernLemma=ixé|ModernProntype=Prs|TokenRange=0:2
+2	muapisí	muapisí	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=ayumuapisí|ModernLemma=yumuapisí|ModernMood=Ind|ModernNumber=Sing|ModernPerson=1|ModernVerbform=Fin|SpaceAfter=No|TokenRange=3:10
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Hartt1938:0:0:36
@@ -20172,4 +20222,23 @@
 28	;	;	PUNCT	PUNCT	_	29	punct	_	TokenRange=138:139
 29	tiiririrririririririririri	tiiririrririririririririri	INTJ	INTJ	_	26	ccomp	_	SpaceAfter=No|TokenRange=140:166
 30	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=166:167
+
+# sent_id = Avila2021:0:0:728
+# text = Kwá purakí upisika ximiára umundisá irumu, uxari i membeka ximiára.
+# text_eng = TODO
+# text_por = O poraquê apanha sua presa com sua descarga elétrica, ele deixa a presa paralisada.
+# text_source = Payema, 70
+# text_annotator = Leonel Figueiredo de Alencar
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	purakí	purakí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:10
+3	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
+4	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=19:26
+5	umundisá	mundí	VERB	V	Number=Sing|Person=3|VerbForm=Vnoun	3	obl	_	TokenRange=27:35
+6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=36:41
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=41:42
+8	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=43:48
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	expl	_	TokenRange=49:50
+10	membeka	membeka	VERB	V2	Mood=Ind|VerbForm=Fin	8	ccomp	_	TokenRange=51:58
+11	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	nsubj	_	SpaceAfter=No|TokenRange=59:66
+12	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=66:67
 
