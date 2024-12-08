@@ -19206,6 +19206,27 @@
 6	pura	pura	ADJ	A	_	5	amod	_	SpaceAfter=No|TokenRange=32:36
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# sent_id = Hartt1938:0:0:488
+# text = Apigawa Piauíwara.
+# text_por = O homem é filho de Piauí.
+# text_source = p. 354, No. 488
+# text_orig = apyáua Piauí uára.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Apigawa Piauíwara
+# text_por_sec = O homem é natural do Piauí.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Apigawa/n Piauíwara.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
+2-3	Piauíwara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=8:17
+2	Piauí	piauí	PROPN	PROPN	_	0	root	_	_
+3	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	2	case	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
 # sent_id = Hartt1938:0:0:501
 # text = Kwaá apigawa intí maã arama.
 # text_por = Este homem não vale de nada.
@@ -20233,7 +20254,7 @@
 2	purakí	purakí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:10
 3	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
 4	ximiára	simiára	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=19:26
-5	umundisá	mundí	VERB	V	Number=Sing|Person=3|VerbForm=Vnoun	3	obl	_	TokenRange=27:35
+5	umundisá	mundí	VERB	V	Person=3|VerbForm=Vnoun	3	obl	_	TokenRange=27:35
 6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=36:41
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=41:42
 8	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=43:48
