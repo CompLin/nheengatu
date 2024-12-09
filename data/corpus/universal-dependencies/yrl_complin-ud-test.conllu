@@ -11719,10 +11719,12 @@
 # sent_id = Avila2021:0:0:376
 # text = Yawé paá, upé uwiyé waá upé, taité, uyukitika xibuí i yuka waá resé, ti yepé uputarisá, yawé waá upé upinú, (pem) ape paá i nemasá usú tuyué resé: hum… hum…
 # text_eng = So, when the upé tortoise was descending, poor thing, it accidentally slipped on worms that were rotten, at that moment, unintentionally, it farted, (toot) then the stench reached the old man: pew!
-# text_por = Assim, quando o upé estava descendo, coitado, escorregou em minhocas que estavam podres, nesse momento, sem querer, ele peidou, (pem) aí o fedor foi até o velho: hum...hum... [Adapt. transl.]
+# text_por = Assim, quando o upé estava descendo, coitado, escorregou em minhocas que estavam podres, nesse momento, sem querer, ele peidou, (pem) aí o fedor foi até o velho: hum...hum...
+# text_por_orig = Assim, quando o “upé” (tipo de quelônio) estava descendo, coitado, escorregou em minhocas que estavam podres. Sem querer, nesse momento ele peidou, [...]. [lit., "embora não fosse sua vontade, nesse momento ele peidou, [...]"] [...] nesse momento ele peidou, aí o fedor foi até o velho [...].
 # text_source = Leetra Indígena. n. 17, 77, adap.
 # text_prim = Yawé paá upé uwiyé waupé taité uyukitika xibui iyuka wa resé ti yepé uputaisá yawé waupé upinum, (pem) ape paá inema sá usuam tuyu resé: hummmmm.......hummmmmm...
-# text_orig = Yawé paá, upé uwiyé waá upé, taité, uyukitika xibuí i yuka waá resé. Ti yepé uputarisá, yawé waá upé upinú, ape paá i nemasá usú tuyú resé [...]. [Adapt.]
+# text_orig_adapt = Yawé paá, upé uwiyé waá upé, taité, uyukitika xibuí i yuka waá resé. Ti yepé uputarisá, yawé waá upé upinú, ape paá i nemasá usú tuyú resé [...].
+# text_orig = Yawé paá, upé uwiyé waá upé, taité, uyukitika xibuí i yuka waá resé. Ti yepé uputarisá, yawé waá upé upinú, [...]. [...] yawe waá upé upinú, ape paá i nemasá usú tuyú resé [...].
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Hélio Leonam Barroso Silva
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:4
@@ -11744,7 +11746,7 @@
 17	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=67:68
 18	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	20	advmod	_	TokenRange=69:71
 19	yepé	yepé	PART	FRUST	Aspect=Frus	20	advmod	_	TokenRange=72:76
-20	uputarisá	putarisá	NOUN	N	Number=Sing	25	obl	_	SpaceAfter=No|TokenRange=77:86
+20	uputarisá	putari	VERB	V	Person=3|VerbForm=Vnoun	25	obl	_	SpaceAfter=No|TokenRange=77:86
 21	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=86:87
 22	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	25	advmod	_	TokenRange=88:92
 23	waá	waá	PRON	REL	Number=Sing|PronType=Rel	22	fixed	_	TokenRange=93:96
