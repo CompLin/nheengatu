@@ -19590,14 +19590,14 @@
 5	reyururé	yururé	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=25:33
 6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	obl	_	TokenRange=34:38
 7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	TokenRange=39:43
-8	pekadori	pekadori	NOUN	N	Number=Sing	5	obl	_	Orig=pecadores|OrigLang=por|TokenRange=44:52
+8	pekadori	pekadori	NOUN	N	Number=Plur	5	obl	_	Orig=pecadores|OrigLang=por|TokenRange=44:52
 9	rupí	rupí	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=53:57
 10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=57:58
 11	kuíri	kuíri	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=59:64
 12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=64:65
-13	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=66:70
-14	manú	manú	NOUN	N	Number=Sing|Style=Arch|VerbForm=Vnoun	11	conj	_	LDeriv=manú|ModernForm=manusawa|ModernLemma=manusawa|TokenRange=71:75
-15	ramé	ramé	ADP	ADP	AdpType=Post	14	case	_	TokenRange=76:80
+13	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs|Style=Arch	14	nsubj	_	ModernCase=Acc,Nom|ModernForm=yandé|ModernLemma=yandé|ModernProntype=Prs|TokenRange=66:70
+14	manú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	11	conj	_	CorrectForm=yamanú|TokenRange=71:75
+15	ramé	ramé	SCONJ	SCONJ	_	14	mark	_	TokenRange=76:80
 16	yuíri	yuíri	CCONJ	CCONJ	_	14	cc	_	SpaceAfter=No|TokenRange=81:86
 17	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=86:87
 
