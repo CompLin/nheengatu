@@ -85,13 +85,17 @@
 # text_por = Troquem o riso por lamento e a alegria por tristeza. [NVI]
 # text_source = Novo Testamento na língua Nyengatu, Jm 4:9
 # text_orig = Pemburi pesui kua upukásawa peyaxiu arama, pexari umusasiyara penye kua umusuuriwaa penye.
-# text_sec = Pemburi pe suí kwá upukasawa peyaxiú arama, [...]. [Avila 2021]
+# text_sec = Pemburi pe suí kwá upukasawa peyaxiú arama, [...].
+# text_por_sec = Expurgai de vós o riso para chorardes, [...].
+# text_por_sec_source = Avila (2021)
+# text_sec_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pemburi pe/pron2 suí kwá/demx upukasawa/=vnoun:a|t:f|t peyaxiú arama/sconj, pexari umusasiara penhẽ kwá/demx umusurí waá/rel penhẽ.
 1	Pemburi	mburi	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	1	obl	_	TokenRange=8:10
 3	suí	suí	ADP	ADP	AdpType=Post	2	case	_	TokenRange=11:14
 4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=15:18
-5	upukasawa	pukasawa	NOUN	N	Number=Sing	1	obj	_	TokenRange=19:28
+5	upukasawa	puká	VERB	V	Person=3|VerbForm=Vnoun	1	obj	_	TokenRange=19:28
 6	peyaxiú	yaxiú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	1	advcl	_	TokenRange=29:36
 7	arama	arama	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=37:42
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=42:43
