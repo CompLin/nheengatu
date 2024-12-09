@@ -4877,37 +4877,36 @@
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=50:51
 
 # sent_id = Avila2021:0:0:27
-# text = Mairamé pepisika kwá papera resé, pesú pemuturusú pe kwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
+# text = Mairamé pepisika kwá papera resé, pesú pemuturusú pekwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
 # text_eng = When you pick up this book, you will increase your knowledge, you will find what you still don't know and also what you have heard.
 # text_por = Quando vocês pegarem neste livro, vocês vão aumentar o conhecimento de vocês, vocês vão encontrar o que ainda não sabem e também o que têm ouvido.
 # text_source = Muniz, 74, adap.
 # text_orig = Mairamé pepisika kwá papera resé, pesú pemuturusú pekwasawa, pesú pewasemu maã ti rẽ waá pekwawa asuí pesenduwera waá.
 # text_annotator = Leonel Figueiredo de Alencar
-# inputline = Mairamé/sconjr pepisika kwá/demx papera resé/adp, pesú pemuturusú pe/pron2 kwasawa, pesú pewasemu maã/int ti rẽ waá pekwawa asuí/cconj pesenduwera waá.
+# inputline = Mairamé/sconjr pepisika kwá/demx papera resé/adp, pesú pemuturusú pekwasawa/=vnoun:a|t:f|t, pesú pewasemu maã/int ti rẽ waá/rel pekwawa asuí/cconj pesenduwera waá/rel.
 1	Mairamé	mairamé	SCONJ	SCONJR	_	2	mark	_	TokenRange=0:7
 2	pepisika	pisika	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=8:16
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=17:20
 4	papera	papera	NOUN	N	Number=Sing	2	obl	_	TokenRange=21:27
 5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=28:32
 6	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=32:33
-7	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	aux	_	TokenRange=34:38
-8	pemuturusú	muturusú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=39:49
-9	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=50:52
-10	kwasawa	kwasawa	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=53:60
-11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=60:61
-12	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	13	aux	_	TokenRange=62:66
-13	pewasemu	wasemu	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	8	parataxis	_	TokenRange=67:75
-14	maã	maã	PRON	IND	PronType=Ind	13	obj	_	TokenRange=76:79
-15	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	18	advmod	_	TokenRange=80:82
-16	rẽ	rẽ	PART	IMPF	Aspect=Imp	18	advmod	_	TokenRange=83:85
-17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=86:89
-18	pekwawa	kwawa	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	14	acl:relcl	_	TokenRange=90:97
-19	asuí	asuí	CCONJ	CCONJ	_	20	cc	_	TokenRange=98:102
-20-21	pesenduwera	_	_	_	_	_	_	_	TokenRange=103:114
-20	pesendú	sendú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	18	conj	_	_
-21	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	20	advmod	_	_
-22	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	obj	_	SpaceAfter=No|TokenRange=115:118
-23	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=118:119
+7	pesú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	8	aux	_	TokenRange=34:38
+8	pemuturusú	muturusú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=39:49
+9	pekwasawa	kwá	VERB	V	Number=Plur|Person=2|VerbForm=Vnoun	8	obj	_	SpaceAfter=No|TokenRange=50:57
+10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=57:58
+11	pesú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	12	aux	_	TokenRange=59:63
+12	pewasemu	wasemu	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	8	parataxis	_	TokenRange=64:72
+13	maã	maã	PRON	IND	PronType=Ind	12	obj	_	TokenRange=73:76
+14	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	17	advmod	_	TokenRange=77:79
+15	rẽ	rẽ	PART	IMPF	Aspect=Imp	17	advmod	_	TokenRange=80:82
+16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	17	obj	_	TokenRange=83:86
+17	pekwawa	kwawa	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	13	acl:relcl	_	TokenRange=87:94
+18	asuí	asuí	CCONJ	CCONJ	_	19	cc	_	TokenRange=95:99
+19-20	pesenduwera	_	_	_	_	_	_	_	TokenRange=100:111
+19	pesendú	sendú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	17	conj	_	_
+20	wera	wera	PART	FREQ	Aspect=Freq|Clitic=Yes|Tense=Past	19	advmod	_	_
+21	waá	waá	PRON	REL	Number=Sing|PronType=Rel	19	obj	_	SpaceAfter=No|TokenRange=112:115
+22	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=115:116
 
 # sent_id = Avila2021:5:1:28
 # text = Yautí unheẽ: ― Yasú yayuuka i kãwera.
