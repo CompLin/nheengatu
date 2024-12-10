@@ -19131,6 +19131,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ekũi nhaã apigawa/n piamu/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ekũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:9
 3	apigawa	apigawa	NOUN	N	Number=Sing	1	obl	_	TokenRange=10:17
@@ -19151,6 +19152,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xasú xayakapí/=typo:c|xayakapika se awa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
 2	xayakapí	yakapika	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=xayakapika|ModernForm=ayakapi|TokenRange=5:13
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=14:16
@@ -19273,6 +19275,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Se patrãu/=n:o|pt:s|patrão emunú mukawa piamu/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	patrãu	patrãu	NOUN	N	Number=Sing	3	nsubj	_	Orig=patrão|OrigLang=por|TokenRange=3:9
 3	emunú	munú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=10:15
@@ -19387,9 +19390,10 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xasú ranhẽ/impf se ruka upé/adp wariwa piamu/adp yaú arama/adp.
+# inputline = Xasú ranhẽ/impf se ruka upé/adp wariwa piamu/adp yaú arama/sconj.
 # text_annotator = Dominick Maia Alexandre
-1	Xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	root	_	ModernForm=Asú|TokenRange=0:4
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asú|TokenRange=0:4
 2	ranhẽ	ranhẽ	PART	IMPF	Aspect=Imp	1	advmod	_	TokenRange=5:10
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
 4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=14:18
@@ -19397,7 +19401,7 @@
 6	wariwa	wariwa	NOUN	N	Number=Sing	1	obl	_	TokenRange=23:29
 7	piamu	piamu	ADP	ADP	AdpType=Post	6	case	_	TokenRange=30:35
 8	yaú	ú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=36:39
-9	arama	arama	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=40:45
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=40:45
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
 
 # sent_id = Hartt1938:0:0:643
@@ -19466,20 +19470,21 @@
 3	kití	kití	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:16
 4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = Hartt1938:0:0:23
+# sent_id = Hartt1938:3:23:876
 # text = Imirá kambí uyana paratú mirĩ upé, asuí xasú kuyambuka piamu resanhana arama siringa kambí.
-# text_por = Leite do páu corre dentro da tigela mirí, então vou buscar o cabaço para colher o leite.
+# text_por = Leite do pau corre dentro da tigela mirim, então vou buscar o cabaço para colher o leite.
 # text_source = p. 385, No. 23
 # text_orig = ymyrá kamyg oñán paratú mirí ope, asuí xasó kuyamúka piám resañan aráma serína kamyg.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# text_sec = [...] mirá kambí uyana paratú mirĩ upé, asuí asú kuyambuka piamu resanhana arama siringa kambí. §
-# text_por_sec = § [...] o leite do pau corre para dentro do pratinho, em seguida vou buscar a cumbuca para colheres o leite.
+# text_sec = [...] mirá kambí uyana paratú mirĩ upé, asuí asú kuyambuka piamu resanhana arama siringa kambí.
+# text_por_sec = [...] o leite do pau corre para dentro do pratinho, em seguida vou buscar a cumbuca para colheres o leite.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Imirá kambí uyana paratú/=n:o|pt:s|prato mirĩ/a upé/adp, asuí/advt xasú/v kuyambuka piamu/adp resanhana arama/adp siringa kambí.
+# inputline = Imirá kambí uyana paratú/=n:o|pt:s|prato mirĩ/a upé/adp, asuí/advt xasú/v kuyambuka piamu/adp resanhana arama/sconj siringa kambí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Imirá	imirá	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:5
 2	kambí	kambí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:11
 3	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
@@ -19491,13 +19496,13 @@
 9	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	parataxis	_	ModernForm=asú|TokenRange=40:44
 10	kuyambuka	kuyambuka	NOUN	N	Number=Sing	9	obl	_	TokenRange=45:54
 11	piamu	piamu	ADP	ADP	AdpType=Post	10	case	_	TokenRange=55:60
-12	resanhana	sanhana	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	9	advcl	_	TokenRange=61:70
-13	arama	arama	ADP	ADP	AdpType=Post	12	case	_	TokenRange=71:76
+12	resanhana	sanhana	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	9	advcl	_	TokenRange=61:70
+13	arama	arama	SCONJ	SCONJ	_	12	mark	_	TokenRange=71:76
 14	siringa	siringa	NOUN	N	Number=Sing	15	nmod:poss	_	TokenRange=77:84
 15	kambí	kambí	NOUN	N	Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=85:90
 16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=90:91
 
-# sent_id = Hartt1938:0:0:35
+# sent_id = Hartt1938:3:35:888
 # text = Mira usú usikari siringatiwa; uwasemu sitá ramé, umunhã i tuyupara, asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
 # text_por = Vai-se (primeiro) procurar o seringal; quando se acha bastantes paus, faz-se uma barraca, então voltam para a casa buscar gente para trabalhar.
 # text_source = p. 386, No. 35
@@ -19506,11 +19511,12 @@
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_sec = [...], asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
-# text_por_sec = [...] depois [a pessoa] volta para casa, vai buscar seu pessoal para trabalhar.;
+# text_por_sec = [...] depois [a pessoa] volta para casa, vai buscar seu pessoal para trabalhar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Mira usú usikari siringatiwa/=col; uwasemu sitá/indq ramé/sconj, umunhã i/pron2 tuyupara, asuí/cconj uyuíri suka/n kití, usú i/pron2 mira-itá piamu/adp upurakí arama/adp.
+# inputline = Mira usú usikari siringatiwa/=col; uwasemu sitá/indq ramé/sconj, umunhã i/pron2 tuyupara, asuí/advt uyuíri suka/n kití, usú i/pron2 mira-itá piamu/adp upurakí arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:4
 2	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	TokenRange=5:8
 3	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
@@ -19524,8 +19530,8 @@
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	TokenRange=56:57
 12	tuyupara	tuyupara	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=58:66
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=66:67
-14	asuí	asuí	CCONJ	CCONJ	_	15	cc	_	TokenRange=68:72
-15	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	conj	_	TokenRange=73:79
+14	asuí	asuí	ADV	ADVT	AdvType=Tim	15	advmod	_	TokenRange=68:72
+15	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=73:79
 16	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	obl	_	TokenRange=80:84
 17	kití	kití	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=85:89
 18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=89:90
@@ -19533,13 +19539,13 @@
 20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	TokenRange=95:96
 21	mira-itá	mira	NOUN	N	Number=Plur	19	obl	_	TokenRange=97:105
 22	piamu	piamu	ADP	ADP	AdpType=Post	21	case	_	TokenRange=106:111
-23	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	advc	_	TokenRange=112:119
-24	arama	arama	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=120:125
+23	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	advcl	_	TokenRange=112:119
+24	arama	arama	SCONJ	SCONJ	_	23	mark	_	SpaceAfter=No|TokenRange=120:125
 25	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=125:126
 
-# sent_id = Hartt1938:0:0:37
+# sent_id = Hartt1938:3:37:890
 # text = Asuí umuyari páu riré uyuíri aúna sakakwera kití, usú kuyambuka piamu usanhana arama imirá kambí até umuteresemu kuyambuka, usú tuyupara kití.
-# text_por = Depois de pregar tôdas voltam por atrás; vão buscar cabaços para juntar leite até o cabaço estar cheio, quando voltám para a barraca.
+# text_por = Depois de pregar todas voltam por atrás; vão buscar cabaços para ajuntar leite até o cabaço estar cheio, quando voltam para a barraca.
 # text_source = p. 387, No. 37
 # text_orig = asuí omoyar pau riré oyuir aúna sakykuéra kyty, osó kuyamúka piám osayan aráma ymyrá kamyg até omu teresem kuyamúka, osó tuyupara kyty.
 # text_eng = TODO
@@ -19549,14 +19555,15 @@
 # text_por_sec = [...] vão buscar cumbucas para ajuntar o leite da árvore até encher a cumbuca, [...].;
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Asuí/advt umuyari páu/total riré/sconj uyuíri/v aúna/=mf:m|aintá:x|pron2 sakakwera/n kití, usú kuyambuka piamu/adp usanhana arama/adp imirá kambí até/prep umuteresemu kuyambuka, usú tuyupara kití.
+# inputline = Asuí/advt umuyari páu/total riré/sconj uyuíri/v aúna/=mf:m|aintá:x|pron sakakwera/n kití, usú kuyambuka piamu/adp usanhana arama/sconj imirá kambí até/sconjr umuteresemu kuyambuka, usú tuyupara kití.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
 2	umuyari	muyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	advcl	_	TokenRange=5:12
 3	páu	páu	PART	TOTAL	Aspect=Compl	2	advmod	_	TokenRange=13:16
 4	riré	riré	SCONJ	SCONJ	_	2	mark	_	TokenRange=17:21
 5	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=22:28
-6	aúna	aúna	PRON	PRON2	Style=Arch	7	nmod:poss	_	ModernForm=aintá|TokenRange=29:33
+6	aúna	aúna	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs|Style=Arch	5	nsubj	_	ModernCase=Acc,Nom|ModernForm=aintá|ModernLemma=aintá|ModernProntype=Prs|TokenRange=29:33
 7	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obl	_	TokenRange=34:43
 8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=44:48
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=48:49
@@ -19564,10 +19571,10 @@
 11	kuyambuka	kuyambuka	NOUN	N	Number=Sing	10	obl	_	TokenRange=54:63
 12	piamu	piamu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=64:69
 13	usanhana	sanhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=70:78
-14	arama	arama	ADP	ADP	AdpType=Post	13	case	_	TokenRange=79:84
+14	arama	arama	SCONJ	SCONJ	_	13	mark	_	TokenRange=79:84
 15	imirá	imirá	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=85:90
 16	kambí	kambí	NOUN	N	Number=Sing	13	obj	_	TokenRange=91:96
-17	até	até	ADP	PREP	AdpType=Post	18	case	_	TokenRange=97:100
+17	até	até	SCONJ	SCONJR	_	18	mark	_	TokenRange=97:100
 18	umuteresemu	muteresemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	advcl	_	TokenRange=101:112
 19	kuyambuka	kuyambuka	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=113:122
 20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=122:123
