@@ -1310,7 +1310,7 @@
 # text_por = Ele cura um paralítico
 # text_por_alt = A cura de um paralítico em Cafarnaum
 # text_por_alt_source = Almeida Revista e Atualizada
-# text_source = Matt 9, pericope heading
+# text_source = Mt 9, pericope heading
 # text_orig = Umukaturu yepe imembekawaa ipira
 # text_annotator = Leonel Figueiredo de Alencar
 # text_sec = Umukaturu yepé i membeka waá i pira.
@@ -1325,6 +1325,100 @@
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	dislocated	_	TokenRange=25:28
 6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=29:30
 7	pira	pira	NOUN	N	Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=31:35
+
+# sent_id = NTLN2019:0:0:53
+# text = Aintá unheẽ i xupé: ― Rembeú yasendú awá ukwawasawa irumu remunhã panhẽ remunhã waá-itá, awá taá uxari indé arama rekwawasawa?
+# text_eng = and spake unto him, saying, 'Tell us by what authority thou dost these things? or who is he that gave to thee this authority?' [YLT]
+# text_por = e o arguiram nestes termos: Dize-nos: com que autoridade fazes estas coisas? Ou quem te deu esta autoridade?
+# text_source = Lk 20:2
+# text_orig = Aintaunyee ixupe: — Rembeu yasendu awa ukuawasawa irumu remunya panye remunyawaita, awataa uxari inde arama rekuawasawa?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Aintá unheẽ i xupé: ― Rembeú yasendú awá ukwawasawa irumu remunhã panhẽ remunhã waá-itá, awá taá uxari indé arama rekwawasawa?
+# text_por_sec = E lhe disseram: ― Diga-nos com a autoridade de quem estás fazendo tudo que fazes. Quem te legou a tua autoridade?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Aintá/pron unheẽ i/pron2 xupé: ― Rembeú yasendú awá/int ukwawasawa/=vnoun irumu/adp remunhã panhẽ remunhã waá-itá, awá/int taá uxari indé arama/adp rekwawasawa/=vnoun?
+1	Aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
+2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	iobj	_	TokenRange=12:13
+4	xupé	xupé	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=14:18
+5	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
+6	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
+7	Rembeú	mbeú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=21:27
+8	yasendú	sendú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	parataxis	_	TokenRange=28:35
+9	awá	awá	PRON	INT	PronType=Int	10	nsubj	_	TokenRange=36:39
+10	ukwawasawa	kwawa	VERB	V	Person=3|VerbForm=Vnoun	12	obl	_	TokenRange=40:50
+11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	TokenRange=51:56
+12	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	8	ccomp	_	TokenRange=57:64
+13	panhẽ	panhẽ	PRON	TOT	PronType=Tot	12	obj	_	TokenRange=65:70
+14	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	13	acl:relcl	_	TokenRange=71:78
+15	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	14	obj	_	SpaceAfter=No|TokenRange=79:86
+16	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=86:87
+17	awá	awá	PRON	INT	PronType=Int	19	nsubj	_	TokenRange=88:91
+18	taá	taá	PART	CQ	PartType=Int	19	advmod	_	TokenRange=92:95
+19	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	parataxis	_	TokenRange=96:101
+20	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	19	iobj	_	TokenRange=102:106
+21	arama	arama	ADP	ADP	AdpType=Post	20	case	_	TokenRange=107:112
+22	rekwawasawa	kwawa	VERB	V	Number=Sing|Person=2|VerbForm=Vnoun	19	obj	_	SpaceAfter=No|TokenRange=113:124
+23	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=124:125
+
+# sent_id = NTLN2019:0:0:54
+# text = Asuí Jesus ukwawa ukwawasawa usemu i suí asuí uyeréu upurandú kwá-itá siya waá-itá: — Awá taá upisika se rupa resé?
+# text_eng = At once Jesus realized that power had gone out from him. He turned around in the crowd and asked, “Who touched my clothes?” [NIV]
+# text_por = Jesus, reconhecendo imediatamente que dele saíra poder, virando-se no meio da multidão, perguntou: Quem me tocou nas vestes? [ARA]
+# text_source = Mk 5:30
+# text_orig = Asui Jesus ukuawa ukuawasawa usemu isui asui uyereu upurandu kuaita siyawaita: — Awataa upisika serupa rese?
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Asuí Jesus ukwawa ukwawasawa usemu i suí [...].
+# text_por_sec = E Jesus soube que dele havia saído poder [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Asuí/advt Jesus ukwawa ukwawasawa/=vnoun usemu i/pron2 suí asuí/advt uyeréu upurandú kwá-itá siya waá-itá: — Awá/int taá upisika se rupa/=n:o|pt:s|roupa resé/adp?
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
+2	Jesus	jesus	PROPN	PROPN	_	3	nsubj	_	TokenRange=5:10
+3	ukwawa	kwawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:17
+4	ukwawasawa	kwawa	VERB	V	Person=3|VerbForm=Vnoun	5	nsubj	_	TokenRange=18:28
+5	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	ccomp	_	TokenRange=29:34
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	obl	_	TokenRange=35:36
+7	suí	suí	ADP	ADP	AdpType=Post	6	case	_	TokenRange=37:40
+8	asuí	asuí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=41:45
+9	uyeréu	yeréu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=46:52
+10	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=53:61
+11	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	10	iobj	_	TokenRange=62:69
+12	siya	siya	PRON	INDQ	PronType=Ind	11	acl:relcl	_	TokenRange=70:74
+13	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	12	nsubj	_	SpaceAfter=No|TokenRange=75:82
+14	:	:	PUNCT	PUNCT	_	18	punct	_	TokenRange=82:83
+15	—	—	PUNCT	PUNCT	_	18	punct	_	TokenRange=83:84
+16	Awá	awá	PRON	INT	PronType=Int	18	nsubj	_	TokenRange=85:88
+17	taá	taá	PART	CQ	PartType=Int	18	advmod	_	TokenRange=89:92
+18	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	ccomp	_	TokenRange=93:100
+19	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	20	nmod:poss	_	TokenRange=101:103
+20	rupa	rupa	NOUN	N	Number=Sing	18	obl	_	Orig=roupa|OrigLang=por|TokenRange=104:108
+21	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	20	case	_	SpaceAfter=No|TokenRange=109:113
+22	?	?	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No|TokenRange=113:114
+
+# sent_id = NTLN2019:0:0:55
+# text = Ape kwá Deus akangaiwasawa puranga piri apigawa-itá ukwawasawa suí.
+# text_eng = TODO
+# text_por = Porque a loucura de Deus é mais sábia do que os homens; e a fraqueza de Deus é mais forte do que os homens. [ARA]
+# text_source = 1 Cor 1:25
+# text_orig = Ape kua Deus akangaiwasawa puranga piri apigawaita ukuawasawa sui.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = [...] Deus akangaiwasawa puranga piri apigawa-itá ukwawasawa suí.
+# text_por_sec = [...] A loucura de Deus é melhor do que a sabedoria dos homens.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Ape/advj kwá/demx Deus akangaiwasawa puranga/a piri/advg apigawa-itá ukwawasawa/=vnoun suí.
+1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	TokenRange=0:3
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=4:7
+3	Deus	deus	PROPN	PROPN	_	4	nmod:poss	_	TokenRange=8:12
+4	akangaiwasawa	akangaiwasawa	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=13:26
+5	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=27:34
+6	piri	piri	ADV	ADVG	AdvType=Deg	5	advmod	_	TokenRange=35:39
+7	apigawa-itá	apigawa	NOUN	N	Number=Plur	8	nsubj	_	TokenRange=40:51
+8	ukwawasawa	kwawa	VERB	V	Person=3|VerbForm=Vnoun	5	obl	_	TokenRange=52:62
+9	suí	suí	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=63:66
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=66:67
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
@@ -19027,6 +19121,22 @@
 4	nhũ	nhũ	ADV	ADV	_	2	ccomp	_	SpaceAfter=No|TokenRange=15:18
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
+# sent_id = Hartt1938:0:0:200
+# text = Ekũi nhaã apigawa piamu.
+# text_por = Vai buscar aquele homem.
+# text_source = p. 333, No. 200
+# text_orig = ekóin ñaá apyáua piám.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Ekũi nhaã apigawa/n piamu/adp.
+# text_annotator = Dominick Maia Alexandre
+1	Ekũi	sú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:9
+3	apigawa	apigawa	NOUN	N	Number=Sing	1	obl	_	TokenRange=10:17
+4	piamu	piamu	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=18:23
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
 # sent_id = Hartt1938:0:0:206
 # text = Xasú xayakapí se awa.
 # text_por = Vou pentear meus cabelos.
@@ -19153,6 +19263,23 @@
 3	piamu	piamu	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=11:16
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# sent_id = Hartt1938:0:0:277
+# text = Se patrãu emunú mukawa piamu.
+# text_por = Meu patrão mandou-me buscar a arma.
+# text_source = p. 339, No. 277
+# text_orig = sepatráum (patrão) emonu mukáua piám.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Se patrãu/=n:o|pt:s|patrão emunú mukawa piamu/adp.
+# text_annotator = Dominick Maia Alexandre
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	patrãu	patrãu	NOUN	N	Number=Sing	3	nsubj	_	Orig=patrão|OrigLang=por|TokenRange=3:9
+3	emunú	munú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=10:15
+4	mukawa	mukawa	NOUN	N	Number=Sing	3	obl	_	TokenRange=16:22
+5	piamu	piamu	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:28
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
+
 # sent_id = Hartt1938:0:0:286
 # text = Ekũi eyuuka paka mundé suí, tenhẽ emuyawáu!
 # text_por = Vai tirar a paca do mundéu, não deixa fugir.
@@ -19252,6 +19379,27 @@
 5	arama	arama	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=22:27
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
 
+# sent_id = Hartt1938:0:0:570
+# text = Xasú ranhẽ se ruka upé wariwa piamu yaú arama.
+# text_por = Deixe-me ir à minha casa buscar guariba para nós bebermos.
+# text_source = p. 360, No. 570
+# text_orig = xasó rañé seróka opé uaría piám yáu aráma.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Xasú ranhẽ/impf se ruka upé/adp wariwa piamu/adp yaú arama/adp.
+# text_annotator = Dominick Maia Alexandre
+1	Xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	root	_	ModernForm=Asú|TokenRange=0:4
+2	ranhẽ	ranhẽ	PART	IMPF	Aspect=Imp	1	advmod	_	TokenRange=5:10
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
+4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=14:18
+5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=19:22
+6	wariwa	wariwa	NOUN	N	Number=Sing	1	obl	_	TokenRange=23:29
+7	piamu	piamu	ADP	ADP	AdpType=Post	6	case	_	TokenRange=30:35
+8	yaú	ú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=36:39
+9	arama	arama	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=40:45
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
+
 # sent_id = Hartt1938:0:0:643
 # text = Emuí musapiri í, remeẽ warama ixéu.
 # text_por = Corta três vezes para me dar.
@@ -19317,6 +19465,116 @@
 2	ukara	ukara	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=6:11
 3	kití	kití	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:16
 4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Hartt1938:0:0:23
+# text = Imirá kambí uyana paratú mirĩ upé, asuí xasú kuyambuka piamu resanhana arama siringa kambí.
+# text_por = Leite do páu corre dentro da tigela mirí, então vou buscar o cabaço para colher o leite.
+# text_source = p. 385, No. 23
+# text_orig = ymyrá kamyg oñán paratú mirí ope, asuí xasó kuyamúka piám resañan aráma serína kamyg.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = [...] mirá kambí uyana paratú mirĩ upé, asuí asú kuyambuka piamu resanhana arama siringa kambí. §
+# text_por_sec = § [...] o leite do pau corre para dentro do pratinho, em seguida vou buscar a cumbuca para colheres o leite.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Imirá kambí uyana paratú/=n:o|pt:s|prato mirĩ/a upé/adp, asuí/advt xasú/v kuyambuka piamu/adp resanhana arama/adp siringa kambí.
+# text_annotator = Dominick Maia Alexandre
+1	Imirá	imirá	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:5
+2	kambí	kambí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:11
+3	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	paratú	paratú	NOUN	N	Number=Sing	3	obl	_	Orig=prato|OrigLang=por|TokenRange=18:24
+5	mirĩ	mirĩ	ADJ	A	_	4	amod	_	TokenRange=25:29
+6	upé	upé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=30:33
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=33:34
+8	asuí	asuí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=35:39
+9	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	parataxis	_	ModernForm=asú|TokenRange=40:44
+10	kuyambuka	kuyambuka	NOUN	N	Number=Sing	9	obl	_	TokenRange=45:54
+11	piamu	piamu	ADP	ADP	AdpType=Post	10	case	_	TokenRange=55:60
+12	resanhana	sanhana	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	9	advcl	_	TokenRange=61:70
+13	arama	arama	ADP	ADP	AdpType=Post	12	case	_	TokenRange=71:76
+14	siringa	siringa	NOUN	N	Number=Sing	15	nmod:poss	_	TokenRange=77:84
+15	kambí	kambí	NOUN	N	Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=85:90
+16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=90:91
+
+# sent_id = Hartt1938:0:0:35
+# text = Mira usú usikari siringatiwa; uwasemu sitá ramé, umunhã i tuyupara, asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
+# text_por = Vai-se (primeiro) procurar o seringal; quando se acha bastantes paus, faz-se uma barraca, então voltam para a casa buscar gente para trabalhar.
+# text_source = p. 386, No. 35
+# text_orig = míra osú osekar serinatyá; oasém sitá ramé, omuñan ituyupara, asuí ouyyíu soka kyty osó imíra itá piam opuraúky aráma.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = [...], asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
+# text_por_sec = [...] depois [a pessoa] volta para casa, vai buscar seu pessoal para trabalhar.;
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Mira usú usikari siringatiwa/=col; uwasemu sitá/indq ramé/sconj, umunhã i/pron2 tuyupara, asuí/cconj uyuíri suka/n kití, usú i/pron2 mira-itá piamu/adp upurakí arama/adp.
+# text_annotator = Dominick Maia Alexandre
+1	Mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:4
+2	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	TokenRange=5:8
+3	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
+4	siringatiwa	siringa	NOUN	N	Derivation=Coll|Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=17:28
+5	;	;	PUNCT	PUNCT	_	6	punct	_	TokenRange=28:29
+6	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=30:37
+7	sitá	sitá	PRON	INDQ	PronType=Ind	6	obj	_	TokenRange=38:42
+8	ramé	ramé	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=43:47
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=47:48
+10	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=49:55
+11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	TokenRange=56:57
+12	tuyupara	tuyupara	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=58:66
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=66:67
+14	asuí	asuí	CCONJ	CCONJ	_	15	cc	_	TokenRange=68:72
+15	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	conj	_	TokenRange=73:79
+16	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	obl	_	TokenRange=80:84
+17	kití	kití	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=85:89
+18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=89:90
+19	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	parataxis	_	TokenRange=91:94
+20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	21	nmod:poss	_	TokenRange=95:96
+21	mira-itá	mira	NOUN	N	Number=Plur	19	obl	_	TokenRange=97:105
+22	piamu	piamu	ADP	ADP	AdpType=Post	21	case	_	TokenRange=106:111
+23	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	advc	_	TokenRange=112:119
+24	arama	arama	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=120:125
+25	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=125:126
+
+# sent_id = Hartt1938:0:0:37
+# text = Asuí umuyari páu riré uyuíri aúna sakakwera kití, usú kuyambuka piamu usanhana arama imirá kambí até umuteresemu kuyambuka, usú tuyupara kití.
+# text_por = Depois de pregar tôdas voltam por atrás; vão buscar cabaços para juntar leite até o cabaço estar cheio, quando voltám para a barraca.
+# text_source = p. 387, No. 37
+# text_orig = asuí omoyar pau riré oyuir aúna sakykuéra kyty, osó kuyamúka piám osayan aráma ymyrá kamyg até omu teresem kuyamúka, osó tuyupara kyty.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = [...] usú kuyambuka piamu usanhana arama mirá kambí até umuteresemu kuyambuka, [...].
+# text_por_sec = [...] vão buscar cumbucas para ajuntar o leite da árvore até encher a cumbuca, [...].;
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Asuí/advt umuyari páu/total riré/sconj uyuíri/v aúna/=mf:m|aintá:x|pron2 sakakwera/n kití, usú kuyambuka piamu/adp usanhana arama/adp imirá kambí até/prep umuteresemu kuyambuka, usú tuyupara kití.
+# text_annotator = Dominick Maia Alexandre
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:4
+2	umuyari	muyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	advcl	_	TokenRange=5:12
+3	páu	páu	PART	TOTAL	Aspect=Compl	2	advmod	_	TokenRange=13:16
+4	riré	riré	SCONJ	SCONJ	_	2	mark	_	TokenRange=17:21
+5	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=22:28
+6	aúna	aúna	PRON	PRON2	Style=Arch	7	nmod:poss	_	ModernForm=aintá|TokenRange=29:33
+7	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	obl	_	TokenRange=34:43
+8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=44:48
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=48:49
+10	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=50:53
+11	kuyambuka	kuyambuka	NOUN	N	Number=Sing	10	obl	_	TokenRange=54:63
+12	piamu	piamu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=64:69
+13	usanhana	sanhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=70:78
+14	arama	arama	ADP	ADP	AdpType=Post	13	case	_	TokenRange=79:84
+15	imirá	imirá	NOUN	N	Number=Sing	16	nmod:poss	_	TokenRange=85:90
+16	kambí	kambí	NOUN	N	Number=Sing	13	obj	_	TokenRange=91:96
+17	até	até	ADP	PREP	AdpType=Post	18	case	_	TokenRange=97:100
+18	umuteresemu	muteresemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	advcl	_	TokenRange=101:112
+19	kuyambuka	kuyambuka	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=113:122
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=122:123
+21	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=124:127
+22	tuyupara	tuyupara	NOUN	N	Number=Sing	21	obl	_	TokenRange=128:136
+23	kití	kití	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=137:141
+24	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=141:142
 
 # sent_id = Costa1909:0:0:1001
 # text = Resú ne paya piri.
@@ -19583,6 +19841,7 @@
 # text_source = p. 37
 # text_orig = Santa Maria Tupana Manha reiururé ianérecê pecadori rupi, cuhïri, ianê manú ramé ïuïri.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Santa/=a:o|por Maria Tupana Manha reyururé yané/pron2 resé/adp pekadori/=n:o|por:s|pecadores rupí, kuíri, yané/=mf:m|yandé:x|pron:h|pron2 manú/=typo:c|yamanú:x|v ramé/sconj yuíri/cconj.
 1	Santa	santa	ADJ	A	_	2	amod	_	OrigLang=por|TokenRange=0:5
 2	Maria	maria	PROPN	PROPN	_	5	vocative	_	TokenRange=6:11
 3	Tupana	tupana	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=12:18
