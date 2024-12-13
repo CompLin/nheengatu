@@ -4701,7 +4701,8 @@
 # text = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga taunheẽ waá akutí ratá.
 # text_eng = However, they say that the poor agouti only caught smoke, the same smoke that we see after the rain, the smoke that they say is agouti fire.
 # text_por = No entanto, dizem que a pobre cutia pegou só fumaça, aquela mesma que nós vemos depois da chuva, a fumaça que dizem ser fogo de cutia.
-# text_source = Leetra Indígena. n. 17, 87, adap. [Corr. page number]
+# text_source = Leetra Indígena. n. 17, 87, adap.
+# text_source_orig = Leetra Indígena. n. 17, 73, adap.
 # text_orig = Nuká paá taité akutí upisika tatatingantu, aité paá kwá yamaã waá amana riré, tatatinga ta unheẽ waá akutí ratá.
 # text_prim = Nunká pa taité akuti upisika tatatingantu, aité pa kua yamam waá amãna riré tatatinga tayem waá akuti ratá.
 # text_annotator = Leonel Figueiredo de Alencar
@@ -4726,9 +4727,9 @@
 16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=76:77
 17	tatatinga	tatatinga	NOUN	N	Number=Sing	6	appos	_	TokenRange=78:87
 18	taunheẽ	nheẽ	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	17	acl:relcl	_	TokenRange=88:95
-19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	18	obj	_	TokenRange=96:99
+19	waá	waá	PRON	REL	Number=Sing|PronType=Rel	21	nsubj	_	TokenRange=96:99
 20	akutí	akutí	NOUN	N	Number=Sing	21	nmod:poss	_	TokenRange=100:105
-21	ratá	tatá	NOUN	N	Number=Sing|Rel=Cont	18	xcomp	_	SpaceAfter=No|TokenRange=106:110
+21	ratá	tatá	NOUN	N	Number=Sing|Rel=Cont	18	ccomp	_	SpaceAfter=No|TokenRange=106:110
 22	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=110:111
 
 # sent_id = Avila2021:0:0:19

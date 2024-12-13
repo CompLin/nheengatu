@@ -15630,13 +15630,14 @@
 # text_orig = Eré, kurumiuasu, iasu iamusury iandé pŷa, paa, iepé kunhãmuku onheen iakaré xupé!
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Hélio Leonam Barroso Silva
+# inputline = Eré, kurumĩwasú, yasú yamusurí yandé/=mf:m|yané:x|pron2:h|pron piá, paá, yepé/art kunhãmukú/n unheẽ yakaré xupé!
 1	Eré	eré	PART	CONS	PartType=Mod|Polarity=Pos	6	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	kurumĩwasú	kurumĩwasú	NOUN	N	Number=Sing	6	vocative	_	SpaceAfter=No|TokenRange=5:15
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
 5	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	6	aux	_	TokenRange=17:21
 6	yamusurí	musurí	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	14	ccomp	_	TokenRange=22:30
-7	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	8	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=31:36
+7	yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	8	nmod:poss	_	ModernCase=Gen|ModernForm=yané|ModernLemma=yané|ModernProntype=Prs|TokenRange=31:36
 8	piá	piá	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=37:40
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=40:41
 10	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	14	advmod	_	SpaceAfter=No|TokenRange=42:45
@@ -16174,7 +16175,8 @@
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# place = Kese uéne
+# place_orig = Kese uéne
+# place = Rio Branco
 # inputline = Intí remaã será nhaã suú-etá uyanasá-pe/=vnoun?
 # text_annotator = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
