@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 7, 2024
+# Last update: December 14, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -158,7 +158,7 @@ ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
 'VSUFF': 'VERB',
-'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'FIN' : 'Fin', 'ART' : 'DET',
+'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'FIN' : 'Fin', 'VNOUN' : 'Vnoun','ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
 'AUXN' : 'AUX', 'AUXFR' : 'AUX', 'AUXFS' : 'AUX',
 'CARD' : 'NUM', 'ORD' : 'ADJ', 'ELIP' : 'PUNCT',
@@ -471,7 +471,16 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['misc']={'TokenRange': f'{start}:{end}'}
     if modernform:
         token['misc'].update(modernform)
+    removeMoodVNOUN(token)
     return token
+
+def removeMoodVNOUN(token):
+    feats=token.get('feats')
+    if feats:
+        vform=feats.get('VerbForm')
+        mood=feats.get('Mood')
+        if vform == 'Vnoun':
+            feats.pop('Mood')
 
 def spaceBefore(token):
     if token['xpos'] == 'ELIP' or token['lemma'] in DEPPUNCT:
@@ -2095,15 +2104,23 @@ def getval(key,dic):
     return None
 
 def mkHabXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
-    '''TODO: Possibly deprecated. Morphem "wera" is no longer analysed as a suffix, but as a particle, see issue #512.  
+    return mkSuffXpos(form,xpos=xpos, length=length, accent=accent, guess=guess, force=force)
+    
+def mkSuffXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
     '''
-    if not length:
-        length=4
+    TODO: Parameter length is now unnecessary and deprecated, see issue 523.
+    '''
     suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
     'tiwa': {'Aspect':'HAB'},
-    'wera': {'Aspect':'FREQ', 'Tense': 'PAST'}}
+    'sawa': {'VerbForm':'VNOUN'},
+    'sá': {'VerbForm':'VNOUN'}}
+    for suff in suffs.keys():
+        if form.endswith(suff):
+            length=len(suff)
     base, suff=parseWord(form,length)
-    tag=suffs[suff]['Aspect']
+    tag=suffs[suff].get('Aspect')
+    if not tag:
+        tag=suffs[suff].get('VerbForm')
     feats=[]
     feats.append(tag)
     tense=suffs[suff].get('Tense')
@@ -2581,7 +2598,7 @@ def mkConlluSentence(tokens):
             elif tag == '=hab=sconj': # TODO deprecated
                 new=mkHabSconj(form)
                 newparselist=new['parselist']
-            elif tag == '=mkhab': # TODO change "mkhab" to "hab" (possibly deprecated, see issue #516
+            elif tag == '=mkhab' or tag == '=vnoun': # TODO change "mkhab" to "hab" (possibly deprecated, see issue #516
                 new=mkHabXpos(  form,
                                 xpos,
                                 length=length,
@@ -2778,10 +2795,17 @@ def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
         pref,textid,index,sentid))
     tk=parseSentence(inputline)
     if metadata:
+        handleTextPorGlossModernizer(metadata)
         tk.metadata.update(metadata)
     includeAnnotator(output,annotator) # TODO: update the TokenList's metadata
     output.append(tk.serialize())
     return output
+
+def handleTextPorGlossModernizer(metadata):
+    if metadata.get('text_por_gloss'):
+        if metadata.get('text_por_modernizer'):
+            modernizer=metadata.pop('text_por_modernizer')
+            metadata['text_por_gloss_modernizer']=modernizer
 
 def _handleSents(sents,annotator,metadata):
 	text=sents['text']
@@ -3624,7 +3648,8 @@ def insertFeat(token,newfeat,value):
 	def condition(feat,feats):
 		if feat == 'Mood':
 			# return feats.get('VerbForm') == 'Fin'
-			return feats.get('VerbForm') != 'Inf'
+			#return feats.get('VerbForm') != 'Inf'
+			return feats.get('VerbForm') not in ('Inf','Vnoun')
 		return feat == 'VerbForm'
 	dic={newfeat:value}
 	feats=token.get('feats')

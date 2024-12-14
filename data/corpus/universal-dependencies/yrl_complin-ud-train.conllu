@@ -14775,6 +14775,42 @@
 4	arama	arama	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=16:21
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# sent_id = Magalhaes1876:8:10:716
+# text = Mikura upisika, upeyú yautí rememí; usaã upurasí, uwasema i purã reté; uyana ana memí irumu.
+# text_eng = TODO
+# text_por = A raposa tomou, e tocou a flauta do jabuti; experimentou dançar, achou muitíssimo bonito; correu com a flauta.
+# text_source = p. 201
+# text_orig = Mɨcúra	opɨcɨka,	opeiú	iáutí	rẹmẹmɨ;	oçahận	opuraçậin,	uacệma	ipurãn	rẹtệ;	unhãna ãna	mẹmɨ	irúmo.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Mikura upisika, upeyú yautí remembí [...] usaã upurasí, uwasemu puranga reté [...].
+# text_por_sec = A mucura pegou e tocou a flauta do jabuti [...] experimentou dançar, achou muitíssimo bonito [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Mikura upisika, upeyú yautí rememí; usaã upurasí, uwasema i/pron2 purã reté/advs; uyana ana memí irumu/adp.
+# text_por_gloss = A raposa	tomou,	e tocou	do jabuti	a flauta;	experimentou	dançar,	achou	bonito	muitíssimo;	correu	a flauta	com.
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Mikura	mikura	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:14
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
+4	upeyú	peyú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=16:21
+5	yautí	yautí	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=22:27
+6	rememí	sememí	NOUN	N	Number=Sing|Rel=Cont	4	obj	_	SpaceAfter=No|TokenRange=28:34
+7	;	;	PUNCT	PUNCT	_	8	punct	_	TokenRange=34:35
+8	usaã	saã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=36:40
+9	upurasí	purasí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	xcomp	_	SpaceAfter=No|TokenRange=41:48
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=48:49
+11	uwasema	wasema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=50:57
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	TokenRange=58:59
+13	purã	purã	ADJ	A	_	11	ccomp	_	TokenRange=60:64
+14	reté	reté	ADV	ADVS	AdvType=Deg	13	advmod	_	SpaceAfter=No|TokenRange=65:69
+15	;	;	PUNCT	PUNCT	_	16	punct	_	TokenRange=69:70
+16	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	TokenRange=71:76
+17	ana	ana	PART	PFV	Aspect=Perf	16	advmod	_	TokenRange=77:80
+18	memí	memí	NOUN	N	Number=Sing	16	obl	_	TokenRange=81:85
+19	irumu	irumu	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=86:91
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=91:92
+
 # sent_id = Magalhaes1876:10:1:1001
 # text = Yepé apigawa unheẽ: — Asú apisika nhaã yautí.
 # text_eng = A man said: "I'm going to catch that tortoise."
