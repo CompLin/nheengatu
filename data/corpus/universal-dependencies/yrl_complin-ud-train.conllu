@@ -18270,18 +18270,19 @@
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Hartt1938:0:0:16
-# text = Ekũi esikináu nhaã kawasú yurú.
+# text = Ekũi esikiná nhaã kawasú yurú.
 # text_eng = Go cover the mouth of the bucket.
 # text_por = Vá tampar a boca do balde.
 # text_source = p. 320, No. 16
 # text_orig = ekoin esykená ñaá kauasú yurú.
-# text_annotator = DMA
-1	Ekũi	ekũi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	esikináu	sikináu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	xcomp	_	TokenRange=5:13
-3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=14:18
-4	kawasú	kawasú	NOUN	N	Number=Sing	5	nmod	_	TokenRange=19:25
-5	yurú	yurú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=26:30
-6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Ekũi	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	esikiná	sikiná	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:12
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:17
+4	kawasú	kawasú	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=18:24
+5	yurú	yurú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=25:29
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Hartt1938:0:0:18
 # text = Muíri taá waruá?
