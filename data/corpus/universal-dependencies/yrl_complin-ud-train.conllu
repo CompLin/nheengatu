@@ -3372,6 +3372,54 @@
 7	ntu	ntu	ADV	ADV	Clitic=Yes	5	advmod	_	_
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=38:39
 
+# sent_id = Cruz2011:0:0:131
+# text = Yané umbuesara-itá umbeú yandé arã.
+# text_eng = TODO
+# text_por = Nossos professors contaram para nós.
+# text_source = Example 360 Br
+# text_orig = yane-u-mbue-sara ita u-mbeu yand=arã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yané/pron2 umbuesara-itá umbeú yandé/pron arã/adp.
+1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
+2	umbuesara-itá	umbuesara	NOUN	N	Number=Plur	3	nsubj	_	TokenRange=5:18
+3	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=19:24
+4	yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs	3	iobj	_	TokenRange=25:30
+5	arã	arã	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=31:34
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Cruz2011:0:0:132
+# text = Yasú yamukameẽ penhẽ arã nhaã mayuwa.
+# text_eng = TODO
+# text_por = Vamos mostrar para vocês aquela majuba (cobra).
+# text_source = Example 361 Wr
+# text_orig = ya-su ya-mukameẽ penh=arã nhaã mayuwa
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yasú yamukameẽ penhẽ arã/adp nhaã mayuwa.
+1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yamukameẽ	mukameẽ	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:14
+3	penhẽ	penhẽ	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=2|PronType=Prs	2	iobj	_	TokenRange=15:20
+4	arã	arã	ADP	ADP	AdpType=Post	3	case	_	TokenRange=21:24
+5	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=25:29
+6	mayuwa	mayuwa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=30:36
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Cruz2011:0:0:133
+# text = Manungara akwá waá asú amusasá penhẽ ará.
+# text_eng = TODO
+# text_por = Aquilo que sei, vou passar para vocês.
+# text_source = Example 546b Wr
+# text_orig = manunga(ra) a-kua waa a-su a-mu-sasa penh=arã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Manungara akwá waá/rel asú amusasá penhẽ ará/adp.
+1	Manungara	manungara	PRON	IND	PronType=Ind	5	obj	_	TokenRange=0:9
+2	akwá	kwá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	acl:relcl	_	TokenRange=10:14
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=15:18
+4	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	aux	_	TokenRange=19:22
+5	amusasá	musasá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=23:30
+6	penhẽ	penhẽ	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=2|PronType=Prs	5	iobj	_	TokenRange=31:36
+7	arã	arã	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=37:40
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
+
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
 # text_eng = Now I'm going to tell you about them, these two men who worked with balata.
@@ -18210,16 +18258,30 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:15
-# text = Asikindá ukena.
+# text = Xasikiná ukena.
 # text_eng = I close the window.
 # text_por = Eu fecho a janela.
 # text_source = p. 320, No. 15
 # text_orig = xasykená okéna.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Asikindá	sikindá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
+1	Xasikiná	sikiná	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asikiná|TokenRange=0:8
 2	ukena	ukena	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=9:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
+# sent_id = Hartt1938:0:0:16
+# text = Ekũi esikináu nhaã kawasú yurú.
+# text_eng = Go cover the mouth of the bucket.
+# text_por = Vá tampar a boca do balde.
+# text_source = p. 320, No. 16
+# text_orig = ekoin esykená ñaá kauasú yurú.
+# text_annotator = DMA
+1	Ekũi	ekũi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	esikináu	sikináu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	xcomp	_	TokenRange=5:13
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	TokenRange=14:18
+4	kawasú	kawasú	NOUN	N	Number=Sing	5	nmod	_	TokenRange=19:25
+5	yurú	yurú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=26:30
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Hartt1938:0:0:18
 # text = Muíri taá waruá?
