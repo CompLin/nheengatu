@@ -20692,19 +20692,19 @@
 # sent_id = Avila2021:0:0:729
 # text = mirití: [...] yapuú panakú upé u waturá yamuyapumi arama paraname, i membeka arama [...].
 # text_eng = TODO
-# text_por = buriti: [...] recolhemos no panacu ou no aturá para mergulharmos no rio, para/sconj que amoleçam [...].
+# text_por = buriti: [...] recolhemos no panacu ou no aturá para mergulharmos no rio, para que amoleçam [...].
 # text_source = Payema, 26, adap.
 # text_annotator = Dominick Maia Alexandre
 # inputline = mirití: [...] yapuú panakú upé/adp u waturá yamuyapumi arama/sconj paraname, i/pron2 membeka/v2 arama/sconj [...].
-1	mirití	mirití	NOUN	N	Number=Sing	4	nsubj	_	SpaceAfter=No|TokenRange=0:6
+1	mirití	mirití	NOUN	N	Number=Sing	4	dislocated	_	SpaceAfter=No|TokenRange=0:6
 2	:	:	PUNCT	PUNCT	_	1	punct	_	TokenRange=6:7
 3	[...]	[...]	PUNCT	ELIP	PunctType=Elip	4	punct	_	TokenRange=8:13
 4	yapuú	puú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=14:19
 5	panakú	panakú	NOUN	N	Number=Sing	4	obl	_	TokenRange=20:26
 6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	TokenRange=27:30
 7	u	u	CCONJ	CCONJ	_	8	cc	_	TokenRange=31:32
-8	waturá	waturá	NOUN	N	Number=Sing	4	obl	_	TokenRange=33:39
-9	yamuyapumi	yamuyapumi	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=40:50
+8	waturá	waturá	NOUN	N	Number=Sing	5	conj	_	TokenRange=33:39
+9	yamuyapumi	muyapumi	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=40:50
 10	arama	arama	SCONJ	SCONJ	_	9	mark	_	TokenRange=51:56
 11-12	paraname	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=57:65
 11	paranã	paranã	NOUN	N	Number=Sing	9	obl	_	_
@@ -20712,6 +20712,7 @@
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=65:66
 14	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	TokenRange=67:68
 15	membeka	membeka	VERB	V2	Mood=Ind|VerbForm=Fin	9	advcl	_	TokenRange=69:76
-16	arama	arama	SCONJ	SCONJ	_	15	mark	_	SpaceAfter=No|TokenRange=77:82
+16	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=77:82
 17	[...]	[...]	PUNCT	ELIP	PunctType=Elip	15	punct	_	SpaceAfter=No|TokenRange=82:87
 18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=87:88
+
