@@ -3446,14 +3446,17 @@
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=73:74
 
 # sent_id = TerraPreta2013:1:2:2
-# text = Kuxiíma yané rundewara-itá ta upurakí kaá kití.
+# text = Kuxima yané rundewara-itá ta upurakí kaá kití.
 # text_eng = In the old days, our ancestors worked in the forest.
-# text_por = Antigamente, nossos antepassados trabalhavam na mata. [Avila 2021]
+# text_por = Antigamente, nossos antepassados trabalhavam na mata.
 # text_source = Jonas Bruno Aleixo, p. 3
 # text_orig = Kuxima Yanerũdewaraitá ta upurakí kaá kití.
-# text_sec = Kuxiima, yané rundewara-itá ta upurakí kaá kití. [Avila 2021]
+# text_por_sec = Antigamente, nossos antepassados trabalhavam na mata.
+# text_sec = Kuxiima, yané rundewara-itá ta upurakí kaá kití.
+# text_por_sec_source = Avila (2021)
+# text_sec_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:7
+1	Kuxima	kuxima	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:7
 2	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:12
 3	rundewara-itá	sundewara	NOUN	N	Number=Plur|Rel=Cont	5	nsubj	_	TokenRange=13:26
 4	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	5	expl	_	TokenRange=27:29
@@ -18155,15 +18158,18 @@
 5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Hartt1938:0:0:7
-# text = Intí asendú katú.
-# text_eng = I can't hear well.
+# text = Intí xasenú katú.
 # text_por = Não ouço bem.
 # text_source = p. 319, No. 7
 # text_orig = intí xasenú katú.
-# text_annotator = Dominick Maia Alexandre
+# text_eng = I can't hear well.
 # reviewer1 = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Intí xasenú katú/advs.
+# text_annotator = Dominick Maia Alexandre
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
-2	asendú	sendú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:11
+2	xasenú	senú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asenú|TokenRange=5:11
 3	katú	katú	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
@@ -18173,6 +18179,8 @@
 # text_por = Empresta-me teu pente.
 # text_source = p. 319, No. 8
 # text_orig = epurú né kyuáua ixéu.
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
@@ -18181,19 +18189,40 @@
 4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=16:20
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
 
-# sent_id = Hartt1938:0:0:9
-# text = Repurú ne kisé ixéu.
-# text_eng = Lend me your knife.
+# sent_id = Hartt1938:0:1:9
+# text = Epurú ne kisé ixé.
+# text_var = 1
 # text_por = Empresta-me tua faca.
 # text_source = p. 319, No. 9
 # text_orig = epurú nekysé ixé (ixéu).
-# text_annotator = Dominick Maia Alexandre
+# text_eng = Lend me your knife.
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Epurú ne kisé ixé/=mf:m|ixéu:r|Standard.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
+3	kisé	kisé	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:13
+4	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs|Style=Rare	1	iobj	_	SpaceAfter=No|StandardCase=Dat|StandardForm=ixéu|StandardLemma=ixéu|StandardProntype=Prs|TokenRange=14:17
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Hartt1938:0:0:9
+# text = Epurú ne kisé ixéu.
+# text_var = 2
+# text_por = Empresta-me tua faca.
+# text_source = p. 319, No. 9
+# text_orig = epurú nekysé ixé (ixéu).
+# text_eng = Lend me your knife.
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Repurú	purú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
-2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
-3	kisé	kisé	NOUN	N	Number=Sing	1	obj	_	TokenRange=10:14
-4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=15:19
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Epurú ne kisé ixéu.
+# text_annotator = Dominick Maia Alexandre
+1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
+3	kisé	kisé	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:13
+4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=14:18
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Hartt1938:0:0:11
 # text = Asú amuisika ne resá sikantá irũ, ti arama remaã se resé.
