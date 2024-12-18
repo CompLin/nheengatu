@@ -14806,11 +14806,43 @@
 8	piamu	piamu	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=28:33
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
+# sent_id = Magalhaes1876:7:4:4
+# text = Yautí usuaxara: — Retirika mi kití xinga; apekatú suí reapisaka puranga piri.
+# text_eng = TODO
+# text_por = O jabuti respondeu: — Afasta-te de aqui um pouco; de longe escutarás bonito mais.
+# text_source = p. 197
+# text_orig = Iáutí	oçuaxára: — Rẹtɨrɨca	mi	kẹtệ	xinga;	apecatú	çuí	rẹapɨçáka	purãnga	pɨre.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Retirika mikití xinga, apekatú suí reyapisaka puranga piri.
+# text_por_sec = Afasta-te um pouco para lá, de longe tu escutas melhor.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Yautí usuaxara: — Retirika mi kití xinga; apekatú/advc suí reapisaka puranga/adva piri/advg.
+# text_por_gloss = O jabuti	respondeu: — Afasta-te	de	aqui	um pouco;	de longe escutarás	bonito	mais.
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
+3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
+4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
+5	Retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=17:25
+6	mi	mi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	5	obl	_	TokenRange=26:28
+7	kití	kití	ADP	ADP	AdpType=Post	6	case	_	TokenRange=29:33
+8	xinga	xinga	ADV	ADVS	AdvType=Deg	5	advmod	_	SpaceAfter=No|TokenRange=34:39
+9	;	;	PUNCT	PUNCT	_	12	punct	_	TokenRange=39:40
+10	apekatú	apekatú	ADV	ADVC	AdvType=Loc	12	obl	_	TokenRange=41:48
+11	suí	suí	ADP	ADP	AdpType=Post	10	case	_	TokenRange=49:52
+12	reapisaka	apisaka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	5	parataxis	_	TokenRange=53:62
+13	puranga	puranga	ADV	ADVA	AdvType=Man	12	advmod	_	TokenRange=63:70
+14	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	13	advmod	_	SpaceAfter=No|TokenRange=71:75
+15	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=75:76
+
 # sent_id = Magalhaes1876:8:6:706
 # text = Epurú xinga ixé arama.
-# text_eng = Lend me some.
+# text_eng = Lend it to me for a little while.
+# text_eng_ggl = Lend me some.
 # text_por = Empresta um pouco para mim.
-# text_source = Magalhães, 201
+# text_source = p. 201
 # text_orig = Epurú	xínga	ixệ	arãma.
 # title = Yautí mikura
 # title_orig = IÁUTI MICURA
@@ -14818,7 +14850,8 @@
 # title_por = O jabuti e a raposa
 # title_eng = The tortoise and the fox
 # text_por_gloss = Empresta	um pouco	mim	a.
-# text_transcription = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_annotator = Leonel Figueiredo de Alencar
 1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	xinga	xinga	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:11
@@ -20744,4 +20777,55 @@
 16	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=77:82
 17	[...]	[...]	PUNCT	ELIP	PunctType=Elip	15	punct	_	SpaceAfter=No|TokenRange=82:87
 18	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=87:88
+
+# sent_id = Avila2021:0:0:730
+# text = Se resarái ne pururé mi kupixawa upé.
+# text_eng = TODO
+# text_por = Esqueci a tua enxada lá na roça.
+# text_source = Avila (2021)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se resarái ne pururé mi kupixawa upé/adp.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	resarái	resarái	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	0	root	_	TokenRange=3:10
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
+4	pururé	pururé	NOUN	N	Number=Sing	2	obj	_	TokenRange=14:20
+5	mi	mi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	2	advmod	_	TokenRange=21:23
+6	kupixawa	kupixawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=24:32
+7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:36
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Avila2021:0:0:731
+# text = Mi iwitera ara suí yamaã ne ruka kwera.
+# text_eng = TODO
+# text_por = De lá de cima da montanha vimos a tua antiga casa.
+# text_source = Avila (2021)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Mi iwitera ara suí yamaã ne ruka kwera/n.
+1	Mi	mi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	5	advmod	_	TokenRange=0:2
+2	iwitera	iwitera	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=3:10
+3	ara	ara	NOUN	N	Number=Sing	1	obl	_	TokenRange=11:14
+4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	TokenRange=15:18
+5	yamaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=19:24
+6	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=25:27
+7	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	8	nmod:poss	_	TokenRange=28:32
+8	kwera	kwera	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=33:38
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Avila2021:0:0:732
+# text = Yepé andirá usasá uwewé, usú mi garapawa kití.
+# text_eng = A bat flew past, heading towards the port.
+# text_por = Um morcego passou voando, foi lá para o porto.
+# text_source = Avila (2021)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yepé/art andirá usasá uwewé, usú mi garapawa kití.
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	andirá	andirá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:11
+3	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:17
+4	uwewé	wewé	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=18:23
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=23:24
+6	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=25:28
+7	mi	mi	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	6	advmod	_	TokenRange=29:31
+8	garapawa	garapawa	NOUN	N	Number=Sing	7	obl	_	TokenRange=32:40
+9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=41:45
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 

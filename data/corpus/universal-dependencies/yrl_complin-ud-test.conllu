@@ -12814,7 +12814,7 @@
 # text_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
 1	Asuwara	sú	VERB	V	Aspect=Freq|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	TokenRange=0:7
-2	mikití	mikití	ADV	ADVC	AdvType=Loc	1	advmod	_	SpaceAfter=No|TokenRange=8:14
+2	mikití	mikití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=8:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Avila2021:0:0:433
@@ -12841,7 +12841,7 @@
 1	Wirandé	wirandé	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:7
 2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=8:12
 3	resú	sú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:17
-4	mikití	mikití	ADV	ADVC	AdvType=Loc	3	advmod	_	SpaceAfter=No|TokenRange=18:24
+4	mikití	mikití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=18:24
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Avila2021:0:0:435
@@ -12855,7 +12855,7 @@
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
 4	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
 5	Retirika	tirika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=17:25
-6	mikití	mikití	ADV	ADVC	AdvType=Loc	5	advmod	_	TokenRange=26:32
+6	mikití	mikití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	5	advmod	_	TokenRange=26:32
 7	xinga	xinga	ADV	ADVS	AdvType=Deg	5	advmod	_	SpaceAfter=No|TokenRange=33:38
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
