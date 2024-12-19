@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 14, 2024
+# Last update: December 19, 2024
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2726,8 +2726,10 @@ def extract_sents(line=None,lines=None):
 def SqueezeWhiteSpace(s):
     return SQUEEZE.sub(" ",s)
 
-def mkSentId(pref='',textid=0,index=0,sentid=0):
-	return f"{pref}:{textid}:{index}:{sentid}"
+def mkSentId(pref='',textid=0,index=0,sentid=0,variant=0):
+    if variant > 0:
+        sentid=f"{sentid}-{variant}"
+    return f"{pref}:{textid}:{index}:{sentid}"
 
 def _ppText(sents,pref='',textid=0,index=0,sentid=0):
 	sentid=mkSentId(pref,textid,index,sentid)
@@ -3923,7 +3925,7 @@ def copy_dic(dic):
         new_dic[k]=v
     return new_dic
 
-def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True,outfile=False,overwrite=False,metadata={}, translate=False,transcriber='lev'):
+def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True,outfile=False,overwrite=False,metadata={}, translate=False,transcriber='lev',variant_nr=0,text_nr=0):
     """
     Author: Hélio Leonam Barroso Silva
     Bug fixes and improvements: Leonel Figueiredo de Alencar
@@ -3962,7 +3964,14 @@ def parseExampleHartt(example,page,copyboard=True,annotator=ANNOTATOR,check=True
     # Organizing main attributes
     prefix="Hartt1938"
     sent_nr=handled['index'][0]
-    sents['sent_id']=mkSentId(prefix,sentid=sent_nr)
+    last_nr=sent_nr
+    # the total number of sentences in the second part of Hartt (1938) as of 
+    # the index number of the last sentence
+    second_part_total=853
+    # if the example pertains to the third part of Hartt (1938), entitled "Conversation"
+    if text_nr == 3:
+        last_nr= second_part_total + sent_nr
+    sents['sent_id']=mkSentId(prefix,text_nr,sent_nr, last_nr,variant_nr)
     sents['text']=handled['text']
     sents['text_por']=handled['text_por']
     #sents['text_eng']=handled['text_eng']
