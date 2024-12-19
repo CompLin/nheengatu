@@ -2337,7 +2337,7 @@
 
 # sent_id = Cruz2011:0:0:65
 # text = "Mamãe", unheẽwera ixé arã nhaã se kurumĩ.
-# text_eng = TODO
+# text_eng = "Mom," that little boy of mine always used to say to me.
 # text_por = "Mamãe", dizia sempre para mim aquele meu menino.
 # text_source = Example 359 Br
 # text_orig = "Mamãe" u-nheẽ wera xarã nhaã se-kurumĩ
@@ -19669,6 +19669,29 @@
 2	ukara	ukara	NOUN	N	Number=Sing|Rel=Abs	1	obl	_	TokenRange=6:11
 3	kití	kití	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:16
 4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
+
+# sent_id = Hartt1938:3:8:853
+# text = Erasú ne mukawa, mukawa kuí yuíri yayuká arama yané rimiú.
+# text_por = Leva tua arma e pólvora, para matar que comer (caça) para nossa comida.
+# text_source = p. 383, No. 8
+# text_orig = eraso ne mukáua, mukáua-kuí yuír yayuká aráma yané rimiú.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Erasú ne mukawa, mukawa kuí yuíri/cconj yayuká arama/sconj yané/pron2 rimiú.
+# text_annotator = Dominick Maia Alexandre
+1	Erasú	rasú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
+3	mukawa	mukawa	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:15
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
+5	mukawa	mukawa	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=17:23
+6	kuí	kuí	NOUN	N	Number=Sing	3	conj	_	TokenRange=24:27
+7	yuíri	yuíri	CCONJ	CCONJ	_	6	cc	_	TokenRange=28:33
+8	yayuká	yuká	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=34:40
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=41:46
+10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=47:51
+11	rimiú	timiú	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	SpaceAfter=No|TokenRange=52:57
+12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=57:58
 
 # sent_id = Hartt1938:3:23:876
 # text = Imirá kambí uyana paratú mirĩ upé, asuí xasú kuyambuka piamu resanhana arama siringa kambí.
