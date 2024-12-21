@@ -12313,23 +12313,123 @@
 10	mirĩ	mirĩ	ADJ	A	_	9	amod	_	SpaceAfter=No|TokenRange=50:54
 11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
 
+# sent_id = Stradelli1929:0:0:100
+# text = Kwá tupauku ne tupauku wasú piri.
+# text_eng = TODO
+# text_por = Esta igreja é maior do que a tua igreja.
+# text_source = p. 28
+# text_orig = Cuá tupaóca ne tupaóca uasú pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kwá/demx tupauku ne tupauku wasú/@ piri/advg.
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	tupauku	tupauku	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=4:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	tupauku	tupauku	NOUN	N	Number=Sing	5	obl	_	TokenRange=15:22
+5	wasú	wasú	ADJ	A	_	0	root	_	TokenRange=23:27
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=28:32
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Stradelli1929:0:0:101
+# text = Rapé pisasú amú rapé-itá pukú piri.
+# text_eng = The new path is longer than the others.
+# text_por = O novo caminho é mais comprido do que os outros.
+# text_source = p. 28
+# text_orig = Rapé pysasú amú rapeitá pucú pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Rapé/=mf:m|Pé pisasú amú/ind rapé-itá pukú/a@ piri/advg.
+1	Rapé	pé	NOUN	N	Number=Sing|Rel=Cont|Style=Arch	5	nsubj	_	ModernForm=Pé|ModernRel=Abs|TokenRange=0:4
+2	pisasú	pisasú	ADJ	A	_	1	amod	_	TokenRange=5:11
+3	amú	amú	PRON	IND	Number=Sing|PronType=Ind	4	nmod:poss	_	TokenRange=12:15
+4	rapé-itá	pé	NOUN	N	Number=Plur|Rel=Cont	5	obl	_	TokenRange=16:24
+5	pukú	pukú	ADJ	A	_	0	root	_	TokenRange=25:29
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=30:34
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Stradelli1929:0:0:102
+# text = Se yawara turusú piri.
+# text_eng = My dog is bigger.
+# text_por = O meu cachorro é maior.
+# text_source = p. 28
+# text_orig = Ce iauára turusú pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se yawara turusú/a@ piri/advg.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	yawara	yawara	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:9
+3	turusú	turusú	ADJ	A	_	0	root	_	TokenRange=10:16
+4	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	3	advmod	_	SpaceAfter=No|TokenRange=17:21
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Stradelli1929:0:0:103
+# text = Se tuixawa amú tuixawa-etá turusú piri.
+# text_eng = My chief is bigger than the other chiefs.
+# text_eng_ggl = My tuxaua is bigger than the other tuxauas.
+# text_por = O meu tuxaua é maior do que os outros tuxauas.
+# text_source = p. 28
+# text_orig = Ce tuixáua amú tuixáuaetá turusú pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se tuixawa/=mf:m|ruixawa amú/ind tuixawa-etá turusú/a piri/advg.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	5	nsubj	_	ModernForm=ruixawa|ModernRel=Cont|TokenRange=3:10
+3	amú	amú	DET	IND	Number=Sing|PronType=Ind	4	det	_	TokenRange=11:14
+4	tuixawa-etá	tuixawa	NOUN	N	Number=Plur|Rel=Abs	5	obl	_	TokenRange=15:26
+5	turusú	turusú	ADJ	A	_	0	root	_	TokenRange=27:33
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=34:38
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Stradelli1929:0:0:104
+# text = Se tuixawa amú tuixawa-etá wasú piri.
+# text_eng = My chief is bigger than the other chiefs.
+# text_eng_ggl = My tuxaua is bigger than the other tuxauas.
+# text_por = O meu tuxaua é maior do que os outros tuxauas.
+# text_source = p. 28
+# text_orig = Ce tuixáua amú tuixáuaetá turusú pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se tuixawa/=mf:m|ruixawa amú/ind tuixawa-etá wasú/@ piri/advg.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	5	nsubj	_	ModernForm=ruixawa|ModernRel=Cont|TokenRange=3:10
+3	amú	amú	DET	IND	Number=Sing|PronType=Ind	4	det	_	TokenRange=11:14
+4	tuixawa-etá	tuixawa	NOUN	N	Number=Plur|Rel=Abs	5	obl	_	TokenRange=15:26
+5	wasú	wasú	ADJ	A	_	0	root	_	TokenRange=27:31
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=32:36
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Stradelli1929:0:0:105
+# text = Se setama ne retama mirĩ piri.
+# text_eng = My homeland is smaller than yours.
+# text_por = Minha pátria é mais pequena do que a tua.
+# text_source = p. 28
+# text_orig = Ce cetáma ne retáma miri pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Se setama/=mf:m|retama ne retama mirĩ/a@ piri/advg.
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	setama	tetama	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	5	nsubj	_	ModernForm=retama|ModernRel=Cont|TokenRange=3:9
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:12
+4	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=13:19
+5	mirĩ	mirĩ	ADJ	A	_	0	root	_	TokenRange=20:24
+6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=25:29
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=29:30
+
 # sent_id = Stradelli2014:0:0:1
 # text = Yané tuixawa umanú ana mira amusuaxarawara usikié tenhẽ waá.
 # text_eng = Our chief, who was feared by the people on the other side, died.
 # text_por = Morreu o nosso tuxaua, que era temido deveras pela gente da outra banda.
 # text_source = p. 75
 # text_orig = iané tuixaua omanoana mira amusuaxarauara ocikié tenhẽn uá
+# inputline = Yané/pron2 tuixawa/=mf:m|ruixawa umanú ana mira amu/=typo:c|amú:x|ind suaxarawara/n+ncont usikié tenhẽ/foc waá/rel.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
-2	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs	3	nsubj	_	TokenRange=5:12
+2	tuixawa	tuixawa	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	3	nsubj	_	ModernForm=ruixawa|ModernRel=Cont|TokenRange=5:12
 3	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:18
 4	ana	ana	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=19:22
-5	mira	mira	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=23:27
-6	amusuaxarawara	amusuaxarawara	ADJ	A	_	5	amod	_	TokenRange=28:42
-7	usikié	sikié	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=43:49
-8	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	7	advmod	_	TokenRange=50:55
-9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	obj	_	SpaceAfter=No|TokenRange=56:59
-10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=59:60
+5	mira	mira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=23:27
+6	amu	amú	DET	IND	Number=Sing|PronType=Ind|Typo=Yes	7	det	_	CorrectForm=amú|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=28:31
+7-8	suaxarawara	_	_	_	_	_	_	_	TokenRange=32:43
+7	suaxara	suaxara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	nmod	_	_
+8	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	7	case	_	_
+9	usikié	sikié	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	acl:relcl	_	TokenRange=44:50
+10	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	9	advmod	_	TokenRange=51:56
+11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	obj	_	SpaceAfter=No|TokenRange=57:60
+12	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=60:61
 
 # sent_id = Stradelli2014:0:0:2
 # text = Aputari maã reputari katú piri.
@@ -19680,6 +19780,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Erasú ne mukawa, mukawa kuí yuíri/cconj yayuká arama/sconj yané/pron2 rimiú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Erasú	rasú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	mukawa	mukawa	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:15
