@@ -1748,12 +1748,12 @@
 # text_eng = You heard what happened.
 # text_por = Vocês ouviram o que aconteceu.
 # text_source = Example 1061 Bn
-# text_orig = pe-sendu u-akonteseri waa kuera
+# text_orig = pe-sendu [u-akonteseri waa] kuera
 # text_annotator = Leonel Figueiredo de Alencar
-1	Pesendú	sendú	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+1	Pesendú	sendú	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	uakonteseri	akonteseri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	acl:relcl	_	Orig=acontecer|OrigLang=por|TokenRange=8:19
-3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	obj	_	TokenRange=20:23
-4	kwera	kwera	PART	PRET	Tense=Past	2	advmod	_	SpaceAfter=No|TokenRange=24:29
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nmod:poss	_	TokenRange=20:23
+4	kwera	kwera	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=24:29
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Cruz2011:0:0:24
@@ -1761,7 +1761,7 @@
 # text_eng = There was a child, the son of the eldest.
 # text_por = Havia uma criança, filho do que era mais velho.
 # text_source = Example 1062 Br
-# text_orig = aikue yepe taina, tuyu waa raira
+# text_orig = aikue yepe taina, [tuyu waa] raira
 # text_annotator = Leonel Figueiredo de Alencar
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
 2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=6:10
@@ -1777,7 +1777,7 @@
 # text_eng = Today is the day of those who died.
 # text_por = O dia de hoje é o dia dos que morreram.
 # text_source = Example 1060 Br
-# text_orig = uwiara u-manu wa=ita ara
+# text_orig = uwiara [u-manu wa]=ita ara
 # text_annotator = Leonel Figueiredo de Alencar
 1	Uií	uií	ADV	ADVT	AdvType=Tim	2	nmod:poss	_	TokenRange=0:3
 2	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=4:7
@@ -1860,7 +1860,7 @@
 # text_eng = Wasn't it you who was dead?
 # text_por = Não era você que estava morto?
 # text_source = Example 1046 Br
-# text_orig = ti=será inde re-manu=wã waa
+# text_orig = ti=será [inde re-manu=wã waa]
 # text_annotator = Leonel Figueiredo de Alencar
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=0:2
 2	será	será	PART	PQ	PartType=Int	6	advmod	_	TokenRange=3:7
@@ -1874,8 +1874,9 @@
 # text = Kwá wakarí mamé uikú waá arara ruaya.
 # text_eng = The monkey is where the macaw's tail is.
 # text_por = O macaco está onde está o rabo da arara.
+# text_por_lit = O macaco está onde que está o rabo da arara.
 # text_source = Example 1047 Br
-# text_orig = kua wakari mame u-iku waa arara ruwaya
+# text_orig = kua wakari [mame u-iku waa arara ruwaya]
 # text_alt = Kwá wakarí mamé uikú waá arara-ruáya.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
@@ -1952,7 +1953,7 @@
 # text_eng = I know what I say.
 # text_por = Sei o que digo.
 # text_source = Example 1058 Wr
-# text_orig = a-kua a-nheẽ waa
+# text_orig = a-kua [a-nheẽ waa]
 # text_annotator = Leonel Figueiredo de Alencar
 1	Akwá	kwá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	anheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	acl:relcl	_	TokenRange=5:10
@@ -1963,8 +1964,8 @@
 # text = Ape paá umaã taupuri uikú waá nhaã kavernawasú upé.
 # text_eng = They say that then he saw who was jumping into that very large cave.
 # text_por = Contam que aí viu quem estava pulando dentro daquela caverna bem grande.
-# text_source = Example 1058 Wr
-# text_orig = ape paa u-maã tau-pui u-iku waa nhaã kaverna-wasu upe
+# text_source = Example 1059 Wr
+# text_orig = ape paa u-maã [tau-pui u-iku waa nhaã kaverna-wasu upe]
 # text_annotator = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	3	advmod	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=4:7
@@ -3420,6 +3421,187 @@
 7	arã	arã	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=37:40
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
+# sent_id = Cruz2011:0:0:134
+# text = Aé umbá yané suí yané cultura.
+# text_eng = TODO
+# text_por = Ela acabou conosco, com nossa cultura.
+# text_por_orig = Ela acabou conosco, com nossa cultura
+# text_source = Example 869 Bn
+# text_orig = ae umba yane-sui yane-kultura
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aé/pron umbá/v yané/pron2 suí yané/pron2 cultura/=n:o|pt.
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umbá	mbá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:7
+3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	2	obl	_	TokenRange=8:12
+4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	TokenRange=13:16
+5	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=17:21
+6	cultura	cultura	NOUN	N	Number=Sing	2	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=22:29
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Cruz2011:0:0:135
+# text = Ape upá féria
+# text_eng = TODO
+# text_por = Acabaram as férias.
+# text_source = Example 868 Wr
+# text_orig = ape u-pa(wa) feria
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ape/advt upá féria/=n:o|pt:s|férias
+1	Ape	ape	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:3
+2	upá	pá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=4:7
+3	féria	féria	NOUN	N	Number=Sing	2	nsubj	_	Orig=férias|OrigLang=por|TokenRange=8:13
+
+# sent_id = Cruz2011:0:0:136
+# text = Aité nhaã kurí puxuwera waá uyapí kurí uí kwá kití.
+# text_eng = TODO
+# text_por = Aquela, que é feia, vai jogar a farinha para cá.
+# text_source = Example 1045 Br
+# text_orig = [aitenhaã kuri puxuera waa] u-yapi kuri ui kua kiti
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aité nhaã kurí puxuwera/a waá/rel uyapí kurí uí kwá/advdx kití.
+1	Aité	aité	DET	EMP	PronType=Emp	2	det	_	TokenRange=0:4
+2	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	nsubj	_	TokenRange=5:9
+3	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=10:14
+4	puxuwera	puxuwera	ADJ	A	_	2	acl:relcl	_	TokenRange=15:23
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	TokenRange=24:27
+6	uyapí	yapí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=28:33
+7	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=34:38
+8	uí	uí	NOUN	N	Number=Sing	6	obj	_	TokenRange=39:41
+9	kwá	kwá	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	6	obl	_	TokenRange=42:45
+10	kití	kití	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=46:50
+11	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=50:51
+
+# sent_id = Cruz2011:0:0:137
+# text = Taíra tayapí waá uyenũ nhaã praia upé.
+# text_eng = TODO
+# text_por = O filho, que jogaram, deitou naquela praia.
+# text_source = Example 1049 Br
+# text_orig = [taira ta-yapi waa] u-yenũ nhaã praya upe
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Taíra/ncont tayapí waá/rel uyenũ nhaã praia/=n:o|pt upé/adp.
+1	Taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	nsubj	_	TokenRange=0:5
+2	tayapí	yapí	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=6:12
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=13:16
+4	uyenũ	yenũ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:22
+5	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=23:27
+6	praia	praia	NOUN	N	Number=Sing	4	obl	_	OrigLang=por|TokenRange=28:33
+7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=34:37
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=37:38
+
+# sent_id = Cruz2011:0:0:138
+# text = Tenki resegurari mamé puranga waá.
+# text_eng = TODO
+# text_por = Você tem que segurar onde é bonito.
+# text_source = Example 1057 Br
+# text_orig = tenki re-segurai [mame puranga waa]
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Tenki resegurari/=v:o|pt:s|segurar mamé/advrc puranga/a waá/rel.
+1	Tenki	tenki	PART	OBL	PartType=Mod	2	advmod	_	TokenRange=0:5
+2	resegurari	segurari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	Orig=segurar|OrigLang=por|TokenRange=6:16
+3	mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	2	advmod	_	TokenRange=17:21
+4	puranga	puranga	ADJ	A	_	3	advcl:relcl	_	TokenRange=22:29
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	obl	_	SpaceAfter=No|TokenRange=30:33
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
+
+# sent_id = Cruz2011:2-1:3:3
+# text = Yandé kurí mira-itá yasú yakuntari.
+# text_eng = TODO
+# title_por = Nhampirikoli fala aos animais
+# place_orig_por = Nova Vida, alto rio Negro 
+# date = 2009
+# narrator = Leomar
+# ethnicity =  Br
+# text_por = Agora, nós, as pessoas, vamos falar.
+# text_source = p. 574 
+# text_orig = yande kuri mira ita ya-su ya-kuntai
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yandé/pron kurí mira-itá yasú yakuntari.
+1	Yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	TokenRange=0:5
+2	kurí	kurí	PART	FUT	Tense=Fut	5	advmod	_	TokenRange=6:10
+3	mira-itá	mira	NOUN	N	Number=Plur	1	nmod	_	TokenRange=11:19
+4	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	5	aux	_	TokenRange=20:24
+5	yakuntari	kuntari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=25:34
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Cruz2011:2-1:4:4
+# text = Ixé kurí asú akuntari pe rupí.
+# text_eng = TODO
+# text_por = Eu vou falar por vocês.
+# text_source = p. 574
+# text_orig = ixe kuri a-su a-kuntai pe-rupi
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé kurí asú akuntari pe/pron2 rupí.
+1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:3
+2	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=4:8
+3	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	aux	_	TokenRange=9:12
+4	akuntari	kuntari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=13:21
+5	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	4	obl	_	TokenRange=22:24
+6	rupí	rupí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=25:29
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=29:30
+
+# sent_id = Cruz2011:2-1:5:5
+# text = Ixé kwá mira.
+# text_eng = TODO
+# text_por = Eu sou esta pessoa.
+# text_source = p. 574
+# text_orig = ixe kua mira
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé kwá/demx mira/@.
+1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=4:7
+3	mira	mira	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=8:12
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=12:13
+
+# sent_id = Cruz2011:2-1:6:6
+# text = Ixé asú akuntari pe rupí.
+# text_eng = TODO
+# text_por = Eu vou falar por vocês.
+# text_source = p. 575
+# text_orig = ixe a-su a-kuntai pe-rupi
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ixé asú akuntari pe/pron2 rupí.
+1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
+2	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	aux	_	TokenRange=4:7
+3	akuntari	kuntari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=8:16
+4	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	obl	_	TokenRange=17:19
+5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=20:24
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Cruz2011:2-1:7:7
+# text = Penhẽ kurí ti ã pesú pekuntari.
+# text_eng = TODO
+# text_por = Vocês agora não vão falar mais.
+# text_source = p. 575
+# text_orig = penhe kuri tiã pe-su pe-kuntai
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Penhẽ kurí ti ã pesú pekuntari.
+1	Penhẽ	penhẽ	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	TokenRange=0:5
+2	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=6:10
+3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=11:13
+4	ã	ã	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=14:15
+5	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	6	aux	_	TokenRange=16:20
+6	pekuntari	kuntari	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=21:30
+7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = Cruz2011:2-1:8:8
+# text = Pepuderi kurí penheengari yalegrari rã yané felicidade rã.
+# text_eng = TODO
+# text_por = Podem agora cantar para nos alegrar, para a nossa felicidade.
+# text_por_orig = Podem agora cantar. para nos alegrar, para a nossa felicidade.
+# text_source = p. 575
+# text_orig = pe-puderi kuri pe-nheengari ya-alegrai=rã yane-felisidade=rã
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pepuderi kurí penhengari yalegrari/=v:o|pt:s|alegrar rã/sconj yané/pron2 felicidade/=n:o|pt rã/adp.
+# inputline = Pepuderi kurí penheengari yalegrari/=v:o|pt:s|alegrar rã/sconj yané/pron2 felicidade/=n:o|pt rã/adp.
+1	Pepuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	3	aux	_	TokenRange=0:8
+2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=9:13
+3	penheengari	nheengari	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=14:25
+4	yalegrari	legrari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	Orig=alegrar|OrigLang=por|TokenRange=26:35
+5	rã	rã	SCONJ	SCONJ	_	4	mark	_	TokenRange=36:38
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=39:43
+7	felicidade	felicidade	NOUN	N	Number=Sing	4	obl	_	OrigLang=por|TokenRange=44:54
+8	rã	rã	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=55:57
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=57:58
+
 # sent_id = TerraPreta2013:1:1:1
 # text = Kuíri asú ambeú ta resé, kwá-itá mukũi apigawa-itá upurakí waá-itá balata.
 # text_eng = Now I'm going to tell you about them, these two men who worked with balata.
@@ -3469,10 +3651,11 @@
 # text = Asuí aikwé yuíri makú-itá nharú waá-itá kaá rupí.
 # text_eng = And there were also fierce Indians in the woods.
 # text_por = E havia também índios ferozes na mata.
-# text_por_source = Avila (2021)
 # text_source = Jonas Bruno Aleixo, p. 3
 # text_orig = Asuí aikué yuíri makuita yãrú waitá kaá rupi.
-# text_adapt = Avila (2021)
+# text_sec = Asuí aikwé yuíri makú-itá nharú waá-itá kaá rupí.
+# text_sec_source = Avila (2021)
+# text_por_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
 1	Asuí	asuí	CCONJ	CCONJ	_	2	cc	_	TokenRange=0:4
 2	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=5:10
@@ -12409,6 +12592,50 @@
 6	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Cmp	5	advmod	_	SpaceAfter=No|TokenRange=25:29
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=29:30
 
+# sent_id = Stradelli1929:0:0:106
+# text = Ne ramunha i irumuára-etá páu wasú xinga piri.
+# text_eng = Your grandfather is a little bigger than all his companions.
+# text_por = Teu avô é um pouco maior do que todos os seus companheiros.
+# text_source = p. 29
+# text_orig = Ne ramunha i irumuaretá páu uasú xinga pire.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ne ramunha i/pron2 irumuára-etá páu/total wasú xinga piri/advg.
+1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	ramunha	tamunha	NOUN	N	Number=Sing|Rel=Cont	6	nsubj	_	TokenRange=3:10
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:12
+4	irumuára-etá	irumuára	NOUN	N	Number=Plur	6	obl	_	TokenRange=13:25
+5	páu	páu	PART	TOTAL	Aspect=Compl	6	advmod	_	TokenRange=26:29
+6	wasú	wasú	ADJ	A	_	0	root	_	TokenRange=30:34
+7	xinga	xinga	ADV	ADVS	AdvType=Deg	6	advmod	_	TokenRange=35:40
+8	piri	piri	ADV	ADVG	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=41:45
+9	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = Stradelli1929:0:0:150
+# text = Kwá kunhã puranga.
+# text_eng = This woman is beautiful.
+# text_por = Esta mulher é bonita.
+# text_source = p. 32
+# text_orig = Cuá cunhã puranga.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kwá/demx kunhã/n puranga/a.
+1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
+2	kunhã	kunhã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
+3	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=10:17
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Stradelli1929:0:0:151
+# text = Puranga kwá kunhã.
+# text_eng = This woman is beautiful.
+# text_por = Bonita esta mulher.
+# text_source = p. 32
+# text_orig = Puranga cuá cunhã.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Puranga/a kwá/demx kunhã/n.
+1	Puranga	puranga	ADJ	A	_	0	root	_	TokenRange=0:7
+2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=8:11
+3	kunhã	kunhã	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=12:17
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
+
 # sent_id = Stradelli2014:0:0:1
 # text = Yané tuixawa umanú ana mira amusuaxarawara usikié tenhẽ waá.
 # text_eng = Our chief, who was feared by the people on the other side, died.
@@ -12525,6 +12752,23 @@
 4	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	1	obl	_	TokenRange=17:20
 5	rupí	rupí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:25
 6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
+# sent_id = Stradelli1929:0:0:800
+# text = Umunhã-putari kurí unheẽ seẽ waá?
+# text_eng = TODO
+# text_por = Quererá fazer o que prometeu?
+# text_source = p. 692
+# text_orig = Omunhã putáre cury onheén ceên uá?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Umunhã-putari kurí unheẽ seẽ/n waá/rel?
+1-2	Umunhã-putari	_	_	_	_	_	_	_	TokenRange=0:13
+1	Umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=14:18
+4	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	acl:relcl	_	TokenRange=19:24
+5	seẽ	seẽ	ADJ	A	_	4	compound	_	TokenRange=25:28
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	1	obj	_	SpaceAfter=No|TokenRange=29:32
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Magalhaes1876:1-1-1:0:70
 # text = Awá taá uikú ape?
@@ -20952,4 +21196,99 @@
 8	garapawa	garapawa	NOUN	N	Number=Sing	7	obl	_	TokenRange=32:40
 9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=41:45
 10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = MelgueiroCM2019:0:0:1
+# text = Apigá usika waá se mú.
+# text_eng = TODO
+# text_por = O homem que chegou é meu irmão.
+# text_por_orig = o homem [que chegou] é meu irmão
+# text_source = p. 156 No. 7
+# text_orig = apigá(wa) [u-síka waá] aé se mú(m)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Apigá/n usika waá/rel se mú/@.
+1	Apigá	apigá	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:5
+2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=6:11
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=12:15
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:18
+5	mú	mú	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=19:21
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = MelgueiroCM2019:0:0:2
+# text = Ameẽ papera usuruka waá i xupé.
+# text_eng = TODO
+# text_por = Eu dei o livro que rasgou para ele.
+# text_por_orig = eu dei o livro [que rasgou] para ele
+# text_source = p. 156 No. 8
+# text_orig = a-meẽ papéra [u-surúka waá] ix-upé
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ameẽ papera usuruka waá/rel i/pron2 xupé.
+1	Ameẽ	meẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	papera	papera	NOUN	N	Number=Sing	1	obj	_	TokenRange=5:11
+3	usuruka	suruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=12:19
+4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=20:23
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	1	iobj	_	TokenRange=24:25
+6	xupé	xupé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:30
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = MelgueiroCM2019:0:0:3
+# text = Ayuíri apigá irumu uyuká waá yawara.
+# text_eng = TODO
+# text_por = Eu vim com o homem que matou o cachorro.
+# text_por_orig = eu vim com o homem [que matou o cachorro]
+# text_source = p. 156 No. 9
+# text_orig = a-yuíri apigá(wa) irúmu [u-yuká waá yawára]
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ayuíri apigá/n irumu/adp uyuká waá/rel yawara.
+1	Ayuíri	yuíri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:6
+2	apigá	apigá	NOUN	N	Number=Sing	1	obl	_	TokenRange=7:12
+3	irumu	irumu	ADP	ADP	AdpType=Post	2	case	_	TokenRange=13:18
+4	uyuká	yuká	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=19:24
+5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	TokenRange=25:28
+6	yawara	yawara	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=29:35
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = MelgueiroCM2019:0:0:4
+# text = Apigá hamaã waá usika.
+# text_eng = TODO
+# text_por = O homem, que eu vi, chegou.
+# text_por_orig = o homem, [que eu vi], chegou
+# text_source = p. 157 No. 10
+# text_orig = apigá(wa) [ha-mã waá] u-síka
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Apigá/n hamaã waá/rel usika.
+1	Apigá	apigá	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:5
+2	hamaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	acl:relcl	_	TokenRange=6:11
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=12:15
+4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:21
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = MelgueiroCM2019:0:0:5
+# text = Apigá médico waá usika.
+# text_eng = TODO
+# text_por = O homem, que é médico, chegou.
+# text_por_orig = o homem, [que é médico], chegou
+# text_source = p. 157 No. 11
+# text_orig = apigá(wa) [médico waá] u-síka
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Apigá/n médico/=n:o|pt waá/rel usika.
+1	Apigá	apigá	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:5
+2	médico	médico	NOUN	N	Number=Sing	1	acl:relcl	_	OrigLang=por|TokenRange=6:12
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=13:16
+4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:22
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=22:23
+
+# sent_id = MelgueiroCM2019:0:0:6
+# text = Kurumĩ puranga waá usika.
+# text_eng = TODO
+# text_por = O menino, que é bonito, chegou.
+# text_por_orig = o menino, [que é bonito], chegou
+# text_source = p. 157 No. 12
+# text_orig = kurumí [puránga waá] u-síka.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kurumĩ puranga/a waá/rel usika.
+1	Kurumĩ	kurumĩ	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:6
+2	puranga	puranga	ADJ	A	_	1	acl:relcl	_	TokenRange=7:14
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=15:18
+4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=19:24
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
 

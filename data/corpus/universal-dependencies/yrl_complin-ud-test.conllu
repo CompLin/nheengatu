@@ -625,7 +625,7 @@
 # text_eng = …nor I think of seeing you.
 # text_por = [...] nem penso em te ver.
 # text_source = p. 109
-# text_orig = …nẽ išé a-mãnduʔái [a-mãã ĩndé]S'Comp
+# text_orig = …nẽ išé a-mãnduʔái [a-mãʔã ĩndé]S'Comp
 # text_annotator = Leonel Figueiredo de Alencar
 1	[...]	[...]	PUNCT	ELIP	_	4	punct	_	TokenRange=0:5
 2	nẽ	nẽ	CCONJ	CCONJ	_	4	cc	_	TokenRange=6:8
@@ -10299,7 +10299,9 @@
 # text = Aité nhaã upé pixuna waá, amú tẽ i suí nhaã piranga waá.
 # text_eng = That "upé" tortoise that is black, different from the red one.
 # text_por = Aquele "upé" que é preto, diferente do vermelho.
-# text_source = Leetra Indígena. n. 17, 15, adap.
+# text_source = Leetra Indígena. n. 17, 77, adap.
+# text_source_orig = Leetra Indígena. n. 17, 15, adap.
+# text_prim = Aité yam upé pixuna waá, amum te isui yam piramga waá.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Aité	aité	PRON	EMP	PronType=Emp	3	det	_	TokenRange=0:4
 2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:9
