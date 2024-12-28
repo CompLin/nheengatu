@@ -6254,7 +6254,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
-2	mira	mira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:8
+2	mira	mira	NOUN	N	Number=Sing	3	dislocated	_	TokenRange=4:8
 3	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:14
 4	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	obl	_	TokenRange=15:17
 5	irumu	irumu	ADP	ADP	AdpType=Post	4	case	_	TokenRange=18:23
@@ -6271,7 +6271,7 @@
 16	tauyeréu	yeréu	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=69:75
 17	yawaraté	yawaraté	NOUN	N	Number=Sing	16	xcomp	_	TokenRange=76:84
 18	anhũ	anhũ	ADV	ADV	_	16	advmod	_	TokenRange=85:89
-19	mairamé	mairamé	ADV	ADVLT	AdvType=Tim|PronType=Rel	23	advmod	_	TokenRange=90:97
+19	mairamé	mairamé	SCONJ	SCONJR	_	23	mark	_	TokenRange=90:97
 20	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	TokenRange=98:100
 21	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	23	aux	_	TokenRange=101:104
 22	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	23	expl	_	TokenRange=105:107
