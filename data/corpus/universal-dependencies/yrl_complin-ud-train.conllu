@@ -3502,6 +3502,24 @@
 5	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	obl	_	SpaceAfter=No|TokenRange=30:33
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
+# sent_id = Cruz2011:0:0:139
+# text = Ayutima se iwa asuí ayuka se rimiára arã.
+# text_eng = TODO
+# text_por = Planto minha fruta. Depois, tiro para ser minha comida.
+# text_source = Example 1023 Bn
+# text_orig = a-yutima se-iwa asui a-yuka [se-rimiara arã]
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ayutima se iwa asuí/advt ayuka se rimiára arã/adp.
+1	Ayutima	yutima	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:10
+3	iwa	iwa	NOUN	N	Number=Sing	1	obj	_	TokenRange=11:14
+4	asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=15:19
+5	ayuka	yuka	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=20:25
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=26:28
+7	rimiára	simiára	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=29:36
+8	arã	arã	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=37:40
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=40:41
+
 # sent_id = Cruz2011:2-1:3:3
 # text = Yandé kurí mira-itá yasú yakuntari.
 # text_eng = TODO
@@ -14971,7 +14989,7 @@
 15	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
 
 # sent_id = Magalhaes1876:2:25:68
-# text = Paraná usuaxara: — Anheẽ iné arama nhaã yawé katú maãresé akwáu ana maã se ruba umunhã indé arama.
+# text = Paraná usuaxara: — Xanheẽ iné arama nhaã yawé katú maãresé xakwáu ana maã se ruba umunhã indé arama.
 # text_eng = The river replied: — I tell you this well because I knew what my father did to you.
 # text_eng_ggl = The river replied: — I tell you this well because I knew what my father did to him.
 # text_por = O rio respondeu: — Eu lhe falo isto assim bem porque eu soube o que meu pai lhe fez.
@@ -14983,14 +15001,14 @@
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:15
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
-5	Anheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	ccomp	_	TokenRange=18:23
+5	Xanheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	ccomp	_	ModernForm=Anheẽ|TokenRange=18:24
 6	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	5	iobj	_	TokenRange=24:27
 7	arama	arama	ADP	ADP	AdpType=Post	6	case	_	TokenRange=28:33
 8	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	obj	_	TokenRange=34:38
 9	yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=39:43
 10	katú	katú	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=44:48
 11	maãresé	maãresé	SCONJ	SCONJR	_	12	mark	_	TokenRange=49:56
-12	akwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=57:62
+12	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	advcl	_	ModernForm=akwáu|TokenRange=58:64
 13	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	TokenRange=63:66
 14	maã	maã	PRON	INT	PronType=Int	17	obj	_	TokenRange=67:70
 15	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=71:73
@@ -21196,6 +21214,82 @@
 8	garapawa	garapawa	NOUN	N	Number=Sing	7	obl	_	TokenRange=32:40
 9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=41:45
 10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+
+# sent_id = Avila2021:0:0:733
+# text = [...], apitasuka se pinaxama, ti ana waá upé asarú [...] asaã pirá ukarú ana se pindá resé, usikí ana, [...].
+# text_eng = TODO
+# text_por = [...], eu segurei a minha linha, quando já não esperava [...] senti o peixe dar o bote no meu anzol, ele puxou, [...].
+# text_source = Muniz, 78, adap.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = [...], apitasuka se pinaxama, ti ana waá/rel upé/adp asarú [...] asaã pirá ukarú ana se pindá resé/adp, usikí ana, [...].
+1	[...]	[...]	PUNCT	ELIP	_	3	punct	_	SpaceAfter=No|TokenRange=0:5
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
+3	apitasuka	pitasuka	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:16
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:19
+5	pinaxama	pinaxama	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=20:28
+6	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=28:29
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=30:32
+8	ana	ana	PART	PFV	Aspect=Perf	11	advmod	_	TokenRange=33:36
+9	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	11	mark	_	TokenRange=37:40
+10	upé	upé	ADP	ADP	AdpType=Post	9	fixed	_	TokenRange=41:44
+11	asarú	sarú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	13	advcl	_	TokenRange=45:50
+12	[...]	[...]	PUNCT	ELIP	PunctType=Elip	11	punct	_	TokenRange=51:56
+13	asaã	saã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	parataxis	_	TokenRange=57:61
+14	pirá	pirá	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=62:66
+15	ukarú	karú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	ccomp	_	TokenRange=67:72
+16	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=73:76
+17	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=77:79
+18	pindá	pindá	NOUN	N	Number=Sing	15	obl	_	TokenRange=80:85
+19	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	18	case	_	SpaceAfter=No|TokenRange=86:90
+20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=90:91
+21	usikí	sikí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	parataxis	_	TokenRange=92:97
+22	ana	ana	PART	PFV	Aspect=Perf	21	advmod	_	SpaceAfter=No|TokenRange=98:101
+23	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=101:102
+24	[...]	[...]	PUNCT	ELIP	PunctType=Elip	3	punct	_	SpaceAfter=No|TokenRange=103:108
+25	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=108:109
+
+# sent_id = Avila2021:0:0:734
+# text = [...] Sampaio usendú nheengatú puapuãmu waá upé Barcelos upé.
+# text_eng = TODO
+# text_por = [...] Sampaio ouviu o nheengatu quando perambulava por Barcelos/=p.
+# text_source = Oliveira; Schwade, 28
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = [...] Sampaio/=p usendú nheengatú puapuãmu/=mf:m|upuapuãmu:r|Standard waá/rel upé/adp Barcelos upé/adp.
+1	[...]	[...]	PUNCT	ELIP	_	3	punct	_	TokenRange=0:5
+2	Sampaio	sampaio	PROPN	PROPN	_	3	nsubj	_	TokenRange=6:13
+3	usendú	sendú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:20
+4	nheengatú	nheengatú	NOUN	N	Number=Sing	3	obj	_	TokenRange=21:30
+5	puapuãmu	puapuãmu	VERB	V	Style=Rare|VerbForm=Inf	4	advcl	_	StandardForm=upuapuãmu|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=31:39
+6	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	5	mark	_	TokenRange=40:43
+7	upé	upé	ADP	ADP	AdpType=Post	6	fixed	_	TokenRange=44:47
+8	Barcelos	barcelos	PROPN	PROPN	_	5	obl	_	TokenRange=48:56
+9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=57:60
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=60:61
+
+# sent_id = Avila2021:0:0:735
+# text = [...] ti waá upé yawaraté umaã, makaku upisika, upurakari saku kití prato, colher.
+# text_eng = TODO
+# text_por = [...] quando a onça não estava olhando, o macaco pegou e colocou dentro do saco prato e colher.
+# text_source = Comunidade Indígena Anamuim, 8, adap.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = [...] ti waá/rel upé/adp yawaraté umaã, makaku upisika, upurakari saku kití prato/=n:o|pt, colher/=n:o|pt.
+1	[...]	[...]	PUNCT	ELIP	_	6	punct	_	TokenRange=0:5
+2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=6:8
+3	waá	waá	PRON	REL	ExtPos=SCONJ|Number=Sing|PronType=Rel	6	mark	_	TokenRange=9:12
+4	upé	upé	ADP	ADP	AdpType=Post	3	fixed	_	TokenRange=13:16
+5	yawaraté	yawaraté	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=17:25
+6	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	SpaceAfter=No|TokenRange=26:30
+7	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=30:31
+8	makaku	makaku	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=32:38
+9	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=39:46
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=46:47
+11	upurakari	purakari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=48:57
+12	saku	saku	NOUN	N	Number=Sing	11	obl	_	TokenRange=58:62
+13	kití	kití	ADP	ADP	AdpType=Post	12	case	_	TokenRange=63:67
+14	prato	prato	NOUN	N	Number=Sing	11	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=68:73
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=73:74
+16	colher	colher	NOUN	N	Number=Sing	14	parataxis	_	OrigLang=por|SpaceAfter=No|TokenRange=75:81
+17	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=81:82
 
 # sent_id = MelgueiroCM2019:0:0:1
 # text = Apigá usika waá se mú.
