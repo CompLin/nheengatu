@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: December 19, 2024
+# Last update: Januar 3, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2919,6 +2919,15 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 	#    metadata=getFileNameParts(pref,textid,index,sentid)
 	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
 	handleParse(outstring,copyboard=copyboard)
+	
+def parseExampleMagalhaes(conllu_data,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+	tokenlist=parse(conllu_data)[0]
+	sents={}
+	metadata=metadata
+	for k,v in tokenlist.metadata.items():
+		sents[k]=v
+	metadata.update(mkTranscriber('dom',translation='por_gloss',institution='dac'))
+	_parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=False, inputline=True):
     sents=extract_sents(example)
