@@ -20106,22 +20106,20 @@
 # text_por_sec = Estou muito triste, porque minha mulher está muito doente
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Se arasí reté/advs xaikú/v maã/int resé/adp se rimirikú i/pron2 maarí/=typo:c|maasiwera:x|a reté/advs.
+# inputline = Se arasí reté/advs xaikú/v maãresé se rimirikú i/pron2 maarí/=typo:c|maasí:x|v2 reté/advs.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	arasí	arasí	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=3:8
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:13
 4	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=aikú|TokenRange=14:19
-5	maã	maã	PRON	INT	PronType=Int	2	obl	_	TokenRange=20:23
-6	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	5	case	_	TokenRange=24:28
-7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=29:31
-8	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	10	nsubj	_	TokenRange=32:40
-9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	expl	_	TokenRange=41:42
-10	maarí	maasiwera	ADJ	A	Typo=Yes	2	advcl	_	CorrectForm=maasiwera|TokenRange=43:48
-11	reté	reté	ADV	ADVS	AdvType=Deg	10	advmod	_	SpaceAfter=No|TokenRange=49:53
-12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=53:54
+5	maãresé	maãresé	SCONJ	SCONJR	_	9	mark	_	TokenRange=20:27
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=28:30
+7	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	9	nsubj	_	TokenRange=31:39
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	expl	_	TokenRange=40:41
+9	maarí	maasí	VERB	V2	Mood=Ind|Typo=Yes|VerbForm=Fin	2	advcl	_	CorrectForm=maasí|TokenRange=42:47
+10	reté	reté	ADV	ADVS	AdvType=Deg	9	advmod	_	SpaceAfter=No|TokenRange=48:52
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=52:53
 
 # sent_id = Hartt1938:0:0:847
 # text = Rerikú será urusakã purã ne "vizinho" suí?
