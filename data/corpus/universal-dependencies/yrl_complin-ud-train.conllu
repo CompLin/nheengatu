@@ -19730,7 +19730,7 @@
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=14:15
 5	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=16:20
 6-7	remenari-putari	_	_	_	_	_	_	_	TokenRange=21:36
-6	remenari	menari	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
+6	remenari	menari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 7	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
 8	su	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Typo=Yes	6	obl	_	CorrectForm=se|TokenRange=37:39
 9	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	8	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=40:42
@@ -19746,6 +19746,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Iné intí se pié/=typo:c|piá suí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	TokenRange=0:3
 2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=4:8
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
@@ -19754,7 +19755,7 @@
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Hartt1938:0:0:196
-# text = Remenari-putari será se irũ?
+# text = Remenari-putari será se rũ?
 # text_por = Queres te casar comigo?
 # text_source = p. 333, No. 196
 # text_orig = remenár putár será serúm?
@@ -19765,15 +19766,16 @@
 # text_por_sec = Queres te casar comigo?
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Remenari-putari será se irũ/adp?
+# inputline = Remenari-putari será se rũ/=typo:c|irũ:x|adp?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Remenari-putari	_	_	_	_	_	_	_	TokenRange=0:15
 1	Remenari	menari	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
 3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=16:20
 4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=21:23
-5	irũ	irũ	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=24:27
-6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
+5	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	4	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=24:26
+6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Hartt1938:0:0:200
 # text = Ekũi nhaã apigawa piamu.
@@ -20091,6 +20093,35 @@
 5	amú-itá	amú	PRON	IND	Number=Plur|PronType=Ind	3	obl	_	TokenRange=21:28
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
+
+# sent_id = Hartt1938:0:0:784
+# text = Se arasí reté xaikú maã resé se rimirikú i maarí reté.
+# text_por = Estou muito triste, porque minha mulher está muito doente.
+# text_source = p. 376, No. 784
+# text_orig = searasy reté xaikó maeresé seremirikó imaary reté.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Se arasí reté aikú, maãresé se rimirikú i maasí reté.
+# text_por_sec = Estou muito triste, porque minha mulher está muito doente
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Se arasí reté/advs xaikú/v maã/int resé/adp se rimirikú i/pron2 maarí/=typo:c|maasiwera:x|a reté/advs.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	arasí	arasí	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=3:8
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:13
+4	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=aikú|TokenRange=14:19
+5	maã	maã	PRON	INT	PronType=Int	2	obl	_	TokenRange=20:23
+6	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	5	case	_	TokenRange=24:28
+7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=29:31
+8	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	10	nsubj	_	TokenRange=32:40
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	expl	_	TokenRange=41:42
+10	maarí	maasiwera	ADJ	A	Typo=Yes	2	advcl	_	CorrectForm=maasiwera|TokenRange=43:48
+11	reté	reté	ADV	ADVS	AdvType=Deg	10	advmod	_	SpaceAfter=No|TokenRange=49:53
+12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=53:54
 
 # sent_id = Hartt1938:0:0:847
 # text = Rerikú será urusakã purã ne "vizinho" suí?
