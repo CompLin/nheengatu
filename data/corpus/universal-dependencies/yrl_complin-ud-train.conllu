@@ -19710,7 +19710,7 @@
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Hartt1938:0:0:194
-# text = Maã resé kuité, intí remenari-putari su urũ?
+# text = Maãresé kuité, intí remenari-putari su rũ?
 # text_por = Por que não queres te casar comigo?
 # text_source = p. 333, No. 194
 # text_orig = maeresé kuite, intí remenár putár surúm?
@@ -19721,9 +19721,10 @@
 # text_por_sec = Por que não queres te casar comigo?
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Maã/int resé/adp kuité/advm, intí remenari-putari su/=typo:c|se urũ/=typo:c|irũ:x|adp?
+# inputline = Maã/int resé/adp kuité/advm, intí remenari-putari su/=typo:c|se rũ/=typo:c|irũ:x|adp?
 # text_annotator = Dominick Maia Alexandre
-1	Maã	maã	PRON	INT	PronType=Int	6	obl	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int|Style=Arch	6	obl	_	ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:3
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=4:8
 3	kuité	kuité	ADV	ADVM	AdvType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=9:14
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=14:15
@@ -19732,8 +19733,8 @@
 6	remenari	menari	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	_
 7	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	6	aux	_	_
 8	su	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Typo=Yes	6	obl	_	CorrectForm=se|TokenRange=37:39
-9	urũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	8	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=40:43
-10	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=43:44
+9	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	8	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=40:42
+10	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = Hartt1938:0:0:195
 # text = Iné intí se pié suí.
