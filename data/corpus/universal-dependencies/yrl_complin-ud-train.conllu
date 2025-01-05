@@ -20095,7 +20095,7 @@
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:712
-# text = Maã resé intí remuyasuka kwaá maã-itá i kiá waá?
+# text = Maãresé intí remuyasuka kwaá maã-itá i kiá waá?
 # text_por = Por que não lavas a roupa suja?
 # text_source = p. 370, No. 712
 # text_orig = maeresé intí remuyasúk kuaé maeitá ikyá uaé?
@@ -20108,7 +20108,8 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Maã/int resé/adp intí remuyasuka kwaá/demx maã-itá i/pron2 kiá waá/rel?
 # text_annotator = Dominick Maia Alexandre
-1	Maã	maã	PRON	INT	PronType=Int	4	obl	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int|Style=Arch	4	obl	_	ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:3
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=4:8
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:13
 4	remuyasuka	muyasuka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=14:24
@@ -20120,27 +20121,28 @@
 10	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Hartt1938:0:0:713
-# text = I kiá ikú, maã resé intí remuyasuka?
+# text = I kiá ikú, maãresé intí remuyasuka?
 # text_por = Está sujo, por que não lavas?
 # text_source = p. 334, No. 713
 # text_orig = ikyá ikó, maeresé intí remuyasúk?
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = I/pron2 kiá ikú/=mf:m|uikú:r|Standard:x|v, maã/int resé/adp intí remuyasuka?
+# inputline = I/pron2 kiá ikú/=mf:m|uikú:x|v:h|v, maã/int resé/adp intí remuyasuka?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:1
 2	kiá	kiá	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=2:5
-3	ikú	ikú	AUX	AUXFS	Style=Rare|VerbForm=Inf	2	aux	_	SpaceAfter=No|StandardForm=uikú|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=6:9
+3	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=9:10
-5	maã	maã	PRON	INT	PronType=Int	8	obl	_	TokenRange=11:14
+5	maã	maã	PRON	INT	PronType=Int|Style=Arch	8	obl	_	ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=11:14
 6	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	5	case	_	TokenRange=15:19
 7	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=20:24
-8	remuyasuka	muyasuka	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=25:35
+8	remuyasuka	muyasuka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=25:35
 9	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Hartt1938:0:0:784
-# text = Se arasí reté xaikú maã resé se rimirikú i maarí reté.
+# text = Se arasí reté xaikú maãresé se rimirikú i maarí reté.
 # text_por = Estou muito triste, porque minha mulher está muito doente.
 # text_source = p. 376, No. 784
 # text_orig = searasy reté xaikó maeresé seremirikó imaary reté.
@@ -20167,7 +20169,7 @@
 11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=52:53
 
 # sent_id = Hartt1938:0:0:785
-# text = Aé piáwasú reté.
+# text = Aé piawasú reté.
 # text_por = Ele tem muita coragem.
 # text_source = p. 376, No. 785
 # text_orig = aé pyá uasú reté.
@@ -20178,10 +20180,11 @@
 # text_por_sec = Ele é muito corajoso.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Aé/pron piáwasú/=aug reté/advs.
+# inputline = Aé/pron piawasú/=aug:a|t@ reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
-2	piáwasú	piá	NOUN	N	Degree=Aug|Number=Sing	0	root	_	TokenRange=3:10
+2	piawasú	piá	NOUN	N	Degree=Aug|Number=Sing	0	root	_	TokenRange=3:10
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=11:15
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
