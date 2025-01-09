@@ -14685,6 +14685,22 @@
 7	teté	teté	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=31:35
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=35:36
 
+# sent_id = Magalhaes1876:2:8:51
+# text = Tapiira usú ana.
+# text_por = A anta foi-se embora.
+# text_orig = Tapiíra	oçộ	ãna.
+# text_por_gloss = Anta	se foi	embora.
+# text_eng = TODO
+# text_source = p. 177
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Tapiira usú ana.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Tapiira	tapiira	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
+2	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:11
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=12:15
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
+
 # sent_id = Magalhaes1876:2:9:52
 # text = Yautí kwayé unheẽ: — Tenupá, yuruparí; amana ara ramé kurí asemu, asú ne rakakwera mamé katú awasemu indé; ameẽ kurí indé arama reyutima rekuyara, ixé.
 # text_eng = The tortoise said like this: "Let it be, devil; when it's raining I'll go out, I'll follow you as far as I can find you; I'll pay you back for burying me."

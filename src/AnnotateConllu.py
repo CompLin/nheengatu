@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: Januar 3, 2025
+# Last update: Januar 9, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2920,10 +2920,11 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
 	handleParse(outstring,copyboard=copyboard)
 	
-def parseExampleMagalhaes(conllu_data,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	tokenlist=parse(conllu_data)[0]
 	sents={}
 	metadata=metadata
+	metadata['text_source']=f"p. {page_nr}"
 	for k,v in tokenlist.metadata.items():
 		sents[k]=v
 	metadata.update(mkTranscriber('dom',translation='por_gloss',institution='dac'))
@@ -3489,7 +3490,8 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Fal
 			metadata['cross_reference']=result[0].metadata['sent_id']
 	else:
 		amorim=example
-	metadata.update(transcriber(person))
+	if transcriber:
+		metadata.update(transcriber(person))
 	parseExample(amorim,prefix,text_nr,sent_nr,sent_nr,metadata=metadata,translate=translate)
 
 def getPortugueseTextProducer(sent):
