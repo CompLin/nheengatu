@@ -5207,7 +5207,8 @@
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=48:49
 
 # sent_id = Avila2021:0:0:42
-# text = Mairamé nhaã kunhã usika maniwara ruka upé, umaã yepé mira mirĩ urikú waá i awawasú asuí i pi-itá uyeréu waá sakakwera kití, [...].
+# text = Mairamé nhaã kunhã usika maniwara ruka upé, umaã yepé mira mirĩ urikú waá i awawasú asuí i pí-itá uyeréu waá sakakwera kití, [...].
+# text_orig = Mairamé nhaã kunhã usika maniwara ruka upé, umaã yepé mira mirĩ urikú waá i awawasú asuí i pi-itá uyeréu waá sakakwera kití, [...].
 # text_eng = When that woman arrived at the nest of maniuara ants, she saw a little guy who had big hair and feet turned back, [...].
 # text_por = Quando aquela mulher chegou ao ninho de maniuaras, viu um sujeitinho que tinha cabelo grande e pés voltados para trás, [...].
 # text_source = Comunidade Indígena Anamuim, 25, adap.
@@ -5230,7 +5231,7 @@
 16	awawasú	awa	NOUN	N	Degree=Aug|Number=Sing	13	obj	_	TokenRange=76:83
 17	asuí	asuí	CCONJ	CCONJ	_	19	mark	_	TokenRange=84:88
 18	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	19	nmod:poss	_	TokenRange=89:90
-19	pi-itá	pi	NOUN	N	Number=Plur	16	conj	_	TokenRange=91:97
+19	pí-itá	pí	NOUN	N	Number=Plur	16	conj	_	TokenRange=91:97
 20	uyeréu	yeréu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	acl:relcl	_	TokenRange=98:104
 21	waá	waá	PRON	REL	Number=Sing|PronType=Rel	20	nsubj	_	TokenRange=105:108
 22	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	20	obl	_	TokenRange=109:118
