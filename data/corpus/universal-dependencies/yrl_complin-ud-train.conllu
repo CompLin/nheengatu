@@ -20320,7 +20320,7 @@
 3	kití	kití	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=12:16
 4	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = Hartt1938:3:8:853
+# sent_id = Hartt1938:3:8:861
 # text = Erasú ne mukawa, mukawa kuí yuíri yayuká arama yané rimiú.
 # text_por = Leva tua arma e pólvora, para matar que comer (caça) para nossa comida.
 # text_source = p. 383, No. 8
@@ -20343,6 +20343,34 @@
 10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=47:51
 11	rimiú	timiú	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	SpaceAfter=No|TokenRange=52:57
 12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=57:58
+
+# sent_id = Hartt1938:3:12:865
+# text = Xarasú-putari se rimirikú se irũ, umunhã arama pirá kuí.
+# text_por = Quero levar minha mulher comigo para fazer pirá-kuí (farinha de peixe).
+# text_source = p. 384, No. 12
+# text_orig = xarasó putar seremirikó serum, omuñán aráma pirá kuí.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Arasú-putari se rimirikú se irũ, umunhã arama pirakuí.
+# text_por_sec = Quero levar minha esposa comigo, para fazer piracuí.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Xarasú-putari se rimirikú se irũ/adp, umunhã arama/sconj pirá kuí.
+# text_annotator = Dominick Maia Alexandre
+1-2	Xarasú-putari	_	_	_	_	_	_	_	TokenRange=0:13
+1	Xarasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arasú
+2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=14:16
+4	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	TokenRange=17:25
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=26:28
+6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=32:33
+8	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=34:40
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=41:46
+10	pirá	pirá	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=47:51
+11	kuí	kuí	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=52:55
+12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=55:56
 
 # sent_id = Hartt1938:3:23:876
 # text = Imirá kambí uyana paratú mirĩ upé, asuí xasú kuyambuka piamu resanhana arama siringa kambí.
