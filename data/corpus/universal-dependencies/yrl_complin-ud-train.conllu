@@ -18814,22 +18814,23 @@
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Hartt1938:0:0:13
-# text = Yawara uyaxiú uikú kunhã resé.
+# text = Yawara yaxiú ikú kunhã resé.
 # text_eng = The dog is barking at the woman.
 # text_por = O cachorro está ladrando para a mulher.
 # text_source = p. 320, No. 13
 # text_orig = yauára iaxió ikó kuñán resé.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Yawara yaxiú/=mf:m|uyaxiú ikú/=mf:m|uikú:x|v:h|v kunhã resé/adp.
 1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	uyaxiú	yaxiú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
-3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	TokenRange=14:18
-4	kunhã	kunhã	NOUN	N	Number=Sing	2	obl	_	TokenRange=19:24
-5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=25:29
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=29:30
+2	yaxiú	yaxiú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyaxiú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=7:12
+3	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=13:16
+4	kunhã	kunhã	NOUN	N	Number=Sing	2	obl	_	TokenRange=17:22
+5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=23:27
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Hartt1938:0:0:14
-# text = Intí asendú.
+# text = Intí xasenú.
 # text_eng = I don't listen.
 # text_por = Não ouço.
 # text_source = p. 320, No. 14
@@ -18837,7 +18838,7 @@
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
-2	asendú	sendú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:11
+2	xasenú	senú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asenú|SpaceAfter=No|TokenRange=5:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:15
