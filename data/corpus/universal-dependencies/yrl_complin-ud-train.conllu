@@ -20356,21 +20356,22 @@
 # text_por_sec = Quero levar minha esposa comigo, para fazer piracuí.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Xarasú-putari se rimirikú se irũ/adp, umunhã arama/sconj pirá kuí.
+# inputline = Xarasú-putari se rimirikú se rũ/=typo:c|irũ:x|adp, umunhã arama/sconj pirá kuí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xarasú-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Xarasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arasú
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=14:16
 4	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	TokenRange=17:25
 5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=26:28
-6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
-7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=32:33
-8	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=34:40
-9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=41:46
-10	pirá	pirá	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=47:51
-11	kuí	kuí	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=52:55
-12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=55:56
+6	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	5	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=29:31
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=31:32
+8	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=33:39
+9	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=40:45
+10	pirá	pirá	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=46:50
+11	kuí	kuí	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=51:54
+12	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=54:55
 
 # sent_id = Hartt1938:3:23:876
 # text = Imirá kambí uyana paratú mirĩ upé, asuí xasú kuyambuka piamu resanhana arama siringa kambí.
