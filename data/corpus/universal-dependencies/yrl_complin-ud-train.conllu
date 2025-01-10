@@ -1916,13 +1916,14 @@
 # text_source = Example 1046 Br
 # text_orig = ti=será [inde re-manu=wã waa]
 # text_annotator = Leonel Figueiredo de Alencar
-1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=0:2
-2	será	será	PART	PQ	PartType=Int	6	advmod	_	TokenRange=3:7
-3	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	TokenRange=8:12
-4	remanú	manú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	6	acl:relcl	_	TokenRange=13:19
+# inputline = Ti será indé/@ remanú wã waá/rel?
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	será	será	PART	PQ	PartType=Int	3	advmod	_	TokenRange=3:7
+3	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	0	root	_	TokenRange=8:12
+4	remanú	manú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	6	acl:relcl	_	TokenRange=13:19
 5	wã	wã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=20:22
-6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	0	root	_	SpaceAfter=No|TokenRange=23:26
-7	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=26:27
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	SpaceAfter=No|TokenRange=23:26
+7	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Cruz2011:0:0:30
 # text = Kwá wakarí mamé uikú waá arara ruaya.
