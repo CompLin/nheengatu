@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: Januar 9, 2025
+# Last update: January 14, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -761,6 +761,7 @@ def handlePart(token,tokenlist,verbs):
     'ASSUM': {'PartType': 'Mod'},
     'PROTST': {'PartType': 'Mod'},
     'TOTAL': {'PartType': 'Quant', 'Aspect':'Compl'},
+    'CONT': {'PartType': 'Tam', 'Aspect':'Cont'},
     'COND': {'PartType': 'Mod', 'Modality': 'Cond'},
     'NEC': {'PartType': 'Mod', 'Modality': 'Nec'},
     'OBL': {'PartType': 'Mod', 'Modality': 'Obl'},
@@ -798,6 +799,10 @@ def handlePart(token,tokenlist,verbs):
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)
         updateFeats(token,'Aspect','Perf')
+    elif xpos == 'CONT':
+        #headPartPreviousVerb(token,verbs)
+        token['head']=getAdvHead(token,tokenlist,verbs)
+        updateFeats(token,'Aspect','Cont')
     elif xpos == 'IMPF':
         #headPartPreviousVerb(token,verbs)
         token['head']=getAdvHead(token,tokenlist,verbs)

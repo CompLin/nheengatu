@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: October 30, 2024
+# Last update: January 14, 2025
 
 import re, sys, os, json
 
@@ -108,6 +108,7 @@ part. pres.\tPRSV\tpartícula de presentativo
 part. fut.\tFUT\tpartícula de futuro
 part. encl. freq.\tFREQ\tpartícula enclítica de frequentativo
 part. frust.\tFRUST\tpartícula de frustativo
+part. cont.\tCONT\tpartícula de continuativo
 part. foco\tFOC\tpartícula de foco
 part. pret.\tPRET\tpartícula de pretérito
 part. cond.\tCOND\tpartícula de condicional
@@ -423,7 +424,7 @@ def firstclasspron():
     return {'ixé': '1+SG','indé': '2+SG','iné': '2+SG','aé': '3+SG',
     'yandé': '1+PL','yané': f"{ARCHAIC}+1+PL", 'penhẽ': '2+PL',
     'tá': '3+PL', # TODO: deprecated  form to be removed
-    'ta': '3+PL','aintá': '3+PL', 'indéu': '2+SG+DAT',
+    'ta': '3+PL','aintá': '3+PL', 'aúna': '3+PL','indéu': '2+SG+DAT',
     'inéu': '2+SG+DAT', 'yandéu': '1+PL+DAT', 'yanéu': '1+PL+DAT', 'ixéu': '1+SG+DAT',
     'penhemu': '2+PL+DAT'
     }
@@ -603,7 +604,7 @@ def process_feats(feats):
     global featsdic
     featsdic={'[123]': 'person','SG|PL': 'number',
     'ABS|NCONT|CONT' : 'rel',
-    'NFIN' : 'vform', 'AUG|DIM' : 'degree',
+    'NFIN|VNOUN' : 'vform', 'AUG|DIM' : 'degree',
     'IMP|IND|IMPIND' : 'mood',
     'FREQ|HAB':'aspect', 'PRV|COL':'derivation', 'MID|ACT' : 'voice', 
     'PRES|PAST': 'tense', 'RED' : 'redup', 'DAT' : 'case', 'ARCH' : 'style' }
@@ -626,7 +627,8 @@ def extract_feats(parses):
         else:
             new['pos']=None
         mood=new.get('mood')
-        if mood:
+        vform=new.get('vform')
+        if mood and not vform:
             new['vform']='FIN'
         entries.append(new)
     return entries
