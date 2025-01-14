@@ -4459,7 +4459,7 @@
 
 # sent_id = Casasnovas2006:2:6:20
 # text = Asuí umundéu yepé i pú akití, upisika arã yautí i pí resé.
-# text_eng = TODO
+# text_eng = Unexpectedly, the jaguar felt itself being bitten and having its own finger torn off.
 # text_eng_ggl = Then he reached in with one of his hands to grab the tortoise's foot.
 # text_por = Depois, enfiou uma das mãos para lá, para pegar no pé do jabuti.
 # text_source = p. 70, No. 6
@@ -4515,7 +4515,7 @@
 
 # sent_id = Casasnovas2006:2:8:22
 # text = Ti waá upé yawaraté usarú, mairamé usaã usuú ana i puampé usaka.
-# text_eng = TODO
+# text_eng = Unexpectedly, the jaguar felt itself being bitten and having its own finger torn off.
 # text_eng_ggl = Unexpectedly, the jaguar felt himself biting and tearing off his own finger.
 # text_por = Inesperadamente a onça sentiu morder e arrancar o próprio dedo.
 # text_source = p. 70, No. 8
@@ -13391,20 +13391,21 @@
 9	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=50:51
 
 # sent_id = Magalhaes1876:2-6:2:21
-# text = Intí xarikú awá xamundú arama ipiama.
+# text = Intí xarikú kuíri awá xamundú arama ipiama.
 # text_eng = TODO
 # text_por = Eu não tenho agora por quem mandar buscá-las.
 # text_source = p. 102
 # text_orig = Intí xa rekộ cuhɨre auá xa mundú arãma ipiãma.
 # text_annotator = Leonel Figueiredo de Alencar
-# inputline = Intí xarikú awá/ind xamundú arama/sconj ipiama/=typo:c|upiama.
+# inputline = Intí xarikú kuíri awá/ind xamundú arama/sconj ipiama/=typo:c|upiama.
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arikú|TokenRange=5:11
-3	awá	awá	PRON	IND	PronType=Ind	2	obj	_	TokenRange=12:15
-4	xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=amundú|TokenRange=16:23
-5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
-6	ipiama	piama	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	4	ccomp	_	CorrectForm=upiama|SpaceAfter=No|TokenRange=30:36
-7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=36:37
+3	kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=12:17
+4	awá	awá	PRON	IND	PronType=Ind	2	obj	_	TokenRange=18:21
+5	xamundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=amundú|TokenRange=22:29
+6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=30:35
+7	ipiama	piama	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	5	ccomp	_	CorrectForm=upiama|SpaceAfter=No|TokenRange=36:42
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = Magalhaes1876:2-7:3:22
 # text = Xamundú kurumirĩ ipiama, xarikú ramé xamundú arama.
@@ -21625,7 +21626,7 @@
 
 # sent_id = Avila2021:0:0:734
 # text = [...] Sampaio usendú nheengatú puapuãmu waá upé Barcelos upé.
-# text_eng = TODO
+# text_eng = [...] Sampaio heard Nheengatu while wandering in Barcelos.
 # text_por = [...] Sampaio ouviu o nheengatu quando perambulava por Barcelos/=p.
 # text_source = Oliveira; Schwade, 28
 # text_annotator = Leonel Figueiredo de Alencar
