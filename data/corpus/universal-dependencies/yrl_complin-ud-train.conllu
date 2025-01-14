@@ -15210,6 +15210,61 @@
 18	wana	wana	PART	PFV	Aspect=Perf	16	advmod	_	SpaceAfter=No|TokenRange=76:80
 19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=80:81
 
+# sent_id = Magalhaes1876:2:29:72
+# text = Paraná unheẽ: — Te reyuakí se ruba irumu! tenupá ukiri.
+# text_orig = Paraná	onhehẽ:	—	Ten rẹiáúkɨ	cẹ	rúba	irúmo!	tenupá okệri.
+# text_por = O rio repondeu: — Não bulas com meu pai! deixa-o dormir.
+# text_por_gloss = Rio	respondeu:	—	Não	bulas	meu	pai	com!	deixa	ele dormir.
+# text_eng = TODO
+# text_source = p. 180
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Paraná unheẽ: — Te reyuakí se ruba irumu/adp! tenupá/prec ukiri.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:12
+3	:	:	PUNCT	PUNCT	_	6	punct	_	TokenRange=12:13
+4	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=13:14
+5	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	6	advmod	_	TokenRange=15:17
+6	reyuakí	yuakí	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	TokenRange=18:25
+7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=26:28
+8	ruba	tuba	NOUN	N	Number=Sing|Rel=Cont	6	obl	_	TokenRange=29:33
+9	irumu	irumu	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=34:39
+10	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=39:40
+11	tenupá	tenupá	PART	PREC	PartType=Mod	12	advmod	_	TokenRange=41:47
+12	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	SpaceAfter=No|TokenRange=48:53
+13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=53:54
+
+# sent_id = Magalhaes1876:2:30:73
+# text = Yautí unheẽ: — Kuíri supí se rurí katú; paraná xasú raĩ.
+# text_orig = Iáutí	onhehẽ:	— Cuhɨre	çupí	cẹ	rurí	catú;	paraná	xa	çộ	raĩ.
+# text_por = O jabuti disse: — Agora sim estou bem alegre; rio, eu vou logo.
+# text_por_gloss = Jabuti	falou:	— Agora	certo	me	alegro	bem;	rio	me	vou	ainda.
+# text_eng = TODO
+# text_source = p. 180
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Yautí unheẽ: — Kuíri supí/cert se rurí katú/advs; paraná xasú raĩ.
+# text_annotator = Juliana Lopes Gurgel
+# acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
+2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:11
+3	:	:	PUNCT	PUNCT	_	8	punct	_	TokenRange=11:12
+4	—	—	PUNCT	PUNCT	_	8	punct	_	TokenRange=12:13
+5	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	8	advmod	_	TokenRange=14:19
+6	supí	supí	PART	CERT	PartType=Mod	8	advmod	_	TokenRange=20:24
+7	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	TokenRange=25:27
+8	rurí	rurí	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	2	ccomp	_	TokenRange=28:32
+9	katú	katú	ADV	ADVS	AdvType=Deg	8	advmod	_	SpaceAfter=No|TokenRange=33:37
+10	;	;	PUNCT	PUNCT	_	12	punct	_	TokenRange=37:38
+11	paraná	paraná	NOUN	N	Number=Sing	12	vocative	_	TokenRange=39:45
+12	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	8	parataxis	_	ModernForm=asú|TokenRange=46:50
+13	raĩ	raĩ	PART	IMPF	Aspect=Imp	12	advmod	_	SpaceAfter=No|TokenRange=51:54
+14	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=54:55
+
 # sent_id = Magalhaes1876:3:1:201
 # text = Yautí usasema: — Se anama-itá!
 # text_eng = The tortoise shouted: — My relatives!
