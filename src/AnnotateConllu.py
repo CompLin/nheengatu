@@ -2057,6 +2057,7 @@ def handlePartialRedup(form,length,xpos='V',orig=None, orig_form='',accent=False
             lemma=handleAccent(lemma)
     else:
         lemma=entry['lemma'][length:]
+        entry['pos']=xpos
     handleOrig(new,lemma,orig, orig_form)
     entry['derivation']=REDUP
     keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize dictionary entry 

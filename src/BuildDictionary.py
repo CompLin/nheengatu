@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 14, 2025
+# Last update: January 17, 2025
 
 import re, sys, os, json
 
@@ -392,6 +392,9 @@ def guessVerb(form):
 			start=len(prefix)
 			entry['lemma']=form[start:]
 			entries.append(entry)
+			return entry
+		else:
+			entry['lemma']=form
 			return entry
 
 def extractArchaicLemmas(glossary):
