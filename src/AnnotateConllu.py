@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: January 14, 2025
+# Last update: January 17, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
-from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss
+from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss, mkAnnotator
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -2907,7 +2907,7 @@ def _includeTranslation(text_por,translate=True):
 		text_eng=formatTextEng(text_eng)
 	return text_eng
 
-def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,institution='',check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	yrl=sents['text']
 	por=sents['text_por']
 	if check:
@@ -2916,6 +2916,8 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
 	metadata=metadata
+	dic=mkAnnotator(person=annotator,text='text',institution=institution)
+	annotator=dic['text_annotator']
 	if inputline:
 		metadata.update({'inputline': yrl})
 	tokenlist=_handleSents(sents,annotator,metadata)
@@ -2925,7 +2927,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,check=True, outfile=F
 	#    saveParseToFile(includeText(example,outstring),metadata, overwrite)
 	handleParse(outstring,copyboard=copyboard)
 	
-def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR, institution='',check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	tokenlist=parse(conllu_data)[0]
 	sents={}
 	metadata=metadata
@@ -2933,7 +2935,7 @@ def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR
 	for k,v in tokenlist.metadata.items():
 		sents[k]=v
 	metadata.update(mkTranscriber('dom',translation='por_gloss',institution='dac'))
-	_parseExample(sents,copyboard=copyboard,annotator=annotator,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
+	_parseExample(sents,copyboard=copyboard,annotator=annotator,institution=institution,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=False, inputline=True):
     sents=extract_sents(example)
@@ -3311,9 +3313,14 @@ def mkSecTextAvila(example,por_sec=True):
     sents=extract_sents(example)
     return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
 
-def ppMetadata(metadata):
+def serializeDictionary(metadata):
+	output=''
 	for k,v in metadata.items():
-		print(f"# {k} = {v}")
+		output=output+f"# {k} = {v}"
+	return output
+
+def ppMetadata(metadata):
+	print(serializeDictionary(metadata))
 
 def ModernForm(form='remunhã',feats='Number=Sing|Person=2|VerbForm=Fin',register='Modern'):
     featlist=[feat.split('=') for feat in feats.split('|')]

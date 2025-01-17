@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: November 26, 2024
+# Last update: January 17, 2025
+
+import re
+
+PAT=re.compile(r"^\w+$")
 
 INSTITUTIONS = {'min' : 'Biblioteca Brasiliana Guita e José Mindlin',
                 'dac' : '''DACILAT Project, FAPESP's Process No. 2022/09158-5'''
@@ -54,14 +58,23 @@ def getRole(abbreviation='an'):
 			break
 	return role
 
-def mkRole(person='leo', text='text', abbreviation='an',institution=''):
-	dic={}
-	role=getRole(abbreviation)
-	person=PEOPLE[person]
-	if institution:
-		person=f"{', '.join([person,INSTITUTIONS[institution]])}"
-	dic[f"{'_'.join([text,role])}"]=person
-	return dic
+def handleAbbreviation(abbreviation):
+    name = PEOPLE.get(abbreviation)
+    if not name:
+        if PAT.search(abbreviation):
+            raise ValueError("Non-registered abbreviation")
+        else:
+            name = abbreviation
+    return name
+
+def mkRole(person='leo', text='text', abbreviation='an', institution=''):
+    dic = {}
+    name = handleAbbreviation(person)  # Let the error propagate if it occurs
+    role = getRole(abbreviation)
+    if institution:
+        name = f"{', '.join([name, INSTITUTIONS[institution]])}"
+    dic[f"{'_'.join([text, role])}"] = name
+    return dic
 
 def mkTextModernizer(person='hel',text='text_por',institution=''):
 	return mkRole(person, text, 'mod',institution)
