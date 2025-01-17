@@ -2632,7 +2632,7 @@ def mkConlluSentence(tokens):
                 new=_mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=red':
-                new=handlePartialRedup(form,length,xpos='V',orig=orig, orig_form=orig_form, accent=accent, suffix=suffix)
+                new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix)
                 newparselist=new['parselist']
             elif tag == '=mid':
                 new=handleMiddlePassive(form)
