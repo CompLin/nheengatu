@@ -18974,9 +18974,9 @@
 # text_por_source = Avila (2021)
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Mundawasú	mundawasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:9
-2	uyawáu	yawáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:16
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
+1	Munawasú	munawasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
+2	uyawáu	yawáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:15
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Hartt1938:0:0:21
 # text = Asetuna reté, i katú reté se tĩ.
@@ -20046,6 +20046,26 @@
 2	xayumumunéu	muamunéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=xayumuamunéu|ModernForm=ayumumunéu|SpaceAfter=No|TokenRange=5:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
+# sent_id = Hartt1938:0:238:238
+# text = Se paya se nupá tupasamawasú irũ.
+# text_por = Meu pai me bateu com chicote.
+# text_source = p. 336, No. 238
+# text_orig = sepaia senupan tupasáma uasú irúm.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Se paya se nupá/=mf:m|unupá:r|Standard tupasamawasú/=aug irũ/adp.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	paya	paya	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=3:7
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obj	_	TokenRange=8:10
+4	nupá	nupá	VERB	V	Style=Rare|VerbForm=Inf	0	root	_	StandardForm=unupá|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=11:15
+5	tupasamawasú	tupasama	NOUN	N	Degree=Aug|Number=Sing	4	obl	_	TokenRange=16:28
+6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
+
 # sent_id = Hartt1938:0:0:245
 # text = Ekũi Antônio piri.
 # text_por = Vai ter com Antônio.
@@ -20435,6 +20455,8 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Maã/int resé/adp intí remenari-putari se irũ/adp?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Maã	maã	PRON	INT	PronType=Int	4	obl	_	TokenRange=0:3
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=4:8
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:13
@@ -20444,6 +20466,28 @@
 6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obl	_	TokenRange=30:32
 7	irũ	irũ	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:36
 8	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Hartt1938:0:814:814
+# text = Kwaá kurumiwasú i kirimawawasú.
+# text_por = Este moço é valente.
+# text_source = p. 378, No. 814
+# text_orig = kuaá kurumí asú ikyrymáua osú.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Kwaá kurumiwasú i kirimbawasú.
+# text_por_sec = Este moço é valente.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Kwaá/demx kurumiwasú i/pron2 kirimawawasú/=ev:x|v2.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
+2	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:15
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=16:17
+4	kirimawawasú	kirimawa	VERB	V2	Degree=Aug|Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:30
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Hartt1938:0:0:847
 # text = Rerikú será urusakã purã ne "vizinho" suí?
