@@ -20129,6 +20129,24 @@
 5	piamu	piamu	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# sent_id = Hartt1938:0:281:281
+# text = Kwaá apigawa i xirĩ reté.
+# text_por = Este homem é muito mentiroso.
+# text_source = p. 339, No. 281
+# text_orig = kuaá apyáua ixirin reté.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Kwaá/demx apigawa/n i/pron2 xirĩ/v2 reté/advs.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
+2	apigawa	apigawa	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:12
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=13:14
+4	xirĩ	xirĩ	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=15:19
+5	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	SpaceAfter=No|TokenRange=20:24
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
+
 # sent_id = Hartt1938:0:0:286
 # text = Ekũi eyuuka paka mundé suí, tenhẽ emuyawáu!
 # text_por = Vai tirar a paca do mundéu, não deixa fugir.
@@ -20266,6 +20284,27 @@
 6	warama	warama	ADP	ADP	AdpType=Post	5	case	_	TokenRange=23:29
 7	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=30:34
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=34:35
+
+# sent_id = Hartt1938:0:645:645
+# text = Antonio i xirixirĩ.
+# text_por = Antônio é muito falso.
+# text_source = p. 366, No. 645
+# text_orig = Antonio ixirixirim (Mauhé).
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Antonio i xirixirĩ.
+# text_por_sec = Antônio é muito falso.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# ethnicity_orig = Mauhé
+# inputline = Antonio/=p i/pron2 xirixirĩ/=red:l|4:x|v2.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Antonio	antonio	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:7
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=8:9
+3	xirixirĩ	xirĩ	VERB	V2	Mood=Ind|Red=Yes|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:18
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Hartt1938:0:0:692
 # text = Iné ne kirimawa piri amú-itá suí.
