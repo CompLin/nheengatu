@@ -20054,14 +20054,13 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Se paya se nupá/=mf:m|unupá:r|Standard tupasamawasú/=aug irũ/adp.
+# inputline = Se paya se/=mf:m|ixé nupá/=mf:m|unupá tupasamawasú/=aug irũ/adp.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	paya	paya	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=3:7
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obj	_	TokenRange=8:10
-4	nupá	nupá	VERB	V	Style=Rare|VerbForm=Inf	0	root	_	StandardForm=unupá|StandardMood=Ind|StandardPerson=3|StandardVerbform=Fin|TokenRange=11:15
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|ModernProntype=Prs|TokenRange=8:10
+4	nupá	nupá	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=unupá|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=11:15
 5	tupasamawasú	tupasama	NOUN	N	Degree=Aug|Number=Sing	4	obl	_	TokenRange=16:28
 6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:32
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
@@ -20468,7 +20467,7 @@
 8	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = Hartt1938:0:814:814
-# text = Kwaá kurumiwasú i kirimawawasú.
+# text = Kwaá kurumiwasú i kirimawausú.
 # text_por = Este moço é valente.
 # text_source = p. 378, No. 814
 # text_orig = kuaá kurumí asú ikyrymáua osú.
@@ -20479,15 +20478,14 @@
 # text_por_sec = Este moço é valente.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Kwaá/demx kurumiwasú i/pron2 kirimawawasú/=ev:x|v2.
+# inputline = Kwaá/demx kurumiwasú i/pron2 kirimawausú/=ev:x|v2.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:15
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=16:17
-4	kirimawawasú	kirimawa	VERB	V2	Degree=Aug|Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:30
-5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=30:31
+4	kirimawausú	kirimawa	VERB	V2	Degree=Aug|Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:29
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Hartt1938:0:0:847
 # text = Rerikú será urusakã purã ne "vizinho" suí?

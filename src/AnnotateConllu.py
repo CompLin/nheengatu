@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: January 17, 2025
+# Last update: January 18, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2209,7 +2209,7 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     return mkNoun(lemma,None,dic)
 
 def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
-    suffixes={'wasú': 'AUG', 'mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
+    suffixes={'usú':'AUG','wasú': 'AUG', 'asú': 'AUG','mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
     xpos=xpos
     dic={}
     dic['lemma']=form.lower()
@@ -3315,10 +3315,10 @@ def mkSecTextAvila(example,por_sec=True):
     return mkSecText(yrl=sents[0],yrl_source='Avila (2021)',por_sec=por_sec,por=sents[2])
 
 def serializeDictionary(metadata):
-	output=''
+	output=[]
 	for k,v in metadata.items():
-		output=output+f"# {k} = {v}"
-	return output
+		output.append(f"# {k} = {v}")
+	return "\n".join(output)
 
 def ppMetadata(metadata):
 	print(serializeDictionary(metadata))
