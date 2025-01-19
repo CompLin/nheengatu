@@ -5415,7 +5415,7 @@
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=48:49
 
 # sent_id = Avila2021:0:0:50
-# text = Aramé paá i kiwíra urasú aé iwaka kití, ti resé uputari sendira umendari.
+# text = Aramé paá i kiwira urasú aé iwaka kití, ti resé uputari sendira umendari.
 # text_eng = So, it is said that her brother took her to heaven because he did not want his sister to marry.
 # text_por = Então, dizem que seu irmão levou-a para o céu, porque ele não queria que a irmã se casasse.
 # text_source = Rodrigues, 124, adap.
@@ -5424,7 +5424,7 @@
 1	Aramé	aramé	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=6:9
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:11
-4	kiwíra	kiwíra	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=12:18
+4	kiwira	kiwira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=12:18
 5	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=19:24
 6	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=25:27
 7	iwaka	iwaka	NOUN	N	Number=Sing	5	obl	_	TokenRange=28:33
@@ -6298,7 +6298,7 @@
 31	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=141:142
 
 # sent_id = Avila2021:0:0:99
-# text = Mayé taá uikú ne kiwíra?
+# text = Mayé taá uikú ne kiwira?
 # text_eng = How is your brother?
 # text_por = Como está teu irmão?
 # text_source = Hartt, 349, adap.
@@ -6308,7 +6308,7 @@
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=5:8
 3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	1	cop	_	TokenRange=9:13
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=14:16
-5	kiwíra	kiwíra	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=17:23
+5	kiwira	kiwira	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=17:23
 6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = Avila2021:0:0:100
