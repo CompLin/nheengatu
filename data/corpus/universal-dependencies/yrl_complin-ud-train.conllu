@@ -19452,6 +19452,28 @@
 5	yurú	yurú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=24:28
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
 
+# sent_id = Hartt1938:0:0:78
+# text = Kwaá se membira i atiima, i xirĩwasú yuíri.
+# text_por = Meu filho é preguiçoso e mentiroso também.
+# text_source = p. 324, No. 78
+# text_orig = kuaá semymyra iatyyma, ixirín osú yuír.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Kwaá/demx se membira i/pron2 atiima/v2, i/pron2 xirĩwasú/=ev:x|v2 yuíri/cconj.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
+3	membira	membira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=8:15
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	expl	_	TokenRange=16:17
+5	atiima	atiima	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:24
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=24:25
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	TokenRange=26:27
+8	xirĩwasú	xirĩ	VERB	V2	Degree=Aug|Mood=Ind|VerbForm=Fin	5	conj	_	TokenRange=28:36
+9	yuíri	yuíri	CCONJ	CCONJ	_	8	cc	_	SpaceAfter=No|TokenRange=37:42
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=42:43
+
 # sent_id = Hartt1938:0:0:91
 # text = Intí ã se kirimbá xasupiri arama maã i poréi reté waá.
 # text_eng = TODO
@@ -20046,7 +20068,7 @@
 2	xayumumunéu	muamunéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=xayumuamunéu|ModernForm=ayumumunéu|SpaceAfter=No|TokenRange=5:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
-# sent_id = Hartt1938:0:238:238
+# sent_id = Hartt1938:0:0:238
 # text = Se paya se nupá tupasamawasú irũ.
 # text_por = Meu pai me bateu com chicote.
 # text_source = p. 336, No. 238
@@ -20152,7 +20174,7 @@
 5	piamu	piamu	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
-# sent_id = Hartt1938:0:281:281
+# sent_id = Hartt1938:0:0:281
 # text = Kwaá apigawa i xirĩ reté.
 # text_por = Este homem é muito mentiroso.
 # text_source = p. 339, No. 281
@@ -20308,8 +20330,8 @@
 7	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=30:34
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=34:35
 
-# sent_id = Hartt1938:0:645:645
-# text = Antonio i xirixirĩ.
+# sent_id = Hartt1938:0:0:645
+# text = Antônio i xirixirĩ.
 # text_por = Antônio é muito falso.
 # text_source = p. 366, No. 645
 # text_orig = Antonio ixirixirim (Mauhé).
@@ -20321,10 +20343,10 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # ethnicity_orig = Mauhé
-# inputline = Antonio/=p i/pron2 xirixirĩ/=red:l|4:x|v2.
+# inputline = Antônio/=p i/pron2 xirixirĩ/=red:l|4:x|v2.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Antonio	antonio	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:7
+1	Antônio	antônio	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:7
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=8:9
 3	xirixirĩ	xirĩ	VERB	V2	Mood=Ind|Red=Yes|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:18
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
@@ -20466,7 +20488,7 @@
 7	irũ	irũ	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:36
 8	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
 
-# sent_id = Hartt1938:0:814:814
+# sent_id = Hartt1938:0:0:814
 # text = Kwaá kurumiwasú i kirimawausú.
 # text_por = Este moço é valente.
 # text_source = p. 378, No. 814
