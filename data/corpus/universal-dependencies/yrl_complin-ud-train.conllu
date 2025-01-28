@@ -15288,6 +15288,7 @@
 # inputline = Paraná usuaxara: — Ah, yautí, iné ipú reyuyutima-putari mukũi/card wé!
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:15
 3	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=15:16
@@ -15299,11 +15300,11 @@
 9	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	TokenRange=30:33
 10	ipú	ipú	PART	ASSUM	PartType=Mod	11	advmod	_	TokenRange=34:37
 11-12	reyuyutima-putari	_	_	_	_	_	_	_	TokenRange=38:55
-11	reyuyutima	yuyutima	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	2	ccomp	_	_
+11	reyuyutima	yutima	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin|Voice=Mid,Pass	2	ccomp	_	_
 12	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	11	aux	_	_
 13	mukũi	mukũi	NUM	CARD	NumType=Card	11	obl	_	TokenRange=56:61
-14	wé	wé	CONT	CONT	_	11	advmod	_	SpaceAfter=No|TokenRange=62:64
-15	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=64:65
+14	wé	wé	PART	CONT	_	11	advmod	_	SpaceAfter=No|TokenRange=62:64
+15	!	!	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=64:65
 
 # sent_id = Magalhaes1876:2:32:75
 # text = Yautí unheẽ: — Intí maã xaikú arawírupi itá arama; kuíri xasú xamaẽ kirimbawa piri waá se suí; eré, paraná, xasú raĩ.
