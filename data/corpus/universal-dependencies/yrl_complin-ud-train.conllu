@@ -15402,7 +15402,7 @@
 12	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Magalhaes1876:2:35:78
-# text = Kuíri remaẽ kurí se irumu.
+# text = — Kuíri remaẽ kurí se irumu.
 # text_orig = — Cuhɨre	remahẽ curí	cẹ	irúmo.
 # text_por = — Agora tu verás comigo.
 # text_por_gloss = — Agora	tu verás	eu	com (comigo).
@@ -15410,15 +15410,16 @@
 # text_source = p. 181
 # text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Kuíri remaẽ kurí se irumu/adp.
+# inputline = — Kuíri remaẽ kurí se irumu/adp.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
-2	remaẽ	maẽ	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:11
-3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	TokenRange=12:16
-4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obl	_	TokenRange=17:19
-5	irumu	irumu	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=20:25
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
+1	—	—	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
+2	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=1:6
+3	remaẽ	maẽ	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:12
+4	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=13:17
+5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	obl	_	TokenRange=18:20
+6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=21:26
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Magalhaes1876:2:36:79
 # text = — Ixé paá apigawa!
@@ -17501,7 +17502,7 @@
 # text = Mayawé intí wana Buopé urikú awá resé umaramunhã, aé usú asuí i mira irumu.
 # text_eng = TODO
 # text_por = Como Buopé não tinha mais contra quem combater partiu daí com a sua gente.
-# text_source = p. 27, Np. 84
+# text_source = p. 27, No. 84
 # text_orig = Maaiaué nti uana Buopé oreku auá resé omaramunhan, aé oiusu asuhi i mira yrumo.
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
