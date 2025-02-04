@@ -15486,7 +15486,7 @@
 # sent_id = Magalhaes1876:2:39:82
 # text = Yautí upuri kirimawasawa irumu tapiira rapiá resé.
 # text_orig = Iáutí	opúri	kirimáuaçáua	irúmo	tapiíra	rapiá	recệ.
-# text_por = O jabuti pulou com valentia no escroto da anta.
+# text_por = O jabuti pulou com valentia sobre o escroto da anta.
 # text_por_gloss = O jabuti	pulou	valentia	com	da anta	escrotos	sobre.
 # text_eng = TODO
 # text_source = p. 181
@@ -15494,6 +15494,7 @@
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Yautí upuri kirimawasawa irumu/adp tapiira rapiá resé/adp.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	upuri	puri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	kirimawasawa	kirimawasawa	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:24
@@ -15512,14 +15513,15 @@
 # text_source = p. 181
 # text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Tapiira i/pron2 akanhemu/v2, upaka/@.
+# inputline = Tapiira i/pron2 akanhemu/v2, upaka.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tapiira	tapiira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:7
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	expl	_	TokenRange=8:9
-3	akanhemu	akanhemu	VERB	V2	Mood=Ind|VerbForm=Fin	5	advcl	_	SpaceAfter=No|TokenRange=10:18
+3	akanhemu	akanhemu	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=10:18
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
-5	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
-6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=25:26
+5	upaka	paka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=20:25
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Magalhaes1876:2:41:84
 # text = Tapiira kwayé unheẽ: — Tupana resé katú, yautí, rexari se rapiá.
@@ -15530,8 +15532,9 @@
 # text_source = p. 181-182
 # text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Tapiira kwayé unheẽ: — Tupana resé/adp katú/a, yautí, rexari se rapiá.
+# inputline = Tapiira kwayé unheẽ: — Tupana resé/adp katú/advs, yautí, rexari se rapiá.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tapiira	tapiira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:7
 2	kwayé	kwayé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=8:13
 3	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=14:19
@@ -15539,7 +15542,7 @@
 5	—	—	PUNCT	PUNCT	_	12	punct	_	TokenRange=20:21
 6	Tupana	tupana	NOUN	N	Number=Sing	12	obl	_	TokenRange=22:28
 7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	TokenRange=29:33
-8	katú	katú	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=34:38
+8	katú	katú	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=34:38
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=38:39
 10	yautí	yautí	NOUN	N	Number=Sing	12	vocative	_	SpaceAfter=No|TokenRange=40:45
 11	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=45:46
@@ -15559,6 +15562,7 @@
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Yautí usuaxara: — Ixé intí maã/ind xaxari maãresé xamaẽ-putari ne kirimawasawa.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
 3	:	:	PUNCT	PUNCT	_	8	punct	_	TokenRange=14:15
@@ -15584,14 +15588,15 @@
 # text_source = p. 182
 # text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Tapiira unheẽ: — Aramé/advj aikú/cop xasú.
+# inputline = Tapiira unheẽ: — Aramé/advj aikú/v xasú.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tapiira	tapiira	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:13
 3	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=13:14
 4	—	—	PUNCT	PUNCT	_	7	punct	_	TokenRange=14:15
 5	Aramé	aramé	ADV	ADVJ	AdvType=Cau	7	advmod	_	TokenRange=16:21
-6	aikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	7	cop	_	TokenRange=22:26
+6	aikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	7	aux	_	TokenRange=22:26
 7	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	ccomp	_	ModernForm=asú|SpaceAfter=No|TokenRange=27:31
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
@@ -15606,6 +15611,7 @@
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Yautí kwayé unheẽ: — Xayuká indé, u intí maã/ind?
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yautí	yautí	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:5
 2	kwayé	kwayé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=6:11
 3	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:17
@@ -15617,7 +15623,7 @@
 9	u	u	CCONJ	CCONJ	_	10	cc	_	TokenRange=33:34
 10	intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	6	conj	_	TokenRange=35:39
 11	maã	maã	DET	IND	PronType=Ind	10	fixed	_	SpaceAfter=No|TokenRange=40:43
-12	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=43:44
+12	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Magalhaes1876:2:46:89
 # text = — Kuíri xasú xasikari se anama-itá uú arama indé.
@@ -15630,6 +15636,7 @@
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = — Kuíri xasú xasikari se anama-itá uú arama/sconj indé.
 # text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	—	—	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
 2	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=1:6
 3	xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	aux	_	ModernForm=asú|TokenRange=7:11
