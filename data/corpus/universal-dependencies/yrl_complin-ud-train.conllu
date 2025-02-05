@@ -15600,6 +15600,35 @@
 7	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	ccomp	_	ModernForm=asú|SpaceAfter=No|TokenRange=27:31
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
+# sent_id = Magalhaes1876:2:44:87
+# text = Tapiira upuãmu, uyana paraná mirĩ rupí; mukũi ara pawasá-pe tapiira umanú ana.
+# text_orig = Tapiíra	opuãma,	unhãna	paraná	mirĩ	rupí;	mocoĩ	ára	pauacápe	tapiíra	omanũ-ãna.
+# text_por = A anta levantou-se, correu pelo pequeno rio; ao fim de dois dias a anta morreu.
+# text_por_gloss = Anta	levantou-se,	correu	rio	pequeno	sobre;	dois	dias	no fim,	anta	morreu.
+# text_eng = TODO
+# text_source = p. 181
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Tapiira upuãmu, uyana paraná mirĩ/a rupí; mukũi/card ara pawasá-pe tapiira umanú ana.
+# text_annotator = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Tapiira	tapiira	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
+2	upuãmu	puãmu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:14
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=14:15
+4	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=16:21
+5	paraná	paraná	NOUN	N	Number=Sing	4	obl	_	TokenRange=22:28
+6	mirĩ	mirĩ	ADJ	A	_	5	amod	_	TokenRange=29:33
+7	rupí	rupí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=34:38
+8	;	;	PUNCT	PUNCT	_	14	punct	_	TokenRange=38:39
+9	mukũi	mukũi	NUM	CARD	NumType=Card	10	nummod	_	TokenRange=40:45
+10	ara	ara	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=46:49
+11-12	pawasá-pe	_	_	_	_	_	_	_	TokenRange=50:59
+11	pawasá	pawasá	NOUN	N	Number=Sing	14	obl	_	_
+12	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	11	case	_	_
+13	tapiira	tapiira	NOUN	N	Number=Sing	14	nsubj	_	TokenRange=60:67
+14	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=68:73
+15	ana	ana	PART	PFV	Aspect=Perf	14	advmod	_	SpaceAfter=No|TokenRange=74:77
+16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=77:78
+
 # sent_id = Magalhaes1876:2:45:88
 # text = Yautí kwayé unheẽ: — Xayuká indé, u intí maã?
 # text_orig = Iáutí	quaí	onhehẽ:	— Xa	iucá	ndệ,	o	intimahã?
