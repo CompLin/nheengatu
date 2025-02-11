@@ -2225,7 +2225,6 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     dic['lemma']=form.lower()
     if xpos=='N':
         dic.update(getNumber(dic['lemma']))
-        print('bu',dic)
     for suff,feat in suffixes.items():
          if dic['lemma'].endswith(suff):
              dic['degree']=feat
@@ -2235,7 +2234,6 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     if accent:
         lemma=handleAccent(lemma,force=force)
     if dic.get('number'):
-        print('du')
         return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form)
     return mkAdj(lemma,None,dic,xpos=xpos)
 
