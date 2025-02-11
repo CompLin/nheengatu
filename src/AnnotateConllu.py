@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: January 18, 2025
+# Last update: February 11, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2153,6 +2153,15 @@ def mkSuffXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
         new['parselist']=[[base, f"{xpos}+{tag}"]]
     return new
 
+def handleRelPref(lemma,feats):
+    parselist=getparselist(lemma)
+    entry=extract_feats(parselist)[0] # TODO: handle ambiguity properly
+    rel=entry.get('rel')
+    if rel:
+        feats.append(rel)
+        lemma=entry['lemma']
+    return lemma
+
 def mkNoun(form,orig=None,dic={},orig_form=''):
     feats=[]
     new={}
@@ -2169,6 +2178,7 @@ def mkNoun(form,orig=None,dic={},orig_form=''):
         d=getNumber(lemma)
         number=d['number']
         lemma=d.get('lemma')
+    lemma=handleRelPref(lemma,feats)
     feats.append(number)
     new['parselist']=[[lemma, f"N+{'+'.join(feats)}"]]
     return new
@@ -2215,6 +2225,7 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     dic['lemma']=form.lower()
     if xpos=='N':
         dic.update(getNumber(dic['lemma']))
+        print('bu',dic)
     for suff,feat in suffixes.items():
          if dic['lemma'].endswith(suff):
              dic['degree']=feat
@@ -2224,8 +2235,10 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     if accent:
         lemma=handleAccent(lemma,force=force)
     if dic.get('number'):
+        print('du')
         return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form)
     return mkAdj(lemma,None,dic,xpos=xpos)
+
 
 def mkCol(form):
     form=form.lower()
