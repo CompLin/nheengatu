@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 17, 2025
+# Last update: February 12, 2025
 
 import re, sys, os, json
 
@@ -383,19 +383,15 @@ def getpersnum(impind=IMPIND):
 def guessVerb(form):
 	persnum=getpersnum()
 	sorted_prefixes = sorted(persnum.keys(), key=len, reverse=True)
-	entries=[]
+	entry={}
 	for prefix in sorted_prefixes:
-		entry={}
 		if form.lower().startswith(prefix):
 			entry['pref']=prefix
 			entry.update(process_feats(f"V+{persnum[prefix]}"))
 			start=len(prefix)
 			entry['lemma']=form[start:]
-			entries.append(entry)
-			return entry
-		else:
-			entry['lemma']=form
-			return entry
+			break
+	return entry
 
 def extractArchaicLemmas(glossary):
     archaic_lemmas=[]

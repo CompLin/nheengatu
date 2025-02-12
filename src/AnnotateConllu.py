@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: February 11, 2025
+# Last update: February 12, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2006,11 +2006,17 @@ def handleOrig(new,lemma,orig, orig_form):
             pass # TODO: apply Portuguese spell checker on the lemma 
     else:
         _isInLexicon(lemma)
+        
+
+def VerbFormError(entry):
+	if not entry:
+		raise Exception(f"Token '{form}' does not seem to be a verb form")
 
 def mkVerb(form,derivation='',orig=None, orig_form=None):
     new={}
     feats=['V']
     entry=guessVerb(form)
+    VerbFormError(entry)
     lemma=entry['lemma']
     handleOrig(new,lemma,orig, orig_form)
     if derivation:
@@ -2029,6 +2035,7 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
 def handleMiddlePassive(form):
 	new={}
 	entry=guessVerb(form)
+	VerbFormError(entry)
 	if entry['lemma'].startswith(YU):
 		entry['voice']=MEDPASS
 		entry['lemma']=entry['lemma'][len(YU):]
@@ -2051,6 +2058,7 @@ def serializeEntry(entry):
 def handlePartialRedup(form,length,xpos='V',orig=None, orig_form='',accent=False, suffix=False): # TODO: reduplication of adjectives
     new={}
     entry=guessVerb(form)
+    VerbFormError(entry)
     if suffix:
         lemma=entry['lemma'][:-length]
         if accent:
