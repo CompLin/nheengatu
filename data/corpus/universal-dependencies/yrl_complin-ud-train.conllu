@@ -15089,6 +15089,23 @@
 15	yara	yara	NOUN	N	Number=Sing	12	nsubj	_	SpaceAfter=No|TokenRange=60:64
 16	?	?	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=64:65
 
+# sent_id = Magalhaes1876:2:24:67-1
+# text = Paraná usuaxara: — Taukú.
+# text_eng = The river replied: — I don't know.
+# text_por = O rio respondeu: — Não sei.
+# text_source = p. 179
+# text_orig = Paraná	oçuaxára:	— Tauquáu. (Intí quau).
+# text_por_gloss = Rio	respondeu:	— Não sei.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Paraná usuaxara: — Taukú.
+# reviewer1 = Juliana Lopes Gurgel, DACILAT Project, FAPESP's Process No. 2022/09158-5
+1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:15
+3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=15:16
+4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
+5	Taukú	taukú	INTJ	INTJ	_	2	ccomp	_	SpaceAfter=No|TokenRange=18:23
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=23:24
+
 # sent_id = Magalhaes1876:2:24:67-2
 # text = Paraná usuaxara: — Intí kwáu.
 # text_eng = The river replied: — I don't know.
