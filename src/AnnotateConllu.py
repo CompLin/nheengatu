@@ -2162,10 +2162,18 @@ def handleRelPref(lemma,feats):
         lemma=entry['lemma']
     return lemma
 
-def mkNoun(form,orig=None,dic={},orig_form=''):
+def handleNonFinalAccent(form,position):
+    mapping={'a': 'á', 'i': 'í'}
+    char=form[-position]
+    newchar=mapping[char]
+    return f"{form[:-position]}{newchar}{form[-position+1:]}"
+
+def mkNoun(form,orig=None,dic={},orig_form='',position=None):
     feats=[]
     new={}
     lemma=form.lower()
+    if position:
+        lemma=handleNonFinalAccent(form,position)
     handleOrig(new,lemma,orig, orig_form)
     number=dic.get('number')
     degree=dic.get('degree')
@@ -2218,7 +2226,7 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     lemma=handleAccent(form[:i],force=force)
     return mkNoun(lemma,None,dic)
 
-def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
+def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True,position=None):
     suffixes={'usú':'AUG','wasú': 'AUG', 'asú': 'AUG','mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
     xpos=xpos
     dic={}
@@ -2234,7 +2242,7 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True):
     if accent:
         lemma=handleAccent(lemma,force=force)
     if dic.get('number'):
-        return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form)
+        return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form,position=position)
     return mkAdj(lemma,None,dic,xpos=xpos)
 
 
@@ -2560,6 +2568,9 @@ def mkConlluSentence(tokens):
             modern=tagparse.get('m')
             function=tagparse.get('n')
             newregister=tagparse.get('r')
+            position=tagparse.get('p')
+            if position:
+                position=int(position)
             if newregister:
                 register=newregister
                 attribute=f"{newregister.title()}{field}"
@@ -2598,7 +2609,7 @@ def mkConlluSentence(tokens):
             elif tag == '=x':
                 newparselist=mkX(token)
             elif tag == '=n':
-                new=mkNoun(form,orig=orig,orig_form=orig_form)
+                new=mkNoun(form,orig=orig,orig_form=orig_form,position=position)
                 newparselist=new['parselist']
             elif tag == '=a':
                 new=mkAdj(form,orig=orig,orig_form=orig_form)
@@ -2628,7 +2639,7 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev': # TODO: handle accent argument
-                new=mkEval(form,xpos,force,orig,orig_form,accent)
+                new=mkEval(form,xpos,force,orig,orig_form,accent,position)
                 newparselist=new['parselist']
             elif tag == '=prv':
                 new=mkPrv(form,xpos)
