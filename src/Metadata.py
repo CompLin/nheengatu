@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 17, 2025
+# Last update: February 13, 2025
 
 import re
 
@@ -20,7 +20,9 @@ PEOPLE = {
 'lev': 'Antônio Levy Melo Nogueira',
 'jul': 'Juliana Lopes Gurgel',
 'mar': 'Marcel Twardowsky Avila',
-'viv': 'Vivianne Anselmo Nascimento'
+'viv': 'Vivianne Anselmo Nascimento',
+'let': 'Letícia Farias Nunes',
+'dav': 'Davi Sampaio Santos'
 }
 
 ROLES=[     {'scr' : 'transcriber', 'description' : 'This the person who … TODO','optional' : True, 'requires' : 'text_prim'},

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: February 12, 2025
+# Last update: February 13, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2946,7 +2946,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,institution='',check=
 			print(f"Sentence '{yrl}' already is in the treebank.")
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
-	metadata=metadata
+	metadata=copy_dic(metadata)
 	dic=mkAnnotator(person=annotator,text='text',institution=institution)
 	annotator=dic['text_annotator']
 	if inputline:
@@ -2966,6 +2966,13 @@ def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR
 	for k,v in tokenlist.metadata.items():
 		sents[k]=v
 	metadata.update(mkTranscriber('dom',translation='por_gloss',institution='dac'))
+	_parseExample(sents,copyboard=copyboard,annotator=annotator,institution=institution,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
+	
+def parseExampleAguiar(conllu_data,annotator=ANNOTATOR, institution='',copyboard=True,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+	tokenlist=parse(conllu_data)[0]
+	sents={}
+	for k,v in tokenlist.metadata.items():
+		sents[k]=v	
 	_parseExample(sents,copyboard=copyboard,annotator=annotator,institution=institution,check=check, outfile=outfile, overwrite=overwrite,metadata=metadata, translate=translate,inputline=inputline)
 
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=False, inputline=True):

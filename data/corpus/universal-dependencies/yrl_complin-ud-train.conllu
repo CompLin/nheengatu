@@ -21425,6 +21425,49 @@
 2	tiapuíma	tiapú	ADV	ADVA	AdvType=Man|Derivation=Priv	1	advmod	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
+# sent_id = Aguiar1898:1:5:5
+# text = ― Aikwé será amú Tupana, kwá suí?
+# text_orig = ― Ahiqué cerá amú Tupana, quá çui?
+# text_source = p. 23
+# text_por = ― Poderá haver outro Deus, que não seja esse?
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Letícia Farias Nunes
+# text_eng = TODO
+# text_sec = Aikwé será amú Tupana, kwá suí?
+# text_por_sec = Há outro Deus, que não seja esse?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = ― Aikwé será amú/ind Tupana, kwá/demx suí?
+# text_annotator = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=1:6
+3	será	será	PART	PQ	PartType=Int	2	advmod	_	TokenRange=7:11
+4	amú	amú	DET	IND	Number=Sing|PronType=Ind	5	det	_	TokenRange=12:15
+5	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=16:22
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
+7	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	obl	_	TokenRange=24:27
+8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=28:31
+9	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
+
+# sent_id = Aguiar1898:2:8:19
+# text = ― Aé; Taíra Tupana.
+# text_orig = ― Aé; Tahïra Tupana.
+# text_source = p. 25
+# text_por = ― Sim; o Filho é Deus.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = TODO
+# inputline = ― Aé/demsn@; Taíra/ncont Tupana.
+# text_annotator = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Aé	aé	DET	DEMSN	Deixis=Remt|PronType=Dem	0	root	_	SpaceAfter=No|TokenRange=1:3
+3	;	;	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
+4	Taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	nsubj	_	TokenRange=5:10
+5	Tupana	tupana	NOUN	N	Number=Sing	2	parataxis	_	SpaceAfter=No|TokenRange=11:17
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
 # sent_id = Aguiar1898:9:1:1001
 # text = Ave Maria, i pura graça suí, yané Yara ne irumu; yumumeú katú iné upaĩ kunhã pitera-pe, yumumeú katú yuwá ne marika suí, Jesus.
 # text_eng = Hail Mary, full of grace, our Lord be with you, blessed are you among all women, blessed is the fruit of your womb, Jesus.
