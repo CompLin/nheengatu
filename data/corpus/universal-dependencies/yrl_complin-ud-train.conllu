@@ -20796,6 +20796,45 @@
 9	arama	arama	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=40:45
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
 
+# sent_id = Hartt1938:0:0:608-1
+# text = Reú será pitima?
+# text_por = Fumas?
+# text_source = p. 363, No. 608
+# text_orig = reú ser pytyma? en-en! xaú pytyma.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Reú será pitima?
+# text_por_sec = Você fuma tabaco?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Reú será pitima?
+# text_annotator = Dominick Maia Alexandre
+1	Reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:3
+2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=4:8
+3	pitima	pitima	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:15
+4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
+
+# sent_id = Hartt1938:0:0:608-2
+# text = Eẽ! xaú pitima.
+# text_por = Sim! Fumo.
+# text_source = p. 363, No. 608
+# text_orig = reú ser pytyma? en-en! xaú pytyma.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Eẽ, aú pitima.
+# text_por_sec = Sim, eu fumo tabaco.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Eẽ! xaú pitima.
+# text_annotator = Dominick Maia Alexandre
+1	Eẽ	eẽ	PART	AFF	Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:2
+2	!	!	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
+3	xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	parataxis	_	ModernForm=aú|TokenRange=4:7
+4	pitima	pitima	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=8:14
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+
 # sent_id = Hartt1938:0:0:643
 # text = Emuí musapiri í, remeẽ warama ixéu.
 # text_por = Corta três vezes para me dar.
@@ -21459,14 +21498,14 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = TODO
-# inputline = ― Aé/demsn@; Taíra/ncont Tupana.
+# inputline = ― Aé/=typo:c|Aré; Taíra/ncont Tupana/@.
 # text_annotator = Leonel Figueiredo de Alencar
-1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Aé	aé	DET	DEMSN	Deixis=Remt|PronType=Dem	0	root	_	SpaceAfter=No|TokenRange=1:3
+1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Aé	aré	PART	CONS	PartType=Mod|Polarity=Pos|Typo=Yes	5	advmod	_	CorrectForm=Aré|SpaceAfter=No|TokenRange=1:3
 3	;	;	PUNCT	PUNCT	_	5	punct	_	TokenRange=3:4
 4	Taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	nsubj	_	TokenRange=5:10
-5	Tupana	tupana	NOUN	N	Number=Sing	2	parataxis	_	SpaceAfter=No|TokenRange=11:17
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+5	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=11:17
+6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Aguiar1898:9:1:1001
 # text = Ave Maria, i pura graça suí, yané Yara ne irumu; yumumeú katú iné upaĩ kunhã pitera-pe, yumumeú katú yuwá ne marika suí, Jesus.
