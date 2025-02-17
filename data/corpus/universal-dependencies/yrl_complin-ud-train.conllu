@@ -20796,7 +20796,7 @@
 9	arama	arama	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=40:45
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
 
-# sent_id = Hartt1938:0:0:608-1
+# sent_id = Hartt1938:0:100:608-1
 # text = Reú será pitima?
 # text_por = Fumas?
 # text_source = p. 363, No. 608
@@ -20810,12 +20810,13 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Reú será pitima?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:3
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=4:8
 3	pitima	pitima	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:15
 4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
 
-# sent_id = Hartt1938:0:0:608-2
+# sent_id = Hartt1938:0:101:608-2
 # text = Eẽ! xaú pitima.
 # text_por = Sim! Fumo.
 # text_source = p. 363, No. 608
@@ -20829,11 +20830,12 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Eẽ! xaú pitima.
 # text_annotator = Dominick Maia Alexandre
-1	Eẽ	eẽ	PART	AFF	Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=0:2
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Eẽ	eẽ	PART	AFF	Polarity=Pos	3	advmod	_	SpaceAfter=No|TokenRange=0:2
 2	!	!	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
-3	xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	parataxis	_	ModernForm=aú|TokenRange=4:7
+3	xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aú|TokenRange=4:7
 4	pitima	pitima	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=8:14
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Hartt1938:0:0:643
 # text = Emuí musapiri í, remeẽ warama ixéu.
