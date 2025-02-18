@@ -20725,21 +20725,6 @@
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=15:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
-# sent_id = Hartt1938:0:0:548
-# text = Yasí suawasú uikú.
-# text_por = A lua está cheia.
-# text_source = p. 358, No. 548
-# text_orig = yasy suá uasú oikó.
-# text_eng = TODO
-# text_orig_transcriber = Antônio Levy Melo Nogueira
-# text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yasí suawasú/=aug uikú/cop.
-# text_annotator = Dominick Maia Alexandre
-1	Yasí	yasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
-2	suawasú	suá	NOUN	N	Degree=Aug|Number=Sing|Rel=Abs	0	root	_	TokenRange=5:12
-3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=13:17
-4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
-
 # sent_id = Hartt1938:0:0:378
 # text = Pitunawasú reté.
 # text_por = A noite já está muito escura.
@@ -20753,30 +20738,6 @@
 1	Pitunawasú	pituna	NOUN	N	Degree=Aug|Number=Sing	0	root	_	TokenRange=0:10
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	SpaceAfter=No|TokenRange=11:15
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
-
-# sent_id = Hartt1938:0:0:724
-# text = Xarikú yepé se kiwira sikwé wé waá.
-# text_por = Tenho um irmão vivo.
-# text_source = p. 371, No. 724
-# text_orig = xarekó oyepé kyuíra sekouecé uaé.
-# text_eng = TODO
-# text_orig_transcriber = Antônio Levy Melo Nogueira
-# text_por_modernizer = Antônio Levy Melo Nogueira
-# text_sec = Arikú yepé se kiwira sikwé wé waá.
-# text_por_sec = Tenho um irmão que ainda está vivo.
-# text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
-# inputline = Xarikú yepé/art se kiwira sikwé/v2 wé waá/rel.
-# text_annotator = Dominick Maia Alexandre
-# reviewer1 = Leonel Figueiredo de Alencar
-1	Xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arikú|TokenRange=0:6
-2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=7:11
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
-4	kiwira	kiwira	NOUN	N	Number=Sing	1	obj	_	TokenRange=15:21
-5	sikwé	rikwé	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	acl:relcl	_	TokenRange=22:27
-6	wé	wé	PART	CONT	Aspect=Cont	5	advmod	_	TokenRange=28:30
-7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	SpaceAfter=No|TokenRange=31:34
-8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Hartt1938:0:0:460
 # text = Kwaá imirá uikupukú muíri akayú pura.
@@ -20837,6 +20798,21 @@
 4	maã	maã	DET	IND	PronType=Ind	0	root	_	TokenRange=18:21
 5	arama	arama	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=22:27
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Hartt1938:0:0:548
+# text = Yasí suawasú uikú.
+# text_por = A lua está cheia.
+# text_source = p. 358, No. 548
+# text_orig = yasy suá uasú oikó.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Yasí suawasú/=aug uikú/cop.
+# text_annotator = Dominick Maia Alexandre
+1	Yasí	yasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
+2	suawasú	suá	NOUN	N	Degree=Aug|Number=Sing|Rel=Abs	0	root	_	TokenRange=5:12
+3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=13:17
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Hartt1938:0:0:570
 # text = Xasú ranhẽ se ruka upé wariwa piamu yaú arama.
@@ -21002,6 +20978,30 @@
 7	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=20:24
 8	remuyasuka	muyasuka	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=25:35
 9	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+
+# sent_id = Hartt1938:0:0:724
+# text = Xarikú yepé se kiwira sikwé wé waá.
+# text_por = Tenho um irmão vivo.
+# text_source = p. 371, No. 724
+# text_orig = xarekó oyepé kyuíra sekouecé uaé.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Arikú yepé se kiwira sikwé wé waá.
+# text_por_sec = Tenho um irmão que ainda está vivo.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Xarikú yepé/art se kiwira sikwé/v2 wé waá/rel.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arikú|TokenRange=0:6
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=7:11
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
+4	kiwira	kiwira	NOUN	N	Number=Sing	1	obj	_	TokenRange=15:21
+5	sikwé	rikwé	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	4	acl:relcl	_	TokenRange=22:27
+6	wé	wé	PART	CONT	Aspect=Cont	5	advmod	_	TokenRange=28:30
+7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	SpaceAfter=No|TokenRange=31:34
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Hartt1938:0:0:784
 # text = Se arasí reté xaikú maãresé se rimirikú i maarí reté.
