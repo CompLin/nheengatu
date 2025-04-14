@@ -21374,7 +21374,6 @@
 # inputline = Maã/int resé/adp intí remenari-putari se irũ/adp?
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Maã	maã	PRON	INT	PronType=Int	4	obl	_	TokenRange=0:3
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=4:8
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:13
@@ -21386,26 +21385,27 @@
 8	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = Hartt1938:0:0:808
-# text = Kwaá iwitera suí, yamaã-kwáu tawa resé.
+# text = Kwaá iwitera suí, yamaã-kwá tawa resé.
 # text_por = Deste morro podemos ver a vila.
 # text_source = p. 377, No. 808
 # text_orig = kuaá yuytyra suí, yamaán kuán táua resé.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Kwaá/demx iwitera suí, yamaã-kwáu tawa resé/adp.
+# inputline = Kwaá/demx iwitera suí, yamaã-kwá tawa resé/adp.
 # text_annotator = Letícia Farias Nunes
 # reviewer1 = Dominick Maia Alexandre
+# reviewer2 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	iwitera	iwitera	NOUN	N	Number=Sing	5	obl	_	TokenRange=5:12
 3	suí	suí	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=13:16
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
-5-6	yamaã-kwáu	_	_	_	_	_	_	_	TokenRange=18:28
+4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=16:17
+5-6	yamaã-kwá	_	_	_	_	_	_	_	TokenRange=18:27
 5	yamaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	_
-6	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	5	aux	_	_
-7	tawa	tawa	NOUN	N	Number=Sing	5	obl	_	TokenRange=29:33
-8	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	7	case	_	SpaceAfter=No|TokenRange=34:38
-9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=38:39
+6	kwá	kwá	AUX	AUXN	Compound=Yes|VerbForm=Inf	5	aux	_	_
+7	tawa	tawa	NOUN	N	Number=Sing	5	obl	_	TokenRange=28:32
+8	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	7	case	_	SpaceAfter=No|TokenRange=33:37
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Hartt1938:0:0:814
 # text = Kwaá kurumiwasú i kirimawausú.
