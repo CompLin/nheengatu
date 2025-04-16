@@ -11013,6 +11013,47 @@
 43	suú	suú	NOUN	N	Number=Sing	41	obj	_	SpaceAfter=No|TokenRange=204:207
 44	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=207:208
 
+# sent_id = Rodrigies1890:1-1-8:2:2
+# text = Yepé pituna ukaamunusawa usendú teapú kaá-pe, intí kwáu maã aé uyapisaka, aiwana, paá, unheẽ: — Maã ikú aé?
+# text_eng = TODO
+# text_por = Na caçada de uma noite ouviu barulho no mato e, não sabendo o que era, escutou. Dizem que dissera: — Que é isto?
+# text_source = p. 71
+# text_orig = Yepé pituna u caamunu çaua u cendó têapô caá pe, inti cuau maan aé u yápêçaca, aéuana, paá, ui in: “maan icó aé?”
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Yepé/art pituna ukaamunusawa/=vnoun:a|t usendú teapú kaá-pe/n, intí kwáu/=mf:m|ukwáu maã/int aé/demsn uyapisaka, aiwana, paá, unheẽ: — Maã/int ikú/=mf:m|uikú:h|cop:x|cop aé/demsn?
+# text_sec = Yepé pituna ukamundusawa usendú tiapú kaá-pe [...].
+# text_por_sec = Numa noite de caçada ouviu barulho na mata [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
+2	pituna	pituna	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:11
+3	ukaamunusawa	kaamunú	VERB	V	Person=3|VerbForm=Vnoun	4	obl	_	TokenRange=12:24
+4	usendú	sendú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=25:31
+5	teapú	teapú	NOUN	N	Number=Sing|Rel=Abs	4	obj	_	TokenRange=32:37
+6-7	kaá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=38:44
+6	kaá	kaá	NOUN	N	Number=Sing	4	obl	_	_
+7	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=44:45
+9	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=46:50
+10	kwáu	kwáu	VERB	V	Style=Arch|VerbForm=Inf	4	parataxis	_	ModernForm=ukwáu|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=51:55
+11	maã	maã	PRON	INT	PronType=Int	10	ccomp	_	TokenRange=56:59
+12	aé	aé	PRON	DEMSN	Deixis=Remt|PronType=Dem	11	nsubj	_	TokenRange=60:62
+13	uyapisaka	yapisaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=63:72
+14	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=72:73
+15	aiwana	aiwana	ADV	ADVT	AdvType=Tim	19	advmod	_	SpaceAfter=No|TokenRange=74:80
+16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=80:81
+17	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	19	advmod	_	SpaceAfter=No|TokenRange=82:85
+18	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=85:86
+19	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	SpaceAfter=No|TokenRange=87:92
+20	:	:	PUNCT	PUNCT	_	22	punct	_	TokenRange=92:93
+21	—	—	PUNCT	PUNCT	_	22	punct	_	TokenRange=94:95
+22	Maã	maã	PRON	INT	PronType=Int	19	ccomp	_	TokenRange=96:99
+23	ikú	ikú	AUX	COP	Style=Arch|VerbForm=Inf	22	cop	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=100:103
+24	aé	aé	PRON	DEMSN	Deixis=Remt|PronType=Dem	22	nsubj	_	SpaceAfter=No|TokenRange=104:106
+25	?	?	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No|TokenRange=106:107
+
 # sent_id = Rodrigies1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
 # text_eng = TODO
