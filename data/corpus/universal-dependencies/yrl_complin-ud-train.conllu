@@ -11054,6 +11054,63 @@
 24	aé	aé	PRON	DEMSN	Deixis=Remt|PronType=Dem	22	nsubj	_	SpaceAfter=No|TokenRange=104:106
 25	?	?	PUNCT	PUNCT	_	22	punct	_	SpaceAfter=No|TokenRange=106:107
 
+# sent_id = Rodrigies1890:1-1-8:3:3
+# text = Arareneíma uyukwáu, paá, yepé Kurupira.
+# text_eng = TODO
+# text_por = De repente, apareceu um Curupira.
+# text_source = p. 71
+# text_orig = Ara re ne ema u i cuau, paá, yépé Curupira.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Arareneíma/=typo:c|Araneíma:x|advt uyukwáu, paá, yepé/art Kurupira.
+# text_sec = Araniima uyukwáu paá yepé kurupira.
+# text_por_sec = De repente, contam, apareceu um curupira.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+1	Arareneíma	araneíma	ADV	ADVT	AdvType=Tim|Typo=Yes	2	advmod	_	CorrectForm=Araneíma|TokenRange=0:10
+2	uyukwáu	yukwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:18
+3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=18:19
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	2	advmod	_	SpaceAfter=No|TokenRange=20:23
+5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=23:24
+6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=25:29
+7	Kurupira	kurupira	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=30:38
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
+
+# sent_id = Rodrigies1890:1-1-8:4:4
+# text = Umaã sesé i awa wasú, umaã i pé uyuíri takakwera kití, muirasanga i pú-pe.
+# text_eng = TODO
+# text_por = Olhando-o, viu que tinha cabelos grandes, os pés voltados para trás e um cacete na mão.
+# text_source = p. 71
+# text_orig = U maan cecé i aua uaçu, u maan i pé u iuere tacacuera queté, muiráçanga i pópe.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Umaã sesé i/pron2 awa wasú, umaã i/pron2 pé uyuíri takakwera kití, muirasanga i/pron2 pú-pe.
+# text_sec = Araniima uyukwáu paá yepé kurupira.
+# text_por_sec = De repente, contam, apareceu um curupira.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+1	Umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	1	obl	_	TokenRange=5:9
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:11
+4	awa	awa	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=12:15
+5	wasú	wasú	ADJ	A	_	1	parataxis	_	SpaceAfter=No|TokenRange=16:20
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=20:21
+7	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=22:26
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=27:28
+9	pé	pé	NOUN	N	Number=Sing|Rel=Abs	10	nsubj	_	TokenRange=29:31
+10	uyuíri	yuíri	VERB	V	Aspect=Iter|Mood=Ind|Person=3|VerbForm=Fin	7	ccomp	_	TokenRange=32:38
+11	takakwera	takakwera	NOUN	N	Number=Sing|Rel=Abs	10	obl	_	TokenRange=39:48
+12	kití	kití	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=49:53
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=53:54
+14	muirasanga	muirasanga	NOUN	N	Number=Sing	16	nsubj	_	TokenRange=55:65
+15	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=66:67
+16-17	pú-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=68:73
+16	pú	pú	NOUN	N	Number=Sing	10	conj	_	_
+17	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	16	case	_	_
+18	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=73:74
+
 # sent_id = Rodrigies1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
 # text_eng = TODO
