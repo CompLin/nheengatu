@@ -58,6 +58,7 @@ adv. gr.\tADVG\tadvérbio de grau
 adv. intens.\tADVS\tadvérbio de intensidade
 adv. interr.\tADVR\tadvérbio interrogativo
 adv. interr. man.\tADVRA\tadvérbio interrogativo de maneira
+adv. ind. man.\tADVNA\tadvérbio indefinido de maneira
 adv. interr. loc.\tADVRC\tadvérbio interrogativo locativo
 adv. interr. temp.\tADVRT\tadvérbio interrogativo temporal
 adv. interr. caus.\tADVRU\tadvérbio interrogativo causal

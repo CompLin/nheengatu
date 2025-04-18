@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: February 13, 2025
+# Last update: April 18, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2961,7 +2961,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,institution='',check=
 def parseExampleMagalhaes(conllu_data,page_nr,copyboard=True,annotator=ANNOTATOR, institution='',check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
 	tokenlist=parse(conllu_data)[0]
 	sents={}
-	metadata=metadata
+	metadata=copy_dic(metadata)
 	metadata['text_source']=f"p. {page_nr}"
 	for k,v in tokenlist.metadata.items():
 		sents[k]=v
@@ -2978,7 +2978,7 @@ def parseExampleAguiar(conllu_data,annotator=ANNOTATOR, institution='',copyboard
 def parseExample(example,pref,textid,index,sentid,copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={},translate=False, inputline=True):
     sents=extract_sents(example)
     yrl=sents[0].replace('\t', ' ')
-    metadata=metadata
+    metadata=copy_dic(metadata)
     if inputline:
         metadata.update({'inputline': yrl})
     if check:
@@ -3520,6 +3520,7 @@ def parseSingleLineExample(example,text_nr=2, prefix="Amorim1928", translate=Fal
 	>>> example='''Buopé paá intí usuaxara, umundú yeperesé uyapí kaziwera/=typo:c|kaxiwera pupé nhaã kunhã-etá pirá rimbiú arama/sconj. (p. 24, No. 15) Buopé, contam, não respondeu, mandou imediatamente jogar essas mulheres na cachoeira para comida de peixe. - Buopé paa nti osuaixara, omundu iepéresé oiapi kaziuera pýpé nhaa kunhãetá pirá rembiú arama. § Buopé paá ti usuaxara, umundú yeperesé uyapí kaxiwera pupé nhaã kunhã-itá pirá rimbiú arama. (Amorim, 26, adap.) Buopé, contam, não respondeu, mandou imediatamente jogar essas mulheres na cachoeira para serem comida de peixe.'''
 
 	"""
+	metadata=copy_dic(metadata)
 	global AVILA_SENTS
 	pat=re.compile(r"No. (\d+)(\-(\d+))?")
 	section="§"
@@ -3579,6 +3580,7 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 29-30\tAé onheen: — Remaan ne tuuy kuera maaiaué oiumuayua, kuyre aé irumo tenhé kuri xasu xapusanu ndé, puranga ne mira, omaan ndé arama.'''
 	>>> AnnotateConllu.parseExampleAmorim(example)
 	"""
+	metadata=copy_dic(metadata)
 	metadata.update(Mindlin())
 	sents={}
 	title=''
