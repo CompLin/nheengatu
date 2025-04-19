@@ -10959,7 +10959,7 @@
 27	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=143:144
 
 # sent_id = Rodrigues1890:1-1-8:1:1000
-# text = Yepé apigawa ximirikú irumu yuntu puriasúa, paá, nẽ mayé aintá usasawa intí mayé ukwáu, usú, paá, ukaamunú ara ramé nẽ maã uwasema yuká arama, aresé usú, paá, pituna ramé ukaamunú aramé nhũ uyuká embiára suú.
+# text = Yepé apigawa ximirikú irumu yuntu puriaisúa, paá, nẽ mayé aintá usasawa intí mayé ukwáu, usú, paá, ukaamunú ara ramé nẽ maã uwasema yuká arama, aresé usú, paá, pituna ramé ukaamunú aramé nhũ uyuká embiára suú.
 # text_eng = TODO
 # text_por = Conta-se que não se sabia como passavam um homem e uma mulher muito pobres. Quando o homem ia de dia caçar, nada achava para matar quando ia de noite só encontrava quadrúpedes.
 # text_source = p. 71
@@ -10967,13 +10967,13 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Yepé/art apigawa/n ximirikú irumu/adp yuntu puriasúa/a@, paá, nẽ/cconj mayé/advra aintá/pron usasawa intí mayé/advna ukwáu, usú, paá, ukaamunú ara ramé/adp nẽ/neg maã/ind uwasema yuká/=mf:m|uyuká arama/sconj, aresé usú, paá, pituna ramé/adp ukaamunú aramé/advt nhũ uyuká embiára suú/n.
+# inputline = Yepé/art apigawa/n ximirikú irumu/adp yuntu puriaisúa/=typo:c|puriasúa:x|a@, paá, nẽ/cconj mayé/advra aintá/pron usasawa intí mayé/advna ukwáu, usú, paá, ukaamunú ara ramé/adp nẽ/neg maã/ind uwasema yuká/=mf:m|uyuká arama/sconj, aresé usú, paá, pituna ramé/adp ukaamunú aramé/advt nhũ uyuká embiára suú/n.
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	apigawa	apigawa	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=5:12
 3	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	obl	_	TokenRange=13:21
 4	irumu	irumu	ADP	ADP	AdpType=Post	3	case	_	TokenRange=22:27
 5	yuntu	yuntu	ADV	ADV	_	6	advmod	_	TokenRange=28:33
-6	puriasúa	puriasúa	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=34:42
+6	puriaisúa	puriasúa	ADJ	A	Typo=Yes	0	root	_	CorrectForm=puriasúa|SpaceAfter=No|TokenRange=34:43
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=42:43
 8	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=44:47
 9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=47:48
@@ -11192,6 +11192,55 @@
 11	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	iobj	_	TokenRange=56:57
 12	xupé	xupé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=58:62
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=62:63
+
+# sent_id = Rodrigues1890:1-1-8:9:9
+# text = — Ixé xawatá, xaikú, xasikari se remiára, ixé apigawa xapuriaisúa, xe mirikú irumu, aresé xakaamunú; ara ramé intí xawasema xayuká arama, aresé xakaamunú petuna ramé xaú arama xe mirikú irumu.
+# text_eng = TODO
+# text_por = — Eu ando e estou procurando caça para mim. Sou um homem pobre e com mulher; por isso caço. Quando não acho o que matar de dia, caço de noite para comer com minha mulher.
+# text_source = p. 72
+# text_orig = — Iche cha uatá, cha icó, cha cecare ce remiara, iché apegaua cha poriaiçua, che mericó irumo, arecé cha caamunu; ara rami inti cha u acema cha iucá arama, arecé cha caamunu petuna rami cha ú arama che mericó irumo.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Ixé xawatá, xaikú, xasikari se remiára, ixé apigawa/n xapuriaisúa/=typo:c|puriasúa:x|n, xe mirikú/=typo:c|rimirikú irumu/adp, aresé xakaamunú; ara ramé/adp intí xawasema xayuká arama/sconj, aresé xakaamunú petuna ramé/adp xaú arama/sconj xe mirikú/=typo:c|rimirikú irumu/adp.
+1	—	—	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
+2	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=1:4
+3	xawatá	watá	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=awatá|SpaceAfter=No|TokenRange=5:11
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=11:12
+5	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	aux	_	ModernForm=aikú|SpaceAfter=No|TokenRange=13:18
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+7	xasikari	sikari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	parataxis	_	ModernForm=asikari|TokenRange=20:28
+8	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=29:31
+9	remiára	semiára	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=32:39
+10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=39:40
+11	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	TokenRange=41:44
+12	apigawa	apigawa	NOUN	N	Number=Sing	3	parataxis	_	TokenRange=45:52
+13	xapuriaisúa	puriasúa	ADJ	A	Typo=Yes	12	amod	_	CorrectForm=puriasúa|SpaceAfter=No|TokenRange=53:64
+14	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=64:65
+15	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=66:68
+16	mirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont|Typo=Yes	12	nmod	_	CorrectForm=rimirikú|TokenRange=69:75
+17	irumu	irumu	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=76:81
+18	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=81:82
+19	aresé	aresé	ADV	ADVJ	AdvType=Cau	20	advmod	_	TokenRange=83:88
+20	xakaamunú	kaamunú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	12	parataxis	_	ModernForm=akaamunú|SpaceAfter=No|TokenRange=89:98
+21	;	;	PUNCT	PUNCT	_	25	punct	_	TokenRange=98:99
+22	ara	ara	NOUN	N	Number=Sing	25	obl	_	TokenRange=100:103
+23	ramé	ramé	ADP	ADP	AdpType=Post	22	case	_	TokenRange=104:108
+24	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	25	advmod	_	TokenRange=109:113
+25	xawasema	wasema	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	20	parataxis	_	ModernForm=awasema|TokenRange=114:122
+26	xayuká	yuká	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	25	advcl	_	ModernForm=ayuká|TokenRange=123:129
+27	arama	arama	SCONJ	SCONJ	_	26	mark	_	SpaceAfter=No|TokenRange=130:135
+28	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=135:136
+29	aresé	aresé	ADV	ADVJ	AdvType=Cau	30	advmod	_	TokenRange=137:142
+30	xakaamunú	kaamunú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	25	parataxis	_	ModernForm=akaamunú|TokenRange=143:152
+31	petuna	petuna	NOUN	N	Number=Sing	30	obl	_	TokenRange=153:159
+32	ramé	ramé	ADP	ADP	AdpType=Post	31	case	_	TokenRange=160:164
+33	xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	30	advcl	_	ModernForm=aú|TokenRange=165:168
+34	arama	arama	SCONJ	SCONJ	_	33	mark	_	TokenRange=169:174
+35	xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	36	nmod:poss	_	TokenRange=175:177
+36	mirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont|Typo=Yes	33	obl	_	CorrectForm=rimirikú|TokenRange=178:184
+37	irumu	irumu	ADP	ADP	AdpType=Post	36	case	_	SpaceAfter=No|TokenRange=185:190
+38	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=190:191
 
 # sent_id = Rodrigues1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
