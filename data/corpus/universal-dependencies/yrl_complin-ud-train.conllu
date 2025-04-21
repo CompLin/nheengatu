@@ -20663,6 +20663,40 @@
 6	kisé	kisé	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=36:40
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=40:41
 
+# sent_id = Hartt1938:0:0:168
+# text = Intí xakwá.
+# text_por = Não sei.
+# text_source = p. 331, No. 168
+# text_orig = intí xakuán.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Intí xakwá.
+# text_annotator = Dominick Maia Alexandre
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
+2	xakwá	kwá	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=akwá|SpaceAfter=No|TokenRange=5:10
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = Hartt1938:0:0:178
+# text = Kuíri taína umanú-kwá maãresé sera wã.
+# text_por = Agora a criança pode morrer porque já tem nome.
+# text_source = p. 332, No. 178
+# text_orig = kuyr tayna omanó kuán maresé séra uán.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Kuíri taína umanú-kwá maãresé sera wã.
+# text_annotator = Dominick Maia Alexandre
+1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:5
+2	taína	taína	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=6:11
+3-4	umanú-kwá	_	_	_	_	_	_	_	TokenRange=12:21
+3	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+4	kwá	kwá	AUX	AUXN	Compound=Yes|VerbForm=Inf	3	aux	_	_
+5	maãresé	maãresé	SCONJ	SCONJR	_	6	mark	_	TokenRange=30:37
+6	sera	sera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	advcl	_	TokenRange=31:35
+7	wã	wã	PART	PFV	Aspect=Perf	6	advmod	_	SpaceAfter=No|TokenRange=43:45
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+
 # sent_id = Hartt1938:0:0:191
 # text = Aé seriyár ixé nhũ.
 # text_por = Ele me deixou sozinho.
