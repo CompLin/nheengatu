@@ -11364,6 +11364,36 @@
 41	irumu	irumu	ADP	ADP	AdpType=Post	40	case	_	SpaceAfter=No|TokenRange=234:239
 42	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=239:240
 
+# sent_id = Rodrigues1890:1-1-8:14:14
+# text = — Xe ruái reruri ramé ixé arama pitima, petuna, yawé-yawé xamukaturu indé arama maã suú reputari.
+# text_eng = TODO
+# text_por = — Meu cunhado, se trouxeres fumo para mim todas as noites, eu te guardarei a caça que quiseres.
+# text_source = p. 72
+# text_orig = — Che ruai re rure rami iché arama petêma, petuna, yayaué chá mucaturu indé arama maan çoó reputare.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = — Xe ruái reruri ramé/sconj ixé arama/adp pitima/n, petuna, yawé-yawé/indq xamukaturu indé arama/adp maã/relf suú/n reputari.
+1	—	—	PUNCT	PUNCT	_	13	punct	_	TokenRange=-1:0
+2	Xe	xe	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=1:3
+3	ruái	suái	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=4:8
+4	reruri	ruri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	13	advcl	_	TokenRange=9:15
+5	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=16:20
+6	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	4	iobj	_	TokenRange=21:24
+7	arama	arama	ADP	ADP	AdpType=Post	6	case	_	TokenRange=25:30
+8	pitima	pitima	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=31:37
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=37:38
+10	petuna	petuna	NOUN	N	Number=Sing	4	obl	_	SpaceAfter=No|TokenRange=39:45
+11	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=45:46
+12	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	10	det	_	TokenRange=47:56
+13	xamukaturu	mukaturu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=amukaturu|TokenRange=57:67
+14	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	13	iobj	_	TokenRange=68:72
+15	arama	arama	ADP	ADP	AdpType=Post	14	case	_	TokenRange=73:78
+16	maã	maã	DET	RELF	PronType=Rel	17	det	_	TokenRange=79:82
+17	suú	suú	NOUN	N	Number=Sing	13	obj	_	TokenRange=83:86
+18	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	17	acl:relcl	_	SpaceAfter=No|TokenRange=87:95
+19	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=95:96
+
 # sent_id = Rodrigues1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
 # text_eng = TODO
