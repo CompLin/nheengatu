@@ -11394,6 +11394,71 @@
 18	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	17	acl:relcl	_	SpaceAfter=No|TokenRange=87:95
 19	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=95:96
 
+# sent_id = Rodrigues1890:1-1-8:15:15
+# text = Aramé xanheẽ indé arama, indé nhũ rekwáu, tenhẽ reumbeú ne rimirikú supé, intí xaputari ukwáu, kurumutu suirũ ne resé arama.
+# text_eng = TODO
+# text_por = Eu te digo isto para que só tu saibas. Não contes a tua mulher. Não quero que ela saiba, porque poderá ter ciúmes de ti.
+# text_source = p. 72-73
+# text_orig = Arami cha aé indé arama, indé nhun re cuau, tenhen re umbeú ne remericó çupé, inti cha putare u cuau, curumuto çounheru ne recé arama.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aramé/advt xanheẽ indé arama/adp, indé nhũ rekwáu, tenhẽ/negi reumbeú ne rimirikú supé, intí xaputari ukwáu, kurumú/sconjr tu/=typo:c|taá suirũ/v2 ne resé/adp arama/adp.
+1	Aramé	aramé	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
+2	xanheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=anheẽ|TokenRange=6:12
+3	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	iobj	_	TokenRange=13:17
+4	arama	arama	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=18:23
+5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=23:24
+6	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	TokenRange=25:29
+7	nhũ	nhũ	ADV	ADV	_	8	advmod	_	TokenRange=30:33
+8	rekwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=34:40
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=40:41
+10	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	11	advmod	_	TokenRange=42:47
+11	reumbeú	umbeú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	8	parataxis	_	TokenRange=48:55
+12	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=56:58
+13	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	11	iobj	_	TokenRange=59:67
+14	supé	supé	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=68:72
+15	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=72:73
+16	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	17	advmod	_	TokenRange=74:78
+17	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	11	parataxis	_	ModernForm=aputari|TokenRange=79:87
+18	ukwáu	kwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	ccomp	_	SpaceAfter=No|TokenRange=88:93
+19	,	,	PUNCT	PUNCT	_	22	punct	_	TokenRange=93:94
+20	kurumu	kurumú	SCONJ	SCONJR	Style=Arch	22	mark	_	ModernForm=kurumú|ModernSpaceAfter=Yes|SpaceAfter=No|TokenRange=95:101
+21	tu	taá	PART	CQ	PartType=Int|Typo=Yes	22	advmod	_	CorrectForm=taá|TokenRange=102:104
+22	suirũ	ruirũ	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	17	advcl	_	TokenRange=105:110
+23	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	22	obl	_	TokenRange=111:113
+24	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	23	case	_	TokenRange=114:118
+25	arama	arama	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=119:124
+26	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=124:125
+
+# sent_id = Rodrigues1890:1-1-8:16:16
+# text = Aé upurungitá nhaã petuna remirera pupé, kuẽma-putari ramé wana axií ana aé imbiú.
+# text_eng = TODO
+# text_por = Conversou durante o resto da noite, e quando queria amanhecer, despediu-se.
+# text_source = p. 73
+# text_orig = I u purunguetá nhaan petuna remerera pupé, coêma putare ramé uana achi ana aé imbiú.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aé/pron upurungitá nhaã petuna remirera pupé, kuẽma-putari/v2 ramé/sconj wana axií/advc ana aé/pron imbiú/=typo:c|umbeú.
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:13
+3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=14:18
+4	petuna	petuna	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=19:25
+5	remirera	xemirera	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=26:34
+6	pupé	pupé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=35:39
+7	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=39:40
+8-9	kuẽma-putari	_	_	_	_	_	_	_	TokenRange=41:53
+8	kuẽma	kuẽma	VERB	V2	Mood=Ind|VerbForm=Fin	15	advcl	_	_
+9	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	8	aux	_	_
+10	ramé	ramé	SCONJ	SCONJ	_	8	mark	_	TokenRange=54:58
+11	wana	wana	PART	PFV	Aspect=Perf	8	advmod	_	TokenRange=59:63
+12	axií	axií	ADV	ADVC	AdvType=Loc	15	advmod	_	TokenRange=64:68
+13	ana	ana	PART	PFV	Aspect=Perf	15	advmod	_	TokenRange=69:72
+14	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	TokenRange=73:75
+15	imbiú	mbeú	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	2	parataxis	_	CorrectForm=umbeú|SpaceAfter=No|TokenRange=76:81
+16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=81:82
+
 # sent_id = Rodrigues1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
 # text_eng = TODO
