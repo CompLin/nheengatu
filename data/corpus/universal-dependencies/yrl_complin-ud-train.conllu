@@ -19915,15 +19915,17 @@
 # sent_id = Hartt1938:0:0:17
 # text = Ixé intí ne rasú-kwáu.
 # text_eng = I can't take you.
-# text_por = Eu não posso te levar.
+# text_por = Não posso te levar.
 # text_source = p. 320, No. 17
 # text_orig = ixé intí nerasó kuáu.
-# text_annotator = DMA
-1	Ixé	ixé	PRON	PRON	Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:3
+# inputline = Ixé intí ne/=mf:m|indé rasú-kwáu/=mf:m|arasú.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	TokenRange=0:3
 2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=4:8
-3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	obj	_	TokenRange=9:11
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=indé|ModernLemma=indé|ModernProntype=Prs|TokenRange=9:11
 4-5	rasú-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=12:21
-4	rasú	rasú	VERB	V	VerbForm=Inf	0	root	_	_
+4	rasú	rasú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=arasú|ModernMood=Ind|ModernNumber=Sing|ModernPerson=1|ModernVerbform=Fin
 5	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	4	aux	_	_
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
 
