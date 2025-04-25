@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: April 18, 2025
+# Last update: April 25, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -187,6 +187,10 @@ ADVPRONTYPE.update(WH_ADV)
 ADVPRONTYPE.update(DEM_ADV)
 
 ADVTYPE.update(WH_ADVTYPE)
+
+MORPHTAGS=['ABS','NCONT','CONT','IND','NFIN'] # TODO: extract this list from the lexicon
+ALLTAGS=list(MAPPING.values())
+ALLTAGS.extend(MORPHTAGS)
 
 def extract_redup(glossary=GLOSSARY):
     lexredup=set()
@@ -2291,20 +2295,20 @@ def mkUpos(lemma,upos):
 
 def checkXposTag(pos_tag):
     """
-    Process a part-of-speech tag from the XPOS set, raising an error if the tag is not in the valid tagset.
+    Process a XPOS part-of-speech tag or a morphological tag, raising an error if the tag is not in the valid tagsets.
 
     Args:
-        pos_tag (str): The part-of-speech tag to process.
+        pos_tag (str): The part-of-speech or morphological tag to process.
     
     Returns:
-        str: The uppercase version of the part-of-speech tag.
+        str: The uppercase version of the tag.
 
     Raises:
         ValueError: If the pos_tag is not in the predefined tagset.
     """
     pos_tag=pos_tag.upper()
-    if pos_tag not in MAPPING.values():
-        raise ValueError(f"Invalid part-of-speech tag: '{pos_tag}'. Expected one of the XPOS tagset.")
+    if pos_tag not in ALLTAGS:
+        raise ValueError(f"Invalid disambiguation tag: '{pos_tag}'. Expected one either from the XPOS tagset or the morphological tagset.")
     
     return pos_tag
 

@@ -11459,6 +11459,60 @@
 15	imbiú	mbeú	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	2	parataxis	_	CorrectForm=umbeú|SpaceAfter=No|TokenRange=76:81
 16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=81:82
 
+# sent_id = Rodrigues1890:1-1-8:18:18
+# text = Petuna yawé-yawé xi mirikú ukiri pukusawa usú kaá kití kaamunú urasú pitima Kurupira supé.
+# text_eng = TODO
+# text_por = Todas as noites, quando profundamente a mulher dormia, ia para o mato caçar e levava fumo para o Curupira.
+# text_source = p. 73
+# text_orig = Petuna yayaué che mericó u quire pocuçaua u çu caá queté caámunu u raçu petêma Curupira çupé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Petuna yawé-yawé/indq xi/=typo:c|ximirikú mirikú/=x ukiri pukusawa/sconj usú kaá/n kití kaamunú/=mf:m|ukaamunú urasú pitima/n Kurupira supé.
+1	Petuna	petuna	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	yawé-yawé	yawé	DET	INDQ	PronType=Ind|Red=Yes	3	det	_	TokenRange=7:16
+3	xi	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Typo=Yes	5	nsubj	_	CorrectForm=ximirikú|TokenRange=17:19
+4	mirikú	_	X	X	_	3	goeswith	_	TokenRange=20:26
+5	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=27:32
+6	pukusawa	pukusawa	SCONJ	SCONJ	_	5	mark	_	TokenRange=33:41
+7	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=42:45
+8	kaá	kaá	NOUN	N	Number=Sing	7	obl	_	TokenRange=46:49
+9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	TokenRange=50:54
+10	kaamunú	kaamunú	VERB	V	Style=Arch|VerbForm=Inf	7	xcomp	_	ModernForm=ukaamunú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|TokenRange=55:62
+11	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=63:68
+12	pitima	pitima	NOUN	N	Number=Sing	11	obj	_	TokenRange=69:75
+13	Kurupira	kurupira	NOUN	N	Number=Sing	11	iobj	_	TokenRange=76:84
+14	supé	supé	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=85:89
+15	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=89:90
+
+# sent_id = Rodrigues1890:1-1-8:19:19
+# text = Usika aape uwasema uwapika satá rembií-pe, uwasema wana suú umeẽ i xupé xeruái.
+# text_eng = TODO
+# text_por = Quando lá chegava, o achava assentado junto ao fogo e já achava caça para si.
+# text_source = p. 73
+# text_orig = U cêca aap u acema u apêca çatá remeêpe, u acema u ana çoó u meen ichupé cheruai.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Usika aape/advdi uwasema uwapika satá rembií-pe, uwasema wana suú/n umeẽ i/pron2 xupé xeruái/=typo:c|suái:x|ncont.
+1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	aape	aape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	1	advmod	_	TokenRange=6:10
+3	uwasema	wasema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=11:18
+4	uwapika	wapika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	xcomp	_	TokenRange=19:26
+5	satá	tatá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	6	nmod:poss	_	TokenRange=27:31
+6-7	rembií-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=32:41
+6	rembií	tembiwa	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	Alomorph=rembií
+7	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=41:42
+9	uwasema	wasema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=43:50
+10	wana	wana	PART	PFV	Aspect=Perf	9	advmod	_	TokenRange=51:55
+11	suú	suú	NOUN	N	Number=Sing	9	obj	_	TokenRange=56:59
+12	umeẽ	meẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=60:64
+13	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	iobj	_	TokenRange=65:66
+14	xupé	xupé	ADP	ADP	AdpType=Post	13	case	_	TokenRange=67:71
+15	xeruái	suái	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Typo=Yes	13	nmod	_	CorrectForm=suái|SpaceAfter=No|TokenRange=72:78
+16	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=78:79
+
 # sent_id = Rodrigues1890:1-1-8:200:200
 # text = Aé ximirikú unheẽ i piá-pe: — Mayé taá kwá se mena mamé usema ximiára petuna ramé?
 # text_eng = TODO
