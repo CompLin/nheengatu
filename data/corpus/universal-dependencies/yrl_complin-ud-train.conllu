@@ -21534,12 +21534,13 @@
 # text_por_sec = A galinha botou um ovo.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Sapukaya umumuri yepé/art supiá.
+# inputline = Sapukaya umumuri yepé/art supiá/ncont.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Sapukaya	sapukaya	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
 2	umumuri	mumuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=17:21
-4	supiá	supiá	NOUN	N	Number=Sing|Rel=Abs	2	obj	_	SpaceAfter=No|TokenRange=22:27
+4	supiá	supiá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obj	_	SpaceAfter=No|TokenRange=22:27
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Hartt1938:0:0:468
