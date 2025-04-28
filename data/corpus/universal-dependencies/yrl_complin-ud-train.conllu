@@ -21161,11 +21161,11 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yiãma se/mf:m|ixé mukaú/=mf:m|umukaú.
+# inputline = Yiãma se/=mf:m|ixé mukaú/=mf:m|umukaú.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yiãma	yiãma	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:5
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	obj	_	TokenRange=6:8
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|ModernProntype=Prs|TokenRange=6:8
 3	mukaú	mukaú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=umukaú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=9:14
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=14:15
 
