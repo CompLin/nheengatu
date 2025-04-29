@@ -22255,12 +22255,13 @@
 # text_por_sec = Nós vamos vos matar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Yané/pron yasú pe/pron2 yuká.
+# inputline = Yané/pron yasú pe/=mf:m|penhẽ:h|pron2:x|pron yuká/=mf:m|yayuká.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	4	nsubj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=0:4
 2	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	aux	_	TokenRange=5:9
-3	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	4	obj	_	TokenRange=10:12
-4	yuká	yuká	VERB	V	VerbForm=Inf	0	root	_	SpaceAfter=No|TokenRange=13:17
+3	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=penhẽ|ModernLemma=penhẽ|TokenRange=10:12
+4	yuká	yuká	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=yayuká|ModernMood=Ind|ModernNumber=Plur|ModernPerson=1|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=13:17
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Hartt1938:0:0:744
@@ -22271,15 +22272,16 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Tupana resé/adp, tenhẽ/negi iné se yuká!
+# inputline = Tupana resé/adp, tenhẽ/negi iné se/=mf:m|ixé yuká/=mf:m|reyuká!
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	7	obl	_	TokenRange=0:6
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	SpaceAfter=No|TokenRange=7:11
-3	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=11:12
+3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=11:12
 4	tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	7	advmod	_	TokenRange=13:18
 5	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	TokenRange=19:22
-6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	obj	_	TokenRange=23:25
-7	yuká	yuká	VERB	V	VerbForm=Inf	0	root	_	SpaceAfter=No|TokenRange=26:30
+6	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	7	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=23:25
+7	yuká	yuká	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=reyuká|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=26:30
 8	!	!	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Hartt1938:0:0:766
@@ -22534,13 +22536,14 @@
 # sent_id = Hartt1938:0:0:850
 # text = Epurú ne kisawa ixéu.
 # text_por = Empresta-me tua rede!
-# text_source = p. 380, No. 850
+# text_source = p. 381, No. 850
 # text_orig = epurú nekysáua ixéu.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Epurú ne kisawa ixéu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	kisawa	kisawa	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:15
