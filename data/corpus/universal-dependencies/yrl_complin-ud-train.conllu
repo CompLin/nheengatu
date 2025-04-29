@@ -21658,12 +21658,13 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Intí será se ganani iné?
+# inputline = Intí será se/=mf:m|ixé ganani/=mf:m|reganani iné?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
 2	será	será	PART	PQ	PartType=Int	4	advmod	_	TokenRange=5:9
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obj	_	TokenRange=10:12
-4	ganani	ganani	VERB	V	VerbForm=Inf	0	root	_	TokenRange=13:19
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=10:12
+4	ganani	ganani	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=reganani|ModernMood=Ind|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=13:19
 5	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	SpaceAfter=No|TokenRange=20:23
 6	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=23:24
 
@@ -21777,10 +21778,10 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Se peyú iné!
+# inputline = Se/=mf:m|Ixé peyú/=mf:m|repeyú iné!
 # text_annotator = Dominick Maia Alexandre
-1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obj	_	TokenRange=0:2
-2	peyú	peyú	VERB	V	VerbForm=Inf	0	root	_	TokenRange=3:7
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	2	obj	_	ModernCase=Acc,Nom|ModernForm=Ixé|ModernLemma=ixé|TokenRange=0:2
+2	peyú	peyú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=repeyú|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|TokenRange=3:7
 3	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	SpaceAfter=No|TokenRange=8:11
 4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
@@ -21836,6 +21837,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Intí se manduári/v2.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=5:7
 3	manduári	manduári	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=8:16
@@ -21855,6 +21857,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Se manduári/v2 tenhẽ/foc ne resé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	manduári	manduári	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=3:11
 3	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	2	advmod	_	TokenRange=12:17
@@ -21863,7 +21866,7 @@
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Hartt1938:0:0:606
-# text = Se manha se munú igarupawa-pe xayuíri arama.
+# text = Se manha se munú igarupá-pe xayuíri arama.
 # text_por = Minha mãe me mandou no porto para voltar.
 # text_source = p. 363, No. 606
 # text_orig = semaiña semonó ygarupápe xayuyra aráma.
@@ -21874,18 +21877,19 @@
 # text_por_sec = Minha mãe me mandou ao porto para eu voltar.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Se manha se munú igarupawa-pe xayuíri arama/sconj.
+# inputline = Se manha se/=mf:m|ixé munú/=mf:m|umunú igarupá-pe xayuíri/v arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	manha	manha	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=3:8
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	obj	_	TokenRange=9:11
-4	munú	munú	VERB	V	VerbForm=Inf	0	root	_	TokenRange=12:16
-5-6	igarupawa-pe	_	_	_	_	_	_	_	TokenRange=17:29
-5	igarupawa	igarupawa	NOUN	N	Number=Sing	4	obl	_	_
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	4	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=9:11
+4	munú	munú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=umunú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=12:16
+5-6	igarupá-pe	_	_	_	_	_	_	_	TokenRange=17:27
+5	igarupá	igarupá	NOUN	N	Number=Sing	4	obl	_	_
 6	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	5	case	_	_
-7	xayuíri	yuíri	AUX	AUXN	Aspect=Iter|Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=ayuíri|TokenRange=30:37
-8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=38:43
-9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=43:44
+7	xayuíri	yuíri	VERB	V	Aspect=Iter|Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=ayuíri|TokenRange=28:35
+8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=36:41
+9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=41:42
 
 # sent_id = Hartt1938:0:100:608-1
 # text = Reú será pitima?
@@ -22113,6 +22117,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Se arasí reté/advs intí resé/sconj xasú-kwáu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	arasí	arasí	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=3:8
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:13
