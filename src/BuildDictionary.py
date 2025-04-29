@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: February 12, 2025
+# Last update: April 28, 2025
 
 import re, sys, os, json
 
@@ -136,6 +136,7 @@ pref.\tPREF\tprefixo
 v.\tV\tverbo de 1ª classe
 v. 2ª cl.\tV2\tverbo de 2ª classe
 v. 3ª cl.\tV3\tverbo de 3ª classe
+v. 4ª cl.\tV4\tverbo de 3ª classe
 {VSUFF}\tVSUFF\tverbo sufixal não-flexionável
 x.\tX\tnão palavra
 """

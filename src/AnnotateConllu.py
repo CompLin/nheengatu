@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: April 25, 2025
+# Last update: April 28, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -156,7 +156,7 @@ ROOT=[]
 ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
-'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB',
+'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB','V4': 'VERB',
 'VSUFF': 'VERB',
 'A': 'ADJ', 'CONJ' : 'C|SCONJ', 'NFIN' : 'Inf', 'FIN' : 'Fin', 'VNOUN' : 'Vnoun','ART' : 'DET',
 'COP' : 'AUX', 'PREP' : 'ADP', 'SCONJR': 'SCONJ',
@@ -2488,6 +2488,12 @@ def mkModernForm(modern,attribute):
     dic[attribute]=modern
     return dic
 
+def handleAttName(att):
+    a=att
+    if not att[-4:] in ('Type','Form'):
+        a=att.title()
+    return a
+
 def formatModernFeats(feats,register):
     new={}
     for k,v in feats.items():
@@ -2497,7 +2503,7 @@ def formatModernFeats(feats,register):
             modern_value='NCont'
         else:
             modern_value=v.title()
-        new[f"{register}{k.title()}"]=modern_value
+        new[f"{register}{handleAttName(k)}"]=modern_value
     return new
 
 def diffFeats(modern_token,arch_token):
@@ -2702,6 +2708,10 @@ def mkConlluSentence(tokens):
                 modern_token=mkConlluToken(modern_form,modern_entries[0])
                 if modern_token['upos'] == 'PRON':
                     handlePron(modern_token)
+                if t['upos'] == 'PRON':
+                    handlePron(t)
+                HandleMoodPersonToken(t)
+                HandleMoodPersonToken(modern_token)
                 diff=formatModernFeats(diffFeats(modern_token,t),register)
                 t['misc'].update(diff)
                 updateFeats(t,'Style',getStyle(attribute))
@@ -3785,7 +3795,10 @@ def CopyMoodFromHeadVerb(sent):
 
 def HandleMoodPerson(sent):
 	for token in sent:
-			if token['upos'] in ('AUX','VERB'):
+			HandleMoodPersonToken(token)
+
+def HandleMoodPersonToken(token):
+	if token['upos'] in ('AUX','VERB'):
 				insertFeat(token,'VerbForm','Fin')
 				feats=token.get('feats')
 				if feats:
@@ -3796,7 +3809,7 @@ def HandleMoodPerson(sent):
 						insertFeat(token,'Mood','Ind')
 					else:
 						insertFeat(token,'Mood','Ind')
-
+						
 def insertMoodVerbForm(sents):
 	for sent in sents:
 		InsertIndDepClause(sent)
