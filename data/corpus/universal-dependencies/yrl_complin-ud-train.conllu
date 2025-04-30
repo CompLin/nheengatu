@@ -23658,8 +23658,8 @@
 39	upé	upé	ADP	ADP	AdpType=Post	38	case	_	SpaceAfter=No|TokenRange=175:178
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
 
-# sent_id = Aguiar1898:22:23:223
-# text = Iwí usinhĩ kurí iwa setá iné resé; reú kurí iwí remitima.
+# sent_id = Aguiar1898:21-8:23:223
+# text = Iwí usinhĩ kurí yú setá iné resé; reú kurí iwí remitara.
 # text_orig = — Ïuhï u-cïnhin curi ihú cetá iné recê; re-ú curi ïuhï rïmïtara.
 # text_source = p. 87
 # text_por = — A terra germinará espinhos contra ti; comerás as plantas da terra.
@@ -23667,21 +23667,26 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = TODO
-# inputline = Iwí usinhĩ kurí iwa setá/indq iné resé/adp; reú kurí iwí remitima.
+# text_sec = [...] reú kurí iwí remitara.
+# text_por_sec = [...] comerás as plantas da terra.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Iwí usinhĩ kurí yú setá/indq iné resé/adp; reú kurí iwí remitara.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iwí	iwí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:3
 2	usinhĩ	sinhĩ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=4:10
 3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	TokenRange=11:15
-4	iwa	iwa	NOUN	N	Number=Sing	2	obj	_	TokenRange=16:19
-5	setá	setá	PRON	INDQ	PronType=Ind	4	det	_	TokenRange=20:24
-6	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	obl	_	TokenRange=25:28
-7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=29:33
-8	;	;	PUNCT	PUNCT	_	9	punct	_	TokenRange=33:34
-9	reú	ú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=35:38
-10	kurí	kurí	PART	FUT	Tense=Fut	9	advmod	_	TokenRange=39:43
-11	iwí	iwí	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=44:47
-12	remitima	remitima	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=48:56
-13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=56:57
+4	yú	yú	NOUN	N	Number=Sing	2	obj	_	TokenRange=16:18
+5	setá	setá	DET	INDQ	PronType=Ind	4	det	_	TokenRange=19:23
+6	iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	obl	_	TokenRange=24:27
+7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=28:32
+8	;	;	PUNCT	PUNCT	_	9	punct	_	TokenRange=32:33
+9	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	TokenRange=34:37
+10	kurí	kurí	PART	FUT	Tense=Fut	9	advmod	_	TokenRange=38:42
+11	iwí	iwí	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=43:46
+12	remitara	semitara	NOUN	N	Number=Sing|Rel=Cont	9	obj	_	SpaceAfter=No|TokenRange=47:55
+13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
 # sent_id = Studart1926:0:0:2790
 # text = Piná uikú patuá mirĩ pupé.
