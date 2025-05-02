@@ -19870,8 +19870,9 @@
 # text = Tenhẽ intí se mukweré iné.
 # text_por = Não me incomoda.
 # text_source = p. 319, No. 10
-# text_orig = teñé intí semukuerái iné.
+# text_orig = teñé intí semukuerái iné (Ereré).
 # text_eng = TODO
+# place = Ereré
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Tenhẽ/negi intí se/=mf:m|ixé mukweré/=mf:m|remukweré iné.
@@ -20428,7 +20429,7 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Hartt1938:0:0:45
-# text = Maã irũ.
+# text = Maãirũ.
 # text_por = Com que.
 # text_source = p. 322, No. 45
 # text_orig = maéirúm.
@@ -20437,7 +20438,8 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Maã/int irũ/adp.
 # text_annotator = Dominick Maia Alexandre
-1	Maã	maã	PRON	INT	PronType=Int	0	root	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:3
 2	irũ	irũ	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=4:7
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=7:8
 
@@ -20471,6 +20473,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Mamé/advrc taá ne ruka?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:4
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=5:8
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
@@ -20496,22 +20499,25 @@
 
 # sent_id = Hartt1938:0:0:49-1
 # text = Maã se kisé?
-# text_por = Onde está minha faca? Lá está em cima da pedra.
+# text_por = Onde está minha faca?
+# text_por_orig = Onde está minha faca? Lá está em cima da pedra.
 # text_source = p. 322, No. 49
 # text_orig = maá sekysé? aikoré múme itá árpe.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Maã/=typo:c|mamé:x|advrc se kisé?
+# inputline = Maã/=mf:m|Mamé:h|int:x|advrc@ se kisé?
 # text_annotator = Dominick Maia Alexandre
-1	Maã	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int|Typo=Yes	0	root	_	CorrectForm=mamé|TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int|Style=Arch	0	root	_	ModernAdvType=Loc|ModernForm=Mamé|TokenRange=0:3
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=4:6
 3	kisé	kisé	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=7:11
 4	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:49-2
 # text = Uikú múme itá árupi.
-# text_por = Onde está minha faca? Lá está em cima da pedra.
+# text_por = Lá está em cima da pedra.
+# text_por_orig = Onde está minha faca? Lá está em cima da pedra.
 # text_source = p. 322, No. 49
 # text_orig = maá sekysé? aikoré múme itá árpe.
 # text_eng = TODO
