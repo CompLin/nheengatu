@@ -12887,7 +12887,7 @@
 8	reté	reté	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=31:35
 9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=35:36
 
-# sent_id = Rodrigues1890:3-1:30:30
+# sent_id = Rodrigues1890:3-1:5:5
 # text = Nhaã aresé intí maã aintá umenari-kwáu, maã aresé u maã yasí umuwéu tatá u maã ukupiri upaĩ ií.
 # text_eng = that's why they couldn't get married. The moon would put out the fire; the fire would evaporate the water.
 # text_por = por isso não puderam se casar. A lua apagaria o fogo; o fogo evaporaria a água.
@@ -12919,6 +12919,53 @@
 19	upaĩ	upaĩ	DET	TOT	PronType=Tot	20	det	_	TokenRange=87:91
 20	ií	ií	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=92:94
 21	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=94:95
+
+# sent_id = Rodrigues1890:3-1:9:9
+# text = Paranawasú unharú reté, aresé intí uyumunani-kwáu yasí resá yukisé irumu, maãresé paranawasú akayú pitera rupí uyana igapira kití, ariré uyana akayú pawasá-pe tumasawa kití.
+# text_eng = TODO
+# text_por = O mar embraveceu e por isso não pôde a lua misturar as lágrimas com as águas do mar, que meio ano corre para cima, meio ano para baixo.
+# text_source = p. 211
+# text_orig = Paraná assu u nharu reté, arecé inti u iumunane cuáo yacy reçá iuquicé irumo, maarecé paraná uassu acayu petêra rupi u nhana igapira quité, ariré u nhana acayu pauçape tumaçaua quité.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Paranawasú unharú reté, aresé ti uyumunani-kwáu yasí resá-yukisé irumu, [...]. [...] paranawasú, akayú pitera rupí, uyana gapira kití, ariré uyana, akayú pawasá-pe, tumasawa kití.
+# text_por_sec = O mar embraveceu-se muito, por isso não pôde se misturar com as lágrimas da Lua. [...] o mar, pelo meio do ano, corre para cima, depois corre, no fim do ano, para baixo.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Paranawasú unharú reté/advs, aresé/advj intí uyumunani-kwáu/=mid yasí resá yukisé irumu/adp, maãresé paranawasú akayú pitera/n rupí uyana igapira kití, ariré uyana akayú pawasá-pe tumasawa kití.
+1	Paranawasú	paranawasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:10
+2	unharú	nharú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:17
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=18:22
+4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
+5	aresé	aresé	ADV	ADVJ	AdvType=Cau	7	advmod	_	TokenRange=24:29
+6	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=30:34
+7-8	uyumunani-kwáu	_	_	_	_	_	_	_	TokenRange=35:49
+7	uyumunani	munani	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	2	parataxis	_	_
+8	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	7	aux	_	_
+9	yasí	yasí	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=50:54
+10	resá	sesá	NOUN	N	Number=Sing|Rel=Cont	11	nmod:poss	_	TokenRange=55:59
+11	yukisé	yukisé	NOUN	N	Number=Sing	7	obl	_	TokenRange=60:66
+12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=67:72
+13	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=72:73
+14	maãresé	maãresé	SCONJ	SCONJR	_	19	mark	_	TokenRange=74:81
+15	paranawasú	paranawasú	NOUN	N	Number=Sing	19	nsubj	_	TokenRange=82:92
+16	akayú	akayú	NOUN	N	Number=Sing	17	nmod:poss	_	TokenRange=93:98
+17	pitera	pitera	NOUN	N	Number=Sing	19	obl	_	TokenRange=99:105
+18	rupí	rupí	ADP	ADP	AdpType=Post	17	case	_	TokenRange=106:110
+19	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=111:116
+20	igapira	igapira	NOUN	N	Number=Sing	19	obl	_	TokenRange=117:124
+21	kití	kití	ADP	ADP	AdpType=Post	20	case	_	SpaceAfter=No|TokenRange=125:129
+22	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=129:130
+23	ariré	ariré	ADV	ADVT	AdvType=Tim	24	advmod	_	TokenRange=131:136
+24	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	parataxis	_	TokenRange=137:142
+25	akayú	akayú	NOUN	N	Number=Sing	26	nmod:poss	_	TokenRange=143:148
+26-27	pawasá-pe	_	_	_	_	_	_	_	TokenRange=149:158
+26	pawasá	pawasá	NOUN	N	Number=Sing	24	obl	_	_
+27	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	26	case	_	_
+28	tumasawa	tumasawa	NOUN	N	Number=Sing|Rel=Abs	24	obl	_	TokenRange=159:167
+29	kití	kití	ADP	ADP	AdpType=Post	28	case	_	SpaceAfter=No|TokenRange=168:172
+30	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=172:173
 
 # sent_id = Rodrigues1890:3-2:100:1000
 # text = Pamarí-itá umunhã raĩ aintá ruka paraná árupi.
