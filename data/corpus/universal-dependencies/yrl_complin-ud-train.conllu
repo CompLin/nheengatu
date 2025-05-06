@@ -21756,9 +21756,9 @@
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:4
-2	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=4:5
-3	pawé	pawé	DET	TOT	PronType=Tot	6	det	_	TokenRange=6:10
-4	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	TokenRange=11:16
+2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=4:5
+3	pawé	pawé	PRON	TOT	PronType=Tot	1	advcl	_	TokenRange=6:10
+4	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=11:16
 5	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=17:21
 6	paraná	paraná	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=22:28
 7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
