@@ -22159,6 +22159,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Intí xaputari kwaá/demx kisé amú/ind tenhẽ/foc xaputari.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aputari|TokenRange=5:13
 3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=14:18
@@ -22207,12 +22208,13 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xarikú páu/total wã maã/relf xaputari waá/rel.
+# inputline = Xarikú páu/total wã maã/int xaputari waá/rel.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arikú|TokenRange=0:6
 2	páu	páu	PART	TOTAL	Aspect=Compl	1	advmod	_	TokenRange=7:10
 3	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=11:13
-4	maã	maã	PRON	RELF	PronType=Rel	1	obj	_	TokenRange=14:17
+4	maã	maã	PRON	INT	PronType=Int	1	obj	_	TokenRange=14:17
 5	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	acl:relcl	_	ModernForm=aputari|TokenRange=18:26
 6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=27:30
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=30:31
