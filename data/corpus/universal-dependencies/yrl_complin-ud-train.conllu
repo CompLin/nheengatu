@@ -21533,6 +21533,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Maã/int rerikú patuá mirĩ/a pupé?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Maã	maã	PRON	INT	PronType=Int	2	obj	_	TokenRange=0:3
 2	rerikú	rikú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
 3	patuá	patuá	NOUN	N	Number=Sing	2	obl	_	TokenRange=11:16
@@ -21649,6 +21650,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Yawara upuri meza árupi.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	upuri	puri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	meza	meza	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=13:17
@@ -21714,6 +21716,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Paraná tipawa/v3 reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	tipawa	tipawa	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=7:13
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=14:18
@@ -21733,6 +21736,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Aikwé nhunte kurí paraná uwiké.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	5	advmod	_	TokenRange=0:5
 2	nhunte	nhunte	ADV	ADV	_	5	advmod	_	TokenRange=6:12
 3	kurí	kurí	PART	FUT	Tense=Fut	5	advmod	_	TokenRange=13:17
@@ -21741,22 +21745,23 @@
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Hartt1938:0:0:118
-# text = Yawé, panhẽ tenhẽ kwaá paraná?
+# text = Yawé, pawé tenhẽ kwaá paraná?
 # text_por = Este rio é todo assim?
 # text_source = p. 327, No. 118
 # text_orig = yaué, paué teñe kuaá paraná?
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yawé/adva, panhẽ tenhẽ/foc kwaá/demx paraná?
+# inputline = Yawé/adva, pawé tenhẽ/foc kwaá/demx paraná?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=4:5
-3	panhẽ	panhẽ	DET	TOT	PronType=Tot	6	det	_	TokenRange=6:11
-4	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	TokenRange=12:17
-5	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=18:22
-6	paraná	paraná	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=23:29
-7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=29:30
+3	pawé	pawé	DET	TOT	PronType=Tot	6	det	_	TokenRange=6:10
+4	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	6	advmod	_	TokenRange=11:16
+5	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=17:21
+6	paraná	paraná	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=22:28
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hartt1938:0:0:119
 # text = Umunéu pá riré i maã-itá igara upé, aramé katú usú.
