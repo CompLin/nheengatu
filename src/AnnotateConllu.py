@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: May 6, 2025
+# Last update: May 7, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2624,7 +2624,6 @@ def mkConlluSentence(tokens):
                         newparselist=filterparselist(xpos,newparselist)
             elif tag == '=spl':
                 dic.update(handleWronglyMergedWord(form))
-                print('du',dic)
                 newparselist=getparselist(form)
                 if xpos:
                     newparselist=filterparselist(xpos,newparselist)
@@ -3152,7 +3151,6 @@ def splitMultiWordTokens(tokens):
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}{bar}{tag}")
         elif dic: # TODO: if dic ...?
-            print('bu',dic)
             host=dic['host']
             word=dic.get('word')
             #parselist=getparselist(host)
