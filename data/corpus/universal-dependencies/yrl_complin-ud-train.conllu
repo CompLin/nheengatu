@@ -22523,21 +22523,24 @@
 
 # sent_id = Hartt1938:0:0:161-1
 # text = Mairamé taá?
-# text_por = Por que? Não faça assim!
+# text_por = Por quê?
+# text_por_orig = porque? não faça assim!
 # text_source = p. 330, No. 161
 # text_orig = mairamé taé? teñé yaué!
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Mairamé/advrt taá?
+# inputline = Mairamé/=mf:m|Marama:h|advrt taá?
 # text_annotator = Dominick Maia Alexandre
-1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	0	root	_	TokenRange=0:7
-2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	SpaceAfter=No|TokenRange=8:11
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int|Style=Arch	0	advmod	_	ModernAdvType=Cau|ModernForm=Marama|ModernLemma=marama|TokenRange=0:7
+2	taá	taá	PART	CQ	PartType=Int	0	advmod	_	SpaceAfter=No|TokenRange=8:11
 3	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:161-2
 # text = Tenhẽ yawé!
-# text_por = Por que? Não faça assim!
+# text_por = Não faça assim!
+# text_por_orig = porque? não faça assim!
 # text_source = p. 330, No. 161
 # text_orig = mairamé taé? teñé yaué!
 # text_eng = TODO
@@ -22545,6 +22548,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Tenhẽ/negi yawé/adva!
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tenhẽ	tenhẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:5
 2	yawé	yawé	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=6:10
 3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
