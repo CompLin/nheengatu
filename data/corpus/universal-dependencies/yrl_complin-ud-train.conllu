@@ -23121,25 +23121,29 @@
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Hartt1938:0:0:371
-# text = Xawari se manha marika suí mituuwasú ara upé.
+# text = Xaari se manha marika suí mituuwasú araupé.
 # text_por = Nasci no domingo da Páscoa.
 # text_source = p. 346, No. 371
-# text_orig = xaár semáiña marika suí mytuú uasú áraopé.
+# text_orig = xaár semáiña maríka suí mytuú uasú áraopé.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xawari se manha marika suí mituuwasú/=aug ara upé/adp.
+# inputline = Xaari se manha marika suí/adp mituuwasú/=aug araupé/=spl:w|upé:x|adp.
 # text_annotator = Dominick Maia Alexandre
+# text_sec = Awari se manha marika suí mituuwasú ara upé.
+# text_por_sec = Nasci da barriga de minha mãe no dia de páscoa.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Xawari	wari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Awari|TokenRange=0:6
-2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
-3	manha	manha	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=10:15
-4	marika	marika	NOUN	N	Number=Sing	1	obl	_	TokenRange=16:22
-5	suí	suí	ADP	ADP	AdpType=Post	4	case	_	TokenRange=23:26
-6	mituuwasú	mituú	NOUN	N	Degree=Aug|Number=Sing	7	nmod:poss	_	TokenRange=27:36
-7	ara	ara	NOUN	N	Number=Sing	1	obl	_	TokenRange=37:40
-8	upé	upé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=41:44
-9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=44:45
+1	Xaari	ari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aari|TokenRange=0:5
+2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
+3	manha	manha	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=9:14
+4	marika	marika	NOUN	N	Number=Sing	1	obl	_	TokenRange=15:21
+5	suí	suí	ADP	ADP	AdpType=Post	4	case	_	TokenRange=22:25
+6	mituuwasú	mituú	NOUN	N	Degree=Aug|Number=Sing	7	nmod:poss	_	TokenRange=26:35
+7	ara	ara	NOUN	N	Number=Sing|Typo=Yes	1	obl	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=36:39
+8	upé	upé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=40:43
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Hartt1938:0:0:372
 # text = Ixé kurumiwasú reté.
