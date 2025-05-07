@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: April 28, 2025
+# Last update: May 6, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2048,7 +2048,7 @@ def handleMiddlePassive(form):
 	_isInLexicon(lemma='',parselist=parselist)
 	new['parselist']=[[entry['lemma'],tags]]
 	return new
-	
+
 def serializeEntry(entry):
 	keys=['pos','derivation','voice','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
 	feats=[]
@@ -2483,6 +2483,14 @@ def mkTypo(correct,typo):
     dic['Typo']=typo
     return dic
 
+def handleWronglyMergedWord(form):
+    dic={}
+    dic['space_typo']=wronglyMergedMiscFeats()
+    return dic
+
+def wronglyMergedMiscFeats():
+    return {'CorrectSpaceAfter': 'Yes', 'SpaceAfter': 'No'}
+
 def mkModernForm(modern,attribute):
     dic={}
     dic[attribute]=modern
@@ -2614,6 +2622,12 @@ def mkConlluSentence(tokens):
                         newparselist=getparselist(correct.lower())
                     if xpos:
                         newparselist=filterparselist(xpos,newparselist)
+            elif tag == '=spl':
+                dic.update(handleWronglyMergedWord(form))
+                print('du',dic)
+                newparselist=getparselist(form)
+                if xpos:
+                    newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
                 dic.update(mkModernForm(modern,attribute))
                 newparselist=getparselist(form.lower())
@@ -2696,6 +2710,10 @@ def mkConlluSentence(tokens):
                 handleHyphenSepToken(t)
             correct_form=dic.get('CorrectForm')
             typo=dic.get('Typo')
+            space_typo=dic.get('space_typo')
+            if space_typo:
+                t['misc'].update(space_typo)
+                updateFeats(t,'Typo', 'Yes')
             if correct_form and typo:
                 t['misc'].update({'CorrectForm': correct_form})
                 if xpos != 'X':
@@ -3059,11 +3077,20 @@ def mkHost(host,clitic,token,xpos=''):
 
 def extractHost(token):
     dic={}
+    tagdic={}
     form=token.lower()
     pair=extractTag(token)
     tag=''
     if pair:
         token,tag=pair
+        tagdic=parseTag(tag)
+        func=tagdic.get('func')
+        if func == '=spl':
+            suff=tagdic.get('w')
+            form=token[:-len(suff)]
+            dic['host']={'form': form, 'xpos': tagdic.get('h')}
+            dic['word']={'form': suff, 'xpos': tagdic.get('x')}
+            dic['func']=func
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     elif form == 'marã':
@@ -3125,11 +3152,26 @@ def splitMultiWordTokens(tokens):
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}{bar}{tag}")
         elif dic: # TODO: if dic ...?
-            mwt=dic['multiwordtoken']
+            print('bu',dic)
             host=dic['host']
+            word=dic.get('word')
             #parselist=getparselist(host)
             #if len(parselist) == 1 and parselist[0][1] == None:
-            if hasNoParse(host):
+            if word:
+                func=dic.get('func')
+                host_tag=host.get('xpos')
+                if host_tag:
+                    host_tag=f"{func}:x|{host_tag}"
+                else:
+                    host_tag=f"{func}"
+                word_tag=word.get('xpos')
+                host_form=host.get('form')
+                word_form=word.get('form')
+                host_form=f"{host_form}/{host_tag}"
+                if word_tag:
+                    word_form=f"{word_form}/{word_tag}"
+                newlist.extend([host_form,word_form])
+            elif hasNoParse(host):
                 newlist.append(t)
             else:
                 suff=dic['suff']
@@ -3608,7 +3650,8 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 			groups=m.groups()
 			if groups:
 				number,lang_title_place,start_end=[part.strip() for part in groups]
-				start_page,end_page=start_end.split('-')
+				if not start_page:
+					start_page,end_page=start_end.split('-')
 				text_nr=int(number)
 				parts=[part.strip() for part in re.split(r"[\)\(]",lang_title_place) if part.strip() !='']
 				if parts:
