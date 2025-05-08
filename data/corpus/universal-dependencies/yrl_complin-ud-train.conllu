@@ -23456,7 +23456,8 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Peyapukúi kurí yasika arama/sconj ukaupé/=spl:w|upé:x|adp.
 # text_annotator = Dominick Maia Alexandre
-1	Peyapukúi	yapukúi	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:9
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Peyapukúi	yapukúi	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:9
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=10:14
 3	yasika	sika	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	TokenRange=15:21
 4	arama	arama	SCONJ	SCONJ	_	3	mark	_	TokenRange=22:27
