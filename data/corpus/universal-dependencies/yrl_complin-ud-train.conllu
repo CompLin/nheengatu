@@ -22530,11 +22530,11 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Mairamé/=mf:m|Marama:h|advrt taá?
+# inputline = Mairamé/=typo:c|Marama taá?
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int|Style=Arch	0	advmod	_	ModernAdvType=Cau|ModernForm=Marama|ModernLemma=marama|TokenRange=0:7
-2	taá	taá	PART	CQ	PartType=Int	0	advmod	_	SpaceAfter=No|TokenRange=8:11
+1	Mairamé	marama	ADV	ADVRU	AdvType=Cau|PronType=Int|Typo=Yes	0	root	_	CorrectForm=Marama|TokenRange=0:7
+2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	SpaceAfter=No|TokenRange=8:11
 3	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:161-2
