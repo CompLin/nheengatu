@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: May 7, 2025
+# Last update: May 9, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2050,7 +2050,7 @@ def handleMiddlePassive(form):
 	return new
 
 def serializeEntry(entry):
-	keys=['pos','derivation','voice','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
+	keys=['pos','derivation','voice','style','mood','person','number', 'vform'] # TODO: create function to serialize dictionary entry 
 	feats=[]
 	for k in keys:
 		value=entry.get(k)
@@ -2535,6 +2535,16 @@ def getStyle(attribute):
     mapping={'ModernForm' : 'Arch', 'StandardForm' : 'Rare'}
     return mapping.get(attribute)
 
+def applyFunction(function,form):
+    form=form.lower()
+    newparselist=[]
+    if function and function == 'mid':
+        new=handleMiddlePassive(form)
+        newparselist=new['parselist']
+    else:
+        newparselist=getparselist(form)
+    return newparselist
+
 def mkConlluSentence(tokens):
     register='Modern'
     field='Form'
@@ -2591,6 +2601,7 @@ def mkConlluSentence(tokens):
             suffix=tagparse.get('u')
             typo=tagparse.get('t')
             correct=tagparse.get('c')
+            word=tagparse.get('w')
             modern=tagparse.get('m')
             function=tagparse.get('n')
             newregister=tagparse.get('r')
@@ -2629,8 +2640,8 @@ def mkConlluSentence(tokens):
                     newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
                 dic.update(mkModernForm(modern,attribute))
-                newparselist=getparselist(form.lower())
-                modernparselist=getparselist(modern.lower())
+                newparselist=applyFunction(function,form)
+                modernparselist=applyFunction(function,modern)
                 if xpos:
                     modernparselist=filterparselist(xpos,modernparselist)
                 if archpos:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: April 28, 2025
+# Last update: May 9, 2025
 
 import re, sys, os, json
 
@@ -385,10 +385,11 @@ def getpersnum(impind=IMPIND):
 def guessVerb(form):
 	persnum=getpersnum()
 	sorted_prefixes = sorted(persnum.keys(), key=len, reverse=True)
-	entry={}
+	entry={'pref': '','lemma' : form.lower(), 'pos' : 'V', 'vform' : 'NFIN'}
 	for prefix in sorted_prefixes:
 		if form.lower().startswith(prefix):
 			entry['pref']=prefix
+			entry.pop('vform')
 			entry.update(process_feats(f"V+{persnum[prefix]}"))
 			start=len(prefix)
 			entry['lemma']=form[start:]
