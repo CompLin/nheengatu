@@ -6989,6 +6989,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -15259,20 +15260,23 @@
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Magalhaes1876:2:2:45
-# text = Uikú taperiwá wirpe, usanhana i temiú.
+# text = Uikú taperiwá wírupi, usanhana i temiú.
 # text_eng = He was under the taperebá, gathering his food.
 # text_por = Estava embaixo do taperebá, ajuntando sua comida.
 # text_source = p. 176
 # text_orig = Oikộ itapereɨuá uɨrpe, oçanhãna i tẹmiú.
+# inputline = Uikú/cop taperiwá wírupi, usanhana i/pron2 temiú.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	taperiwá	taperiwá	NOUN	N	Number=Sing	1	obl	_	TokenRange=5:13
-3	wirpe	wirpe	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=14:19
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
-5	usanhana	sanhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=21:29
-6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=30:31
-7	temiú	temiú	NOUN	N	Number=Sing|Rel=Abs	5	obj	_	SpaceAfter=No|TokenRange=32:37
-8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
+1	Uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	3	cop	_	TokenRange=0:4
+2	taperiwá	taperiwá	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:13
+3-4	wírupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=14:20
+3	wira	wira	NOUN	N	Number=Sing	0	root	_	_
+4	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=20:21
+6	usanhana	sanhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=22:30
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=31:32
+8	temiú	temiú	NOUN	N	Number=Sing|Rel=Abs	6	obj	_	SpaceAfter=No|TokenRange=33:38
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Magalhaes1876:2:3:46
 # text = Tapiira kaawara usika ape, unheẽ i xupé: — Retirika, yautí, retirika kí xií.
@@ -20828,6 +20832,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Esenúi kurumĩ ixéu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Esenúi	senúi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	kurumĩ	kurumĩ	NOUN	N	Number=Sing	1	obj	_	TokenRange=7:13
 3	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=14:18
@@ -20876,15 +20881,16 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xaikú/cop ranhẽ/impf se ramunha-itá rikú/n yawé/adp.
+# inputline = Xaikú/v ranhẽ/impf se ramunha-itá rikú/n yawé/adp.
 # text_annotator = Dominick Maia Alexandre
-1	Xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	cop	_	ModernForm=Aikú|TokenRange=0:5
-2	ranhẽ	ranhẽ	PART	IMPF	Aspect=Imp	5	advmod	_	TokenRange=6:11
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xaikú	ikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aikú|TokenRange=0:5
+2	ranhẽ	ranhẽ	PART	IMPF	Aspect=Imp	1	advmod	_	TokenRange=6:11
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
 4	ramunha-itá	tamunha	NOUN	N	Number=Plur|Rel=Cont	5	nmod:poss	_	TokenRange=15:26
-5	rikú	tikú	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=27:31
+5	rikú	tikú	NOUN	N	Number=Sing|Rel=Cont	1	obl	_	TokenRange=27:31
 6	yawé	yawé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=32:36
-7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=36:37
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = Hartt1938:0:0:67
 # text = Ekũi eyuuka bensãu ne payangawa suí.

@@ -7056,10 +7056,11 @@
 # text_eng = He who lives with his enemy cannot rest easy.
 # text_por = Quem [é aquele que] mora com seu inimigo não pode ficar tranquilo.
 # text_source = Magalhães, 220, adap.
+# text_orig = Auá nhahã oikộ uahá çuáɨẫna irúmo intí opituú quáu. 
 # text_annotator = Leonel Figueiredo de Alencar
-1	Awá	awá	PRON	IND	PronType=Ind	2	nsubj	_	TokenRange=0:3
-2	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	csubj	_	TokenRange=4:8
-3	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=9:13
+1	Awá	awá	PRON	IND	PronType=Ind	8	nsubj	_	TokenRange=0:3
+2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	1	det	_	TokenRange=4:8
+3	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=9:13
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=14:17
 5	suayana	suayana	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obl	_	TokenRange=18:25
 6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	TokenRange=26:31
