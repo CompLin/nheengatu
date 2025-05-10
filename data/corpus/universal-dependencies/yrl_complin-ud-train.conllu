@@ -21012,6 +21012,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xapuká retana.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xapuká	puká	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Apuká|TokenRange=0:6
 2	retana	retana	ADV	ADVS	AdvType=Deg	1	advmod	_	SpaceAfter=No|TokenRange=7:13
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
@@ -21030,14 +21031,15 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kwaá/demx kurumĩ sesangá reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	kurumĩ	kurumĩ	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:11
-3	sesangá	esangá	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=12:19
+3	sesangá	resangá	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=12:19
 4	reté	reté	ADV	ADVS	AdvType=Deg	3	advmod	_	SpaceAfter=No|TokenRange=20:24
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Hartt1938:0:0:76
-# text = Kunhã amuramé i piaíwa i membira-itá irũ.
+# text = Kunhã amuramé i piaíwa i mimbira-itá irũ.
 # text_por = A mulher às vezes fica zangada com seus filhos.
 # text_source = p. 324, No. 76
 # text_orig = kuñán amuramé ipya aiyú imymyra itá i ú n
@@ -21048,14 +21050,15 @@
 # text_por_sec = A mulher às vezes fica zangada com seus filhos.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Kunhã amuramé i/pron2 piaíwa i/pron2 membira-itá irũ/adp.
+# inputline = Kunhã amuramé i/pron2 piaíwa i/pron2 mimbira-itá irũ/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kunhã	kunhã	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:5
 2	amuramé	amuramé	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=6:13
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=14:15
 4	piaíwa	piaíwa	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=16:22
 5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=23:24
-6	membira-itá	membira	NOUN	N	Number=Plur	4	obl	_	TokenRange=25:36
+6	mimbira-itá	mimbira	NOUN	N	Number=Plur	4	obl	_	TokenRange=25:36
 7	irũ	irũ	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=37:40
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=40:41
 
@@ -21069,24 +21072,25 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Yané/pron2 karuka.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
 2	karuka	karuka	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=5:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:78
-# text = Kwaá se membira i atiima, i xirĩwasú yuíri.
+# text = Kwaá se mimbira i atiima, i xirĩwasú yuíri.
 # text_por = Meu filho é preguiçoso e mentiroso também.
 # text_source = p. 324, No. 78
 # text_orig = kuaá semymyra iatyyma, ixirín osú yuír.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Kwaá/demx se membira i/pron2 atiima/v2, i/pron2 xirĩwasú/=ev:x|v2 yuíri/cconj.
+# inputline = Kwaá/demx se mimbira i/pron2 atiima/v2, i/pron2 xirĩwasú/=ev:x|v2 yuíri/cconj.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=0:4
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
-3	membira	membira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=8:15
+3	mimbira	mimbira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=8:15
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	expl	_	TokenRange=16:17
 5	atiima	atiima	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=18:24
 6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=24:25
@@ -21105,6 +21109,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ne renira taá muíri/int?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	renira	tenira	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=3:9
 3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=10:13
@@ -21125,9 +21130,10 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Paraná pirantá/adv reté/advs uyana.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Paraná	paraná	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:6
 2	pirantá	pirantá	ADV	ADV	_	4	advmod	_	TokenRange=7:14
-3	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	TokenRange=15:19
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=15:19
 4	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=20:25
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=25:26
 
@@ -21141,6 +21147,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Maã/int upitá waá/rel intí usú-kwáu igara upé/adp, xarasú se kupé-pe.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Maã	maã	PRON	INT	PronType=Int	10	obj	_	TokenRange=0:3
 2	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=4:9
 3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=10:13
@@ -21159,27 +21166,27 @@
 14	.	.	PUNCT	PUNCT	_	10	punct	_	SpaceAfter=No|TokenRange=56:57
 
 # sent_id = Hartt1938:0:0:83
-# text = Paraná tatatingantu uikú.
+# text = Paraná tatatinga inte uikú.
 # text_por = O rio está fumaçando.
 # text_source = p. 325, No. 83
 # text_orig = paraná tatatín inte oikó.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Paraná tatatingantu uikú/v.
+# inputline = Paraná tatatinga inte/=typo:c|nhunte uikú/v.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Paraná	paraná	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2-3	tatatingantu	_	_	_	_	_	_	_	TokenRange=7:19
-2	tatatinga	tatatinga	NOUN	N	Number=Sing	0	root	_	_
-3	ntu	ntu	ADV	ADV	Clitic=Yes	2	advmod	_	_
-4	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=20:24
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
+2	tatatinga	tatatinga	NOUN	N	Number=Sing	0	root	_	TokenRange=7:16
+3	inte	nhunte	ADV	ADV	Typo=Yes	2	advmod	_	CorrectForm=nhunte|TokenRange=17:21
+4	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=22:26
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Hartt1938:0:0:84
 # text = Aé usú iké suí, iwí rupí.
 # text_por = Ele foi daqui por terra.
 # text_source = p. 325, No. 84
-# text_orig = aé osó iké suí, yuy rupí.
+# text_orig = aé osó iké-suí, yuy rupí.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
@@ -21189,6 +21196,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Aé/pron usú iké suí/adp, iwí rupí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:6
 3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	2	obl	_	TokenRange=7:10
@@ -21208,6 +21216,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Wirané kurí kwá/demx ramé/adp, xaikú/v kurí Tupayú upé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Wirané	wirané	ADV	ADVT	AdvType=Tim	8	advmod	_	TokenRange=0:6
 2	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=7:11
 3	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	obl	_	TokenRange=12:15
@@ -21215,7 +21224,7 @@
 5	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=20:21
 6	xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	8	cop	_	ModernForm=aikú|TokenRange=22:27
 7	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=28:32
-8	Tupayú	tupayú	NOUN	N	Number=Sing	0	root	_	TokenRange=33:39
+8	Tupayú	tupayú	PROPN	PROPN	Number=Sing	0	root	_	TokenRange=33:39
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=40:43
 10	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=43:44
 
@@ -21233,6 +21242,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Uyana reté/advs será/pq kuité/advm ií?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:10
 3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=11:15
@@ -21254,6 +21264,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Uyana, aresé igara intí usasá kurutẽi.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=5:6
 3	aresé	aresé	ADV	ADVJ	AdvType=Cau	6	advmod	_	TokenRange=7:12
@@ -21277,6 +21288,8 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Intí xawatá-kwáu i/pron2 irũ/adp maãresé xarikú setá/indq reté/advs maã/n xamunhã arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# cross_reference = Avila2021:0:0:337
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2-3	xawatá-kwáu	_	_	_	_	_	_	_	TokenRange=5:16
 2	xawatá	watá	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=awatá
@@ -21293,19 +21306,20 @@
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
 
 # sent_id = Hartt1938:0:0:89
-# text = Paraná i pura uikú kapuãmu suí, sesé pirantá reté paraná.
+# text = Paraná i pura ikú kapuãmu suí, sesé pirantá reté paraná.
 # text_por = O rio está cheio de ilhas, por isso corre muito.
 # text_source = p. 325, No. 89
 # text_orig = paraná ipor ikó kaapuam suí, sesé pyrantan reté paraná.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Paraná i/pron2 pura/v2 uikú/v kapuãmu suí/adp, sesé pirantá/a reté/advs paraná.
+# inputline = Paraná i/pron2 pura/v2 ikú/=mf:m|uikú:x|v:h|v kapuãmu suí/adp, sesé pirantá/a reté/advs paraná.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Paraná	paraná	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:6
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=7:8
 3	pura	pura	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=9:13
-4	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	TokenRange=14:18
+4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	3	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=14:17
 5	kapuãmu	kapuãmu	NOUN	N	Number=Sing	3	obl	_	TokenRange=19:26
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=27:30
 7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=30:31
