@@ -21356,25 +21356,23 @@
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=50:53
 12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=53:54
 
-# sent_id = Hartt1938:0:0:92
-# text = Se mimbira yupirungawa kwaá.
+# sent_id = Hartt1938:0:0:92-1
+# text = Se mimbira rupirunawa kwaá.
 # text_por = Este é meu filho primogênito.
 # text_source = p. 325, No. 92
 # text_orig = semymyra rypyrunáua kuaé (mulher que fala).
 # text_eng = TODO
+# speaker_gender = female
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# text_sec = Se raíra yupirungawa kwaá.
-# text_por_sec = Este é meu filho primogênito.
-# text_sec_source = Avila (2021)
-# text_por_sec_source = Avila (2021)
-# inputline = Se mimbira yupirungawa kwaá/advdx.
+# inputline = Se mimbira rupirunawa/=typo:c|yupirungawa@ kwaá/demx.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
-2	mimbira	mimbira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:10
-3	yupirungawa	yupirungawa	NOUN	N	Number=Sing	0	root	_	TokenRange=11:22
-4	kwaá	kwaá	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	advmod	_	SpaceAfter=No|TokenRange=23:27
-5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
+2	mimbira	mimbira	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=3:10
+3	rupirunawa	yupirungawa	NOUN	N	Number=Sing|Typo=Yes	0	root	_	CorrectForm=yupirungawa|TokenRange=11:21
+4	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	nsubj	_	SpaceAfter=No|TokenRange=22:26
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Hartt1938:0:0:93
 # text = Yawara uyusuú.
