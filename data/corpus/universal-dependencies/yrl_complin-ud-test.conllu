@@ -5092,9 +5092,12 @@
 20	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=90:91
 
 # sent_id = Avila2021:0:0:37
-# text = Yepé apigawa usú ukamundú, uwasemu suasú-kunhã i membira irumu.
+# text = Yepé apigawa usú ukamundú, uwasemu suasú kunhã i membira irumu.
 # text_eng = A man went hunting and found a deer with her calf.
 # text_por = Um homem foi caçar e encontrou uma veada com seu filhote.
+# text_orig = Yepé apigawa usú ukamundú, uwasemu suasú-kunhã i membira irumu.
+# text_prim = Yepé apegaua u çu camundu u acema çuaçu cunhan i membira irumo.
+# text_prim_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_source = Rodrigues, 135, adap.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
@@ -5103,11 +5106,12 @@
 4	ukamundú	kamundú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:25
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=25:26
 6	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=27:34
-7	suasú-kunhã	suasú-kunhã	NOUN	N	Number=Sing	6	obj	_	TokenRange=35:46
-8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=47:48
-9	membira	membira	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=49:56
-10	irumu	irumu	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=57:62
-11	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=62:63
+7	suasú	suasú	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=35:40
+8	kunhã	kunhã	NOUN	N	Number=Sing	6	obj	_	TokenRange=41:46
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=47:48
+10	membira	membira	NOUN	N	Number=Sing	8	nmod	_	TokenRange=49:56
+11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=57:62
+12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=62:63
 
 # sent_id = Avila2021:0:0:38
 # text = I paya usú pukusawa upurungitá payé irumu, i manha yuíri usú uwatá, nhaã pukusawa nhaã apigawa mirĩ upisika suíwa mirapara irumu, usú ukamundú.
