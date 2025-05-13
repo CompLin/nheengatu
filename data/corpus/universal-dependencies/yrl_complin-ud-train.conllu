@@ -21276,7 +21276,7 @@
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Hartt1938:0:0:88
-# text = Intí xawatá-kwáu i irũ maãresé xarikú setá reté maã xamunhã arama.
+# text = Intí xawatá-kwáu irũ maãresé xarikú setá reté maã xamunhã arama.
 # text_por = Não posso passear com ele porque tenho muito o que fazer.
 # text_source = p. 325, No. 88
 # text_orig = intí xauatá kuáu irúm maaresé xarekó setá reté maá xamuñán oaráma.
@@ -21287,7 +21287,7 @@
 # text_por_sec = Não posso passear com ele porque tenho muitas coisas para fazer.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Intí xawatá-kwáu i/pron2 irũ/adp maãresé xarikú setá/indq reté/advs maã/n xamunhã arama/sconj.
+# inputline = Intí xawatá-kwáu irũ/=spl:w|rũ:h|pron2:c|irũ:x|adp maãresé xarikú setá/indq reté/advs maã/n xamunhã arama/sconj.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 # cross_reference = Avila2021:0:0:337
@@ -21295,16 +21295,16 @@
 2-3	xawatá-kwáu	_	_	_	_	_	_	_	TokenRange=5:16
 2	xawatá	watá	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=awatá
 3	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	2	aux	_	_
-4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	obl	_	TokenRange=17:18
-5	irũ	irũ	ADP	ADP	AdpType=Post	4	case	_	TokenRange=19:22
-6	maãresé	maãresé	SCONJ	SCONJR	_	7	mark	_	TokenRange=23:30
-7	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=arikú|TokenRange=31:37
-8	setá	setá	DET	INDQ	PronType=Ind	10	det	_	TokenRange=38:42
-9	reté	reté	ADV	ADVS	AdvType=Deg	8	advmod	_	TokenRange=43:47
-10	maã	maã	NOUN	N	Number=Sing	7	obj	_	TokenRange=48:51
-11	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	10	acl	_	ModernForm=amunhã|TokenRange=52:59
-12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=60:65
-13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs|Typo=Yes	2	obl	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=17:18
+5	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	4	case	_	CorrectForm=irũ|TokenRange=18:20
+6	maãresé	maãresé	SCONJ	SCONJR	_	7	mark	_	TokenRange=21:28
+7	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=arikú|TokenRange=29:35
+8	setá	setá	DET	INDQ	PronType=Ind	10	det	_	TokenRange=36:40
+9	reté	reté	ADV	ADVS	AdvType=Deg	8	advmod	_	TokenRange=41:45
+10	maã	maã	NOUN	N	Number=Sing	7	obj	_	TokenRange=46:49
+11	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	10	acl	_	ModernForm=amunhã|TokenRange=50:57
+12	arama	arama	SCONJ	SCONJ	_	11	mark	_	SpaceAfter=No|TokenRange=58:63
+13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=63:64
 
 # sent_id = Hartt1938:0:0:89
 # text = Paraná i pura ikú kapuãmu suí, sesé pirantá reté paraná.
