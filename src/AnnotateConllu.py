@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: May 9, 2025
+# Last update: May 10, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -3099,7 +3099,7 @@ def extractHost(token):
             suff=tagdic.get('w')
             form=token[:-len(suff)]
             dic['host']={'form': form, 'xpos': tagdic.get('h')}
-            dic['word']={'form': suff, 'xpos': tagdic.get('x')}
+            dic['word']={'form': suff, 'xpos': tagdic.get('x'), 'correct' : tagdic.get('c')}
             dic['func']=func
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
@@ -3174,10 +3174,16 @@ def splitMultiWordTokens(tokens):
                 else:
                     host_tag=f"{func}"
                 word_tag=word.get('xpos')
+                correct_form=word.get('correct')
                 host_form=host.get('form')
                 word_form=word.get('form')
                 host_form=f"{host_form}/{host_tag}"
-                if word_tag:
+                typo=f"=typo:c|{correct_form}"
+                if correct_form and word_tag:
+                    word_form=f"{word_form}/{typo}:x|{word_tag}"
+                elif correct_form:
+                    word_form=f"{word_form}/{typo}"
+                elif word_tag:
                     word_form=f"{word_form}/{word_tag}"
                 newlist.extend([host_form,word_form])
             elif hasNoParse(host):
