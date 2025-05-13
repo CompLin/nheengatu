@@ -6785,6 +6785,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Aintá/pron upisika pukusawa/sconj, paá, pirá mirĩ/a yuka/a, aintá/pron uyuka, paá, aintá/pron2 pepú aintá/pron uxari mirá árupi.
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=6:13
@@ -6794,7 +6795,7 @@
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=27:28
 7	pirá-mirĩ	pirá-mirĩ	NOUN	N	Number=Sing	2	obj	_	TokenRange=29:38
 8	yuka	yuka	ADJ	A	_	7	amod	_	SpaceAfter=No|TokenRange=39:43
-9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=43:44
+9	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=43:44
 10	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	TokenRange=45:50
 11	uyuka	yuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=51:56
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=56:57
@@ -6802,7 +6803,7 @@
 14	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=61:62
 15	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=63:68
 16	pepú	pepú	NOUN	N	Number=Sing	11	obj	_	TokenRange=69:73
-17	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	18	obj	_	TokenRange=74:79
+17	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	TokenRange=74:79
 18	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	TokenRange=80:85
 19	mirá	mirá	NOUN	N	Number=Sing	20	nmod:poss	_	TokenRange=86:90
 20-21	árupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=91:96
