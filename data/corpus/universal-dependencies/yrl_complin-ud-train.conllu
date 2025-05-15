@@ -22801,7 +22801,7 @@
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
-2	xayumumunéu	muamunéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=xayumuamunéu|ModernForm=ayumumunéu|SpaceAfter=No|TokenRange=5:16
+2	xayumumunéu	muamunéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=xayumuamunéu|ModernForm=ayumuamunéu|SpaceAfter=No|TokenRange=5:16
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
 # sent_id = Hartt1938:0:0:212
@@ -22961,6 +22961,27 @@
 4	xirĩ	xirĩ	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=15:19
 5	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	SpaceAfter=No|TokenRange=20:24
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Hartt1938:0:0:284
+# text = Ixé xaikú se anama-itá yawé.
+# text_por = Vivo pelo costume de meus pais.
+# text_source = p. 339, No. 284
+# text_orig = ixé xaikó se anamaitá yaué.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Ixé aikú se anama-itá yawé.
+# text_por_sec = Eu vivo como meus parentes.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Ixé xaikú/v se anama-itá yawé/adp.
+# text_annotator = Dominick Maia Alexandre
+1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	xaikú	ikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aikú|TokenRange=4:9
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:12
+4	anama-itá	anama	NOUN	N	Number=Plur	2	obl	_	TokenRange=13:22
+5	yawé	yawé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=23:27
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Hartt1938:0:0:286
 # text = Ekũi eyuuka paka mundé suí, tenhẽ emuyawáu!
@@ -24610,6 +24631,86 @@
 15	kambí	kambí	NOUN	N	Number=Sing	12	obj	_	SpaceAfter=No|TokenRange=85:90
 16	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=90:91
 
+# sent_id = Hartt1938:3:32:885
+# text = Siringa iwa turusú, puasú, i pukú, imirá wasú, uikú igapú rupí, igarapé rimbiwa rupí, iwaíka rupí yuíri uikú.
+# text_por = A seringueira é grande, grossa, alta, é um pau grande, há no igapó, na margem do igarapé e também na várzea.
+# text_source = p. 386, No. 32
+# text_orig = serína yua turusú, ipuasú, ipoku, ymyrá uasú, oikó yguapó rupí, ygarapé rymyua rupí, yuaíka rupí yuir oikó.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Siringa iwa turusú/a, puasú, i/pron2 pukú/v2, imirá wasú, uikú/v igapú rupí, igarapé rimbiwa rupí, iwaíka rupí yuíri/cconj uikú/v.
+# text_annotator = Dominick Maia Alexandre
+1	Siringa	siringa	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:7
+2	iwa	iwa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=8:11
+3	turusú	turusú	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=12:18
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+5	puasú	puasú	ADJ	A	_	3	conj	_	SpaceAfter=No|TokenRange=20:25
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=25:26
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	TokenRange=27:28
+8	pukú	pukú	VERB	V2	Mood=Ind|VerbForm=Fin	5	conj	_	SpaceAfter=No|TokenRange=29:33
+9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=33:34
+10	imirá	imirá	NOUN	N	Number=Sing	8	conj	_	TokenRange=35:40
+11	wasú	wasú	ADJ	A	_	10	amod	_	SpaceAfter=No|TokenRange=41:45
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=45:46
+13	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=47:51
+14	igapú	igapú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	13	obl	_	TokenRange=52:57
+15	rupí	rupí	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=58:62
+16	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=62:63
+17	igarapé	igarapé	NOUN	N	Number=Sing	18	nmod:poss	_	TokenRange=64:71
+18	rimbiwa	timbiwa	NOUN	N	Number=Sing|Rel=Cont	14	conj	_	TokenRange=72:79
+19	rupí	rupí	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=80:84
+20	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=84:85
+21	iwaíka	iwaíka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	24	obl	_	TokenRange=86:92
+22	rupí	rupí	ADP	ADP	AdpType=Post	21	case	_	TokenRange=93:97
+23	yuíri	yuíri	CCONJ	CCONJ	_	24	cc	_	TokenRange=98:103
+24	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	conj	_	SpaceAfter=No|TokenRange=104:108
+25	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=108:109
+
+# sent_id = Hartt1938:3:33:886
+# text = Musapiri siringa amurupiwara, yepé marika usú nhaã paraná rimbiwa rupí uikú nhaã, nhaã intí katú, uxirika reté i kambí, siringa i katú uikú kaawasú rupí igarapé apira rupí.
+# text_por = Há três qualidades de seringueira, aquela que tem o tronco barrigudo e que cresce na margem do rio não presta, o leite dela é sêco (vidrento), a boa qualidade de seringueira se acha no mato virgem, nas cabeceiras dos igarapés.
+# text_source = p. 386, No. 33
+# text_orig = mosapyr serína morupí uára, oepé marika osú naé paraná rymy yua rupí oikó naé, nhaé intí katú, oxirík reté ikamy, serína ikatú oikó kaá uasú rupí ygarapé apyra rupí.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Musapiri siringa amurupiwara/n, yepé/art marika usú nhaã paraná rimbiwa rupí uikú/v nhaã, nhaã intí katú/a, uxirika reté/advs i/pron2 kambí, siringa i/pron2 katú/v2 uikú/v kaawasú/=ev:x|n:a|t rupí igarapé apira rupí.
+# text_annotator = Dominick Maia Alexandre
+1	Musapiri	musapiri	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=0:8
+2	siringa	siringa	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=9:16
+3	amurupiwara	amurupiwara	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=17:28
+4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
+5	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	6	det	_	TokenRange=30:34
+6	marika	marika	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=35:41
+7	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=42:45
+8	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=46:50
+9	paraná	paraná	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=51:57
+10	rimbiwa	timbiwa	NOUN	N	Number=Sing|Rel=Cont	12	obl	_	TokenRange=58:65
+11	rupí	rupí	ADP	ADP	AdpType=Post	10	case	_	TokenRange=66:70
+12	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	conj	_	TokenRange=71:75
+13	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	12	nsubj	_	SpaceAfter=No|TokenRange=76:80
+14	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=80:81
+15	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	17	nsubj	_	TokenRange=82:86
+16	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	17	advmod	_	TokenRange=87:91
+17	katú	katú	ADJ	A	_	7	parataxis	_	SpaceAfter=No|TokenRange=92:96
+18	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=96:97
+19	uxirika	xirika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	parataxis	_	TokenRange=98:105
+20	reté	reté	ADV	ADVS	AdvType=Deg	19	advmod	_	TokenRange=106:110
+21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	TokenRange=111:112
+22	kambí	kambí	NOUN	N	Number=Sing	19	nsubj	_	SpaceAfter=No|TokenRange=113:118
+23	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=118:119
+24	siringa	siringa	NOUN	N	Number=Sing	26	nsubj	_	TokenRange=120:127
+25	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	26	expl	_	TokenRange=128:129
+26	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	24	acl	_	TokenRange=130:134
+27	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	parataxis	_	TokenRange=135:139
+28	kaawasú	kaá	NOUN	N	Degree=Aug|Number=Sing	27	obl	_	TokenRange=140:147
+29	rupí	rupí	ADP	ADP	AdpType=Post	28	case	_	TokenRange=148:152
+30	igarapé	igarapé	NOUN	N	Number=Sing	31	nmod:poss	_	TokenRange=153:160
+31	apira	apira	NOUN	N	Number=Sing	27	conj	_	TokenRange=161:166
+32	rupí	rupí	ADP	ADP	AdpType=Post	31	case	_	SpaceAfter=No|TokenRange=167:171
+33	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=171:172
+
 # sent_id = Hartt1938:3:35:888
 # text = Mira usú usikari siringatiwa; uwasemu sitá ramé, umunhã i tuyupara, asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
 # text_por = Vai-se (primeiro) procurar o seringal; quando se acha bastantes paus, faz-se uma barraca, então voltam para a casa buscar gente para trabalhar.
@@ -24744,6 +24845,89 @@
 38	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	39	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=184:186
 39	yakáu	yakáu	VERB	V	Style=Arch|VerbForm=Inf	31	parataxis	_	ModernForm=uyakáu|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=187:192
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=192:193
+
+# sent_id = Hartt1938:3:65:918
+# text = Uikú yepé maã, intí urikú i yuwá, intí urikú setimã, aé uyana ramé usú uikú, usemu ximiú i kupé rupí: plaina.
+# text_por = Há uma cousa que não tem nem pernas nem braços, quando quando corre come, e a comida dele sai pelas costas: - plaina.
+# text_source = p. 389, No. 65
+# text_orig = oiko iepé maé, intí oreko iyuá, intí oreko setymá, ae oñan ramé osó oiko, osem ximiú ikupé rupí: - praina.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Uikú yepé maã, ti urikú i yuwá, ti urikú setimã [...]. §
+# text_por_sec = § Há uma coisa que não tem pernas nem braços [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Uikú/v yepé/art maã/n, intí urikú i/pron2 yuwá, intí urikú setimã, aé/pron uyana ramé/sconj usú uikú/v, usemu ximiú i/pron2 kupé rupí: plaina/=n:o|pt:s|plaina.
+# text_annotator = Dominick Maia Alexandre
+1	Uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:4
+2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=5:9
+3	maã	maã	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=10:13
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=13:14
+5	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=15:19
+6	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=20:25
+7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=26:27
+8	yuwá	yuwá	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=28:32
+9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=32:33
+10	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=34:38
+11	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=39:44
+12	setimã	tetimã	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	11	obj	_	SpaceAfter=No|TokenRange=45:51
+13	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=51:52
+14	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	TokenRange=53:55
+15	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	advcl	_	TokenRange=56:61
+16	ramé	ramé	SCONJ	SCONJ	_	15	mark	_	TokenRange=62:66
+17	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	TokenRange=67:70
+18	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	17	aux	_	SpaceAfter=No|TokenRange=71:75
+19	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=75:76
+20	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	parataxis	_	TokenRange=77:82
+21	ximiú	timiú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	20	nsubj	_	TokenRange=83:88
+22	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	23	nmod:poss	_	TokenRange=89:90
+23	kupé	kupé	NOUN	N	Number=Sing	20	obl	_	TokenRange=91:95
+24	rupí	rupí	ADP	ADP	AdpType=Post	23	case	_	SpaceAfter=No|TokenRange=96:100
+25	:	:	PUNCT	PUNCT	_	26	punct	_	TokenRange=100:101
+26	plaina	plaina	NOUN	N	Number=Sing	20	appos	_	Orig=plaina|OrigLang=por|SpaceAfter=No|TokenRange=102:108
+27	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=108:109
+
+# sent_id = Hartt1938:3:66:919
+# text = Ipí-pe uikú yepé pirá pewa mirĩ i yurú i apara, umaú ramé yepé suaxara kití, sesá-itá iwaté kití nhunte umaẽ: — maã pirá kuité?
+# text_por = No fundo da água existe um peixe chato pequeno e com a bôca torta, quando come está sôbre um lado, seus olhos olham para cima: que peixe é êste? aramasan.
+# text_source = p. 389, No. 66
+# text_orig = ypype oiko oiepé pirá péua mirí iyurú iapára, omaú ramé oiepé suaxára kyty, sesáitá yuaté kyty ñúnte omaén: maá pirá kuite? - aramasan.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# inputline = Ipí-pe uikú/v yepé/art pirá pewa/a mirĩ/a i/pron2 yurú i/pron2 apara, umaú ramé/sconj yepé/card suaxara/n kití, sesá-itá iwaté/n kití nhunte umaẽ: — maã/int pirá kuité/advm?
+# text_annotator = Dominick Maia Alexandre
+1-2	Ipí-pe	_	_	_	_	_	_	_	TokenRange=0:6
+1	Ipí	ipí	NOUN	N	Number=Sing	3	obl	_	_
+2	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	1	case	_	_
+3	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:11
+4	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	5	det	_	TokenRange=12:16
+5	pirá	pirá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=17:21
+6	pewa	pewa	ADJ	A	_	5	amod	_	TokenRange=22:26
+7	mirĩ	mirĩ	ADJ	A	_	5	amod	_	TokenRange=27:31
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=32:33
+9	yurú	yurú	NOUN	N	Number=Sing	11	nsubj	_	TokenRange=34:38
+10	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	expl	_	TokenRange=39:40
+11	apara	apara	VERB	V2	Mood=Ind|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=41:46
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=46:47
+13	umaú	maú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=48:52
+14	ramé	ramé	SCONJ	SCONJ	_	13	mark	_	TokenRange=53:57
+15	yepé	yepé	NUM	CARD	NumType=Card	16	nummod	_	TokenRange=58:62
+16	suaxara	suaxara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	13	obl	_	TokenRange=65:72
+17	kití	kití	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=71:75
+18	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=75:76
+19	sesá-itá	sesá	NOUN	N	Number=Plur|Number[psor]=Sing|Person[psor]=3|Rel=NCont	23	nsubj	_	TokenRange=79:87
+20	iwaté	iwaté	NOUN	N	Number=Sing	23	obl	_	TokenRange=86:91
+21	kití	kití	ADP	ADP	AdpType=Post	20	case	_	TokenRange=92:96
+22	nhunte	nhunte	ADV	ADV	_	23	advmod	_	TokenRange=97:103
+23	umaẽ	maẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	SpaceAfter=No|TokenRange=104:108
+24	:	:	PUNCT	PUNCT	_	26	punct	_	TokenRange=108:109
+25	—	—	PUNCT	PUNCT	_	26	punct	_	TokenRange=110:111
+26	maã	maã	DET	INT	PronType=Int	23	ccomp	_	TokenRange=112:115
+27	pirá	pirá	NOUN	N	Number=Sing	26	nsubj	_	TokenRange=116:120
+28	kuité	kuité	ADV	ADVM	AdvType=Mod	26	advmod	_	SpaceAfter=No|TokenRange=121:126
+29	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=126:127
 
 # sent_id = Costa1909:0:0:1001
 # text = Resú ne paya piri.
