@@ -24901,23 +24901,28 @@
 25	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=108:109
 
 # sent_id = Hartt1938:3:33:886
-# text = Musapiri siringa amurupiwara, yepé marika usú nhaã paraná rimbiwa rupí uikú nhaã, nhaã intí katú, uxirika reté i kambí, siringa i katú uikú kaawasú rupí igarapé apira rupí.
+# text = Musapiri siringa amurupiwara, yepé marikawasú nhaã paraná rimbiwa rupí uikú nhaã, nhaã intí katú, uxirika reté i kambí, siringa i katú uikú kaawasú rupí igarapé apira rupí.
 # text_por = Há três qualidades de seringueira, aquela que tem o tronco barrigudo e que cresce na margem do rio não presta, o leite dela é seco (vidrento), a boa qualidade de seringueira se acha no mato virgem, nas cabeceiras dos igarapés.
 # text_source = p. 386, No. 33
 # text_orig = mosapyr serína morupí uára, oepé marika osú naé paraná rymy yua rupí oikó naé, nhaé intí katú, oxirík reté ikamy, serína ikatú oikó kaá uasú rupí ygarapé apyra rupí.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Musapiri siringa amurupiwara/n, yepé/art marika usú nhaã paraná rimbiwa rupí uikú/v nhaã, nhaã intí katú/a, uxirika reté/advs i/pron2 kambí, siringa i/pron2 katú/v2 uikú/v kaawasú/=ev:x|n:a|t rupí igarapé apira rupí.
+# text_sec = Musapiri siringa amurupiwara, [...].
+# text_por_sec = [Há] três seringas diferentes, [...]. [ou seja, há três tipos de seringa]
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Musapiri siringa amurupiwara, yepé/art marikawasú/=ev:x|n nhaã paraná rimbiwa rupí uikú/v nhaã, nhaã intí katú/a, uxirika reté/advs i/pron2 kambí, siringa i/pron2 katú/v2 uikú/v kaawasú/=ev:x|n:a|t rupí igarapé apira rupí.
 # text_annotator = Dominick Maia Alexandre
-1	Musapiri	musapiri	NUM	CARD	NumType=Card	3	nummod	_	TokenRange=0:8
-2	siringa	siringa	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=9:16
-3	amurupiwara	amurupiwara	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=17:28
-4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
-5	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	6	det	_	TokenRange=30:34
-6	marika	marika	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=35:41
-7	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=42:45
-8	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=46:50
+1	Musapiri	musapiri	NUM	CARD	NumType=Card	0	root	_	TokenRange=0:8
+2	siringa	siringa	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=9:16
+3-4	amurupiwara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=17:28
+3	amurupí	amurupí	ADV	ADVA	AdvType=Man	2	nmod	_	_
+4	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=28:29
+6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=30:34
+7	marikawasú	marika	NOUN	N	Degree=Aug|Number=Sing	1	parataxis	_	TokenRange=35:45
+8	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	nsubj	_	TokenRange=46:50
 9	paraná	paraná	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=51:57
 10	rimbiwa	timbiwa	NOUN	N	Number=Sing|Rel=Cont	12	obl	_	TokenRange=58:65
 11	rupí	rupí	ADP	ADP	AdpType=Post	10	case	_	TokenRange=66:70
@@ -24932,17 +24937,17 @@
 20	reté	reté	ADV	ADVS	AdvType=Deg	19	advmod	_	TokenRange=106:110
 21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	TokenRange=111:112
 22	kambí	kambí	NOUN	N	Number=Sing	19	nsubj	_	SpaceAfter=No|TokenRange=113:118
-23	,	,	PUNCT	PUNCT	_	27	punct	_	TokenRange=118:119
+23	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=118:119
 24	siringa	siringa	NOUN	N	Number=Sing	26	nsubj	_	TokenRange=120:127
 25	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	26	expl	_	TokenRange=128:129
-26	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	24	acl	_	TokenRange=130:134
-27	uikú	ikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	parataxis	_	TokenRange=135:139
-28	kaawasú	kaá	NOUN	N	Degree=Aug|Number=Sing	27	obl	_	TokenRange=140:147
+26	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	1	parataxis	_	TokenRange=130:134
+27	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	28	aux	_	TokenRange=135:139
+28	kaawasú	kaá	NOUN	N	Degree=Aug|Number=Sing	26	parataxis	_	TokenRange=140:147
 29	rupí	rupí	ADP	ADP	AdpType=Post	28	case	_	TokenRange=148:152
 30	igarapé	igarapé	NOUN	N	Number=Sing	31	nmod:poss	_	TokenRange=153:160
-31	apira	apira	NOUN	N	Number=Sing	27	conj	_	TokenRange=161:166
+31	apira	apira	NOUN	N	Number=Sing	28	conj	_	TokenRange=161:166
 32	rupí	rupí	ADP	ADP	AdpType=Post	31	case	_	SpaceAfter=No|TokenRange=167:171
-33	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=171:172
+33	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=171:172
 
 # sent_id = Hartt1938:3:35:888
 # text = Mira usú usikari siringatiwa; uwasemu sitá ramé, umunhã i tuyupara, asuí uyuíri suka kití, usú i mira-itá piamu upurakí arama.
