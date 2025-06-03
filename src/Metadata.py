@@ -22,7 +22,8 @@ PEOPLE = {
 'mar': 'Marcel Twardowsky Avila',
 'viv': 'Vivianne Anselmo Nascimento',
 'let': 'Letícia Farias Nunes',
-'dav': 'Davi Sampaio Santos'
+'dav': 'Davi Sampaio Santos',
+'ano': 'anonymized'
 }
 
 ROLES=[     {'scr' : 'transcriber', 'description' : 'This the person who … TODO','optional' : True, 'requires' : 'text_prim'},

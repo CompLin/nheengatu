@@ -2,16 +2,20 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: May 10, 2025
+# Last update: June 3, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
 from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss, mkAnnotator
+from TagValidator import validate_or_raise, validate_function_args, convert_args
+from LarkTagValidator import parser, TagTransformer
+from LarkTagValidator import validate_or_raise as lark_validate_or_raise
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
 from conllu import parse_incr
 import re, os
+from typing import List, Dict
 
 GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
 LEXICON=loadLexicon()
@@ -154,6 +158,12 @@ ROOT=[]
 
 # archaic lemmas
 ARCHAIC_LEMMAS=extractArchaicLemmas(GLOSSARY)
+
+SPECIAL_TAGS={'o' : 'orig', 'a' : 'accent', 'l' : 'length',
+         'u' : 'suffix', 't' : 'typo', 'c' : 'correct',
+         'w' : 'word', 'm' : 'modern', 'n' : 'arg_function', 'func' : 'main_function',
+         'r' : 'newregister', 'p' : 'position', 'h' : 'archpos',
+         's' : 'orig_form', 'f' : 'force', 'x' : 'xpos', 'guess' : 'g'}
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB','V4': 'VERB',
@@ -443,10 +453,14 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         else:
             entries=list(filter(lambda entry: entry['xpos'] == 'PREF' and word.lower().startswith(entry['ancient'].strip(HYPHEN)),ARCHAIC_LEMMAS))
             if entries:
+                # modern and ancient verb inflectional prefixes
                 modern=entries[0]['modern'].strip(HYPHEN)
                 ancient=entries[0]['ancient'].strip(HYPHEN)
                 if word.istitle():
                     modern=modern.title()
+                correct_form=entry.get('correct_form')
+                if correct_form:
+                    word=correct_form
                 modernform['ModernForm']=f"{modern}{word[len(ancient):]}"
     if feats:
         token['feats']=feats
@@ -457,7 +471,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     #elif token['xpos'] == 'ADVR':
     #    updateFeats(token,'PronType','Int')
     #elif token['xpos'] == 'ADVL':
-    #    updateFeats(token,'PronType','Rel')
+    #    updateFeats(tok, token['misc'], token['misc']en,'PronType','Rel')
     elif token['xpos'] in ('ORD','ADVO'):
         updateFeats(token,'NumType','Ord')
     includeAdvType(token)
@@ -1772,16 +1786,96 @@ def getTags(parse):
             tags=y
     return tags
 
-def hasTag(tags1,tags2):
+def _hasTag(tags1,tags2):
     if re.search(rf"\b{re.escape(tags2)}\b",tags1):
         return True
     return False
 
-def filterparselist(tags,parselist):
+def hasTag(tags1, tags2):
+    """
+    Checks whether a tag sequence contains a specific tag or a contiguous subsequence of tags.
+
+    This function returns True if `tags2` is a complete tag or tag subsequence present within
+    the tag sequence `tags1`. Tags in the sequence are assumed to be separated by '+'.
+
+    Parameters
+    ----------
+    tags1 : str
+        The tag sequence to be searched, e.g., 'N+NCONT+SG'.
+
+    tags2 : str
+        The tag or subsequence to search for, e.g., 'N', 'N+NCONT'.
+
+    Returns
+    -------
+    bool
+        True if `tags2` is found as a contiguous subsequence in `tags1` (delimited by boundaries),
+        otherwise False.
+
+    Examples
+    --------
+    >>> hasTag('N+NCONT+SG', 'N')
+    True
+    >>> hasTag('N+NCONT+SG', 'N+NCONT')
+    True
+    >>> hasTag('N+NCONT+SG', 'N+SG')
+    False
+    >>> hasTag('N+NCONT+SG', 'N+NCONT+SG')
+    True
+    """
+    if re.search(rf"\b{re.escape(tags2)}\b", tags1):
+        return True
+    return False
+
+
+def _filterparselist(tags,parselist):
     if tags:
         return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
     else:
         return parselist
+
+def filterparselist(tags, parselist):
+    """
+    Filters a parselist by a specified part-of-speech tag (XPOS) or XPOS+feature combination.
+
+    Parameters:
+    ----------
+    tags : str
+        The XPOS tag to filter by, optionally combined with a feature, e.g., 'N+ABS' for an absolutive noun.
+        If an empty string or None is provided, no filtering is performed and the full parselist is returned.
+
+    parselist : list
+        A list of parses, where each parse is a list containing a lemma and an XPOS tag, optionally followed by morphological features
+        e.g., [['xirĩ', 'A'], ['xirĩ', 'V2']] and [['apigawa', 'A'], ['apigawa', 'N+SG']].
+
+    Returns:
+    -------
+    list
+        A list containing only the parses matching the specified tag.
+
+    Raises:
+    ------
+    ValueError
+        If filtering is requested (i.e., tags is not empty) but no parse in the parselist
+        matches the specified tag.
+
+    Example:
+    --------
+    >>> filterparselist('A', [['xirĩ', 'A'], ['xirĩ', 'V2']])
+    [['xirĩ', 'A']]
+
+    >>> filterparselist('', [['xirĩ', 'A'], ['xirĩ', 'V2']])
+    [['xirĩ', 'A'], ['xirĩ', 'V2']]
+
+    >>> filterparselist('N', [['xirĩ', 'A'], ['xirĩ', 'V2']])
+    ValueError: No parse found with tag 'N' in parselist: [['xirĩ', 'A'], ['xirĩ', 'V2']]
+    """
+    
+    if tags:
+        return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
+    else:
+        return parselist
+
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
@@ -1991,15 +2085,19 @@ def isInLexicon(lemma,orig):
     if orig is None:
         _isInLexicon(lemma)
 
-def _isInLexicon(lemma='',parselist=[]):
+def _isInLexicon(lemma='',parselist=[],xpos=''):
 	if lemma:
 		parselist=getparselist(lemma)
 	else:
 		lemma=parselist[0][0]
 	if len(parselist) == 1 and parselist[0][1] is None:
 		raise Exception(f"Lemma '{lemma}' not found in the lexicon")
+	if xpos:
+		parselist=filterparselist(xpos,parselist)
+	return parselist
 
-def handleOrig(new,lemma,orig, orig_form):
+def handleOrig(new,lemma,orig, orig_form,xpos=''):
+    parselist=[]
     if orig_form:
         new['Orig']=orig_form
         if not orig:
@@ -2009,8 +2107,8 @@ def handleOrig(new,lemma,orig, orig_form):
         if not orig_form:
             pass # TODO: apply Portuguese spell checker on the lemma 
     else:
-        _isInLexicon(lemma)
-        
+        parselist=_isInLexicon(lemma,xpos=xpos)
+    return parselist
 
 def VerbFormError(entry):
 	if not entry:
@@ -2036,19 +2134,6 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     new['parselist']=[[lemma, tags]]
     return new
 
-def handleMiddlePassive(form):
-	new={}
-	entry=guessVerb(form)
-	VerbFormError(entry)
-	if entry['lemma'].startswith(YU):
-		entry['voice']=MEDPASS
-		entry['lemma']=entry['lemma'][len(YU):]
-	parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
-	tags=serializeEntry(entry)
-	_isInLexicon(lemma='',parselist=parselist)
-	new['parselist']=[[entry['lemma'],tags]]
-	return new
-
 def serializeEntry(entry):
 	keys=['pos','derivation','voice','style','mood','person','number', 'vform'] # TODO: create function to serialize dictionary entry 
 	feats=[]
@@ -2059,7 +2144,23 @@ def serializeEntry(entry):
 	tags='+'.join(feats)
 	return tags
 
-def handlePartialRedup(form,length,xpos='V',orig=None, orig_form='',accent=False, suffix=False): # TODO: reduplication of adjectives
+def handleMiddlePassive(form, orig=None, orig_form=''):
+	new={}
+	entry=guessVerb(form)
+	VerbFormError(entry)
+	if entry['lemma'].startswith(YU):
+		entry['voice']=MEDPASS
+		entry['lemma']=entry['lemma'][len(YU):]
+	parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
+	tags=serializeEntry(entry)
+	handleOrig(new,entry['lemma'],orig, orig_form,xpos='V')
+	#_isInLexicon(lemma='',parselist=parselist)
+	new['parselist']=[[entry['lemma'],tags]]
+	return new
+
+def handlePartialRedup(form,length,xpos='',orig=None, orig_form='',accent=False, suffix=False,position=None): # TODO: reduplication of adjectives
+    if not xpos:
+        xpos='V'
     new={}
     entry=guessVerb(form)
     VerbFormError(entry)
@@ -2067,12 +2168,15 @@ def handlePartialRedup(form,length,xpos='V',orig=None, orig_form='',accent=False
         lemma=entry['lemma'][:-length]
         if accent:
             lemma=handleAccent(lemma)
+    elif position:
+        lemma=entry['lemma']
+        lemma=f"{lemma[:position]}{lemma[position+length:]}"
     else:
         lemma=entry['lemma'][length:]
-        entry['pos']=xpos
-    handleOrig(new,lemma,orig, orig_form)
+    entry['pos']=xpos
+    handleOrig(new,lemma,orig, orig_form,xpos=xpos)
     entry['derivation']=REDUP
-    keys=['pos','derivation','style','mood','person','number'] # TODO: create function to serialize dictionary entry 
+    keys=['pos','derivation','style','mood','person','number'] # TODO: serializeEntry
     feats=[]
     for k in keys:
         value=entry.get(k)
@@ -2290,9 +2394,6 @@ def mkPrv(form, xpos='A'):
 def mkClitic(lemma,upos):
     return [[lemma, upos]]
 
-def mkUpos(lemma,upos):
-    return [[lemma.lower(), upos]]
-
 def checkXposTag(pos_tag):
     """
     Process a XPOS part-of-speech tag or a morphological tag, raising an error if the tag is not in the valid tagsets.
@@ -2339,7 +2440,7 @@ def get_iso_3_letter_code(language_code):
     
     return language.part3
 
-def _mkUpos(form,xpos,orig=None,orig_form=''):
+def mkUpos(form,xpos,orig=None,orig_form=''):
     new={}
     lemma=form.lower()
     if orig:
@@ -2349,14 +2450,11 @@ def _mkUpos(form,xpos,orig=None,orig_form=''):
     new['parselist']=[[lemma, f"{xpos}"]]
     return new
 
-def mkIntj(lemma):
-    return mkUpos(lemma,'INTJ')
-
-def _mkIntj(form,orig=None,orig_form=''):
-    return _mkUpos(form,'INTJ',orig,orig_form)
+def mkIntj(form,orig=None,orig_form=''):
+    return mkUpos(form,'INTJ',orig,orig_form)
 
 def mkCard(lemma,orig=None,orig_form=''):
-    return _mkUpos(lemma,'CARD',orig,orig_form)
+    return mkUpos(lemma,'CARD',orig,orig_form)
 
 def handleRedup(token):
     redup={}
@@ -2433,15 +2531,66 @@ def isNominal(upos):
 
 def parseArgs(string):
     dic={}
-    #oper='='
-    #index=string.index(oper)
-    #parts=string[index+1:].split(':')
     parts=string.split(':')
-    dic['func'] = parts[0]
+    func=parts[0]
     for part in parts[1:]:
         arg,val=part.split('|')
         dic[arg]=val
+    # Validate against FUNCTION_SIGNATURES
+    #valid, msg = validate_function_args(func.strip("="), dic)
+    #if not valid:
+    #    raise ValueError(msg)
+    dic['func'] = func
     return dic
+
+def _parseArgs(string: str) -> dict:
+    """Parse a function string like '=typo:x|abc:c|def' into a dictionary of arguments.
+
+    Raises:
+        ValueError: If the function or its arguments are invalid or improperly formatted.
+    """
+    dic = {}
+
+    parts = string.split(':')
+    if not parts:
+        raise ValueError("Empty input string")
+
+    func = parts[0]
+    for part in parts[1:]:
+        if '|' not in part:
+            raise ValueError(f"Invalid argument format: '{part}'. Expected 'arg|value'.")
+        arg, val = part.split('|', 1)
+        if not arg or not val:
+            raise ValueError(f"Empty argument name or value in: '{part}'")
+        dic[arg] = val
+
+    # Validate against FUNCTION_SIGNATURES
+    valid, msg = validate_function_args(func, dic)
+    if not valid:
+        raise ValueError(msg)
+
+    dic['func'] = func
+    return dic
+
+
+def expandTag(tag):
+    return SPECIAL_TAGS.get(tag)
+
+def validateTag(tagparse): # TODO: deprecated (see validate_tag)
+    dic={}
+    for k in tagparse.keys():
+        if expandTag(k) is None:
+            raise ValueError(f"Invalid tag: '{k}'")
+    for abbr,name in SPECIAL_TAGS.items():
+        v=tagparse.get(abbr)
+        if v:
+            dic[name]=v
+    return dic
+
+def test_validate_function_args(tag): # TODO: deprecated
+    dic=parseArgs(tag)
+    func=dic.pop('func')
+    return validate_function_args(func,dic)
 
 def parseTag(tag):
     sep=':'
@@ -2449,7 +2598,7 @@ def parseTag(tag):
     if sep in tag:
         args=parseArgs(tag)
         for k,v in args.items():
-            if k == 'a':
+            if k in ('a','f'):
                 if v == 'f':
                     args[k]=False
                 elif v == 't':
@@ -2458,7 +2607,8 @@ def parseTag(tag):
                 args[k]=int(v)
         dic.update(args)
     else:
-        dic['func']=tag
+        #dic['function']=tag
+        dic['func']=tag # TODO: a simple tag like 'adva' is incorrectly assigned to the 'func' key 
     return dic
 
 def insertRedup(parselist):
@@ -2475,7 +2625,119 @@ def insertRedup(parselist):
 
 def extractTag(token):
     if '/' in token:
-        return token.split('/')
+        parts=token.split('/')
+        #validate_or_raise(parts[-1])
+        return parts
+    
+def validate_tag(tag: str) -> dict:
+    """
+    Validates and parses a special tag string.
+
+    Steps:
+    1. Checks syntax via Lark parser.
+    2. Transforms the parse tree into a dictionary.
+    3. Checks semantic validity of the function name and its arguments.
+    4. Converts values of boolean and integer arguments.
+
+    Args:
+        tag (str): Special tag string to validate and parse, e.g., '=vnoun:a|t'.
+
+    Returns:
+        dict: Parsed tag dictionary with keys: 'tag', 'func', 'args', 'has_at'.
+
+    Raises:
+        ValueError: If syntax or semantic validation fails.
+    """
+    # Step 1: Syntactic validation (raises if invalid)
+    lark_validate_or_raise(tag)
+
+    # Step 2: Parse and transform
+    tree = parser.parse(tag)
+    parsed = TagTransformer().transform(tree)
+
+    # Step 3: Semantic validation of function name and its arguments
+    func = parsed.get('func')
+    if func:
+        is_valid, error_msg = validate_function_args(func, parsed['args'])
+        if not is_valid:
+            raise ValueError(f"Semantic validation failed: {error_msg}")
+
+        # Step 4: Convert argument types
+        parsed['args'] = convert_args(parsed['args'])
+
+    return parsed
+
+
+
+def _extractTag(token: str) -> List[str]: # TODO: deprecated, see extract_tag(token)
+    """Extract the token and its tag (if any) from a tagged token like 'puranga/a@' or 'usikiesá/=vnoun:a|t'.
+
+    Returns:
+        A list [wordform, tag], or just [wordform] if no tag is present.
+
+    Raises:
+        ValueError: If the tag format is invalid according to `validate_or_raise`.
+    """
+    result={}
+    if '/' not in token:
+        result['word']=token
+        return result # No tag present
+
+    parts = token.rsplit('/', 1)  # Only split at the last '/' to avoid issues with slashes in the token
+    word, tag = parts
+    validate_or_raise(tag)
+    result['word']=word
+    result['tag']=tag
+    return result
+
+def process_token(token: str) -> dict:
+    """
+    Processes a token by extracting and parsing its tag.
+
+    Steps:
+    1. Extracts the word and tag (if present) from the token.
+    2. If a tag is present, validates and parses it.
+    3. Returns a dictionary with keys:
+        - 'word': the raw word form.
+        - 'raw_tag': the raw tag string (if present).
+        - 'parsed': the parsed tag dictionary (if tag is present).
+
+    Args:
+        token (str): The token to process, e.g., 'usikiesá/=vnoun:a|t'.
+
+    Returns:
+        dict: Resulting dictionary with extracted and parsed data.
+    """
+    dic = extract_tag(token)
+    raw_tag=dic.get('raw_tag')
+    if raw_tag:
+        parsed_tag = validate_tag(dic['raw_tag'])
+        dic['parsed'] = parsed_tag
+    return dic
+
+
+def extract_tag(token: str) -> Dict[str, str]:
+    """
+    Extracts the word form and its raw tag (if present) from a token.
+
+    Tokens are typically of the form:
+        - 'puranga/a@'
+        - 'usikiesá/=vnoun:a|t'
+    Untagged tokens like 'puranga' will return only the word form.
+
+    This function performs no validation on the tag format.
+    Tag validation and parsing are handled separately.
+
+    Returns:
+        dict: A dictionary with at least the key 'word'.
+              If a tag is present, it also includes the key 'tag'.
+    """
+    if '/' not in token:
+        return {'word': token}
+
+    # Only split on the last slash, to tolerate slashes inside the word
+    word, raw_tag = token.rsplit('/', 1)
+    return {'word': word, 'raw_tag': raw_tag}
 
 def mkTypo(correct,typo):
     dic={}
@@ -2535,13 +2797,15 @@ def getStyle(attribute):
     mapping={'ModernForm' : 'Arch', 'StandardForm' : 'Rare'}
     return mapping.get(attribute)
 
-def applyFunction(function,form):
+def applyFunction(function,form,orig=None, orig_form='',xpos=''):
+    new={}
     form=form.lower()
     newparselist=[]
     if function and function == 'mid':
-        new=handleMiddlePassive(form)
+        new=handleMiddlePassive(form, orig=orig,orig_form=orig_form)
         newparselist=new['parselist']
     else:
+        handleOrig(new,form,orig=orig,orig_form=orig_form,xpos=xpos)
         newparselist=getparselist(form)
     return newparselist
 
@@ -2556,16 +2820,16 @@ def mkConlluSentence(tokens):
     for token in tokens:
         old=token
         tag=''
+        root=False
         mwt=MULTIWORDTOKENS.get(token)
         if mwt:
-            tag=mwt.get('xpos')
-        root=False
-        parts=extractTag(token)
-        if parts:
-            token,tag=parts
-            if '@' in tag:
-                root=True
-                tag=tag[:-1]
+            base_tag=mwt.get('xpos') # TODO: ensure this tag is validated
+            if base_tag:
+                token=f"{token}/{base_tag.lower()}"
+        token_data=process_token(token)
+        token=token_data['word']
+        parsed=token_data.get('parsed')
+        #parts=extractTag(token)
         dic=handleHyphen(token)
         new={}
         form=dic.get('form')
@@ -2588,35 +2852,36 @@ def mkConlluSentence(tokens):
                     parselist=getparselist(alomorph)
                 else:
                     parselist=getparselist(form.lower())
-        if tag:
-            tagparse=parseTag(tag)
-            t=tagparse.get('func')
-            if t:
-                tag=t
-            orig=tagparse.get('o')
-            if orig:
-                orig=get_iso_3_letter_code(orig)
-            accent=tagparse.get('a')
-            length=tagparse.get('l')
-            suffix=tagparse.get('u')
-            typo=tagparse.get('t')
-            correct=tagparse.get('c')
-            word=tagparse.get('w')
-            modern=tagparse.get('m')
-            function=tagparse.get('n')
-            newregister=tagparse.get('r')
-            position=tagparse.get('p')
-            if position:
-                position=int(position)
-            if newregister:
-                register=newregister
-                attribute=f"{newregister.title()}{field}"
-            archpos=tagparse.get('h')
-            orig_form=tagparse.get('s')
-            force=tagparse.get('f')
-            xpos=tagparse.get('x')
-            if xpos:
-                xpos=checkXposTag(xpos)
+        if parsed:
+            root=parsed.get('hast_at')
+            func=parsed.get('func')
+            tag=parsed.get('tag')
+            if func:
+                tag=f"={func}" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
+                tagparse=parsed['args']
+                orig=tagparse.get('o')
+                if orig:
+                    orig=get_iso_3_letter_code(orig)
+                accent=tagparse.get('a')
+                guess=tagparse.get('g')
+                length=tagparse.get('l')
+                suffix=tagparse.get('u')
+                typo=tagparse.get('t')
+                correct=tagparse.get('c')
+                word=tagparse.get('w')
+                modern=tagparse.get('m')
+                function=tagparse.get('n')
+                newregister=tagparse.get('r')
+                position=tagparse.get('p')
+                if newregister:
+                    register=newregister
+                    attribute=f"{newregister.title()}{field}"
+                archpos=tagparse.get('h')
+                orig_form=tagparse.get('s')
+                force=tagparse.get('f')
+                xpos=tagparse.get('x')
+                if xpos:
+                    xpos=checkXposTag(xpos)
             newparselist=[]
             if tag == '=p':
                 new=mkPropn(token,orig=orig,orig_form=orig_form)
@@ -2633,20 +2898,20 @@ def mkConlluSentence(tokens):
                         newparselist=getparselist(correct.lower())
                     if xpos:
                         newparselist=filterparselist(xpos,newparselist)
-            elif tag == '=spl':
+            elif tag == '=hwm':
                 dic.update(handleWronglyMergedWord(form))
                 newparselist=getparselist(form)
                 if xpos:
                     newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
                 dic.update(mkModernForm(modern,attribute))
-                newparselist=applyFunction(function,form)
-                modernparselist=applyFunction(function,modern)
+                newparselist=applyFunction(function,form,orig=orig, orig_form=orig_form,xpos=xpos)
+                modernparselist=applyFunction(function,modern,orig=orig, orig_form=orig_form,xpos=xpos)
                 if xpos:
                     modernparselist=filterparselist(xpos,modernparselist)
                 if archpos:
                     newparselist=filterparselist(archpos,newparselist)
-            elif tag == '=adv': # TODO: possibly deprecated (see mkUpos)
+            elif tag == '=adv': # TODO: deprecated and not used hitherto (see mkUpos)
                 newparselist=mkAdv(token)
             elif tag == '=x':
                 newparselist=mkX(token)
@@ -2673,7 +2938,7 @@ def mkConlluSentence(tokens):
                                 xpos,
                                 length=length,
                                 accent=accent,
-                                guess=tagparse.get('g'),
+                                guess=guess,
                                 force=force
                                 )
                 newparselist=new['parselist']
@@ -2687,19 +2952,19 @@ def mkConlluSentence(tokens):
                 new=mkPrv(form,xpos)
                 newparselist=new['parselist']
             elif tag == '=intj':
-                new=_mkIntj(form,orig,orig_form)
+                new=mkIntj(form,orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=card':
                 new=mkCard(form, orig,orig_form) # TODO see mkIntj
                 newparselist=new['parselist']
             elif tag == '=upos':
-                new=_mkUpos(form,xpos, orig,orig_form)
+                new=mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=red':
                 new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix)
                 newparselist=new['parselist']
             elif tag == '=mid':
-                new=handleMiddlePassive(form)
+                new=handleMiddlePassive(form,orig,orig_form)
                 newparselist=new['parselist']
             #elif tag == '=r':
             #    mkRoot(tokens.index(old))
@@ -2711,6 +2976,9 @@ def mkConlluSentence(tokens):
             mkRoot(tokens.index(old))
         entries=extract_feats(parselist)
         for entry in entries:
+            correct_form=dic.get('CorrectForm')
+            if correct_form:
+                entry['correct_form']=correct_form
             if entry.get('pos') == 'PUNCT':
                 start=start-1
             if dic.get('underscore'):
@@ -2718,7 +2986,7 @@ def mkConlluSentence(tokens):
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen') or dic.get('underscore'):
                 handleHyphenSepToken(t)
-            correct_form=dic.get('CorrectForm')
+            #correct_form=dic.get('CorrectForm')
             typo=dic.get('Typo')
             space_typo=dic.get('space_typo')
             if space_typo:
@@ -2768,6 +3036,7 @@ def mkConlluSentence(tokens):
     handleV2(tokenlist)
     addIobj(tokenlist)
     sortTokens(tokenlist)
+    MULTIWORDTOKENS.clear() # TODO: check this
     return tokenlist
 
 def handleV2(tokenlist):
@@ -3087,20 +3356,23 @@ def mkHost(host,clitic,token,xpos=''):
 
 def extractHost(token):
     dic={}
-    tagdic={}
-    form=token.lower()
-    pair=extractTag(token)
+    #tagdic={}
+    #form=token.lower() # TODO check this
     tag=''
-    if pair:
-        token,tag=pair
-        tagdic=parseTag(tag)
-        func=tagdic.get('func')
-        if func == '=spl':
+    token_data=process_token(token)
+    token=token_data['word']
+    form=token.lower()
+    parsed=token_data.get('parsed')
+    if parsed:
+        tag=parsed.get('tag')
+        tagdic=parsed.get('args')
+        func=parsed.get('func')
+        if func == 'spl':
             suff=tagdic.get('w')
             form=token[:-len(suff)]
             dic['host']={'form': form, 'xpos': tagdic.get('h')}
             dic['word']={'form': suff, 'xpos': tagdic.get('x'), 'correct' : tagdic.get('c')}
-            dic['func']=func
+            dic['function']="=hwm" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     elif form == 'marã':
@@ -3136,7 +3408,7 @@ def hasNoParse(word):
     return len(parselist) == 1 and parselist[0][1] == None
 
 def splitMultiWordTokens(tokens):
-    MULTIWORDTOKENS.clear()
+    #MULTIWORDTOKENS.clear() # TODO: check this
     sep=[d['lemma'] for d in AUX]
     sep.extend(CLITICS)
     newlist=[]
@@ -3145,9 +3417,12 @@ def splitMultiWordTokens(tokens):
         if hasLinkingHyphen(t):
             tag=''
             bar=''
-            parts=extractTag(t)
-            if parts:
-                t,tag=parts
+            token_data=process_token(t)
+            t=token_data['word']
+            parsed=token_data.get('parsed') # TODO: use this to catch xpos of incorporated auxiliary
+            if parsed:
+                tag=parsed.get('tag')
+            tag=token_data.get('raw_tag')
             if tag:
                 bar='/'
             index=t.index(HYPHEN)
@@ -3167,7 +3442,7 @@ def splitMultiWordTokens(tokens):
             #parselist=getparselist(host)
             #if len(parselist) == 1 and parselist[0][1] == None:
             if word:
-                func=dic.get('func')
+                func=dic.get('function')
                 host_tag=host.get('xpos')
                 if host_tag:
                     host_tag=f"{func}:x|{host_tag}"
