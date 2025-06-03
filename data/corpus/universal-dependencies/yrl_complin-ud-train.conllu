@@ -14115,6 +14115,40 @@
 4	kupixawa	kupixawa	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=18:26
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# sent_id = Magalhaes1876:2-16:1200:1200
+# text = Upaĩ mira upikũi waá uikú salsa rapú, urikú yepé apigawa umanhana arama aé yawara eté xií.
+# text_eng = Everyone who is digging parsley root has a man to watch over them against the jaguars.
+# text_eng_ggl = Everyone who is digging parsley has a man to watch her against the jaguars.
+# text_por = Toda pessoa que está cavando raiz de salsa tem um homem para vigiá-la contra as onças.
+# text_source = p. 120
+# text_orig = Opain míra opecõin (cavar) uahá oikộ salsa rapú (raiz), orekộ iépé apgáua omanhãna (vigia) arãma ahé íauára eté xií.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Panhẽ mira upikũi waá uikú "salsa" rapú urikú yepé apigawa umanhana arama aé yawareté suí.
+# text_por_sec = Toda pessoa que está cavando raiz de salsa tem um homem para vigiá-la contra as onças.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Upaĩ mira upikũi waá/rel uikú/v salsa/=n:o|pt rapú, urikú yepé/art apigawa/n umanhana arama/sconj aé/pron yawara eté/a xií.
+1	Upaĩ	upaĩ	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:4
+2	mira	mira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=5:9
+3	upikũi	pikũi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=10:16
+4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	3	nsubj	_	TokenRange=17:20
+5	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	TokenRange=21:25
+6	salsa	salsa	NOUN	N	Number=Sing	7	nmod:poss	_	OrigLang=por|TokenRange=26:31
+7	rapú	sapú	NOUN	N	Number=Sing|Rel=Cont	3	obj	_	SpaceAfter=No|TokenRange=32:36
+8	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=36:37
+9	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=38:43
+10	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	11	det	_	TokenRange=44:48
+11	apigawa	apigawa	NOUN	N	Number=Sing	9	obj	_	TokenRange=49:56
+12	umanhana	manhana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=57:65
+13	arama	arama	SCONJ	SCONJ	_	12	mark	_	TokenRange=66:71
+14	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	12	obj	_	TokenRange=72:74
+15	yawara	yawara	NOUN	N	Number=Sing	12	obl	_	TokenRange=75:81
+16	eté	eté	ADJ	A	_	15	amod	_	TokenRange=82:85
+17	xií	xií	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=86:89
+18	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=89:90
+
 # sent_id = Magalhaes1876:2-18:1:101
 # text = Awá taá upurú indé nhaã igara?
 # text_eng = Who lent you that canoe?
@@ -16579,7 +16613,7 @@
 
 # sent_id = Magalhaes1876:10:2:1002
 # text = Usika tipiáya upé, usenúi: ― Ó yautí!
-# text_eng = He arrived at the pit and called: "O tortoise!""
+# text_eng = He arrived at the pit and called: "O tortoise!"
 # text_por = Chegou no covão, chamou: ― Ó jabuti!
 # text_por_sec = Ele chegou ao covão e chamou: ― Ó jabuti!
 # text_sec = Usika tipiáya upé, usenúi: ― Ó yautí!
@@ -19285,6 +19319,37 @@
 3	resaisú	saisú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=13:20
 4	yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No|TokenRange=21:26
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
+
+# sent_id = Amorim1928:17:23:23
+# text = Pituna pukú ramé ana aé usendú manungara upetepeteka yusana pupé, usú umaã, uwasemu buyawasú yawewira irumu.
+# text_por = Já noite grande ouviu alguma coisa batebatendo no laço, foi ver, encontrou a Cobra-Grande com a raia.
+# text_source = p. 291-292, No. 23
+# text_orig = Pytuna puku ramé ana aé osendu maanungara opetépetéka iusana pypé, osu omaan, oasemo mboiasu iaueuyra irumo.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# place = Kamanao
+# inputline = Pituna pukú/a ramé/adp ana aé/pron usendú manungara upetepeteka/=red:l|4 yusana pupé, usú umaã, uwasemu buyawasú/=aug yawewira irumu/adp.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Pituna	pituna	NOUN	N	Number=Sing	6	obl	_	TokenRange=0:6
+2	pukú	pukú	ADJ	A	_	1	amod	_	TokenRange=7:11
+3	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=12:16
+4	ana	ana	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=17:20
+5	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=21:23
+6	usendú	sendú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:30
+7	manungara	manungara	PRON	IND	PronType=Ind	8	nsubj	_	TokenRange=31:40
+8	upetepeteka	peteka	VERB	V	Mood=Ind|Person=3|Red=Yes|VerbForm=Fin	6	ccomp	_	TokenRange=41:52
+9	yusana	yusana	NOUN	N	Number=Sing	8	obl	_	TokenRange=53:59
+10	pupé	pupé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=60:64
+11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=64:65
+12	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	13	aux	_	TokenRange=66:69
+13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=70:74
+14	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=74:75
+15	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=76:83
+16	buyawasú	buya	NOUN	N	Degree=Aug|Number=Sing	15	obj	_	TokenRange=84:92
+17	yawewira	yawewira	NOUN	N	Number=Sing	16	nmod	_	TokenRange=93:101
+18	irumu	irumu	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=102:107
+19	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=107:108
 
 # sent_id = Amorim1928:17:26:26
 # text = Aé umuwapika yepé yapuna, umukameẽ mayawé mira umunhã meyú, uí, uí tipiáka, maã setá.
@@ -25465,6 +25530,37 @@
 4	Taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	5	nsubj	_	TokenRange=5:10
 5	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=11:17
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Aguiar1898:6:1:59
+# text = ― Yepé mira yusalvari-kwáu, ti ramé uruyari, ti ramé yumuseruka?
+# text_orig = ― Iepé mira iu-salvari quau, 'tiramé u-ruiari, 'tiramé iu muceruca?
+# text_source = p. 35
+# text_por = ― Uma pessoa pode salvar-se sem crer, nem batizar-se?
+# title = UWATARI RETÉ SIKÚ-KATÚ SUÍ, AWÁ YU-SALVARI ARAMA.
+# title_orig = UATARl RETÉ CECUCATÙ ÇUI, AUÁ IU-SALVARI ARAMA.
+# title_por = NECESSIDADE DAS BOAS OBRAS, PARA ALGUÉM SALVAR-SE.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Letícia Farias Nunes
+# text_eng = TODO
+# inputline = ― Yepé/art mira yusalvari-kwáu/=mf:m|uyusalvari:n|mid:o|pt:s|salvar, ti ramé/sconj uruyari, ti ramé/sconj yumuseruka/=mf:m|uyumuseruka:n|mid?
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=0:1
+2	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=2:6
+3	mira	mira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=7:11
+4-5	yusalvari-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=12:26
+4	yusalvari	salvari	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	0	root	_	ModernForm=uyusalvari|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin
+5	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	4	aux	_	_
+6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=26:27
+7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=28:30
+8	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=31:35
+9	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	advcl	_	SpaceAfter=No|TokenRange=36:43
+10	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=43:44
+11	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	13	advmod	_	TokenRange=45:47
+12	ramé	ramé	SCONJ	SCONJ	_	13	mark	_	TokenRange=48:52
+13	yumuseruka	museruka	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	9	conj	_	ModernForm=uyumuseruka|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=53:63
+14	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=63:64
 
 # sent_id = Aguiar1898:9:1:1001
 # text = Ave Maria, i pura graça suí, yané Yara ne irumu; yumumeú katú iné upaĩ kunhã pitera-pe, yumumeú katú yuwá ne marika suí, Jesus.
