@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: June 3, 2025
+# Last update: June 4, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -163,7 +163,7 @@ SPECIAL_TAGS={'o' : 'orig', 'a' : 'accent', 'l' : 'length',
          'u' : 'suffix', 't' : 'typo', 'c' : 'correct',
          'w' : 'word', 'm' : 'modern', 'n' : 'arg_function', 'func' : 'main_function',
          'r' : 'newregister', 'p' : 'position', 'h' : 'archpos',
-         's' : 'orig_form', 'f' : 'force', 'x' : 'xpos', 'guess' : 'g'}
+         's' : 'orig_form', 'f' : 'force', 'x' : 'xpos', 'guess' : 'g', 'd' : 'nasal'}
 
 UDTAGS={'PL': 'Plur', 'SG': 'Sing',
 'V': 'VERB', 'N': 'NOUN', 'LOC' : 'N', 'V2': 'VERB', 'V3': 'VERB','V4': 'VERB',
@@ -2198,22 +2198,6 @@ def endswith(form,suff):
         return form[:-len(suff)]
     return ''
 
-def mkHab(form): # TODO: this seems deprecated (see mkHabXpos)
-    suff='tiwa'
-    if form.endswith(suff):
-        base=form[:-len(suff)]
-        form=handleAccent(base)
-        return mkVerb(form,derivation='HAB')
-
-def mkHabSconj(form): # TODO: this seems deprecated (see mkHabXpos)
-    suff='tiwa'
-    new={}
-    if form.endswith(suff):
-        base=form[:-len(suff)]
-        lemma=handleAccent(base)
-        new['parselist']=[[lemma, 'SCONJ+HAB']]
-        return new
-
 def parseWord(form,length):
     base=form[:-length].lower()
     suff=form[-length:]
@@ -2225,13 +2209,10 @@ def getval(key,dic):
             return v
     return None
 
-def mkHabXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
-    return mkSuffXpos(form,xpos=xpos, length=length, accent=accent, guess=guess, force=force)
+def mkHab(form,xpos='', accent=False, guess=False, force=False):
+    return mkSuffXpos(form,xpos=xpos,accent=accent, guess=guess, force=force)
     
-def mkSuffXpos(form,xpos='', length=0, accent=False, guess=False, force=False):
-    '''
-    TODO: Parameter length is now unnecessary and deprecated, see issue 523.
-    '''
+def mkSuffXpos(form,xpos='', accent=False, guess=False, force=False):
     suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
     'tiwa': {'Aspect':'HAB'},
     'sawa': {'VerbForm':'VNOUN'},
@@ -2342,9 +2323,10 @@ def mkAug(form,force=False): # TODO: superseded by mkEval
     lemma=handleAccent(form[:i],force=force)
     return mkNoun(lemma,None,dic)
 
-def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True,position=None):
+def mkEval(form,xpos='',force=False,orig=None,orig_form='',accent=True,position=None,nasal=False):
     suffixes={'usú':'AUG','wasú': 'AUG', 'asú': 'AUG','mirĩ': 'DIM', 'í': 'DIM','íra': 'DIM'}
-    xpos=xpos
+    if not xpos:
+        xpos='N'
     dic={}
     dic['lemma']=form.lower()
     if xpos=='N':
@@ -2355,8 +2337,9 @@ def mkEval(form,xpos='N',force=False,orig=None,orig_form='',accent=True,position
              dic['lemma']=dic['lemma'][:-len(suff)]
              break
     lemma=dic['lemma']
-    if accent:
-        lemma=handleAccent(lemma,force=force)
+    if accent or nasal:
+        lemma=handleAccent(lemma,nasal=nasal,force=force)
+        print('du',f"nasal: {nasal} lemma: {lemma}, dic: {dic}")
     if dic.get('number'):
         return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form,position=position)
     return mkAdj(lemma,None,dic,xpos=xpos)
@@ -2863,6 +2846,7 @@ def mkConlluSentence(tokens):
                 if orig:
                     orig=get_iso_3_letter_code(orig)
                 accent=tagparse.get('a')
+                nasal=tagparse.get('d')
                 guess=tagparse.get('g')
                 length=tagparse.get('l')
                 suffix=tagparse.get('u')
@@ -2924,19 +2908,12 @@ def mkConlluSentence(tokens):
             elif tag == '=v':
                 new=mkVerb(form,orig=orig,orig_form=orig_form)
                 newparselist=new['parselist']
-            elif tag == '=hab': # TODO deprecated
-                new=mkHab(form)
-                newparselist=new['parselist']
             elif tag == '=col':
                 new=mkCol(form)
                 newparselist=new['parselist']
-            elif tag == '=hab=sconj': # TODO deprecated
-                new=mkHabSconj(form)
-                newparselist=new['parselist']
-            elif tag == '=mkhab' or tag == '=vnoun': # TODO change "mkhab" to "hab" (possibly deprecated, see issue #516
-                new=mkHabXpos(  form,
+            elif tag == '=hab' or tag == '=vnoun':
+                new=mkHab(  form,
                                 xpos,
-                                length=length,
                                 accent=accent,
                                 guess=guess,
                                 force=force
@@ -2946,7 +2923,8 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev': # TODO: handle accent argument
-                new=mkEval(form,xpos,force,orig,orig_form,accent,position)
+                print('bu', f"nasal: {nasal}")
+                new=mkEval(form,xpos,force,orig,orig_form,accent,position,nasal)
                 newparselist=new['parselist']
             elif tag == '=prv':
                 new=mkPrv(form,xpos)
@@ -2961,7 +2939,7 @@ def mkConlluSentence(tokens):
                 new=mkUpos(form,xpos, orig,orig_form)
                 newparselist=new['parselist']
             elif tag == '=red':
-                new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix)
+                new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix,position=position)
                 newparselist=new['parselist']
             elif tag == '=mid':
                 new=handleMiddlePassive(form,orig,orig_form)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 3, 2025
+# Last update: June 4, 2025
 
 import re
 from typing import Tuple, Dict, Any
@@ -125,7 +125,7 @@ def test_validate_special_tag():
         print(f"{tag:<40} => {validate_special_tag(tag)}")  # Expect False
         
 
-BOOLEAN_ARGUMENTS = {'a', 'g', 'f','u'}
+BOOLEAN_ARGUMENTS = {'a', 'g', 'f','u','d'}
 INTEGER_ARGUMENTS = {'l','p'}
 
 # Function specifications: required and optional arguments per function
@@ -156,7 +156,7 @@ FUNCTION_SIGNATURES = {
         },
     'ev': {
         'required': set(),
-        'optional': {'o','s','x','f','a','p'},
+        'optional': {'o','s','x','f','a','p','d'},
     },
     'vnoun': {
         'required': set(),
@@ -184,7 +184,7 @@ FUNCTION_SIGNATURES = {
     },
     'red': {
         'required': {'l'},
-        'optional': {'x','o','s','a','u'},
+        'optional': {'x','o','s','a','u','p'},
     },
     'aug': {
         'required': set(),
@@ -197,6 +197,10 @@ FUNCTION_SIGNATURES = {
     'upos': {
         'required': {'x','o'},
         'optional': {'s'},
+    },
+    'hab': {
+        'required': {'x'},
+        'optional': {'a','g','f'},
     },
 }
     

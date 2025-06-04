@@ -10681,6 +10681,10 @@
 # text_por = — Me dá, então, a tua faca.
 # text_source = p. 36
 # text_orig = — Irure cuté ne quicé.
+# title_orig = CURUPIRA CAAMUNUÇARA IRUMO
+# title_por = O Curupira e o Caçador
+# place = Solimões River
+# place_por = Rio Solimões
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
@@ -10691,6 +10695,35 @@
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=12:14
 5	kisé	kisé	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=15:19
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
+# sent_id = Rodrigues1890:1-1-2:200:200
+# text = Aiwana aintá uwari i ara-pe, umusasaka pawa sukwera.
+# text_eng = TODO
+# text_por_gloss = Logo eles caíram ele sobre, despedaçaram toda carne.
+# text_por_orig = Dizem que uma vez esqueceu-se e flechou o Aracuã, e que logo os companheiros caíram sobre ele e despedaçaram-lhe as carnes.
+# text_por = Logo os companheiros caíram sobre ele e despedaçaram-lhe as carnes.
+# text_orig = Aé ana aitá u are i arapè, u muçaçaca paua çoôcuera.
+# text_source = p. 37
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Yepé í paá sesarái, uyumú arakwã resé. Aiwana aintá uwari i árupi, umusasaka pawa sukwera.
+# text_por_sec = Uma vez, contam, ele se esqueceu [do que o curupira havia dito], flechou no aracuã. Logo eles caíram sobre ele, despedaçaram toda a sua carne.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aiwana aintá/pron uwari i/pron2 ara-pe, umusasaka/=red:l|2:p|2 pawa/total sukwera/abs.
+1	Aiwana	aiwana	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:6
+2	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=7:12
+3	uwari	wari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:18
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:20
+5-6	ara-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:27
+5	ara	ara	NOUN	N	Number=Sing	3	obl	_	_
+6	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	5	case	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=27:28
+8	umusasaka	musaka	VERB	V	Mood=Ind|Person=3|Red=Yes|VerbForm=Fin	3	parataxis	_	TokenRange=29:38
+9	pawa	pawa	PART	TOTAL	Aspect=Compl	8	advmod	_	TokenRange=39:43
+10	sukwera	sukwera	NOUN	N	Number=Sing|Rel=Abs	8	obj	_	SpaceAfter=No|TokenRange=44:51
+11	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Rodrigues1890:1-1-3:1:101
 # text = Yepé apigawa menasara urikú ximirikú taíra.
@@ -18795,6 +18828,46 @@
 11	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=62:69
 12	yuíri	yuíri	ADV	ADVG	AdvType=Deg	11	advmod	_	SpaceAfter=No|TokenRange=70:75
 13	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=75:76
+
+# sent_id = Amorim1928:3:2:2
+# text = Mayawé aé pitérupi aikwé siiya kunhamirĩ intí raẽ waá uyasí, aintá manha umundutiwa aintá umusaka ara pukusawa maniáka kupixá-pe.
+# text_por = Como no meio dela havia porção de mocinhas que ainda não tinham enluado, suas mães costumavam mandá-las arrancar mandioca na roça.
+# text_source = p. 79, No. 2
+# text_orig = Maaiaué sé pyterupé aikué seyia kunhãmiri ntyo raen uá oiasy, aetá manha omundu tŷua aetá omusaka ara pukusaua maniaka kupixape.
+# text_eng = TODO
+# text_sec = [...] aikwé siiya kunhã-mirĩ ti rẽ waá uyasí, [...].
+# text_por_sec = [...] havia muitas mocinhas que ainda não haviam menstruado, [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Mayawé/sconjr aé/=mf:m|i:x|pron2:h|pron pitérupi aikwé siiya/indq kunhamirĩ/=ev:d|t intí raẽ waá/rel uyasí, aintá/pron2 manha umundutiwa/=hab:x|v:a|t aintá/pron umusaka ara pukusawa/adp maniáka kupixá-pe.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Mayawé	mayawé	SCONJ	SCONJR	_	5	mark	_	TokenRange=0:6
+2	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	3	nmod:poss	_	ModernCase=Gen|ModernForm=i|ModernLemma=i|TokenRange=7:9
+3-4	pitérupi	_	_	_	_	_	_	_	TokenRange=10:18
+3	pitera	pitera	NOUN	N	Number=Sing	5	obl	_	_
+4	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	aikwé	aikwé	PART	EXST	PartType=Exs	15	advcl	_	TokenRange=19:24
+6	siiya	siiya	DET	INDQ	PronType=Ind	7	det	_	TokenRange=25:30
+7	kunhamirĩ	kunhã	NOUN	N	Degree=Dim|Number=Sing	5	nsubj	_	TokenRange=31:40
+8	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=41:45
+9	raẽ	raẽ	PART	IMPF	Aspect=Imp	11	advmod	_	TokenRange=46:49
+10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	nsubj	_	TokenRange=50:53
+11	uyasí	yasí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	acl:relcl	_	SpaceAfter=No|TokenRange=54:59
+12	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=59:60
+13	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=61:66
+14	manha	manha	NOUN	N	Number=Sing	15	nsubj	_	TokenRange=67:72
+15	umundutiwa	mundú	VERB	V	Aspect=Hab|Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=73:83
+16	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	TokenRange=84:89
+17	umusaka	musaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	ccomp	_	TokenRange=90:97
+18	ara	ara	NOUN	N	Number=Sing	17	obl	_	TokenRange=98:101
+19	pukusawa	pukusawa	ADP	ADP	AdpType=Post	18	case	_	TokenRange=102:110
+20	maniáka	maniáka	NOUN	N	Number=Sing	17	obj	_	TokenRange=111:118
+21-22	kupixá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=119:128
+21	kupixá	kupixá	NOUN	N	Number=Sing	17	obl	_	_
+22	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	21	case	_	_
+23	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=128:129
 
 # sent_id = Amorim1928:3:438:438
 # text = Wirandé xamaã ranhẽ indé amurupí.
