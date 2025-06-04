@@ -2339,7 +2339,6 @@ def mkEval(form,xpos='',force=False,orig=None,orig_form='',accent=True,position=
     lemma=dic['lemma']
     if accent or nasal:
         lemma=handleAccent(lemma,nasal=nasal,force=force)
-        print('du',f"nasal: {nasal} lemma: {lemma}, dic: {dic}")
     if dic.get('number'):
         return mkNoun(lemma,dic=dic,orig=orig,orig_form=orig_form,position=position)
     return mkAdj(lemma,None,dic,xpos=xpos)
@@ -2923,7 +2922,6 @@ def mkConlluSentence(tokens):
                 new=mkAug(form,force)
                 newparselist=new['parselist']
             elif tag == '=ev': # TODO: handle accent argument
-                print('bu', f"nasal: {nasal}")
                 new=mkEval(form,xpos,force,orig,orig_form,accent,position,nasal)
                 newparselist=new['parselist']
             elif tag == '=prv':
