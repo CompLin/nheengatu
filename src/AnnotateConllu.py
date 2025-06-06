@@ -3389,14 +3389,11 @@ def splitMultiWordTokens(tokens):
     for t in tokens:
         dic=extractHost(t)
         if hasLinkingHyphen(t):
-            tag=''
             bar=''
             token_data=process_token(t)
             t=token_data['word']
-            parsed=token_data.get('parsed') # TODO: use this to catch xpos of incorporated auxiliary
-            if parsed:
-                tag=parsed.get('tag')
-            tag=token_data.get('raw_tag')
+            #parsed=token_data.get('parsed') # TODO: use this to catch xpos of incorporated auxiliary
+            tag=token_data.get('raw_tag','')
             if tag:
                 bar='/'
             index=t.index(HYPHEN)
