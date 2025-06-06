@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: June 4, 2025
+# Last update: June 6, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2158,31 +2158,29 @@ def handleMiddlePassive(form, orig=None, orig_form=''):
 	new['parselist']=[[entry['lemma'],tags]]
 	return new
 
-def handlePartialRedup(form,length,xpos='',orig=None, orig_form='',accent=False, suffix=False,position=None): # TODO: reduplication of adjectives
+def handlePartialRedup(form,length,xpos='',orig=None, orig_form='',accent=False, suffix=False,position=0):
+    entry={}
     if not xpos:
         xpos='V'
     new={}
-    entry=guessVerb(form)
-    VerbFormError(entry)
+    if xpos == 'V':
+        entry=guessVerb(form)
+        VerbFormError(entry)
+        lemma=entry['lemma']
+    elif xpos == 'A':
+        lemma=form
+    else:
+        raise ValueError(f"Invalid value for xpos argument: '{xpos}' (must be either 'V' or 'A')")
     if suffix:
-        lemma=entry['lemma'][:-length]
+        lemma=lemma[:-length]
         if accent:
             lemma=handleAccent(lemma)
-    elif position:
-        lemma=entry['lemma']
-        lemma=f"{lemma[:position]}{lemma[position+length:]}"
     else:
-        lemma=entry['lemma'][length:]
+        lemma=f"{lemma[:position]}{lemma[position+length:]}"
     entry['pos']=xpos
-    handleOrig(new,lemma,orig, orig_form,xpos=xpos)
+    handleOrig(new,lemma,orig, orig_form,xpos)
     entry['derivation']=REDUP
-    keys=['pos','derivation','style','mood','person','number'] # TODO: serializeEntry
-    feats=[]
-    for k in keys:
-        value=entry.get(k)
-        if value:
-            feats.append(value)
-    tags='+'.join(feats)
+    tags=serializeEntry(entry)
     new['parselist']=[[lemma,tags]]
     return new
 
@@ -2288,11 +2286,11 @@ def mkNoun(form,orig=None,dic={},orig_form='',position=None):
     new['parselist']=[[lemma, f"N+{'+'.join(feats)}"]]
     return new
 
-def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name
+def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name; 'A' instead of 'a'
     form=form.lower()
     feats=[]
     new={}
-    handleOrig(new,form,orig, orig_form)
+    handleOrig(new,form,orig, orig_form,xpos)
     degree=dic.get('degree')
     derivation=dic.get('derivation')
     if degree:
@@ -2855,7 +2853,7 @@ def mkConlluSentence(tokens):
                 modern=tagparse.get('m')
                 function=tagparse.get('n')
                 newregister=tagparse.get('r')
-                position=tagparse.get('p')
+                position=tagparse.get('p',0)
                 if newregister:
                     register=newregister
                     attribute=f"{newregister.title()}{field}"
