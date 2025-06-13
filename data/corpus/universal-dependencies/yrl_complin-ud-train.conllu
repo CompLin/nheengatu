@@ -1606,6 +1606,7 @@
 # text_source = Example 480b Wr
 # text_orig = "Pô!", u-nheẽ yepe apiga maxi
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = "Pô/=intj:o|pt!", unheẽ yepé/art apigá/n maxí.
 1	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=-1:0
 2	Pô	pô	INTJ	INTJ	_	6	ccomp	_	OrigLang=por|SpaceAfter=No|TokenRange=1:3
 3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=3:4
@@ -3271,7 +3272,8 @@
 # text = Ti maã aganaganari.
 # text_eng = TODO
 # text_por = Não enganaria.
-# text_source = Example No. 1029 Wr
+# text_source = Example No. 1029 Wr, p. 503
+# text_source_alt = Example No. 593 Wr, p. 318
 # text_orig = ti=maã a-gana~ganai
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Ti maã/cond aganaganari/=red:l|4:o|pt:s|enganar.
@@ -3545,7 +3547,7 @@
 
 # sent_id = Cruz2011:0:0:138
 # text = Tenki resegurari mamé puranga waá.
-# text_eng = TODO
+# text_eng = You have to hold where it is beautiful.
 # text_por = Você tem que segurar onde é bonito.
 # text_source = Example 1057 Br
 # text_orig = tenki re-segurai [mame puranga waa]
@@ -3606,7 +3608,7 @@
 
 # sent_id = Cruz2011:0:0:142
 # text = Ti FOIRN ruixawa fulano.
-# text_eng = TODO
+# text_eng = So-and-so is not the chief of FOIRN.
 # text_por = O Fulano não é o chefe da FOIRN.
 # text_source = Example 731 Br elicited
 # text_orig = ti=FOIRN ruixawa Fulano
@@ -4449,6 +4451,7 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Yawé/adva yawaraté usika uyawiyawika/=red:l|4 umaã iwikwara rupí.
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=0:4
 2	yawaraté	yawaraté	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:13
 3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=14:19
@@ -4643,9 +4646,11 @@
 # text_orig = Ikupukuã, paá, pituna, mairamé miraitá takaúkaú xinga pawa, tamaã uyukwá tamurasí pitérupi siía karíwa tipitinga mirí waitá.
 # text_annotator = Juliana Lopes Gurgel
 # text_sec = Ikupukú ã paá pituna, mairamé mira-itá ta ukaú-kaú xinga pawa, ta umaã uyukwá ta murasí pitérupi siiya kariwa tipitinga mirĩ waá-itá.
+# text_sec_alt =  Ikupukú ã paá pituna, mairamé mira-itá ta ukaúkaú xinga pawa, ta umaã uyukwá ta murasí pitérupi siiya kariwa tipitinga mirĩ waá-itá.
 # text_por_sec = Avançada a noite, contam, quando todos já tinham se embriagado um pouco, eles viram aparecer no meio de sua festa muitos homens brancos que eram clarinhos.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
+# cross_reference = Avila2021:0:0:317
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Ikupukú	ikupukú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:7
@@ -10954,6 +10959,39 @@
 7	irumu	irumu	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=31:36
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
 
+# sent_id = Amorim1928:1-1-7:2:2
+# text = Kurupira uri senawa kwera upé intí umaã i mixiri usasema, i remixira usuaxara kunhãbukú marika upé.
+# text_eng = The Curupira came to the place and, not seeing his roast, shouted. The roast replied from the belly of the girl.
+# text_por = O Curupira veio ao lugar e não vendo o assado, gritou. O assado respondeu na barriga da rapariga.
+# text_source = p. 65
+# text_orig = Curupira ure cenáua cuere opé inti u maan i mixire u çacema, i remixira u çuachara cunhambucu marica opé.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_sec = Kurupira uri, sendawa kwera upé ti umaã i mixira, usasemu, [...].
+# text_por_sec = O Curupira veio, não viu seu assado no lugar onde estava, gritou, [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Kurupira uri senawa kwera/n upé/adp intí umaã i/pron2 mixiri/n usasema, i/pron2 remixira usuaxara kunhabukú/=typo:c|kunhamukú:x|n marika upé/adp.
+1	Kurupira	kurupira	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
+2	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:12
+3	senawa	tenawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	4	nmod:poss	_	TokenRange=13:19
+4	kwera	kwera	NOUN	N	Number=Sing	2	obl	_	TokenRange=20:25
+5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=26:29
+6	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=30:34
+7	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=35:39
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=40:41
+9	mixiri	mixiri	NOUN	N	Number=Sing	7	obj	_	TokenRange=42:48
+10	usasema	sasema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=49:56
+11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=56:57
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=58:59
+13	remixira	semixira	NOUN	N	Number=Sing|Rel=Cont	14	nsubj	_	TokenRange=60:68
+14	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	TokenRange=69:77
+15	kunhãbukú	kunhamukú	NOUN	N	Number=Sing|Typo=Yes	16	nmod:poss	_	CorrectForm=kunhamukú|TokenRange=78:87
+16	marika	marika	NOUN	N	Number=Sing	14	obl	_	TokenRange=88:94
+17	upé	upé	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=95:98
+18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=98:99
+
 # sent_id = Rodrigues1890:1-1-7:4:4
 # text = Kunhãbukú usika muirá Kunawarú-etá wírupi, usasema kunawarú-etá resé: — Kunawarú iyuri piamu ixé, Kurupira se yuká-putari, remuyé ixé ne waturá.
 # text_eng = TODO
@@ -16700,6 +16738,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Yautí usuaxara: — U/=intj!
 1	Yautí	yautí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:14
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
@@ -17892,11 +17931,12 @@
 39	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=196:197
 
 # sent_id = Amorim1928:8:64:64
-# text = Yepé aintá suiwara uyumasí waá reté ana, umaã tapurú siiya mirá-etá py pe, upisika yeperesé yepé putawa aintá suí, umbaú.
+# text = Yepé aintá suiwara uyumasí waá reté ana, umaã tapurú siiya mirá-etá pu pe, upisika yeperesé yepé putawa aintá suí, umbaú.
 # text_por = Um deles tinha mais fome viu tapuru porção no fundo do pau, tomou logo uma mão cheia deles, comeu.
-# text_source = p. 191-199, No. 64
+# text_source = p. 195, No. 64
+# sent_number_orig = No. 63
 # text_orig = Iepé aetá suhiuara oiumasy uá retéana, omaan tapuru seyia mýráetá py pe, opŷsyka iepéresé iepé putaua aetá suhi, ombaú.
-# text_eng = TODO
+# text_eng = One of them, who was really hungry, saw a portion of tapuru larvae inside the tree trunk, immediately took a handful of them, and ate.
 # title_orig = TÁRIAETÁ IYPYRUNGAUA
 # title_por = ORIGEM DOS TÁRIAS
 # title_number = VIII
@@ -17923,7 +17963,7 @@
 10	tapurú	tapurú	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=46:52
 11	siiya	siiya	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	9	obj	_	ModernForm=riiya|ModernRel=Cont|TokenRange=53:58
 12	mirá-etá	mirá	NOUN	N	Number=Plur	9	obl	_	TokenRange=59:67
-13	py	pupé	ADP	ADP	AdpType=Post|Typo=Yes	12	case	_	CorrectForm=pupé|TokenRange=68:70
+13	pu	pupé	ADP	ADP	AdpType=Post|Typo=Yes	12	case	_	CorrectForm=pupé|TokenRange=68:70
 14	pe	_	X	X	_	13	goeswith	_	SpaceAfter=No|TokenRange=71:73
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=73:74
 16	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=75:82
@@ -18275,7 +18315,7 @@
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = Leonel Figueiredo de Alencar
-# inputline = Mayawé/sconjr Buopé sikú upurasí pituna yawé-yawé/indq Yuruparí Iwitera upé/adp upanhẽ apigawa-etá uyawáu aintá/pron2 remiré/=typo:c|rimirikú-etá aetá/=typo:c|-etá:x|x suí pituna irumu/adp.
+# inputline = Mayawé/sconjr Buopé sikú upurasí pituna yawé-yawé/indq Yuruparí Iwitera upé/adp upanhẽ apigawa-etá uyawáu aintá/pron2 remiré/=typo:c|rimirikú-etá aetá/=typo:c|-etá:x|x suí/adp pituna irumu/adp.
 1	Mayawé	mayawé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:6
 2	Buopé	buopé	PROPN	PROPN	_	3	nmod:poss	_	TokenRange=7:12
 3	sikú	tikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	12	advcl	_	ModernForm=rikú|ModernRel=Cont|TokenRange=13:17
@@ -19695,7 +19735,7 @@
 
 # sent_id = Amorim1928:29:73:73
 # text = Kũi ana repi sika aintá xasú pukusawa xamunhã mukũi urusakanga yarasú arama aintá.
-# text_eng = TODO
+# text_eng = Go get them now while I make two urusakanga baskets so we can carry them.
 # text_por = Vai já pegá-los enquanto eu faço dois uruçacangas para nós os levarmos.
 # text_source = p. 444, No. 73
 # text_orig = Kuĩ ana repŷ syka aetá xasu pukusaua xamunhan mukũe ýrusakanga iarasu arama aetá.
@@ -21696,7 +21736,7 @@
 # text_por = Não posso passear com ele porque tenho muito o que fazer.
 # text_source = p. 325, No. 88
 # text_orig = intí xauatá kuáu irúm maaresé xarekó setá reté maá xamuñán oaráma.
-# text_eng = TODO
+# text_eng = I can't go for a walk with him because I have a lot to do.
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_sec = Ti awatá-kwáu i irũ maãresé arikú setá reté maã amunhã arama.
@@ -23206,7 +23246,7 @@
 # text_por = Vou me vestir.
 # text_source = p. 334, No. 209
 # text_orig = xasó xayumumunéu.
-# text_eng = TODO
+# text_eng = I will get dressed.
 # text_sec = Asú ayumuamundéu.
 # text_por_sec = Vou me vestir.
 # text_sec_source = Avila (2021)
@@ -25639,7 +25679,7 @@
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
-# text_eng = TODO
+# text_eng = "Can a person be saved without believing, or without being baptized?"
 # inputline = ― Yepé/art mira yusalvari-kwáu/=mf:m|uyusalvari:n|mid:o|pt:s|salvar, ti ramé/sconj uruyari, ti ramé/sconj yumuseruka/=mf:m|uyumuseruka:n|mid?
 # text_annotator = Antônio Levy Melo Nogueira
 # reviewer1 = Leonel Figueiredo de Alencar
