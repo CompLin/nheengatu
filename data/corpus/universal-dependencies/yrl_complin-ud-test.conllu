@@ -107,8 +107,8 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Presizu	presizu	PART	NEC	PartType=Mod	3	advmod	_	TokenRange=0:7
 2	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:13
-3	uistudari	istudari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	Orig=estudar|OrigLang=por|TokenRange=14:23
-4	português	português	NOUN	N	Number=Sing	3	obl	_	OrigLang=por|TokenRange=24:33
+3	uistudari	istudari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	Orig=estudar|OrigLang=pt|TokenRange=14:23
+4	português	português	NOUN	N	Number=Sing	3	obl	_	OrigLang=pt|TokenRange=24:33
 5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=34:37
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=37:38
 
@@ -210,7 +210,7 @@
 1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:7
 2	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=8:13
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=14:18
-4	feiticeiro	feiticeiro	NOUN	N	Number=Sing	2	nsubj	_	OrigLang=por|TokenRange=19:29
+4	feiticeiro	feiticeiro	NOUN	N	Number=Sing	2	nsubj	_	OrigLang=pt|TokenRange=19:29
 5	akunheseri	kunheseri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	TokenRange=30:40
 6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=41:44
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=44:45
@@ -248,7 +248,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:5
 2	ukuntari	kuntari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:14
-3	uakonteseri	akonteseri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	Orig=acontecer|OrigLang=por|TokenRange=15:26
+3	uakonteseri	akonteseri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	Orig=acontecer|OrigLang=pt|TokenRange=15:26
 4	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obj	_	TokenRange=27:30
 5	garapé	garapé	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=31:37
 6	apira	apira	NOUN	N	Number=Sing	3	obl	_	TokenRange=38:43
@@ -367,7 +367,7 @@
 3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	2	advmod	_	TokenRange=15:18
 4	u	u	CCONJ	CCONJ	_	5	cc	_	TokenRange=19:20
 5	remurari	murari	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=21:29
-6	interior	interior	NOUN	N	Number=Sing	5	obl	_	OrigLang=por|TokenRange=30:38
+6	interior	interior	NOUN	N	Number=Sing	5	obl	_	OrigLang=pt|TokenRange=30:38
 7	kití	kití	ADP	ADP	AdpType=Post	6	case	_	TokenRange=39:43
 8	[...]	[...]	PUNCT	ELIP	PunctType=Elip	5	punct	_	TokenRange=44:49
 
@@ -434,7 +434,7 @@
 5	remurari	murari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=21:29
 6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	TokenRange=30:33
 7	kwá	kwá	DET	DEMX	Number=Sing|PronType=Dem	8	det	_	TokenRange=34:37
-8	cidade	cidade	NOUN	N	Number=Sing	5	obl	_	OrigLang=por|TokenRange=38:42
+8	cidade	cidade	NOUN	N	Number=Sing	5	obl	_	OrigLang=pt|TokenRange=38:42
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=43:46
 10	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=46:47
 
@@ -449,7 +449,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	TokenRange=0:3
 2	akayú	akayú	NOUN	N	Number=Sing	3	reparandum	_	TokenRange=4:9
-3	nove	nove	NUM	CARD	NumType=Card	4	nummod	_	OrigLang=por|TokenRange=10:14
+3	nove	nove	NUM	CARD	NumType=Card	4	nummod	_	OrigLang=pt|TokenRange=10:14
 4	akayú	akayú	NOUN	N	Number=Sing	6	obl	_	TokenRange=15:20
 5	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=21:24
 6	ayuíri	yuíri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=25:31
@@ -484,7 +484,7 @@
 3	amanduári	manduári	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=7:16
 4	ayuíri	yuíri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	ccomp	_	TokenRange=17:23
 5	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=24:26
-6	família-itá	família	NOUN	N	Number=Plur	7	nmod:poss	_	OrigLang=por|TokenRange=27:36
+6	família-itá	família	NOUN	N	Number=Plur	7	nmod:poss	_	OrigLang=pt|TokenRange=27:36
 7	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	4	obl	_	TokenRange=37:41
 8	kití	kití	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=42:46
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=46:47
@@ -2707,7 +2707,7 @@
 # reviewer1 = Vivianne Anselmo Nascimento
 # reviewer2 = Leonel Figueiredo de Alencar
 1	Mukũi	mukũi	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:5
-2	real	real	NOUN	N	Number=Sing	0	root	_	OrigLang=por|SpaceAfter=No|TokenRange=6:10
+2	real	real	NOUN	N	Number=Sing	0	root	_	OrigLang=pt|SpaceAfter=No|TokenRange=6:10
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Navarro2016:3:20:109
@@ -2734,7 +2734,7 @@
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	xirura	xirura	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:11
 3	mukũi	mukũi	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=12:17
-4	real	real	NOUN	N	Number=Sing	0	root	_	OrigLang=por|TokenRange=18:22
+4	real	real	NOUN	N	Number=Sing	0	root	_	OrigLang=pt|TokenRange=18:22
 5	yuíri	yuíri	ADV	ADV	_	4	advmod	_	SpaceAfter=No|TokenRange=23:28
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=28:29
 
@@ -5166,7 +5166,7 @@
 7	rupí	rupí	ADP	ADP	AdpType=Post	6	case	_	TokenRange=35:39
 8	urikuté	rikuté	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=40:47
 9	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	xcomp	_	TokenRange=48:56
-10	Deus	deus	PROPN	PROPN	_	9	obl	_	OrigLang=por|TokenRange=57:61
+10	Deus	deus	PROPN	PROPN	_	9	obl	_	OrigLang=pt|TokenRange=57:61
 11	irumu	irumu	ADP	ADP	AdpType=Post	10	case	_	TokenRange=62:67
 12	ukwawa	kwawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=68:74
 13	arama	arama	SCONJ	SCONJ	_	12	mark	_	TokenRange=75:80
@@ -6884,7 +6884,7 @@
 12	Aikwé	aikwé	PART	EXST	PartType=Exs	13	advmod	_	TokenRange=51:56
 13	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	ccomp	_	TokenRange=57:60
 14	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	15	det	_	TokenRange=61:64
-15	noivo	noivo	NOUN	N	Number=Sing	13	nsubj	_	OrigLang=por|SpaceAfter=No|TokenRange=65:70
+15	noivo	noivo	NOUN	N	Number=Sing	13	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=65:70
 16	,	,	PUNCT	PUNCT	_	19	punct	_	TokenRange=70:71
 17	pesú	sú	AUX	AUXFR	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	19	aux	_	TokenRange=72:76
 18	ana	ana	PART	PFV	Aspect=Perf	19	advmod	_	TokenRange=77:80
@@ -7972,7 +7972,7 @@
 # text_por = Compadre, passei mal, o âmago do pau entrou no meu peito, venha me tirar daqui.
 # text_source = Casasnovas, 67, adap.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Compadre	compadre	NOUN	N	_	4	vocative	_	OrigLang=por|SpaceAfter=No|TokenRange=0:8
+1	Compadre	compadre	NOUN	N	_	4	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=8:9
 3	puxiwera	puxiwera	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=10:18
 4	asasá	sasá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=19:24
@@ -8626,7 +8626,7 @@
 7	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=25:30
 8	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=31:37
 9	panhẽ	panhẽ	DET	TOT	PronType=Tot	10	det	_	TokenRange=38:43
-10	trigo	trigo	NOUN	N	_	8	obj	_	OrigLang=por|TokenRange=44:49
+10	trigo	trigo	NOUN	N	_	8	obj	_	OrigLang=pt|TokenRange=44:49
 11	paraná	paraná	NOUN	N	Number=Sing	8	obl	_	TokenRange=50:56
 12	kití	kití	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=57:61
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=61:62
@@ -8634,7 +8634,7 @@
 15	puseíma	puseíma	VERB	V2	Mood=Ind|VerbForm=Fin	8	advcl	_	TokenRange=65:72
 16	xinga	xinga	ADV	ADVS	AdvType=Deg	15	advmod	_	TokenRange=73:78
 17	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=79:84
-18	navio	navio	NOUN	N	_	15	nsubj	_	OrigLang=por|SpaceAfter=No|TokenRange=85:90
+18	navio	navio	NOUN	N	_	15	nsubj	_	OrigLang=pt|SpaceAfter=No|TokenRange=85:90
 19	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=90:91
 
 # sent_id = Avila2021:0:0:217
@@ -8694,7 +8694,7 @@
 1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
 2	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=3:7
 3	maã	maã	PART	COND	Modality=Cond|PartType=Mod	5	advmod	_	TokenRange=8:11
-4	Deus	deus	PROPN	PROPN	_	5	nsubj	_	OrigLang=por|TokenRange=12:16
+4	Deus	deus	PROPN	PROPN	_	5	nsubj	_	OrigLang=pt|TokenRange=12:16
 5	umuatuka	muatuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=17:25
 6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=26:29
 7	ara	ara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=30:33
@@ -8907,7 +8907,7 @@
 14	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	13	obl	_	TokenRange=75:79
 15	suí	suí	ADP	ADP	AdpType=Post	14	case	_	TokenRange=80:83
 16	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	17	nmod:poss	_	TokenRange=84:88
-17	pekadu	pekadu	NOUN	N	Number=Sing	13	obj	_	Orig=pecado|OrigLang=por|SpaceAfter=No|TokenRange=89:95
+17	pekadu	pekadu	NOUN	N	Number=Sing	13	obj	_	Orig=pecado|OrigLang=pt|SpaceAfter=No|TokenRange=89:95
 18	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=95:96
 
 # sent_id = Avila2021:23:1:229
@@ -9643,11 +9643,11 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	10	advmod	_	TokenRange=0:4
 2	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=5:8
-3	panu	panu	NOUN	N	Number=Sing	10	nsubj	_	OrigLang=por|TokenRange=9:13
+3	panu	panu	NOUN	N	Number=Sing	10	nsubj	_	OrigLang=pt|TokenRange=9:13
 4	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	TokenRange=14:19
 5	umuyari	muyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	acl:relcl	_	TokenRange=20:27
 6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	TokenRange=28:31
-7	templo	templo	NOUN	N	Number=Sing	8	nmod:poss	_	OrigLang=por|TokenRange=32:38
+7	templo	templo	NOUN	N	Number=Sing	8	nmod:poss	_	OrigLang=pt|TokenRange=32:38
 8	rukena	ukena	NOUN	N	Number=Sing|Rel=Cont	10	obl	_	TokenRange=39:45
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=46:49
 10	usuruka	suruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=50:57
@@ -9855,7 +9855,7 @@
 1	Awá	awá	PRON	INT	PronType=Int	0	root	_	TokenRange=0:3
 2	pu	pu	PART	ASSUM	PartType=Mod	1	advmod	_	TokenRange=4:6
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=7:11
-4	yakwaíma	yakwaíma	ADJ	A	_	1	nsubj	_	OrigLang=por|TokenRange=12:20
+4	yakwaíma	yakwaíma	ADJ	A	_	1	nsubj	_	OrigLang=pt|TokenRange=12:20
 5	umukameẽ	mukameẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=21:29
 6	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=30:33
 7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	TokenRange=34:37
@@ -10136,7 +10136,7 @@
 # text_source = Leetra Indígena. n. 17, 31, adap.
 # text_prim = — Puuuxa! Mã ixé kuté ikai retã kwaá se retimã aé te kuri kuiri uyuarú sesui — unhen paá.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Puxa	puxa	INTJ	INTJ	_	8	discourse	_	OrigLang=por|SpaceAfter=No|TokenRange=0:4
+1	Puxa	puxa	INTJ	INTJ	_	8	discourse	_	OrigLang=pt|SpaceAfter=No|TokenRange=0:4
 2	!	!	PUNCT	PUNCT	_	1	punct	_	TokenRange=4:5
 3	Ma	ma	ADV	ADVP	AdvType=Con	8	advmod	_	TokenRange=6:8
 4	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	8	dislocated	_	TokenRange=9:12
@@ -10360,7 +10360,7 @@
 7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=36:37
 8	asuí	asuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=38:42
 9	yawiyé	wiyé	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	conj	_	TokenRange=43:49
-10	navio	navio	NOUN	N	Number=Sing	9	obl	_	OrigLang=por|TokenRange=50:55
+10	navio	navio	NOUN	N	Number=Sing	9	obl	_	OrigLang=pt|TokenRange=50:55
 11	kití	kití	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=56:60
 12	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=60:61
 13	ma	ma	CCONJ	CCONJ	_	16	cc	_	TokenRange=62:64
@@ -10981,7 +10981,7 @@
 5	xupé	xupé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=22:26
 6	:	:	PUNCT	PUNCT	_	13	punct	_	TokenRange=26:27
 7	―	―	PUNCT	PUNCT	_	13	punct	_	TokenRange=27:28
-8	Deus	deus	PROPN	PROPN	_	9	nmod:poss	_	OrigLang=por|TokenRange=29:33
+8	Deus	deus	PROPN	PROPN	_	9	nmod:poss	_	OrigLang=pt|TokenRange=29:33
 9	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	13	advcl	_	TokenRange=34:39
 10	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=40:44
 11	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	SpaceAfter=No|TokenRange=45:49
@@ -10991,7 +10991,7 @@
 15	arama	arama	ADP	ADP	AdpType=Post	14	case	_	TokenRange=66:71
 16	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	17	det	_	TokenRange=72:75
 17	itá	itá	NOUN	N	Number=Sing	13	obj	_	TokenRange=76:79
-18	pãu	pãu	NOUN	N	Number=Sing	13	obl	_	Orig=pão|OrigLang=por|TokenRange=80:83
+18	pãu	pãu	NOUN	N	Number=Sing	13	obl	_	Orig=pão|OrigLang=pt|TokenRange=80:83
 19	arama	arama	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=84:89
 20	.	.	PUNCT	PUNCT	_	13	punct	_	SpaceAfter=No|TokenRange=89:90
 
@@ -12397,7 +12397,7 @@
 2	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=4:9
 3	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:16
 4	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	5	det	_	TokenRange=17:21
-5	barraca	barraca	NOUN	N	Number=Sing	3	obj	_	OrigLang=por|TokenRange=22:29
+5	barraca	barraca	NOUN	N	Number=Sing	3	obj	_	OrigLang=pt|TokenRange=22:29
 6	mamé	mamé	ADV	ADVLC	AdvType=Loc|PronType=Rel	8	advmod	_	TokenRange=30:34
 7	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	TokenRange=35:40
 8	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=41:46
@@ -13010,8 +13010,8 @@
 12	nheenga	nheenga	NOUN	N	Number=Sing	9	obl	_	TokenRange=58:65
 13	rupí	rupí	ADP	ADP	AdpType=Post	12	case	_	TokenRange=66:70
 14	"	"	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=70:71
-15	língua	língua	NOUN	N	Number=Sing	9	xcomp	_	OrigLang=por|TokenRange=72:78
-16	geral	geral	ADJ	A	_	15	amod	_	OrigLang=por|SpaceAfter=No|TokenRange=79:84
+15	língua	língua	NOUN	N	Number=Sing	9	xcomp	_	OrigLang=pt|TokenRange=72:78
+16	geral	geral	ADJ	A	_	15	amod	_	OrigLang=pt|SpaceAfter=No|TokenRange=79:84
 17	"	"	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=84:85
 18	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=85:86
 19	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	9	advmod	_	TokenRange=87:91
@@ -13830,16 +13830,16 @@
 1	Yaputari	putari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:8
 2	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=9:13
 3	"	"	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=13:14
-4	lanterna	lanterna	NOUN	N	Number=Sing	1	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=15:23
+4	lanterna	lanterna	NOUN	N	Number=Sing	1	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=15:23
 5	"	"	PUNCT	PUNCT	_	4	punct	_	TokenRange=23:24
 6	tiramé	tiramé	CCONJ	CCONJ	_	9	cc	_	TokenRange=25:31
 7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	9	det	_	TokenRange=32:36
 8	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
-9	lamparina	lamparina	NOUN	N	Number=Sing	4	conj	_	OrigLang=por|SpaceAfter=No|TokenRange=38:47
+9	lamparina	lamparina	NOUN	N	Number=Sing	4	conj	_	OrigLang=pt|SpaceAfter=No|TokenRange=38:47
 10	"	"	PUNCT	PUNCT	_	9	punct	_	TokenRange=47:48
 11	yapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	13	aux	_	TokenRange=49:57
 12	arama	arama	SCONJ	SCONJ	_	13	mark	_	TokenRange=58:63
-13	yakasari	kasari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	Orig=caçar|OrigLang=por|TokenRange=64:72
+13	yakasari	kasari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	advcl	_	Orig=caçar|OrigLang=pt|TokenRange=64:72
 14	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	13	obj	_	TokenRange=73:75
 15	pituna	pituna	NOUN	N	Number=Sing	13	obl	_	TokenRange=76:82
 16	ramé	ramé	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=83:87
@@ -14998,7 +14998,7 @@
 9	uyupiri	yupiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	acl:relcl	_	TokenRange=45:52
 10	arama	arama	SCONJ	SCONJ	_	9	mark	_	SpaceAfter=No|TokenRange=53:58
 11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=58:59
-12	juyũ	juyũ	NOUN	N	Number=Sing	13	nmod:poss	_	Orig=junho|OrigLang=por|TokenRange=60:64
+12	juyũ	juyũ	NOUN	N	Number=Sing	13	nmod:poss	_	Orig=junho|OrigLang=pt|TokenRange=60:64
 13	yasí	yasí	NOUN	N	Number=Sing	9	obl	_	TokenRange=65:69
 14	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	13	case	_	SpaceAfter=No|TokenRange=70:74
 15	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=74:75
@@ -15250,7 +15250,7 @@
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
 5	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=24:31
 6	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	5	obj	_	TokenRange=32:34
-7	chá	chá	NOUN	N	Number=Sing	5	obl	_	OrigLang=por|TokenRange=35:38
+7	chá	chá	NOUN	N	Number=Sing	5	obl	_	OrigLang=pt|TokenRange=35:38
 8	rã	rã	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=39:41
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=41:42
 10	asuí	asuí	ADV	ADVT	AdvType=Tim	11	advmod	_	TokenRange=43:47
@@ -15580,7 +15580,7 @@
 5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=24:25
 6	ma	ma	CCONJ	CCONJ	_	7	cc	_	TokenRange=26:28
 7	reganani	ganani	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	TokenRange=29:37
-8	Deus	deus	PROPN	PROPN	_	7	obl	_	OrigLang=por|TokenRange=38:42
+8	Deus	deus	PROPN	PROPN	_	7	obl	_	OrigLang=pt|TokenRange=38:42
 9	supé	supé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=43:47
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=47:48
 
@@ -16699,8 +16699,8 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Reyukwakú	yukwakú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:9
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=10:14
-3	Santa	santa	ADJ	A	_	4	amod	_	OrigLang=por|TokenRange=15:20
-4	Igreja	igreja	PROPN	PROPN	_	5	nsubj	_	OrigLang=por|TokenRange=21:27
+3	Santa	santa	ADJ	A	_	4	amod	_	OrigLang=pt|TokenRange=15:20
+4	Igreja	igreja	PROPN	PROPN	_	5	nsubj	_	OrigLang=pt|TokenRange=21:27
 5	umundú	mundú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=28:34
 6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	SpaceAfter=No|TokenRange=35:39
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=39:40
@@ -17073,7 +17073,7 @@
 7	irumu	irumu	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=34:39
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=39:40
 9	kwayé	kwayé	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=41:46
-10	kurderu	kurderu	NOUN	N	Number=Sing	9	obl	_	Orig=cordeiro|OrigLang=por|TokenRange=47:54
+10	kurderu	kurderu	NOUN	N	Number=Sing	9	obl	_	Orig=cordeiro|OrigLang=pt|TokenRange=47:54
 11	puranga	puranga	ADJ	A	_	10	acl:relcl	_	TokenRange=55:62
 12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	nsubj	_	SpaceAfter=No|TokenRange=63:66
 13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=66:67
@@ -18083,7 +18083,7 @@
 9	yuíri	yuíri	CCONJ	CCONJ	_	7	cc	_	TokenRange=46:51
 10	panhẽ	panhẽ	DET	TOT	PronType=Tot	12	det	_	TokenRange=52:57
 11	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	det	_	TokenRange=58:61
-12	mundu	mundu	NOUN	N	Number=Sing	14	nsubj	_	Orig=mundo|OrigLang=por|TokenRange=62:67
+12	mundu	mundu	NOUN	N	Number=Sing	14	nsubj	_	Orig=mundo|OrigLang=pt|TokenRange=62:67
 13	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	14	cop	_	TokenRange=68:72
 14	Yuruparí	yuruparí	PROPN	PROPN	_	7	ccomp	_	TokenRange=73:81
 15	upé	upé	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=82:85
@@ -18097,7 +18097,7 @@
 # text_orig = Nyãse Deus purangasawa usikana aintarese umukaturu arama panye apigawaita;
 # text_annotator = Leonel Figueiredo de Alencar
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:6
-2	Deus	deus	PROPN	PROPN	_	3	nmod:poss	_	OrigLang=por|TokenRange=7:11
+2	Deus	deus	PROPN	PROPN	_	3	nmod:poss	_	OrigLang=pt|TokenRange=7:11
 3	purangasawa	purangasawa	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=12:23
 4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:29
 5	ana	ana	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=30:33
@@ -18160,7 +18160,7 @@
 5	irumu	irumu	SCONJ	SCONJ	_	4	mark	_	TokenRange=28:33
 6	yapixama	pixama	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=34:42
 7	arama	arama	SCONJ	SCONJ	_	6	mark	_	TokenRange=43:48
-8	pão	pão	NOUN	N	Number=Sing	6	obj	_	OrigLang=por|SpaceAfter=No|TokenRange=49:52
+8	pão	pão	NOUN	N	Number=Sing	6	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=49:52
 9	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=52:53
 10	Paulu	paulu	PROPN	PROPN	_	11	nsubj	_	TokenRange=54:59
 11	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=60:65
@@ -18223,7 +18223,7 @@
 27	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	26	nsubj	_	TokenRange=154:161
 28	yuíri	yuíri	CCONJ	CCONJ	_	25	cc	_	SpaceAfter=No|TokenRange=162:167
 29	,	,	PUNCT	PUNCT	_	31	punct	_	TokenRange=167:168
-30	demuniu	demuniu	NOUN	N	Number=Sing	31	nsubj	_	Orig=demônio|OrigLang=por|TokenRange=169:176
+30	demuniu	demuniu	NOUN	N	Number=Sing	31	nsubj	_	Orig=demônio|OrigLang=pt|TokenRange=169:176
 31	upukwari	pukwari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	26	conj	_	TokenRange=177:185
 32	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	31	obj	_	TokenRange=186:193
 33	yuíri	yuíri	CCONJ	CCONJ	_	31	cc	_	SpaceAfter=No|TokenRange=194:199

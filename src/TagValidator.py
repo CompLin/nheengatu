@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 4, 2025
+# Last update: June 10, 2025
 
 import re
 from typing import Tuple, Dict, Any
+from LarkTagValidator import _validate_special_tag as validate_special_tag
 
 # Basic tag pattern: letters, plus sign allowed for compound tags
 TAG = r'[a-z]+[0-9]?(\+[a-z]+)*'
@@ -54,20 +55,17 @@ VALID_PATTERNS = [
 compiled_patterns = [re.compile(p) for p in VALID_PATTERNS]
 
 
-def validate_special_tag(tag: str) -> bool:
+def _validate_special_tag(tag: str) -> bool:
     """Returns True if tag matches any valid pattern, False otherwise."""
     return any(p.match(tag) for p in compiled_patterns)
 
 
 def validate_or_raise(tag: str) -> None:
     """Raises ValueError if tag is not valid."""
-    if not validate_special_tag(tag):
+    if not _validate_special_tag(tag):
         raise ValueError(f"Invalid special tag format: {tag}")
-        
-def test_validate_special_tag():
-    print("Testing validate_special_tag:")
 
-    valid = [
+valid = [
         "@",
         "a",
         "adva",
@@ -80,10 +78,19 @@ def test_validate_special_tag():
         "=typo:c|puranga:x|adva",
         "=typo:c|puranga:x|adva@",
         "=custom:arg1|val1:arg2|val2",
+        "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4",
         "=custom:arg1|val1:arg2|val2@",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4@",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5:arg6|val6",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5:arg6|val6:arg7|val7",
+          "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5@",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5:arg6|val6@",
+         "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5:arg6|val6:arg7|val7@",
     ]
 
-    invalid = [
+
+invalid = [
          "c|puranga:x=typo",     # function name after argument value pair
          "arg1|val1",            # argument value pair without function name
          "arg1|val1:arg2|val2",  # multiple argument value pairs without function name
@@ -104,7 +111,7 @@ def test_validate_special_tag():
         "a/b",                   # slash present
         "n++abs",                # invalid double +
         "n+",                # trailing +
-         "n++",                # trailing +
+         "n++",                # trailing ++
          "@a",
         "@n+abs",
         "@n+abs@",
@@ -116,93 +123,121 @@ def test_validate_special_tag():
         "n_abs",                # invalid _
         "n-+abs",                # invalid double -+
         "n:abs",                # invalid :
+        "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5|val5:arg6:val6::arg7|val7",
+          "=custom:arg1|val1:arg2|val2:arg3|val3:arg4|val4:arg5:val5@",
     ]
+    
+def test_validate_special_tag():
+    print("Testing validate_special_tag:")
 
     for tag in valid:
         print(f"{tag:<40} => {validate_special_tag(tag)}")  # Expect True
-
+    print("INVALID:")
     for tag in invalid:
         print(f"{tag:<40} => {validate_special_tag(tag)}")  # Expect False
         
 
-BOOLEAN_ARGUMENTS = {'a', 'g', 'f','u','d'}
+ARGUMENTS = {
+    'a': 'accent',
+    'b': 'base',
+    'c': 'correct',
+    'd': 'nasal',
+    'f': 'force',
+    'g': 'guess',
+    'h': 'archpos',
+    'l': 'length',
+    'm': 'modern',
+    'n': 'function',
+    'o': 'orig',
+    'p': 'position',
+    'r': 'newregister',
+    's': 'orig_form',
+    't': 'typo',
+    'u': 'suffix',
+    'w': 'word',
+    'x': 'xpos',
+}
+
+
+BOOLEAN_ARGUMENTS = {'a', 'd', 'f', 'g', 'u'}
+
 INTEGER_ARGUMENTS = {'l','p'}
 
-# Function specifications: required and optional arguments per function
 FUNCTION_SIGNATURES = {
-    'typo': {
-        'required': {'c'},
-        'optional': {'x', 'n'},
-    },
-    'mf': {
-        'required': {'m'},
-        'optional': {'x', 'h','r','n','o','s'},
-    },
-    'spl': {
-        'required': {'w'},
-        'optional': {'x', 'h','c'},
-    },
-     'hwm': {
-        'required': set(),
-        'optional': {'x'},
-    },
-    'p': {
-        'required': set(),
-        'optional': {'o','s'},
-        },
-     'mid': {
-        'required': set(),
-        'optional': {'o','s'},
-        },
-    'ev': {
-        'required': set(),
-        'optional': {'o','s','x','f','a','p','d'},
-    },
-    'vnoun': {
-        'required': set(),
-        'optional': {'a','x','g','f'},
-    },
-    'n': {
-        'required': {'o'},
-        'optional': {'s'},
-    },
-    'card': {
-        'required': {'o'},
-        'optional': {'s'},
-    },
     'a': {
         'required': {'o'},
         'optional': {'s'},
-    },
-    'intj': {
-        'required': set(),
-        'optional': {'o','s'},
-    },
-    'v': {
-        'required': {'o','s'},
-        'optional': set(),
-    },
-    'red': {
-        'required': {'l'},
-        'optional': {'x','o','s','a','u','p'},
     },
     'aug': {
         'required': set(),
         'optional': {'f'},
     },
+    'card': {
+        'required': {'o'},
+        'optional': {'s'},
+    },
+    'ev': {
+        'required': set(),
+        'optional': {'a', 'd', 'f', 'o', 'p', 's', 'x'},
+    },
+    'hab': {
+        'required': {'x'},
+        'optional': {'a', 'f', 'g'},
+    },
+    'hwm': {
+        'required': set(),
+        'optional': {'x'},
+    },
+    'intj': {
+        'required': set(),
+        'optional': {'o', 's'},
+    },
+    'mf': {
+        'required': {'m'},
+        'optional': {'h', 'n', 'o', 'r', 's', 'x'},
+    },
+    'mid': {
+        'required': set(),
+        'optional': {'o', 's'},
+    },
+    'n': {
+        'required': {'o'},
+        'optional': {'s'},
+    },
+    'p': {
+        'required': set(),
+        'optional': {'o', 's'},
+    },
     'prv': {
         'required': set(),
         'optional': {'x'},
     },
+    'red': {
+        'required': {'l'},
+        'optional': {'a', 'o', 'p', 's', 'u', 'x'},
+    },
+    'spl': {
+        'required': {'w'},
+        'optional': {'b','c', 'h', 'x'},
+    },
+    'typo': {
+        'required': {'c'},
+        'optional': {'n', 'x'},
+    },
     'upos': {
-        'required': {'x','o'},
+        'required': {'o', 'x'},
         'optional': {'s'},
     },
-    'hab': {
-        'required': {'x'},
-        'optional': {'a','g','f'},
+    'v': {
+        'required': {'o', 's'},
+        'optional': set(),
+    },
+    'vnoun': {
+        'required': set(),
+        'optional': {'a', 'f', 'g', 'x'},
     },
 }
+
     
 # Functions without arguments
 ZERO_ARG_FUNCTIONS = ['col', 'x']
@@ -213,34 +248,6 @@ def include_zero_arg_functions(mapping=FUNCTION_SIGNATURES):
         mapping.update({func : signature})
 
 include_zero_arg_functions()
-
-def _validate_function_args(func_name: str, args: Dict[str, str]) -> Tuple[bool, str]:
-    """Validate arguments for a function tag based on its signature."""
-    if func_name not in FUNCTION_SIGNATURES:
-        return False, f"Function '{func_name}' is not recognized."
-
-    spec = FUNCTION_SIGNATURES[func_name]
-
-    if not args:
-        if spec['allow_empty']:
-            return True, f"Function '{func_name}' correctly used without arguments."
-        else:
-            return False, f"Function '{func_name}' requires arguments but none were provided."
-
-    # If arguments are present but should not exist
-    if spec['allow_empty'] and not (spec['required'] or spec['optional']):
-        return False, f"Function '{func_name}' does not allow arguments, but some were given: {', '.join(args)}."
-
-    # Validate required arguments
-    missing = spec['required'] - args.keys()
-    if missing:
-        return False, f"Function '{func_name}' is missing required arguments: {', '.join(missing)}."
-
-    unknown_args = args.keys() - (spec['required'] | spec['optional'])
-    if unknown_args:
-        return False, f"Function '{func_name}' has unknown arguments: {', '.join(unknown_args)}."
-
-    return True, f"Function '{func_name}' used correctly with valid arguments."
 
 
 def validate_function_args(func_name: str, args: Dict[str, str]) -> Tuple[bool, str]:
@@ -293,7 +300,6 @@ def convert_args(args: Dict[str, str]) -> Dict[str, Any]:
         else:
             converted[k] = v
     return converted
-
 
 if __name__ == "__main__":
     test_validate_special_tag()

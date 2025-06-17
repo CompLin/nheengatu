@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 20, 2025
+# Last update: June 11, 2025
 from lark import Lark, Transformer, UnexpectedInput, v_args
 
 grammar = r"""
@@ -34,7 +34,7 @@ func_with_args_and_root    : "=" FUNC ":" ARGVAL (":" ARGVAL)* "@"
 parser = Lark(grammar, start="special_tag", parser="lalr")
 
 
-def validate_special_tag(tag: str) -> bool:
+def _validate_special_tag(tag: str) -> bool:
     try:
         parser.parse(tag)
         return True
@@ -43,7 +43,7 @@ def validate_special_tag(tag: str) -> bool:
 
 
 def validate_or_raise(tag: str) -> None:
-    if not validate_special_tag(tag):
+    if not _validate_special_tag(tag):
         raise ValueError(f"Invalid tag format: {tag}")
 
 
@@ -77,10 +77,15 @@ class TagTransformer(Transformer):
 
     def _parse_argvals(self, argvals):
         args = {}
+        seen_keys = set()
         for argval in argvals:
             name, val = argval.value.split("|", 1)
+            if name in seen_keys:
+                raise ValueError(f"Duplicate argument key in tag: '{name}'")
+            seen_keys.add(name)
             args[name] = val
         return args
+
 
 
 
