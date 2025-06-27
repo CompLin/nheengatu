@@ -17963,7 +17963,7 @@
 8	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=39:40
 9	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=41:45
 10	tapurú	tapurú	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=46:52
-11	siiya	siiya	NOUN	N	Number=Sing|Rel=Abs|Style=Arch	9	obj	_	ModernForm=riiya|ModernRel=Cont|TokenRange=53:58
+11	siiya	siiya	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	9	obj	_	ModernForm=riiya|ModernRel=Cont|TokenRange=53:58
 12	mirá-etá	mirá	NOUN	N	Number=Plur	9	obl	_	TokenRange=59:67
 13	pu	pupé	ADP	ADP	AdpType=Post|Typo=Yes	12	case	_	CorrectForm=pupé|TokenRange=68:70
 14	pe	_	X	X	_	13	goeswith	_	SpaceAfter=No|TokenRange=71:73
@@ -20418,7 +20418,7 @@
 1	Epurú	purú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	kisé	kisé	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:13
-4	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs|Style=Rare	1	iobj	_	SpaceAfter=No|StandardCase=Dat|StandardForm=ixéu|StandardLemma=ixéu|StandardPronType=Prs|TokenRange=14:17
+4	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs|Style=Rare	1	iobj	_	SpaceAfter=No|StandardCase=Dat|StandardForm=ixéu|StandardLemma=ixéu|TokenRange=14:17
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=17:18
 
 # sent_id = Hartt1938:0:0:9
