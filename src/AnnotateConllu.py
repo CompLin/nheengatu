@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: June 17, 2025
+# Last update: June 25, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -462,6 +462,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
         token['feats']=None
     if token['xpos'] in ('REL', 'RELF'):
         updateFeats(token,'PronType','Rel')
+    elif token['xpos'] == 'INT':
+        updateFeats(token,'PronType','Int')
     #elif token['xpos'] == 'ADVR':
     #    updateFeats(token,'PronType','Int')
     #elif token['xpos'] == 'ADVL':
@@ -2711,16 +2713,19 @@ def diffFeats(modern_token,arch_token):
     '''
     newdic={}
     arch_feats=arch_token.get('feats')
-    if arch_feats:
-        arch_lemma=arch_token['lemma']
-        modern_feats=modern_token.get('feats')
-        modern_lemma=modern_token['lemma']
-        if arch_lemma != modern_lemma:
-            newdic['lemma']=modern_lemma
+    arch_lemma=arch_token['lemma']
+    modern_feats=modern_token.get('feats')
+    modern_lemma=modern_token['lemma']
+    if arch_lemma != modern_lemma:
+        newdic['lemma']=modern_lemma
+    if modern_feats:
         for k,v in modern_feats.items():
-            m=arch_feats.get(k)
-            if m != v:
-                newdic.update({k : v})
+            if arch_feats:
+                m=arch_feats.get(k)
+                if m != v:
+                    newdic.update({k : v})
+            else:
+                newdic.update(modern_feats)
     return newdic
 
 def getStyle(attribute):
@@ -2740,14 +2745,14 @@ def applyFunction(function,form,orig=None, orig_form='',xpos=''):
     return newparselist
 
 def mkConlluSentence(tokens):
-    register='Modern'
-    field='Form'
-    attribute=f"{register}{field}"
     ROOT.clear()
     tokenlist=TokenList()
     ident=1
     start=0
     for token in tokens:
+        register='Modern'
+        field='Form'
+        attribute=f"{register}{field}"
         old=token
         tag=''
         root=False
@@ -2802,10 +2807,10 @@ def mkConlluSentence(tokens):
                 modern=tagparse.get('m')
                 function=tagparse.get('n')
                 newregister=tagparse.get('r')
-                position=tagparse.get('p',0)
                 if newregister:
                     register=newregister
                     attribute=f"{newregister.title()}{field}"
+                position=tagparse.get('p',0)
                 archpos=tagparse.get('h')
                 orig_form=tagparse.get('s')
                 force=tagparse.get('f')
@@ -3270,6 +3275,8 @@ def hasClitic(suff,token):
 
 def mkHost(host,clitic,token,xpos=''):
     dic={}
+    if host == 'mirí' and clitic == NTU: # TODO: handle this in hasClitic
+        host='mirĩ'
     dic['host']=host
     dic['suff']=clitic
     if xpos:
