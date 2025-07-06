@@ -23142,21 +23142,22 @@
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = Hartt1938:0:0:166
-# text = Maã taá ukanhemu intí suí?
+# text = Maã taá ukaíma intí suí?
 # text_por = O que é que perdeste?
 # text_source = p. 331, No. 166
 # text_orig = maá taá okayím intí suí?
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Maã/int taá ukanhemu intí suí/adp?
+# inputline = Maã/int taá ukaíma intí/=typo:c|ne suí/adp?
 # text_annotator = Dominick Maia Alexandre
-1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Maã	maã	PRON	INT	PronType=Int	3	nsubj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
-3	ukanhemu	kanhemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:16
-4	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=17:21
-5	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=22:25
-6	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
+3	ukaíma	kaíma	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:14
+4	intí	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Typo=Yes	3	obl	_	CorrectForm=ne|TokenRange=15:19
+5	suí	suí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=20:23
+6	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = Hartt1938:0:0:167
 # text = Tupana resé katú!
@@ -23168,6 +23169,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Tupana resé/adp katú/foc!
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=0:6
 2	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	1	case	_	TokenRange=7:11
 3	katú	katú	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=12:16
@@ -23202,6 +23204,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Yawara i/pron2 kirimawa/v2 waá/rel upurusuú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawara	yawara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:6
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=7:8
 3	kirimawa	kirimawa	VERB	V2	Mood=Ind|VerbForm=Fin	1	acl:relcl	_	TokenRange=9:17
@@ -23223,6 +23226,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Aé/pron kurutẽiwara/adva i/pron2 maasí/v2.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=0:2
 2	kurutẽiwara	kurutẽiwara	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=3:14
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=15:16
@@ -23243,6 +23247,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Aé/pron upurumaú mira resé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	upurumaú	purumaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:11
 3	mira	mira	NOUN	N	Number=Sing	2	obl	_	TokenRange=12:16
@@ -23259,6 +23264,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Maã/int irũ/adp umaú kariwa-itá?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Maã	maã	PRON	INT	PronType=Int	3	obl	_	TokenRange=0:3
 2	irũ	irũ	ADP	ADP	AdpType=Post	1	case	_	TokenRange=4:7
 3	umaú	maú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:12
@@ -23275,12 +23281,13 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kariwa-itá umaú irũ/adp pú yawé/adp waá/rel.
 # text_annotator = Dominick Maia Alexandre
-1	Kariwa-itá	kariwa	NOUN	N	Number=Plur	2	obj	_	TokenRange=0:10
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kariwa-itá	kariwa	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:10
 2	umaú	maú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:15
-3	irũ	irũ	ADP	ADP	AdpType=Post	2	case	_	TokenRange=16:19
-4	pú	pú	NOUN	N	Number=Sing	2	obl	_	TokenRange=20:22
+3	irũ	irũ	ADP	ADP	AdpType=Post	6	case	_	TokenRange=16:19
+4	pú	pú	NOUN	N	Number=Sing	6	nmod	_	TokenRange=20:22
 5	yawé	yawé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=23:27
-6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	4	nsubj	_	SpaceAfter=No|TokenRange=28:31
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	obl	_	SpaceAfter=No|TokenRange=28:31
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:174
