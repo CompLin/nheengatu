@@ -26604,6 +26604,83 @@
 2	tiapuíma	tiapú	ADV	ADVA	AdvType=Man|Derivation=Priv	1	advmod	_	SpaceAfter=No|TokenRange=6:14
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
+# sent_id = Aguiar1898:1:1:1
+# text = ― Awá taá umunhã upaĩ maã?
+# text_source = p. 23
+# text_orig = ― Auá tahá u-munhã upãin mahã?
+# text_por = ― Quem criou todas as cousas?
+# title = CHRISTU MUẼSAWA TUPANA-MUNHANGARA
+# title_orig = CHRISTU MUHENÇÁUA TUPANA-MUNHANGÁRA
+# title_por = DOUTRINA CRISTÃ DE DEUS CRIADOR
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Who created all the things?
+# inputline = ― Awá/int taá umunhã upaĩ maã/n?
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=5:8
+4	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
+5	upaĩ	upaĩ	DET	TOT	PronType=Tot	6	det	_	TokenRange=16:20
+6	maã	maã	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=21:24
+7	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Aguiar1898:1:2:2
+# text = ― Tupana Yané Yara.
+# text_orig = ― Tupana Ianè Iara.
+# text_source = p. 23
+# text_por = ― Deus Nosso Senhor.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng =  ― God Our Lord.
+# inputline = ― Tupana Yané/pron2 Yara/n.
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=1:7
+3	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=8:12
+4	Yara	yara	NOUN	N	Number=Sing	2	appos	_	SpaceAfter=No|TokenRange=13:17
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
+# sent_id = Aguiar1898:1:3:3
+# text = ― Awá taá umunhã yané?
+# text_orig = ― Auá taha u-munhã ianê?
+# text_source = p. 23
+# text_por = ― Quem nos criou a nós?
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Who created us?
+# inputline = ― Awá/int taá umunhã yané/pron?
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=5:8
+4	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:15
+5	yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	4	obj	_	ModernForm=yandé|ModernLemma=yandé|SpaceAfter=No|TokenRange=16:20
+6	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Aguiar1898:1:4:4
+# text = ― Tupana Yané Yara.
+# text_orig = ― Tupana Ianê Iara.
+# text_source = p. 23
+# text_por = ― Deus Nosso Senhor.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = - God Our Lord.
+# inputline = ― Tupana Yané/pron2 Yara/n.
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=1:7
+3	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=8:12
+4	Yara	yara	NOUN	N	Number=Sing	2	appos	_	SpaceAfter=No|TokenRange=13:17
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
+
 # sent_id = Aguiar1898:1:5:5
 # text = ― Aikwé será amú Tupana, kwá suí?
 # text_orig = ― Ahiqué cerá amú Tupana, quá çui?
