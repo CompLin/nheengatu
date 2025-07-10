@@ -26845,16 +26845,17 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = ― How many people are there in God?
-# inputline = ― Muíri/int pessoa taá aikwé Tupana resé/adp?
+# inputline = ― Muíri/int pessoa/=n:o|pt taá aikwé Tupana resé/adp?
 # text_annotator = Letícia Farias Nunes
-1	―	―	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
 2	Muíri	muíri	DET	INT	PronType=Int	3	det	_	TokenRange=1:6
-3	pessoa	pessoa	_	_	_	6	_	_	TokenRange=7:13
-4	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=14:17
-5	aikwé	aikwé	PART	EXST	PartType=Exs	6	advcl	_	TokenRange=18:23
-6	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=25:31
-7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=32:36
-8	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=36:37
+3	pessoa	pessoa	NOUN	N	Number=Sing	5	nsubj	_	OrigLang=pt|TokenRange=7:13
+4	taá	taá	PART	CQ	PartType=Int	5	advmod	_	TokenRange=14:17
+5	aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=18:23
+6	Tupana	tupana	NOUN	N	Number=Sing	5	obl	_	TokenRange=24:30
+7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=31:35
+8	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Aguiar1898:2:2:14
 # text = ― Musapiri.
