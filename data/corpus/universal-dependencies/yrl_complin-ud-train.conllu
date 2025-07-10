@@ -26706,6 +26706,133 @@
 8	suí	suí	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=28:31
 9	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
+# sent_id = Aguiar1898:1:6:6
+# text = ― Intí ana!
+# text_orig = ― Intiana!
+# text_source = p. 23
+# text_por = ― De maneira alguma!
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Letícia Farias Nunes
+# text_eng = ― By no means! (Not at all)
+# inputline = ― Intí ana!
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=1:5
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=6:9
+4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Aguiar1898:1:7:7
+# text = ― Yepé nhũ Tupana reté.
+# text_orig = ― Iepénhun Tupana reté.
+# text_source = p. 23
+# text_por = ― Há um só Deus verdadeiro.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― There is only one true God.
+# inputline = ― Yepé/card nhũ Tupana reté/a.
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Yepé	yepé	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=1:5
+3	nhũ	nhũ	ADV	ADV	_	4	advmod	_	TokenRange=6:9
+4	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=10:16
+5	reté	reté	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=17:21
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Aguiar1898:1:8:8
+# text = ― Mamé taá uikú Tupana?
+# text_orig = ― Mamé tahá u-icú Tupana?
+# text_source = p. 23
+# text_por = ― Onde está Deus?
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Where is God?
+# inputline = ― Mamé/advrc taá uikú/root Tupana?
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	4	advmod	_	TokenRange=1:5
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=6:9
+4	uikú	ikú	VERB	COP	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:14
+5	Tupana	tupana	NOUN	N	Number=Sing	4	obj	_	SpaceAfter=No|TokenRange=15:21
+6	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Aguiar1898:1:9:9
+# text = ― Iwaka upé, iwí-pe, upaĩ rupí.
+# text_orig = ― Iuáca upé, ïuhïpe, upãin rupi.
+# text_source = p. 23
+# text_por = ― No Céu, na terra, e em todo o lugar.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― In Heaven, on earth, and everywhere.
+# inputline = ― Iwaka upé/adp, iwí-pe, upaĩ rupí.
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=0:1
+2	Iwaka	iwaka	NOUN	N	Number=Sing	5	obl	_	TokenRange=2:7
+3	upé	upé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=8:11
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=11:12
+5-6	iwí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:19
+5	iwí	iwí	NOUN	N	Number=Sing	0	root	_	_
+6	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	5	case	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
+8	upaĩ	upaĩ	DET	TOT	PronType=Tot	5	det	_	TokenRange=21:25
+9	rupí	rupí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:30
+10	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=30:31
+
+# sent_id = Aguiar1898:1:10:10
+# text = ― Awá taá aé Tupana?
+# text_orig = ― Auá tahá aé Tupana?
+# text_source = p. 23
+# text_por = ― Quem é esse Deus?
+# text_sec = ― Awá taá aé Tupana?
+# text_por_sec = Quem é esse Deus?
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Who is this God?
+# inputline = ― Awá/int taá aé/demsn Tupana?
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Awá	awá	DET	INT	PronType=Int	0	root	_	TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	TokenRange=5:8
+4	aé	aé	DET	DEMSN	Deixis=Remt|PronType=Dem	2	det	_	TokenRange=9:11
+5	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	SpaceAfter=No|TokenRange=12:18
+6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Aguiar1898:1:11:11
+# text = ― Yepé anga reté, turusú reté, yané munhangara, yané yara.
+# text_orig = ― Iepé anga-reté, turuçú-reté, ianê munhangara, ianê Iára.
+# text_source = p. 23
+# text_por = ― Um puro espírito, todo poderoso, nosso Criador, e nosso Senhor.
+# text_sec = ― Yepé anga reté, turusú reté, yané munhangara, yané yara.
+# text_por_sec = Um puro espérito, todo poderoso, nosso Criador e nosso Senhor.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = A pure spirit, all powerful, our Creator, and our Lord.
+# inputline = ― Yepé/art anga reté/a, turusú/a reté/advs, yané/pron2 munhangara/n, yané/pron2 yara/n.
+# text_annotator = Antônio Levy Melo Nogueira
+1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
+2	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=1:5
+3	anga	anga	NOUN	N	Number=Sing	0	root	_	TokenRange=6:10
+4	reté	reté	ADJ	A	_	3	amod	_	SpaceAfter=No|TokenRange=11:15
+5	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
+6	turusú	turusú	ADJ	A	_	3	amod	_	TokenRange=17:23
+7	reté	reté	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=24:28
+8	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=28:29
+9	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=30:34
+10	munhangara	munhangara	NOUN	N	Number=Sing	3	appos	_	SpaceAfter=No|TokenRange=35:45
+11	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=45:46
+12	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=47:51
+13	yara	yara	NOUN	N	Number=Sing	3	conj	_	SpaceAfter=No|TokenRange=52:56
+14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=56:57
+
 # sent_id = Aguiar1898:2:8:19
 # text = ― Aé; Taíra Tupana.
 # text_orig = ― Aé; Tahïra Tupana.
