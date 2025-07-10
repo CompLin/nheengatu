@@ -26811,33 +26811,34 @@
 6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Aguiar1898:1:11:11
-# text = ― Yepé anga reté, turusú reté, yané munhangara, yané yara.
+# text = ― Yepé anga reté, turusú reté, yané munhangara, yané Yara.
 # text_orig = ― Iepé anga-reté, turuçú-reté, ianê munhangara, ianê Iára.
 # text_source = p. 23
 # text_por = ― Um puro espírito, todo poderoso, nosso Criador, e nosso Senhor.
 # text_sec = ― Yepé anga reté, turusú reté, yané munhangara, yané yara.
-# text_por_sec = Um puro espérito, todo poderoso, nosso Criador e nosso Senhor.
+# text_por_sec = ― Um puro espírito, todo poderoso, nosso Criador e nosso Senhor.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = A pure spirit, all powerful, our Creator, and our Lord.
-# inputline = ― Yepé/art anga reté/a, turusú/a reté/advs, yané/pron2 munhangara/n, yané/pron2 yara/n.
+# inputline = ― Yepé/art anga/@ reté/a, turusú/a reté/advs, yané/pron2 munhangara/n, yané/pron2 Yara/n.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=1:5
 3	anga	anga	NOUN	N	Number=Sing	0	root	_	TokenRange=6:10
 4	reté	reté	ADJ	A	_	3	amod	_	SpaceAfter=No|TokenRange=11:15
-5	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
-6	turusú	turusú	ADJ	A	_	3	amod	_	TokenRange=17:23
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=15:16
+6	turusú	turusú	ADJ	A	_	3	conj	_	TokenRange=17:23
 7	reté	reté	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=24:28
-8	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=28:29
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=28:29
 9	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=30:34
 10	munhangara	munhangara	NOUN	N	Number=Sing	3	appos	_	SpaceAfter=No|TokenRange=35:45
-11	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=45:46
+11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=45:46
 12	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=47:51
-13	yara	yara	NOUN	N	Number=Sing	3	conj	_	SpaceAfter=No|TokenRange=52:56
+13	Yara	yara	NOUN	N	Number=Sing	10	conj	_	SpaceAfter=No|TokenRange=52:56
 14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=56:57
 
 # sent_id = Aguiar1898:2:1:12
@@ -26875,12 +26876,13 @@
 # text_eng = ― Three.
 # inputline = ― Musapiri.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Musapiri	musapiri	NUM	CARD	NumType=Card	0	root	_	SpaceAfter=No|TokenRange=1:9
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = Aguiar1898:2:3:15
-# text = ― Mayé waá taá aintá?
+# text = ― Maíwaá taá aintá?
 # text_orig = ― Mahiuhá tahá aitá?
 # text_source = p. 25
 # text_por = ― Quais são elas?
@@ -26888,14 +26890,15 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = ― Which are they?
-# inputline = ― Mayé/advra waá/rel taá aintá/pron?
+# inputline = ― Maíwaá/=spl:h|advra:w|waá:x|rel taá aintá/pron?
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	0	root	_	TokenRange=1:5
-3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	acl:relcl	_	TokenRange=6:9
-4	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=10:13
-5	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	SpaceAfter=No|TokenRange=14:19
-6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+2	Maí	maí	ADV	ADVRA	AdvType=Man|ExtPos=PRON|PronType=Int|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:4
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	fixed	_	TokenRange=5:8
+4	taá	taá	PART	CQ	PartType=Int	2	advmod	_	TokenRange=9:12
+5	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	SpaceAfter=No|TokenRange=13:18
+6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
 
 # sent_id = Aguiar1898:2:8:19
 # text = ― Aé; Taíra Tupana.
