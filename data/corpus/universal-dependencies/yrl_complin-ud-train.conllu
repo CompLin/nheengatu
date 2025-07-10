@@ -26909,11 +26909,12 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = ― Is the Father God?
-# inputline = ― Paya Tupana?
+# inputline = ― Paya Tupana/@?
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Paya	paya	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=1:5
-3	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=6:12
+3	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=6:12
 4	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Aguiar1898:2:8:19
@@ -26943,11 +26944,12 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Yes.
-# inputline = ― Aé.
+# inputline = ― Aé/=typo:c|Aré@.
 # text_annotator = Letícia Farias Nunes
-1	―	―	PUNCT	PUNCT	_	0	punct	_	TokenRange=-1:0
-2	Aé	aé	PRON	AFF	Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=1:3
-3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=3:4
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Aé	aré	PART	CONS	PartType=Mod|Polarity=Pos|Typo=Yes	0	root	_	CorrectForm=Aré|SpaceAfter=No|TokenRange=1:3
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=3:4
 
 # sent_id = Aguiar1898:2:12:23
 # text = ― Ti ana!
@@ -27027,23 +27029,22 @@
 8	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:3:4:32
-# text = ― Espírito Santu umunhã.
+# text = ― Espiritu Santu umunhã.
 # text_orig = ― Espiritu-Santu u-munhan.
 # text_source = p. 29
-# text_por = ― Por obra do Espírito-Santo.
+# text_por = ― Por obra do Espírito Santo.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― By the work of the Holy Spirit.
-# inputline = ― Espírito/=n:o|pt:s|espírito Santu/=n:o|pt:s|santu umunhã.
+# inputline = ― Espiritu/=n:o|pt:s|Espírito Santu/a umunhã.
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=0:1
-2	Espírito	espírito	NOUN	N	Number=Sing	3	nmod:poss	_	Orig=espírito|OrigLang=por|TokenRange=2:10
-3-4	Santu	santu	ADJ	amod	_	_	_	_	TokenRange=11:16
-3	Sa	sa	NOUN	N	Number=Sing	5	nsubj	_	Orig=santu|OrigLang=por
-4	ntu	ntu	ADV	ADV	Clitic=Yes	5	advmod	_	_
-5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:23
-6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=23:24
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
+2	Espiritu	espiritu	NOUN	N	Number=Sing	4	nsubj	_	Orig=Espírito|OrigLang=pt|TokenRange=1:9
+3	Santu	santu	ADJ	A	_	2	amod	_	TokenRange=10:15
+4	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=16:22
+5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = Aguiar1898:3:5:33
 # text = ― Mamé taá?
@@ -27140,19 +27141,19 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― What is the name of the Son of God made man?
-# inputline = ― Maã/int taá rera Tupana Raíra yumunhã waá Apigawa/n?
+# inputline = ― Maã/int taá rera Tupana Raíra yumunhã/=mf:m|uyumunhã waá/rel Apigawa/n?
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	0	punct	_	TokenRange=-1:0
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
 2	Maã	maã	DET	INT	PronType=Int	4	det	_	TokenRange=1:4
-3	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=5:8
-4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	5	nmod:poss	_	TokenRange=9:13
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=5:8
+4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=9:13
 5	Tupana	tupana	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=14:20
-6	Raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	7	nsubj	_	TokenRange=21:26
-7	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	advcl	_	TokenRange=27:34
+6	Raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	4	nmod	_	TokenRange=21:26
+7	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	6	acl:relcl	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=27:34
 8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	nsubj	_	TokenRange=35:38
-8	waá	waá	SCONJ	SCONJ	_	7	mark	_	TokenRange=35:38
-9	Apigawa	apigawa	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=39:46
-10	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=46:47
+9	Apigawa	apigawa	NOUN	N	Number=Sing	7	xcomp	_	SpaceAfter=No|TokenRange=39:46
+10	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = Aguiar1898:3:12:40
 # text = ― Jesu Christu.
@@ -27163,12 +27164,13 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Jesus Christ.
-# inputline = ― Jesu/=n:o|pt:s|jesus Christu/=n:o|pt:s|cristo.
+# inputline = ― Jesu/=n:o|pt:s|Jesus@ Christu/=n:o|pt:s|Cristo.
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
-2	Jesu	jesu	NOUN	N	Number=Sing	3	flat:name	_	Orig=jesus|OrigLang=por|TokenRange=1:5
-3	Christu	christu	NOUN	N	Number=Sing	0	root	_	Orig=cristo|OrigLang=por|SpaceAfter=No|TokenRange=6:13
-4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=13:14
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Jesu	jesu	NOUN	N	Number=Sing	0	root	_	Orig=Jesus|OrigLang=pt|TokenRange=1:5
+3	Christu	christu	NOUN	N	Number=Sing	2	flat	_	Orig=Cristo|OrigLang=pt|SpaceAfter=No|TokenRange=6:13
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = Aguiar1898:3:1401:4201
 # text = Jesu Christu Tupana reté, Apigawa reté.
@@ -27179,16 +27181,17 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = Jesus Christ is true God and true Man.
-# inputline = Jesu/=n:o|pt:s|jesus Christu/=n:o|pt:s|cristo Tupana reté/a, Apigawa/n reté/a.
+# inputline = Jesu/=n:o|pt:s|Jesus Christu/=n:o|pt:s|Cristo Tupana/@ reté/a, Apigawa/n reté/a.
 # text_annotator = Antônio Levy Melo Nogueira
-1	Jesu	jesu	NOUN	N	Number=Sing	2	nmod:poss	_	Orig=jesus|OrigLang=por|TokenRange=0:4
-2	Christu	christu	NOUN	N	Number=Sing	3	nmod:poss	_	Orig=cristo|OrigLang=por|TokenRange=5:12
-3	Tupana	tupana	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=13:19
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Jesu	jesu	NOUN	N	Number=Sing	3	nsubj	_	Orig=Jesus|OrigLang=pt|TokenRange=0:4
+2	Christu	christu	NOUN	N	Number=Sing	1	flat	_	Orig=Cristo|OrigLang=pt|TokenRange=5:12
+3	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=13:19
 4	reté	reté	ADJ	A	_	3	amod	_	SpaceAfter=No|TokenRange=20:24
-5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=24:25
-6	Apigawa	apigawa	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=26:33
-7	reté	reté	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=34:38
-8	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=38:39
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=24:25
+6	Apigawa	apigawa	NOUN	N	Number=Sing	3	conj	_	TokenRange=26:33
+7	reté	reté	ADJ	A	_	6	amod	_	SpaceAfter=No|TokenRange=34:38
+8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Aguiar1898:3:15:43
 # text = ― Maã taá rera kwá mysteriu?
@@ -27244,20 +27247,21 @@
 # title_orig = MAHI JESU-CHRISTU U-PÍCÍRÜIANÊ
 # title_por = COMO JESUS CHRISTO NOS REMIU
 # text_sec = ― Mamé taá Jesu Christu umanú?
-# text_por_sec = ― Onde Jesus Christo morreu?
+# text_por_sec = ― Onde Jesus Cristo morreu?
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Where did Jesus Christ die?
-# inputline = ― Mamé/advrc taá Jesu/=n:o|pt:s|jesus Christu/=n:o|pt:s|cristo umanú?
+# inputline = ― Mamé/advrc taá Jesu/=n:o|pt:s|Jesus Christu/=n:o|pt:s|Cristo umanú?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
 2	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	6	advmod	_	TokenRange=1:5
 3	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=6:9
-4	Jesu	jesu	NOUN	N	Number=Sing	5	flat:name	_	Orig=jesus|OrigLang=por|TokenRange=10:14
-5	Christu	christu	NOUN	N	Number=Sing	6	nsubj	_	Orig=cristo|OrigLang=por|TokenRange=15:22
+4	Jesu	jesu	NOUN	N	Number=Sing	6	nsubj	_	Orig=Jesus|OrigLang=pt|TokenRange=10:14
+5	Christu	christu	NOUN	N	Number=Sing	4	flat	_	Orig=Cristo|OrigLang=pt|TokenRange=15:22
 6	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=23:28
 7	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=28:29
 
