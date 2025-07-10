@@ -26833,6 +26833,62 @@
 13	yara	yara	NOUN	N	Number=Sing	3	conj	_	SpaceAfter=No|TokenRange=52:56
 14	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=56:57
 
+# sent_id = Aguiar1898:2:1:12
+# text = ― Muíri pessoa taá aikwé Tupana resé?
+# text_orig = ― Munhïre pessôa tahá ahiqué Tupana recê?
+# text_source = p. 25
+# text_por = ― Quantas pessoas há em Deus?
+# title = TUPANA YEPÉSAWA MUSAPIRISAWA RESÉ
+# title_orig = TUPANA IEPÉÇÁUA MUÇAPÏRÍÇAUA RECÊ
+# title_por = DEUS UNO E TRINO
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― How many people are there in God?
+# inputline = ― Muíri/int pessoa taá aikwé Tupana resé/adp?
+# text_annotator = Letícia Farias Nunes
+1	―	―	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Muíri	muíri	DET	INT	PronType=Int	3	det	_	TokenRange=1:6
+3	pessoa	pessoa	_	_	_	6	_	_	TokenRange=7:13
+4	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=14:17
+5	aikwé	aikwé	PART	EXST	PartType=Exs	6	advcl	_	TokenRange=18:23
+6	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=25:31
+7	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	6	case	_	SpaceAfter=No|TokenRange=32:36
+8	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=36:37
+
+# sent_id = Aguiar1898:2:2:14
+# text = ― Musapiri.
+# text_orig = ― Muçapïri.
+# text_source = p. 25
+# text_por = ― Três.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Three.
+# inputline = ― Musapiri.
+# text_annotator = Letícia Farias Nunes
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Musapiri	musapiri	NUM	CARD	NumType=Card	0	root	_	SpaceAfter=No|TokenRange=1:9
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
+
+# sent_id = Aguiar1898:2:3:15
+# text = ― Mayé waá taá aintá?
+# text_orig = ― Mahiuhá tahá aitá?
+# text_source = p. 25
+# text_por = ― Quais são elas?
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Antônio Levy Melo Nogueira
+# text_eng = ― Which are they?
+# inputline = ― Mayé/advra waá/rel taá aintá/pron?
+# text_annotator = Letícia Farias Nunes
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	0	root	_	TokenRange=1:5
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	acl:relcl	_	TokenRange=6:9
+4	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=10:13
+5	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	SpaceAfter=No|TokenRange=14:19
+6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
+
 # sent_id = Aguiar1898:2:8:19
 # text = ― Aé; Taíra Tupana.
 # text_orig = ― Aé; Tahïra Tupana.
