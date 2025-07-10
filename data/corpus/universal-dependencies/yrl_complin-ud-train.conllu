@@ -26717,13 +26717,14 @@
 # text_eng = ― By no means! (Not at all)
 # inputline = ― Intí ana!
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=1:5
 3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
 
 # sent_id = Aguiar1898:1:7:7
-# text = ― Yepé nhũ Tupana reté.
+# text = ― Yepénhũ Tupana reté.
 # text_orig = ― Iepénhun Tupana reté.
 # text_source = p. 23
 # text_por = ― Há um só Deus verdadeiro.
@@ -26733,12 +26734,13 @@
 # text_eng = ― There is only one true God.
 # inputline = ― Yepé/card nhũ Tupana reté/a.
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
-2	Yepé	yepé	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=1:5
-3	nhũ	nhũ	ADV	ADV	_	4	advmod	_	TokenRange=6:9
-4	Tupana	tupana	NOUN	N	Number=Sing	0	root	_	TokenRange=10:16
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Yepé	yepé	NUM	CARD	NumType=Card|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:5
+3	nhũ	nhũ	ADV	ADV	_	2	advmod	_	TokenRange=6:9
+4	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=10:16
 5	reté	reté	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=17:21
-6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=21:22
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Aguiar1898:1:8:8
 # text = ― Mamé taá uikú Tupana?
