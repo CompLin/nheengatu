@@ -27172,7 +27172,7 @@
 3	Christu	christu	NOUN	N	Number=Sing	2	flat	_	Orig=Cristo|OrigLang=pt|SpaceAfter=No|TokenRange=6:13
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
 
-# sent_id = Aguiar1898:3:1401:4201
+# sent_id = Aguiar1898:3:14-2:42-2
 # text = Jesu Christu Tupana reté, Apigawa reté.
 # text_orig = Jesú-Christu Tupana reté, Apgaua reté.
 # text_source = p. 29
@@ -27213,30 +27213,30 @@
 7	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Aguiar1898:3:16:44
-# text = ― Incarnaçam, mysteriu; amú rupí, Tupana Raíra yané rukwera irumu.
-# text_orig = ― Incarnaçam, mysteriu; amú rupi, Tupana-Rahïra ianê ruquéra irumo.
+# text = ― Inkarnasãu misteriu; amú rupí, Tupana Raíra yané rukwera irumu.
+# text_orig = ― Incarnaçam mysteriu; amú rupi, Tupana-Rahïra ianê ruquéra irumo.
 # text_source = p. 29
 # text_por = ― Mistério da Encarnação; noutros termos, o Filho de Deus com a nossa carne.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Mistery of Incarnation; in other terms, the Son of God with our flesh.
-# inputline = ― Incarnaçam/=n:o|pt:s|encarnação, mysteriu/=n:o|pt:s|mistério; amú/ind rupí, Tupana Raíra yané/pron2 rukwera irumu/adp.
+# inputline = ― Inkarnasãu/=n:o|pt:s|Encarnação misteriu/=n:o|pt:s|mistério; amú/ind rupí, Tupana Raíra yané/pron2 rukwera irumu/adp.
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Incarnaçam	incarnaçam	NOUN	N	Number=Sing	0	root	_	Orig=encarnação|OrigLang=por|SpaceAfter=No|TokenRange=1:11
-3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
-4	mysteriu	mysteriu	NOUN	N	Number=Sing	2	parataxis	_	Orig=mistério|OrigLang=por|SpaceAfter=No|TokenRange=13:21
-5	;	;	PUNCT	PUNCT	_	2	punct	_	TokenRange=21:22
-6	amú	amú	DET	IND	Number=Sing|PronType=Ind	7	det	_	TokenRange=23:26
-7	rupí	rupí	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=27:31
-8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=31:32
-9	Tupana	tupana	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=33:39
-10	Raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	12	parataxis	_	TokenRange=40:45
-11	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=46:50
-12	rukwera	sukwera	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=51:58
-13	irumu	irumu	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=59:64
-14	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=64:65
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
+2	Inkarnasãu	inkarnasãu	NOUN	N	Number=Sing	3	nmod:poss	_	Orig=Encarnação|OrigLang=pt|TokenRange=1:11
+3	misteriu	misteriu	NOUN	N	Number=Sing	0	root	_	Orig=mistério|OrigLang=pt|SpaceAfter=No|TokenRange=12:20
+4	;	;	PUNCT	PUNCT	_	9	punct	_	TokenRange=20:21
+5	amú	amú	PRON	IND	Number=Sing|PronType=Ind	9	obl	_	TokenRange=22:25
+6	rupí	rupí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:30
+7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=30:31
+8	Tupana	tupana	NOUN	N	Number=Sing	9	nmod:poss	_	TokenRange=32:38
+9	Raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	3	parataxis	_	TokenRange=39:44
+10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=45:49
+11	rukwera	sukwera	NOUN	N	Number=Sing|Rel=Cont	9	nmod	_	TokenRange=50:57
+12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=58:63
+13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=63:64
 
 # sent_id = Aguiar1898:4:1:45
 # text = ― Mamé taá Jesu Christu umanú?
@@ -27342,13 +27342,14 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yané/pron pisirú, salvari arama/sconj.
+# inputline = ― Yané/pron pisirú, salvari/=v:o|pt:s|salvar arama/sconj.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
-2	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	nsubj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=1:5
+2	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=1:5
 3	pisirú	pisirú	VERB	V	VerbForm=Inf	0	root	_	SpaceAfter=No|TokenRange=6:12
-4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=12:13
-5	salvari	salvari	_	_	_	0	_	_	TokenRange=14:21
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
+5	salvari	salvari	VERB	V	VerbForm=Inf	3	conj	_	Orig=salvar|OrigLang=pt|TokenRange=14:21
 6	arama	arama	SCONJ	SCONJ	_	3	mark	_	SpaceAfter=No|TokenRange=22:27
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
@@ -27366,12 +27367,13 @@
 # text_eng = TODO
 # inputline = ― Marama taá Tupana Yané/pron2 Yara/n umunhã yané/pron?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=-1:0
 2	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	7	advmod	_	TokenRange=1:7
 3	taá	taá	PART	CQ	PartType=Int	7	advmod	_	TokenRange=8:11
 4	Tupana	tupana	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=12:18
 5	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=19:23
-6	Yara	yara	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=24:28
+6	Yara	yara	NOUN	N	Number=Sing	4	appos	_	TokenRange=24:28
 7	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=29:35
 8	yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	7	obj	_	ModernForm=yandé|ModernLemma=yandé|SpaceAfter=No|TokenRange=36:40
 9	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=40:41
@@ -27456,7 +27458,7 @@
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=79:80
 
 # sent_id = Aguiar1898:5:5:55
-# text = ― Aramé, yané rikwé iké, yamanu rirí yané rikwé será?
+# text = ― Aramé, yané rikwé iké, yamanú rirí yané rikwé será?
 # text_orig = ― Aramè, ianê requè ikè, iámanù riri ianê requè cerá?
 # text_source = p. 33
 # text_por = ― Então aqui temos uma vida, e depois da nossa morte teremos outra?
@@ -27464,49 +27466,64 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Aramé, yané/pron2 rikwé/n iké, yamanu rirí/adp yané/pron2 rikwé/n será?
+# inputline = ― Aramé/advj, yané/pron2 rikwé/n iké, yamanú rirí/adp yané/pron2 rikwé/n será?
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
-2	Aramé	aramé	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=1:6
-2	Aramé	aramé	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=1:6
-3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=6:7
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
+1	―	―	PUNCT	PUNCT	_	8	punct	_	TokenRange=-1:0
+2	Aramé	aramé	ADV	ADVJ	AdvType=Cau	8	advmod	_	SpaceAfter=No|TokenRange=1:6
+3	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=6:7
 4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=8:12
-5	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=13:18
-6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	SpaceAfter=No|TokenRange=19:22
-7	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
-8	yamanu	yamanu	_	_	_	5	_	_	TokenRange=24:30
+5	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	8	obl	_	TokenRange=13:18
+6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	8	advmod	_	SpaceAfter=No|TokenRange=19:22
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=22:23
+8	yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=24:30
 9	rirí	rirí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=31:35
 10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=36:40
-11	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	5	_	_	TokenRange=41:46
-12	será	será	PART	PQ	PartType=Int	5	advmod	_	SpaceAfter=No|TokenRange=47:51
-13	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=51:52
+11	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	TokenRange=41:46
+12	será	será	PART	PQ	PartType=Int	8	advmod	_	SpaceAfter=No|TokenRange=47:51
+13	?	?	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=51:52
 
-# sent_id = Aguiar1898:5:6:56
-# text = ― Yawé tẽ. Yané rikwé iwí-pe; yané rikwé yamanú rirí.
-# text_orig = ― Iauè-ten. Ianê requé ïuhïpe; ianê requé ia-manú riri.
+# sent_id = Aguiar1898:5:6-1:56-1
+# text = ― Yawé tẽ.
+# text_orig = ― Iauè-ten.
 # text_source = p. 33
-# text_por = ― É verdade. Temos uma vida na terra, e outra depois da morte.
+# text_por = ― É verdade.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yawé/adva tẽ/foc. Yané/pron2 rikwé/n iwí-pe; yané/pron2 rikwé/n yamanú rirí/sconj.
+# inputline = ― Yawé/adva tẽ/foc.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=0:1
 2	Yawé	yawé	ADV	ADVA	AdvType=Man	0	root	_	TokenRange=2:6
 3	tẽ	tẽ	PART	FOC	Foc=Yes|PartType=Emp	2	advmod	_	SpaceAfter=No|TokenRange=7:9
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
-5	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=10:14
-6	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	12	nsubj	_	TokenRange=15:20
-7-8	iwí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=21:27
-7	iwí	iwí	NOUN	N	Number=Sing	12	obl	_	_
-8	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	7	case	_	_
-9	;	;	PUNCT	PUNCT	_	12	punct	_	TokenRange=27:28
-10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=29:33
-11	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	12	nsubj	_	TokenRange=34:39
-12	yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=40:46
-13	rirí	rirí	SCONJ	SCONJ	_	12	mark	_	SpaceAfter=No|TokenRange=47:51
-14	.	.	PUNCT	PUNCT	_	12	punct	_	SpaceAfter=No|TokenRange=51:52
+
+# sent_id = Aguiar1898:5:6-2:56-2
+# text = Yané rikwé iwí-pe; yané rikwé yamanú rirí.
+# text_orig = Ianê requé ïuhïpe; ianê requé ia-manú riri.
+# text_source = p. 33
+# text_por = ― Temos uma vida na terra, e outra depois da morte.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Letícia Farias Nunes
+# text_eng = TODO
+# inputline = Yané/pron2 rikwé/v2 iwí-pe; yané/pron2 rikwé/v2 yamanú rirí/sconj.
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:4
+2	rikwé	rikwé	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	0	root	_	TokenRange=5:10
+3-4	iwí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=11:17
+3	iwí	iwí	NOUN	N	Number=Sing	2	obl	_	_
+4	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
+5	;	;	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	TokenRange=19:23
+7	rikwé	rikwé	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	2	parataxis	_	TokenRange=24:29
+8	yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	advcl	_	TokenRange=30:36
+9	rirí	rirí	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=37:41
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=41:42
 
 # sent_id = Aguiar1898:5:7:57
 # text = ― Yamanú ramé, maã kití yasú?
