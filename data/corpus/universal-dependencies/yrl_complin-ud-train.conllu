@@ -27466,23 +27466,22 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Aramé/advj, yané/pron2 rikwé/n iké, yamanú rirí/adp yané/pron2 rikwé/n será?
+# inputline = ― Aramé/advj, yané/pron2 rikwé/v2 iké, yamanú rirí/sconj yané/pron2 rikwé/v2 será?
 # text_annotator = Antônio Levy Melo Nogueira
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
-1	―	―	PUNCT	PUNCT	_	8	punct	_	TokenRange=-1:0
-2	Aramé	aramé	ADV	ADVJ	AdvType=Cau	8	advmod	_	SpaceAfter=No|TokenRange=1:6
-3	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=6:7
-4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=8:12
-5	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	8	obl	_	TokenRange=13:18
-6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	8	advmod	_	SpaceAfter=No|TokenRange=19:22
-7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=22:23
-8	yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=24:30
-9	rirí	rirí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=31:35
-10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=36:40
-11	rikwé	sikwé	NOUN	N	Number=Sing|Rel=Cont	8	obj	_	TokenRange=41:46
-12	será	será	PART	PQ	PartType=Int	8	advmod	_	SpaceAfter=No|TokenRange=47:51
-13	?	?	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=51:52
+1	―	―	PUNCT	PUNCT	_	5	punct	_	TokenRange=-1:0
+2	Aramé	aramé	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=1:6
+3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=6:7
+4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	TokenRange=8:12
+5	rikwé	rikwé	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	0	root	_	TokenRange=13:18
+6	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	5	advmod	_	SpaceAfter=No|TokenRange=19:22
+7	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=22:23
+8	yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	11	advcl	_	TokenRange=24:30
+9	rirí	rirí	SCONJ	SCONJ	_	8	mark	_	TokenRange=31:35
+10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	11	nsubj	_	TokenRange=36:40
+11	rikwé	rikwé	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	5	parataxis	_	TokenRange=41:46
+12	será	será	PART	PQ	PartType=Int	11	advmod	_	SpaceAfter=No|TokenRange=47:51
+13	?	?	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Aguiar1898:5:6-1:56-1
 # text = ― Yawé tẽ.
