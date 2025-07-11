@@ -26952,7 +26952,7 @@
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=3:4
 
 # sent_id = Aguiar1898:2:12:23
-# text = ― Ti ana!
+# text = ― Tiana!
 # text_orig = ― 'Tiana!
 # text_source = p. 25
 # text_por = ― Não!
@@ -26960,36 +26960,38 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― No!
-# inputline = ― Ti ana!
+# inputline = ― Tiana/=spl:w|ana!
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	0	root	_	TokenRange=1:3
+2	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:3
 3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=4:7
 4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=7:8
 
 # sent_id = Aguiar1898:3:1:29
-# text = ― Maí waá musapiri pessoa pitera suí yumunhã apigawa?
+# text = ― Maíwaá musapiri pessoa pitera suí yumunhã apigawa?
 # text_orig = Mahi-uahá muçapïri pessôa pïtéra çui iu-munhan apgaua?
 # text_source = p. 27
 # text_por = ― Qual das três pessoas se fez homem?
 # title = TUPANA RAÍRA YANÉ RUKWERA IRUMU
 # title_orig = TUPANA RAHÏRA IANÉ RUQUÈRA IRUMO
-# title_por = INCARNAÇÃO DO FILHO DE DEUS
+# title_por = ENCARNAÇÃO DO FILHO DE DEUS
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Which of the three people became man?
-# inputline = ― Maí/advra waá/rel musapiri pessoa/=n:o|pt:s|pessoa pitera/n suí yumunhã apigawa/n?
+# inputline = ― Maíwaá/=spl:w|waá:x|rel:h|advra musapiri pessoa/=n:o|pt pitera/n suí/adp yumunhã/=mf:m|uyumunhã:n|mid apigawa/n?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	8	punct	_	TokenRange=-1:0
-2	Maí	maí	ADV	ADVRA	AdvType=Man|PronType=Int	8	acl:relcl	_	TokenRange=1:4
-3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	nsubj	_	TokenRange=5:8
+2	Maí	maí	ADV	ADVRA	AdvType=Man|ExtPos=PRON|PronType=Int|Typo=Yes	8	nsubj	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:4
+3	waá	waá	PRON	REL	Number=Sing|PronType=Rel	2	fixed	_	TokenRange=5:8
 4	musapiri	musapiri	NUM	CARD	NumType=Card	5	nummod	_	TokenRange=9:17
-5	pessoa	pessoa	NOUN	N	Number=Sing	8	nsubj	_	Orig=pessoa|OrigLang=por|TokenRange=18:24
+5	pessoa	pessoa	NOUN	N	Number=Sing	6	nmod:poss	_	OrigLang=pt|TokenRange=18:24
 6	pitera	pitera	NOUN	N	Number=Sing	8	obl	_	TokenRange=25:31
 7	suí	suí	ADP	ADP	AdpType=Post	6	case	_	TokenRange=32:35
-8	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=36:43
-9	apigawa	apigawa	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=44:51
+8	yumunhã	munhã	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=36:43
+9	apigawa	apigawa	NOUN	N	Number=Sing	8	xcomp	_	SpaceAfter=No|TokenRange=44:51
 10	?	?	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Aguiar1898:3:2:30
@@ -27003,13 +27005,14 @@
 # text_eng = ― The Son of God.
 # inputline = ― Tupana Raíra.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Tupana	tupana	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=1:7
 3	Raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	0	root	_	SpaceAfter=No|TokenRange=8:13
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = Aguiar1898:3:3:31
-# text = ― Maí taá Tupana raíra yumunhã apigawa?
+# text = ― Maítaá Tupana raíra yumunhã apigawa?
 # text_orig = ― Mahi-tahá Tupana Rahïra iumunhã apgáua?
 # text_source = p. 29
 # text_por = ― Como o Filho de Deus se fez homem?
@@ -27017,15 +27020,16 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― How did the Son of God make himself a man?
-# inputline = ― Maí/advra taá Tupana raíra yumunhã apigawa/n?
+# inputline = ― Maítaá/=spl:w|taá:h|advra Tupana raíra yumunhã/=mf:m|uyumunhã:n|mid apigawa/n?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
-2	Maí	maí	ADV	ADVRA	AdvType=Man|PronType=Int	6	advmod	_	TokenRange=1:4
+2	Maí	maí	ADV	ADVRA	AdvType=Man|PronType=Int|Typo=Yes	6	advmod	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:4
 3	taá	taá	PART	CQ	PartType=Int	6	advmod	_	TokenRange=5:8
 4	Tupana	tupana	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=9:15
 5	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	6	nsubj	_	TokenRange=16:21
-6	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=22:29
-7	apigawa	apigawa	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=30:37
+6	yumunhã	munhã	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=22:29
+7	apigawa	apigawa	NOUN	N	Number=Sing	6	xcomp	_	SpaceAfter=No|TokenRange=30:37
 8	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:3:4:32
@@ -27047,7 +27051,7 @@
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=22:23
 
 # sent_id = Aguiar1898:3:5:33
-# text = ― Mamé taá?
+# text = ― Mamétaá?
 # text_orig = ― Mamé-tahá?
 # text_source = p. 29
 # text_por = ― Onde?
@@ -27055,10 +27059,11 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Where?
-# inputline = ― Mamé/advrc taá?
+# inputline = ― Mamétaá/=spl:w|taá:h|advrc?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=1:5
+2	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:5
 3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=9:10
 
@@ -27071,11 +27076,12 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = In the venter of Virgin Mary.
-# inputline = ― Maria/=n:o|pt:s|maria Virgem/=n:o|pt:s|virgem marika upé/adp.
+# inputline = ― Maria/=n:o|pt Virgem/=a:o|pt marika upé/adp.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
-2	Maria	maria	NOUN	N	Number=Sing	3	nmod:poss	_	Orig=maria|OrigLang=por|TokenRange=1:6
-3	Virgem	virgem	NOUN	N	Number=Sing	4	nmod:poss	_	Orig=virgem|OrigLang=por|TokenRange=7:13
+2	Maria	maria	NOUN	N	Number=Sing	4	nmod:poss	_	OrigLang=pt|TokenRange=1:6
+3	Virgem	virgem	ADJ	A	_	2	amod	_	OrigLang=pt|TokenRange=7:13
 4	marika	marika	NOUN	N	Number=Sing	0	root	_	TokenRange=14:20
 5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=21:24
 6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
@@ -27089,8 +27095,9 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Did the Mother of God always remain a virgin?
-# inputline = ― Tupana Manha upitá upaĩ ara upé/adp Virgem/=n:o|pt:s|virgem?
+# inputline = ― Tupana Manha upitá upaĩ ara upé/adp Virgem/=n:o|pt?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
 2	Tupana	tupana	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=1:7
 3	Manha	manha	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=8:13
@@ -27098,7 +27105,7 @@
 5	upaĩ	upaĩ	DET	TOT	PronType=Tot	6	det	_	TokenRange=20:24
 6	ara	ara	NOUN	N	Number=Sing	4	obl	_	TokenRange=25:28
 7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	TokenRange=29:32
-8	Virgem	virgem	NOUN	N	Number=Sing	4	obj	_	Orig=virgem|OrigLang=por|SpaceAfter=No|TokenRange=33:39
+8	Virgem	virgem	ADJ	A	_	4	xcomp	_	OrigLang=pt|SpaceAfter=No|TokenRange=33:39
 9	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = Aguiar1898:3:8:36
