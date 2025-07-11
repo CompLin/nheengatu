@@ -27119,12 +27119,13 @@
 # text_eng = ― Remained.
 # inputline = ― Upitá.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=1:6
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=6:7
 
 # sent_id = Aguiar1898:3:9:37
-# text = ― Maí taá?
+# text = ― Maítaá?
 # text_orig = ― Mahi-tahá?
 # text_source = p. 29
 # text_por = ― Como?
@@ -27132,10 +27133,11 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― How?
-# inputline = ― Maí/advra taá?
+# inputline = ― Maítaá/=spl:w|taá:h|advra?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Maí	maí	ADV	ADVRA	AdvType=Man|PronType=Int	0	root	_	TokenRange=1:4
+2	Maí	maí	ADV	ADVRA	AdvType=Man|PronType=Int|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:4
 3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=8:9
 
@@ -27201,7 +27203,7 @@
 8	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Aguiar1898:3:15:43
-# text = ― Maã taá rera kwá mysteriu?
+# text = ― Maãtaá rera kwá misteriu?
 # text_orig = ― Maha-tahá rêra quá mysteriu?
 # text_source = p. 29
 # text_por = ― Qual é o nome deste mistério?
@@ -27209,14 +27211,15 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― What is the name of this mystery?
-# inputline = ― Maã/INT taá rera kwá/demx mysteriu/=n:o|pt:s|misterio?
+# inputline = ― Maãtaá/=spl:w|taá:h|int rera kwá/demx misteriu/=n:o|pt:s|mistério?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
-2	Maã	maã	DET	INT	PronType=Int	4	det	_	TokenRange=1:4
-3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	TokenRange=5:8
+2	Maã	maã	DET	INT	PronType=Int|Typo=Yes	4	det	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:4
+3	taá	taá	PART	CQ	PartType=Int	4	advmod	_	TokenRange=5:8
 4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=9:13
 5	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=14:17
-6	mysteriu	mysteriu	NOUN	N	Number=Sing	4	nmod	_	Orig=misterio|OrigLang=por|SpaceAfter=No|TokenRange=18:26
+6	misteriu	misteriu	NOUN	N	Number=Sing	4	nmod	_	Orig=mistério|OrigLang=pt|SpaceAfter=No|TokenRange=18:26
 7	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Aguiar1898:3:16:44
@@ -27287,6 +27290,7 @@
 # text_eng = ― On the cross.
 # inputline = ― Kurusá upé/adp.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Kurusá	kurusá	NOUN	N	Number=Sing	0	root	_	TokenRange=1:7
 3	upé	upé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=8:11
@@ -27300,9 +27304,10 @@
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
-# text_eng = ― By who?
+# text_eng = ― For who?
 # inputline = ― Awá/int rupí?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Awá	awá	PRON	INT	PronType=Int	0	root	_	TokenRange=1:4
 3	rupí	rupí	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=5:9
@@ -27316,9 +27321,10 @@
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
-# text_eng = ― By us.
+# text_eng = ― For us.
 # inputline = ― Yané/pron2 rupí.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	0	root	_	TokenRange=1:5
 3	rupí	rupí	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=6:10
@@ -27335,6 +27341,7 @@
 # text_eng = ― For what?
 # inputline = ― Marama taá?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Marama	marama	ADV	ADVRU	AdvType=Cau|PronType=Int	0	root	_	TokenRange=1:7
 3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	SpaceAfter=No|TokenRange=8:11
@@ -27349,12 +27356,12 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yané/pron pisirú, salvari/=v:o|pt:s|salvar arama/sconj.
+# inputline = ― Yané/pron pisirú/=mf:m|upisirú, salvari/=v:o|pt:s|salvar arama/sconj.
 # text_annotator = Antônio Levy Melo Nogueira
 # reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=1:5
-3	pisirú	pisirú	VERB	V	VerbForm=Inf	0	root	_	SpaceAfter=No|TokenRange=6:12
+3	pisirú	pisirú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=upisirú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=6:12
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
 5	salvari	salvari	VERB	V	VerbForm=Inf	3	conj	_	Orig=salvar|OrigLang=pt|TokenRange=14:21
 6	arama	arama	SCONJ	SCONJ	_	3	mark	_	SpaceAfter=No|TokenRange=22:27
