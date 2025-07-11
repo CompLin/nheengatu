@@ -27401,26 +27401,27 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yakwáu/v arama/adp aé/pron, yasaisú arama/adp aé/pron, yamunhã arama/adp simutara/n iké iwí-pe, ara yawé/indq kurí.
+# inputline = ― Yakwáu/v arama/adp aé/pron, yasaisú arama/adp aé/pron, yamunhã arama/adp simutara/n+ncont iké iwí-pe, ara yawé/indq kurí.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=0:1
 2	Yakwáu	kwáu	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=2:8
 3	arama	arama	ADP	ADP	AdpType=Post	2	case	_	TokenRange=9:14
 4	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	obj	_	SpaceAfter=No|TokenRange=15:17
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=17:18
-6	yasaisú	saisú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	parataxis	_	TokenRange=19:26
+6	yasaisú	saisú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	conj	_	TokenRange=19:26
 7	arama	arama	ADP	ADP	AdpType=Post	6	case	_	TokenRange=27:32
 8	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=33:35
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=35:36
-10	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	6	parataxis	_	TokenRange=37:44
+10	yamunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	conj	_	TokenRange=37:44
 11	arama	arama	ADP	ADP	AdpType=Post	10	case	_	TokenRange=45:50
-12	simutara	simutara	NOUN	N	Number=Sing|Rel=Abs	10	obj	_	TokenRange=51:59
+12	simutara	simutara	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	10	obj	_	TokenRange=51:59
 13	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	10	advmod	_	TokenRange=60:63
 14-15	iwí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=64:70
 14	iwí	iwí	NOUN	N	Number=Sing	10	obl	_	_
 15	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	14	case	_	_
-16	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=70:71
-17	ara	ara	NOUN	N	Number=Sing	10	obj	_	TokenRange=72:75
+16	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=70:71
+17	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=72:75
 18	yawé	yawé	DET	INDQ	PronType=Ind	17	det	_	TokenRange=76:80
 19	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	SpaceAfter=No|TokenRange=81:85
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=85:86
