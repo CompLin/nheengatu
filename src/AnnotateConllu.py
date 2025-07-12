@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: June 25, 2025
+# Last update: July 12, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2119,13 +2119,18 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     handleOrig(new,lemma,orig, orig_form)
     if derivation:
         feats.append(derivation)
-    feats.append(entry['person'])
+    person=entry.get('person')
+    vform=entry.get('vform')
+    if person:
+        feats.append(person)
     number=entry.get('number')
     mood=entry.get('mood')
     if number:
         feats.append(number)
     if mood:
         feats.append(mood)
+    if vform:
+        feats.append(vform)
     tags='+'.join(feats)
     new['parselist']=[[lemma, tags]]
     return new
@@ -2733,16 +2738,17 @@ def getStyle(attribute):
     return mapping.get(attribute)
 
 def applyFunction(function,form,orig=None, orig_form='',xpos=''):
-    new={}
+    new={'parselist' : []}
     form=form.lower()
-    newparselist=[]
-    if function and function == 'mid':
+    if function == 'mid':
         new=handleMiddlePassive(form, orig=orig,orig_form=orig_form)
-        newparselist=new['parselist']
+    elif function == 'v':
+        new=mkVerb(form,orig=orig,orig_form=orig_form)
     else:
-        handleOrig(new,form,orig=orig,orig_form=orig_form,xpos=xpos)
-        newparselist=getparselist(form)
-    return newparselist
+        #newparselist=handleOrig(new,form,orig=orig,orig_form=orig_form,xpos=xpos)
+        #newparselist=getparselist(form)
+        new['parselist']=handleOrig(new,form,orig=orig,orig_form=orig_form,xpos=xpos)
+    return new
 
 def mkConlluSentence(tokens):
     ROOT.clear()
@@ -2787,7 +2793,7 @@ def mkConlluSentence(tokens):
                 else:
                     parselist=getparselist(form.lower())
         if parsed:
-            root=parsed.get('hast_at')
+            root=parsed.get('has_at')
             func=parsed.get('func')
             tag=parsed.get('tag')
             if func:
@@ -2826,9 +2832,15 @@ def mkConlluSentence(tokens):
                 if xpos == 'X':
                     newparselist=mkX(correct)
                 else:
-                    if function and function == 'mid':
+                    if function == 'mid':
                         new=handleMiddlePassive(correct.lower())
                         newparselist=new['parselist']
+                    elif function == 'red':
+                        new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix,position=position)
+                        newparselist=new['parselist']
+                    elif function == 'hwm':
+                        dic.update(handleWronglyMergedWord(correct.lower()))
+                        newparselist=getparselist(correct.lower())
                     else:
                         newparselist=getparselist(correct.lower())
                     if xpos:
@@ -2840,12 +2852,13 @@ def mkConlluSentence(tokens):
                     newparselist=filterparselist(xpos,newparselist)
             elif tag == '=mf':
                 dic.update(mkModernForm(modern,attribute))
-                newparselist=applyFunction(function,form,orig=orig, orig_form=orig_form,xpos=xpos)
-                modernparselist=applyFunction(function,modern,orig=orig, orig_form=orig_form,xpos=xpos)
-                if xpos:
+                newparselist=applyFunction(function,form,orig=orig, orig_form=orig_form,xpos=archpos)['parselist']
+                new=applyFunction(function,modern,orig=orig, orig_form=orig_form,xpos=xpos)
+                modernparselist=new['parselist']
+                '''if xpos:
                     modernparselist=filterparselist(xpos,modernparselist)
                 if archpos:
-                    newparselist=filterparselist(archpos,newparselist)
+                    newparselist=filterparselist(archpos,newparselist)'''
             elif tag == '=adv': # TODO: deprecated and not used hitherto (see mkUpos)
                 newparselist=mkAdv(token)
             elif tag == '=x':
@@ -3302,7 +3315,7 @@ def extractHost(token):
             form=token[:-len(suff)]
             dic['host']={'form': form, 'xpos': tagdic.get('h'), 'correct': tagdic.get('b')}
             dic['word']={'form': suff, 'xpos': tagdic.get('x'), 'correct' : tagdic.get('c')}
-            dic['function']="=hwm" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
+            dic['function']="hwm" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     elif form == 'marã':
@@ -3337,28 +3350,97 @@ def hasNoParse(word):
     parselist=getparselist(word)
     return len(parselist) == 1 and parselist[0][1] == None
 
-def format_word(word_form: str, correct_form: str = '', word_tag: str = '') -> str:
+def _format_word(word_form: str, correct_form: str = '', word_tag: str = '', function_name: str = '') -> str:
     """
-    Format a word according to typo correction and tagging conventions.
+    Format a word with optional typo correction, tagging, and function application.
+
+    There are two modes:
+
+    1. No typo (correct_form is empty): 
+       - Just return word_form or word_form/word_tag.
+
+    2. Typo correction (correct_form is given):
+       - Format as: word_form/=typo:c|correct_form
+       - Add :x|word_tag if word_tag is present
+       - Add :n|function_name if function_name is present
 
     Args:
-        word_form (str): The original word.
-        correct_form (str): The correct form of the word (if a typo is corrected).
-        word_tag (str): A tag for the word (e.g., part-of-speech or function tag).
+        word_form (str): The original (possibly misspelled) word (required).
+        correct_form (str): The corrected form of the word (if any).
+        word_tag (str): XPOS tag (optional).
+        function_name (str): Function label (optional).
 
     Returns:
-        str: The formatted word.
+        str: A formatted string for annotation.
     """
-    typo = f"=typo:c|{correct_form}" if correct_form else ""
+    if not word_form:
+        raise ValueError("word_form is required and cannot be empty.")
 
-    if correct_form and word_tag:
-        return f"{word_form}/{typo}:x|{word_tag}"
-    elif correct_form:
-        return f"{word_form}/{typo}"
-    elif word_tag:
-        return f"{word_form}/{word_tag}"
+    if correct_form:
+        # Typo correction mode
+        base = f"=typo:c|{correct_form}"
+        if word_tag:
+            base += f":x|{word_tag}"
+        if function_name:
+            base += f":n|{function_name}"
+        return f"{word_form}/{base}"
     else:
-        return word_form
+        # No typo: just tag if provided
+        return f"{word_form}/{word_tag}" if word_tag else word_form
+
+def format_word(word_form: str, correct_form: str = '', word_tag: str = '', function_name: str = '') -> str:
+    """
+    Format a word according to typo correction, tagging, and functional annotation.
+
+    There are two modes:
+
+    1. Typo correction mode: if `correct_form` is provided and differs from `word_form`.
+       - Format: word_form/=typo:c|correct_form[:x|word_tag][:n|function_name]
+
+    2. Tag-only mode: if no `correct_form` is provided.
+       - Format: word_form or word_form/word_tag
+
+    Args:
+        word_form (str): The original word form.
+        correct_form (str, optional): The corrected form if the word contains a typo.
+        word_tag (str, optional): Morphosyntactic tag (e.g., part-of-speech).
+        function_name (str, optional): Function name for parser behavior or glossing.
+
+    Returns:
+        str: A formatted annotation string.
+
+    Raises:
+        ValueError: If `word_form` is empty, or `correct_form` equals `word_form`.
+
+    Examples:
+        >>> format_word('ne')
+        'ne'
+        >>> format_word('ne', word_tag='pron2')
+        'ne/pron2'
+        >>> format_word('n', 'ne')
+        'n/=typo:c|ne'
+        >>> format_word('n', 'ne', 'pron2')
+        'n/=typo:c|ne:x|pron2'
+        >>> format_word('n', 'ne', 'pron2', 'hwm')
+        'n/=typo:c|ne:x|pron2:n|hwm'
+    """
+
+    if not word_form:
+        raise ValueError("word_form is required and cannot be empty.")
+
+    if correct_form:
+        if word_form == correct_form:
+            raise ValueError("word_form and correct_form must differ in typo mode.")
+
+        base = f"=typo:c|{correct_form}"
+        if word_tag:
+            base += f":x|{word_tag}"
+        if function_name:
+            base += f":n|{function_name}"
+        return f"{word_form}/{base}"
+
+    # No typo
+    return f"{word_form}/{word_tag}" if word_tag else word_form
 
 
 def splitMultiWordTokens(tokens):
@@ -3395,18 +3477,25 @@ def splitMultiWordTokens(tokens):
             if word:
                 func=dic.get('function')
                 host_tag=host.get('xpos')
-                if host_tag:
-                    host_tag=f"{func}:x|{host_tag}"
-                else:
-                    host_tag=f"{func}"
+                #if host_tag:
+                #    host_tag=f"{func}:x|{host_tag}"
+                #else:
+                #    host_tag=f"{func}"
                 word_tag=word.get('xpos')
                 correct_form=word.get('correct')
                 host_form=host.get('form')
                 correct_host_form=host.get('correct')
                 word_form=word.get('form')
                 word_form=format_word(word_form, correct_form, word_tag)
-                host_form=f"{host_form}/{host_tag}"
-                #host_form=format_word(host_form, correct_host_form, host_tag)
+                #host_form=f"{host_form}/{host_tag}"
+                if correct_host_form:
+                    host_form=format_word(host_form, correct_host_form, host_tag,func)
+                else:
+                    if host_tag:
+                        host_tag=f"={func}:x|{host_tag}"
+                    else:
+                        host_tag=f"={func}"
+                    host_form=f"{host_form}/{host_tag}"
                 '''
                 host_form=f"{host_form}/{host_tag}"
                 typo=f"=typo:c|{correct_form}"

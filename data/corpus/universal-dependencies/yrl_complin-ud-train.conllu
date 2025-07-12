@@ -27356,14 +27356,14 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yané/pron pisirú/=mf:m|upisirú, salvari/=v:o|pt:s|salvar arama/sconj.
+# inputline = ― Yané/pron pisirú/=mf:m|upisirú, salvari/=mf:m|usalvari:o|pt:s|salvar:n|v arama/sconj.
 # text_annotator = Antônio Levy Melo Nogueira
 # reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
 2	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=1:5
 3	pisirú	pisirú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=upisirú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=6:12
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
-5	salvari	salvari	VERB	V	VerbForm=Inf	3	conj	_	Orig=salvar|OrigLang=pt|TokenRange=14:21
+5	salvari	salvari	VERB	V	Style=Arch|VerbForm=Inf	3	conj	_	ModernForm=usalvari|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|Orig=salvar|OrigLang=pt|TokenRange=14:21
 6	arama	arama	SCONJ	SCONJ	_	3	mark	_	SpaceAfter=No|TokenRange=22:27
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
