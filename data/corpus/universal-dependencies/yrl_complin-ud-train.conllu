@@ -27437,39 +27437,41 @@
 # text_eng = TODO
 # inputline = ― Yamanú rirí/sconj?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=1:7
 3	rirí	rirí	SCONJ	SCONJ	_	2	mark	_	SpaceAfter=No|TokenRange=8:12
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Aguiar1898:5:4:54
-# text = ― Yapituú reté arama, yané ruri arama upaĩ ara iwaka upé, Tupana Yané Yara ruakí.
-# text_orig = ― Iá-pïtïhú-retê arama, ianê rurï arama upàin ara iuaca upé, Tupana Ianê Iara ruakï.
+# text = ― Yapituúreté arama, yané ruri arama upaĩ ara iwaka upé, Tupana Yané Yara ruakí.
+# text_orig = ― Iá-pïtïhù-retê arama, ianê rurï arama upàin ara iuaca upé, Tupana Ianê Iara ruakï.
 # text_source = p. 33
 # text_por = ― Para descansarmos de todo, para gozarmos eternamente no Céu, junto a Deus Nosso Senhor.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yapituú reté/advs arama/adp, yané/pron ruri arama/adp upaĩ ara iwaka upé/adp, Tupana Yané/pron2 Yara/n ruakí.
+# inputline = ― Yapituúreté/=spl:w|reté:x|advs arama/sconj, yané/pron2 rurí arama/adp upaĩ ara iwaka upé/adp, Tupana Yané/pron2 Yara/n ruakí.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
-2	Yapituú	pituú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=1:8
-3	reté	reté	ADV	ADVS	AdvType=Deg	2	obl	_	TokenRange=9:13
-4	arama	arama	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=14:19
+2	Yapituú	pituú	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:8
+3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=9:13
+4	arama	arama	SCONJ	SCONJ	_	2	mark	_	SpaceAfter=No|TokenRange=14:19
 5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
-6	yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	7	nsubj	_	ModernForm=yandé|ModernLemma=yandé|TokenRange=21:25
-7	ruri	ruri	VERB	V	VerbForm=Inf	2	parataxis	_	TokenRange=26:30
+6	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	TokenRange=21:25
+7	rurí	rurí	VERB	V2	Mood=Ind|Rel=Cont|VerbForm=Fin	2	conj	_	TokenRange=26:30
 8	arama	arama	ADP	ADP	AdpType=Post	7	case	_	TokenRange=31:36
 9	upaĩ	upaĩ	DET	TOT	PronType=Tot	10	det	_	TokenRange=37:41
-10	ara	ara	NOUN	N	Number=Sing	7	obj	_	TokenRange=42:45
+10	ara	ara	NOUN	N	Number=Sing	7	obl	_	TokenRange=42:45
 11	iwaka	iwaka	NOUN	N	Number=Sing	7	obl	_	TokenRange=46:51
 12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=52:55
-13	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=55:56
-14	Tupana	tupana	NOUN	N	Number=Sing	7	obj	_	TokenRange=57:63
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=55:56
+14	Tupana	tupana	NOUN	N	Number=Sing	7	obl	_	TokenRange=57:63
 15	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=64:68
-16	Yara	yara	NOUN	N	Number=Sing	14	obl	_	TokenRange=69:73
-17	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	16	case	_	SpaceAfter=No|TokenRange=74:79
+16	Yara	yara	NOUN	N	Number=Sing	14	appos	_	TokenRange=69:73
+17	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	14	case	_	SpaceAfter=No|TokenRange=74:79
 18	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=79:80
 
 # sent_id = Aguiar1898:5:5:55
@@ -27540,28 +27542,30 @@
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=41:42
 
 # sent_id = Aguiar1898:5:7:57
-# text = ― Yamanú ramé, maã kití yasú?
-# text_orig = ― Ià manú ramé, mahá-kïtï iáçù?
+# text = ― Yamanú ramé, makití yasú?
+# text_orig = ― Ià manú ramé, mahá-kïtï iá-çù?
 # text_source = p. 33
 # text_por = ― Quando morrermos, para onde vamos?
 # text_sec = ― Yamanú ramé, makití yasú?
-# text_por_sec = ― Quando morremos, para onde vamos?
+# text_por_sec = ― Quando morremos, para onde vamos.
+# text_por_sec_corr = ― Quando morremos, para onde vamos?
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Yamanú ramé/sconj, maã/cond kití yasú?
+# inputline = — Yamanú ramé/sconj, maãkití/=typo:c|makití:x|advrc yasú?
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	7	punct	_	TokenRange=-1:0
-2	Yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	7	advcl	_	TokenRange=1:7
+# cross_reference = Avila2021:0:0:43
+# reviewer1 = Leonel Figueiredo de Alencar
+1	—	—	PUNCT	PUNCT	_	6	punct	_	TokenRange=-1:0
+2	Yamanú	manú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	6	advcl	_	TokenRange=1:7
 3	ramé	ramé	SCONJ	SCONJ	_	2	mark	_	SpaceAfter=No|TokenRange=8:12
 4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=12:13
-5	maã	maã	PART	COND	Modality=Cond|PartType=Mod	2	advmod	_	TokenRange=14:17
-6	kití	kití	ADP	ADP	AdpType=Post	7	case	_	TokenRange=18:22
-7	yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=23:27
-8	?	?	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=27:28
+5	maãkití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int|Typo=Yes	6	advmod	_	CorrectForm=makití|TokenRange=14:21
+6	yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=22:26
+7	?	?	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Aguiar1898:6:1:59
 # text = ― Yepé mira yusalvari-kwáu, ti ramé uruyari, ti ramé yumuseruka?
