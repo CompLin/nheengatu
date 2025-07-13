@@ -24991,25 +24991,26 @@
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
 # sent_id = Hartt1938:0:0:555
-# text = I katú nhunte ikú, intí awá i maasí.
+# text = I katú nhunte ikú, intí awá i masí.
 # text_por = Assim, assim, ninguém está doente.
 # text_source = p. 359, No. 555
 # text_orig = ikatú ñúnte ikó, intí auá imasy.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = I/pron2 katú/v2 nhunte/=mf:m|nhuntu:h|adv ikú/=mf:m|uikú:x|v:h|v, intí awá/ind i/pron2 maasí/v2.
+# inputline = I/pron2 katú/v2 nhunte ikú/=mf:m|uikú:x|v:h|v, intí awá/ind i/pron2 masí/v2.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:1
 2	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=2:6
-3	nhunte	nhunte	ADV	ADV	_	2	advmod	_	ModernForm=nhuntu|TokenRange=7:13
-4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=14:17
+3	nhunte	nhunte	ADV	ADV	_	2	advmod	_	TokenRange=7:13
+4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=14:17
 5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=17:18
 6	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=19:23
 7	awá	awá	PRON	IND	PronType=Ind	9	nsubj	_	TokenRange=24:27
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	expl	_	TokenRange=28:29
-9	maasí	maasí	VERB	V2	Mood=Ind|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=30:35
-10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=35:36
+9	masí	masí	VERB	V2	Mood=Ind|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=30:34
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Hartt1938:0:0:570
 # text = Xasú ranhẽ se ruka upé wariwa piamu yaú arama.
@@ -25723,12 +25724,12 @@
 # text_por_sec = Joaquim está doente, ele caiu do cavalo e quebrou seu braço, agora está um pouco melhor.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Joakin/=p i/pron2 maasí/v2 ikú/=mf:m|uikú:x|v:h|v, uwari kawarú ara suí, umupena i/pron2 yuwá, kuíri i/pron2 katú/v2 mirĩ/advs wã uikú/v.
+# inputline = Joakin/=p i/pron2 maasí/v2 ikú/=mf:m|uikú:x|v:h|v, uwari kawarú ara suí/adp, umupena i/pron2 yuwá, kuíri i/pron2 katú/v2 mirĩ/advs wã uikú/v.
 # text_annotator = Dominick Maia Alexandre
 1	Joakin	joakin	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:6
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=7:8
 3	maasí	maasí	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=9:14
-4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	3	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbform=Fin|SpaceAfter=No|TokenRange=15:18
+4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	3	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=15:18
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=18:19
 6	uwari	wari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=20:25
 7	kawarú	kawarú	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=26:32
@@ -27095,7 +27096,7 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = ― Did the Mother of God always remain a virgin?
-# inputline = ― Tupana Manha upitá upaĩ ara upé/adp Virgem/=n:o|pt?
+# inputline = ― Tupana Manha upitá upaĩ ara upé/adp Virgem/=a:o|pt?
 # text_annotator = Antônio Levy Melo Nogueira
 # reviewer1 = Leonel Figueiredo de Alencar
 1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
@@ -27444,7 +27445,7 @@
 4	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Aguiar1898:5:4:54
-# text = ― Yapituúreté arama, yané ruri arama upaĩ ara iwaka upé, Tupana Yané Yara ruakí.
+# text = ― Yapituúreté arama, yané rurí arama upaĩ ara iwaka upé, Tupana Yané Yara ruakí.
 # text_orig = ― Iá-pïtïhù-retê arama, ianê rurï arama upàin ara iuaca upé, Tupana Ianê Iara ruakï.
 # text_source = p. 33
 # text_por = ― Para descansarmos de todo, para gozarmos eternamente no Céu, junto a Deus Nosso Senhor.
@@ -27542,7 +27543,7 @@
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=41:42
 
 # sent_id = Aguiar1898:5:7:57
-# text = ― Yamanú ramé, makití yasú?
+# text = — Yamanú ramé, maãkití yasú?
 # text_orig = ― Ià manú ramé, mahá-kïtï iá-çù?
 # text_source = p. 33
 # text_por = ― Quando morrermos, para onde vamos?
@@ -27586,7 +27587,7 @@
 2	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	3	det	_	TokenRange=2:6
 3	mira	mira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=7:11
 4-5	yusalvari-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=12:26
-4	yusalvari	salvari	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	0	root	_	ModernForm=uyusalvari|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin
+4	yusalvari	salvari	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	0	root	_	ModernForm=uyusalvari|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|Orig=salvar|OrigLang=pt
 5	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	4	aux	_	_
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=26:27
 7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=28:30
