@@ -19218,9 +19218,9 @@
 
 # sent_id = Amorim1928:10:18:18
 # text = Amurupí paá aintá usaã ana aintá piá.
-# text_por = Amu rupi paa aetá osaan ana aetá pŷá.
+# text_por = Já diferente, contam, elas sentiram seu coração.
 # text_source = p. 222, No. 18
-# text_orig = Já diferente, contam, elas sentiram seu coração.
+# text_orig = Amu rupi paa aetá osaan ana aetá pŷá.
 # title_orig = PARAMAN DUHI YRUMO
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
@@ -19346,8 +19346,41 @@
 12	rupí	rupí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=52:56
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=56:57
 
+# sent_id = Amorim1928:10:85:85
+# text = Pisayé ramé ana Paramã usemu yuíri yepé rukena rupí, Duí amú rupí, yeperesé aintá mukũi usú igarapawa kití.
+# text_por = Quando já meia noite Paraman saiu de novo por uma porta, Duhi por outra, foram imediatamente todas duas para o porto.
+# text_source = p. 225, No. 85
+# text_orig = Pysaié ramé ana Paraman osemo iuŷre iepé rokena rupi, Duhi amu rupi, iepéresé aetá mukũe osu ygarapaua ketŷ.
+# title_orig = PARAMAN DUHI YRUMO
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Pisayé ramé/adp ana Paramã/=p usemu yuíri/advt yepé/art rukena rupí, Duí/=p amú/ind rupí, yeperesé aintá/pron mukũi/card usú igarapawa kití.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Pisayé	pisayé	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=7:11
+3	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=12:15
+4	Paramã	paramã	PROPN	PROPN	_	5	nsubj	_	TokenRange=16:22
+5	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:28
+6	yuíri	yuíri	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=29:34
+7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=35:39
+8	rukena	ukena	NOUN	N	Number=Sing|Rel=Cont	5	obl	_	TokenRange=40:46
+9	rupí	rupí	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=47:51
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=51:52
+11	Duí	duí	PROPN	PROPN	_	5	conj	_	TokenRange=53:56
+12	amú	amú	PRON	IND	Number=Sing|PronType=Ind	11	orphan	_	TokenRange=57:60
+13	rupí	rupí	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=61:65
+14	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=65:66
+15	yeperesé	yeperesé	ADV	ADVT	AdvType=Tim	18	advmod	_	TokenRange=67:75
+16	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	18	nsubj	_	TokenRange=76:81
+17	mukũi	mukũi	NUM	CARD	NumType=Card	16	nummod	_	TokenRange=82:87
+18	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=88:91
+19	igarapawa	igarapawa	NOUN	N	Number=Sing	18	obl	_	TokenRange=92:101
+20	kití	kití	ADP	ADP	AdpType=Post	19	case	_	SpaceAfter=No|TokenRange=102:106
+21	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=106:107
+
 # sent_id = Amorim1928:10:80:80
-# text = Paraman, Duhi, sasiára usasáu nhaã ara.
+# text = Paraman, Duí, sasiára usasáu nhaã ara.
 # text_por = Paraman, Duhi, passaram tristes aquele dia.
 # text_source = p. 355-369, No. 80
 # text_orig = Paraman, Duhi, sasyara osasau nhaa ara.
@@ -19360,7 +19393,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Paraman	paraman	PROPN	PROPN	_	6	nsubj	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
-3	Duhi	duhi	PROPN	PROPN	_	1	conj	_	SpaceAfter=No|TokenRange=9:13
+3	Duí	duí	PROPN	PROPN	_	1	conj	_	SpaceAfter=No|TokenRange=9:13
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
 5	sasiára	sasiára	ADJ	A	_	6	xcomp	_	TokenRange=15:22
 6	usasáu	sasáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:29
