@@ -21353,10 +21353,10 @@
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hartt1938:0:0:61
-# text = Uyupukwáu reté kwaá tapiira kaaiwara.
+# text = Yupukwáu reté kwaá tapira kaawara.
 # text_por = Aquela anta está muito mansa.
 # text_source = p. 323, No. 61
-# text_orig = yupukuáu reté kuaé tapyra kaauaira.
+# text_orig = yupukuáu reté kuaé tapyra kaauára.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
@@ -21364,15 +21364,15 @@
 # text_por_sec = Essa anta está muito mansa.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Uyupukwáu reté/advs kwaá/demx tapiira kaaiwara/a.
+# inputline = Yupukwáu/=mf:m|Uyupukwáu reté/advs kwaá/demx tapira kaawara/a.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Uyupukwáu	yupukwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:9
-2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=10:14
-3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=15:19
-4	tapiira	tapiira	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=20:27
-5	kaaiwara	kaaiwara	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=28:36
-6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
+1	Yupukwáu	yupukwáu	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=Uyupukwáu|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=0:8
+2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=9:13
+3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=14:18
+4	tapira	tapira	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=19:25
+5	kaawara	kaawara	ADJ	A	_	4	amod	_	SpaceAfter=No|TokenRange=26:33
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = Hartt1938:0:0:62
 # text = Esenúi kurumĩ ixéu.
@@ -21570,7 +21570,7 @@
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=13:14
 
 # sent_id = Hartt1938:0:0:75
-# text = Kwaá kurumĩ sesangá reté.
+# text = Kwaá kurunú sesangá reté.
 # text_por = Este menino chora muito.
 # text_source = p. 324, No. 75
 # text_orig = kuaá kurunú sesaná reté.
@@ -21581,11 +21581,11 @@
 # text_por_sec = Este menino chora muito.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Kwaá/demx kurumĩ sesangá reté/advs.
+# inputline = Kwaá/demx kurunú/=typo:c|kurumĩ sesangá reté/advs.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
-2	kurumĩ	kurumĩ	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:11
+2	kurunú	kurumĩ	NOUN	N	Number=Sing|Typo=Yes	3	nsubj	_	CorrectForm=kurumĩ|TokenRange=5:11
 3	sesangá	resangá	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=12:19
 4	reté	reté	ADV	ADVS	AdvType=Deg	3	advmod	_	SpaceAfter=No|TokenRange=20:24
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
