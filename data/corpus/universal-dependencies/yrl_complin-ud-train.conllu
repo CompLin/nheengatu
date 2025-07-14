@@ -19851,6 +19851,85 @@
 12	suí	suí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=40:43
 13	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=43:44
 
+# sent_id = Amorim1928:29:20:20
+# text = Kurumiwasú suá amurupí katú upitá, kirirí nhuntu aé usú pé rupí.
+# text_por = O rosto do moço ficou deveras diferente, sem dizer nada ele partiu pelo caminho.
+# text_source = p. 441-446, No. 20
+# text_orig = Kurumiuasu suá amu rupi katu opytá, kiriri nhunto aé osu pe rupi.
+# title_orig = UANARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Kurumiwasú suá/=mf:m|ruá:h|ncont amurupí/adva katú/advs upitá, kirirí/a nhuntu aé/pron usú pé rupí.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	2	nmod:poss	_	TokenRange=0:10
+2	suá	suá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	5	nsubj	_	ModernForm=ruá|ModernRel=Cont|TokenRange=11:14
+3	amurupí	amurupí	ADV	ADVA	AdvType=Man	5	xcomp	_	TokenRange=15:22
+4	katú	katú	ADV	ADVS	AdvType=Deg	3	advmod	_	TokenRange=23:27
+5	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=28:33
+6	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=33:34
+7	kirirí	kirirí	ADJ	A	_	10	advcl	_	TokenRange=35:41
+8	nhuntu	nhuntu	ADV	ADV	_	7	advmod	_	TokenRange=42:48
+9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=49:51
+10	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=52:55
+11	pé	pé	NOUN	N	Number=Sing|Rel=Abs	10	obl	_	TokenRange=56:58
+12	rupí	rupí	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=59:63
+13	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=63:64
+
+# sent_id = Amorim1928:29:21:21
+# text = Mukũi yasí riré paá nhaã Kurumiwasú uyuíri, amurupí ana aé uyukwáu, puranga, surí i suá.
+# text_por = Duas luas depois, contam, esse moço voltou, apareceu já de outro jeito, bonito, alegre era seu rosto.
+# text_source = p. 441-446, No. 21
+# text_orig = Mukũe iasy riré paa nhaa kurumiuasu oiuŷre, amu rupi ana aé oiukuau, puranga, sury i suá.
+# title_orig = UANARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Mukũi/card yasí/n riré/adp paá nhaã Kurumiwasú uyuíri, amurupí ana aé/pron uyukwáu, puranga/a, surí i/pron2 suá/ncont.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Mukũi	mukũi	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:5
+2	yasí	yasí	NOUN	N	Number=Sing	7	obl	_	TokenRange=6:10
+3	riré	riré	ADP	ADP	AdpType=Post	2	case	_	TokenRange=11:15
+4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=16:19
+5	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=20:24
+6	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=25:35
+7	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=36:42
+8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=42:43
+9	amurupí	amurupí	ADV	ADVA	AdvType=Man	12	xcomp	_	TokenRange=44:51
+10	ana	ana	PART	PFV	Aspect=Perf	12	advmod	_	TokenRange=52:55
+11	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	TokenRange=56:58
+12	uyukwáu	yukwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=59:66
+13	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=66:67
+14	puranga	puranga	ADJ	A	_	9	conj	_	SpaceAfter=No|TokenRange=68:75
+15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=75:76
+16	surí	rurí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	12	parataxis	_	TokenRange=77:81
+17	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	18	nmod:poss	_	TokenRange=82:83
+18	suá	suá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	16	nsubj	_	SpaceAfter=No|TokenRange=84:87
+19	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=87:88
+
+# sent_id = Amorim1928:29:53:53
+# text = Mairamé kunhã usika ukupé amurupí ana amú-etá umaã aé.
+# text_por = Quando a mulher chegou em casa já de outro modo os outros a olhavam.
+# text_source = p. 443, No. 53
+# text_orig = Maeramé kunhan osyka okupé amu rupi ana amuetá omaan aé.
+# title_orig = UANARE
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Mairamé/sconjr kunhã usika ukupé/=spl:w|upé:b|uka:x|adp amurupí/adva ana amú-etá/ind umaã aé/pron.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
+2	kunhã	kunhã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=8:13
+3	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	advcl	_	TokenRange=14:19
+4	uk	uka	NOUN	N	Number=Sing|Rel=Abs|Typo=Yes	3	obl	_	CorrectForm=uka|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=20:22
+5	upé	upé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=23:26
+6	amurupí	amurupí	ADV	ADVA	AdvType=Man	3	advcl	_	TokenRange=27:34
+7	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=35:38
+8	amú-etá	amú	PRON	IND	Number=Plur|PronType=Ind	9	nsubj	_	TokenRange=39:46
+9	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=47:51
+10	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	9	obj	_	SpaceAfter=No|TokenRange=52:54
+11	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=54:55
+
 # sent_id = Amorim1928:29:73:73
 # text = Kũi ana repi sika aintá xasú pukusawa xamunhã mukũi urusakanga yarasú arama aintá.
 # text_eng = Go get them now while I make two urusakanga baskets so we can carry them.
