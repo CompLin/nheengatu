@@ -26217,7 +26217,7 @@
 
 # sent_id = Hartt1938:3:64:917
 # text = Intí xaputari, intí raẽ usika akayú, intí xamunhã-kwáu maã se rimirikú supé, intí xamunhã-kwáu urupema, nẽ tipití nẽ urusakanga, aresé ra paá intí xamenari-putari, kurumú taá se raixú se yakáu.
-# text_por = Não quero, ainda não bastantes anos, não sei fazer nada para minha mulher, não sei fazer nem urupemas nem orasacangas nem tipitís, por isso parece-me que não quero casar, minha sogra podia me ralhar.
+# text_por = Não quero, ainda não bastantes anos, não sei fazer nada para minha mulher, não sei fazer nem urupemas nem uruçacangas nem tipitis, por isso parece-me que não quero casar, minha sogra podia me ralhar.
 # text_source = p. 389, No. 64
 # text_orig = intí xaputár, intí raén osyk akayú, intí xamañan kuáu maé seremirikó supe, intí xamuñan kuáu oropema, nen tipití nen orosakana, aresé rapaa intí xamenar putar, koromo teé seraixú seakáua.
 # text_eng = TODO
@@ -26225,48 +26225,49 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Intí xaputari, intí raẽ usika akayú, intí xamunhã-kwáu maã/ind se rimirikú supé, intí xamunhã-kwáu urupema, nẽ/cconj tipití nẽ/cconj urusakanga, aresé ra paá intí xamenari-putari, kurumú/advj taá se raixú se/=mf:m|ixé yakáu/=mf:m|uyakáu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2	xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aputari|SpaceAfter=No|TokenRange=5:13
 3	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=13:14
 4	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=15:19
 5	raẽ	raẽ	PART	IMPF	Aspect=Imp	6	advmod	_	TokenRange=20:23
 6	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=24:29
-7	akayú	akayú	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=30:35
+7	akayú	akayú	NOUN	N	Number=Sing	6	nsubj	_	SpaceAfter=No|TokenRange=30:35
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=35:36
 9	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=37:41
 10-11	xamunhã-kwáu	_	_	_	_	_	_	_	TokenRange=42:54
-10	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	6	parataxis	_	ModernForm=amunhã
+10	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	6	conj	_	ModernForm=amunhã
 11	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	10	aux	_	_
 12	maã	maã	PRON	IND	PronType=Ind	10	obj	_	TokenRange=55:58
 13	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	14	nmod:poss	_	TokenRange=59:61
-14	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	10	obl	_	TokenRange=62:70
+14	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	10	iobj	_	TokenRange=62:70
 15	supé	supé	ADP	ADP	AdpType=Post	14	case	_	SpaceAfter=No|TokenRange=71:75
 16	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=75:76
 17	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	18	advmod	_	TokenRange=77:81
 18-19	xamunhã-kwáu	_	_	_	_	_	_	_	TokenRange=82:94
-18	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	10	parataxis	_	ModernForm=amunhã
+18	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	6	conj	_	ModernForm=amunhã
 19	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	18	aux	_	_
 20	urupema	urupema	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=95:102
 21	,	,	PUNCT	PUNCT	_	23	punct	_	TokenRange=102:103
 22	nẽ	nẽ	CCONJ	CCONJ	_	23	cc	_	TokenRange=104:106
 23	tipití	tipití	NOUN	N	Number=Sing	20	conj	_	TokenRange=107:113
 24	nẽ	nẽ	CCONJ	CCONJ	_	25	cc	_	TokenRange=114:116
-25	urusakanga	urusakanga	NOUN	N	Number=Sing	23	conj	_	SpaceAfter=No|TokenRange=117:127
+25	urusakanga	urusakanga	NOUN	N	Number=Sing	20	conj	_	SpaceAfter=No|TokenRange=117:127
 26	,	,	PUNCT	PUNCT	_	31	punct	_	TokenRange=127:128
 27	aresé	aresé	ADV	ADVJ	AdvType=Cau	31	advmod	_	TokenRange=129:134
 28	ra	ra	PART	FOC	Foc=Yes|PartType=Emp	31	advmod	_	TokenRange=135:137
 29	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	31	advmod	_	TokenRange=138:141
 30	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	31	advmod	_	TokenRange=142:146
 31-32	xamenari-putari	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=147:162
-31	xamenari	menari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	18	parataxis	_	ModernForm=amenari
+31	xamenari	menari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	6	parataxis	_	ModernForm=amenari
 32	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	31	aux	_	_
 33	,	,	PUNCT	PUNCT	_	39	punct	_	TokenRange=162:163
-34	kurumú	kurumú	ADV	ADVJ	AdvType=Cau	39	advmod	_	TokenRange=164:170
+34	kurumú	kurumú	SCONJ	SCONJR	_	39	mark	_	TokenRange=164:170
 35	taá	taá	PART	CQ	PartType=Int	39	advmod	_	TokenRange=171:174
 36	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	37	nmod:poss	_	TokenRange=175:177
 37	raixú	taixú	NOUN	N	Number=Sing|Rel=Cont	39	nsubj	_	TokenRange=178:183
 38	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	39	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=184:186
-39	yakáu	yakáu	VERB	V	Style=Arch|VerbForm=Inf	31	parataxis	_	ModernForm=uyakáu|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=187:192
+39	yakáu	yakáu	VERB	V	Style=Arch|VerbForm=Inf	31	advcl	_	ModernForm=uyakáu|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=187:192
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=192:193
 
 # sent_id = Hartt1938:3:65:918
