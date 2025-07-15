@@ -28637,7 +28637,7 @@
 13	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=68:69
 
 # sent_id = Aguiar1898:21-7:2:183
-# text = Tupana upawa ana i munhãsawa umunhã waá ara pú-mukũi upé.
+# text = Tupana upáu ana i munhãsawa umunhã waá ara pú-mukũi upé.
 # text_orig = Tupana u-páuana i-munhançáua u-munhan uahá ara pu-mucûin upé.
 # text_source = p. 73
 # text_por = Deus acabou a criação de tudo o que fez no sétimo dia.
@@ -28652,18 +28652,17 @@
 # inputline = Tupana upawa ana i/pron2 munhãsawa umunhã waá/rel ara pú-mukũi upé/adp.
 # text_annotator = Letícia Farias Nunes
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	upawa	pawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
-3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:16
-4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:18
-5	munhãsawa	munhãsawa	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=19:28
-6	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=29:35
-7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	nsubj	_	TokenRange=36:39
-8	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=40:43
-9	pú-mukũi	pú-mukũi	NUM	CARD	NumType=Card	8	nummod	_	TokenRange=44:52
-10	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=53:56
-11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=56:57
+2	upáu	páu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:11
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=12:15
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=16:17
+5	munhãsawa	munhãsawa	NOUN	N	Number=Sing	2	obj	_	TokenRange=18:27
+6	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl:relcl	_	TokenRange=28:34
+7	waá	waá	PRON	REL	Number=Sing|PronType=Rel	6	obj	_	TokenRange=35:38
+8	ara	ara	NOUN	N	Number=Sing	2	obl	_	TokenRange=39:42
+9	pú-mukũi	pú-mukũi	NUM	CARD	NumType=Card	8	nummod	_	TokenRange=43:51
+10	upé	upé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=52:55
+11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
 # sent_id = Aguiar1898:21-8:15:215
 # text = Yané Yara Tupana unheẽ kunhã supé: — Maã taá remunhã yawé?
