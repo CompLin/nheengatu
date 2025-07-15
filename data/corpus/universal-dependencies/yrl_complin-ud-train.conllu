@@ -5471,12 +5471,11 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1-2	Sakakwerantu	_	_	_	_	_	_	_	TokenRange=0:13
 1	Sakakwera	rakakwera	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	7	obl	_	_
-2	ntu	ntu	ADV	ADV	Clitic=Yes	7	advmod	_	_
+2	ntu	ntu	ADV	ADV	Clitic=Yes	1	advmod	_	_
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=15:18
-4	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=18:19
 5	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	6	det	_	TokenRange=20:24
 6	apigá	apigá	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=25:30
 7	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=31:34
@@ -5485,7 +5484,7 @@
 10	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=43:47
 11	mirá-piranga	mirá-piranga	NOUN	N	Number=Sing	9	obj	_	SpaceAfter=No|TokenRange=48:60
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=60:61
-13	kurupira	kurupira	NOUN	N	Number=Sing	9	obl	_	TokenRange=62:70
+13	kurupira	kurupira	NOUN	N	Number=Sing	11	nmod	_	TokenRange=62:70
 14	yara	yara	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=71:75
 15	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=75:76
 
@@ -5535,10 +5534,11 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kutara	kutara	ADV	ADVA	AdvType=Man|ExtPos=ADV	5	advmod	_	TokenRange=0:6
 2	nungara	nungara	NOUN	N	Number=Sing	1	fixed	_	TokenRange=7:14
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=15:18
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=18:19
 5	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=20:25
 6	kurupira	kurupira	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=26:34
 7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=34:35
@@ -5547,12 +5547,12 @@
 10	mirá-piranga	mirá-piranga	NOUN	N	Number=Sing	8	obj	_	SpaceAfter=No|TokenRange=47:59
 11	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=59:60
 12	asuí	asuí	ADV	ADVT	AdvType=Tim	13	advmod	_	TokenRange=61:65
-13	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=66:71
+13	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=66:71
 14	musapiri	musapiri	NUM	CARD	NumType=Card	15	nummod	_	TokenRange=72:80
 15	viáji	viáji	NOUN	N	Number=Sing	13	obl	_	SpaceAfter=No|TokenRange=81:86
 16	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=86:87
 17	ariré	ariré	ADV	ADVT	AdvType=Tim	18	advmod	_	TokenRange=88:93
-18	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=94:97
+18	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	parataxis	_	TokenRange=94:97
 19	ã	ã	PART	PFV	Aspect=Perf	18	advmod	_	TokenRange=98:99
 20	yuíri	yuíri	ADV	ADVT	AdvType=Tim	18	advmod	_	SpaceAfter=No|TokenRange=100:105
 21	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=105:106
@@ -5569,22 +5569,23 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:3
 2	apigá	apigá	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=4:9
 3	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:13
 4	yuíri	yuíri	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=14:19
 5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	SpaceAfter=No|TokenRange=20:23
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
-7	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obj	_	TokenRange=25:34
+7	sakakwera	takakwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	3	obl	_	TokenRange=25:34
 8	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=35:40
 9	musapiri	musapiri	NUM	CARD	NumType=Card	10	nummod	_	TokenRange=41:49
 10	viáji	viáji	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=50:55
 11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=55:56
 12	asuí	asuí	ADV	ADVT	AdvType=Tim	14	advmod	_	TokenRange=57:61
 13	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	14	aux	_	TokenRange=62:65
-14	uyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=66:73
-15	usarú	sarú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=74:79
-16	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	SpaceAfter=No|TokenRange=80:84
+14	uyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=66:73
+15	usarú	sarú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	parataxis	_	TokenRange=74:79
+16	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	parataxis	_	SpaceAfter=No|TokenRange=80:84
 17	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=84:85
 
 # sent_id = Casasnovas2006:5:9:57
@@ -5599,12 +5600,14 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Kuíri supí/cert kurupira usika i/pron2 piaíwa xinga.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:5
 2	supí	supí	PART	CERT	PartType=Mod	4	advmod	_	TokenRange=6:10
 3	kurupira	kurupira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=11:19
 4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=20:25
-5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	expl	_	TokenRange=26:27
-6	piaíwa	piaíwa	VERB	A2	Mood=Ind|VerbForm=Fin	4	xcomp	_	TokenRange=28:34
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	TokenRange=26:27
+6	piaíwa	piaíwa	VERB	V2	Mood=Ind|VerbForm=Fin	4	advcl	_	TokenRange=28:34
 7	xinga	xinga	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=35:40
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=40:41
 
