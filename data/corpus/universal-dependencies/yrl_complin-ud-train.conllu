@@ -17810,6 +17810,41 @@
 14	suiwara	suiwara	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=58:65
 15	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=65:66
 
+# sent_id = Amorim1928:6:331:331
+# text = Kwarasí, Yasí, Yasitatá-etá, iwí, ií, wirá, suú-etá, upawé kuíri ixé yara.
+# text_por = Sol, lua, estrelas, terra, água, pássaros, animais, de tudo agora eu sou dona.
+# text_source = p. 163, No. 331
+# text_orig = Kuarasy, Iasy, iasytatáetá, yuy, y, uyrá, suuetá, upaué kuyre ixé iara.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_sec = Kurasí, yasí, yasitatá-itá, iwí, ií, wirá, suú-itá, panhẽ kuíri se yara.
+# text_por_sec = Sol, Lua, estrelas, terra, água, pássaros, animais, tudo agora é meu.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Kwarasí, Yasí/n, Yasitatá-etá, iwí, ií, wirá, suú-etá, upawé kuíri ixé/=mf:m|se yara/adp.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Kwarasí	kwarasí	NOUN	N	Number=Sing	17	dislocated	_	SpaceAfter=No|TokenRange=0:7
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
+3	Yasí	yasí	NOUN	N	Number=Sing	1	conj	_	SpaceAfter=No|TokenRange=9:13
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=13:14
+5	Yasitatá-etá	yasitatá	NOUN	N	Number=Plur	1	conj	_	SpaceAfter=No|TokenRange=15:27
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=27:28
+7	iwí	iwí	NOUN	N	Number=Sing	1	conj	_	SpaceAfter=No|TokenRange=29:32
+8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=32:33
+9	ií	ií	NOUN	N	Number=Sing	1	conj	_	SpaceAfter=No|TokenRange=34:36
+10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=36:37
+11	wirá	wirá	NOUN	N	Number=Sing	1	conj	_	SpaceAfter=No|TokenRange=38:42
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=42:43
+13	suú-etá	suú	NOUN	N	Number=Plur	1	conj	_	SpaceAfter=No|TokenRange=44:51
+14	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=51:52
+15	upawé	upawé	PRON	TOT	PronType=Tot	17	nsubj	_	TokenRange=53:58
+16	kuíri	kuíri	ADV	ADVT	AdvType=Tim	17	advmod	_	TokenRange=59:64
+17	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs|Style=Arch	0	root	_	ModernCase=Gen|ModernForm=se|ModernLemma=se|TokenRange=65:68
+18	yara	yara	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=69:73
+19	.	.	PUNCT	PUNCT	_	17	punct	_	SpaceAfter=No|TokenRange=73:74
+
 # sent_id = Amorim1928:6:378:378
 # text = Resasáu kurí ne ara-etá retumunheẽ reikú pituna kiririwasú pitérupi.
 # text_por = Hás de passar teus dias assobiando no meio do silêncio da noite.
