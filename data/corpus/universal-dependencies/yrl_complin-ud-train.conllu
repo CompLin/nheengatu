@@ -27750,28 +27750,43 @@
 13	yumuseruka	museruka	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	9	conj	_	ModernForm=uyumuseruka|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=53:63
 14	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=63:64
 
-# sent_id = Aguiar1898:6:2:60
-# text = ― Tiana! Uwatari reté uruyari rẽ, useruka rẽ.
-# text_orig = ― 'Tiana! Uatarireté u-ruiari rain, u-ceruca rain.
+# sent_id = Aguiar1898:6:2-1:60-1
+# text = ― Tiana!
+# text_orig = ― 'Tiana!
 # text_source = p. 35
-# text_por = ― Absolutamente não! É necessário crer e baptizar-se.
+# text_por = ― Absolutamente não!
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = ― Tiana/indq! Uwatari reté/advs uruyari rẽ, useruka rẽ.
+# inputline = ― Tiana/=spl:w|ana!
 # text_annotator = Antônio Levy Melo Nogueira
-1	―	―	PUNCT	PUNCT	_	4	punct	_	TokenRange=-1:0
-2	Tiana	tiana	PRON	INDQ	PronType=Ind	4	nsubj	_	SpaceAfter=No|TokenRange=1:6
-3	!	!	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=6:7
-4	Uwatari	watari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:15
-5	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	TokenRange=16:20
-6	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=21:28
-7	rẽ	rẽ	PART	IMPF	Aspect=Imp	6	advmod	_	SpaceAfter=No|TokenRange=29:31
-8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=31:32
-9	useruka	seruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=33:40
-10	rẽ	rẽ	PART	IMPF	Aspect=Imp	9	advmod	_	SpaceAfter=No|TokenRange=41:43
-11	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=43:44
+# reviewer1 = Leonel Figueiredo de Alencar
+1	―	―	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
+2	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=1:3
+3	ana	ana	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=4:7
+4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=7:8
+
+# sent_id = Aguiar1898:6:2-2:60-2
+# text = Uwatari reté uruyari raĩ, useruka raĩ.
+# text_orig = Uatarireté u-ruiari rain, u-ceruca rain.
+# text_source = p. 35
+# text_por = É necessário crer e baptizar-se.
+# text_orig_transcriber = Davi Sampaio Santos
+# text_por_modernizer = Davi Sampaio Santos
+# text_modernizer = Letícia Farias Nunes
+# text_eng = TODO
+# inputline = Uwatari reté/advs uruyari raĩ, useruka raĩ.
+# text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Uwatari	watari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:12
+3	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	xcomp	_	TokenRange=13:20
+4	raĩ	raĩ	PART	IMPF	Aspect=Imp	3	advmod	_	SpaceAfter=No|TokenRange=21:24
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=24:25
+6	useruka	seruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	conj	_	TokenRange=26:33
+7	raĩ	raĩ	PART	IMPF	Aspect=Imp	6	advmod	_	SpaceAfter=No|TokenRange=34:37
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:9:1:1001
 # text = Ave Maria, i pura graça suí, yané Yara ne irumu; yumumeú katú iné upaĩ kunhã pitera-pe, yumumeú katú yuwá ne marika suí, Jesus.
@@ -27843,7 +27858,7 @@
 # text = Xaruyari Tupana Paya resé, turusú reté, munhangara iwaka, iwí.
 # text_orig = Xa-ruiari Tupana Paia recê, turuçúreté, munhangara iuaca, ïuhï.
 # text_source = p. 39
-# text_por = Creio em Deus, Pai todo poderoso, Criador do Céu e da terra.
+# text_por = Creio em Deus, Padre todo poderoso, Criador do Céu e da terra.
 # title = XARUYARI TUPANA RESÉ
 # title_orig = XA-RUIARI TUPANA RECÊ
 # title_por = CREIO EM DEUS
@@ -27853,18 +27868,19 @@
 # text_eng = TODO
 # inputline = Xaruyari Tupana Paya resé/adp, turusú/a reté/advs, munhangara/n iwaka, iwí.
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xaruyari	ruyari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aruyari|TokenRange=0:8
-2	Tupana	tupana	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:15
-3	Paya	paya	NOUN	N	Number=Sing	2	obl	_	TokenRange=16:20
-4	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	3	case	_	SpaceAfter=No|TokenRange=21:25
-5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=25:26
-6	turusú	turusú	ADJ	A	_	1	_	_	TokenRange=27:33
+2	Tupana	tupana	NOUN	N	Number=Sing	1	obl	_	TokenRange=9:15
+3	Paya	paya	NOUN	N	Number=Sing	2	nmod	_	TokenRange=16:20
+4	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=21:25
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=25:26
+6	turusú	turusú	ADJ	A	_	3	conj	_	TokenRange=27:33
 7	reté	reté	ADV	ADVS	AdvType=Deg	6	advmod	_	SpaceAfter=No|TokenRange=34:38
-8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=38:39
-9	munhangara	munhangara	NOUN	N	Number=Sing	10	nmod:poss	_	TokenRange=40:50
-10	iwaka	iwaka	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=51:56
-11	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=56:57
-12	iwí	iwí	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=58:61
+8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=38:39
+9	munhangara	munhangara	NOUN	N	Number=Sing	3	conj	_	TokenRange=40:50
+10	iwaka	iwaka	NOUN	N	Number=Sing	9	nmod	_	SpaceAfter=No|TokenRange=51:56
+11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=56:57
+12	iwí	iwí	NOUN	N	Number=Sing	10	conj	_	SpaceAfter=No|TokenRange=58:61
 13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=61:62
 
 # sent_id = Aguiar1898:11:1:75
@@ -28170,7 +28186,7 @@
 4	supé	supé	ADP	ADP	AdpType=Post	3	case	_	TokenRange=25:29
 5	iwaka	iwaka	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=30:35
 6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=35:36
-7	puranga	puranga	ADJ	A	_	8	_	_	TokenRange=37:44
+7	puranga	puranga	ADJ	A	_	8	amod	_	TokenRange=37:44
 8	suikira	suikira	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=45:52
 9	yaxipiá	xipiá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	advcl	_	TokenRange=53:60
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=61:64
