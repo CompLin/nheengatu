@@ -28057,7 +28057,7 @@
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Aguiar1898:21-1:1:145
-# text = Yupirungawa ramé Tupana umunhã iwaka iwí yuíri.
+# text = Yupirungawa ramé Tupana umunhã iwaka iní yuíri.
 # text_orig = Iupïrungáua ramé Tupana u-munhan iuaca ïhnï ïuïri.
 # text_source = p. 63
 # text_por = No princípio criou Deus o Céu e a terra.
@@ -28072,15 +28072,16 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Yupirungawa ramé/adp Tupana umunhã iwaka iwí yuíri/cconj.
+# inputline = Yupirungawa ramé/adp Tupana umunhã iwaka iní/=typo:c|iwí yuíri/cconj.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yupirungawa	yupirungawa	NOUN	N	Number=Sing	4	obl	_	TokenRange=0:11
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=12:16
 3	Tupana	tupana	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=17:23
 4	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:30
-5	iwaka	iwaka	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=31:36
-6	iwí	iwí	NOUN	N	Number=Sing	4	obj	_	TokenRange=37:40
-7	yuíri	yuíri	CCONJ	CCONJ	_	4	cc	_	SpaceAfter=No|TokenRange=41:46
+5	iwaka	iwaka	NOUN	N	Number=Sing	4	obj	_	TokenRange=31:36
+6	iní	iwí	NOUN	N	Number=Sing|Typo=Yes	5	conj	_	CorrectForm=iwí|TokenRange=37:40
+7	yuíri	yuíri	CCONJ	CCONJ	_	6	cc	_	SpaceAfter=No|TokenRange=41:46
 8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = Aguiar1898:21-1:3:147
@@ -28092,17 +28093,18 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Unheẽ Tupana: — Yumunhã kandéa; kandéa yumunhã.
+# inputline = Unheẽ Tupana: — Yumunhã/=mf:m|Uyumunhã:n|mid kandéa; kandéa yumunhã/=mf:m|uyumunhã:n|mid.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
-2	Tupana	tupana	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=6:12
+2	Tupana	tupana	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=6:12
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=13:14
-5	Yumunhã	yumunhã	VERB	V	VerbForm=Inf	1	parataxis	_	TokenRange=15:22
-6	kandéa	kandéa	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=23:29
+5	Yumunhã	munhã	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	1	ccomp	_	ModernForm=Uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=15:22
+6	kandéa	kandéa	NOUN	N	Number=Sing	5	nsubj	_	SpaceAfter=No|TokenRange=23:29
 7	;	;	PUNCT	PUNCT	_	9	punct	_	TokenRange=29:30
 8	kandéa	kandéa	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=31:37
-9	yumunhã	yumunhã	VERB	V	VerbForm=Inf	5	parataxis	_	SpaceAfter=No|TokenRange=38:45
+9	yumunhã	munhã	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	5	parataxis	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=38:45
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
 
 # sent_id = Aguiar1898:21-1:4:148
