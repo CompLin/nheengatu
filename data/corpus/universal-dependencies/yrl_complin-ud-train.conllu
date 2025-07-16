@@ -27901,20 +27901,21 @@
 # text_eng = TODO
 # inputline = Resaisú kurí Tupana ne piá suí/adp, panhẽ maã/n suí/adp.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Resaisú	saisú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=8:12
 3	Tupana	tupana	NOUN	N	Number=Sing	1	obj	_	TokenRange=13:19
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=20:22
 5	piá	piá	NOUN	N	Number=Sing	1	obl	_	TokenRange=23:26
 6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=27:30
-7	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=30:31
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=30:31
 8	panhẽ	panhẽ	DET	TOT	PronType=Tot	9	det	_	TokenRange=32:37
 9	maã	maã	NOUN	N	Number=Sing	1	obl	_	TokenRange=38:41
 10	suí	suí	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=42:45
 11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=45:46
 
 # sent_id = Aguiar1898:11:2:76
-# text = Teẽ resenúi Tupana rera tenhuntu.
+# text = Teẽ resenúi Tupana rera teẽnte.
 # text_orig = Tehen re-cenôi Tupana rêra tehente.
 # text_source = p. 41
 # text_por = Não jurarás o nome de Deus em vão.
@@ -27926,21 +27927,23 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = TODO
-# inputline = Teẽ resenúi Tupana rera tenhuntu.
+# inputline = Teẽ/negi resenúi Tupana rera teẽnte.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Teẽ	teẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:3
-2	resenúi	senúi	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:11
+2	resenúi	senúi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:11
 3	Tupana	tupana	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=12:18
 4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	TokenRange=19:23
-5	tenhuntu	tenhuntu	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=24:32
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+5	teẽnte	teẽnte	ADV	ADVA	AdvType=Man	2	advmod	_	SpaceAfter=No|TokenRange=24:30
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
 
 # sent_id = Aguiar1898:11:3:77
-# text = Remungaturú kurí mituú, ara santu-itá.
+# text = Renungaturú kurí mituú, ara santu-itá.
 # text_orig = Re-nungaturù curi mituú, ara santuitá.
 # text_source = p. 41
 # text_por = Guardarás domingos e dias santos.
 # text_sec = Remungaturú kurí mituú, ara santu-itá.
+# text_sec_pos = Remungaturú kurí mituú, ara santu-itá/a.
 # text_por_sec = Guardarás domingos e dias santos.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
@@ -27948,14 +27951,15 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = TODO
-# inputline = Remungaturú kurí mituú, ara santu-itá.
+# inputline = Renungaturú kurí mituú, ara santu-itá.
 # text_annotator = Letícia Farias Nunes
-1	Remungaturú	mungaturú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:11
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Renungaturú	nungaturú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:11
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=12:16
 3	mituú	mituú	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=17:22
-4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=22:23
-5	ara	ara	NOUN	N	Number=Sing	6	nmod:poss	_	TokenRange=24:27
-6	santu-itá	santu	NOUN	N	Number=Plur	1	vocative	_	SpaceAfter=No|TokenRange=28:37
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
+5	ara	ara	NOUN	N	Number=Sing	3	conj	_	TokenRange=24:27
+6	santu-itá	santu	NOUN	N	Number=Plur	5	nmod	_	SpaceAfter=No|TokenRange=28:37
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:11:5:79
@@ -27967,10 +27971,11 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Teẽ reyuká.
+# inputline = Teẽ/negi reyuká.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Teẽ	teẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:3
-2	reyuká	yuká	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:10
+2	reyuká	yuká	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:10
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Aguiar1898:13-1:6:6
@@ -28001,52 +28006,55 @@
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Teẽ remuná.
+# inputline = Teẽ/negi remuná.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Teẽ	teẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:3
-2	remuná	muná	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:10
+2	remuná	muná	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=4:10
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Aguiar1898:11:8:82
 # text = Teẽ renheẽ teẽnte ne rapixara resé, intí puité yuri.
-# text_orig = Tehen re-hinhin tehente ne rapixara recê, inti puité iuri.
+# text_orig = Tehen re-hinhin tehente ne rapixara recê, inti puité ïurï.
 # text_source = p. 41
 # text_por = Não levantarás falso contra o teu próximo, nem também mentiras.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Teẽ renheẽ teẽnte ne rapixara resé/adp, intí puité yuri.
+# inputline = Teẽ/negi renheẽ teẽnte ne rapixara resé/adp, intí puité yuri/=typo:c|yuíri:x|cconj.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Teẽ	teẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:3
-2	renheẽ	nheẽ	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
+2	renheẽ	nheẽ	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
 3	teẽnte	teẽnte	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=11:17
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=18:20
 5	rapixara	apixara	NOUN	N	Number=Sing|Rel=Cont	2	obl	_	TokenRange=21:29
 6	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	5	case	_	SpaceAfter=No|TokenRange=30:34
-7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=34:35
-8	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=36:40
-9	puité	puité	NOUN	N	Number=Sing	10	nsubj	_	TokenRange=41:46
-10	yuri	yuri	VERB	V	Mood=Imp|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=47:51
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=34:35
+8	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	9	advmod	_	TokenRange=36:40
+9	puité	puité	NOUN	N	Number=Sing	2	conj	_	TokenRange=41:46
+10	yuri	yuíri	CCONJ	CCONJ	Typo=Yes	9	cc	_	CorrectForm=yuíri|SpaceAfter=No|TokenRange=47:51
 11	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Aguiar1898:11:9:83
-# text = Te reyusé ne rapixara rimirikú.
-# text_orig = Tehen re-iucë ne rapixara, rimiricù.
+# text = Teẽ reyusé ne rapixara rimirikú.
+# text_orig = Tehen re-iucë ne rapixara rimiricù.
 # text_source = p. 41
 # text_por = Não desejarás a mulher do teu próximo.
 # text_orig_transcriber = Davi Sampaio Santos
 # text_por_modernizer = Davi Sampaio Santos
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = TODO
-# inputline = Te reyusé ne rapixara rimirikú.
+# inputline = Teẽ/negi reyusé ne rapixara rimirikú.
 # text_annotator = Letícia Farias Nunes
-1	Te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:2
-2	reyusé	yusé	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=3:9
-3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:12
-4	rapixara	apixara	NOUN	N	Number=Sing|Rel=Cont	5	nmod:poss	_	TokenRange=13:21
-5	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	SpaceAfter=No|TokenRange=22:30
-6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Teẽ	teẽ	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	2	advmod	_	TokenRange=0:3
+2	reyusé	yusé	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:10
+3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
+4	rapixara	apixara	NOUN	N	Number=Sing|Rel=Cont	5	nmod:poss	_	TokenRange=14:22
+5	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	SpaceAfter=No|TokenRange=23:31
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Aguiar1898:21-1:1:145
 # text = Yupirungawa ramé Tupana umunhã iwaka iwí yuíri.
