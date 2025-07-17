@@ -28118,6 +28118,7 @@
 # text_eng = TODO
 # inputline = Tupana uxipiá kandéa katú/a waá/rel: umuĩ kandéa pituna suí/adp.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	uxipiá	xipiá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
 3	kandéa	kandéa	NOUN	N	Number=Sing	2	obj	_	TokenRange=14:20
@@ -28145,19 +28146,20 @@
 # text_eng = TODO
 # inputline = Tupana umusera kandéa supé ara, amú/ind supé pituna.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	umusera	musera	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:14
 3	kandéa	kandéa	NOUN	N	Number=Sing	2	iobj	_	TokenRange=15:21
 4	supé	supé	ADP	ADP	AdpType=Post	3	case	_	TokenRange=22:26
-5	ara	ara	NOUN	N	Number=Sing	2	iobj	_	SpaceAfter=No|TokenRange=27:30
-6	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=30:31
-7	amú	amú	DET	IND	Number=Sing|PronType=Ind	9	det	_	TokenRange=32:35
+5	ara	ara	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=27:30
+6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=30:31
+7	amú	amú	PRON	IND	Number=Sing|PronType=Ind	9	orphan	_	TokenRange=32:35
 8	supé	supé	ADP	ADP	AdpType=Post	7	case	_	TokenRange=36:40
-9	pituna	pituna	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=41:47
+9	pituna	pituna	NOUN	N	Number=Sing	2	conj	_	SpaceAfter=No|TokenRange=41:47
 10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Aguiar1898:21-1:6:150
-# text = Karuka kuẽma yuíri suí yumunhã yepé.
+# text = Karuka kuẽma yuíri suí yumunhã ara yepé.
 # text_orig = Caruca coema ïuïri çui iu-munhan ara iepé.
 # text_source = p. 63
 # text_por = Da tarde e da manhã se fez o primeiro dia.
@@ -28165,15 +28167,17 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = TODO
-# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã yepé/card.
+# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã/=mf:m|uyumunhã ara yepé/card.
 # text_annotator = Letícia Farias Nunes
-1	Karuka	karuka	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:6
-2	kuẽma	kuẽma	NOUN	N	Number=Sing	5	obl	_	TokenRange=7:12
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Karuka	karuka	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	kuẽma	kuẽma	NOUN	N	Number=Sing	1	conj	_	TokenRange=7:12
 3	yuíri	yuíri	CCONJ	CCONJ	_	2	cc	_	TokenRange=13:18
-4	suí	suí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=19:22
-5	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=23:30
-6	yepé	yepé	NUM	CARD	NumType=Card	5	nummod	_	SpaceAfter=No|TokenRange=31:35
-7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=35:36
+4	suí	suí	ADP	ADP	AdpType=Post	1	case	_	TokenRange=19:22
+5	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=23:30
+6	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:34
+7	yepé	yepé	NUM	CARD	NumType=Card	6	nummod	_	SpaceAfter=No|TokenRange=35:39
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = Aguiar1898:21-2:3:153
 # text = Tupana umusera santasawa supé iwaka, puranga suikira yaxipiá waá.
@@ -28212,20 +28216,21 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = From the afternoon and the morning the second day was made.
-# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã ara mukũi/card.
+# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã/=mf:m|uyumunhã ara mukũi/card.
 # text_annotator = Letícia Farias Nunes
-1	Karuka	karuka	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:6
-2	kuẽma	kuẽma	NOUN	N	Number=Sing	5	obl	_	TokenRange=7:12
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Karuka	karuka	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	kuẽma	kuẽma	NOUN	N	Number=Sing	1	conj	_	TokenRange=7:12
 3	yuíri	yuíri	CCONJ	CCONJ	_	2	cc	_	TokenRange=13:18
-4	suí	suí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=19:22
-5	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=23:30
-6	ara	ara	NOUN	N	Number=Sing	5	obj	_	TokenRange=31:34
+4	suí	suí	ADP	ADP	AdpType=Post	1	case	_	TokenRange=19:22
+5	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=23:30
+6	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:34
 7	mukũi	mukũi	NUM	CARD	NumType=Card	6	nummod	_	SpaceAfter=No|TokenRange=35:40
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Aguiar1898:21-3:1:155
 # text = Tupana unheẽ: — Yumuatiri yepé nhũ tenawa upé ií-itá uikú waá iwaka wírupi; usema ukara kití iwí tikanga.
-# text_orig = Tupana uhinhin. — Iu-matïri iepènhun tenana upé ïaitá u-icú uahá iuáca iurpe; u-cema ucára kïti ïuhï ticanga.
+# text_orig = Tupana uhinhin. — Iu-matïri iepènhun tenaua upé ïaitá u-icú uahá iuáca iurpe; u-cema ucára kïti ïuhï ticanga.
 # text_source = p. 65
 # text_por = Deus disse: — Reúnam-se em um só lugar as águas que estão debaixo do céu; saia fora a terra enxuta.
 # title = UPAĨ MAÃ MUNHÃSAWA (ARA MUSAPIRI)
@@ -28235,34 +28240,35 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = God said: — Let be gathered into one place the waters under the sky; let the dry land go out.
-# inputline = Tupana unheẽ: — Yumuatiri yepé/art nhũ tenawa upé/adp ií-itá uikú/cop waá/rel iwaka wírupi; usema ukara kití iwí tikanga/a.
+# inputline = Tupana unheẽ: — Yumuatiri/=mf:m|Uyumuatiri:n|mid yepé/art nhũ tenawa upé/adp ií-itá uikú/cop waá/rel iwaka wírupi; usema ukara kití iwí tikanga/a.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=7:12
 3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
 4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
-5	Yumuatiri	yumuatiri	VERB	V	VerbForm=Inf	2	parataxis	_	TokenRange=16:25
+5	Yumuatiri	muatiri	VERB	V	Style=Arch|VerbForm=Inf|Voice=Mid,Pass	2	ccomp	_	ModernForm=Uyumuatiri|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=16:25
 6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=26:30
-7	nhũ	nhũ	ADV	ADV	_	5	advmod	_	TokenRange=31:34
+7	nhũ	nhũ	ADV	ADV	_	8	advmod	_	TokenRange=31:34
 8	tenawa	tenawa	NOUN	N	Number=Sing|Rel=Abs	5	obl	_	TokenRange=35:41
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=42:45
-10	ií-itá	ií	NOUN	N	Number=Plur	5	obj	_	TokenRange=46:52
-11	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	10	cop	_	TokenRange=53:57
-12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	TokenRange=58:61
-13	iwaka	iwaka	NOUN	N	Number=Sing	5	obj	_	TokenRange=62:67
+10	ií-itá	ií	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=46:52
+11	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	14	cop	_	TokenRange=53:57
+12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	14	nsubj	_	TokenRange=58:61
+13	iwaka	iwaka	NOUN	N	Number=Sing	14	nmod:poss	_	TokenRange=62:67
 14-15	wírupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=68:74
-14	wira	wira	NOUN	N	Number=Sing	5	obl	_	_
+14	wira	wira	NOUN	N	Number=Sing	10	acl:relcl	_	_
 15	upé	upé	ADP	ADP	AdpType=Post|Clitic=Yes	14	case	_	_
 16	;	;	PUNCT	PUNCT	_	17	punct	_	TokenRange=74:75
 17	usema	sema	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=76:81
 18	ukara	ukara	NOUN	N	Number=Sing|Rel=Abs	17	obl	_	TokenRange=82:87
 19	kití	kití	ADP	ADP	AdpType=Post	18	case	_	TokenRange=88:92
-20	iwí	iwí	NOUN	N	Number=Sing	17	obj	_	TokenRange=93:96
+20	iwí	iwí	NOUN	N	Number=Sing	17	nsubj	_	TokenRange=93:96
 21	tikanga	tikanga	ADJ	A	_	20	amod	_	SpaceAfter=No|TokenRange=97:104
 22	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=104:105
 
 # sent_id = Aguiar1898:21-3:7:161
-# text = Karuka kuẽma suí yumunhã ara musapiri.
+# text = Karuka kuẽma yuíri suí yumunhã ara musapiri.
 # text_orig = Caruca coema ïuïri çui iu-munhãn ara muçapïri.
 # text_source = p. 67
 # text_por = Da tarde e da manhã se fez o terceiro dia.
@@ -28270,15 +28276,17 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = From the afternoon and the morning the third day was made.
-# inputline = Karuka kuẽma/n suí yumunhã ara musapiri.
+# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã/=mf:m|uyumunhã ara musapiri.
 # text_annotator = Letícia Farias Nunes
-1	Karuka	karuka	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:6
-2	kuẽma	kuẽma	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=7:12
-3	suí	suí	ADP	ADP	AdpType=Post	4	case	_	TokenRange=13:16
-4	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=17:24
-5	ara	ara	NOUN	N	Number=Sing	4	obj	_	TokenRange=25:28
-6	musapiri	musapiri	NUM	CARD	NumType=Card	5	nummod	_	SpaceAfter=No|TokenRange=29:37
-7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=37:38
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Karuka	karuka	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	kuẽma	kuẽma	NOUN	N	Number=Sing	1	conj	_	TokenRange=7:12
+3	yuíri	yuíri	CCONJ	CCONJ	_	2	cc	_	TokenRange=13:18
+4	suí	suí	ADP	ADP	AdpType=Post	1	case	_	TokenRange=19:22
+5	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=23:30
+6	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:34
+7	musapiri	musapiri	NUM	CARD	NumType=Card	6	nummod	_	SpaceAfter=No|TokenRange=35:43
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Aguiar1898:21-4:4:165
 # text = Umunhã yasimirĩ-itá yuíri, usinipuka iwí árupi.
@@ -28373,16 +28381,17 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = From the afternoon and the morning the fifth day was made.
-# inputline = Karuka kuẽma/noun yuíri/cconj suí yumunhã ara pú.
+# inputline = Karuka kuẽma/n yuíri/cconj suí/adp yumunhã/=mf:m|uyumunhã ara pú/card.
 # text_annotator = Letícia Farias Nunes
-1	Karuka	karuka	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=0:6
-2	kuẽma	kuẽma	NOUN	N	Number=Sing	5	obl	_	TokenRange=7:12
-3	yuíri	yuíri	CCONJ	CCONJ	_	1	cc	_	TokenRange=13:18
-4	suí	suí	ADP	ADP	AdpType=Post	5	case	_	TokenRange=19:22
-5	yumunhã	yumunhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=23:30
-6	ara	ara	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=31:34
-7	pú	pú	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=35:37
-8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=37:38
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Karuka	karuka	NOUN	N	Number=Sing	5	obl	_	TokenRange=0:6
+2	kuẽma	kuẽma	NOUN	N	Number=Sing	1	conj	_	TokenRange=7:12
+3	yuíri	yuíri	CCONJ	CCONJ	_	2	cc	_	TokenRange=13:18
+4	suí	suí	ADP	ADP	AdpType=Post	1	case	_	TokenRange=19:22
+5	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=23:30
+6	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:34
+7	pú	pú	NUM	CARD	NumType=Card	6	nummod	_	SpaceAfter=No|TokenRange=35:37
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:21-6:1:541
 # text = Tupana unheẽ yuíri iwí supé: — Remusema ne suí maã sikwé waá-itá, suú waá-itá uwatá waá, yusikí waá iwí rupí, suú upaĩ katú.
