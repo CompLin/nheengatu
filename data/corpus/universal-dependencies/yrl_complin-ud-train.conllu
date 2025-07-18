@@ -28391,7 +28391,7 @@
 5	yumunhã	yumunhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=23:30
 6	ara	ara	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=31:34
 7	pú	pú	NUM	CARD	NumType=Card	6	nummod	_	SpaceAfter=No|TokenRange=35:37
-8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Aguiar1898:21-6:1:541
 # text = Tupana unheẽ yuíri iwí supé: — Remusema ne suí maã sikwé waá-itá, suú waá-itá uwatá waá, yusikí waá iwí rupí, suú upaĩ katú.
@@ -28585,7 +28585,7 @@
 46	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=223:224
 
 # sent_id = Aguiar1898:21-6:8:180
-# text = Tupana uxipiá upaĩ maã umunhã waá katú reté.
+# text = Tupana uxipiá upaĩ maã umunhã waá katúreté.
 # text_orig = Tupana u-xipiá u-pãin mahã u-munhan uahá catu-reté.
 # text_source = p. 71
 # text_por = Deus viu que tudo o que tinha feito era muito bom.
@@ -28593,16 +28593,17 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = God saw that everything the He had done was very good.
-# inputline = Tupana uxipiá upaĩ maã/ind umunhã waá/rel katú/a reté/advs.
+# inputline = Tupana uxipiá upaĩ maã/ind umunhã waá/rel katúreté/=spl:w|reté:x|advs:h|a.
 # text_annotator = Letícia Farias Nunes
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	uxipiá	xipiá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:13
-3	upaĩ	upaĩ	DET	TOT	PronType=Tot	1	det	_	TokenRange=14:18
-4	maã	maã	DET	IND	PronType=Ind	1	det	_	TokenRange=19:22
-5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=23:29
-6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	TokenRange=30:33
-7	katú	katú	ADJ	A	_	2	amod	_	TokenRange=34:38
-8	reté	reté	ADV	ADVS	AdvType=Deg	5	advmod	_	SpaceAfter=No|TokenRange=39:43
+3	upaĩ	upaĩ	DET	TOT	PronType=Tot	4	det	_	TokenRange=14:18
+4	maã	maã	PRON	IND	PronType=Ind	7	nsubj	_	TokenRange=19:22
+5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=23:29
+6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	obj	_	TokenRange=30:33
+7	katú	katú	ADJ	A	Typo=Yes	2	ccomp	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=34:38
+8	reté	reté	ADV	ADVS	AdvType=Deg	7	advmod	_	SpaceAfter=No|TokenRange=39:43
 9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Aguiar1898:21-6:9:181
@@ -28692,19 +28693,20 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
 # text_eng = God our Lord said to the woman: — Why did you do this?
-# inputline = Yané/pron2 Yara/n Tupana unheẽ kunhã supé: — Maã/relf taá remunhã yawé/adva?
+# inputline = Yané/pron2 Yara/n Tupana unheẽ kunhã supé: — Maã/=mf:m|Marama:h|int taá remunhã yawé/adva?
 # text_annotator = Antônio Levy Melo Nogueira
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
-2	Yara	yara	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:9
-3	Tupana	tupana	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=10:16
+2	Yara	yara	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:9
+3	Tupana	tupana	NOUN	N	Number=Sing	2	appos	_	TokenRange=10:16
 4	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:22
 5	kunhã	kunhã	NOUN	N	Number=Sing	4	iobj	_	TokenRange=23:28
 6	supé	supé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=29:33
-7	:	:	PUNCT	PUNCT	_	4	punct	_	TokenRange=33:34
-8	—	—	PUNCT	PUNCT	_	4	punct	_	TokenRange=34:35
-9	Maã	maã	PRON	RELF	PronType=Rel	4	obj	_	TokenRange=36:39
+7	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=33:34
+8	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=34:35
+9	Maã	maã	PRON	INT	PronType=Int|Style=Arch	11	obl	_	ModernAdvType=Cau|ModernForm=Marama|ModernLemma=marama|TokenRange=36:39
 10	taá	taá	PART	CQ	PartType=Int	11	advmod	_	TokenRange=40:43
-11	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	4	parataxis	_	TokenRange=44:51
+11	remunhã	munhã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	4	ccomp	_	TokenRange=44:51
 12	yawé	yawé	ADV	ADVA	AdvType=Man	11	advmod	_	SpaceAfter=No|TokenRange=52:56
 13	?	?	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=56:57
 
@@ -28762,49 +28764,55 @@
 40	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=178:179
 
 # sent_id = Aguiar1898:21-8:19:219
+# text = Aé umukururi kurí ne akã.
 # text_sec = Aé umukuruí ne akanga.
 # text_por_sec = Ela esmagará a tua cabeça.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# text = — Aé umukuruí kurí ne akã.
 # text_orig = — Aé u-mucururi curi ne acan.
 # text_source = p. 85
-# text_por = — Ela esmagará a tua cabeça.
+# text_por = Ela esmagará a tua cabeça.
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Letícia Farias Nunes
-# text_eng = — She will crush your head.
-# inputline = — Aé/pron umukuruí kurí ne akã.
+# text_eng_ggl = She will crush your head.
+# text_eng = It will crush your head.
+# inputline = Aé/pron umukururi/=typo:c|umukuruí kurí ne akã.
 # text_annotator = Antônio Levy Melo Nogueira
-1	—	—	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
-2	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=1:3
-3	umukuruí	mukuruí	VERB	V	VerbForm=Inf	0	root	_	TokenRange=4:12
-4	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=13:17
-5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=18:20
-6	akã	akanga	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=21:24
-7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	umukururi	mukuruí	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=umukuruí|TokenRange=3:12
+3	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	TokenRange=13:17
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=18:20
+5	akã	akã	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=21:24
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=24:25
 
 # sent_id = Aguiar1898:21-8:20:220
-# text = — Iné remunhã yusana kurí i pirú pitá arama.
-# text_orig = — Iné re-munhan iuçana curi i-pïrupïtá 'ram.
+# text = Iné remunhã yusana kurí i pírupitá rã.
+# text_orig = Iné re-munhan iuçana curi i-pïrupïtá 'ram.
 # text_source = p. 85
-# text_por = — Tu farás ciladas ao seu calcanhar
+# text_por = Tu farás ciladas ao seu calcanhar.
+# text_por_orig = Tu farás ciladas ao seu calcanhar
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Antônio Levy Melo Nogueira
-# text_eng = You will make traps to your heel.
-# inputline = — Iné remunhã yusana kurí i/pron2 pirú pitá arama/fut.
+# text_eng = TODO
+# text_sec = Indé kurí remunhã yusana i pí-rupitá arã.
+# text_por_sec = Tu farás ciladas para o seu calcanhar.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Iné remunhã yusana kurí i/pron2 pírupitá/=spl:w|rupitá rã/adp.
 # text_annotator = Antônio Levy Melo Nogueira
-1	—	—	PUNCT	PUNCT	_	3	punct	_	TokenRange=-1:0
-2	Iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	TokenRange=1:4
-3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:12
-4	yusana	yusana	NOUN	N	Number=Sing	3	obj	_	TokenRange=13:19
-5	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=20:24
-6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	TokenRange=25:26
-7	pirú	pirú	VERB	V	VerbForm=Inf	3	parataxis	_	TokenRange=27:31
-8	pitá	pitá	VERB	V	VerbForm=Inf	7	parataxis	_	TokenRange=32:36
-9	arama	arama	PART	FUT	Tense=Fut	8	advmod	_	SpaceAfter=No|TokenRange=37:42
-10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=42:43
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:3
+2	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:11
+3	yusana	yusana	NOUN	N	Number=Sing	2	obj	_	TokenRange=12:18
+4	kurí	kurí	PART	FUT	Tense=Fut	2	advmod	_	TokenRange=19:23
+5	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=24:25
+6	pí	pí	NOUN	N	Number=Sing|Typo=Yes	7	nmod:poss	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=26:28
+7	rupitá	supitá	NOUN	N	Number=Sing|Rel=Cont	2	iobj	_	TokenRange=29:35
+8	rã	rã	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=36:38
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Aguiar1898:21-8:23:223
 # text = Iwí usinhĩ kurí yú setá iné resé; reú kurí iwí remitara.
@@ -28837,7 +28845,7 @@
 13	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=55:56
 
 # sent_id = Aguiar1898:21-8:26:226
-# text = Pawasá-pe, Tupana umusarú yepé Pisirusara.
+# text = Pausá-pe, Tupana umusarú yepé Pisirusara.
 # text_orig = Pauçape, Tupana u-muçarú iepé Pïcïrúçara.
 # text_source = p. 87
 # text_por = Finalmente, Deus fez esperar um Libertador.
@@ -28845,17 +28853,18 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # text_modernizer = Antônio Levy Melo Nogueira
 # text_eng = Finally, God made it wait for a Savior.
-# inputline = Pawasá-pe, Tupana umusarú yepé/art Pisirusara.
+# inputline = Pausá-pe, Tupana umusarú yepé/art Pisirusara.
 # text_annotator = Antônio Levy Melo Nogueira
-1-2	Pawasá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=0:9
-1	Pawasá	pawasá	NOUN	N	Number=Sing	5	obl	_	_
+# reviewer1 = Leonel Figueiredo de Alencar
+1-2	Pausá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=0:8
+1	Pausá	pausá	NOUN	N	Number=Sing	5	obl	_	_
 2	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	1	case	_	_
-3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=9:10
-4	Tupana	tupana	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=11:17
-5	umusarú	musarú	VERB	V	VerbForm=Inf	0	root	_	TokenRange=18:25
-6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=26:30
-7	Pisirusara	pisirusara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=31:41
-8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=41:42
+3	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=8:9
+4	Tupana	tupana	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=10:16
+5	umusarú	musarú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:24
+6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=25:29
+7	Pisirusara	pisirusara	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=30:40
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Studart1926:0:0:2790
 # text = Piná uikú patuá mirĩ pupé.
