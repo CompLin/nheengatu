@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: July 12, 2025
+# Last update: August 8, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2287,7 +2287,7 @@ def mkNoun(form,orig=None,dic={},orig_form='',position=None):
     new['parselist']=[[lemma, f"N+{'+'.join(feats)}"]]
     return new
 
-def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name; 'A' instead of 'a'
+def mkAdj(form,orig='pt',dic={},orig_form='',xpos='A'): # TODO: use broader name;
     form=form.lower()
     feats=[]
     new={}
@@ -2298,7 +2298,7 @@ def mkAdj(form,orig='pt',dic={},orig_form='',xpos='a'): # TODO: use broader name
         feats.append(degree)
     if derivation:
         feats.append(derivation)
-    new['parselist']=[[form, f"{xpos.upper()}+{'+'.join(feats)}"]]
+    new['parselist']=[[form, f"{xpos}+{'+'.join(feats)}"]]
     return new
 
 def getNumber(form):
@@ -2356,6 +2356,8 @@ def mkCol(form):
     return mkNoun(lemma,None,dic)
 
 def mkPrv(form, xpos='A'):
+    if xpos == None:
+         xpos='A'
     form=form.lower()
     i=-3
     dic={}
@@ -2838,14 +2840,14 @@ def mkConlluSentence(tokens):
                     elif function == 'red':
                         new=handlePartialRedup(form,length,xpos=xpos,orig=orig, orig_form=orig_form, accent=accent, suffix=suffix,position=position)
                         newparselist=new['parselist']
-                    elif function == 'hwm':
+                    elif function == 'wm':
                         dic.update(handleWronglyMergedWord(correct.lower()))
                         newparselist=getparselist(correct.lower())
                     else:
                         newparselist=getparselist(correct.lower())
                     if xpos:
                         newparselist=filterparselist(xpos,newparselist)
-            elif tag == '=hwm':
+            elif tag == '=wm':
                 dic.update(handleWronglyMergedWord(form))
                 newparselist=getparselist(form)
                 if xpos:
@@ -3315,7 +3317,7 @@ def extractHost(token):
             form=token[:-len(suff)]
             dic['host']={'form': form, 'xpos': tagdic.get('h'), 'correct': tagdic.get('b')}
             dic['word']={'form': suff, 'xpos': tagdic.get('x'), 'correct' : tagdic.get('c')}
-            dic['function']="hwm" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
+            dic['function']="wm" # TODO: eliminate equal sign as function name prefix; maintain it only in special tags
     if form == 'maita':
         return mkHost('mayé',TA,token,'ADVRA')
     elif form == 'marã':
@@ -3421,8 +3423,8 @@ def format_word(word_form: str, correct_form: str = '', word_tag: str = '', func
         'n/=typo:c|ne'
         >>> format_word('n', 'ne', 'pron2')
         'n/=typo:c|ne:x|pron2'
-        >>> format_word('n', 'ne', 'pron2', 'hwm')
-        'n/=typo:c|ne:x|pron2:n|hwm'
+        >>> format_word('n', 'ne', 'pron2', 'wm')
+        'n/=typo:c|ne:x|pron2:n|wm'
     """
 
     if not word_form:
