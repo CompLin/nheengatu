@@ -21433,14 +21433,16 @@
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=25:26
 
 # sent_id = Hartt1938:0:0:57
-# text = Imirá uyumuí.
+# text = Imirá yemuí.
 # text_por = O pau está se abrindo.
 # text_source = p. 323, No. 57
 # text_orig = ymyrá yeémui.
 # text_annotator = Dominick Maia Alexandre
+# inputline = Imirá yemuí/=typo:c|uyumuí:n|mid.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Imirá	imirá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
-2	uyumuí	yumuí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=6:12
-3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+2	yemuí	muí	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=uyumuí|SpaceAfter=No|TokenRange=6:11
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:58
 # text = Kwaá taína i yurú yumuí.
@@ -28769,7 +28771,7 @@
 # text_por_sec = Ela esmagará a tua cabeça.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# text_orig = — Aé u-mucururi curi ne acan.
+# text_orig = Aé u-mucururi curi ne acan.
 # text_source = p. 85
 # text_por = Ela esmagará a tua cabeça.
 # text_orig_transcriber = Antônio Levy Melo Nogueira
@@ -29483,3 +29485,24 @@
 4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=19:24
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=24:25
 
+# sent_id = Hartt1872:0:0:713
+# text = Xasú xaseruka-kari se mimbira, kurumú taé umanú kurutẽiwara seraíma.
+# text_eng = TODO
+# text_por = Vou mandar batizar meu filho; ele pode morrer de repente sem nome.
+# text_source = p. 71
+# text_orig = Xasộ xaserúk kár semŷmỹra, kurumú tẹệ omanộ kurutệŋ-ꝏára séra ŷ'ma.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Xasú xaseruka-kari se mimbira, kurumú/sconjr taé umanú kurutẽiwara/adva seraíma/=prv.
+1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
+2-3	xaseruka-kari	_	_	_	_	_	_	_	TokenRange=5:18
+2	xaseruka	seruka	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=aseruka
+3	kari	kari	AUX	AUXN	Compound=Yes|VerbForm=Inf	2	aux	_	_
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:21
+5	mimbira	mimbira	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=22:29
+6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=29:30
+7	kurumú	kurumú	SCONJ	SCONJR	_	9	mark	_	TokenRange=31:37
+8	taé	taé	PART	CQ	PartType=Int	9	advmod	_	TokenRange=38:41
+9	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	advcl	_	TokenRange=42:47
+10	kurutẽiwara	kurutẽiwara	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=48:59
+11	seraíma	sera	ADJ	A	Derivation=Priv	9	advcl	_	SpaceAfter=No|TokenRange=60:67
+12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=67:68
