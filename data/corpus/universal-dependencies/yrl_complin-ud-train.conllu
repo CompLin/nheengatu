@@ -10559,6 +10559,7 @@
 # text_source = p. 24
 # text_orig = — Heen! cerá ce miarerú?
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = — Eẽ! será se miarerú/=typo:c|remiarerú?
 1	—	—	PUNCT	PUNCT	_	2	punct	_	TokenRange=-1:0
 2	Eẽ	eẽ	PART	AFF	Polarity=Pos	0	root	_	SpaceAfter=No|TokenRange=1:3
 3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=3:4
@@ -17157,6 +17158,7 @@
 # text_rus_source = Maslova (2018:164)
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Musapiri/card yasí/n riré/adp, paá, nhaã intí waá/rel; upitá i/pron2 puruã aé/pron uyupi/=typo:c|uyupúi muxiwa umukirá arama/sconj aintá/pron.
 1	Musapiri	musapiri	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:8
 2	yasí	yasí	NOUN	N	Number=Sing	10	obl	_	TokenRange=9:13
 3	riré	riré	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=14:18
@@ -17277,14 +17279,15 @@
 10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = Amorim1928:21:36:36
-# text = Kuẽma ramé ana paá aintá unheẽ: — Kuíri yasú uarasú kwá iruisanga pusanga yandé retama kití!
+# text = Kuẽma ramé ana paá aintá unheẽ: — Kuíri yasú warasú kwá iruisanga pusanga yandé retama kití!
 # text_por = Já de manhã, contam, disseram: — Agora vamos levar esta puçanga de frio para nossa terra!
-# text_source = p. 355-369, No. 36-37
+# text_source = p. 356-367, No. 36-37
 # text_orig = Koema ramé ana paa aetá onheen: — Kuyre iasu oarasu koá iruysanga pusanga iandé retama ketŷ!
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kuẽma/n ramé/adp ana paá aintá/pron unheẽ: — Kuíri yasú warasú/=typo:c|yarasú kwá/demx iruisanga/n pusanga yandé/pron2 retama kití!
 1	Kuẽma	kuẽma	NOUN	N	Number=Sing	6	obl	_	TokenRange=0:5
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=6:10
 3	ana	ana	PART	PFV	Aspect=Perf	6	advmod	_	TokenRange=11:14
@@ -17295,7 +17298,7 @@
 8	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=31:32
 9	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	11	advmod	_	TokenRange=33:38
 10	yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	11	aux	_	TokenRange=39:43
-11	uarasú	rasú	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	6	ccomp	_	CorrectForm=yarasú|TokenRange=44:50
+11	warasú	rasú	VERB	V	Mood=Ind|Number=Plur|Person=1|Typo=Yes|VerbForm=Fin	6	ccomp	_	CorrectForm=yarasú|TokenRange=44:50
 12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	14	det	_	TokenRange=51:54
 13	iruisanga	iruisanga	NOUN	N	Number=Sing	14	nmod:poss	_	TokenRange=55:64
 14	pusanga	pusanga	NOUN	N	Number=Sing	11	obj	_	TokenRange=65:72
@@ -24114,6 +24117,29 @@
 4	maã-itá	maã	NOUN	N	Number=Plur	5	nsubj	_	TokenRange=14:21
 5	utikã	tikã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=22:27
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = Hartt1938:0:0:225
+# text = Xarikú ramé amú, xameẽ amú inéu.
+# text_por = Se tivesse, dava.
+# text_source = p. 335, No. 225
+# text_orig = xarekó ramé amú xameén amú inéu.
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Arikú ramé amú, ameẽ amú indéu.
+# text_por_sec = Se eu tivesse, eu te daria.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Xarikú ramé/sconj amú/cond, xameẽ amú/cond inéu.
+# text_annotator = Dominick Maia Alexandre
+1	Xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	advcl	_	ModernForm=Arikú|TokenRange=0:6
+2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=7:11
+3	amú	amú	PART	COND	Modality=Cond|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=12:15
+4	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=15:16
+5	xameẽ	meẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=ameẽ|TokenRange=17:22
+6	amú	amú	PART	COND	Modality=Cond|PartType=Mod	5	advmod	_	TokenRange=23:26
+7	inéu	inéu	PRON	PROND	Case=Dat|Number=Sing|Person=2|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=27:31
+8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:233
 # text = Yiãma se mukaú.
