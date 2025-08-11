@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 9, 2025
+# Last update: August 11, 2025
 
 import re, sys, os, json
 
@@ -480,9 +480,12 @@ def isDemPron(tag):
 def isInflectableDem(tag):
 	return isDemPron(tag) and not tag.endswith('N')
 
+def handleIndOrCond(tag,lemma):
+     return tag == 'IND' and lemma in ('amú',)
+
 def hasNumberInflection(tag,lemma):
     if tag:
-        if tag in PLURALIZABLE or isInflectableDem(tag) or lemma in ('amú',):
+        if tag in PLURALIZABLE or isInflectableDem(tag) or handleIndOrCond(tag,lemma):
             return True
     return False
 

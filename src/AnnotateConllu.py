@@ -2106,7 +2106,7 @@ def handleOrig(new,lemma,orig, orig_form,xpos=''):
         parselist=_isInLexicon(lemma,xpos=xpos)
     return parselist
 
-def VerbFormError(entry):
+def VerbFormError(form,entry):
 	if not entry:
 		raise Exception(f"Token '{form}' does not seem to be a verb form")
 
@@ -2114,7 +2114,7 @@ def mkVerb(form,derivation='',orig=None, orig_form=None):
     new={}
     feats=['V']
     entry=guessVerb(form)
-    VerbFormError(entry)
+    VerbFormError(form,entry)
     lemma=entry['lemma']
     handleOrig(new,lemma,orig, orig_form)
     if derivation:
@@ -2148,7 +2148,7 @@ def serializeEntry(entry):
 def handleMiddlePassive(form, orig=None, orig_form=''):
 	new={}
 	entry=guessVerb(form)
-	VerbFormError(entry)
+	VerbFormError(form,entry)
 	if entry['lemma'].startswith(YU):
 		entry['voice']=MEDPASS
 		entry['lemma']=entry['lemma'][len(YU):]
@@ -2166,7 +2166,7 @@ def handlePartialRedup(form,length,xpos='',orig=None, orig_form='',accent=False,
     new={}
     if xpos == 'V':
         entry=guessVerb(form)
-        VerbFormError(entry)
+        VerbFormError(form,entry)
         lemma=entry['lemma']
     elif xpos in ('A','V2'):
         lemma=form
