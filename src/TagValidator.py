@@ -195,12 +195,6 @@ FUNCTION_SIGNATURES = {
         'name' : 'habituative',
         'action' : 'handles verb forms with the habituative suffix "-tiwa"'
     },
-    'wm': {
-        'required': set(),
-        'optional': {'x'},
-        'name' : 'wrongly merged word',
-        'action' : 'assigns the required MISC attributes to the second word obtained by splitting two wrongly merged words'
-    },
     'intj': {
         'required': set(),
         'optional': {'o', 's'},
@@ -274,6 +268,12 @@ FUNCTION_SIGNATURES = {
         'action' : 'handles verb forms with the verbal noun (masdar) suffix "-sawa"'
 
     },
+    'wm': {
+        'required': set(),
+        'optional': {'x'},
+        'name' : 'wrongly merged word',
+        'action' : 'assigns the required MISC attributes to the second word obtained by splitting two wrongly merged words'
+    }
 }
 
     
