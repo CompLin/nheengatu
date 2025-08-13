@@ -16774,38 +16774,48 @@
 19	irumu	irumu	ADP	ADP	AdpType=Post	18	case	_	SpaceAfter=No|TokenRange=86:91
 20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=91:92
 
-# sent_id = Magalhaes1876:10:1:1001
-# text = Yepé apigawa unheẽ: — Asú apisika nhaã yautí.
-# text_eng = A man said: "I'm going to catch that tortoise."
+# sent_id = Magalhaes1876:10:3:238
+# text = Yepé apigawa unheẽ: — Xasú xapisika nhaã yautí.
 # text_por = Um homem disse: — Eu vou apanhar aquele jabuti.
+# text_orig = Oiepé	apgáua	onhehẽ:	— Xa	çộ	xa	pɨcɨka	nhahã	iáutí.
+# text_por_gloss = Um	homem	disse:	— Eu	vou	eu	apanhar	aquele	jabuti.
+# text_eng = A man said: "I'm going to catch that tortoise."
 # text_source = p. 210
-# text_orig = TODO
 # title_por = O jabuti e o homem
+# title_por_gloss = Jabuti e o	homem
+# title_orig = IAUTI	APGAUA
 # title_eng = The tortoise and the man
 # title_number = X
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Yepé/art apigawa/n unheẽ: — Xasú xapisika nhaã yautí.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	apigawa	apigawa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:12
 3	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:18
 4	:	:	PUNCT	PUNCT	_	7	punct	_	TokenRange=18:19
 5	—	—	PUNCT	PUNCT	_	7	punct	_	TokenRange=19:20
-6	Asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	7	aux	_	TokenRange=21:24
-7	apisika	pisika	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	3	ccomp	_	TokenRange=25:32
-8	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=33:37
-9	yautí	yautí	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=38:43
-10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=43:44
+6	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	7	aux	_	ModernForm=Asú|TokenRange=21:25
+7	xapisika	pisika	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	ccomp	_	ModernForm=apisika|TokenRange=26:34
+8	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	9	det	_	TokenRange=35:39
+9	yautí	yautí	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=40:45
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
 
-# sent_id = Magalhaes1876:10:2:1002
+# sent_id = Magalhaes1876:10:4:239
 # text = Usika tipiáya upé, usenúi: ― Ó yautí!
 # text_eng = He arrived at the pit and called: "O tortoise!"
 # text_por = Chegou no covão, chamou: ― Ó jabuti!
+# text_orig = Ocɨca	tɨpɨáia	opé,	ocenõĩ:	— O'	iáutí!
+# text_por_gloss = Chegou	covão	no,	chamou:	— Ó	jabuti!
 # text_por_sec = Ele chegou ao covão e chamou: ― Ó jabuti!
 # text_sec = Usika tipiáya upé, usenúi: ― Ó yautí!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # text_source = p. 210
-# text_orig = TODO
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Usika tipiáya upé/adp, usenúi: ― Ó/=intj yautí!
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	tipiáya	tipiáya	NOUN	N	Number=Sing	1	obl	_	TokenRange=6:13
 3	upé	upé	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=14:17
@@ -16817,7 +16827,7 @@
 9	yautí	yautí	NOUN	N	Number=Sing	5	ccomp	_	SpaceAfter=No|TokenRange=30:35
 10	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=35:36
 
-# sent_id = Magalhaes1876:10:3:1003
+# sent_id = Magalhaes1876:10:5:240
 # text = Yautí usuaxara: — U!
 # text_eng = The tortoise replied: "U!"
 # text_por = O jabuti respondeu: — U!
@@ -16841,7 +16851,10 @@
 # text_por = O homem foi procurar por baixo do cerrado.
 # text_source = p. 213
 # text_orig = Apgáua	oçộ	ocɨkári	iaɨtɨua	uɨrpe	rupí.
-# text_annotator = anonymized
+# text_por_gloss = O homem	foi	procurar	cerrado	baixo	por.
+# text_annotator = Leonel Figueiredo de Alencar
+# text_orig_transcriber = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
+# text_por_gloss_modernizer = Dominick Maia Alexandre, DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Apigawa/n usú usikari yaitiwa wírupi rupí.
 1	Apigawa	apigawa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:7
 2	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	3	aux	_	TokenRange=8:11
@@ -18539,6 +18552,7 @@
 # text_por_sec_source = Avila (2021)
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Buopé paá intí usuaxara, umundú yeperesé uyapí kaziwera/=typo:c|kaxiwera pupé nhaã kunhã-etá pirá rimbiú arama/sconj.
 1	Buopé	buopé	PROPN	PROPN	_	4	nsubj	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=6:9
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=10:14
@@ -26625,11 +26639,12 @@
 # text_eng_ggl = After a while he said: — There is no medicine!
 # text_por = depois de pouco disse: — Não há remédio!
 # text_por_source = Stradelli (2014, p. 116)
-# text_source = p. p. 165
+# text_source = p. 165
 # text_orig = Upucú xinga riré unheen: «Timaan puçanga.
 # text_sec = upucu xinga riré onheẽn: "Timaan pusanga!
 # text_sec_source = Stradelli (2014, p. 116)
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Upukú/=spl:w|pukú:b|I:h|pron2:x|v2 xinga riré/sconj unheẽ: — Ti maã/ind pusanga.
 1	U	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs|Typo=Yes	2	nsubj	_	CorrectForm=I|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:1
 2	pukú	pukú	VERB	V2	Mood=Ind|VerbForm=Fin	5	advcl	_	TokenRange=2:6
 3	xinga	xinga	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=7:12
