@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: August 8, 2025
+# Last update: August 16, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
 from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss, mkAnnotator
 from TagValidator import validate_function_args, convert_args
-from LarkTagValidator import parser, TagTransformer
+from LarkTagValidator import UnexpectedInput, parser, TagTransformer
 from conllu.models import Token,TokenList
 from conllu import parse
 from io import open
@@ -2032,12 +2032,6 @@ def handleHyphen(form):
         mkSuff(form,dic)
     return dic
 
-def mkNTU(dic): # TODO: remove if deprecated
-    dic['form']=form[1:]
-    dic['lemma']='ntu'
-    dic['upos']='ADV'
-    dic['underscore']=True
-
 def mkSuff(form,dic):
 	form=form[1:]
 	ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
@@ -2513,68 +2507,6 @@ def handleRoot(tokenlist):
 
 def isNominal(upos):
     return upos in ['NOUN','PROPN','PRON']
-
-def parseArgs(string):
-    dic={}
-    parts=string.split(':')
-    func=parts[0]
-    for part in parts[1:]:
-        arg,val=part.split('|')
-        dic[arg]=val
-    # Validate against FUNCTION_SIGNATURES
-    #valid, msg = validate_function_args(func.strip("="), dic)
-    #if not valid:
-    #    raise ValueError(msg)
-    dic['func'] = func
-    return dic
-
-def _parseArgs(string: str) -> dict:
-    """Parse a function string like '=typo:x|abc:c|def' into a dictionary of arguments.
-
-    Raises:
-        ValueError: If the function or its arguments are invalid or improperly formatted.
-    """
-    dic = {}
-
-    parts = string.split(':')
-    if not parts:
-        raise ValueError("Empty input string")
-
-    func = parts[0]
-    for part in parts[1:]:
-        if '|' not in part:
-            raise ValueError(f"Invalid argument format: '{part}'. Expected 'arg|value'.")
-        arg, val = part.split('|', 1)
-        if not arg or not val:
-            raise ValueError(f"Empty argument name or value in: '{part}'")
-        dic[arg] = val
-
-    # Validate against FUNCTION_SIGNATURES
-    valid, msg = validate_function_args(func, dic)
-    if not valid:
-        raise ValueError(msg)
-
-    dic['func'] = func
-    return dic
-
-def parseTag(tag):
-    sep=':'
-    dic={}
-    if sep in tag:
-        args=parseArgs(tag)
-        for k,v in args.items():
-            if k in ('a','f'):
-                if v == 'f':
-                    args[k]=False
-                elif v == 't':
-                    args[k]=True
-            elif k == 'l':
-                args[k]=int(v)
-        dic.update(args)
-    else:
-        #dic['function']=tag
-        dic['func']=tag # TODO: a simple tag like 'adva' is incorrectly assigned to the 'func' key 
-    return dic
 
 def insertRedup(parselist):
     for parse in parselist:
