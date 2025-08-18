@@ -22051,7 +22051,7 @@
 12	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=56:57
 
 # sent_id = Hartt1938:0:0:90
-# text = Se maãitá yakima uikú.
+# text = Se maã-itá yakima ikú.
 # text_por = Minha roupa está molhada.
 # text_source = p. 325, No. 90
 # text_orig = semaitá yakym ikó.
@@ -24430,7 +24430,7 @@
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:222
-# text = Ixé se yuwá sasí uikú, intí xakwáu sa uyupuruka uikú.
+# text = Ixé se yuwá sasí ikú, intí xakwáu sa uyupuruka uikú.
 # text_por = O meu braço dói também, não sei se está quebrado.
 # text_source = p. 335, No. 222
 # text_orig = ixé seyuá sasy ikó, intí xakuáu seé yupurug oikó
@@ -24441,20 +24441,21 @@
 # text_por_sec = Meu braço está doendo, não sei se está desconjuntado.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Ixé se yuwá sasí/v3 uikú/v, intí xakwáu sa uyupuruka uikú/v.
+# inputline = Ixé se yuwá sasí/v3 ikú/=mf:m|uikú:x|v:h|v, intí xakwáu sa uyupuruka/=mid uikú/v.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = lfdea
 1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	4	dislocated	_	TokenRange=0:3
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=4:6
 3	yuwá	yuwá	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=7:11
 4	sasí	sasí	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=12:16
-5	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	4	aux	_	SpaceAfter=No|TokenRange=17:21
-6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=21:22
-7	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=23:27
-8	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	parataxis	_	ModernForm=akwáu|TokenRange=28:34
-9	sa	sa	SCONJ	SCONJR	_	10	mark	_	TokenRange=35:37
-10	uyupuruka	yupuruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=38:47
-11	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	SpaceAfter=No|TokenRange=48:52
-12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=52:53
+5	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	4	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=17:20
+6	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=20:21
+7	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=22:26
+8	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	parataxis	_	ModernForm=akwáu|TokenRange=27:33
+9	sa	sa	SCONJ	SCONJR	_	10	mark	_	TokenRange=34:36
+10	uyupuruka	puruka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	8	ccomp	_	TokenRange=37:46
+11	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	10	aux	_	SpaceAfter=No|TokenRange=47:51
+12	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=51:52
 
 # sent_id = Hartt1938:0:0:223
 # text = Kurasí uwapika ã.
@@ -24799,24 +24800,12 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Maã/int taá reruri yanéu?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
 3	reruri	ruri	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:14
 4	yanéu	yanéu	PRON	PROND	Case=Dat|Number=Plur|Person=1|PronType=Prs	3	iobj	_	SpaceAfter=No|TokenRange=15:20
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
-
-# sent_id = Hartt1938:0:0:244
-# text = Maã taá reruri yanéu?
-# text_por = O que você trouxe para nós?
-# text_source = p. 337, No. 244
-# text_orig = maá taá rerúr yanéu?
-# text_annotator = Dominick Maia Alexandre
-# reviewer1 = Leonel Figueiredo de Alencar
-1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
-2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
-3	reruri	ruri	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:14
-4	yanéu	yanéu	PRON	PROND	Case=Dat|Number=Plur|Person=1|PronType=Prs	3	iobj	_	SpaceAfter=No|TokenRange=15:21
-5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:245
 # text = Ekũi Antônio piri.
