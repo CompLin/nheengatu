@@ -24078,7 +24078,7 @@
 8	arama	arama	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:38
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
 
-# sent_id = Hartt1938:0:0:202
+# sent_id = Hartt1938:0:0:202-1
 # text = Intí maã xamunhã-kwáu.
 # text_por = Não posso fazer nada.
 # text_source = p. 333, No. 202
@@ -24088,28 +24088,29 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Intí maã/ind xamunhã-kwáu.
 # text_annotator = Dominick Maia Alexandre
-1	Intí	intí	PART	NEG	ExtPos=ADV|PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
-2	maã	maã	PRON	IND	PronType=Ind	1	fixed	_	TokenRange=5:8
+# reviewer1 = lfdea
+1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
+2	maã	maã	PRON	IND	PronType=Ind	3	obj	_	TokenRange=5:8
 3-4	xamunhã-kwáu	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=9:21
 3	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=amunhã
 4	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	3	aux	_	_
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:203
-# text = Maã taá remunhã wirané?
+# text = Maã taá remunhã iramé?
 # text_por = O que é que vais fazer amanhã?
 # text_source = p. 334, No. 203
 # text_orig = maá taá remuñán iramé?
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Maã/int taá remunhã wirané?
+# inputline = Maã/int taá remunhã iramé/=typo:c|wirané?
 # text_annotator = Dominick Maia Alexandre
 1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	TokenRange=0:3
 2	taá	taá	PART	CQ	PartType=Int	3	advmod	_	TokenRange=4:7
-3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
-4	wirané	wirané	ADV	ADVT	AdvType=Tim	3	advmod	_	SpaceAfter=No|TokenRange=16:22
-5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=22:23
+3	remunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:15
+4	iramé	wirané	ADV	ADVT	AdvType=Tim|Typo=Yes	3	advmod	_	CorrectForm=wirané|SpaceAfter=No|TokenRange=16:21
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:204
 # text = Tupana yané munhã yamaã arama sesé.
