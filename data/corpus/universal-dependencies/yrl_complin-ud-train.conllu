@@ -24114,7 +24114,7 @@
 5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:204
-# text = Tupana yané munhã yamaã arama sesé.
+# text = Tupana yané munhã yamaẽ arama sesé.
 # text_por = Deus nos fez para reverenciá-lo.
 # text_source = p. 334, No. 204
 # text_orig = tupána yanémuñán yamaén aráma sesé.
@@ -24125,12 +24125,13 @@
 # text_por_sec = Deus nos fez para reverenciá-lo [lit., [...] para olhar para ele.]
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Tupana yané/pron munhã yamaã arama/sconj sesé.
+# inputline = Tupana yané/=mf:m|yandé:x|pron:h|pron2 munhã/=mf:m|umunhã yamaẽ arama/sconj sesé.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tupana	tupana	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:6
-2	yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernForm=yandé|ModernLemma=yandé|TokenRange=7:11
-3	munhã	munhã	VERB	V	VerbForm=Inf	0	root	_	TokenRange=12:17
-4	yamaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=18:23
+2	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernCase=Acc,Nom|ModernForm=yandé|ModernLemma=yandé|TokenRange=7:11
+3	munhã	munhã	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=umunhã|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=12:17
+4	yamaẽ	maẽ	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=18:23
 5	arama	arama	SCONJ	SCONJ	_	4	mark	_	TokenRange=24:29
 6	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	4	obl	_	SpaceAfter=No|TokenRange=30:34
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
