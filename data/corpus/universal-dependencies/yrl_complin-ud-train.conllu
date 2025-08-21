@@ -24137,7 +24137,7 @@
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Hartt1938:0:0:205
-# text = Xamukwara-putari se mimbira namí xamunéu arama i namipura.
+# text = Xamukwara-putari se mimbira namí, xamunéu arama i namipura.
 # text_por = Vou furar as orelhas de minha filha para meter seus brincos.
 # text_source = p. 334, No. 205
 # text_orig = xamukuár putár semymyra namí, xamunéu aráma inamipóra.
@@ -24148,19 +24148,21 @@
 # text_por_sec = Quero furar as orelhas de minha filha para meter seus brincos.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Xamukwara-putari se mimbira namí xamunéu arama/sconj i/pron2 namipura.
+# inputline = Xamukwara-putari se mimbira namí, xamunéu arama/sconj i/pron2 namipura.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xamukwara-putari	_	_	_	_	_	_	_	TokenRange=0:16
 1	Xamukwara	mukwara	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amukwara
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=17:19
 4	mimbira	mimbira	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=20:27
-5	namí	namí	NOUN	N	Number=Sing	1	obj	_	TokenRange=28:32
-6	xamunéu	munéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	advcl	_	ModernForm=amunéu|TokenRange=33:40
-7	arama	arama	SCONJ	SCONJ	_	6	mark	_	TokenRange=41:46
-8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=47:48
-9	namipura	namipura	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=49:57
-10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=57:58
+5	namí	namí	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=28:32
+6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=32:33
+7	xamunéu	munéu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	advcl	_	ModernForm=amunéu|TokenRange=34:41
+8	arama	arama	SCONJ	SCONJ	_	7	mark	_	TokenRange=42:47
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=48:49
+10	namipura	namipura	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=50:58
+11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=58:59
 
 # sent_id = Hartt1938:0:0:206
 # text = Xasú xayakapí se awa.
@@ -24297,24 +24299,25 @@
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Hartt1938:0:0:213
-# text = Se maã-itá intí usika-kwáu saka upé.
+# text = Se maã-itá intí usí-kwáu saka upé.
 # text_por = Minhas cousas (roupa) não cabem no saco.
 # text_source = p. 334, No. 213
 # text_orig = semaaitá intí osy kuáu saka opé.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Se maã-itá intí usika-kwáu saka/n upé/adp.
+# inputline = Se maã-itá intí usí-kwáu/=typo:c|usika saka/n upé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	maã-itá	maã	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=3:10
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=11:15
-4-5	usika-kwáu	_	_	_	_	_	_	_	TokenRange=16:26
-4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
+4-5	usí-kwáu	_	_	_	_	_	_	_	TokenRange=16:24
+4	usí	sika	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=usika
 5	kwáu	kwáu	AUX	AUXN	Compound=Yes|VerbForm=Inf	4	aux	_	_
-6	saka	saka	NOUN	N	Number=Sing	4	obl	_	TokenRange=27:31
-7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=32:35
-8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=35:36
+6	saka	saka	NOUN	N	Number=Sing	4	obl	_	TokenRange=25:29
+7	upé	upé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=30:33
+8	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = Hartt1938:0:0:214
 # text = Iwitú umukataka reté yané ruka.
@@ -24330,6 +24333,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Iwitú umukataka reté/advs yané/pron2 ruka.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iwitú	iwitú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	umukataka	mukataka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:15
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=16:20
@@ -24345,17 +24349,18 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yasú kurutẽi, intí arama/sconj warasí yané/pron rapí/=typo:c|usapí arama/sconj.
+# inputline = Yasú kurutẽi, intí arama/sconj warasí yané/=mf:m|yandé:x|pron:h|pron2 rapí/=mf:m|usapí arama/fut.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	kurutẽi	kurutẽi	ADV	ADVA	AdvType=Man	1	advmod	_	SpaceAfter=No|TokenRange=5:12
 3	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=12:13
 4	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=14:18
 5	arama	arama	SCONJ	SCONJ	_	8	mark	_	TokenRange=19:24
 6	warasí	warasí	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=25:31
-7	yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	8	obj	_	ModernForm=yandé|ModernLemma=yandé|TokenRange=32:36
-8	rapí	sapí	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	1	advcl	_	CorrectForm=usapí|TokenRange=37:41
-9	arama	arama	SCONJ	SCONJ	_	8	mark	_	SpaceAfter=No|TokenRange=42:47
+7	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs|Style=Arch	8	obj	_	ModernCase=Acc,Nom|ModernForm=yandé|ModernLemma=yandé|TokenRange=32:36
+8	rapí	rapí	VERB	V4	Mood=Ind|Rel=Cont|Style=Arch|VerbForm=Fin	1	advcl	_	ModernForm=usapí|ModernLemma=sapí|ModernPerson=3|TokenRange=37:41
+9	arama	arama	PART	FUT	Tense=Fut	8	advmod	_	SpaceAfter=No|TokenRange=42:47
 10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Hartt1938:0:0:218

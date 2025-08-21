@@ -14275,12 +14275,13 @@
 # text_por = Murucututu, tua mãe te chama.
 # text_source = Rodrigues, 292, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Murukututú, ne manha ne/=mf:m|ixé renúi/=mf:m|usenúi.
 1	Murukututú	murukututú	PROPN	PROPN	_	6	vocative	_	SpaceAfter=No|TokenRange=0:10
 2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=10:11
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
 4	manha	manha	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=15:20
-5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Arch	6	obj	_	ModernCase=Acc,Nom|ModernForm=indé|ModernLemma=indé|TokenRange=21:23
-6	renúi	senúi	VERB	V	Rel=Cont|Style=Arch|VerbForm=Inf	0	root	_	ModernForm=senúi|SpaceAfter=No|TokenRange=24:29
+5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Arch	6	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|ModernPerson=1|TokenRange=21:23
+6	renúi	renúi	VERB	V4	Mood=Ind|Rel=Cont|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=usenúi|ModernLemma=senúi|ModernPerson=3|SpaceAfter=No|TokenRange=24:29
 7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Avila2021:0:0:515
