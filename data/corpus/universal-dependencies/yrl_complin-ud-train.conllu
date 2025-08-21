@@ -24768,6 +24768,28 @@
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=17:21
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=21:22
 
+# sent_id = Hartt1938:0:0:242-1
+# text = Xayumbué yané yara supé.
+# text_por = Eu rezo ao Nosso Senhor.
+# text_source = p. 336, No. 242
+# text_orig = xayibué yané yára supé (Ereré).
+# place = Ereré
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Ayumbué yané yara supé.
+# text_por_sec = Eu rezo ao Nosso Senhor.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Xayumbué yané/pron2 yara/n supé.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xayumbué	yumbué	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Ayumbué|TokenRange=0:8
+2	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=9:13
+3	yara	yara	NOUN	N	Number=Sing	1	obl	_	TokenRange=14:18
+4	supé	supé	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=19:23
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
+
 # sent_id = Hartt1938:0:0:242-2
 # text = Xayumué yané yara supé.
 # text_por = Eu rezo ao Nosso Senhor.
