@@ -25108,6 +25108,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Mawaá/int taá ne igara rangá?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mawaá	mawaá	DET	INT	PronType=Int	0	root	_	TokenRange=0:5
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=6:9
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=10:12
@@ -25129,6 +25130,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Yané/pron yaxari apukuitawa igara upé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs|Style=Arch	2	nsubj	_	ModernForm=Yandé|ModernLemma=yandé|TokenRange=0:4
 2	yaxari	xari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	apukuitawa	apukuitawa	NOUN	N	Number=Sing	2	obj	_	TokenRange=12:22
@@ -25150,6 +25152,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Itamaraká yaxiú/=mf:m|uyaxiú:x|v:h|v ikú/=mf:m|uikú:x|v:h|v umanú resé/sconj mira.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Itamaraká	itamaraká	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:9
 2	yaxiú	yaxiú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyaxiú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=10:15
 3	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	2	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=16:19
@@ -25168,6 +25171,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xapiripana timiú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xapiripana	piripana	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Apiripana|TokenRange=0:10
 2	timiú	timiú	NOUN	N	Number=Sing|Rel=Abs	1	obj	_	SpaceAfter=No|TokenRange=11:16
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
@@ -25186,6 +25190,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xasusuka xaikú/v waraná.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasusuka	susuka	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asusuka|TokenRange=0:8
 2	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	aux	_	ModernForm=aikú|TokenRange=9:14
 3	waraná	waraná	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=15:21
@@ -25226,6 +25231,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Apigawa/n ukwáu reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Apigawa	apigawa	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:7
 2	ukwáu	kwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=8:13
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=14:18
@@ -25241,6 +25247,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xarikú tenhẽ/foc.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Arikú|TokenRange=0:6
 2	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	SpaceAfter=No|TokenRange=7:12
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=12:13
