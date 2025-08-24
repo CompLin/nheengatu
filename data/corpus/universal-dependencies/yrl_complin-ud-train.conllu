@@ -17171,7 +17171,7 @@
 # text_rus_source = Maslova (2018:164)
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Musapiri/card yasí/n riré/adp, paá, nhaã intí waá/rel; upitá i/pron2 puruã aé/pron uyupi/=typo:c|uyupúi muxiwa umukirá arama/sconj aintá/pron.
+# inputline = Musapiri/card yasí/n riré/adp, paá, nhaã intí waá/rel upitá i/pron2 puruã aé/pron uyupi/=typo:c|uyupúi muxiwa umukirá arama/sconj aintá/pron.
 1	Musapiri	musapiri	NUM	CARD	NumType=Card	2	nummod	_	TokenRange=0:8
 2	yasí	yasí	NOUN	N	Number=Sing	10	obl	_	TokenRange=9:13
 3	riré	riré	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=14:18
@@ -25000,7 +25000,7 @@
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=0:4
-2	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	4	advmod	_	TokenRange=5:10
+2	tenhẽ	tenhẽ	PART	FOC	Foc=Yes|PartType=Emp	1	advmod	_	TokenRange=5:10
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=11:12
 4	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:17
 5	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=17:18
