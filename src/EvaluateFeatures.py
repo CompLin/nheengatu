@@ -1,33 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 11, 2025
-
+# Last update: August 25, 2025
 """
 Evaluates morphosyntactic feature annotations using F1-score.
 Includes per-feature metrics and confusion matrices with sentence IDs.
 
 Usage:
-    python evaluate_features.py
+    python EvaluateFeatures.py input.json
+
+Arguments:
+    input.json   Path to the JSON file containing feature annotations.
 
 Requires:
     - mkTestSet(): returns a list of {sent_id: [gold_feats, test_feats]} dicts
 """
 
+import sys
 import json
 from collections import defaultdict
-from CompareGoldTestFeats import mkTestSet
 
-INFILE="/home/leonel/Dropbox/publications/2025/STIL/features.edt.json"
-INFILE="/home/leonel/Dropbox/publications/2025/STIL/test/data.json"
-
-def compute_scores(tp,fp,fn):
+def compute_scores(tp, fp, fn):
+    """Compute precision, recall, and F1-score."""
     precision = tp / (tp + fp) if (tp + fp) else 0.0
     recall = tp / (tp + fn) if (tp + fn) else 0.0
     f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
     return precision, recall, f1
 
+
 def compute_feature_f1(data):
+    """
+    Compute overall and per-feature F1-scores,
+    with confusion matrices for mismatches.
+    """
     tp = fp = fn = 0
 
     feature_stats = defaultdict(lambda: {"tp": 0, "fp": 0, "fn": 0})
@@ -67,13 +72,12 @@ def compute_feature_f1(data):
                 feature_stats[feat]["fp"] += 1
                 confusion[feat][("<MISSING>", test_dict[feat])].append(sent_id)
 
-    # Overall scores
-    precision, recall, f1=compute_scores(tp,fp,fn)
-
+    precision, recall, f1 = compute_scores(tp, fp, fn)
     return precision, recall, f1, feature_stats, confusion
 
 
 def print_report(precision, recall, f1, feature_stats, confusion):
+    """Print overall, per-feature scores, and confusion matrices."""
     print(f"Overall Precision: {precision:.3f}")
     print(f"Overall Recall:    {recall:.3f}")
     print(f"Overall F1-score:  {f1:.3f}")
@@ -83,10 +87,7 @@ def print_report(precision, recall, f1, feature_stats, confusion):
         tp = stats["tp"]
         fp = stats["fp"]
         fn = stats["fn"]
-        '''p = tp / (tp + fp) if (tp + fp) else 0.0
-        r = tp / (tp + fn) if (tp + fn) else 0.0
-        f1_feat = 2 * p * r / (p + r) if (p + r) else 0.0'''
-        p, r, f1_feat=compute_scores(tp,fp,fn)
+        p, r, f1_feat = compute_scores(tp, fp, fn)
         print(f"{feat:<15} {p:6.2f} {r:6.2f} {f1_feat:6.2f} {tp:6} {fp:6} {fn:6}")
 
     print("\nConfusion matrices (features with F1 < 1.0):")
@@ -103,10 +104,14 @@ def print_report(precision, recall, f1, feature_stats, confusion):
 
 
 def main():
-    #testset = mkTestSet()
-    #Load your feature data
-    with open(INFILE, "r", encoding="utf-8") as f:
+    if len(sys.argv) < 2:
+        print("Usage: python EvaluateFeatures.py input.json")
+        sys.exit(1)
+
+    infile = sys.argv[1]
+    with open(infile, "r", encoding="utf-8") as f:
         testset = json.load(f)
+
     print(f"Total tokens evaluated: {len(testset)}")
     precision, recall, f1, feature_stats, confusion = compute_feature_f1(testset)
     print_report(precision, recall, f1, feature_stats, confusion)
@@ -114,4 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
