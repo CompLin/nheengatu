@@ -25853,8 +25853,9 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yepé/art maãpuxí/=spl:w|puxí:h|n:x|a uyukwáu ixéu kaá-pe/n aasuí/cconj akanhemu/=typo:c|ukanhemu, intí xakwáu marupí/advrc usú.
+# inputline = Yepé/art maãpuxí/=spl:w|puxí:h|n:x|a uyukwáu ixéu kaá-pe/n aasuí/advt akanhemu/=typo:c|ukanhemu, intí xakwáu marupí/advrc usú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	maã	maã	NOUN	N	Number=Sing|Typo=Yes	4	nsubj	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=5:8
 3	puxí	puxí	ADJ	A	_	2	amod	_	TokenRange=8:12
@@ -25863,8 +25864,8 @@
 6-7	kaá-pe	_	_	_	_	_	_	_	TokenRange=26:32
 6	kaá	kaá	NOUN	N	Number=Sing	4	obl	_	_
 7	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
-8	aasuí	aasuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=33:38
-9	akanhemu	kanhemu	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	4	conj	_	CorrectForm=ukanhemu|SpaceAfter=No|TokenRange=39:47
+8	aasuí	aasuí	ADV	ADVT	AdvType=Tim	9	advmod	_	TokenRange=33:38
+9	akanhemu	kanhemu	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin	4	parataxis	_	CorrectForm=ukanhemu|SpaceAfter=No|TokenRange=39:47
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=47:48
 11	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=49:53
 12	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	9	parataxis	_	ModernForm=akwáu|TokenRange=54:60
