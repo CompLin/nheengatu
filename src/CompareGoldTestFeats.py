@@ -215,6 +215,8 @@ def mkTestSet(treebank=TREEBANK_PATH):
           match for a given sentence, the sentence ID and token counts are
           printed to stdout for debugging. These sentences are skipped and
           their tokens are **not** included in the test set.
+        - At the end of execution, the function prints a summary of how
+          many sentences were skipped due to mismatched token counts.
     """
     # Load sentences from CoNLL-U
     sents = extractConlluSents(*treebank)
@@ -223,6 +225,8 @@ def mkTestSet(treebank=TREEBANK_PATH):
     tokenlists = mkGold(sents)
 
     test = []
+    mismatched_sentences = 0  # counter for skipped sentences
+
     for tk in tokenlists:
         # Original sentence text (with possible special tags)
         inputline = tk.metadata.get("inputline")
@@ -253,10 +257,14 @@ def mkTestSet(treebank=TREEBANK_PATH):
                 test.append(extractFeatures(sent_id_token_id, gold_token, test_token))
         else:
             # Debugging output when gold/test tokenization lengths mismatch
-            print(sent_id, len(tk), len(newtk))
+            print(f"⚠️ Mismatch in {sent_id}: gold={len(tk)}, yauti={len(newtk)}")
+            mismatched_sentences += 1
+
+    # Print summary of skipped sentences
+    if mismatched_sentences > 0:
+        print(f"\nSummary: {mismatched_sentences} sentence(s) skipped due to mismatched token counts.")
 
     return test
-
 
 def save_to_json(data, filename="features.json"):
     """Save a Python data structure to a JSON file."""
