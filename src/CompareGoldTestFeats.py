@@ -19,7 +19,7 @@ target other languages.
 
 The script identifies tokens with special tags (marked with "/="),
 extracts morphosyntactic features from gold and test analyses, and
-produces a JSON file mapping sentence IDs to corresponding feature sets.
+produces a JSON file mapping token IDs to corresponding feature sets.
 
 Special tags
 ------------
@@ -147,10 +147,10 @@ def getTokensWithSpecialTags(tokens):
     return result
 
 
-def extractFeatures(sent_id, gold_token, test_token):
+def extractFeatures(token_id, gold_token, test_token):
     """
     Extract features (FEATS and MISC) from gold and test tokens.
-    Returns a dict mapping sent_id to [gold_feats, test_feats].
+    Returns a dict mapping token_id to [gold_feats, test_feats].
     """
     feats = []
     for token in (gold_token, test_token):
@@ -164,7 +164,7 @@ def extractFeatures(sent_id, gold_token, test_token):
                 if k != "TokenRange":
                     newfeats[k] = v
         feats.append(newfeats)
-    return {sent_id: feats}
+    return {token_id: feats}
 
 
 def mkTestSet(treebank=TREEBANK_PATH):
