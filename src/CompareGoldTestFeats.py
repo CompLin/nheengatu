@@ -169,31 +169,92 @@ def extractFeatures(token_id, gold_token, test_token):
 
 def mkTestSet(treebank=TREEBANK_PATH):
     """
-    Build the test set by comparing gold and Yauti analyses.
+    Build the test set by comparing gold-standard and Yauti analyses.
+
+    This function aligns tokens from gold-standard CoNLL-U annotations
+    with their corresponding tokens produced by Yauti, focusing only on
+    sentences that have an `# inputline` attribute and contain at least
+    one token with a special tag ("/="). For each such token, it extracts
+    and pairs morphosyntactic features from the gold and test tokens.
 
     Args:
-        treebank (str or list): Path(s) to CoNLL-U file(s).
+        treebank (str or list): Path(s) to one or more CoNLL-U files.
+            Defaults to the path defined in TREEBANK_PATH.
 
     Returns:
-        list of dicts: Each dict maps sent_id to [gold_feats, test_feats].
+        list of dict:
+            A list where each element is a dictionary of the form::
+
+                {
+                    token_id: [gold_feats, test_feats]
+                }
+
+            - ``gold_feats`` and ``test_feats`` are dictionaries of
+              morphosyntactic features (from FEATS and MISC fields).
+            - ``token_id`` is a unique identifier constructed as::
+
+                  <sent_id>@<token_index>
+
+              where:
+              * ``sent_id`` is the sentence identifier from the
+                `# sent_id` metadata field in the CoNLL-U file.
+              * ``token_index`` is the integer ID of the token as it
+                appears in the CoNLL-U token table (ID column).
+
+            Example:
+                If the sentence has ``sent_id = Avila2021:0:0:27`` and
+                the token is at ID ``3`` in the CoNLL-U table, the
+                resulting token_id is::
+
+                    Avila2021:0:0:27@3
+
+    Notes:
+        - Only sentences with an `# inputline` metadata field containing
+          at least one token marked with a special tag ("/=") are processed.
+        - If the number of tokens in the gold and Yauti analyses does not
+          match for a given sentence, the sentence ID and token counts are
+          printed to stdout for debugging. These sentences are skipped and
+          their tokens are **not** included in the test set.
     """
+    # Load sentences from CoNLL-U
     sents = extractConlluSents(*treebank)
+
+    # Keep only sentences with "# inputline" and at least one "/=" token
     tokenlists = mkGold(sents)
+
     test = []
     for tk in tokenlists:
+        # Original sentence text (with possible special tags)
         inputline = tk.metadata.get("inputline")
+
+        # Sentence ID from CoNLL-U metadata
         sent_id = tk.metadata.get("sent_id")
+
+        # Tokenize the inputline and split multiword tokens
         tokens = splitMultiWordTokens(tokenize(inputline))
+
+        # Rebuild sentence as Yauti would analyze it
         newtk = mkConlluSentence(tokens)
+
+        # Proceed only if token counts match (sanity check)
         if len(tk) == len(newtk):
+            # Identify tokens that contain special tags ("/=")
             tokens_with_special_tags = getTokensWithSpecialTags(tokens)
+
             for token_id, token in tokens_with_special_tags:
+                # Build unique token ID: <sent_id>@<token_index>
                 sent_id_token_id = f"{sent_id}@{token_id}"
+
+                # Retrieve corresponding gold and test tokens
                 gold_token = tk.filter(id=token_id)[0]
                 test_token = newtk.filter(id=token_id)[0]
+
+                # Extract and store features
                 test.append(extractFeatures(sent_id_token_id, gold_token, test_token))
         else:
+            # Debugging output when gold/test tokenization lengths mismatch
             print(sent_id, len(tk), len(newtk))
+
     return test
 
 
