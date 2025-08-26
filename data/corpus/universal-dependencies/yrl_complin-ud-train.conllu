@@ -25382,10 +25382,11 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xasú xayumutimú.
+# inputline = Xasú xayumutimú/=mid.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
-2	xayumutimú	yumutimú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=ayumutimú|SpaceAfter=No|TokenRange=5:15
+2	xayumutimú	mutimú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin|Voice=Mid,Pass	0	root	_	ModernForm=ayumutimú|SpaceAfter=No|TokenRange=5:15
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Hartt1938:0:0:275
