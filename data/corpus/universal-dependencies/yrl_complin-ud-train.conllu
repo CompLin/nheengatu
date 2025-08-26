@@ -25823,7 +25823,7 @@
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:303
-# text = Buya uyumukataka uikú, upeyú iwitú yawé.
+# text = Buya umukataka uikú, upeyú iwitú yawé.
 # text_por = A cobra está se mexendo, assobia como o vento.
 # text_source = p. 341, No. 303
 # text_orig = móia omokatág oikó, opeiyú yuytú yaué.
@@ -25834,16 +25834,17 @@
 # text_por_sec = A cobra está se mexendo, assobia como o vento
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Buya uyumukataka uikú/v, upeyú iwitú yawé/adp.
+# inputline = Buya umukataka/=typo:c|uyumukataka:n|mid uikú/v, upeyú iwitú yawé/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Buya	buya	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
-2	uyumukataka	yumukataka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:16
-3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=17:21
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=21:22
-5	upeyú	peyú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=23:28
-6	iwitú	iwitú	NOUN	N	Number=Sing	5	obl	_	TokenRange=29:34
-7	yawé	yawé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=35:39
-8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=39:40
+2	umukataka	mukataka	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=uyumukataka|TokenRange=5:14
+3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=15:19
+4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
+5	upeyú	peyú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=21:26
+6	iwitú	iwitú	NOUN	N	Number=Sing	5	obl	_	TokenRange=27:32
+7	yawé	yawé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=33:37
+8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=37:38
 
 # sent_id = Hartt1938:0:0:304
 # text = Yepé maãpuxí uyukwáu ixéu kaá-pe aasuí akanhemu, intí xakwáu marupí usú.
