@@ -1,47 +1,19 @@
 #!/bin/bash
 # Author: Leonel Figueiredo de Alencar
-# Last update: May 27, 2025
+# Last update: August 25, 2025
 
+# Ensure jq is available
+if ! command -v jq >/dev/null 2>&1; then
+    echo "Error: jq is required but not installed. Please install jq and try again."
+    exit 1
+fi
 
-# List of Amerindian treebanks
-directories=(
-    "UD_Akuntsu-TuDeT"
-    "UD_Apurina-UFPA"
-    "UD_Bororo-BDT"
-    "UD_Guajajara-TuDeT"
-    "UD_Guarani-OldTuDeT"
-    "UD_Highland_Puebla_Nahuatl-ITML"
-    "UD_Kaapor-TuDeT"
-    "UD_Karo-TuDeT"
-    "UD_Kiche-IU"
-    "UD_Madi-Jarawara"
-    "UD_Makurap-TuDeT"
-    "UD_Mbya_Guarani-Dooley"
-    "UD_Mbya_Guarani-Thomas"
-    "UD_Munduruku-TuDeT"
-    "UD_Nheengatu-CompLin"
-    "UD_Paumari-TueCL"
-    "UD_Teko-TuDeT"
-    "UD_Tupinamba-TuDeT"
-    "UD_Western_Sierra_Puebla_Nahuatl-ITML"
-    "UD_Xavante-XDT"
-    "UD_Yupik-SLI",
-    "UD_Gwichin-TueCL"
-    "UD_Ika-ChibErgIS"
-    "UD_Pesh-ChibErgIS"
-    "UD_Bokota-ChibErgIS"
-)
+# Path to this script’s directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# List of Portuguese treebanks
-portuguese=(
-    "UD_Portuguese-Bosque"
-    "UD_Portuguese-CINTIL"
-    "UD_Portuguese-DANTEStocks"
-    "UD_Portuguese-GSD"
-    "UD_Portuguese-PetroGold"
-    "UD_Portuguese-Porttinari"
-    "UD_Portuguese-PUD"
-)
+# Load treebanks from treebanks.json
+amerindian=($(jq -r '.amerindian[]' "$SCRIPT_DIR/treebanks.json"))
+portuguese=($(jq -r '.portuguese[]' "$SCRIPT_DIR/treebanks.json"))
 
 # Function to display usage message
 usage() {
@@ -62,7 +34,7 @@ usage() {
 }
 
 # Default to Amerindian treebanks
-selected_treebanks=("${directories[@]}")
+selected_treebanks=("${amerindian[@]}")
 
 # Handle options
 while [[ "$1" == --* || "$1" == -* ]]; do
@@ -72,7 +44,7 @@ while [[ "$1" == --* || "$1" == -* ]]; do
             shift
             ;;
         -a)
-            selected_treebanks=("${directories[@]}" "${portuguese[@]}")  # All treebanks
+            selected_treebanks=("${amerindian[@]}" "${portuguese[@]}")  # All treebanks
             shift
             ;;
         -h|--help)
@@ -112,5 +84,3 @@ for dir in "${selected_treebanks[@]}"; do
         echo "Directory '$dir' not found. Skipping..."
     fi
 done
-
-
