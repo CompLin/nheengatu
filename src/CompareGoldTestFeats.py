@@ -63,6 +63,13 @@ From the command line:
 - The `-o` option specifies the output JSON file.
 - If `-t` is omitted, the script defaults to the treebank defined in `TREEBANK_PATH`.
 
+Progress bar
+------------
+- By default, a progress bar is shown if the number of sentences with `# inputline`
+  is at least 50.
+- Use `--progress` to force showing it even for small treebanks.
+- Use `--no-progress` to disable it entirely.
+
 Output
 ------
 - JSON file containing aligned gold vs. test feature annotations.
@@ -117,6 +124,8 @@ and confusion matrices.
 """
 
 import json
+import argparse
+from tqdm import tqdm
 from Yauti import (
     extractConlluSents,
     mkConlluSentence,
@@ -126,6 +135,7 @@ from Yauti import (
     process_token,
 )
 from collections import Counter
+from tqdm import tqdm
 
 # ------------------------------------------------------------
 # Core functions
@@ -167,7 +177,7 @@ def extractFeatures(token_id, gold_token, test_token):
     return {token_id: feats}
 
 
-def mkTestSet(treebank=TREEBANK_PATH):
+def mkTestSet(treebank=TREEBANK_PATH,progress=None, verbose=True):
     """
     Build the test set by comparing gold-standard and Yauti analyses.
 
@@ -180,6 +190,11 @@ def mkTestSet(treebank=TREEBANK_PATH):
     Args:
         treebank (str or list): Path(s) to one or more CoNLL-U files.
             Defaults to the path defined in TREEBANK_PATH.
+        progress (bool or None):
+            - True  → always show progress bar
+            - False → never show progress bar
+            - None  → show automatically if ≥ 50 sentences
+        verbose (bool): If True, print debugging messages and summary.
 
     Returns:
         list of dict:
@@ -223,11 +238,17 @@ def mkTestSet(treebank=TREEBANK_PATH):
 
     # Keep only sentences with "# inputline" and at least one "/=" token
     tokenlists = mkGold(sents)
+    
+	# Auto-enable progress if not specified
+    if progress is None:
+        progress = len(tokenlists) >= 50
 
     test = []
     mismatched_sentences = 0  # counter for skipped sentences
+    
+    iterator = tqdm(tokenlists, desc="Processing sentences", unit="sent") if progress else tokenlists
 
-    for tk in tokenlists:
+    for tk in iterator:
         # Original sentence text (with possible special tags)
         inputline = tk.metadata.get("inputline")
 
@@ -271,7 +292,7 @@ def save_to_json(data, filename="features.json"):
     try:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
-        print(f"Data successfully saved to {filename}")
+        #print(f"Data successfully saved to {filename}")
     except Exception as e:
         print(f"Error saving to {filename}: {e}")
 
@@ -279,30 +300,21 @@ def save_to_json(data, filename="features.json"):
 # ------------------------------------------------------------
 # Command-line entry point
 # ------------------------------------------------------------
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Extract and compare morphosyntactic features from gold and Yauti analyses of Nheengatu."
-    )
-    parser.add_argument(
-        "-t",
-        "--treebanks",
-        nargs="+",
-        default=None,
-        help="One or more input CoNLL-U files (default: TREEBANK_PATH).",
-    )
-    parser.add_argument(
-        "-o",
-        "--output",
-        default="features.json",
-        help="Output JSON filename (default: features.json).",
-    )
+def main():
+    parser = argparse.ArgumentParser(description="Compare gold and Yauti analyses of Nheengatu treebanks.")
+    parser.add_argument("-t", "--treebanks", nargs="*", help="Input CoNLL-U file(s).")
+    parser.add_argument("-o", "--output", required=True, help="Output JSON file.")
+    parser.add_argument("--progress", dest="progress", action="store_true", help="Force enable progress bar.")
+    parser.add_argument("--no-progress", dest="progress", action="store_false", help="Force disable progress bar.")
+    parser.set_defaults(progress=None)  # default: auto
     args = parser.parse_args()
 
-    if args.treebanks:
-        testset = mkTestSet(args.treebanks)
-    else:
-        testset = mkTestSet()
+    treebanks = args.treebanks if args.treebanks else TREEBANK_PATH
+    testset = mkTestSet(treebanks, progress=args.progress)
 
     save_to_json(testset, args.output)
+    print(f"✅ Features saved to {args.output}")
+
+
+if __name__ == "__main__":
+    main()
