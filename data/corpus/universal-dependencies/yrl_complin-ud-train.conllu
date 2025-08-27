@@ -25742,6 +25742,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Intí xasaisú kwaá/demx mira, intí se piá pura/n.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2	xasaisú	saisú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asaisú|TokenRange=5:12
 3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:17
@@ -25801,43 +25802,48 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xasú hasawaka mareka.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	aux	_	ModernForm=Asú|TokenRange=0:4
 2	hasawaka	sawaka	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:13
 3	mareka	mareka	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
 # sent_id = Hartt1938:0:0:301
-# text = Tapiira-kaawara i kirimawa reté.
+# text = Tapiira kaawara i kirimawa reté.
 # text_por = A anta é muito forte.
 # text_source = p. 341, No. 301
 # text_orig = tapiíra kaáuára ikyrymáua reté.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Tapiira-kaawara i/pron2 kirimawa/v2 reté/advs.
+# inputline = Tapiira kaawara/a i/pron2 kirimawa/v2 reté/advs.
 # text_annotator = Dominick Maia Alexandre
-1	Tapiira-kaawara	tapiira-kaawara	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:15
-2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=16:17
-3	kirimawa	kirimawa	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=18:26
-4	reté	reté	ADV	ADVS	AdvType=Deg	3	advmod	_	SpaceAfter=No|TokenRange=27:31
-5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=31:32
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Tapiira	tapiira	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=0:7
+2	kaawara	kaawara	ADJ	A	_	1	amod	_	TokenRange=8:15
+3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	expl	_	TokenRange=16:17
+4	kirimawa	kirimawa	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=18:26
+5	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	SpaceAfter=No|TokenRange=27:31
+6	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:302
-# text = Tapiira-kaawara uyuyumimi kaá-pe.
+# text = Tapiira kaawara uyuyumimi kaá-pe.
 # text_por = A anta se escondeu no mato.
 # text_source = p. 341, No. 302
 # text_orig = tapiíra kaáuára oyuyunún kaápe.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Tapiira-kaawara uyuyumimi kaá-pe/n.
+# inputline = Tapiira kaawara/a uyuyumimi/=mid kaá-pe/n.
 # text_annotator = Dominick Maia Alexandre
-1	Tapiira-kaawara	tapiira-kaawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:15
-2	uyuyumimi	yuyumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=16:25
-3-4	kaá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=26:32
-3	kaá	kaá	NOUN	N	Number=Sing	2	obl	_	_
-4	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	3	case	_	_
-5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Tapiira	tapiira	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:7
+2	kaawara	kaawara	ADJ	A	_	1	amod	_	TokenRange=8:15
+3	uyuyumimi	yumimi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=16:25
+4-5	kaá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=26:32
+4	kaá	kaá	NOUN	N	Number=Sing	3	obl	_	_
+5	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:303
 # text = Buya umukataka uikú, upeyú iwitú yawé.
