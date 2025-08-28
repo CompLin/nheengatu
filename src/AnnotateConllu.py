@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: August 16, 2025
+# Last update: August 28, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -3897,7 +3897,7 @@ def formatPages(start_page,end_page):
 		pages=f"p. {pages}, "
 	return pages
 
-def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True):
+def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True,annotator=ANNOTATOR,check=True, outfile=False, overwrite=False,metadata={}, translate=False,inputline=True,person='gab',prefix='Amorim1928'):
 	"""
 	>>> example='''18: (Nheengatú) Aru (S. Gabriel) 297-299.
 29-30\tAé/pron unheẽ: — Remaã ne tuwí/=mf:m|ruwí kwera/n mayawé/advra uyumuaíwa, kuíri aé/=mf:m|i:x|pron2:h|pron irumu/adp tenhẽ/foc kurí xasú xapusanú indé, puranga/adva ne mira, umaã indé arama/sconj.
@@ -3906,7 +3906,7 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 	>>> AnnotateConllu.parseExampleAmorim(example)
 	"""
 	metadata=copy_dic(metadata)
-	metadata.update(Mindlin())
+	metadata.update(Mindlin(person=person))
 	sents={}
 	title=''
 	lines=[line.strip() for line in example.split("\n") if line.strip() != '']
@@ -3937,7 +3937,7 @@ def parseExampleAmorim(example,text_nr=0,start_page=0,end_page=0, copyboard=True
 	sent_num,text=lines[i].split("\t")
 	#sent_num=int(sent_num)
 	text,por,orig=[line.split("\t")[1] for line in lines[i:]]
-	prefix="Amorim1928"
+	prefix=prefix
 	sents['sent_id']=mkSentId(prefix,text_nr,sent_num,sent_num)
 	sents['text']=text
 	sents['text_por']=por

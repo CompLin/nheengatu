@@ -12387,15 +12387,16 @@
 8	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
 9	…	…	PUNCT	PUNCT	_	1	punct	_	TokenRange=39:40
 
-# sent_id = Rodrigues1890:2-5:6:106
-# text = Aresé, paá, teapú, watá petuna ramé yawarité, tapiira kaawara watá petuna ramé intí teapú watá, upurú resé yawarité i pí pirera.
-# text_por = Arecé, paá, teapó, uatá petuna ramé yauarité, tapiyra cauara uatá petuna ramé inti teapó uatá, u puru recé yauarité i pê-pirêra.
+# sent_id = Rodrigues1890:2-5:6:6
+# text = Aresé, paá, teapú, watá petuna ramé yawareté, tapiira kaawara watá petuna ramé intí teapú watá, upurú resé yawarité i pí pirera.
+# text_por = Por isso dizem que a onça quando anda de noite faz bulha e a anta não, porque está descalça.
 # text_source = p. 155, No. 6
-# text_orig = Por isso dizem que a onça quando anda de noite faz bulha e a anta não, porque está descalça.
+# text_orig = Arecé, paá, teapó, uatá petuna ramé yauarité, tapiyra cauara uatá petuna ramé inti teapó uatá, u puru recé yauarité i pê-pirêra.
+# title_orig = YAUARITÉ TAPIYRA CAAUARA IRUMO
 # text_eng = TODO
 # text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Aresé, paá, teapú/v3, watá/=mf:m|uwatá petuna ramé/adp yawarité, tapiira kaawara/a watá/=mf:m|uwatá petuna ramé/adp intí teapú/v3 watá/=mf:m|uwatá, upurú resé/sconj yawarité i/pron2 pí pirera.
+# inputline = Aresé, paá, teapú/v3, watá/=mf:m|uwatá petuna ramé/adp yawareté, tapiira kaawara/a watá/=mf:m|uwatá petuna ramé/adp intí teapú/v3 watá/=mf:m|uwatá, upurú resé/sconj yawareté i/pron2 pí pirera.
 # text_annotator = Leonel Figueiredo de Alencar
 # cross_reference = Avila2021:0:0:46
 1	Aresé	aresé	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:5
@@ -12407,7 +12408,7 @@
 7	watá	watá	VERB	V	Style=Arch|VerbForm=Inf	5	parataxis	_	ModernForm=uwatá|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=19:23
 8	petuna	petuna	NOUN	N	Number=Sing	7	obl	_	TokenRange=24:30
 9	ramé	ramé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=31:35
-10	yawarité	yawarité	_	_	_	5	nsubj	_	SpaceAfter=No|TokenRange=36:44
+10	yawareté	yawareté	NOUN	N	_	5	nsubj	_	SpaceAfter=No|TokenRange=36:44
 11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=44:45
 12	tapiira	tapiira	NOUN	N	Number=Sing	14	nsubj	_	TokenRange=46:53
 13	kaawara	kaawara	ADJ	A	_	12	amod	_	TokenRange=54:61
