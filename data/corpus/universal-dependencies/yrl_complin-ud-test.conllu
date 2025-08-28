@@ -5324,7 +5324,9 @@
 # text_eng = That is why, they say, at night the jaguar walks with noise, [when] the tapir walks at night, it does not walk with noise, because the jaguar borrowed its hoof.
 # text_por = Por isso, dizem, à noite a onça caminha fazendo barulho, [quando] a anta caminha à noite, não caminha fazendo barulho, porque a onça pegou emprestado seu casco.
 # text_source = Rodrigues, 155, adap.
+# text_prim = Arecé, paá, teapó, uatá petuna ramé yauarité, tapiyra cauara uatá petuna ramé inti teapó uatá, u puru recé yauarité i pê-pirêra.
 # text_annotator = Leonel Figueiredo de Alencar
+# cross_reference = Rodrigues1890:2-5:6:106
 1	Aresé	aresé	ADV	ADVJ	AdvType=Cau	4	advmod	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=6:9
 3	tiapú	tiapú	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=10:15
@@ -5344,7 +5346,7 @@
 17	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=93:94
 18	upurú	purú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	16	advcl	_	TokenRange=95:100
 19	resé	resé	SCONJ	SCONJ	_	18	mark	_	TokenRange=101:105
-20	yawareté	yawareté	NOUN	N	Number=Sing	18	iobj	_	TokenRange=106:114
+20	yawareté	yawareté	NOUN	N	Number=Sing	18	nsubj	_	TokenRange=106:114
 21	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	22	nmod:poss	_	TokenRange=115:116
 22	pirera	pirera	NOUN	N	Number=Sing	18	obj	_	SpaceAfter=No|TokenRange=117:123
 23	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=123:124
