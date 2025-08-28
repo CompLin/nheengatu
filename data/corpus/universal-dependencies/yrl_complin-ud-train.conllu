@@ -12388,7 +12388,7 @@
 9	…	…	PUNCT	PUNCT	_	1	punct	_	TokenRange=39:40
 
 # sent_id = Rodrigues1890:2-5:6:6
-# text = Aresé, paá, teapú, watá petuna ramé yawareté, tapiira kaawara watá petuna ramé intí teapú watá, upurú resé yawarité i pí pirera.
+# text = Aresé, paá, teapú, watá petuna ramé yawareté, tapiira kaawara watá petuna ramé intí teapú watá, upurú resé yawareté i pí pirera.
 # text_por = Por isso dizem que a onça quando anda de noite faz bulha e a anta não, porque está descalça.
 # text_source = p. 155, No. 6
 # text_orig = Arecé, paá, teapó, uatá petuna ramé yauarité, tapiyra cauara uatá petuna ramé inti teapó uatá, u puru recé yauarité i pê-pirêra.
@@ -12400,9 +12400,9 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # cross_reference = Avila2021:0:0:46
 1	Aresé	aresé	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:5
-2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
+2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=10:11
 5	teapú	teapú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:17
 6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
 7	watá	watá	VERB	V	Style=Arch|VerbForm=Inf	5	parataxis	_	ModernForm=uwatá|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=19:23
@@ -12422,44 +12422,6 @@
 21	upurú	purú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	18	advcl	_	TokenRange=96:101
 22	resé	resé	SCONJ	SCONJ	_	21	mark	_	TokenRange=102:106
 23	yawareté	yawareté	NOUN	N	Number=Sing	21	nsubj	_	TokenRange=107:115
-24	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	nmod:poss	_	TokenRange=116:117
-25	pí	pí	NOUN	N	Number=Sing	26	nmod:poss	_	TokenRange=118:120
-26	pirera	pirera	NOUN	N	Number=Sing	21	obj	_	SpaceAfter=No|TokenRange=121:127
-27	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=127:128
-
-# sent_id = Rodrigues1890:2-5:5:105
-# text = Aresé, paá, teapú, watá petuna ramé yawarité, tapiira kaawara watá petuna ramé intí teapú watá, upurú resé yawarité i pí pirera.
-# text_por = Arecé, paá, teapó, uatá petuna ramé yauarité, tapiyra cauara uatá petuna ramé inti teapó uatá, u puru recé yauarité i pê-pirêra.
-# text_source = p. 155, No. 5
-# text_orig = Por isso dizem que a onça quando anda de noite faz bulha e a anta não, porque está descalça.
-# text_eng = TODO
-# text_orig_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# text_por_modernizer = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Aresé, paá, teapú/v3, watá/=mf:m|uwatá petuna ramé/adp yawarité, tapiira kaawara/a watá/=mf:m|uwatá petuna ramé/adp intí teapú/v3 watá/=mf:m|uwatá, upurú resé/sconj yawarité i/pron2 pí pirera.
-# text_annotator = Leonel Figueiredo de Alencar
-1	Aresé	aresé	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:5
-2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=5:6
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=10:11
-5	teapú	teapú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:17
-6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=17:18
-7	watá	watá	VERB	V	Style=Arch|VerbForm=Inf	5	parataxis	_	ModernForm=uwatá|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=19:23
-8	petuna	petuna	NOUN	N	Number=Sing	7	obl	_	TokenRange=24:30
-9	ramé	ramé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=31:35
-10	yawarité	yawarité	_	_	_	5	_	_	SpaceAfter=No|TokenRange=36:44
-11	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=44:45
-12	tapiira	tapiira	NOUN	N	Number=Sing	7	obj	_	TokenRange=46:53
-13	kaawara	kaawara	ADJ	A	_	12	amod	_	TokenRange=54:61
-14	watá	watá	VERB	V	Style=Arch|VerbForm=Inf	7	parataxis	_	ModernForm=uwatá|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=62:66
-15	petuna	petuna	NOUN	N	Number=Sing	14	obl	_	TokenRange=67:73
-16	ramé	ramé	ADP	ADP	AdpType=Post	15	case	_	TokenRange=74:78
-17	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	18	advmod	_	TokenRange=79:83
-18	teapú	teapú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	14	parataxis	_	TokenRange=84:89
-19	watá	watá	VERB	V	Style=Arch|VerbForm=Inf	18	parataxis	_	ModernForm=uwatá|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=90:94
-20	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=94:95
-21	upurú	purú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	advcl	_	TokenRange=96:101
-22	resé	resé	SCONJ	SCONJ	_	21	mark	_	TokenRange=102:106
-23	yawarité	yawarité	_	_	_	5	_	_	TokenRange=107:115
 24	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	25	nmod:poss	_	TokenRange=116:117
 25	pí	pí	NOUN	N	Number=Sing	26	nmod:poss	_	TokenRange=118:120
 26	pirera	pirera	NOUN	N	Number=Sing	21	obj	_	SpaceAfter=No|TokenRange=121:127
