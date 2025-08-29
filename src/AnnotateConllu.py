@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: August 28, 2025
+# Last update: August 29, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -1823,55 +1823,43 @@ def hasTag(tags1, tags2):
         return True
     return False
 
-
-def _filterparselist(tags,parselist):
-    if tags:
-        return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
-    else:
-        return parselist
-
 def filterparselist(tags, parselist):
     """
     Filters a parselist by a specified part-of-speech tag (XPOS) or XPOS+feature combination.
 
-    Parameters:
+    Parameters
     ----------
     tags : str
         The XPOS tag to filter by, optionally combined with a feature, e.g., 'N+ABS' for an absolutive noun.
         If an empty string or None is provided, no filtering is performed and the full parselist is returned.
 
     parselist : list
-        A list of parses, where each parse is a list containing a lemma and an XPOS tag, optionally followed by morphological features
-        e.g., [['xirĩ', 'A'], ['xirĩ', 'V2']] and [['apigawa', 'A'], ['apigawa', 'N+SG']].
+        A list of parses, where each parse is a list containing a lemma and an XPOS tag,
+        optionally followed by morphological features.
+        e.g., [['xirĩ', 'A'], ['xirĩ', 'V2']] or [['apigawa', 'A'], ['apigawa', 'N+SG']].
 
-    Returns:
+    Returns
     -------
     list
         A list containing only the parses matching the specified tag.
 
-    Raises:
+    Raises
     ------
     ValueError
         If filtering is requested (i.e., tags is not empty) but no parse in the parselist
         matches the specified tag.
-
-    Example:
-    --------
-    >>> filterparselist('A', [['xirĩ', 'A'], ['xirĩ', 'V2']])
-    [['xirĩ', 'A']]
-
-    >>> filterparselist('', [['xirĩ', 'A'], ['xirĩ', 'V2']])
-    [['xirĩ', 'A'], ['xirĩ', 'V2']]
-
-    >>> filterparselist('N', [['xirĩ', 'A'], ['xirĩ', 'V2']])
-    ValueError: No parse found with tag 'N' in parselist: [['xirĩ', 'A'], ['xirĩ', 'V2']]
     """
-    
+
     if tags:
-        return list(filter(lambda x: hasTag(getTags(x),tags.upper()),parselist))
+        tags=tags.upper()
+        filtered = [x for x in parselist if hasTag(getTags(x), tags)]
+        if not filtered:
+            raise ValueError(
+                f"No parse found with tag '{tags}' in parselist: {parselist}"
+            )
+        return filtered
     else:
         return parselist
-
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
