@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 13, 2025
+# Last update: August 30, 2025
 
 import re
 from typing import Tuple, Dict, Any
@@ -263,7 +263,7 @@ FUNCTION_SIGNATURES = {
     },
     'vnoun': {
         'required': set(),
-        'optional': {'a', 'f', 'g', 'x'},
+        'optional': {'a', 'f', 'g', 'p','x'},
         'name' : 'verbal noun',
         'action' : 'handles verb forms with the verbal noun (masdar) suffix "-sawa"'
 

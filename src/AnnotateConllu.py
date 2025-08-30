@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: August 29, 2025
+# Last update: August 30, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -1812,6 +1812,8 @@ def hasTag(tags1, tags2):
     --------
     >>> hasTag('N+NCONT+SG', 'N')
     True
+    >>> hasTag('N+NCONT+SG', 'NCONT')
+    True
     >>> hasTag('N+NCONT+SG', 'N+NCONT')
     True
     >>> hasTag('N+NCONT+SG', 'N+SG')
@@ -1825,12 +1827,12 @@ def hasTag(tags1, tags2):
 
 def filterparselist(tags, parselist):
     """
-    Filters a parselist by a specified part-of-speech tag (XPOS) or XPOS+feature combination.
+    Filters a parselist by a specified part-of-speech tag (XPOS), feature, or XPOS+feature combination.
 
     Parameters
     ----------
     tags : str
-        The XPOS tag to filter by, optionally combined with a feature, e.g., 'N+ABS' for an absolutive noun.
+        The XPOS tag or feature to filter by, optionally combined, e.g., 'ABS' or 'N+ABS' for an absolutive noun.
         If an empty string or None is provided, no filtering is performed and the full parselist is returned.
 
     parselist : list
@@ -2190,10 +2192,10 @@ def getval(key,dic):
             return v
     return None
 
-def mkHab(form,xpos='', accent=False, guess=False, force=False):
-    return mkSuffXpos(form,xpos=xpos,accent=accent, guess=guess, force=force)
+def mkHab(form,xpos='', accent=False, guess=False, force=False,position=0):
+    return mkSuffXpos(form,xpos=xpos,accent=accent, guess=guess, force=force,position=position)
     
-def mkSuffXpos(form,xpos='', accent=False, guess=False, force=False):
+def mkSuffXpos(form,xpos='', accent=False, guess=False, force=False,position=0):
     suffs={'wara':{'Aspect':'FREQ', 'Tense': 'PRES'},
     'tiwa': {'Aspect':'HAB'},
     'sawa': {'VerbForm':'VNOUN'},
@@ -2216,6 +2218,8 @@ def mkSuffXpos(form,xpos='', accent=False, guess=False, force=False):
     if not xpos:
         xpos='V'
     if not guess:
+        if position:
+            base=handleNonFinalAccent(base,position)
         parselist=getparselist(base)
         parses=filterparselist(xpos,parselist)
         if parses:
@@ -2802,7 +2806,8 @@ def mkConlluSentence(tokens):
                                 xpos,
                                 accent=accent,
                                 guess=guess,
-                                force=force
+                                force=force,
+                                position=position
                                 )
                 newparselist=new['parselist']
             elif tag == '=aug': # TODO possibly deprecated (see =ev)
