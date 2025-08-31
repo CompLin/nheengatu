@@ -1524,6 +1524,39 @@
 15	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	14	obj	_	SpaceAfter=No|TokenRange=94:101
 16	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=101:102
 
+# sent_id = NTLN2019:10-4:22:22
+# text = Pemusaka pe suí pemanduarisawa kuximawara kwá peikú waá sesé kuxima, i yuka waá aé nhaãsé uganani penhẽ pemunhã arama puxí.
+# text_eng = You were taught, with regard to your former way of life, to put off your old self, which is being corrupted by its deceitful desires;
+# text_eng_source = NIV
+# text_por = Quanto à antiga maneira de viver, dispam‑se do velho homem, que se corrompe por desejos enganosos,
+# text_por_source = NVI
+# text_source = Eph 4:22
+# text_orig = Pemusaka pesui pemanduarisawa kuximawara kua peikuwaa sese kuxima, iyukawaa ae nyãse uganani penye pemunya arama puxi.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pemusaka pe/pron2 suí/adp pemanduarisawa/=vnoun:p|3 kuximawara/a kwá/demx peikú/cop waá/rel sesé kuxima, i/pron2 yuka/v2 waá/rel aé/pron nhaãsé/sconjr uganani penhẽ pemunhã arama/sconj puxí/adva.
+1	Pemusaka	musaka	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	pe	pe	PRON	PRON2	Case=Gen|Number=Plur|Person=2|PronType=Prs	1	obl	_	TokenRange=9:11
+3	suí	suí	ADP	ADP	AdpType=Post	2	case	_	TokenRange=12:15
+4	pemanduarisawa	manduári	VERB	V	Number=Plur|Person=2|VerbForm=Vnoun	1	obj	_	TokenRange=16:30
+5	kuximawara	kuximawara	ADJ	A	_	4	amod	_	TokenRange=31:41
+6	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	nmod	_	TokenRange=42:45
+7	peikú	ikú	AUX	COP	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	9	cop	_	TokenRange=46:51
+8	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	TokenRange=52:55
+9	sesé	resé	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	6	acl:relcl	_	TokenRange=56:60
+10	kuxima	kuxima	ADV	ADVT	AdvType=Tim	9	advmod	_	SpaceAfter=No|TokenRange=61:67
+11	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=67:68
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	expl	_	TokenRange=69:70
+13	yuka	yuka	VERB	V2	Mood=Ind|VerbForm=Fin	15	acl:relcl	_	TokenRange=71:75
+14	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nsubj	_	TokenRange=76:79
+15	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	6	conj	_	TokenRange=80:82
+16	nhaãsé	nhaãsé	SCONJ	SCONJR	_	17	mark	_	TokenRange=83:89
+17	uganani	ganani	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	advcl	_	TokenRange=90:97
+18	penhẽ	penhẽ	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=2|PronType=Prs	17	obj	_	TokenRange=98:103
+19	pemunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	17	advcl	_	TokenRange=104:111
+20	arama	arama	SCONJ	SCONJ	_	19	mark	_	TokenRange=112:117
+21	puxí	puxí	ADV	ADVA	AdvType=Man	19	advmod	_	SpaceAfter=No|TokenRange=118:122
+22	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=122:123
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
