@@ -1557,6 +1557,22 @@
 21	puxí	puxí	ADV	ADVA	AdvType=Man	19	advmod	_	SpaceAfter=No|TokenRange=118:122
 22	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=122:123
 
+# sent_id = NTLN2019:10-4:23:23
+# text = Pempisasúa pemanduarisawa.
+# text_eng = TODO
+# text_por = para serem renovados no modo de pensar
+# text_source = Eph 4:23
+# text_orig = Pempisasua pemanduarisawa.
+# text_sec = Pempisasú pemanduarisawa.
+# text_por_sec = Renovai o vosso pensamento.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Pempisasúa/=typo:c|Pempisasú pemanduarisawa/=vnoun:p|3.
+1	Pempisasúa	mpisasú	VERB	V	Mood=Imp|Number=Plur|Person=2|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=Pempisasú|TokenRange=0:10
+2	pemanduarisawa	manduári	VERB	V	Number=Plur|Person=2|VerbForm=Vnoun	1	parataxis	_	SpaceAfter=No|TokenRange=11:25
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
