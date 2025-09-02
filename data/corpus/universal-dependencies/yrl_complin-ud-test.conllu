@@ -4848,6 +4848,7 @@
 # text = Maã reputari ramé, ameẽ kurí indé arama.
 # text_eng = Whatever you want I'll give you.
 # text_por = O que você quiser eu te darei. [Corr. transl.]
+# text_por_orig = O que você quizer eu te darei.
 # text_source = Muniz, 80, adap.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Maã	maã	PRON	IND	PronType=Ind	2	obj	_	TokenRange=0:3
@@ -5426,7 +5427,8 @@
 # text_eng = So, it is said that her brother took her to heaven because he did not want his sister to marry.
 # text_por = Então, dizem que seu irmão levou-a para o céu, porque ele não queria que a irmã se casasse.
 # text_source = Rodrigues, 124, adap.
-# text_orig = Aramé paá i kiwira urasú aé iwaka kití, ti resé uputari sendira umendari.
+# text_prim = Aramé, paá, i quiuira u raçu aé iuaca queté, inti recé u putare cemira u menare.
+# # text_prim_transcriber = Susan Gabriela Huallpa Huanacuni, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = Leonel Figueiredo de Alencar
 1	Aramé	aramé	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	TokenRange=6:9
@@ -5781,7 +5783,7 @@
 # text_prim = Kurumí asú oyapí ikó uira miri itá kaá rupi.
 # text_prim_source = No. 309
 # text_por_prim = O rapaz está matando passarinhos no mato.
-# text_prim_transcriber = Antônio Levy Melo Nogueira (ALMN)
+# text_prim_transcriber = Antônio Levy Melo Nogueira
 # text_annotator = Leonel Figueiredo de Alencar
 1	Kurumiwasú	kurumiwasú	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:10
 2	uyapí	yapí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:16
@@ -5952,7 +5954,7 @@
 # text_source = Hartt, 362, adap.
 # text_prim = Pytúna uasú ramé intí yaxipiak kuáu maé.
 # text_prim_source = No. 598
-# text_prim_transcriber = Antônio Levy Melo Nogueira (ALMN)
+# text_prim_transcriber = Antônio Levy Melo Nogueira
 # text_annotator = Leonel Figueiredo de Alencar
 1	Pitunawasú	pitunawasú	NOUN	N	Number=Sing	4	obl	_	TokenRange=0:10
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=11:15
@@ -7756,7 +7758,7 @@
 # text_por = Tu és mais forte que os outros.
 # text_source = Hartt, 369, adap.
 # text_prim = iné nekyrymáua pyry amuitá suí.
-# text_prim_transcriber = Antônio Levy Melo Nogueira (ALMN)
+# text_prim_transcriber = Antônio Levy Melo Nogueira
 # text_prim_source = No. 692
 # text_annotator = Leonel Figueiredo de Alencar
 1	Indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:4
@@ -12533,7 +12535,7 @@
 # text_annotator = Leonel Figueiredo de Alencar
 1	Kariwa-itá	kariwa	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:10
 2	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:18
-3	upiripana	piripana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	ccomp	_	TokenRange=19:28
+3	upiripana	piripana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	xcomp	_	TokenRange=19:28
 4	awatí	awatí	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=29:34
 5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
@@ -17838,11 +17840,11 @@
 # text_por = Quando queres que eu venha ter contigo?
 # text_source = Hartt, 337, adap.
 # text_prim = maéramé reputár xayor nepyrí.
-# text_prim_transcriber = Antônio Levy Melo Nogueira (ALMN)
+# text_prim_transcriber = Antônio Levy Melo Nogueira
 # text_annotator = Leonel Figueiredo de Alencar
 1	Mairamé	mairamé	ADV	ADVRT	AdvType=Tim|PronType=Int	2	advmod	_	TokenRange=0:7
 2	reputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:16
-3	ayuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	xcomp	_	TokenRange=17:22
+3	ayuri	yuri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	ccomp	_	TokenRange=17:22
 4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	obl	_	TokenRange=23:25
 5	piri	piri	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=26:30
 6	?	?	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=30:31
