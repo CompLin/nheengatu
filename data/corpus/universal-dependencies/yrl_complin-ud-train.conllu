@@ -1573,6 +1573,77 @@
 2	pemanduarisawa	manduári	VERB	V	Number=Plur|Person=2|VerbForm=Vnoun	1	parataxis	_	SpaceAfter=No|TokenRange=11:25
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
 
+# sent_id = NTLN2019:7-2-5:11:11-1
+# text = Yasikié Deus suí ape kirimbawa yambué kwá-itá apigawa-itá.
+# text_eng = TODO
+# text_por = Uma vez que conhecemos o temor ao Senhor, procuramos persuadir os homens.
+# text_por_source = NVI
+# text_source = 2 Cor 5:11.1
+# text_orig = Yasikie Deus sui ape kirimbawa yambue kuaita apigawaita.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yasikié Deus suí/adp ape/advj kirimbawa/adva yambué kwá-itá apigawa-itá.
+1	Yasikié	sikié	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	Deus	deus	PROPN	PROPN	_	1	obl	_	TokenRange=8:12
+3	suí	suí	ADP	ADP	AdpType=Post	2	case	_	TokenRange=13:16
+4	ape	ape	ADV	ADVJ	AdvType=Cau	1	advmod	_	TokenRange=17:20
+5	kirimbawa	kirimbawa	ADV	ADVA	AdvType=Man	1	advmod	_	TokenRange=21:30
+6	yambué	mbué	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=31:37
+7	kwá-itá	kwá	DET	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	8	det	_	TokenRange=38:45
+8	apigawa-itá	apigawa	NOUN	N	Number=Plur	6	obj	_	SpaceAfter=No|TokenRange=46:57
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=57:58
+
+# sent_id = NTLN2019:7-2-5:11:11-2
+# text = Deus ukwawa té yamanduarisawa, haputari pekwawa yuíri yamanduarisawa.
+# text_eng = TODO
+# text_por = O que somos está manifesto diante de Deus e esperamos que esteja manifesto também diante da consciência de vocês.
+# text_source = 2 Cor 5:11.2
+# text_orig = Deus ukuawate yamanduarisawa, haputari pekuawa yuiri yamanduarisawa.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Deus ukwawa té/foc yamanduarisawa/=vnoun:p|3, haputari pekwawa yuíri/advg yamanduarisawa/=vnoun:p|3.
+1	Deus	deus	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:4
+2	ukwawa	kwawa	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:11
+3	té	té	PART	FOC	Foc=Yes|PartType=Emp	2	advmod	_	TokenRange=12:14
+4	yamanduarisawa	manduári	VERB	V	Number=Plur|Person=1|VerbForm=Vnoun	2	obj	_	SpaceAfter=No|TokenRange=15:29
+5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=29:30
+6	haputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	parataxis	_	TokenRange=31:39
+7	pekwawa	kwawa	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=40:47
+8	yuíri	yuíri	ADV	ADVG	AdvType=Deg	7	advmod	_	TokenRange=48:53
+9	yamanduarisawa	manduári	VERB	V	Number=Plur|Person=1|VerbForm=Vnoun	7	obj	_	SpaceAfter=No|TokenRange=54:68
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=68:69
+
+# sent_id = NTLN2019:5-8:22:22
+# text = Ape sasiára remanduári kwá ne puxuwerasawa, asuí repurandú yané ruixawa irumu uputari ramé maã umburi ne suí kwá remanduarisawa ne piá upé.
+# text_eng = TODO
+# text_por = Arrependa‑se, portanto, dessa maldade e ore ao Senhor. Talvez ele perdoe tal pensamento do seu coração,
+# text_source = Acts 8:22
+# text_orig = Ape sasiyara remanduari kua nepuxuwerasawa, asui repurandu yaneruixawa irumu uputari rame maa umburi nesui kua remanduarisawa nepia upe.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ape/advj sasiára remanduári kwá/demx ne puxuwerasawa, asuí/cconj repurandú yané/pron2 ruixawa irumu/adp uputari ramé/sconj maã/cond umburi ne suí/adp kwá/demx remanduarisawa/=vnoun:p|3 ne piá upé/adp.
+1	Ape	ape	ADV	ADVJ	AdvType=Cau	3	advmod	_	TokenRange=0:3
+2	sasiára	sasiára	ADJ	A	_	3	advcl	_	TokenRange=4:11
+3	remanduári	manduári	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=12:22
+4	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	6	det	_	TokenRange=23:26
+5	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	6	nmod:poss	_	TokenRange=27:29
+6	puxuwerasawa	puxuwerasawa	NOUN	N	Number=Sing	3	obj	_	SpaceAfter=No|TokenRange=30:42
+7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=42:43
+8	asuí	asuí	CCONJ	CCONJ	_	9	cc	_	TokenRange=44:48
+9	repurandú	purandú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	conj	_	TokenRange=49:58
+10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=59:63
+11	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	9	obl	_	TokenRange=64:71
+12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=72:77
+13	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	9	aux	_	TokenRange=78:85
+14	ramé	ramé	SCONJ	SCONJ	_	9	mark	_	TokenRange=86:90
+15	maã	maã	PART	COND	Modality=Cond|PartType=Mod	9	advmod	_	TokenRange=91:94
+16	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=95:101
+17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	16	obl	_	TokenRange=102:104
+18	suí	suí	ADP	ADP	AdpType=Post	17	case	_	TokenRange=105:108
+19	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	20	nsubj	_	TokenRange=109:112
+20	remanduarisawa	manduári	VERB	V	Number=Sing|Person=2|VerbForm=Vnoun	16	parataxis	_	TokenRange=113:127
+21	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	TokenRange=128:130
+22	piá	piá	NOUN	N	Number=Sing	20	obl	_	TokenRange=131:134
+23	upé	upé	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=135:138
+24	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=138:139
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
