@@ -8331,12 +8331,15 @@
 # text_eng = If someone doesn't want to obey this word, which we wrote in this letter, mark him, and just watch him so that he feels ashamed.
 # text_por = Se alguém não quiser obeceder a esta palavra, que escrevemos nesta carta, marquem-no, e apenas observem-no para que ele sinta vergonha.
 # text_source = O Novo Testamento em nyengatu, 2 Tessalonicenses 3:14
+# text_prim = Tirame yepe uputari uruyari kua nyenga yampinimawaa kua papera, pemuyukuawa ae, pemaantu ixupe uyumutiĩ arama.
+# text_prim_source = https://www.bible.com/bible/2986/2TH.3.14
 # text_annotator = Leonel Figueiredo de Alencar
-1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=0:2
-2	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=3:7
-3	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	5	nsubj	_	TokenRange=8:12
-4	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	5	aux	_	TokenRange=13:20
-5	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	advcl	_	TokenRange=21:28
+# inputline = Ti ramé/sconj yepé/art uputari uruyari kwá/demx nheenga, yampinima waá/rel kwá/demx papera upé/adp, pemuyukwawa aé/pron, pemaãntu i/pron2 xupé uyumutiĩ/=mid arama/sconj.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:2
+2	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=3:7
+3	yepé	yepé	PRON	ART	Definite=Ind|PronType=Art	4	nsubj	_	TokenRange=8:12
+4	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	advcl	_	TokenRange=13:20
+5	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	xcomp	_	TokenRange=21:28
 6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=29:32
 7	nheenga	nheenga	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=33:40
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=40:41
@@ -8346,15 +8349,15 @@
 12	papera	papera	NOUN	N	Number=Sing	9	obl	_	TokenRange=60:66
 13	upé	upé	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=67:70
 14	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=70:71
-15	pemuyukwawa	muyukwawa	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=72:83
+15	pemuyukwawa	muyukwawa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=72:83
 16	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	15	obj	_	SpaceAfter=No|TokenRange=84:86
 17	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=86:87
 18-19	pemaãntu	_	_	_	_	_	_	_	TokenRange=88:96
-18	pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	15	parataxis	_	_
+18	pemaã	maã	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	15	parataxis	_	_
 19	ntu	ntu	ADV	ADV	Clitic=Yes	18	advmod	_	_
 20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	obl	_	TokenRange=97:98
 21	xupé	xupé	ADP	ADP	AdpType=Post	20	case	_	TokenRange=99:103
-22	uyumutiĩ	yumutiĩ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	18	advcl	_	TokenRange=104:112
+22	uyumutiĩ	mutiĩ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	18	advcl	_	TokenRange=104:112
 23	arama	arama	SCONJ	SCONJ	_	22	mark	_	SpaceAfter=No|TokenRange=113:118
 24	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=118:119
 
@@ -15762,18 +15765,21 @@
 # text_source = O Novo Testamento em nyengatu, João 5:21, adap.
 # text_por_alt = Porque, da mesma forma que o Pai ressuscita os mortos e lhes dá vida, o Filho também dá vida a quem ele quer.
 # text_por_alt_source = NVI
+# text_prim = Nyãse yawe ipaya usupiriwaa yawe umanuwaita umbaka ainta yawete yuiri taira umbaka kuaita uputariwaita.
+# text_prim_source = https://www.bible.com/bible/2986/JHN.5.21
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Nhaãsé/advj yawé/adva i/pron2 paya usupiri waá/rel yawé/indq umanú waá-itá, umbaka/ind aintá/pron, yawé/adva tẽ/foc yuíri/advg taíra/ncont umbaka/ind kwá-itá uputari waá-itá.
 1	Nhaãsé	nhaãsé	ADV	ADVJ	AdvType=Cau	18	advmod	_	TokenRange=0:6
 2	yawé	yawé	ADV	ADVA	AdvType=Man	18	advmod	_	TokenRange=7:11
 3	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:13
 4	paya	paya	NOUN	N	Number=Sing	2	obl	_	TokenRange=14:18
 5	usupiri	supiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	acl:relcl	_	TokenRange=19:26
 6	waá	waá	PRON	REL	Number=Sing|PronType=Rel	5	nsubj	_	TokenRange=27:30
-7	yawé	yawé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=31:35
-8	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	acl:relcl	_	TokenRange=36:41
-9	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	5	obj	_	SpaceAfter=No|TokenRange=42:49
+7	yawé	yawé	PRON	INDQ	PronType=Ind	5	obj	_	TokenRange=31:35
+8	umanú	manú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	acl:relcl	_	TokenRange=36:41
+9	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	8	nsubj	_	SpaceAfter=No|TokenRange=42:49
 10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=49:50
-11	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=51:57
+11	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	conj	_	TokenRange=51:57
 12	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	11	obj	_	SpaceAfter=No|TokenRange=58:63
 13	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=63:64
 14	yawé	yawé	ADV	ADVA	AdvType=Man	18	advmod	_	TokenRange=65:69
@@ -15782,7 +15788,7 @@
 17	taíra	taíra	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	18	nsubj	_	TokenRange=79:84
 18	umbaka	mbaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=85:91
 19	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	18	obj	_	TokenRange=92:99
-20	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	19	acl:relcl	_	TokenRange=100:107
+20	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	19	acl:relcl	_	TokenRange=100:107
 21	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	20	obj	_	SpaceAfter=No|TokenRange=108:115
 22	.	.	PUNCT	PUNCT	_	18	punct	_	SpaceAfter=No|TokenRange=115:116
 
@@ -18151,7 +18157,7 @@
 26	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=156:157
 
 # sent_id = NTLN2019:0:0:4
-# text = Asuí mituú ramé yayumuatiri irumu yapixama arama pão, Paulu umbeú aintá supé nhaãsé uputari usú aintá suí wirandé kití, asuí uikupukú upurungitá aintá irumu até pituna pitérupi.
+# text = Asuí mituú ramé yayumuatiri irumu yapixama arama pãu, Paulu umbeú aintá supé nhaãsé uputari usú aintá suí wirandé kití, asuí uikupukú upurungitá aintá irumu até pituna pitérupi.
 # text_eng = On the first day of the week, when we were gathered together to break bread, Paul talked with them, intending to depart on the next day, and he prolonged his speech until midnight. [ESV]
 # text_por = No primeiro dia da semana, estando nós reunidos com o fim de partir o pão, Paulo, que devia seguir viagem no dia imediato, exortava-os e prolongou o discurso até à meia-noite. [ARA]
 # text_source = Novo Testamento na língua Nyengatu, Acts 20:7
@@ -18159,22 +18165,23 @@
 # text_sec = Asuí mituú ramé, yayumuatiri irumu yapixama arama pãu, Paulo umbeú aintá supé, [...] asuí uikupukú upurungitá aintá irumu até pituna-pitérupi.
 # text_sec_source = Avila (2021)
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Asuí/advt mituú ramé/adp yayumuatiri/=mid irumu/sconj yapixama arama/sconj pãu/=n:o|por:s|pão, Paulu/=p umbeú aintá/pron2 supé/adp nhaãsé/sconjr uputari usú aintá/pron2 suí/adp wirandé kití, asuí/cconj uikupukú upurungitá aintá/pron2 irumu/adp até/prep pituna pitérupi.
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:4
 2	mituú	mituú	NOUN	N	Number=Sing	4	obl	_	TokenRange=5:10
 3	ramé	ramé	ADP	ADP	AdpType=Post	2	case	_	TokenRange=11:15
-4	yayumuatiri	yumuatiri	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	11	advcl	_	TokenRange=16:27
+4	yayumuatiri	muatiri	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin|Voice=Mid,Pass	11	advcl	_	TokenRange=16:27
 5	irumu	irumu	SCONJ	SCONJ	_	4	mark	_	TokenRange=28:33
 6	yapixama	pixama	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	4	advcl	_	TokenRange=34:42
 7	arama	arama	SCONJ	SCONJ	_	6	mark	_	TokenRange=43:48
-8	pão	pão	NOUN	N	Number=Sing	6	obj	_	OrigLang=pt|SpaceAfter=No|TokenRange=49:52
+8	pãu	pãu	NOUN	N	Number=Sing	6	obj	_	Orig=pão|OrigLang=pt|SpaceAfter=No|TokenRange=49:52
 9	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=52:53
 10	Paulu	paulu	PROPN	PROPN	_	11	nsubj	_	TokenRange=54:59
 11	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=60:65
 12	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	11	obl	_	TokenRange=66:71
 13	supé	supé	ADP	ADP	AdpType=Post	12	case	_	TokenRange=72:76
-14	nhaãsé	nhaãsé	SCONJ	SCONJR	_	16	mark	_	TokenRange=77:83
-15	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	16	aux	_	TokenRange=84:91
-16	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=92:95
+14	nhaãsé	nhaãsé	SCONJ	SCONJR	_	15	mark	_	TokenRange=77:83
+15	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=84:91
+16	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	xcomp	_	TokenRange=92:95
 17	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	16	obl	_	TokenRange=96:101
 18	suí	suí	ADP	ADP	AdpType=Post	17	case	_	TokenRange=102:105
 19	wirandé	wirandé	ADV	ADVT	AdvType=Tim	16	advmod	_	TokenRange=106:113
