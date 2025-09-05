@@ -1483,15 +1483,6 @@
 # text_orig = Hapuderi hamunya panye maa haputari hamunya, maa tipanye umunya puranga ixe arama.
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Hapuderi hamunhã panhẽ maã/relf haputari hamunhã, ma/cconj ti panhẽ umunhã puranga/a ixé arama/adp.
-# sent_id = NTLN2019:7-1-6:12:12-1
-# text = Hapuderi hamunhã panhẽ maã haputari hamunhã, ma ti panhẽ umunhã puranga ixé arama.
-# text_eng = “I have the right to do anything,” you say—but not everything is beneficial. [NIV]
-# text_por = “Tudo me é permitido”, mas nem tudo convém. [NVI]
-# tex_por_alt = Alguém vai dizer: “Eu posso fazer tudo o que quero.” Pode, sim, mas nem tudo é bom para você. [NTLH]
-# text_source = 1 Cor 6:12
-# text_orig = Hapuderi hamunya panye maa haputari hamunya, maa tipanye umunya puranga ixe arama.
-# text_annotator = Leonel Figueiredo de Alencar
-# inputline = Hapuderi hamunhã panhẽ maã/relf haputari hamunhã, ma/cconj ti panhẽ umunhã puranga/a ixé arama/adp.
 1	Hapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:8
 2	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=17:22
@@ -1624,6 +1615,9 @@
 # text = Ape sasiára remanduári kwá ne puxuwerasawa, asuí repurandú yané ruixawa irumu uputari ramé maã umburi ne suí kwá remanduarisawa ne piá upé.
 # text_eng = TODO
 # text_por = Arrependa‑se, portanto, dessa maldade e ore ao Senhor. Talvez ele perdoe tal pensamento do seu coração,
+# text_por_source = NVI
+# text_por_alt = Arrepende-te, pois, da tua maldade e roga ao Senhor; talvez te seja perdoado o intento do coração;
+# text_por_alt_source = ARA
 # text_source = Acts 8:22
 # text_orig = Ape sasiyara remanduari kua nepuxuwerasawa, asui repurandu yaneruixawa irumu uputari rame maa umburi nesui kua remanduarisawa nepia upe.
 # text_annotator = Leonel Figueiredo de Alencar
@@ -1640,16 +1634,16 @@
 10	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	11	nmod:poss	_	TokenRange=59:63
 11	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	9	obl	_	TokenRange=64:71
 12	irumu	irumu	ADP	ADP	AdpType=Post	11	case	_	TokenRange=72:77
-13	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	16	aux	_	TokenRange=78:85
-14	ramé	ramé	SCONJ	SCONJ	_	16	mark	_	TokenRange=86:90
-15	maã	maã	PART	COND	Modality=Cond|PartType=Mod	16	advmod	_	TokenRange=91:94
-16	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	ccomp	_	TokenRange=95:101
+13	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	ccomp	_	TokenRange=78:85
+14	ramé	ramé	SCONJ	SCONJ	_	13	mark	_	TokenRange=86:90
+15	maã	maã	PART	COND	Modality=Cond|PartType=Mod	13	advmod	_	TokenRange=91:94
+16	umburi	mburi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	xcomp	_	TokenRange=95:101
 17	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	16	obl	_	TokenRange=102:104
 18	suí	suí	ADP	ADP	AdpType=Post	17	case	_	TokenRange=105:108
 19	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	20	det	_	TokenRange=109:112
 20	remanduarisawa	manduári	VERB	V	Number=Sing|Person=2|VerbForm=Vnoun	16	obj	_	TokenRange=113:127
 21	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	22	nmod:poss	_	TokenRange=128:130
-22	piá	piá	NOUN	N	Number=Sing	20	obl	_	TokenRange=131:134
+22	piá	piá	NOUN	N	Number=Sing	20	nmod	_	TokenRange=131:134
 23	upé	upé	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=135:138
 24	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=138:139
 
