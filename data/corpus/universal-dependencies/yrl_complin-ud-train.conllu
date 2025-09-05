@@ -1483,18 +1483,27 @@
 # text_orig = Hapuderi hamunya panye maa haputari hamunya, maa tipanye umunya puranga ixe arama.
 # text_annotator = Leonel Figueiredo de Alencar
 # inputline = Hapuderi hamunhã panhẽ maã/relf haputari hamunhã, ma/cconj ti panhẽ umunhã puranga/a ixé arama/adp.
+# sent_id = NTLN2019:7-1-6:12:12-1
+# text = Hapuderi hamunhã panhẽ maã haputari hamunhã, ma ti panhẽ umunhã puranga ixé arama.
+# text_eng = “I have the right to do anything,” you say—but not everything is beneficial. [NIV]
+# text_por = “Tudo me é permitido”, mas nem tudo convém. [NVI]
+# tex_por_alt = Alguém vai dizer: “Eu posso fazer tudo o que quero.” Pode, sim, mas nem tudo é bom para você. [NTLH]
+# text_source = 1 Cor 6:12
+# text_orig = Hapuderi hamunya panye maa haputari hamunya, maa tipanye umunya puranga ixe arama.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Hapuderi hamunhã panhẽ maã/relf haputari hamunhã, ma/cconj ti panhẽ umunhã puranga/a ixé arama/adp.
 1	Hapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:8
 2	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=17:22
 4	maã	maã	PRON	RELF	PronType=Rel	2	obj	_	TokenRange=23:26
-5	haputari	putari	AUX	AUXN	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	aux	_	TokenRange=27:35
-6	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	SpaceAfter=No|TokenRange=36:43
+5	haputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	TokenRange=27:35
+6	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	xcomp	_	SpaceAfter=No|TokenRange=36:43
 7	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=43:44
 8	ma	ma	CCONJ	CCONJ	_	12	cc	_	TokenRange=45:47
 9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=48:50
 10	panhẽ	panhẽ	PRON	TOT	PronType=Tot	12	nsubj	_	TokenRange=51:56
 11	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	acl	_	TokenRange=57:63
-12	puranga	puranga	ADJ	A	_	6	conj	_	TokenRange=64:71
+12	puranga	puranga	ADJ	A	_	2	conj	_	TokenRange=64:71
 13	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	12	obl	_	TokenRange=72:75
 14	arama	arama	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=76:81
 15	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=81:82
@@ -1511,12 +1520,12 @@
 2	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:16
 3	panhẽ	panhẽ	DET	TOT	PronType=Tot	4	det	_	TokenRange=17:22
 4	maã	maã	PRON	RELF	PronType=Rel	2	obj	_	TokenRange=23:26
-5	haputari	putari	AUX	AUXN	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	aux	_	TokenRange=27:35
-6	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	SpaceAfter=No|TokenRange=36:43
+5	haputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	acl:relcl	_	TokenRange=27:35
+6	hamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	xcomp	_	SpaceAfter=No|TokenRange=36:43
 7	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=43:44
 8	ma	ma	CCONJ	CCONJ	_	10	cc	_	TokenRange=45:47
 9	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	10	advmod	_	TokenRange=48:50
-10	haxari	xari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	conj	_	TokenRange=51:57
+10	haxari	xari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	conj	_	TokenRange=51:57
 11	upukwari	pukwari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	ccomp	_	TokenRange=58:66
 12	hamanduarisawa	manduári	VERB	V	Number=Sing|Person=1|VerbForm=Vnoun	11	nsubj	_	TokenRange=67:81
 13	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	obj	_	TokenRange=82:85
