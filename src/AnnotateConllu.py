@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: August 30, 2025
+# Last update: September 6, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -1343,9 +1343,15 @@ def handleAux(tokenlist):
                         #if not isAdvCl(verb,tokenlist):
                         if not advcl:
                             handleSameClause(verb,pos,headid,previous,next)
-            elif pos == 'AUXFS' or pos == 'AUXN':
+            elif pos == 'AUXFS':
                 headid=previousVerb(verb,verbs)
                 handleSameClause(verb,pos,headid,previous,next)
+            elif pos == 'AUXN':
+                feats=verb.get('feats')
+                person=feats.get('Person')
+                if not person:
+                    headid=previousVerb(verb,verbs)
+                    handleSameClause(verb,pos,headid,previous,next)
             else:
                 pass # TODO: ccomp, xcomp, advcl
     for verb in verbs:
@@ -2383,9 +2389,8 @@ def checkXposTag(pos_tag):
     return pos_tag
 
 def get_iso_code(language_code):
-    from iso639 import languages
     """
-    Returns the 2-letter ISO 639-1 code if available, otherwise the 3-letter ISO 639-2 code.
+    Returns the 2-letter ISO 639-1 code if available, otherwise the 3-letter ISO 639-2/3 code.
 
     Args:
         language_code (str): A valid 2-letter or 3-letter ISO language code.
@@ -2396,19 +2401,53 @@ def get_iso_code(language_code):
     Raises:
         ValueError: If the input string does not represent a valid ISO language code.
 
-    # Example usage
-        print(get_iso_code('pt'))    # Output: 'pt'
-        print(get_iso_code('por'))   # Output: 'pt'
-        print(get_iso_code('eng'))   # Output: 'en'
-         print(get_iso_code('yrl'))   # Output: 'yrl' (no 2-letter code)
-        print(get_iso_code('xyz'))   # Raises ValueError
+    Example usage:
+        print(get_iso_code('pt'))    # 'pt'
+        print(get_iso_code('por'))   # 'pt'
+        print(get_iso_code('eng'))   # 'en'
+        print(get_iso_code('yrl'))   # 'yrl'
+        print(get_iso_code('xyz'))   # raises ValueError
     """
     language_code = language_code.lower()
-    language = languages.part1.get(language_code) or languages.part3.get(language_code)
-    if language is None:
-        raise ValueError(f"Invalid language code: {language_code}")
-    
-    return language.part1 or language.part3
+
+    # --- Try iso639-lang ---
+    try:
+        from iso639 import languages
+        lang = (
+            languages.get(part1=language_code)
+            or languages.get(part3=language_code)
+            or languages.get(name=language_code)
+        )
+        if lang:
+            return lang.part1 or lang.part3
+    except (ImportError, AttributeError):
+        pass
+
+    # --- Try old iso639 ---
+    try:
+        from iso639.iso639 import Lang
+        lang = Lang(language_code)
+        return lang.pt1 or lang.pt3
+    except Exception:
+        pass
+
+    # --- Built-in minimal fallback dictionary ---
+    fallback = {
+        "yrl": "yrl",  # Nheengatu (no ISO 639-1 code)
+        "pt": "pt",    # Portuguese
+        "por": "pt",
+        "en": "en",    # English
+        "eng": "en",
+        "es": "es",    # Spanish
+        "spa": "es",
+        "fr": "fr",    # French
+        "fra": "fr", "fre": "fr",
+    }
+
+    if language_code in fallback:
+        return fallback[language_code]
+
+    raise ValueError(f"Invalid language code: {language_code}")
 
 
 def mkUpos(form,xpos,orig=None,orig_form=''):
@@ -4452,3 +4491,86 @@ def issue325(sents):
                     p['feats']=sortDict(p['feats'])
     test,train = SplitTestTrain(sents)
     writeTestTrain(test,train)
+
+def changeAuxToVerb(tokenlist):
+    """
+    Transform the auxiliary verb *putari* into a main verb.
+
+    This function modifies the dependency structure of a sentence so that
+    tokens with lemma="putari" and upos="AUX" (finite forms) are promoted
+    to main verbs (upos="VERB"). The original head verb becomes an `xcomp`
+    dependent of *putari*. Parts of speech, dependency relations and heads are updated in place.
+
+    Context
+    -------
+    Implements the decision in issue #824 about treating *putari* not as an
+    auxiliary but as a full main verb.
+
+    Example
+    -------
+
+    BEFORE (TokenList A)
+    --------------------
+    # text = Apurandú ne suí maã aputari akwáu.
+
+             Apurandú (root)
+                  │
+                 maã (obj)
+                  │
+              ┌── akwáu (VERB, acl:relcl)
+              │
+           aputari (AUX, aux)
+
+
+    AFTER (TokenList B)
+    -------------------
+    # text = Apurandú ne suí maã aputari akwáu.
+
+             Apurandú (root)
+                  │
+                 maã (obj)
+                  │
+             aputari (VERB, acl:relcl)
+                  │
+               akwáu (VERB, xcomp)
+
+
+    Effect
+    ------
+    - Token *aputari* changes:
+        - from AUX → VERB
+        - inherits the `acl:relcl` relation from its former head
+    - The former head (*akwáu*) becomes an `xcomp` of *aputari*.
+    - All dependents of the old head are reassigned to *aputari*.
+
+    Parameters
+    ----------
+    tokenlist : TokenList
+        A CoNLL-U TokenList object to be transformed.
+
+    Returns
+    -------
+    None
+        The TokenList is modified in place.
+    """
+    aux=tokenlist.filter(lemma='putari',upos='AUX',feats__VerbForm='Fin')
+    for a in aux:
+        adid=a['id']
+        verbid=a['head']
+        verb=tokenlist.filter(id=verbid)[0]
+        a['deprel']=verb['deprel']
+        a['head']=verb['head']
+        verb['deprel']='xcomp'
+        verb['head']=adid
+        a['upos']='VERB'
+        a['xpos']='V'
+        deps=tokenlist.filter(head=verbid)
+        for dep in deps:
+            if dep['deprel'] in ('obj','obl','iobj','advmod'):
+                 if inInterval(dep['id'],adid,verbid):
+                    dep['head']=adid
+            elif dep['deprel'] != 'expl':
+                dep['head']=adid
+            else:
+                 if dep['id'] < adid:
+                      dep['head']=adid

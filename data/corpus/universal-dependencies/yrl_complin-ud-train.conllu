@@ -9445,22 +9445,22 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Adana/=p, paá, ti uputari umendari Kurukuí irumu/adp, nhaãsé/sconjr uputari piri/advg nhaã Buburi/=p.
 # reviewer1 = Leonel Figueiredo de Alencar
-1	Adana	adana	PROPN	PROPN	_	7	nsubj	_	SpaceAfter=No|TokenRange=0:5
+1	Adana	adana	PROPN	PROPN	_	6	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=7:10
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=10:11
 5	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=12:14
-6	uputari	putari	AUX	AUXN	Mood=Ind|Person=3|VerbForm=Fin	7	aux	_	TokenRange=15:22
-7	umendari	mendari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=23:31
+6	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=15:22
+7	umendari	mendari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	xcomp	_	TokenRange=23:31
 8	Kurukuí	kurukuí	PROPN	PROPN	_	7	obl	_	TokenRange=32:39
 9	irumu	irumu	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=40:45
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=45:46
 11	nhaãsé	nhaãsé	SCONJ	SCONJR	_	12	mark	_	TokenRange=47:53
-12	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=54:61
+12	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=54:61
 13	piri	piri	ADV	ADVG	AdvType=Deg	12	advmod	_	TokenRange=62:66
 14	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	15	det	_	TokenRange=67:71
 15	Buburi	buburi	PROPN	PROPN	_	12	obj	_	SpaceAfter=No|TokenRange=72:78
-16	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=78:79
+16	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=78:79
 
 # sent_id = Casasnovas2006:12:16:182
 # text = Buburi unheẽ i xupé uyuka arã aé umendari rundé.
