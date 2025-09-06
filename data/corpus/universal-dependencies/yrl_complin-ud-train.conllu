@@ -3390,7 +3390,7 @@
 6	ramé	ramé	SCONJ	SCONJ	_	5	mark	_	TokenRange=25:29
 7	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=30:37
 8	umuapatuka	muapatuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	xcomp	_	SpaceAfter=No|TokenRange=38:48
-9	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=48:49
+9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=48:49
 
 # sent_id = Cruz2011:0:0:116
 # text = Ti ramé repurakí ti rerikú nẽ manungara.
@@ -4288,27 +4288,28 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Aape/advt, paá, urubú usuaxara: Compadre/=n:o|por, ixé ti aputari amunhã puxiwera/n suú-itá supé, ma/cconj kuíri se yumasí/v2 retana/advs, remukameẽ ramé/sconj mayé/advra amunhã arã/sconj, akwá katú/advs amunhã.
 1	Aape	aape	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	urubú	urubú	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=11:16
 6	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=17:25
-7	:	:	PUNCT	PUNCT	_	13	punct	_	TokenRange=25:26
-8	Compadre	compadre	NOUN	N	_	13	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=27:35
+7	:	:	PUNCT	PUNCT	_	12	punct	_	TokenRange=25:26
+8	Compadre	compadre	NOUN	N	_	12	vocative	_	OrigLang=pt|SpaceAfter=No|TokenRange=27:35
 9	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=35:36
-10	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	TokenRange=37:40
+10	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	TokenRange=37:40
 11	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=41:43
-12	aputari	putari	AUX	AUXN	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	13	aux	_	TokenRange=44:51
-13	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	ccomp	_	TokenRange=52:58
-14	puxiwera	puxiwera	ADV	ADVA	AdvType=Man	13	advmod	_	TokenRange=59:67
-15	suú-itá	suú	NOUN	N	Number=Plur	13	obl	_	TokenRange=68:75
+12	aputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	6	ccomp	_	TokenRange=44:51
+13	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	12	xcomp	_	TokenRange=52:58
+14	puxiwera	puxiwera	NOUN	N	Number=Sing	13	obj	_	TokenRange=59:67
+15	suú-itá	suú	NOUN	N	Number=Plur	13	iobj	_	TokenRange=68:75
 16	supé	supé	ADP	ADP	_	15	case	_	SpaceAfter=No|TokenRange=76:80
 17	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=80:81
 18	ma	ma	CCONJ	CCONJ	_	21	cc	_	TokenRange=82:84
 19	kuíri	kuíri	ADV	ADVT	AdvType=Tim	21	advmod	_	TokenRange=85:90
 20	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	TokenRange=91:93
-21	yumasí	yumasí	VERB	V2	Mood=Ind|VerbForm=Fin	13	conj	_	TokenRange=94:100
+21	yumasí	yumasí	VERB	V2	Mood=Ind|VerbForm=Fin	12	conj	_	TokenRange=94:100
 22	retana	retana	ADV	ADVS	AdvType=Deg	21	advmod	_	SpaceAfter=No|TokenRange=101:107
 23	,	,	PUNCT	PUNCT	_	24	punct	_	TokenRange=107:108
 24	remukameẽ	mukameẽ	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	30	advcl	_	TokenRange=109:118
@@ -4319,7 +4320,7 @@
 29	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=139:140
 30	akwá	kwá	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	21	parataxis	_	TokenRange=141:145
 31	katú	katú	ADV	ADVS	AdvType=Deg	30	advmod	_	TokenRange=146:150
-32	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	30	ccomp	_	SpaceAfter=No|TokenRange=151:157
+32	amunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	30	xcomp	_	SpaceAfter=No|TokenRange=151:157
 33	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=157:158
 
 # sent_id = Casasnovas2006:1:8:8
