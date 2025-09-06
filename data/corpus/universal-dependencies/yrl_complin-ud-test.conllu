@@ -559,8 +559,8 @@
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=4:6
 3	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=7:8
 4	amanduári	manduári	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:18
-5	ayuíri	yuíri	AUX	AUXN	Aspect=Iter|Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	aux	_	TokenRange=19:25
-6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	4	advmod	_	SpaceAfter=No|TokenRange=26:31
+5	ayuíri	yuíri	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	4	xcomp	_	TokenRange=19:25
+6	akití	akití	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	5	advmod	_	SpaceAfter=No|TokenRange=26:31
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = MooreFP1994:1:9:36
