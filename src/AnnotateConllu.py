@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 6, 2025
+# Last update: September 8, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -93,9 +93,6 @@ PARTS2=re.compile(r"\s*-\s+")
 
 # regex for squeezing white space
 SQUEEZE=re.compile(r"\s{2,}")
-
-# regex matching tags like 'N+ABS', 'N+NCONT', 'ABS', 'NCONT', etc.
-TAGSEQ=re.compile(r'(^\w+\+)?(\w+)\b')
 
 # separators of multiword tokens
 HYPHEN='-'
@@ -1776,22 +1773,25 @@ def getXpos(parse):
 	return ''
 
 def getTags(parse):
-    tags=''
-    m=None
-    if parse[1]:
-        m=TAGSEQ.search(parse[1])
-    if m:
-        x,y=m.groups()
-        if x:
-            tags=f"{x}{y}"
-        else:
-            tags=y
-    return tags
+    """
+    Extracts the full tag sequence from a parse entry.
 
-def _hasTag(tags1,tags2):
-    if re.search(rf"\b{re.escape(tags2)}\b",tags1):
-        return True
-    return False
+    Parameters
+    ----------
+    parse : list
+        A parse entry of the form [lemma, tag, ...], e.g.,
+        ['sinimú', 'N+ABS+SG'] or ['xirĩ', 'V2'].
+
+    Returns
+    -------
+    str
+        The full tag string, e.g. 'N+ABS+SG' or 'V2'.
+        Returns an empty string if no tag is present.
+    """
+    if len(parse) > 1 and parse[1]:
+        return parse[1].upper()
+    return ''
+
 
 def hasTag(tags1, tags2):
     """
@@ -1826,6 +1826,8 @@ def hasTag(tags1, tags2):
     False
     >>> hasTag('N+NCONT+SG', 'N+NCONT+SG')
     True
+    >>> hasTag('N+NCONT+SG', 'NCONT+SG')
+    True
     """
     if re.search(rf"\b{re.escape(tags2)}\b", tags1):
         return True
@@ -1833,13 +1835,18 @@ def hasTag(tags1, tags2):
 
 def filterparselist(tags, parselist):
     """
-    Filters a parselist by a specified part-of-speech tag (XPOS), feature, or XPOS+feature combination.
+    Filters a parselist by a specified part-of-speech tag (XPOS), feature, 
+    or XPOS+feature combination. Also accepts tags specified in AUX
+    for the given lemma.
 
     Parameters
     ----------
     tags : str
-        The XPOS tag or feature to filter by, optionally combined, e.g., 'ABS' or 'N+ABS' for an absolutive noun.
-        If an empty string or None is provided, no filtering is performed and the full parselist is returned.
+        The XPOS tag or feature to filter by, optionally combined, e.g., 'ABS' 
+        or 'N+ABS' for an absolutive noun. Also accepts tags from AUX
+        like 'AUXN', 'AUXFR', 'AUXFS' for the lemma in the parselist.
+        If an empty string or None is provided, no filtering is performed
+        and the full parselist is returned.
 
     parselist : list
         A list of parses, where each parse is a list containing a lemma and an XPOS tag,
@@ -1855,19 +1862,32 @@ def filterparselist(tags, parselist):
     ------
     ValueError
         If filtering is requested (i.e., tags is not empty) but no parse in the parselist
-        matches the specified tag.
+        matches the specified tag or the AUX list.
     """
 
-    if tags:
-        tags=tags.upper()
-        filtered = [x for x in parselist if hasTag(getTags(x), tags)]
-        if not filtered:
-            raise ValueError(
-                f"No parse found with tag '{tags}' in parselist: {parselist}"
-            )
-        return filtered
-    else:
+    if not tags:
         return parselist
+
+    tags_upper = tags.upper()
+
+    # Step 1: normal filtering using hasTag(getTags(x), tags)
+    filtered = [x for x in parselist if hasTag(getTags(x), tags_upper)]
+    if filtered:
+        return filtered
+
+    # Step 2: if no match, check AUX for each lemma in parselist
+    for parse in parselist:
+        lemma = parse[0]
+        for aux in AUX:
+            if aux['lemma'] == lemma and aux['pos'].upper() == tags_upper:
+                # Rewrite POS in output to the AUX POS
+                return [[lemma, aux['pos']]]
+
+    # Step 3: still no match → raise error
+    raise ValueError(
+        f"No parse found with tag '{tags_upper}' in parselist: {parselist}"
+    )
+
 
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
