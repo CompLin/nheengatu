@@ -7042,21 +7042,22 @@
 # text_source = Rodrigues, 110, adap.
 # text_orig = Remunuã ne mira-itá, remuyukwakú aintá, asú ambué indé remundú, rekwáu arama remundú ne mira-itá
 # text_annotator = Leonel Figueiredo de Alencar
-1	Remunuã	munuã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+# inputline = Remunuã ne mira-itá, remuyukwakú aintá/pron, asú ambué indé/pron remundú, rekwáu arama/sconj remundú ne mira-itá.
+1	Remunuã	munuã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=8:10
 3	mira-itá	mira	NOUN	N	Number=Plur	1	obj	_	SpaceAfter=No|TokenRange=11:19
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=19:20
-5	remuyukwakú	muyukwakú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=21:32
+5	remuyukwakú	muyukwakú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	1	parataxis	_	TokenRange=21:32
 6	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No|TokenRange=33:38
 7	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=38:39
 8	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	9	aux	_	TokenRange=40:43
 9	ambué	mbué	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	5	parataxis	_	TokenRange=44:49
 10	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	9	obj	_	TokenRange=50:54
 11	remundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	9	xcomp	_	SpaceAfter=No|TokenRange=55:62
-12	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=62:63
-13	rekwáu	kwáu	AUX	AUXN	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	15	aux	_	TokenRange=64:70
-14	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=71:76
-15	remundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	9	advcl	_	TokenRange=77:84
+12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=62:63
+13	rekwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	9	advcl	_	TokenRange=64:70
+14	arama	arama	SCONJ	SCONJ	_	13	mark	_	TokenRange=71:76
+15	remundú	mundú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	13	xcomp	_	TokenRange=77:84
 16	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	17	nmod:poss	_	TokenRange=85:87
 17	mira-itá	mira	NOUN	N	Number=Plur	15	obj	_	SpaceAfter=No|TokenRange=88:96
 18	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=96:97
