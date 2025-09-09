@@ -373,7 +373,8 @@ def includeAdpType(token):
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
     'VERB':'root',
-    'PUNCT':'punct'}
+    'PUNCT':'punct',
+    'AUX' : 'aux'}
     modernform={}
     end=start + len(word)
     feats={}
@@ -557,9 +558,6 @@ def sortTokens(tokenlist):
 
 def VerbIdsList(tokenlist):
     return tokenlist.filter(upos="VERB")
-
-def VerbIdsList1(tokenlist):
-    return VerbsList(tokenlist)
 
 def isVerb(token):
     'return True if token is a verb or an existential or presentative particle'
@@ -1310,7 +1308,11 @@ def isAdvCl(verb,tokenlist,delta=1):
     return tokenlist.filter(id=sconjs)
 
 def handleAux(tokenlist):
-    verbs=VerbIdsList(tokenlist)
+    #verbs=VerbIdsList(tokenlist)
+    verbs=[]
+    for t in tokenlist:
+         if t['upos'] in ('VERB','AUX'):
+              verbs.append(t)
     puncts=TokensOfCatList(tokenlist,'PUNCT')
     c=len(verbs)
     if c == 1:
