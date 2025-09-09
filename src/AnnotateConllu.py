@@ -1309,7 +1309,7 @@ def isAdvCl(verb,tokenlist,delta=1):
 
 def handleAux(tokenlist):
     #verbs=VerbIdsList(tokenlist)
-    verbs=[]
+    verbs=TokenList()
     for t in tokenlist:
          if t['upos'] in ('VERB','AUX'):
               verbs.append(t)
