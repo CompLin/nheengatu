@@ -3843,6 +3843,22 @@
 4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=10:14
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
+# sent_id = Cruz2011:6:3:146
+# text = Tausú yepé tambeú i supé.
+# text_eng = TODO
+# text_por = Eles vão em vão contar para ele.
+# text_source = Example 893c Br
+# text_orig = Tau-su yepe ta-mbeu i-supe
+# text_orig_alt = Tau-su yepe ta-mbeu xupe
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Tausú yepé/frust tambeú i/pron2 supé.
+1	Tausú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	3	aux	_	TokenRange=0:5
+2	yepé	yepé	PART	FRUST	Aspect=Frus	3	advmod	_	TokenRange=6:10
+3	tambeú	mbeú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:17
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	iobj	_	TokenRange=18:19
+5	supé	supé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=20:24
+6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
 # sent_id = Cruz2011:2-1:3:3
 # text = Yandé kurí mira-itá yasú yakuntari.
 # text_eng = TODO
