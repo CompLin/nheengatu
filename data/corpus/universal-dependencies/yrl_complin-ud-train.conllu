@@ -1972,7 +1972,7 @@
 12	"	"	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=44:45
 
 # sent_id = Cruz2011:0:0:21
-# text = Tenki yasikari yayuíri awá taá upuderi umpinima aé.
+# text = Tenki yasikari yayuíri awá-ta upuderi umpinima aé.
 # text_eng = We have to look again for someone who can write it.
 # text_por = Temos que procurar novamente quem pode escrevê-lo.
 # text_por_orig = Temos que procurar novamente quem pode escrever isso (o Warekena).
@@ -3843,7 +3843,35 @@
 4	rera	sera	NOUN	N	Number=Sing|Rel=Cont	1	nsubj	_	SpaceAfter=No|TokenRange=10:14
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
-# sent_id = Cruz2011:6:3:146
+# sent_id = Cruz2011:0:0:144
+# text = Yasú yakirari yepé asosiasao.
+# text_eng = TODO
+# text_por = Vamos criar uma associação.
+# text_source = Example No. 893a Br
+# text_orig = ya-su ya-kirai yepe asosiasao
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yasú yakirari/=v:o|pt:s|criar yepé/art asosiasao/=n:o|pt:s|associação.
+1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
+2	yakirari	kirari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	Orig=criar|OrigLang=pt|TokenRange=5:13
+3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=14:18
+4	asosiasao	asosiasao	NOUN	N	Number=Sing	2	obj	_	Orig=associação|OrigLang=pt|SpaceAfter=No|TokenRange=19:28
+5	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Cruz2011:0:0:145
+# text = Ti yapuderi yakuntari.
+# text_eng = TODO
+# text_por = Não podíamos falar.
+# text_por_orig = Nao podíamos falar.
+# text_source = Example No. 893b Br
+# text_orig = ti=ya-pudei ya-kuntai
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ti yapuderi yakuntari.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	yapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	aux	_	TokenRange=3:11
+3	yakuntari	kuntari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=12:21
+4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
+
+# sent_id = Cruz2011:0:0:146
 # text = Tausú yepé tambeú i supé.
 # text_eng = TODO
 # text_por = Eles vão em vão contar para ele.
@@ -3858,6 +3886,119 @@
 4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	iobj	_	TokenRange=18:19
 5	supé	supé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=20:24
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
+# sent_id = Cruz2011:0:0:149
+# text = Taumunhã mitá taupuderi arã tauyutika nhaã mirá.
+# text_eng = TODO
+# text_por = Fizeram um jirau para poder derrubar aquela árvore.
+# text_source = Example No. 894c Cordeiro, Ms.
+# text_orig = tau-munhã mita tau-puderi arã tau-yutika nhaã mirá
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Taumunhã mitá taupuderi arã/sconj tauyutika nhaã mirá.
+1	Taumunhã	munhã	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:8
+2	mitá	mitá	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:13
+3	taupuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	5	aux	_	TokenRange=14:23
+4	arã	arã	SCONJ	SCONJ	_	5	mark	_	TokenRange=24:27
+5	tauyutika	yutika	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	1	advcl	_	TokenRange=28:37
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=38:42
+7	mirá	mirá	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=43:47
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
+
+# sent_id = Cruz2011:0:0:150
+# text = Aité aputari apurandú ne suí.
+# text_eng = TODO
+# text_por = Isso mesmo, quero perguntar de você.
+# text_source = Example No. 895a Wr
+# text_orig = ai=te a-putai a-purandu ne-sui
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aité/@ aputari apurandú ne suí/adp.
+1	Aité	aité	PRON	EMP	PronType=Emp	0	root	_	TokenRange=0:4
+2	aputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=5:12
+3	apurandú	purandú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	xcomp	_	TokenRange=13:21
+4	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	obl	_	TokenRange=22:24
+5	suí	suí	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=25:28
+6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
+
+# sent_id = Cruz2011:0:0:151
+# text = Ti ã uputari upurakí.
+# text_eng = TODO
+# text_por = Não quis mais trabalhar.
+# text_source = Example No. 895b Wr
+# text_orig = tiã=u-putai u-puraki
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ti ã uputari upurakí.
+1	Ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:2
+2	ã	ã	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=3:4
+3	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:12
+4	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	xcomp	_	SpaceAfter=No|TokenRange=13:20
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Cruz2011:0:0:152
+# text = Uputari wã upurakí.
+# text_eng = TODO
+# text_por = Ele já quer trabalhar.
+# text_source = Example No. 895c Br, elicited
+# text_orig = u-putai=wã u-puraki
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Uputari wã upurakí.
+1	Uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=8:10
+3	upurakí	purakí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=11:18
+4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Cruz2011:0:0:153
+# text = Ayana aikú.
+# text_eng = TODO
+# text_por = Estou correndo.
+# text_source = Example No. 875 Br
+# text_orig = a-yana a-iku
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ayana aikú/auxfs.
+1	Ayana	yana	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	aikú	ikú	AUX	AUXFS	Mood=Ind|VerbForm=Fin	1	aux	_	SpaceAfter=No|TokenRange=6:10
+3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=10:11
+
+# sent_id = Cruz2011:0:0:154
+# text = Maã-ta remunhã reikú?
+# text_eng = TODO
+# text_por = O que você está fazendo?
+# text_source = Example No. 877 Br
+# text_orig_alt = maã taa re-munhã re-iku?
+# text_orig = ma=ta re-munhã re-iku?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Maã-ta/int remunhã reikú/auxfs?
+1-2	Maã-ta	_	_	_	_	_	_	_	TokenRange=0:6
+1	Maã	maã	PRON	INT	PronType=Int	3	obj	_	_
+2	ta	taá	PART	CQ	Clitic=Yes|PartType=Int	3	advmod	_	_
+3	remunhã	munhã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=7:14
+4	reikú	ikú	AUX	AUXFS	Mood=Ind|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=15:20
+5	?	?	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=20:21
+
+# sent_id = Cruz2011:0:0:155
+# text = Kuíri puranga uikú.
+# text_eng = TODO
+# text_por = Agora está bom.
+# text_por_orig = Agora está bom
+# text_source = Example No. 879a Wr
+# text_orig = kui(ri) puranga u-iku
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kuíri puranga/a uikú/cop.
+1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
+2	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=6:13
+3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	SpaceAfter=No|TokenRange=14:18
+4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=18:19
+
+# sent_id = Cruz2011:0:0:156
+# text = Aé puranga.
+# text_eng = TODO
+# text_por = Isso é bom.
+# text_source = Example No. 879b Bn
+# text_orig = ae puranga
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aé/pron puranga/a.
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	puranga	puranga	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=3:10
+3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Cruz2011:2-1:3:3
 # text = Yandé kurí mira-itá yasú yakuntari.
@@ -14804,7 +14945,8 @@
 # sent_id = Magalhaes1876:1:9:9
 # text = Ximirikú usuaxara: — Intí raĩ pituna.
 # text_eng = The wife replied: "It's not night yet."
-# text_por = A esposa respondeu: — Ainda não é noite. [Marcel Twardowsky Avila]
+# text_por = A esposa respondeu: — Ainda não é noite.
+# text_por_translator = Marcel Twardowsky Avila
 # text_source = p. 164
 # text_orig = Xẹmirẹcó oçuaxára: — Intí raĩ pitúna.
 # text_annotator = Leonel Figueiredo de Alencar
