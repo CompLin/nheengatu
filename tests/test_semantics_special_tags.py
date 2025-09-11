@@ -7,8 +7,8 @@ from AnnotateConllu import validate_tag
 
 def extract_tags():
     testset=[]
-    valid="tags.pdt.txt"
-    invalid="tags.pdt.invalid.txt"
+    valid="valid_tags.txt"
+    invalid="invalid_tags.txt"
     for infile in valid, invalid:
         tags=[tag.strip() for tag in open(infile).readlines()]
         testset.append(tags)
