@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 11, 2025
+# Last update: September 11, 2025
 from lark import Lark, Transformer, UnexpectedInput, v_args
 
 grammar = r"""
@@ -34,7 +34,7 @@ func_with_args_and_root    : "=" FUNC ":" ARGVAL (":" ARGVAL)* "@"
 parser = Lark(grammar, start="special_tag", parser="lalr")
 
 
-def _validate_special_tag(tag: str) -> bool:
+def validate_special_tag(tag: str) -> bool:
     try:
         parser.parse(tag)
         return True
@@ -43,7 +43,7 @@ def _validate_special_tag(tag: str) -> bool:
 
 
 def validate_or_raise(tag: str) -> None:
-    if not _validate_special_tag(tag):
+    if not validate_special_tag(tag):
         raise ValueError(f"Invalid tag format: {tag}")
 
 
