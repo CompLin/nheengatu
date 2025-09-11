@@ -17,7 +17,7 @@ special_tag : root_only
 TAG        : /[a-z]+[0-9]?(\+[a-z]+)*/
 FUNC       : /[a-z]+/
 ARGNAME    : /[a-z][a-z0-9]*/
-VALUE      : /[\w\-\u00C0-\u024F]+/
+VALUE      : /[\w\-\u00C0-\u024F]+(\+[\w\-\u00C0-\u024F]+)*/
 ARGVAL     : ARGNAME "|" VALUE
 
 root_only                  : "@"

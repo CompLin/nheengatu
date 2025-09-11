@@ -2811,8 +2811,8 @@ def mkConlluSentence(tokens):
                 orig_form=tagparse.get('s')
                 force=tagparse.get('f')
                 xpos=tagparse.get('x')
-                if xpos:
-                    xpos=checkXposTag(xpos)
+                #if xpos:
+                #   xpos=checkXposTag(xpos)
             newparselist=[]
             if tag == '=p':
                 new=mkPropn(token,orig=orig,orig_form=orig_form)
