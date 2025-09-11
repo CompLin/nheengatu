@@ -22,6 +22,8 @@ class TestSpecialTagParsing(unittest.TestCase):
             "=typo:c|puranga:x|adva",
             "=typo:c|puranga:x|adva@",
             "=custom:arg1|val1:arg2|val2",
+            "=custom:arg1|a+b:arg2|val2",
+            "=custom:arg1|a+b:arg2|c+d",
             "=custom:arg1|val1:arg2|val2@",
         ]
         self.invalid = [

@@ -46,6 +46,7 @@ valid_tags = {
     "=red:l|1:a|t:o|q:p|5:s|nom:x|extra",
     "=spl:w|abc:b|t:c|u:h|m:x|n",
     "=typo:c|x:n|q:x|a",
+    "=typo:c|x:n|q:x|a+b",
     "=upos:o|X:x|Y:s|Z",
 
     # Functions with optional only
