@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 8, 2025
+# Last update: September 11, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2412,10 +2412,11 @@ def checkXposTag(pos_tag):
 
 def get_iso_code(language_code):
     """
-    Returns the 2-letter ISO 639-1 code if available, otherwise the 3-letter ISO 639-2/3 code.
+    Returns the 2-letter ISO 639-1 code if available, otherwise the 3-letter ISO 639-2/3 code
+    or a custom code if not standard.
 
     Args:
-        language_code (str): A valid 2-letter or 3-letter ISO language code.
+        language_code (str): A valid 2-letter or 3-letter ISO language code, or a custom code.
 
     Returns:
         str: The corresponding 2-letter code if available, otherwise the 3-letter code.
@@ -2432,17 +2433,20 @@ def get_iso_code(language_code):
     """
     language_code = language_code.lower()
 
-    # --- Try iso639-lang ---
+    # --- Try iso639 ---
     try:
         from iso639 import languages
-        lang = (
-            languages.get(part1=language_code)
-            or languages.get(part3=language_code)
-            or languages.get(name=language_code)
-        )
+
+        def safe_get(**kwargs):
+            try:
+                return languages.get(**kwargs)
+            except KeyError:
+                return None
+
+        lang = safe_get(part1=language_code) or safe_get(part3=language_code) or safe_get(name=language_code)
         if lang:
             return lang.part1 or lang.part3
-    except (ImportError, AttributeError):
+    except ImportError:
         pass
 
     # --- Try old iso639 ---
@@ -2470,7 +2474,6 @@ def get_iso_code(language_code):
         return fallback[language_code]
 
     raise ValueError(f"Invalid language code: {language_code}")
-
 
 def mkUpos(form,xpos,orig=None,orig_form=''):
     new={}
