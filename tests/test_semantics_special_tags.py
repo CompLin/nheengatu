@@ -1,21 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: July 18, 2025
+# Last update: September 11, 2025
 import pytest
 from AnnotateConllu import validate_tag
-from CompareGoldTestFeats import mkTestSet
 
 def extract_tags():
-    import os
     testset=[]
-    user=os.path.expanduser('~')
-    folder="Dropbox/publications/2025/STIL"
-    path=os.path.join(user,folder)
     valid="tags.pdt.txt"
     invalid="tags.pdt.invalid.txt"
-    for name in valid, invalid:
-        infile=os.path.join(path,name)
+    for infile in valid, invalid:
         tags=[tag.strip() for tag in open(infile).readlines()]
         testset.append(tags)
     return testset
