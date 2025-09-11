@@ -2,16 +2,21 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Last update: September 11, 2025
+import os
 import pytest
 from AnnotateConllu import validate_tag
 
 def extract_tags():
-    testset=[]
-    valid="valid_tags.txt"
-    invalid="invalid_tags.txt"
+    testset = []
+    # Get the directory of this test script
+    test_dir = os.path.dirname(__file__)
+    valid = os.path.join(test_dir, "valid_tags.txt")
+    invalid = os.path.join(test_dir, "invalid_tags.txt")
+    
     for infile in valid, invalid:
-        tags=[tag.strip() for tag in open(infile).readlines()]
-        testset.append(tags)
+        with open(infile, "r", encoding="utf-8") as f:
+            tags = [tag.strip() for tag in f.readlines()]
+            testset.append(tags)
     return testset
 
 testset=extract_tags()
