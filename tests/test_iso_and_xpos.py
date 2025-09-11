@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: June 11, 2025
+# Last update: September 11, 2025
 
 import pytest
 from AnnotateConllu import get_iso_code, checkXposTag
@@ -22,6 +22,9 @@ valid_iso_codes = [
     "yrl",   # Nheengatu
     "gl",    # Galician
     "grc",   # Ancient Greek
+    "deu",   # German
+    "gae",   # Warekena
+    "bwi",   # Baniwa
 ]
 
 invalid_iso_codes = [
