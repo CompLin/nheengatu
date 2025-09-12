@@ -26875,6 +26875,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Se igantiwa ukaú reté/advs uikú/v.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	igantiwa	igantiwa	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:11
 3	ukaú	kaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:16
@@ -26886,36 +26887,39 @@
 # text = Emuwéu mirĩ.
 # text_por = Apaga um bocado.
 # text_source = p. 344, No. 342
-# text_orig = emué mirí (Ereré).
+# text_orig = emuéu mirí (Santarém).
+# text_orig_alt = emué mirí (Ereré).
+# place = Santarém
+# text_orig_alt_place = Ereré
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Emuwéu mirĩ/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Emuwéu	muwéu	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	1	advmod	_	SpaceAfter=No|TokenRange=7:11
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:343
-# text = Tatatinga intí katú ikú, i pixé asú ikú.
+# text = Tatatinga intí katú ikú, i pixéasú ikú.
 # text_por = A fumaça não está boa, cheira mal.
 # text_source = p. 344, No. 343
 # text_orig = tatatína intí katú ikó, ipixé asú ikó.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Tatatinga intí katú/v2 ikú/=mf:m|uikú:x|v:h|v, i/pron2 pixé asú/=mf:m|usú ikú/=mf:m|uikú:x|v:h|v.
+# inputline = Tatatinga intí katú/a@ ikú/=mf:m|uikú:x|auxfs:h|auxfs, i/pron2 pixeasú/=ev:a|t ikú/=mf:m|uikú:x|auxfs:h|auxfs.
 # text_annotator = Dominick Maia Alexandre
 1	Tatatinga	tatatinga	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:9
 2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=10:14
-3	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=15:19
-4	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	3	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=20:23
-5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=23:24
-6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	TokenRange=25:26
-7	pixé	pixé	ADJ	A	_	3	parataxis	_	TokenRange=27:31
-8	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	7	aux	_	ModernForm=usú|ModernPerson=3|TokenRange=32:35
-9	ikú	ikú	AUX	AUXFS	Style=Arch|VerbForm=Inf	7	aux	_	ModernForm=uikú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=36:39
-10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=39:40
+3	katú	katú	ADJ	A	_	3	parataxis	_	TokenRange=15:19
+4	ikú	ikú	AUX	AUXFS	Mood=Ind|Style=Arch|VerbForm=Fin	3	aux	_	ModernForm=uikú|SpaceAfter=No|TokenRange=20:23
+5	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=23:24
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	7	nmod:poss	_	TokenRange=25:26
+7	pixeasú	pixé	NOUN	N	Degree=Aug|Number=Sing	3	_	_	TokenRange=27:34
+8	ikú	ikú	AUX	AUXFS	Mood=Ind|Style=Arch|VerbForm=Fin	3	aux	_	ModernForm=uikú|SpaceAfter=No|TokenRange=35:38
+9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Hartt1938:0:0:344
 # text = Santá reté imirá, intí upena.
