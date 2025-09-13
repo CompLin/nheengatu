@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 11, 2025
+# Last update: September 13, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -2811,8 +2811,8 @@ def mkConlluSentence(tokens):
                 orig_form=tagparse.get('s')
                 force=tagparse.get('f')
                 xpos=tagparse.get('x')
-                #if xpos:
-                #   xpos=checkXposTag(xpos)
+                if xpos:
+                   xpos=xpos.upper()
             newparselist=[]
             if tag == '=p':
                 new=mkPropn(token,orig=orig,orig_form=orig_form)
