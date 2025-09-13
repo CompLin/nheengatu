@@ -26936,6 +26936,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Santá/a reté/advs imirá, intí upena.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Santá	santá	ADJ	A	_	0	root	_	TokenRange=0:5
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:10
 3	imirá	imirá	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=11:16
@@ -26954,6 +26955,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Tatatinga sasí/v3 reté/advs se resá-pe.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Tatatinga	tatatinga	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:9
 2	sasí	sasí	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=10:14
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=15:19
@@ -26994,6 +26996,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Yawara ukiri uikú/v.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawara	yawara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	ukiri	kiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=7:12
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=13:17
@@ -27009,6 +27012,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Apekatú/advc reté/advs será rewatá?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Apekatú	apekatú	ADV	ADVC	AdvType=Loc	4	advmod	_	TokenRange=0:7
 2	reté	reté	ADV	ADVS	AdvType=Deg	4	advmod	_	TokenRange=8:12
 3	será	será	PART	PQ	PartType=Int	4	advmod	_	TokenRange=13:17
@@ -27025,6 +27029,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Apekatú/advc reté/advs será igarupawa?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Apekatú	apekatú	ADV	ADVC	AdvType=Loc	0	root	_	TokenRange=0:7
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:12
 3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=13:17
@@ -27032,7 +27037,7 @@
 5	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Hartt1938:0:0:350
-# text = Resú wã será igarupawa-pe?
+# text = Resú wã será igarupá-pe?
 # text_por = Já foste no porto?
 # text_source = p. 344, No. 350
 # text_orig = resó uán será ygarupápe?
@@ -27041,13 +27046,14 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Resú wã será igarupawa-pe?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Resú	sú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=5:7
 3	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=8:12
-4-5	igarupawa-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:25
-4	igarupawa	igarupawa	NOUN	N	Number=Sing	1	obl	_	_
+4-5	igarupá-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=13:23
+4	igarupá	igarupá	NOUN	N	Number=Sing	1	obl	_	_
 5	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
-6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
+6	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=23:24
 
 # sent_id = Hartt1938:0:0:351
 # text = Intí ranhẽ.
@@ -27074,6 +27080,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Yasú ape/advdi.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
 2	ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	1	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=8:9
@@ -27088,6 +27095,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xasú se pí irũ/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asú|TokenRange=0:4
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:7
 3	pí	pí	NOUN	N	Number=Sing	1	obl	_	TokenRange=8:10
