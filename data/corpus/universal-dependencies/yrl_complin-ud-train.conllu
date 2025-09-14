@@ -26943,7 +26943,7 @@
 4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=16:17
 5	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=18:22
 6	upena	pena	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=23:28
-7	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=28:29
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=28:29
 
 # sent_id = Hartt1938:0:0:345
 # text = Tatatinga sasí reté se resá-pe.
@@ -27116,6 +27116,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamunú se igara tawa kití amú/ind wirané uyuíri arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xamunú	munú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amunú|TokenRange=0:6
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
 3	igara	igara	NOUN	N	Number=Sing	1	obj	_	TokenRange=10:15
