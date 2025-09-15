@@ -27811,14 +27811,15 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xaruri kwaá/demx ananá inéu, supewara.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xaruri	ruri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aruri|TokenRange=0:6
 2	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	det	_	TokenRange=7:11
 3	ananá	ananá	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:17
 4	inéu	inéu	PRON	PROND	Case=Dat|Number=Sing|Person=2|PronType=Prs	1	iobj	_	SpaceAfter=No|TokenRange=18:22
 5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=22:23
 6-7	supewara	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=24:32
-6	supé	supé	ADP	ADP	AdpType=Post	4	case	_	_
-7	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	4	case	_	_
+6	supé	supé	ADP	ADP	AdpType=Post	1	parataxis	_	_
+7	wara	wara	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
 8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:397
