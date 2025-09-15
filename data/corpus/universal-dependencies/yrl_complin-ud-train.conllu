@@ -28011,11 +28011,12 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Aé/pron umuyasuka paratú/=n:o|pt:s|prato.
+# inputline = Aé/pron umuyasuka paratú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
 2	umuyasuka	muyasuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:12
-3	paratú	paratú	NOUN	N	Number=Sing	2	obj	_	Orig=prato|OrigLang=pt|SpaceAfter=No|TokenRange=13:19
+3	paratú	paratú	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=13:19
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Hartt1938:0:0:408
