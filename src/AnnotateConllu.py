@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 13, 2025
+# Last update: September 18, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -481,6 +481,7 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['deprel']=dprl
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
+    print('bu',word,upos,start,end)
     if modernform:
         token['misc'].update(modernform)
     removeMoodVNOUN(token)
@@ -2740,6 +2741,89 @@ def applyFunction(function,form,orig=None, orig_form='',xpos=''):
         new['parselist']=handleOrig(new,form,orig=orig,orig_form=orig_form,xpos=xpos)
     return new
 
+
+def handleStartTokenRange(entry, start):
+    """
+    Correct the start index for punctuation TokenRange values to match
+    UD and Yauti conventions.
+
+    Background
+    ----------
+    The caller receives a tokenizer output such as:
+        ['Kurumĩ', 'usuaxara', ':', '—', 'Kunhã', 'surí', '.']
+
+    The caller builds a CoNLL-U TokenList assuming tokens are separated
+    by whitespace. However, punctuation tokens such as commas, colons,
+    and periods frequently occur immediately after a word without an
+    intervening space. In such cases the tokenizer-derived `start` value
+    can be off by +1 compared to the character index that UD/Yauti
+    expect for the punctuation `TokenRange`. This helper corrects that
+    off-by-one for punctuation tokens.
+
+    Dashes (Unicode variants: ‒, –, —, ―) are an exception: they are
+    treated like ordinary words (they are independent nodes whose ranges
+    reflect their own span) and therefore must *not* be adjusted.
+
+    Parameters
+    ----------
+    entry : dict
+        Token dictionary with at least the keys:
+            - 'pos'   : universal POS tag (e.g. 'PUNCT', 'NOUN', ...)
+            - 'lemma' : the token lemma / surface string (used to test dashes)
+    start : int
+        Initial character index for this token as provided by the caller.
+
+    Returns
+    -------
+    int
+        The corrected start index to be used in the token's TokenRange.
+
+    Examples
+    --------
+    For the sentence "Kurumĩ usuaxara: — Kunhã surí." Yauti produces token
+    ranges like:
+        1  Kurumĩ   TokenRange=0:6
+        2  usuaxara TokenRange=7:15
+        3  :        TokenRange=15:16
+        4  —        TokenRange=17:18
+        5  Kunhã    TokenRange=19:24
+        6  surí     TokenRange=25:29
+        7  .        TokenRange=29:30
+
+    If the caller produced starts that are one position too large for
+    punctuation tokens (for example, 16 for ':' and 30 for '.'), this
+    helper corrects them:
+
+    >>> handleStartTokenRange({'pos':'PUNCT','lemma':':'}, 16)
+    15
+
+    The dash keeps its own start:
+
+    >>> handleStartTokenRange({'pos':'PUNCT','lemma':'—'}, 17)
+    17
+
+    Non-punctuation tokens are unchanged:
+
+    >>> handleStartTokenRange({'pos':'NOUN','lemma':'Kunhã'}, 19)
+    19
+
+    Notes
+    -----
+    - This function only inspects 'pos' and 'lemma' and does not look at
+      the original source string; the caller is responsible for computing
+      the initial `start` and for setting `SpaceAfter`.
+    - `DASHES` must be defined (e.g. DASHES = ['‒', '–', '—', '―']).
+    - This function subtracts exactly 1 from `start` because the typical
+      error observed in the pipeline is an off-by-one for single-character
+      punctuation. If you need to support multi-character punctuation
+      correction, consider passing the original string to this function
+      and validating the correction against it.
+    """
+    if entry.get('pos') == 'PUNCT' and entry.get('lemma') not in DASHES:
+        # guard against negative start values
+        start = max(0, start - 1)
+    return start
+
 def mkConlluSentence(tokens):
     ROOT.clear()
     tokenlist=TokenList()
@@ -2911,8 +2995,8 @@ def mkConlluSentence(tokens):
             correct_form=dic.get('CorrectForm')
             if correct_form:
                 entry['correct_form']=correct_form
-            if entry.get('pos') == 'PUNCT':
-                start=start-1
+            print('du',entry,form,start)
+            start=handleStartTokenRange(entry, start)
             if dic.get('underscore'):
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)

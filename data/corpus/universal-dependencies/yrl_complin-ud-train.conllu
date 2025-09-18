@@ -20254,7 +20254,7 @@
 28	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=127:128
 
 # sent_id = Amorim1928:20:86-87:86-87
-# text = Duiruna suá, paá, upitá amurupí, unheẽ i piaíwa i paya xupé: — Indé remumbeú yandé yupirungawa uri iwitú aíwa suí, kirimbáu yandé iwaka tiapusawa!
+# text = Duiruna suá, paá, upitá amurupí, unheẽ i piaíwa i paya xupé: — Indé remumbeú yandé yupirungawa uri iwitúaíwa suí, kirimbáu yandé iwaka tiapusawa!
 # text_alt = Duiruna suá, paá, upitá amurupí, unheẽ i piaíwa i paya xupé: — Indé remumbeú yandé yupirungawa uri iwitú-aíwa suí, kirimbáu yandé iwaka tiapusawa!
 # text_por = O rosto de Duiruna, contam, ficou diferente, ele disse enraivado a seu pai: — Tu contas que nosso princípio vem da tempestade, que somos valentes como estrondo do céu!
 # text_source = p. 333, No. 86-87
@@ -20263,7 +20263,7 @@
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# inputline = Duiruna/=p suá/=mf:m|ruá:h|ncont, paá, upitá amurupí/adva, unheẽ i/pron2 piaíwa i/pron2 paya xupé: — Indé remumbeú yandé/pron2 yupirungawa uri iwitú aíwa/a suí/adp, kirimbáu/a yandé/pron iwaka tiapusawa!
+# inputline = Duiruna/=p suá/=mf:m|ruá:h|ncont, paá, upitá amurupí/adva, unheẽ i/pron2 piaíwa i/pron2 paya xupé: — Indé remumbeú yandé/pron2 yupirungawa uri iwitúaíwa/=spl:w|aíwa:x|a suí/adp, kirimbáu/a yandé/pron iwaka tiapusawa!
 # text_annotator = Leonel Figueiredo de Alencar
 1	Duiruna	duiruna	PROPN	PROPN	_	2	nmod:poss	_	TokenRange=0:7
 2	suá	suá	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Style=Arch	6	nsubj	_	ModernForm=ruá|ModernRel=Cont|SpaceAfter=No|TokenRange=8:11
@@ -20286,11 +20286,11 @@
 19	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs|Style=Arch	20	nmod:poss	_	ModernForm=yané|ModernLemma=yané|TokenRange=76:81
 20	yupirungawa	yupirungawa	NOUN	N	Number=Sing	21	nsubj	_	TokenRange=82:93
 21	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	18	ccomp	_	TokenRange=94:97
-22	iwitú	iwitú	NOUN	N	Number=Sing	21	obl	_	TokenRange=98:103
+22	iwitú	iwitú	NOUN	N	Number=Sing|Typo=Yes	21	obl	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=98:104
 23	aíwa	aíwa	ADJ	A	_	22	amod	_	TokenRange=104:108
 24	suí	suí	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=109:112
 25	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=112:113
-26	kirimbáu	kirimbáu	ADJ	A	_	21	parataxis	_	TokenRange=114:122
+26	kirimbáu	kirimbáu	ADJ	A	_	21	conj	_	TokenRange=114:122
 27	yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs	26	nsubj	_	TokenRange=123:128
 28	iwaka	iwaka	NOUN	N	Number=Sing	29	nmod:poss	_	TokenRange=129:134
 29	tiapusawa	tiapusawa	NOUN	N	Number=Sing	26	obl	_	SpaceAfter=No|TokenRange=135:144
