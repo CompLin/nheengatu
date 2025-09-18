@@ -481,7 +481,6 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['deprel']=dprl
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
-    print('bu',word,upos,start,end)
     if modernform:
         token['misc'].update(modernform)
     removeMoodVNOUN(token)
@@ -2830,6 +2829,7 @@ def mkConlluSentence(tokens):
     ident=1
     start=0
     for token in tokens:
+        oldtoken=token
         register='Modern'
         field='Form'
         attribute=f"{register}{field}"
@@ -2995,9 +2995,13 @@ def mkConlluSentence(tokens):
             correct_form=dic.get('CorrectForm')
             if correct_form:
                 entry['correct_form']=correct_form
-            print('du',entry,form,start)
+            index=tokens.index(oldtoken) # TODO: move this to handleStartTokenRange
+            if index > 0:
+                prev=tokens[index-1]
+                if prev.endswith('=wm'):
+                    start=start-1
             start=handleStartTokenRange(entry, start)
-            if dic.get('underscore'):
+            if dic.get('underscore'): # TODO: move this to handleStartTokenRange
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen') or dic.get('underscore'):
