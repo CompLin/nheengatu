@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 18, 2025
+# Last update: September 19, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -14,7 +14,7 @@ from conllu import parse
 from io import open
 from conllu import parse_incr
 import re, os
-from typing import List, Dict
+from typing import List, Dict, Match
 
 GLOSSARY=loadGlossary(jsonformat=os.path.join(DIR,"glossary.json"))
 LEXICON=loadLexicon()
@@ -81,8 +81,9 @@ DEPPUNCT.extend(DASHES)
 # locative form
 LOCATIVE=re.compile(r"forma locativa de (\w+)")
 
-# characters to be removed from input sentence
-REMOVE=re.compile(r"/=?[\w\+]*([:=|]\w+)*@?")
+# characters considered "trailing punctuation" that should be preserved
+_TRAILING_PUNCT_RE = re.compile(r'([,.;:!?\)\]\}"\']+)$', flags=re.UNICODE)
+_WHITESPACE_RE = re.compile(r'(\s+)', flags=re.UNICODE)
 
 # regex defining pattern to parse examples
 PARTS=re.compile(r"\s+-\s+|[)(]")
@@ -1997,35 +1998,6 @@ def insertMultitokenWord(tokenlist):
     if compound:
         correctTokenRanges(tokenlist) # TODO: verify whether this function suffices to correctly set TokenRange values
 
-def insertMultitokenWord1(tokenlist):
-    sep='-'
-    compound=Token()
-    for token in tokenlist:
-        feats=token.get('feats')
-        if feats:
-            if feats.get('Compound') == 'Yes'or feats.get('Clitic') == 'Yes':
-                index=tokenlist.index(token)
-                previous=tokenlist[index-1]
-                spaceafter=getSpaceAfter(token)
-                alomorph=''
-                misc=previous['misc']
-                if misc:
-                    alomorph=misc.get('Alomorph')
-                first=previous['form']
-                if alomorph:
-                    first=alomorph
-                mwt=getMultiWordToken(first)
-                if mwt:
-                    form=mwt
-                else:
-                    form=f"{first}{sep}{token['form']}"
-                tokenid=token['id']
-                ident=f'{tokenid-1}-{tokenid}'
-                compound=mkMultiWordToken(ident,form,spaceafter=spaceafter)
-                tokenlist.insert(index-1,compound)
-    if compound:
-        correctTokenRanges(tokenlist)
-
 def extractCliticEntry(clitic):
     entries=list(filter(lambda dic: list(dic.keys())[0] ==clitic, CLITICENTRIES))
     if entries:
@@ -2823,7 +2795,7 @@ def handleStartTokenRange(entry, start):
         start = max(0, start - 1)
     return start
 
-def mkConlluSentence(tokens):
+def mkConlluSentence(tokens,text=None):
     ROOT.clear()
     tokenlist=TokenList()
     ident=1
@@ -3135,12 +3107,53 @@ def ppText(sents,pref='',textid=0,index=0,sentid=0):
 def mkText(text):
 	print(ppText(extract_sents(lines=text)))
 
-def extractYrl(sent):
-    return REMOVE.sub('',sent)
+def remove_tags(sentence):
+    """
+    Remove all tags from an annotated Nheengatu sentence.
+
+    Behavior
+    - For each token-like substring (separated by whitespace), if it contains
+      a slash '/', everything from the first slash up to the end of that
+      substring is removed. Any trailing punctuation (e.g. ',', '.', ':',
+      ';', '!', '?', quotes, closing parens/brackets) is preserved.
+    - Whitespace from the original sentence is preserved.
+
+    Example
+    >>> s = ('Sumura-etá/=typo:c|Sumuára-etá:x|ncont uikú/cop suakí, '
+    ...      'usendú aé/pron, upurandú yeperesé maã/int marandua aé/pron umaã.')
+    >>> print(remove_tags(s))
+    Sumura-etá uikú suakí, usendú aé, upurandú yeperesé maã marandua aé umaã.
+    """
+    parts = _WHITESPACE_RE.split(sentence)  # keeps whitespace tokens
+    out_parts = []
+
+    for part in parts:
+        # if it's whitespace, preserve as-is
+        if _WHITESPACE_RE.fullmatch(part):
+            out_parts.append(part)
+            continue
+
+        # preserve trailing punctuation (comma, period, colon, semicolon, !, ?, quotes, closing brackets)
+        m: Match | None = _TRAILING_PUNCT_RE.search(part)
+        if m:
+            suffix = m.group(1)
+            core = part[:-len(suffix)]
+        else:
+            suffix = ''
+            core = part
+
+        # If there's a slash in the core, chop from the first slash onward
+        slash_idx = core.find('/')
+        if slash_idx != -1:
+            core = core[:slash_idx]
+
+        out_parts.append(core + suffix)
+
+    return ''.join(out_parts)
 
 def handleSents(sents,pref,textid,index,sentid,annotator,metadata):
     inputline=sents[0].replace('\t',' ')
-    yrl=extractYrl(inputline)
+    yrl=remove_tags(inputline)
     source=f"({sents[1]})"
     eng=sents[3]
     output=[] # TODO: update TokenList's  metadata instead
@@ -3178,7 +3191,7 @@ def handleTextPorGlossModernizer(metadata):
 
 def _handleSents(sents,annotator,metadata):
 	text=sents['text']
-	sents['text']=extractYrl(text)
+	sents['text']=remove_tags(text)
 	tokenlist=parseSentence(text)
 	tokenlist.metadata.update(sents)
 	if metadata:
@@ -3273,7 +3286,7 @@ def _parseExample(sents,copyboard=True,annotator=ANNOTATOR,institution='',check=
 	yrl=sents['text']
 	por=sents['text_por']
 	if check:
-		if checkSentence(yrl): # TODO: extractYrl before checking sentence!
+		if checkSentence(yrl): # TODO: remove_tags before checking sentence!
 			print(f"Sentence '{yrl}' already is in the treebank.")
 			return
 	sents['text_eng'] = _includeTranslation(por,translate)
@@ -3613,9 +3626,10 @@ def handleRightQuotationMark(tokens):
 			tokens.insert(i+1,quote)
 
 def parseSentence(sent):
+    text=remove_tags(sent)
     tokens=splitMultiWordTokens(tokenize(sent))
     handleRightQuotationMark(tokens)
-    tk=mkConlluSentence(tokens)
+    tk=mkConlluSentence(tokens,text)
     return tk
 
 def mkDict(text,pref='MooreFP1994',textid=0,sentid=1):
@@ -3646,7 +3660,7 @@ def TreebankSentences(text,pref='MooreFP1994',textid=0,index=0,sentid=1,copyboar
     while(i < len(yrl)):
         output.append(
         ppText(
-        [extractYrl(yrl[i]),eng[i],por[i]],
+        [remove_tags(yrl[i]),eng[i],por[i]],
         pref,textid,index,sentid)
         )
         if source:
@@ -3788,7 +3802,7 @@ def mkTestSet(sents):
         sent=mkSent(triples)
         newtk=parseSentence(sent)
         removeLemmaAmbiguity(newtk)
-        text=extractYrl(sent)
+        text=remove_tags(sent)
         newtk.metadata['sent_id']=f"{i}"
         newtk.metadata['text']=text
         newtk.metadata['sent']=sent
