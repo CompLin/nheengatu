@@ -331,7 +331,7 @@ def incrementTokenRange(tokenlist,i=1):
     for t in tokenlist:
         misc=t.get('misc')
         if misc:
-            value=incrementRange(misc['TokenRange'],i)
+            value=incrementRange(misc['TokenRange'],max(0,i))
             misc['TokenRange']=value
 
 def getudtag(tag):
