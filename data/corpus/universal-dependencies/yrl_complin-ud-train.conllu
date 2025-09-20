@@ -17355,16 +17355,20 @@
 18	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=85:86
 
 # sent_id = Amorim1928:19:3:3
-# text = Yepé payé tuyué uikú waá ape upuká sé, ariré unheẽ: — Awá ukwáu, wirandé ana tenhẽ usika iké mira usara-itá uyumupinima waá se anga pupé.
-# text_eng = An old shaman who was there laughed heartily, then said: "Who knows, tomorrow the man-eaters will arrive and paint themselves in my shadow."
+# text = Yepé payé tuyué uikú waá ape upuká sé, ariré uneẽ: — Awá ukwáu, wirandé ana tenhẽ usika iké mira usara-itá uyumupinima waá se anga pupé.
+# text_eng_ggl = An old shaman who was there laughed heartily, then said: "Who knows, tomorrow the man-eaters will arrive and paint themselves in my shadow."
+# text_eng = An old shaman who was there laughed heartily, then said: "Who knows, tomorrow the people-eaters will come and paint themselves in my shadow."
 # text_por = Um pajé velho que estava aí riu gostoso, depois disse: — Quem sabe, amanhã mesmo já chegam os comedores de gente que se pintam na minha sombra.
 # text_source = p. 309, No. 2-3
 # text_orig = Iepé paié tuiué oiku uaá ape opuká sé, ariré oneen: — Auá okuau, uirandé ana tenhé osyka iké mira-usaraetá oiumupinima uaá se anga pypé.
 # text_sec = Iepé paié tuiué oiku uaá ape opuká sé, ariré onheen: — Auá okuau, uirandé ana tenhé osyka iké mira-usaraetá oiumupinima uaá se anga pypé.
 # text_sec_source = Maslova (2018:155)
+# text_rus = Кто знает, возможно, уже завтра явятся каннибалы, которых показала моя душа.
+# text_rus_source = Maslova (2018:155)
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Yepé/art payé tuyué uikú/cop waá/rel ape/advdi upuká sé/adva, ariré uneẽ/=typo:c|unheẽ: — Awá/int ukwáu, wirandé ana tenhẽ/foc usika iké mira usara-itá uyumupinima/=mid waá/rel se anga pupé.
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	payé	payé	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=5:9
 3	tuyué	tuyué	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=10:15
@@ -17375,8 +17379,8 @@
 8	sé	sé	ADV	ADVA	AdvType=Man	7	advmod	_	SpaceAfter=No|TokenRange=35:37
 9	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=37:38
 10	ariré	ariré	ADV	ADVT	AdvType=Tim	11	advmod	_	TokenRange=39:44
-11	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=45:50
-12	:	:	PUNCT	PUNCT	_	15	punct	_	TokenRange=50:51
+11	uneẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	CorrectForm=unheẽ|SpaceAfter=No|TokenRange=45:49
+12	:	:	PUNCT	PUNCT	_	15	punct	_	TokenRange=49:50
 13	—	—	PUNCT	PUNCT	_	15	punct	_	TokenRange=51:52
 14	Awá	awá	PRON	INT	PronType=Int	15	nsubj	_	TokenRange=53:56
 15	ukwáu	kwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	ccomp	_	SpaceAfter=No|TokenRange=57:62
@@ -17388,7 +17392,7 @@
 21	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	20	advmod	_	TokenRange=88:91
 22	mira	mira	NOUN	N	Number=Sing	23	nmod:poss	_	TokenRange=92:96
 23	usara-itá	usara	NOUN	N	Number=Plur	20	nsubj	_	TokenRange=97:106
-24	uyumupinima	yumupinima	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	23	acl:relcl	_	TokenRange=107:118
+24	uyumupinima	mupinima	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	23	acl:relcl	_	TokenRange=107:118
 25	waá	waá	PRON	REL	Number=Sing|PronType=Rel	24	nsubj	_	TokenRange=119:122
 26	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	27	nmod:poss	_	TokenRange=123:125
 27	anga	anga	NOUN	N	Number=Sing	24	obl	_	TokenRange=126:130
@@ -17421,7 +17425,7 @@
 13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	ccomp	_	SpaceAfter=No|TokenRange=68:72
 14	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=72:73
 
-# sent_id = Amorim1928:19:5:5
+# sent_id = Amorim1928:19:7:7
 # text = Aintá umbaú mira yawareté yawé.
 # text_eng = They eat people like jaguars.
 # text_por = Eles comem gente como onça.
