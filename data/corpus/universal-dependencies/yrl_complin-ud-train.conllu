@@ -22604,6 +22604,28 @@
 4	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	nsubj	_	SpaceAfter=No|TokenRange=22:26
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=26:27
 
+# sent_id = Hartt1938:0:0:92-2
+# text = Se raíra yupirungawa kwaá.
+# text_por = Este é meu filho primogênito.
+# text_source = p. 325, No. 92
+# text_orig = seraíra rypyrunáua kuaé (homem que fala).
+# speaker_gender = male
+# text_eng = TODO
+# text_orig_transcriber = Antônio Levy Melo Nogueira
+# text_por_modernizer = Antônio Levy Melo Nogueira
+# text_sec = Se raíra yupirungawa kwaá.
+# text_por_sec = Este é meu filho primogênito.
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
+# inputline = Se raíra rupirunawa/=typo:c|yupirungawa@ kwaá/demx.
+# text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
+2	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	3	nmod:poss	_	TokenRange=3:8
+3	rupirunawa	yupirungawa	NOUN	N	Number=Sing|Typo=Yes	0	root	_	CorrectForm=yupirungawa|TokenRange=9:19
+4	kwaá	kwaá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	3	nsubj	_	SpaceAfter=No|TokenRange=20:24
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=24:25
+
 # sent_id = Hartt1938:0:0:93
 # text = Yawara uyusuú.
 # text_por = O cachorro se mordeu.
@@ -29514,7 +29536,7 @@
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=34:35
 
 # sent_id = Hartt1938:0:0:484
-# text = Xamutuyuka-putari se ruka.
+# text = Xamutuyuka-vutari se ruka.
 # text_por = Vou entijucar minha casa.
 # text_source = p. 354, No. 484
 # text_orig = xamutuyúka vutár se róka.
@@ -29527,9 +29549,10 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamutuyuka-putari se ruka.
 # text_annotator = Dominick Maia Alexandre
-1-2	Xamutuyuka-putari	_	_	_	_	_	_	_	TokenRange=0:17
+# reviewer1 = Leonel Figueiredo de Alencar
+1-2	Xamutuyuka-vutari	_	_	_	_	_	_	_	TokenRange=0:17
 1	Xamutuyuka	mutuyuka	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amutuyuka
-2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
+2	vutari	putari	AUX	AUXN	Compound=Yes|Typo=Yes|VerbForm=Inf	1	aux	_	CorrectForm=putari
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=18:20
 4	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	1	obj	_	SpaceAfter=No|TokenRange=21:25
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=25:26
@@ -29715,27 +29738,26 @@
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
 # sent_id = Hartt1938:0:0:493
-# text = Xasapí se pí, uri ií upupuri i pí-pe.
+# text = Xasapí se pí, uri ií upupuri i pupé.
 # text_por = Queimei meu pé, a água quente caiu nele.
 # text_source = p. 355, No. 493
 # text_orig = xasapy sepy, or yg opupór ipupé.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xasapí se pí, uri ií upupuri i/pron2 pí-pe.
+# inputline = Xasapí se pí, uri ií upupuri i/pron2 pupé.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xasapí	sapí	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Asapí|TokenRange=0:6
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
 3	pí	pí	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=10:12
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=12:13
 5	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=14:17
 6	ií	ií	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=18:20
-7	upupuri	pupuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	xcomp	_	TokenRange=21:28
-8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=29:30
-9-10	pí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=31:36
-9	pí	pí	NOUN	N	Number=Sing	7	obl	_	_
-10	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	9	case	_	_
-11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=36:37
+7	upupuri	pupuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=21:28
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	obl	_	TokenRange=29:30
+9	pupé	pupé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=31:35
+10	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=35:36
 
 # sent_id = Hartt1938:0:0:494
 # text = Kwaá imirá setá reté iké.
