@@ -27500,9 +27500,10 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Ikuntu!
+# inputline = Ikuntu/=mf:m|Reikuntu!
 # text_annotator = Dominick Maia Alexandre
-1	Ikuntu	ikuntu	VERB	V	VerbForm=Inf	0	root	_	SpaceAfter=No|TokenRange=0:6
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Ikuntu	ikuntu	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=Reikuntu|ModernMood=Imp|ModernNumber=Sing|ModernPerson=2|ModernVerbForm=Fin|SpaceAfter=No|TokenRange=0:6
 2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
 
 # sent_id = Hartt1938:0:0:368-2
@@ -27515,6 +27516,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ekũi repituú!
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ekũi	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	repituú	pituú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:12
 3	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
@@ -27529,7 +27531,8 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Remaité ipú xakiri xaikú/v.
 # text_annotator = Dominick Maia Alexandre
-1	Remaité	maité	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Remaité	maité	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	ipú	ipú	PART	ASSUM	PartType=Mod	1	advmod	_	TokenRange=8:11
 3	xakiri	kiri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	ccomp	_	ModernForm=akiri|TokenRange=12:18
 4	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	aux	_	ModernForm=aikú|SpaceAfter=No|TokenRange=19:24
@@ -28969,10 +28972,11 @@
 # text_por_sec = Vamos devagar!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Yasú mené/=typo:c|mewé:x|adv rupí.
+# inputline = Yasú mené/=typo:c|mewé:x|adva rupí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=0:4
-2	mené	mewé	ADV	ADV	Typo=Yes	1	obl	_	CorrectForm=mewé|TokenRange=5:9
+2	mené	mewé	ADV	ADVA	AdvType=Man|Typo=Yes	1	obl	_	CorrectForm=mewé|TokenRange=5:9
 3	rupí	rupí	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=10:14
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=14:15
 
@@ -29059,6 +29063,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Esikí nhaã tupasama.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Esikí	sikí	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	3	det	_	TokenRange=6:10
 3	tupasama	tupasama	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=11:19
@@ -29074,6 +29079,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Pesikí!
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Pesikí	sikí	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:6
 2	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=6:7
 
@@ -29097,7 +29103,7 @@
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=36:37
 
 # sent_id = Hartt1938:0:0:461
-# text = Intí uyuyasuí uikú, aramé eyasuí.
+# text = Intí uyuyasú uikú, aramé eyasuí.
 # text_por = Não está coberto, então cubra-o.
 # text_source = p. 352, No. 461
 # text_orig = intí oyuyasú oikó, aramé eyasuí.
@@ -29108,15 +29114,16 @@
 # text_por_sec = Não está coberto, então cobre.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Intí uyuyasuí/=mid uikú/v, aramé/advj eyasuí.
+# inputline = Intí uyuyasú/=typo:c|uyuyasuí:n|mid uikú/v, aramé/advj eyasuí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
-2	uyuyasuí	yasuí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	TokenRange=5:13
-3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=14:18
-4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=18:19
-5	aramé	aramé	ADV	ADVJ	AdvType=Cau	6	advmod	_	TokenRange=20:25
-6	eyasuí	yasuí	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=26:32
-7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+2	uyuyasú	yasuí	VERB	V	Mood=Ind|Person=3|Typo=Yes|VerbForm=Fin|Voice=Mid,Pass	0	root	_	CorrectForm=uyuyasuí|TokenRange=5:12
+3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=13:17
+4	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=17:18
+5	aramé	aramé	ADV	ADVJ	AdvType=Cau	6	advmod	_	TokenRange=19:24
+6	eyasuí	yasuí	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	parataxis	_	SpaceAfter=No|TokenRange=25:31
+7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:462
 # text = Kwaá kunhã yumirú uikú, i piaíwa resé.
@@ -29132,6 +29139,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kwaá/demx kunhã yumirú/=mf:m|uyumirú uikú/v, i/pron2 piaíwa resé/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	kunhã	kunhã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=5:10
 3	yumirú	yumirú	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=uyumirú|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=11:17
@@ -29152,6 +29160,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kwaá/demx imirá intí katú/a.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	imirá	imirá	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=5:10
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=11:15
