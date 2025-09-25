@@ -29761,10 +29761,11 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = I/pron2 tuyué/a wã.
+# inputline = I/pron2 tuyué/@ wã.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:1
-2	tuyué	tuyué	ADJ	A	_	0	root	_	TokenRange=2:7
+2	tuyué	tuyué	NOUN	N	Number=Sing	0	root	_	TokenRange=2:7
 3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=8:10
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=10:11
 
@@ -29901,6 +29902,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kawa upií taína.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kawa	kawa	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
 2	upií	pií	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:9
 3	taína	taína	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=10:15
@@ -29980,11 +29982,12 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xapuú wã iyá/n suí/adp.
+# inputline = Xapuú wã iyá/=typo:c|iwa suí/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xapuú	puú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Apuú|TokenRange=0:5
 2	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=6:8
-3	iyá	iyá	NOUN	N	Number=Sing	1	obl	_	TokenRange=9:12
+3	iyá	iwa	NOUN	N	Number=Sing|Typo=Yes	1	obl	_	CorrectForm=iwa|TokenRange=9:12
 4	suí	suí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=13:16
 5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=16:17
 
@@ -29998,6 +30001,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ixé xakwáu awá/int urikú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	xakwáu	kwáu	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=akwáu|TokenRange=4:10
 3	awá	awá	PRON	INT	PronType=Int	4	nsubj	_	TokenRange=11:14
