@@ -29834,18 +29834,18 @@
 # text_por = Tens alguma cousa bonita para me vender?
 # text_source = p. 355, No. 496
 # text_orig = rerekó será maá purana reoéner ixéu?
-# text_eng = TODO
+# text_eng = Do you have something nice to sell me?
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Rerikú será maã/int purana/=typo:c|puranga:x|a revenderi/=v:o|pt:s|vender ixéu?
+# inputline = Rerikú será maã/n puranga/a revenderi ixéu?
 # text_annotator = Dominick Maia Alexandre
 1	Rerikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=7:11
-3	maã	maã	PRON	INT	PronType=Int	1	obj	_	TokenRange=12:15
-4	purana	puranga	ADJ	A	Typo=Yes	3	amod	_	CorrectForm=puranga|TokenRange=16:22
-5	revenderi	venderi	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	1	advcl	_	Orig=vender|OrigLang=pt|TokenRange=23:32
-6	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=33:37
-7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=37:38
+3	maã	maã	NOUN	N	Number=Sing	1	obj	_	TokenRange=12:15
+4	puranga	puranga	ADJ	A	_	3	amod	_	TokenRange=16:23
+5	revenderi	venderi	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	3	acl	_	TokenRange=24:33
+6	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=34:38
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=38:39
 
 # sent_id = Hartt1938:0:0:498
 # text = Amana tiapú uikú.
