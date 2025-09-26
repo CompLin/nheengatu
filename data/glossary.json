@@ -1,5 +1,77 @@
 [
     {
+        "lemma": "kwaru",
+        "pos": "num. card.",
+        "gloss": "[hist.] quatro [Avila 2021]"
+    },
+    {
+        "lemma": "asikwera",
+        "pos": "s.",
+        "gloss": "pedaço"
+    },
+    {
+        "lemma": "tenuné",
+        "pos": "s.",
+        "gloss": "var. tenundé",
+        "rel": [
+            "renuné",
+            "senuné"
+        ]
+    },
+    {
+        "lemma": "sekuya",
+        "pos": "s.",
+        "gloss": "[obso.] cuia [Avila 2021]",
+        "rel": [
+            "rekuya",
+            "sekuya"
+        ]
+    },
+    {
+        "lemma": "yupeé",
+        "pos": "v.",
+        "gloss": "aquecer-se, esquentar-se, aquentar-se (perto do fogo) (intr.) [Avila 2021]"
+    },
+    {
+        "lemma": "yumusakú",
+        "pos": "v.",
+        "gloss": "esquentar-se, aquentar-se, aquecer-se (intr.) [Avila 2021]"
+    },
+    {
+        "lemma": "pinawa",
+        "pos": "s.",
+        "gloss": "var. pindawa"
+    },
+    {
+        "lemma": "mutuyuka",
+        "pos": "v.",
+        "gloss": "embarrear, ENTIJUCAR; enlamear, sujar de barro [Avila 2021]"
+    },
+    {
+        "lemma": "mupupuri",
+        "pos": "v.",
+        "gloss": "ferver, fazer ferver"
+    },
+    {
+        "lemma": "tiái",
+        "pos": "s.",
+        "gloss": "[hist. adap.] 1) suor; 2) destilação",
+        "rel": [
+            "riái",
+            "siái"
+        ]
+    },
+    {
+        "lemma": "pií",
+        "pos": "v.",
+        "gloss": "picar, ferrar, ferroar"
+    },
+    {
+        "lemma": "pĩ",
+        "pos": "v.",
+        "gloss": "var. pií"
+    },
+    {
         "lemma": "muapara",
         "pos": "v.",
         "gloss": "entortar, curvar, vergar; tornar sinuoso [Avila 2021]"
@@ -36,7 +108,7 @@
     },
     {
         "lemma": "mewé",
-        "pos": "adj. / adv.",
+        "pos": "adj. / adv. man.",
         "gloss": "1) lento; 2) devagar, lentamente, sem pressa [Avila 2021]"
     },
     {
@@ -137,7 +209,8 @@
     {
         "lemma": "rurú",
         "pos": "v. 2ª cl. / adj.",
-        "gloss": "(estar ou tornar-se) molhado [...] [Avila 2021]"
+        "gloss": "(estar ou tornar-se) molhado [...] [Avila 2021]",
+        "pron2": "se"
     },
     {
         "lemma": "namí",
@@ -265,6 +338,11 @@
         "lemma": "yakima",
         "pos": "adj.",
         "gloss": "molhado, úmido [Avila 2021]"
+    },
+    {
+        "lemma": "venderi",
+        "pos": "v.",
+        "gloss": "vender [...] [Avila 2021]"
     },
     {
         "lemma": "mukurusá",
@@ -1248,7 +1326,22 @@
     {
         "lemma": "gantĩ",
         "pos": "s.",
-        "gloss": "proa"
+        "gloss": "var. gantí"
+    },
+    {
+        "lemma": "gantí",
+        "pos": "s.",
+        "gloss": "[hist. adap.] proa (de embarcação) [Avila 2021]"
+    },
+    {
+        "lemma": "igantí",
+        "pos": "s.",
+        "gloss": "var. gantí"
+    },
+    {
+        "lemma": "igantĩ",
+        "pos": "s.",
+        "gloss": "var. gantí"
     },
     {
         "lemma": "gapenú",
@@ -2664,6 +2757,11 @@
         "gloss": "var. de xukúi"
     },
     {
+        "lemma": "xukúi",
+        "pos": "part. pres.",
+        "gloss": "aqui está, eis, olhe aqui"
+    },
+    {
         "lemma": "kutakutara",
         "pos": "adv. temp.",
         "gloss": "frequentemente"
@@ -3720,6 +3818,11 @@
         "gloss": "lá, ali"
     },
     {
+        "lemma": "pakará",
+        "pos": "s.",
+        "gloss": "PACARÁ, espécie de cesto redondo, geralmente com tampa, feito de fasquias de madeira leve ou de palha de palmeira [...] [Avila 2021]"
+    },
+    {
         "lemma": "mimiwara",
         "pos": "s.",
         "gloss": "o que é dali, o dali"
@@ -3733,6 +3836,11 @@
         "lemma": "mirakitã",
         "pos": "s.",
         "gloss": "var. muirakitã"
+    },
+    {
+        "lemma": "tara",
+        "pos": "s.",
+        "gloss": "ornamento, enfeite [...] [Stradelli 1929:666]"
     },
     {
         "lemma": "mirapara",
@@ -10474,11 +10582,6 @@
         "gloss": "calça"
     },
     {
-        "lemma": "xukúi",
-        "pos": "part. pres.",
-        "gloss": "aqui está, eis, olhe aqui"
-    },
-    {
         "lemma": "xupé",
         "pos": "posp.",
         "gloss": "var. supé após i"
@@ -10490,8 +10593,8 @@
     },
     {
         "lemma": "yaitiwa",
-        "pos": "s.",
-        "gloss": "1) cerrado, mato cerrado, mata espessa, brenha, matagal [...] 2) (s.)  mato; erva daninha [...] 3) (adj.)  cerrado (o mato, a vegetação), brenhoso [...] [Avila 2021]"
+        "pos": "s. / adj.",
+        "gloss": "1) (s.) cerrado, mato cerrado, mata espessa, brenha, matagal [...] 2) (s.)  mato; erva daninha [...] 3) (adj.)  cerrado (o mato, a vegetação), brenhoso [...] [Avila 2021]"
     },
     {
         "lemma": "yakapika",

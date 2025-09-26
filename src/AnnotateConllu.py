@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 19, 2025
+# Last update: September 22, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -131,6 +131,9 @@ CLITICS=list(CLITICENTRIES.keys())
 ME='me'
 PI='pi'
 
+# clitic distal demonstrative adverb
+MI='mi'
+
 # clitic particle
 WERA='wera'
 
@@ -149,7 +152,7 @@ NTU='ntu'
 # clitic question particle "-ta"
 TA='taá'
 
-NONHYPHEN=[NTU,ME,WARA,WERA, ARAMA]
+NONHYPHEN=[NTU,ME,WARA,WERA, ARAMA,MI]
 
 ROOT=[]
 
@@ -1895,15 +1898,17 @@ def filterparselist(tags, parselist):
 def handleCompoundAux(token):
     updateFeats(token,'Compound','Yes')
 
-def handleClitic(token):
+def handleClitic(token,prefix=''):
     updateFeats(token,'Clitic','Yes')
+    if prefix:
+        updateFeats(token,'Prefix','Yes')
 
-def handleHyphenSepToken(token):
+def handleHyphenSepToken(token,prefix=''):
     upos=token['upos']
     if upos == 'VERB':
         handleCompoundAux(token)
     else:
-        handleClitic(token)
+        handleClitic(token,prefix=prefix)
 
 def getStartEnd(token,remove=True):
     dic={}
@@ -1962,41 +1967,57 @@ def getMultiWordToken(first):
     dic=MULTIWORDTOKENS.get(first)
     if dic:
         return dic['multiwordtoken']
-
+    
+def removeFeature(tokenlist,feature):
+    for token in tokenlist:
+        feats=token.get('feats')
+        if feats and feats.get(feature):
+            feats.pop(feature)
+            
 def insertMultitokenWord(tokenlist):
     sep='-'
     compound=Token()
+    pref=''
     for token in tokenlist:
         feats=token.get('feats')
         if feats:
             if feats.get('Compound') == 'Yes'or feats.get('Clitic') == 'Yes':
                 index=tokenlist.index(token)
-                previous=tokenlist[index-1]
-                startend=getStartEnd(previous)
+                pref=feats.get('Prefix')
+                if pref:
+                     host=tokenlist[index+1]
+                else:
+                    host=tokenlist[index-1]
+                startend=getStartEnd(host)
                 start=startend.get('start')
                 if start:
                     spaceafter=getSpaceAfter(token)
-                    end=getStartEnd(token)['end']
+                    end=getStartEnd(token).get('end')
                     alomorph=''
-                    misc=previous['misc']
+                    misc=host['misc']
                     if misc:
                         alomorph=misc.get('Alomorph')
-                    first=previous['form']
+                    first=host['form']
                     if alomorph:
                         first=alomorph
-                    #if token['upos'] == 'ADV' or token['form'] == ME:
-                    #    sep=''
                     mwt=getMultiWordToken(first)
                     if mwt:
                         form=mwt
                     else:
                         form=f"{first}{sep}{token['form']}"
                     tokenid=token['id']
-                    ident=f'{tokenid-1}-{tokenid}'
-                    compound=mkMultiWordToken(ident,form,start,end,spaceafter)
-                    tokenlist.insert(index-1,compound)
+                    if pref:
+                        ident=f'{tokenid}-{tokenid+1}'
+                        compound=mkMultiWordToken(ident,form,start,end,spaceafter)
+                        tokenlist.insert(index,compound)
+                    else:
+                        ident=f'{tokenid-1}-{tokenid}'
+                        compound=mkMultiWordToken(ident,form,start,end,spaceafter)
+                        tokenlist.insert(index-1,compound)
     if compound:
         correctTokenRanges(tokenlist) # TODO: verify whether this function suffices to correctly set TokenRange values
+    
+    removeFeature(tokenlist,'Prefix')
 
 def extractCliticEntry(clitic):
     entries=list(filter(lambda dic: list(dic.keys())[0] ==clitic, CLITICENTRIES))
@@ -2023,24 +2044,26 @@ def handleHyphen(form):
     return dic
 
 def mkSuff(form,dic):
-	form=form[1:]
-	ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
-	me={'xpos':'ADP','lemma':'upé','clitic':ME}
-	wara={'xpos':'ADP','lemma':'wara','clitic':WARA}
-	arama={'xpos':'ADP','lemma':'arã','clitic': ARAMA}
-	wera={'xpos':'FREQ','lemma':'wera','clitic':WERA}
-	pi={'xpos':'ADP','lemma':'upé','clitic':PI}
-	ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
-	suffs=[ntu,me,pi,ta,wara,wera,arama]
-	for suff in suffs:
-		clitic=suff.get('clitic')
-		if clitic == form:
-			dic['form']=form
-			dic['upos']=getudtag(suff['xpos'])
-			dic['xpos']=suff['xpos']
-			dic['lemma']=suff['lemma']
-			dic['underscore']=True
-			break
+    form=form[1:]
+    ntu={'xpos':'ADV','lemma':'ntu','clitic': NTU}
+    me={'xpos':'ADP','lemma':'upé','clitic':ME}
+    mi={'xpos':'ADVDI','lemma':'mi','clitic':MI,'prefix':True}
+    wara={'xpos':'ADP','lemma':'wara','clitic':WARA}
+    arama={'xpos':'ADP','lemma':'arã','clitic': ARAMA}
+    wera={'xpos':'FREQ','lemma':'wera','clitic':WERA}
+    pi={'xpos':'ADP','lemma':'upé','clitic':PI}
+    ta={'xpos': 'CQ','lemma':'taá','clitic':TA}
+    affixes=[ntu,me,mi,pi,ta,wara,wera,arama]
+    for aff in affixes:
+        clitic=aff.get('clitic')
+        if clitic == form:
+            dic['form']=form
+            dic['upos']=getudtag(aff['xpos'])
+            dic['xpos']=aff['xpos']
+            dic['lemma']=aff['lemma']
+            dic['underscore']=True
+            dic['prefix']=aff.get('prefix',False)
+            break
 
 def mkPropn(token,orig=None,orig_form=None):
     new={}
@@ -2817,6 +2840,9 @@ def mkConlluSentence(tokens,text=None):
         token=token_data['word']
         parsed=token_data.get('parsed')
         dic=handleHyphen(token)
+        prefix=''
+        if dic:
+            prefix=dic.get('prefix','')
         new={}
         form=dic.get('form')
         redup=handleRedup(token)
@@ -2977,7 +3003,7 @@ def mkConlluSentence(tokens,text=None):
                 start=start-1
             t=mkConlluToken(form,entry,start=start, ident=ident)
             if dic.get('hyphen') or dic.get('underscore'):
-                handleHyphenSepToken(t)
+                handleHyphenSepToken(t,prefix=prefix)
             #correct_form=dic.get('CorrectForm')
             typo=dic.get('Typo')
             space_typo=dic.get('space_typo')
@@ -3349,8 +3375,14 @@ def extractNTU(glossary):
 def endswithSuff(suff,word):
     return word.endswith(suff)
 
+def startswithPref(pref,word):
+    return word.startswith(pref)
+
 def extractSuff(suff,glossary):
     return [entry['lemma'] for entry in filter(lambda x: endswithSuff(suff,x['lemma']),glossary)]
+
+def extractPref(pref,glossary):
+    return [entry['lemma'] for entry in filter(lambda x: startswithPref(pref,x['lemma']),glossary)]
 
 def inGlossary(word):
     wordlist=extractNTU(GLOSSARY)
@@ -3360,6 +3392,12 @@ def inGlossary(word):
 
 def withSuff(suff,word):
     wordlist=extractSuff(suff,GLOSSARY)
+    if word.lower() in wordlist:
+        return True
+    return False
+
+def withPref(pref,word):
+    wordlist=extractPref(pref,GLOSSARY)
     if word.lower() in wordlist:
         return True
     return False
@@ -3378,12 +3416,21 @@ def hasClitic(suff,token):
         return handleAccent(token[:-len(suff)],nasal)
     return ''
 
-def mkHost(host,clitic,token,xpos=''):
+def hasProclitic(pref,token):
+    form=token.lower()
+    if form.startswith(pref) and not withPref(pref,form):
+        return token[len(pref):]
+    return ''
+
+def mkHost(host,clitic,token,xpos='',suffix=True):
     dic={}
     if host == 'mirí' and clitic == NTU: # TODO: handle this in hasClitic
         host='mirĩ'
     dic['host']=host
-    dic['suff']=clitic
+    if suffix:
+        dic['suff']=clitic
+    else:
+        dic['prefix']=clitic
     if xpos:
         dic['xpos']=xpos
     dic['multiwordtoken']=token
@@ -3427,6 +3474,10 @@ def extractHost(token):
         host=hasClitic(clitic,token)
         if host:
             return mkHost(host,clitic,token,tag)
+        else:
+            host=hasProclitic(clitic,token)
+            if host:
+                return mkHost(host,clitic,token,tag,suffix=False)
     return dic
 
 def hasLinkingHyphen(token):
@@ -3601,9 +3652,14 @@ def splitMultiWordTokens(tokens):
             elif hasNoParse(host):
                 newlist.append(t)
             else:
-                suff=dic['suff']
+                suff=dic.get('suff')
                 MULTIWORDTOKENS[host]=dic
-                newlist.extend([host,f"{UNDERSCORE}{suff}"])
+                if suff:
+                    newlist.extend([host,f"{UNDERSCORE}{suff}"])
+                else:
+                    prefix=dic.get('prefix')
+                    if prefix:
+                        newlist.extend([f"{UNDERSCORE}{prefix}",host])
         else:
             newlist.append(t)
     return newlist
