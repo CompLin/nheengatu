@@ -17425,6 +17425,41 @@
 13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	ccomp	_	SpaceAfter=No|TokenRange=68:72
 14	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=72:73
 
+# sent_id = Amorim1928:19:6:6
+# text =  Aé usuaxara: — Mukũi yasí ana aikwé ixé xamaã se anga rupí mira urikú waá sikusawa puxí uyupiri uikú kwá paraná.
+# text_por = Ele respondeu: — Já duas luas há que eu vejo por meio da minha sombra gente que tem costume feio subindo este rio.
+# text_source = p. 309, No. 5-6
+# text_orig = Aé osuaixara: — Mukũe iasy ana ahikué ixé xamaan se anga rupi mira oreku uaá sekusaua puxy oiupire oiku koá paraná.
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# place = S. Gabriel
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Aé/pron usuaxara: — Mukũi/card yasí/n ana aikwé ixé xamaã se anga rupí mira urikú waá/rel sikusawa/ncont puxí/a uyupiri uikú/v kwá/demx paraná.
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	TokenRange=0:2
+2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=3:11
+3	:	:	PUNCT	PUNCT	_	8	punct	_	TokenRange=11:12
+4	—	—	PUNCT	PUNCT	_	8	punct	_	TokenRange=13:14
+5	Mukũi	mukũi	NUM	CARD	NumType=Card	6	nummod	_	TokenRange=15:20
+6	yasí	yasí	NOUN	N	Number=Sing	8	nsubj	_	TokenRange=21:25
+7	ana	ana	PART	PFV	Aspect=Perf	8	advmod	_	TokenRange=26:29
+8	aikwé	aikwé	PART	EXST	PartType=Exs	2	ccomp	_	TokenRange=30:35
+9	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	TokenRange=36:39
+10	xamaã	maã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	8	parataxis	_	ModernForm=amaã|TokenRange=40:45
+11	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=46:48
+12	anga	anga	NOUN	N	Number=Sing	10	obl	_	TokenRange=49:53
+13	rupí	rupí	ADP	ADP	AdpType=Post	12	case	_	TokenRange=54:58
+14	mira	mira	NOUN	N	Number=Sing	19	nsubj	_	TokenRange=59:63
+15	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	14	acl:relcl	_	TokenRange=64:69
+16	waá	waá	PRON	REL	Number=Sing|PronType=Rel	15	nsubj	_	TokenRange=70:73
+17	sikusawa	sikusawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	15	obj	_	TokenRange=74:82
+18	puxí	puxí	ADJ	A	_	17	amod	_	TokenRange=83:87
+19	uyupiri	yupiri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	ccomp	_	TokenRange=88:95
+20	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	19	aux	_	TokenRange=96:100
+21	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	22	det	_	TokenRange=101:104
+22	paraná	paraná	NOUN	N	Number=Sing	19	obj	_	SpaceAfter=No|TokenRange=105:111
+23	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=111:112
+
 # sent_id = Amorim1928:19:7:7
 # text = Aintá umbaú mira yawareté yawé.
 # text_eng = They eat people like jaguars.
