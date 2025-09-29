@@ -10855,21 +10855,25 @@
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Rodrigues1890:1-1-1:10:100
-# text = Ah! se rimiarirú, maã taá resú?
+# text = — Ah! se rimiarirú, maã taá resú?
 # text_eng = Oh! my grandson, how are you?
-# text_por = Ah! meu neto, como estás?
+# text_por = Ah! meu neto, como que estás?
+# text_por_alt = — Como estás, meu neto?
+# text_por_alt_source = p. 32
 # text_source = p. 23, No. 10
-# text_orig = Ah! ce remiareru, maá taá recó?
+# text_orig = — Ah! ce remiareru, maá taá recó?
+# inputline = — Ah! se rimiarirú, maã/int taá resú?
 # text_annotator = Leonel Figueiredo de Alencar
-1	Ah	ah	INTJ	INTJ	_	8	discourse	_	SpaceAfter=No|TokenRange=0:2
-2	!	!	PUNCT	PUNCT	_	1	punct	_	TokenRange=2:3
-3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=4:6
-4	rimiarirú	timiarirú	NOUN	N	Number=Sing|Rel=Cont	8	vocative	_	SpaceAfter=No|TokenRange=7:16
-5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
-6	maã	maã	PRON	INT	PronType=Int	4	obl	_	TokenRange=18:21
-7	taá	taá	PART	CQ	PartType=Int	8	advmod	_	TokenRange=22:25
-8	resú	sú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=26:30
-9	?	?	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=30:31
+1	—	—	PUNCT	PUNCT	_	9	punct	_	TokenRange=0:1
+2	Ah	ah	INTJ	INTJ	_	9	discourse	_	SpaceAfter=No|TokenRange=2:4
+3	!	!	PUNCT	PUNCT	_	2	punct	_	TokenRange=4:5
+4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=6:8
+5	rimiarirú	timiarirú	NOUN	N	Number=Sing|Rel=Cont	9	vocative	_	SpaceAfter=No|TokenRange=9:18
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=18:19
+7	maã	maã	PRON	INT	PronType=Int	9	obl	_	TokenRange=20:23
+8	taá	taá	PART	CQ	PartType=Int	9	advmod	_	TokenRange=24:27
+9	resú	sú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=28:32
+10	?	?	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Rodrigues1890:1-1-1:11:101
 # text = Ah! se ramunha, nẽ mayé katú yuntu, indé taá mayé taá resasawa?
