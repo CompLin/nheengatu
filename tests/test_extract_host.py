@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author: Leonel Figueiredo de Alencar
+# Last update: October 4, 2025
 import pytest
 from Yauti import extract_host
 
