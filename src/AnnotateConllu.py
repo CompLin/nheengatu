@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: September 22, 2025
+# Last update: October 4, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
 from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
@@ -3436,10 +3436,66 @@ def mkHost(host,clitic,token,xpos='',suffix=True):
     dic['multiwordtoken']=token
     return dic
 
-def extractHost(token):
+def extract_host(token):
+    """
+    Extracts the *host* (base word) and *suffix* (dependent element) 
+    from a potentially non-hyphenated multi-token word in Nheengatu.
+
+    This function identifies multiword tokens that are not marked with hyphens 
+    (e.g. "arawírupi", "uikuwera") and separates their morphological components,
+    returning a dictionary that describes the segmentation, including host form, 
+    suffix, and other attributes such as POS tag (`xpos`) or function markers.
+
+    The extraction logic proceeds in the following stages:
+      1. **Parsing and tagged tokens:**  
+         If the token contains a special analytical tag (e.g. `/=spl:`), it is parsed
+         using `process_token()`. In that case, information is retrieved directly
+         from the parsed fields and returned under the `"host"` and `"word"` keys.
+      2. **Special lexical forms:**  
+         Handles irregular or lexicalized forms:
+            - `"maita"` → host `"mayé"`, suffix `"taá"`, xpos `"ADVRA"`
+            - `"marã"`  → host `"maã"`,  suffix `"arã"`, xpos `"IND"`
+      3. **Lexicon-based lookup:**  
+         Looks up the token in the local lexicon via `getLocEntry()` to determine 
+         its base form and prefix, using `getRelPrefix()` when relevant.
+      4. **Clitic recognition:**  
+         Searches for known non-hyphenated clitics (from `NONHYPHEN`) 
+         using `hasClitic()` or `hasProclitic()`.
+
+    Parameters
+    ----------
+    token : str
+        The surface form of the token to be analyzed (e.g. 'arawírupi', 
+        'uikuwera', 'maita', 'ukupé/=spl:w|upé:b|uka:x|adp').
+
+    Returns
+    -------
+    dict
+        A dictionary describing the decomposition, with possible keys:
+        - `'host'`: str or dict — host/base word (e.g. `'arawira'` or 
+          `{'form': 'uk', 'xpos': None, 'correct': 'uka'}`)
+        - `'suff'`: str — suffix element (e.g. `'upé'`, `'wara'`, `'me'`, `'ntu'`)
+        - `'prefix'`: str — (if detected) morphological prefix (e.g. `'mi'` in `'Mixukúi'`)
+        - `'xpos'`: str — treebank-specific POS tag when available
+        - `'function'`: str — function marker (e.g. `'wm'`)
+        - `'multiwordtoken'`: str — the full input token
+        Returns an empty dict `{}` if the token is not a multi-token word 
+        (e.g. hyphenated forms, punctuation, or malformed input).
+
+    Examples
+    --------
+    >>> extract_host('arawírupi')
+    {'host': 'arawira', 'suff': 'upé', 'xpos': 'N', 'multiwordtoken': 'arawírupi'}
+    >>> extract_host('maita')
+    {'host': 'mayé', 'suff': 'taá', 'xpos': 'ADVRA', 'multiwordtoken': 'maita'}
+    >>> extract_host('ukupé/=spl:w|upé:b|uka:x|adp')
+    {'host': {'form': 'uk', 'xpos': None, 'correct': 'uka'},
+     'word': {'form': 'upé', 'xpos': 'adp', 'correct': None},
+     'function': 'wm'}
+    >>> extract_host('ripí-pe')
+    {}
+    """
     dic={}
-    #tagdic={}
-    #form=token.lower() # TODO check this
     tag=''
     token_data=process_token(token)
     token=token_data['word']
@@ -3592,27 +3648,41 @@ def splitMultiWordTokens(tokens):
     sep.extend(CLITICS)
     newlist=[]
     for t in tokens:
-        dic=extractHost(t)
-        if hasLinkingHyphen(t):
+        dic=extract_host(t) # TODO: this function should also return token_data, avoiding calling process_token again
+        token_data=process_token(t)
+        parsed=token_data.get('parsed',{}) # TODO: use this to catch xpos of incorporated auxiliary
+        args=parsed.get('args',{})
+        function=parsed.get('func','')
+        hyphenized=hasLinkingHyphen(t) # TODO: use token_data
+        incorporated=False
+        incorporated=args.get('i') # TODO: use 'b' to catch correct form of main verb
+        compound=hyphenized or incorporated
+        if function == 'x' or function == 'typo' and not compound:
+            newlist.append(t) # TODO: allow for function 'typo' with incorporated auxiliary
+        elif hyphenized and not dic:
             bar=''
-            token_data=process_token(t)
+            correct_aux=''
             t=token_data['word']
-            #parsed=token_data.get('parsed') # TODO: use this to catch xpos of incorporated auxiliary
+            if incorporated:
+                correct_aux=args.get('c')
             tag=token_data.get('raw_tag','')
             if tag:
                 bar='/'
             index=t.index(HYPHEN)
             first=t[:index]
             second=t[index:]
-            if second[1:] in sep:
+            if second[1:] in sep or correct_aux in sep:
                 if second[1:] in CLITICS:
                     first=f"{first}-"
                 if tag: # TODO: else: ?
-                    first=f"{first}/{tag}"
+                    if incorporated:
+                        second=f"{second}/=typo:c|{correct_aux}" # TODO: use function to format this (possibly with format_word)
+                    else:
+                        first=f"{first}/{tag}"
                 newlist.extend([first,second])
             else: #TODO: has hyphen and clitic "-ntu"
                 newlist.append(f"{t}{bar}{tag}")
-        elif dic: # TODO: if dic ...?
+        elif dic:
             host=dic['host']
             word=dic.get('word')
             #parselist=getparselist(host)
