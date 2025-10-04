@@ -17414,7 +17414,7 @@
 # place = S. Gabriel
 # inputline = Sumura-etá/=typo:c|Sumuára-etá:x|ncont uikú/cop suakí, usendú aé/pron, upurandú yeperesé maã/int marandua aé/pron umaã.
 # text_annotator = Leonel Figueiredo de Alencar
-1	Sumura-etá	sumuára	NOUN	N	Number=Plur|Number[psor]=Sing|Person[psor]=3|Typo=Yes|Rel=NCont	3	nsubj	_	CorrectForm=Sumuára-etá|TokenRange=0:10
+1	Sumura-etá	sumuára	NOUN	N	Number=Plur|Number[psor]=Sing|Person[psor]=3|Rel=NCont|Typo=Yes	3	nsubj	_	CorrectForm=Sumuára-etá|TokenRange=0:10
 2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	3	cop	_	TokenRange=11:15
 3	suakí	ruakí	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	0	root	_	SpaceAfter=No|TokenRange=16:21
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=21:22
