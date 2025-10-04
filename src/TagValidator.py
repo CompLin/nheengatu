@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 11, 2025
+# Last update: October 4, 2025
 
 import re
 from typing import Tuple, Dict, Any
@@ -14,6 +14,7 @@ ARGUMENTS = {
     'f': 'force',
     'g': 'guess',
     'h': 'archpos',
+    'i' : 'incorporated',
     'l': 'length',
     'm': 'modern',
     'n': 'function',
@@ -28,7 +29,7 @@ ARGUMENTS = {
 }
 
 
-BOOLEAN_ARGUMENTS = {'a', 'd', 'f', 'g', 'u'}
+BOOLEAN_ARGUMENTS = {'a', 'd', 'f', 'g', 'u','i'}
 
 INTEGER_ARGUMENTS = {'l','p'}
 
@@ -114,7 +115,7 @@ FUNCTION_SIGNATURES = {
     },
     'typo': {
         'required': {'c'},
-        'optional': {'n', 'x'},
+        'optional': {'n', 'x','i'},
         'name' : 'typographical error',
         'action' : 'handles spelling errors not involving wrongly merged words'
     },
