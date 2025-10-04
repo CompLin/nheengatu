@@ -9358,6 +9358,7 @@
 # text_por = Agora a gente de outras terras há de saber que as mulheres daqui são sem vergonha!
 # text_source = Amorim, 370, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# inputline = Kuíri kurí mira amú-tetamawara/a ukwáu ana kunhã ikewara/a tĩ-ima/=prv:x|n aintá/pron2!
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=0:5
 2	kurí	kurí	PART	FUT	Tense=Fut	5	advmod	_	TokenRange=6:10
 3	mira	mira	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=11:15
@@ -9366,7 +9367,7 @@
 6	ana	ana	PART	PFV	Aspect=Perf	5	advmod	_	TokenRange=37:40
 7	kunhã	kunhã	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=41:46
 8	ikewara	ikewara	ADJ	A	_	7	amod	_	TokenRange=47:54
-9	tĩ-ima	tĩ	ADJ	A	Derivation=Priv	5	ccomp	_	TokenRange=55:61
+9	tĩ-ima	tĩ	NOUN	N	Derivation=Priv	5	ccomp	_	TokenRange=55:61
 10	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	9	dislocated	_	SpaceAfter=No|TokenRange=62:67
 11	!	!	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=67:68
 
@@ -9380,7 +9381,7 @@
 2	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=3:5
 3	umbaú	mbaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 4	pirá	pirá	NOUN	N	Number=Sing	3	obj	_	TokenRange=12:16
-5	kiinha-ima	kiinha	ADJ	A	Derivation=Priv	4	amod	_	SpaceAfter=No|TokenRange=17:27
+5	kiinha-ima	kiinha	NOUN	N	Derivation=Priv	4	nmod	_	SpaceAfter=No|TokenRange=17:27
 6	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=27:28
 
 # sent_id = Avila2021:0:0:253
@@ -9393,7 +9394,7 @@
 2	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=5:6
 3	Iauhixa	iauhixa	PROPN	PROPN	_	4	nsubj	_	TokenRange=7:14
 4	uwari	wari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=15:20
-5	ara-ima	ara	ADJ	A	Derivation=Priv	4	advcl	_	TokenRange=21:28
+5	ara-ima	ara	NOUN	N	Derivation=Priv	4	advcl	_	TokenRange=21:28
 6-7	iwí-pe	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=29:35
 6	iwí	iwí	NOUN	N	Number=Sing	4	obl	_	_
 7	pe	upé	ADP	ADP	AdpType=Post|Clitic=Yes	6	case	_	_
@@ -9408,7 +9409,7 @@
 1	Aresé	aresé	ADV	ADVJ	AdvType=Cau	5	advmod	_	TokenRange=0:5
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:7
 3	akanga	akanga	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=8:14
-4	sawa-ima	sawa	ADJ	A	Derivation=Priv	5	xcomp	_	TokenRange=15:23
+4	sawa-ima	sawa	NOUN	N	Derivation=Priv	5	xcomp	_	TokenRange=15:23
 5	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:29
 6	panhẽ	panhẽ	DET	TOT	PronType=Tot	7	det	_	TokenRange=30:35
 7	ara	ara	NOUN	N	Number=Sing	5	obl	_	TokenRange=36:39
@@ -9471,9 +9472,9 @@
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=33:34
 8	tawa	tawa	NOUN	N	Number=Sing	6	obl	_	TokenRange=35:39
 9	upé	upé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=40:43
-10	ximirikú-ima	ximirikú	ADJ	A	Derivation=Priv	6	advcl	_	SpaceAfter=No|TokenRange=44:56
+10	ximirikú-ima	ximirikú	NOUN	N	Derivation=Priv	6	advcl	_	SpaceAfter=No|TokenRange=44:56
 11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=56:57
-12	Adana-ima	adana	ADJ	A	Derivation=Priv	6	advcl	_	SpaceAfter=No|TokenRange=58:67
+12	Adana-ima	adana	NOUN	N	Derivation=Priv	6	advcl	_	SpaceAfter=No|TokenRange=58:67
 13	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=67:68
 
 # sent_id = Avila2021:0:0:259
