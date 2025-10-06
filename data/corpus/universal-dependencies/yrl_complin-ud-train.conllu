@@ -6036,6 +6036,8 @@
 # title_por_orig = Curupira
 # title_eng = Curupira
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Yawé/adva paá kwá/demx apigá/n usú ã uyuka i/pron2 xupé nhaã mirá-pirangawasú/=ev:x|n kurupira yara/adp kwera/n.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	TokenRange=5:8
 3	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=9:12
@@ -6043,13 +6045,13 @@
 5	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	7	aux	_	TokenRange=19:22
 6	ã	ã	PART	PFV	Aspect=Perf	7	advmod	_	TokenRange=23:24
 7	uyuka	yuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=25:30
-8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	obl	_	TokenRange=31:32
+8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	iobj	_	TokenRange=31:32
 9	xupé	xupé	ADP	ADP	AdpType=Post	8	case	_	TokenRange=33:37
 10	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	11	det	_	TokenRange=38:42
-11	mirá-pirangawasú	mirá-piranga	NOUN	N	Number=Sing	7	obj	_	TokenRange=43:59
-12	kurupira	kurupira	NOUN	N	Number=Sing	7	obl	_	TokenRange=60:68
+11	mirá-pirangawasú	mirá-piranga	NOUN	N	Degree=Aug|Number=Sing	14	nmod:poss	_	TokenRange=43:59
+12	kurupira	kurupira	NOUN	N	Number=Sing	11	nmod	_	TokenRange=60:68
 13	yara	yara	ADP	ADP	AdpType=Post	12	case	_	TokenRange=69:73
-14	kwera	kwera	PART	PRET	Tense=Past	12	advmod	_	SpaceAfter=No|TokenRange=74:79
+14	kwera	kwera	NOUN	N	Number=Sing	7	obj	_	SpaceAfter=No|TokenRange=74:79
 15	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=79:80
 
 # sent_id = Casasnovas2006:6:1:60
@@ -6064,6 +6066,8 @@
 # title_por_orig = A garça
 # title_eng = The heron
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Aikwé paá yepé/art tetama puranga/a waá/rel yepé/art ipawawasú/=ev:x|n rimbiwa upé/adp.
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=6:9
 3	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	4	det	_	TokenRange=10:14
@@ -6087,7 +6091,8 @@
 # title_orig = Wakará
 # title_por_orig = A garça
 # title_eng = The heron
-1	Kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	det	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	5	nsubj	_	TokenRange=0:3
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=4:7
 3	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=7:8
 4	wakará-itá	wakará	NOUN	N	Number=Plur	5	nmod:poss	_	TokenRange=9:19
@@ -6095,7 +6100,7 @@
 6	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Casasnovas2006:6:3:62
-# text = Muíri akayú, paá, kurasí-ara ramé, kwá wakará-itá aiwã ta usú ta uwatá apekatú rupí.
+# text = Muíri akayú, paá, kurasí ara ramé, kwá wakará-itá aiwã ta usú tawatá apekatú rupí.
 # text_eng = TODO
 # text_eng_ggl = Every year, in the summer, these herons would go for a walk around the world.
 # text_por = Todos os anos, no tempo do verão, essas garças iam passear longe, pelo mundo afora.
@@ -6106,24 +6111,26 @@
 # title_por_orig = A garça
 # title_eng = The heron
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Muíri/tot akayú, paá, kurasí ara ramé/adp, kwá/demx wakará-itá aiwã ta/pron usú tawatá apekatú/advc rupí.
 1	Muíri	muíri	DET	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	akayú	akayú	NOUN	N	Number=Sing	15	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	15	advmod	_	SpaceAfter=No|TokenRange=13:16
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
-6	kurasí-ara	kurasí-ara	NOUN	N	Number=Sing	15	obl	_	TokenRange=18:28
-7	ramé	ramé	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=29:33
-8	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=33:34
-9	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	10	det	_	TokenRange=35:38
-10	wakará-itá	wakará	NOUN	N	Number=Plur	15	nsubj	_	TokenRange=39:49
-11	aiwã	aiwã	ADV	ADVT	AdvType=Tim	15	advmod	_	TokenRange=50:54
-12	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	15	expl	_	TokenRange=55:57
-13	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	15	aux	_	TokenRange=58:61
-14	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	15	expl	_	TokenRange=62:64
-15	uwatá	watá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=65:70
-16	apekatú	apekatú	ADV	ADVC	AdvType=Loc	15	obl	_	TokenRange=71:78
-17	rupí	rupí	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=79:83
-18	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=83:84
+6	kurasí	kurasí	NOUN	N	Number=Sing	7	nmod:poss	_	TokenRange=18:24
+7	ara	ara	NOUN	N	Number=Sing	15	obl	_	TokenRange=25:28
+8	ramé	ramé	ADP	ADP	AdpType=Post	7	case	_	SpaceAfter=No|TokenRange=29:33
+9	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=33:34
+10	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	11	det	_	TokenRange=35:38
+11	wakará-itá	wakará	NOUN	N	Number=Plur	15	nsubj	_	TokenRange=39:49
+12	aiwã	aiwã	ADV	ADVT	AdvType=Tim	15	advmod	_	TokenRange=50:54
+13	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	15	expl	_	TokenRange=55:57
+14	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	15	aux	_	TokenRange=58:61
+15	tawatá	watá	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=62:68
+16	apekatú	apekatú	ADV	ADVC	AdvType=Loc	15	obl	_	TokenRange=69:76
+17	rupí	rupí	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=77:81
+18	.	.	PUNCT	PUNCT	_	15	punct	_	SpaceAfter=No|TokenRange=81:82
 
 # sent_id = Casasnovas2006:6:4:63
 # text = Muíri viáji, paá, tausú rundé, aintá aría waimĩ uyupúi aintá piripiriáka suikiri waá irũ, ti arã tausaã yumasí tauwatá pukusawa.
@@ -6142,7 +6149,7 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
+# inputline = Muíri/tot viáji, paá, tausú rundé/sconj, aintá/pron2 aría waimĩ/n uyupúi aintá/pron piripiriáka suikiri/a waá/rel irũ/adp, ti arã/sconj tausaã yumasí/n tauwatá pukusawa/sconj.
 1	Muíri	muíri	PRON	TOT	PronType=Tot	2	det	_	TokenRange=0:5
 2	viáji	viáji	NOUN	N	Number=Sing	12	obl	_	SpaceAfter=No|TokenRange=6:11
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=11:12
@@ -6150,10 +6157,10 @@
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=16:17
 6	tausú	sú	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	12	advcl	_	TokenRange=21:24
 7	rundé	rundé	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=25:30
-8	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=30:31
+8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=30:31
 9	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=32:37
-10	aría	aría	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=38:42
-11	waimĩ	waimĩ	ADJ	A	_	10	amod	_	TokenRange=43:48
+10	aría	aría	NOUN	N	Number=Sing	11	nmod:poss	_	TokenRange=38:42
+11	waimĩ	waimĩ	NOUN	N	Number=Sing	12	nsubj	_	TokenRange=43:48
 12	uyupúi	yupúi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=49:55
 13	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	12	obj	_	TokenRange=56:61
 14	piripiriáka	piripiriáka	NOUN	N	Number=Sing	12	obl	_	TokenRange=62:73
@@ -6236,12 +6243,13 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Awá	awá	PRON	RELF	PronType=Rel	9	nsubj	_	TokenRange=0:3
 2	kurí	kurí	PART	FUT	Tense=Fut	3	advmod	_	TokenRange=4:8
 3	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	TokenRange=9:16
 4	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	obl	_	TokenRange=17:19
 5	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	4	case	_	SpaceAfter=No|TokenRange=20:24
-6	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=24:25
+6	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=24:25
 7	puranga	puranga	ADV	ADVA	AdvType=Man	9	advmod	_	TokenRange=26:33
 8	kurí	kurí	PART	FUT	Tense=Fut	9	advmod	_	TokenRange=34:38
 9	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=39:44
@@ -6259,15 +6267,16 @@
 # title_por_orig = A garça
 # title_eng = The heron
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Awá	awá	PRON	RELF	PronType=Rel	6	nsubj	_	TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Awá	awá	PRON	RELF	PronType=Rel	6	dislocated	_	TokenRange=0:3
 2	kurí	kurí	PART	FUT	Tense=Fut	4	advmod	_	TokenRange=4:8
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=9:11
 4	uruyari	ruyari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	acl:relcl	_	SpaceAfter=No|TokenRange=12:19
-5	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=19:20
+5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=19:20
 6	tauyuká	yuká	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:29
 7	kurí	kurí	PART	FUT	Tense=Fut	6	advmod	_	TokenRange=30:34
 8	arupí	arupí	ADV	ADVC	AdvType=Loc	6	advmod	_	TokenRange=35:40
-9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	6	dislocated	_	SpaceAfter=No|TokenRange=41:43
+9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No|TokenRange=41:43
 10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Casasnovas2006:6:8:67
@@ -6282,6 +6291,7 @@
 # title_por_orig = A garça
 # title_eng = The heron
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Pewatá	watá	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	kurí	kurí	PART	FUT	Tense=Fut	1	advmod	_	TokenRange=7:11
 3	pituna	pituna	NOUN	N	Number=Sing	1	obl	_	TokenRange=12:18
@@ -6316,7 +6326,7 @@
 4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=17:18
 5	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	13	advmod	_	SpaceAfter=No|TokenRange=19:22
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=22:23
-7	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	nsubj	_	TokenRange=24:27
+7	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	8	det	_	TokenRange=24:27
 8	wakará	wakará	NOUN	N	Number=Sing	13	dislocated	_	TokenRange=28:34
 9	tiára	tiára	ADJ	A	_	8	acl:relcl	_	TokenRange=35:40
 10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	nsubj	_	SpaceAfter=No|TokenRange=41:44
@@ -6856,7 +6866,7 @@
 9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
 
 # sent_id = Casasnovas2006:9:1:85
-# text = Kuxiíma, paá, aikwé yepé apigá ti waá kunhã-itá uputari.
+# text = Kuxiima, paá, aikwé yepé apigá ti waá kunhã-itá uputari.
 # text_eng = TODO
 # text_eng_ggl = Once upon a time there was a man that no woman liked.
 # text_por = Antigamente havia um homem do qual nenhuma mulher gostava.
@@ -6868,7 +6878,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Kuxiíma	kuxiíma	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:7
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=7:8
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=9:12
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=12:13
@@ -6876,7 +6887,7 @@
 6	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	7	det	_	TokenRange=20:24
 7	apigá	apigá	NOUN	N	Number=Sing	5	nsubj	_	TokenRange=25:30
 8	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	11	advmod	_	TokenRange=31:33
-9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	7	nsubj	_	TokenRange=34:37
+9	waá	waá	PRON	REL	Number=Sing|PronType=Rel	11	obj	_	TokenRange=34:37
 10	kunhã-itá	kunhã	NOUN	N	Number=Plur	11	nsubj	_	TokenRange=38:47
 11	uputari	putari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	acl:relcl	_	SpaceAfter=No|TokenRange=48:55
 12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=55:56
@@ -6926,6 +6937,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -6947,9 +6959,9 @@
 19	ipawa	ipawa	NOUN	N	Number=Sing	17	obj	_	TokenRange=71:76
 20	repisika	pisika	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	17	advcl	_	TokenRange=77:85
 21	arã	arã	SCONJ	SCONJ	_	20	mark	_	TokenRange=86:89
-22	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	24	det	_	TokenRange=90:94
-23	urubú	urubú	NOUN	N	Number=Sing	24	nmod:poss	_	TokenRange=95:100
-24	kunhã	kunhã	NOUN	N	Number=Sing	20	obj	_	TokenRange=101:106
+22	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	23	det	_	TokenRange=90:94
+23	urubú	urubú	NOUN	N	Number=Sing	20	obj	_	TokenRange=95:100
+24	kunhã	kunhã	NOUN	N	Number=Sing	23	acl:relcl	_	TokenRange=101:106
 25	waá	waá	PRON	REL	Number=Sing|PronType=Rel	24	nsubj	_	TokenRange=107:110
 26	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	27	nmod:poss	_	TokenRange=111:113
 27	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	20	obl	_	TokenRange=114:122
