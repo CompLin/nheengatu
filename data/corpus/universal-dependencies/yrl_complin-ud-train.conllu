@@ -7921,10 +7921,9 @@
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:1
-2	mena	mena	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=2:6
-3	kwera	kwera	PART	PRET	Tense=Past	4	advmod	_	TokenRange=7:12
+2	mena	mena	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=2:6
+3	kwera	kwera	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=7:12
 4	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl	_	TokenRange=13:18
 5	ramé	ramé	SCONJ	SCONJ	_	4	mark	_	TokenRange=19:23
 6	usikari	sikari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=24:31
@@ -7933,7 +7932,7 @@
 9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=36:37
 10	manha	manha	NOUN	N	Number=Sing	11	nsubj	_	TokenRange=38:43
 11	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=44:49
-12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	obl	_	TokenRange=50:51
+12	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	iobj	_	TokenRange=50:51
 13	xupé	xupé	ADP	ADP	AdpType=Post	12	case	_	TokenRange=52:56
 14	arã	arã	ADP	ADP	AdpType=Post	12	case	_	SpaceAfter=No|TokenRange=57:60
 15	:	:	PUNCT	PUNCT	_	16	punct	_	TokenRange=60:61
@@ -7956,6 +7955,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7979,16 +7979,17 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Sesewara	resewara	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	7	obl	_	SpaceAfter=No|TokenRange=0:8
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Sesewara	resewara	ADP	ADP	AdpType=Post|Number[grnd]=Sing|Person[grnd]=3|Rel=NCont	6	obl	_	SpaceAfter=No|TokenRange=0:8
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=10:13
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=10:13
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=13:14
-5	TI	ti	PART	NEG	PartType=Neg|Polarity=Neg	7	advmod	_	TokenRange=15:17
-6	PURANGA	puranga	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=18:25
-7	YANUPÁ	nupá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=26:32
+5	TI	ti	PART	NEG	PartType=Neg|Polarity=Neg	6	advmod	_	TokenRange=15:17
+6	PURANGA	puranga	ADJ	A	_	0	root	_	TokenRange=18:25
+7	YANUPÁ	nupá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	6	csubj	_	TokenRange=26:32
 8	YANÉ	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=33:37
 9	RIMIRIKÚ	simirikú	NOUN	N	Number=Sing|Rel=Cont	7	obj	_	SpaceAfter=No|TokenRange=38:46
-10	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=46:47
+10	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=46:47
 
 # sent_id = Casasnovas2006:10:1:120
 # text = Yepé ara, paá, wainambí uyusaã manguarí irumu, taumaã arã awá taá kutara piri uyasá paranawasú.
