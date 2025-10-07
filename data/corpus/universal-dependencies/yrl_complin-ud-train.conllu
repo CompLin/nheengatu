@@ -4456,7 +4456,7 @@
 10	"	"	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=36:37
 11	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=37:38
 12	remunhã	munhã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	6	ccomp	_	TokenRange=39:46
-13	mayé	mayé	ADV	ADVLA	AdvType=Man|PronType=Rel	12	advmod	_	TokenRange=47:51
+13	mayé	mayé	ADV	ADVNA	AdvType=Man|PronType=Ind	12	advmod	_	TokenRange=47:51
 14	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	12	obl	_	TokenRange=52:54
 15	yawé	yawé	ADP	ADP	_	14	case	_	SpaceAfter=No|TokenRange=55:59
 16	:	:	PUNCT	PUNCT	_	17	punct	_	TokenRange=59:60
@@ -6985,19 +6985,21 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Nhaã-itá kunhã/n puranga-itá/=typo:c|puranga:x|a@, ma/cconj te/negi kurí repisika nhaã tipitinga waá/rel, nhaã-itá atiimamanha/a.
 1	Nhaã-itá	nhaã	DET	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	2	det	_	TokenRange=0:8
 2	kunhã	kunhã	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=9:14
-3	puranga-itá	puranga-itá	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=15:26
+3	puranga-itá	puranga	ADJ	A	Typo=Yes	0	root	_	CorrectForm=puranga|SpaceAfter=No|TokenRange=15:26
 4	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=26:27
 5	ma	ma	CCONJ	CCONJ	_	8	cc	_	TokenRange=28:30
 6	te	te	PART	NEGI	Modality=Proh|PartType=Mod|Polarity=Neg	8	advmod	_	TokenRange=31:33
 7	kurí	kurí	PART	FUT	Tense=Fut	8	advmod	_	TokenRange=34:38
 8	repisika	pisika	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	3	conj	_	TokenRange=39:47
-9	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	obj	_	TokenRange=48:52
+9	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	obj	_	TokenRange=48:52
 10	tipitinga	tipitinga	ADJ	A	_	9	acl:relcl	_	TokenRange=53:62
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	SpaceAfter=No|TokenRange=63:66
 12	,	,	PUNCT	PUNCT	_	14	punct	_	TokenRange=66:67
-13	nhaã-itá	nhaã	DET	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	14	nsubj	_	TokenRange=68:76
+13	nhaã-itá	nhaã	PRON	DEMS	Deixis=Remt|Number=Plur|PronType=Dem	14	nsubj	_	TokenRange=68:76
 14	atiimamanha	atiimamanha	ADJ	A	_	8	parataxis	_	SpaceAfter=No|TokenRange=77:88
 15	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=88:89
 
@@ -7014,16 +7016,18 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Ape/advt, paá, umunhã mayé/advra i/pron2 manha umundú waá/rel.
+1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=8:9
 5	umunhã	munhã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:16
-6	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	9	advmod	_	TokenRange=17:21
+6	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	5	advmod	_	TokenRange=17:21
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=22:23
 8	manha	manha	NOUN	N	Number=Sing	9	nsubj	_	TokenRange=24:29
-9	umundú	mundú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	ccomp	_	TokenRange=30:36
-10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	obj	_	SpaceAfter=No|TokenRange=37:40
+9	umundú	mundú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	advcl:relcl	_	TokenRange=30:36
+10	waá	waá	PRON	REL	Number=Sing|PronType=Rel	9	obl	_	SpaceAfter=No|TokenRange=37:40
 11	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=40:41
 
 # sent_id = Casasnovas2006:9:6:90
@@ -7039,6 +7043,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Usú upikũi timbú umburi nhaã ipawa/n upé/adp.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	TokenRange=0:3
 2	upikũi	pikũi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=4:10
 3	timbú	timbú	NOUN	N	Number=Sing	2	obj	_	TokenRange=11:16
@@ -7061,6 +7067,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	usasá	sasá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	ccomp	_	TokenRange=6:11
 3	mukũi	mukũi	NUM	CARD	NumType=Card	4	nummod	_	TokenRange=12:17
@@ -7151,6 +7158,8 @@
 # text_por_sec_source = Avila (2021)
 # cross_reference = Avila2021:0:0:198
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Usika umaã siía kunhã-itá upisika waá-itá uikú/v pirá-mirĩ yuka/a.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=6:10
 3	siía	siía	DET	INDQ	PronType=Ind	4	det	_	TokenRange=11:15
@@ -7214,6 +7223,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Ape/advt, paá, uparawaka nhaã kunhã/n tapayuna mirĩ/a puranga/a piri/advg waá/rel.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7224,7 +7235,7 @@
 8	tapayuna	tapayuna	NOUN	N	Number=Sing	5	obj	_	TokenRange=31:39
 9	mirĩ	mirĩ	ADJ	A	_	8	amod	_	TokenRange=40:44
 10	puranga	puranga	ADV	ADVA	AdvType=Man	8	acl:relcl	_	TokenRange=45:52
-11	piri	piri	ADV	ADVG	AdvType=Deg	10	advmod	_	TokenRange=53:57
+11	piri	piri	ADV	ADVG	AdvType=Deg|Degree=Sup	10	advmod	_	TokenRange=53:57
 12	waá	waá	PRON	REL	Number=Sing|PronType=Rel	10	nsubj	_	SpaceAfter=No|TokenRange=58:61
 13	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=61:62
 
@@ -7275,6 +7286,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Dominick Maia Alexandre
 # reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7301,6 +7313,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mairamé	mairamé	SCONJ	SCONJR	_	3	mark	_	TokenRange=0:7
 2	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	TokenRange=8:13
 3	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=14:18
@@ -7329,6 +7342,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Anhũ	anhũ	ADV	ADV	_	2	advmod	_	TokenRange=0:4
 2	yepé	yepé	NUM	CARD	NumType=Card	4	nsubj	_	TokenRange=5:9
 3	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=10:12
@@ -7350,6 +7364,8 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Ape/advt, paá, nhaã apigá/n uyana uyumana aé/pron, urasú suka/ncont kití ximirikú arã/adp.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7360,7 +7376,7 @@
 8	uyumana	yumana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=27:34
 9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No|TokenRange=35:37
 10	,	,	PUNCT	PUNCT	_	11	punct	_	TokenRange=37:38
-11	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=39:44
+11	urasú	rasú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=39:44
 12	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	11	obl	_	TokenRange=45:49
 13	kití	kití	ADP	ADP	AdpType=Post	12	case	_	TokenRange=50:54
 14	ximirikú	simirikú	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	11	obl	_	TokenRange=55:63
@@ -7402,6 +7418,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -7437,6 +7454,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Dominick Maia Alexandre
 # reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Leonel Figueiredo de Alencar
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	8	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -7488,7 +7506,7 @@
 17	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=64:65
 
 # sent_id = Casasnovas2006:9:22:106
-# text = Ape, paá, nhaã apigá i piaíwa, unupá aé, yawé arã, paá, uyaxiú, upitá sasiara.
+# text = Ape, paá, nhaã apigá i piaíwa, unupá aé, yawé arã, paá, uyaxiú, upitá sasiára.
 # text_eng = TODO
 # text_eng_ggl = The man got angry and hit her. She cried and was sad.
 # text_por = O homem ficou com raiva e bateu nela. Ela chorou e ficou triste.
@@ -7501,7 +7519,6 @@
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Fiqueiredo de Alencar
-# review_status = ongoing
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	8	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	8	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7513,16 +7530,16 @@
 9	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=29:30
 10	unupá	nupá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=31:36
 11	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	10	obj	_	SpaceAfter=No|TokenRange=37:39
-12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=39:40
+12	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=39:40
 13	yawé	yawé	ADV	ADVA	AdvType=Man|ExtPos=ADV	18	advmod	_	TokenRange=41:45
 14	arã	arã	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=46:49
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=49:50
 16	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	18	advmod	_	SpaceAfter=No|TokenRange=51:54
 17	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=54:55
-18	uyaxiú	yaxiú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=56:62
+18	uyaxiú	yaxiú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	parataxis	_	SpaceAfter=No|TokenRange=56:62
 19	,	,	PUNCT	PUNCT	_	20	punct	_	TokenRange=62:63
-20	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=64:69
-21	sasiara	sasiara	ADJ	A	_	20	xcomp	_	SpaceAfter=No|TokenRange=70:77
+20	upitá	pitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	18	parataxis	_	TokenRange=64:69
+21	sasiára	sasiára	ADJ	A	_	20	xcomp	_	SpaceAfter=No|TokenRange=70:77
 22	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=77:78
 
 # sent_id = Casasnovas2006:9:23:107
@@ -7597,7 +7614,7 @@
 8	anhuíra	anhuíra	ADJ	A	_	12	advcl	_	TokenRange=28:35
 9	kupixawa	kupixawa	NOUN	N	Number=Sing	8	obl	_	TokenRange=36:44
 10	upé	upé	ADP	ADP	AdpType=Post	9	case	_	SpaceAfter=No|TokenRange=45:48
-11	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=48:49
+11	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=48:49
 12	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=50:54
 13	suixawa	tuixawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	14	nsubj	_	TokenRange=55:62
 14	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	12	ccomp	_	TokenRange=63:68
@@ -7622,6 +7639,7 @@
 # title_por_orig = A moreninha
 # title_eng = The little brunette
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVJ	AdvType=Cau	5	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -7630,7 +7648,7 @@
 6	upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=15:22
 7	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	det	_	TokenRange=23:27
 8	pepú	pepú	NOUN	N	Number=Sing	6	obj	_	TokenRange=28:32
-9	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	parataxis	_	TokenRange=33:39
+9	uyuíri	yuíri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=33:39
 10	suka	uka	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	9	obl	_	TokenRange=40:44
 11	kití	kití	ADP	ADP	AdpType=Post	10	case	_	SpaceAfter=No|TokenRange=45:49
 12	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=49:50
