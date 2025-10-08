@@ -194,24 +194,29 @@ def saveJSON(glossary, outfile=GLOSSARY):
 
 def compileGlossary(infile=INFILE):
     """
-    Compiles the Nheengatu glossary from a plain-text source file and saves it in JSON format.
+    Compile the Nheengatu glossary from a plain-text source and save it in JSON format.
+
+    This function reads the original human-edited Nheengatu glossary,
+    structures it into a machine-readable Python dictionary, and serializes
+    the result as a JSON file. The output glossary provides the lexical
+    foundation for Yauti’s morphological and syntactic analysis components.
 
     Linguistic Role
     ---------------
-    This function converts the manually curated textual glossary into a structured,
-    machine-readable JSON dictionary that serves as the lexical backbone for Yauti’s
-    parsing and validation modules. The compiled glossary maps lemmas to their
-    grammatical categories and glosses, ensuring lexical consistency across the
-    UD_Nheengatu treebank.
+    Converts the manually curated textual glossary into a structured, machine-readable
+    JSON dictionary that serves as the lexical backbone for Yauti’s parsing and
+    validation modules. The compiled glossary links lemmas to their grammatical
+    categories and glosses, ensuring lexical consistency across the
+    **UD_Nheengatu-CompLin** treebank.
 
     Parameters
     ----------
     infile : str, optional
-        Path to the source glossary file. Defaults to `INFILE`
-        (typically `~/complin/nheengatu/data/glossary.txt`).
+        Path to the source glossary file.
+        Defaults to ``INFILE`` (typically ``~/complin/nheengatu/data/glossary.txt``).
     outfile : str, optional
-        Path to the output JSON glossary file. Defaults to `GLOSSARY`
-        (typically `~/complin/nheengatu/data/glossary.json`).
+        Path to the output JSON glossary file.
+        Defaults to ``GLOSSARY`` (typically ``~/complin/nheengatu/data/glossary.json``).
 
     Returns
     -------
@@ -220,27 +225,51 @@ def compileGlossary(infile=INFILE):
 
     Workflow
     --------
-    1. Reads and preprocesses glossary lines via `extractLines()`.
-    2. Extracts structured entries with `extractEntries()`.
-    3. Builds the in-memory glossary dictionary using `buildGlossary()`.
-    4. Saves the resulting glossary to disk with `saveJSON()`.
+    1. Reads and preprocesses glossary lines using :func:`extractLines`.
+    2. Extracts structured entries with :func:`extractEntries`.
+    3. Builds the in-memory glossary dictionary via :func:`buildGlossary`.
+    4. Serializes the resulting glossary to disk using :func:`saveJSON`.
 
     Output Structure
     ----------------
-    A JSON dictionary mapping lemmas to grammatical and semantic information, e.g.:
+    A JSON dictionary mapping lemmas to grammatical and semantic information, e.g.::
+
         {
             "peyusawa": {
                 "pos": "s.",
                 "gloss": "1) sopro, insuflação; rajada (de vento)"
+            },
+            "tuáya": {
+                "pos": "s.",
+                "gloss": "toalha"
             }
         }
 
+    Usage Examples
+    --------------
+    >>> from BuildDictionary import compileGlossary
+    >>> glossary = compileGlossary()
+    >>> print(glossary["tuáya"]["gloss"])
+    toalha
+    >>> # Custom input/output paths
+    >>> glossary = compileGlossary(
+    ...     infile="/path/to/glossary.txt",
+    ...     outfile="/tmp/glossary.json"
+    ... )
+
     Notes
     -----
-    - `compileGlossary()` can be used independently for quick updates to the glossary
-      without rebuilding the entire lexicon.
-    - Downstream modules such as morphological and dependency parsers read this
-      JSON glossary to ensure terminological consistency.
+    - This function can be run independently to update the glossary without rebuilding
+      the full-form lexicon.
+    - The resulting JSON glossary is used by other Yauti modules, such as the
+      morphological analyzer and dependency validator.
+    - Relies on internal helper functions from the same module.
+
+    See Also
+    --------
+    main : Compiles both the glossary and the lexicon.
+    saveJSON : Serializes Python objects to JSON.
+    buildGlossary : Builds a structured glossary from extracted entries.
     """
     entries = extractEntries(extractLines(infile))
     glossary = buildGlossary(entries)
@@ -856,29 +885,33 @@ def compare(outfile,goldfile):
 
 def main(infile=INFILE, outfile=LEXICON, path=None):
     """
-    Compiles the Nheengatu glossary and full-form lexicon used by Yauti.
+    Compile the Nheengatu glossary and full-form lexicon used by Yauti.
+
+    This function orchestrates the end-to-end construction of lexical resources
+    required for morphological and dependency parsing in the
+    **UD_Nheengatu-CompLin** treebank. It first builds and saves the structured
+    glossary, then derives a full-form lexicon for use in Yauti’s parsing and
+    consistency-checking modules.
 
     Linguistic Role
     ---------------
-    This function orchestrates the compilation of the machine-readable lexical
-    resources that underpin morphological and syntactic annotation in the
-    UD_Nheengatu treebank. It first compiles the structured JSON glossary and
-    then derives the full-form lexicon for use in Yauti’s parsing and
-    consistency-checking modules.
+    Serves as the primary entry point for generating Yauti’s lexical databases.
+    The compiled resources ensure that all lemmas and parts of speech in the
+    UD_Nheengatu corpus correspond to verified entries in the reference glossary.
 
     Parameters
     ----------
     infile : str, optional
-        Path to the input glossary file. Defaults to `INFILE`
-        (usually `~/complin/nheengatu/data/glossary.txt`).
+        Path to the input glossary file.
+        Defaults to ``INFILE`` (usually ``~/complin/nheengatu/data/glossary.txt``).
     outfile : str, optional
-        Path to the output lexicon file. Defaults to `LEXICON`
-        (usually `~/complin/nheengatu/data/lexicon.json`).
-        If it ends with `.json`, the output will be serialized as JSON;
-        otherwise, it will be printed as plain text.
+        Path to the output lexicon file.
+        Defaults to ``LEXICON`` (usually ``~/complin/nheengatu/data/lexicon.json``).
+        If it ends with ``.json``, the output is serialized as JSON;
+        otherwise, it is printed as plain text.
     path : str or None, optional
-        Base directory to prepend to `infile` and `outfile`. Allows
-        compilation in alternative data directories.
+        Base directory to prepend to ``infile`` and ``outfile``.
+        Allows compilation in alternative data directories.
 
     Returns
     -------
@@ -887,39 +920,52 @@ def main(infile=INFILE, outfile=LEXICON, path=None):
 
     Workflow
     --------
-    1. Calls `compileGlossary()` to build and save the structured glossary.
-    2. Generates (word, parse) pairs using `WordParsePairs()` or `WordParseDict()`.
-    3. Sorts and serializes the pairs into a lexicon file (JSON or text).
-    4. Prints confirmation messages summarizing the compilation results.
+    1. Calls :func:`compileGlossary` to build and save the structured glossary.
+    2. Generates (word, parse) pairs using :func:`WordParsePairs`.
+    3. Sorts the pairs using the :func:`sort` function.
+    4. Serializes the sorted pairs as JSON with :func:`WordParseDict`,
+       or prints them as text if the output file does not end with ``.json``.
 
     Output Structure
     ----------------
-    - `glossary.json`: structured dictionary of lemmas, parts of speech, and glosses.
-    - `lexicon.json`: list of full-form lexical entries, e.g.:
+    - ``glossary.json`` — structured dictionary of lemmas, parts of speech, and glosses.
+    - ``lexicon.json`` — list of full-form lexical entries, e.g.::
+
         {
             "lemma": "peyusawa",
             "pos": "s.",
             "gloss": "1) sopro, insuflação; rajada (de vento)"
         }
 
+    Usage Examples
+    --------------
+    >>> from BuildDictionary import main
+    >>> # Run with default paths in the user’s data directory
+    >>> main()
+    >>> # Compile using a custom directory
+    >>> main(path="/mnt/work/nheengatu_data")
+
     Corpus Impact
     --------------
-    Provides the lexical base for morphological and dependency parsing and for
-    consistency checking in UD_Nheengatu-CompLin. Ensures that all lemmas and
-    parts of speech used in the corpus correspond to verified entries in the glossary.
+    Provides the lexical base for morphological and dependency parsing and
+    for consistency checking in **UD_Nheengatu-CompLin**.
+    Ensures that all lemmas and parts of speech used in the corpus correspond
+    to verified entries in the glossary.
 
     Notes
     -----
     - Automatically falls back to an alternate data directory if the default
-      path does not exist.
-    - Relies on the auxiliary functions:
-      `compileGlossary`, `WordParsePairs`, `WordParseDict`, `sort`, and `saveJSON`.
+      one does not exist.
+    - Relies on the following module-level utilities:
+      :func:`compileGlossary`, :func:`WordParsePairs`, :func:`WordParseDict`,
+      :func:`sort`, and :func:`saveJSON`.
 
     See Also
     --------
     compileGlossary : Builds and saves the structured JSON glossary.
     WordParsePairs : Generates lemma–parse pairs for lexicon generation.
-    saveJSON : Serializes Python dictionaries to JSON files.
+    WordParseDict : Converts lemma–parse pairs into a dictionary format.
+    saveJSON : Serializes Python dictionaries to JSON.
     """
 
     if path:
