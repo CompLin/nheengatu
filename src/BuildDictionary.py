@@ -779,32 +779,6 @@ def test(outfile='outfile.txt', words=words()):
                     print(entry, end=" ",file=f)
             print(file=f)
 
-def compare0(outfile,goldfile):
-    out=loadLexicon(outfile)
-    gold=loadLexicon(goldfile)
-    #print(f"key\t\tout\t\tgold")
-    diff=set()
-    for k,v in gold.items():
-        i=0
-        for dic in v:
-            for x,y in dic.items():
-                g=dic.get(x)
-                o=out.get(k)[i].get(x)
-                if o != g:
-                    diff.add(x)
-                    print(f"{k}\t{x}\t{o}\t{g}")
-            i+=1
-    for k,v in out.items():
-        #i=0
-        for dic in v:
-            for x,y in dic.items():
-                o=dic.get(x)
-                #g=gold.get(k)[i].get(x)
-                for d in gold.get(k):
-                    g=d.get(x)
-                    if x not in diff and o != g:
-                        print(f"{k}\t{x}\t{o}\t{g}")
-
 def compare(outfile,goldfile):
     out=loadLexicon(outfile)
     gold=loadLexicon(goldfile)
@@ -832,11 +806,76 @@ def compare(outfile,goldfile):
                         print(f"{k}\t{x}\t{o}\t{g}")
 
 def main(infile=INFILE,outfile=LEXICON,path=None):
+    """
+    Compiles a full-form Nheengatu lexicon from the glossary source file.
+
+    This function is part of the BuildDictionary module of Yauti. It reads a
+    textual glossary of Nheengatu words and their descriptions, parses each
+    entry, and generates a structured lexicon in JSON or plain-text format.
+    The resulting file maps each lemma to its part of speech and gloss, thus
+    providing a machine-readable dictionary that supports Nheengatu NLP tools.
+
+    Parameters
+    ----------
+    infile : str, optional
+        Path to the glossary input file. Defaults to the file defined by
+        `INFILE` (typically `~/complin/nheengatu/data/glossary.txt`).
+    outfile : str, optional
+        Path to the output file where the lexicon will be written. Defaults to
+        the file defined by `LEXICON` (typically `~/complin/nheengatu/data/lexicon.json`).
+        If the filename ends with `.json`, the output will be in JSON format;
+        otherwise, it will be written as plain text.
+    path : str or None, optional
+        Base directory to prepend to `infile` and `outfile`. Useful for
+        specifying an alternative data directory.
+
+    Workflow
+    --------
+    1. Extracts and preprocesses glossary lines using `extractLines()`.
+    2. Converts them into structured entries with `extractEntries()`.
+    3. Builds a glossary dictionary via `buildGlossary()`.
+    4. Generates (word, parse) pairs with `WordParsePairs()`.
+    5. Sorts the pairs and writes them to the output file, either as JSON
+       using `WordParseDict()` or as plain text.
+
+    Output
+    ------
+    The output file (by default `lexicon.json`) contains a list of dictionaries,
+    each representing a lexicon entry with fields such as:
+        {
+            "lemma": "peyusawa",
+            "pos": "s.",
+            "gloss": "1) sopro, insuflação; rajada (de vento): ... ◆ [der. de peyú, -sawa]"
+        }
+
+    Example
+    -------
+    >>> main()
+    # Reads glossary.txt and creates lexicon.json in the default data directory.
+
+    Example glossary entry:
+        peyusawa (s.) - 1) sopro, insuflação; rajada (de vento): ...
+    
+    Corresponding lexicon entry:
+        {
+            "lemma": "peyusawa",
+            "pos": "s.",
+            "gloss": "1) sopro, insuflação; rajada (de vento): ..."
+        }
+
+    Notes
+    -----
+    - Handles alternate data directory locations automatically.
+    - Assumes that helper functions such as `extractLines`, `extractEntries`,
+      `buildGlossary`, `WordParsePairs`, `WordParseDict`, and `sort` are
+      available in the same module.
+    """
     if path:
         infile=os.path.join(path,infile)
         outfile=os.path.join(path,outfile)
     entries=extractEntries(extractLines(infile))
     glossary=buildGlossary(entries)
+    #saveGlossary(infile)
     pairs=list(WordParsePairs(glossary))
     pairs.sort(key= sort)
     with open(outfile, 'w', encoding="utf-8") as f:
