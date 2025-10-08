@@ -806,69 +806,72 @@ def compare(outfile,goldfile):
                         print(f"{k}\t{x}\t{o}\t{g}")
 
 def main(infile=INFILE,outfile=LEXICON,path=None):
-    """
-    Compiles a full-form Nheengatu lexicon from the glossary source file.
+     """
+    Compiles a full-form Nheengatu lexicon from the textual glossary.
 
-    This function is part of the BuildDictionary module of Yauti. It reads a
-    textual glossary of Nheengatu words and their descriptions, parses each
-    entry, and generates a structured lexicon in JSON or plain-text format.
-    The resulting file maps each lemma to its part of speech and gloss, thus
-    providing a machine-readable dictionary that supports Nheengatu NLP tools.
+    Linguistic Role
+    ---------------
+    This function builds the machine-readable lexicon that underlies the
+    morphological and syntactic annotation of the UD_Nheengatu treebank.
+    It extracts lemmas, parts of speech, and glosses from the source glossary
+    and serializes them into a structured JSON file compatible with Yauti’s
+    analysis modules.
 
     Parameters
     ----------
     infile : str, optional
-        Path to the glossary input file. Defaults to the file defined by
-        `INFILE` (typically `~/complin/nheengatu/data/glossary.txt`).
+        Path to the glossary input file. Defaults to `INFILE`
+        (usually `~/complin/nheengatu/data/glossary.txt`).
     outfile : str, optional
-        Path to the output file where the lexicon will be written. Defaults to
-        the file defined by `LEXICON` (typically `~/complin/nheengatu/data/lexicon.json`).
-        If the filename ends with `.json`, the output will be in JSON format;
-        otherwise, it will be written as plain text.
+        Path to the output lexicon file. Defaults to `LEXICON`
+        (usually `~/complin/nheengatu/data/lexicon.json`).
+        If it ends with `.json`, the output will be serialized as JSON;
+        otherwise, it will be printed as plain text.
     path : str or None, optional
-        Base directory to prepend to `infile` and `outfile`. Useful for
-        specifying an alternative data directory.
+        Base directory to prepend to `infile` and `outfile`. Allows
+        compilation in alternative data directories.
+
+    Returns
+    -------
+    None
+        Writes the resulting lexicon to the specified output file.
 
     Workflow
     --------
-    1. Extracts and preprocesses glossary lines using `extractLines()`.
-    2. Converts them into structured entries with `extractEntries()`.
-    3. Builds a glossary dictionary via `buildGlossary()`.
-    4. Generates (word, parse) pairs with `WordParsePairs()`.
-    5. Sorts the pairs and writes them to the output file, either as JSON
-       using `WordParseDict()` or as plain text.
+    1. Extracts and preprocesses glossary lines with `extractLines()`.
+    2. Structures them into entries via `extractEntries()`.
+    3. Builds a glossary dictionary using `buildGlossary()`.
+    4. Generates (word, parse) pairs through `WordParsePairs()`.
+    5. Sorts and serializes the pairs as JSON or plain text.
 
-    Output
-    ------
-    The output file (by default `lexicon.json`) contains a list of dictionaries,
-    each representing a lexicon entry with fields such as:
-        {
-            "lemma": "peyusawa",
-            "pos": "s.",
-            "gloss": "1) sopro, insuflação; rajada (de vento): ... ◆ [der. de peyú, -sawa]"
-        }
-
-    Example
-    -------
-    >>> main()
-    # Reads glossary.txt and creates lexicon.json in the default data directory.
-
-    Example glossary entry:
-        peyusawa (s.) - 1) sopro, insuflação; rajada (de vento): ...
-    
-    Corresponding lexicon entry:
+    Output Structure
+    ----------------
+    Example entry in `lexicon.json`:
         {
             "lemma": "peyusawa",
             "pos": "s.",
             "gloss": "1) sopro, insuflação; rajada (de vento): ..."
         }
 
+    Corpus Impact
+    --------------
+    Provides the lexical base for morphological and dependency parsing
+    and for consistency checking in UD_Nheengatu-CompLin. Ensures that
+    lemmas and parts of speech used in the corpus correspond to
+    entries verified in the glossary.
+
     Notes
     -----
-    - Handles alternate data directory locations automatically.
-    - Assumes that helper functions such as `extractLines`, `extractEntries`,
-      `buildGlossary`, `WordParsePairs`, `WordParseDict`, and `sort` are
-      available in the same module.
+    - Automatically falls back to an alternate data directory if the default
+      path does not exist.
+    - Relies on auxiliary functions from the same module:
+      `extractLines`, `extractEntries`, `buildGlossary`, `WordParsePairs`,
+      `WordParseDict`, and `sort`.
+
+    See Also
+    --------
+    extractEntries : Parses raw glossary lines into structured entries.
+    WordParsePairs : Generates lemma–parse pairs for lexicon generation.
     """
     if path:
         infile=os.path.join(path,infile)
