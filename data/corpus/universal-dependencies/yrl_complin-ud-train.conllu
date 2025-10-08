@@ -8012,6 +8012,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Dominick Maia Alexandre
 # reviewer2 = Hélio Leonam Barroso Silva
+# reviewer3 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	7	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -8047,7 +8048,6 @@
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # reviewer1 = Leonel Figueiredo de Alencar
-# review_status = ongoing
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
@@ -8105,6 +8105,7 @@
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yawé	yawé	ADV	ADVA	AdvType=Man	5	advmod	_	TokenRange=0:4
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=8:9
@@ -8116,7 +8117,7 @@
 9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=39:40
 
 # sent_id = Casasnovas2006:10:5:124
-# text = Nhaã pukusá paá, manguarí merupí uwewé usú.
+# text = Nhaãpukusá paá, manguarí merupí uwewé usú.
 # text_eng = TODO
 # text_eng_ggl = while the maguari was going very slowly.
 # text_por = enquanto o maguari ia bem devagar.
@@ -8129,15 +8130,17 @@
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	obl	_	TokenRange=0:4
-2	pukusá	pukusá	ADP	ADP	AdpType=Post	7	case	_	TokenRange=5:11
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=12:15
-4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=15:16
-5	manguarí	manguarí	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=17:25
-6	merupí	merupí	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=26:32
-7	uwewé	wewé	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=33:38
-8	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=39:42
-9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=42:43
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Nhaãpukusá/=spl:w|pukusá:x|adp paá, manguarí merupí uwewé usú.
+1	Nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem|Typo=Yes	7	obl	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=0:4
+2	pukusá	pukusá	ADP	ADP	AdpType=Post	1	case	_	TokenRange=4:10
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=11:14
+4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=14:15
+5	manguarí	manguarí	NOUN	N	Number=Sing	7	nsubj	_	TokenRange=16:24
+6	merupí	merupí	ADV	ADVA	AdvType=Man	7	advmod	_	TokenRange=25:31
+7	uwewé	wewé	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=32:37
+8	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	SpaceAfter=No|TokenRange=38:41
+9	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=41:42
 
 # sent_id = Casasnovas2006:10:6:125
 # text = Nẽ rẽ paá, pitérupi manguarí usú uikú mairamé umaã, wainambí ti ã marã uyatikutikú paraname.
@@ -8232,6 +8235,7 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Fiqueiredo de Alencar
 1	Tasika	sika	VERB	V	Mood=Ind|Number=Plur|Person=3|VerbForm=Fin	10	advcl	_	TokenRange=3:8
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=9:13
 3	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=14:15
@@ -8242,10 +8246,10 @@
 8	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=33:34
 9	manguarí	manguarí	NOUN	N	Number=Sing	10	nsubj	_	TokenRange=35:43
 10	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=44:49
-11	wainambí	wainambí	NOUN	N	Number=Sing	10	obl	_	TokenRange=50:58
+11	wainambí	wainambí	NOUN	N	Number=Sing	10	iobj	_	TokenRange=50:58
 12	supé	supé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=59:63
-13	:	:	PUNCT	PUNCT	_	10	punct	_	TokenRange=63:64
-14	Remaã	maã	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	TokenRange=65:70
+13	:	:	PUNCT	PUNCT	_	14	punct	_	TokenRange=63:64
+14	Remaã	maã	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	TokenRange=65:70
 15	wana	wana	PART	PFV	Aspect=Perf	14	advmod	_	TokenRange=71:75
 16	wainambí	wainambí	NOUN	N	Number=Sing	14	vocative	_	SpaceAfter=No|TokenRange=76:84
 17	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=84:85
@@ -8306,8 +8310,9 @@
 # title_por = O beija-flor e o maguari
 # title_eng = The hummingbird and the maguari
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	TokenRange=0:5
-2	rerikuté	rikuté	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
+2	rerikuté	rikuté	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=6:14
 3	remanduári	manduári	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	2	xcomp	_	TokenRange=15:25
 4	puranga	puranga	ADV	ADVA	AdvType=Man	3	advmod	_	TokenRange=26:33
 5	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	3	obl	_	TokenRange=34:38
@@ -9100,22 +9105,23 @@
 # text_por_sec_source = Avila (2021)
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Puranga	puranga	ADV	ADVA	AdvType=Man	0	root	_	SpaceAfter=No|TokenRange=0:7
-2	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=7:8
+2	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=7:8
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
 4	rayera	tayera	NOUN	N	Number=Sing|Rel=Cont	5	nmod:poss	_	TokenRange=12:18
 5	mena	mena	NOUN	N	Number=Sing	1	vocative	_	SpaceAfter=No|TokenRange=19:23
 6	;	;	PUNCT	PUNCT	_	8	punct	_	TokenRange=23:24
 7	asú	sú	AUX	AUXFR	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	8	aux	_	TokenRange=25:28
 8	ameẽ	meẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	1	parataxis	_	TokenRange=29:33
-9	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	8	obl	_	TokenRange=34:38
+9	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	8	iobj	_	TokenRange=34:38
 10	arã	arã	ADP	ADP	AdpType=Post	9	case	_	TokenRange=39:42
 11	siiya	siiya	DET	INDQ	PronType=Ind	12	det	_	TokenRange=43:48
-12	mitima	mitima	NOUN	N	Number=Sing	13	nsubj	_	TokenRange=49:55
-13	reyutima	yutima	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=56:64
+12	mitima	mitima	NOUN	N	Number=Sing	8	obj	_	TokenRange=49:55
+13	reyutima	yutima	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	8	advcl	_	TokenRange=56:64
 14	arã	arã	SCONJ	SCONJ	_	13	mark	_	SpaceAfter=No|TokenRange=65:68
 15	,	,	PUNCT	PUNCT	_	16	punct	_	TokenRange=68:69
-16	reú	ú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	13	parataxis	_	TokenRange=70:73
+16	reú	ú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	13	conj	_	TokenRange=70:73
 17	arã	arã	SCONJ	SCONJ	_	16	mark	_	TokenRange=74:77
 18	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	19	nmod:poss	_	TokenRange=78:80
 19	raíra-itá	taíra	NOUN	N	Number=Plur|Rel=Cont	16	obl	_	TokenRange=81:90
@@ -9503,6 +9509,7 @@
 # text_orig = Yepé ara, paá, nhaã Buburi uwatá, usú upinaitika, umaá Adana.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	8	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
@@ -9515,7 +9522,7 @@
 10	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	11	aux	_	TokenRange=34:37
 11	upinaitika	pinaitika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	SpaceAfter=No|TokenRange=38:48
 12	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=48:49
-13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	parataxis	_	TokenRange=50:54
+13	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	parataxis	_	TokenRange=50:54
 14	Adana	adana	PROPN	PROPN	_	13	obj	_	SpaceAfter=No|TokenRange=55:60
 15	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=60:61
 
