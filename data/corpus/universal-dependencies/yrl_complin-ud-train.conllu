@@ -5994,6 +5994,8 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
+# inputline = Upisika paá nhaã mirá-piranga, unupá kirimbawa/adva siía viáji, asuí/advt uyapí usú apekatú/advc kití, unheẽ kwayé: Maã-puxiwera! Indé/=typo:c|indé ti puranga/a, remaraúna reikú/v ixé!
 1	Upisika	pisika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
 2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=8:11
 3	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=12:16
@@ -6013,14 +6015,14 @@
 17	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=88:93
 18	kwayé	kwayé	ADV	ADVA	AdvType=Man	17	advmod	_	SpaceAfter=No|TokenRange=94:99
 19	:	:	PUNCT	PUNCT	_	24	punct	_	TokenRange=99:100
-20	Maã-puxiwera	maã-puxiwera	NOUN	N	Number=Sing	24	discourse	_	SpaceAfter=No|TokenRange=101:113
+20	Maã-puxiwera	maã-puxiwera	NOUN	N	Number=Sing	24	vocative	_	SpaceAfter=No|TokenRange=101:113
 21	!	!	PUNCT	PUNCT	_	20	punct	_	TokenRange=113:114
 22	Indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	24	nsubj	_	TokenRange=115:119
 23	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	24	advmod	_	TokenRange=120:122
 24	puranga	puranga	ADJ	A	_	17	ccomp	_	SpaceAfter=No|TokenRange=123:130
 25	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=130:131
 26	remaraúna	remaraúna	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	24	parataxis	_	TokenRange=132:141
-27	reikú	ikú	AUX	AUXFS	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	26	aux	_	TokenRange=142:147
+27	reikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	26	aux	_	TokenRange=142:147
 28	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	26	obj	_	SpaceAfter=No|TokenRange=148:151
 29	!	!	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=151:152
 
@@ -9534,15 +9536,17 @@
 # text_orig = Aápe, paá, aintá, uyuswantí, ta uyupirú ta upurungitá
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# inputline = Aape/advt, paá, aintá/pron, uyusuantí/=mid, ta/pron uyupirú ta/pron upurungitá
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aape	aape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No|TokenRange=11:16
-6	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=16:17
+6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
 7	uyusuantí	suantí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=18:27
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=27:28
-9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	expl	_	TokenRange=29:31
+9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=29:31
 10	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=32:39
 11	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	expl	_	TokenRange=40:42
 12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	xcomp	_	SpaceAfter=No|TokenRange=43:53
@@ -9555,13 +9559,14 @@
 # text_orig = Asuí, paá, Adana umbeú Buburi supé aé urikuté umendari arã Kurukuí irumu.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Asuí	asuí	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	Adana	adana	PROPN	PROPN	_	6	nsubj	_	TokenRange=11:16
 6	umbeú	mbeú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=17:22
-7	Buburi	buburi	PROPN	PROPN	_	6	obl	_	TokenRange=23:29
+7	Buburi	buburi	PROPN	PROPN	_	6	iobj	_	TokenRange=23:29
 8	supé	supé	ADP	ADP	AdpType=Post	7	case	_	TokenRange=30:34
 9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=35:37
 10	urikuté	rikuté	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	ccomp	_	TokenRange=38:45
@@ -9629,12 +9634,13 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Yepé/art ara, paá, nhaã Tupí mira-itá ta/pron umunhã murasí.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
 2	ara	ara	NOUN	N	Number=Sing	10	obl	_	SpaceAfter=No|TokenRange=5:8
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=8:9
 4	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	SpaceAfter=No|TokenRange=10:13
 5	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=13:14
-6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	7	det	_	TokenRange=15:19
+6	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	det	_	TokenRange=15:19
 7	Tupí	tupí	NOUN	N	Number=Sing	8	nmod:poss	_	TokenRange=20:24
 8	mira-itá	mira	NOUN	N	Number=Plur	10	nsubj	_	TokenRange=25:33
 9	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	10	expl	_	TokenRange=34:36
@@ -9651,19 +9657,20 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Nhaã, paá, murasí upé/adp Kurukuí paya-itá ta/pron upurandú arã/sconj nhaã Adana/=p ta/pron2 raíra supé.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	5	det	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
-3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	10	advmod	_	SpaceAfter=No|TokenRange=6:9
+3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
-5	murasí	murasí	NOUN	N	Number=Sing	10	obl	_	TokenRange=11:17
+5	murasí	murasí	NOUN	N	Number=Sing	0	root	_	TokenRange=11:17
 6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	TokenRange=18:21
 7	Kurukuí	kurukuí	PROPN	PROPN	_	8	nmod:poss	_	TokenRange=22:29
 8	paya-itá	paya	NOUN	N	Number=Plur	10	nsubj	_	TokenRange=30:38
 9	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	10	expl	_	TokenRange=39:41
-10	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=42:50
+10	upurandú	purandú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	5	acl	_	TokenRange=42:50
 11	arã	arã	SCONJ	SCONJ	_	10	mark	_	TokenRange=51:54
 12	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	13	det	_	TokenRange=55:59
-13	Adana	adana	PROPN	PROPN	_	10	obj	_	TokenRange=60:65
+13	Adana	adana	PROPN	PROPN	_	10	iobj	_	TokenRange=60:65
 14	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=66:68
 15	raíra	taíra	NOUN	N	Number=Sing|Rel=Cont	10	obl	_	TokenRange=69:74
 16	supé	supé	ADP	ADP	AdpType=Post	15	case	_	SpaceAfter=No|TokenRange=75:79
@@ -9737,6 +9744,7 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Murasí pukusawa/adp, paá, nhaã mira-itá aintá/pron uú kawĩ, ta/pron upurasí, ta/pron uyumusarái/=mid.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Murasí	murasí	NOUN	N	Number=Sing	9	obl	_	TokenRange=0:6
 2	pukusawa	pukusawa	ADP	ADP	AdpType=Post	1	case	_	SpaceAfter=No|TokenRange=7:15
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=15:16
@@ -9764,6 +9772,7 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Ape/advt, paá, ta/pron upurandú rundé/sconj rẽ Adana/=p, Buburi/=p upisika igara usú murasí kití.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ape	ape	ADV	ADVT	AdvType=Tim	12	advmod	_	SpaceAfter=No|TokenRange=0:3
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=3:4
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=5:8
@@ -9827,6 +9836,7 @@
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Aramé/advt, paá, upisika aé/pron urasú yumimisawa rupí.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aramé	aramé	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
@@ -9847,6 +9857,7 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Ariré, paá, Kurukuí usikari Adana/=p ti uwasemu, aramé/advt uyana garapá kití.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ariré	ariré	ADV	ADVT	AdvType=Tim	6	advmod	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	6	advmod	_	SpaceAfter=No|TokenRange=7:10
@@ -9858,7 +9869,7 @@
 9	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	SpaceAfter=No|TokenRange=37:44
 10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=44:45
 11	aramé	aramé	ADV	ADVT	AdvType=Tim	12	advmod	_	TokenRange=46:51
-12	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	6	parataxis	_	TokenRange=52:57
+12	uyana	yana	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=52:57
 13	garapá	garapá	NOUN	N	Number=Sing	12	obl	_	TokenRange=58:64
 14	kití	kití	ADP	ADP	AdpType=Post	13	case	_	SpaceAfter=No|TokenRange=65:69
 15	.	.	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=69:70
@@ -9871,17 +9882,18 @@
 # text_orig = Umaá, paá, aintá mukũi, ta uikuã waá paraná pitérupi.
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Umaã, paá, aintá/pron mukũi, ta/pron uikú ã waá paraná pitérupi.
+# inputline = Umaã, paá, aintá/pron mukũi/card, ta/pron uikú/cop ã waá/rel paraná pitérupi.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	SpaceAfter=No|TokenRange=6:9
 4	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=9:10
 5	aintá	aintá	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	6	det	_	TokenRange=11:16
 6	mukũi	mukũi	NUM	CARD	NumType=Card	1	obj	_	SpaceAfter=No|TokenRange=17:22
-7	,	,	PUNCT	PUNCT	_	6	punct	_	TokenRange=22:23
-8	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	1	expl	_	TokenRange=24:26
+7	,	,	PUNCT	PUNCT	_	13	punct	_	TokenRange=22:23
+8	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	13	expl	_	TokenRange=24:26
 9	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	13	cop	_	TokenRange=27:31
-10	ã	ã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=32:33
+10	ã	ã	PART	PFV	Aspect=Perf	13	advmod	_	TokenRange=32:33
 11	waá	waá	PRON	REL	Number=Sing|PronType=Rel	13	nsubj	_	TokenRange=34:37
 12	paraná	paraná	NOUN	N	Number=Sing	13	nmod:poss	_	TokenRange=38:44
 13-14	pitérupi	_	_	_	_	_	_	_	SpaceAfter=No|TokenRange=45:53
@@ -9928,11 +9940,12 @@
 # text_annotator = Juliana Lopes Gurgel
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Usika ramé/sconj aintá/pron2 ruakí, ta/pron uyupirú ta/pron umaramunha paraná pitérupi.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	advcl	_	TokenRange=0:5
 2	ramé	ramé	SCONJ	SCONJ	_	1	mark	_	TokenRange=6:10
 3	aintá	aintá	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	1	obl	_	TokenRange=11:16
 4	ruakí	ruakí	ADP	ADP	AdpType=Post|Rel=Cont	3	case	_	SpaceAfter=No|TokenRange=17:22
-5	,	,	PUNCT	PUNCT	_	7	punct	_	TokenRange=22:23
+5	,	,	PUNCT	PUNCT	_	1	punct	_	TokenRange=22:23
 6	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	TokenRange=24:26
 7	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=27:34
 8	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	9	expl	_	TokenRange=35:37
@@ -9952,6 +9965,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # text_annotator = Juliana Lopes Gurgel
 # inputline = Adana/=p, paá, umaã ta/pron2 resé/adp, upitá piri/advg Buburi/=p ruakí.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Adana	adana	PROPN	PROPN	_	5	nsubj	_	SpaceAfter=No|TokenRange=0:5
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=5:6
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	5	advmod	_	SpaceAfter=No|TokenRange=7:10
@@ -10138,7 +10152,7 @@
 17	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No|TokenRange=68:69
 
 # sent_id = Casasnovas2006:12:31:197
-# text = Kuxiima mira-itá ta usú muíri akayú nhaã kapuãmu kití ta uyaxiú umandwari ramé Adana, asuí ta uyuíri umunhã arã dabukurí Kurukuí iwikuí upé.
+# text = Kuxiima mira-itá ta usú muíri akayú nhaã kapuãmu kití ta uyaxiú umanduári ramé Adana, asuí ta uyuíri umunhã arã dabukurí Kurukuí iwikuí upé.
 # text_eng = TODO
 # text_por = Outrora todos os anos ia o povo à ilha chorar a lembrança da Adana, em seguida atravessavam a cachoeira Kurukuí e faziam dabukurí na praia.
 # text_source = p. 100, No. 37-38
@@ -10149,7 +10163,8 @@
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
-# inputline = Kuxiima mira-itá ta/pron usú muíri/tot akayú nhaã kapuãmu kití ta/pron uyaxiú umandwari ramé/sconj Adana/=p, asuí/advt ta/pron uyuíri umunhã arã/sconj dabukurí Kurukuí iwikuí upé/adp.
+# inputline = Kuxiima mira-itá ta/pron usú muíri/tot akayú nhaã kapuãmu kití ta/pron uyaxiú umanduári ramé/sconj Adana/=p, asuí/advt ta/pron uyuíri umunhã arã/sconj dabukurí Kurukuí iwikuí upé/adp.
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kuxiima	kuxiima	ADV	ADVT	AdvType=Tim	4	advmod	_	TokenRange=0:7
 2	mira-itá	mira	NOUN	N	Number=Plur	4	nsubj	_	TokenRange=8:16
 3	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	4	expl	_	TokenRange=17:19
@@ -10161,7 +10176,7 @@
 9	kití	kití	ADP	ADP	AdpType=Post	8	case	_	TokenRange=49:53
 10	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	TokenRange=54:56
 11	uyaxiú	yaxiú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	xcomp	_	TokenRange=57:63
-12	umandwari	mandwari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=64:73
+12	umanduári	manduári	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	11	advcl	_	TokenRange=64:73
 13	ramé	ramé	SCONJ	SCONJ	_	12	mark	_	TokenRange=74:78
 14	Adana	adana	PROPN	PROPN	_	12	obj	_	SpaceAfter=No|TokenRange=79:84
 15	,	,	PUNCT	PUNCT	_	18	punct	_	TokenRange=84:85
@@ -10326,6 +10341,7 @@
 # text_eng = "They say the whole earth will burn!"
 # text_por = — Dizem que toda a terra queimará! [Adapt. transl.]
 # text_source = p. 83, No. 4
+# text_orig = Panhé paá iwí ukaí arã!
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Juliana Lopes Gurgel
 # review_status = ongoing
@@ -10548,6 +10564,7 @@
 # text_eng = A cow died.
 # text_por = Morreu uma vaca.
 # text_source = p. 31
+# text_orig = Yepé Tapira kunhã umanú
 # text_annotator = Leonel Figueiredo de Alencar
 # reviewer1 = Juliana Lopes Gurgel
 1	Yepé	yepé	DET	ART	Definite=Ind|PronType=Art	2	det	_	TokenRange=0:4
