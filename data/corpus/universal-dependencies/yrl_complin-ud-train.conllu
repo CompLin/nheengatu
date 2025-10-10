@@ -30254,7 +30254,8 @@
 
 # sent_id = Hartt1938:0:0:515-1
 # text = Hombó se xapewa se akanga aápe.
-# text_por = Mete meu chapéu na cabeça.
+# text_por = Meto meu chapéu na cabeça.
+# text_por_orig = Metc meu chapéu na cabeça.
 # text_source = p. 356, No. 515
 # text_orig = hombó sexapéa seakána aápe (Ereré).
 # place = Ereré
@@ -30267,6 +30268,8 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Hombó/=typo:c|Hamburi se xapewa se akanga aápe/=typo:c|árupi.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
+# review_status = ongoing
 1	Hombó	mburi	VERB	V	Mood=Ind|Number=Sing|Person=1|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=Hamburi|TokenRange=0:5
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=6:8
 3	xapewa	xapewa	NOUN	N	Number=Sing	1	obj	_	TokenRange=9:15
@@ -30332,14 +30335,15 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Rerikú será kunhã xapewa pinawa suí/adp wara/=x?
+# inputline = Rerikú será kunhã xapewa pinawa suí/=typo:c|suiwara:x|adp wara/=x?
 # text_annotator = Dominick Maia Alexandre
-1	Rerikú	rikú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Rerikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=7:11
 3	kunhã	kunhã	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=12:17
-4	xapewa	xapewa	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=18:24
-5	pinawa	pinawa	NOUN	N	Number=Sing	1	obj	_	TokenRange=25:31
-6	suí	suí	ADP	ADP	AdpType=Post|Typo=Yes	5	case	_	TokenRange=32:35
+4	xapewa	xapewa	NOUN	N	Number=Sing	1	obj	_	TokenRange=18:24
+5	pinawa	pinawa	NOUN	N	Number=Sing	4	nmod	_	TokenRange=25:31
+6	suí	suiwara	ADP	ADP	AdpType=Post|Typo=Yes	5	case	_	CorrectForm=suiwara|TokenRange=32:35
 7	wara	_	X	X	_	6	goeswith	_	SpaceAfter=No|TokenRange=36:40
 8	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=40:41
 
