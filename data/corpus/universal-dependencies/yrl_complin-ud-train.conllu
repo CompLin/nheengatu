@@ -30759,18 +30759,19 @@
 # text_por = Minha casa está onde o sol nasce.
 # text_source = p. 358, No. 544
 # text_orig = seróka oikó marupí uarasy osém.
-# text_eng = TODO
+# text_eng = My house is where the sun rises.
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Se ruka uikú/cop marupí/advrc warasí usemu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
-2	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=3:7
-3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	2	cop	_	TokenRange=8:12
-4	marupí	marupí	ADV	ADVRC	AdvType=Loc|PronType=Int	2	advmod	_	TokenRange=13:19
+2	ruka	uka	NOUN	N	Number=Sing|Rel=Cont	4	nsubj	_	TokenRange=3:7
+3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	4	cop	_	TokenRange=8:12
+4	marupí	marupí	ADV	ADVLC	AdvType=Loc|PronType=Rel	0	root	_	TokenRange=13:19
 5	warasí	warasí	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=20:26
-6	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl	_	SpaceAfter=No|TokenRange=27:32
-7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=32:33
+6	usemu	semu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	advcl:relcl	_	SpaceAfter=No|TokenRange=27:32
+7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=32:33
 
 # sent_id = Hartt1938:0:0:545
 # text = Yasí pisasú ururi amana.
