@@ -30898,6 +30898,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Iwatí/=typo:c|Iwaté:x|a mirĩ/advs raẽ uikú/cop warasí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iwatí	iwaté	ADJ	A	Typo=Yes	0	root	_	CorrectForm=Iwaté|TokenRange=0:5
 2	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:10
 3	raẽ	raẽ	PART	IMPF	Aspect=Imp	1	advmod	_	TokenRange=11:14
@@ -30915,13 +30916,14 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Yané/pron2 pituna.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:4
 2	pituna	pituna	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=5:11
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=11:12
 
 # sent_id = Hartt1938:0:0:553
 # text = Adéu ukayara!
-# text_por = Oh! Da casa!
+# text_por = Oh! da casa!
 # text_source = p. 359, No. 553
 # text_orig = adéu okayára!
 # text_eng = TODO
@@ -30931,12 +30933,13 @@
 # text_por_sec = Ó de casa!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Adéu ukayara/=spl:w|yara:x|adp!
+# inputline = Adéu ukayara/=spl:w|yara:x|n!
 # text_annotator = Dominick Maia Alexandre
-1	Adéu	adéu	INTJ	INTJ	_	2	discourse	_	TokenRange=0:4
-2	uka	uka	NOUN	N	Number=Sing|Rel=Abs|Typo=Yes	0	root	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=5:8
-3	yara	yara	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=8:12
-4	!	!	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=12:13
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Adéu	adéu	INTJ	INTJ	_	3	discourse	_	TokenRange=0:4
+2	uka	uka	NOUN	N	Number=Sing|Rel=Abs|Typo=Yes	3	nmod:poss	_	CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=5:8
+3	yara	yara	NOUN	N	Number=Sing	0	root	_	SpaceAfter=No|TokenRange=8:12
+4	!	!	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=12:13
 
 # sent_id = Hartt1938:0:0:554
 # text = Mayawé taá uikú ne mira-itá?
@@ -30948,6 +30951,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Mayawé/advra taá uikú/cop ne mira-itá?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mayawé	mayawé	ADV	ADVRA	AdvType=Man|PronType=Int	0	root	_	TokenRange=0:6
 2	taá	taá	PART	CQ	PartType=Int	1	advmod	_	TokenRange=7:10
 3	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	1	cop	_	TokenRange=11:15
@@ -30987,6 +30991,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Indawé, yané/pron2 pituna.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Indawé	indawé	INTJ	INTJ	_	4	discourse	_	SpaceAfter=No|TokenRange=0:6
 2	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=6:7
 3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=8:12
@@ -31007,6 +31012,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xayusí-putari se pú/n ií irũ/adp, xamutikanga-putari tuáya irũ/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xayusí-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Xayusí	yusí	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Ayusí
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -31048,6 +31054,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Rerikú será se asukirí katú/a?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Rerikú	rikú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=0:6
 2	será	será	PART	PQ	PartType=Int	1	advmod	_	TokenRange=7:11
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
@@ -31065,16 +31072,17 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Aé/pron riré/sconj apiripana/=mf:m|upiripana yukira umukaẽ-putari i/pron2 pirá.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:2
 2	riré	riré	SCONJ	SCONJ	_	3	mark	_	TokenRange=3:7
-3	apiripana	piripana	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=upiripana|ModernPerson=3|TokenRange=8:17
+3	apiripana	piripana	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	5	advcl	_	ModernForm=upiripana|ModernPerson=3|TokenRange=8:17
 4	yukira	yukira	NOUN	N	Number=Sing	3	obj	_	TokenRange=18:24
 5-6	umukaẽ-putari	_	_	_	_	_	_	_	TokenRange=25:38
-5	umukaẽ	mukaẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	_
+5	umukaẽ	mukaẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
 6	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	5	aux	_	_
 7	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	8	nmod:poss	_	TokenRange=39:40
 8	pirá	pirá	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=41:45
-9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=45:46
+9	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=45:46
 
 # sent_id = Hartt1938:0:0:561
 # text = Kiinha tái reté.
