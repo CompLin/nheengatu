@@ -31327,7 +31327,8 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Santí reté/advs kwaá/demx pirá.
 # text_annotator = Dominick Maia Alexandre
-1	Santí	santí	ADJ	A	_	0	root	_	TokenRange=0:5
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Santí	rantí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=6:10
 3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
 4	pirá	pirá	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=16:20
@@ -31454,6 +31455,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = I/pron2 katú/v2 wã uikú/v nhaã ne remimunha?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	expl	_	TokenRange=0:1
 2	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=2:6
 3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=7:9
@@ -31521,22 +31523,23 @@
 7	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:587
-# text = Yasú yamemúi suú rikwera usika arama yanéu.
+# text = Yasú yamemúi suú rukwera usika arama yanéu.
 # text_por = Vamos cozinhar bastante carne de caça para nós.
 # text_source = p. 361, No. 587
 # text_orig = yasó yamimúin soó rukuéra osy aráma yanéu.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Yasú yamemúi suú/n rikwera/n+ncont usika arama/sconj yanéu.
+# inputline = Yasú yamemúi suú/n rukwera usika arama/sconj yanéu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	yamemúi	memúi	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:12
 3	suú	suú	NOUN	N	Number=Sing	4	nmod:poss	_	TokenRange=13:16
-4	rikwera	rikwera	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	2	obj	_	TokenRange=17:24
+4	rukwera	sukwera	NOUN	N	Number=Sing|Rel=Cont	2	obj	_	TokenRange=17:24
 5	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	advcl	_	TokenRange=25:30
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=31:36
-7	yanéu	yanéu	PRON	PROND	Case=Dat|Number=Plur|Person=1|PronType=Prs	5	iobj	_	SpaceAfter=No|TokenRange=37:42
+7	yanéu	yanéu	PRON	PROND	Case=Dat|Number=Plur|Person=1|PronType=Prs	5	obl	_	SpaceAfter=No|TokenRange=37:42
 8	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=42:43
 
 # sent_id = Hartt1938:0:0:588
@@ -31967,6 +31970,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kwaá/demx uka rimaã/a uikú/cop.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	uka	uka	NOUN	N	Number=Sing|Rel=Abs	3	nsubj	_	TokenRange=5:8
 3	rimaã	rimaã	ADJ	A	_	0	root	_	TokenRange=9:14
