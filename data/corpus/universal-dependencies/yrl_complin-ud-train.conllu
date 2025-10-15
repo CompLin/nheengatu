@@ -31098,6 +31098,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kiinha tái reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kiinha	kiinha	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	tái	tái	ADJ	A	_	0	root	_	TokenRange=7:10
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=11:15
@@ -31113,6 +31114,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kiinha i/pron2 katú/v2 reté/advs uyuka arama/sconj atiimasawa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kiinha	kiinha	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:6
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=7:8
 3	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=9:13
@@ -31132,6 +31134,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kurutẽi eú nhaã pakúa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kurutẽi	kurutẽi	ADV	ADVA	AdvType=Man	2	advmod	_	TokenRange=0:7
 2	eú	ú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=8:10
 3	nhaã	nhaã	DET	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	4	det	_	TokenRange=11:15
@@ -31148,6 +31151,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = I/pron2 tawá/v2 uikú/v se pakúa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	I	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	expl	_	TokenRange=0:1
 2	tawá	tawá	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=2:6
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	TokenRange=7:11
@@ -31169,6 +31173,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Yakira/a uikú/cop se pakúa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yakira	yakira	ADJ	A	_	0	root	_	TokenRange=0:6
 2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	1	cop	_	TokenRange=7:11
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:14
@@ -31208,10 +31213,11 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Upaĩ maã/ind uwatari ixéu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Upaĩ	upaĩ	PRON	TOT	PronType=Tot	2	det	_	TokenRange=0:4
 2	maã	maã	PRON	IND	PronType=Ind	3	nsubj	_	TokenRange=5:8
 3	uwatari	watari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=9:16
-4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	iobj	_	SpaceAfter=No|TokenRange=17:21
+4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	SpaceAfter=No|TokenRange=17:21
 5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=21:22
 
 # sent_id = Hartt1938:0:0:568
@@ -31224,6 +31230,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Intí maã/ind xarikú xaú arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=0:4
 2	maã	maã	PRON	IND	PronType=Ind	3	obj	_	TokenRange=5:8
 3	xarikú	rikú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=arikú|TokenRange=9:15
@@ -31241,6 +31248,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xaú kawĩ mangarataya.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aú|TokenRange=0:3
 2	kawĩ	kawĩ	NOUN	N	Number=Sing	3	nmod:poss	_	TokenRange=4:8
 3	mangarataya	mangarataya	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=9:20
@@ -31282,6 +31290,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamunhã wã se wariwa.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amunhã|TokenRange=0:7
 2	wã	wã	PART	PFV	Aspect=Perf	1	advmod	_	TokenRange=8:10
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=11:13
@@ -31298,6 +31307,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xaú-putari meyú/=typo:c|meyuxika xika/=x.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xaú-putari	_	_	_	_	_	_	_	TokenRange=0:10
 1	Xaú	ú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Aú
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -31315,6 +31325,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Maã/int pirá taá kwaá/demx?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Maã	maã	DET	INT	PronType=Int	2	det	_	TokenRange=0:3
 2	pirá	pirá	NOUN	N	Number=Sing	0	root	_	TokenRange=4:8
 3	taá	taá	PART	CQ	PartType=Int	2	advmod	_	TokenRange=9:12
@@ -31357,6 +31368,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Pirá sembika reté/advs uikú/cop.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Pirá	pirá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:4
 2	sembika	sembika	ADJ	A	_	0	root	_	TokenRange=5:12
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=13:17
@@ -31373,6 +31385,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Sembika reté/advs kwaá/demx pirá.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Sembika	sembika	ADJ	A	_	0	root	_	TokenRange=0:7
 2	reté	reté	ADV	ADVS	AdvType=Deg	1	advmod	_	TokenRange=8:12
 3	kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	4	det	_	TokenRange=13:17
@@ -31389,6 +31402,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ekũi ememúi yané/pron2 rimiú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ekũi	sú	AUX	AUXFR	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	ememúi	memúi	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=5:11
 3	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=12:16
@@ -31409,6 +31423,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamixiri xaikú/v se rimiú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xamixiri	mixiri	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amixiri|TokenRange=0:8
 2	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	aux	_	ModernForm=aikú|TokenRange=9:14
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=15:17
@@ -31429,6 +31444,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamukaẽ xaikú/v tatú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xamukaẽ	mukaẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amukaẽ|TokenRange=0:7
 2	xaikú	ikú	AUX	AUXFS	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	1	aux	_	ModernForm=aikú|TokenRange=8:13
 3	tatú	tatú	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=14:18
@@ -31444,6 +31460,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Se panera sakwena/a.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	panera	panera	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:9
 3	sakwena	sakwena	ADJ	A	_	0	root	_	SpaceAfter=No|TokenRange=10:17
@@ -31483,6 +31500,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ií upupuri uikú/v.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ií	ií	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:2
 2	upupuri	pupuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=3:10
 3	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	2	aux	_	SpaceAfter=No|TokenRange=11:15
@@ -31502,6 +31520,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Se panera upupuri-putari uikú/v tiapú/v3 wã.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	2	nmod:poss	_	TokenRange=0:2
 2	panera	panera	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=3:9
 3-4	upupuri-putari	_	_	_	_	_	_	_	TokenRange=10:24
@@ -31522,6 +31541,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Kwaá/demx timiú intí usika yaú arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kwaá	kwaá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	2	det	_	TokenRange=0:4
 2	timiú	timiú	NOUN	N	Number=Sing|Rel=Abs	4	nsubj	_	TokenRange=5:10
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=11:15
@@ -31581,10 +31601,11 @@
 # text_por_sec = Vamos pilar arroz!
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Yasú yasusuka awatií.
+# inputline = Yasú yasusuka/=red:l|2 awatií.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
-2	yasusuka	susuka	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:13
+2	yasusuka	suka	VERB	V	Mood=Ind|Number=Plur|Person=1|Red=Yes|VerbForm=Fin	0	root	_	TokenRange=5:13
 3	awatií	awatií	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=14:20
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=20:21
 
@@ -31598,6 +31619,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ií i/pron2 katú/v2 reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ií	ií	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:2
 2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=3:4
 3	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=5:9
@@ -31618,6 +31640,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Xamuyasuka-putari se ruá.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xamuyasuka-putari	_	_	_	_	_	_	_	TokenRange=0:17
 1	Xamuyasuka	muyasuka	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Amuyasuka
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -31635,6 +31658,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Yasú yayasuka.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	yayasuka	yasuka	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=5:13
 3	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=13:14
