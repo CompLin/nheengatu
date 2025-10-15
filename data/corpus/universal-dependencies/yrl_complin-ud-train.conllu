@@ -31671,17 +31671,18 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Kurasí sakú/a reté/advs xasikari irusanga/n xapituú mirĩ/advs arama/sconj.
+# inputline = Kurasí sakú/v2 reté/advs xasikari irusanga/n xapituú mirĩ/advs arama/sconj.
 # text_annotator = Dominick Maia Alexandre
-1	Kurasí	kurasí	NOUN	N	Number=Sing	4	obl	_	TokenRange=0:6
-2	sakú	sakú	ADJ	A	_	1	amod	_	TokenRange=7:11
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Kurasí	kurasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
+2	sakú	rakú	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=7:11
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	TokenRange=12:16
-4	xasikari	sikari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asikari|TokenRange=17:25
+4	xasikari	sikari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	parataxis	_	ModernForm=asikari|TokenRange=17:25
 5	irusanga	irusanga	NOUN	N	Number=Sing	4	obj	_	TokenRange=26:34
 6	xapituú	pituú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	4	advcl	_	ModernForm=apituú|TokenRange=35:42
 7	mirĩ	mirĩ	ADV	ADVS	AdvType=Deg	6	advmod	_	TokenRange=43:47
 8	arama	arama	SCONJ	SCONJ	_	6	mark	_	SpaceAfter=No|TokenRange=48:53
-9	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=53:54
+9	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=53:54
 
 # sent_id = Hartt1938:0:0:594
 # text = Aikwé wã kurasí usemu.
@@ -31693,6 +31694,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Aikwé wã kurasí usemu.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Aikwé	aikwé	PART	EXST	PartType=Exs	4	advmod	_	TokenRange=0:5
 2	wã	wã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=6:8
 3	kurasí	kurasí	NOUN	N	Number=Sing	4	nsubj	_	TokenRange=9:15
@@ -31707,10 +31709,11 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Warasí sakú/a reté/advs.
+# inputline = Warasí sakú/v2 reté/advs.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Warasí	warasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	sakú	sakú	ADJ	A	_	0	root	_	TokenRange=7:11
+2	sakú	rakú	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=7:11
 3	reté	reté	ADV	ADVS	AdvType=Deg	2	advmod	_	SpaceAfter=No|TokenRange=12:16
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=16:17
 
@@ -31729,15 +31732,16 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Warasí usení/=typo:c|sendí:x|v2 wã.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Warasí	warasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	usení	sendí	VERB	V2	Mood=Ind|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=sendí|TokenRange=7:12
+2	usení	rendí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=sendí|TokenRange=7:12
 3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=13:15
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Hartt1938:0:0:596-2
 # text = Kurasí yasendí wã.
 # text_por = O sol está clareando.
-# text_source = p. 362, No. 596
+# text_source = p. 362, No. 596a
 # text_orig = korasy iasendí uán (Ereré).
 # place = Ereré
 # text_eng = TODO
@@ -31749,8 +31753,9 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kurasí yasendí/=typo:c|sendí:x|v2 wã.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kurasí	kurasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
-2	yasendí	sendí	VERB	V2	Mood=Ind|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=sendí|TokenRange=7:14
+2	yasendí	rendí	VERB	V2	Mood=Ind|Number=Sing|Person=3|Rel=NCont|Typo=Yes|VerbForm=Fin	0	root	_	CorrectForm=sendí|TokenRange=7:14
 3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=15:17
 4	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=17:18
 
@@ -31769,6 +31774,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kurasí iwaté/a ã hasú-putari hapurakí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kurasí	kurasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	iwaté	iwaté	ADJ	A	_	0	root	_	TokenRange=7:12
 3	ã	ã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:14
@@ -31781,7 +31787,7 @@
 # sent_id = Hartt1938:0:0:597-2
 # text = Kurasí iwaté ã xasú-putari xapurakí.
 # text_por = O sol está alto, quero ir trabalhar.
-# text_source = p. 362, No. 597
+# text_source = p. 362, No. 597a
 # text_orig = korasy yuaté án xasó putár xapurauky.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
@@ -31792,6 +31798,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kurasí iwaté/a ã xasú-putari xapurakí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kurasí	kurasí	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:6
 2	iwaté	iwaté	ADJ	A	_	0	root	_	TokenRange=7:12
 3	ã	ã	PART	PFV	Aspect=Perf	2	advmod	_	TokenRange=13:14
@@ -31815,6 +31822,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Pitunawasú ramé/adp intí yaxipiaka-kwáu maã/ind.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Pitunawasú	pitunawasú	NOUN	N	Number=Sing	4	obl	_	TokenRange=0:10
 2	ramé	ramé	ADP	ADP	AdpType=Post	1	case	_	TokenRange=11:15
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=16:20
@@ -31836,9 +31844,10 @@
 # text_por_sec = Tenho confiança em ti.
 # text_sec_source = Avila (2021)
 # text_por_sec_source = Avila (2021)
-# inputline = Xayuruyari ne resé/adp.
+# inputline = Xayuruyari/=mid ne resé/adp.
 # text_annotator = Dominick Maia Alexandre
-1	Xayuruyari	yuruyari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Ayuruyari|TokenRange=0:10
+# reviewer1 = Leonel Figueiredo de Alencar
+1	Xayuruyari	ruyari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin|Voice=Mid,Pass	0	root	_	ModernForm=Ayuruyari|TokenRange=0:10
 2	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=11:13
 3	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=14:18
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=18:19
@@ -31854,6 +31863,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Ixé intí haruyari sesé.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	TokenRange=0:3
 2	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	3	advmod	_	TokenRange=4:8
 3	haruyari	ruyari	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	0	root	_	TokenRange=9:17
@@ -31912,6 +31922,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Amú/ind wirané xaikú/cop wã kurí mairí-pe.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Amú	amú	DET	IND	Number=Sing|PronType=Ind	2	det	_	TokenRange=0:3
 2	wirané	wirané	ADV	ADVT	AdvType=Tim	6	obl	_	TokenRange=4:10
 3	xaikú	ikú	AUX	COP	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	6	cop	_	ModernForm=aikú|TokenRange=11:16
@@ -31936,10 +31947,11 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Intí usika ara ixéu xamunhã arama/sconj muraikí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	2	advmod	_	TokenRange=0:4
 2	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=5:10
 3	ara	ara	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=11:14
-4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	2	iobj	_	TokenRange=15:19
+4	ixéu	ixéu	PRON	PROND	Case=Dat|Number=Sing|Person=1|PronType=Prs	2	obl	_	TokenRange=15:19
 5	xamunhã	munhã	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	advcl	_	ModernForm=amunhã|TokenRange=20:27
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=28:33
 7	muraikí	muraikí	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=34:41
@@ -31959,6 +31971,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Wirané xasú intí ramé/sconj ukiri.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Wirané	wirané	ADV	ADVT	AdvType=Tim	2	obl	_	TokenRange=0:6
 2	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asú|TokenRange=7:11
 3	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	5	advmod	_	TokenRange=12:16
@@ -32060,6 +32073,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Mamé/advrc uikú/cop pé?
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Mamé	mamé	ADV	ADVRC	AdvType=Loc|PronType=Int	0	root	_	TokenRange=0:4
 2	uikú	ikú	AUX	COP	Mood=Ind|Person=3|VerbForm=Fin	1	cop	_	TokenRange=5:9
 3	pé	pé	NOUN	N	Number=Sing|Rel=Abs	1	nsubj	_	SpaceAfter=No|TokenRange=10:12
@@ -32075,6 +32089,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Iké rupí xasú.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	3	obl	_	TokenRange=0:3
 2	rupí	rupí	ADP	ADP	AdpType=Post	1	case	_	TokenRange=4:8
 3	xasú	sú	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=asú|SpaceAfter=No|TokenRange=9:13
@@ -32090,11 +32105,12 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Iné resú se rakakwera/adp rupí.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Iné	iné	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	TokenRange=0:3
 2	resú	sú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=4:8
 3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	obl	_	TokenRange=9:11
 4	rakakwera	rakakwera	ADP	ADP	AdpType=Post|Rel=Cont	3	case	_	TokenRange=12:21
-5	rupí	rupí	ADP	ADP	AdpType=Post	2	case	_	SpaceAfter=No|TokenRange=22:26
+5	rupí	rupí	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=22:26
 6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=26:27
 
 # sent_id = Hartt1938:0:0:613
