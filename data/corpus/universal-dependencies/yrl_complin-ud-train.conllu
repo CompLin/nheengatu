@@ -32127,6 +32127,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Usika se rakakwera/adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:5
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs	1	obl	_	TokenRange=6:8
 3	rakakwera	rakakwera	ADP	ADP	AdpType=Post|Rel=Cont	2	case	_	SpaceAfter=No|TokenRange=9:18
@@ -32142,6 +32143,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xaxari se igara igarupá-pe.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Xaxari	xari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Axari|TokenRange=0:6
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=7:9
 3	igara	igara	NOUN	N	Number=Sing	1	obj	_	TokenRange=10:15
@@ -32164,6 +32166,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Kunhã uyuráu-putari igara.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Kunhã	kunhã	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2-3	uyuráu-putari	_	_	_	_	_	_	_	TokenRange=6:19
 2	uyuráu	yuráu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	_
@@ -32185,6 +32188,7 @@
 # text_por_sec_source = Avila (2021)
 # inputline = Yasú yapurakari igarapura.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Yasú	sú	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	2	aux	_	TokenRange=0:4
 2	yapurakari	purakari	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=5:15
 3	igarapura	igarapura	NOUN	N	Number=Sing	2	obj	_	SpaceAfter=No|TokenRange=16:25
