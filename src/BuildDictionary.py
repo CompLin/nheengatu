@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 11, 2025
+# Last update: October 22, 2025
 
 import re, sys, os, json
 
@@ -358,54 +358,6 @@ def parseprefs1(stem):
             i=len(k)
     return l
 
-def parseprefs0(word,lexicon):
-    prefs={ 'yu' : 'REFL',
-       'mu' : 'CAUS'}
-    i=0
-    l=[]
-    new={}
-    new['pos']='V'
-    persnum=getpersnum()
-    for k,v in persnum.items():
-        if word[i:].startswith(k):
-            i=len(k)
-            parts=v.split('+')
-            new['person']=parts[0]
-            if len(parts) == 2:
-                new['number']=parts[1]
-            break
-    for k,v in prefs.items():
-        print(f"k {k}, v {v}, i {i}, {word[i:]}")
-        if word[i:].startswith(k):
-            i+=len(k)
-            parses=lexicon.get(word[i:])
-            if parses:
-                entries=extract_feats(parses)
-                new['lemma']=entries[0].get('lemma')
-                print(f"v {v}")
-                if v == 'REFL':
-                    new['pref']=v
-                return new
-            l.append(v)
-            i+=len(k)
-    new['lemma']=word[i:]
-    new['pref']='+'.join(l)
-    return new
-
-def parsepersnum(word,entry):
-    i=0
-    persnum=getpersnum()
-    for k,v in persnum.items():
-        if word[i:].startswith(k):
-            i=len(k)
-            entry['lemma']=word[i:]
-            parts=v.split('+')
-            entry['person']=parts[0]
-            if len(parts) == 2:
-                entry['number']=parts[1]
-            break
-    return i
-
 def parseprefs(word,lexicon):
     prefs={ 'yu' : 'REFL',
        'mu' : 'CAUS'}
@@ -545,6 +497,8 @@ def conjugateVerb(lemma,pos='V'):
     elif lemma == 'sú':
         forms.update(conjugateIrrImp())
     for pref,tag in persnum.items():
+        if pref == 'ha' and lemma.startswith('u'):
+            pref='h'
         forms.add(f"{pref}{lemma}\t{lemma}+{pos}+{tag}")
     includeInfinitive(pos,lemma,forms)
     return forms
