@@ -32893,14 +32893,15 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Taína unheẽ wã, aíwa-aíwa/v2 kuíri.
+# inputline = Taína unheẽ wã, aíwa-aíwa/a kuíri.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1	Taína	taína	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:5
 2	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=6:11
 3	wã	wã	PART	PFV	Aspect=Perf	2	advmod	_	SpaceAfter=No|TokenRange=12:14
-4	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=14:15
-5	aíwa-aíwa	aíwa	VERB	V2	Mood=Ind|Red=Yes|VerbForm=Fin	2	parataxis	_	TokenRange=16:25
-6	kuíri	kuíri	ADV	ADVT	AdvType=Tim	5	advmod	_	SpaceAfter=No|TokenRange=26:31
+4	,	,	PUNCT	PUNCT	_	2	punct	_	TokenRange=14:15
+5	aíwa-aíwa	aíwa	ADJ	A	Red=Yes	2	advcl	_	TokenRange=16:25
+6	kuíri	kuíri	ADV	ADVT	AdvType=Tim	2	advmod	_	SpaceAfter=No|TokenRange=26:31
 7	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=31:32
 
 # sent_id = Hartt1938:0:0:654
@@ -32961,21 +32962,22 @@
 6	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Hartt1938:0:0:657
-# text = Xanheẽ-putari ne irũ.
+# text = Xanheẽ-putari ne rũ.
 # text_por = Eu quero falar contigo.
 # text_source = p. 366, No. 657
 # text_orig = xañeén putár nerúm.
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xanheẽ-putari ne irũ/adp.
+# inputline = Xanheẽ-putari ne rũ/=typo:c|irũ:x|adp.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xanheẽ-putari	_	_	_	_	_	_	_	TokenRange=0:13
 1	Xanheẽ	nheẽ	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	0	root	_	ModernForm=Anheẽ
 2	putari	putari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
 3	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	obl	_	TokenRange=14:16
-4	irũ	irũ	ADP	ADP	AdpType=Post	3	case	_	SpaceAfter=No|TokenRange=17:20
-5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=20:21
+4	rũ	irũ	ADP	ADP	AdpType=Post|Typo=Yes	3	case	_	CorrectForm=irũ|SpaceAfter=No|TokenRange=17:19
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=19:20
 
 # sent_id = Hartt1938:0:0:658
 # text = Xayumué-kari putari asuí yayumusarái arama yapurasái arama.
@@ -32987,6 +32989,7 @@
 # text_por_modernizer = Antônio Levy Melo Nogueira
 # inputline = Xayumué-kari putari/=mf:m|xaputari asuí/advt yayumusarái arama/sconj yapurasái arama/sconj.
 # text_annotator = Dominick Maia Alexandre
+# reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xayumué-kari	_	_	_	_	_	_	_	TokenRange=0:12
 1	Xayumué	yumué	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	xcomp	_	ModernForm=Ayumué
 2	kari	kari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
@@ -32994,7 +32997,7 @@
 4	asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=20:24
 5	yayumusarái	yumusarái	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=25:36
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=37:42
-7	yapurasái	purasái	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	5	advcl	_	TokenRange=43:52
+7	yapurasái	purasái	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	5	conj	_	TokenRange=43:52
 8	arama	arama	SCONJ	SCONJ	_	7	mark	_	SpaceAfter=No|TokenRange=53:58
 9	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=58:59
 
