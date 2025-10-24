@@ -1679,6 +1679,25 @@
 23	upé	upé	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=135:138
 24	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=138:139
 
+# sent_id = NTLN:4-12:2:202
+# text = Siya uka se paya retama upé.
+# text_eng = TODO
+# text_por = Na casa de meu Pai há muitas moradas.
+# text_por_source = ARA
+# text_eng = in the house of my Father are many mansions;
+# text_eng_source = YLT98
+# text_source = Novo Testamento na língua nyengatu, John 14:2
+# text_orig = Siya uka sepaya retama upe.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Siya uka se paya retama upé/adp.
+1	Siya	siya	DET	INDQ	PronType=Ind	2	det	_	TokenRange=0:4
+2	uka	uka	NOUN	N	Number=Sing|Rel=Abs	5	nsubj	_	TokenRange=5:8
+3	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	4	nmod:poss	_	TokenRange=9:11
+4	paya	paya	NOUN	N	Number=Sing	5	nmod:poss	_	TokenRange=12:16
+5	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=17:23
+6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=24:27
+7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
