@@ -33007,13 +33007,13 @@
 # text_eng = TODO
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# inputline = Xayumué-kari putari/=mf:m|xaputari asuí/advt yayumusarái arama/sconj yapurasái arama/sconj.
+# inputline = Xayumué-kari putari/=mf:m|aputari asuí/advt yayumusarái arama/sconj yapurasái arama/sconj.
 # text_annotator = Dominick Maia Alexandre
 # reviewer1 = Leonel Figueiredo de Alencar
 1-2	Xayumué-kari	_	_	_	_	_	_	_	TokenRange=0:12
 1	Xayumué	yumué	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	3	xcomp	_	ModernForm=Ayumué
 2	kari	kari	AUX	AUXN	Compound=Yes|VerbForm=Inf	1	aux	_	_
-3	putari	putari	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=xaputari|ModernMood=Ind|ModernNumber=Sing|ModernPerson=1|ModernStyle=Arch|ModernVerbForm=Fin|TokenRange=13:19
+3	putari	putari	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=aputari|ModernMood=Ind|ModernNumber=Sing|ModernPerson=1|ModernStyle=Arch|ModernVerbForm=Fin|TokenRange=13:19
 4	asuí	asuí	ADV	ADVT	AdvType=Tim	5	advmod	_	TokenRange=20:24
 5	yayumusarái	yumusarái	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	advcl	_	TokenRange=25:36
 6	arama	arama	SCONJ	SCONJ	_	5	mark	_	TokenRange=37:42
