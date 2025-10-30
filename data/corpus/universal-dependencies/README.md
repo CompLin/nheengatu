@@ -5,37 +5,44 @@ The [UD_Nheengatu-CompLin](https://aclanthology.org/2024.propor-2.8) is a treeba
 
 # Introduction
 
-To our knowledge, this is the first treebank of Nheengatu. It is a work in progress. The initial release only contained a couple hundred sentences. This new release encompasses more than nine times that number. We plan to continually expand the resource in the next months.
+This is the first morphosyntactic treebank of Nheengatu. It is a work in progress. The initial release only contained a couple hundred sentences. This new release encompasses more than 13 times that number. We plan to continually expand the resource in the next months.
 
-The treebank comprises sentences from diverse published sources freely available on the Internet, e.g., grammatical descriptions, fables, coursebooks, and dictionaries. The sentences were either extracted from PDF text files, transcribed from non-searchable (image-only) PDF files, or manually converted to orthography from phonetic transcriptions. Throughout the treebank, we use the spelling system proposed by Avila (2021). The annotation was performed semi-automatically, i.e., we first applied the Yauti morphosyntactic analyzer (de Alencar 2023) to each sentence and then manually revised the output.
+The treebank comprises sentences from diverse published sources freely available on the Internet, e.g., grammatical descriptions, fables, myths, coursebooks, and dictionaries. The sentences were either extracted from PDF text files, transcribed from non-searchable (image-only) PDF files, or manually converted to orthography from phonetic transcriptions. Throughout the treebank, we mostly use the spelling system proposed by Avila (2021), only diverging from this in a few instances. The annotation was performed semi-automatically, i.e., we first applied the Yauti morphosyntactic analyzer (de Alencar 2023, 2025) to each sentence and then manually revised the output.
 
-The development of this treebank and related tools and resources is part of the research activities of the Research Group on Computation and Natural Language (*Computação e Linguagem Natural* — CompLin) at the Humanities Center of the Federal University of Ceará in Brazil. The main contributor to this effort is Leonel Figueiredo de Alencar, coordinator of the CompLin group. Additional annotators include Dominick Maia Alexandre, Hélio Leonam Barroso Silva, and Juliana Lopes Gurgel, scholarship holder with the [DACILAT](https://bv.fapesp.br/57063) project, funded by the São Paulo State Research Support Foundation (*Fundação de Amparo à Pesquisa do Estado de São Paulo* — FAPESP) under Process No. 22/09158-5.
+The development of this treebank and related tools and resources is part of the research activities of the Research Group on Computation and Natural Language (*Computação e Linguagem Natural* — CompLin) at the Humanities Center of the Federal University of Ceará in Brazil. The main contributor to this effort is Leonel Figueiredo de Alencar, coordinator of the CompLin group. Additional annotators include Dominick Maia Alexandre, Hélio Leonam Barroso Silva, and Juliana Lopes Gurgel, who was scholarship holder with the [DACILAT](https://bv.fapesp.br/57063) project, funded by the São Paulo State Research Support Foundation (*Fundação de Amparo à Pesquisa do Estado de São Paulo* — FAPESP) under Process No. 22/09158-5.
 
-The following repository contains the most update development version of the treebank as well as related tools and resources:
+The following repository contains the most up-to-date development version of the treebank as well as related tools and resources:
 
 https://github.com/CompLin/nheengatu
 
-So far, the treebank includes examples from Seixas (1853), Magalhães (1876), Sympson (1877), Rogrigues (1890), Aguiar (1898), Costa (1909), Studart (1926), Amorim (1928), Hartt (1938), Moore, Facundes, and Pires (1994), Casasnovas (2006), Cruz (2011), Comunidade de Terra Preta (2013), Stradelli (1929/2014), Navarro (2016), Muller et al. (2019), Alencar (2021), Avila (2021), and Melgueiro (2022) as well as from the New Testament (*Novo Testamento na língua Nyengatu*, 1973/2019).
+So far, the treebank includes examples from Seixas (1853), Hartt (1872), Magalhães (1876), Sympson (1877), Rogrigues (1890), Aguiar (1898), Costa (1909), Studart (1926), Amorim (1928), Hartt (1938), Moore, Facundes, and Pires (1994), Casasnovas (2006), Cruz (2011), Comunidade de Terra Preta (2013), Stradelli (1929/2014), Navarro (2016), Melgueiro, Câmara, and Martins (2019), Muller et al. (2019), Alencar (2021), Avila (2021), and Melgueiro (2022) as well as from the New Testament (*Novo Testamento na língua Nyengatu*, 1973/2019) and from issues 3 and 17 of the *Leetra Indígena* journal (Universidade Federal de São Carlos, 2014, 2015).
 
 # How to cite
 If use any of the tools and resources of this repository, please cite the following papers accordingly:
 
 ## ACM reference format:
 
-Leonel Figueiredo de Alencar. 2024. [A Universal Dependencies Treebank for Nheengatu](https://aclanthology.org/2024.propor-2.8). In Proceedings of the 16th International Conference on Computational Processing of Portuguese - Vol. 2, pages 37–54, Santiago de Compostela, Galicia/Spain. Association for Computational Lingustics.
+Leonel Figueiredo de Alencar. 2025. Enhancing a Nheengatu Morphosyntactic Analyzer for Word Formation and Non-standard Language. In *Anais do XVI Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana*, setembro 29, 2025, Fortaleza/CE, Brasil. SBC, Porto Alegre, Brasil, 13-28. DOI: https://doi.org/10.5753/stil.2025.37810.
 
-Leonel Figueiredo de Alencar. 2024. Aspectos da construção de um corpus sintaticamente anotado do nheengatu no modelo Dependências Universais. _Texto Livre_. 17, (ago. 2024), e52653. DOI:https://doi.org/10.1590/1983-3652.2024.52653.
+Leonel Figueiredo de Alencar. 2024. [A Universal Dependencies Treebank for Nheengatu](https://aclanthology.org/2024.propor-2.8). In Proceedings of the 16th International Conference on Computational Processing of Portuguese - Vol. 2, pages 37–54, Santiago de Compostela, Galicia/Spain. Association for Computational Linguistics.
+
+Leonel Figueiredo de Alencar. 2024. Aspectos da construção de um corpus sintaticamente anotado do nheengatu no modelo Dependências Universais. *Texto Livre*. 17, (ago. 2024), e52653. DOI:https://doi.org/10.1590/1983-3652.2024.52653.
 
 Leonel Figueiredo de Alencar. 2023. [Yauti: A Tool for Morphosyntactic Analysis of Nheengatu within the Universal Dependencies Framework](https://doi.org/10.5753/stil.2023.234131). In *Anais do XIV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana*, setembro 25, 2023, Belo Horizonte/MG, Brasil. SBC, Porto Alegre, Brasil, 135-145. DOI: https://doi.org/10.5753/stil.2023.234131.
 
 ## APA reference format:
-de Alencar, L. F. (2024). A Universal Dependencies Treebank for Nheengatu. In P. Gamallo, D. Claro, A. J. S. Teixeira, L. Real, M. García, H. G. Oliveira, & R. Amaro (Eds.), _Proceedings of the 16th International Conference on Computational Processing of Portuguese, PROPOR 2024, Santiago de Compostela, Galicia/Spain, 12-15 March, 2024_ (Vol. 2, pp. 37-54). Association for Computational Linguistics. https://aclanthology.org/2024.propor-2.8
 
-de Alencar, L. F. (2024). Aspectos da construção de um corpus sintaticamente anotado do nheengatu no modelo Dependências Universais. _Texto Livre_, 17, e52653. https://doi.org/10.1590/1983-3652.2024.52653
+de Alencar, L. F. (2025). Enhancing a Nheengatu Morphosyntactic Analyzer for Word Formation and Non-standard Language. In *Anais do XVI Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana*, (pp. 13-28). Porto Alegre: SBC. doi:10.5753/stil.2025.37810
 
-de Alencar, L. F. (2023). Yauti: A Tool for Morphosyntactic Analysis of Nheengatu within the Universal Dependencies Framework. In _Anais do XIV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana_, (pp. 135-145). Porto Alegre: SBC. doi:10.5753/stil.2023.234131
+de Alencar, L. F. (2024). A Universal Dependencies Treebank for Nheengatu. In P. Gamallo, D. Claro, A. J. S. Teixeira, L. Real, M. García, H. G. Oliveira, & R. Amaro (Eds.), *Proceedings of the 16th International Conference on Computational Processing of Portuguese, PROPOR 2024, Santiago de Compostela, Galicia/Spain, 12-15 March, 2024* (Vol. 2, pp. 37-54). Association for Computational Linguistics. https://aclanthology.org/2024.propor-2.8
+
+de Alencar, L. F. (2024). Aspectos da construção de um corpus sintaticamente anotado do nheengatu no modelo Dependências Universais. *Texto Livre*, 17, e52653. https://doi.org/10.1590/1983-3652.2024.52653
+
+de Alencar, L. F. (2023). Yauti: A Tool for Morphosyntactic Analysis of Nheengatu within the Universal Dependencies Framework. In *Anais do XIV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana*, (pp. 135-145). Porto Alegre: SBC. doi:10.5753/stil.2023.234131
 
 ## ABNT reference format:
+
+ALENCAR, Leonel Figueiredo de. Enhancing a Nheengatu Morphosyntactic Analyzer for Word Formation and Non-standard Language. In: SIMPÓSIO BRASILEIRO DE TECNOLOGIA DA INFORMAÇÃO E DA LINGUAGEM HUMANA (STIL), 16. , 2025, Fortaleza/CE. *Anais* [...]. Porto Alegre: Sociedade Brasileira de Computação, 2025 . p. 13-28. DOI: https://doi.org/10.5753/stil.2025.37810.
 
 ALENCAR, Leonel Figueiredo de. A Universal Dependencies Treebank for Nheengatu. In: GAMALLO, Pablo; CLARO, Daniela; TEIXEIRA, António J. S.; REAL, Livy; GARCÍA, Marcos; OLIVEIRA, Hugo Gonçalo; AMARO, Raquel (Eds.). *Proceedings of the 16th International Conference on Computational Processing of Portuguese, PROPOR 2024, Santiago de Compostela, Galicia/Spain, 12-15 March, 2024.* Stroudsburg, PA, USA: Association for Computational Linguistics, 2024. v. 2, p. 37-54. Available at: https://aclanthology.org/2024.propor-2.8.
 
@@ -44,6 +51,21 @@ ALENCAR, Leonel Figueiredo de. Aspectos da construção de um corpus sintaticame
 ALENCAR, Leonel Figueiredo de. Yauti: A Tool for Morphosyntactic Analysis of Nheengatu within the Universal Dependencies Framework. In: SIMPÓSIO BRASILEIRO DE TECNOLOGIA DA INFORMAÇÃO E DA LINGUAGEM HUMANA (STIL), 14., 2023, Belo Horizonte/MG. **Anais** [...]. Porto Alegre: Sociedade Brasileira de Computação, 2023. p. 135-145. DOI: https://doi.org/10.5753/stil.2023.234131.
 
 ## BibTex reference format:
+
+```bibtex
+@inproceedings{DeAlencar2025,
+ author = {Leonel Figueiredo de Alencar},
+ title = { Enhancing a Nheengatu Morphosyntactic Analyzer for Word Formation and Non-standard Language},
+ booktitle = {Anais do XVI Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana},
+ location = {Fortaleza, Ceará},
+ year = {2025},
+ pages = {13--28},
+ publisher = {SBC},
+ address = {Porto Alegre, RS, Brasil},
+ doi = {10.5753/stil.2025.37810},
+ url = {https://sol.sbc.org.br/index.php/stil/article/view/37810}
+}
+```
 
 ```bibtex
 @inproceedings{DeAlencar2024a,
@@ -104,7 +126,7 @@ ALENCAR, Leonel Figueiredo de. Yauti: A Tool for Morphosyntactic Analysis of Nhe
 
 # Acknowledgments
 
-We thank Eduardo de Almeida Navarro (University of São Paulo) for kindly allowing us to use examples and texts from his coursebook (Navarro 2016), whose glossary was the first basis for the morphological analyzer we implemented to annotate the UD_Nheengatu-CompLin treebank.
+We thank Eduardo de Almeida Navarro (University of São Paulo) for kindly allowing us to use examples and texts from his coursebook (Navarro 2016), whose glossary served as the initial basis for the morphological analyzer we implemented to annotate the UD_Nheengatu-CompLin treebank.
 
 We owe much to Avila (2021)'s dictionary, from which numerous treebank sentences stem. This dictionary also provided invaluable lexical, grammatical, and semantic information for the further development of the morphological analyzer and related treebank annotation tools. We are much obliged to its author, Marcel Twardowsky Avila, for making the XML version of the dictionary available to us and clarifying many questions about the dictionary entries.
 
@@ -126,10 +148,11 @@ Copyright of the treebank sentences and their translations belongs to their resp
 * Comunidade de Terra Preta. (2013). *Fábulas de Terra Preta: Uma coletânea bilingüe*.
 * Costa, D. Frederico. (1909). *Carta pastoral de D. Frederico Costa bispo do Amazonas a seus amados diocesanos*. Typ. Minerva.
 * Cruz, Aline da. (2011). *Fonologia e gramática do nheengatú: A língua falada pelos povos Baré, Warekena e Baniwa*. Netherlands National Graduate School of Linguistics.
-* de Alencar, Leonel Figueiredo. (2021). Uma gramática computacional de um fragmento do nheengatu / A computational grammar for a fragment of Nheengatu. _Revista de Estudos da Linguagem, 29_(3), 1717-1777. doi:http://dx.doi.org/10.17851/2237-2083.29.3.1717-1777
+* de Alencar, Leonel Figueiredo. (2021). Uma gramática computacional de um fragmento do nheengatu / A computational grammar for a fragment of Nheengatu. *Revista de Estudos da Linguagem, 29*(3), 1717-1777. doi:http://dx.doi.org/10.17851/2237-2083.29.3.1717-1777
 * de Amorim, Antonio Brandão. (1928). Lendas em nheêngatú e em portuguez. *Revista do Instituto Historico e Geographico Brasileiro, 154*(100), 9-475.
 * de Magalhães, J. V. C. (1876). *O selvagem*. Typographia da Reforma.
 * Maslova, Irina. (2018). *Tradução Comentada de Mitos e Lendas Amazônicas do Nheengatu para o Russo*. [Master's thesis, University of São Paulo]. doi:10.11606/D.8.2019.tde-22022019-175350
+* Melgueiro, Edilson Martins, Ana Suelly Arruda Câmara, & Martins, Marci Fileti. (2019). Orações relativas em Nheengatú ou Ingatú. *Revista Brasileira de Linguística Antropológica, 11*(2), 16. https://doi.org/10.26512/rbla.v11i02.28115
 * Melgueiro, Edilson Martins. (2022). *O Nheengatu de Stradelli aos dias atuais: uma contribuição aos estudos lexicais de línguas Tupí-Guaraní em perspectiva diacrônica*. [Doctoral dissertation, University of Brasília]. http://repositorio2.unb.br/jspui/handle/10482/44655
 * Moore, Denny, Facundes, Sidney, & Pires, Nádia. (1994). *Nheengatu (Língua Geral Amazônica), its History, and the Effects of Language Contact*. UC Berkeley: Department of Linguistics. Retrieved from https://escholarship.org/uc/item/7tb981s1
 * Muller, Jean-Claude, Dietrich, Wolf, Monserrat, Ruth, Barros, Cândida, Arenz, Karl-Heinz, & Prudente, Gabriel. (Eds.). (2019). *Dicionário De Língua Geral Amazônica*. Universitätsverlag Potsdam; Museu Paraense Emilio Goeldi.
@@ -141,6 +164,10 @@ Copyright of the treebank sentences and their translations belongs to their resp
 Here is the BibTeX entry formatted according to APA style:
 * Studart, Jorge. (1926). Ligeiras noções de língua geral. *Revista do Instituto do Ceará, 40*, 26–38.
 * Sympson, Pedro Luiz. *Grammatica da lingua brazilica geral, fallada pelos aborigines das provincias do Pará e Amazonas*. Typographia do Commercio do Amazonas, 1877.
+* Universidade Federal de São Carlos. Laboratório de Linguagens LEETRA. (2014). *Leetra Indígena, 3*(3) [Edição especial: Yasú Yapurũgtitá Yẽgatú]. São Carlos, SP: Universidade Federal de São Carlos.
+* Universidade Federal de São Carlos. Laboratório de Linguagens LEETRA. (2015). *Leetra Indígena, 1*(17) [Edição especial: Escola Kariamã conta umbuesá]. São Carlos, SP: Universidade Federal de São Carlos.
+
+
 
 # Changelog
 
@@ -153,6 +180,7 @@ Here is the BibTeX entry formatted according to APA style:
 Data available since: UD v2.11
 License: CC BY-NC-SA 4.0
 Includes text: yes
+Parallel: no
 Genre: spoken bible fiction nonfiction grammar-examples
 Lemmas: manual native
 UPOS: manual native
