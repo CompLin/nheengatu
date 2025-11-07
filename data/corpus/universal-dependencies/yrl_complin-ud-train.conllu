@@ -1679,7 +1679,8 @@
 23	upé	upé	ADP	ADP	AdpType=Post	22	case	_	SpaceAfter=No|TokenRange=135:138
 24	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=138:139
 
-# sent_id = NTLN:4-12:2:202
+# sent_id = NTLN2019:4-12:2:202
+# alt_id = NTLN:4-12:2:202
 # text = Siya uka se paya retama upé.
 # text_eng = TODO
 # text_por = Na casa de meu Pai há muitas moradas.
@@ -1697,6 +1698,50 @@
 5	retama	tetama	NOUN	N	Number=Sing|Rel=Cont	0	root	_	TokenRange=17:23
 6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=24:27
 7	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=27:28
+
+# sent_id = NLTN2019:4-12:6:206
+# text = Asuí Jesus unheẽ i xupé: — Ixé té kwá peé, ixé té kwá supí waá, ixé té kwá sikwesawa, ti awá umaã se paya piri ti ramé maã harasú aé.
+# text_eng = TODO
+# text_por = Respondeu Jesus: — Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai, a não ser por mim.
+# text_source = Novo Testamento na língua nyengatu, John 14:6
+# text_orig = Asui Jesus unyee ixupe: — Ixete kua pee, ixete kua supiwa, ixete kua sikuesawa, tiawa umaa sepaya piri tirame maa harasu ae.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Asuí/advt Jesus unheẽ i/pron2 xupé: — Ixé té/foc kwá/demx peé, ixé té/foc kwá/demx supí/n waá/rel, ixé té/foc kwá/demx sikwesawa/ncont, ti awá/ind umaã se paya piri/adp ti ramé/sconj maã/cond harasú aé/pron.
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
+2	Jesus	jesus	PROPN	PROPN	_	3	nsubj	_	TokenRange=5:10
+3	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=11:16
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	iobj	_	TokenRange=17:18
+5	xupé	xupé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=19:23
+6	:	:	PUNCT	PUNCT	_	11	punct	_	TokenRange=23:24
+7	—	—	PUNCT	PUNCT	_	11	punct	_	TokenRange=25:26
+8	Ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	TokenRange=27:30
+9	té	té	PART	FOC	Foc=Yes|PartType=Emp	8	advmod	_	TokenRange=31:33
+10	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	11	det	_	TokenRange=34:37
+11	peé	peé	NOUN	N	Number=Sing|Rel=Abs	3	ccomp	_	SpaceAfter=No|TokenRange=38:41
+12	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=41:42
+13	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	TokenRange=43:46
+14	té	té	PART	FOC	Foc=Yes|PartType=Emp	13	advmod	_	TokenRange=47:49
+15	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	11	conj	_	TokenRange=50:53
+16	supí	supí	NOUN	N	Number=Sing	11	acl:relcl	_	TokenRange=54:58
+17	waá	waá	PRON	REL	Number=Sing|PronType=Rel	16	nsubj	_	SpaceAfter=No|TokenRange=59:62
+18	,	,	PUNCT	PUNCT	_	22	punct	_	TokenRange=62:63
+19	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	22	nsubj	_	TokenRange=64:67
+20	té	té	PART	FOC	Foc=Yes|PartType=Emp	19	advmod	_	TokenRange=68:70
+21	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	22	det	_	TokenRange=71:74
+22	sikwesawa	sikwesawa	NOUN	N	Number=Sing|Number[psor]=Sing|Person[psor]=3|Rel=NCont	11	conj	_	SpaceAfter=No|TokenRange=75:84
+23	,	,	PUNCT	PUNCT	_	26	punct	_	TokenRange=84:85
+24	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	26	advmod	_	TokenRange=86:88
+25	awá	awá	PRON	IND	PronType=Ind	26	nsubj	_	TokenRange=89:92
+26	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=93:97
+27	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	28	nmod:poss	_	TokenRange=98:100
+28	paya	paya	NOUN	N	Number=Sing	26	obl	_	TokenRange=101:105
+29	piri	piri	ADP	ADP	AdpType=Post	28	case	_	TokenRange=106:110
+30	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	33	advmod	_	TokenRange=111:113
+31	ramé	ramé	SCONJ	SCONJ	_	33	mark	_	TokenRange=114:118
+32	maã	maã	PART	COND	Modality=Cond|PartType=Mod	33	advmod	_	TokenRange=119:122
+33	harasú	rasú	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	26	advcl	_	TokenRange=123:129
+34	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	33	obj	_	SpaceAfter=No|TokenRange=130:132
+35	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=132:133
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
@@ -32530,7 +32575,7 @@
 4	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=15:16
 
 # sent_id = Hartt1938:0:0:635-1
-# id_alt = Hartt1938:0:0:635
+# alt_id = Hartt1938:0:0:635
 # text = Xasú ranhẽ amú uka upé.
 # text_por = Deixa-me ir a uma outra casa.
 # text_source = p. 365, No. 635
