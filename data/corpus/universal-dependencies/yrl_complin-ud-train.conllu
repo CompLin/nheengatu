@@ -1745,6 +1745,57 @@
 34	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	33	obj	_	SpaceAfter=No|TokenRange=130:132
 35	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=132:133
 
+# sent_id = NTLN2019:1-6:6:6
+# text = Ma indé repurandú ramé Deus irumu rewiké ne rukapí kití resikindawa asuí repurandú ne paya irumu uyumimisawa upé, asuí wana kurí ne paya umaã waá indé uyumimisawa upé uxari kurí indé arama kwá repurandú waá irumu.
+# text_eng = But when you pray, go into your room, close the door and pray to your Father, who is unseen. Then your Father, who sees what is done in secret, will reward you.
+# text_eng_source = NIV
+# text_por = Mas, quando você orar, vá para seu quarto, feche a porta e ore a seu Pai, que está em secreto. Então seu Pai, que vê em secreto, o recompensará.
+# text_por_source = NVI
+# text_por_alt = Mas você, quando orar, vá para o seu quarto, feche a porta e ore ao seu Pai, que não pode ser visto. E o seu Pai, que vê o que você faz em segredo, lhe dará a recompensa. 
+# text_por_alt_source = NTLH
+# text_source = Novo Testamento na língua nyengatu, Mt 6:6
+# text_orig = Maa inde repurandu rame Deus irumu rewike nerukapi kiti resikindawa asui repurandu nepaya irumu uyumimisawa upe, asuiwana kuri nepaya umaawaa inde uyumimisawa upe uxari kuri inde arama kua repuranduwaa irumu.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Ma/advp indé repurandú ramé/sconj Deus/=p irumu/adp rewiké ne rukapí kití resikindawa asuí/cconj repurandú ne paya irumu/adp uyumimisawa/=vnoun upé/adp, asuí/advt wana kurí ne paya umaã waá/rel indé uyumimisawa/=vnoun upé/adp uxari kurí indé arama/adp kwá/demx repurandú waá/rel irumu/adp.
+1	Ma	ma	ADV	ADVP	AdvType=Con	3	advmod	_	TokenRange=0:2
+2	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	TokenRange=4:8
+3	repurandú	purandú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	7	advcl	_	TokenRange=9:18
+4	ramé	ramé	SCONJ	SCONJ	_	3	mark	_	TokenRange=19:23
+5	Deus	deus	PROPN	PROPN	_	3	obl	_	TokenRange=24:28
+6	irumu	irumu	ADP	ADP	AdpType=Post	5	case	_	TokenRange=29:34
+7	rewiké	wiké	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	TokenRange=35:41
+8	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=42:44
+9	rukapí	ukapí	NOUN	N	Number=Sing|Rel=Cont	7	obl	_	TokenRange=45:51
+10	kití	kití	ADP	ADP	AdpType=Post	9	case	_	TokenRange=52:56
+11	resikindawa	sikindawa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	7	parataxis	_	TokenRange=57:68
+12	asuí	asuí	CCONJ	CCONJ	_	13	cc	_	TokenRange=69:73
+13	repurandú	purandú	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	7	conj	_	TokenRange=74:83
+14	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	15	nmod:poss	_	TokenRange=84:86
+15	paya	paya	NOUN	N	Number=Sing	13	obl	_	TokenRange=87:91
+16	irumu	irumu	ADP	ADP	AdpType=Post	15	case	_	TokenRange=92:97
+17	uyumimisawa	yumimi	VERB	V	Person=3|VerbForm=Vnoun	13	obl	_	TokenRange=98:109
+18	upé	upé	ADP	ADP	AdpType=Post	17	case	_	SpaceAfter=No|TokenRange=110:113
+19	,	,	PUNCT	PUNCT	_	30	punct	_	TokenRange=113:114
+20	asuí	asuí	CCONJ	CCONJ	_	30	cc	_	TokenRange=115:119
+21	wana	wana	PART	PFV	Aspect=Perf	30	advmod	_	TokenRange=120:124
+22	kurí	kurí	PART	FUT	Tense=Fut	30	advmod	_	TokenRange=125:129
+23	ne	ne	PRON	PRON2	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	24	nmod:poss	_	TokenRange=130:132
+24	paya	paya	NOUN	N	Number=Sing	30	nsubj	_	TokenRange=133:137
+25	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	24	acl:relcl	_	TokenRange=138:142
+26	waá	waá	PRON	REL	Number=Sing|PronType=Rel	25	nsubj	_	TokenRange=143:146
+27	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	26	obj	_	TokenRange=147:151
+28	uyumimisawa	yumimi	VERB	V	Person=3|VerbForm=Vnoun	25	obl	_	TokenRange=152:163
+29	upé	upé	ADP	ADP	AdpType=Post	28	case	_	TokenRange=164:167
+30	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	13	conj	_	TokenRange=168:173
+31	kurí	kurí	PART	FUT	Tense=Fut	30	advmod	_	TokenRange=174:178
+32	indé	indé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=2|PronType=Prs	30	iobj	_	TokenRange=179:183
+33	arama	arama	ADP	ADP	AdpType=Post	32	case	_	TokenRange=184:189
+34	kwá	kwá	PRON	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	30	obj	_	TokenRange=190:193
+35	repurandú	purandú	VERB	V	Mood=Ind|Number=Sing|Person=2|VerbForm=Fin	34	acl:relcl	_	TokenRange=194:203
+36	waá	waá	PRON	REL	Number=Sing|PronType=Rel	35	obl	_	TokenRange=204:207
+37	irumu	irumu	ADP	ADP	AdpType=Post	36	case	_	SpaceAfter=No|TokenRange=208:213
+38	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=213:214
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
