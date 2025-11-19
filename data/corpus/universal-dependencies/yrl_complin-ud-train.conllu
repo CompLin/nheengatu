@@ -19840,7 +19840,11 @@
 # title_orig = MIRA MANAU: I: PIRIPIRIOKA IYPYRUNGAUA
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
-# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_translator = Leonel Figueiredo de Alencar
+# text_sec = Apigawa-itá uyupirú uyawáu ana i suí, unheẽ aé urikú kururú pixé, [...].
+# text_por_sec = Os homens começaram a fugir dela, diziam que ela tinha pixé de sapo, [...].
+# text_sec_source = Avila (2021)
+# text_por_sec_source = Avila (2021)
 # inputline = Mayawé/sconjr Puráe/=p intí urikú piripiriáka, aé/pron intí sakwena/a amú/ind kunhamukú-etá yawé/adp.
 # text_annotator = Leonel Figueiredo de Alencar
 1	Mayawé	mayawé	SCONJ	SCONJR	_	4	mark	_	TokenRange=0:6
@@ -19856,6 +19860,38 @@
 11	kunhamukú-etá	kunhamukú	NOUN	N	Number=Plur	9	obl	_	TokenRange=57:70
 12	yawé	yawé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=71:75
 13	.	.	PUNCT	PUNCT	_	9	punct	_	SpaceAfter=No|TokenRange=75:76
+
+# sent_id = Amorim1928:5:287:287
+# text = Apigawa-etá uyupirú uyawáu ana aé suí, unheẽ aé urikú kururú pixé, i katú kururú rimirikú arama nhuntu.
+# text_por = Os homens começaram a fugir dela, disseram que ela tinha fedor de sapo, era boa apenas para ser esposa de sapo.
+# text_source = p. 117-130, No. 287
+# text_orig = Apigáuaetá oiypýru oiauáu ána aé suy, onheen aé oriku kururu pixé, ikatu kururu remireku aráma nhúnto.
+# title_orig = MIRA MANAU: I: PIRIPIRIOKA IYPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_translator = Leonel Figueiredo de Alencar
+# inputline = Apigawa-etá uyupirú uyawáu ana aé/=mf:m|i:x|pron2:h|pron suí/adp, unheẽ aé/pron urikú kururú pixé/n, i/pron2 katú/v2 kururú rimirikú arama/sconj nhuntu.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Apigawa-etá	apigawa	NOUN	N	Number=Plur	2	nsubj	_	TokenRange=0:11
+2	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:19
+3	uyawáu	yawáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	xcomp	_	TokenRange=20:26
+4	ana	ana	PART	PFV	Aspect=Perf	3	advmod	_	TokenRange=27:30
+5	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs|Style=Arch	3	obl	_	ModernCase=Gen|ModernForm=i|ModernLemma=i|TokenRange=31:33
+6	suí	suí	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=34:37
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=37:38
+8	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=39:44
+9	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	TokenRange=45:47
+10	urikú	rikú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	8	ccomp	_	TokenRange=48:53
+11	kururú	kururú	NOUN	N	Number=Sing	12	nmod:poss	_	TokenRange=54:60
+12	pixé	pixé	NOUN	N	Number=Sing	10	obj	_	SpaceAfter=No|TokenRange=61:65
+13	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=65:66
+14	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	TokenRange=67:68
+15	katú	katú	VERB	V2	Mood=Ind|VerbForm=Fin	10	conj	_	TokenRange=69:73
+16	kururú	kururú	NOUN	N	Number=Sing	17	nmod:poss	_	TokenRange=74:80
+17	rimirikú	simirikú	NOUN	N	Number=Sing|Rel=Cont	15	advcl	_	TokenRange=81:89
+18	arama	arama	SCONJ	SCONJ	_	17	mark	_	TokenRange=90:95
+19	nhuntu	nhuntu	ADV	ADV	_	17	advmod	_	SpaceAfter=No|TokenRange=96:102
+20	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=102:103
 
 # sent_id = Amorim1928:6-1:350:350
 # text = Supí, paá, usendú kirirí Puráe nheenga, mairamé Puráe umbawa aé unheẽ: — Eẽ, Puráe, puranga maã renheẽ waá, intí xasendú indé maãresé se piá apekatú uikú kwá suí.
