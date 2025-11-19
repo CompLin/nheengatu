@@ -20080,8 +20080,8 @@
 # text_por_part1 = Poronominare, contam, disse:
 # text_por_part2 = Meu avô, se é certo o que tu estás contando para mim, eu fico contigo para te ajudar a matar Poronominare.
 # text_por_orig = Meu avô, si é certo o que tu estás contando para mim, eu fico comtigo para te ajudar a matar Poronominare.
-# text_source = p. 160, No. 238-239
 # text_por_orig_source = p. 140, No. 238
+# text_source = p. 160, No. 238-239
 # text_orig = Poronominare, paa, onheen: — Se ramunha, isupi ramé maa rembeú reiku ixé arama xapytá ndé irumo xapytymu arama ndé reiuká Poronominare.
 # title_orig = MIRA BARÉ: PORONOMINARE
 # text_eng = TODO
@@ -20117,6 +20117,28 @@
 25	reyuká	yuká	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	24	xcomp	_	TokenRange=117:123
 26	Poronominare	poronominare	PROPN	PROPN	_	25	obj	_	SpaceAfter=No|TokenRange=124:136
 27	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=136:137
+
+# sent_id = Amorim1928:6:337-338:337-338
+# text = Poronominare usuaxara: — Xaputari.
+# text_por = Poronominare respondeu: — Eu quero.
+# text_por_part1 = Poronominare respondeu:
+# text_por_part2 = Eu quero.
+# text_por_orig = Eu quero.
+# text_por_orig_source = p. 143, No. 336
+# text_source = p. 164, No. 337-338
+# text_orig = Poronominare osuaixara: — Xaputare.
+# title_orig = MIRA BARÉ: PORONOMINARE
+# text_eng = TODO
+# text_por_part2_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_part1_translator = Leonel Figueiredo de Alencar
+# inputline = Poronominare usuaxara: — Xaputari.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Poronominare	poronominare	PROPN	PROPN	_	2	nsubj	_	TokenRange=0:12
+2	usuaxara	suaxara	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=13:21
+3	:	:	PUNCT	PUNCT	_	5	punct	_	TokenRange=21:22
+4	—	—	PUNCT	PUNCT	_	5	punct	_	TokenRange=23:24
+5	Xaputari	putari	VERB	V	Mood=Ind|Number=Sing|Person=1|Style=Arch|VerbForm=Fin	2	ccomp	_	ModernForm=Aputari|SpaceAfter=No|TokenRange=25:33
+6	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=33:34
 
 # sent_id = Amorim1928:10:18:18
 # text = Amurupí paá aintá usaã ana aintá piá.
