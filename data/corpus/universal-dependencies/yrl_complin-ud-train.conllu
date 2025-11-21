@@ -19835,6 +19835,7 @@
 # sent_id = Amorim1928:5:286:286
 # text = Mayawé Puráe intí urikú piripiriáka, aé intí sakwena amú kunhamukú-etá yawé.
 # text_por = Como Purae não tinha piripirioca, ela não era cheirosa como as outras moças.
+# text_por_orig = None
 # text_source = p. 117-130, No. 286
 # text_orig = Maáiaué Puráe nty oriku piripirióka, aé nty sakuéna amu kunhãmukuetá iaué.
 # title_orig = MIRA MANAU: I: PIRIPIRIOKA IYPYRUNGAUA
@@ -19864,6 +19865,7 @@
 # sent_id = Amorim1928:5:287:287
 # text = Apigawa-etá uyupirú uyawáu ana aé suí, unheẽ aé urikú kururú pixé, i katú kururú rimirikú arama nhuntu.
 # text_por = Os homens começaram a fugir dela, disseram que ela tinha fedor de sapo, era boa apenas para ser esposa de sapo.
+# text_por_orig = None
 # text_source = p. 117-130, No. 287
 # text_orig = Apigáuaetá oiypýru oiauáu ána aé suy, onheen aé oriku kururu pixé, ikatu kururu remireku aráma nhúnto.
 # title_orig = MIRA MANAU: I: PIRIPIRIOKA IYPYRUNGAUA
@@ -20915,6 +20917,31 @@
 29	tiapusawa	tiapusawa	NOUN	N	Number=Sing	26	obl	_	SpaceAfter=No|TokenRange=135:144
 30	!	!	PUNCT	PUNCT	_	6	punct	_	SpaceAfter=No|TokenRange=144:145
 
+# sent_id = Amorim1928:21:245:245
+# text = Tiapú paá usú uikú, i puranga uyukwáu i membí-etá.
+# text_por = Foi fazendo barulho, bonitos apareceram os seus instrumentos.
+# text_por_orig = None
+# text_source = p. 365, No. 245
+# sent_number_orig = No. 244
+# text_orig = Tŷapu paa osu oiku, ipuranga oiukuau i mimbŷetá.
+# title_orig = TATÁ IÝPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_translator = Leonel Figueiredo de Alencar
+# inputline = Tiapú/v3 paá usú uikú/v, i/pron2 puranga/a uyukwáu i/pron2 membí-etá.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Tiapú	tiapú	VERB	V3	Mood=Ind|Number=Sing|Person=3|Rel=NCont|VerbForm=Fin	0	root	_	TokenRange=0:5
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=6:9
+3	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	1	aux	_	TokenRange=10:13
+4	uikú	ikú	AUX	AUXFS	Mood=Ind|Person=3|VerbForm=Fin	1	aux	_	SpaceAfter=No|TokenRange=14:18
+5	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=18:19
+6	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	expl	_	TokenRange=20:21
+7	puranga	puranga	ADJ	A	_	8	advcl	_	TokenRange=22:29
+8	uyukwáu	yukwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	TokenRange=30:37
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	10	nmod:poss	_	TokenRange=38:39
+10	membí-etá	membí	NOUN	N	Number=Plur	8	nsubj	_	SpaceAfter=No|TokenRange=40:49
+11	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=49:50
+
 # sent_id = Amorim1928:29:19:19
 # text = Kũi ana ké suí, mikura aíwa, kũi ana ké suí!
 # text_eng = TODO
@@ -21066,6 +21093,29 @@
 6	Kadawa	kadawa	PROPN	PROPN	_	7	nmod:poss	_	TokenRange=29:35
 7	nheenga	nheenga	NOUN	N	Number=Sing	5	obj	_	SpaceAfter=No|TokenRange=36:43
 8	.	.	PUNCT	PUNCT	_	5	punct	_	SpaceAfter=No|TokenRange=43:44
+
+# sent_id = Amorim1928:30:45:45
+# text = Kadawa yuíri upuri waimĩ-etá awa resé, umusaka páu.
+# text_por = Kadaua também pulou no cabelo das velhas, arrancou todo.
+# text_por_orig = None
+# text_source = p. 455, No. 45
+# text_orig = Kadáua iuŷre opure uaimietá áua resé, omusaka pau.
+# title_orig = PYTUNA IASY YRUMO IYPYRUNGAUA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_translator = Leonel Figueiredo de Alencar
+# inputline = Kadawa/=p yuíri/advg upuri waimĩ-etá awa resé/adp, umusaka páu/total.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Kadawa	kadawa	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:6
+2	yuíri	yuíri	ADV	ADVG	AdvType=Deg	3	advmod	_	TokenRange=7:12
+3	upuri	puri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=13:18
+4	waimĩ-etá	waimĩ	NOUN	N	Number=Plur	5	nmod:poss	_	TokenRange=19:28
+5	awa	awa	NOUN	N	Number=Sing	3	obl	_	TokenRange=29:32
+6	resé	resé	ADP	ADP	AdpType=Post|Rel=Cont	5	case	_	SpaceAfter=No|TokenRange=33:37
+7	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=37:38
+8	umusaka	musaka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=39:46
+9	páu	páu	PART	TOTAL	Aspect=Compl	8	advmod	_	SpaceAfter=No|TokenRange=47:50
+10	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=50:51
 
 # sent_id = Amorim1928:33:108:108
 # text = Supisá-pe ipú Kurupira usendú nhuntu uikú ukara suí, yeperesé usú uyuuka karurú kaá kití.
