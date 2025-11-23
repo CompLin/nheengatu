@@ -20525,6 +20525,90 @@
 15	pusanga	pusanga	NOUN	N	Number=Sing	13	obj	_	SpaceAfter=No|TokenRange=90:97
 16	.	.	PUNCT	PUNCT	_	11	punct	_	SpaceAfter=No|TokenRange=97:98
 
+# sent_id = Amorim1928:13:1:1
+# text = Aikwé paá iké Mauhiti-Kuri Kaxiwerupé yepé kurumĩwasú.
+# text_por = Havia, contam, aqui na Cachoeira de Mauhiti Kuri um moço.
+# text_source = p. 265, No. 1
+# text_orig = Aikué paa iké Mauhiti-Kuri Kaxiuerupé iepé kurumiuasu.
+# title_orig = MUAPYSARA PUSANGA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aikwé paá iké Mauhiti-Kuri/=p Kaxiwerupé/=spl:w|upé:x|adp:b|Kaxiwera yepé/art kurumĩwasú.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Aikwé	aikwé	PART	EXST	PartType=Exs	0	root	_	TokenRange=0:5
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	1	advmod	_	TokenRange=6:9
+3	iké	iké	ADV	ADVDX	AdvType=Loc|Deixis=Prox|PronType=Dem	1	advmod	_	TokenRange=10:13
+4	Mauhiti-Kuri	mauhiti-kuri	PROPN	PROPN	_	5	nmod:poss	_	TokenRange=14:26
+5	Kaxiwer	kaxiwera	NOUN	N	Number=Sing|Typo=Yes	1	obl	_	CorrectForm=Kaxiwera|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=27:34
+6	upé	upé	ADP	ADP	AdpType=Post	5	case	_	TokenRange=35:38
+7	yepé	yepé	DET	ART	Definite=Ind|PronType=Art	8	det	_	TokenRange=39:43
+8	kurumĩwasú	kurumĩwasú	NOUN	N	Number=Sing	1	nsubj	_	SpaceAfter=No|TokenRange=44:54
+9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=54:55
+
+# sent_id = Amorim1928:13:2:2
+# text = Aé paá puranga yepé, mayawé aé umuapú i puranga manungara membí kunhã-etá intí umaã i xupé.
+# text_por = Ele era bonito, como não tocava nada bem memby as mulheres não olhavam para ele.
+# text_source = p. 265, No. 2
+# text_orig = Aé paa puranga iepé, maaiaué aé omuapý ipuranga maanungara mimbŷ kunhãetá ntyo omaan i xupé.
+# title_orig = MUAPYSARA PUSANGA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Aé/pron paá puranga/a@ yepé/frust, mayawé/sconjr aé/pron umuapú i/pron2 puranga/a manungara/ind membí kunhã-etá intí umaã i/pron2 xupé.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	TokenRange=0:2
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	3	advmod	_	TokenRange=3:6
+3	puranga	puranga	ADJ	A	_	0	root	_	TokenRange=7:14
+4	yepé	yepé	PART	FRUST	Aspect=Frus	3	advmod	_	SpaceAfter=No|TokenRange=15:19
+5	,	,	PUNCT	PUNCT	_	15	punct	_	TokenRange=19:20
+6	mayawé	mayawé	SCONJ	SCONJR	_	8	mark	_	TokenRange=21:27
+7	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	TokenRange=28:30
+8	umuapú	muapú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	15	advcl	_	TokenRange=31:37
+9	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	expl	_	TokenRange=38:39
+10	puranga	puranga	ADJ	A	_	11	amod	_	TokenRange=40:47
+11	manungara	manungara	PRON	IND	PronType=Ind	8	obl	_	TokenRange=48:57
+12	membí	membí	NOUN	N	Number=Sing	8	obj	_	TokenRange=58:63
+13	kunhã-etá	kunhã	NOUN	N	Number=Plur	15	nsubj	_	TokenRange=64:73
+14	intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	15	advmod	_	TokenRange=74:78
+15	umaã	maã	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	parataxis	_	TokenRange=79:83
+16	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	obl	_	TokenRange=84:85
+17	xupé	xupé	ADP	ADP	AdpType=Post	16	case	_	SpaceAfter=No|TokenRange=86:90
+18	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=90:91
+
+# sent_id = Amorim1928:13:3:3
+# text = Sasiára paá aé uwatá, upanhẽ ara aé usú upinaitika kaxiwerupé, ape i manha usú umbaú i piri.
+# text_por = Triste, contam, ele andava, todos os dias ia pescar de anzol na cachoeira, aí sua mãe ia comer junto dele.
+# text_source = p. 265, No. 3
+# text_orig = Sasyara paa aé ouatá, upanhe ara aé osu opinaityka kaxiuerupé, ape i manha osu ombaú i pyre.
+# title_orig = MUAPYSARA PUSANGA
+# text_eng = TODO
+# text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# text_por_modernizer = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
+# inputline = Sasiára/a paá aé/pron uwatá, upanhẽ ara aé/pron usú upinaitika kaxiwerupé/=spl:w|upé:x|adp:b|kaxiwera, ape/advdi i/pron2 manha usú umbaú i/pron2 piri/adp.
+# text_annotator = Leonel Figueiredo de Alencar
+1	Sasiára	sasiára	ADJ	A	_	4	advcl	_	TokenRange=0:7
+2	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	4	advmod	_	TokenRange=8:11
+3	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	TokenRange=12:14
+4	uwatá	watá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=15:20
+5	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=20:21
+6	upanhẽ	upanhẽ	DET	TOT	PronType=Tot	7	det	_	TokenRange=22:28
+7	ara	ara	NOUN	N	Number=Sing	9	obl	_	TokenRange=29:32
+8	aé	aé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	TokenRange=33:35
+9	usú	sú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	parataxis	_	TokenRange=36:39
+10	upinaitika	pinaitika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	9	xcomp	_	TokenRange=40:50
+11	kaxiwer	kaxiwera	NOUN	N	Number=Sing|Typo=Yes	10	obl	_	CorrectForm=kaxiwera|CorrectSpaceAfter=Yes|SpaceAfter=No|TokenRange=51:58
+12	upé	upé	ADP	ADP	AdpType=Post	11	case	_	SpaceAfter=No|TokenRange=59:62
+13	,	,	PUNCT	PUNCT	_	17	punct	_	TokenRange=62:63
+14	ape	ape	ADV	ADVDI	AdvType=Loc|Deixis=Remt|PronType=Dem	17	advmod	_	TokenRange=64:67
+15	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	16	nmod:poss	_	TokenRange=68:69
+16	manha	manha	NOUN	N	Number=Sing	17	nsubj	_	TokenRange=70:75
+17	usú	sú	AUX	AUXFR	Mood=Ind|Person=3|VerbForm=Fin	9	parataxis	_	TokenRange=76:79
+18	umbaú	mbaú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	17	xcomp	_	TokenRange=80:85
+19	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	obl	_	TokenRange=86:87
+20	piri	piri	ADP	ADP	AdpType=Post	19	case	_	SpaceAfter=No|TokenRange=88:92
+21	.	.	PUNCT	PUNCT	_	4	punct	_	SpaceAfter=No|TokenRange=92:93
+
 # sent_id = Amorim1928:13:37-38:37-38
 # text = Kurumĩwasú manha usuaxara paá: — Aé tenhẽ nhaã xe mimbira intí waá awá ukwáu-putari i suí.
 # text_por = Mãe do moço respondeu: — Ele é mesmo esse meu filho de quem ninguém queria saber.
@@ -20580,7 +20664,8 @@
 
 # sent_id = Amorim1928:13:40:40
 # text = Intí wana será pemanduári puxí pemaã resé i xupé!
-# text_por = Vocês não lembraram coisa ruim porque olharam para ele?
+# text_por = Vocês já não pensam mal ao olharem para ele?
+# text_por_alt = Vocês já não pensam mal por olharem para ele?
 # text_por_orig = None
 # text_source = p. 267, No. 40
 # sent_number_orig = No. 39
@@ -20589,14 +20674,14 @@
 # text_eng = TODO
 # text_orig_transcriber = Gabriela Lourenço Fernandes, Biblioteca Brasiliana Guita e José Mindlin
 # text_por_translator = Leonel Figueiredo de Alencar
-# inputline = Intí wana será pemanduári puxí/a pemaã resé/sconj i/pron2 xupé!
+# inputline = Intí wana será pemanduári puxí/adva pemaã resé/sconj i/pron2 xupé!
 # text_annotator = Leonel Figueiredo de Alencar
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
 2	wana	wana	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=5:9
 3	será	será	PART	PQ	PartType=Int	4	advmod	_	TokenRange=10:14
-4	pemanduári	manduári	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=15:25
-5	puxí	puxí	ADJ	A	_	4	obj	_	TokenRange=26:30
-6	pemaã	maã	VERB	V	Mood=Imp,Ind|Number=Plur|Person=2|VerbForm=Fin	4	advcl	_	TokenRange=31:36
+4	pemanduári	manduári	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	0	root	_	TokenRange=15:25
+5	puxí	puxí	ADV	ADVA	AdvType=Man	4	advmod	_	TokenRange=26:30
+6	pemaã	maã	VERB	V	Mood=Ind|Number=Plur|Person=2|VerbForm=Fin	4	advcl	_	TokenRange=31:36
 7	resé	resé	SCONJ	SCONJ	_	6	mark	_	TokenRange=37:41
 8	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	TokenRange=42:43
 9	xupé	xupé	ADP	ADP	AdpType=Post	8	case	_	SpaceAfter=No|TokenRange=44:48
