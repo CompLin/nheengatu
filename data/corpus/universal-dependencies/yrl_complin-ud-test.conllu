@@ -8179,7 +8179,7 @@
 3	uí	uí	NOUN	N	Number=Sing	1	obj	_	SpaceAfter=No|TokenRange=13:15
 4	,	,	PUNCT	PUNCT	_	8	punct	_	TokenRange=15:16
 5	nhaã	nhaã	PRON	DEMS	Deixis=Remt|Number=Sing|PronType=Dem	8	nsubj	_	TokenRange=17:21
-6	nhũ	nhũ	ADV	ADV	_	8	advmod	_	TokenRange=22:25
+6	nhũ	nhũ	ADV	ADV	_	5	advmod	_	TokenRange=22:25
 7	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	8	advmod	_	TokenRange=26:28
 8	usika	sika	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	parataxis	_	SpaceAfter=No|TokenRange=29:34
 9	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=34:35
@@ -8189,9 +8189,14 @@
 # text_eng = God only knows.
 # text_por = Só Deus sabe.
 # text_source = Hartt, 332, adap.
+# text_prim = tupána ñún okuáu.
+# text_prim_source = No. 188
+# text_por_prim = Só é Deus que sabe.
+# text_prim_transcriber = Antônio Levy Melo Nogueira
+# text_por_prim_modernizer = Antônio Levy Melo Nogueira
 # text_annotator = Leonel Figueiredo de Alencar
 1	Tupana	tupana	PROPN	PROPN	_	3	nsubj	_	TokenRange=0:6
-2	nhũ	nhũ	ADV	ADV	_	3	advmod	_	TokenRange=7:10
+2	nhũ	nhũ	ADV	ADV	_	1	advmod	_	TokenRange=7:10
 3	ukwáu	kwáu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=11:16
 4	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=16:17
 
