@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
 # Code contributions by others specified in the docstrings of individual functions
-# Last update: October 4, 2025
+# Last update: December 4, 2025
 
 from Nheengatagger import getparselist, tokenize, DASHES, ELLIPSIS
-from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND
+from BuildDictionary import DIR,MAPPING, extract_feats, loadGlossary, loadLexicon, extractTags, isAux, accent, guessVerb, PRONOUNS, extractArchaicLemmas, IMPIND, ARCHAIC
 from Metadata import Mindlin, Dacilat,PEOPLE, mkReviewer, mkTranscriber, mkTextGloss, mkAnnotator
 from TagValidator import validate_function_args, convert_args
 from LarkTagValidator import UnexpectedInput, parser, TagTransformer
@@ -60,8 +60,11 @@ MEDPASS='MID' # mediopassive voice
 
 # prefix for the middle, passive, reflexive or reciprocal voice
 YU = 'yu'
+# archaic alomorphs of the mediopassive voice prefix
+YA = 'ya'
+YE = 'ye'
 
-VOICE={'MID' : 'Mid,Pass', 'ACT' : 'Act'}
+VOICE={MEDPASS : 'Mid,Pass', 'ACT' : 'Act'}
 
 # set with all treebank sentences
 TREEBANK_SENTS=[]
@@ -374,12 +377,19 @@ def includeAdpType(token):
         updateFeats(token,'AdpType',adptype)
         token['feats']=sortDict(token['feats'])
 
+def replaceYaYu(word,style,voice):
+    pattern = fr"{YA}|{YE}"
+    modern_form={}
+    if style == ARCHAIC and voice == MEDPASS:
+        modern_form['ModernForm']=re.sub(pattern, "yu", word, 1)
+    return modern_form
+ 
 def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     mapping={'ADP' : 'case', 'SCONJ':'mark',
     'VERB':'root',
     'PUNCT':'punct',
     'AUX' : 'aux'}
-    modernform={}
+    modern_form=entry.get('modern_form',{})
     end=start + len(word)
     feats={}
     token=Token()
@@ -438,14 +448,15 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     if case:
         feats['Case']=case.title()
     if style:
+        modern_form=replaceYaYu(token['form'],style,voice)
         feats['Style']=style.title()
         entries=list(filter(lambda entry: word.lower() == entry['ancient'] ,ARCHAIC_LEMMAS))
         if entries:
             modern=entries[0]['modern']
-            modernform['ModernLemma']=modern
+            modern_form['ModernLemma']=modern
             if word.istitle():
                 modern=modern.title()
-            modernform['ModernForm']=modern
+            modern_form['ModernForm']=modern
         else:
             entries=list(filter(lambda entry: entry['xpos'] == 'PREF' and word.lower().startswith(entry['ancient'].strip(HYPHEN)),ARCHAIC_LEMMAS))
             if entries:
@@ -457,7 +468,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
                 correct_form=entry.get('correct_form')
                 if correct_form:
                     word=correct_form
-                modernform['ModernForm']=f"{modern}{word[len(ancient):]}"
+                modern_form['ModernForm']=f"{modern}{word[len(ancient):]}"
+                modern_form.update(replaceYaYu(modern_form['ModernForm'],style,voice))
     if feats:
         token['feats']=feats
     else:
@@ -485,8 +497,8 @@ def mkConlluToken(word,entry,head=0, deprel=None, start=0, ident=1, deps=None):
     token['deprel']=dprl
     token['deps']=deps
     token['misc']={'TokenRange': f'{start}:{end}'}
-    if modernform:
-        token['misc'].update(modernform)
+    if modern_form:
+        token['misc'].update(modern_form)
     removeMoodVNOUN(token)
     return token
 
@@ -2153,18 +2165,21 @@ def serializeEntry(entry):
 	return tags
 
 def handleMiddlePassive(form, orig=None, orig_form=''):
-	new={}
-	entry=guessVerb(form)
-	VerbFormError(form,entry)
-	if entry['lemma'].startswith(YU):
-		entry['voice']=MEDPASS
-		entry['lemma']=entry['lemma'][len(YU):]
-	parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
-	tags=serializeEntry(entry)
-	handleOrig(new,entry['lemma'],orig, orig_form,xpos='V')
-	#_isInLexicon(lemma='',parselist=parselist)
-	new['parselist']=[[entry['lemma'],tags]]
-	return new
+    new={}
+    entry=guessVerb(form)
+    VerbFormError(form,entry)
+    if entry['lemma'].startswith(YU) or entry['lemma'].startswith(YA) or entry['lemma'].startswith(YE):
+        entry['voice']=MEDPASS
+        if entry['lemma'].startswith(YA) or entry['lemma'].startswith(YE):
+            entry['style']=ARCHAIC
+        entry['lemma']=entry['lemma'][2:]
+    parselist=getparselist(f"{entry['pref']}{entry['lemma']}")
+    tags=serializeEntry(entry)
+    handleOrig(new,entry['lemma'],orig, orig_form,xpos='V')
+    #_isInLexicon(lemma='',parselist=parselist)
+    new['parselist']=[[entry['lemma'],tags]]
+    new['modern_form']=entry.get('modern_form',{})
+    return new
 
 def handlePartialRedup(form,length,xpos='',orig=None, orig_form='',accent=False, suffix=False,position=0):
     entry={}
