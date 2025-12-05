@@ -1798,6 +1798,42 @@
 37	irumu	irumu	ADP	ADP	AdpType=Post	34	case	_	SpaceAfter=No|TokenRange=208:213
 38	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=213:214
 
+# sent_id = NTLN:4-14:5:5
+# text = Asuí Tumé unheẽ i xupé: — Se ruixawa, ti yakwá makití taá resú, maita maã yapuderi yakwá kwá pé?
+# text_eng = Thomas said to him, “Lord, we do not know where you are going. How can we know the way?”
+# text_eng_source = Thomas said to him, “Lord, we do not know where you are going. How can we know the way?”
+# text_por = Disse-lhe Tomé: “Senhor, não sabemos para onde vais; como então podemos saber o caminho?”
+# text_por_source = NVI
+# text_source = Novo Testamento na língua nyengatu, Jn 14:5
+# text_orig = Asui Tume unyee ixupe: — Seruixawa, tiyakuawa maa kititaa resu, maitaa maa yapuderi yakuawa kua pee?
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Asuí/advt Tumé/=p unheẽ i/pron2 xupé: — Se ruixawa, ti yakwá/v makití/advrc taá resú, maita maã/cond yapuderi yakwá/v kwá/demx pé?
+1	Asuí	asuí	ADV	ADVT	AdvType=Tim	3	advmod	_	TokenRange=0:4
+2	Tumé	tumé	PROPN	PROPN	_	3	nsubj	_	TokenRange=5:9
+3	unheẽ	nheẽ	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=10:15
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	iobj	_	TokenRange=16:17
+5	xupé	xupé	ADP	ADP	AdpType=Post	4	case	_	SpaceAfter=No|TokenRange=18:22
+6	:	:	PUNCT	PUNCT	_	12	punct	_	TokenRange=22:23
+7	—	—	PUNCT	PUNCT	_	12	punct	_	TokenRange=24:25
+8	Se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|Poss=Yes|PronType=Prs	9	nmod:poss	_	TokenRange=26:28
+9	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	12	vocative	_	SpaceAfter=No|TokenRange=29:36
+10	,	,	PUNCT	PUNCT	_	12	punct	_	TokenRange=36:37
+11	ti	ti	PART	NEG	PartType=Neg|Polarity=Neg	12	advmod	_	TokenRange=38:40
+12	yakwá	kwá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	ccomp	_	TokenRange=41:46
+13	makití	makití	ADV	ADVRC	AdvType=Loc|PronType=Int	15	advmod	_	TokenRange=47:53
+14	taá	taá	PART	CQ	PartType=Int	15	advmod	_	TokenRange=54:57
+15	resú	sú	VERB	V	Mood=Imp,Ind|Number=Sing|Person=2|VerbForm=Fin	12	ccomp	_	SpaceAfter=No|TokenRange=58:62
+16	,	,	PUNCT	PUNCT	_	21	punct	_	TokenRange=62:63
+17-18	maita	_	_	_	_	_	_	_	TokenRange=64:69
+17	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	21	advmod	_	_
+18	taá	taá	PART	CQ	Clitic=Yes|PartType=Int	21	advmod	_	_
+19	maã	maã	PART	COND	Modality=Cond|PartType=Mod	21	advmod	_	TokenRange=70:73
+20	yapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	21	aux	_	TokenRange=74:82
+21	yakwá	kwá	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	15	parataxis	_	TokenRange=83:88
+22	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	23	det	_	TokenRange=89:92
+23	pé	pé	NOUN	N	Number=Sing|Rel=Abs	21	obj	_	SpaceAfter=No|TokenRange=93:95
+24	?	?	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No|TokenRange=95:96
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
