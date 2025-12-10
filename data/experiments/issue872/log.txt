@@ -1,0 +1,10 @@
+Split all.conllu treebank file in ten folds, each fold consisting of a test and a train set.
+Create 10 different models, one for each fold. This may take up several hours.
+Parse and test 10 times using each time a different model and test file.
+Process the results of parsing with gold tokenization and gold tags.
+Split all.conllu treebank file in ten folds, each fold consisting of a test and a train set.
+Create 10 different models, one for each fold. This may take up several hours.
+Split all.conllu treebank file in ten folds, each fold consisting of a test and a train set.
+Create 10 different models, one for each fold. This may take up several hours.
+Parse and test 10 times using each time a different model and test file.
+Process the results of parsing with gold tokenization and gold tags.
