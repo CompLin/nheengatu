@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 25, 2024
+# Last update: December 5, 2024
 
 import re
 import numpy as np
@@ -9,7 +9,7 @@ import glob
 import os
 
 # Directory where your result files are located
-MYDIR="/home/leonel/Dropbox/nheengatu/pibic/test01/"
+#MYDIR="/home/leonel/Dropbox/nheengatu/pibic/test01/"
 RESULTS_DIR = ''
 
 def extract_las_values(data):
@@ -56,10 +56,12 @@ def main():
         if not files:
             print("No files found matching the pattern.")
             return
-        
+        # Sort numerically by file index: 1,2,3,...,10
+        files.sort(key=lambda f: int(re.search(r'(\d+)', os.path.basename(f)).group(1)))
         las_values = []
         
         for file_path in files:
+            print(f"Processing file: {file_path}")
             with open(file_path, 'r') as file:
                 data = file.read()
                 las_values.extend(extract_las_values(data))
