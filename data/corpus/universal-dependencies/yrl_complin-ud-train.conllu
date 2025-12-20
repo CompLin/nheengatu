@@ -39189,3 +39189,16 @@
 11	seraíma	sera	NOUN	N	Derivation=Priv	9	advcl	_	SpaceAfter=No|TokenRange=60:67
 12	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No|TokenRange=67:68
 
+# sent_id = Alencar2021:0:0:61
+# text = Igara i pusé uikú.
+# text_eng = TODO
+# text_por = A canoa está pesada.
+# text_source = Alencar 2021
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Igara i/pron2 pusé/v2 uikú/auxfs.
+1	Igara	igara	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:5
+2	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	expl	_	TokenRange=6:7
+3	pusé	pusé	VERB	V2	Mood=Ind|VerbForm=Fin	0	root	_	TokenRange=8:12
+4	uikú	ikú	AUX	AUXFS	Mood=Ind|VerbForm=Fin	3	aux	_	SpaceAfter=No|TokenRange=13:17
+5	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=17:18
+
