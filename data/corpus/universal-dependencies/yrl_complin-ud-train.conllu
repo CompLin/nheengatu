@@ -1798,7 +1798,8 @@
 37	irumu	irumu	ADP	ADP	AdpType=Post	34	case	_	SpaceAfter=No|TokenRange=208:213
 38	.	.	PUNCT	PUNCT	_	7	punct	_	SpaceAfter=No|TokenRange=213:214
 
-# sent_id = NTLN:4-14:5:5
+# sent_id = NTLN2019:4-14:5:5
+# alt_id = NTLN:4-14:5:5
 # text = Asuí Tumé unheẽ i xupé: — Se ruixawa, ti yakwá makití taá resú, maita maã yapuderi yakwá kwá pé?
 # text_eng = Thomas said to him, “Lord, we do not know where you are going. How can we know the way?”
 # text_eng_source = Thomas said to him, “Lord, we do not know where you are going. How can we know the way?”
@@ -1833,6 +1834,24 @@
 22	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	23	det	_	TokenRange=89:92
 23	pé	pé	NOUN	N	Number=Sing|Rel=Abs	21	obj	_	SpaceAfter=No|TokenRange=93:95
 24	?	?	PUNCT	PUNCT	_	21	punct	_	SpaceAfter=No|TokenRange=95:96
+
+# sent_id = NTLN2019:4-3:30:30
+# text = Urikuté uyukiriari ma ixé harikuté hayumukwaíra.
+# text_eng = He must become greater; I must become less.”
+# text_eng_source = NIV
+# text_por = É necessário que ele cresça e que eu diminua.
+# text_por_source = NVI
+# text_source = Novo Testamento na língua nyengatu, Jn 3:30
+# text_orig = Urikute uyukiriari maa ixe harikute hayumukuaira.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Urikuté uyukiriari ma/cconj ixé harikuté hayumukwaíra/=mid.
+1	Urikuté	rikuté	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=0:7
+2	uyukiriari	yukiriari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	1	xcomp	_	TokenRange=8:18
+3	ma	ma	CCONJ	CCONJ	_	5	cc	_	TokenRange=19:21
+4	ixé	ixé	PRON	PRON	Case=Acc,Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	TokenRange=22:25
+5	harikuté	rikuté	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin	2	conj	_	TokenRange=26:34
+6	hayumukwaíra	mukwaíra	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Mid,Pass	5	xcomp	_	SpaceAfter=No|TokenRange=35:47
+7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
