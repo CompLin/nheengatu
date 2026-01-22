@@ -1853,6 +1853,95 @@
 6	hayumukwaíra	mukwaíra	VERB	V	Mood=Ind|Number=Sing|Person=1|VerbForm=Fin|Voice=Mid,Pass	5	xcomp	_	SpaceAfter=No|TokenRange=35:47
 7	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=47:48
 
+# sent_id = NTLN2019:7-12:4:4
+# text = Siya kwá-itá Espiritu uxari waá-itá yandé arama, ma yepé nhunte kwá Espiritu.
+# text_eng = TODO
+# text_por = Há diferentes tipos de dons, mas o Espírito é o mesmo.
+# text_por_source = NVI
+# text_source = Novo Testamento na língua nyengatu, 1 Cor 12:4
+# text_source_url = https://www.bible.com/pt-PT/bible/2986/1CO.12.4
+# text_orig = Siya kuaita Espiritu uxariwaita yande arama, maa yepenyute kua Espiritu.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Siya/@ kwá-itá Espiritu/=p uxari waá-itá yandé/pron2 arama/adp, ma/cconj yepé/card nhunte kwá/demx Espiritu/=p.
+1	Siya	siya	PRON	INDQ	PronType=Ind	0	root	_	TokenRange=0:4
+2	kwá-itá	kwá	PRON	DEMX	Deixis=Prox|Number=Plur|PronType=Dem	1	nsubj	_	TokenRange=5:12
+3	Espiritu	espiritu	PROPN	PROPN	_	4	nsubj	_	TokenRange=13:21
+4	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	acl:relcl	_	TokenRange=22:27
+5	waá-itá	waá	PRON	REL	Number=Plur|PronType=Rel	4	obj	_	TokenRange=28:35
+6	yandé	yandé	PRON	PRON2	Case=Gen|Number=Plur|Person=1|PronType=Prs|Style=Arch	4	iobj	_	ModernForm=yané|ModernLemma=yané|TokenRange=36:41
+7	arama	arama	ADP	ADP	AdpType=Post	6	case	_	SpaceAfter=No|TokenRange=42:47
+8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=47:48
+9	ma	ma	CCONJ	CCONJ	_	10	cc	_	TokenRange=49:51
+10	yepé	yepé	NUM	CARD	NumType=Card	1	conj	_	TokenRange=52:56
+11	nhunte	nhunte	ADV	ADV	_	10	advmod	_	TokenRange=57:63
+12	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	13	det	_	TokenRange=64:67
+13	Espiritu	espiritu	PROPN	PROPN	_	10	nsubj	_	SpaceAfter=No|TokenRange=68:76
+14	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=76:77
+
+# sent_id = NTLN2019:7-12:5:5
+# text = Siya yané murakí yané ruixawa supé ma yepé nhunte kwá yané ruixawa.
+# text_eng = TODO
+# text_por = Há diferentes tipos de ministérios, mas o Senhor é o mesmo.
+# text_por_source = NVI
+# text_por_alt = E também há diversidade nos serviços, mas o Senhor é o mesmo.
+# text_por_alt_source = ARA
+# text_source = Novo Testamento na língua nyengatu, 1 Cor 12:5
+# text_source_url = https://www.bible.com/pt-PT/bible/2986/1CO.12.5
+# text_orig = Siya/@ yanemuraki yaneruixawa supe maa yepenyute kua yaneruixawa.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Siya yané/pron2 murakí yané/pron2 ruixawa supé/adp ma/cconj yepé/card nhunte kwá/demx yané/pron2 ruixawa.
+1	Siya	siya	PRON	INDQ	PronType=Ind	0	root	_	TokenRange=0:4
+2	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	3	nmod:poss	_	TokenRange=5:9
+3	murakí	murakí	NOUN	N	Number=Sing	1	nsubj	_	TokenRange=10:16
+4	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=17:21
+5	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	3	nmod	_	TokenRange=22:29
+6	supé	supé	ADP	ADP	AdpType=Post	5	case	_	TokenRange=30:34
+7	ma	ma	CCONJ	CCONJ	_	8	cc	_	TokenRange=35:37
+8	yepé	yepé	NUM	CARD	NumType=Card	1	conj	_	TokenRange=38:42
+9	nhunte	nhunte	ADV	ADV	_	8	advmod	_	TokenRange=43:49
+10	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	12	det	_	TokenRange=50:53
+11	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	12	nmod:poss	_	TokenRange=54:58
+12	ruixawa	tuixawa	NOUN	N	Number=Sing|Rel=Cont	8	nsubj	_	SpaceAfter=No|TokenRange=59:66
+13	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No|TokenRange=66:67
+
+# sent_id = NTLN2019:7-12:6:6
+# text = Siya yapuderi yapurakí i xupé kwá Deus ma aité kurí uxari yané piá upé yakwawa arama mayé taá yapurakí i xupé muíri yandé.
+# text_eng = and there are diversities of workings, and it is the same God — who is working the all in all.
+# text_eng_source = YLT
+# text_por = Há diferentes formas de atuação, mas é o mesmo Deus quem efetua tudo em todos.
+# text_por_source = NVI
+# text_por_alt = E há diversidade nas realizações, mas o mesmo Deus é quem opera tudo em todos.
+# text_por_alt_source = ARA
+# text_source = Novo Testamento na língua nyengatu, 1 Cor 12:6
+# text_source_url = https://www.bible.com/pt-PT/bible/2986/1CO.12.6
+# text_orig = Siya yapuderi yapuraki ixupe kua Deus maa aete kuri uxari yanepia upe yakuawa arama mayetaa yapuraki ixupe muiri yande.
+# text_annotator = Leonel Figueiredo de Alencar
+# inputline = Siya yapuderi yapurakí i/pron2 xupé kwá/demx Deus ma/cconj aité kurí uxari yané/pron2 piá upé/adp yakwawa/v arama/sconj mayé/advra taá yapurakí i/pron2 xupé muíri/tot yandé/pron.
+1	Siya	siya	PRON	INDQ	PronType=Ind	3	obj	_	TokenRange=0:4
+2	yapuderi	puderi	AUX	AUXFR	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	3	aux	_	TokenRange=5:13
+3	yapurakí	purakí	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	0	root	_	TokenRange=14:22
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	iobj	_	TokenRange=23:24
+5	xupé	xupé	ADP	ADP	AdpType=Post	4	case	_	TokenRange=25:29
+6	kwá	kwá	DET	DEMX	Deixis=Prox|Number=Sing|PronType=Dem	7	det	_	TokenRange=30:33
+7	Deus	deus	PROPN	PROPN	_	3	dislocated	_	TokenRange=34:38
+8	ma	ma	CCONJ	CCONJ	_	11	cc	_	TokenRange=39:41
+9	aité	aité	PRON	EMP	PronType=Emp	11	nsubj	_	TokenRange=42:46
+10	kurí	kurí	PART	FUT	Tense=Fut	11	advmod	_	TokenRange=47:51
+11	uxari	xari	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	3	conj	_	TokenRange=52:57
+12	yané	yané	PRON	PRON2	Case=Gen|Number=Plur|Person=1|Poss=Yes|PronType=Prs	13	nmod:poss	_	TokenRange=58:62
+13	piá	piá	NOUN	N	Number=Sing	11	obl	_	TokenRange=63:66
+14	upé	upé	ADP	ADP	AdpType=Post	13	case	_	TokenRange=67:70
+15	yakwawa	kwawa	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	11	advcl	_	TokenRange=71:78
+16	arama	arama	SCONJ	SCONJ	_	15	mark	_	TokenRange=79:84
+17	mayé	mayé	ADV	ADVRA	AdvType=Man|PronType=Int	19	advmod	_	TokenRange=85:89
+18	taá	taá	PART	CQ	PartType=Int	19	advmod	_	TokenRange=90:93
+19	yapurakí	purakí	VERB	V	Mood=Ind|Number=Plur|Person=1|VerbForm=Fin	15	ccomp	_	TokenRange=94:102
+20	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	obl	_	TokenRange=103:104
+21	xupé	xupé	ADP	ADP	AdpType=Post	20	case	_	TokenRange=105:109
+22	muíri	muíri	DET	TOT	PronType=Tot	23	det	_	TokenRange=110:115
+23	yandé	yandé	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs	19	nsubj	_	SpaceAfter=No|TokenRange=116:121
+24	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=121:122
+
 # sent_id = Cruz2011:0:0:1
 # text = Aé umendari yepé werekena irũ.
 # text_por = Ele casou com uma uerequena.
