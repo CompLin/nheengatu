@@ -1,0 +1,7 @@
+Number of SpaceAfter=No features in gold data: 634
+Tokenizer tokens - system: 2107, gold: 2171, precision: 96.20%, recall: 93.37%, f1: 94.76%
+Tokenizer multiword tokens - system: 20, gold: 22, precision: 95.00%, recall: 86.36%, f1: 90.48%
+Tokenizer words - system: 2127, gold: 2193, precision: 96.10%, recall: 93.21%, f1: 94.63%
+Tokenizer sentences - system: 205, gold: 209, precision: 62.44%, recall: 61.24%, f1: 61.84%
+Tagging from plain text (CoNLL17 F1 score) - gold forms: 2193, upostag: 89.72%, xpostag: 89.03%, feats: 86.90%, alltags: 86.30%, lemmas: 91.11%
+Parsing from plain text with computed tags (CoNLL17 F1 score) - gold forms: 2193, UAS: 73.52%, LAS: 68.66%

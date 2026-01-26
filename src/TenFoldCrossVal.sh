@@ -2,7 +2,7 @@
 # --------------------------------------------------------------------
 # Script: TenFoldCrossVal.sh
 # Author: Leonel Figueiredo de Alencar
-# Last update: December 8, 2025
+# Last update: January 26, 2026
 #
 # Description:
 #     Performs ten-fold cross-validation parsing using pre-trained
@@ -15,12 +15,12 @@
 #     (1) Default mode (no -t):
 #         Parses using **gold tokenisation and gold tags**.
 #         Output file:
-#             gold-tok-tags-i.txt
+#             gold-tok-tags-results-i.txt
 #
 #     (2) Tokenize+Tag+Parse mode (-t):
 #         Performs tokenisation + tagging + parsing.
 #         Output file:
-#             results-i.txt
+#             raw-text-results-i.txt
 #
 # Usage:
 #     ./TenFoldCrossVal.sh       # parse only (gold tokenisation + gold tags)
@@ -57,8 +57,8 @@ for i in {1..10}; do
     test_file="test-${i}.conllu"
     model="model-${i}.output"
 
-    results="results-${i}.txt"
-    gold="gold-tok-tags-${i}.txt"
+    results="raw-text-results-${i}.txt"
+    gold="gold-tok-tags-results-${i}.txt"
 
     echo "Processing fold ${i}..."
     echo "  Model: ${model}"
@@ -81,4 +81,4 @@ for i in {1..10}; do
 done
 
 echo "All 10 folds processed successfully."
-echo "Results are saved in 'results-1.txt' to 'results-10.txt' (if -t option was used) or 'gold-tok-tags-1.txt' to 'gold-tok-tags-10.txt' (if no -t option)."
+echo "Results are saved in 'raw-text-results-1.txt' to 'raw-text-results-10.txt' (if -t option was used) or 'gold-tok-tags-results-1.txt' to 'gold-tok-tags-results-10.txt' (if no -t option)."

@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Leonel Figueiredo de Alencar
-# Last update: September 11, 2024
+# Last update: January 26, 2026
 
 # Check for correct number of arguments (expecting 1 argument)
 if [ "$#" -ne 1 ]; then
@@ -21,6 +21,5 @@ echo "Parse and test 10 times using each time a different model and test file." 
 TenFoldCrossVal.sh
 
 echo "Process the results of parsing with gold tokenization and gold tags." >> log.txt
-ParseGoldTokResults.py > results.txt
-echo "File 'results.txt' written to disk."
-
+ParseGoldTokResults.py > gold-tok-tags-results.txt
+echo "File 'gold-tok-tags-results.txt' written to disk."
