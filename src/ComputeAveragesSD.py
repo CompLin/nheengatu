@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 28, 2026
-
-# TODO: see tasks list in ParseResults.py
+# Last update: January 29, 2026
 
 import numpy as np
 
@@ -50,9 +48,6 @@ def compute_averages(data_list):
 		parsing_sum['UAS'].append(float(data_dict['Parsing']['UAS']))
 		parsing_sum['LAS'].append(float(data_dict['Parsing']['LAS']))
 		
-	print(f"parsing_sum['UAS']{parsing_sum['UAS']}")
-		
-	print(f"parsing_sum['LAS']{parsing_sum['LAS']}")
 
 	# Calculate averages
 
@@ -86,19 +81,28 @@ def compute_averages(data_list):
 
 	# Construct the final dictionary
 	averages_dict = {
-		'Tokenizer tokens': {'f1': tokenizer_tokens_avg},
-		'Tokenizer tokens std': {'f1_std': tokenizer_tokens_std},
-		'Tokenizer multiword tokens': {'f1': tokenizer_multiword_avg},
-		'Tokenizer multiword tokens std': {'f1_std': tokenizer_multiword_std},
-		'Tokenizer words': {'f1': tokenizer_words_avg},
-		'Tokenizer words std': {'f1_std': tokenizer_words_std},
-		'Tokenizer sentences': {'f1': tokenizer_sentences_avg},
-		'Tokenizer sentences std': {'f1_std': tokenizer_sentences_std},
-		'Tagging': tagging_avg,
-		'Parsing': parsing_avg
+		'Parsing sum': parsing_sum,
+		'Parsing average': parsing_avg,
+		'Parsing std': parsing_std,
+		'Tokenizer tokens sum': tokenizer_tokens_sum,
+		'Tokenizer tokens average f1': tokenizer_tokens_avg,
+		'Tokenizer tokens std': tokenizer_tokens_std,
+		'Tokenizer multiword sum': tokenizer_multiword_sum,
+		'Tokenizer multiword tokens average f1': tokenizer_multiword_avg,
+		'Tokenizer multiword tokens std': tokenizer_multiword_std,
+		'Tokenizer words sum': tokenizer_words_sum,
+		'Tokenizer words average f1': tokenizer_words_avg,
+		'Tokenizer words std': tokenizer_words_std,
+		'Tokenizer sentences sum': tokenizer_sentences_sum,
+		'Tokenizer sentences average f1': tokenizer_sentences_avg,
+		'Tokenizer sentences std': tokenizer_sentences_std,
+		'Tagging sum': tagging_sum,
+		'Tagging average f1': tagging_avg,
+		'Tagging std': tagging_std
 	}
 
 	# Print the final dictionary
 	print(averages_dict)
-	print(f"\ntagging_std: {tagging_std}")
-	print(f"\nparsing_std: {parsing_std}")
+	
+	return averages_dict
+

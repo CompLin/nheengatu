@@ -1,56 +1,81 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 26, 2026
+# Last update: January 29, 2026
 
-import re, sys
+import re
+import sys
+import json
 
 from ComputeAveragesSD import compute_averages as cs
 
-# Read the content of the file
-infile='/home/leonel/nheengatu/compostela/test3/results-1b.txt'
 
 def parse_line(line):
-    # Define a regex pattern to extract key-value pairs
+    """
+    Parse a line containing key-value pairs like:
+      'Parsing ... UAS: 89.12%, LAS: 85.51%'
+
+    Returns:
+        dict[str, str]: mapping from key to value (as strings).
+    """
     pattern = re.compile(r'(?P<key>[\w\s]+):\s*(?P<value>[\d.]+)')
-
-    # Use re.finditer to find all key-value pairs in the line
     matches = re.finditer(pattern, line)
+    return {m.group('key').strip(): m.group('value').strip() for m in matches}
 
-    # Store the key-value pairs in a dictionary
-    data = {match.group('key').strip(): match.group('value').strip() for match in matches}
-
-    return data
 
 def parseFile(infile):
-	results=[]
-	tasks=['Tokenizer tokens','Tokenizer multiword tokens','Tokenizer words','Tokenizer sentences','Tagging','Parsing']
-	# Read the content of the file
-	with open(infile, 'r') as file:
-		file_content = file.read()
+    """
+    Parse one results file and return a dict with fixed task keys:
+      Tokenizer tokens, Tokenizer multiword tokens, Tokenizer words,
+      Tokenizer sentences, Tagging, Parsing
+    """
+    results = []
+    tasks = [
+        'Tokenizer tokens',
+        'Tokenizer multiword tokens',
+        'Tokenizer words',
+        'Tokenizer sentences',
+        'Tagging',
+        'Parsing'
+    ]
 
-	# Split the content into lines and process each line
-	lines = file_content.split('\n')
-	for line in lines:
-		# Skip irrelevant lines
-		if not line.startswith("Tokenizer") and not line.startswith("Tagging") and not line.startswith("Parsing"):
-			continue
+    with open(infile, 'r', encoding="utf-8") as file:
+        file_content = file.read()
 
-		# Parse the line and print the result
-		parsed_data = parse_line(line)
-		results.append(parsed_data)
-	return dict(zip(tasks,results))
+    for line in file_content.split('\n'):
+        if not (line.startswith("Tokenizer") or line.startswith("Tagging") or line.startswith("Parsing")):
+            continue
+        results.append(parse_line(line))
+
+    return dict(zip(tasks, results))
+
 
 def main():
-	# Check if one or more filenames are provided as a command line argument
-	if len(sys.argv) < 2:
-		print("Usage: python script.py <treebank_filename>")
-		sys.exit(1)
-	results=[]
-	for f in sys.argv[1:]:
-		results.append(parseFile(f))
-	#compute_averages(results)
-	cs(results)
+    """
+    Usage:
+        ParseResults.py <file1> [file2 ...]
+    Example:
+        ParseResults.py raw-text-results-*.txt
+
+    Besides printing results to stdout (via ComputeAveragesSD.compute_averages),
+    this script also saves the returned summary dictionary to 'raw-text-results.json'.
+    """
+    if len(sys.argv) < 2:
+        print("Usage: ParseResults.py <results_file1> [results_file2 ...]")
+        sys.exit(1)
+
+    results = [parseFile(f) for f in sys.argv[1:]]
+
+    # ComputeAveragesSD now returns a dictionary (and can still print, if it does).
+    summary = cs(results)
+
+    # Save summary to JSON
+    outname = "raw-text-results.json"
+    with open(outname, "w", encoding="utf-8") as out:
+        json.dump(summary, out, indent=2, ensure_ascii=False)
+
+    print(f"\nSaved JSON summary to: {outname}")
+
 
 if __name__ == "__main__":
-	main()
+    main()
