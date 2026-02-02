@@ -1,0 +1,545 @@
+{
+  "schema": "normalized-comparison-v1",
+  "alpha": 0.05,
+  "folds": 10,
+  "test": {
+    "name": "mannwhitneyu",
+    "alternative": "two-sided"
+  },
+  "inputs": {
+    "exp1_file": "issue875/paper/raw-text-results.json",
+    "exp2_file": "issue874/exp2/raw-text-results.json",
+    "exp1_name": "paper",
+    "exp2_name": "exp2"
+  },
+  "comparisons": [
+    {
+      "id": "Parsing sum / LAS",
+      "component": "parsing",
+      "dimension": "LAS",
+      "metric": "score",
+      "source": {
+        "top_key": "Parsing sum",
+        "dimension": "LAS"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 64.506
+      },
+      "exp2": {
+        "mean": 69.563
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 0.0,
+        "p": 0.000182671791,
+        "alpha": 0.05,
+        "significant": true
+      },
+      "decision": "exp2_better"
+    },
+    {
+      "id": "Parsing sum / UAS",
+      "component": "parsing",
+      "dimension": "UAS",
+      "metric": "score",
+      "source": {
+        "top_key": "Parsing sum",
+        "dimension": "UAS"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 70.466
+      },
+      "exp2": {
+        "mean": 74.796
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 0.0,
+        "p": 0.000182671791,
+        "alpha": 0.05,
+        "significant": true
+      },
+      "decision": "exp2_better"
+    },
+    {
+      "id": "Tagging sum / feats",
+      "component": "tagging",
+      "dimension": "feats",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tagging sum",
+        "dimension": "feats"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 87.289
+      },
+      "exp2": {
+        "mean": 85.971
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 78.0,
+        "p": 0.037635313787,
+        "alpha": 0.05,
+        "significant": true
+      },
+      "decision": "exp1_better"
+    },
+    {
+      "id": "Tagging sum / lemmas",
+      "component": "tagging",
+      "dimension": "lemmas",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tagging sum",
+        "dimension": "lemmas"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 91.598
+      },
+      "exp2": {
+        "mean": 90.886
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 68.0,
+        "p": 0.185876732366,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tagging sum / upostag",
+      "component": "tagging",
+      "dimension": "upostag",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tagging sum",
+        "dimension": "upostag"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 89.039
+      },
+      "exp2": {
+        "mean": 89.517
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 35.0,
+        "p": 0.273036339751,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tagging sum / xpostag",
+      "component": "tagging",
+      "dimension": "xpostag",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tagging sum",
+        "dimension": "xpostag"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 88.16
+      },
+      "exp2": {
+        "mean": 88.73
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 40.0,
+        "p": 0.472509068324,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tokenizer multiword sum / f1",
+      "component": "tokenization",
+      "dimension": "multiword_tokens",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tokenizer multiword sum",
+        "dimension": "f1"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 86.187
+      },
+      "exp2": {
+        "mean": 87.695
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 50.0,
+        "p": 1.0,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tokenizer sentences sum / f1",
+      "component": "tokenization",
+      "dimension": "sentences",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tokenizer sentences sum",
+        "dimension": "f1"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 66.102
+      },
+      "exp2": {
+        "mean": 62.546
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 71.0,
+        "p": 0.12108458343,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tokenizer tokens sum / f1",
+      "component": "tokenization",
+      "dimension": "tokens",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tokenizer tokens sum",
+        "dimension": "f1"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 94.376
+      },
+      "exp2": {
+        "mean": 94.243
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 53.0,
+        "p": 0.850106739139,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    },
+    {
+      "id": "Tokenizer words sum / f1",
+      "component": "tokenization",
+      "dimension": "words",
+      "metric": "f1",
+      "source": {
+        "top_key": "Tokenizer words sum",
+        "dimension": "f1"
+      },
+      "folds": 10,
+      "exp1": {
+        "mean": 94.279
+      },
+      "exp2": {
+        "mean": 94.085
+      },
+      "test": {
+        "name": "mannwhitneyu",
+        "alternative": "two-sided",
+        "U": 58.0,
+        "p": 0.570750388058,
+        "alpha": 0.05,
+        "significant": false
+      },
+      "decision": "no_significant_difference"
+    }
+  ],
+  "parts": {
+    "PART1_EXP1_better": [
+      {
+        "id": "Tagging sum / feats",
+        "component": "tagging",
+        "dimension": "feats",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tagging sum",
+          "dimension": "feats"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 87.289
+        },
+        "exp2": {
+          "mean": 85.971
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 78.0,
+          "p": 0.037635313787,
+          "alpha": 0.05,
+          "significant": true
+        },
+        "decision": "exp1_better"
+      }
+    ],
+    "PART2_EXP2_better": [
+      {
+        "id": "Parsing sum / LAS",
+        "component": "parsing",
+        "dimension": "LAS",
+        "metric": "score",
+        "source": {
+          "top_key": "Parsing sum",
+          "dimension": "LAS"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 64.506
+        },
+        "exp2": {
+          "mean": 69.563
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 0.0,
+          "p": 0.000182671791,
+          "alpha": 0.05,
+          "significant": true
+        },
+        "decision": "exp2_better"
+      },
+      {
+        "id": "Parsing sum / UAS",
+        "component": "parsing",
+        "dimension": "UAS",
+        "metric": "score",
+        "source": {
+          "top_key": "Parsing sum",
+          "dimension": "UAS"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 70.466
+        },
+        "exp2": {
+          "mean": 74.796
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 0.0,
+          "p": 0.000182671791,
+          "alpha": 0.05,
+          "significant": true
+        },
+        "decision": "exp2_better"
+      }
+    ],
+    "PART3_no_significant_difference": [
+      {
+        "id": "Tokenizer sentences sum / f1",
+        "component": "tokenization",
+        "dimension": "sentences",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tokenizer sentences sum",
+          "dimension": "f1"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 66.102
+        },
+        "exp2": {
+          "mean": 62.546
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 71.0,
+          "p": 0.12108458343,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tagging sum / lemmas",
+        "component": "tagging",
+        "dimension": "lemmas",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tagging sum",
+          "dimension": "lemmas"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 91.598
+        },
+        "exp2": {
+          "mean": 90.886
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 68.0,
+          "p": 0.185876732366,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tagging sum / upostag",
+        "component": "tagging",
+        "dimension": "upostag",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tagging sum",
+          "dimension": "upostag"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 89.039
+        },
+        "exp2": {
+          "mean": 89.517
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 35.0,
+          "p": 0.273036339751,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tagging sum / xpostag",
+        "component": "tagging",
+        "dimension": "xpostag",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tagging sum",
+          "dimension": "xpostag"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 88.16
+        },
+        "exp2": {
+          "mean": 88.73
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 40.0,
+          "p": 0.472509068324,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tokenizer words sum / f1",
+        "component": "tokenization",
+        "dimension": "words",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tokenizer words sum",
+          "dimension": "f1"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 94.279
+        },
+        "exp2": {
+          "mean": 94.085
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 58.0,
+          "p": 0.570750388058,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tokenizer tokens sum / f1",
+        "component": "tokenization",
+        "dimension": "tokens",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tokenizer tokens sum",
+          "dimension": "f1"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 94.376
+        },
+        "exp2": {
+          "mean": 94.243
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 53.0,
+          "p": 0.850106739139,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      },
+      {
+        "id": "Tokenizer multiword sum / f1",
+        "component": "tokenization",
+        "dimension": "multiword_tokens",
+        "metric": "f1",
+        "source": {
+          "top_key": "Tokenizer multiword sum",
+          "dimension": "f1"
+        },
+        "folds": 10,
+        "exp1": {
+          "mean": 86.187
+        },
+        "exp2": {
+          "mean": 87.695
+        },
+        "test": {
+          "name": "mannwhitneyu",
+          "alternative": "two-sided",
+          "U": 50.0,
+          "p": 1.0,
+          "alpha": 0.05,
+          "significant": false
+        },
+        "decision": "no_significant_difference"
+      }
+    ]
+  }
+}

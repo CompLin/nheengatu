@@ -1,0 +1,83 @@
+{
+  "alpha": 0.05,
+  "test": "Mann–Whitney U (two-sided)",
+  "folds": 10,
+  "exp1_file": "issue875/new/raw-text-results.json",
+  "exp2_file": "issue874/exp2/raw-text-results.json",
+  "PART1_EXP1_better": [
+    {
+      "metric": "Tagging sum / feats",
+      "mean_exp1": 87.279,
+      "mean_exp2": 85.971,
+      "U": 79.0,
+      "p": 0.031146
+    }
+  ],
+  "PART2_EXP2_better": [
+    {
+      "metric": "Parsing sum / LAS",
+      "mean_exp1": 67.026,
+      "mean_exp2": 69.563,
+      "U": 12.0,
+      "p": 0.004586
+    },
+    {
+      "metric": "Parsing sum / UAS",
+      "mean_exp1": 73.073,
+      "mean_exp2": 74.796,
+      "U": 17.5,
+      "p": 0.015526
+    }
+  ],
+  "PART3_no_significant_difference": [
+    {
+      "metric": "Tagging sum / lemmas",
+      "mean_exp1": 91.601,
+      "mean_exp2": 90.886,
+      "U": 68.0,
+      "p": 0.185877
+    },
+    {
+      "metric": "Tagging sum / upostag",
+      "mean_exp1": 89.06,
+      "mean_exp2": 89.517,
+      "U": 35.0,
+      "p": 0.272675
+    },
+    {
+      "metric": "Tagging sum / xpostag",
+      "mean_exp1": 88.182,
+      "mean_exp2": 88.73,
+      "U": 35.5,
+      "p": 0.289556
+    },
+    {
+      "metric": "Tokenizer multiword sum / f1",
+      "mean_exp1": 86.187,
+      "mean_exp2": 87.695,
+      "U": 50.0,
+      "p": 1.0
+    },
+    {
+      "metric": "Tokenizer sentences sum / f1",
+      "mean_exp1": 59.445,
+      "mean_exp2": 62.546,
+      "U": 28.0,
+      "p": 0.10411
+    },
+    {
+      "metric": "Tokenizer tokens sum / f1",
+      "mean_exp1": 94.388,
+      "mean_exp2": 94.243,
+      "U": 53.0,
+      "p": 0.850107
+    },
+    {
+      "metric": "Tokenizer words sum / f1",
+      "mean_exp1": 94.291,
+      "mean_exp2": 94.085,
+      "U": 58.0,
+      "p": 0.57075
+    }
+  ]
+}

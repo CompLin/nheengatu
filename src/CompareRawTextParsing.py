@@ -9,22 +9,26 @@ CompareRawTextParsing.py
 Compare fold-level evaluation results stored in two JSON files produced by
 your UDPipe 1.4 evaluation pipeline (10-fold CV).
 
-The JSON schema is expected to include keys containing the word 'sum',
-whose values are dictionaries mapping metric dimensions to lists of
-10 fold results, e.g.:
+The JSON schema is expected to include top-level keys containing the word 'sum'
+whose values are dictionaries mapping metric dimensions to lists of 10 fold results,
+e.g.:
 
   "Parsing sum": {"UAS": [...10...], "LAS": [...10...] }
   "Tagging sum": {"upostag": [...10...], "xpostag": [...], ...}
   "Tokenizer words sum": {"f1": [...10...]}
 
-This script extracts *only* those fold-level lists and compares EXP1 vs EXP2
-for each dimension using Mann–Whitney U (two-sided), printing a report with:
+This script:
+  1) extracts ONLY those fold-level lists (ignores averages/std scalars),
+  2) compares EXP1 vs EXP2 for each dimension using Mann–Whitney U (two-sided),
+  3) prints a report with three parts:
+       PART 1: EXP1 significantly outperforms EXP2
+       PART 2: EXP2 significantly outperforms EXP1
+       PART 3: no statistically significant difference
 
-  PART 1: EXP1 significantly outperforms EXP2
-  PART 2: EXP2 significantly outperforms EXP1
-  PART 3: no statistically significant difference
+It can also save the comparison report to JSON (default: yes):
+  --json-out yes|no
 
-Example:
+Usage:
   CompareRawTextParsing.py exp1/raw-text-results.json exp2/raw-text-results.json
 """
 
@@ -41,37 +45,35 @@ EXPECTED_FOLDS = 10
 
 
 def load_json(path: Path) -> dict:
-    """Load JSON file as a Python dict."""
+    """Load a JSON file as a Python dict."""
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def is_number(x) -> bool:
-    """Return True if x is an int/float and not NaN."""
+    """Return True if x is int/float and not NaN."""
     return isinstance(x, (int, float)) and not (isinstance(x, float) and math.isnan(x))
 
 
 def extract_sum_lists(obj: dict, expected_len: int = EXPECTED_FOLDS) -> dict:
     """
-    Extract fold-level lists from keys that contain 'sum'.
+    Extract fold-level lists from top-level keys that contain 'sum' (case-insensitive).
 
-    Returns a dict mapping:
-      metric_id -> list[float]
+    Returns:
+      dict[str, list[float]] mapping metric_id -> fold_values
 
-    where metric_id is formatted as:
+    metric_id format:
       "<top_key> / <dimension>"
 
-    Example metric_id:
-      "Parsing sum / LAS"
-      "Tokenizer words sum / f1"
-      "Tagging sum / upostag"
-
-    Raises ValueError on schema problems (missing, wrong length, non-numeric).
+    Raises ValueError if:
+      - no fold-level lists are found
+      - a fold list is not length expected_len
+      - fold list contains non-numeric values
     """
     extracted = {}
 
     for top_key, top_val in obj.items():
-        # We only consider entries whose key contains 'sum' and whose value is a dict.
+        # Only consider keys that contain 'sum' and whose value is a dict of dimensions.
         if "sum" not in top_key.lower():
             continue
         if not isinstance(top_val, dict):
@@ -110,17 +112,36 @@ def compare_lists(x, y):
 
 
 def format_line(metric_id, u_stat, p, m1, m2):
+    """Pretty-print one comparison line."""
     return f"- {metric_id}: mean1={m1:.3f}, mean2={m2:.3f}, U={u_stat:.3f}, p={p:.6f}"
+
+
+def row_to_dict(metric_id, u_stat, p, m1, m2):
+    """Convert a comparison result to a JSON-friendly dict."""
+    return {
+        "metric": metric_id,
+        "mean_exp1": round(m1, 6),
+        "mean_exp2": round(m2, 6),
+        "U": round(u_stat, 6),
+        "p": round(p, 6),
+    }
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Compare EXP1 vs EXP2 fold-level metrics from two JSON result files using Mann–Whitney U (two-sided)."
+        description=(
+            "Compare EXP1 vs EXP2 fold-level metrics from two JSON result files using "
+            "Mann–Whitney U (two-sided)."
+        )
     )
     parser.add_argument("exp1_json", help="Path to EXP1 JSON (e.g., exp1/raw-text-results.json)")
     parser.add_argument("exp2_json", help="Path to EXP2 JSON (e.g., exp2/raw-text-results.json)")
-    parser.add_argument("--alpha", type=float, default=DEFAULT_ALPHA, help="Significance level (default: 0.05)")
-    parser.add_argument("--folds", type=int, default=EXPECTED_FOLDS, help="Expected number of folds (default: 10)")
+    parser.add_argument("--alpha", type=float, default=DEFAULT_ALPHA,
+                        help="Significance level (default: 0.05)")
+    parser.add_argument("--folds", type=int, default=EXPECTED_FOLDS,
+                        help="Expected number of folds (default: 10)")
+    parser.add_argument("--json-out", choices=["yes", "no"], default="yes",
+                        help="Save comparison report to JSON (default: yes)")
     args = parser.parse_args()
 
     p1 = Path(args.exp1_json)
@@ -146,44 +167,68 @@ def main():
         y = exp2_metrics[metric_id]
 
         u_stat, p, m1, m2 = compare_lists(x, y)
+        row = row_to_dict(metric_id, u_stat, p, m1, m2)
 
         if p < args.alpha:
             if m1 > m2:
-                part1.append((metric_id, u_stat, p, m1, m2))
+                part1.append(row)
             elif m2 > m1:
-                part2.append((metric_id, u_stat, p, m1, m2))
+                part2.append(row)
             else:
-                # Same mean but significant is rare; keep it in PART 3 to avoid directional claim.
-                part3.append((metric_id, u_stat, p, m1, m2))
+                # Equal means: avoid directional claim
+                part3.append(row)
         else:
-            part3.append((metric_id, u_stat, p, m1, m2))
+            part3.append(row)
 
+    # ---- Print report ----
     print(f"Comparing:\n  EXP1: {p1}\n  EXP2: {p2}")
     print(f"Test: Mann–Whitney U (two-sided), alpha={args.alpha}, folds={args.folds}")
     print()
 
     print("PART 1 — EXP1 significantly outperforms EXP2")
     if part1:
-        for row in sorted(part1, key=lambda r: r[2]):  # sort by p-value
-            print(format_line(*row))
+        for row in sorted(part1, key=lambda r: r["p"]):
+            print(format_line(row["metric"], row["U"], row["p"], row["mean_exp1"], row["mean_exp2"]))
     else:
         print("- (none)")
     print()
 
     print("PART 2 — EXP2 significantly outperforms EXP1")
     if part2:
-        for row in sorted(part2, key=lambda r: r[2]):
-            print(format_line(*row))
+        for row in sorted(part2, key=lambda r: r["p"]):
+            print(format_line(row["metric"], row["U"], row["p"], row["mean_exp1"], row["mean_exp2"]))
     else:
         print("- (none)")
     print()
 
     print("PART 3 — No statistically significant difference")
     if part3:
-        for row in sorted(part3, key=lambda r: (r[2], r[0])):  # p then name
-            print(format_line(*row))
+        for row in sorted(part3, key=lambda r: (r["p"], r["metric"])):
+            print(format_line(row["metric"], row["U"], row["p"], row["mean_exp1"], row["mean_exp2"]))
     else:
         print("- (none)")
+
+    # ---- Optional JSON output ----
+    if args.json_out == "yes":
+        exp1_name = p1.parent.name or "exp1"
+        exp2_name = p2.parent.name or "exp2"
+        outname = f"comparison-{exp1_name}-vs-{exp2_name}.json"
+
+        out = {
+            "alpha": args.alpha,
+            "test": "Mann–Whitney U (two-sided)",
+            "folds": args.folds,
+            "exp1_file": str(p1),
+            "exp2_file": str(p2),
+            "PART1_EXP1_better": part1,
+            "PART2_EXP2_better": part2,
+            "PART3_no_significant_difference": part3,
+        }
+
+        with open(outname, "w", encoding="utf-8") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+
+        print(f"\nJSON comparison report saved to: {outname}")
 
 
 if __name__ == "__main__":
