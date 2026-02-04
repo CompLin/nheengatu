@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: January 29, 2026
+# Last update: February 1, 2026
 
 import numpy as np
 
@@ -23,7 +23,7 @@ def compute_averages(data_list):
 	tokenizer_multiword_sum = {'f1': []}
 	tokenizer_words_sum = {'f1': []}
 	tokenizer_sentences_sum = {'f1': []}
-	tagging_sum = {'upostag': [], 'xpostag': [], 'feats': [], 'lemmas': []}
+	tagging_sum = {'upostag': [], 'xpostag': [], 'feats': [],'alltags': [], 'lemmas': []}
 	parsing_sum = {'UAS': [], 'LAS': []}
 
 	# Iterate over each dictionary in the list
@@ -42,6 +42,7 @@ def compute_averages(data_list):
 		tagging_sum['upostag'].append(float(data_dict['Tagging']['upostag']))
 		tagging_sum['xpostag'].append(float(data_dict['Tagging']['xpostag']))
 		tagging_sum['feats'].append(float(data_dict['Tagging']['feats']))
+		tagging_sum['alltags'].append(float(data_dict['Tagging']['alltags']))
 		tagging_sum['lemmas'].append(float(data_dict['Tagging']['lemmas']))
 
 		# Accumulate values for 'Parsing'

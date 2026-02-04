@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar (adapted by ChatGPT)
-# Last update: 2026-01-30
+# Last update: February 1, 2026
 
 """
 CompareRawTextParsing.py
@@ -32,6 +32,7 @@ Usage:
   CompareRawTextParsing.py exp1/raw-text-results.json exp2/raw-text-results.json
 """
 
+import re
 import argparse
 import json
 import math
