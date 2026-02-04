@@ -53,15 +53,15 @@ def parseFile(infile):
 def main():
     """
     Usage:
-        ParseResults.py <file1> [file2 ...]
+        ParseRawTextResults.py <file1> [file2 ...]
     Example:
-        ParseResults.py raw-text-results-*.txt
+        ParseRawTextResults.py raw-text-results-*.txt
 
     Besides printing results to stdout (via ComputeAveragesSD.compute_averages),
     this script also saves the returned summary dictionary to 'raw-text-results.json'.
     """
     if len(sys.argv) < 2:
-        print("Usage: ParseResults.py <results_file1> [results_file2 ...]")
+        print("Usage: ParseRawTextResults.py <results_file1> [results_file2 ...]")
         sys.exit(1)
 
     results = [parseFile(f) for f in sys.argv[1:]]
