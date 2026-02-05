@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Leonel Figueiredo de Alencar
-# Last update: August 24, 2024
+# Last update: February 4, 2026
 
 import sys
 import numpy as np
-from AnnotateConllu import extractConlluSents, writeSentsConllu
+from Yauti import extractConlluSents, writeSentsConllu
 from conllu import TokenList
 from sklearn.model_selection import KFold
 
@@ -35,7 +35,7 @@ def mkTestTrain(dataset):
 def main():
     # Check if a filename is provided as a command line argument
     if len(sys.argv) != 2:
-        print("Usage: python script.py <treebank_filename>")
+        print("Usage: python TestSuite.py <treebank_filename>")
         sys.exit(1)
 
     # Read treebank data from the file
