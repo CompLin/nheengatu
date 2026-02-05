@@ -1,0 +1,35 @@
+{
+  "metric": "LAS",
+  "test": "Mann–Whitney U (two-sided)",
+  "folds": 10,
+  "exp1_file": "issue875/paper/gold-tok-tags-results.txt",
+  "exp2_file": "issue874/exp2/gold-tok-tags-results.txt",
+  "exp1_values": [
+    83.23,
+    82.35,
+    80.16,
+    82.65,
+    81.72,
+    80.8,
+    81.52,
+    83.1,
+    81.49,
+    80.93
+  ],
+  "exp2_values": [
+    83.32,
+    86.34,
+    83.91,
+    84.25,
+    84.17,
+    83.08,
+    84.34,
+    83.99,
+    83.3,
+    86.21
+  ],
+  "mean_exp1": 81.795,
+  "mean_exp2": 84.291,
+  "U_statistic": 2.0,
+  "p_value": 0.00032983852077799353
+}
