@@ -23391,8 +23391,8 @@
 # text_annotator = Leonel Figueiredo de Alencar
 # text_orig_transcriber = Antônio Levy Melo Nogueira
 # text_por_modernizer = Antônio Levy Melo Nogueira
-# text_adapt = Dominick Maia Alexandre
-# text_adapt_review = Leonel Figueiredo de Alencar
+# text_adapter = Dominick Maia Alexandre
+# text_adapt_reviewer = Leonel Figueiredo de Alencar
 # inputline = Intí ã se kirimbá/v2 xasupiri arama/sconj maã/ind i/pron2 poréi/=typo:c|puséi reté/advs waá/rel.
 1	Intí	intí	PART	NEG	PartType=Neg|Polarity=Neg	4	advmod	_	TokenRange=0:4
 2	ã	ã	PART	PFV	Aspect=Perf	4	advmod	_	TokenRange=5:6
@@ -23558,20 +23558,20 @@
 7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Hartt1938:0:0:98
-# text = Tapayuna se ukutuka i kisé irũ.
+# text = Tapayuna se kutuka i kisé irũ.
 # text_por = O negro me cortou com sua faca.
 # text_source = p. 326, No. 98
 # text_orig = tapañúna sekotóg ikysé irúm.
 # text_annotator = Dominick Maia Alexandre
-# inputline = Tapayuna se/=mf:m|ixé ukutuka i/pron2 kisé irũ/adp.
+# inputline = Tapayuna se/=mf:m|ixé kutuka/=mf:m|ukutuka i/pron2 kisé irũ/adp.
 # reviewer1 = Leonel Figueiredo de Alencar
 1	Tapayuna	tapayuna	NOUN	N	Number=Sing	3	nsubj	_	TokenRange=0:8
 2	se	se	PRON	PRON2	Case=Gen|Number=Sing|Person=1|PronType=Prs|Style=Arch	3	obj	_	ModernCase=Acc,Nom|ModernForm=ixé|ModernLemma=ixé|TokenRange=9:11
-3	ukutuka	kutuka	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	TokenRange=12:19
-4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=20:21
-5	kisé	kisé	NOUN	N	Number=Sing	3	obl	_	TokenRange=22:26
-6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=27:30
-7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=30:31
+3	kutuka	kutuka	VERB	V	Style=Arch|VerbForm=Inf	0	root	_	ModernForm=ukutuka|ModernMood=Ind|ModernPerson=3|ModernVerbForm=Fin|TokenRange=12:18
+4	i	i	PRON	PRON2	Case=Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs	5	nmod:poss	_	TokenRange=19:20
+5	kisé	kisé	NOUN	N	Number=Sing	3	obl	_	TokenRange=21:25
+6	irũ	irũ	ADP	ADP	AdpType=Post	5	case	_	SpaceAfter=No|TokenRange=26:29
+7	.	.	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No|TokenRange=29:30
 
 # sent_id = Hartt1938:0:0:99
 # text = Maã taá ne mimbira?
