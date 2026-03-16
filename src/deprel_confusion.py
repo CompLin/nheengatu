@@ -84,6 +84,14 @@ def read_deprels(conllu_path, use_coarse=False):
 
 
 def build_confusion(gold_file, pred_file, use_coarse=False):
+    """
+    Build the confusion matrix and mismatch list.
+
+    The confusion matrix is reindexed so that rows and columns share the
+    same alphabetically sorted label inventory (union of gold and predicted
+    labels). This guarantees that the visual diagonal always corresponds to
+    identical labels on both axes.
+    """
     gold = read_deprels(gold_file, use_coarse=use_coarse)
     pred = read_deprels(pred_file, use_coarse=use_coarse)
 
@@ -123,15 +131,16 @@ def build_confusion(gold_file, pred_file, use_coarse=False):
                 "pred_deprel": p_rel,
             })
 
-    # Confusion matrix as a pandas DataFrame
+    # Initial confusion matrix
     cm = pd.crosstab(
         pd.Series(gold_labels, name="Gold"),
         pd.Series(pred_labels, name="Predicted"),
         dropna=False
     )
 
-    # Sort relations alphabetically
-    cm = cm.sort_index().sort_index(axis=1)
+    # Shared, alphabetically sorted label inventory on both axes
+    labels = sorted(set(gold_labels) | set(pred_labels))
+    cm = cm.reindex(index=labels, columns=labels, fill_value=0)
 
     return cm, mismatches, gold_labels, pred_labels
 
@@ -155,62 +164,62 @@ def normalize_rows(cm):
 
 
 def plot_heatmap_full(cm, output_file="deprel_confusion_matrix_normalized.png"):
+    """
+    Plot and save a full row-normalized heatmap.
+    Uses bounded figure size to avoid excessive memory use.
+    """
     cm_norm = normalize_rows(cm)
 
     matrix = cm_norm.values
     nrows, ncols = matrix.shape
 
-    CELL_SIZE = 1.2
-
-    fig_width = max(20, ncols * CELL_SIZE)
-    fig_height = max(16, nrows * CELL_SIZE)
+    # Safe sizing: large enough to read, but bounded to avoid OOM
+    cell_size = 0.55
+    fig_width = min(max(12, ncols * cell_size + 3), 24)
+    fig_height = min(max(10, nrows * cell_size + 3), 20)
 
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-    im = ax.imshow(matrix, cmap="Blues", vmin=0, vmax=1)
+    im = ax.imshow(matrix, cmap="Blues", vmin=0, vmax=1, aspect="auto")
+
+    # Dynamic font sizes
+    max_dim = max(nrows, ncols)
+    tick_fs = max(7, min(12, int(220 / max_dim)))
+    ann_fs = max(6, min(10, int(180 / max_dim)))
+    label_fs = max(11, tick_fs + 2)
+    title_fs = max(13, tick_fs + 3)
 
     ax.set_xticks(range(ncols))
     ax.set_yticks(range(nrows))
 
-    ax.set_xticklabels(cm_norm.columns, rotation=90, fontsize=16)
-    ax.set_yticklabels(cm_norm.index, fontsize=16)
+    ax.set_xticklabels(cm_norm.columns, rotation=90, fontsize=tick_fs)
+    ax.set_yticklabels(cm_norm.index, fontsize=tick_fs)
 
-    ax.set_xlabel("Predicted DEPREL", fontsize=18)
-    ax.set_ylabel("Gold DEPREL", fontsize=18)
-
-    ax.set_title(
-        "Dependency Relation Confusion Matrix (Row-Normalized)",
-        fontsize=20,
-        pad=30
-    )
+    ax.set_xlabel("Predicted DEPREL", fontsize=label_fs)
+    ax.set_ylabel("Gold DEPREL", fontsize=label_fs)
+    ax.set_title("Dependency Relation Confusion Matrix (Row-Normalized)", fontsize=title_fs)
 
     threshold = 0.5
 
+    # Annotate only cells >= 0.01 to reduce clutter
     for i in range(nrows):
         for j in range(ncols):
             val = matrix[i, j]
-
-            if val > 0:
+            if val >= 0.01:
                 color = "white" if val >= threshold else "black"
-
                 ax.text(
-                    j,
-                    i,
-                    f"{val:.2f}",
-                    ha="center",
-                    va="center",
-                    fontsize=14,
-                    color=color
+                    j, i, f"{val:.2f}",
+                    ha="center", va="center",
+                    fontsize=ann_fs, color=color
                 )
 
-    cbar = fig.colorbar(im, ax=ax, fraction=0.03, pad=0.02)
-    cbar.set_label("Proportion within gold relation", fontsize=16)
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label("Proportion within gold relation", fontsize=label_fs)
+    cbar.ax.tick_params(labelsize=tick_fs)
 
-    fig.subplots_adjust(left=0.20, right=0.97, bottom=0.32, top=0.90)
-
-    plt.savefig(output_file, dpi=300)
+    fig.tight_layout()
+    plt.savefig(output_file, dpi=180, bbox_inches="tight")
     print(f"Saved normalized heatmap to {output_file}")
-
     plt.show()
 
 
@@ -218,10 +227,9 @@ def plot_heatmap_offdiag(cm, output_file="deprel_confusion_matrix_normalized_off
     """
     Plot and save a row-normalized heatmap with the diagonal suppressed,
     highlighting actual confusions.
+    Uses bounded figure size to avoid excessive memory use.
     """
     cm_norm = normalize_rows(cm)
-
-    # Copy for visualization only
     cm_vis = cm_norm.copy()
 
     common_labels = [label for label in cm_vis.index if label in cm_vis.columns]
@@ -231,53 +239,58 @@ def plot_heatmap_offdiag(cm, output_file="deprel_confusion_matrix_normalized_off
     matrix = cm_vis.values
     nrows, ncols = matrix.shape
 
-    fig_width = max(16, ncols * 0.85)
-    fig_height = max(12, nrows * 0.85)
+    # Safe sizing: large enough to read, but bounded to avoid OOM
+    cell_size = 0.55
+    fig_width = min(max(12, ncols * cell_size + 3), 24)
+    fig_height = min(max(10, nrows * cell_size + 3), 20)
 
     fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
     offdiag_vals = matrix[matrix > 0]
     vmax = offdiag_vals.max() if offdiag_vals.size else 1.0
 
-    im = ax.imshow(matrix, cmap="Blues", vmin=0, vmax=vmax)
+    im = ax.imshow(matrix, cmap="Blues", vmin=0, vmax=vmax, aspect="auto")
+
+    # Dynamic font sizes
+    max_dim = max(nrows, ncols)
+    tick_fs = max(7, min(12, int(220 / max_dim)))
+    ann_fs = max(6, min(10, int(180 / max_dim)))
+    label_fs = max(11, tick_fs + 2)
+    title_fs = max(13, tick_fs + 3)
 
     ax.set_xticks(range(ncols))
     ax.set_yticks(range(nrows))
 
-    ax.set_xticklabels(cm_vis.columns, rotation=90, fontsize=13)
-    ax.set_yticklabels(cm_vis.index, fontsize=13)
+    ax.set_xticklabels(cm_vis.columns, rotation=90, fontsize=tick_fs)
+    ax.set_yticklabels(cm_vis.index, fontsize=tick_fs)
 
-    ax.set_xlabel("Predicted DEPREL", fontsize=15)
-    ax.set_ylabel("Gold DEPREL", fontsize=15)
+    ax.set_xlabel("Predicted DEPREL", fontsize=label_fs)
+    ax.set_ylabel("Gold DEPREL", fontsize=label_fs)
     ax.set_title(
         "Dependency Relation Confusion Matrix (Row-Normalized, Diagonal Suppressed)",
-        fontsize=17,
-        pad=20
+        fontsize=title_fs
     )
 
-    threshold = vmax * 0.5
+    threshold = vmax * 0.5 if vmax > 0 else 0.5
 
+    # Annotate only reasonably large confusions
     for i in range(nrows):
         for j in range(ncols):
             val = matrix[i, j]
-            if val > 0:
+            if val >= 0.01:
                 color = "white" if val >= threshold else "black"
                 ax.text(
-                    j,
-                    i,
-                    f"{val:.2f}",
-                    ha="center",
-                    va="center",
-                    fontsize=12,
-                    color=color
+                    j, i, f"{val:.2f}",
+                    ha="center", va="center",
+                    fontsize=ann_fs, color=color
                 )
 
-    cbar = fig.colorbar(im, ax=ax, fraction=0.035, pad=0.02)
-    cbar.set_label("Off-diagonal proportion within gold relation", fontsize=13)
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label("Off-diagonal proportion within gold relation", fontsize=label_fs)
+    cbar.ax.tick_params(labelsize=tick_fs)
 
-    fig.subplots_adjust(left=0.18, right=0.97, bottom=0.28, top=0.90)
-
-    plt.savefig(output_file, dpi=300)
+    fig.tight_layout()
+    plt.savefig(output_file, dpi=180, bbox_inches="tight")
     print(f"Saved normalized off-diagonal heatmap to {output_file}")
     plt.show()
 
