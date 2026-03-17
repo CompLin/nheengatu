@@ -1,0 +1,132 @@
+PARSER DIAGNOSTIC SUMMARY
+=========================
+
+PAIRS INCLUDED
+--------------
+fold-1: 2823 tokens
+fold-10: 2655 tokens
+fold-2: 2679 tokens
+fold-3: 2840 tokens
+fold-4: 2660 tokens
+fold-5: 2799 tokens
+fold-6: 2636 tokens
+fold-7: 2548 tokens
+fold-8: 2498 tokens
+fold-9: 2647 tokens
+
+GLOBAL METRICS
+--------------
+Tokens compared: 26785
+UAS: 88.11% (23601/26785)
+Label accuracy: 90.82% (24325/26785)
+LAS: 84.28% (22575/26785)
+
+ERROR TAXONOMY
+--------------
+Attachment-only errors: 1750
+Label-only errors:      1026
+Both head+label wrong:  1434
+
+TOP LABEL CONFUSIONS
+--------------------
+nsubj           -> obj             : 169
+obj             -> nsubj           : 140
+root            -> parataxis       : 83
+expl            -> nsubj           : 59
+obj             -> nmod:poss       : 57
+advcl           -> root            : 57
+nsubj           -> nmod:poss       : 55
+ccomp           -> parataxis       : 55
+advcl           -> parataxis       : 45
+xcomp           -> parataxis       : 45
+root            -> nsubj           : 45
+dislocated      -> nsubj           : 44
+conj            -> parataxis       : 43
+obl             -> nsubj           : 42
+iobj            -> obl             : 41
+obl             -> obj             : 38
+nmod:poss       -> nsubj           : 34
+parataxis       -> ccomp           : 33
+nmod:poss       -> obj             : 33
+nsubj           -> root            : 32
+
+HARDEST GOLD RELATIONS BY LAS (support >= 10)
+---------------------------------------------
+dislocated      support=  67 head=  53.73% label=   2.99% LAS=   2.99%
+csubj           support=  23 head=  60.87% label=   4.35% LAS=   4.35%
+advcl:relcl     support=  27 head=  18.52% label=   7.41% LAS=   7.41%
+acl             support=  25 head=  16.00% label=  12.00% LAS=   8.00%
+appos           support=  41 head=  19.51% label=   9.76% LAS=   9.76%
+nmod            support=  79 head=  22.78% label=  16.46% LAS=  16.46%
+conj            support= 252 head=  44.84% label=  50.40% LAS=  30.56%
+xcomp           support= 195 head=  87.69% label=  36.92% LAS=  35.90%
+flat            support=  19 head=  47.37% label=  36.84% LAS=  36.84%
+goeswith        support=  18 head=  61.11% label=  55.56% LAS=  44.44%
+vocative        support= 129 head=  76.74% label=  62.79% LAS=  55.04%
+ccomp           support= 422 head=  82.94% label=  59.95% LAS=  59.24%
+expl            support= 169 head=  92.90% label=  60.36% LAS=  59.76%
+acl:relcl       support= 343 head=  61.81% label=  73.18% LAS=  61.22%
+fixed           support=  70 head=  78.57% label=  62.86% LAS=  62.86%
+
+LABELS WITH LOWEST PRECISION (pred support >= 10)
+-----------------------------------------------
+xcomp           pred= 142 gold= 195 P=  50.70% R=  36.92% F1=  42.73%
+ccomp           pred= 380 gold= 422 P=  66.58% R=  59.95% F1=  63.09%
+parataxis       pred=1050 gold= 857 P=  67.24% R=  82.38% F1=  74.04%
+nmod            pred=  19 gold=  79 P=  68.42% R=  16.46% F1=  26.53%
+conj            pred= 180 gold= 252 P=  70.56% R=  50.40% F1=  58.80%
+obj             pred=1720 gold=1586 P=  78.43% R=  85.06% F1=  81.61%
+expl            pred= 127 gold= 169 P=  80.31% R=  60.36% F1=  68.92%
+iobj            pred= 187 gold= 216 P=  80.75% R=  69.91% F1=  74.94%
+nsubj           pred=2824 gold=2657 P=  82.29% R=  87.47% F1=  84.80%
+vocative        pred=  97 gold= 129 P=  83.51% R=  62.79% F1=  71.68%
+acl:relcl       pred= 296 gold= 343 P=  84.80% R=  73.18% F1=  78.56%
+advcl           pred= 497 gold= 579 P=  85.31% R=  73.23% F1=  78.81%
+amod            pred= 165 gold= 173 P=  87.27% R=  83.24% F1=  85.21%
+fixed           pred=  50 gold=  70 P=  88.00% R=  62.86% F1=  73.33%
+discourse       pred=  34 gold=  42 P=  88.24% R=  71.43% F1=  78.95%
+
+LABELS WITH LOWEST RECALL (gold support >= 10)
+---------------------------------------------
+dislocated      gold=  67 pred=   3 P=  66.67% R=   2.99% F1=   5.71%
+csubj           gold=  23 pred=   2 P=  50.00% R=   4.35% F1=   8.00%
+advcl:relcl     gold=  27 pred=   3 P=  66.67% R=   7.41% F1=  13.33%
+appos           gold=  41 pred=   8 P=  50.00% R=   9.76% F1=  16.33%
+acl             gold=  25 pred=   4 P=  75.00% R=  12.00% F1=  20.69%
+nmod            gold=  79 pred=  19 P=  68.42% R=  16.46% F1=  26.53%
+flat            gold=  19 pred=   7 P= 100.00% R=  36.84% F1=  53.85%
+xcomp           gold= 195 pred= 142 P=  50.70% R=  36.92% F1=  42.73%
+conj            gold= 252 pred= 180 P=  70.56% R=  50.40% F1=  58.80%
+goeswith        gold=  18 pred=  10 P= 100.00% R=  55.56% F1=  71.43%
+ccomp           gold= 422 pred= 380 P=  66.58% R=  59.95% F1=  63.09%
+expl            gold= 169 pred= 127 P=  80.31% R=  60.36% F1=  68.92%
+vocative        gold= 129 pred=  97 P=  83.51% R=  62.79% F1=  71.68%
+fixed           gold=  70 pred=  50 P=  88.00% R=  62.86% F1=  73.33%
+iobj            gold= 216 pred= 187 P=  80.75% R=  69.91% F1=  74.94%
+
+UPOS CATEGORIES WITH LOWEST LAS (support >= 10)
+-----------------------------------------------
+X        support=  19 head=  63.16% label=  52.63% LAS=  42.11%
+INTJ     support=  72 head=  69.44% label=  72.22% LAS=  58.33%
+ADJ      support= 497 head=  79.68% label=  77.26% LAS=  74.45%
+NOUN     support=4699 head=  85.19% label=  81.44% LAS=  77.91%
+CCONJ    support= 126 head=  78.57% label=  96.83% LAS=  78.57%
+PROPN    support= 311 head=  85.21% label=  81.99% LAS=  78.78%
+VERB     support=4424 head=  86.64% label=  84.79% LAS=  80.52%
+PRON     support=3507 head=  91.33% label=  86.14% LAS=  83.43%
+ADV      support=1518 head=  87.68% label=  94.01% LAS=  85.38%
+PUNCT    support=5379 head=  85.69% label=  99.96% LAS=  85.69%
+NUM      support=  95 head=  89.47% label=  90.53% LAS=  86.32%
+PART     support=2127 head=  90.03% label=  98.07% LAS=  89.52%
+AUX      support= 734 head=  92.51% label=  95.10% LAS=  91.14%
+DET      support= 835 head=  92.10% label=  97.37% LAS=  91.26%
+SCONJ    support= 606 head=  93.40% label= 100.00% LAS=  93.40%
+
+HEAD DISTANCE ERROR SUMMARY
+---------------------------
+mean_gold_head_distance: 3.942211055276382
+mean_pred_head_distance: 3.8099874371859297
+mean_head_distance_delta: 0.0361180904522613
+median_gold_head_distance: 3.0
+median_pred_head_distance: 3.0
+median_head_distance_delta: -1.0

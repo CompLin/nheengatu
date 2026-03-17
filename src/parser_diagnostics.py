@@ -2,7 +2,7 @@
 """
 Analyze parser errors in CoNLL-U files.
 
-This script compares a gold CoNLL-U file with a system-output CoNLL-U file
+This script compares gold CoNLL-U files with system-output CoNLL-U files
 and produces a compact diagnostic report that helps identify weaknesses in
 both the parser and the annotation scheme.
 
@@ -10,7 +10,7 @@ It reports:
 
 1. Global metrics:
    - UAS  (unlabeled attachment accuracy)
-   - Label accuracy (DEPREL only)
+   - label accuracy (DEPREL only)
    - LAS  (labeled attachment accuracy)
 
 2. Error taxonomy:
@@ -23,35 +23,108 @@ It reports:
    - head accuracy
    - label accuracy
    - LAS
-   - label precision / recall / F1
 
-4. Frequent label confusions
+4. Label-wise precision / recall / F1
 
-5. Error breakdown by UPOS
+5. Frequent label confusions
 
-6. Attachment-distance diagnostics:
+6. Error breakdown by UPOS
+
+7. Attachment-distance diagnostics:
    - how far the predicted head is from the gold head
 
+It supports two modes:
+
+1. Single-pair mode
+   Compare one gold file with one predicted file.
+
+   Usage:
+       python parser_diagnostics.py GOLD.conllu SYSTEM.conllu
+       python parser_diagnostics.py GOLD.conllu SYSTEM.conllu --coarse
+
+2. Aggregated 10-fold mode
+   Compare all pairs test-N.conllu vs. test-N.out.conllu for N = 1..10,
+   merge all results into one overall analysis, and generate the same
+   summary/TSV outputs from the combined data.
+
+   Usage:
+       python parser_diagnostics.py --all-folds
+       python parser_diagnostics.py --all-folds --coarse
+
 Outputs:
-- parser_error_summary.txt
-- parser_error_tokens.tsv
-- parser_error_by_relation.tsv
-- parser_label_prf.tsv
-- parser_confusions.tsv
-- parser_error_by_upos.tsv
-- parser_head_distance_errors.tsv
+- parser_error_summary_<label>.txt
+- parser_error_tokens_<label>.tsv
+- parser_error_by_relation_<label>.tsv
+- parser_label_prf_<label>.tsv
+- parser_confusions_<label>.tsv
+- parser_error_by_upos_<label>.tsv
+- parser_head_distance_errors_<label>.tsv
 
-Usage:
-    python parser_diagnostics.py GOLD.conllu SYSTEM.conllu
-
-Optional:
-    python parser_diagnostics.py GOLD.conllu SYSTEM.conllu --coarse
+where <label> is:
+- all-folds   in aggregated mode
+- fold-N      when the gold file is test-N.conllu
+- single      otherwise
 """
 
+import argparse
+import os
+import re
 import sys
-from collections import Counter, defaultdict
 
 import pandas as pd
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Analyze parser errors in CoNLL-U files."
+    )
+    parser.add_argument("gold_file", nargs="?", help="Gold CoNLL-U file")
+    parser.add_argument("pred_file", nargs="?", help="Predicted CoNLL-U file")
+    parser.add_argument(
+        "--coarse",
+        action="store_true",
+        help="Collapse subtypes such as 'obl:tmod' to 'obl'",
+    )
+    parser.add_argument(
+        "--all-folds",
+        action="store_true",
+        help="Aggregate test-N.conllu vs. test-N.out.conllu for N = 1..10",
+    )
+    return parser.parse_args()
+
+
+def infer_run_label(args):
+    if args.all_folds:
+        return "all-folds"
+
+    if args.gold_file:
+        match = re.search(r"test-(\d+)\.conllu$", os.path.basename(args.gold_file))
+        if match:
+            return f"fold-{match.group(1)}"
+
+    return "single"
+
+
+def collect_all_fold_pairs(start=1, end=10):
+    """
+    Return the list of file pairs:
+        test-N.conllu vs test-N.out.conllu
+    for N in [start, end], searching in the current working directory.
+    """
+    pairs = []
+
+    for n in range(start, end + 1):
+        gold_file = f"test-{n}.conllu"
+        pred_file = f"test-{n}.out.conllu"
+
+        if not os.path.exists(gold_file):
+            raise FileNotFoundError(f"Missing gold file: {gold_file}")
+        if not os.path.exists(pred_file):
+            raise FileNotFoundError(f"Missing predicted file: {pred_file}")
+
+        pairs.append((f"fold-{n}", gold_file, pred_file))
+
+    return pairs
 
 
 def read_conllu(path, use_coarse=False):
@@ -124,9 +197,9 @@ def safe_int(x):
         return None
 
 
-def compare_tokens(gold_rows, pred_rows):
+def compare_tokens(gold_rows, pred_rows, pair_label=None, gold_file=None, pred_file=None):
     """
-    Align token-by-token and compute diagnostics.
+    Align token-by-token and compute diagnostics for one pair of files.
     """
     if len(gold_rows) != len(pred_rows):
         raise ValueError(
@@ -164,6 +237,9 @@ def compare_tokens(gold_rows, pred_rows):
             head_distance_delta = pred_head - gold_head
 
         records.append({
+            "pair": pair_label,
+            "gold_file": gold_file,
+            "pred_file": pred_file,
             "sent_id": g["sent_id"],
             "id": g["id"],
             "form": g["form"],
@@ -185,6 +261,31 @@ def compare_tokens(gold_rows, pred_rows):
         })
 
     return pd.DataFrame(records)
+
+
+def build_dataframe_from_pairs(file_pairs, use_coarse=False):
+    """
+    Build one combined dataframe from one or more gold/predicted file pairs.
+    """
+    frames = []
+
+    for pair_label, gold_file, pred_file in file_pairs:
+        gold_rows = read_conllu(gold_file, use_coarse=use_coarse)
+        pred_rows = read_conllu(pred_file, use_coarse=use_coarse)
+
+        df_pair = compare_tokens(
+            gold_rows,
+            pred_rows,
+            pair_label=pair_label,
+            gold_file=gold_file,
+            pred_file=pred_file,
+        )
+        frames.append(df_pair)
+
+    if not frames:
+        return pd.DataFrame()
+
+    return pd.concat(frames, ignore_index=True)
 
 
 def compute_label_prf(df):
@@ -340,6 +441,14 @@ def write_summary(
         f.write("PARSER DIAGNOSTIC SUMMARY\n")
         f.write("=========================\n\n")
 
+        if "pair" in df.columns and df["pair"].notna().any():
+            pair_counts = df.groupby("pair").size().sort_index()
+            f.write("PAIRS INCLUDED\n")
+            f.write("--------------\n")
+            for pair_name, count in pair_counts.items():
+                f.write(f"{pair_name}: {count} tokens\n")
+            f.write("\n")
+
         f.write("GLOBAL METRICS\n")
         f.write("--------------\n")
         f.write(f"Tokens compared: {total}\n")
@@ -430,20 +539,25 @@ def write_summary(
 
 
 def main():
-    args = sys.argv[1:]
+    args = parse_args()
+    run_label = infer_run_label(args)
 
-    if len(args) < 2:
-        print("Usage: python parser_diagnostics.py GOLD.conllu SYSTEM.conllu [--coarse]")
-        sys.exit(1)
+    if args.all_folds:
+        if args.gold_file or args.pred_file:
+            print("Do not provide GOLD/PRED files together with --all-folds.")
+            sys.exit(1)
+        file_pairs = collect_all_fold_pairs(1, 10)
+    else:
+        if not args.gold_file or not args.pred_file:
+            print(
+                "Usage:\n"
+                "  python parser_diagnostics.py GOLD.conllu SYSTEM.conllu [--coarse]\n"
+                "  python parser_diagnostics.py --all-folds [--coarse]"
+            )
+            sys.exit(1)
+        file_pairs = [("single", args.gold_file, args.pred_file)]
 
-    gold_file = args[0]
-    pred_file = args[1]
-    use_coarse = "--coarse" in args[2:]
-
-    gold_rows = read_conllu(gold_file, use_coarse=use_coarse)
-    pred_rows = read_conllu(pred_file, use_coarse=use_coarse)
-
-    df = compare_tokens(gold_rows, pred_rows)
+    df = build_dataframe_from_pairs(file_pairs, use_coarse=args.coarse)
 
     relation_summary = compute_relation_summary(df)
     label_prf = compute_label_prf(df)
@@ -451,8 +565,16 @@ def main():
     upos_summary = compute_upos_summary(df)
     head_distance_summary = compute_head_distance_errors(df)
 
+    summary_file = f"parser_error_summary_{run_label}.txt"
+    tokens_file = f"parser_error_tokens_{run_label}.tsv"
+    relation_file = f"parser_error_by_relation_{run_label}.tsv"
+    prf_file = f"parser_label_prf_{run_label}.tsv"
+    confusions_file = f"parser_confusions_{run_label}.tsv"
+    upos_file = f"parser_error_by_upos_{run_label}.tsv"
+    distance_file = f"parser_head_distance_errors_{run_label}.tsv"
+
     write_summary(
-        "parser_error_summary.txt",
+        summary_file,
         df,
         relation_summary,
         label_prf,
@@ -461,12 +583,12 @@ def main():
         head_distance_summary,
     )
 
-    df.to_csv("parser_error_tokens.tsv", sep="\t", index=False)
-    relation_summary.to_csv("parser_error_by_relation.tsv", sep="\t", index=False)
-    label_prf.to_csv("parser_label_prf.tsv", sep="\t", index=False)
-    confusions.to_csv("parser_confusions.tsv", sep="\t", index=False)
-    upos_summary.to_csv("parser_error_by_upos.tsv", sep="\t", index=False)
-    head_distance_summary.to_csv("parser_head_distance_errors.tsv", sep="\t", index=False)
+    df.to_csv(tokens_file, sep="\t", index=False)
+    relation_summary.to_csv(relation_file, sep="\t", index=False)
+    label_prf.to_csv(prf_file, sep="\t", index=False)
+    confusions.to_csv(confusions_file, sep="\t", index=False)
+    upos_summary.to_csv(upos_file, sep="\t", index=False)
+    head_distance_summary.to_csv(distance_file, sep="\t", index=False)
 
     total = len(df)
     print(f"Tokens compared: {total}")
@@ -479,13 +601,13 @@ def main():
     print(f"Both head+label wrong:  {int(df['both_error'].sum())}")
     print()
     print("Saved:")
-    print("  parser_error_summary.txt")
-    print("  parser_error_tokens.tsv")
-    print("  parser_error_by_relation.tsv")
-    print("  parser_label_prf.tsv")
-    print("  parser_confusions.tsv")
-    print("  parser_error_by_upos.tsv")
-    print("  parser_head_distance_errors.tsv")
+    print(f"  {summary_file}")
+    print(f"  {tokens_file}")
+    print(f"  {relation_file}")
+    print(f"  {prf_file}")
+    print(f"  {confusions_file}")
+    print(f"  {upos_file}")
+    print(f"  {distance_file}")
 
 
 if __name__ == "__main__":
