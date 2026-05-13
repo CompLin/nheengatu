@@ -9809,10 +9809,10 @@
 6	,	,	PUNCT	PUNCT	_	5	punct	_	TokenRange=16:17
 7	uyusuantí	suantí	VERB	V	Mood=Ind|Person=3|VerbForm=Fin|Voice=Mid,Pass	0	root	_	SpaceAfter=No|TokenRange=18:27
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=27:28
-9	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=29:31
+9	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=29:31
 10	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=32:39
-11	ta	ta	PRON	PRON2	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	expl	_	TokenRange=40:42
-12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	xcomp	_	SpaceAfter=No|TokenRange=43:53
+11	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=40:42
+12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	xcomp	_	SpaceAfter=No|TokenRange=43:53
 
 # sent_id = Casasnovas2006:12:10:176
 # text = Asuí, paá, Adana umbeú Buburi supé aé urikuté umendari arã Kurukuí irumu.
