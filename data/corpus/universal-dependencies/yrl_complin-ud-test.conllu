@@ -7938,11 +7938,12 @@
 # text_por = O tamanduá veio, achou a onça arranhando um pau, chegou por detrás devagar, abraçou-a, meteu-lhe a unha.
 # text_source = Magalhães, 223, adap.
 # text_annotator = Leonel Figueiredo de Alencar
+# reviewer1 = Dominick Maia Alexandre
 1	Tamanduá	tamanduá	NOUN	N	Number=Sing	2	nsubj	_	TokenRange=0:8
 2	uri	yuri	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No|TokenRange=9:12
 3	,	,	PUNCT	PUNCT	_	4	punct	_	TokenRange=12:13
 4	uwasemu	wasemu	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	2	parataxis	_	TokenRange=14:21
-5	yawareté	yawareté	NOUN	N	Number=Sing	6	nsubj	_	TokenRange=22:30
+5	yawareté	yawareté	NOUN	N	Number=Sing	4	obj	_	TokenRange=22:30
 6	ukarãi-karãi	karãi	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	4	xcomp	_	TokenRange=31:43
 7	mirá	mirá	NOUN	N	Number=Sing	6	obj	_	SpaceAfter=No|TokenRange=44:48
 8	,	,	PUNCT	PUNCT	_	9	punct	_	TokenRange=48:49

@@ -9801,6 +9801,7 @@
 # acknowledgement = DACILAT Project, FAPESP's Process No. 2022/09158-5
 # inputline = Aape/advt, paá, aintá/pron, uyusuantí/=mid, ta/pron uyupirú ta/pron upurungitá
 # reviewer1 = Leonel Figueiredo de Alencar
+# reviewer2 = Dominick Maia Alexandre
 1	Aape	aape	ADV	ADVT	AdvType=Tim	7	advmod	_	SpaceAfter=No|TokenRange=0:4
 2	,	,	PUNCT	PUNCT	_	3	punct	_	TokenRange=4:5
 3	paá	paá	PART	RPRT	Evident=Nfh|PartType=Mod	7	advmod	_	SpaceAfter=No|TokenRange=6:9
@@ -9811,7 +9812,7 @@
 8	,	,	PUNCT	PUNCT	_	10	punct	_	TokenRange=27:28
 9	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	TokenRange=29:31
 10	uyupirú	yupirú	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	7	parataxis	_	TokenRange=32:39
-11	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	TokenRange=40:42
+11	ta	ta	PRON	PRON	Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs	12	expl	_	TokenRange=40:42
 12	upurungitá	purungitá	VERB	V	Mood=Ind|Person=3|VerbForm=Fin	10	xcomp	_	SpaceAfter=No|TokenRange=43:53
 
 # sent_id = Casasnovas2006:12:10:176
