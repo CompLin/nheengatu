@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Author: Leonel Figueiredo de Alencar
+# AI tool: ChatGPT 4.0
+# Last update: October 7, 2026
 import sys
 import os
 from conllu import parse
 from graphviz import Digraph
 from PIL import Image
+from DisplayPDF import display_pdf_as_image
 
-# Function to generate and display the dependency tree from a CoNLL-U string
-def displayTree(conllu_text, output_base_name="dependency_tree",display=True):
-    # Parse the CoNLL-U data using conllu
-    sentences = parse(conllu_text)
+
+# Function to generate and display the dependency tree from a CoNLL-U representation
+def displayTree(conllu_text='', output_base_name="dependency_tree",display=True, file_format='png', cleanup=True,tokenlist=None):
+    sentences=[]
+    if conllu_text:
+        # Parse the CoNLL-U data using conllu
+        sentences = parse(conllu_text)
+    elif tokenlist:
+        sentences.append(tokenlist)
 
     # Create a Graphviz Digraph object
     dot = Digraph(comment='Dependency Tree')
@@ -45,14 +54,21 @@ def displayTree(conllu_text, output_base_name="dependency_tree",display=True):
         for token in sentence:
             add_edges(token, dot, sentence)
 
+    # Save the Graphviz source as a .dot file
+    dot_filename = output_base_name + ".dot"
+    dot.save(filename=dot_filename)
+
     # Render the graph as a PNG file
-    output_filename = output_base_name + ".png"
-    dot.render(output_base_name, format='png', cleanup=True)
+    output_filename = output_base_name + f".{file_format}"
+    dot.render(output_base_name, format=file_format, cleanup=cleanup)
 
     # Display the image using PIL
     if display:
-        img = Image.open(output_filename)
-        img.show()
+        if file_format == 'png':
+            img = Image.open(output_filename)
+            img.show()
+        elif file_format == 'pdf':
+            display_pdf_as_image(output_filename, page_number=0, zoom=1)
 
     print(f"Dependency tree saved as '{output_filename}' and displayed.")
 
